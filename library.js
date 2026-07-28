@@ -1,4 +1,4 @@
-/* cyberdelic.space — filtering the library.
+/* cyberdelic.space: filtering the library.
  *
  * The whole collection is already in the page; searching only hides cards that
  * do not match. No index to download, no request to make, works offline.

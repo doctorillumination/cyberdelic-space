@@ -1,4 +1,4 @@
-/* cyberdelic.space — one typographic system, two atmospheres.
+/* cyberdelic.space: one typographic system, two atmospheres.
    Derived from the DEW LINE Studio design tokens. */
 
 :root {
@@ -81,7 +81,7 @@ header.site nav a {
 }
 header.site nav a:hover { color: var(--signal); }
 
-/* Said where it matters — the library and the work — never as page furniture. */
+/* Said where it matters, the library and the work, never as page furniture. */
 .notice {
   font: .78rem/1.6 var(--font-mono); color: var(--warn); max-width: var(--measure);
   border-left: 2px solid var(--warn); padding-left: .9rem; margin: 1.2rem 0 0;

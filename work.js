@@ -1,4 +1,4 @@
-/* cyberdelic.space — behaviour for one work.
+/* cyberdelic.space: behaviour for one work.
  *
  * Everything essential is already in the HTML. This adds the five-way view
  * switch, the hex dump, the local byte check, and verification against
@@ -120,14 +120,14 @@
 
   // ------------------------------------------------------- interactive work
 
-  /* An inscribed program is loaded as a real document, by URL — never through
+  /* An inscribed program is loaded as a real document, by URL, never through
    * srcdoc.
    *
    * A srcdoc (or blob:) frame INHERITS this page's Content-Security-Policy,
    * and this page forbids inline script and inline style. That silently blocks
    * the work's own <style> and <script>: the artwork loads but never draws. A
    * document fetched by URL carries its own policy instead, which the site
-   * serves from /content/ — sealed off from the network, but free to be the
+   * serves from /content/: sealed off from the network, but free to be the
    * program it is. The frame stays sandboxed either way, so it has an opaque
    * origin and cannot reach this page. */
 
@@ -155,7 +155,7 @@
       frame.setAttribute("sandbox", "allow-scripts");
       frame.setAttribute("referrerpolicy", "no-referrer");
       frame.setAttribute("loading", "eager");
-      frame.title = work.title + " — running in isolation";
+      frame.title = work.title + " (running in isolation)";
       frame.addEventListener("load", function () {
         if (mine === generation) {
           statusText.textContent = "Running · isolated · no network, no storage";

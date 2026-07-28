@@ -6,7 +6,7 @@
 <meta name="referrer" content="no-referrer">
 <meta http-equiv="Content-Security-Policy" content="default-src &#x27;none&#x27;; script-src &#x27;self&#x27;; style-src &#x27;self&#x27;; img-src &#x27;self&#x27; data:; font-src &#x27;self&#x27;; connect-src &#x27;self&#x27; https://mempool.space https://blockstream.info https://ordinals.com; frame-src &#x27;self&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;">
 <meta name="description" content="a decentralized imagination press">
-<title>Verify — cyberdelic.space</title>
+<title>Verify · cyberdelic.space</title>
 <link rel="stylesheet" href="../reader.css">
 <link rel="canonical" href="https://cyberdelic.space/">
 </head>
@@ -34,7 +34,7 @@ automatically, and the answer appears under the title of every work.</p>
 corrupted mirror, a file that has drifted from its record. It cannot catch
 deliberate substitution, because the digest is served by this website too:
 anyone able to change the bytes could change the digest to match. It is a
-consistency check, not a proof of honesty. For that, keep reading — the checks
+consistency check, not a proof of honesty. For that, keep reading. The checks
 below get their answer from Bitcoin instead of from us.</p>
 
 <h2>2. The transaction is real</h2>
@@ -49,10 +49,10 @@ transaction up there and see it exists.</p>
 <p>The <strong>Verify against Bitcoin</strong> button on each work does the
 real check. Your browser fetches the raw reveal transaction from independent
 public sources, confirms those sources returned identical bytes, reads the
-Ordinals envelope out of the Taproot witness itself — following the same rules
+Ordinals envelope out of the Taproot witness itself, following the same rules
 the <code>ord</code> software follows, including skipping the annex and taking
-the script immediately before the control block — and then compares the body
-found on chain with the bytes on your screen.</p>
+the script immediately before the control block. It then compares the body found
+on chain with the bytes on your screen.</p>
 
 <p>Nothing in that process is sent to this website, and the bytes it compares
 come from Bitcoin, not from us. One thing still rests on our word: which
@@ -68,7 +68,7 @@ the reveal transaction and read the inscription out of it directly:</p>
 <pre><code>bitcoin-cli getrawtransaction &lt;reveal txid&gt;</code></pre>
 
 <p>Take the witness of the inscription input. Drop the final element if it
-begins with <code>0x50</code> — that is the annex. The tapscript is the element
+begins with <code>0x50</code>, which is the annex. The tapscript is the element
 immediately before the control block. Inside it, find the envelope
 <code>OP_FALSE OP_IF "ord" … OP_ENDIF</code>, skip the header fields, and
 concatenate every push after the single empty push that separates headers from
@@ -89,7 +89,7 @@ compromised until it is explained.</p>
 </article>
 </main>
 <footer class="site">
-  <p>cyberdelic.space — works held in the Bitcoin blockchain, readable by
+  <p>cyberdelic.space. Works held in the Bitcoin blockchain, readable by
   anyone, verifiable without trusting this website.</p>
   <p><a href="../mirror/">Copy this library</a> ·
      <a href="../library.json">library.json</a> ·

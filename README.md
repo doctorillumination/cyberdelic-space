@@ -1,8 +1,8 @@
 # cyberdelic.space
 
-The published library of cyberdelic.space, a decentralized imagination press —
-2 works inscribed into the Bitcoin
-blockchain on mainnet.
+The published library of cyberdelic.space, a decentralized imagination press.
+It holds 2 works inscribed into the
+Bitcoin blockchain on mainnet.
 
 **This directory is generated.** It is the built output of the press's reader
 (`reader/build_site.py`), and it is also a mirror: everything needed to read the
@@ -27,7 +27,7 @@ transaction on your own Bitcoin node. The inscribed bytes themselves are under
 
 ## Copying this is encouraged
 
-A mirror holds no keys and no wallet, so it can never publish anything — it can
+A mirror holds no keys and no wallet, so it can never publish anything. It can
 only be checked against the chain. That asymmetry is why copying it freely is
 safe, and why a press that means what it says about permanence should want you
 to.

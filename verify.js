@@ -1,4 +1,4 @@
-/* cyberdelic.space — verification against Bitcoin, performed in your browser.
+/* cyberdelic.space: verification against Bitcoin, performed in your browser.
  *
  * A faithful port of the press's own node-only verifier (dip/script.py,
  * dip/bitcoin_tx.py, dip/envelope.py, dip/verify.py). It takes a raw reveal
@@ -126,7 +126,7 @@
    *
    * If the final element begins with 0x50 (and at least two elements exist) it
    * is the annex and is dropped first. The script is then the element
-   * immediately before the control block — never any other element, which is
+   * immediately before the control block, never any other element, which is
    * what stops a decoy envelope elsewhere in the witness being mistaken for
    * the inscription.
    */
