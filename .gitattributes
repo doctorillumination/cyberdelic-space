@@ -1,0 +1,4 @@
+# A clone of this repository must be byte-identical to what was
+# published, or its own verification will fail. Git's line-ending
+# translation is therefore disabled for every path here.
+* -text
