@@ -23,20 +23,20 @@
   color-scheme: light;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --canvas: #0b0d0b;
-    --surface: #111411;
-    --ink: #e4dfcf;
-    --ink-2: #a09a88;
-    --line: #232823;
-    --line-2: #363d35;
-    --signal: #d0a84f;
-    --ok: #75b27d;
-    --warn: #d5a950;
-    --danger: #d87363;
-    color-scheme: dark;
-  }
+/* Light is the default everywhere, whatever the operating system prefers.
+   Dark is a choice, made with the header toggle and remembered per device. */
+:root[data-theme="dark"] {
+  --canvas: #0b0d0b;
+  --surface: #111411;
+  --ink: #e4dfcf;
+  --ink-2: #a09a88;
+  --line: #232823;
+  --line-2: #363d35;
+  --signal: #d0a84f;
+  --ok: #75b27d;
+  --warn: #d5a950;
+  --danger: #d87363;
+  color-scheme: dark;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -80,6 +80,14 @@ header.site nav a {
   text-transform: uppercase; color: var(--ink-2);
 }
 header.site nav a:hover { color: var(--signal); }
+
+.theme-toggle {
+  font: .68rem/1 var(--font-mono); letter-spacing: var(--tracking);
+  text-transform: uppercase; cursor: pointer;
+  background: none; color: var(--ink-2); border: 1px solid var(--line-2);
+  padding: .5rem .7rem;
+}
+.theme-toggle:hover { color: var(--signal); border-color: var(--signal); }
 
 /* Said where it matters, the library and the work, never as page furniture. */
 .notice {
