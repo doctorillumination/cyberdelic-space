@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src &#x27;none&#x27;; script-src &#x27;self&#x27;; style-src &#x27;self&#x27;; img-src &#x27;self&#x27; data:; font-src &#x27;self&#x27;; connect-src &#x27;self&#x27; https://mempool.space https://blockstream.info https://ordinals.com; frame-src &#x27;self&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;">
+<meta name="description" content="Generative Art Poem">
+<title>Kenosha Kid #3 — cyberdelic.space</title>
+<link rel="stylesheet" href="../../reader.css">
+<link rel="canonical" href="https://cyberdelic.space/">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site">
+  <a class="wordmark" href="../../">cyberdelic.space<span>a decentralized imagination press</span></a>
+  <nav aria-label="Sections"><a href="../../">Library</a><a href="../../about/">About</a><a href="../../verify/">Verify</a><a href="../../mirror/">Mirror</a></nav>
+</header>
+<main id="main" tabindex="-1">
+<article class="work">
+<nav class="crumb"><a href="../../">← Library</a></nav>
+<header class="work-head">
+  <h1>Kenosha Kid #3</h1>
+  <p class="byline">Brad Necyk</p>
+  <p class="line">2026-07-26 ·
+    collectible ·
+    Original work by the named contributor(s).</p>
+  
+  <p class="status" id="integrity">Checking these bytes…</p>
+</header>
+<div class="views" role="tablist" aria-label="Ways of reading"><button type="button" role="tab" data-view="read" aria-controls="panel-read" aria-selected="true">Read</button><button type="button" role="tab" data-view="source" aria-controls="panel-source" aria-selected="false">Source</button><button type="button" role="tab" data-view="blockchain" aria-controls="panel-blockchain" aria-selected="false">Blockchain</button><button type="button" role="tab" data-view="hex" aria-controls="panel-hex" aria-selected="false">Hex</button><button type="button" role="tab" data-view="metadata" aria-controls="panel-metadata" aria-selected="false">Metadata</button></div>
+<section class="panel" id="panel-read" role="tabpanel" aria-label="Read">
+<h2 class="panel-title">Read</h2>
+<div class="interactive" data-content="../../content/e2f829d5e84c2b7d2a7c5c6aee70bdd9792fa2fd38505ee627d6f6cb9bc4b863i0/content.html">
+  <div class="frame-host"></div>
+  <div class="frame-controls">
+    <span class="frame-status" role="status" aria-live="polite">Loading…</span>
+    <span class="frame-buttons">
+      <button type="button" class="restart">Restart</button>
+      <button type="button" class="stop">Stop</button>
+    </span>
+  </div>
+  <noscript><p class="line">This work is a program, so it needs JavaScript to
+    run. <a href="../../content/e2f829d5e84c2b7d2a7c5c6aee70bdd9792fa2fd38505ee627d6f6cb9bc4b863i0/content.html">Download the exact bytes</a> to run it yourself.</p>
+  </noscript>
+</div>
+</section>
+<section class="panel" id="panel-source" role="tabpanel" aria-label="Source">
+<h2 class="panel-title">Source</h2>
+<pre class="source"><code>&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;&gt;
+  &lt;title&gt;Typist (No Errors)&lt;/title&gt;
+  &lt;style&gt;
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+      background: #000;
+    }
+    canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;canvas id=&quot;art&quot; aria-label=&quot;Kenosha Kid generative text artwork&quot;&gt;&lt;/canvas&gt;
+  &lt;script&gt;
+    (() =&gt; {
+      &quot;use strict&quot;;
+
+      const words = [&quot;You&quot;, &quot;never&quot;, &quot;did&quot;, &quot;the&quot;, &quot;Kenosha&quot;, &quot;Kid&quot;];
+      const punctuation = [&quot;.&quot;, &quot;,&quot;, &quot;!&quot;, &quot;?&quot;, &quot;:&quot;, &quot;;&quot;, &quot;...&quot;];
+      const minTypeDelay = 50;
+      const maxTypeDelay = 200;
+      const minDeleteDelay = 50;
+      const maxDeleteDelay = 150;
+      const sitDuration = 2000;
+      const TYPE = 0;
+      const SIT = 1;
+      const DELETE = 2;
+
+      const canvas = document.getElementById(&quot;art&quot;);
+      const context = canvas.getContext(&quot;2d&quot;);
+      let width = 0;
+      let height = 0;
+      let finalString = &quot;&quot;;
+      let typedSoFar = &quot;&quot;;
+      let state = TYPE;
+      let nextEventTime = 0;
+      let sitStartTime = 0;
+      let lastPaint = 0;
+
+      const randomNumber = (minimum, maximum) =&gt;
+        minimum + Math.random() * (maximum - minimum);
+      const randomItem = (items) =&gt;
+        items[Math.floor(Math.random() * items.length)];
+
+      function buildNewArrangement() {
+        const parts = [];
+        words.forEach((word, index) =&gt; {
+          if (Math.random() &lt; 0.5) parts.push(randomItem(punctuation));
+          parts.push(word);
+          if (Math.random() &lt; 0.5) parts.push(randomItem(punctuation));
+          if (index &lt; words.length - 1) parts.push(&quot; &quot;);
+        });
+        finalString = parts.join(&quot;&quot;);
+      }
+
+      function scheduleType(now) {
+        nextEventTime = now + randomNumber(minTypeDelay, maxTypeDelay);
+      }
+
+      function scheduleDelete(now) {
+        nextEventTime = now + randomNumber(minDeleteDelay, maxDeleteDelay);
+      }
+
+      function update(now) {
+        if (state === TYPE &amp;&amp; now &gt;= nextEventTime) {
+          if (typedSoFar.length &gt;= finalString.length) {
+            state = SIT;
+            sitStartTime = now;
+          } else {
+            typedSoFar += finalString.charAt(typedSoFar.length);
+            scheduleType(now);
+          }
+        } else if (state === SIT &amp;&amp; now - sitStartTime &gt;= sitDuration) {
+          state = DELETE;
+          scheduleDelete(now);
+        } else if (state === DELETE &amp;&amp; now &gt;= nextEventTime) {
+          if (typedSoFar.length === 0) {
+            buildNewArrangement();
+            state = TYPE;
+            scheduleType(now);
+          } else {
+            typedSoFar = typedSoFar.slice(0, -1);
+            scheduleDelete(now);
+          }
+        }
+      }
+
+      function paint() {
+        context.fillStyle = &quot;#000&quot;;
+        context.fillRect(0, 0, width, height);
+        context.font = &quot;16px monospace&quot;;
+        context.textAlign = &quot;center&quot;;
+        context.textBaseline = &quot;middle&quot;;
+        context.fillStyle = &quot;#00ff00&quot;;
+        context.fillText(typedSoFar, width / 2, height / 2);
+      }
+
+      function draw(now) {
+        update(now);
+        if (now - lastPaint &gt;= 1000 / 30) {
+          paint();
+          lastPaint = now;
+        }
+        requestAnimationFrame(draw);
+      }
+
+      function resize() {
+        const ratio = Math.min(window.devicePixelRatio || 1, 2);
+        width = window.innerWidth;
+        height = window.innerHeight;
+        canvas.width = Math.round(width * ratio);
+        canvas.height = Math.round(height * ratio);
+        context.setTransform(ratio, 0, 0, ratio, 0, 0);
+        paint();
+      }
+
+      window.addEventListener(&quot;resize&quot;, resize);
+      buildNewArrangement();
+      resize();
+      scheduleType(performance.now());
+      requestAnimationFrame(draw);
+    })();
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+</section>
+<section class="panel" id="panel-blockchain" role="tabpanel" aria-label="Blockchain">
+<h2 class="panel-title">Blockchain</h2>
+<table class="facts"><tr><th scope="row">Inscription</th><td><code class="id">e2f829d5e84c2b7d2a7c5c6aee70bdd9792fa2fd38505ee627d6f6cb9bc4b863i0</code></td></tr><tr><th scope="row">Reveal transaction</th><td><code class="id">e2f829d5e84c2b7d2a7c5c6aee70bdd9792fa2fd38505ee627d6f6cb9bc4b863</code></td></tr><tr><th scope="row">Commit transaction</th><td><code class="id">17d132e165f2d29fb7f1460d1f10c07898e765bd63b6dd98d10601d62d0d13a9</code></td></tr><tr><th scope="row">Block height</th><td>959740</td></tr><tr><th scope="row">Content digest (SHA-256)</th><td><code class="id">11e860d47d0f53ff34788d8e8d6bdddc92ac1622e7ec076410f9d5162f38ad07</code></td></tr><tr><th scope="row">Envelope digest (SHA-256)</th><td><code class="id">8f8d669a376ffd4456ea4a054735e3b9cb8786f7fa9fa9953bc46e7744696184</code></td></tr></table>
+<p class=out-row><a class="out" href="https://mempool.space/tx/e2f829d5e84c2b7d2a7c5c6aee70bdd9792fa2fd38505ee627d6f6cb9bc4b863" rel="noreferrer noopener" target="_blank">mempool.space ↗</a><a class="out" href="https://ordinals.com/inscription/e2f829d5e84c2b7d2a7c5c6aee70bdd9792fa2fd38505ee627d6f6cb9bc4b863i0" rel="noreferrer noopener" target="_blank">ordinals.com ↗</a></p>
+<h3 class="sub">Check it yourself</h3>
+<p class="line">Three ways, none of which have to trust this website.</p>
+<div class="copy-block">
+  <p class="copy-label">Hash the bytes an independent Ordinals index serves you</p>
+  <div class="copy-row">
+    <pre><code>curl -sL https://ordinals.com/content/e2f829d5e84c2b7d2a7c5c6aee70bdd9792fa2fd38505ee627d6f6cb9bc4b863i0 | shasum -a 256</code></pre>
+    <button type="button" class="copy" data-copy="curl -sL https://ordinals.com/content/e2f829d5e84c2b7d2a7c5c6aee70bdd9792fa2fd38505ee627d6f6cb9bc4b863i0 | shasum -a 256">Copy</button>
+  </div>
+  <p class="line">It must print <code class="id">11e860d47d0f53ff34788d8e8d6bdddc92ac1622e7ec076410f9d5162f38ad07</code> — the digest published above. (On Linux, <code>sha256sum</code>.)</p>
+</div><div class="copy-block">
+  <p class="copy-label">Ask your own Bitcoin node, trusting no index at all</p>
+  <div class="copy-row">
+    <pre><code>bitcoin-cli getrawtransaction e2f829d5e84c2b7d2a7c5c6aee70bdd9792fa2fd38505ee627d6f6cb9bc4b863</code></pre>
+    <button type="button" class="copy" data-copy="bitcoin-cli getrawtransaction e2f829d5e84c2b7d2a7c5c6aee70bdd9792fa2fd38505ee627d6f6cb9bc4b863">Copy</button>
+  </div>
+  <p class="line">Then read the inscription out of the witness yourself — <a href="../../verify/">the steps are here</a>.</p>
+</div>
+<div class="verify-box">
+  <button type="button" id="verify-chain">Verify in this browser</button>
+  <p class="line">Runs right here, on this page. Your browser fetches this
+  transaction from independent public sources, reads the inscription out of it
+  itself, and compares those bytes with the ones you are reading. Nothing is
+  sent to this website, and no answer from it is trusted.</p>
+  <div id="verify-out" class="verify-out" role="status" aria-live="polite"></div>
+</div>
+</section>
+<section class="panel" id="panel-hex" role="tabpanel" aria-label="Hex">
+<h2 class="panel-title">Hex</h2>
+<pre class="hexdump" id="hexdump"><code>The hex view needs JavaScript. The exact bytes are always downloadable.</code></pre>
+</section>
+<section class="panel" id="panel-metadata" role="tabpanel" aria-label="Metadata">
+<h2 class="panel-title">Metadata</h2>
+<table class="facts"><tr><th scope="row">Title</th><td>Kenosha Kid #3</td></tr><tr><th scope="row">Date</th><td>2026-07-26</td></tr><tr><th scope="row">Edition</th><td>1/1</td></tr><tr><th scope="row">Contributions</th><td><ul class=plain><li>Brad Necyk <span class="line">authorship</span></li></ul></td></tr><tr><th scope="row">Rights</th><td>Original work by the named contributor(s).</td></tr><tr><th scope="row">Rights basis</th><td>original</td></tr><tr><th scope="row">Provenance</th><td>Generative Art Poem</td></tr><tr><th scope="row">Publication class</th><td>collectible</td></tr><tr><th scope="row">Market policy</th><td>listable</td></tr><tr><th scope="row">Transfer policy</th><td>transferable</td></tr><tr><th scope="row">Lineage</th><td>independent</td></tr><tr><th scope="row">Content type</th><td>text/html;charset=utf-8</td></tr><tr><th scope="row">Content length</th><td>3904 bytes</td></tr><tr><th scope="row">Metadata digest (SHA-256)</th><td><code class="id">2579bae26098619d9875bed3e4c66e05832bdc08767b0229768d40a02be5adcd</code></td></tr></table>
+</section>
+<footer class="work-foot">
+  <a href="../../content/e2f829d5e84c2b7d2a7c5c6aee70bdd9792fa2fd38505ee627d6f6cb9bc4b863i0/content.html" download>Download the exact bytes</a>
+  <a href="../../library.json">This library as JSON</a>
+</footer>
+</article>
+<script type="application/json" id="work-data">{"ai_disclosure": null, "chain": {"commit_txid": "17d132e165f2d29fb7f1460d1f10c07898e765bd63b6dd98d10601d62d0d13a9", "genesis_height": 959740, "parents": [], "reveal_txid": "e2f829d5e84c2b7d2a7c5c6aee70bdd9792fa2fd38505ee627d6f6cb9bc4b863", "sat": null}, "confirmed_by": "mempool.space", "content_file": "content.html", "content_length": 3904, "content_path": "content/e2f829d5e84c2b7d2a7c5c6aee70bdd9792fa2fd38505ee627d6f6cb9bc4b863i0/content.html", "content_type": "text/html;charset=utf-8", "content_url": "../../content/e2f829d5e84c2b7d2a7c5c6aee70bdd9792fa2fd38505ee627d6f6cb9bc4b863i0/content.html", "contributions": [{"name": "Brad Necyk", "role": "authorship"}], "date": "2026-07-26", "digests": {"content_sha256": "11e860d47d0f53ff34788d8e8d6bdddc92ac1622e7ec076410f9d5162f38ad07", "envelope_sha256": "8f8d669a376ffd4456ea4a054735e3b9cb8786f7fa9fa9953bc46e7744696184", "metadata_cbor_sha256": "2579bae26098619d9875bed3e4c66e05832bdc08767b0229768d40a02be5adcd"}, "edition": "1/1", "inscription_id": "e2f829d5e84c2b7d2a7c5c6aee70bdd9792fa2fd38505ee627d6f6cb9bc4b863i0", "lineage_intent": "independent", "market_policy": "listable", "network": "mainnet", "provenance": "Generative Art Poem", "publication_class": "collectible", "published": "2026-07-26T19:21:12.194992+00:00", "raw_reveal_available": true, "rights": "Original work by the named contributor(s).", "rights_basis": "original", "textual": true, "title": "Kenosha Kid #3", "transfer_policy": "transferable", "verification_state": "verified"}</script>
+</main>
+<footer class="site">
+  <p>cyberdelic.space — works held in the Bitcoin blockchain, readable by
+  anyone, verifiable without trusting this website.</p>
+  <p><a href="../../mirror/">Copy this library</a> ·
+     <a href="../../library.json">library.json</a> ·
+     <a href="../../verify/">How verification works</a></p>
+</footer>
+<script src="../../verify.js" defer></script><script src="../../work.js" defer></script></body>
+</html>

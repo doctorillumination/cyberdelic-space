@@ -1,0 +1,97 @@
+{
+  "network": "mainnet",
+  "press": "cyberdelic.space",
+  "schema": "https://cyberdelic.space/schemas/public-reader-library-v1.json",
+  "site_version": "1.0.0",
+  "work_count": 2,
+  "works": [
+    {
+      "ai_disclosure": null,
+      "chain": {
+        "commit_txid": "17d132e165f2d29fb7f1460d1f10c07898e765bd63b6dd98d10601d62d0d13a9",
+        "genesis_height": 959740,
+        "parents": [],
+        "reveal_txid": "e2f829d5e84c2b7d2a7c5c6aee70bdd9792fa2fd38505ee627d6f6cb9bc4b863",
+        "sat": null
+      },
+      "confirmed_by": "mempool.space",
+      "content_file": "content.html",
+      "content_length": 3904,
+      "content_path": "content/e2f829d5e84c2b7d2a7c5c6aee70bdd9792fa2fd38505ee627d6f6cb9bc4b863i0/content.html",
+      "content_type": "text/html;charset=utf-8",
+      "contributions": [
+        {
+          "name": "Brad Necyk",
+          "role": "authorship"
+        }
+      ],
+      "date": "2026-07-26",
+      "digests": {
+        "content_sha256": "11e860d47d0f53ff34788d8e8d6bdddc92ac1622e7ec076410f9d5162f38ad07",
+        "envelope_sha256": "8f8d669a376ffd4456ea4a054735e3b9cb8786f7fa9fa9953bc46e7744696184",
+        "metadata_cbor_sha256": "2579bae26098619d9875bed3e4c66e05832bdc08767b0229768d40a02be5adcd"
+      },
+      "edition": "1/1",
+      "inscription_id": "e2f829d5e84c2b7d2a7c5c6aee70bdd9792fa2fd38505ee627d6f6cb9bc4b863i0",
+      "lineage_intent": "independent",
+      "market_policy": "listable",
+      "network": "mainnet",
+      "provenance": "Generative Art Poem",
+      "publication_class": "collectible",
+      "published": "2026-07-26T19:21:12.194992+00:00",
+      "raw_reveal_available": true,
+      "rights": "Original work by the named contributor(s).",
+      "rights_basis": "original",
+      "textual": true,
+      "title": "Kenosha Kid #3",
+      "transfer_policy": "transferable",
+      "verification_state": "verified"
+    },
+    {
+      "ai_disclosure": null,
+      "chain": {
+        "commit_txid": "46243a93f3f16b11b4678e7db96dd6e00a15bdf75e3ea0504838f270ca984c64",
+        "genesis_height": 958814,
+        "parents": [],
+        "reveal_txid": "8512c8e476aa5d0b0876a0d6ee083b208db13d01e31e083d40f978f418ebbf66",
+        "sat": null
+      },
+      "confirmed_by": "mempool.space",
+      "content_file": "content.txt",
+      "content_length": 174,
+      "content_path": "content/8512c8e476aa5d0b0876a0d6ee083b208db13d01e31e083d40f978f418ebbf66i0/content.txt",
+      "content_type": "text/plain;charset=utf-8",
+      "contributions": [
+        {
+          "name": "Marshall McLuhan",
+          "role": "quoted_author"
+        },
+        {
+          "name": "Dew Line Press",
+          "role": "inscription"
+        }
+      ],
+      "date": "2026-07-19",
+      "digests": {
+        "content_sha256": "723b8afa0745f79da05079f154af0b8cce29f4deaac5091ebe4ccde4aa496f96",
+        "envelope_sha256": "c29e7a70d94b9fa4629cf7d09a1b7b5de07fd98e3c2cc5867983b7f839e5e91e",
+        "metadata_cbor_sha256": "723e9df8a3b22472ecc607cca6a70711c5023e53c70923e4029a631981250da9"
+      },
+      "edition": "1/1",
+      "inscription_id": "8512c8e476aa5d0b0876a0d6ee083b208db13d01e31e083d40f978f418ebbf66i0",
+      "lineage_intent": "independent",
+      "market_policy": "never_list",
+      "network": "mainnet",
+      "provenance": "Note on art, attention, and culture",
+      "publication_class": "public_memory",
+      "published": "2026-07-20T03:31:33.048775+00:00",
+      "raw_reveal_available": true,
+      "rights": "Quotation attributed to the named contributor(s).",
+      "rights_basis": "quotation_fair_use",
+      "textual": true,
+      "title": "ART AS DISTANT EARLY WARNING",
+      "transfer_policy": "stewardship",
+      "verification_state": "verified"
+    }
+  ]
+}
