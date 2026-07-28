@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Typist (No Errors)</title>
+  <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+      background: #000;
+    }
+    canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="art" aria-label="Kenosha Kid generative text artwork"></canvas>
+  <script>
+    (() => {
+      "use strict";
+
+      const words = ["You", "never", "did", "the", "Kenosha", "Kid"];
+      const punctuation = [".", ",", "!", "?", ":", ";", "..."];
+      const minTypeDelay = 50;
+      const maxTypeDelay = 200;
+      const minDeleteDelay = 50;
+      const maxDeleteDelay = 150;
+      const sitDuration = 2000;
+      const TYPE = 0;
+      const SIT = 1;
+      const DELETE = 2;
+
+      const canvas = document.getElementById("art");
+      const context = canvas.getContext("2d");
+      let width = 0;
+      let height = 0;
+      let finalString = "";
+      let typedSoFar = "";
+      let state = TYPE;
+      let nextEventTime = 0;
+      let sitStartTime = 0;
+      let lastPaint = 0;
+
+      const randomNumber = (minimum, maximum) =>
+        minimum + Math.random() * (maximum - minimum);
+      const randomItem = (items) =>
+        items[Math.floor(Math.random() * items.length)];
+
+      function buildNewArrangement() {
+        const parts = [];
+        words.forEach((word, index) => {
+          if (Math.random() < 0.5) parts.push(randomItem(punctuation));
+          parts.push(word);
+          if (Math.random() < 0.5) parts.push(randomItem(punctuation));
+          if (index < words.length - 1) parts.push(" ");
+        });
+        finalString = parts.join("");
+      }
+
+      function scheduleType(now) {
+        nextEventTime = now + randomNumber(minTypeDelay, maxTypeDelay);
+      }
+
+      function scheduleDelete(now) {
+        nextEventTime = now + randomNumber(minDeleteDelay, maxDeleteDelay);
+      }
+
+      function update(now) {
+        if (state === TYPE && now >= nextEventTime) {
+          if (typedSoFar.length >= finalString.length) {
+            state = SIT;
+            sitStartTime = now;
+          } else {
+            typedSoFar += finalString.charAt(typedSoFar.length);
+            scheduleType(now);
+          }
+        } else if (state === SIT && now - sitStartTime >= sitDuration) {
+          state = DELETE;
+          scheduleDelete(now);
+        } else if (state === DELETE && now >= nextEventTime) {
+          if (typedSoFar.length === 0) {
+            buildNewArrangement();
+            state = TYPE;
+            scheduleType(now);
+          } else {
+            typedSoFar = typedSoFar.slice(0, -1);
+            scheduleDelete(now);
+          }
+        }
+      }
+
+      function paint() {
+        context.fillStyle = "#000";
+        context.fillRect(0, 0, width, height);
+        context.font = "16px monospace";
+        context.textAlign = "center";
+        context.textBaseline = "middle";
+        context.fillStyle = "#00ff00";
+        context.fillText(typedSoFar, width / 2, height / 2);
+      }
+
+      function draw(now) {
+        update(now);
+        if (now - lastPaint >= 1000 / 30) {
+          paint();
+          lastPaint = now;
+        }
+        requestAnimationFrame(draw);
+      }
+
+      function resize() {
+        const ratio = Math.min(window.devicePixelRatio || 1, 2);
+        width = window.innerWidth;
+        height = window.innerHeight;
+        canvas.width = Math.round(width * ratio);
+        canvas.height = Math.round(height * ratio);
+        context.setTransform(ratio, 0, 0, ratio, 0, 0);
+        paint();
+      }
+
+      window.addEventListener("resize", resize);
+      buildNewArrangement();
+      resize();
+      scheduleType(performance.now());
+      requestAnimationFrame(draw);
+    })();
+  </script>
+</body>
+</html>
