@@ -3,8 +3,50 @@
   "press": "cyberdelic.space",
   "schema": "https://cyberdelic.space/schemas/public-reader-library-v1.json",
   "site_version": "1.0.0",
-  "work_count": 2,
+  "work_count": 3,
   "works": [
+    {
+      "ai_disclosure": null,
+      "chain": {
+        "commit_txid": "3659746e80fd30f297bb1e97c2f34efd0cfbd23379506978e1c643e279a9bfde",
+        "genesis_height": 960025,
+        "parents": [],
+        "reveal_txid": "12454fe092a14d85c54bb5cc997059f24dc741ab1328b7dc7627f42bd8073f4a",
+        "sat": null
+      },
+      "confirmed_by": "mempool.space",
+      "content_file": "content.js",
+      "content_length": 823763,
+      "content_path": "content/12454fe092a14d85c54bb5cc997059f24dc741ab1328b7dc7627f42bd8073f4ai0/content.js",
+      "content_type": "text/javascript",
+      "contributions": [
+        {
+          "name": "p5.js contributors",
+          "role": "composition"
+        }
+      ],
+      "date": "2026-07-28",
+      "digests": {
+        "content_sha256": "99d4ec2bccfe96ab491b17b260b96d21d7769440d11b8e613e394f2802b7b1dd",
+        "envelope_sha256": "c0f7e5a20754d6cda2d01249f6ef627482e3423c86a38d6d60e03c52ea898d89",
+        "metadata_cbor_sha256": "bc025fbae44494986ab2177eed3be7c5c4883c5bc73b2d9df230f29ed45189c5"
+      },
+      "edition": "shared dependency",
+      "inscription_id": "12454fe092a14d85c54bb5cc997059f24dc741ab1328b7dc7627f42bd8073f4ai0",
+      "lineage_intent": "independent",
+      "market_policy": "never_list",
+      "network": "mainnet",
+      "provenance": "Exact upstream distribution vendored and SHA-256 pinned by cyberdelic.space for recursive generative-art inscriptions. Upstream: https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.min.js; sha256:99d4ec2bccfe96ab491b17b260b96d21d7769440d11b8e613e394f2802b7b1dd.",
+      "publication_class": "public_memory",
+      "published": "2026-07-28T16:43:11.052795+00:00",
+      "raw_reveal_available": true,
+      "rights": "GNU Lesser General Public License v2.1",
+      "rights_basis": "licensed",
+      "textual": true,
+      "title": "p5.js 1.4.2 · cyberdelic.space shared runtime",
+      "transfer_policy": "stewardship",
+      "verification_state": "verified"
+    },
     {
       "ai_disclosure": null,
       "chain": {

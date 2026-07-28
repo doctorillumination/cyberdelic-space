@@ -364,6 +364,40 @@ ul.plain .line { display: inline; font-size: .75rem; }
 .prose ol, .prose ul { padding-left: 1.2rem; }
 .prose li { margin-bottom: .5rem; }
 
+.prose blockquote {
+  margin: 2rem 0; padding: .2rem 0 .2rem 1.4rem;
+  border-left: 2px solid var(--signal);
+}
+.prose blockquote p {
+  font-size: 1.15rem; line-height: 1.7; font-style: italic; margin: 0 0 .6rem;
+}
+.prose blockquote cite {
+  font: .7rem/1 var(--font-mono); letter-spacing: var(--tracking);
+  text-transform: uppercase; color: var(--ink-2); font-style: normal;
+}
+
+/* A definition, set like an entry in a field guide. */
+.defn {
+  margin: 1.6rem 0; padding: 1rem 1.2rem; background: var(--surface);
+  border: 1px solid var(--line); font-family: var(--font-editorial);
+  font-size: 1rem; line-height: 1.7;
+}
+.defn span {
+  display: block; font: .68rem/1 var(--font-mono);
+  letter-spacing: var(--tracking); text-transform: uppercase;
+  color: var(--signal); margin-bottom: .5rem;
+}
+
+/* The first inscription, shown the way the genesis block is shown. */
+.genesis { margin: 2rem 0; }
+.genesis pre {
+  font-size: .72rem; line-height: 1.7; max-height: none;
+}
+.genesis figcaption {
+  font-size: .8rem; color: var(--ink-2); margin-top: .8rem;
+  line-height: 1.6; max-width: var(--measure);
+}
+
 @media (max-width: 40rem) {
   header.site { gap: .8rem 1.2rem; }
   .views button { padding: .8rem .7rem; }
