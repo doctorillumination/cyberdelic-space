@@ -351,7 +351,9 @@ ul.plain .line { display: inline; font-size: .75rem; }
 
 /* ----------------------------------------------------------------- prose */
 
-.prose { max-width: var(--measure); }
+/* Essay pages read wider than the works: the works' narrow measure suits a
+   poem, but About/Verify/Mirror are prose and were cramped at 34rem. */
+.prose { max-width: 42rem; }
 .prose h1 {
   font: 400 clamp(2rem, 5.5vw, 3rem)/1.1 var(--font-editorial);
   margin: 0 0 1.5rem;
@@ -403,7 +405,7 @@ ul.plain .line { display: inline; font-size: .75rem; }
 }
 .genesis figcaption {
   font-size: .8rem; color: var(--ink-2); margin-top: .8rem;
-  line-height: 1.6; max-width: var(--measure);
+  line-height: 1.6; max-width: 42rem;    /* matches the prose measure */
 }
 
 @media (max-width: 40rem) {
