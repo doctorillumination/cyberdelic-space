@@ -61,10 +61,16 @@ a:hover { color: var(--signal); }
 
 /* ------------------------------------------------------------- structure */
 
-header.site {
+/* The rules span the full width; what sits on them does not. Header and
+   footer contents share the page body's column, so one left edge runs the
+   whole height of the page instead of the chrome starting 233px outside it. */
+header.site { border-bottom: 1px solid var(--line); }
+header.site .bar, footer.site .bar {
+  max-width: 60rem; margin-inline: auto;
+}
+header.site .bar {
   display: flex; flex-wrap: wrap; gap: 1rem 2rem; align-items: baseline;
   padding: 1.6rem clamp(1.2rem, 5vw, 4rem);
-  border-bottom: 1px solid var(--line);
 }
 .wordmark {
   text-decoration: none; font-weight: 600; letter-spacing: var(--tracking);
@@ -103,8 +109,8 @@ main:focus { outline: none; }
 
 footer.site {
   border-top: 1px solid var(--line); color: var(--ink-2); font-size: .8rem;
-  padding: 2rem clamp(1.2rem, 5vw, 4rem) 4rem;
 }
+footer.site .bar { padding: 2rem clamp(1.2rem, 5vw, 4rem) 4rem; }
 footer.site p { max-width: var(--measure); margin: .4rem 0; }
 
 /* ---------------------------------------------------------------- library */
@@ -473,7 +479,7 @@ ul.plain .line { display: inline; font-size: .75rem; }
 }
 
 @media (max-width: 40rem) {
-  header.site { gap: .8rem 1.2rem; }
+  header.site .bar { gap: .8rem 1.2rem; }
   .views button { padding: .8rem .7rem; }
   .views button:first-child { padding-left: 0; }
   .facts th { width: auto; white-space: normal; display: block;
