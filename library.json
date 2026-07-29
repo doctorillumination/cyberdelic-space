@@ -1,8 +1,20 @@
 {
+  "eras": [
+    {
+      "closing_height": null,
+      "name": "Incunabula",
+      "number": 0,
+      "opening_height": 958814,
+      "slug": "incunabula"
+    }
+  ],
   "network": "mainnet",
   "press": "cyberdelic.space",
-  "schema": "https://cyberdelic.space/schemas/public-reader-library-v1.json",
-  "site_version": "1.0.0",
+  "schema": "https://cyberdelic.space/schemas/public-reader-library-v2.json",
+  "site_version": "1.1.0",
+  "vocabulary": {
+    "version": "0.1"
+  },
   "work_count": 3,
   "works": [
     {
@@ -32,6 +44,23 @@
         "metadata_cbor_sha256": "bc025fbae44494986ab2177eed3be7c5c4883c5bc73b2d9df230f29ed45189c5"
       },
       "edition": "shared dependency",
+      "era": {
+        "name": "Incunabula",
+        "number": 0,
+        "slug": "incunabula"
+      },
+      "facet_source": "library",
+      "facets": {
+        "form": [
+          "source-code"
+        ],
+        "register": [],
+        "theme": [
+          "technology",
+          "emergence"
+        ],
+        "world": []
+      },
       "inscription_id": "12454fe092a14d85c54bb5cc997059f24dc741ab1328b7dc7627f42bd8073f4ai0",
       "lineage_intent": "independent",
       "market_policy": "never_list",
@@ -42,6 +71,7 @@
       "raw_reveal_available": true,
       "rights": "GNU Lesser General Public License v2.1",
       "rights_basis": "licensed",
+      "subjects": [],
       "textual": true,
       "title": "p5.js 1.4.2 · cyberdelic.space shared runtime",
       "transfer_policy": "stewardship",
@@ -74,6 +104,26 @@
         "metadata_cbor_sha256": "2579bae26098619d9875bed3e4c66e05832bdc08767b0229768d40a02be5adcd"
       },
       "edition": "1/1",
+      "era": {
+        "name": "Incunabula",
+        "number": 0,
+        "slug": "incunabula"
+      },
+      "facet_source": "library",
+      "facets": {
+        "form": [
+          "generative-art"
+        ],
+        "register": [
+          "play"
+        ],
+        "theme": [
+          "language",
+          "emergence",
+          "dream"
+        ],
+        "world": []
+      },
       "inscription_id": "e2f829d5e84c2b7d2a7c5c6aee70bdd9792fa2fd38505ee627d6f6cb9bc4b863i0",
       "lineage_intent": "independent",
       "market_policy": "listable",
@@ -84,6 +134,7 @@
       "raw_reveal_available": true,
       "rights": "Original work by the named contributor(s).",
       "rights_basis": "original",
+      "subjects": [],
       "textual": true,
       "title": "Kenosha Kid #3",
       "transfer_policy": "transferable",
@@ -120,6 +171,26 @@
         "metadata_cbor_sha256": "723e9df8a3b22472ecc607cca6a70711c5023e53c70923e4029a631981250da9"
       },
       "edition": "1/1",
+      "era": {
+        "name": "Incunabula",
+        "number": 0,
+        "slug": "incunabula"
+      },
+      "facet_source": "library",
+      "facets": {
+        "form": [
+          "quotation"
+        ],
+        "register": [
+          "waking-argument"
+        ],
+        "theme": [
+          "imagination",
+          "technology",
+          "perception"
+        ],
+        "world": []
+      },
       "inscription_id": "8512c8e476aa5d0b0876a0d6ee083b208db13d01e31e083d40f978f418ebbf66i0",
       "lineage_intent": "independent",
       "market_policy": "never_list",
@@ -130,6 +201,7 @@
       "raw_reveal_available": true,
       "rights": "Quotation attributed to the named contributor(s).",
       "rights_basis": "quotation_fair_use",
+      "subjects": [],
       "textual": true,
       "title": "ART AS DISTANT EARLY WARNING",
       "transfer_policy": "stewardship",
