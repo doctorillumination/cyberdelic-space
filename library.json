@@ -15,8 +15,81 @@
   "vocabulary": {
     "version": "0.1"
   },
-  "work_count": 3,
+  "work_count": 4,
   "works": [
+    {
+      "ai_disclosure": null,
+      "chain": {
+        "commit_txid": "c57bbe9c8a3a4c2a9e4853db27c10ab67f30b2d7adc5cc66361ada3617ab389c",
+        "genesis_height": 960320,
+        "parents": [],
+        "reveal_txid": "ebf4acbfa5184b89acaf66cb888a3af3e54191d1fa7563047b14c1fc53a3156a",
+        "sat": null
+      },
+      "confirmed_by": "mempool.space",
+      "content_file": "content.txt",
+      "content_length": 187,
+      "content_path": "content/ebf4acbfa5184b89acaf66cb888a3af3e54191d1fa7563047b14c1fc53a3156ai0/content.txt",
+      "content_type": "text/plain;charset=utf-8",
+      "contributions": [
+        {
+          "name": "Terence McKenna",
+          "role": "quoted_author"
+        }
+      ],
+      "date": "2026-07-30",
+      "digests": {
+        "content_sha256": "18ef9a5169409611229d1aeddd5a504f0d90f16b7dd5fbf967c33a72f4cf850c",
+        "envelope_sha256": "7eee3f1730bb1db5dce640910d0c97011468a42e39f469b52b59498dd6f9339a",
+        "metadata_cbor_sha256": "105b94601d8485f8ffae2d1008d7e5b24a0f1f488cb27aad09641ea9306b7f71"
+      },
+      "edition": "1/1",
+      "era": {
+        "name": "Incunabula",
+        "number": 0,
+        "slug": "incunabula"
+      },
+      "facet_source": "inscribed",
+      "facets": {
+        "form": [
+          "quotation"
+        ],
+        "register": [
+          "dream-logic"
+        ],
+        "theme": [
+          "psychedelics",
+          "artificial-intelligence",
+          "imagination",
+          "language",
+          "consciousness"
+        ],
+        "world": []
+      },
+      "inscription_id": "ebf4acbfa5184b89acaf66cb888a3af3e54191d1fa7563047b14c1fc53a3156ai0",
+      "lineage_intent": "independent",
+      "market_policy": "never_list",
+      "network": "mainnet",
+      "provenance": "Poem on art, attention, and care.",
+      "publication_class": "public_memory",
+      "published": "2026-07-30T22:11:08.293466+00:00",
+      "raw_reveal_available": true,
+      "rights": "Quotation attributed to the named contributor(s).",
+      "rights_basis": "quotation_fair_use",
+      "subjects": [
+        "form:quotation",
+        "theme:psychedelics",
+        "theme:artificial-intelligence",
+        "theme:imagination",
+        "theme:language",
+        "theme:consciousness",
+        "register:dream-logic"
+      ],
+      "textual": true,
+      "title": "The world is made of words",
+      "transfer_policy": "stewardship",
+      "verification_state": "verified"
+    },
     {
       "ai_disclosure": null,
       "chain": {

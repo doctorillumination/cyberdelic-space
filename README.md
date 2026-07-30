@@ -1,7 +1,7 @@
 # cyberdelic.space
 
 The published library of cyberdelic.space, a decentralized imagination press.
-It holds 3 works inscribed into the
+It holds 4 works inscribed into the
 Bitcoin blockchain on mainnet.
 
 **This directory is generated.** It is the built output of the press's reader
