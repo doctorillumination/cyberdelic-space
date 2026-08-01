@@ -289,6 +289,39 @@ footer.site p { max-width: var(--measure); margin: .4rem 0; }
   font: 1.2rem/1.85 var(--font-editorial); white-space: pre-wrap;
   overflow-wrap: anywhere; max-width: var(--measure); margin: 0;
 }
+.markdown-reading { white-space: normal; }
+.markdown-reading .markdown-source {
+  white-space: pre-wrap; overflow-wrap: anywhere; margin: 0;
+  font: inherit; color: inherit;
+}
+.markdown-body { font: inherit; color: inherit; }
+.markdown-body > :first-child { margin-top: 0; }
+.markdown-body > :last-child { margin-bottom: 0; }
+.markdown-body h1, .markdown-body h2, .markdown-body h3,
+.markdown-body h4, .markdown-body h5, .markdown-body h6 {
+  font-family: var(--font-sans); color: var(--ink); line-height: 1.18;
+  letter-spacing: -.015em; margin: 1.7em 0 .65em;
+}
+.markdown-body h1 { font-size: 2rem; }
+.markdown-body h2 { font-size: 1.55rem; }
+.markdown-body h3 { font-size: 1.22rem; }
+.markdown-body h4, .markdown-body h5, .markdown-body h6 { font-size: 1rem; }
+.markdown-body p { margin: 0 0 1.15em; }
+.markdown-body ul, .markdown-body ol { margin: 0 0 1.2em; padding-left: 1.5em; }
+.markdown-body li { margin: .3em 0; padding-left: .2em; }
+.markdown-body hr { border: 0; border-top: 1px solid var(--line); margin: 2.2em 0; }
+.markdown-body blockquote { margin: 1.5em 0; padding: .15em 0 .15em 1.2em;
+  border-left: 2px solid var(--line-2); color: var(--ink-2); }
+.markdown-body code { font: .84em/1.5 var(--font-mono); padding: .08em .28em;
+  border: 1px solid var(--line); background: var(--surface); }
+.markdown-body pre { margin: 1.4em 0; padding: 1em; overflow-x: auto;
+  white-space: pre; border: 1px solid var(--line); background: var(--surface); }
+.markdown-body pre code { padding: 0; border: 0; background: none; }
+.markdown-body a { color: var(--signal); text-underline-offset: .18em; }
+.markdown-center { text-align: center; margin: 2em 0; }
+.markdown-image-reference { display: inline-block; padding: .2em .5em;
+  border: 1px solid var(--line); color: var(--ink-2);
+  font: .78em/1.4 var(--font-sans); }
 .art img { max-width: 100%; height: auto; }
 .art { margin: 0; }
 

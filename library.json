@@ -15,8 +15,85 @@
   "vocabulary": {
     "version": "0.1"
   },
-  "work_count": 4,
+  "work_count": 5,
   "works": [
+    {
+      "ai_disclosure": null,
+      "chain": {
+        "commit_txid": "631d0c880e3f7d1bb7533693ce62552e8f6319ea100bf396d086464f7625e437",
+        "genesis_height": 960598,
+        "parents": [],
+        "reveal_txid": "8c7c6dec89095f7299b483a7549a8fb801134dbcbd0bc5959b0e323f968200bb",
+        "sat": null
+      },
+      "confirmed_by": "mempool.space",
+      "content_file": "content.md",
+      "content_length": 10119,
+      "content_path": "content/8c7c6dec89095f7299b483a7549a8fb801134dbcbd0bc5959b0e323f968200bbi0/content.md",
+      "content_type": "text/markdown;charset=utf-8",
+      "contributions": [
+        {
+          "name": "Jason Silva",
+          "role": "authorship"
+        },
+        {
+          "name": "Brad Necyk",
+          "role": "authorship"
+        }
+      ],
+      "date": "2026-08-01",
+      "digests": {
+        "content_sha256": "74a0dd3bcf26fd0424426ed316d9d6c27ab8a42eb20204dbf4ddd13a80db283a",
+        "envelope_sha256": "4accd5a9d75ce482f8235ebd22a87032089739056a6fa48c5e9d7e24351373a1",
+        "metadata_cbor_sha256": "63b461d9c12536a08d2af71990b687b3e88c5822ebcb3583a2fcc25724cdc424"
+      },
+      "edition": "1/10",
+      "era": {
+        "name": "Incunabula",
+        "number": 0,
+        "slug": "incunabula"
+      },
+      "facet_source": "inscribed",
+      "facets": {
+        "form": [
+          "manifesto"
+        ],
+        "register": [
+          "play"
+        ],
+        "theme": [
+          "psychedelics",
+          "artificial-intelligence",
+          "imagination",
+          "embodiment",
+          "dream"
+        ],
+        "world": []
+      },
+      "inscription_id": "8c7c6dec89095f7299b483a7549a8fb801134dbcbd0bc5959b0e323f968200bbi0",
+      "lineage_intent": "independent",
+      "market_policy": "listable",
+      "network": "mainnet",
+      "provenance": "Studio Manifesto",
+      "publication_class": "collectible",
+      "published": "2026-08-01T17:12:12.832694+00:00",
+      "raw_reveal_available": true,
+      "rights": "Original work by the named contributor(s).",
+      "rights_basis": "original",
+      "subjects": [
+        "form:manifesto",
+        "theme:psychedelics",
+        "theme:artificial-intelligence",
+        "theme:imagination",
+        "theme:embodiment",
+        "theme:dream",
+        "register:play"
+      ],
+      "textual": true,
+      "title": "Sanctioned Elsewhere Manifesto",
+      "transfer_policy": "transferable",
+      "verification_state": "verified"
+    },
     {
       "ai_disclosure": null,
       "chain": {

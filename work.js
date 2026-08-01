@@ -12,6 +12,15 @@
   var work = data ? JSON.parse(data.textContent) : null;
   if (!work) return;
 
+  var markdown = document.querySelector("[data-markdown]");
+  if (markdown && window.DEWMarkdown) {
+    var markdownSource = markdown.querySelector(".markdown-source");
+    var renderedMarkdown = window.DEWMarkdown.render(
+      markdownSource ? markdownSource.textContent : "");
+    while (markdown.firstChild) markdown.removeChild(markdown.firstChild);
+    markdown.appendChild(renderedMarkdown);
+  }
+
   var tabs = Array.prototype.slice.call(
     document.querySelectorAll('.views button[data-view]'));
   var panels = {};
