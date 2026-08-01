@@ -19,7 +19,11 @@
   --font-mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas,
     "Liberation Mono", monospace;
   --tracking: 0.12em;
-  --measure: 34rem;
+  /* The reading measure. Widening a column without growing the type just
+     makes lines harder to track, so every widening here is paid for with a
+     larger face: the characters per line stay near seventy, the column
+     stops leaving half the screen empty. */
+  --measure: 42rem;
   color-scheme: light;
 }
 
@@ -66,7 +70,7 @@ a:hover { color: var(--signal); }
    whole height of the page instead of the chrome starting 233px outside it. */
 header.site { border-bottom: 1px solid var(--line); }
 header.site .bar, footer.site .bar {
-  max-width: 60rem; margin-inline: auto;
+  max-width: 68rem; margin-inline: auto;
 }
 header.site .bar {
   display: flex; flex-wrap: wrap; gap: 1rem 2rem; align-items: baseline;
@@ -102,7 +106,7 @@ header.site nav a:hover { color: var(--signal); }
 }
 
 main {
-  max-width: 60rem; margin: 0 auto;
+  max-width: 68rem; margin: 0 auto;
   padding: clamp(2.5rem, 7vw, 5rem) clamp(1.2rem, 5vw, 4rem) 5rem;
 }
 main:focus { outline: none; }
@@ -178,7 +182,7 @@ footer.site p { max-width: var(--measure); margin: .4rem 0; }
   font-family: var(--font-editorial); font-style: italic;
 }
 .excerpt {
-  font-family: var(--font-editorial); margin: 0 0 .8rem;
+  font-family: var(--font-editorial); font-size: 1.1rem; margin: 0 0 .8rem;
   max-width: var(--measure); color: var(--ink);
 }
 .card .line { margin: 0; font: .7rem/1.4 var(--font-mono);
@@ -286,7 +290,7 @@ footer.site p { max-width: var(--measure); margin: .4rem 0; }
 .js .panel { margin-bottom: 0; }
 
 .reading {
-  font: 1.2rem/1.85 var(--font-editorial); white-space: pre-wrap;
+  font: 1.25rem/1.8 var(--font-editorial); white-space: pre-wrap;
   overflow-wrap: anywhere; max-width: var(--measure); margin: 0;
 }
 .markdown-reading { white-space: normal; }
@@ -454,18 +458,20 @@ ul.plain .line { display: inline; font-size: .75rem; }
 
 /* ----------------------------------------------------------------- prose */
 
-/* Essay pages read wider than the works: the works' narrow measure suits a
-   poem, but About/Verify/Mirror are prose and were cramped at 34rem. */
-.prose { max-width: 42rem; }
+/* Essay pages read wider than the works: the works' measure suits a poem,
+   but About/Verify/Mirror are continuous prose. The face is set larger here
+   than the site's base so the wider column still holds about eighty
+   characters to the line. */
+.prose { max-width: 52rem; }
 .prose h1 {
   font: 400 clamp(2rem, 5.5vw, 3rem)/1.1 var(--font-editorial);
   margin: 0 0 1.5rem;
 }
 .prose h2 {
-  font: 400 1.4rem/1.3 var(--font-editorial); margin: 2.5rem 0 .8rem;
+  font: 400 1.75rem/1.25 var(--font-editorial); margin: 3rem 0 .9rem;
 }
 .prose p, .prose li {
-  font-family: var(--font-editorial); font-size: 1.05rem; line-height: 1.75;
+  font-family: var(--font-editorial); font-size: 1.3rem; line-height: 1.65;
 }
 .prose code, .prose pre {
   font-family: var(--font-mono); font-size: .8rem;
@@ -482,7 +488,7 @@ ul.plain .line { display: inline; font-size: .75rem; }
   border-left: 2px solid var(--signal);
 }
 .prose blockquote p {
-  font-size: 1.15rem; line-height: 1.7; font-style: italic; margin: 0 0 .6rem;
+  font-size: 1.4rem; line-height: 1.6; font-style: italic; margin: 0 0 .6rem;
 }
 .prose blockquote cite {
   font: .7rem/1 var(--font-mono); letter-spacing: var(--tracking);
@@ -491,9 +497,9 @@ ul.plain .line { display: inline; font-size: .75rem; }
 
 /* A definition, set like an entry in a field guide. */
 .defn {
-  margin: 1.6rem 0; padding: 1rem 1.2rem; background: var(--surface);
+  margin: 1.6rem 0; padding: 1.1rem 1.4rem; background: var(--surface);
   border: 1px solid var(--line); font-family: var(--font-editorial);
-  font-size: 1rem; line-height: 1.7;
+  font-size: 1.25rem; line-height: 1.65;
 }
 .defn span {
   display: block; font: .68rem/1 var(--font-mono);
@@ -504,11 +510,11 @@ ul.plain .line { display: inline; font-size: .75rem; }
 /* The first inscription, shown the way the genesis block is shown. */
 .genesis { margin: 2rem 0; }
 .genesis pre {
-  font-size: .72rem; line-height: 1.7; max-height: none;
+  font-size: .78rem; line-height: 1.7; max-height: none;
 }
 .genesis figcaption {
-  font-size: .8rem; color: var(--ink-2); margin-top: .8rem;
-  line-height: 1.6; max-width: 42rem;    /* matches the prose measure */
+  font-size: .9rem; color: var(--ink-2); margin-top: .8rem;
+  line-height: 1.6; max-width: 52rem;    /* matches the prose measure */
 }
 
 @media (max-width: 40rem) {
