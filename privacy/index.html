@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src &#x27;none&#x27;; script-src &#x27;self&#x27;; style-src &#x27;self&#x27;; img-src &#x27;self&#x27; data:; font-src &#x27;self&#x27;; connect-src &#x27;self&#x27; https://mempool.space https://blockstream.info https://ordinals.com; frame-src &#x27;self&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;">
+<meta name="description" content="a decentralized imagination press">
+<title>Privacy · cyberdelic.space</title>
+<link rel="stylesheet" href="../reader.css">
+<script src="../theme.js"></script>
+<link rel="canonical" href="https://cyberdelic.space/">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site">
+  <div class="bar">
+    <a class="wordmark" href="../">cyberdelic.space<span>a decentralized imagination press</span></a>
+    <nav aria-label="Sections"><a href="../">Library</a><a href="../ledger/">Ledger</a><a href="../about/">About</a><a href="../verify/">Verify</a><a href="../mirror/">Mirror</a></nav>
+    <button type="button" class="theme-toggle" hidden
+            aria-label="Switch between light and dark reading">Dark</button>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<article class="prose">
+<h1>Privacy</h1>
+
+<p>This press collects nothing about you. There are no accounts, no analytics,
+no tracking, no advertising, no cookies, and no third-party services, on this
+website or in the iPhone app.</p>
+
+<p>That is the whole policy. The rest of this page explains what happens
+anyway, because a claim like the one above is worth checking.</p>
+
+<h2>The app</h2>
+
+<p>Every work the press has published ships inside the app. The library reads
+with the radio off, so the ordinary use of the app sends nothing anywhere and
+needs no network at all.</p>
+
+<p>The app makes network requests in exactly two situations, both of them
+plain, anonymous requests for public files:</p>
+
+<ol>
+  <li><strong>Looking for new works.</strong> The app asks this site for
+  <code>library.json</code>, and for the bytes of any work it does not already
+  hold. It happens when the app opens, at most once an hour, and when you press
+  <strong>Check for new works</strong>. Nothing is uploaded and no identifier is
+  sent.</li>
+
+  <li><strong>Checking a work against Bitcoin.</strong> When you ask a work to
+  be verified on the Blockchain view, the app fetches that work's raw reveal
+  transaction from independent public explorers, currently mempool.space and
+  blockstream.info. It sends them a transaction identifier that is already
+  public and nothing else. It does not tell this press that you did it.</li>
+</ol>
+
+<p>Nothing else leaves the device on its own. The app has no advertising
+identifier, reads no contacts, no photos, and no location, and asks for no
+permissions at all. Your reading is not recorded, not on our machines and not
+on yours: the app keeps no history of what you opened. The only things it
+remembers between launches are whether you chose light or dark, and the time it
+last looked for new works.</p>
+
+<h2>Links that leave the app</h2>
+
+<p>A work's Blockchain view offers links out to independent explorers,
+currently mempool.space and ordinals.com, and the Press screen links to this
+website. These are links, not requests: nothing is fetched until you tap one,
+and tapping one hands you to Safari.</p>
+
+<p>Once you are there you are on someone else's page, under their policy, and
+they can see that a reader asked about that particular transaction. We think
+that trade is worth offering, because checking the press against parties who
+have nothing to do with the press is the entire point. But it is your choice
+every time, and the app never follows those links by itself.</p>
+
+<h2>An inscribed program cannot phone home</h2>
+
+<p>Some works are programs, and they run. Before the first byte of one loads,
+the app compiles a rule that refuses every network request the work might make,
+and gives it a scratch space that does not survive it. A work that could reach
+the network could learn something about the reader, so it is not allowed to
+try. If the rule cannot be compiled, the work does not run.</p>
+
+<h2>The website</h2>
+
+<p>The site is plain files served by a static host. It sets no cookies, runs no
+analytics, and loads nothing from anyone else: every stylesheet and script it
+uses is served from this domain, so no other company learns that you were
+here.</p>
+
+<p>It does keep one thing on your machine. If you switch the site to dark, that
+choice is written to your browser's local storage so it holds as you move
+between pages. It is not a cookie, it is never sent to us, it says only "dark"
+or "light", and clearing your browser data removes it.</p>
+
+<p>Verification in the browser fetches raw transactions from mempool.space and
+blockstream.info directly from your machine, the same way the app does. It runs
+only when you ask for it.</p>
+
+<h2>What a web server sees regardless</h2>
+
+<p>Any computer that hands you a file necessarily learns that someone asked for
+it. Our host, like every host, may keep short-lived logs containing an IP
+address and the file requested. We do not read them to identify anyone, we do
+not build profiles from them, we do not sell or share them, and no advertiser
+or analytics company receives them. Say the same of the public block explorers:
+they are independent of this press, they see the requests you send them, and
+each publishes its own policy.</p>
+
+<p>If you would rather no server saw anything at all, the library is designed
+for that. <a href="../mirror/">Take a complete copy</a> and read it from your
+own machine forever, with no request to us or to anyone.</p>
+
+<h2>Children</h2>
+
+<p>The app collects no data from anyone, of any age. It has no accounts, no
+messaging, no user content, and no way to contact another reader.</p>
+
+<h2>Changes</h2>
+
+<p>If this policy ever changes, the changed page is published here. The press
+does not send email, so there is nowhere else it could be announced.</p>
+
+<h2>Asking about this</h2>
+
+<p>Write to <a href="mailto:cyberdelic.space@gmail.com">cyberdelic.space@gmail.com</a>.</p>
+
+<p class="line">Last updated 2 August 2026.</p>
+
+</article>
+</main>
+<footer class="site">
+  <div class="bar">
+    <p>cyberdelic.space. Works held in the Bitcoin blockchain, readable by
+    anyone, verifiable without trusting this website.</p>
+    <p><a href="../mirror/">Copy this library</a> ·
+       <a href="../library.json">library.json</a> ·
+       <a href="../verify/">How verification works</a> ·
+       <a href="../privacy/">Privacy</a></p>
+  </div>
+</footer>
+</body>
+</html>
