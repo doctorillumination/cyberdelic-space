@@ -12,14 +12,10 @@
   var work = data ? JSON.parse(data.textContent) : null;
   if (!work) return;
 
-  var markdown = document.querySelector("[data-markdown]");
-  if (markdown && window.DEWMarkdown) {
-    var markdownSource = markdown.querySelector(".markdown-source");
-    var renderedMarkdown = window.DEWMarkdown.render(
-      markdownSource ? markdownSource.textContent : "");
-    while (markdown.firstChild) markdown.removeChild(markdown.firstChild);
-    markdown.appendChild(renderedMarkdown);
-  }
+  /* Markdown used to be typeset here, in the browser, from a <pre> of the
+   * raw source. It is typeset in templates.py now, so a reader with
+   * scripting off gets the work rather than its punctuation, and there is
+   * one grammar to keep correct instead of two that could drift apart. */
 
   var tabs = Array.prototype.slice.call(
     document.querySelectorAll('.views button[data-view]'));
