@@ -1,0 +1,62 @@
+{
+  "project_count": 1,
+  "projects": [
+    {
+      "description": "A living work of constitutional world-building through philosophy, software, art, protocols, interfaces, and experiments.",
+      "inscription_ids": [
+        "f6e686a1a1884e924e350539ad686aaa0180f5c219048df8cf97e69101339aefi0"
+      ],
+      "publication_count": 1,
+      "release_ids": [],
+      "series": [
+        {
+          "description": "Rare constitutional statements intended for durable public memory.",
+          "label": "Transmissions",
+          "prefix": "T",
+          "slug": "transmissions"
+        },
+        {
+          "description": "Poetic and conceptual development released as an evolving chronological field.",
+          "label": "Field Notes · Season 0",
+          "prefix": "FN-S0",
+          "slug": "field-notes"
+        },
+        {
+          "description": "Serious responses, carries, dissents, translations, and exchanges.",
+          "label": "Correspondence",
+          "prefix": "C",
+          "slug": "correspondence"
+        },
+        {
+          "description": "Experience designs and prototypes that test the project's ideas.",
+          "label": "Instruments",
+          "prefix": "I",
+          "slug": "instruments"
+        },
+        {
+          "description": "Expansive genesis documents and conceptual source material.",
+          "label": "Sourcebooks",
+          "prefix": "S",
+          "slug": "sourcebooks"
+        },
+        {
+          "description": "Architecture, schemas, references, and time-sensitive technical decisions.",
+          "label": "Builder Notes",
+          "prefix": "BN",
+          "slug": "builder-notes"
+        },
+        {
+          "description": "Released software, maps, lenses, artworks, and completed experiments.",
+          "label": "Artifacts",
+          "prefix": "A",
+          "slug": "artifacts"
+        }
+      ],
+      "slug": "cyberdelic-os",
+      "status": "active",
+      "title": "CyberdelicOS",
+      "world_term": "world:cyberdelic-os"
+    }
+  ],
+  "schema": "https://cyberdelic.space/schemas/project-index-v1.json"
+}

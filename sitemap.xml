@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://cyberdelic.space/</loc></url>
+  <url><loc>https://cyberdelic.space/projects/</loc></url>
   <url><loc>https://cyberdelic.space/ledger/</loc></url>
+  <url><loc>https://cyberdelic.space/work/f6e686a1a1884e924e350539ad686aaa0180f5c219048df8cf97e69101339aefi0/</loc></url>
   <url><loc>https://cyberdelic.space/work/8c7c6dec89095f7299b483a7549a8fb801134dbcbd0bc5959b0e323f968200bbi0/</loc></url>
   <url><loc>https://cyberdelic.space/work/ebf4acbfa5184b89acaf66cb888a3af3e54191d1fa7563047b14c1fc53a3156ai0/</loc></url>
   <url><loc>https://cyberdelic.space/work/12454fe092a14d85c54bb5cc997059f24dc741ab1328b7dc7627f42bd8073f4ai0/</loc></url>
@@ -17,6 +19,7 @@
   <url><loc>https://cyberdelic.space/shelf/theme/artificial-intelligence/</loc></url>
   <url><loc>https://cyberdelic.space/shelf/theme/technology/</loc></url>
   <url><loc>https://cyberdelic.space/shelf/theme/dream/</loc></url>
+  <url><loc>https://cyberdelic.space/shelf/theme/memory/</loc></url>
   <url><loc>https://cyberdelic.space/shelf/theme/language/</loc></url>
   <url><loc>https://cyberdelic.space/shelf/theme/perception/</loc></url>
   <url><loc>https://cyberdelic.space/shelf/theme/emergence/</loc></url>
@@ -24,9 +27,11 @@
   <url><loc>https://cyberdelic.space/shelf/register/waking-argument/</loc></url>
   <url><loc>https://cyberdelic.space/shelf/register/dream-logic/</loc></url>
   <url><loc>https://cyberdelic.space/shelf/register/play/</loc></url>
+  <url><loc>https://cyberdelic.space/shelf/world/cyberdelic-os/</loc></url>
   <url><loc>https://cyberdelic.space/shelf/era/incunabula/</loc></url>
   <url><loc>https://cyberdelic.space/about/</loc></url>
   <url><loc>https://cyberdelic.space/mirror/</loc></url>
   <url><loc>https://cyberdelic.space/privacy/</loc></url>
   <url><loc>https://cyberdelic.space/verify/</loc></url>
+  <url><loc>https://cyberdelic.space/project/cyberdelic-os/</loc></url>
 </urlset>

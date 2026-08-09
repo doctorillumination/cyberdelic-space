@@ -11,12 +11,85 @@
   "network": "mainnet",
   "press": "cyberdelic.space",
   "schema": "https://cyberdelic.space/schemas/public-reader-library-v2.json",
-  "site_version": "1.1.0",
+  "site_version": "1.2.0",
   "vocabulary": {
-    "version": "0.1"
+    "version": "0.2"
   },
-  "work_count": 5,
+  "work_count": 6,
   "works": [
+    {
+      "ai_disclosure": null,
+      "chain": {
+        "commit_txid": "5e4b4b61dae2f2152e29dc4b76a12ede9ffef2650ebb538b4fc2146f28fe9a84",
+        "genesis_height": 961767,
+        "parents": [],
+        "reveal_txid": "f6e686a1a1884e924e350539ad686aaa0180f5c219048df8cf97e69101339aef",
+        "sat": null
+      },
+      "confirmed_by": "mempool.space",
+      "content_file": "content.md",
+      "content_length": 17776,
+      "content_path": "content/f6e686a1a1884e924e350539ad686aaa0180f5c219048df8cf97e69101339aefi0/content.md",
+      "content_type": "text/markdown;charset=utf-8",
+      "contributions": [
+        {
+          "name": "Brad Necyk",
+          "role": "authorship"
+        }
+      ],
+      "date": "2026-08-09",
+      "digests": {
+        "content_sha256": "1698d0fa98bb38c19b2b4a13be0521eb9068e3f0a35514b8a300e267c35490a2",
+        "envelope_sha256": "116cdafe9aef26423eb463ab4614c555a750893cda195a68411c86e867fde59c",
+        "metadata_cbor_sha256": "2ce7ec3b0ccf4f06adff0db3ef068f7295f277c53c3f4be5a4581725f72ec9cc"
+      },
+      "edition": "1/1",
+      "era": {
+        "name": "Incunabula",
+        "number": 0,
+        "slug": "incunabula"
+      },
+      "facet_source": "inscribed",
+      "facets": {
+        "form": [
+          "manifesto"
+        ],
+        "register": [],
+        "theme": [
+          "artificial-intelligence",
+          "technology",
+          "memory",
+          "emergence",
+          "consciousness"
+        ],
+        "world": [
+          "cyberdelic-os"
+        ]
+      },
+      "inscription_id": "f6e686a1a1884e924e350539ad686aaa0180f5c219048df8cf97e69101339aefi0",
+      "lineage_intent": "independent",
+      "market_policy": "never_list",
+      "network": "mainnet",
+      "provenance": "Kernel, OS",
+      "publication_class": "public_memory",
+      "published": "2026-08-09T17:55:41.334473+00:00",
+      "raw_reveal_available": true,
+      "rights": "Original work by the named contributor(s).",
+      "rights_basis": "original",
+      "subjects": [
+        "world:cyberdelic-os",
+        "form:manifesto",
+        "theme:artificial-intelligence",
+        "theme:technology",
+        "theme:memory",
+        "theme:emergence",
+        "theme:consciousness"
+      ],
+      "textual": true,
+      "title": "The Cyberdelic Kernel v1.0",
+      "transfer_policy": "stewardship",
+      "verification_state": "verified"
+    },
     {
       "ai_disclosure": null,
       "chain": {
