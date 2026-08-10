@@ -22,11 +22,7 @@
   }
 
   function apply(mode) {
-    if (mode === "light") {
-      delete document.documentElement.dataset.theme;
-    } else {
-      document.documentElement.dataset.theme = mode;
-    }
+    document.documentElement.dataset.theme = mode;
   }
 
   var saved = DEFAULT;
