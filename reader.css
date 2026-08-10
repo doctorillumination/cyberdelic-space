@@ -27,8 +27,8 @@
   color-scheme: light;
 }
 
-/* Light is the default everywhere, whatever the operating system prefers.
-   Dark and psychedelic are choices remembered on this device. */
+/* Psychedelic is the default everywhere, whatever the operating system
+   prefers. Light and dark are choices remembered on this device. */
 :root[data-theme="dark"] {
   --canvas: #0b0d0b;
   --surface: #111411;

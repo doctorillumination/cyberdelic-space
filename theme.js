@@ -1,6 +1,6 @@
 /* cyberdelic.space: reading theme.
  *
- * Light is the default on every device. Dark and Psychedelic are deliberate
+ * Psychedelic is the default on every device. Light and Dark are deliberate
  * choices. The selected atmosphere is kept in localStorage so it holds across
  * pages and visits on this device only. Loaded in <head> without defer, so a
  * saved preference applies before first paint and the page never flashes.
@@ -8,6 +8,7 @@
 (function () {
   "use strict";
   var KEY = "cyberdelic-theme";
+  var DEFAULT = "psychedelic";
   var MODES = ["light", "dark", "psychedelic"];
   var LABELS = {
     light: "Light",
@@ -16,8 +17,8 @@
   };
 
   function currentMode() {
-    var value = document.documentElement.dataset.theme || "light";
-    return MODES.indexOf(value) === -1 ? "light" : value;
+    var value = document.documentElement.dataset.theme || DEFAULT;
+    return MODES.indexOf(value) === -1 ? DEFAULT : value;
   }
 
   function apply(mode) {
@@ -28,9 +29,9 @@
     }
   }
 
-  var saved = null;
+  var saved = DEFAULT;
   try { saved = localStorage.getItem(KEY); } catch (error) { /* private mode */ }
-  if (MODES.indexOf(saved) !== -1) apply(saved);
+  apply(MODES.indexOf(saved) === -1 ? DEFAULT : saved);
 
   document.addEventListener("DOMContentLoaded", function () {
     var button = document.querySelector(".theme-toggle");
