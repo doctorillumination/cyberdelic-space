@@ -266,11 +266,10 @@ footer.site p { max-width: var(--measure); margin: .4rem 0; }
 .card a {
   display: block; text-decoration: none; padding: 1.8rem .2rem;
 }
-.card a:hover { background: var(--surface); color: inherit; }
+.card a:hover { color: inherit; }
 .card h2 {
   font: 400 1.5rem/1.2 var(--font-editorial); margin: 0 0 .4rem;
 }
-.card a:hover h2 { color: var(--signal); }
 .byline {
   font-size: .85rem; color: var(--ink-2); margin: 0 0 .6rem;
   font-family: var(--font-editorial); font-style: italic;
@@ -619,13 +618,13 @@ ul.plain .line { display: inline; font-size: .75rem; }
 .project-cards, .living-list, .project-offices ul, .version-history {
   list-style: none; padding: 0; margin: 0;
 }
-.project-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.project-cards { border-top: 1px solid var(--line); }
+.project-cards li { border-bottom: 1px solid var(--line); }
 .project-card {
-  min-height: 14rem; padding: 1.6rem; display: grid; align-content: start;
-  gap: .8rem; color: var(--ink); border: 1px solid var(--line);
-  background: var(--surface); text-decoration: none;
+  padding: 1.6rem 0; display: grid; align-content: start;
+  gap: .8rem; color: var(--ink); text-decoration: none;
 }
-.project-card:hover { border-color: var(--signal); }
+.project-card:hover { color: var(--ink); }
 .project-card strong { font: 400 2rem/1.1 var(--font-editorial); }
 .project-card small { margin-top: auto; font: .66rem/1.5 var(--font-mono); color: var(--ink-2); }
 .project-gate { max-width: 50rem; margin-bottom: 4rem; }
@@ -655,8 +654,11 @@ ul.plain .line { display: inline; font-size: .75rem; }
 .living-badge.pending { color: var(--warn); border-color: var(--warn); }
 .living-badge.living { color: var(--ink-2); }
 .project-offices { margin-top: 4rem; }
-.project-offices ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: var(--line); }
-.project-offices li { display: grid; gap: .5rem; padding: 1.2rem; background: var(--canvas); }
+.project-offices ul { border-top: 1px solid var(--line); }
+.project-offices li {
+  display: grid; gap: .5rem; padding: 1.2rem 0;
+  border-bottom: 1px solid var(--line);
+}
 .project-offices span { color: var(--ink-2); }
 .living-head { max-width: 52rem; margin-bottom: 3rem; }
 .living-head h1 { font: 400 clamp(2.8rem, 7vw, 5rem)/1 var(--font-editorial); margin: .8rem 0 1rem; }
@@ -688,7 +690,7 @@ ul.plain .line { display: inline; font-size: .75rem; }
   .facts th { width: auto; white-space: normal; display: block;
     border: 0; padding-bottom: 0; }
   .facts td { display: block; padding-top: .2rem; }
-  .project-cards, .project-offices ul, .living-layout { grid-template-columns: 1fr; }
+  .living-layout { grid-template-columns: 1fr; }
   .living-row { grid-template-columns: 1fr; gap: .6rem; }
   .living-badges { justify-content: flex-start; }
   .living-aside { border-left: 0; border-top: 1px solid var(--line); padding: 1.5rem 0 0; }
