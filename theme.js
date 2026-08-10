@@ -1,41 +1,59 @@
 /* cyberdelic.space: reading theme.
  *
- * Light is the default on every device. Dark is a choice, made with the
- * header toggle and kept in localStorage so it holds across pages and
- * visits on this device only. Loaded in <head> without defer, so a saved
- * dark preference applies before first paint and the page never flashes.
+ * Light is the default on every device. Dark and Psychedelic are deliberate
+ * choices. The selected atmosphere is kept in localStorage so it holds across
+ * pages and visits on this device only. Loaded in <head> without defer, so a
+ * saved preference applies before first paint and the page never flashes.
  */
 (function () {
   "use strict";
   var KEY = "cyberdelic-theme";
+  var MODES = ["light", "dark", "psychedelic"];
+  var LABELS = {
+    light: "Light",
+    dark: "Dark",
+    psychedelic: "Psychedelic"
+  };
+
+  function currentMode() {
+    var value = document.documentElement.dataset.theme || "light";
+    return MODES.indexOf(value) === -1 ? "light" : value;
+  }
+
+  function apply(mode) {
+    if (mode === "light") {
+      delete document.documentElement.dataset.theme;
+    } else {
+      document.documentElement.dataset.theme = mode;
+    }
+  }
 
   var saved = null;
   try { saved = localStorage.getItem(KEY); } catch (error) { /* private mode */ }
-  if (saved === "dark") {
-    document.documentElement.dataset.theme = "dark";
-  }
+  if (MODES.indexOf(saved) !== -1) apply(saved);
 
   document.addEventListener("DOMContentLoaded", function () {
     var button = document.querySelector(".theme-toggle");
     if (!button) return;
-    button.hidden = false;      // useless without scripting, so hidden until now
+    button.hidden = false;
 
     function paint() {
-      var dark = document.documentElement.dataset.theme === "dark";
-      // The label names where the switch goes, not where you are.
-      button.textContent = dark ? "Light" : "Dark";
-      button.setAttribute("aria-pressed", dark ? "true" : "false");
+      var mode = currentMode();
+      var next = MODES[(MODES.indexOf(mode) + 1) % MODES.length];
+      button.textContent = LABELS[mode];
+      button.setAttribute(
+        "aria-label",
+        "Appearance: " + LABELS[mode] + ". Activate for " + LABELS[next] + "."
+      );
+      button.setAttribute("title", "Next appearance: " + LABELS[next]);
     }
 
     button.addEventListener("click", function () {
-      var toDark = document.documentElement.dataset.theme !== "dark";
-      if (toDark) {
-        document.documentElement.dataset.theme = "dark";
-      } else {
-        delete document.documentElement.dataset.theme;
-      }
-      try { localStorage.setItem(KEY, toDark ? "dark" : "light"); }
-      catch (error) { /* the toggle still works for this page */ }
+      var mode = currentMode();
+      var next = MODES[(MODES.indexOf(mode) + 1) % MODES.length];
+      apply(next);
+      try { localStorage.setItem(KEY, next); }
+      catch (error) { /* the choice still works for this page */ }
       paint();
     });
 
