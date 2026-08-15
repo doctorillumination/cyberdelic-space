@@ -7,10 +7,55 @@
     return match ? match[1].padStart(2, "0") : null;
   }
 
+  function populateFieldNoteIndex(index) {
+    var list = index && index.querySelector(".field-note-list");
+    var source = index && index.dataset.fieldNoteSource;
+    if (!list || list.children.length || !source) return Promise.resolve();
+
+    return fetch(source).then(function (response) {
+      if (!response.ok) throw new Error("Field Notes index unavailable");
+      return response.json();
+    }).then(function (data) {
+      if (!data || !Array.isArray(data.items)) {
+        throw new Error("Field Notes index is invalid");
+      }
+
+      var fragment = document.createDocumentFragment();
+      data.items.forEach(function (note) {
+        var item = document.createElement("li");
+        var link = document.createElement("a");
+        var code = document.createElement("span");
+        var label = document.createElement("span");
+        var searchParts = [note.id, note.title, note.summary]
+          .concat(note.themes || [], note.concepts || []);
+
+        item.dataset.note = "";
+        item.dataset.search = searchParts.join(" ").toLowerCase();
+        link.href = "#" + String(note.id || "").toLowerCase();
+        code.className = "field-note-code";
+        code.textContent = note.id;
+        label.className = "field-note-label";
+        label.textContent = note.title;
+        link.append(code, label);
+        item.append(link);
+        fragment.append(item);
+      });
+
+      list.replaceChildren(fragment);
+      list.removeAttribute("aria-busy");
+      var status = index.querySelector("[data-field-note-count]");
+      if (status) status.textContent = data.items.length + " notes";
+    }).catch(function () {
+      list.removeAttribute("aria-busy");
+      var status = index.querySelector("[data-field-note-count]");
+      if (status) status.textContent = "Index unavailable";
+    });
+  }
+
   function enhanceFieldNotes(container) {
     var index = document.querySelector("[data-field-note-index]");
     var body = container.querySelector(".markdown-body");
-    if (!index || !body) return;
+    if (!index || !body || index.dataset.enhanced === "true") return;
 
     var headings = Array.prototype.slice.call(body.querySelectorAll("h1"))
       .filter(function (heading) {
@@ -26,6 +71,7 @@
         return true;
       });
     if (!headings.length) return;
+    index.dataset.enhanced = "true";
 
     var links = Array.prototype.slice.call(index.querySelectorAll("a[href^='#fn-']"));
     var itemById = {};
@@ -129,7 +175,12 @@
       var source = container.querySelector(".markdown-source");
       if (!source || !window.DEWMarkdown) return;
       container.replaceChildren(window.DEWMarkdown.render(source.textContent || ""));
-      enhanceFieldNotes(container);
+    });
+
+    var index = document.querySelector("[data-field-note-index]");
+    if (!index) return;
+    populateFieldNoteIndex(index).then(function () {
+      enhanceFieldNotes(document);
     });
   });
 })();

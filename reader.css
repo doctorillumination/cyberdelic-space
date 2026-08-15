@@ -1,4 +1,4 @@
-/* cyberdelic.space: one typographic system, two atmospheres.
+/* cyberdelic.space: one typographic system, three atmospheres.
    Derived from the DEW LINE Studio design tokens. */
 
 :root {
@@ -27,8 +27,8 @@
   color-scheme: light;
 }
 
-/* Light is the default everywhere, whatever the operating system prefers.
-   Dark is a choice, made with the header toggle and remembered per device. */
+/* Psychedelic is the default everywhere, whatever the operating system
+   prefers. Light and dark are choices remembered on this device. */
 :root[data-theme="dark"] {
   --canvas: #0b0d0b;
   --surface: #111411;
@@ -43,6 +43,20 @@
   color-scheme: dark;
 }
 
+:root[data-theme="psychedelic"] {
+  --canvas: rgba(255, 255, 255, .16);
+  --surface: rgba(255, 255, 255, .5);
+  --ink: #291a3a;
+  --ink-2: #594865;
+  --line: rgba(56, 35, 90, .15);
+  --line-2: rgba(56, 35, 90, .28);
+  --signal: #087b8a;
+  --ok: #297f5a;
+  --warn: #a74f19;
+  --danger: #9d382b;
+  color-scheme: light;
+}
+
 *, *::before, *::after { box-sizing: border-box; }
 
 body {
@@ -51,6 +65,53 @@ body {
   color: var(--ink);
   font: 16px/1.6 var(--font-sans);
   -webkit-text-size-adjust: 100%;
+}
+
+:root[data-theme="psychedelic"] { background: #f3fbff; }
+
+:root[data-theme="psychedelic"] body {
+  position: relative;
+  min-height: 100vh;
+  isolation: isolate;
+  background: transparent;
+}
+
+:root[data-theme="psychedelic"] body::before,
+:root[data-theme="psychedelic"] body::after {
+  content: "";
+  position: fixed;
+  pointer-events: none;
+}
+
+:root[data-theme="psychedelic"] body::before {
+  inset: -22%;
+  z-index: -2;
+  background:
+    radial-gradient(circle at 9% 6%, rgba(67, 224, 235, .88), transparent 38%),
+    radial-gradient(circle at 72% 0%, rgba(130, 148, 255, .76), transparent 40%),
+    radial-gradient(circle at 92% 34%, rgba(220, 128, 245, .69), transparent 36%),
+    radial-gradient(circle at 72% 70%, rgba(255, 119, 190, .76), transparent 42%),
+    radial-gradient(circle at 96% 96%, rgba(255, 180, 92, .76), transparent 38%),
+    radial-gradient(circle at 24% 100%, rgba(111, 128, 255, .68), transparent 44%),
+    #f3fbff;
+  filter: saturate(.9);
+  animation: psychedelic-field 28s ease-in-out infinite alternate;
+}
+
+:root[data-theme="psychedelic"] body::after {
+  inset: -28%;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 35% 36%, rgba(255, 255, 255, .8), transparent 21%),
+    radial-gradient(circle at 68% 62%, rgba(255, 255, 255, .58), transparent 18%),
+    conic-gradient(from 50deg at 55% 45%,
+      rgba(66, 220, 235, .28), rgba(150, 137, 250, .18),
+      rgba(255, 131, 194, .24), rgba(255, 191, 107, .2),
+      rgba(66, 220, 235, .28));
+  filter: blur(52px);
+  mix-blend-mode: soft-light;
+  opacity: .7;
+  animation: psychedelic-shimmer 36s linear infinite;
 }
 
 a { color: inherit; }
@@ -116,6 +177,42 @@ footer.site {
 }
 footer.site .bar { padding: 2rem clamp(1.2rem, 5vw, 4rem) 4rem; }
 footer.site p { max-width: var(--measure); margin: .4rem 0; }
+
+:root[data-theme="psychedelic"] header.site,
+:root[data-theme="psychedelic"] footer.site {
+  background: rgba(255, 255, 255, .42);
+  -webkit-backdrop-filter: blur(24px) saturate(1.05);
+  backdrop-filter: blur(24px) saturate(1.05);
+}
+
+:root[data-theme="psychedelic"] main {
+  background: linear-gradient(180deg,
+    rgba(255, 255, 255, .16), rgba(255, 255, 255, .36));
+  border-inline: 1px solid rgba(255, 255, 255, .3);
+  -webkit-backdrop-filter: blur(26px) saturate(.94);
+  backdrop-filter: blur(26px) saturate(.94);
+}
+
+:root[data-theme="psychedelic"] .theme-toggle {
+  background: rgba(255, 255, 255, .38);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .2);
+}
+
+@keyframes psychedelic-field {
+  0% { transform: translate3d(-1.5%, -1%, 0) scale(1); }
+  50% { transform: translate3d(1.5%, 1%, 0) scale(1.035); }
+  100% { transform: translate3d(-.5%, 1.5%, 0) scale(1.015); }
+}
+
+@keyframes psychedelic-shimmer {
+  from { transform: rotate(0deg) scale(1.05); }
+  to { transform: rotate(360deg) scale(1.05); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root[data-theme="psychedelic"] body::before,
+  :root[data-theme="psychedelic"] body::after { animation: none; }
+}
 
 /* ---------------------------------------------------------------- library */
 
@@ -299,7 +396,7 @@ footer.site p { max-width: var(--measure); margin: .4rem 0; }
    face is ever retuned. The renderer clamps every heading to h3 or shallower
    so nothing here can out-rank the work's own title. */
 .markdown-reading { white-space: normal; }
-.markdown-body { font: inherit; color: inherit; }
+.markdown-body { min-width: 0; font: inherit; color: inherit; overflow-wrap: anywhere; }
 .markdown-body > :first-child { margin-top: 0; }
 .markdown-body > :last-child { margin-bottom: 0; }
 .markdown-body h1, .markdown-body h2, .markdown-body h3 {
@@ -323,7 +420,8 @@ footer.site p { max-width: var(--measure); margin: .4rem 0; }
 .markdown-body code { font: .84em/1.5 var(--font-mono); padding: .08em .28em;
   border: 1px solid var(--line); background: var(--surface); }
 .markdown-body pre { margin: 1.4em 0; padding: 1em; overflow-x: auto;
-  white-space: pre; border: 1px solid var(--line); background: var(--surface); }
+  max-width: 100%; white-space: pre; border: 1px solid var(--line);
+  background: var(--surface); }
 .markdown-body pre code { padding: 0; border: 0; background: none; }
 .markdown-body a { color: var(--signal); text-underline-offset: .18em; }
 .markdown-center { text-align: center; margin: 2em 0; }
@@ -561,8 +659,11 @@ ul.plain .line { display: inline; font-size: .75rem; }
 .living-badge.pending { color: var(--warn); border-color: var(--warn); }
 .living-badge.living { color: var(--ink-2); }
 .project-offices { margin-top: 4rem; }
-.project-offices ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: var(--line); }
-.project-offices li { display: grid; gap: .5rem; padding: 1.2rem; background: var(--canvas); }
+.project-offices ul { border-top: 1px solid var(--line); }
+.project-offices li {
+  display: grid; gap: .5rem; padding: 1.2rem 0;
+  border-bottom: 1px solid var(--line);
+}
 .project-offices span { color: var(--ink-2); }
 .living-head { max-width: 52rem; margin-bottom: 3rem; }
 .living-head h1 { font: 400 clamp(2.8rem, 7vw, 5rem)/1 var(--font-editorial); margin: .8rem 0 1rem; }
@@ -589,6 +690,17 @@ main.field-notes-main { max-width: 90rem; }
     minmax(11rem, 13rem);
   gap: clamp(2rem, 3.5vw, 3.5rem);
   align-items: start;
+}
+.field-notes-shell {
+  display: grid;
+  grid-template-columns: minmax(13rem, 15rem) minmax(0, 1fr);
+  gap: clamp(2rem, 3.5vw, 3.5rem);
+  align-items: start;
+}
+.field-notes-shell > .living-layout {
+  grid-template-columns: minmax(0, 46rem) minmax(11rem, 13rem);
+  gap: clamp(2rem, 3.5vw, 3.5rem);
+  min-width: 0;
 }
 .field-note-index {
   min-width: 0; position: sticky; top: 1.5rem; align-self: start;
@@ -658,6 +770,10 @@ main.field-notes-main { max-width: 90rem; }
 
 @media (max-width: 40rem) {
   header.site .bar { gap: .8rem 1.2rem; }
+  header.site nav {
+    order: 3; width: 100%; max-width: 100%; flex-wrap: wrap;
+    gap: .65rem 1rem;
+  }
   .views button { padding: .8rem .7rem; }
   .views button:first-child { padding-left: 0; }
   .facts th { width: auto; white-space: normal; display: block;
@@ -673,6 +789,13 @@ main.field-notes-main { max-width: 90rem; }
   .field-notes-layout {
     grid-template-columns: minmax(12.5rem, 15rem) minmax(0, 1fr);
   }
+  .field-notes-shell {
+    grid-template-columns: minmax(12.5rem, 15rem) minmax(0, 1fr);
+  }
+  .field-notes-shell > .living-layout { grid-template-columns: minmax(0, 1fr); }
+  .field-notes-shell > .living-layout .living-aside {
+    border-left: 0; border-top: 1px solid var(--line); padding: 1.5rem 0 0;
+  }
   .field-notes-layout .field-note-publication-details {
     grid-column: 2; border-left: 0; border-top: 1px solid var(--line);
     position: static; padding: 1.5rem 0 0;
@@ -681,7 +804,8 @@ main.field-notes-main { max-width: 90rem; }
 
 @media (max-width: 52rem) {
   main.field-notes-main { padding-top: 1.5rem; }
-  .field-notes-layout { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
+  .field-notes-layout,
+  .field-notes-shell { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
   .field-note-index {
     position: sticky; top: 0; z-index: 4; min-width: 0;
     margin-inline: calc(-1 * clamp(1.2rem, 5vw, 4rem));
