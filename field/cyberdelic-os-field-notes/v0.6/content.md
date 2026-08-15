@@ -831,7 +831,7 @@ Its surfaces remain free to change.
 ---
 
 # Field Note 18
-## You Carry the Doorway
+## You Carry the Portal
 
 The most powerful machine may remain at home.
 
@@ -841,7 +841,7 @@ We think while walking, driving, cooking, travelling, resting, talking, and movi
 
 The Hearth may run on a workstation, laptop, or quiet local node with the compute, storage, models, indexes, and private archive required to sustain the village.
 
-The phone carries the **doorway**.
+The phone carries the **Portal**.
 
 It does not need to reproduce the whole Hearth. It needs to provide secure, continuous access to it.
 
@@ -873,7 +873,7 @@ Local-first does not mean physically trapped at one machine.
 
 It means that the home node remains the authority over memory, permissions, models, and identity while many interfaces can reach it under the person's control.
 
-The doorway should be portable.
+The Portal should be portable.
 
 The house should remain sovereign.
 
@@ -1605,7 +1605,7 @@ The emerging pillars are:
 2. **Local sovereign Hearths connected through shared protocols rather than one central platform.**
 3. **Apertures and authored lenses as portable patterns of attention rather than digital twins.**
 4. **A village of agents whose identities reside in constitutions, memories, permissions, and offices.**
-5. **A voice-first mobile doorway combining immediate conversation with bounded background cultivation.**
+5. **A voice-first mobile Portal combining immediate conversation with bounded background cultivation.**
 6. **Many interfaces over one semantic world: voice, sprite world, terminal, observatory, table, cinema, and quiet capture.**
 7. **An archipelago of self-governing villages and cities beneath a shared cultural sky.**
 8. **Layered memory: local living history, signed provenance, public anchoring, civic state, and selective inscription.**
@@ -1621,7 +1621,7 @@ The conceptual centre remains:
 And the first demonstration remains small enough to imagine:
 
 One sovereign home.  
-One mobile doorway.  
+One mobile Portal.\
 One living archive.  
 A few bounded agents.  
 One authored lens.  

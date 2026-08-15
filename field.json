@@ -8,9 +8,9 @@
         "state": "living",
         "verified": false
       },
-      "content_length": 90324,
+      "content_length": 90318,
       "content_path": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
-      "content_sha256": "376b7fc715abe95ad9c34afaa685ef7bbed44d85aa8234efbff1a11594cf2978",
+      "content_sha256": "0e893f7e468102bd66ac563b7c6eec686e96efe508dbc5410cd8c83f2aee38f2",
       "content_type": "text/markdown;charset=utf-8",
       "maturity": "testing",
       "metadata_sha256": "4831218e65e3238cb712041f1ae81d3aa5571d943b4b647a458b24c039e19f00",

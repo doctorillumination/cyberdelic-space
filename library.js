@@ -1238,7 +1238,7 @@
   update(false, false, false);
   }
 
-  fetch("living-library.json?v=2", { credentials: "same-origin", cache: "no-cache" })
+  fetch("living-library.json?v=3", { credentials: "same-origin", cache: "no-cache" })
     .then(function (response) {
       if (!response.ok) throw new Error("Living library unavailable");
       return response.json();
