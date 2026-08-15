@@ -1,6 +1,63 @@
 {
-  "count": 0,
-  "items": [],
+  "count": 3,
+  "items": [
+    {
+      "authors": [
+        "Brad Necyk",
+        "Machine collaborators"
+      ],
+      "content_type": "text/markdown; charset=utf-8",
+      "current_version": "0.1",
+      "date": "2026-08-15",
+      "project": "cyberdelic-os",
+      "release_code": "I-01",
+      "release_id": "cyberdelic-studio",
+      "series": "instruments",
+      "sha256": "819978c5348a9bc018a318050c200118a2e9c21d53d7d69a36b271bab1f5cb47",
+      "status": "proposed",
+      "summary": "A human-scale publishing instrument for deliberate public memory.",
+      "title": "Cyberdelic Studio",
+      "url": "workshop/cyberdelic-os/instruments/cyberdelic-studio/v0.1/",
+      "version_count": 1
+    },
+    {
+      "authors": [
+        "Brad Necyk"
+      ],
+      "content_type": "text/markdown; charset=utf-8",
+      "current_version": "1.0",
+      "date": "2026-08-15",
+      "first_light": "2026-07-20",
+      "project": "cyberdelic-os",
+      "release_code": "A-01",
+      "release_id": "cyberdelic-space",
+      "series": "artifacts",
+      "sha256": "0ed9dbeabcd4501ecf3cfe49847c102a608f379ad1fa0d57aeb8a5872187c535",
+      "status": "released",
+      "summary": "A decentralized imagination press and an early working organ of CyberdelicOS.",
+      "title": "Cyberdelic.space",
+      "url": "workshop/cyberdelic-os/artifacts/cyberdelic-space/v1.0/",
+      "version_count": 1
+    },
+    {
+      "authors": [
+        "Brad Necyk"
+      ],
+      "content_type": "text/markdown; charset=utf-8",
+      "current_version": "1.0",
+      "date": "2026-08-15",
+      "project": "cyberdelic-os",
+      "release_code": "BN-01",
+      "release_id": "building-inscribe",
+      "series": "builder-notes",
+      "sha256": "ce9cc14474bb202ae819a62baf4c7f98e4b5d3997204c2f52bc2d8c3507a86f9",
+      "status": "living",
+      "summary": "How Cyberdelic.space turns selective immutable memory into a real publication operation.",
+      "title": "Building INSCRIBE",
+      "url": "workshop/cyberdelic-os/builder-notes/building-inscribe/v1.0/",
+      "version_count": 1
+    }
+  ],
   "schema": "https://cyberdelic.space/schemas/living-index-v1.json",
   "territory": "workshop"
 }

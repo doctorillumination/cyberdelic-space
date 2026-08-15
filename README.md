@@ -3,7 +3,9 @@
 The published library of cyberdelic.space, a decentralized imagination press.
 Its Library holds 6 works inscribed
 into the Bitcoin blockchain on mainnet. Field and Workshop publications are
-separate, visibly living, versioned records under `/project/`.
+separate, visibly living, versioned records under `/project/`. The CyberdelicOS
+Workshop currently includes its first Instrument, Builder Note, and released
+Artifact.
 
 **This directory is generated.** It is the built output of the press's reader
 (`reader/build_site.py`), and it is also a mirror: everything needed to read the

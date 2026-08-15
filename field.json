@@ -1,6 +1,25 @@
 {
-  "count": 0,
-  "items": [],
+  "count": 1,
+  "items": [
+    {
+      "authors": [
+        "Brad Necyk"
+      ],
+      "content_type": "text/markdown; charset=utf-8",
+      "current_version": "0.6",
+      "date": "2026-08-15",
+      "project": "cyberdelic-os",
+      "release_code": "FN-S0-01",
+      "release_id": "cyberdelic-os-field-notes",
+      "series": "field-notes",
+      "sha256": "376b7fc715abe95ad9c34afaa685ef7bbed44d85aa8234efbff1a11594cf2978",
+      "status": "living",
+      "summary": "Twenty-eight poetic and conceptual field notes developing the CyberdelicOS project as a living world.",
+      "title": "Cyberdelic OS Living Field Notes",
+      "url": "field/cyberdelic-os-field-notes/v0.6/",
+      "version_count": 1
+    }
+  ],
   "schema": "https://cyberdelic.space/schemas/living-index-v1.json",
   "territory": "field"
 }
