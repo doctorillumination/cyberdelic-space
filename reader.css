@@ -615,6 +615,11 @@ ul.plain .line { display: inline; font-size: .75rem; }
 }
 
 /* --------------------------------------------------------- living projects */
+.field-gate { margin: 0 0 3rem; }
+.field-gate > h2 {
+  font: 400 clamp(1.8rem, 4vw, 2.8rem)/1.1 var(--font-editorial);
+  margin: .6rem 0 1.2rem;
+}
 .project-cards, .living-list, .project-offices ul, .version-history {
   list-style: none; padding: 0; margin: 0;
 }
