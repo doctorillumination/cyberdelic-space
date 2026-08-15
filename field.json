@@ -1,5 +1,5 @@
 {
-  "count": 2,
+  "count": 3,
   "items": [
     {
       "chain_evidence": {
@@ -47,6 +47,30 @@
       "version": 1,
       "version_label": "0.1",
       "version_sha256": "3d9f8d14de066bbec80daa0d5296c9e44b85ccdf3af797504913bf56f043da9c"
+    },
+    {
+      "authorship_note": "This field note emerged from a creative immersion between Brad Necyk and ChatGPT while they developed the initial working prototype of the Hearth and Portal. ChatGPT proposed the draft from their interaction and exchange; Brad revised and ratified the text for publication.",
+      "chain_evidence": {
+        "inscription_id": null,
+        "network": null,
+        "state": "living",
+        "verified": false
+      },
+      "content_length": 3443,
+      "content_path": "living-content/cyberdelic-os/fn-s0-003/v000001.md",
+      "content_sha256": "39f4cfd7c8f553f86d211151ed153d65b145df25cf535cf6386e991b07e2efa5",
+      "content_type": "text/markdown;charset=utf-8",
+      "maturity": "testing",
+      "metadata_sha256": null,
+      "project_slug": "cyberdelic-os",
+      "published_at": "2026-08-15T16:33:01-07:00",
+      "release_id": "FN-S0-003",
+      "series_slug": "field-notes",
+      "territory": "field",
+      "title": "The Doorway Opens",
+      "version": 1,
+      "version_label": "0.1",
+      "version_sha256": "39f4cfd7c8f553f86d211151ed153d65b145df25cf535cf6386e991b07e2efa5"
     }
   ],
   "schema": "https://cyberdelic.space/schemas/living-index-v1.json",
