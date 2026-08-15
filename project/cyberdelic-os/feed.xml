@@ -2,7 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>CyberdelicOS</title>
 <id>https://cyberdelic.space/project/cyberdelic-os/</id>
 <link href="https://cyberdelic.space/project/cyberdelic-os/feed.xml" rel="self"/>
-<updated>2026-08-15T00:00:00-07:00</updated><entry><title>Artifact A-01: Cyberdelic.space</title>
+<updated>2026-08-15T00:00:00-07:00</updated><entry><title>Instrument I-01: Cyberdelic Studio</title>
+<id>https://cyberdelic.space/workshop/cyberdelic-os/instruments/cyberdelic-studio/v0.1/</id>
+<link href="https://cyberdelic.space/workshop/cyberdelic-os/instruments/cyberdelic-studio/v0.1/"/>
+<updated>2026-08-15T00:00:00-07:00</updated>
+<summary>Proposed Workshop instrument · I-01 · white paper version 0.1</summary></entry><entry><title>Artifact A-01: Cyberdelic.space</title>
 <id>https://cyberdelic.space/workshop/cyberdelic-os/artifacts/cyberdelic-space/v1.0/</id>
 <link href="https://cyberdelic.space/workshop/cyberdelic-os/artifacts/cyberdelic-space/v1.0/"/>
 <updated>2026-08-15T00:00:00-07:00</updated>

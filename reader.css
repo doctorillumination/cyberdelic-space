@@ -419,6 +419,18 @@ footer.site p { max-width: var(--measure); margin: .4rem 0; }
   white-space: pre; border: 1px solid var(--line); background: var(--surface); }
 .markdown-body pre code { padding: 0; border: 0; background: none; }
 .markdown-body a { color: var(--signal); text-underline-offset: .18em; }
+.markdown-table-wrap { margin: 1.4em 0; overflow-x: auto; }
+.markdown-body table {
+  width: 100%; border-collapse: collapse; font-size: .88em; line-height: 1.5;
+}
+.markdown-body th, .markdown-body td {
+  padding: .65em .75em; border: 1px solid var(--line); text-align: left;
+  vertical-align: top;
+}
+.markdown-body th {
+  font: .72em/1.4 var(--font-mono); letter-spacing: .05em;
+  text-transform: uppercase; background: var(--surface);
+}
 .markdown-center { text-align: center; margin: 2em 0; }
 .markdown-image-reference { display: inline-block; padding: .2em .5em;
   border: 1px solid var(--line); color: var(--ink-2);
@@ -675,7 +687,14 @@ ul.plain .line { display: inline; font-size: .75rem; }
 .living-reading { min-width: 0; max-width: 46rem; }
 .living-source { white-space: pre-wrap; overflow-wrap: anywhere; font: .85rem/1.8 var(--font-mono); }
 .living-interactive iframe { width: 100%; min-height: 70vh; border: 1px solid var(--line); background: white; }
-.living-aside { border-left: 1px solid var(--line); padding-left: 1.5rem; color: var(--ink-2); }
+.living-aside, .living-meta {
+  min-width: 0; border-left: 1px solid var(--line);
+  padding-left: 1.5rem; color: var(--ink-2);
+}
+.living-meta dd { margin: .2rem 0 .9rem; overflow-wrap: anywhere; }
+.living-meta code {
+  white-space: normal; overflow-wrap: anywhere; word-break: break-all;
+}
 .version-history li { padding: .7rem 0; border-bottom: 1px solid var(--line); }
 .version-history a { display: block; color: inherit; text-decoration: none; }
 .version-history a:hover strong { color: var(--signal); }
@@ -698,7 +717,7 @@ ul.plain .line { display: inline; font-size: .75rem; }
   .living-layout { grid-template-columns: 1fr; }
   .living-row { grid-template-columns: 1fr; gap: .6rem; }
   .living-badges { justify-content: flex-start; }
-  .living-aside { border-left: 0; border-top: 1px solid var(--line); padding: 1.5rem 0 0; }
+  .living-aside, .living-meta { border-left: 0; border-top: 1px solid var(--line); padding: 1.5rem 0 0; }
 }
 
 @media print {

@@ -176,6 +176,20 @@
       (/^\*+$/.test(compact) || /^-+$/.test(compact) || /^_+$/.test(compact));
   }
 
+  function tableCells(line) {
+    let value = line.trim();
+    if (!value.includes("|")) return [];
+    if (value.startsWith("|")) value = value.slice(1);
+    if (value.endsWith("|")) value = value.slice(0, -1);
+    return value.split("|").map((cell) => cell.trim());
+  }
+
+  function isTableDivider(line, width) {
+    const cells = tableCells(line);
+    return cells.length === width && width > 0 &&
+      cells.every((cell) => /^:?-{3,}:?$/.test(cell));
+  }
+
   function blockStart(line) {
     return !line.trim() || isFence(line) || isRule(line) ||
       /^ {0,3}#{1,6}\s+/.test(line) || /^ {0,3}>/.test(line) ||
@@ -243,6 +257,41 @@
         appendInline(title, heading[2], depth);
         parent.appendChild(title);
         index += 1;
+        continue;
+      }
+      const headerCells = tableCells(line);
+      if (index + 1 < lines.length &&
+          isTableDivider(lines[index + 1], headerCells.length)) {
+        const wrapper = node("div", "markdown-table-wrap");
+        const table = node("table");
+        const tableHead = node("thead");
+        const headRow = node("tr");
+        headerCells.forEach((value) => {
+          const cell = node("th");
+          cell.setAttribute("scope", "col");
+          appendInline(cell, value, depth);
+          headRow.appendChild(cell);
+        });
+        tableHead.appendChild(headRow);
+        table.appendChild(tableHead);
+        index += 2;
+
+        const tableBody = node("tbody");
+        while (index < lines.length && lines[index].trim()) {
+          const values = tableCells(lines[index]);
+          if (values.length !== headerCells.length) break;
+          const row = node("tr");
+          values.forEach((value) => {
+            const cell = node("td");
+            appendInline(cell, value, depth);
+            row.appendChild(cell);
+          });
+          tableBody.appendChild(row);
+          index += 1;
+        }
+        table.appendChild(tableBody);
+        wrapper.appendChild(table);
+        parent.appendChild(wrapper);
         continue;
       }
       if (/^ {0,3}>/.test(line)) {

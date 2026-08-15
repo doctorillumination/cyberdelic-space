@@ -1,6 +1,25 @@
 {
-  "count": 2,
+  "count": 3,
   "items": [
+    {
+      "authors": [
+        "Brad Necyk",
+        "Machine collaborators"
+      ],
+      "content_type": "text/markdown; charset=utf-8",
+      "current_version": "0.1",
+      "date": "2026-08-15",
+      "project": "cyberdelic-os",
+      "release_code": "I-01",
+      "release_id": "cyberdelic-studio",
+      "series": "instruments",
+      "sha256": "819978c5348a9bc018a318050c200118a2e9c21d53d7d69a36b271bab1f5cb47",
+      "status": "proposed",
+      "summary": "A human-scale publishing instrument for deliberate public memory.",
+      "title": "Cyberdelic Studio",
+      "url": "workshop/cyberdelic-os/instruments/cyberdelic-studio/v0.1/",
+      "version_count": 1
+    },
     {
       "authors": [
         "Brad Necyk"
