@@ -1,5 +1,5 @@
 {
-  "count": 1,
+  "count": 2,
   "items": [
     {
       "chain_evidence": {
@@ -23,6 +23,30 @@
       "version": 1,
       "version_label": "0.6",
       "version_sha256": "d21b37078cdfbaf159108d7e6e823716e1e28fecfb2ae402687b73332a995dce"
+    },
+    {
+      "authorship_note": "Drafted by the Cyberdelic Librarian in response to Brad Necyk's direction. Open to human revision and ratification.",
+      "chain_evidence": {
+        "inscription_id": null,
+        "network": null,
+        "state": "living",
+        "verified": false
+      },
+      "content_length": 5096,
+      "content_path": "living-content/cyberdelic-os/fn-s0-002/v000001.md",
+      "content_sha256": "3d9f8d14de066bbec80daa0d5296c9e44b85ccdf3af797504913bf56f043da9c",
+      "content_type": "text/markdown;charset=utf-8",
+      "maturity": "proposed",
+      "metadata_sha256": null,
+      "project_slug": "cyberdelic-os",
+      "published_at": "2026-08-15T00:00:00-07:00",
+      "release_id": "FN-S0-002",
+      "series_slug": "field-notes",
+      "territory": "field",
+      "title": "The Living Librarian",
+      "version": 1,
+      "version_label": "0.1",
+      "version_sha256": "3d9f8d14de066bbec80daa0d5296c9e44b85ccdf3af797504913bf56f043da9c"
     }
   ],
   "schema": "https://cyberdelic.space/schemas/living-index-v1.json",

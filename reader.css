@@ -1294,6 +1294,32 @@ ul.plain .line { display: inline; font-size: .75rem; }
   border-left: 1px solid var(--line); padding-left: 1.5rem;
   color: var(--ink-2);
 }
+.field-note-anchor { scroll-margin-top: 2rem; }
+.field-note-index {
+  position: sticky; top: 1.5rem; margin: 0 0 2.2rem;
+}
+.field-note-index ol {
+  list-style: none; margin: 0; padding: 0 .55rem 0 0;
+  max-height: 62vh; overflow-y: auto; scrollbar-width: thin;
+  scrollbar-color: var(--line-2) transparent;
+}
+.field-note-index li { margin: 0; }
+.field-note-index a {
+  display: grid; grid-template-columns: 3.8rem minmax(0, 1fr); gap: .55rem;
+  align-items: baseline; padding: .48rem .35rem .48rem .55rem;
+  border-left: 1px solid transparent; color: var(--ink-2);
+  text-decoration: none; transition: color .2s ease, border-color .2s ease;
+}
+.field-note-index code {
+  padding: 0; border: 0; background: transparent;
+  color: inherit; font: .6rem/1.4 var(--font-mono); letter-spacing: .05em;
+}
+.field-note-index span { font: .72rem/1.35 var(--font-sans); }
+.field-note-index a:hover,
+.field-note-index a[aria-current="location"] {
+  color: var(--ink); border-left-color: var(--signal);
+}
+.field-note-index a[aria-current="location"] code { color: var(--signal); }
 .version-history li { padding: .7rem 0; border-bottom: 1px solid var(--line); }
 .version-history a { display: block; color: inherit; text-decoration: none; }
 .version-history a:hover strong { color: var(--signal); }
@@ -1346,6 +1372,8 @@ ul.plain .line { display: inline; font-size: .75rem; }
   .living-aside {
     border-left: 0; border-top: 1px solid var(--line); padding: 1.5rem 0 0;
   }
+  .field-note-index { position: static; }
+  .field-note-index ol { max-height: 24rem; }
   .field-stage { min-height: 34rem; }
   .field-progress { top: .7rem; }
   .field-progress [data-field-instruction] { max-width: 17rem; }

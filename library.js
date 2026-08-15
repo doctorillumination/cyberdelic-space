@@ -8,6 +8,103 @@
   "use strict";
   document.documentElement.classList.add("js");
 
+  function ensureFacetChip(source, facet, term) {
+    var rail = source.querySelector(".rail");
+    if (!rail) return;
+    var group = rail.querySelector('[data-facet="' + facet + '"]');
+    if (!group) {
+      group = document.createElement("div");
+      group.className = "rail-group";
+      group.dataset.facet = facet;
+      var groupLabel = document.createElement("span");
+      groupLabel.className = "rail-label";
+      groupLabel.textContent = facet.charAt(0).toUpperCase() + facet.slice(1);
+      group.appendChild(groupLabel);
+      rail.appendChild(group);
+    }
+    if (group.querySelector('[data-term="' + term + '"]')) return;
+    var chip = document.createElement("a");
+    chip.className = "chip";
+    chip.dataset.facet = facet;
+    chip.dataset.term = term;
+    chip.href = "#" + facet + "=" + term;
+    chip.textContent = term;
+    group.appendChild(chip);
+  }
+
+  function addLivingCatalog(catalog) {
+    var source = document.querySelector(".library-source");
+    if (!source || !catalog || !Array.isArray(catalog.items)) return;
+    var cardsList = source.querySelector(".cards");
+    if (!cardsList) {
+      cardsList = document.createElement("ul");
+      cardsList.className = "cards";
+      source.appendChild(cardsList);
+    }
+    var defaults = catalog.defaults || {};
+    catalog.items.forEach(function (item, index) {
+      if (!item || !item.title || !item.href) return;
+      var facets = [];
+      var form = item.form || defaults.form;
+      var world = item.world || defaults.world;
+      var era = item.era || defaults.era;
+      var register = item.register;
+      if (form) facets.push("form:" + form);
+      (item.themes || []).forEach(function (theme) {
+        facets.push("theme:" + theme);
+      });
+      if (register) facets.push("register:" + register);
+      if (world) facets.push("world:" + world);
+      if (era) facets.push("era:" + era);
+      facets.forEach(function (key) {
+        var split = key.indexOf(":");
+        ensureFacetChip(source, key.slice(0, split), key.slice(split + 1));
+      });
+
+      var card = document.createElement("li");
+      var link = document.createElement("a");
+      var heading = document.createElement("h2");
+      var byline = document.createElement("p");
+      var excerpt = document.createElement("p");
+      var line = document.createElement("p");
+      var author = item.author || defaults.author || "";
+      var date = item.date || defaults.date || "";
+      var state = item.publication_state || defaults.publication_state || "living";
+      card.className = "card living-card";
+      card.dataset.facets = facets.join(" ");
+      card.dataset.label = item.label || "LIVING";
+      card.dataset.state = state;
+      card.dataset.order = String(900000 + index);
+      card.dataset.search = [
+        item.title, author, item.excerpt, item.rationale, item.label,
+        facets.join(" "), state, item.release_id || defaults.release_id
+      ].filter(Boolean).join(" ").toLowerCase();
+      link.href = item.href;
+      heading.textContent = item.title;
+      byline.className = "byline";
+      byline.textContent = author;
+      excerpt.className = "excerpt";
+      excerpt.textContent = item.excerpt || "";
+      line.className = "line";
+      line.textContent = [date, "living field", "not inscribed"]
+        .filter(Boolean).join(" · ");
+      link.appendChild(heading);
+      if (author) link.appendChild(byline);
+      if (item.excerpt) link.appendChild(excerpt);
+      link.appendChild(line);
+      card.appendChild(link);
+      cardsList.appendChild(card);
+    });
+    var countLabel = source.querySelector(".count");
+    if (countLabel) {
+      var total = cardsList.querySelectorAll(".card").length;
+      countLabel.textContent = total + " works";
+    }
+  }
+
+  function startLibrary(catalog) {
+    addLivingCatalog(catalog);
+
   var field = document.querySelector(".living-index");
   var choice = document.querySelector("[data-field-choice]");
   var nodeLayer = document.querySelector("[data-field-nodes]");
@@ -66,7 +163,11 @@
       title: title ? title.textContent.trim() : "Untitled work",
       excerpt: excerpt ? excerpt.textContent.trim() : "",
       href: href,
-      height: heightMatch ? parseInt(heightMatch[1], 10) : index,
+      label: card.dataset.label || "",
+      state: card.dataset.state || "inscribed",
+      height: card.dataset.order
+        ? parseInt(card.dataset.order, 10)
+        : (heightMatch ? parseInt(heightMatch[1], 10) : index),
       terms: termsOn(card)
     };
   });
@@ -971,7 +1072,7 @@
     });
     article.className = "field-result";
     number.className = "field-result-kind";
-    number.textContent = "0" + (index + 1);
+    number.textContent = item.work.label || "0" + (index + 1);
     link.href = item.work.href;
     link.textContent = item.work.title;
     heading.appendChild(link);
@@ -1135,4 +1236,13 @@
   readHash();
   revealed = selectedTerms().length >= maximumSignals;
   update(false, false, false);
+  }
+
+  fetch("living-library.json?v=2", { credentials: "same-origin", cache: "no-cache" })
+    .then(function (response) {
+      if (!response.ok) throw new Error("Living library unavailable");
+      return response.json();
+    })
+    .then(startLibrary)
+    .catch(function () { startLibrary(null); });
 }());

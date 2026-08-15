@@ -1,0 +1,350 @@
+{
+  "schema": "https://cyberdelic.space/schemas/living-library-curation-v1.json",
+  "ontology_version": "0.1",
+  "curation": {
+    "office": "Cyberdelic Librarian",
+    "status": "model-proposed",
+    "method": "Close reading of each public field note, followed by a small set of thematic placements. These placements are interpretive, revisable, and separate from inscribed metadata.",
+    "ratification": "Brad Necyk may accept, revise, strengthen, or remove any placement."
+  },
+  "defaults": {
+    "release_id": "FN-S0-001",
+    "author": "Brad Necyk",
+    "date": "2026-08-15",
+    "publication_state": "living",
+    "form": "field-note",
+    "world": "cyberdelic-os",
+    "era": "incunabula"
+  },
+  "items": [
+    {
+      "id": "cyberdelic-os-fn-01",
+      "label": "FN-01 · LIVING",
+      "title": "An Operating System for Shared Reality",
+      "href": "project/cyberdelic-os/fn-s0-001/#fn-01",
+      "excerpt": "A proposal for an operating system that connects situated apertures without collapsing their differences.",
+      "themes": ["technology", "consciousness", "governance", "attention", "perception", "agency"],
+      "register": "speculative-design",
+      "rationale": "The note joins interface design, attention, and plural governance around the problem of shared reality."
+    },
+    {
+      "id": "cyberdelic-os-fn-02",
+      "label": "FN-02 · LIVING",
+      "title": "Asynchronous Co-Presence",
+      "href": "project/cyberdelic-os/fn-s0-001/#fn-02",
+      "excerpt": "Correspondence becomes a spacious medium where latency, voice, and continuity carry presence across distance.",
+      "themes": ["collaboration", "language", "embodiment", "memory", "attention"],
+      "register": "field-meditation",
+      "rationale": "Its central material is embodied language sustained through time, distance, and creative relation."
+    },
+    {
+      "id": "cyberdelic-os-fn-03",
+      "label": "FN-03 · LIVING",
+      "title": "A Village of Agents",
+      "href": "project/cyberdelic-os/fn-s0-001/#fn-03",
+      "excerpt": "Machine intelligence is imagined as a plural ecology of bounded offices rather than a single oracle.",
+      "themes": ["artificial-intelligence", "community", "agency", "governance", "privacy"],
+      "register": "speculative-design",
+      "rationale": "The village metaphor turns AI architecture into a question of offices, permissions, plurality, and accountability."
+    },
+    {
+      "id": "cyberdelic-os-fn-04",
+      "label": "FN-04 · LIVING",
+      "title": "The Gathering Intelligence",
+      "href": "project/cyberdelic-os/fn-s0-001/#fn-04",
+      "excerpt": "An intelligence designed to gather people around shared attention instead of isolating each person inside a private answer.",
+      "themes": ["artificial-intelligence", "collaboration", "community", "attention", "governance"],
+      "register": "speculative-design",
+      "rationale": "The note treats collective attention, shared objects, and facilitation as an alternative purpose for AI."
+    },
+    {
+      "id": "cyberdelic-os-fn-05",
+      "label": "FN-05 · LIVING",
+      "title": "The Physics We Choose",
+      "href": "project/cyberdelic-os/fn-s0-001/#fn-05",
+      "excerpt": "Digital systems have designed laws, and those laws cultivate particular forms of attention and consciousness.",
+      "themes": ["technology", "attention", "governance", "consciousness", "privacy", "imagination"],
+      "register": "waking-argument",
+      "rationale": "It reads interface incentives as cultural physics and asks which values should govern those forces."
+    },
+    {
+      "id": "cyberdelic-os-fn-06",
+      "label": "FN-06 · LIVING",
+      "title": "First Light",
+      "href": "project/cyberdelic-os/fn-s0-001/#fn-06",
+      "excerpt": "Situated imagination is addressed to an uncertain future without pretending to be timeless truth.",
+      "themes": ["imagination", "emergence", "memory", "creativity", "futurity"],
+      "register": "field-meditation",
+      "rationale": "This is a meditation on artistic speculation, durable memory, uncertainty, and futures worth desiring."
+    },
+    {
+      "id": "cyberdelic-os-fn-07",
+      "label": "FN-07 · LIVING",
+      "title": "The Hearth: Intelligence Comes Home",
+      "href": "project/cyberdelic-os/fn-s0-001/#fn-07",
+      "excerpt": "Personal intelligence returns from the cloud to a locally governed Hearth of memory, models, and permissions.",
+      "themes": ["artificial-intelligence", "privacy", "decentralization", "memory", "agency", "technology"],
+      "register": "waking-argument",
+      "rationale": "The Hearth connects local computation with sovereignty, privacy, continuity, and personal agency."
+    },
+    {
+      "id": "cyberdelic-os-fn-08",
+      "label": "FN-08 · LIVING",
+      "title": "The Lived Interface",
+      "href": "project/cyberdelic-os/fn-s0-001/#fn-08",
+      "excerpt": "A sensory world gives thought, memory, relation, and attention a lived spatial form.",
+      "themes": ["interface", "embodiment", "memory", "perception", "play", "imagination"],
+      "register": "speculative-design",
+      "rationale": "The note moves beyond office metaphors toward embodied, spatial, and playful interface design."
+    },
+    {
+      "id": "cyberdelic-os-fn-09",
+      "label": "FN-09 · LIVING",
+      "title": "The Lensmaker: Portable Apertures",
+      "href": "project/cyberdelic-os/fn-s0-001/#fn-09",
+      "excerpt": "A lens carries a pattern of attention without claiming to simulate or replace the person from whom it emerged.",
+      "themes": ["perception", "artificial-intelligence", "consciousness", "collaboration", "language", "identity"],
+      "register": "field-meditation",
+      "rationale": "Portable apertures concern perspective, identity, attribution, and the ethics of model-mediated collaboration."
+    },
+    {
+      "id": "cyberdelic-os-fn-10",
+      "label": "FN-10 · LIVING",
+      "title": "The Mirror Archive",
+      "href": "project/cyberdelic-os/fn-s0-001/#fn-10",
+      "excerpt": "Long conversations with models become a possible mirror of recurring metaphors, values, and changes in a life.",
+      "themes": ["memory", "privacy", "artificial-intelligence", "identity", "consciousness"],
+      "register": "waking-argument",
+      "rationale": "The archive is interpreted as intimate memory, making privacy and the limits of machine reflection central."
+    },
+    {
+      "id": "cyberdelic-os-fn-11",
+      "label": "FN-11 · LIVING",
+      "title": "The Writing Table",
+      "href": "project/cyberdelic-os/fn-s0-001/#fn-11",
+      "excerpt": "Humans, models, and authored lenses gather around one inquiry without being synthesized into a single voice.",
+      "themes": ["collaboration", "artificial-intelligence", "creativity", "language", "governance"],
+      "register": "speculative-design",
+      "rationale": "The Writing Table is a collaborative protocol for plural intelligence, authorship, and creative judgement."
+    },
+    {
+      "id": "cyberdelic-os-fn-12",
+      "label": "FN-12 · LIVING",
+      "title": "Ports and Weather Stations",
+      "href": "project/cyberdelic-os/fn-s0-001/#fn-12",
+      "excerpt": "Social platforms are treated as algorithmic climates whose incentives shape how signals travel.",
+      "themes": ["technology", "attention", "media", "governance", "decentralization"],
+      "register": "waking-argument",
+      "rationale": "This note maps media environments as distinct systems of saliency, protocol, and power."
+    },
+    {
+      "id": "cyberdelic-os-fn-13",
+      "label": "FN-13 · LIVING",
+      "title": "The Ledger, the Anchor, and the Inscription",
+      "href": "project/cyberdelic-os/fn-s0-001/#fn-13",
+      "excerpt": "Living, anchored, and inscribed memory are separated by temperature, evidence, and permanence.",
+      "themes": ["provenance", "memory", "privacy", "decentralization", "technology"],
+      "register": "waking-argument",
+      "rationale": "Its main distinction concerns cryptographic evidence and the ethical boundaries between different memory layers."
+    },
+    {
+      "id": "cyberdelic-os-fn-14",
+      "label": "FN-14 · LIVING",
+      "title": "The Open Anatomy",
+      "href": "project/cyberdelic-os/fn-s0-001/#fn-14",
+      "excerpt": "Existing open-source projects are read as functioning organs from which a larger system might be composed.",
+      "themes": ["technology", "decentralization", "artificial-intelligence", "provenance", "collaboration"],
+      "register": "technical-cartography",
+      "rationale": "This is an architectural survey of reusable technical organs, protocols, and open lineages."
+    },
+    {
+      "id": "cyberdelic-os-fn-15",
+      "label": "FN-15 · LIVING",
+      "title": "The First Small World",
+      "href": "project/cyberdelic-os/fn-s0-001/#fn-15",
+      "excerpt": "The vast operating-system vision is reduced to one small, testable world where its laws can be felt.",
+      "themes": ["technology", "prototyping", "artificial-intelligence", "agency", "interface"],
+      "register": "technical-cartography",
+      "rationale": "The note converts a speculative world into an actionable prototype and bounded technical experiment."
+    },
+    {
+      "id": "cyberdelic-os-fn-16",
+      "label": "FN-16 · LIVING",
+      "title": "The Archipelago: Sovereign Worlds, Shared Sky",
+      "href": "project/cyberdelic-os/fn-s0-001/#fn-16",
+      "excerpt": "Independently governed homes, villages, and cities remain distinct while sharing protocols and a cultural sky.",
+      "themes": ["decentralization", "community", "governance", "collaboration", "identity", "pluralism"],
+      "register": "speculative-design",
+      "rationale": "The archipelago is a political and network model for sovereignty, federation, and plural belonging."
+    },
+    {
+      "id": "cyberdelic-os-fn-17",
+      "label": "FN-17 · LIVING",
+      "title": "One World, Many Interfaces",
+      "href": "project/cyberdelic-os/fn-s0-001/#fn-17",
+      "excerpt": "One semantic world can be rendered through voice, maps, games, research tools, or quiet text according to need.",
+      "themes": ["interface", "embodiment", "perception", "accessibility", "technology"],
+      "register": "speculative-design",
+      "rationale": "Interface plurality is framed as both an experiential and accessibility requirement."
+    },
+    {
+      "id": "cyberdelic-os-fn-18",
+      "label": "FN-18 · LIVING",
+      "title": "You Carry the Doorway",
+      "href": "project/cyberdelic-os/fn-s0-001/#fn-18",
+      "excerpt": "The phone becomes a light, voice-first doorway to the sovereign Hearth while a person moves through the world.",
+      "themes": ["embodiment", "interface", "attention", "technology", "ecology"],
+      "register": "field-meditation",
+      "rationale": "Mobility, voice, and reduced screen demand connect the technical doorway to embodied life and place."
+    },
+    {
+      "id": "cyberdelic-os-fn-19",
+      "label": "FN-19 · LIVING",
+      "title": "A Medium for Becoming",
+      "href": "project/cyberdelic-os/fn-s0-001/#fn-19",
+      "excerpt": "Software reflects the slow trajectory of a person's attention without converting becoming into optimization.",
+      "themes": ["consciousness", "attention", "agency", "memory", "identity"],
+      "register": "field-meditation",
+      "rationale": "The note concerns selfhood across time, reflective agency, and the ethics of attending to personal change."
+    },
+    {
+      "id": "cyberdelic-os-fn-20",
+      "label": "FN-20 · LIVING",
+      "title": "Aperture Design as a Cultural Form",
+      "href": "project/cyberdelic-os/fn-s0-001/#fn-20",
+      "excerpt": "A portable pattern of attention is proposed as a cultural form distinct from portrait, archive, or digital twin.",
+      "themes": ["perception", "consciousness", "identity", "creativity", "memory"],
+      "register": "field-meditation",
+      "rationale": "It places authored ways of seeing within the lineage of cultural forms that carry consciousness."
+    },
+    {
+      "id": "cyberdelic-os-fn-21",
+      "label": "FN-21 · LIVING",
+      "title": "Conversation Now, Cultivation Later",
+      "href": "project/cyberdelic-os/fn-s0-001/#fn-21",
+      "excerpt": "Immediate conversation and slower background cultivation become two complementary rhythms of intelligent assistance.",
+      "themes": ["artificial-intelligence", "attention", "memory", "language", "creativity"],
+      "register": "speculative-design",
+      "rationale": "The design separates live companionship from patient synthesis, preserving two distinct temporal needs."
+    },
+    {
+      "id": "cyberdelic-os-fn-22",
+      "label": "FN-22 · LIVING",
+      "title": "The Chain Beneath the Village",
+      "href": "project/cyberdelic-os/fn-s0-001/#fn-22",
+      "excerpt": "The blockchain serves as notary, treasury, and court while ordinary life remains local, fast, and forgettable.",
+      "themes": ["provenance", "privacy", "decentralization", "memory", "technology", "governance"],
+      "register": "technical-cartography",
+      "rationale": "This note defines the limited infrastructural role of chains within a broader system of signed living events."
+    },
+    {
+      "id": "cyberdelic-os-fn-23",
+      "label": "FN-23 · LIVING",
+      "title": "A Civic Economy Without Speculative Land",
+      "href": "project/cyberdelic-os/fn-s0-001/#fn-23",
+      "excerpt": "A digital economy is grounded in genuinely scarce care, attention, stewardship, compute, and public work.",
+      "themes": ["economy", "governance", "community", "attention", "care"],
+      "register": "waking-argument",
+      "rationale": "The note rejects artificial land scarcity and redirects value toward civic maintenance and real constraints."
+    },
+    {
+      "id": "cyberdelic-os-fn-24",
+      "label": "FN-24 · LIVING",
+      "title": "The Game of Shared Understanding",
+      "href": "project/cyberdelic-os/fn-s0-001/#fn-24",
+      "excerpt": "A multiplayer world-building game makes collective understanding, relation, and public artifacts into the world itself.",
+      "themes": ["play", "community", "collaboration", "attention", "governance", "creativity"],
+      "register": "speculative-design",
+      "rationale": "Game structure is applied to civic imagination and collective attention rather than individual accumulation."
+    },
+    {
+      "id": "cyberdelic-os-fn-25",
+      "label": "FN-25 · LIVING",
+      "title": "Expeditions, Storms, and the Birth of Boroughs",
+      "href": "project/cyberdelic-os/fn-s0-001/#fn-25",
+      "excerpt": "Expeditions across distant apertures and storms of disagreement create routes, artifacts, and new civic forms.",
+      "themes": ["governance", "collaboration", "community", "perception", "pluralism", "play"],
+      "register": "speculative-design",
+      "rationale": "The note turns ideological difference into navigable civic practice without forcing consensus."
+    },
+    {
+      "id": "cyberdelic-os-fn-26",
+      "label": "FN-26 · LIVING",
+      "title": "Creation Alters the Geography",
+      "href": "project/cyberdelic-os/fn-s0-001/#fn-26",
+      "excerpt": "Dark regions invite people and agents to make something that changes both the map and the world beyond it.",
+      "themes": ["creativity", "emergence", "collaboration", "imagination", "agency", "prototyping"],
+      "register": "speculative-design",
+      "rationale": "Creation is treated as the deepest participatory act and as a response to meaningful absence."
+    },
+    {
+      "id": "cyberdelic-os-fn-27",
+      "label": "FN-27 · LIVING",
+      "title": "Vocations, Not Classes",
+      "href": "project/cyberdelic-os/fn-s0-001/#fn-27",
+      "excerpt": "Witnesses, Gardeners, Cartographers, Builders, and Ferrymen become bounded offices of attention rather than fixed identities.",
+      "themes": ["attention", "agency", "community", "governance", "identity", "play"],
+      "register": "speculative-design",
+      "rationale": "The role system joins capability to responsibility and makes situated attention a civic practice."
+    },
+    {
+      "id": "cyberdelic-os-fn-28",
+      "label": "FN-28 · LIVING",
+      "title": "The World Is the Interface",
+      "href": "project/cyberdelic-os/fn-s0-001/#fn-28",
+      "excerpt": "The most advanced interface may be the one that returns attention to bodies, places, relationships, and the more-than-human world.",
+      "themes": ["embodiment", "ecology", "attention", "interface", "perception", "technology"],
+      "register": "field-meditation",
+      "rationale": "This note closes the digital loop by making physical life and ecological partiality the primary interface."
+    },
+    {
+      "id": "cyberdelic-os-fn-29",
+      "release_id": "FN-S0-002",
+      "label": "FN-29 · PROPOSED",
+      "title": "The Living Librarian",
+      "href": "project/cyberdelic-os/fn-s0-002/",
+      "author": "Cyberdelic Librarian, in response to Brad Necyk",
+      "excerpt": "A librarian, gardener, and cartographer reads the living archive, proposes relations, and keeps every interpretation visible and revisable.",
+      "themes": ["curation", "memory", "artificial-intelligence", "provenance", "attention", "emergence"],
+      "register": "field-meditation",
+      "rationale": "The note defines the model's situated curatorial office and the limits that keep its proposed map accountable."
+    },
+    {
+      "id": "cyberdelic-os-bn-001",
+      "release_id": "BN-001",
+      "label": "BN-001 · TESTING",
+      "title": "Building INSCRIBE",
+      "href": "project/cyberdelic-os/bn-001/",
+      "form": "builder-note",
+      "excerpt": "A builder note turns selective permanence into a legible operation of preparation, ratification, inscription, verification, and tending.",
+      "themes": ["provenance", "memory", "decentralization", "technology", "governance", "privacy"],
+      "register": "technical-cartography",
+      "rationale": "This note maps the technical and ethical threshold between revisable living memory and irreversible publication."
+    },
+    {
+      "id": "cyberdelic-os-i-001",
+      "release_id": "I-001",
+      "label": "I-001 · PROPOSED",
+      "title": "Cyberdelic Studio",
+      "href": "project/cyberdelic-os/i-001/",
+      "author": "Brad Necyk, Machine collaborators",
+      "form": "instrument",
+      "excerpt": "A human-scale instrument makes the object, evidence, cost, and responsibility of irreversible publication perceptible before consent.",
+      "themes": ["technology", "provenance", "decentralization", "governance", "accessibility", "memory", "agency"],
+      "register": "technical-cartography",
+      "rationale": "The Studio is a working interface where constitutional ideas become operational safeguards and verifiable publication."
+    },
+    {
+      "id": "cyberdelic-os-a-001",
+      "release_id": "A-001",
+      "label": "A-001 · RATIFIED",
+      "title": "Cyberdelic.space",
+      "href": "project/cyberdelic-os/a-001/",
+      "form": "artifact",
+      "excerpt": "The public press is documented as a working organ that carries exact bytes, provenance, verification, and selective permanence.",
+      "themes": ["provenance", "decentralization", "memory", "technology", "governance", "curation"],
+      "register": "technical-cartography",
+      "rationale": "The artifact embodies the relation between a living curatorial field and a permanent, independently verifiable library."
+    }
+  ]
+}
