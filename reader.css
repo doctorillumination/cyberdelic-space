@@ -118,6 +118,18 @@ a { color: inherit; }
 a:hover { color: var(--signal); }
 :focus-visible { outline: 2px solid var(--signal); outline-offset: 3px; }
 
+/* Digests, transaction IDs, inscription IDs, and other inline identifiers
+   must stay inside their column at every viewport width. Command and source
+   blocks retain their deliberate horizontal scrolling. */
+code {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+pre code {
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
 .skip { position: absolute; left: -9999px; }
 .skip:focus {
   left: 1rem; top: 1rem; z-index: 9; background: var(--surface);
