@@ -1199,10 +1199,12 @@ ul.plain .line { display: inline; font-size: .75rem; }
 .project-cards {
   display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem;
 }
+.project-cards li { display: flex; }
 .project-card {
-  min-height: 14rem; padding: 1.6rem; display: grid; align-content: start;
+  width: 100%; min-height: 14rem; padding: 1.6rem; display: grid;
+  grid-template-rows: auto auto 1fr auto; align-content: start;
   gap: .8rem; color: var(--ink); border: 1px solid var(--line);
-  background: var(--surface); text-decoration: none;
+  background: var(--surface); text-decoration: none; box-sizing: border-box;
 }
 .project-card:hover { border-color: var(--signal); }
 .project-card strong { font: 400 2rem/1.1 var(--font-editorial); }
@@ -1245,13 +1247,25 @@ ul.plain .line { display: inline; font-size: .75rem; }
 .living-badge.living { color: var(--ink-2); }
 .project-offices { margin-top: 4rem; }
 .project-offices ul {
-  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1px; background: var(--line);
+  display: block; border-top: 1px solid var(--line); background: transparent;
 }
 .project-offices li {
-  display: grid; gap: .5rem; padding: 1.2rem; background: var(--canvas);
+  display: block; padding: 0; background: transparent;
+  border-bottom: 1px solid var(--line);
 }
-.project-offices span { color: var(--ink-2); }
+.project-office-link {
+  display: grid; grid-template-columns: minmax(12rem, .45fr) minmax(0, 1fr) auto;
+  gap: 1.5rem; align-items: center; padding: 1.2rem 0;
+  color: var(--ink); text-decoration: none;
+}
+.project-office-link strong { font: 400 1.25rem/1.3 var(--font-editorial); }
+.project-office-link span { color: var(--ink-2); }
+.project-office-link::after {
+  content: "\2192"; color: var(--ink-2); transition: transform .2s ease, color .2s ease;
+}
+.project-office-link:hover strong,
+.project-office-link:hover::after { color: var(--signal); }
+.project-office-link:hover::after { transform: translateX(.25rem); }
 .living-head { max-width: 52rem; margin-bottom: 3rem; }
 .living-head h1 {
   font: 400 clamp(2.8rem, 7vw, 5rem)/1 var(--font-editorial);
@@ -1321,9 +1335,12 @@ ul.plain .line { display: inline; font-size: .75rem; }
   .facts th { width: auto; white-space: normal; display: block;
     border: 0; padding-bottom: 0; }
   .facts td { display: block; padding-top: .2rem; }
-  .project-cards, .project-offices ul, .living-layout {
+  .project-cards, .living-layout {
     grid-template-columns: 1fr;
   }
+  .project-office-link { grid-template-columns: 1fr auto; gap: .4rem 1rem; }
+  .project-office-link span { grid-column: 1; }
+  .project-office-link::after { grid-column: 2; grid-row: 1 / span 2; }
   .living-row { grid-template-columns: 1fr; gap: .6rem; }
   .living-badges { justify-content: flex-start; }
   .living-aside {
