@@ -1296,12 +1296,10 @@ ul.plain .line { display: inline; font-size: .75rem; }
 }
 .field-note-anchor { scroll-margin-top: 2rem; }
 .field-note-index {
-  position: sticky; top: 1.5rem; margin: 0 0 2.2rem;
+  position: static; margin: 0 0 2.2rem;
 }
 .field-note-index ol {
-  list-style: none; margin: 0; padding: 0 .55rem 0 0;
-  max-height: 62vh; overflow-y: auto; scrollbar-width: thin;
-  scrollbar-color: var(--line-2) transparent;
+  list-style: none; margin: 0; padding: 0;
 }
 .field-note-index li { margin: 0; }
 .field-note-index a {
@@ -1373,7 +1371,6 @@ ul.plain .line { display: inline; font-size: .75rem; }
     border-left: 0; border-top: 1px solid var(--line); padding: 1.5rem 0 0;
   }
   .field-note-index { position: static; }
-  .field-note-index ol { max-height: 24rem; }
   .field-stage { min-height: 34rem; }
   .field-progress { top: .7rem; }
   .field-progress [data-field-instruction] { max-width: 17rem; }
