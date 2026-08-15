@@ -43,14 +43,40 @@
     });
   }
 
-  function markCurrentFieldNote(id) {
+  var currentFieldNoteId = "";
+
+  function keepIndexLinkVisible(link, immediate) {
+    var list = link && link.closest("[data-field-note-index]");
+    if (!list || list.scrollHeight <= list.clientHeight) return;
+    var margin = 28;
+    var linkTop = link.offsetTop;
+    var linkBottom = linkTop + link.offsetHeight;
+    var visibleTop = list.scrollTop + margin;
+    var visibleBottom = list.scrollTop + list.clientHeight - margin;
+    if (linkTop >= visibleTop && linkBottom <= visibleBottom) return;
+    var target = linkTop - (list.clientHeight - link.offsetHeight) * 0.42;
+    var reducedMotion = window.matchMedia &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    list.scrollTo({
+      top: Math.max(0, target),
+      behavior: immediate || reducedMotion ? "auto" : "smooth"
+    });
+  }
+
+  function markCurrentFieldNote(id, immediate) {
+    var activeLink = null;
     document.querySelectorAll("[data-note-target]").forEach(function (link) {
       if (link.dataset.noteTarget === id) {
         link.setAttribute("aria-current", "location");
+        activeLink = link;
       } else {
         link.removeAttribute("aria-current");
       }
     });
+    if (activeLink && (id !== currentFieldNoteId || immediate)) {
+      keepIndexLinkVisible(activeLink, immediate);
+    }
+    currentFieldNoteId = id;
   }
 
   function observeFieldNotes(records) {
@@ -69,7 +95,7 @@
     var id = window.location.hash.replace(/^#/, "");
     var record = records.find(function (item) { return item.id === id; });
     if (!record) return;
-    markCurrentFieldNote(id);
+    markCurrentFieldNote(id, true);
     window.requestAnimationFrame(function () {
       record.heading.scrollIntoView({ block: "start" });
     });
@@ -90,7 +116,7 @@
     observeFieldNotes(records);
     restoreDeepLink(records);
     window.addEventListener("hashchange", function () {
-      markCurrentFieldNote(window.location.hash.replace(/^#/, ""));
+      markCurrentFieldNote(window.location.hash.replace(/^#/, ""), true);
     });
   });
 })();
