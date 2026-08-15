@@ -40,13 +40,6 @@
   X-Content-Type-Options: nosniff
   Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
 
-/field.json
-  Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://mempool.space https://blockstream.info https://ordinals.com; frame-src 'self'; base-uri 'none'; form-action 'none'
-  X-Frame-Options: DENY
-  Referrer-Policy: no-referrer
-  X-Content-Type-Options: nosniff
-  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
-
 /field/*
   Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://mempool.space https://blockstream.info https://ordinals.com; frame-src 'self'; base-uri 'none'; form-action 'none'
   X-Frame-Options: DENY
@@ -54,28 +47,14 @@
   X-Content-Type-Options: nosniff
   Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
 
-/workshop.json
+/field
   Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://mempool.space https://blockstream.info https://ordinals.com; frame-src 'self'; base-uri 'none'; form-action 'none'
   X-Frame-Options: DENY
   Referrer-Policy: no-referrer
   X-Content-Type-Options: nosniff
   Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
 
-/workshop/*
-  Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://mempool.space https://blockstream.info https://ordinals.com; frame-src 'self'; base-uri 'none'; form-action 'none'
-  X-Frame-Options: DENY
-  Referrer-Policy: no-referrer
-  X-Content-Type-Options: nosniff
-  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
-
-/living.js
-  Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://mempool.space https://blockstream.info https://ordinals.com; frame-src 'self'; base-uri 'none'; form-action 'none'
-  X-Frame-Options: DENY
-  Referrer-Policy: no-referrer
-  X-Content-Type-Options: nosniff
-  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
-
-/markdown.js
+/field.json
   Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://mempool.space https://blockstream.info https://ordinals.com; frame-src 'self'; base-uri 'none'; form-action 'none'
   X-Frame-Options: DENY
   Referrer-Policy: no-referrer
@@ -111,6 +90,20 @@
   Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
 
 /library.json
+  Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://mempool.space https://blockstream.info https://ordinals.com; frame-src 'self'; base-uri 'none'; form-action 'none'
+  X-Frame-Options: DENY
+  Referrer-Policy: no-referrer
+  X-Content-Type-Options: nosniff
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
+
+/living.js
+  Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://mempool.space https://blockstream.info https://ordinals.com; frame-src 'self'; base-uri 'none'; form-action 'none'
+  X-Frame-Options: DENY
+  Referrer-Policy: no-referrer
+  X-Content-Type-Options: nosniff
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
+
+/markdown.js
   Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://mempool.space https://blockstream.info https://ordinals.com; frame-src 'self'; base-uri 'none'; form-action 'none'
   X-Frame-Options: DENY
   Referrer-Policy: no-referrer
@@ -258,6 +251,20 @@
   Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
 
 /work.js
+  Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://mempool.space https://blockstream.info https://ordinals.com; frame-src 'self'; base-uri 'none'; form-action 'none'
+  X-Frame-Options: DENY
+  Referrer-Policy: no-referrer
+  X-Content-Type-Options: nosniff
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
+
+/workshop/*
+  Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://mempool.space https://blockstream.info https://ordinals.com; frame-src 'self'; base-uri 'none'; form-action 'none'
+  X-Frame-Options: DENY
+  Referrer-Policy: no-referrer
+  X-Content-Type-Options: nosniff
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
+
+/workshop
   Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://mempool.space https://blockstream.info https://ordinals.com; frame-src 'self'; base-uri 'none'; form-action 'none'
   X-Frame-Options: DENY
   Referrer-Policy: no-referrer

@@ -3,12 +3,14 @@
   <url><loc>https://cyberdelic.space/</loc></url>
   <url><loc>https://cyberdelic.space/projects/</loc></url>
   <url><loc>https://cyberdelic.space/ledger/</loc></url>
+  <url><loc>https://cyberdelic.space/work/8d51e2afdf8a29d0dae0dd1abfff3f90267cc8327efd0f5502914ccf3eab177fi0/</loc></url>
   <url><loc>https://cyberdelic.space/work/f6e686a1a1884e924e350539ad686aaa0180f5c219048df8cf97e69101339aefi0/</loc></url>
   <url><loc>https://cyberdelic.space/work/8c7c6dec89095f7299b483a7549a8fb801134dbcbd0bc5959b0e323f968200bbi0/</loc></url>
   <url><loc>https://cyberdelic.space/work/ebf4acbfa5184b89acaf66cb888a3af3e54191d1fa7563047b14c1fc53a3156ai0/</loc></url>
   <url><loc>https://cyberdelic.space/work/12454fe092a14d85c54bb5cc997059f24dc741ab1328b7dc7627f42bd8073f4ai0/</loc></url>
   <url><loc>https://cyberdelic.space/work/e2f829d5e84c2b7d2a7c5c6aee70bdd9792fa2fd38505ee627d6f6cb9bc4b863i0/</loc></url>
   <url><loc>https://cyberdelic.space/work/8512c8e476aa5d0b0876a0d6ee083b208db13d01e31e083d40f978f418ebbf66i0/</loc></url>
+  <url><loc>https://cyberdelic.space/shelf/form/script/</loc></url>
   <url><loc>https://cyberdelic.space/shelf/form/quotation/</loc></url>
   <url><loc>https://cyberdelic.space/shelf/form/manifesto/</loc></url>
   <url><loc>https://cyberdelic.space/shelf/form/source-code/</loc></url>
@@ -28,18 +30,16 @@
   <url><loc>https://cyberdelic.space/shelf/register/dream-logic/</loc></url>
   <url><loc>https://cyberdelic.space/shelf/register/play/</loc></url>
   <url><loc>https://cyberdelic.space/shelf/world/cyberdelic-os/</loc></url>
+  <url><loc>https://cyberdelic.space/shelf/world/psychedelic-puppet-show/</loc></url>
   <url><loc>https://cyberdelic.space/shelf/era/incunabula/</loc></url>
   <url><loc>https://cyberdelic.space/about/</loc></url>
   <url><loc>https://cyberdelic.space/mirror/</loc></url>
   <url><loc>https://cyberdelic.space/privacy/</loc></url>
   <url><loc>https://cyberdelic.space/verify/</loc></url>
   <url><loc>https://cyberdelic.space/project/cyberdelic-os/</loc></url>
-  <url><loc>https://cyberdelic.space/project/cyberdelic-os/transmissions/</loc></url>
-  <url><loc>https://cyberdelic.space/field/cyberdelic-os-field-notes/v0.6/</loc></url>
-  <url><loc>https://cyberdelic.space/project/cyberdelic-os/instruments/</loc></url>
-  <url><loc>https://cyberdelic.space/project/cyberdelic-os/builder-notes/</loc></url>
-  <url><loc>https://cyberdelic.space/project/cyberdelic-os/artifacts/</loc></url>
-  <url><loc>https://cyberdelic.space/workshop/cyberdelic-os/instruments/cyberdelic-studio/v0.1/</loc></url>
-  <url><loc>https://cyberdelic.space/workshop/cyberdelic-os/builder-notes/building-inscribe/v1.0/</loc></url>
-  <url><loc>https://cyberdelic.space/workshop/cyberdelic-os/artifacts/cyberdelic-space/v1.0/</loc></url>
+  <url><loc>https://cyberdelic.space/project/psychedelic-puppet-show/</loc></url>
+  <url><loc>https://cyberdelic.space/project/cyberdelic-os/fn-s0-001/</loc></url>
+  <url><loc>https://cyberdelic.space/project/cyberdelic-os/bn-001/</loc></url>
+  <url><loc>https://cyberdelic.space/project/cyberdelic-os/i-001/</loc></url>
+  <url><loc>https://cyberdelic.space/project/cyberdelic-os/a-001/</loc></url>
 </urlset>

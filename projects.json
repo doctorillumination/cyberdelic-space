@@ -1,5 +1,5 @@
 {
-  "project_count": 1,
+  "project_count": 2,
   "projects": [
     {
       "description": "A living work of constitutional world-building through philosophy, software, art, protocols, interfaces, and experiments.",
@@ -8,10 +8,10 @@
       ],
       "publication_count": 5,
       "release_ids": [
-        "cyberdelic-os-field-notes",
-        "building-inscribe",
-        "cyberdelic-space",
-        "cyberdelic-studio"
+        "FN-S0-001",
+        "BN-001",
+        "I-001",
+        "A-001"
       ],
       "series": [
         {
@@ -61,6 +61,26 @@
       "status": "active",
       "title": "CyberdelicOS",
       "world_term": "world:cyberdelic-os"
+    },
+    {
+      "description": "A living world of psychedelic puppetry developed through scripts, characters, performances, production experiments, and audiovisual artifacts.",
+      "inscription_ids": [
+        "8d51e2afdf8a29d0dae0dd1abfff3f90267cc8327efd0f5502914ccf3eab177fi0"
+      ],
+      "publication_count": 1,
+      "release_ids": [],
+      "series": [
+        {
+          "description": "Scripts for staged, filmed, voiced, animated, or otherwise performed works in the Psychedelic Puppet Show world.",
+          "label": "Scripts",
+          "prefix": "PPS-S",
+          "slug": "scripts"
+        }
+      ],
+      "slug": "psychedelic-puppet-show",
+      "status": "active",
+      "title": "Psychedelic Puppet Show",
+      "world_term": "world:psychedelic-puppet-show"
     }
   ],
   "schema": "https://cyberdelic.space/schemas/project-index-v1.json"

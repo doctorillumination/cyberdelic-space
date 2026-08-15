@@ -13,10 +13,87 @@
   "schema": "https://cyberdelic.space/schemas/public-reader-library-v2.json",
   "site_version": "1.2.0",
   "vocabulary": {
-    "version": "0.2"
+    "version": "0.3"
   },
-  "work_count": 6,
+  "work_count": 7,
   "works": [
+    {
+      "ai_disclosure": null,
+      "chain": {
+        "commit_txid": "68b604bb1a923d0e7c17baefc7f47383ac8aca6d92bac53fdc5a174dbe2f8ebd",
+        "genesis_height": 962587,
+        "parents": [],
+        "reveal_txid": "8d51e2afdf8a29d0dae0dd1abfff3f90267cc8327efd0f5502914ccf3eab177f",
+        "sat": null
+      },
+      "confirmed_by": "mempool.space",
+      "content_file": "content.md",
+      "content_length": 15775,
+      "content_path": "content/8d51e2afdf8a29d0dae0dd1abfff3f90267cc8327efd0f5502914ccf3eab177fi0/content.md",
+      "content_type": "text/markdown;charset=utf-8",
+      "contributions": [
+        {
+          "name": "Jason Silva",
+          "role": "authorship"
+        },
+        {
+          "name": "Brad Necyk",
+          "role": "authorship"
+        }
+      ],
+      "date": "2026-08-15",
+      "digests": {
+        "content_sha256": "3625ec74189ed9e610c5bd42a2187ac703b235d63b5dbb78b5e2e5a782133146",
+        "envelope_sha256": "db0c8c8fdd54dcef625885d366faf1fbcbb0292876dcb32e35079c8fc42ac287",
+        "metadata_cbor_sha256": "ab03ed53ec657e664328c66b89ae5b1e815b693ca72c9fc757ef55c1150bca21"
+      },
+      "edition": "1/3",
+      "era": {
+        "name": "Incunabula",
+        "number": 0,
+        "slug": "incunabula"
+      },
+      "facet_source": "inscribed",
+      "facets": {
+        "form": [
+          "script"
+        ],
+        "register": [],
+        "theme": [
+          "psychedelics",
+          "artificial-intelligence",
+          "consciousness",
+          "imagination",
+          "dream"
+        ],
+        "world": [
+          "psychedelic-puppet-show"
+        ]
+      },
+      "inscription_id": "8d51e2afdf8a29d0dae0dd1abfff3f90267cc8327efd0f5502914ccf3eab177fi0",
+      "lineage_intent": "independent",
+      "market_policy": "listable",
+      "network": "mainnet",
+      "provenance": "Film script",
+      "publication_class": "collectible",
+      "published": "2026-08-15T15:10:39.943008+00:00",
+      "raw_reveal_available": true,
+      "rights": "Original work by the named contributor(s).",
+      "rights_basis": "original",
+      "subjects": [
+        "form:script",
+        "world:psychedelic-puppet-show",
+        "theme:psychedelics",
+        "theme:artificial-intelligence",
+        "theme:consciousness",
+        "theme:imagination",
+        "theme:dream"
+      ],
+      "textual": true,
+      "title": "The Psychedelic Puppet Show",
+      "transfer_policy": "transferable",
+      "verification_state": "verified"
+    },
     {
       "ai_disclosure": null,
       "chain": {
