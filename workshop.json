@@ -8,21 +8,21 @@
         "state": "living",
         "verified": false
       },
-      "content_length": 22040,
-      "content_path": "living-content/cyberdelic-os/bn-001/v000002.md",
-      "content_sha256": "0e5d982a817c7974164be8f02611ca9974db67e9da46ef5bf5d9dfb0f52c1df2",
+      "content_length": 22077,
+      "content_path": "living-content/cyberdelic-os/bn-001/v000003.md",
+      "content_sha256": "10976be0de33db04e865eef9aac4a1973da72c517386dc0cb930a272cd45dd0a",
       "content_type": "text/markdown;charset=utf-8",
       "maturity": "testing",
       "metadata_sha256": null,
       "project_slug": "cyberdelic-os",
-      "published_at": "2026-08-16T18:09:04+00:00",
+      "published_at": "2026-08-16T19:57:43+00:00",
       "release_id": "BN-001",
       "series_slug": "builder-notes",
       "territory": "workshop",
-      "title": "Building INSCRIBE",
-      "version": 2,
-      "version_label": "2.0",
-      "version_sha256": "0e5d982a817c7974164be8f02611ca9974db67e9da46ef5bf5d9dfb0f52c1df2"
+      "title": "Building cyberdelic.studio and cyberdelic.space",
+      "version": 3,
+      "version_label": "2.1",
+      "version_sha256": "10976be0de33db04e865eef9aac4a1973da72c517386dc0cb930a272cd45dd0a"
     },
     {
       "chain_evidence": {
