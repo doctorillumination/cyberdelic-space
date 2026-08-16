@@ -322,13 +322,25 @@
       "rationale": "The note joins local intelligence and data sovereignty to voice, movement, place, and attention in the physical world."
     },
     {
+      "id": "cyberdelic-os-fn-31",
+      "release_id": "FN-S0-004",
+      "label": "FN-31 · TESTING",
+      "title": "The Sentence Is a Kernel",
+      "href": "project/cyberdelic-os/field-notes/fn-31/",
+      "author": "Brad Necyk, in correspondence with Claude and ChatGPT",
+      "excerpt": "Six invariant words become a miniature kernel whose punctuation produces divergent speakers, scenes, and worlds.",
+      "themes": ["language", "artificial-intelligence", "perception", "memory", "attention", "emergence"],
+      "register": "field-meditation",
+      "rationale": "The note connects constrained local intelligence, semantic parallax, transient memory, and the constitutional form of the Cyberdelic Kernel."
+    },
+    {
       "id": "cyberdelic-os-bn-001",
       "release_id": "BN-001",
       "label": "BN-001 · TESTING",
       "title": "Building INSCRIBE",
       "href": "project/cyberdelic-os/bn-001/",
       "form": "builder-note",
-      "excerpt": "The INSCRIBE circuit separates a powerful local Studio from a public read-only press, then makes exact bytes, authority, verification, living versions, and mirrors legible.",
+      "excerpt": "A builder note turns selective permanence into a legible operation of preparation, ratification, inscription, verification, and tending.",
       "themes": ["provenance", "memory", "decentralization", "technology", "governance", "privacy"],
       "register": "technical-cartography",
       "rationale": "This note maps the technical and ethical threshold between revisable living memory and irreversible publication."
@@ -383,6 +395,32 @@
       "themes": ["privacy", "technology", "artificial-intelligence", "decentralization", "embodiment", "agency", "security", "voice"],
       "register": "technical-cartography",
       "rationale": "The artifact joins data sovereignty and bounded local intelligence to an embodied interface that can travel into the world."
+    },
+    {
+      "id": "cyberdelic-os-bn-003",
+      "release_id": "BN-003",
+      "label": "BN-003 · TESTING",
+      "title": "Building Kenosha Kid",
+      "href": "project/cyberdelic-os/bn-003/",
+      "author": "Brad Necyk, in creative immersion with ChatGPT",
+      "form": "builder-note",
+      "excerpt": "A native build gives an on-device language model interpretive freedom while making six source words technically inviolable.",
+      "themes": ["artificial-intelligence", "language", "technology", "attention", "memory", "creativity"],
+      "register": "technical-cartography",
+      "rationale": "The note records the structured model direction, native composition, validation, bounded memory, and temporal performance that make the constraint executable."
+    },
+    {
+      "id": "cyberdelic-os-a-002",
+      "release_id": "A-002",
+      "label": "A-002 · TESTING",
+      "title": "Kenosha Kid",
+      "href": "project/cyberdelic-os/a-002/",
+      "author": "Brad Necyk, in creative immersion with ChatGPT",
+      "form": "artifact",
+      "excerpt": "A native iPhone and iPad artwork makes on-device intelligence perceptible only through punctuation, timing, and disappearance.",
+      "themes": ["artificial-intelligence", "language", "emergence", "memory", "play", "technology"],
+      "register": "field-meditation",
+      "rationale": "The artifact embodies constrained machine intelligence, a common textual object, semantic parallax, and the relation between inscription and forgetting."
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "count": 3,
+  "count": 4,
   "items": [
     {
       "chain_evidence": {
@@ -71,6 +71,29 @@
       "version": 1,
       "version_label": "0.1",
       "version_sha256": "f8c39cd493df269b8d665ec2e31293b2f143a5c7ddcdde36ac5a62c5f95963e5"
+    },
+    {
+      "chain_evidence": {
+        "inscription_id": null,
+        "network": null,
+        "state": "living",
+        "verified": false
+      },
+      "content_length": 7093,
+      "content_path": "living-content/cyberdelic-os/fn-s0-004/v000001.md",
+      "content_sha256": "a8d82eacbd5981183d2b24a7f865cd416b27a214b3875b947d3f7d7ac04b76dd",
+      "content_type": "text/markdown;charset=utf-8",
+      "maturity": "testing",
+      "metadata_sha256": null,
+      "project_slug": "cyberdelic-os",
+      "published_at": "2026-08-16T18:23:00+00:00",
+      "release_id": "FN-S0-004",
+      "series_slug": "field-notes",
+      "territory": "field",
+      "title": "The Sentence Is a Kernel",
+      "version": 1,
+      "version_label": "1.0",
+      "version_sha256": "a8d82eacbd5981183d2b24a7f865cd416b27a214b3875b947d3f7d7ac04b76dd"
     }
   ],
   "schema": "https://cyberdelic.space/schemas/living-index-v1.json",

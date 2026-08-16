@@ -1,5 +1,5 @@
 {
-  "count": 5,
+  "count": 7,
   "items": [
     {
       "chain_evidence": {
@@ -115,6 +115,52 @@
       "version": 1,
       "version_label": "1.0",
       "version_sha256": "99c00a09ae8ff1b4273c4e9c903d7b7e286855406570d7b888363f05d1d79aa8"
+    },
+    {
+      "chain_evidence": {
+        "inscription_id": null,
+        "network": null,
+        "state": "living",
+        "verified": false
+      },
+      "content_length": 6555,
+      "content_path": "living-content/cyberdelic-os/bn-003/v000001.md",
+      "content_sha256": "1141739809f22f082e215d69ee736bb838aa9e0f5a94550cbabc91356dc11156",
+      "content_type": "text/markdown;charset=utf-8",
+      "maturity": "testing",
+      "metadata_sha256": null,
+      "project_slug": "cyberdelic-os",
+      "published_at": "2026-08-16T18:23:00+00:00",
+      "release_id": "BN-003",
+      "series_slug": "builder-notes",
+      "territory": "workshop",
+      "title": "Building Kenosha Kid",
+      "version": 1,
+      "version_label": "1.0",
+      "version_sha256": "1141739809f22f082e215d69ee736bb838aa9e0f5a94550cbabc91356dc11156"
+    },
+    {
+      "chain_evidence": {
+        "inscription_id": null,
+        "network": null,
+        "state": "living",
+        "verified": false
+      },
+      "content_length": 3069,
+      "content_path": "living-content/cyberdelic-os/a-002/v000001.md",
+      "content_sha256": "e8a2f046ea26f08f0289e9e3ab08a9f4d4bbea3c71349bbd7b5c513ceef4f5fb",
+      "content_type": "text/markdown;charset=utf-8",
+      "maturity": "testing",
+      "metadata_sha256": null,
+      "project_slug": "cyberdelic-os",
+      "published_at": "2026-08-16T18:23:00+00:00",
+      "release_id": "A-002",
+      "series_slug": "artifacts",
+      "territory": "workshop",
+      "title": "Kenosha Kid",
+      "version": 1,
+      "version_label": "1.0",
+      "version_sha256": "e8a2f046ea26f08f0289e9e3ab08a9f4d4bbea3c71349bbd7b5c513ceef4f5fb"
     }
   ],
   "schema": "https://cyberdelic.space/schemas/living-index-v1.json",

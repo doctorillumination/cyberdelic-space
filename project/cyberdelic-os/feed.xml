@@ -2,7 +2,19 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>CyberdelicOS</title>
 <id>https://cyberdelic.space/project/cyberdelic-os/</id>
 <link href="https://cyberdelic.space/project/cyberdelic-os/feed.xml" rel="self"/>
-<updated>2026-08-16T18:09:04+00:00</updated><entry><title>Portal</title>
+<updated>2026-08-16T18:23:00+00:00</updated><entry><title>Kenosha Kid</title>
+<id>https://cyberdelic.space/project/cyberdelic-os/a-002/</id>
+<link href="https://cyberdelic.space/project/cyberdelic-os/a-002/"/>
+<updated>2026-08-16T18:23:00+00:00</updated>
+<summary>A-002 · workshop · testing</summary></entry><entry><title>Building Kenosha Kid</title>
+<id>https://cyberdelic.space/project/cyberdelic-os/bn-003/</id>
+<link href="https://cyberdelic.space/project/cyberdelic-os/bn-003/"/>
+<updated>2026-08-16T18:23:00+00:00</updated>
+<summary>BN-003 · workshop · testing</summary></entry><entry><title>The Sentence Is a Kernel</title>
+<id>https://cyberdelic.space/project/cyberdelic-os/fn-s0-004/</id>
+<link href="https://cyberdelic.space/project/cyberdelic-os/fn-s0-004/"/>
+<updated>2026-08-16T18:23:00+00:00</updated>
+<summary>FN-S0-004 · field · testing</summary></entry><entry><title>Portal</title>
 <id>https://cyberdelic.space/project/cyberdelic-os/a-003/</id>
 <link href="https://cyberdelic.space/project/cyberdelic-os/a-003/"/>
 <updated>2026-08-16T17:56:00+00:00</updated>
