@@ -1,5 +1,5 @@
 {
-  "count": 7,
+  "count": 10,
   "items": [
     {
       "chain_evidence": {
@@ -161,6 +161,75 @@
       "version": 1,
       "version_label": "1.0",
       "version_sha256": "e8a2f046ea26f08f0289e9e3ab08a9f4d4bbea3c71349bbd7b5c513ceef4f5fb"
+    },
+    {
+      "chain_evidence": {
+        "inscription_id": null,
+        "network": null,
+        "state": "living",
+        "verified": false
+      },
+      "content_length": 14575,
+      "content_path": "living-content/cyberdelic-os/bn-004/v000001.md",
+      "content_sha256": "1fef8b239deedec1524d70c77f081a9fd815aa5505c89e55105133a5f46ebd03",
+      "content_type": "text/markdown;charset=utf-8",
+      "maturity": "testing",
+      "metadata_sha256": null,
+      "project_slug": "cyberdelic-os",
+      "published_at": "2026-08-16T20:19:28+00:00",
+      "release_id": "BN-004",
+      "series_slug": "builder-notes",
+      "territory": "workshop",
+      "title": "Building the Finite Library",
+      "version": 1,
+      "version_label": "1.0",
+      "version_sha256": "1fef8b239deedec1524d70c77f081a9fd815aa5505c89e55105133a5f46ebd03"
+    },
+    {
+      "chain_evidence": {
+        "inscription_id": null,
+        "network": null,
+        "state": "living",
+        "verified": false
+      },
+      "content_length": 7667,
+      "content_path": "living-content/cyberdelic-os/i-002/v000001.md",
+      "content_sha256": "33685120d71a6829c67f260c606df596ade5ff3a16aaff3b97e59e4f935f6fdb",
+      "content_type": "text/markdown;charset=utf-8",
+      "maturity": "testing",
+      "metadata_sha256": null,
+      "project_slug": "cyberdelic-os",
+      "published_at": "2026-08-16T20:19:28+00:00",
+      "release_id": "I-002",
+      "series_slug": "instruments",
+      "territory": "workshop",
+      "title": "The Library Aperture",
+      "version": 1,
+      "version_label": "0.1",
+      "version_sha256": "33685120d71a6829c67f260c606df596ade5ff3a16aaff3b97e59e4f935f6fdb"
+    },
+    {
+      "chain_evidence": {
+        "inscription_id": null,
+        "network": null,
+        "state": "living",
+        "verified": false
+      },
+      "content_length": 5696,
+      "content_path": "living-content/cyberdelic-os/a-004/v000001.md",
+      "content_sha256": "623a111b1cfc32a5d90ae05e9d3c499933244f0108c7cb26120622ee18c1e8bb",
+      "content_type": "text/markdown;charset=utf-8",
+      "maturity": "testing",
+      "metadata_sha256": null,
+      "project_slug": "cyberdelic-os",
+      "published_at": "2026-08-16T20:19:28+00:00",
+      "release_id": "A-004",
+      "series_slug": "artifacts",
+      "territory": "workshop",
+      "title": "The Finite Library Prototype",
+      "version": 1,
+      "version_label": "1.0",
+      "version_sha256": "623a111b1cfc32a5d90ae05e9d3c499933244f0108c7cb26120622ee18c1e8bb"
     }
   ],
   "schema": "https://cyberdelic.space/schemas/living-index-v1.json",

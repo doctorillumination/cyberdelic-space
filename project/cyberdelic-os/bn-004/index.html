@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en" data-theme="psychedelic">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src &#x27;none&#x27;; script-src &#x27;self&#x27;; style-src &#x27;self&#x27;; img-src &#x27;self&#x27; data:; font-src &#x27;self&#x27;; connect-src &#x27;self&#x27; https://mempool.space https://blockstream.info https://ordinals.com; frame-src &#x27;self&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;">
+<meta name="description" content="The technical architecture, ranking physics, privacy boundary, accessibility behavior, and open questions of the finite Cyberdelic.space Library.">
+<title>Building the Finite Library · cyberdelic.space</title>
+<link rel="stylesheet" href="../../../reader.css">
+<script src="../../../theme.js"></script>
+<script src="../../../markdown.js" defer></script>
+<script src="../../../living.js?v=3" defer></script>
+<link rel="canonical" href="https://cyberdelic.space/project/cyberdelic-os/bn-004/">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="bar">
+  <a class="wordmark" href="../../../">cyberdelic.space<span>a decentralized imagination press</span></a>
+  <nav aria-label="Sections"><a href="../../../">Library</a><a href="../../../projects/">Projects</a><a href="../../../ledger/">Ledger</a><a href="../../../about/">About</a><a href="../../../verify/">Verify</a><a href="../../../mirror/">Mirror</a></nav>
+  <button type="button" class="theme-toggle" hidden aria-label="Cycle light, dark, and psychedelic reading">Psychedelic</button>
+</div></header>
+<main id="main" tabindex="-1">
+<article class="living-page">
+<nav class="crumb"><a href="../">← CyberdelicOS</a></nav>
+<header class="living-head">
+  <p class="shelf-kind">Builder Notes · BN-004</p>
+  <h1>Building the Finite Library</h1>
+  <p class="byline">Brad Necyk, in creative immersion with ChatGPT</p>
+  <p class="living-badges"><span class="living-badge">WORKSHOP</span><span class="living-badge">TESTING</span><span class="living-badge living">NOT INSCRIBED</span></p>
+  <p class="stone living">Living publication. Not on Bitcoin. A future exact version may be inscribed.</p>
+</header>
+<div class="living-layout"><section class="living-reading">
+  <div class="reading markdown-reading" data-markdown><pre class="markdown-source"># Builder Note BN-04: Building the Finite Library
+
+- **Project:** CyberdelicOS
+- **Instrument:** The Library Aperture
+- **Artifact:** The Finite Library Prototype
+- **Status:** Living, testing, and versioned
+- **Version:** 1.0
+- **Date:** August 16, 2026
+- **Type:** Reference architecture and interaction record
+- **Primary verbs:** ATTEND, END
+- **Supporting verbs:** CARRY, TEND
+- **Public address:** [cyberdelic.space](https://cyberdelic.space)
+- **Source:** [doctorillumination/cyberdelic-space](https://github.com/doctorillumination/cyberdelic-space)
+
+*The Finite Library begins with a reader's intention, composes three possible encounters, and then stops.*
+
+The front page of Cyberdelic.space is a working prototype of one of the earliest CyberdelicOS claims. Field Note 01 imagines a system that asks what a person is trying to become capable of seeing, composes a finite constellation, and ends as an act of respect. Field Note 05 argues that this ending is a chosen law of attention rather than a failure of supply.
+
+The prototype gives those claims a small executable form. A reader chooses three words from a visible conceptual field. The system returns exactly three works. It does not create an account, infer a profile, optimize for engagement, remember prior sessions, or continue into an infinite feed.
+
+This is not the absence of an algorithm. It is a deliberately small, inspectable algorithm whose purpose is bounded retrieval rather than attention capture.
+
+## What the current prototype proves
+
+- A public library can begin with intention rather than supply.
+- One shared catalog can support many routes through it without privately personalizing the underlying works.
+- Deterministic faceting can produce meaningful discovery without a model, recommender service, or behavioral profile.
+- A result set can remain finite even when the catalog grows.
+- Living Field and Workshop publications can appear beside inscribed works without being represented as the same kind of memory.
+- A visual field can remain keyboard operable and semantically legible to assistive technology.
+- The chosen path can be shared as a URL without creating server-side state.
+- The interface can end and return the person to the wider world.
+
+It does not prove that three results are always sufficient, that the facets are neutral, that the ranking is free of editorial judgment, or that deterministic retrieval cannot create its own visibility bias.
+
+## System at a glance
+
+```text
+PUBLIC STATIC CATALOG
+  inscribed works embedded in the generated page
+  living records loaded from a same-origin JSON catalog
+  title, excerpt, route, state, order, and facets
+    |
+    v
+VISIBLE CONCEPTUAL FIELD
+  form, theme, register, world, and era terms
+  no account, profile, analytics, or session history
+    |
+    v
+READER CHOOSES THREE WORDS
+  selection written into the URL fragment
+  no request sent to a server
+    |
+    v
+DETERMINISTIC RANKING
+  count matching facets
+  break ties by publication order, then title
+    |
+    v
+THREE WORKS
+  each carries a title, excerpt, publication state,
+  matched words, and a direct route to the work
+    |
+    v
+END
+  no fourth card, autoplay, notification, or infinite scroll
+```
+
+The static page is both the interface and its local data source. JavaScript composes a temporary view from public metadata already delivered by the press. No private reader data crosses a network boundary.
+
+## Data model
+
+Each discoverable work is reduced to a small public record:
+
+```json
+{
+  "title": "The Physics We Choose",
+  "href": "project/cyberdelic-os/field-notes/fn-05/",
+  "excerpt": "Digital systems have designed laws...",
+  "label": "FN-05 · LIVING",
+  "state": "living",
+  "order": 900004,
+  "terms": [
+    "form:field-note",
+    "theme:attention",
+    "theme:governance",
+    "register:waking-argument",
+    "world:cyberdelic-os"
+  ]
+}
+```
+
+The five facet families are:
+
+| Facet | Function |
+| --- | --- |
+| `form` | What kind of object this is, such as generative art, field note, builder note, or instrument |
+| `theme` | What the work attends to, such as imagination, memory, technology, or attention |
+| `register` | How the work speaks, such as field meditation, technical cartography, play, or waking argument |
+| `world` | Which project world carries the work |
+| `era` | Which historical publication period contains an inscribed work |
+
+Inscribed works are rendered into hidden catalog cards during the static build. Living publications are appended from `living-library.json`, a same-origin public file. The browser normalizes both sources into the same internal shape before any choice is made.
+
+The current homepage HTML also carries the complete searchable text of inscribed works inside hidden card metadata. This preserves the older offline search architecture, but it makes the front page approximately one megabyte before the living catalog is loaded. A future build should emit a compact aperture manifest containing only the fields above while keeping full-text search on the dedicated catalog or shelf surfaces.
+
+## The selection field
+
+The opening field contains six stable themes:
+
+```text
+imagination
+consciousness
+dream
+technology
+psychedelics
+emergence
+```
+
+After each choice, the available field is recomposed. The current implementation considers terms not yet selected and calculates compatibility with the chosen terms:
+
+```text
+compatibility =
+  exact_shared_works * 100
+  + partial_matches * 12
+  + term_frequency * 3
+  + cross_facet_bonus * 8
+```
+
+The eight highest-scoring candidates remain available beside the earlier choices. Equal scores are resolved by the stable facet key, so two readers making the same choices against the same catalog receive the same field.
+
+The weighting is intentionally legible:
+
+- Exact intersections dominate so the next word can deepen an existing route.
+- Partial matches preserve nearby possibilities when no work carries the complete chord.
+- Frequency prevents the field from collapsing toward terms with no available works.
+- The cross-facet bonus gently favors a different dimension without forbidding three words from one facet.
+
+These numbers are editorial physics, not discovered truth. Changing them changes what the library makes easy to see. They should remain versioned, tested, and open to critique.
+
+## Ranking the works
+
+Once three words have been selected, every work receives one point for each chosen term it carries.
+
+```text
+rank by:
+  1. number of matching chosen terms, descending
+  2. publication order, newest first
+  3. title, alphabetically
+
+return the first three works
+```
+
+The first rule expresses semantic nearness. The second makes the living edge of the press visible when several works are equally near. The third guarantees a stable final order.
+
+The recency tie-break is also a bias. A new work can outrank an older work with the same number of matches. As the library grows, this should be tested against alternatives such as deterministic rotation, underexposure weighting, or a consciously placed distant work. Any alternative must remain explainable and must not import behavioral surveillance.
+
+If fewer than three works match any chosen term, the remaining positions are still filled by the stable ranking and labelled as a more distant door. This preserves the finite three-work form while admitting that not every encounter is a close semantic match.
+
+## Choose for me
+
+The optional automatic path is deterministic by UTC day.
+
+1. Convert the current time to an integer day.
+2. Select one work by `day modulo catalog length`.
+3. Take that work's non-era terms.
+4. Prefer theme, then register, world, and form.
+5. Fill any empty positions from the stable opening themes.
+6. Reveal the same three-result ranking used for a manual choice.
+
+This is not random and does not use popularity. Everyone receives the same daily starting point from the same catalog. It remains a form of direction, but its rhythm is public, slow, and independent of engagement history.
+
+## State and privacy
+
+Selection state lives only in the URL fragment:
+
+```text
+#theme=attention,imagination&amp;world=cyberdelic-os
+```
+
+The fragment can be copied as a composed shelf. It is not sent in an HTTP request and the site creates no server-side session. The prototype does not use cookies, analytics, an identity account, a recommendation profile, or local storage for library choices. Theme preference is stored separately and does not affect ranking.
+
+Reloading the same fragment reconstructs the same chord and results as long as the public catalog and ranking version remain unchanged.
+
+## Visual composition
+
+The words are ordinary HTML buttons placed over a decorative canvas field. The canvas draws relations among visible terms from shared work counts. It never becomes the semantic interface.
+
+- Buttons carry real labels and `aria-pressed` state.
+- The canvas is hidden from assistive technology.
+- Pointer magnetism and drifting light are visual responses, not required input mechanisms.
+- Recomposition keeps selected terms visible while nearby possibilities enter and leave.
+- The network animation stops when results arrive.
+- Device pixel ratio is capped at two to limit canvas cost.
+- Reduced-motion preference disables drifting, magnetic movement, and animated transitions.
+
+The canvas currently continues drawing while the choice field exists, even if the page is no longer visible. A future version should pause on `visibilitychange` and when the instrument leaves the viewport. This matters on mobile devices because an ethical attention instrument should not quietly waste battery while asking for restraint.
+
+## Accessibility and progressive enhancement
+
+The primary controls are native buttons, not canvas hit regions. A keyboard user can move through the same choices, activate a word, and reach the result heading. The result region uses live status, and focus moves to the completed chord when the three works arrive. On a narrow screen, result cards stack into one column and controls remain larger than common minimum touch targets.
+
+With JavaScript disabled, the instrument does not pretend to function. A short fallback points readers to the complete Ledger and Projects indexes, where every work remains available. The finite aperture is one entrance to the press, not a gate around the collection.
+
+## Failure behavior
+
+The current data path has two layers:
+
+- Inscribed works are already embedded in the page.
+- Living records are added after `living-library.json` loads.
+
+If that static JSON request fails, the instrument still opens with the inscribed catalog, but it does not announce that the living field is incomplete. The next version should surface a quiet availability note and should include an automated test for this degraded state.
+
+The present source tests verify structural invariants, including the three-word limit, three-result slice, absence of `Math.random`, reduced-motion rules, and presence of the living catalog. They do not yet exercise the algorithm as a reader would. Behavioral tests should cover:
+
+- the same chord always produces the same three routes;
+- no fourth result can appear;
+- a shared URL reconstructs its state;
+- keyboard selection and result focus;
+- zero, one, two, and three-match ranking;
+- catalog-load failure;
+- mobile overflow and touch target size;
+- reduced-motion behavior;
+- animation suspension when hidden.
+
+## Security boundary
+
+The instrument performs no HTML interpretation from catalog fields. Living titles, excerpts, labels, and facets are inserted with text nodes. Routes are public same-site metadata. The page's content security policy permits scripts and data only from the press itself, with no third-party analytics or recommendation service.
+
+The catalog remains editorial input. A malicious or malformed record could still mislabel a work or create a misleading route, so generation-time schema validation and route checks remain necessary. Content hashes establish exact bytes for living versions, but they do not prove that a facet assignment or rationale is correct.
+
+## Design findings
+
+The prototype succeeds because it changes the unit of browsing.
+
+The unit is not a feed item competing for a pause. It is a temporary constellation produced by three declared intentions. The reader is not told that the results are personally optimal. The interface says only that these works came into view.
+
+Its strongest visual decision is restraint. The question arrives before the catalog. The field offers a small number of legible words. The result surface has no secondary rail of related content, no popularity counts, and no prompt to keep consuming.
+
+Its most important unresolved issue is visibility power. A deterministic editorial algorithm can still repeatedly surface some works and bury others. Refusing surveillance solves one problem, not every problem of curation. The ranking, metadata, and editorial rationale therefore remain part of the public artifact and should be treated as revisable propositions.
+
+## Kernel relations
+
+- **ATTEND:** the first operation asks what the reader is trying to become capable of seeing.
+- **CARRY:** each result keeps title, excerpt, publication state, matched terms, and a route to its full context.
+- **TEND:** facets and living curation make the archive navigable as it changes.
+- **END:** the operation returns three works and stops.
+- **Law Four:** the instrument reveals its own aperture through public metadata and inspectable ranking rules.
+- **Law Eight:** the interface refuses automatic endlessness and treats ending as part of trust.
+
+## Questions still open
+
+- Should every result set contain one intentionally distant work, or should semantic nearness remain primary?
+- How should older or rarely surfaced works receive attention without converting underexposure into another hidden score?
+- Should a reader be able to inspect the exact ranking explanation before opening a result?
+- When the catalog becomes much larger, can a compact static manifest preserve the same local and deterministic behavior?
+- Should the three chosen words remain shareable as a public chord even after the catalog changes?
+- What ceremony should accompany a future version that uses model-proposed relations?
+
+**Related:** Instrument I-002, *The Library Aperture*; Artifact A-004, *The Finite Library Prototype*; Field Note 01, *An Operating System for Shared Reality*; Field Note 05, *The Physics We Choose*; Field Note 15, *The First Small World*; the Cyberdelic Kernel, ATTEND, CARRY, TEND, END, and Laws Four and Eight.
+</pre></div>
+</section>
+<aside class="living-aside">
+  <h2>Version 1.0</h2>
+  <p>Testing · 2026-08-16</p>
+  <p>14,575 UTF-8 bytes</p>
+  <p><a href="../../../living-content/cyberdelic-os/bn-004/v000001.md" download>Download exact version</a></p>
+  <h2>Version history</h2><ol class="version-history"><li><a href="./"><strong>v1.0</strong> · TESTING · 2026-08-16<code>1fef8b239deedec1524d70c77f081a9fd815aa5505c89e55105133a5f46ebd03</code></a></li></ol>
+</aside></div>
+<nav class="living-next" aria-label="Project chronology"><a href="../a-002/">← A-002</a><a href="../i-002/">I-002 →</a></nav>
+</article>
+</main>
+<footer class="site"><div class="bar">
+  <p>cyberdelic.space. The Library is held in Bitcoin; Field and Workshop publications are visibly living and versioned.</p>
+  <p><a href="../../../mirror/">Copy this library</a> · <a href="../../../library.json">library.json</a> · <a href="../../../verify/">How verification works</a> · <a href="../../../privacy/">Privacy</a></p>
+</div></footer>
+</body>
+</html>

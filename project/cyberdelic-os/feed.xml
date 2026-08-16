@@ -2,7 +2,19 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>CyberdelicOS</title>
 <id>https://cyberdelic.space/project/cyberdelic-os/</id>
 <link href="https://cyberdelic.space/project/cyberdelic-os/feed.xml" rel="self"/>
-<updated>2026-08-16T19:57:43+00:00</updated><entry><title>Kenosha Kid</title>
+<updated>2026-08-16T20:19:28+00:00</updated><entry><title>The Finite Library Prototype</title>
+<id>https://cyberdelic.space/project/cyberdelic-os/a-004/</id>
+<link href="https://cyberdelic.space/project/cyberdelic-os/a-004/"/>
+<updated>2026-08-16T20:19:28+00:00</updated>
+<summary>A-004 · workshop · testing</summary></entry><entry><title>The Library Aperture</title>
+<id>https://cyberdelic.space/project/cyberdelic-os/i-002/</id>
+<link href="https://cyberdelic.space/project/cyberdelic-os/i-002/"/>
+<updated>2026-08-16T20:19:28+00:00</updated>
+<summary>I-002 · workshop · testing</summary></entry><entry><title>Building the Finite Library</title>
+<id>https://cyberdelic.space/project/cyberdelic-os/bn-004/</id>
+<link href="https://cyberdelic.space/project/cyberdelic-os/bn-004/"/>
+<updated>2026-08-16T20:19:28+00:00</updated>
+<summary>BN-004 · workshop · testing</summary></entry><entry><title>Kenosha Kid</title>
 <id>https://cyberdelic.space/project/cyberdelic-os/a-002/</id>
 <link href="https://cyberdelic.space/project/cyberdelic-os/a-002/"/>
 <updated>2026-08-16T18:23:00+00:00</updated>

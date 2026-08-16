@@ -421,6 +421,45 @@
       "themes": ["artificial-intelligence", "language", "emergence", "memory", "play", "technology"],
       "register": "field-meditation",
       "rationale": "The artifact embodies constrained machine intelligence, a common textual object, semantic parallax, and the relation between inscription and forgetting."
+    },
+    {
+      "id": "cyberdelic-os-bn-004",
+      "release_id": "BN-004",
+      "label": "BN-004 · TESTING",
+      "title": "Building the Finite Library",
+      "href": "project/cyberdelic-os/bn-004/",
+      "author": "Brad Necyk, in creative immersion with ChatGPT",
+      "form": "builder-note",
+      "excerpt": "A deterministic three-word retrieval system turns explicit intention into exactly three public works, without profiles, engagement ranking, or infinite scroll.",
+      "themes": ["attention", "curation", "technology", "interface", "privacy", "accessibility", "governance"],
+      "register": "technical-cartography",
+      "rationale": "The note exposes the finite Library's catalog shape, compatibility weights, ranking order, privacy boundary, accessibility contract, failure modes, and test gaps."
+    },
+    {
+      "id": "cyberdelic-os-i-002",
+      "release_id": "I-002",
+      "label": "I-002 · TESTING",
+      "title": "The Library Aperture",
+      "href": "project/cyberdelic-os/i-002/",
+      "author": "Brad Necyk, in creative immersion with ChatGPT",
+      "form": "instrument",
+      "excerpt": "A reusable curatorial instrument asks for three words, composes three encounters from a shared catalog, and ends.",
+      "themes": ["attention", "curation", "interface", "agency", "accessibility", "governance", "emergence"],
+      "register": "speculative-design",
+      "rationale": "The instrument makes bounded discovery, explicit intention, a common public catalog, and release from the interface into operational constraints."
+    },
+    {
+      "id": "cyberdelic-os-a-004",
+      "release_id": "A-004",
+      "label": "A-004 · TESTING",
+      "title": "The Finite Library Prototype",
+      "href": "project/cyberdelic-os/a-004/",
+      "author": "Brad Necyk, in creative immersion with ChatGPT",
+      "form": "artifact",
+      "excerpt": "The Cyberdelic.space front door offers three conceptual choices, reveals three works, and refuses to become an endless feed.",
+      "themes": ["attention", "curation", "interface", "technology", "emergence", "governance", "accessibility"],
+      "register": "speculative-design",
+      "rationale": "The deployed artifact gives ATTEND and END a public form while keeping its deterministic editorial physics visible and revisable."
     }
   ]
 }
