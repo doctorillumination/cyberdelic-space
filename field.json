@@ -1,5 +1,5 @@
 {
-  "count": 1,
+  "count": 4,
   "items": [
     {
       "chain_evidence": {
@@ -8,9 +8,9 @@
         "state": "living",
         "verified": false
       },
-      "content_length": 90324,
+      "content_length": 90318,
       "content_path": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
-      "content_sha256": "376b7fc715abe95ad9c34afaa685ef7bbed44d85aa8234efbff1a11594cf2978",
+      "content_sha256": "0e893f7e468102bd66ac563b7c6eec686e96efe508dbc5410cd8c83f2aee38f2",
       "content_type": "text/markdown;charset=utf-8",
       "maturity": "testing",
       "metadata_sha256": "4831218e65e3238cb712041f1ae81d3aa5571d943b4b647a458b24c039e19f00",
@@ -23,6 +23,77 @@
       "version": 1,
       "version_label": "0.6",
       "version_sha256": "d21b37078cdfbaf159108d7e6e823716e1e28fecfb2ae402687b73332a995dce"
+    },
+    {
+      "authorship_note": "Drafted by the Cyberdelic Librarian in response to Brad Necyk's direction. Open to human revision and ratification.",
+      "chain_evidence": {
+        "inscription_id": null,
+        "network": null,
+        "state": "living",
+        "verified": false
+      },
+      "content_length": 5096,
+      "content_path": "living-content/cyberdelic-os/fn-s0-002/v000001.md",
+      "content_sha256": "3d9f8d14de066bbec80daa0d5296c9e44b85ccdf3af797504913bf56f043da9c",
+      "content_type": "text/markdown;charset=utf-8",
+      "maturity": "proposed",
+      "metadata_sha256": null,
+      "project_slug": "cyberdelic-os",
+      "published_at": "2026-08-15T00:00:00-07:00",
+      "release_id": "FN-S0-002",
+      "series_slug": "field-notes",
+      "territory": "field",
+      "title": "The Living Librarian",
+      "version": 1,
+      "version_label": "0.1",
+      "version_sha256": "3d9f8d14de066bbec80daa0d5296c9e44b85ccdf3af797504913bf56f043da9c"
+    },
+    {
+      "authorship_note": "This field note emerged from a creative immersion between Brad Necyk and ChatGPT while they developed the initial working prototype of the Hearth and Portal. ChatGPT proposed the draft from their interaction and exchange; Brad revised and ratified the text for publication.",
+      "chain_evidence": {
+        "inscription_id": null,
+        "network": null,
+        "state": "living",
+        "verified": false
+      },
+      "content_length": 3439,
+      "content_path": "living-content/cyberdelic-os/fn-s0-003/v000001.md",
+      "content_sha256": "f8c39cd493df269b8d665ec2e31293b2f143a5c7ddcdde36ac5a62c5f95963e5",
+      "content_type": "text/markdown;charset=utf-8",
+      "maturity": "testing",
+      "metadata_sha256": null,
+      "project_slug": "cyberdelic-os",
+      "published_at": "2026-08-15T16:33:01-07:00",
+      "release_id": "FN-S0-003",
+      "series_slug": "field-notes",
+      "territory": "field",
+      "title": "A Portal Opens",
+      "version": 1,
+      "version_label": "0.1",
+      "version_sha256": "f8c39cd493df269b8d665ec2e31293b2f143a5c7ddcdde36ac5a62c5f95963e5"
+    },
+    {
+      "chain_evidence": {
+        "inscription_id": null,
+        "network": null,
+        "state": "living",
+        "verified": false
+      },
+      "content_length": 7093,
+      "content_path": "living-content/cyberdelic-os/fn-s0-004/v000001.md",
+      "content_sha256": "a8d82eacbd5981183d2b24a7f865cd416b27a214b3875b947d3f7d7ac04b76dd",
+      "content_type": "text/markdown;charset=utf-8",
+      "maturity": "testing",
+      "metadata_sha256": null,
+      "project_slug": "cyberdelic-os",
+      "published_at": "2026-08-16T18:23:00+00:00",
+      "release_id": "FN-S0-004",
+      "series_slug": "field-notes",
+      "territory": "field",
+      "title": "The Sentence Is a Kernel",
+      "version": 1,
+      "version_label": "1.0",
+      "version_sha256": "a8d82eacbd5981183d2b24a7f865cd416b27a214b3875b947d3f7d7ac04b76dd"
     }
   ],
   "schema": "https://cyberdelic.space/schemas/living-index-v1.json",

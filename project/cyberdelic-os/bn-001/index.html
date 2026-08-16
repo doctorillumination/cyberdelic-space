@@ -1,26 +1,29 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="psychedelic">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="referrer" content="no-referrer">
 <meta http-equiv="Content-Security-Policy" content="default-src &#x27;none&#x27;; script-src &#x27;self&#x27;; style-src &#x27;self&#x27;; img-src &#x27;self&#x27; data:; font-src &#x27;self&#x27;; connect-src &#x27;self&#x27; https://mempool.space https://blockstream.info https://ordinals.com; frame-src &#x27;self&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;">
-<meta name="description" content="How Cyberdelic.space turns selective immutable memory into a real publication operation.">
+<meta name="description" content="A technical record of the INSCRIBE circuit, distinguishing the local Cyberdelic Studio from the public read-only Cyberdelic.space press.">
+<meta property="og:title" content="Builder Note BN-01: Building INSCRIBE">
+<meta property="og:description" content="A technical record of the INSCRIBE circuit, distinguishing the local Cyberdelic Studio from the public read-only Cyberdelic.space press.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://cyberdelic.space/project/cyberdelic-os/bn-001/">
 <title>Building INSCRIBE · cyberdelic.space</title>
-<link rel="stylesheet" href="../../../reader.css">
+<link rel="stylesheet" href="../../../reader.css?v=bn2">
 <script src="../../../theme.js"></script>
-<link rel="canonical" href="https://cyberdelic.space/">
+<script src="../../../markdown.js" defer></script>
+<script src="../../../living.js?v=3" defer></script>
+<link rel="canonical" href="https://cyberdelic.space/project/cyberdelic-os/bn-001/">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="site">
-  <div class="bar">
-    <a class="wordmark" href="../../../">cyberdelic.space<span>a decentralized imagination press</span></a>
-    <nav aria-label="Sections"><a href="../../../">Library</a><a href="../../../projects/">Projects</a><a href="../../../ledger/">Ledger</a><a href="../../../about/">About</a><a href="../../../verify/">Verify</a><a href="../../../mirror/">Mirror</a></nav>
-    <button type="button" class="theme-toggle" hidden
-            aria-label="Switch between light and dark reading">Dark</button>
-  </div>
-</header>
+<header class="site"><div class="bar">
+  <a class="wordmark" href="../../../">cyberdelic.space<span>a decentralized imagination press</span></a>
+  <nav aria-label="Sections"><a href="../../../">Library</a><a href="../../../projects/">Projects</a><a href="../../../ledger/">Ledger</a><a href="../../../about/">About</a><a href="../../../verify/">Verify</a><a href="../../../mirror/">Mirror</a></nav>
+  <button type="button" class="theme-toggle" hidden aria-label="Cycle light, dark, and psychedelic reading">Psychedelic</button>
+</div></header>
 <main id="main" tabindex="-1">
 <article class="living-page">
 <nav class="crumb"><a href="../">← CyberdelicOS</a></nav>
@@ -31,26 +34,380 @@
   <p class="living-badges"><span class="living-badge">WORKSHOP</span><span class="living-badge">TESTING</span><span class="living-badge living">NOT INSCRIBED</span></p>
   <p class="stone living">Living publication. Not on Bitcoin. A future exact version may be inscribed.</p>
 </header>
-<div class="living-layout"><section class="living-reading"><div class="markdown-body"><h1>Builder Note BN-01: Building INSCRIBE</h1><ul><li><strong>Project:</strong> CyberdelicOS</li><li><strong>Status:</strong> Living, versioned</li><li><strong>Version:</strong> 1.0</li><li><strong>Date:</strong> August 15, 2026</li></ul><p><em>Cyberdelic.space is a decentralized imagination press and one of the first working organs of CyberdelicOS.</em></p><p>The Kernel names <strong>INSCRIBE</strong>: a small number of works may cross, deliberately and ceremonially, into permanent public memory. Cyberdelic.space turns that sentence into an operation.</p><p>The press separates memory by temperature. Drafts, questions, and field notes can remain living, versioned, and revisable. A rare work can be reviewed by a person, fixed as exact bytes, and inscribed into Bitcoin. The press then publishes the evidence needed to verify those bytes and makes the whole library easy to copy.</p><h2>The operation</h2><ol><li>Create in living memory.</li><li>Decide what deserves to address the future.</li><li>Ratify the exact work, its provenance, rights, and consequences.</li><li>Inscribe it at real cost.</li><li>Publish its receipt: content bytes, digest, transaction, and block.</li><li>Tend its legibility through readers, records, and mirrors.</li></ol><p>INSCRIBE is the primary verb. The press also <strong>CARRIES</strong> each work with context, <strong>RATIFIES</strong> consequential publication through human choice, and <strong>TENDS</strong> access across time. It also clarifies the boundary of <strong>FORGET</strong>: permanence has meaning only when most memory is allowed to remain private, revisable, or gone.</p><h2>What this protects</h2><ul><li>The difference between a draft and a publication.</li><li>A published work from silent revision.</li><li>A reader&#x27;s ability to verify without trusting the publisher.</li><li>The right of most memory never to cross this threshold.</li></ul><p>Bitcoin can establish that particular bytes entered public history. It cannot establish that they are true, wise, humane, or worthy. Cyberdelic.space is therefore not a truth machine. It is an editorial and technical ritual for making consequence visible.</p><h2>Questions still open</h2><ul><li>What deserves irreversible memory?</li><li>What ceremony is sufficient before inscription?</li><li>How should later correction or dissent stand beside a work that cannot change?</li><li>How can consent remain meaningful when publication cannot be undone?</li></ul><p><strong>Related:</strong> The Cyberdelic Kernel, INSCRIBE, FORGET, and Law Eight; Living Field Note 13, <em>The Ledger, the Anchor, and the Inscription</em>; Builder Note 09, <em>Living Memory, Signed Memory, and Irreversible Witness</em>.</p></div></section>
+<div class="living-layout"><section class="living-reading">
+  <div class="reading markdown-reading" data-markdown><pre class="markdown-source"># Builder Note BN-01: Building INSCRIBE
+
+- **Project:** CyberdelicOS
+- **Status:** Living, testing, and versioned
+- **Version:** 2.0
+- **Date:** August 16, 2026
+- **Type:** Reference architecture and operational record
+- **Primary verbs:** INSCRIBE, RATIFY
+- **Supporting verbs:** ATTEND, CARRY, TEND, END, FORGET
+- **Studio source:** [doctorillumination/cyberdelic-studio](https://github.com/doctorillumination/cyberdelic-studio)
+- **Public press:** [cyberdelic.space](https://cyberdelic.space)
+- **Public source:** [doctorillumination/cyberdelic-space](https://github.com/doctorillumination/cyberdelic-space)
+
+*INSCRIBE is not one application. It is a deliberate crossing from a living work, through a locally governed publication instrument, into public permanence, followed by a read-only surface where anyone can encounter and verify what occurred.*
+
+This Builder Note records the first working form of that circuit. It distinguishes the local software that can prepare and publish a work from the public website that can only read, verify, and mirror the result. It also places that circuit beside Hearth and Portal, two related CyberdelicOS prototypes with different boundaries and responsibilities.
+
+Cyberdelic Studio and Cyberdelic.space are not alternate names for the same thing.
+
+- **Cyberdelic Studio** is the local, stateful, consequential instrument. It prepares exact bytes, records provenance and rights claims, rehearses publication, supervises Bitcoin infrastructure, asks a human to ratify the final object, and can authorize inscription.
+- **Cyberdelic.space** is the public, static, wallet-free press. It presents inscribed works, living publications, project records, verification evidence, and portable mirrors. A visitor can read and check the press, but cannot publish through it.
+- **Bitcoin** is the public witness for the exact bytes that cross the threshold. It is not the website, the Studio, or a truth machine.
+
+The distinction is both technical and ethical. The authority to make something permanent stays local. The evidence needed to question that act becomes public.
+
+## What the current prototype proves
+
+- A publishing ceremony can remain local while its result becomes globally readable.
+- A person can rehearse the complete operation before spending money or creating permanence.
+- Human approval can be bound to exact content, metadata, network, and cost.
+- A public reader can verify a work without holding the press wallet or trusting the publisher&#x27;s display.
+- Inscribed and living publications can share a public space without being represented as the same kind of memory.
+- A complete copy of the public press can be mirrored without gaining authority to publish new works.
+- The interface layer can continue to evolve while an inscribed work remains fixed and independently recoverable.
+
+It does not prove that an inscription is true, wise, consensual, lawful, culturally valuable, or worthy of permanence. Those judgments remain human responsibilities.
+
+## System at a glance
+
+```text
+PERSON AND LIVING WORK
+  private, revisable, unfinished, or ready for review
+    |
+    v
+CYBERDELIC STUDIO
+  local software on the publication PC
+  imports and preserves exact bytes
+  records attribution, rights, lineage, and intent
+  rehearses the complete publication circuit
+  prepares the inscription and shows network plus cost
+  requires explicit ratification before broadcast
+    |
+    v
+BITCOIN CORE + ORD + DEDICATED WALLET
+  local infrastructure and signing boundary
+  commit and reveal transactions
+    |
+    v
+BITCOIN
+  durable public witness for the exact inscribed bytes
+    |
+    v
+CYBERDELIC.SPACE
+  static public reader
+  no wallet, account, publishing key, or write interface
+  encounter, source, provenance, blockchain evidence, verify, mirror
+    |
+    v
+READER OR MIRROR
+  reads, copies, hashes, and independently verifies
+  cannot counterfeit the press&#x27;s act of publication
+```
+
+Cyberdelic.space is not where inscription happens. It is where the inscription, the claims surrounding it, and the evidence needed to test those claims become publicly legible.
+
+## Reference configuration: the current Studio
+
+Cyberdelic Studio presently runs on a dedicated PC with:
+
+- an AMD Ryzen 9 7950X processor;
+- an NVIDIA GeForce RTX 4090 GPU;
+- 292 GB of system memory;
+- 4 TB of local storage.
+
+This machine is the current material home of the publication instrument. The Studio is software, but it is not immaterial. Its performance, storage limits, energy use, local models, Bitcoin services, indexes, backups, and failures all occur on a particular apparatus under the operator&#x27;s control.
+
+The Studio does not require every part of this configuration merely to render its interface or package a work. The machine provides the present operational envelope for the wider local system: the Studio application, Bitcoin infrastructure, verification tools, publication records, mirrors, and experiments with locally hosted intelligence.
+
+This PC should not automatically be called the Hearth. The current Studio is a publication instrument with a defined authority to prepare and inscribe. The Hearth prototype is a broader local home for private intelligence, memory, permissions, and conversation. The two may eventually share hardware, but their offices and security boundaries must remain legible.
+
+## The local component: Cyberdelic Studio
+
+Cyberdelic Studio is a local application with two persistent public-facing verbs: **INSCRIBE** and **READ**. Its present working lineage is identified in the repository as DEW LINE Studio 0.3.
+
+The local application can:
+
+- prepare text, Markdown, HTML, source code, JSON, and supported books as exact bytes;
+- calculate and display SHA-256 digests;
+- record contributors, source relationships, rights bases, dates, editions, AI disclosure, and lineage;
+- distinguish Public Memory from a transferable Collectible;
+- rehearse the full inscription circuit without publishing or spending funds;
+- keep Signet and Mainnet infrastructure isolated;
+- show network state, fee plans, storage health, wallet readiness, and tool integrity;
+- require a separate review and authorization before broadcast;
+- preserve a durable journal around uncertain or interrupted operations;
+- verify the resulting inscription from the reveal transaction;
+- build publication records, readers, catalogs, editions, and static mirrors.
+
+The Studio is stateful because consequential publication requires state. It knows which exact object was prepared, whether that approval is still valid, which network is active, what operation is pending, and whether a result has been independently reconciled.
+
+The Studio is also local by design. The public website does not receive its wallet, private keys, recovery words, operating journals, local drafts, or authority to broadcast.
+
+## The public component: Cyberdelic.space
+
+Cyberdelic.space is a static, public, read-only expression of the press. Read-only describes the visitor&#x27;s authority, not the historical immobility of every file on the site.
+
+The public can:
+
+- encounter a work through a composed reading view;
+- inspect the exact source or content bytes;
+- see structured attribution, rights, provenance, lineage, and publication intent;
+- inspect transaction and block evidence;
+- verify the content digest in the browser;
+- follow the verification path back to Bitcoin;
+- download living versions and inscribed works;
+- clone or download a complete mirror of the press.
+
+The public cannot:
+
+- create a draft in the Studio;
+- access the press wallet or signing boundary;
+- alter a prepared object;
+- approve a fee or network;
+- broadcast a transaction;
+- silently replace an inscribed work;
+- turn a mirror into a new instance of the press&#x27;s publishing authority.
+
+The website has no account system, advertising system, analytics requirement, public database, or publication API. Its public source is the built output. A clone is intended to remain a complete reader and verification surface.
+
+## Mutable, living, rendered, and immutable
+
+The system must say exactly what can change.
+
+| Layer | State | Can it change? | Authority |
+| --- | --- | --- | --- |
+| Private draft | Local, unfinished memory | Yes, including deletion | Creator or authorized collaborators |
+| Prepared Studio object | Exact candidate bound to a digest | Only by invalidating approval and preparing again | Local operator |
+| Living publication | Public, versioned, explicitly not inscribed | Yes, through a new visible version | Editorial process |
+| Site rendering | HTML, CSS, navigation, project pages, and readers | Yes | Press maintainers |
+| Inscribed work | Exact bytes witnessed in Bitcoin | No silent revision | No single website or maintainer |
+| Later correction, translation, or dissent | A new related object | Yes before its own publication | Its authors and publication process |
+| Mirror | Copy of public files and evidence | The copy can diverge, but divergence is detectable | Mirror operator |
+
+This produces an important asymmetry.
+
+The website can be redesigned. Its catalog can become richer. A living Field Note can receive a new version. A project page can explain a work more clearly. None of those acts changes the bytes already inscribed in Bitcoin.
+
+If an immutable work requires correction, the correction must stand beside it as another visible event. It cannot pretend that the earlier event never happened.
+
+## The source-of-truth ladder
+
+Different claims resolve at different layers.
+
+1. **For an inscribed work&#x27;s exact content:** retrieve the reveal transaction, extract the inscription, and hash the bytes.
+2. **For what the press claims about that work:** inspect the publication record and its structured metadata.
+3. **For a living publication&#x27;s current edition:** inspect the current version record and its exact downloadable file.
+4. **For historical living versions:** preserve each version as a separate content-addressed object rather than overwriting it.
+5. **For presentation and navigation:** the current Cyberdelic.space repository is the active public rendering.
+
+No HTML page should be mistaken for the canonical bytes of an inscription merely because it is attractive or served from the official domain. The page is an encounter with the object and its evidence.
+
+## The INSCRIBE operation
+
+### 1. Attend to the work
+
+The process begins with a work and an intention, not with a market, feed, token, or empty transaction.
+
+The creator decides whether the work belongs in private memory, living public memory, or the small class of objects that may be addressed to the future through inscription.
+
+### 2. Import exact bytes
+
+The Studio preserves the source as exact bytes, records its content type and length, and calculates its digest. A rendered preview may help the person read, but it must not silently rewrite the source.
+
+### 3. Carry context
+
+The person records contributors, roles, provenance, rights basis, lineage, edition, publication class, and relevant disclosures.
+
+These fields make claims inspectable. They do not transform a claim into proof.
+
+### 4. Rehearse
+
+Rehearsal packages, approves, simulates, verifies, and renders the work without contacting Mainnet or spending funds. It is the default environment for learning and for finding mistakes.
+
+### 5. Choose the network and cost
+
+Signet permits a public technical rehearsal without Mainnet consequence. Mainnet creates a real financial and archival event. The Studio makes the distinction visible and refuses to let Mainnet become an accidental default.
+
+### 6. Prepare deterministically
+
+The Studio binds content, metadata, parents, publication intent, network, fee plan, and inscription envelope into one reviewable object. If a consequential input changes, the earlier approval no longer applies.
+
+### 7. Ratify
+
+A person reviews the exact work, the claims attached to it, the network, the expected cost, and the consequence of permanence. Preparation and broadcast remain separate actions.
+
+### 8. Inscribe
+
+The local Bitcoin and Ordinals infrastructure constructs, signs, and broadcasts the commit and reveal transactions through the dedicated wallet boundary. The Studio does not invent a second wallet or signing system inside the public interface.
+
+### 9. Reconcile uncertainty
+
+If a network operation times out or returns an ambiguous result, the Studio records the pending state and checks the wallet and chain before any retry. An uncertain irreversible operation must never become an invitation to repeat it blindly.
+
+### 10. Verify
+
+The resulting content and envelope are recovered from the reveal transaction and compared with the approved digests. Transaction existence alone is insufficient if the bytes do not match.
+
+### 11. Publish the reader and receipt
+
+Cyberdelic.space carries the encounter, exact bytes, digest, metadata, inscription identifier, commit and reveal transactions, block evidence, and verification path into a public static reader.
+
+### 12. Tend and mirror
+
+The press keeps the object legible across changing browsers, tools, domains, and cultural contexts. Mirrors provide redundancy without receiving publication authority.
+
+## Verification ladder
+
+A reader can choose how far down to verify.
+
+1. Read the press&#x27;s publication record.
+2. Hash the displayed or downloaded content in the browser.
+3. Inspect the transaction and block through independent explorers.
+4. Retrieve the reveal transaction and extract the inscription without trusting the site&#x27;s copy.
+5. Compare the recovered bytes and metadata with the published digests.
+6. Clone or download the press and repeat the checks from a mirror.
+
+The strongest path does not require faith in Cyberdelic Studio, Cyberdelic.space, or an Ordinals index. It can proceed from Bitcoin transaction data to exact bytes.
+
+## Security and authority boundaries
+
+Current boundaries include:
+
+- the Studio and its state-changing API remain local;
+- the public site contains no wallet controls or signing authority;
+- Bitcoin Core, `ord`, wallets, and operational journals remain outside the public mirror;
+- recovery phrases are not entered into or stored by the public website;
+- Signet and Mainnet use separate profiles, directories, ports, and wallets;
+- approval is invalidated when the exact prepared object changes;
+- live operations are journaled so ambiguous results can be reconciled;
+- managed Bitcoin tools can be pinned by digest;
+- a mirror can preserve and verify, but cannot publish as the press.
+
+Residual risks remain:
+
+- the current system is operated by one person on one primary publication machine;
+- compromise of that machine or its operator account can threaten local drafts, services, and publication authority;
+- irreversible publication can preserve personal, unlawful, unsafe, or non-consensual material if human review fails;
+- metadata can contain false or disputed claims even when its bytes are authentic;
+- public explorers are convenient verification aids, not final authorities;
+- storage failure, wallet error, fee pressure, chain reorganization, and software defects can interrupt the operation;
+- long-term tending, recovery, succession, and key stewardship remain cultural as well as technical obligations;
+- the interface still needs observation with people who did not help build it.
+
+## The related prototype ecology
+
+The first CyberdelicOS organs are becoming easier to understand when their offices are kept distinct.
+
+| Prototype | Present office | Where it lives | What crosses its boundary |
+| --- | --- | --- | --- |
+| **Cyberdelic Studio** | Local publication instrument | Dedicated PC | A ratified work crosses toward public permanence |
+| **Cyberdelic.space website** | Public press, reader, verify, and mirror surface | Static web files and public repositories | Evidence and readable forms cross toward the public |
+| **Cyberdelic.space app** | Mobile public reader | iPhone and iPad | Public Library, Projects, and Press material reach a portable interface |
+| **Hearth** | Sovereign home for private intelligence and memory | Locally governed computer | Only purpose-bound requests and authorized memory crossings |
+| **Portal** | Voice-first mobile connection to one Hearth | iPhone plus authenticated local bridge | Recognized text and reply text cross, while raw voice remains on the phone |
+| **CyberdelicOS terminal** | Public interpretive aperture | Web interface | A visitor encounters the Kernel and the system&#x27;s language |
+| **Kenosha Kid and Common Weather** | Bounded computational artworks | Native devices | Machine intelligence crosses into constrained form rather than unrestricted speech |
+
+These prototypes are related, but none should inherit another&#x27;s authority by proximity.
+
+Portal is not a remote control for the Studio. Hearth is not automatically a publishing wallet. Cyberdelic.space is not a public version of the Studio. The mobile reader is not Portal. An artwork that uses a local model is not thereby a Hearth.
+
+Clear boundaries let the prototypes compose without becoming one opaque platform.
+
+## What Bitcoin can prove, and what it cannot
+
+Bitcoin can support narrow claims:
+
+- particular bytes occurred in a particular transaction;
+- that transaction entered a particular block;
+- a downloaded object matches the inscribed bytes;
+- silent substitution is detectable.
+
+Bitcoin cannot prove:
+
+- that the work is true;
+- that the work deserves attention;
+- that all named contributors consented;
+- that a rights claim is legally valid;
+- that the press acted wisely;
+- that an immutable publication remains humane in every future context.
+
+Cyberdelic Studio is therefore not a truth machine, and Cyberdelic.space is not an oracle. Together they make a publication act and its evidence more legible. They do not remove the burden of judgment.
+
+## What the build has revealed
+
+The original short version of this note described Cyberdelic.space as if the press itself performed the entire operation. Building the actual system revealed a more consequential topology.
+
+The local instrument holds the dangerous capability. The public press holds the legibility. Bitcoin holds the witness. Mirrors hold copies. Readers hold judgment.
+
+This separation turns several values into technical facts:
+
+- &quot;permanence should be rare&quot; becomes rehearsal by default and a distinct live authorization;
+- &quot;consent must be specific&quot; becomes approval bound to exact bytes, metadata, network, and cost;
+- &quot;the archive lives at home&quot; becomes local publishing authority and a wallet-free public surface;
+- &quot;verification should not require trust&quot; becomes digest checks, transaction extraction, and portable mirrors;
+- &quot;memory has temperatures&quot; becomes visible differences between drafts, living versions, rendered pages, and inscriptions.
+
+The system is most cyberdelic when it creates a feedback loop between philosophy and apparatus. A constitutional verb shapes software. The software exposes hidden ambiguities. Those ambiguities return to the writing and change what the system knows how to say.
+
+## Next honest tests
+
+- Observe a person with no Bitcoin experience complete a rehearsal without verbal guidance.
+- Ask that person to explain which parts are local, living, rendered, mirrored, and immutable.
+- Verify a work from a clean machine using only the public receipt and Bitcoin data.
+- Restore the press from a mirror and confirm that every exact byte still verifies.
+- Test failure and recovery with the publication PC offline, partially synced, interrupted, and storage constrained.
+- Decide whether the current Studio machine remains a dedicated press workstation or becomes one bounded organ within Hearth.
+- Make the prototype topology visible across Cyberdelic.space so visitors understand that Studio, the public press, Hearth, Portal, and the artworks are different organs.
+- Preserve this version beside version 1.0 so the conceptual correction is itself part of the record.
+
+## Questions still open
+
+- What ceremony is sufficient before irreversible publication?
+- When should a living version be signed, anchored, or inscribed?
+- How should correction, dissent, withdrawal, and changed consent stand beside immutable bytes?
+- How should Studio authority be recovered or inherited if the present operator is absent?
+- Which parts of the publication PC belong to the future Hearth, and which require stricter separation?
+- Can the mobile reader become a complete offline mirror without ever becoming a publishing surface?
+- How should the press show that a beautiful rendering is not necessarily the canonical object?
+- What public trace should remain when an inscription attempt fails before permanence?
+
+## Conceptual lineage
+
+- **The Cyberdelic Kernel:** INSCRIBE, RATIFY, CARRY, TEND, END, FORGET, and explicit crossings.
+- **Cyberdelic OS Field Notes:** memory temperatures, local Hearths, portable interfaces, public witness, and infrastructure as part of the artwork.
+- **Instrument I-01, Cyberdelic Studio:** the human-scale publication ceremony, verification ladder, and local authority model.
+- **Artifact A-01, Cyberdelic.space:** the released public press as evidence, consequence, and portable reader.
+- **Builder Note BN-02, Building Portal:** the distinction between a locally governed Hearth and a narrow mobile interface.
+- **Agent Communication CLAUDE-03:** the observation that the working organs currently implement the boundary between one person and permanence more fully than the social verbs of the Kernel.
+
+**Related:** Instrument I-01, *Cyberdelic Studio*; Artifact A-01, *Cyberdelic.space*; Builder Note BN-02, *Building Portal*; Artifact A-03, *Portal*; the Cyberdelic Kernel; Living Field Note 13, *The Ledger, the Anchor, and the Inscription*; Living Field Note 30, *A Portal Opens*.
+
+---
+
+*Version 2.0 replaces the earlier conceptual sketch as the current living edition. Version 1.0 remains part of the record. Neither version is inscribed. A future exact version may cross that threshold only through the ceremony this note describes.*
+</pre></div>
+</section>
 <aside class="living-aside">
-  <h2>Version 1.0</h2>
-  <p>Testing · 2026-08-15</p>
-  <p>2382 UTF-8 bytes</p>
-  <p><a href="../../../living-content/cyberdelic-os/bn-001/v000001.md" download>Download exact version</a></p>
-  <h2>Version history</h2><ol class="version-history"><li><a href="./"><strong>v1.0</strong> · TESTING · 2026-08-15<code>ce9cc14474bb202ae819a62baf4c7f98e4b5d3997204c2f52bc2d8c3507a86f9</code></a></li></ol>
+  <h2>Version 2.0</h2>
+  <p>Testing · 2026-08-16</p>
+  <p>22040 UTF-8 bytes</p>
+  <p><a href="../../../living-content/cyberdelic-os/bn-001/v000002.md" download>Download exact version</a></p>
+  <h2>Version history</h2><ol class="version-history">
+    <li><a href="./"><strong>v2.0</strong> · TESTING · 2026-08-16<code>0e5d982a817c7974164be8f02611ca9974db67e9da46ef5bf5d9dfb0f52c1df2</code></a></li>
+    <li><a href="../../../workshop/cyberdelic-os/builder-notes/building-inscribe/v1.0/"><strong>v1.0</strong> · TESTING · 2026-08-15<code>ce9cc14474bb202ae819a62baf4c7f98e4b5d3997204c2f52bc2d8c3507a86f9</code></a></li>
+  </ol>
 </aside></div>
 <nav class="living-next" aria-label="Project chronology"><a href="../fn-s0-001/">← FN-S0-001</a><a href="../i-001/">I-001 →</a></nav>
 </article>
 </main>
-<footer class="site">
-  <div class="bar">
-    <p>cyberdelic.space. The Library is held in Bitcoin; Field and Workshop
-    publications are visibly living and versioned.</p>
-    <p><a href="../../../mirror/">Copy this library</a> ·
-       <a href="../../../library.json">library.json</a> ·
-       <a href="../../../verify/">How verification works</a> ·
-       <a href="../../../privacy/">Privacy</a></p>
-  </div>
-</footer>
+<footer class="site"><div class="bar">
+  <p>cyberdelic.space. The Library is held in Bitcoin; Field and Workshop publications are visibly living and versioned.</p>
+  <p><a href="../../../mirror/">Copy this library</a> · <a href="../../../library.json">library.json</a> · <a href="../../../verify/">How verification works</a> · <a href="../../../privacy/">Privacy</a></p>
+</div></footer>
 </body>
 </html>
