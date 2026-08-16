@@ -1,5 +1,5 @@
 {
-  "count": 3,
+  "count": 5,
   "items": [
     {
       "chain_evidence": {
@@ -69,6 +69,52 @@
       "version": 1,
       "version_label": "1.0",
       "version_sha256": "f03261d3dd1cfcb768106170ff5fdf20569f8467591a4b1f46bb23e26a2f6a3f"
+    },
+    {
+      "chain_evidence": {
+        "inscription_id": null,
+        "network": null,
+        "state": "living",
+        "verified": false
+      },
+      "content_length": 18354,
+      "content_path": "living-content/cyberdelic-os/bn-002/v000001.md",
+      "content_sha256": "6f79f53154937330997d8c0e3ba5f214d42540758a6d5c895e097250e42679fd",
+      "content_type": "text/markdown;charset=utf-8",
+      "maturity": "testing",
+      "metadata_sha256": null,
+      "project_slug": "cyberdelic-os",
+      "published_at": "2026-08-16T17:55:00+00:00",
+      "release_id": "BN-002",
+      "series_slug": "builder-notes",
+      "territory": "workshop",
+      "title": "Building Portal",
+      "version": 1,
+      "version_label": "1.0",
+      "version_sha256": "6f79f53154937330997d8c0e3ba5f214d42540758a6d5c895e097250e42679fd"
+    },
+    {
+      "chain_evidence": {
+        "inscription_id": null,
+        "network": null,
+        "state": "living",
+        "verified": false
+      },
+      "content_length": 4517,
+      "content_path": "living-content/cyberdelic-os/a-003/v000001.md",
+      "content_sha256": "99c00a09ae8ff1b4273c4e9c903d7b7e286855406570d7b888363f05d1d79aa8",
+      "content_type": "text/markdown;charset=utf-8",
+      "maturity": "testing",
+      "metadata_sha256": null,
+      "project_slug": "cyberdelic-os",
+      "published_at": "2026-08-16T17:56:00+00:00",
+      "release_id": "A-003",
+      "series_slug": "artifacts",
+      "territory": "workshop",
+      "title": "Portal",
+      "version": 1,
+      "version_label": "1.0",
+      "version_sha256": "99c00a09ae8ff1b4273c4e9c903d7b7e286855406570d7b888363f05d1d79aa8"
     }
   ],
   "schema": "https://cyberdelic.space/schemas/living-index-v1.json",

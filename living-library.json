@@ -357,6 +357,32 @@
       "themes": ["provenance", "decentralization", "memory", "technology", "governance", "curation"],
       "register": "technical-cartography",
       "rationale": "The artifact embodies the relation between a living curatorial field and a permanent, independently verifiable library."
+    },
+    {
+      "id": "cyberdelic-os-bn-002",
+      "release_id": "BN-002",
+      "label": "BN-002 · TESTING",
+      "title": "Building Portal",
+      "href": "project/cyberdelic-os/bn-002/",
+      "author": "Brad Necyk, in creative immersion with ChatGPT",
+      "form": "builder-note",
+      "excerpt": "A reproducible security-first architecture for connecting an iPhone voice interface to a private language model running at a sovereign home Hearth.",
+      "themes": ["privacy", "technology", "artificial-intelligence", "decentralization", "agency", "security", "voice"],
+      "register": "technical-cartography",
+      "rationale": "The note makes Portal's data flow, pairing ceremony, model limits, tests, residual risks, and source-release gates inspectable."
+    },
+    {
+      "id": "cyberdelic-os-a-003",
+      "release_id": "A-003",
+      "label": "A-003 · TESTING",
+      "title": "Portal",
+      "href": "project/cyberdelic-os/a-003/",
+      "author": "Brad Necyk, in creative immersion with ChatGPT",
+      "form": "artifact",
+      "excerpt": "A private voice Portal lets a person reach locally hosted intelligence while raw audio remains on the iPhone and the model remains at home.",
+      "themes": ["privacy", "technology", "artificial-intelligence", "decentralization", "embodiment", "agency", "security", "voice"],
+      "register": "technical-cartography",
+      "rationale": "The artifact joins data sovereignty and bounded local intelligence to an embodied interface that can travel into the world."
     }
   ]
 }
