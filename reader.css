@@ -12,6 +12,8 @@
   --ok: #376d4b;
   --warn: #895f12;
   --danger: #9d382b;
+  --sticky-surface: #f6f7f4;
+  --field-site-header-height: 0px;
   --font-sans: "Avenir Next", Avenir, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Helvetica, sans-serif;
   --font-editorial: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
@@ -40,6 +42,7 @@
   --ok: #75b27d;
   --warn: #d5a950;
   --danger: #d87363;
+  --sticky-surface: #0b0d0b;
   color-scheme: dark;
 }
 
@@ -54,6 +57,7 @@
   --ok: #297f5a;
   --warn: #a74f19;
   --danger: #9d382b;
+  --sticky-surface: #f3fbff;
   color-scheme: light;
 }
 
@@ -697,6 +701,17 @@ ul.plain .line { display: inline; font-size: .75rem; }
 
 /* A long Field publication becomes a directory of individually addressable notes. */
 main.field-notes-main { max-width: 90rem; }
+:root body.field-notes-page > header.site {
+  position: sticky; top: 0; z-index: 20;
+  background: var(--sticky-surface);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  box-shadow: 0 1px 0 var(--line);
+}
+header.site nav a.field-notes-return {
+  color: var(--signal); padding-right: 1.2rem;
+  border-right: 1px solid var(--line-2);
+}
 .field-notes-layout {
   grid-template-columns: minmax(13rem, 15rem) minmax(0, 46rem)
     minmax(11rem, 13rem);
@@ -715,7 +730,8 @@ main.field-notes-main { max-width: 90rem; }
   min-width: 0;
 }
 .field-note-index {
-  min-width: 0; position: sticky; top: 1.5rem; align-self: start;
+  min-width: 0; position: sticky;
+  top: calc(var(--field-site-header-height) + 1.5rem); align-self: start;
   contain: paint;
 }
 .field-note-index-sticky { position: static; }
@@ -742,7 +758,8 @@ main.field-notes-main { max-width: 90rem; }
   letter-spacing: .06em; text-transform: uppercase; margin: 0 0 .7rem;
 }
 .field-note-list {
-  list-style: none; padding: 0; margin: 0; max-height: calc(100vh - 14rem);
+  list-style: none; padding: 0; margin: 0;
+  max-height: calc(100vh - var(--field-site-header-height) - 14rem);
   overflow-y: auto; overscroll-behavior: contain; border-top: 1px solid var(--line);
   scrollbar-width: thin;
 }
@@ -765,7 +782,8 @@ main.field-notes-main { max-width: 90rem; }
 .field-note-label { font: .78rem/1.3 var(--font-editorial); }
 .field-notes-layout .living-reading { max-width: 46rem; }
 .field-note-heading {
-  scroll-margin-top: 2rem; color: var(--signal) !important;
+  scroll-margin-top: calc(var(--field-site-header-height) + 2rem);
+  color: var(--signal) !important;
   font: .68rem/1.3 var(--font-mono) !important;
   letter-spacing: var(--tracking); text-transform: uppercase;
   margin: 5rem 0 .6rem !important;
@@ -773,7 +791,8 @@ main.field-notes-main { max-width: 90rem; }
 .field-note-heading:focus { outline-offset: .35rem; }
 .field-note-title { margin-top: 0 !important; }
 .field-note-publication-details {
-  position: sticky; top: 1.5rem; align-self: start; contain: paint;
+  position: sticky; top: calc(var(--field-site-header-height) + 1.5rem);
+  align-self: start; contain: paint;
   font-size: .82rem;
 }
 .field-note-publication-details h2:not(:first-child) { margin-top: 2rem; }
@@ -815,17 +834,26 @@ main.field-notes-main { max-width: 90rem; }
 }
 
 @media (max-width: 52rem) {
+  body.field-notes-page > header.site .bar {
+    gap: .7rem 1.2rem; padding-block: .9rem;
+  }
+  body.field-notes-page > header.site nav {
+    order: 3; width: 100%; max-width: 100%; flex-wrap: nowrap;
+    gap: 1rem; overflow-x: auto; overscroll-behavior-x: contain;
+    scrollbar-width: none;
+  }
+  body.field-notes-page > header.site nav::-webkit-scrollbar { display: none; }
   main.field-notes-main { padding-top: 1.5rem; }
   .field-notes-layout,
   .field-notes-shell { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
   .field-note-index {
-    position: sticky; top: 0; z-index: 4; min-width: 0;
+    position: sticky; top: var(--field-site-header-height); z-index: 10;
+    min-width: 0;
     margin-inline: calc(-1 * clamp(1.2rem, 5vw, 4rem));
     padding: .5rem clamp(1.2rem, 5vw, 4rem);
-    background: color-mix(in srgb, var(--canvas) 82%, transparent);
+    background: var(--sticky-surface);
     border-block: 1px solid var(--line);
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
+    box-shadow: 0 .35rem 1rem rgba(0, 0, 0, .06);
   }
   .field-note-index-sticky { position: static; }
   .field-note-index .shelf-kind,
@@ -855,7 +883,9 @@ main.field-notes-main { max-width: 90rem; }
   .field-notes-layout .field-note-publication-details {
     grid-column: 1;
   }
-  .field-note-heading { scroll-margin-top: 5.5rem; }
+  .field-note-heading {
+    scroll-margin-top: calc(var(--field-site-header-height) + 5.5rem);
+  }
 }
 
 @media print {

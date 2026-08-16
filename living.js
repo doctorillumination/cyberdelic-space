@@ -7,6 +7,38 @@
     return match ? match[1].padStart(2, "0") : null;
   }
 
+  function enhanceFieldNotesChrome(index) {
+    var header = document.querySelector("body > header.site");
+    var crumbLink = document.querySelector(".field-notes-main .crumb a");
+    if (!header || !index) return;
+
+    document.body.classList.add("field-notes-page");
+
+    var siteNav = header.querySelector("nav[aria-label='Sections']");
+    if (siteNav && crumbLink && !siteNav.querySelector(".field-notes-return")) {
+      var returnLink = crumbLink.cloneNode(true);
+      returnLink.className = "field-notes-return";
+      returnLink.setAttribute("aria-label", "Back to the CyberdelicOS project");
+      siteNav.prepend(returnLink);
+    }
+
+    function syncHeaderHeight() {
+      var height = Math.ceil(header.getBoundingClientRect().height);
+      document.documentElement.style.setProperty(
+        "--field-site-header-height", height + "px"
+      );
+    }
+
+    syncHeaderHeight();
+    window.requestAnimationFrame(syncHeaderHeight);
+    window.addEventListener("resize", syncHeaderHeight);
+    if ("ResizeObserver" in window) {
+      var observer = new ResizeObserver(syncHeaderHeight);
+      observer.observe(header);
+      header._fieldNotesResizeObserver = observer;
+    }
+  }
+
   function populateFieldNoteIndex(index) {
     var list = index && index.querySelector(".field-note-list");
     var source = index && index.dataset.fieldNoteSource;
@@ -102,7 +134,20 @@
     var scheduled = false;
     function locateCurrent() {
       scheduled = false;
-      var threshold = Math.min(180, window.innerHeight * 0.24);
+      var siteHeader = document.querySelector("body > header.site");
+      var headerBottom = siteHeader
+        ? siteHeader.getBoundingClientRect().bottom
+        : 0;
+      var threshold = Math.max(
+        headerBottom + 16,
+        Math.min(180, window.innerHeight * 0.24)
+      );
+      if (window.matchMedia("(max-width: 52rem)").matches) {
+        var indexRect = index.getBoundingClientRect();
+        if (indexRect.top <= headerBottom + 2) {
+          threshold = Math.max(threshold, indexRect.bottom + 16);
+        }
+      }
       var current = headings[0];
       headings.forEach(function (heading) {
         if (heading.getBoundingClientRect().top <= threshold) current = heading;
@@ -179,6 +224,7 @@
 
     var index = document.querySelector("[data-field-note-index]");
     if (!index) return;
+    enhanceFieldNotesChrome(index);
     populateFieldNoteIndex(index).then(function () {
       enhanceFieldNotes(document);
     });
