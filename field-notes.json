@@ -1,0 +1,277 @@
+{
+  "schema": "https://cyberdelic.space/schemas/field-notes-index-v1.json",
+  "count": 28,
+  "source": {
+    "authors": [
+      "Brad Necyk"
+    ],
+    "content_path": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
+    "content_sha256": "376b7fc715abe95ad9c34afaa685ef7bbed44d85aa8234efbff1a11594cf2978",
+    "content_type": "text/markdown;charset=utf-8",
+    "maturity": "testing",
+    "project_slug": "cyberdelic-os",
+    "published_at": "2026-08-15T09:00:00+00:00",
+    "release_code": "FN-S0-01",
+    "release_id": "FN-S0-001",
+    "series_slug": "field-notes",
+    "status": "living",
+    "title": "Cyberdelic OS Living Field Notes",
+    "url": "project/cyberdelic-os/fn-s0-001/",
+    "version": 1,
+    "version_label": "0.6"
+  },
+  "items": [
+    {
+      "id": "FN-01",
+      "sequence": 1,
+      "title": "An Operating System for Shared Reality",
+      "summary": "Frames Cyberdelic OS as an ethical interface between private apertures and a continuously negotiated shared reality.",
+      "themes": ["shared reality", "attention", "ethics", "perception"],
+      "concepts": ["aperture", "shared sky", "finite constellation", "parallax"],
+      "url": "project/cyberdelic-os/fn-s0-001/#fn-01"
+    },
+    {
+      "id": "FN-02",
+      "sequence": 2,
+      "title": "Asynchronous Co-Presence",
+      "summary": "Describes correspondence across distance and delay as a spacious creative presence with continuity, voice, and time to ferment.",
+      "themes": ["correspondence", "collaboration", "voice", "time"],
+      "concepts": ["asynchronous co-presence", "latency", "living thread", "spaciousness"],
+      "url": "project/cyberdelic-os/fn-s0-001/#fn-02"
+    },
+    {
+      "id": "FN-03",
+      "sequence": 3,
+      "title": "A Village of Agents",
+      "summary": "Replaces the singular AI oracle with an ecology of distinct, bounded agents whose offices, histories, and disagreements remain visible.",
+      "themes": ["artificial intelligence", "agency", "plurality", "governance"],
+      "concepts": ["Familiar", "Gardener", "Dissenter", "Witness", "Cartographer", "Trickster", "Ferryman"],
+      "url": "project/cyberdelic-os/fn-s0-001/#fn-03"
+    },
+    {
+      "id": "FN-04",
+      "sequence": 4,
+      "title": "The Gathering Intelligence",
+      "summary": "Imagines intelligence that holds a shared encounter, protects participant boundaries, and helps groups think without manufacturing consensus.",
+      "themes": ["gathering", "shared attention", "collaboration", "consent"],
+      "concepts": ["Gathering Intelligence", "shared object", "crux map", "ratification"],
+      "url": "project/cyberdelic-os/fn-s0-001/#fn-04"
+    },
+    {
+      "id": "FN-05",
+      "sequence": 5,
+      "title": "The Physics We Choose",
+      "summary": "Treats interface rules as designed physics that shape attention, memory, status, ambiguity, and the kinds of consciousness a world cultivates.",
+      "themes": ["interface", "attention", "ethics", "world-building"],
+      "concepts": ["digital physics", "gravity", "weather", "wilderness", "forgetting"],
+      "url": "project/cyberdelic-os/fn-s0-001/#fn-05"
+    },
+    {
+      "id": "FN-06",
+      "sequence": 6,
+      "title": "First Light",
+      "summary": "Positions the project as a situated signal toward a desirable future, open to correction, collaboration, and forms its author cannot build alone.",
+      "themes": ["imagination", "futurity", "art", "collaboration"],
+      "concepts": ["first light", "situated thought", "transmission", "public memory"],
+      "url": "project/cyberdelic-os/fn-s0-001/#fn-06"
+    },
+    {
+      "id": "FN-07",
+      "sequence": 7,
+      "title": "The Hearth: Intelligence Comes Home",
+      "summary": "Makes local-first intelligence a moral architecture in which people govern private memory, models, permissions, energy, and every crossing to the cloud.",
+      "themes": ["local-first", "privacy", "sovereignty", "ecology"],
+      "concepts": ["Hearth", "compute constitution", "replaceable models", "cloud telescope"],
+      "url": "project/cyberdelic-os/fn-s0-001/#fn-07"
+    },
+    {
+      "id": "FN-08",
+      "sequence": 8,
+      "title": "The Lived Interface",
+      "summary": "Proposes a spatial interface of Home, Village, Field, Forest, Table, Observatory, and Press where relation becomes sensorially legible.",
+      "themes": ["interface", "spatial computing", "embodiment", "discovery"],
+      "concepts": ["Home", "Village", "Field", "Forest", "dérive", "Writing Table"],
+      "url": "project/cyberdelic-os/fn-s0-001/#fn-08"
+    },
+    {
+      "id": "FN-09",
+      "sequence": 9,
+      "title": "The Lensmaker: Portable Apertures",
+      "summary": "Defines an authored lens as a calibrated and source-grounded pattern of attention that widens perception without impersonating its creator.",
+      "themes": ["apertures", "authorship", "attention", "artificial intelligence"],
+      "concepts": ["Lensmaker", "portable aperture", "saliency map", "calibration", "digital twin"],
+      "url": "project/cyberdelic-os/fn-s0-001/#fn-09"
+    },
+    {
+      "id": "FN-10",
+      "sequence": 10,
+      "title": "The Mirror Archive",
+      "summary": "Turns selected conversational traces into a local, cited, and revisable proposal for self-recognition rather than a totalizing model of the person.",
+      "themes": ["memory", "self-knowledge", "privacy", "provenance"],
+      "concepts": ["mirror archive", "self-authorship", "temporal change", "counterexample"],
+      "url": "project/cyberdelic-os/fn-s0-001/#fn-10"
+    },
+    {
+      "id": "FN-11",
+      "sequence": 11,
+      "title": "The Writing Table",
+      "summary": "Designs a ritual for humans and distinct intelligences to attend independently, question one another, and preserve polyphony through structured deliberation.",
+      "themes": ["collaboration", "deliberation", "artificial intelligence", "writing"],
+      "concepts": ["Writing Table", "independent attention", "polyphony", "premature convergence"],
+      "url": "project/cyberdelic-os/fn-s0-001/#fn-11"
+    },
+    {
+      "id": "FN-12",
+      "sequence": 12,
+      "title": "Ports and Weather Stations",
+      "summary": "Treats social platforms as algorithmic climates and proposes deliberate ports that preserve source, mediation, context, and the reason something was carried inward.",
+      "themes": ["social media", "mediation", "provenance", "platforms"],
+      "concepts": ["ports", "weather stations", "algorithmic climate", "institutional parallax"],
+      "url": "project/cyberdelic-os/fn-s0-001/#fn-12"
+    },
+    {
+      "id": "FN-13",
+      "sequence": 13,
+      "title": "The Ledger, the Anchor, and the Inscription",
+      "summary": "Separates revisable living memory, privately provable anchored memory, and rare public inscription so each can hold a different temperature.",
+      "themes": ["memory", "cryptography", "privacy", "permanence"],
+      "concepts": ["living memory", "anchored memory", "inscribed memory", "Merkle root", "Bitcoin"],
+      "url": "project/cyberdelic-os/fn-s0-001/#fn-13"
+    },
+    {
+      "id": "FN-14",
+      "sequence": 14,
+      "title": "The Open Anatomy",
+      "summary": "Maps open technical organs for a local-first system while keeping Cyberdelic OS defined by constitutional boundaries instead of any replaceable tool.",
+      "themes": ["open source", "architecture", "local-first", "interoperability"],
+      "concepts": ["agent offices", "CRDT", "MCP", "portable skills", "local search"],
+      "url": "project/cyberdelic-os/fn-s0-001/#fn-14"
+    },
+    {
+      "id": "FN-15",
+      "sequence": 15,
+      "title": "The First Small World",
+      "summary": "Reduces the operating-system vision to a testable prototype containing one home, Familiar, Lensmaker, table, correspondence, field, and memory ritual.",
+      "themes": ["prototype", "world-building", "local-first", "collaboration"],
+      "concepts": ["first build", "small world", "memory ritual", "living correspondence"],
+      "url": "project/cyberdelic-os/fn-s0-001/#fn-15"
+    },
+    {
+      "id": "FN-16",
+      "sequence": 16,
+      "title": "The Archipelago: Sovereign Worlds, Shared Sky",
+      "summary": "Envisions independently governed Homes, Villages, and Cities joined by shared protocols, selective memory, bridges, and a non-sovereign public sky.",
+      "themes": ["decentralization", "governance", "federation", "world-building"],
+      "concepts": ["Archipelago", "sovereign worlds", "shared protocols", "Shared Sky", "locality"],
+      "url": "project/cyberdelic-os/fn-s0-001/#fn-16"
+    },
+    {
+      "id": "FN-17",
+      "sequence": 17,
+      "title": "One World, Many Interfaces",
+      "summary": "Keeps one semantic world continuous across spatial, voice, analytical, audiovisual, table, and plain-text interfaces selected for different modes of consciousness.",
+      "themes": ["interface", "multimodality", "continuity", "semantic systems"],
+      "concepts": ["many interfaces", "semantic world", "renderer independence", "mode of consciousness"],
+      "url": "project/cyberdelic-os/fn-s0-001/#fn-17"
+    },
+    {
+      "id": "FN-18",
+      "sequence": 18,
+      "title": "You Carry the Doorway",
+      "summary": "Makes the phone a secure, offline-capable doorway into a sovereign home node, so life can enter the system without shrinking the Hearth into a mobile app.",
+      "themes": ["mobile", "voice", "local-first", "offline computing"],
+      "concepts": ["doorway", "Hearth", "queued capture", "secure access", "visual world"],
+      "url": "project/cyberdelic-os/fn-s0-001/#fn-18"
+    },
+    {
+      "id": "FN-19",
+      "sequence": 19,
+      "title": "A Medium for Becoming",
+      "summary": "Imagines a restrained archive that reflects changing patterns of attention and identity without converting self-knowledge into prediction, optimization, or tasks.",
+      "themes": ["becoming", "self-knowledge", "attention", "memory"],
+      "concepts": ["trajectory", "revisable mirror", "quiet report", "dark region"],
+      "url": "project/cyberdelic-os/fn-s0-001/#fn-19"
+    },
+    {
+      "id": "FN-20",
+      "sequence": 20,
+      "title": "Aperture Design as a Cultural Form",
+      "summary": "Proposes aperture design as a creative discipline for carrying a versioned pattern of attention, with consent, sources, limits, and calibration made public.",
+      "themes": ["apertures", "culture", "authorship", "ethics"],
+      "concepts": ["aperture design", "portable attention", "public manifest", "legacy", "digital twin"],
+      "url": "project/cyberdelic-os/fn-s0-001/#fn-20"
+    },
+    {
+      "id": "FN-21",
+      "sequence": 21,
+      "title": "Conversation Now, Cultivation Later",
+      "summary": "Joins immediate voice conversation to bounded background cultivation governed by explicit limits on interruption, privacy, compute, agents, and duration.",
+      "themes": ["mobile", "voice", "attention", "agency"],
+      "concepts": ["cultivation", "interruption contract", "background village", "Quiet Mode"],
+      "url": "project/cyberdelic-os/fn-s0-001/#fn-21"
+    },
+    {
+      "id": "FN-22",
+      "sequence": 22,
+      "title": "The Chain Beneath the Village",
+      "summary": "Places blockchain beneath daily life as a notary, treasury, and court for selected proofs, civic state, and cultural permanence rather than ordinary activity.",
+      "themes": ["blockchain", "governance", "provenance", "memory"],
+      "concepts": ["signed events", "public witness", "civic state", "cultural permanence", "settlement layer"],
+      "url": "project/cyberdelic-os/fn-s0-001/#fn-22"
+    },
+    {
+      "id": "FN-23",
+      "sequence": 23,
+      "title": "A Civic Economy Without Speculative Land",
+      "summary": "Builds an economy around genuinely scarce care, trust, compute, and stewardship while separating money, standing, and governance.",
+      "themes": ["economy", "governance", "stewardship", "commons"],
+      "concepts": ["money", "standing", "governance", "speculative land", "civic institutions"],
+      "url": "project/cyberdelic-os/fn-s0-001/#fn-23"
+    },
+    {
+      "id": "FN-24",
+      "sequence": 24,
+      "title": "The Game of Shared Understanding",
+      "summary": "Makes collective attention the engine of an ecological world where depth, plurality, stewardship, creation, and relation visibly develop the landscape.",
+      "themes": ["play", "collective intelligence", "stewardship", "world-building"],
+      "concepts": ["ecological progression", "boroughs", "paths", "shared understanding", "situated standing"],
+      "url": "project/cyberdelic-os/fn-s0-001/#fn-24"
+    },
+    {
+      "id": "FN-25",
+      "sequence": 25,
+      "title": "Expeditions, Storms, and the Birth of Boroughs",
+      "summary": "Turns ideological difference into expeditions and public weather that can yield bridges, crux maps, contested timelines, and durable shapes without forced consensus.",
+      "themes": ["difference", "bridge-building", "public knowledge", "governance"],
+      "concepts": ["expedition", "storm", "borough", "crux map", "increased dimensionality"],
+      "url": "project/cyberdelic-os/fn-s0-001/#fn-25"
+    },
+    {
+      "id": "FN-26",
+      "sequence": 26,
+      "title": "Creation Alters the Geography",
+      "summary": "Makes original creation the deepest participation loop, where people and agents gather around a dark region and produce work that changes the shared world.",
+      "themes": ["creation", "artificial intelligence", "collaboration", "world-building"],
+      "concepts": ["dark region", "guild", "playable loop", "original work", "geography"],
+      "url": "project/cyberdelic-os/fn-s0-001/#fn-26"
+    },
+    {
+      "id": "FN-27",
+      "sequence": 27,
+      "title": "Vocations, Not Classes",
+      "summary": "Defines roles as offices of attention whose tools arise from accepted constraints, demonstrated practice, contextual trust, and plural identity.",
+      "themes": ["vocation", "attention", "responsibility", "identity"],
+      "concepts": ["offices of attention", "Witness", "Gardener", "Cartographer", "Builder", "Ferryman", "Host", "Trickster"],
+      "url": "project/cyberdelic-os/fn-s0-001/#fn-27"
+    },
+    {
+      "id": "FN-28",
+      "sequence": 28,
+      "title": "The World Is the Interface",
+      "summary": "Centers head-up computing on embodied life, authored relation to place, nonhuman apertures, and a loop that repeatedly returns attention to the physical world.",
+      "themes": ["embodiment", "attention", "place", "physical world"],
+      "concepts": ["head-up computing", "Field Mode", "cyberdelic loop", "partiality", "look-away metric"],
+      "url": "project/cyberdelic-os/fn-s0-001/#fn-28"
+    }
+  ]
+}

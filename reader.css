@@ -1,4 +1,4 @@
-/* cyberdelic.space: one typographic system, two atmospheres.
+/* cyberdelic.space: one typographic system, three atmospheres.
    Derived from the DEW LINE Studio design tokens. */
 
 :root {
@@ -12,6 +12,8 @@
   --ok: #376d4b;
   --warn: #895f12;
   --danger: #9d382b;
+  --sticky-surface: #f6f7f4;
+  --field-site-header-height: 0px;
   --font-sans: "Avenir Next", Avenir, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Helvetica, sans-serif;
   --font-editorial: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
@@ -27,8 +29,8 @@
   color-scheme: light;
 }
 
-/* Light is the default everywhere, whatever the operating system prefers.
-   Dark is a choice, made with the header toggle and remembered per device. */
+/* Psychedelic is the default everywhere, whatever the operating system
+   prefers. Light and dark are choices remembered on this device. */
 :root[data-theme="dark"] {
   --canvas: #0b0d0b;
   --surface: #111411;
@@ -40,7 +42,23 @@
   --ok: #75b27d;
   --warn: #d5a950;
   --danger: #d87363;
+  --sticky-surface: #0b0d0b;
   color-scheme: dark;
+}
+
+:root[data-theme="psychedelic"] {
+  --canvas: rgba(255, 255, 255, .16);
+  --surface: rgba(255, 255, 255, .5);
+  --ink: #291a3a;
+  --ink-2: #594865;
+  --line: rgba(56, 35, 90, .15);
+  --line-2: rgba(56, 35, 90, .28);
+  --signal: #087b8a;
+  --ok: #297f5a;
+  --warn: #a74f19;
+  --danger: #9d382b;
+  --sticky-surface: #f3fbff;
+  color-scheme: light;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -53,9 +71,68 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
+:root[data-theme="psychedelic"] { background: #f3fbff; }
+
+:root[data-theme="psychedelic"] body {
+  position: relative;
+  min-height: 100vh;
+  isolation: isolate;
+  background: transparent;
+}
+
+:root[data-theme="psychedelic"] body::before,
+:root[data-theme="psychedelic"] body::after {
+  content: "";
+  position: fixed;
+  pointer-events: none;
+}
+
+:root[data-theme="psychedelic"] body::before {
+  inset: -22%;
+  z-index: -2;
+  background:
+    radial-gradient(circle at 9% 6%, rgba(67, 224, 235, .88), transparent 38%),
+    radial-gradient(circle at 72% 0%, rgba(130, 148, 255, .76), transparent 40%),
+    radial-gradient(circle at 92% 34%, rgba(220, 128, 245, .69), transparent 36%),
+    radial-gradient(circle at 72% 70%, rgba(255, 119, 190, .76), transparent 42%),
+    radial-gradient(circle at 96% 96%, rgba(255, 180, 92, .76), transparent 38%),
+    radial-gradient(circle at 24% 100%, rgba(111, 128, 255, .68), transparent 44%),
+    #f3fbff;
+  filter: saturate(.9);
+  animation: psychedelic-field 28s ease-in-out infinite alternate;
+}
+
+:root[data-theme="psychedelic"] body::after {
+  inset: -28%;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 35% 36%, rgba(255, 255, 255, .8), transparent 21%),
+    radial-gradient(circle at 68% 62%, rgba(255, 255, 255, .58), transparent 18%),
+    conic-gradient(from 50deg at 55% 45%,
+      rgba(66, 220, 235, .28), rgba(150, 137, 250, .18),
+      rgba(255, 131, 194, .24), rgba(255, 191, 107, .2),
+      rgba(66, 220, 235, .28));
+  filter: blur(52px);
+  mix-blend-mode: soft-light;
+  opacity: .7;
+  animation: psychedelic-shimmer 36s linear infinite;
+}
+
 a { color: inherit; }
 a:hover { color: var(--signal); }
 :focus-visible { outline: 2px solid var(--signal); outline-offset: 3px; }
+
+/* Digests, transaction IDs, inscription IDs, and other inline identifiers
+   must stay inside their column at every viewport width. Command and source
+   blocks retain their deliberate horizontal scrolling. */
+code {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+pre code {
+  overflow-wrap: normal;
+  word-break: normal;
+}
 
 .skip { position: absolute; left: -9999px; }
 .skip:focus {
@@ -116,6 +193,42 @@ footer.site {
 }
 footer.site .bar { padding: 2rem clamp(1.2rem, 5vw, 4rem) 4rem; }
 footer.site p { max-width: var(--measure); margin: .4rem 0; }
+
+:root[data-theme="psychedelic"] header.site,
+:root[data-theme="psychedelic"] footer.site {
+  background: rgba(255, 255, 255, .42);
+  -webkit-backdrop-filter: blur(24px) saturate(1.05);
+  backdrop-filter: blur(24px) saturate(1.05);
+}
+
+:root[data-theme="psychedelic"] main {
+  background: linear-gradient(180deg,
+    rgba(255, 255, 255, .16), rgba(255, 255, 255, .36));
+  border-inline: 1px solid rgba(255, 255, 255, .3);
+  -webkit-backdrop-filter: blur(26px) saturate(.94);
+  backdrop-filter: blur(26px) saturate(.94);
+}
+
+:root[data-theme="psychedelic"] .theme-toggle {
+  background: rgba(255, 255, 255, .38);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .2);
+}
+
+@keyframes psychedelic-field {
+  0% { transform: translate3d(-1.5%, -1%, 0) scale(1); }
+  50% { transform: translate3d(1.5%, 1%, 0) scale(1.035); }
+  100% { transform: translate3d(-.5%, 1.5%, 0) scale(1.015); }
+}
+
+@keyframes psychedelic-shimmer {
+  from { transform: rotate(0deg) scale(1.05); }
+  to { transform: rotate(360deg) scale(1.05); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root[data-theme="psychedelic"] body::before,
+  :root[data-theme="psychedelic"] body::after { animation: none; }
+}
 
 /* ---------------------------------------------------------------- library */
 
@@ -299,7 +412,7 @@ footer.site p { max-width: var(--measure); margin: .4rem 0; }
    face is ever retuned. The renderer clamps every heading to h3 or shallower
    so nothing here can out-rank the work's own title. */
 .markdown-reading { white-space: normal; }
-.markdown-body { font: inherit; color: inherit; }
+.markdown-body { min-width: 0; font: inherit; color: inherit; overflow-wrap: anywhere; }
 .markdown-body > :first-child { margin-top: 0; }
 .markdown-body > :last-child { margin-bottom: 0; }
 .markdown-body h1, .markdown-body h2, .markdown-body h3 {
@@ -323,7 +436,8 @@ footer.site p { max-width: var(--measure); margin: .4rem 0; }
 .markdown-body code { font: .84em/1.5 var(--font-mono); padding: .08em .28em;
   border: 1px solid var(--line); background: var(--surface); }
 .markdown-body pre { margin: 1.4em 0; padding: 1em; overflow-x: auto;
-  white-space: pre; border: 1px solid var(--line); background: var(--surface); }
+  max-width: 100%; white-space: pre; border: 1px solid var(--line);
+  background: var(--surface); }
 .markdown-body pre code { padding: 0; border: 0; background: none; }
 .markdown-body a { color: var(--signal); text-underline-offset: .18em; }
 .markdown-center { text-align: center; margin: 2em 0; }
@@ -561,8 +675,11 @@ ul.plain .line { display: inline; font-size: .75rem; }
 .living-badge.pending { color: var(--warn); border-color: var(--warn); }
 .living-badge.living { color: var(--ink-2); }
 .project-offices { margin-top: 4rem; }
-.project-offices ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: var(--line); }
-.project-offices li { display: grid; gap: .5rem; padding: 1.2rem; background: var(--canvas); }
+.project-offices ul { border-top: 1px solid var(--line); }
+.project-offices li {
+  display: grid; gap: .5rem; padding: 1.2rem 0;
+  border-bottom: 1px solid var(--line);
+}
 .project-offices span { color: var(--ink-2); }
 .living-head { max-width: 52rem; margin-bottom: 3rem; }
 .living-head h1 { font: 400 clamp(2.8rem, 7vw, 5rem)/1 var(--font-editorial); margin: .8rem 0 1rem; }
@@ -582,8 +699,112 @@ ul.plain .line { display: inline; font-size: .75rem; }
 .living-next { display: grid; grid-template-columns: 1fr 1fr; margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
 .living-next a:last-child { text-align: right; }
 
+/* A long Field publication becomes a directory of individually addressable notes. */
+main.field-notes-main { max-width: 90rem; }
+:root body.field-notes-page > header.site {
+  position: sticky; top: 0; z-index: 20;
+  background: var(--sticky-surface);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  box-shadow: 0 1px 0 var(--line);
+}
+header.site nav a.field-notes-return {
+  color: var(--signal); padding-right: 1.2rem;
+  border-right: 1px solid var(--line-2);
+}
+.field-notes-layout {
+  grid-template-columns: minmax(13rem, 15rem) minmax(0, 46rem)
+    minmax(11rem, 13rem);
+  gap: clamp(2rem, 3.5vw, 3.5rem);
+  align-items: start;
+}
+.field-notes-shell {
+  display: grid;
+  grid-template-columns: minmax(13rem, 15rem) minmax(0, 1fr);
+  gap: clamp(2rem, 3.5vw, 3.5rem);
+  align-items: start;
+}
+.field-notes-shell > .living-layout {
+  grid-template-columns: minmax(0, 46rem) minmax(11rem, 13rem);
+  gap: clamp(2rem, 3.5vw, 3.5rem);
+  min-width: 0;
+}
+.field-note-index {
+  min-width: 0; position: sticky;
+  top: calc(var(--field-site-header-height) + 1.5rem); align-self: start;
+  contain: paint;
+}
+.field-note-index-sticky { position: static; }
+.field-note-index .shelf-kind { margin-bottom: .65rem; }
+.field-note-index h2 {
+  font: 400 1.7rem/1.15 var(--font-editorial); margin: 0 0 .45rem;
+}
+.field-note-index-copy {
+  color: var(--ink-2); font: .82rem/1.5 var(--font-editorial);
+  margin: 0 0 1rem;
+}
+.field-note-find { display: grid; gap: .35rem; margin-bottom: .45rem; }
+.field-note-find span {
+  color: var(--ink-2); font: .62rem/1 var(--font-mono);
+  letter-spacing: var(--tracking); text-transform: uppercase;
+}
+.field-note-find input {
+  width: 100%; min-width: 0; padding: .55rem .6rem; color: var(--ink);
+  background: var(--surface); border: 1px solid var(--line-2);
+  font: .76rem/1.3 var(--font-sans);
+}
+.field-note-count {
+  color: var(--ink-2); font: .6rem/1.3 var(--font-mono);
+  letter-spacing: .06em; text-transform: uppercase; margin: 0 0 .7rem;
+}
+.field-note-list {
+  list-style: none; padding: 0; margin: 0;
+  max-height: calc(100vh - var(--field-site-header-height) - 14rem);
+  overflow-y: auto; overscroll-behavior: contain; border-top: 1px solid var(--line);
+  scrollbar-width: thin;
+}
+.field-note-list li { border-bottom: 1px solid var(--line); }
+.field-note-list li[hidden] { display: none; }
+.field-note-list a {
+  display: grid; grid-template-columns: 3.4rem minmax(0, 1fr); gap: .55rem;
+  padding: .62rem .25rem .68rem; color: var(--ink); text-decoration: none;
+  border-left: 2px solid transparent;
+}
+.field-note-list a:hover { color: var(--signal); }
+.field-note-list a[aria-current="location"] {
+  color: var(--signal); border-left-color: var(--signal); padding-left: .55rem;
+  background: var(--surface);
+}
+.field-note-code {
+  padding-top: .12rem; color: var(--signal); font: .6rem/1.35 var(--font-mono);
+  letter-spacing: .04em;
+}
+.field-note-label { font: .78rem/1.3 var(--font-editorial); }
+.field-notes-layout .living-reading { max-width: 46rem; }
+.field-note-heading {
+  scroll-margin-top: calc(var(--field-site-header-height) + 2rem);
+  color: var(--signal) !important;
+  font: .68rem/1.3 var(--font-mono) !important;
+  letter-spacing: var(--tracking); text-transform: uppercase;
+  margin: 5rem 0 .6rem !important;
+}
+.field-note-heading:focus { outline-offset: .35rem; }
+.field-note-title { margin-top: 0 !important; }
+.field-note-publication-details {
+  position: sticky; top: calc(var(--field-site-header-height) + 1.5rem);
+  align-self: start; contain: paint;
+  font-size: .82rem;
+}
+.field-note-publication-details h2:not(:first-child) { margin-top: 2rem; }
+.field-note-publication-details .version-history strong,
+.field-note-publication-details .version-history span { display: block; }
+
 @media (max-width: 40rem) {
   header.site .bar { gap: .8rem 1.2rem; }
+  header.site nav {
+    order: 3; width: 100%; max-width: 100%; flex-wrap: wrap;
+    gap: .65rem 1rem;
+  }
   .views button { padding: .8rem .7rem; }
   .views button:first-child { padding-left: 0; }
   .facts th { width: auto; white-space: normal; display: block;
@@ -593,6 +814,78 @@ ul.plain .line { display: inline; font-size: .75rem; }
   .living-row { grid-template-columns: 1fr; gap: .6rem; }
   .living-badges { justify-content: flex-start; }
   .living-aside { border-left: 0; border-top: 1px solid var(--line); padding: 1.5rem 0 0; }
+}
+
+@media (max-width: 72rem) {
+  .field-notes-layout {
+    grid-template-columns: minmax(12.5rem, 15rem) minmax(0, 1fr);
+  }
+  .field-notes-shell {
+    grid-template-columns: minmax(12.5rem, 15rem) minmax(0, 1fr);
+  }
+  .field-notes-shell > .living-layout { grid-template-columns: minmax(0, 1fr); }
+  .field-notes-shell > .living-layout .living-aside {
+    border-left: 0; border-top: 1px solid var(--line); padding: 1.5rem 0 0;
+  }
+  .field-notes-layout .field-note-publication-details {
+    grid-column: 2; border-left: 0; border-top: 1px solid var(--line);
+    position: static; padding: 1.5rem 0 0;
+  }
+}
+
+@media (max-width: 52rem) {
+  body.field-notes-page > header.site .bar {
+    gap: .7rem 1.2rem; padding-block: .9rem;
+  }
+  body.field-notes-page > header.site nav {
+    order: 3; width: 100%; max-width: 100%; flex-wrap: nowrap;
+    gap: 1rem; overflow-x: auto; overscroll-behavior-x: contain;
+    scrollbar-width: none;
+  }
+  body.field-notes-page > header.site nav::-webkit-scrollbar { display: none; }
+  main.field-notes-main { padding-top: 1.5rem; }
+  .field-notes-layout,
+  .field-notes-shell { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
+  .field-note-index {
+    position: sticky; top: var(--field-site-header-height); z-index: 10;
+    min-width: 0;
+    margin-inline: calc(-1 * clamp(1.2rem, 5vw, 4rem));
+    padding: .5rem clamp(1.2rem, 5vw, 4rem);
+    background: var(--sticky-surface);
+    border-block: 1px solid var(--line);
+    box-shadow: 0 .35rem 1rem rgba(0, 0, 0, .06);
+  }
+  .field-note-index-sticky { position: static; }
+  .field-note-index .shelf-kind,
+  .field-note-index h2,
+  .field-note-index-copy,
+  .field-note-find,
+  .field-note-count { display: none; }
+  .field-note-list {
+    display: flex; gap: .45rem; max-height: none; overflow-x: auto;
+    border: 0; scrollbar-width: none; scroll-snap-type: x proximity;
+  }
+  .field-note-list::-webkit-scrollbar { display: none; }
+  .field-note-list li {
+    flex: 0 0 10.5rem; border: 1px solid var(--line);
+    background: var(--surface); scroll-snap-align: center;
+  }
+  .field-note-list a,
+  .field-note-list a[aria-current="location"] {
+    min-height: 3.65rem; grid-template-columns: 2.9rem minmax(0, 1fr);
+    padding: .45rem .5rem; border-left: 0; align-items: start;
+  }
+  .field-note-list a[aria-current="location"] {
+    box-shadow: inset 0 -2px 0 var(--signal);
+  }
+  .field-note-code { font-size: .56rem; }
+  .field-note-label { font-size: .7rem; line-height: 1.2; }
+  .field-notes-layout .field-note-publication-details {
+    grid-column: 1;
+  }
+  .field-note-heading {
+    scroll-margin-top: calc(var(--field-site-header-height) + 5.5rem);
+  }
 }
 
 @media print {

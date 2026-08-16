@@ -5,6 +5,9 @@ Its Library holds 7 works inscribed
 into the Bitcoin blockchain on mainnet. Field and Workshop publications are
 separate, visibly living, versioned records under `/project/`.
 
+`field-notes.json` indexes the 28 Cyberdelic OS Field Notes individually with
+stable identifiers, fragment URLs, summaries, themes, and named concepts.
+
 **This directory is generated.** It is the built output of the press's reader
 (`reader/build_site.py`), and it is also a mirror: everything needed to read the
 library, and to check it against Bitcoin, is here.
@@ -25,6 +28,10 @@ transaction on your own Bitcoin node. The inscribed bytes themselves are under
 `/content/`, one folder per inscription, so you can fetch and hash them alone:
 
     curl -sL https://cyberdelic.space/library.json
+
+Living indexes are available separately at `field.json`, `field-notes.json`,
+and `workshop.json`, so archives can preserve their revisable status rather
+than presenting them as Bitcoin inscriptions.
 
 ## Copying this is encouraged
 
