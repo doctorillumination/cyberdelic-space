@@ -1246,6 +1246,7 @@ ul.plain .line { display: inline; font-size: .75rem; }
 .living-badge.pending { color: var(--warn); border-color: var(--warn); }
 .living-badge.living { color: var(--ink-2); }
 .project-offices { margin-top: 4rem; }
+.project-offices-first { margin-top: 0; margin-bottom: 4rem; }
 .project-offices ul {
   display: block; border-top: 1px solid var(--line); background: transparent;
 }
