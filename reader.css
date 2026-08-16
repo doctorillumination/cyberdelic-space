@@ -998,6 +998,18 @@ footer.site p { max-width: var(--measure); margin: .4rem 0; }
 .markdown-body pre { margin: 1.4em 0; padding: 1em; overflow-x: auto;
   white-space: pre; border: 1px solid var(--line); background: var(--surface); }
 .markdown-body pre code { padding: 0; border: 0; background: none; }
+.markdown-body table {
+  display: block; width: 100%; margin: 1.5em 0; overflow-x: auto;
+  border-collapse: collapse; font: .78rem/1.55 var(--font-sans);
+}
+.markdown-body th, .markdown-body td {
+  min-width: 9rem; padding: .7rem .85rem; border: 1px solid var(--line);
+  text-align: left; vertical-align: top;
+}
+.markdown-body th {
+  background: var(--surface); font: .65rem/1.45 var(--font-mono);
+  letter-spacing: .04em; text-transform: uppercase;
+}
 .markdown-body a { color: var(--signal); text-underline-offset: .18em; }
 .markdown-center { text-align: center; margin: 2em 0; }
 .markdown-image-reference { display: inline-block; padding: .2em .5em;
