@@ -56,9 +56,9 @@
         "state": "living",
         "verified": false
       },
-      "content_length": 3443,
+      "content_length": 3439,
       "content_path": "living-content/cyberdelic-os/fn-s0-003/v000001.md",
-      "content_sha256": "39f4cfd7c8f553f86d211151ed153d65b145df25cf535cf6386e991b07e2efa5",
+      "content_sha256": "f8c39cd493df269b8d665ec2e31293b2f143a5c7ddcdde36ac5a62c5f95963e5",
       "content_type": "text/markdown;charset=utf-8",
       "maturity": "testing",
       "metadata_sha256": null,
@@ -67,10 +67,10 @@
       "release_id": "FN-S0-003",
       "series_slug": "field-notes",
       "territory": "field",
-      "title": "The Doorway Opens",
+      "title": "A Portal Opens",
       "version": 1,
       "version_label": "0.1",
-      "version_sha256": "39f4cfd7c8f553f86d211151ed153d65b145df25cf535cf6386e991b07e2efa5"
+      "version_sha256": "f8c39cd493df269b8d665ec2e31293b2f143a5c7ddcdde36ac5a62c5f95963e5"
     }
   ],
   "schema": "https://cyberdelic.space/schemas/living-index-v1.json",
