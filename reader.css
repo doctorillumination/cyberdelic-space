@@ -1266,6 +1266,65 @@ ul.plain .line { display: inline; font-size: .75rem; }
 .project-office-link:hover strong,
 .project-office-link:hover::after { color: var(--signal); }
 .project-office-link:hover::after { transform: translateX(.25rem); }
+.field-notes-office .project-gate { margin-bottom: 3.25rem; }
+.field-note-office-count {
+  margin: 1.4rem 0 0; font: .66rem/1.4 var(--font-mono);
+  color: var(--signal); letter-spacing: var(--tracking); text-transform: uppercase;
+}
+.field-note-release { margin-top: 3.5rem; }
+.field-note-release-head {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 1rem;
+  padding-bottom: .8rem;
+}
+.field-note-release-head h2,
+.field-note-release-head p {
+  margin: 0; font: .66rem/1.4 var(--font-mono);
+  letter-spacing: var(--tracking); text-transform: uppercase;
+}
+.field-note-release-head h2 { color: var(--signal); }
+.field-note-release-head p { color: var(--ink-2); }
+.field-note-cards {
+  list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line);
+}
+.field-note-cards li { margin: 0; border-bottom: 1px solid var(--line); }
+.field-note-card {
+  display: grid; grid-template-columns: 9.5rem minmax(0, 1fr) auto;
+  gap: 1.5rem; align-items: start; padding: 1.35rem 0;
+  color: var(--ink); text-decoration: none;
+}
+.field-note-card-code {
+  padding-top: .18rem; color: var(--signal); font: .62rem/1.4 var(--font-mono);
+  letter-spacing: .06em; text-transform: uppercase;
+}
+.field-note-card-copy { display: grid; gap: .45rem; max-width: 48rem; }
+.field-note-card-copy strong {
+  font: 400 1.35rem/1.25 var(--font-editorial);
+  transition: color .2s ease;
+}
+.field-note-card-copy span {
+  color: var(--ink-2); font: 400 .94rem/1.55 var(--font-editorial);
+}
+.field-note-card-copy em {
+  color: var(--ink-2); font: italic .78rem/1.45 var(--font-editorial);
+}
+.field-note-card-arrow {
+  padding-top: .1rem; color: var(--ink-2); font: 1rem/1.4 var(--font-mono);
+  transition: color .2s ease, transform .2s ease;
+}
+.field-note-card:hover .field-note-card-copy strong,
+.field-note-card:hover .field-note-card-arrow { color: var(--signal); }
+.field-note-card:hover .field-note-card-arrow { transform: translateX(.25rem); }
+.field-note-reading-page .living-head { margin-bottom: 2.5rem; }
+.field-note-themes { list-style: none; margin: .9rem 0 0; padding: 0; }
+.field-note-themes li { margin: 0; border-bottom: 1px solid var(--line); }
+.field-note-themes a,
+.field-note-themes span {
+  display: block; padding: .48rem 0; color: var(--ink-2);
+  font: .65rem/1.4 var(--font-mono); text-transform: uppercase;
+  letter-spacing: .05em;
+}
+.field-note-themes a { text-decoration: none; }
+.field-note-themes a:hover { color: var(--signal); }
 .living-head { max-width: 52rem; margin-bottom: 3rem; }
 .living-head h1 {
   font: 400 clamp(2.8rem, 7vw, 5rem)/1 var(--font-editorial);
@@ -1372,6 +1431,12 @@ ul.plain .line { display: inline; font-size: .75rem; }
   .project-office-link { grid-template-columns: 1fr auto; gap: .4rem 1rem; }
   .project-office-link span { grid-column: 1; }
   .project-office-link::after { grid-column: 2; grid-row: 1 / span 2; }
+  .field-note-release-head { display: block; }
+  .field-note-release-head p { margin-top: .35rem; }
+  .field-note-card { grid-template-columns: 1fr auto; gap: .45rem 1rem; }
+  .field-note-card-code { grid-column: 1; }
+  .field-note-card-copy { grid-column: 1; }
+  .field-note-card-arrow { grid-column: 2; grid-row: 1 / span 2; }
   .living-row { grid-template-columns: 1fr; gap: .6rem; }
   .living-badges { justify-content: flex-start; }
   .living-aside {
