@@ -1243,6 +1243,91 @@ ul.plain .line { display: inline; font-size: .75rem; }
   display: inline-block; margin-top: 1rem; font: .72rem/1 var(--font-mono);
   text-transform: uppercase; letter-spacing: var(--tracking);
 }
+.aperture-invitation {
+  position: relative; max-width: 58rem; margin: -1rem 0 4rem;
+  padding: clamp(1.4rem, 3.5vw, 2.3rem);
+  border: 1px solid var(--line-2); background: var(--surface);
+  overflow: hidden;
+}
+.aperture-invitation::before {
+  content: ""; position: absolute; inset: 0 auto 0 0; width: 3px;
+  background: linear-gradient(var(--signal), var(--warn));
+}
+.aperture-invitation-grid {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1.5rem 2.5rem; align-items: end;
+}
+.aperture-invitation .shelf-kind { margin: 0 0 .8rem; color: var(--signal); }
+.aperture-invitation h2 {
+  margin: 0 0 .65rem; font: 400 clamp(1.8rem, 4vw, 2.6rem)/1.1 var(--font-editorial);
+}
+.aperture-invitation-copy { max-width: 40rem; }
+.aperture-invitation-copy > p:last-child {
+  margin: 0; color: var(--ink-2); font: 400 1rem/1.65 var(--font-editorial);
+}
+.aperture-actions { display: flex; flex-wrap: wrap; gap: .65rem; align-items: center; }
+.aperture-button, .aperture-link {
+  display: inline-flex; justify-content: center; align-items: center;
+  min-height: 2.8rem; padding: .75rem 1rem; border: 1px solid var(--line-2);
+  background: transparent; color: var(--ink); cursor: pointer;
+  font: .66rem/1.2 var(--font-mono); letter-spacing: var(--tracking);
+  text-transform: uppercase; text-decoration: none;
+}
+.aperture-button:hover, .aperture-link:hover {
+  border-color: var(--signal); color: var(--signal);
+}
+.aperture-button[disabled] { opacity: .52; cursor: wait; }
+.aperture-button[data-copy-state="copied"] {
+  border-color: var(--ok); color: var(--ok);
+}
+.aperture-status {
+  grid-column: 1 / -1; min-height: 1.4em; margin: 0;
+  color: var(--ink-2); font: .65rem/1.5 var(--font-mono);
+}
+.aperture-workbench {
+  max-width: 58rem; margin: 0 0 4rem; padding: clamp(1.4rem, 3.5vw, 2.3rem);
+  border: 1px solid var(--line-2); background: var(--surface);
+}
+.aperture-workbench-head { max-width: 44rem; }
+.aperture-workbench-head h2 {
+  margin: .6rem 0 .8rem; font: 400 clamp(1.8rem, 4vw, 2.6rem)/1.1 var(--font-editorial);
+}
+.aperture-workbench-head > p:last-child {
+  color: var(--ink-2); font: 400 1rem/1.65 var(--font-editorial);
+}
+.aperture-steps {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem; list-style: none; margin: 1.6rem 0; padding: 0;
+  counter-reset: aperture-step;
+}
+.aperture-steps li {
+  counter-increment: aperture-step; padding-top: .8rem;
+  border-top: 1px solid var(--line);
+}
+.aperture-steps li::before {
+  content: "0" counter(aperture-step); display: block; margin-bottom: .45rem;
+  color: var(--signal); font: .62rem/1 var(--font-mono);
+  letter-spacing: var(--tracking);
+}
+.aperture-prompt-label {
+  display: block; margin: 1.4rem 0 .55rem; color: var(--ink-2);
+  font: .65rem/1.4 var(--font-mono); letter-spacing: var(--tracking);
+  text-transform: uppercase;
+}
+.aperture-prompt {
+  display: block; width: 100%; min-height: 25rem; resize: vertical;
+  padding: 1rem; border: 1px solid var(--line-2); border-radius: 0;
+  background: color-mix(in srgb, var(--surface) 76%, transparent);
+  color: var(--ink); font: .76rem/1.6 var(--font-mono);
+}
+.aperture-openers {
+  margin: 1rem 0 0; color: var(--ink-2); font: .78rem/1.6 var(--font-sans);
+}
+.aperture-openers a { margin-right: .8rem; }
+.aperture-boundary {
+  margin: 1.3rem 0 0; padding-left: 1rem; border-left: 2px solid var(--line-2);
+  color: var(--ink-2); font-size: .85rem;
+}
 .project-page section > h2, .living-aside h2 {
   font: .68rem/1.4 var(--font-mono); letter-spacing: var(--tracking);
   text-transform: uppercase; color: var(--ink-2); margin: 0 0 1rem;
@@ -1570,6 +1655,12 @@ table.braid tbody tr:hover td .mid::before{background:var(--line-2);}
   .project-cards, .living-layout {
     grid-template-columns: 1fr;
   }
+  .aperture-invitation { margin-top: 0; }
+  .aperture-invitation-grid { grid-template-columns: 1fr; align-items: start; }
+  .aperture-actions { align-items: stretch; flex-direction: column; }
+  .aperture-button, .aperture-link { width: 100%; }
+  .aperture-steps { grid-template-columns: 1fr; }
+  .aperture-prompt { min-height: 31rem; }
   .project-office-link { grid-template-columns: 1fr auto; gap: .4rem 1rem; }
   .project-office-link span { grid-column: 1; }
   .project-office-link::after { grid-column: 2; grid-row: 1 / span 2; }
