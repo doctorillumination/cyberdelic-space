@@ -7,8 +7,8 @@
   "repository": {
     "branch": "agent/tending-2026-08-17",
     "starting_commit": "7981f6897af1e8afc89b210faa9701f3428a0e45",
-    "pull_request": null,
-    "pull_request_state": "not-created"
+    "pull_request": "https://github.com/doctorillumination/cyberdelic-space/pull/10",
+    "pull_request_state": "draft"
   },
   "automation": {
     "id": "daily-cyberdelic-tending",
