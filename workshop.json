@@ -1,5 +1,5 @@
 {
-  "count": 12,
+  "count": 13,
   "items": [
     {
       "chain_evidence": {
@@ -276,6 +276,29 @@
       "version": 1,
       "version_label": "0.1",
       "version_sha256": "b5931e7b2d686bd06f0887836af6135499d87370a9db85da2a5ba13c3bc26931"
+    },
+    {
+      "chain_evidence": {
+        "inscription_id": null,
+        "network": null,
+        "state": "living",
+        "verified": false
+      },
+      "content_length": 10006,
+      "content_path": "living-content/cyberdelic-os/i-004/v000001.md",
+      "content_sha256": "0917533a10ac42221cb2422711981c7d14cc66a9b76d7b4de7fd5e89340c7e2c",
+      "content_type": "text/markdown;charset=utf-8",
+      "maturity": "testing",
+      "metadata_sha256": null,
+      "project_slug": "cyberdelic-os",
+      "published_at": "2026-08-17T20:26:53+00:00",
+      "release_id": "I-004",
+      "series_slug": "instruments",
+      "territory": "workshop",
+      "title": "The Personal Aperture",
+      "version": 1,
+      "version_label": "0.1",
+      "version_sha256": "0917533a10ac42221cb2422711981c7d14cc66a9b76d7b4de7fd5e89340c7e2c"
     }
   ],
   "schema": "https://cyberdelic.space/schemas/living-index-v1.json",

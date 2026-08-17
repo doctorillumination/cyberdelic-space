@@ -498,6 +498,19 @@
       "themes": ["attention", "curation", "artificial-intelligence", "interface", "governance", "provenance", "memory", "collaboration"],
       "register": "speculative-design",
       "rationale": "The instrument makes daily cultivation operational without converting the archive into a content mill or granting agents authority to merge public meaning."
+    },
+    {
+      "id": "cyberdelic-os-i-004",
+      "release_id": "I-004",
+      "label": "I-004 · TESTING",
+      "title": "The Personal Aperture",
+      "href": "project/cyberdelic-os/i-004/",
+      "author": "Brad Necyk, in creative immersion with ChatGPT",
+      "form": "instrument",
+      "excerpt": "A portable prompt opens a bounded, source-grounded conversation between a person, their chosen intelligence, and the Cyberdelic OS archive.",
+      "themes": ["attention", "curation", "artificial-intelligence", "interface", "agency", "privacy", "perception", "accessibility"],
+      "register": "speculative-design",
+      "rationale": "The instrument turns a growing archive into a situated conversational entrance while requiring disclosure, source citation, visible inference, finite results, and an end."
     }
   ]
 }
