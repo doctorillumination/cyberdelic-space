@@ -334,6 +334,18 @@
       "rationale": "The note connects constrained local intelligence, semantic parallax, transient memory, and the constitutional form of the Cyberdelic Kernel."
     },
     {
+      "id": "cyberdelic-os-fn-32",
+      "release_id": "FN-S0-005",
+      "label": "FN-32 · PROPOSED",
+      "title": "The Garden and the Living Map",
+      "href": "project/cyberdelic-os/field-notes/fn-32/",
+      "author": "Brad Necyk, in conversation with ChatGPT",
+      "excerpt": "The Gardener tends relational metadata through time while the Cartographer discovers possible paths across the wider world.",
+      "themes": ["curation", "artificial-intelligence", "collaboration", "memory", "provenance", "attention", "emergence", "community"],
+      "register": "speculative-design",
+      "rationale": "The note turns two existing Cyberdelic offices into bounded daily protocols for tending internal metadata, external kinships, and a finite public surface."
+    },
+    {
       "id": "cyberdelic-os-bn-001",
       "release_id": "BN-001",
       "label": "BN-001 · TESTING",
