@@ -1,0 +1,146 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-08-17-001",
+  "run_type": "manual-first-governed-run",
+  "started_at": "2026-08-17T10:57:59-07:00",
+  "completed_at": "2026-08-17T11:05:31-07:00",
+  "repository": {
+    "branch": "agent/tending-2026-08-17",
+    "starting_commit": "7981f6897af1e8afc89b210faa9701f3428a0e45",
+    "pull_request": "https://github.com/doctorillumination/cyberdelic-space/pull/10",
+    "pull_request_state": "draft"
+  },
+  "automation": {
+    "id": "daily-cyberdelic-tending",
+    "name": "Daily Cyberdelic Tending",
+    "status": "active",
+    "schedule": "Daily at 7:00 AM America/Vancouver",
+    "next_scheduled_run": "2026-08-18T07:00:00-07:00"
+  },
+  "office_versions": {
+    "cartographer": "0.1",
+    "gardener": "0.1"
+  },
+  "inputs": {
+    "inbox_items": 0,
+    "declared_question": "How can shared intelligence make disagreement and common ground legible without manufacturing consensus?",
+    "internal_region": [
+      {
+        "id": "cyberdelic-os:fn-04",
+        "title": "The Gathering Intelligence"
+      },
+      {
+        "id": "cyberdelic-os:fn-25",
+        "title": "Expeditions, Storms, and the Birth of Boroughs"
+      }
+    ]
+  },
+  "cartographer": {
+    "state": "proposed",
+    "candidate_limit": 3,
+    "candidates_created": [
+      "REL-P-000001",
+      "REL-P-000002"
+    ],
+    "external_node": "external:polis",
+    "sources_checked": [
+      {
+        "title": "Computational Democracy Project",
+        "url": "https://compdemocracy.org/",
+        "source_kind": "official-project-site",
+        "checked_at": "2026-08-17T10:56:00-07:00"
+      },
+      {
+        "title": "Polis",
+        "url": "https://compdemocracy.org/polis/",
+        "source_kind": "official-project-documentation",
+        "checked_at": "2026-08-17T10:56:00-07:00"
+      },
+      {
+        "title": "compdemocracy/polis",
+        "url": "https://github.com/compdemocracy/polis",
+        "source_kind": "maintained-source-repository",
+        "checked_at": "2026-08-17T10:56:00-07:00"
+      },
+      {
+        "title": "Polis: Scaling Deliberation by Mapping High Dimensional Opinion Spaces",
+        "url": "https://doi.org/10.6035/recerca.5516",
+        "source_kind": "peer-reviewed-methods-paper",
+        "checked_at": "2026-08-17T10:56:00-07:00"
+      }
+    ],
+    "source_fact_and_inference_separated": true,
+    "private_material_read": false,
+    "external_contact_performed": false,
+    "stop_reason": "One documented external node and one relationship candidate answered the bounded question. Further discovery would add breadth without improving this run's evidence."
+  },
+  "gardener": {
+    "state": "proposed",
+    "cartographer_proposals_considered": [
+      "REL-P-000001",
+      "REL-P-000002"
+    ],
+    "changes": [
+      {
+        "kind": "proposal-queue",
+        "decision": "Keep the external node and relationship candidates proposed. The external node is strongly documented; the edge remains possible and emerging."
+      },
+      {
+        "kind": "finite-attending-surface",
+        "decision": "Return FN-25 to attention beside the proposed relationship and one unresolved question. Keep the result count at three."
+      },
+      {
+        "kind": "provenance-and-archive",
+        "decision": "Add a dated tending record and preserve the earlier bootstrap arrangement in the Attending archive."
+      }
+    ],
+    "manifest_changed": false,
+    "exact_publication_sources_changed": false
+  },
+  "validation": {
+    "state": "passed",
+    "checks": [
+      {
+        "check": "structured-data",
+        "result": "All five Living Relationships JSON files and sitemap.xml parsed successfully."
+      },
+      {
+        "check": "finite-attending-surface",
+        "result": "The current Attending surface contains exactly three linked items."
+      },
+      {
+        "check": "manifest-boundary",
+        "result": "The relational manifest remains at six nodes and three edges; the two new candidates remain in proposals.json."
+      },
+      {
+        "check": "internal-links",
+        "result": "All 1,889 internal links resolved across 108 HTML pages."
+      },
+      {
+        "check": "reader-regression-suite",
+        "result": "All 55 reader build tests passed."
+      },
+      {
+        "check": "responsive-browser",
+        "result": "Attending, Living Relationships, the dated tending record, and the archived arrangement rendered at 1280 by 720 and 390 by 844 with psychedelic defaults, no horizontal overflow, and no browser console errors."
+      },
+      {
+        "check": "exact-source-integrity",
+        "result": "FN-S0-001, FN-S0-005, BN-005, and I-003 retained their recorded SHA-256 hashes."
+      },
+      {
+        "check": "distribution-archive",
+        "result": "The same-origin mirror archive was rebuilt and verified without repository internals or recursive archive inclusion."
+      }
+    ]
+  },
+  "unresolved_questions": [
+    "How can a gathering reveal shared structure without making consensus the measure of truth?",
+    "What must remain visible when complex positions are represented as clusters?",
+    "How do Polis facilitation, moderation, identity, and data-governance choices compare with the boundaries imagined for a Cyberdelic Gathering Intelligence?"
+  ],
+  "public_change": false,
+  "proposed_public_change": true,
+  "run_state": "proposed",
+  "human_review_required": true
+}
