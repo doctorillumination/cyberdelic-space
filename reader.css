@@ -1320,6 +1320,8 @@ ul.plain .line { display: inline; font-size: .75rem; }
   background: color-mix(in srgb, var(--surface) 76%, transparent);
   color: var(--ink); font: .76rem/1.6 var(--font-mono);
 }
+.aperture-workbench .aperture-actions { margin-top: 1rem; }
+.aperture-workbench .aperture-status { margin-top: .75rem; }
 .aperture-openers {
   margin: 1rem 0 0; color: var(--ink-2); font: .78rem/1.6 var(--font-sans);
 }
