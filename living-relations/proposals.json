@@ -1,6 +1,77 @@
 {
   "schema": "https://cyberdelic.space/schemas/relationship-proposals-v1.json",
-  "updated_at": "2026-08-17T17:00:00+00:00",
-  "count": 0,
-  "items": []
+  "updated_at": "2026-08-17T17:58:00+00:00",
+  "count": 2,
+  "items": [
+    {
+      "proposal_id": "REL-P-000001",
+      "proposal_kind": "external-node",
+      "source_node": "external:polis",
+      "target_node": "cyberdelic-os:fn-25",
+      "node": {
+        "id": "external:polis",
+        "kind": "project",
+        "title": "Polis",
+        "canonical_url": "https://compdemocracy.org/polis/",
+        "repository_url": "https://github.com/compdemocracy/polis",
+        "description": "An open-source, real-time system for gathering, analyzing, and understanding what large groups of people think in their own words using statistics and machine learning."
+      },
+      "introduced_by": "OFFICE-CARTOGRAPHER",
+      "introduced_through": "declared-question",
+      "inquiry": "How can shared intelligence make disagreement and common ground legible without manufacturing consensus?",
+      "source_facts": [
+        {
+          "claim": "The Computational Democracy Project describes Polis as an open-source, real-time system for gathering, analyzing, and understanding what large groups of people think in their own words using advanced statistics and machine learning.",
+          "url": "https://compdemocracy.org/",
+          "checked_at": "2026-08-17T10:56:00-07:00"
+        },
+        {
+          "claim": "Participants submit short statements and respond to other statements with agree, disagree, or pass; the dimensions of the inquiry are created by participants and people can contribute without completing the whole survey.",
+          "url": "https://compdemocracy.org/polis/",
+          "checked_at": "2026-08-17T10:56:00-07:00"
+        },
+        {
+          "claim": "The maintained public repository describes Polis as an AI-powered sentiment-gathering platform, identifies its public deployment and knowledge base, and releases the software under the AGPL-3.0 license.",
+          "url": "https://github.com/compdemocracy/polis",
+          "checked_at": "2026-08-17T10:56:00-07:00"
+        }
+      ],
+      "cartographer_inference": "Polis is sufficiently documented to enter review as a candidate external node around large-group sensemaking. This proposal does not imply endorsement, partnership, or methodological equivalence.",
+      "epistemic_status": "strong",
+      "review_state": "proposed",
+      "unresolved_questions": [
+        "How do Polis facilitation, moderation, identity, and data-governance choices compare with the boundaries imagined for a Cyberdelic Gathering Intelligence?"
+      ],
+      "office_version": "0.1"
+    },
+    {
+      "proposal_id": "REL-P-000002",
+      "proposal_kind": "relationship-edge",
+      "source_node": "external:polis",
+      "target_node": "cyberdelic-os:fn-25",
+      "relation_type": "shared-inquiry",
+      "source_facts": [
+        {
+          "claim": "The authors describe Polis as an open-source application for collecting and synthesizing distributed feedback, and report uses intended to build shared understanding and cultivate points of consensus.",
+          "url": "https://doi.org/10.6035/recerca.5516",
+          "checked_at": "2026-08-17T10:56:00-07:00"
+        },
+        {
+          "claim": "Field Note 25 imagines collective storms in which agents distinguish factual, definitional, and moral disagreement, while durable artifacts preserve ratification, alternatives, sources, and unresolved questions.",
+          "source": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
+          "locator": "Field Note 25: Expeditions, Storms, and the Birth of Boroughs"
+        }
+      ],
+      "cartographer_inference": "Polis and Field Note 25 share an inquiry into large-group sensemaking, but they should not be collapsed. Polis uses participant statements, voting, opinion-space mapping, and an explicit concern with consensus. FN-25 imagines a wider field of testimony, evidence, art, values, and provenance in which a storm may remain unresolved. The methodological difference is part of the proposed relation.",
+      "epistemic_status": "possible",
+      "lifecycle_state": "emerging",
+      "review_state": "proposed",
+      "unresolved_questions": [
+        "How can a gathering reveal shared structure without making consensus the measure of truth?",
+        "What must remain visible when complex positions are represented as clusters?"
+      ],
+      "introduced_by": "OFFICE-CARTOGRAPHER",
+      "office_version": "0.1"
+    }
+  ]
 }
