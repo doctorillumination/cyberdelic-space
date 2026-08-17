@@ -472,6 +472,32 @@
       "themes": ["attention", "curation", "interface", "technology", "emergence", "governance", "accessibility"],
       "register": "speculative-design",
       "rationale": "The deployed artifact gives ATTEND and END a public form while keeping its deterministic editorial physics visible and revisable."
+    },
+    {
+      "id": "cyberdelic-os-bn-005",
+      "release_id": "BN-005",
+      "label": "BN-005 · TESTING",
+      "title": "Building the Tending Offices",
+      "href": "project/cyberdelic-os/bn-005/",
+      "author": "Brad Necyk, in creative immersion with ChatGPT",
+      "form": "builder-note",
+      "excerpt": "One scheduled transaction gives the Cartographer and Gardener separate turns over a versioned relational graph, with validation and human review at the publication boundary.",
+      "themes": ["artificial-intelligence", "curation", "governance", "provenance", "technology", "memory", "attention", "collaboration"],
+      "register": "technical-cartography",
+      "rationale": "The note specifies the schemas, state transitions, permissions, scheduling order, file boundaries, failure behavior, observability, and trade-offs of the two tending offices."
+    },
+    {
+      "id": "cyberdelic-os-i-003",
+      "release_id": "I-003",
+      "label": "I-003 · TESTING",
+      "title": "The Daily Tending Ritual",
+      "href": "project/cyberdelic-os/i-003/",
+      "author": "Brad Necyk, in creative immersion with ChatGPT",
+      "form": "instrument",
+      "excerpt": "A daily scheduled ritual gives two bounded offices ordered turns while Attending remains finite and a zero-change day remains valid.",
+      "themes": ["attention", "curation", "artificial-intelligence", "interface", "governance", "provenance", "memory", "collaboration"],
+      "register": "speculative-design",
+      "rationale": "The instrument makes daily cultivation operational without converting the archive into a content mill or granting agents authority to merge public meaning."
     }
   ]
 }

@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en" data-theme="psychedelic">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src &#x27;none&#x27;; script-src &#x27;self&#x27;; style-src &#x27;self&#x27;; img-src &#x27;self&#x27; data:; font-src &#x27;self&#x27;; connect-src &#x27;self&#x27; https://mempool.space https://blockstream.info https://ordinals.com; frame-src &#x27;self&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;">
+<meta name="description" content="The technical architecture, data model, permissions, scheduling transaction, validation boundary, and failure behavior of the Gardener and Cartographer offices.">
+<title>Building the Tending Offices · cyberdelic.space</title>
+<link rel="stylesheet" href="../../../reader.css?v=4">
+<script src="../../../theme.js"></script>
+<script src="../../../markdown.js" defer></script>
+<script src="../../../living.js?v=3" defer></script>
+<link rel="canonical" href="https://cyberdelic.space/project/cyberdelic-os/bn-005/">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="bar">
+  <a class="wordmark" href="../../../">cyberdelic.space<span>a decentralized imagination press</span></a>
+  <nav aria-label="Sections"><a href="../../../">Library</a><a href="../../../projects/">Projects</a><a href="../../../ledger/">Ledger</a><a href="../../../about/">About</a><a href="../../../verify/">Verify</a><a href="../../../mirror/">Mirror</a></nav>
+  <button type="button" class="theme-toggle" hidden aria-label="Cycle light, dark, and psychedelic reading">Psychedelic</button>
+</div></header>
+<main id="main" tabindex="-1">
+<article class="living-page">
+<nav class="crumb"><a href="../">← CyberdelicOS</a></nav>
+<header class="living-head">
+  <p class="shelf-kind">Builder Notes · BN-005</p>
+  <h1>Building the Tending Offices</h1>
+  <p class="byline">Brad Necyk, in creative immersion with ChatGPT</p>
+  <p class="living-badges"><span class="living-badge">WORKSHOP</span><span class="living-badge">TESTING</span><span class="living-badge living">NOT INSCRIBED</span></p>
+  <p class="stone living">Living publication. Not on Bitcoin. A future exact version may be inscribed.</p>
+</header>
+<div class="living-layout"><section class="living-reading">
+  <div class="reading markdown-reading" data-markdown><pre class="markdown-source"># Builder Note BN-005: Building the Tending Offices
+
+**Version:** 1.0
+
+**Date:** August 17, 2026
+
+**Status:** Living, testing, not inscribed
+
+**Authorship note:** Developed by ChatGPT from Brad Necyk&#x27;s proposal for daily Gardener and Cartographer offices, his clarification that the Gardener&#x27;s core constitution is the tending of relational metadata, and the earlier offices described in Field Notes 03, 21, 27, 29, and 32. Brad has not yet ratified this exact technical architecture.
+
+## The build in one sentence
+
+One scheduled ritual gives two constitutionally separate offices ordered turns over a versioned relational graph: the Cartographer proposes evidence-backed paths, the Gardener tends their life in the archive, validation can reject both, and public meaning remains subject to human review.
+
+## Current implementation state
+
+As of August 17, 2026:
+
+- the scheduled event is named `Daily Cyberdelic Tending`;
+- it is active every day at 7:00 AM in `America/Vancouver`;
+- the event is attached to the current Cyberdelic website task;
+- the exact working repository is `/Users/bradley/Desktop/1 Art/8 Creative Coding/cyberdelic-space`;
+- the Cartographer always takes the first turn;
+- the Gardener always takes the second turn;
+- both offices are governed by exact versioned Markdown charters;
+- each office has a maximum change budget of three candidates or proposals per run;
+- a valid run may end with no public change;
+- the automation may commit and push bounded changes to a review branch;
+- it may create or update a draft pull request;
+- it may not merge, contact outside parties, modify exact publication sources, or alter inscription history.
+
+The relational graph and public Attending surface are specified here but remain an early implementation. The first scheduled runs should be treated as instrument calibration.
+
+## Requirements
+
+### Functional requirements
+
+The system must:
+
+1. accept deliberately carried links through an explicit inbox;
+2. discover a bounded number of public external candidates;
+3. ground factual descriptions in primary public sources;
+4. connect candidates to exact internal publications or declared questions;
+5. preserve the distinction between source fact and model inference;
+6. let the Gardener audit metadata across all publication forms;
+7. record relation lifecycle, confidence, provenance, and review state;
+8. produce a finite public Attending surface of no more than three items;
+9. preserve a dated audit of every run, including valid no-op runs;
+10. route every public change through validation and a draft pull request.
+
+### Non-functional requirements
+
+The system should remain:
+
+- static-first and same-origin where possible;
+- inspectable without an account;
+- deterministic at the validation boundary;
+- bounded in search, output, runtime, and public attention;
+- accessible on small screens and with reduced motion;
+- reversible wherever the underlying publication is still living;
+- incapable of rewriting exact or inscribed source material;
+- legible enough that another person can understand why an edge exists;
+- quiet when there is nothing worth changing.
+
+### Constraints
+
+Cyberdelic.space is currently a static publication site with JSON indexes and exact downloadable sources. There is no production database, account system, background queue, or authenticated editorial API. The scheduled task therefore operates against version-controlled files and uses Git history and draft pull requests as its transaction, audit, and review layer.
+
+This is appropriate at the current scale. A database would add operational complexity before the ontology and office boundaries have survived real use.
+
+## High-level architecture
+
+```text
+carried links + declared questions + public web
+                       |
+                       v
+             Cartographer office
+              facts | inference
+                       |
+                       v
+               proposal queue
+                       |
+                       v
+              Gardener office
+        archive audit | relation lifecycle
+                       |
+              +--------+--------+
+              |                 |
+              v                 v
+         valid no-op       metadata patch
+              |                 |
+              +--------+--------+
+                       |
+                       v
+             deterministic checks
+                       |
+              +--------+--------+
+              |                 |
+              v                 v
+            reject          draft pull request
+                                  |
+                                  v
+                            human ratification
+                                  |
+                                  v
+                    relational manifest + Attending
+```
+
+One scheduled transaction contains both office turns. This prevents two independent jobs from editing the same graph concurrently and ensures the Gardener sees the Cartographer&#x27;s same-run queue.
+
+The offices remain separate in constitution, input scope, permissions, outputs, and audit fields. Sharing a scheduler does not make them one agent.
+
+## Storage model
+
+The first implementation can use four versioned data families.
+
+### 1. Link inbox
+
+`living-relations/inbox.json`
+
+The inbox contains links deliberately carried into the system. Each entry should include:
+
+```json
+{
+  &quot;id&quot;: &quot;INBOX-2026-08-17-001&quot;,
+  &quot;url&quot;: &quot;https://example.org/&quot;,
+  &quot;introduced_by&quot;: &quot;Brad Necyk&quot;,
+  &quot;introduced_through&quot;: &quot;correspondence&quot;,
+  &quot;attribution_public&quot;: false,
+  &quot;note&quot;: &quot;Possible relation to shared reality and collective sensemaking.&quot;,
+  &quot;state&quot;: &quot;unread&quot;,
+  &quot;created_at&quot;: &quot;2026-08-17T00:00:00-07:00&quot;
+}
+```
+
+The note must not contain private message contents. `attribution_public` defaults to false.
+
+### 2. Cartographer proposal queue
+
+`living-relations/proposals.json`
+
+Each proposal separates facts from inference:
+
+```json
+{
+  &quot;proposal_id&quot;: &quot;REL-P-000001&quot;,
+  &quot;source_node&quot;: &quot;external:example-org&quot;,
+  &quot;target_node&quot;: &quot;cyberdelic-os:fn-01&quot;,
+  &quot;relation_type&quot;: &quot;shared-inquiry&quot;,
+  &quot;source_facts&quot;: [
+    {
+      &quot;claim&quot;: &quot;The project describes its work as collective sensemaking.&quot;,
+      &quot;url&quot;: &quot;https://example.org/about/&quot;,
+      &quot;checked_at&quot;: &quot;2026-08-17T07:06:00-07:00&quot;
+    }
+  ],
+  &quot;cartographer_inference&quot;: &quot;The work may offer a neighbouring approach to negotiated shared reality.&quot;,
+  &quot;epistemic_status&quot;: &quot;possible&quot;,
+  &quot;review_state&quot;: &quot;proposed&quot;,
+  &quot;office_version&quot;: &quot;0.1&quot;
+}
+```
+
+Proposal IDs are append-only. A changed proposal becomes a new version rather than silently overwriting the earlier interpretation.
+
+### 3. Relational manifest
+
+`living-relations/relationships.json`
+
+The public manifest contains ratified or explicitly published nodes and edges. A node can represent:
+
+- an inscribed work;
+- a living Field Note;
+- a Builder Note;
+- an Instrument;
+- an Artifact;
+- a correspondence;
+- a person;
+- a project;
+- a research group;
+- an institution;
+- a paper;
+- a repository;
+- a government agency;
+- a declared question or dark region.
+
+An edge should include:
+
+```json
+{
+  &quot;edge_id&quot;: &quot;REL-000001&quot;,
+  &quot;from&quot;: &quot;cyberdelic-os:fn-32&quot;,
+  &quot;to&quot;: &quot;cyberdelic-os:i-003&quot;,
+  &quot;relation_type&quot;: &quot;implementation&quot;,
+  &quot;epistemic_status&quot;: &quot;strong&quot;,
+  &quot;lifecycle_state&quot;: &quot;active&quot;,
+  &quot;review_state&quot;: &quot;ratified&quot;,
+  &quot;rationale&quot;: &quot;I-003 operationalizes the daily ritual proposed in FN-32.&quot;,
+  &quot;evidence&quot;: [
+    {
+      &quot;source&quot;: &quot;living-content/cyberdelic-os/fn-s0-005/v000001.md&quot;,
+      &quot;locator&quot;: &quot;The daily Cartographer could follow another&quot;
+    }
+  ],
+  &quot;introduced_by&quot;: &quot;OFFICE-GARDENER&quot;,
+  &quot;last_tended_at&quot;: &quot;2026-08-17T07:18:00-07:00&quot;,
+  &quot;history&quot;: [&quot;REL-EVENT-000001&quot;]
+}
+```
+
+The manifest is interpretive metadata. It never changes the bytes of the nodes it connects.
+
+### 4. Tending audits
+
+`living-relations/audits/YYYY-MM-DD.json`
+
+Every run produces one audit, including a no-op. Audits contain:
+
+- scheduler run ID and local time;
+- office charter versions;
+- branch and starting commit;
+- inquiry or archive region examined;
+- inbox items and sources checked;
+- Cartographer proposals;
+- Gardener decisions;
+- files changed;
+- validation results;
+- stop reasons and human questions;
+- final run state: `no-op`, `proposed`, `blocked`, or `failed`.
+
+Audits can remain available through the repository without appearing on the main public Attending surface.
+
+## State transitions
+
+A proposed relation moves through explicit states:
+
+```text
+unverified -&gt; proposed -&gt; reviewed -&gt; ratified -&gt; active
+                    |          |           |
+                    v          v           v
+                 refused    revised     dormant
+                                           |
+                                           v
+                                        composted
+```
+
+`contested` can be attached to a proposed, reviewed, ratified, active, or dormant relation. It records material disagreement without forcing deletion.
+
+Only a human review can move a proposal into `ratified` during the initial phase.
+
+## Scheduler transaction
+
+At 7:00 AM Vancouver time the task performs these steps.
+
+### Preflight
+
+1. Resolve the exact repository path.
+2. Read both charter files, this Builder Note, and Instrument I-003.
+3. Inspect Git status before changing anything.
+4. Stop if unrelated work is present.
+5. Fetch the remote branch state without destructive reset.
+6. Read the most recent audit and relation files.
+
+### Cartographer turn
+
+1. Select one bounded inquiry or carried inbox bundle.
+2. Read primary sources.
+3. Produce zero to three candidate nodes or edges.
+4. Record fact, inference, uncertainty, and checked dates separately.
+5. Write only to the proposal queue and audit draft.
+
+### Gardener turn
+
+1. Read the queue and the relevant internal source files.
+2. Inspect existing summaries, themes, and edges.
+3. Propose zero to three metadata changes.
+4. Record lifecycle decisions and evidence.
+5. Preserve a valid no-op when nothing warrants change.
+
+### Validation turn
+
+1. Parse every changed JSON file.
+2. Parse Atom and sitemap XML when changed.
+3. verify internal links;
+4. compare exact page copies with downloadable Markdown;
+5. verify recorded content lengths and SHA-256 values;
+6. check for horizontal overflow at a 390-pixel viewport;
+7. check keyboard and reduced-motion behavior for changed interfaces;
+8. run the relevant reader tests;
+9. rebuild and inspect the mirror archive;
+10. reject the patch if any required check fails.
+
+### Publication boundary
+
+If the run is a no-op, it records the audit result and ends without a public content commit.
+
+If the run produces a valid patch, it commits only the allowlisted relational files and generated pages to a review branch, pushes that branch, and creates or updates one draft pull request. It reports the pull request and ends.
+
+The scheduler never merges.
+
+## File permissions
+
+### Read permitted
+
+The task may read the complete public website repository and public primary web sources relevant to the bounded inquiry.
+
+### Write permitted
+
+The initial allowlist is:
+
+- `living-relations/inbox.json` for state changes that preserve the original entry;
+- `living-relations/proposals.json`;
+- `living-relations/relationships.json`;
+- `living-relations/audits/*.json`;
+- generated pages beneath `project/cyberdelic-os/relations/` and `project/cyberdelic-os/attending/`;
+- descriptive entries in `living-library.json` when supported by exact source evidence;
+- navigation, sitemap, feed, and mirror archive files required by a validated relational publication.
+
+### Write prohibited
+
+The task may not write:
+
+- any exact publication source beneath `living-content/`;
+- any inscribed content beneath `content/`;
+- `library.json` chain evidence;
+- historical content or version hashes;
+- rights, authorship, or contribution records;
+- secrets, credentials, configuration outside the declared automation;
+- unrelated project files.
+
+The charter documents themselves can only change through an explicitly requested human-led publication task.
+
+## Reliability and conflict handling
+
+The single ordered task avoids intra-run races. Git remains the inter-run concurrency control.
+
+The task stops when:
+
+- the working tree is dirty with unrelated changes;
+- the remote branch advanced unexpectedly;
+- a proposal ID or edge ID collides;
+- source hashes do not match;
+- an external source becomes inaccessible;
+- schema validation fails;
+- a human decision is required.
+
+The task does not force-push, reset another person&#x27;s work, discard a conflict, or create a second pull request to bypass a blocked first one.
+
+On transient network failure it may retry a read once. It must not retry external writes blindly.
+
+## Security and privacy
+
+The system is public by default only at the publication boundary.
+
+The inbox must not become a copy of private correspondence. It may record that a link arrived through correspondence while keeping the message and sender private unless attribution is explicitly approved.
+
+The Cartographer never submits forms, creates accounts, joins groups, contacts people, or accepts permissions. Public research is read-only.
+
+The Gardener never interprets local private material merely because it is technically accessible.
+
+Public source descriptions should be refreshed periodically. A stale external page can make an old claim appear current. Every external node therefore carries `last_checked_at` and may become dormant or unverified.
+
+## Observability
+
+The system should be measured by bounded stewardship, not content volume.
+
+Useful measures include:
+
+- percentage of public edges with primary-source evidence;
+- percentage of external nodes checked within their review interval;
+- number of valid no-op runs;
+- number of proposals refused or revised;
+- average edges shown on Attending, capped at three;
+- validation failure rate;
+- time from proposal to human decision;
+- number of exact-source or inscription modifications attempted, which must remain zero;
+- number of external contacts attempted, which must remain zero.
+
+Daily publication count is not a success metric.
+
+## Trade-offs
+
+### Static files and Git
+
+This approach is transparent, cheap, portable, and easy to inspect. It is slower than a database for complex graph queries and creates merge pressure as the manifest grows.
+
+Revisit a graph database only when the relational manifest becomes difficult to review as text or when multiple human maintainers need concurrent editing.
+
+### One scheduler, two offices
+
+One transaction prevents race conditions and preserves a coherent handoff. It also means a failure in the Cartographer turn can delay the Gardener.
+
+The task should still permit the Gardener to perform an internal-only audit when external research fails, provided the audit explicitly records that the Cartographer turn was incomplete.
+
+### Human review
+
+Review limits autonomy and may slow public change. It protects public meaning while the ontology and agents remain experimental.
+
+Revisit narrow auto-publication only after a significant history of accurate, reversible, low-risk proposals. Candidate classes might include last-checked dates or broken-link status, not interpretive relations.
+
+### Public audit
+
+Detailed audit improves accountability but can overwhelm the public interface. Keep the repository audit complete and the Attending page finite.
+
+## What to revisit as the system grows
+
+- whether the Gardener and Cartographer require separate model contexts inside the same task;
+- whether a Witness should become an independent validation office;
+- whether proposals need signed authorship or content-addressed event IDs;
+- whether external nodes need archived source snapshots or only citations and checked dates;
+- how another aperture can publish a competing map without editing this one;
+- how relation vocabularies can fork without breaking shared identifiers;
+- which low-risk metadata changes, if any, can be auto-published;
+- when the static JSON graph should become an append-only event log with materialized views.
+
+## Definition of done for the first operational version
+
+The first version is operational when:
+
+1. both charters are public and downloadable;
+2. the Agent Offices index makes their distinction visible;
+3. FN-32, this Builder Note, and Instrument I-003 are public;
+4. the daily event is visible and active in the scheduling interface;
+5. the inbox, proposal queue, relational manifest, and audit schemas exist;
+6. one no-op run and one reviewed proposal run have been completed;
+7. the Attending interface shows at most three items;
+8. the complete path from evidence to human review is inspectable.
+
+**Related:** Office Charter, *Gardener*; Office Charter, *Cartographer*; Field Note 29, *The Living Librarian*; Field Note 32, *The Garden and the Living Map*; Instrument I-003, *The Daily Tending Ritual*; Builder Note BN-004, *Building the Finite Library*; the Cyberdelic Kernel, ATTEND, RELATE, TEND, CARRY, END, DISSENT, and FORGET.
+</pre></div>
+</section>
+<aside class="living-aside">
+  <h2>Version 1.0</h2>
+  <p>Testing · 2026-08-17</p>
+  <p>16,975 UTF-8 bytes</p>
+  <p><a href="../../../living-content/cyberdelic-os/bn-005/v000001.md" download>Download exact version</a></p>
+  <h2>Version history</h2><ol class="version-history"><li><a href="./"><strong>v1.0</strong> · TESTING · 2026-08-17<code>1bdaa5d7657895206e17dc326daaa210cbfcb3dbfa233ea88d7c9b2837727a56</code></a></li></ol>
+</aside></div>
+<nav class="living-next" aria-label="Project chronology"><a href="../fn-s0-005/">← FN-S0-005</a><a href="../i-003/">I-003 →</a></nav>
+</article>
+</main>
+<footer class="site"><div class="bar">
+  <p>cyberdelic.space. The Library is held in Bitcoin; Field and Workshop publications are visibly living and versioned.</p>
+  <p><a href="../../../mirror/">Copy this library</a> · <a href="../../../library.json">library.json</a> · <a href="../../../verify/">How verification works</a> · <a href="../../../privacy/">Privacy</a></p>
+</div></footer>
+</body>
+</html>

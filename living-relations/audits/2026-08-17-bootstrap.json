@@ -1,0 +1,32 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-08-17-BOOTSTRAP",
+  "run_type": "human-directed-bootstrap",
+  "started_at": "2026-08-17T16:45:00+00:00",
+  "completed_at": "2026-08-17T17:00:00+00:00",
+  "automation": {
+    "id": "daily-cyberdelic-tending",
+    "name": "Daily Cyberdelic Tending",
+    "status": "active",
+    "schedule": "Daily at 7:00 AM America/Vancouver"
+  },
+  "office_versions": {
+    "cartographer": "0.1",
+    "gardener": "0.1"
+  },
+  "cartographer": {
+    "state": "not-run",
+    "reason": "The bootstrap established the office and proposal structures without performing external discovery."
+  },
+  "gardener": {
+    "state": "proposed",
+    "changes": [
+      "Connected FN-29 to FN-32 as lineage.",
+      "Connected FN-32 to BN-005 as technical implementation.",
+      "Connected FN-32 to I-003 as ritual implementation."
+    ]
+  },
+  "public_change": true,
+  "run_state": "proposed",
+  "human_review_required": true
+}

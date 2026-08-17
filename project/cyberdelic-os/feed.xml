@@ -2,7 +2,15 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>CyberdelicOS</title>
 <id>https://cyberdelic.space/project/cyberdelic-os/</id>
 <link href="https://cyberdelic.space/project/cyberdelic-os/feed.xml" rel="self"/>
-<updated>2026-08-17T16:36:46+00:00</updated><entry><title>The Garden and the Living Map</title>
+<updated>2026-08-17T17:05:45+00:00</updated><entry><title>The Daily Tending Ritual</title>
+<id>https://cyberdelic.space/project/cyberdelic-os/i-003/</id>
+<link href="https://cyberdelic.space/project/cyberdelic-os/i-003/"/>
+<updated>2026-08-17T17:05:45+00:00</updated>
+<summary>I-003 · workshop · testing</summary></entry><entry><title>Building the Tending Offices</title>
+<id>https://cyberdelic.space/project/cyberdelic-os/bn-005/</id>
+<link href="https://cyberdelic.space/project/cyberdelic-os/bn-005/"/>
+<updated>2026-08-17T17:05:45+00:00</updated>
+<summary>BN-005 · workshop · testing</summary></entry><entry><title>The Garden and the Living Map</title>
 <id>https://cyberdelic.space/project/cyberdelic-os/fn-s0-005/</id>
 <link href="https://cyberdelic.space/project/cyberdelic-os/fn-s0-005/"/>
 <updated>2026-08-17T16:36:46+00:00</updated>
