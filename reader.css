@@ -2,6 +2,7 @@
    Derived from the DEW LINE Studio design tokens. */
 
 :root {
+  --site-header-offset: 6.4rem;
   --canvas: #f6f7f4;
   --surface: #fcfcfa;
   --ink: #1e201d;
@@ -127,7 +128,10 @@ a:hover { color: var(--signal); }
 /* The rules span the full width; what sits on them does not. Header and
    footer contents share the page body's column, so one left edge runs the
    whole height of the page instead of the chrome starting 233px outside it. */
-header.site { border-bottom: 1px solid var(--line); }
+header.site {
+  position: sticky; top: 0; z-index: 30;
+  border-bottom: 1px solid var(--line); background: var(--surface);
+}
 header.site .bar, footer.site .bar {
   max-width: 60rem; margin-inline: auto;
 }
@@ -915,8 +919,15 @@ footer.site p { max-width: var(--measure); margin: .4rem 0; }
 
 /* ------------------------------------------------------------------ work */
 
-.crumb { font-size: .75rem; letter-spacing: var(--tracking);
-  text-transform: uppercase; margin-bottom: 2.5rem; }
+.crumb {
+  position: sticky; top: calc(var(--site-header-offset) + .55rem); z-index: 14;
+  width: max-content; max-width: 100%; margin: -.55rem 0 1.95rem -.65rem;
+  padding: .55rem .65rem; box-sizing: border-box;
+  background: color-mix(in srgb, var(--surface) 94%, transparent);
+  -webkit-backdrop-filter: blur(18px) saturate(1.05);
+  backdrop-filter: blur(18px) saturate(1.05);
+  font-size: .75rem; letter-spacing: var(--tracking); text-transform: uppercase;
+}
 .crumb a { text-decoration: none; color: var(--ink-2); }
 
 .work-head { margin-bottom: 2.5rem; }
@@ -975,7 +986,7 @@ footer.site p { max-width: var(--measure); margin: .4rem 0; }
   white-space: pre-wrap; overflow-wrap: anywhere; margin: 0;
   font: inherit; color: inherit;
 }
-.markdown-body { font: inherit; color: inherit; }
+.markdown-body { font: inherit; color: inherit; overflow-wrap: anywhere; }
 .markdown-body > :first-child { margin-top: 0; }
 .markdown-body > :last-child { margin-bottom: 0; }
 .markdown-body h1, .markdown-body h2, .markdown-body h3,
@@ -1366,10 +1377,15 @@ ul.plain .line { display: inline; font-size: .75rem; }
   border-left: 1px solid var(--line); padding-left: 1.5rem;
   color: var(--ink-2);
 }
-.field-note-anchor { scroll-margin-top: 2rem; }
+.field-note-anchor { scroll-margin-top: calc(var(--site-header-offset) + 4rem); }
 .field-note-index {
-  position: sticky; top: 1.5rem; display: flex; flex-direction: column;
-  max-height: calc(100vh - 3rem); margin: 0 0 2.2rem;
+  position: sticky; top: calc(var(--site-header-offset) + 1.5rem); z-index: 10;
+  display: flex; flex-direction: column;
+  max-height: calc(100vh - var(--site-header-offset) - 3rem);
+  margin: 0 0 2.2rem; padding: .15rem 0 .8rem;
+  background: color-mix(in srgb, var(--surface) 96%, transparent);
+  -webkit-backdrop-filter: blur(18px) saturate(1.05);
+  backdrop-filter: blur(18px) saturate(1.05);
 }
 .field-note-index ol {
   list-style: none; min-height: 0; margin: 0; padding: 0 .65rem 0 0;
@@ -1541,6 +1557,7 @@ table.braid tbody tr:hover td .mid::before{background:var(--line-2);}
 }
 
 @media (max-width: 40rem) {
+  :root { --site-header-offset: 12.5rem; }
   header.site .bar { gap: .8rem 1.2rem; }
   header.site nav {
     flex-basis: 100%; flex-wrap: wrap; gap: .65rem 1rem;
@@ -1607,6 +1624,7 @@ table.braid tbody tr:hover td .mid::before{background:var(--line-2);}
 }
 
 @media print {
+  header.site, .crumb { position: static; }
   header.site nav, .views, .verify-box, .work-foot, footer.site { display: none; }
   .panel { display: block !important; }
   .js .panel-title { display: block; }

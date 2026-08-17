@@ -1,0 +1,86 @@
+{
+  "schema": "https://cyberdelic.space/schemas/living-relationships-v1.json",
+  "version": "0.1",
+  "updated_at": "2026-08-17T17:00:00+00:00",
+  "curation": {
+    "status": "model-proposed",
+    "ratification": "Brad Necyk may ratify, revise, refuse, or leave any relation unresolved.",
+    "public_limit": 3
+  },
+  "nodes": [
+    {
+      "id": "cyberdelic-os:fn-29",
+      "kind": "field-note",
+      "title": "The Living Librarian",
+      "href": "project/cyberdelic-os/field-notes/fn-29/"
+    },
+    {
+      "id": "cyberdelic-os:fn-32",
+      "kind": "field-note",
+      "title": "The Garden and the Living Map",
+      "href": "project/cyberdelic-os/field-notes/fn-32/"
+    },
+    {
+      "id": "cyberdelic-os:bn-005",
+      "kind": "builder-note",
+      "title": "Building the Tending Offices",
+      "href": "project/cyberdelic-os/bn-005/"
+    },
+    {
+      "id": "cyberdelic-os:i-003",
+      "kind": "instrument",
+      "title": "The Daily Tending Ritual",
+      "href": "project/cyberdelic-os/i-003/"
+    },
+    {
+      "id": "cyberdelic-os:office-gardener",
+      "kind": "office",
+      "title": "Gardener",
+      "href": "project/cyberdelic-os/offices/gardener/"
+    },
+    {
+      "id": "cyberdelic-os:office-cartographer",
+      "kind": "office",
+      "title": "Cartographer",
+      "href": "project/cyberdelic-os/offices/cartographer/"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "REL-000001",
+      "from": "cyberdelic-os:fn-29",
+      "to": "cyberdelic-os:fn-32",
+      "relation_type": "lineage",
+      "epistemic_status": "strong",
+      "lifecycle_state": "active",
+      "review_state": "proposed",
+      "rationale": "FN-32 operationally separates the Gardener and Cartographer actions first gathered inside the Living Librarian.",
+      "introduced_by": "OFFICE-GARDENER",
+      "last_tended_at": "2026-08-17T17:00:00+00:00"
+    },
+    {
+      "edge_id": "REL-000002",
+      "from": "cyberdelic-os:fn-32",
+      "to": "cyberdelic-os:bn-005",
+      "relation_type": "implementation",
+      "epistemic_status": "strong",
+      "lifecycle_state": "active",
+      "review_state": "proposed",
+      "rationale": "BN-005 gives the two offices, relational graph, scheduler transaction, permissions, validation, and review boundary a technical architecture.",
+      "introduced_by": "OFFICE-GARDENER",
+      "last_tended_at": "2026-08-17T17:00:00+00:00"
+    },
+    {
+      "edge_id": "REL-000003",
+      "from": "cyberdelic-os:fn-32",
+      "to": "cyberdelic-os:i-003",
+      "relation_type": "implementation",
+      "epistemic_status": "strong",
+      "lifecycle_state": "active",
+      "review_state": "proposed",
+      "rationale": "I-003 turns the daily tending proposed in FN-32 into an active scheduled ritual and a finite public Attending contract.",
+      "introduced_by": "OFFICE-GARDENER",
+      "last_tended_at": "2026-08-17T17:00:00+00:00"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "count": 4,
+  "count": 5,
   "items": [
     {
       "chain_evidence": {
@@ -94,6 +94,30 @@
       "version": 1,
       "version_label": "1.0",
       "version_sha256": "a8d82eacbd5981183d2b24a7f865cd416b27a214b3875b947d3f7d7ac04b76dd"
+    },
+    {
+      "authorship_note": "This field note emerged from Brad Necyk's morning reflection after Michael Garfield shared a constellation of websites, groups, and projects that may be meaningful to Cyberdelic OS. ChatGPT developed the note from Brad's reflection and the existing Gardener and Cartographer offices. Open to Brad's revision and ratification.",
+      "chain_evidence": {
+        "inscription_id": null,
+        "network": null,
+        "state": "living",
+        "verified": false
+      },
+      "content_length": 14114,
+      "content_path": "living-content/cyberdelic-os/fn-s0-005/v000001.md",
+      "content_sha256": "e7629788db37f1a3e105f4a1769a7d409048e7f4b0d81c444f95da674768b352",
+      "content_type": "text/markdown;charset=utf-8",
+      "maturity": "proposed",
+      "metadata_sha256": null,
+      "project_slug": "cyberdelic-os",
+      "published_at": "2026-08-17T16:36:46+00:00",
+      "release_id": "FN-S0-005",
+      "series_slug": "field-notes",
+      "territory": "field",
+      "title": "The Garden and the Living Map",
+      "version": 1,
+      "version_label": "0.1",
+      "version_sha256": "e7629788db37f1a3e105f4a1769a7d409048e7f4b0d81c444f95da674768b352"
     }
   ],
   "schema": "https://cyberdelic.space/schemas/living-index-v1.json",
