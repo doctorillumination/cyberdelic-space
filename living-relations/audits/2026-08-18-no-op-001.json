@@ -1,0 +1,167 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-08-18-001",
+  "run_type": "scheduled-governed-run",
+  "started_at": "2026-08-18T08:30:11-07:00",
+  "completed_at": "2026-08-18T08:36:29-07:00",
+  "repository": {
+    "branch": "agent/tending-2026-08-18",
+    "starting_commit": "1d640cc4bcaadc6cbde3f83ac1cc277d4509c543"
+  },
+  "automation": {
+    "id": "daily-cyberdelic-tending",
+    "name": "Daily Cyberdelic Tending",
+    "status": "active",
+    "schedule": "Daily at 7:00 AM America/Vancouver",
+    "next_scheduled_run": "2026-08-19T07:00:00-07:00"
+  },
+  "office_versions": {
+    "cartographer": "0.1",
+    "gardener": "0.1"
+  },
+  "inputs": {
+    "inbox_items": 0,
+    "declared_question": "How do Polis facilitation, moderation, identity, and data-governance choices compare with the boundaries imagined for a Cyberdelic Gathering Intelligence?",
+    "internal_region": [
+      {
+        "id": "cyberdelic-os:fn-04",
+        "title": "The Gathering Intelligence"
+      },
+      {
+        "id": "cyberdelic-os:fn-25",
+        "title": "Expeditions, Storms, and the Birth of Boroughs"
+      }
+    ],
+    "existing_proposals": [
+      "REL-P-000001",
+      "REL-P-000002"
+    ]
+  },
+  "cartographer": {
+    "state": "no-op",
+    "candidate_limit": 3,
+    "candidates_created": [],
+    "sources_checked": [
+      {
+        "title": "Polis Methods Guide: Introduction",
+        "url": "https://compdemocracy.org/polis/book/introduction/",
+        "source_kind": "official-project-methods-guide",
+        "checked_at": "2026-08-18T08:31:00-07:00"
+      },
+      {
+        "title": "Polis Identity",
+        "url": "https://compdemocracy.org/identity/",
+        "source_kind": "official-project-documentation",
+        "checked_at": "2026-08-18T08:31:00-07:00"
+      },
+      {
+        "title": "Polis Conversation Data",
+        "url": "https://compdemocracy.org/polis-conversation-data/",
+        "source_kind": "official-project-documentation",
+        "checked_at": "2026-08-18T08:31:00-07:00"
+      },
+      {
+        "title": "Polis Moderation",
+        "url": "https://compdemocracy.org/moderation/",
+        "source_kind": "official-project-documentation",
+        "checked_at": "2026-08-18T08:31:00-07:00"
+      }
+    ],
+    "source_facts": [
+      {
+        "claim": "The official methods guide treats framing, outreach, moderation, and interpretation as core practices, and names false consensus as a danger requiring guardrails.",
+        "source": "https://compdemocracy.org/polis/book/introduction/"
+      },
+      {
+        "claim": "Conversation owners perform moderation and may choose a strict whitelist or permissive blacklist scheme. The documented export includes all comments and identifies those moderated out.",
+        "source": "https://compdemocracy.org/moderation/"
+      },
+      {
+        "claim": "Official documentation describes anonymous and non-anonymous identity paths, and says conversation data includes comments, votes, opinion-group assignments, representative comments, shared opinions, and an export.",
+        "sources": [
+          "https://compdemocracy.org/identity/",
+          "https://compdemocracy.org/polis-conversation-data/"
+        ]
+      }
+    ],
+    "inference": "These operational choices make governance visible and deepen the comparison with FN-04 and FN-25, but they do not establish equivalence, endorsement, or a new relation beyond the existing possible and emerging shared-inquiry proposal.",
+    "uncertainty": "The identity page labels part of its own material as old content to clean up. It was used only to establish the range of documented identity paths, not to claim that every listed default remains current in every Polis deployment.",
+    "attribution": "All external factual descriptions are attributed to the Computational Democracy Project's public documentation.",
+    "source_fact_and_inference_separated": true,
+    "private_material_read": false,
+    "external_contact_performed": false,
+    "no_change_reason": "The official sources clarified the unresolved governance comparison but did not warrant a duplicate external node, a second edge, or a stronger evidence state. REL-P-000001 and REL-P-000002 remain the bounded proposals awaiting human review."
+  },
+  "gardener": {
+    "state": "no-op",
+    "cartographer_proposals_considered": [
+      "REL-P-000001",
+      "REL-P-000002"
+    ],
+    "decisions": [
+      {
+        "area": "summary-and-theme-drift",
+        "decision": "No repair. FN-04 and FN-25 remain accurately represented by the existing proposal rationale and the finite Attending surface."
+      },
+      {
+        "area": "evidence-and-relation-strength",
+        "decision": "No change. The new source check supports continued inquiry but not promotion of REL-P-000002 beyond possible, emerging, and proposed."
+      },
+      {
+        "area": "continuity-and-attention",
+        "decision": "No change. The current three-item Attending surface still holds one work, one proposed relation, and one unresolved question, so no novelty was manufactured."
+      }
+    ],
+    "changes": [],
+    "no_change_reason": "No summary drift, unsupported relation claim, dormancy condition, or broken related-work path was found. The current metadata already preserves the difference between a documented tool and a speculative constitutional design.",
+    "manifest_changed": false,
+    "proposal_queue_changed": false,
+    "exact_publication_sources_changed": false
+  },
+  "validation": {
+    "state": "passed",
+    "checks": [
+      {
+        "check": "structured-data",
+        "result": "All six Living Relationships JSON files and sitemap.xml parsed successfully."
+      },
+      {
+        "check": "finite-attending-surface",
+        "result": "The current Attending surface remains unchanged at exactly three linked items."
+      },
+      {
+        "check": "manifest-boundary",
+        "result": "The relational manifest remains at six nodes and three proposed edges; the two Polis candidates remain unratified in proposals.json."
+      },
+      {
+        "check": "internal-links",
+        "result": "All internal links resolved across the static HTML site."
+      },
+      {
+        "check": "reader-regression-suite",
+        "result": "All 55 reader build tests passed."
+      },
+      {
+        "check": "responsive-browser",
+        "result": "Attending, Living Relationships, the latest dated tending record, and the archived arrangement rendered at 1280 by 720 and 390 by 844 with psychedelic defaults, no horizontal overflow, and no application console errors."
+      },
+      {
+        "check": "exact-source-integrity",
+        "result": "FN-S0-001, FN-S0-005, BN-005, and I-003 retained their recorded SHA-256 hashes."
+      },
+      {
+        "check": "distribution-archive",
+        "result": "The same-origin mirror archive was rebuilt and verified without repository internals or recursive archive inclusion."
+      }
+    ]
+  },
+  "unresolved_questions": [
+    "How can a gathering reveal shared structure without making consensus the measure of truth?",
+    "What must remain visible when complex positions are represented as clusters?",
+    "How do Polis facilitation, moderation, identity, and data-governance choices compare with the boundaries imagined for a Cyberdelic Gathering Intelligence?"
+  ],
+  "public_change": false,
+  "proposed_public_change": false,
+  "run_state": "no-op",
+  "human_review_required": true
+}
