@@ -1,5 +1,5 @@
 {
-  "count": 5,
+  "count": 7,
   "items": [
     {
       "chain_evidence": {
@@ -118,6 +118,54 @@
       "version": 1,
       "version_label": "0.1",
       "version_sha256": "e7629788db37f1a3e105f4a1769a7d409048e7f4b0d81c444f95da674768b352"
+    },
+    {
+      "authorship_note": "This field note began in a working conversation between Brad Necyk and Claude while they studied the disappearance of several generative-art platforms and imagined a press designed to survive its own absence. Claude developed ten initial propositions from Brad's questions and the Cyberdelic Kernel. ChatGPT later read those propositions against the existing Field Notes and developed this more compact form for Brad's revision and ratification. Brad ratified this version for living publication on August 20, 2026.",
+      "chain_evidence": {
+        "inscription_id": null,
+        "network": null,
+        "state": "living",
+        "verified": false
+      },
+      "content_length": 3953,
+      "content_path": "living-content/cyberdelic-os/fn-s0-006/v000001.md",
+      "content_sha256": "83b5988f27b7f6cd7c77fcbe7eeb7d8e9cde05970ca7d2ee3268052e45f7e076",
+      "content_type": "text/markdown;charset=utf-8",
+      "maturity": "ratified",
+      "metadata_sha256": null,
+      "project_slug": "cyberdelic-os",
+      "published_at": "2026-08-20T00:00:00-07:00",
+      "release_id": "FN-S0-006",
+      "series_slug": "field-notes",
+      "territory": "field",
+      "title": "The Plate and the Pull",
+      "version": 1,
+      "version_label": "0.5",
+      "version_sha256": "83b5988f27b7f6cd7c77fcbe7eeb7d8e9cde05970ca7d2ee3268052e45f7e076"
+    },
+    {
+      "authorship_note": "This field note began with three intuitions Brad Necyk brought into conversation with Claude: that a public work could remain unenclosed while a collector held its title, that the press might speak to long-term stewards rather than speculative markets, and that artists might answer provocations inscribed by other artists. Claude developed ten initial propositions. ChatGPT later read them against the existing Field Notes and developed this more compact form for Brad's revision and ratification. Brad ratified this version for living publication on August 20, 2026.",
+      "chain_evidence": {
+        "inscription_id": null,
+        "network": null,
+        "state": "living",
+        "verified": false
+      },
+      "content_length": 4559,
+      "content_path": "living-content/cyberdelic-os/fn-s0-007/v000001.md",
+      "content_sha256": "086f3fa4816d54574ea84a3a5febff0a52325a6f300d8bc8f59b7b494169d503",
+      "content_type": "text/markdown;charset=utf-8",
+      "maturity": "ratified",
+      "metadata_sha256": null,
+      "project_slug": "cyberdelic-os",
+      "published_at": "2026-08-20T00:00:00-07:00",
+      "release_id": "FN-S0-007",
+      "series_slug": "field-notes",
+      "territory": "field",
+      "title": "The Deed and the Blot",
+      "version": 1,
+      "version_label": "0.3",
+      "version_sha256": "086f3fa4816d54574ea84a3a5febff0a52325a6f300d8bc8f59b7b494169d503"
     }
   ],
   "schema": "https://cyberdelic.space/schemas/living-index-v1.json",

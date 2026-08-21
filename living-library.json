@@ -346,6 +346,30 @@
       "rationale": "The note turns two existing Cyberdelic offices into bounded daily protocols for tending internal metadata, external kinships, and a finite public surface."
     },
     {
+      "id": "cyberdelic-os-fn-33",
+      "release_id": "FN-S0-006",
+      "label": "FN-33 · RATIFIED",
+      "title": "The Plate and the Pull",
+      "href": "project/cyberdelic-os/field-notes/fn-33/",
+      "author": "Brad Necyk, in correspondence with Claude and ChatGPT",
+      "excerpt": "A generative algorithm becomes a plate whose authorized pulls can travel beyond the platform that first presented them.",
+      "themes": ["provenance", "decentralization", "technology", "creativity", "memory", "economy"],
+      "register": "waking-argument",
+      "rationale": "The note joins browser-local rendering, verifiable generative lineage, finite editions, and platform-independent preservation through the language of the print studio."
+    },
+    {
+      "id": "cyberdelic-os-fn-34",
+      "release_id": "FN-S0-007",
+      "label": "FN-34 · RATIFIED",
+      "title": "The Deed and the Blot",
+      "href": "project/cyberdelic-os/field-notes/fn-34/",
+      "author": "Brad Necyk, in correspondence with Claude and ChatGPT",
+      "excerpt": "Public works, transferable deeds, and inscribed provocations form a press organized around response and stewardship.",
+      "themes": ["provenance", "collaboration", "creativity", "economy", "memory", "governance"],
+      "register": "field-meditation",
+      "rationale": "The note distinguishes public encounter from title, treats collecting as stewardship, and imagines provocation and response as a legible artistic lineage."
+    },
+    {
       "id": "cyberdelic-os-bn-001",
       "release_id": "BN-001",
       "label": "BN-001 · TESTING",
