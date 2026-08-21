@@ -102,6 +102,7 @@
     "path": "content/e2f829d5e84c2b7d2a7c5c6aee70bdd9792fa2fd38505ee627d6f6cb9bc4b863i0/content.html",
     "cause": "An August 15 site-theme edit inserted a data-theme attribute into the exact artwork copy, adding 25 bytes without updating the immutable publication record.",
     "repair": "Removed only the later data-theme attribute and restored the byte sequence originally published on July 28.",
+    "delivery_protection": "Applied Cache-Control public, no-transform to exact content routes so Cloudflare cannot inject analytics code into delivered source bytes.",
     "restored_content_length": 3904,
     "restored_content_sha256": "11e860d47d0f53ff34788d8e8d6bdddc92ac1622e7ec076410f9d5162f38ad07",
     "matches_library_record": true
