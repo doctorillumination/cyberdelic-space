@@ -1,7 +1,7 @@
 {
   "schema": "https://cyberdelic.space/schemas/relationship-proposals-v1.json",
-  "updated_at": "2026-08-17T17:58:00+00:00",
-  "count": 2,
+  "updated_at": "2026-08-21T16:08:00+00:00",
+  "count": 4,
   "items": [
     {
       "proposal_id": "REL-P-000001",
@@ -69,6 +69,77 @@
       "unresolved_questions": [
         "How can a gathering reveal shared structure without making consensus the measure of truth?",
         "What must remain visible when complex positions are represented as clusters?"
+      ],
+      "introduced_by": "OFFICE-CARTOGRAPHER",
+      "office_version": "0.1"
+    },
+    {
+      "proposal_id": "REL-P-000003",
+      "proposal_kind": "external-node",
+      "source_node": "external:art-blocks",
+      "target_node": "cyberdelic-os:fn-33",
+      "node": {
+        "id": "external:art-blocks",
+        "kind": "project",
+        "title": "Art Blocks",
+        "canonical_url": "https://www.artblocks.io/",
+        "documentation_url": "https://docs.artblocks.io/protocol/overview/",
+        "repository_url": "https://github.com/ArtBlocks/artblocks-contracts",
+        "description": "An on-chain generative-art protocol whose official documentation describes artist scripts and deterministic token hashes stored on Ethereum, with an open-source core contract and browser-viewable reconstruction that does not require Art Blocks servers."
+      },
+      "introduced_by": "OFFICE-CARTOGRAPHER",
+      "introduced_through": "declared-question",
+      "inquiry": "What would it mean to build a press that expected its own building to disappear?",
+      "source_facts": [
+        {
+          "claim": "The Art Blocks protocol overview states that generative scripts, token hashes, and dependencies are stored on Ethereum so that a deterministic output can be reproduced and the work can outlast the company or service.",
+          "url": "https://docs.artblocks.io/protocol/overview/",
+          "checked_at": "2026-08-21T09:05:00-07:00"
+        },
+        {
+          "claim": "The official on-chain generator documentation describes assembling browser-viewable HTML from on-chain project scripts, token hashes, and dependencies without relying on Art Blocks servers.",
+          "url": "https://docs.artblocks.io/protocol/on-chain-generator/",
+          "checked_at": "2026-08-21T09:05:00-07:00"
+        },
+        {
+          "claim": "The official core contract documentation describes an open-source Ethereum contract that manages token ownership, project scripts, token hashes, and royalty settings.",
+          "url": "https://docs.artblocks.io/developer/core-contract/",
+          "checked_at": "2026-08-21T09:05:00-07:00"
+        }
+      ],
+      "cartographer_inference": "Art Blocks is sufficiently documented to enter review as a technically adjacent external node around generative publication that can survive its venue. This proposal does not imply endorsement, partnership, or architectural equivalence.",
+      "epistemic_status": "strong",
+      "review_state": "proposed",
+      "unresolved_questions": [
+        "Which infrastructure-independent techniques transfer to a Bitcoin-based press without importing minting or marketplace assumptions?"
+      ],
+      "office_version": "0.1"
+    },
+    {
+      "proposal_id": "REL-P-000004",
+      "proposal_kind": "relationship-edge",
+      "source_node": "external:art-blocks",
+      "target_node": "cyberdelic-os:fn-33",
+      "relation_type": "technical-adjacency",
+      "source_facts": [
+        {
+          "claim": "Art Blocks documents a protocol in which artist scripts, deterministic token hashes, and dependencies can be reconstructed in a browser without the project's servers.",
+          "url": "https://docs.artblocks.io/protocol/on-chain-generator/",
+          "checked_at": "2026-08-21T09:05:00-07:00"
+        },
+        {
+          "claim": "Field Note 33 asks how a generative press could expect its venue to disappear, keep its algorithm public, and allow independent reconstruction while ending an authorized edition.",
+          "source": "living-content/cyberdelic-os/fn-s0-006/v000001.md",
+          "locator": "A Press, Not a Platform and The Edition Ends. The Plate Remains."
+        }
+      ],
+      "cartographer_inference": "Art Blocks and FN-33 share a technical inquiry into durable generative publication, but they should not be collapsed. Art Blocks uses Ethereum, ERC-721 tokens, minting, and protocol contracts. FN-33 proposes Bitcoin parent-and-pull lineage, plate striking, public copyability, and a marketplace kept subordinate to the press. The architectural difference is part of the proposed relation.",
+      "epistemic_status": "possible",
+      "lifecycle_state": "emerging",
+      "review_state": "proposed",
+      "unresolved_questions": [
+        "Can an authorized edition end while its public algorithm remains independently copyable and renderable?",
+        "What survives when a generative artwork's original interface and marketplace disappear?"
       ],
       "introduced_by": "OFFICE-CARTOGRAPHER",
       "office_version": "0.1"

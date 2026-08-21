@@ -1,7 +1,7 @@
 {
   "schema": "https://cyberdelic.space/schemas/living-relationships-v1.json",
-  "version": "0.1",
-  "updated_at": "2026-08-17T17:00:00+00:00",
+  "version": "0.2",
+  "updated_at": "2026-08-21T16:08:00+00:00",
   "curation": {
     "status": "model-proposed",
     "ratification": "Brad Necyk may ratify, revise, refuse, or leave any relation unresolved.",
@@ -19,6 +19,18 @@
       "kind": "field-note",
       "title": "The Garden and the Living Map",
       "href": "project/cyberdelic-os/field-notes/fn-32/"
+    },
+    {
+      "id": "cyberdelic-os:a-001",
+      "kind": "artifact",
+      "title": "Cyberdelic.space",
+      "href": "project/cyberdelic-os/a-001/"
+    },
+    {
+      "id": "cyberdelic-os:fn-33",
+      "kind": "field-note",
+      "title": "The Plate and the Pull",
+      "href": "project/cyberdelic-os/field-notes/fn-33/"
     },
     {
       "id": "cyberdelic-os:bn-005",
@@ -81,6 +93,28 @@
       "rationale": "I-003 turns the daily tending proposed in FN-32 into an active scheduled ritual and a finite public Attending contract.",
       "introduced_by": "OFFICE-GARDENER",
       "last_tended_at": "2026-08-17T17:00:00+00:00"
+    },
+    {
+      "edge_id": "REL-000004",
+      "from": "cyberdelic-os:a-001",
+      "to": "cyberdelic-os:fn-33",
+      "relation_type": "context",
+      "epistemic_status": "strong",
+      "lifecycle_state": "active",
+      "review_state": "proposed",
+      "rationale": "A-001 is the working press architecture that FN-33 explicitly identifies as already approaching publication that can survive the disappearance of its venue.",
+      "evidence": [
+        {
+          "source": "living-content/cyberdelic-os/a-001/v000001.md",
+          "locator": "Architecture and The Covenant"
+        },
+        {
+          "source": "living-content/cyberdelic-os/fn-s0-006/v000001.md",
+          "locator": "A Press, Not a Platform"
+        }
+      ],
+      "introduced_by": "OFFICE-GARDENER",
+      "last_tended_at": "2026-08-21T16:08:00+00:00"
     }
   ]
 }

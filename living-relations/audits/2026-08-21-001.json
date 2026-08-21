@@ -1,0 +1,153 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-08-21-001",
+  "run_type": "scheduled-governed-run",
+  "started_at": "2026-08-21T07:01:45-07:00",
+  "completed_at": "2026-08-21T09:27:48-07:00",
+  "repository": {
+    "branch": "agent/tending-2026-08-18",
+    "starting_commit": "58e722133d33d2f4415b173593a61d2a857aa030",
+    "pull_request": "https://github.com/doctorillumination/cyberdelic-space/pull/13",
+    "pull_request_state": "draft-review",
+    "publication_action": "validated-update-authorized-for-publication"
+  },
+  "automation": {
+    "id": "daily-cyberdelic-tending",
+    "name": "Daily Cyberdelic Tending",
+    "status": "active",
+    "schedule": "Daily at 7:00 AM America/Vancouver",
+    "next_scheduled_run": "2026-08-22T07:00:00-07:00"
+  },
+  "office_versions": {
+    "cartographer": "0.1",
+    "gardener": "0.1"
+  },
+  "inputs": {
+    "inbox_items": 0,
+    "declared_question": "What would it mean to build a press that expected its own building to disappear?",
+    "internal_region": [
+      {
+        "id": "cyberdelic-os:fn-33",
+        "title": "The Plate and the Pull"
+      },
+      {
+        "id": "cyberdelic-os:a-001",
+        "title": "Cyberdelic.space"
+      },
+      {
+        "id": "cyberdelic-os:fn-34",
+        "title": "The Deed and the Blot"
+      }
+    ]
+  },
+  "cartographer": {
+    "state": "proposed",
+    "candidate_limit": 3,
+    "candidates_created": [
+      "REL-P-000003",
+      "REL-P-000004"
+    ],
+    "external_node": "external:art-blocks",
+    "sources_checked": [
+      {
+        "title": "Art Blocks Protocol Overview",
+        "url": "https://docs.artblocks.io/protocol/overview/",
+        "source_kind": "official-protocol-documentation",
+        "checked_at": "2026-08-21T09:05:00-07:00"
+      },
+      {
+        "title": "On-Chain Generator",
+        "url": "https://docs.artblocks.io/protocol/on-chain-generator/",
+        "source_kind": "official-protocol-documentation",
+        "checked_at": "2026-08-21T09:05:00-07:00"
+      },
+      {
+        "title": "Core Contract",
+        "url": "https://docs.artblocks.io/developer/core-contract/",
+        "source_kind": "official-developer-documentation",
+        "checked_at": "2026-08-21T09:05:00-07:00"
+      }
+    ],
+    "source_fact_and_inference_separated": true,
+    "private_material_read": false,
+    "external_contact_performed": false,
+    "stop_reason": "One documented external node and one possible technical-adjacency edge answered the bounded question. Further discovery would add breadth without improving this run's evidence."
+  },
+  "gardener": {
+    "state": "proposed",
+    "cartographer_proposals_considered": [
+      "REL-P-000003",
+      "REL-P-000004"
+    ],
+    "changes": [
+      {
+        "kind": "proposal-queue",
+        "decision": "Keep the Art Blocks node strongly documented while the technical-adjacency edge remains possible, emerging, and proposed."
+      },
+      {
+        "kind": "internal-context",
+        "decision": "Propose a strong context edge from A-001 to FN-33 because the exact publications explicitly identify Cyberdelic.space as the working press architecture beneath the note's inquiry."
+      },
+      {
+        "kind": "finite-attending-surface",
+        "decision": "Prepare a three-item Attending arrangement for FN-33, the proposed external adjacency, and one unresolved question, while preserving the Polis arrangement in the archive."
+      }
+    ],
+    "manifest_changed": true,
+    "exact_publication_source_repaired": true,
+    "repair_restored_recorded_bytes": true
+  },
+  "source_integrity_repair": {
+    "work": "Kenosha Kid #3",
+    "path": "content/e2f829d5e84c2b7d2a7c5c6aee70bdd9792fa2fd38505ee627d6f6cb9bc4b863i0/content.html",
+    "cause": "An August 15 site-theme edit inserted a data-theme attribute into the exact artwork copy, adding 25 bytes without updating the immutable publication record.",
+    "repair": "Removed only the later data-theme attribute and restored the byte sequence originally published on July 28.",
+    "restored_content_length": 3904,
+    "restored_content_sha256": "11e860d47d0f53ff34788d8e8d6bdddc92ac1622e7ec076410f9d5162f38ad07",
+    "matches_library_record": true
+  },
+  "validation": {
+    "state": "passed-after-repair",
+    "checks": [
+      {
+        "check": "structured-data",
+        "result": "Six Living Relationships JSON files and all XML parsed successfully. The prepared manifest contained eight nodes and four edges, the proposal queue contained four items, and Attending contained exactly three items."
+      },
+      {
+        "check": "changed-prose-policy",
+        "result": "No em dash characters were present in the prepared relational prose."
+      },
+      {
+        "check": "exact-source-integrity",
+        "result": "The initial check found a pre-existing 25-byte mutation in Kenosha Kid #3. Removing the later site-theme attribute restored the recorded 3,904 bytes and SHA-256 11e860d47d0f53ff34788d8e8d6bdddc92ac1622e7ec076410f9d5162f38ad07. All 27 exact Field, Workshop, and Library sources then matched their recorded byte lengths and SHA-256 values."
+      },
+      {
+        "check": "internal-links",
+        "result": "All 2,152 internal links resolved across 115 HTML pages."
+      },
+      {
+        "check": "reader-regression-suite",
+        "result": "All 55 reader build tests passed."
+      },
+      {
+        "check": "responsive-browser",
+        "result": "Attending, Living Relationships, the dated tending record, the archived arrangement, and the restored artwork passed 10 desktop and mobile browser checks with psychedelic defaults where applicable, no horizontal overflow, reduced-motion handling, keyboard focus on site pages, and no page errors."
+      },
+      {
+        "check": "distribution-archive",
+        "result": "The same-origin mirror archive was rebuilt and verified without repository internals or recursive archive inclusion."
+      }
+    ],
+    "initial_failure_scope": "pre-existing-public-source-conflict",
+    "stop_required": false
+  },
+  "unresolved_questions": [
+    "Can an authorized edition end while its public algorithm remains independently copyable and renderable?",
+    "Which infrastructure-independent techniques transfer to a Bitcoin-based press without importing minting or marketplace assumptions?"
+  ],
+  "public_change": true,
+  "proposed_public_change": true,
+  "run_state": "published",
+  "valid_no_op": false,
+  "human_review_required": false
+}
