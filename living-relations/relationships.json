@@ -5,7 +5,10 @@
   "curation": {
     "status": "model-proposed",
     "ratification": "Brad Necyk may ratify, revise, refuse, or leave any relation unresolved.",
-    "public_limit": 3
+    "public_limit": 3,
+    "publication_authority": "office-autonomous",
+    "governance": "living-relations/governance.json",
+    "ratification_is_distinct_from_publication": true
   },
   "nodes": [
     {
