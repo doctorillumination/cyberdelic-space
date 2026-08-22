@@ -1,0 +1,62 @@
+{
+  "schema": "https://cyberdelic.space/schemas/living-relations-governance-v1.json",
+  "authority_id": "OFFICE-PUBLICATION-AUTHORITY",
+  "version": "1.0",
+  "effective_at": "2026-08-22T00:00:00-07:00",
+  "authorized_by": "Brad Necyk",
+  "status": "active",
+  "publication_requires_case_by_case_approval": false,
+  "ratification_is_distinct_from_publication": true,
+  "offices": [
+    "OFFICE-CARTOGRAPHER",
+    "OFFICE-GARDENER"
+  ],
+  "autonomous_write_paths": [
+    "living-relations/inbox.json",
+    "living-relations/proposals.json",
+    "living-relations/relationships.json",
+    "living-relations/audits/*.json",
+    "project/cyberdelic-os/offices/**",
+    "project/cyberdelic-os/attending/**",
+    "project/cyberdelic-os/relations/**",
+    "sitemap.xml#office-attending-relations-routes-only",
+    "cyberdelic-space.zip"
+  ],
+  "human_locked_paths": [
+    "living-content/cyberdelic-os/offices/**",
+    "living-relations/governance.json",
+    ".codex/automations/daily-cyberdelic-tending"
+  ],
+  "prohibited_write_paths": [
+    "**/* outside autonomous_write_paths",
+    "content/**",
+    "living-content/**",
+    "project/cyberdelic-os/field-notes/**",
+    "project/cyberdelic-os/instruments/**",
+    "project/cyberdelic-os/builder-notes/**",
+    "project/cyberdelic-os/artifacts/**",
+    "project/cyberdelic-os/correspondence/**",
+    "library.json",
+    "field.json",
+    "workshop.json",
+    "living-library.json",
+    "projects.json"
+  ],
+  "mechanical_exceptions": {
+    "sitemap": "Only add, update, or remove URLs inside the office, attending, and relations routes.",
+    "mirror": "Rebuild deterministically after every validated autonomous publication."
+  },
+  "conditions": {
+    "max_cartographer_candidates": 3,
+    "max_gardener_changes": 3,
+    "max_attending_items": 3,
+    "proposals_must_be_visibly_labelled": true,
+    "primary_sources_required": true,
+    "source_fact_and_inference_separated": true,
+    "exact_sources_must_verify": true,
+    "validation_required_before_merge": true,
+    "production_verification_required": true,
+    "external_contact_allowed": false
+  },
+  "authority_source": "living-content/cyberdelic-os/offices/publication-authority-v1.md"
+}

@@ -1,0 +1,34 @@
+{
+  "schema": "https://cyberdelic.space/schemas/living-relations-governance-audit-v1.json",
+  "audit_id": "GOV-2026-08-22-001",
+  "recorded_at": "2026-08-22T12:11:05-07:00",
+  "event": "office-publication-authority-established",
+  "authorized_by": "Brad Necyk",
+  "authority": {
+    "id": "OFFICE-PUBLICATION-AUTHORITY",
+    "version": "1.0",
+    "source": "living-content/cyberdelic-os/offices/publication-authority-v1.md",
+    "source_sha256": "93c81d32151454498075c78e042f3dd277399412790a31e614dd55cbd82792d2",
+    "governance": "living-relations/governance.json"
+  },
+  "decision": "The Cartographer and Gardener may publish validated work inside Offices, Attending, and Living Relationships without case-by-case approval. Publication remains distinct from ratification.",
+  "scope": {
+    "autonomous": [
+      "project/cyberdelic-os/offices/**",
+      "project/cyberdelic-os/attending/**",
+      "project/cyberdelic-os/relations/**",
+      "bounded relational metadata and audits under living-relations/**",
+      "required sitemap entries and deterministic mirror"
+    ],
+    "human_locked": [
+      "the authority source",
+      "office charter sources",
+      "governance.json",
+      "automation permissions"
+    ],
+    "outside_authority": "Every other Cyberdelic OS section and every claim involving rights, authorship, identity, chain evidence, exact hashes, or ratification history."
+  },
+  "historical_sources_preserved": true,
+  "publication_requires_case_by_case_approval": false,
+  "ratification_is_distinct_from_publication": true
+}
