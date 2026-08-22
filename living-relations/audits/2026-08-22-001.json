@@ -1,0 +1,139 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-08-22-001",
+  "run_type": "scheduled-governed-run",
+  "started_at": "2026-08-22T07:07:22-07:00",
+  "completed_at": "2026-08-22T07:21:44-07:00",
+  "repository": {
+    "branch": "codex/tending-2026-08-22",
+    "starting_commit": "af9ab08643f9505fee73c07f2c49edf555a3b0f9",
+    "pull_request": "https://github.com/doctorillumination/cyberdelic-space/pull/15",
+    "pull_request_state": "ready-review",
+    "publication_action": "validated-update-authorized-for-publication"
+  },
+  "automation": {
+    "id": "daily-cyberdelic-tending",
+    "name": "Daily Cyberdelic Tending",
+    "status": "active",
+    "schedule": "Daily at 7:00 AM America/Vancouver",
+    "next_scheduled_run": "2026-08-23T07:00:00-07:00"
+  },
+  "office_versions": {
+    "cartographer": "0.1",
+    "gardener": "0.1"
+  },
+  "inputs": {
+    "inbox_items": 0,
+    "declared_question": "Which infrastructure-independent techniques transfer to a Bitcoin-based press without importing minting or marketplace assumptions?",
+    "internal_region": [
+      {
+        "id": "cyberdelic-os:fn-33",
+        "title": "The Plate and the Pull"
+      },
+      {
+        "id": "cyberdelic-os:fn-34",
+        "title": "The Deed and the Blot"
+      },
+      {
+        "id": "cyberdelic-os:a-001",
+        "title": "Cyberdelic.space"
+      }
+    ],
+    "external_region": [
+      "external:art-blocks"
+    ]
+  },
+  "cartographer": {
+    "state": "valid-no-proposal",
+    "candidate_limit": 3,
+    "candidates_created": [],
+    "sources_checked": [
+      {
+        "title": "Art Blocks Protocol Overview",
+        "url": "https://docs.artblocks.io/protocol/overview/",
+        "source_kind": "official-protocol-documentation",
+        "checked_at": "2026-08-22T07:15:00-07:00"
+      },
+      {
+        "title": "The Art Blocks Generator",
+        "url": "https://docs.artblocks.io/protocol/on-chain-generator/",
+        "source_kind": "official-protocol-documentation",
+        "checked_at": "2026-08-22T07:15:00-07:00"
+      },
+      {
+        "title": "Core Contract (V3)",
+        "url": "https://docs.artblocks.io/developer/core-contract/",
+        "source_kind": "official-developer-documentation",
+        "checked_at": "2026-08-22T07:15:00-07:00"
+      }
+    ],
+    "source_fact_and_inference_separated": true,
+    "private_material_read": false,
+    "external_contact_performed": false,
+    "no_proposal_reason": "The existing Art Blocks node already bounds the inquiry. Adding another platform would increase breadth without improving the evidence or clarifying the relation."
+  },
+  "gardener": {
+    "state": "proposed",
+    "cartographer_proposals_considered": [
+      "REL-P-000003",
+      "REL-P-000004"
+    ],
+    "changes": [
+      {
+        "kind": "evidence-amendment",
+        "proposal_id": "REL-P-000005",
+        "decision": "Preserve REL-P-000003 and append a dated amendment clarifying that Art Blocks dependency durability spans fully on-chain material, decentralized storage, and a small remainder of widely distributed CDN packages."
+      },
+      {
+        "kind": "public-evidence-record",
+        "decision": "Correct the generated August 21 source summary, add a linked August 22 evidence record, and update the Living Relationships index without changing the finite Attending arrangement."
+      }
+    ],
+    "manifest_changed": false,
+    "attending_arrangement_changed": false,
+    "exact_publication_sources_changed": false,
+    "decision_reason": "The clarification materially deepens the evidence boundary while leaving the work, relation status, and current question unchanged."
+  },
+  "validation": {
+    "state": "passed",
+    "checks": [
+      {
+        "check": "structured-data",
+        "result": "All repository JSON files and XML documents parsed successfully. The proposal queue contains five items and Attending contains exactly three items."
+      },
+      {
+        "check": "exact-source-integrity",
+        "result": "All 27 exact Field, Workshop, and Library sources matched their recorded byte lengths and SHA-256 values."
+      },
+      {
+        "check": "internal-links",
+        "result": "All 2,171 internal links resolved across 116 HTML pages."
+      },
+      {
+        "check": "reader-regression-suite",
+        "result": "All 55 reader build tests passed."
+      },
+      {
+        "check": "responsive-browser",
+        "result": "Attending, Living Relationships, and the August 21 and August 22 tending pages passed eight desktop and mobile browser checks with psychedelic defaults, no horizontal overflow, reduced-motion handling, keyboard focus, and no page errors."
+      },
+      {
+        "check": "changed-prose-policy",
+        "result": "No em dash characters were added."
+      },
+      {
+        "check": "distribution-archive",
+        "result": "The same-origin mirror archive was rebuilt and verified without repository internals or recursive archive inclusion."
+      }
+    ]
+  },
+  "unresolved_questions": [
+    "Which dependencies must be carried inside a generative plate for the work to remain reconstructable without privileged infrastructure?",
+    "Can an authorized edition end while its public algorithm remains independently copyable and renderable?"
+  ],
+  "public_change": true,
+  "proposed_public_change": true,
+  "run_state": "published",
+  "valid_no_op": false,
+  "human_review_required": false
+}
