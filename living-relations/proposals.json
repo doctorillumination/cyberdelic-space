@@ -1,7 +1,7 @@
 {
   "schema": "https://cyberdelic.space/schemas/relationship-proposals-v1.json",
-  "updated_at": "2026-08-21T16:08:00+00:00",
-  "count": 4,
+  "updated_at": "2026-08-22T14:20:00+00:00",
+  "count": 5,
   "items": [
     {
       "proposal_id": "REL-P-000001",
@@ -142,6 +142,39 @@
         "What survives when a generative artwork's original interface and marketplace disappear?"
       ],
       "introduced_by": "OFFICE-CARTOGRAPHER",
+      "office_version": "0.1"
+    },
+    {
+      "proposal_id": "REL-P-000005",
+      "proposal_kind": "evidence-amendment",
+      "amends": "REL-P-000003",
+      "source_node": "external:art-blocks",
+      "target_node": "cyberdelic-os:fn-33",
+      "revision_scope": "dependency-durability",
+      "source_facts": [
+        {
+          "claim": "The Art Blocks protocol overview states that project scripts, token hashes, and dependency libraries are stored on Ethereum so works can be reconstructed after the company or service disappears.",
+          "url": "https://docs.artblocks.io/protocol/overview/",
+          "checked_at": "2026-08-22T07:15:00-07:00"
+        },
+        {
+          "claim": "The technical generator documentation qualifies that approximately 90 percent of flagship projects are supported fully on-chain, while the remaining projects reference widely distributed CDN packages.",
+          "url": "https://docs.artblocks.io/protocol/on-chain-generator/",
+          "checked_at": "2026-08-22T07:15:00-07:00"
+        },
+        {
+          "claim": "The core contract documentation states that Engine Flex may reference assets on IPFS, Arweave, BytecodeStorage, or the Art Blocks Dependency Registry while keeping the generative script on-chain.",
+          "url": "https://docs.artblocks.io/developer/core-contract/",
+          "checked_at": "2026-08-22T07:15:00-07:00"
+        }
+      ],
+      "gardener_interpretation": "Art Blocks durability is a spectrum rather than one uniform storage condition. Its strongest examples support infrastructure-independent reconstruction, while other projects retain external dependency paths. This clarification strengthens the evidence boundary without weakening the possible technical adjacency to FN-33.",
+      "epistemic_status": "strong",
+      "review_state": "proposed",
+      "unresolved_questions": [
+        "Which dependencies must be carried inside a generative plate for the work to remain reconstructable without privileged infrastructure?"
+      ],
+      "introduced_by": "OFFICE-GARDENER",
       "office_version": "0.1"
     }
   ]
