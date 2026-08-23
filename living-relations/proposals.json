@@ -1,7 +1,7 @@
 {
   "schema": "https://cyberdelic.space/schemas/relationship-proposals-v1.json",
-  "updated_at": "2026-08-22T14:20:00+00:00",
-  "count": 5,
+  "updated_at": "2026-08-23T15:56:00+00:00",
+  "count": 7,
   "items": [
     {
       "proposal_id": "REL-P-000001",
@@ -175,6 +175,76 @@
         "Which dependencies must be carried inside a generative plate for the work to remain reconstructable without privileged infrastructure?"
       ],
       "introduced_by": "OFFICE-GARDENER",
+      "office_version": "0.1"
+    },
+    {
+      "proposal_id": "REL-P-000006",
+      "proposal_kind": "external-node",
+      "source_node": "external:webrecorder-wacz",
+      "target_node": "cyberdelic-os:fn-33",
+      "node": {
+        "id": "external:webrecorder-wacz",
+        "kind": "specification",
+        "title": "Web Archive Collection Zipped (WACZ)",
+        "canonical_url": "https://specs.webrecorder.net/wacz/1.2.0/",
+        "repository_url": "https://github.com/webrecorder/specs",
+        "description": "A Webrecorder packaging specification for portable web archives that carries recorded HTTP resources, indexes, entry pages, contextual metadata, and file fixity inside a ZIP container designed for static hosting and browser replay."
+      },
+      "introduced_by": "OFFICE-CARTOGRAPHER",
+      "introduced_through": "declared-question",
+      "inquiry": "Which dependencies must be carried inside a generative plate for the work to remain reconstructable without privileged infrastructure?",
+      "source_facts": [
+        {
+          "claim": "The WACZ 1.2.0 specification defines a portable ZIP package containing recorded web resources, indexes, page entry points, and contextual metadata so a web archive can move between storage systems and be hosted as a static document.",
+          "url": "https://specs.webrecorder.net/wacz/1.2.0/",
+          "checked_at": "2026-08-23T08:56:00-07:00"
+        },
+        {
+          "claim": "The specification requires the package manifest to list paths, sizes, and fixity for contained files, and permits a digest record that hashes the manifest and therefore the package contents.",
+          "url": "https://github.com/webrecorder/specs/blob/main/wacz/1.2.0/index.md",
+          "checked_at": "2026-08-23T08:56:00-07:00"
+        },
+        {
+          "claim": "The maintained specification repository describes WACZ as one of several interoperable web-archiving standards developed by the Webrecorder community.",
+          "url": "https://github.com/webrecorder/specs",
+          "checked_at": "2026-08-23T08:56:00-07:00"
+        }
+      ],
+      "cartographer_inference": "WACZ is sufficiently documented to enter review as a packaging precedent for carrying renderable resources, context, indexes, and fixity beyond one hosting service. It is not a generative-art protocol and does not by itself preserve edition lineage, execution semantics, or authenticity. This proposal does not imply endorsement, partnership, or architectural equivalence.",
+      "epistemic_status": "strong",
+      "review_state": "proposed",
+      "unresolved_questions": [
+        "Could a generative plate use a similarly portable manifest while remaining native to its own execution and lineage model?"
+      ],
+      "office_version": "0.1"
+    },
+    {
+      "proposal_id": "REL-P-000007",
+      "proposal_kind": "relationship-edge",
+      "source_node": "external:webrecorder-wacz",
+      "target_node": "cyberdelic-os:fn-33",
+      "relation_type": "technical-adjacency",
+      "source_facts": [
+        {
+          "claim": "WACZ packages captured web resources with indexes, contextual metadata, and fixity so the package can be copied, statically hosted, and selectively replayed in a browser through range requests.",
+          "url": "https://specs.webrecorder.net/wacz/1.2.0/",
+          "checked_at": "2026-08-23T08:56:00-07:00"
+        },
+        {
+          "claim": "Field Note 33 asks how a generative press can keep its public algorithm and rendering encounter reconstructable after its original catalog, renderer, storefront, and company disappear.",
+          "source": "living-content/cyberdelic-os/fn-s0-006/v000001.md",
+          "locator": "A Press, Not a Platform"
+        }
+      ],
+      "cartographer_inference": "WACZ and FN-33 share a technical concern with carrying enough material and context for a browser encounter to survive its first venue. Their purposes remain different. WACZ records and replays HTTP exchanges, while FN-33 imagines an executable generative plate, an authorized lineage of pulls, and a verifiable end to an edition. The packaging pattern is adjacent, not equivalent.",
+      "epistemic_status": "possible",
+      "lifecycle_state": "emerging",
+      "review_state": "proposed",
+      "unresolved_questions": [
+        "Which resources, manifests, indexes, and execution assumptions must travel with a generative plate?",
+        "How can portability support reconstruction without making the package itself the authority for edition lineage?"
+      ],
+      "introduced_by": "OFFICE-CARTOGRAPHER",
       "office_version": "0.1"
     }
   ]
