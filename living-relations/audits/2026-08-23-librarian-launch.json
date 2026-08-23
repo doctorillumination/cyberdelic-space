@@ -1,0 +1,47 @@
+{
+  "schema": "https://cyberdelic.space/schemas/living-relations-audit-v1.json",
+  "run_id": "LIBRARIAN-LAUNCH-2026-08-23",
+  "run_at": "2026-08-23T12:00:00-07:00",
+  "run_kind": "human-authorized-office-setup",
+  "authorized_by": "Brad Necyk",
+  "office": "OFFICE-LIBRARIAN",
+  "office_version": "0.1",
+  "authority": {
+    "version": "1.1",
+    "source": "living-content/cyberdelic-os/offices/publication-authority-v2.md",
+    "source_sha256": "6e3f8d25ace5dfa2505989d2465ea04068924ab2f70adc4f409aa81638b57479",
+    "governance": "living-relations/governance.json"
+  },
+  "automation": {
+    "id": "daily-cyberdelic-tending",
+    "status": "active",
+    "schedule": "Daily at 7:00 AM America/Vancouver",
+    "order": ["OFFICE-CARTOGRAPHER", "OFFICE-GARDENER", "OFFICE-LIBRARIAN", "validation"]
+  },
+  "decision": "launch",
+  "records_examined": ["cyberdelic-os:fn-25", "cyberdelic-os:fn-29", "cyberdelic-os:fn-33", "external:polis", "external:art-blocks", "external:webrecorder-wacz"],
+  "changes": [
+    "Created the cumulative living catalog with six source-grounded seed records.",
+    "Added the Librarian as the third bounded office in the daily tending order.",
+    "Added a finite, local, deterministic, non-personalized directory search to the public Library."
+  ],
+  "evidence_checked": ["living-content/cyberdelic-os/fn-s0-001/v000001.md", "living-content/cyberdelic-os/fn-s0-002/v000001.md", "living-content/cyberdelic-os/fn-s0-006/v000001.md", "living-relations/proposals.json", "living-relations/relationships.json"],
+  "limits": {"seed_records": 6, "daily_catalog_changes": 3, "public_search_results": 6, "default_library_results": 3},
+  "validation": {
+    "state": "passed",
+    "checks": [
+      "All repository JSON and XML documents parsed successfully.",
+      "All 2,498 internal asset and navigation links resolved before the deterministic mirror rebuild.",
+      "All 26 single-source exact pages matched their displayed SHA-256 values, including the Librarian charter.",
+      "The Library loaded with the psychedelic default and no horizontal overflow at a 1,280 pixel viewport.",
+      "The default Library remained finite, and directory queries for collective sensemaking and portable archives returned the expected internal and external paths.",
+      "The directory remained keyboard-operable, locally searched, deterministic, non-personalized, and bounded to six results.",
+      "The mirror archive rebuilt twice to an identical SHA-256 and passed its compressed-data integrity check.",
+      "No em dash characters were added."
+    ]
+  },
+  "publication_is_not_ratification": true,
+  "external_contact": false,
+  "private_data_ingested": false,
+  "valid_no_op": false
+}

@@ -425,6 +425,61 @@ footer.site p { max-width: var(--measure); margin: .4rem 0; }
 .catalog-head { padding-top: 0; margin-bottom: 2.2rem; }
 .catalog-head h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: 0; }
 
+.library-directory {
+  margin: 0 0 clamp(5rem, 10vw, 8rem); padding-top: 2.4rem;
+  border-top: 1px solid var(--line);
+  scroll-margin-top: calc(var(--site-header-offset) + 1rem);
+}
+.catalog-head > p:last-child {
+  max-width: 44rem; margin: 1rem 0 0; color: var(--ink-2);
+  font: 400 1rem/1.65 var(--font-editorial);
+}
+.directory-search { max-width: 52rem; margin: 0 0 1rem; }
+.directory-search label {
+  display: block; margin: 0 0 .55rem; color: var(--ink-2);
+  font: .66rem/1.4 var(--font-mono); letter-spacing: var(--tracking);
+  text-transform: uppercase;
+}
+.directory-search-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; }
+.directory-search input, .directory-search button {
+  min-height: 3.2rem; border: 1px solid var(--line-2); border-radius: 0;
+  background: var(--surface); color: var(--ink);
+}
+.directory-search input { min-width: 0; padding: .75rem .9rem; font: inherit; }
+.directory-search button {
+  margin-left: -1px; padding: .75rem 1rem; cursor: pointer;
+  font: .65rem/1.2 var(--font-mono); letter-spacing: var(--tracking);
+  text-transform: uppercase;
+}
+.directory-search button:hover { color: var(--signal); border-color: var(--signal); }
+.directory-status {
+  margin: 0 0 1.25rem; color: var(--ink-2);
+  font: .64rem/1.5 var(--font-mono); letter-spacing: .03em;
+}
+.directory-results {
+  list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line);
+}
+.directory-results li {
+  display: grid; grid-template-columns: minmax(13rem, .65fr) minmax(0, 1fr);
+  gap: .75rem 2rem; padding: 1.35rem 0; border-bottom: 1px solid var(--line);
+}
+.directory-result-head { min-width: 0; }
+.directory-result-kind {
+  margin: 0 0 .45rem; color: var(--signal);
+  font: .56rem/1.4 var(--font-mono); letter-spacing: var(--tracking);
+}
+.directory-results h3 { margin: 0; font: 400 1.3rem/1.25 var(--font-editorial); }
+.directory-results h3 a { text-decoration: none; }
+.directory-results li > p { margin: 0; font-family: var(--font-editorial); line-height: 1.6; }
+.directory-result-subjects {
+  grid-column: 2; color: var(--ink-2);
+  font: .6rem/1.5 var(--font-mono) !important; letter-spacing: .03em;
+}
+.directory-boundary {
+  max-width: 52rem; margin: 1.25rem 0 0; color: var(--ink-2);
+  font: .64rem/1.6 var(--font-mono);
+}
+
 :root[data-theme="psychedelic"] .field-stage::before {
   opacity: .6;
   background:
@@ -1673,6 +1728,10 @@ table.braid tbody tr:hover td .mid::before{background:var(--line-2);}
   .field-note-card-copy { grid-column: 1; }
   .field-note-card-arrow { grid-column: 2; grid-row: 1 / span 2; }
   .living-row { grid-template-columns: 1fr; gap: .6rem; }
+  .directory-search-row { grid-template-columns: 1fr; }
+  .directory-search button { margin: -1px 0 0; }
+  .directory-results li { grid-template-columns: 1fr; gap: .65rem; }
+  .directory-result-subjects { grid-column: 1; }
   .living-badges { justify-content: flex-start; }
   .living-aside {
     border-left: 0; border-top: 1px solid var(--line); padding: 1.5rem 0 0;

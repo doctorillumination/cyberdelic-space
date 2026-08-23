@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Security-Policy" content="default-src &#x27;none&#x27;; script-src &#x27;self&#x27;; style-src &#x27;self&#x27;; img-src &#x27;self&#x27; data:; font-src &#x27;self&#x27;; connect-src &#x27;self&#x27; https://mempool.space https://blockstream.info https://ordinals.com; frame-src &#x27;self&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;">
 <meta name="description" content="A living library of evolving and inscribed works.">
 <title>Library · cyberdelic.space</title>
-<link rel="stylesheet" href="reader.css?v=4">
+<link rel="stylesheet" href="reader.css?v=7">
 <script src="theme.js"></script>
 <link rel="canonical" href="https://cyberdelic.space/">
 </head>
@@ -55,6 +55,26 @@
   <noscript><p class="field-no-script">The drifting library needs JavaScript.
   Every inscription remains available in the <a href="ledger/">ledger</a>, and
   living publications remain available through <a href="projects/">Projects</a>.</p></noscript>
+</section>
+<section class="library-directory" aria-labelledby="library-directory-title">
+  <header class="catalog-head">
+    <p class="instrument-label">LIBRARIAN DIRECTORY · SLOW SEARCH</p>
+    <h2 id="library-directory-title">Look for a path through the deeper archive</h2>
+    <p>The three-work aperture above remains finite. This separate directory searches the cumulative catalog through titles, summaries, subjects, ordinary-language synonyms, questions, and proposed relationships.</p>
+  </header>
+  <form class="directory-search" role="search" data-directory-form>
+    <label for="directory-query">Search the tended catalog</label>
+    <div class="directory-search-row">
+      <input id="directory-query" type="search" autocomplete="off" spellcheck="false"
+             placeholder="Try collective sensemaking, portable archives, or living library"
+             data-directory-query>
+      <button type="submit">Find paths</button>
+    </div>
+  </form>
+  <p class="directory-status" role="status" aria-live="polite" data-directory-status>The catalog is loading.</p>
+  <ol class="directory-results" data-directory-results hidden></ol>
+  <p class="directory-boundary">Search stays in this page. It uses no account, visitor history, profile, popularity score, or behavioural tracking. Results are bounded to six paths and are not recommendations.</p>
+  <noscript><p class="field-no-script"><a href="living-relations/catalog.json">Open the catalog directly</a>. Directory search needs JavaScript, but its public source remains readable without it.</p></noscript>
 </section>
 <div class="library-source" hidden aria-hidden="true">
 <nav class="rail" aria-label="Browse the library by facet">
@@ -186,5 +206,5 @@
        <a href="privacy/">Privacy</a></p>
   </div>
 </footer>
-<script src="library.js?v=4" defer></script></body>
+<script src="library.js?v=5" defer></script></body>
 </html>
