@@ -1,0 +1,165 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-08-23-001",
+  "run_type": "scheduled-governed-run",
+  "started_at": "2026-08-23T07:03:13-07:00",
+  "completed_at": null,
+  "repository": {
+    "branch": "codex/tending-2026-08-23",
+    "starting_commit": "1c93bfe19c706ef62d3c640a181f12040aac8369",
+    "pull_request": null,
+    "pull_request_state": "pending-validation",
+    "publication_action": "pending-validation"
+  },
+  "automation": {
+    "id": "daily-cyberdelic-tending",
+    "name": "Daily Cyberdelic Tending",
+    "status": "active",
+    "schedule": "Daily at 7:00 AM America/Vancouver",
+    "next_scheduled_run": "2026-08-24T07:00:00-07:00"
+  },
+  "office_versions": {
+    "cartographer": "0.1",
+    "gardener": "0.1",
+    "publication_authority": "1.0"
+  },
+  "inputs": {
+    "inbox_items": 0,
+    "declared_question": "Which dependencies must be carried inside a generative plate for the work to remain reconstructable without privileged infrastructure?",
+    "internal_region": [
+      {
+        "id": "cyberdelic-os:fn-33",
+        "title": "The Plate and the Pull"
+      },
+      {
+        "id": "cyberdelic-os:a-001",
+        "title": "Cyberdelic.space"
+      }
+    ],
+    "external_region": [
+      "external:webrecorder-wacz"
+    ]
+  },
+  "cartographer": {
+    "state": "proposed",
+    "candidate_limit": 3,
+    "candidates_created": [
+      "REL-P-000006",
+      "REL-P-000007"
+    ],
+    "external_node": "external:webrecorder-wacz",
+    "sources_checked": [
+      {
+        "title": "Web Archive Collection Zipped 1.2.0",
+        "url": "https://specs.webrecorder.net/wacz/1.2.0/",
+        "source_kind": "official-specification",
+        "checked_at": "2026-08-23T08:56:00-07:00"
+      },
+      {
+        "title": "WACZ 1.2.0 versioned source",
+        "url": "https://github.com/webrecorder/specs/blob/main/wacz/1.2.0/index.md",
+        "source_kind": "maintained-specification-source",
+        "checked_at": "2026-08-23T08:56:00-07:00"
+      },
+      {
+        "title": "Webrecorder Specifications",
+        "url": "https://github.com/webrecorder/specs",
+        "source_kind": "maintained-source-repository",
+        "checked_at": "2026-08-23T08:56:00-07:00"
+      }
+    ],
+    "source_facts": [
+      {
+        "claim": "WACZ packages recorded resources, indexes, entry pages, and contextual metadata into a portable ZIP that can be statically hosted and selectively replayed through range requests.",
+        "source": "https://specs.webrecorder.net/wacz/1.2.0/"
+      },
+      {
+        "claim": "Its manifest records file paths, byte sizes, and fixity, while an optional digest record can bind a hash to the manifest and its declared contents.",
+        "source": "https://github.com/webrecorder/specs/blob/main/wacz/1.2.0/index.md"
+      }
+    ],
+    "inference": "WACZ may offer a packaging precedent for carrying the resources, context, indexes, and fixity needed to reconstruct a browser encounter. It does not define a generative execution model, edition lineage, or authenticity by itself.",
+    "uncertainty": "The adjacency is interpretive because WACZ records HTTP exchanges for replay while FN-33 describes executable generative structure and authorized pulls.",
+    "attribution": "All external factual descriptions are attributed to Webrecorder's public specification and maintained repository.",
+    "source_fact_and_inference_separated": true,
+    "private_material_read": false,
+    "external_contact_performed": false,
+    "stop_reason": "One specification node and one possible edge sufficiently answered the bounded inquiry. Further discovery would add breadth without improving this run."
+  },
+  "gardener": {
+    "state": "proposed",
+    "cartographer_proposals_considered": [
+      "REL-P-000006",
+      "REL-P-000007"
+    ],
+    "decisions": [
+      {
+        "kind": "proposal-queue",
+        "decision": "Keep the WACZ node strongly evidenced while the adjacency to FN-33 remains possible, emerging, and proposed."
+      },
+      {
+        "kind": "finite-attending-surface",
+        "decision": "Place the WACZ packaging question beside FN-33 and archive the prior Art Blocks arrangement without changing either proposal's review state."
+      },
+      {
+        "kind": "manifest-boundary",
+        "decision": "Do not add the external node or edge to relationships.json. Public proposal visibility remains distinct from ratification and from the relational manifest."
+      }
+    ],
+    "changes": [
+      "Appended REL-P-000006 and REL-P-000007 to the proposal queue.",
+      "Published one dated tending record and rotated the finite three-item Attending arrangement.",
+      "Archived the prior Art Blocks arrangement and updated only the relevant sitemap routes."
+    ],
+    "manifest_changed": false,
+    "attending_arrangement_changed": true,
+    "exact_publication_sources_changed": false,
+    "decision_reason": "The portable package offers a materially different preservation layer from the chain and protocol comparisons already mapped, while preserving uncertainty about its transfer to generative publication."
+  },
+  "validation": {
+    "state": "passed",
+    "checks": [
+      {
+        "check": "structured-data",
+        "result": "All repository JSON and XML documents parsed successfully. The proposal queue contains seven items, the relational manifest remains unchanged at eight nodes and four edges, and Attending contains exactly three items."
+      },
+      {
+        "check": "exact-source-integrity",
+        "result": "All 27 indexed Field, Workshop, and Library sources matched their recorded byte lengths and SHA-256 values."
+      },
+      {
+        "check": "internal-links",
+        "result": "All 2,758 links resolved across 119 HTML pages."
+      },
+      {
+        "check": "reader-regression-suite",
+        "result": "All 66 reader build tests passed."
+      },
+      {
+        "check": "responsive-browser",
+        "result": "Attending, Living Relationships, the August 23 tending record, and the archived Art Blocks arrangement passed eight desktop and phone checks with psychedelic defaults, no horizontal overflow, reduced-motion handling, keyboard-focusable main regions, and no page errors."
+      },
+      {
+        "check": "changed-prose-policy",
+        "result": "No em dash characters were added."
+      },
+      {
+        "check": "publication-boundary",
+        "result": "Every changed path is permitted by governance.json. No exact source, global index, application file, ratification state, or human-locked control changed."
+      },
+      {
+        "check": "distribution-archive",
+        "result": "The mirror archive rebuilt twice to the same SHA-256, contained 192 files including today's audit and public pages, and excluded repository internals and recursive archive inclusion."
+      }
+    ]
+  },
+  "unresolved_questions": [
+    "Which resources, manifests, indexes, and execution assumptions must travel with a generative plate?",
+    "How can portability support reconstruction without making the package itself the authority for edition lineage?"
+  ],
+  "public_change": true,
+  "proposed_public_change": true,
+  "run_state": "validated",
+  "valid_no_op": false,
+  "human_review_required": false
+}
