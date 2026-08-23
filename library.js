@@ -102,8 +102,122 @@
     }
   }
 
-  function startLibrary(catalog) {
+  function addLibrarianDirectory(catalog) {
+    var form = document.querySelector("[data-directory-form]");
+    var input = document.querySelector("[data-directory-query]");
+    var status = document.querySelector("[data-directory-status]");
+    var results = document.querySelector("[data-directory-results]");
+    if (!form || !input || !status || !results) return;
+
+    var items = catalog && Array.isArray(catalog.items) ? catalog.items : [];
+    var limit = catalog && catalog.curation && catalog.curation.public_result_limit
+      ? catalog.curation.public_result_limit : 6;
+
+    function normalize(value) {
+      return String(value || "").toLowerCase().normalize("NFKD")
+        .replace(/[\u0300-\u036f]/g, " ")
+        .replace(/[^a-z0-9]+/g, " ").trim();
+    }
+
+    function searchable(item) {
+      var related = (item.related || []).map(function (relation) {
+        return [relation.title, relation.relation_type].join(" ");
+      });
+      return normalize([
+        item.title, item.summary, item.record_kind,
+        (item.subjects || []).join(" "),
+        (item.search_terms || []).join(" "),
+        (item.questions || []).join(" "), related.join(" ")
+      ].join(" "));
+    }
+
+    function score(item, phrase, terms) {
+      var title = normalize(item.title);
+      var subjects = normalize((item.subjects || []).join(" "));
+      var synonyms = normalize((item.search_terms || []).join(" "));
+      var haystack = searchable(item);
+      function contains(text, term) {
+        return text.indexOf(term) !== -1 ||
+          (term.length > 3 && term.slice(-1) === "s" &&
+            text.indexOf(term.slice(0, -1)) !== -1);
+      }
+      if (!terms.every(function (term) { return contains(haystack, term); })) {
+        return -1;
+      }
+      var value = haystack.indexOf(phrase) !== -1 ? 12 : 0;
+      if (title.indexOf(phrase) !== -1) value += 20;
+      terms.forEach(function (term) {
+        if (contains(title, term)) value += 8;
+        if (contains(subjects, term)) value += 5;
+        if (contains(synonyms, term)) value += 3;
+      });
+      return value;
+    }
+
+    function render(query) {
+      var phrase = normalize(query);
+      results.textContent = "";
+      if (phrase.length < 2) {
+        results.hidden = true;
+        status.textContent = items.length
+          ? items.length + " tended paths are ready. Enter at least two characters."
+          : "The tended catalog is unavailable.";
+        return;
+      }
+      var terms = phrase.split(/\s+/).filter(Boolean);
+      var matches = items.map(function (item, index) {
+        return { item: item, score: score(item, phrase, terms), index: index };
+      }).filter(function (match) {
+        return match.score >= 0;
+      }).sort(function (a, b) {
+        return b.score - a.score || a.index - b.index;
+      }).slice(0, limit);
+
+      matches.forEach(function (match) {
+        var item = match.item;
+        var row = document.createElement("li");
+        var head = document.createElement("div");
+        var kind = document.createElement("p");
+        var title = document.createElement("h3");
+        var link = document.createElement("a");
+        var summary = document.createElement("p");
+        var subjects = document.createElement("p");
+        var state = item.review_state === "model-proposed"
+          ? " · MODEL-PROPOSED" : "";
+        head.className = "directory-result-head";
+        kind.className = "directory-result-kind";
+        kind.textContent = String(item.record_kind || "catalog record")
+          .replace(/-/g, " ").toUpperCase() + state;
+        link.href = item.href;
+        link.textContent = item.title;
+        title.appendChild(link);
+        head.appendChild(kind);
+        head.appendChild(title);
+        summary.textContent = item.summary || "";
+        subjects.className = "directory-result-subjects";
+        subjects.textContent = (item.subjects || []).join(" · ");
+        row.appendChild(head);
+        row.appendChild(summary);
+        if (subjects.textContent) row.appendChild(subjects);
+        results.appendChild(row);
+      });
+      results.hidden = false;
+      status.textContent = matches.length
+        ? matches.length + (matches.length === 1 ? " tended path found." : " tended paths found.")
+        : "No tended path yet. A sparse directory is allowed to remain sparse.";
+    }
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      render(input.value);
+    });
+    input.addEventListener("input", function () { render(input.value); });
+    render("");
+  }
+
+  function startLibrary(catalog, librarianCatalog) {
     addLivingCatalog(catalog);
+    addLibrarianDirectory(librarianCatalog);
 
   var field = document.querySelector(".living-index");
   var choice = document.querySelector("[data-field-choice]");
@@ -1238,11 +1352,19 @@
   update(false, false, false);
   }
 
-  fetch("living-library.json?v=3", { credentials: "same-origin", cache: "no-cache" })
-    .then(function (response) {
-      if (!response.ok) throw new Error("Living library unavailable");
+  Promise.all([
+    fetch("living-library.json?v=3", { credentials: "same-origin", cache: "no-cache" })
+      .then(function (response) {
+        if (!response.ok) throw new Error("Living library unavailable");
+        return response.json();
+      }).catch(function () { return null; }),
+    fetch("living-relations/catalog.json?v=1", {
+      credentials: "same-origin", cache: "no-cache"
+    }).then(function (response) {
+      if (!response.ok) throw new Error("Living catalog unavailable");
       return response.json();
-    })
-    .then(startLibrary)
-    .catch(function () { startLibrary(null); });
+    }).catch(function () { return null; })
+  ]).then(function (catalogs) {
+    startLibrary(catalogs[0], catalogs[1]);
+  });
 }());

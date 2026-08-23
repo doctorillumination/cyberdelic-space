@@ -1,20 +1,22 @@
 {
   "schema": "https://cyberdelic.space/schemas/living-relations-governance-v1.json",
   "authority_id": "OFFICE-PUBLICATION-AUTHORITY",
-  "version": "1.0",
-  "effective_at": "2026-08-22T00:00:00-07:00",
+  "version": "1.1",
+  "effective_at": "2026-08-23T12:00:00-07:00",
   "authorized_by": "Brad Necyk",
   "status": "active",
   "publication_requires_case_by_case_approval": false,
   "ratification_is_distinct_from_publication": true,
   "offices": [
     "OFFICE-CARTOGRAPHER",
-    "OFFICE-GARDENER"
+    "OFFICE-GARDENER",
+    "OFFICE-LIBRARIAN"
   ],
   "autonomous_write_paths": [
     "living-relations/inbox.json",
     "living-relations/proposals.json",
     "living-relations/relationships.json",
+    "living-relations/catalog.json",
     "living-relations/audits/*.json",
     "project/cyberdelic-os/offices/**",
     "project/cyberdelic-os/attending/**",
@@ -49,7 +51,9 @@
   "conditions": {
     "max_cartographer_candidates": 3,
     "max_gardener_changes": 3,
+    "max_librarian_catalog_changes": 3,
     "max_attending_items": 3,
+    "max_library_search_results": 6,
     "proposals_must_be_visibly_labelled": true,
     "primary_sources_required": true,
     "source_fact_and_inference_separated": true,
@@ -58,5 +62,6 @@
     "production_verification_required": true,
     "external_contact_allowed": false
   },
-  "authority_source": "living-content/cyberdelic-os/offices/publication-authority-v1.md"
+  "authority_source": "living-content/cyberdelic-os/offices/publication-authority-v2.md",
+  "supersedes": "living-content/cyberdelic-os/offices/publication-authority-v1.md"
 }
