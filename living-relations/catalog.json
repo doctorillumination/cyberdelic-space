@@ -1,8 +1,8 @@
 {
   "schema": "https://cyberdelic.space/schemas/living-catalog-v1.json",
-  "version": "0.1",
-  "updated_at": "2026-08-23T12:00:00-07:00",
-  "count": 6,
+  "version": "0.2",
+  "updated_at": "2026-08-24T08:45:37-07:00",
+  "count": 7,
   "curation": {
     "office": "OFFICE-LIBRARIAN",
     "office_version": "0.1",
@@ -54,12 +54,12 @@
       "subjects": ["generative art", "durable publication", "independent reconstruction", "edition lineage", "Bitcoin"],
       "search_terms": ["software preservation", "executable archive", "algorithmic art", "plate", "pull", "edition", "rendering", "permanent media"],
       "questions": ["What must travel with a generative work for it to survive the disappearance of its first venue?", "Can an edition end while its public algorithm remains copyable and renderable?"],
-      "related": [{"id": "external:art-blocks", "title": "Art Blocks", "relation_type": "technical-adjacency", "review_state": "proposed"}, {"id": "external:webrecorder-wacz", "title": "Web Archive Collection Zipped (WACZ)", "relation_type": "technical-adjacency", "review_state": "proposed"}],
+      "related": [{"id": "external:art-blocks", "title": "Art Blocks", "relation_type": "technical-adjacency", "review_state": "proposed"}, {"id": "external:webrecorder-wacz", "title": "Web Archive Collection Zipped (WACZ)", "relation_type": "technical-adjacency", "review_state": "proposed"}, {"id": "external:oci-image-spec", "title": "Open Container Initiative Image Format Specification", "relation_type": "technical-adjacency", "review_state": "proposed"}],
       "evidence": [{"source": "living-content/cyberdelic-os/fn-s0-006/v000001.md", "locator": "A Press, Not a Platform; The Edition Ends. The Plate Remains."}],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
-      "last_tended_at": "2026-08-23T12:00:00-07:00"
+      "last_tended_at": "2026-08-24T08:45:37-07:00"
     },
     {
       "id": "catalog:external:polis",
@@ -111,6 +111,23 @@
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
       "last_tended_at": "2026-08-23T12:00:00-07:00"
+    },
+    {
+      "id": "catalog:external:oci-image-spec",
+      "record_kind": "external-neighbour",
+      "title": "Open Container Initiative Image Format Specification",
+      "href": "project/cyberdelic-os/relations/tending/2026-08-24/",
+      "canonical_url": "https://specs.opencontainers.org/image-spec/",
+      "summary": "A content-addressed image format that separates runnable filesystem content, execution configuration, and platform variants while binding referenced bytes through typed, sized, and verifiable descriptors.",
+      "subjects": ["execution environments", "content-addressed packaging", "runtime configuration", "software portability", "dependency manifests"],
+      "search_terms": ["OCI", "container image", "entrypoint", "filesystem layers", "runtime assumptions", "platform variants", "manifest", "digest", "reproducible execution"],
+      "questions": ["Could a generative plate distinguish immutable work content from replaceable reader and runtime configuration?", "How much of an execution environment must travel for independent reconstruction?"],
+      "related": [{"id": "cyberdelic-os:fn-33", "title": "The Plate and the Pull", "relation_type": "technical-adjacency", "review_state": "proposed"}],
+      "evidence": [{"source": "living-relations/proposals.json", "locator": "REL-P-000008 and REL-P-000009"}],
+      "epistemic_status": "possible",
+      "review_state": "model-proposed",
+      "introduced_by": "OFFICE-LIBRARIAN",
+      "last_tended_at": "2026-08-24T08:45:37-07:00"
     }
   ]
 }
