@@ -1,7 +1,7 @@
 {
   "schema": "https://cyberdelic.space/schemas/relationship-proposals-v1.json",
-  "updated_at": "2026-08-23T15:56:00+00:00",
-  "count": 7,
+  "updated_at": "2026-08-24T08:45:37-07:00",
+  "count": 9,
   "items": [
     {
       "proposal_id": "REL-P-000001",
@@ -243,6 +243,83 @@
       "unresolved_questions": [
         "Which resources, manifests, indexes, and execution assumptions must travel with a generative plate?",
         "How can portability support reconstruction without making the package itself the authority for edition lineage?"
+      ],
+      "introduced_by": "OFFICE-CARTOGRAPHER",
+      "office_version": "0.1"
+    },
+    {
+      "proposal_id": "REL-P-000008",
+      "proposal_kind": "external-node",
+      "source_node": "external:oci-image-spec",
+      "target_node": "cyberdelic-os:fn-33",
+      "node": {
+        "id": "external:oci-image-spec",
+        "kind": "specification",
+        "title": "Open Container Initiative Image Format Specification",
+        "canonical_url": "https://specs.opencontainers.org/image-spec/",
+        "versioned_source_url": "https://github.com/opencontainers/image-spec/tree/v1.1.1",
+        "repository_url": "https://github.com/opencontainers/image-spec",
+        "description": "A content-addressed image format that describes runnable filesystem layers, configuration, platform variants, and referenced content through manifests, indexes, and verifiable descriptors."
+      },
+      "introduced_by": "OFFICE-CARTOGRAPHER",
+      "introduced_through": "declared-question",
+      "inquiry": "Which resources, manifests, indexes, and execution assumptions must travel with a generative plate?",
+      "source_facts": [
+        {
+          "claim": "OCI Image Specification 1.1.1 defines an image as a manifest, an optional image index, filesystem layers, and configuration, with the goal of interoperable building, transport, and preparation for execution.",
+          "url": "https://github.com/opencontainers/image-spec/blob/v1.1.1/spec.md",
+          "checked_at": "2026-08-24T08:45:37-07:00"
+        },
+        {
+          "claim": "The versioned configuration specification separates ordered filesystem changes from execution parameters and records runtime details such as entrypoint, default arguments, environment, networking, and volumes in immutable image metadata.",
+          "url": "https://github.com/opencontainers/image-spec/blob/v1.1.1/config.md",
+          "checked_at": "2026-08-24T08:45:37-07:00"
+        },
+        {
+          "claim": "OCI content descriptors carry media type, digest, and raw byte size, and the specification directs consumers to verify retrieved bytes against the descriptor before use.",
+          "url": "https://github.com/opencontainers/image-spec/blob/v1.1.1/descriptor.md",
+          "checked_at": "2026-08-24T08:45:37-07:00"
+        },
+        {
+          "claim": "The OCI Image Layout defines an index entry point and content-addressed blob directories, while explicitly allowing referenced blobs to be absent and fulfilled by an external blob store.",
+          "url": "https://github.com/opencontainers/image-spec/blob/v1.1.1/image-layout.md",
+          "checked_at": "2026-08-24T08:45:37-07:00"
+        }
+      ],
+      "cartographer_inference": "OCI Image Specification 1.1.1 is sufficiently documented to enter review as a technical precedent for separating payload, execution parameters, platform variants, and verifiable content references. It may help make the execution assumptions of a generative plate explicit. This proposal does not imply endorsement, partnership, or architectural equivalence.",
+      "epistemic_status": "strong",
+      "review_state": "proposed",
+      "unresolved_questions": [
+        "Which execution assumptions belong inside a generative plate, and which should remain replaceable properties of a reader?",
+        "Must every referenced dependency travel with the plate, or can a verifiable reference remain sufficient?"
+      ],
+      "office_version": "0.1"
+    },
+    {
+      "proposal_id": "REL-P-000009",
+      "proposal_kind": "relationship-edge",
+      "source_node": "external:oci-image-spec",
+      "target_node": "cyberdelic-os:fn-33",
+      "relation_type": "technical-adjacency",
+      "source_facts": [
+        {
+          "claim": "OCI Image Specification 1.1.1 binds manifests, filesystem layers, configuration, and optional platform-specific indexes through content descriptors that identify referenced bytes by type, digest, and size.",
+          "url": "https://github.com/opencontainers/image-spec/tree/v1.1.1",
+          "checked_at": "2026-08-24T08:45:37-07:00"
+        },
+        {
+          "claim": "Field Note 33 asks how a public algorithm and its rendering encounter can remain reconstructable after the original catalog, renderer, storefront, and company disappear.",
+          "source": "living-content/cyberdelic-os/fn-s0-006/v000001.md",
+          "locator": "A Press, Not a Platform"
+        }
+      ],
+      "cartographer_inference": "OCI Image Specification 1.1.1 and FN-33 share a technical concern with making the contents and execution conditions of a software object portable and independently verifiable. Their purposes remain different. OCI prepares a runnable filesystem for a container runtime and may rely on external blob stores. FN-33 imagines a browser-readable generative plate, authorized pull lineage, and an edition that can verifiably end. The execution-manifest pattern is adjacent, not equivalent.",
+      "epistemic_status": "possible",
+      "lifecycle_state": "emerging",
+      "review_state": "proposed",
+      "unresolved_questions": [
+        "Could a generative plate distinguish immutable work content from replaceable reader and runtime configuration?",
+        "How much of the execution environment must be carried for reconstruction to remain meaningful rather than merely technically possible?"
       ],
       "introduced_by": "OFFICE-CARTOGRAPHER",
       "office_version": "0.1"

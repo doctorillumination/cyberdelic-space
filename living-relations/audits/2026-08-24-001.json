@@ -1,0 +1,214 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-08-24-001",
+  "run_type": "scheduled-governed-run",
+  "started_at": "2026-08-24T08:12:47-07:00",
+  "completed_at": "2026-08-24T08:55:09-07:00",
+  "repository": {
+    "branch": "codex/tending-2026-08-24",
+    "starting_commit": "b0aaed6ca5b7a8360d2877bd82f4540fc4230112",
+    "pull_request": "https://github.com/doctorillumination/cyberdelic-space/pull/19",
+    "pull_request_state": "ready-auto-publication",
+    "publication_action": "validated-autonomous-publication"
+  },
+  "automation": {
+    "id": "daily-cyberdelic-tending",
+    "name": "Daily Cyberdelic Tending",
+    "status": "active",
+    "schedule": "Daily at 7:00 AM America/Vancouver",
+    "next_scheduled_run": "2026-08-25T07:00:00-07:00"
+  },
+  "office_versions": {
+    "cartographer": "0.1",
+    "gardener": "0.1",
+    "librarian": "0.1",
+    "publication_authority": "1.1"
+  },
+  "inputs": {
+    "inbox_items": 0,
+    "declared_question": "Which resources, manifests, indexes, and execution assumptions must travel with a generative plate?",
+    "internal_region": [
+      {
+        "id": "cyberdelic-os:fn-33",
+        "title": "The Plate and the Pull"
+      }
+    ],
+    "external_region": [
+      "external:oci-image-spec"
+    ]
+  },
+  "cartographer": {
+    "state": "proposed",
+    "candidate_limit": 3,
+    "candidates_created": [
+      "REL-P-000008",
+      "REL-P-000009"
+    ],
+    "external_node": "external:oci-image-spec",
+    "sources_checked": [
+      {
+        "title": "OCI Image Specification 1.1.1",
+        "url": "https://github.com/opencontainers/image-spec/blob/v1.1.1/spec.md",
+        "source_kind": "versioned-official-specification",
+        "checked_at": "2026-08-24T08:45:37-07:00"
+      },
+      {
+        "title": "OCI Image Configuration 1.1.1",
+        "url": "https://github.com/opencontainers/image-spec/blob/v1.1.1/config.md",
+        "source_kind": "versioned-official-specification",
+        "checked_at": "2026-08-24T08:45:37-07:00"
+      },
+      {
+        "title": "OCI Content Descriptors 1.1.1",
+        "url": "https://github.com/opencontainers/image-spec/blob/v1.1.1/descriptor.md",
+        "source_kind": "versioned-official-specification",
+        "checked_at": "2026-08-24T08:45:37-07:00"
+      },
+      {
+        "title": "OCI Image Layout 1.1.1",
+        "url": "https://github.com/opencontainers/image-spec/blob/v1.1.1/image-layout.md",
+        "source_kind": "versioned-official-specification",
+        "checked_at": "2026-08-24T08:45:37-07:00"
+      }
+    ],
+    "source_facts": [
+      {
+        "claim": "OCI Image Specification 1.1.1 defines an image through a manifest, an optional index, filesystem layers, and configuration so interoperable tools can build, transport, and prepare it to run.",
+        "source": "https://github.com/opencontainers/image-spec/blob/v1.1.1/spec.md"
+      },
+      {
+        "claim": "The configuration separates ordered filesystem changes from execution parameters, while descriptors bind referenced content to a media type, digest, and byte size.",
+        "source": "https://github.com/opencontainers/image-spec/blob/v1.1.1/config.md"
+      },
+      {
+        "claim": "An OCI image layout may omit referenced blobs and rely on an external blob store to provide them.",
+        "source": "https://github.com/opencontainers/image-spec/blob/v1.1.1/image-layout.md"
+      }
+    ],
+    "inference": "The OCI image format may offer a technical precedent for distinguishing immutable work content from execution configuration and verifiable dependency references. It does not define a browser-readable generative plate, edition lineage, artistic authorship, or an authorized end to publication.",
+    "uncertainty": "The adjacency is interpretive because OCI prepares filesystem content for a container runtime, while FN-33 describes a public generative algorithm, independent reconstruction, and authorized pull lineage.",
+    "attribution": "All external factual descriptions are attributed to the Open Container Initiative's versioned public specification.",
+    "source_fact_and_inference_separated": true,
+    "private_material_read": false,
+    "external_contact_performed": false,
+    "stop_reason": "One specification node and one possible edge made the execution-assumption question materially more precise. Further discovery would have exceeded the depth needed for this run."
+  },
+  "gardener": {
+    "state": "proposed",
+    "cartographer_proposals_considered": [
+      "REL-P-000008",
+      "REL-P-000009"
+    ],
+    "decisions": [
+      {
+        "kind": "proposal-queue",
+        "decision": "Keep the OCI specification node strongly evidenced while the adjacency to FN-33 remains possible, emerging, and proposed."
+      },
+      {
+        "kind": "finite-attending-surface",
+        "decision": "Place the execution-environment question beside FN-33 and archive the prior WACZ arrangement without changing either proposal's review state."
+      },
+      {
+        "kind": "manifest-boundary",
+        "decision": "Do not add the external node or edge to relationships.json. Public proposal visibility remains distinct from ratification and from the relational manifest."
+      }
+    ],
+    "changes": [
+      "Appended REL-P-000008 and REL-P-000009 to the proposal queue.",
+      "Published one dated tending record and rotated the finite three-item Attending arrangement.",
+      "Archived the prior WACZ arrangement and updated only the relevant sitemap routes."
+    ],
+    "manifest_changed": false,
+    "attending_arrangement_changed": true,
+    "exact_publication_sources_changed": false,
+    "decision_reason": "The specification deepens the existing portability inquiry by naming execution configuration and verifiable dependencies, while its allowance for absent blobs prevents any unsupported claim of self-contained preservation."
+  },
+  "librarian": {
+    "state": "proposed",
+    "catalog_change_limit": 3,
+    "records_created": [
+      "catalog:external:oci-image-spec"
+    ],
+    "records_revised": [
+      "catalog:cyberdelic-os:fn-33"
+    ],
+    "records_removed": [],
+    "decisions": [
+      {
+        "kind": "external-neighbour",
+        "decision": "Add one concise source-grounded catalog record for the OCI Image Specification, visibly model-proposed and linked to its Cartographer evidence."
+      },
+      {
+        "kind": "related-path",
+        "decision": "Add the proposed OCI technical adjacency to FN-33's related list without changing the field note or relational manifest."
+      },
+      {
+        "kind": "finite-search",
+        "decision": "Retain the six-result directory limit and the unchanged three-work default Library aperture."
+      }
+    ],
+    "search_terms_added": [
+      "OCI",
+      "container image",
+      "entrypoint",
+      "filesystem layers",
+      "runtime assumptions",
+      "platform variants",
+      "dependency manifests",
+      "reproducible execution"
+    ],
+    "outward_search_performed": false,
+    "catalog_count": 7,
+    "decision_reason": "These ordinary-language terms are supported by the versioned specification and help a visitor find the execution-environment question without knowing the formal title."
+  },
+  "validation": {
+    "state": "passed",
+    "checks": [
+      {
+        "check": "structured-data",
+        "result": "All repository JSON and XML documents parsed successfully. The proposal queue contains nine items, the catalog contains seven records, the relational manifest remains unchanged at eight nodes and four edges, and Attending contains exactly three items."
+      },
+      {
+        "check": "exact-source-integrity",
+        "result": "All 27 indexed Field, Workshop, and Library sources matched their recorded byte lengths and SHA-256 values."
+      },
+      {
+        "check": "internal-links",
+        "result": "All local links and assets resolved across every HTML page."
+      },
+      {
+        "check": "reader-regression-suite",
+        "result": "All 66 reader build tests passed."
+      },
+      {
+        "check": "responsive-browser",
+        "result": "Attending, Living Relationships, the August 24 tending record, and the archived WACZ arrangement passed desktop and phone checks with psychedelic defaults, no horizontal overflow, keyboard-focusable main regions, a sticky phone header, and no page errors."
+      },
+      {
+        "check": "catalog-search",
+        "result": "A phone-sized homepage search for runtime assumptions returned the single model-proposed OCI catalog record within the six-result limit. The default Library aperture remains unchanged."
+      },
+      {
+        "check": "changed-prose-policy",
+        "result": "No em dash characters were added."
+      },
+      {
+        "check": "publication-boundary",
+        "result": "Every changed path is permitted by governance.json. No exact source, global index, application file, ratification state, or human-locked control changed."
+      },
+      {
+        "check": "distribution-archive",
+        "result": "The mirror archive rebuilt twice to the same SHA-256, included today's audit and public pages, and excluded repository internals and recursive archive inclusion."
+      }
+    ]
+  },
+  "unresolved_questions": [
+    "Which execution assumptions belong inside a generative plate, and which should remain replaceable properties of a reader?",
+    "How much of an execution environment must travel for reconstruction to remain meaningful rather than merely technically possible?"
+  ],
+  "public_change": true,
+  "proposed_public_change": true,
+  "run_state": "validation-complete",
+  "valid_no_op": false,
+  "human_review_required": false
+}
