@@ -1,8 +1,8 @@
 {
   "schema": "https://cyberdelic.space/schemas/living-catalog-v1.json",
   "version": "0.2",
-  "updated_at": "2026-08-24T08:45:37-07:00",
-  "count": 7,
+  "updated_at": "2026-08-25T08:01:40-07:00",
+  "count": 8,
   "curation": {
     "office": "OFFICE-LIBRARIAN",
     "office_version": "0.1",
@@ -54,12 +54,12 @@
       "subjects": ["generative art", "durable publication", "independent reconstruction", "edition lineage", "Bitcoin"],
       "search_terms": ["software preservation", "executable archive", "algorithmic art", "plate", "pull", "edition", "rendering", "permanent media"],
       "questions": ["What must travel with a generative work for it to survive the disappearance of its first venue?", "Can an edition end while its public algorithm remains copyable and renderable?"],
-      "related": [{"id": "external:art-blocks", "title": "Art Blocks", "relation_type": "technical-adjacency", "review_state": "proposed"}, {"id": "external:webrecorder-wacz", "title": "Web Archive Collection Zipped (WACZ)", "relation_type": "technical-adjacency", "review_state": "proposed"}, {"id": "external:oci-image-spec", "title": "Open Container Initiative Image Format Specification", "relation_type": "technical-adjacency", "review_state": "proposed"}],
+      "related": [{"id": "external:art-blocks", "title": "Art Blocks", "relation_type": "technical-adjacency", "review_state": "proposed"}, {"id": "external:webrecorder-wacz", "title": "Web Archive Collection Zipped (WACZ)", "relation_type": "technical-adjacency", "review_state": "proposed"}, {"id": "external:oci-image-spec", "title": "Open Container Initiative Image Format Specification", "relation_type": "technical-adjacency", "review_state": "proposed"}, {"id": "external:webassembly-core", "title": "WebAssembly Core Specification", "relation_type": "technical-adjacency", "review_state": "proposed"}],
       "evidence": [{"source": "living-content/cyberdelic-os/fn-s0-006/v000001.md", "locator": "A Press, Not a Platform; The Edition Ends. The Plate Remains."}],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
-      "last_tended_at": "2026-08-24T08:45:37-07:00"
+      "last_tended_at": "2026-08-25T08:01:40-07:00"
     },
     {
       "id": "catalog:external:polis",
@@ -128,6 +128,23 @@
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
       "last_tended_at": "2026-08-24T08:45:37-07:00"
+    },
+    {
+      "id": "catalog:external:webassembly-core",
+      "record_kind": "external-neighbour",
+      "title": "WebAssembly Core Specification",
+      "href": "project/cyberdelic-os/relations/tending/2026-08-25/",
+      "canonical_url": "https://www.w3.org/TR/wasm-core-2/",
+      "summary": "A portable low-level code format that defines module computation, validation, imports, and exports while requiring a separate embedder to supply environmental capabilities and initiate execution.",
+      "subjects": ["portable computation", "execution boundaries", "sandboxed modules", "host capabilities", "browser runtimes"],
+      "search_terms": ["WebAssembly", "Wasm", "portable bytecode", "sandboxed execution", "host imports", "embedder", "browser runtime", "cross-platform code", "application/wasm"],
+      "questions": ["Could a generative plate declare a small capability contract while allowing its reader to be replaced?", "What remains outside portable computation when the intended encounter includes rendering, timing, fonts, colour, and randomness?"],
+      "related": [{"id": "cyberdelic-os:fn-33", "title": "The Plate and the Pull", "relation_type": "technical-adjacency", "review_state": "proposed"}],
+      "evidence": [{"source": "living-relations/proposals.json", "locator": "REL-P-000010 and REL-P-000011"}],
+      "epistemic_status": "possible",
+      "review_state": "model-proposed",
+      "introduced_by": "OFFICE-LIBRARIAN",
+      "last_tended_at": "2026-08-25T08:01:40-07:00"
     }
   ]
 }
