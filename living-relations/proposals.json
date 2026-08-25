@@ -1,7 +1,7 @@
 {
   "schema": "https://cyberdelic.space/schemas/relationship-proposals-v1.json",
-  "updated_at": "2026-08-24T08:45:37-07:00",
-  "count": 9,
+  "updated_at": "2026-08-25T08:01:40-07:00",
+  "count": 11,
   "items": [
     {
       "proposal_id": "REL-P-000001",
@@ -320,6 +320,83 @@
       "unresolved_questions": [
         "Could a generative plate distinguish immutable work content from replaceable reader and runtime configuration?",
         "How much of the execution environment must be carried for reconstruction to remain meaningful rather than merely technically possible?"
+      ],
+      "introduced_by": "OFFICE-CARTOGRAPHER",
+      "office_version": "0.1"
+    },
+    {
+      "proposal_id": "REL-P-000010",
+      "proposal_kind": "external-node",
+      "source_node": "external:webassembly-core",
+      "target_node": "cyberdelic-os:fn-33",
+      "node": {
+        "id": "external:webassembly-core",
+        "kind": "specification",
+        "title": "WebAssembly Core Specification",
+        "canonical_url": "https://www.w3.org/TR/wasm-core-2/",
+        "versioned_source_url": "https://www.w3.org/TR/2026/CRD-wasm-core-2-20260812/",
+        "related_specification_url": "https://www.w3.org/TR/wasm-js-api-2/",
+        "description": "A W3C specification for a safe, portable, low-level code format whose modules define computation, imports, and exports while leaving interaction with the surrounding execution environment to an embedder."
+      },
+      "introduced_by": "OFFICE-CARTOGRAPHER",
+      "introduced_through": "declared-question",
+      "inquiry": "Which execution assumptions belong inside a generative plate, and which should remain replaceable properties of a reader?",
+      "source_facts": [
+        {
+          "claim": "The WebAssembly Core Specification describes WebAssembly as a safe, portable, low-level code format designed for efficient execution and compact representation, without Web-specific assumptions, so it can be embedded in browsers, stand-alone virtual machines, and other environments.",
+          "url": "https://www.w3.org/TR/wasm-core-2/",
+          "checked_at": "2026-08-25T08:01:40-07:00"
+        },
+        {
+          "claim": "The core specification defines the instruction set, binary encoding, validation, and execution semantics, but leaves environmental interaction and invocation to complementary embedding APIs.",
+          "url": "https://www.w3.org/TR/2026/CRD-wasm-core-2-20260812/",
+          "checked_at": "2026-08-25T08:01:40-07:00"
+        },
+        {
+          "claim": "WebAssembly provides no ambient access to its computing environment. I/O, resources, and operating-system interactions must be supplied as imported functions by an embedder, which controls the available capabilities.",
+          "url": "https://www.w3.org/TR/wasm-core-2/#security-considerations",
+          "checked_at": "2026-08-25T08:01:40-07:00"
+        },
+        {
+          "claim": "The WebAssembly JavaScript Interface specifies how modules are constructed and instantiated in JavaScript, how imported and exported functions are called, and how data and errors cross the embedding boundary.",
+          "url": "https://www.w3.org/TR/wasm-js-api-2/",
+          "checked_at": "2026-08-25T08:01:40-07:00"
+        }
+      ],
+      "cartographer_inference": "WebAssembly is sufficiently documented to enter review as a technical precedent for separating portable computational semantics from a replaceable reader or host environment. That boundary may help a generative plate state which capabilities it expects without treating one browser implementation as the work itself. This proposal does not imply endorsement, partnership, deterministic rendering across every environment, or architectural equivalence.",
+      "epistemic_status": "strong",
+      "review_state": "proposed",
+      "unresolved_questions": [
+        "Could a generative plate expose a small, explicit import contract while keeping its artistic computation portable?",
+        "Which rendering, timing, font, colour, and randomness assumptions would still remain outside a portable module?"
+      ],
+      "office_version": "0.1"
+    },
+    {
+      "proposal_id": "REL-P-000011",
+      "proposal_kind": "relationship-edge",
+      "source_node": "external:webassembly-core",
+      "target_node": "cyberdelic-os:fn-33",
+      "relation_type": "technical-adjacency",
+      "source_facts": [
+        {
+          "claim": "A WebAssembly module carries portable binary computation, declared imports and exports, validation rules, and execution semantics, while its embedder provides the surrounding capabilities and initiates loading, instantiation, and invocation.",
+          "url": "https://www.w3.org/TR/wasm-core-2/",
+          "checked_at": "2026-08-25T08:01:40-07:00"
+        },
+        {
+          "claim": "Field Note 33 describes the browser as a replaceable site of encounter and asks that no service possess the only renderer, while the public algorithm, edition lineage, and possibility of reconstruction remain available.",
+          "source": "living-content/cyberdelic-os/fn-s0-006/v000001.md",
+          "locator": "The browser can perform the encounter on the visitor's own machine"
+        }
+      ],
+      "cartographer_inference": "WebAssembly and FN-33 share a technical concern with portable computation that does not belong to one venue. Their scopes remain different. WebAssembly standardizes computation and an embedding boundary, but does not preserve a generative artwork's assets, presentation, deterministic visual behavior, authorship, authorized pull lineage, or edition end. The portable-module pattern is adjacent, not equivalent.",
+      "epistemic_status": "possible",
+      "lifecycle_state": "emerging",
+      "review_state": "proposed",
+      "unresolved_questions": [
+        "Where should a durable plate end and a replaceable reader begin?",
+        "What must a reader promise so independent reconstruction preserves an encounter rather than only executing instructions?"
       ],
       "introduced_by": "OFFICE-CARTOGRAPHER",
       "office_version": "0.1"
