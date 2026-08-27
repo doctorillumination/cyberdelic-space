@@ -1,0 +1,201 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-08-27-001",
+  "run_type": "scheduled-governed-run",
+  "started_at": "2026-08-27T07:01:41-07:00",
+  "completed_at": "2026-08-27T07:53:12-07:00",
+  "repository": {
+    "branch": "codex/tending-2026-08-27",
+    "starting_commit": "ca743adf2c78f18e4a8211428008d01059784825",
+    "pull_request": "https://github.com/doctorillumination/cyberdelic-space/pull/21",
+    "pull_request_state": "ready-auto-publication",
+    "publication_action": "validated-autonomous-publication"
+  },
+  "automation": {
+    "id": "daily-cyberdelic-tending",
+    "name": "Daily Cyberdelic Tending",
+    "status": "active",
+    "schedule": "Daily at 7:00 AM America/Vancouver",
+    "next_scheduled_run": "2026-08-28T07:00:00-07:00"
+  },
+  "office_versions": {
+    "cartographer": "0.1",
+    "gardener": "0.1",
+    "librarian": "0.1",
+    "publication_authority": "1.1"
+  },
+  "inputs": {
+    "inbox_items": 0,
+    "declared_question": "What must a replaceable reader promise so independent reconstruction preserves an encounter rather than only executing instructions?",
+    "internal_region": [
+      {
+        "id": "cyberdelic-os:fn-33",
+        "title": "The Plate and the Pull"
+      }
+    ],
+    "external_region": [
+      "external:webassembly-core"
+    ]
+  },
+  "cartographer": {
+    "state": "no-proposal",
+    "candidate_limit": 3,
+    "candidates_created": [],
+    "existing_proposals_rechecked": [
+      "REL-P-000010",
+      "REL-P-000011"
+    ],
+    "sources_checked": [
+      {
+        "title": "WebAssembly Core Specification",
+        "url": "https://www.w3.org/TR/wasm-core-2/",
+        "source_kind": "official-specification",
+        "checked_at": "2026-08-27T07:18:00-07:00"
+      },
+      {
+        "title": "WebAssembly JavaScript Interface",
+        "url": "https://www.w3.org/TR/wasm-js-api-2/",
+        "source_kind": "official-embedding-specification",
+        "checked_at": "2026-08-27T07:18:00-07:00"
+      },
+      {
+        "title": "WebAssembly Web API",
+        "url": "https://www.w3.org/TR/wasm-web-api-2/",
+        "source_kind": "official-web-embedding-specification",
+        "checked_at": "2026-08-27T07:18:00-07:00"
+      }
+    ],
+    "source_facts": [
+      {
+        "claim": "The WebAssembly core standard still defines portable low-level computation through modules, validation, execution semantics, imports, and exports.",
+        "source": "https://www.w3.org/TR/wasm-core-2/"
+      },
+      {
+        "claim": "The JavaScript Interface still assigns construction, instantiation, imports, exports, data exchange, and error handling to an embedding outside the core module.",
+        "source": "https://www.w3.org/TR/wasm-js-api-2/"
+      },
+      {
+        "claim": "The Web API still defines how WebAssembly modules are fetched and instantiated within the web platform.",
+        "source": "https://www.w3.org/TR/wasm-web-api-2/"
+      }
+    ],
+    "inference": "The existing WebAssembly adjacency remains a useful boundary marker for portable computation and supplied capabilities, but another generic runtime node would not clarify what artistic, perceptual, and lineage promises a reader must make.",
+    "uncertainty": "The unresolved part of the question is artwork-specific. It requires interpretation of the encounter described by FN-33, not a broader survey of execution standards.",
+    "attribution": "All external factual descriptions are attributed to the W3C WebAssembly Working Group's public specifications.",
+    "source_fact_and_inference_separated": true,
+    "source_conflict_found": false,
+    "private_material_read": false,
+    "external_contact_performed": false,
+    "stop_reason": "The three primary specifications remain accessible and consistent with the August 25 proposal. Only two days have passed, and no new external node or edge would materially deepen the declared question without manufacturing breadth."
+  },
+  "gardener": {
+    "state": "no-change",
+    "cartographer_proposals_considered": [
+      "REL-P-000010",
+      "REL-P-000011"
+    ],
+    "decisions": [
+      {
+        "kind": "evidence-stability",
+        "decision": "Keep the WebAssembly specification node strongly evidenced and the adjacency to FN-33 possible, emerging, and visibly proposed. The cited primary sources remain consistent."
+      },
+      {
+        "kind": "lifecycle-and-attending",
+        "decision": "Do not change proposal lifecycle, rotate Attending, or publish a dated tending page. The current three-item arrangement still holds the live question without drift."
+      },
+      {
+        "kind": "manifest-boundary",
+        "decision": "Do not add the external node or edge to relationships.json. The relational manifest remains unchanged because publication is not ratification."
+      }
+    ],
+    "changes": [],
+    "manifest_changed": false,
+    "attending_arrangement_changed": false,
+    "exact_publication_sources_changed": false,
+    "decision_reason": "No evidence drift, summary error, dormancy signal, continuity gap, or lifecycle event warranted a relational metadata change today."
+  },
+  "librarian": {
+    "state": "no-change",
+    "catalog_change_limit": 3,
+    "records_examined": [
+      "catalog:cyberdelic-os:fn-33",
+      "catalog:external:webassembly-core"
+    ],
+    "records_created": [],
+    "records_revised": [],
+    "records_removed": [],
+    "decisions": [
+      {
+        "kind": "findability",
+        "decision": "Keep the existing WebAssembly and FN-33 summaries, subjects, synonyms, questions, and related paths. They already expose the computation, embedder, reader, and reconstruction boundary in ordinary language."
+      },
+      {
+        "kind": "evidence-restraint",
+        "decision": "Add no unsupported search terms and create no duplicate catalog record. The exact source and primary specification evidence remain sufficient."
+      },
+      {
+        "kind": "finite-search",
+        "decision": "Retain the six-result directory limit and the unchanged three-work default Library aperture."
+      }
+    ],
+    "search_terms_added": [],
+    "outward_search_performed": false,
+    "catalog_count": 8,
+    "decision_reason": "The cumulative catalog already lets a visitor find this boundary without knowing the formal title. A revision today would add volume without improving findability."
+  },
+  "files_changed": [
+    "living-relations/audits/2026-08-27-001.json",
+    "cyberdelic-space.zip"
+  ],
+  "validation": {
+    "state": "passed",
+    "checks": [
+      {
+        "check": "structured-data",
+        "result": "All repository JSON and XML documents parsed successfully. The proposal queue remains at eleven items, the catalog remains at eight records, the relational manifest remains at eight nodes and four edges, and Attending contains exactly three items."
+      },
+      {
+        "check": "exact-source-integrity",
+        "result": "All 27 indexed Field, Workshop, and Library sources matched their recorded byte lengths and SHA-256 values."
+      },
+      {
+        "check": "internal-links",
+        "result": "All local links and assets resolved across every HTML page."
+      },
+      {
+        "check": "reader-regression-suite",
+        "result": "All 66 reader build tests passed."
+      },
+      {
+        "check": "responsive-browser",
+        "result": "Attending and the homepage passed desktop and phone checks with the psychedelic default, no horizontal overflow, keyboard-focusable main regions, a sticky phone header, and no browser errors."
+      },
+      {
+        "check": "catalog-search",
+        "result": "A phone-sized homepage search for portable bytecode returned the single model-proposed WebAssembly catalog record within the six-result limit. The default Library aperture remains unchanged."
+      },
+      {
+        "check": "changed-prose-policy",
+        "result": "No em dash characters were added."
+      },
+      {
+        "check": "publication-boundary",
+        "result": "Every changed path is permitted by governance.json. No exact source, global index, application file, ratification state, or human-locked control changed."
+      },
+      {
+        "check": "distribution-archive",
+        "result": "The mirror archive rebuilt twice to the same SHA-256, includes today's audit, and excludes repository internals and recursive archive inclusion."
+      }
+    ]
+  },
+  "unresolved_questions": [
+    "Could a generative plate expose a small, explicit capability contract while keeping its artistic computation portable?",
+    "What must a reader promise so independent reconstruction preserves an encounter rather than only executing instructions?"
+  ],
+  "public_change": false,
+  "proposed_public_change": false,
+  "run_state": "valid-no-op",
+  "valid_no_op": true,
+  "human_review_required": false,
+  "note": "No public dated tending page was created. Attending remains unchanged while this audit preserves the day's methodical no-change decision."
+}
