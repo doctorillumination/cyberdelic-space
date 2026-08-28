@@ -1,0 +1,242 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-08-28-001",
+  "run_type": "scheduled-governed-run",
+  "started_at": "2026-08-28T07:06:35-07:00",
+  "completed_at": "2026-08-28T07:23:08-07:00",
+  "repository": {
+    "branch": "codex/tending-2026-08-28",
+    "starting_commit": "1cb63d2f5c677c5decc8d2760b719d9b00e3181c",
+    "pull_request": null,
+    "pull_request_state": "pending-validation",
+    "publication_action": "validated-autonomous-publication"
+  },
+  "automation": {
+    "id": "daily-cyberdelic-tending",
+    "name": "Daily Cyberdelic Tending",
+    "status": "active",
+    "schedule": "Daily at 7:00 AM America/Vancouver",
+    "next_scheduled_run": "2026-08-29T07:00:00-07:00"
+  },
+  "office_versions": {
+    "cartographer": "0.1",
+    "gardener": "0.1",
+    "librarian": "0.1",
+    "publication_authority": "1.1"
+  },
+  "inputs": {
+    "inbox_items": 0,
+    "declared_question": "How can a system make cross-perspective usefulness visible without treating agreement as truth or majority rule?",
+    "internal_region": [
+      {
+        "id": "cyberdelic-os:fn-14",
+        "title": "The Open Anatomy"
+      },
+      {
+        "id": "cyberdelic-os:fn-25",
+        "title": "Expeditions, Storms, and the Birth of Boroughs"
+      }
+    ],
+    "external_region": [
+      "external:community-notes"
+    ]
+  },
+  "cartographer": {
+    "state": "proposed",
+    "candidate_limit": 3,
+    "candidates_created": [
+      "REL-P-000012",
+      "REL-P-000013",
+      "REL-P-000014"
+    ],
+    "external_node": "external:community-notes",
+    "sources_checked": [
+      {
+        "title": "Community Notes introduction",
+        "url": "https://communitynotes.x.com/guide/en/about/introduction",
+        "source_kind": "official-documentation",
+        "checked_at": "2026-08-28T07:17:40-07:00"
+      },
+      {
+        "title": "Diversity of perspectives",
+        "url": "https://communitynotes.x.com/guide/en/contributing/diversity-of-perspectives",
+        "source_kind": "official-method-documentation",
+        "checked_at": "2026-08-28T07:17:40-07:00"
+      },
+      {
+        "title": "Note ranking algorithm",
+        "url": "https://communitynotes.x.com/guide/en/under-the-hood/ranking-notes",
+        "source_kind": "official-algorithm-documentation",
+        "checked_at": "2026-08-28T07:17:40-07:00"
+      },
+      {
+        "title": "Community Notes public repository",
+        "url": "https://github.com/twitter/communitynotes",
+        "source_kind": "official-source-repository",
+        "checked_at": "2026-08-28T07:17:40-07:00",
+        "commit_checked": "2704b2d9c871a404017d989317b3cf011b6eb384"
+      }
+    ],
+    "source_facts": [
+      {
+        "claim": "Community Notes lets contributors collaboratively write and rate contextual notes, and its official documentation says visible notes require helpful ratings across differing perspectives rather than raw majority rule.",
+        "source": "https://communitynotes.x.com/guide/en/about/introduction"
+      },
+      {
+        "claim": "The system infers differing perspectives from prior note-rating patterns and does not use demographics, declared political affiliation, follows, or posts to decide a note's rating status.",
+        "source": "https://communitynotes.x.com/guide/en/contributing/diversity-of-perspectives"
+      },
+      {
+        "claim": "The ranking documentation describes matrix factorization that produces one global note status rather than personalized note scores, with publicly inspectable source and evolving safeguards.",
+        "source": "https://communitynotes.x.com/guide/en/under-the-hood/ranking-notes"
+      },
+      {
+        "claim": "FN-14 explicitly names Community Notes as an open reference for ranking contributions that achieve helpfulness across differing perspectives.",
+        "source": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
+        "locator": "Field Note 14: The Open Anatomy"
+      }
+    ],
+    "inference": "Community Notes offers one inspectable technical organ for identifying contextual notes found helpful across differing rating perspectives. It can inform a Cyberdelic shared-reality practice, but it neither establishes truth nor preserves the full evidence, testimony, values, provenance, and dissent imagined by FN-25.",
+    "uncertainty": "Rating-derived perspective space can miss differences that are absent from the contributor pool or not expressed through past rating behavior. Community Notes also changes over time and operates inside one centrally governed platform.",
+    "attribution": "External factual descriptions are attributed to the official Community Notes Guide and the twitter/communitynotes public repository. Internal continuity is attributed to the exact FN-S0-001 publication.",
+    "source_fact_and_inference_separated": true,
+    "source_conflict_found": false,
+    "private_material_read": false,
+    "external_contact_performed": false,
+    "stop_reason": "One external node and two deliberately different edges fully used the three-candidate budget. The Cartographer stopped without surveying other fact-checking or deliberation systems."
+  },
+  "gardener": {
+    "state": "proposed",
+    "cartographer_proposals_considered": [
+      "REL-P-000012",
+      "REL-P-000013",
+      "REL-P-000014"
+    ],
+    "decisions": [
+      {
+        "kind": "explicit-continuity",
+        "decision": "Keep the Community Notes node strongly evidenced and the FN-14 adjacency strong because the exact field note explicitly names the project as an open technical reference."
+      },
+      {
+        "kind": "interpretive-boundary",
+        "decision": "Keep the FN-25 shared inquiry possible and emerging. Cross-perspective helpfulness is one signal, while a Cyberdelic storm may preserve several claim kinds, alternative branches, and unresolved dissent."
+      },
+      {
+        "kind": "finite-attending-and-manifest",
+        "decision": "Rotate the finite Attending arrangement to FN-14 and Community Notes, archive the WebAssembly arrangement, and leave relationships.json unchanged because proposal publication is not ratification."
+      }
+    ],
+    "changes": [
+      "Published one dated tending record for the material relational addition.",
+      "Rotated the finite three-item Attending arrangement and archived the prior WebAssembly view.",
+      "Updated only the Living Relationships latest-record pointer and corresponding sitemap routes."
+    ],
+    "manifest_changed": false,
+    "attending_arrangement_changed": true,
+    "exact_publication_sources_changed": false,
+    "decision_reason": "The addition reveals a continuity already present in FN-14, gives it primary-source evidence, and places its limits beside FN-25 without overstating what one ranking mechanism can do."
+  },
+  "librarian": {
+    "state": "proposed",
+    "catalog_change_limit": 3,
+    "records_created": [
+      "catalog:cyberdelic-os:fn-14",
+      "catalog:external:community-notes"
+    ],
+    "records_revised": [
+      "catalog:cyberdelic-os:fn-25"
+    ],
+    "records_removed": [],
+    "decisions": [
+      {
+        "kind": "internal-work",
+        "decision": "Create a source-grounded FN-14 record so searches for open anatomy, software organs, replaceable infrastructure, and helpfulness across perspectives can find the exact field note."
+      },
+      {
+        "kind": "external-neighbour",
+        "decision": "Create one visibly model-proposed Community Notes record using the official method documentation and the Cartographer's evidence."
+      },
+      {
+        "kind": "related-path",
+        "decision": "Revise FN-25 with the proposed Community Notes shared inquiry and two ordinary-language terms, while preserving Polis and every prior catalog record."
+      }
+    ],
+    "search_terms_added": [
+      "Community Notes",
+      "Birdwatch",
+      "fact checking",
+      "context notes",
+      "different viewpoints",
+      "people who disagree",
+      "cross-perspective helpfulness",
+      "non-personalized ranking",
+      "open anatomy",
+      "software organs"
+    ],
+    "outward_search_performed": false,
+    "catalog_count": 10,
+    "decision_reason": "These terms are supported by the exact FN-14 and FN-25 passages or official Community Notes documentation, and they let a person find the relation without knowing any formal title."
+  },
+  "files_changed": [
+    "living-relations/proposals.json",
+    "living-relations/catalog.json",
+    "living-relations/audits/2026-08-28-001.json",
+    "project/cyberdelic-os/relations/index.html",
+    "project/cyberdelic-os/relations/tending/2026-08-28/index.html",
+    "project/cyberdelic-os/attending/index.html",
+    "project/cyberdelic-os/attending/archive/2026-08-25-webassembly/index.html",
+    "sitemap.xml",
+    "cyberdelic-space.zip"
+  ],
+  "validation": {
+    "state": "passed",
+    "checks": [
+      {
+        "check": "structured-data",
+        "result": "All repository JSON and XML documents parsed successfully. The proposal queue contains fourteen items, the catalog contains ten records, the relational manifest remains at eight nodes and four edges, and Attending contains exactly three items."
+      },
+      {
+        "check": "exact-source-integrity",
+        "result": "All 27 indexed Field, Workshop, and Library sources matched their recorded byte lengths and SHA-256 values."
+      },
+      {
+        "check": "internal-links",
+        "result": "All local links and assets resolved across every HTML page."
+      },
+      {
+        "check": "reader-regression-suite",
+        "result": "All 66 reader build tests passed."
+      },
+      {
+        "check": "responsive-browser",
+        "result": "The August 28 tending record, Attending, Living Relationships, and the archived WebAssembly arrangement passed desktop and phone checks with the psychedelic default, no horizontal overflow, keyboard-focusable main regions, a sticky phone header, and no browser errors."
+      },
+      {
+        "check": "catalog-search",
+        "result": "A phone-sized homepage search for people who disagree returned the single model-proposed Community Notes record within the six-result limit. The default Library aperture remains unchanged at three works."
+      },
+      {
+        "check": "changed-prose-policy",
+        "result": "No em dash characters were added."
+      },
+      {
+        "check": "publication-boundary",
+        "result": "Every changed path is permitted by governance.json. No exact source, global library index, application file, ratification state, or human-locked control changed."
+      },
+      {
+        "check": "distribution-archive",
+        "result": "The mirror archive rebuilt twice to the same SHA-256, includes today's audit and public pages, and excludes repository internals and recursive archive inclusion."
+      }
+    ]
+  },
+  "unresolved_questions": [
+    "Which kinds of disagreement remain invisible when perspective is inferred only from rating patterns?",
+    "What does a public storm need beyond a note that people across perspectives find helpful?",
+    "How can broad helpfulness become one signal among evidence, testimony, values, provenance, and explicit dissent?"
+  ],
+  "public_change": true,
+  "proposed_public_change": true,
+  "run_state": "validation-complete",
+  "valid_no_op": false,
+  "human_review_required": false
+}

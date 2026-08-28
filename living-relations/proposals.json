@@ -1,7 +1,7 @@
 {
   "schema": "https://cyberdelic.space/schemas/relationship-proposals-v1.json",
-  "updated_at": "2026-08-25T08:01:40-07:00",
-  "count": 11,
+  "updated_at": "2026-08-28T07:17:40-07:00",
+  "count": 14,
   "items": [
     {
       "proposal_id": "REL-P-000001",
@@ -397,6 +397,111 @@
       "unresolved_questions": [
         "Where should a durable plate end and a replaceable reader begin?",
         "What must a reader promise so independent reconstruction preserves an encounter rather than only executing instructions?"
+      ],
+      "introduced_by": "OFFICE-CARTOGRAPHER",
+      "office_version": "0.1"
+    },
+    {
+      "proposal_id": "REL-P-000012",
+      "proposal_kind": "external-node",
+      "source_node": "external:community-notes",
+      "target_node": "cyberdelic-os:fn-14",
+      "node": {
+        "id": "external:community-notes",
+        "kind": "project",
+        "title": "Community Notes",
+        "canonical_url": "https://communitynotes.x.com/guide/en/",
+        "repository_url": "https://github.com/twitter/communitynotes",
+        "description": "An open-source context system in which contributors write and rate notes, and a public ranking algorithm looks for notes found helpful by contributors whose earlier rating patterns indicate differing perspectives."
+      },
+      "introduced_by": "OFFICE-CARTOGRAPHER",
+      "introduced_through": "existing-exact-source",
+      "inquiry": "How can a system make cross-perspective usefulness visible without treating agreement as truth or majority rule?",
+      "source_facts": [
+        {
+          "claim": "The official introduction describes Community Notes as a collaborative system for adding helpful context to posts that might be misleading. Notes appear only after being rated helpful by contributors from diverse perspectives, and the documentation explicitly says the system does not work by majority rule.",
+          "url": "https://communitynotes.x.com/guide/en/about/introduction",
+          "checked_at": "2026-08-28T07:17:40-07:00"
+        },
+        {
+          "claim": "The diversity documentation says perspective is inferred from patterns in prior note ratings, not from demographics, political affiliation, follows, or posts. It presents agreement among contributors who usually disagree as an indicator of broad helpfulness.",
+          "url": "https://communitynotes.x.com/guide/en/contributing/diversity-of-perspectives",
+          "checked_at": "2026-08-28T07:17:40-07:00"
+        },
+        {
+          "claim": "The ranking documentation describes an open-source matrix-factorization system that gives each note a single global helpfulness score rather than personalizing notes to individual raters. Its current safeguards and thresholds continue to evolve.",
+          "url": "https://communitynotes.x.com/guide/en/under-the-hood/ranking-notes",
+          "checked_at": "2026-08-28T07:17:40-07:00"
+        },
+        {
+          "claim": "The public repository contains the documentation and scoring source, states that contributions and program data are published daily, and identifies the scoring implementation as open source.",
+          "url": "https://github.com/twitter/communitynotes",
+          "checked_at": "2026-08-28T07:17:40-07:00"
+        }
+      ],
+      "cartographer_inference": "Community Notes is sufficiently documented to enter review as a technical reference for cross-perspective helpfulness. Its method can inform how a shared system resists simple majority rule, but it does not establish truth, represent every kind of difference, or provide the complete deliberative and provenance structure imagined by Cyberdelic OS. This proposal does not imply endorsement, partnership, or architectural equivalence.",
+      "epistemic_status": "strong",
+      "review_state": "proposed",
+      "unresolved_questions": [
+        "Which kinds of disagreement remain invisible when perspective is inferred only from rating patterns?",
+        "What evidence, testimony, provenance, and dissent must remain visible beyond one global helpfulness status?"
+      ],
+      "office_version": "0.1"
+    },
+    {
+      "proposal_id": "REL-P-000013",
+      "proposal_kind": "relationship-edge",
+      "source_node": "external:community-notes",
+      "target_node": "cyberdelic-os:fn-14",
+      "relation_type": "technical-adjacency",
+      "source_facts": [
+        {
+          "claim": "Community Notes publishes its ranking documentation and scoring source, and its method seeks notes rated helpful across differing rating perspectives rather than by raw majority alone.",
+          "url": "https://github.com/twitter/communitynotes",
+          "checked_at": "2026-08-28T07:17:40-07:00"
+        },
+        {
+          "claim": "Field Note 14 explicitly names Community Notes as a real, open reference for ranking contributions that achieve helpfulness across differing perspectives.",
+          "source": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
+          "locator": "Field Note 14: The Open Anatomy"
+        }
+      ],
+      "cartographer_inference": "The relation is directly stated in FN-14. Community Notes is one replaceable technical organ that Cyberdelic OS may study, not a constitutional model to import whole. The useful adjacency is its open attempt to measure cross-perspective helpfulness while avoiding raw majority rule.",
+      "epistemic_status": "strong",
+      "lifecycle_state": "emerging",
+      "review_state": "proposed",
+      "unresolved_questions": [
+        "Which parts of cross-perspective note ranking remain useful outside a centralized social platform?",
+        "How should an inspectable mechanism disclose what its inferred perspective space cannot perceive?"
+      ],
+      "introduced_by": "OFFICE-CARTOGRAPHER",
+      "office_version": "0.1"
+    },
+    {
+      "proposal_id": "REL-P-000014",
+      "proposal_kind": "relationship-edge",
+      "source_node": "external:community-notes",
+      "target_node": "cyberdelic-os:fn-25",
+      "relation_type": "shared-inquiry",
+      "source_facts": [
+        {
+          "claim": "Community Notes seeks a single non-personalized note status that reflects helpfulness across contributors with differing prior rating patterns, while preserving public documentation and data for inspection.",
+          "url": "https://communitynotes.x.com/guide/en/under-the-hood/ranking-notes",
+          "checked_at": "2026-08-28T07:17:40-07:00"
+        },
+        {
+          "claim": "Field Note 25 imagines storms where participants carry testimony, evidence, art, forecasts, values, and institutional histories, and where the result may preserve explicit disagreement rather than end in consensus.",
+          "source": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
+          "locator": "Field Note 25: Expeditions, Storms, and the Birth of Boroughs"
+        }
+      ],
+      "cartographer_inference": "Community Notes and FN-25 share an inquiry into making useful structure emerge across disagreement. Their outputs remain materially different. Community Notes assigns a global helpfulness status to a note, while FN-25 imagines durable multi-perspective artifacts that distinguish factual, definitional, moral, and trust-based conflict and may preserve dissent. The contrast is part of the proposed relation.",
+      "epistemic_status": "possible",
+      "lifecycle_state": "emerging",
+      "review_state": "proposed",
+      "unresolved_questions": [
+        "What does a public storm need beyond a note that people across perspectives find helpful?",
+        "How can broad helpfulness become one signal among evidence, testimony, values, provenance, and explicit dissent?"
       ],
       "introduced_by": "OFFICE-CARTOGRAPHER",
       "office_version": "0.1"
