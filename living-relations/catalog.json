@@ -1,8 +1,8 @@
 {
   "schema": "https://cyberdelic.space/schemas/living-catalog-v1.json",
   "version": "0.2",
-  "updated_at": "2026-08-25T08:01:40-07:00",
-  "count": 8,
+  "updated_at": "2026-08-28T07:17:40-07:00",
+  "count": 10,
   "curation": {
     "office": "OFFICE-LIBRARIAN",
     "office_version": "0.1",
@@ -14,20 +14,36 @@
   },
   "items": [
     {
+      "id": "catalog:cyberdelic-os:fn-14",
+      "record_kind": "field-note",
+      "title": "The Open Anatomy",
+      "href": "project/cyberdelic-os/field-notes/fn-14/",
+      "summary": "A field note that treats existing open-source projects as replaceable technical organs for a local, inspectable Cyberdelic OS, including Community Notes as a reference for helpfulness across differing perspectives.",
+      "subjects": ["open-source architecture", "agent systems", "local-first software", "interoperability", "cross-perspective ranking"],
+      "search_terms": ["open anatomy", "software organs", "Community Notes", "open source stack", "system components", "replaceable infrastructure", "helpfulness across perspectives"],
+      "questions": ["Which existing open-source organs can be borrowed without inheriting the surrounding platform's physics?", "How can a system remain inspectable while its technical components stay replaceable?"],
+      "related": [{"id": "external:community-notes", "title": "Community Notes", "relation_type": "technical-adjacency", "review_state": "proposed"}],
+      "evidence": [{"source": "living-content/cyberdelic-os/fn-s0-001/v000001.md", "locator": "Field Note 14: The Open Anatomy"}],
+      "epistemic_status": "strong",
+      "review_state": "model-proposed",
+      "introduced_by": "OFFICE-LIBRARIAN",
+      "last_tended_at": "2026-08-28T07:17:40-07:00"
+    },
+    {
       "id": "catalog:cyberdelic-os:fn-25",
       "record_kind": "field-note",
       "title": "Expeditions, Storms, and the Birth of Boroughs",
       "href": "project/cyberdelic-os/field-notes/fn-25/",
       "summary": "A field note about large-group inquiry, disagreement, collective sensemaking, and the durable artifacts that can preserve sources, alternatives, ratification, and unresolved questions.",
       "subjects": ["collective sensemaking", "shared reality", "disagreement", "deliberation", "provenance"],
-      "search_terms": ["consensus", "public conversation", "group intelligence", "civic dialogue", "gathering intelligence", "opinion mapping"],
+      "search_terms": ["consensus", "public conversation", "group intelligence", "civic dialogue", "gathering intelligence", "opinion mapping", "cross-perspective helpfulness", "context notes"],
       "questions": ["How can a gathering reveal shared structure without making consensus the measure of truth?", "What should remain visible when a complex disagreement becomes a durable public object?"],
-      "related": [{"id": "external:polis", "title": "Polis", "relation_type": "shared-inquiry", "review_state": "proposed"}],
+      "related": [{"id": "external:polis", "title": "Polis", "relation_type": "shared-inquiry", "review_state": "proposed"}, {"id": "external:community-notes", "title": "Community Notes", "relation_type": "shared-inquiry", "review_state": "proposed"}],
       "evidence": [{"source": "living-content/cyberdelic-os/fn-s0-001/v000001.md", "locator": "Field Note 25: Expeditions, Storms, and the Birth of Boroughs"}],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
-      "last_tended_at": "2026-08-23T12:00:00-07:00"
+      "last_tended_at": "2026-08-28T07:17:40-07:00"
     },
     {
       "id": "catalog:cyberdelic-os:fn-29",
@@ -60,6 +76,23 @@
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
       "last_tended_at": "2026-08-25T08:01:40-07:00"
+    },
+    {
+      "id": "catalog:external:community-notes",
+      "record_kind": "external-neighbour",
+      "title": "Community Notes",
+      "href": "project/cyberdelic-os/relations/tending/2026-08-28/",
+      "canonical_url": "https://communitynotes.x.com/guide/en/",
+      "summary": "An open-source context system whose public ranking method looks for notes found helpful by contributors with differing prior rating patterns, producing one global status rather than personalized results.",
+      "subjects": ["cross-perspective helpfulness", "collaborative context", "crowdsourced moderation", "open algorithms", "public rating data"],
+      "search_terms": ["Community Notes", "Birdwatch", "fact checking", "context notes", "misinformation", "different viewpoints", "people who disagree", "matrix factorization", "non-personalized ranking"],
+      "questions": ["Which kinds of disagreement remain invisible when perspective is inferred from rating patterns?", "What must remain visible beyond one global helpfulness status?"],
+      "related": [{"id": "cyberdelic-os:fn-14", "title": "The Open Anatomy", "relation_type": "technical-adjacency", "review_state": "proposed"}, {"id": "cyberdelic-os:fn-25", "title": "Expeditions, Storms, and the Birth of Boroughs", "relation_type": "shared-inquiry", "review_state": "proposed"}],
+      "evidence": [{"source": "living-relations/proposals.json", "locator": "REL-P-000012 through REL-P-000014"}],
+      "epistemic_status": "possible",
+      "review_state": "model-proposed",
+      "introduced_by": "OFFICE-LIBRARIAN",
+      "last_tended_at": "2026-08-28T07:17:40-07:00"
     },
     {
       "id": "catalog:external:polis",
