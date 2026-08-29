@@ -1,0 +1,217 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-08-29-001",
+  "run_type": "scheduled-governed-run",
+  "started_at": "2026-08-29T07:05:17-07:00",
+  "completed_at": "2026-08-29T07:46:00-07:00",
+  "repository": {
+    "branch": "codex/tending-2026-08-29",
+    "starting_commit": "962280b6002d71c8b41128c17d673003f3dd72ba",
+    "pull_request": null,
+    "pull_request_state": "pending-validation",
+    "publication_action": "pending"
+  },
+  "automation": {
+    "id": "daily-cyberdelic-tending",
+    "name": "Daily Cyberdelic Tending",
+    "status": "active",
+    "schedule": "Daily at 7:00 AM America/Vancouver",
+    "next_scheduled_run": "2026-08-30T07:00:00-07:00"
+  },
+  "office_versions": {
+    "cartographer": "0.1",
+    "gardener": "0.1",
+    "librarian": "0.1",
+    "publication_authority": "1.1"
+  },
+  "inputs": {
+    "inbox_items": 0,
+    "declared_question": "How can a system make cross-perspective usefulness visible without treating agreement as truth or majority rule?",
+    "internal_region": [
+      {
+        "id": "cyberdelic-os:fn-14",
+        "title": "The Open Anatomy"
+      },
+      {
+        "id": "cyberdelic-os:fn-25",
+        "title": "Expeditions, Storms, and the Birth of Boroughs"
+      }
+    ],
+    "external_region": [
+      "external:community-notes"
+    ]
+  },
+  "cartographer": {
+    "state": "no-proposal",
+    "candidate_limit": 3,
+    "candidates_created": [],
+    "existing_proposals_rechecked": [
+      "REL-P-000012",
+      "REL-P-000013",
+      "REL-P-000014"
+    ],
+    "sources_checked": [
+      {
+        "title": "Community Notes introduction",
+        "url": "https://communitynotes.x.com/guide/en/about/introduction",
+        "source_kind": "official-documentation",
+        "checked_at": "2026-08-29T07:43:01-07:00"
+      },
+      {
+        "title": "Diversity of perspectives",
+        "url": "https://communitynotes.x.com/guide/en/contributing/diversity-of-perspectives",
+        "source_kind": "official-method-documentation",
+        "checked_at": "2026-08-29T07:43:01-07:00"
+      },
+      {
+        "title": "Note ranking algorithm",
+        "url": "https://communitynotes.x.com/guide/en/under-the-hood/ranking-notes",
+        "source_kind": "official-algorithm-documentation",
+        "checked_at": "2026-08-29T07:43:01-07:00"
+      },
+      {
+        "title": "Community Notes public repository",
+        "url": "https://github.com/twitter/communitynotes",
+        "source_kind": "official-source-repository",
+        "checked_at": "2026-08-29T07:43:01-07:00",
+        "commit_checked": "2704b2d9c871a404017d989317b3cf011b6eb384"
+      }
+    ],
+    "source_facts": [
+      {
+        "claim": "The official Community Notes pages remain available and continue to describe a collaborative context system that seeks helpfulness across differing rating perspectives rather than raw majority rule.",
+        "source": "https://communitynotes.x.com/guide/en/about/introduction"
+      },
+      {
+        "claim": "The public source repository remains on the same latest commit recorded in the August 28 audit, with no intervening source revision to evaluate.",
+        "source": "https://github.com/twitter/communitynotes/commit/2704b2d9c871a404017d989317b3cf011b6eb384"
+      },
+      {
+        "claim": "FN-14 still explicitly names Community Notes as an open reference for helpfulness across differing perspectives, while FN-25 still describes a wider multi-perspective process that can preserve explicit disagreement.",
+        "source": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
+        "locator": "Field Note 14: The Open Anatomy and Field Note 25: Expeditions, Storms, and the Birth of Boroughs"
+      }
+    ],
+    "inference": "The Community Notes adjacency remains useful and accurately bounded, but another external node or edge one day later would add breadth without clarifying the already stated distinction between cross-perspective helpfulness and a durable, multi-perspective public artifact.",
+    "uncertainty": "The method can evolve and its inferred perspective space may still omit differences absent from contributor rating patterns. Those limits remain visible in the existing proposals and do not require a new record today.",
+    "attribution": "External facts are attributed to the official Community Notes Guide and public source repository. Internal continuity is attributed to the exact FN-S0-001 publication.",
+    "source_fact_and_inference_separated": true,
+    "source_conflict_found": false,
+    "private_material_read": false,
+    "external_contact_performed": false,
+    "stop_reason": "Yesterday's three proposals remain current, source-grounded, and sufficiently bounded. With an empty inbox and no source revision, another candidate would manufacture novelty rather than deepen the inquiry."
+  },
+  "gardener": {
+    "state": "no-change",
+    "cartographer_proposals_considered": [
+      "REL-P-000012",
+      "REL-P-000013",
+      "REL-P-000014"
+    ],
+    "decisions": [
+      {
+        "kind": "evidence-stability",
+        "decision": "Keep the Community Notes node strongly evidenced, the FN-14 adjacency strong, and the FN-25 shared inquiry possible. The exact and external evidence remain consistent."
+      },
+      {
+        "kind": "lifecycle-and-attending",
+        "decision": "Do not change proposal lifecycle, rotate Attending, or publish a dated tending page one day after the current arrangement began. No drift or dormancy signal is present."
+      },
+      {
+        "kind": "manifest-boundary",
+        "decision": "Leave relationships.json unchanged. Publication remains distinct from ratification, and no ratification event occurred."
+      }
+    ],
+    "changes": [],
+    "manifest_changed": false,
+    "attending_arrangement_changed": false,
+    "exact_publication_sources_changed": false,
+    "decision_reason": "No evidence drift, summary error, continuity gap, lifecycle event, or neglected work warranted a relational metadata change today."
+  },
+  "librarian": {
+    "state": "no-change",
+    "catalog_change_limit": 3,
+    "records_examined": [
+      "catalog:cyberdelic-os:fn-14",
+      "catalog:cyberdelic-os:fn-25",
+      "catalog:external:community-notes"
+    ],
+    "records_created": [],
+    "records_revised": [],
+    "records_removed": [],
+    "decisions": [
+      {
+        "kind": "findability",
+        "decision": "Keep the existing FN-14, FN-25, and Community Notes summaries, subjects, synonyms, questions, and related paths. They already support formal and ordinary-language discovery."
+      },
+      {
+        "kind": "evidence-restraint",
+        "decision": "Add no duplicate catalog record or unsupported term. Searches including people who disagree already reach the visibly proposed Community Notes record."
+      },
+      {
+        "kind": "finite-search",
+        "decision": "Retain the six-result directory limit and the unchanged three-work default Library aperture."
+      }
+    ],
+    "search_terms_added": [],
+    "outward_search_performed": false,
+    "catalog_count": 10,
+    "decision_reason": "The cumulative catalog already makes the fresh relational region findable. Revising it after one day would increase activity without improving orientation."
+  },
+  "files_changed": [
+    "living-relations/audits/2026-08-29-001.json",
+    "cyberdelic-space.zip"
+  ],
+  "validation": {
+    "state": "passed",
+    "checks": [
+      {
+        "check": "structured-data",
+        "result": "All 23 repository JSON documents and all three XML documents parsed successfully. The proposal queue remains at fourteen items, the catalog remains at ten records, the relational manifest remains at eight nodes and four edges, and Attending contains exactly three items."
+      },
+      {
+        "check": "exact-source-integrity",
+        "result": "All 27 indexed Field, Workshop, and Library sources matched their recorded byte lengths and SHA-256 values."
+      },
+      {
+        "check": "internal-links",
+        "result": "All local links and assets resolved across 126 HTML pages."
+      },
+      {
+        "check": "reader-regression-suite",
+        "result": "All 66 reader build tests passed."
+      },
+      {
+        "check": "responsive-browser",
+        "result": "Attending and the homepage passed desktop and 390 by 844 phone checks with the psychedelic default, no horizontal overflow, keyboard-focusable main regions, a sticky phone header, exactly three Attending items, and no browser errors."
+      },
+      {
+        "check": "catalog-search",
+        "result": "A phone-sized homepage search for people who disagree returned the single visibly proposed Community Notes record within the six-result limit. The default Library aperture remains unchanged at three works."
+      },
+      {
+        "check": "changed-prose-policy",
+        "result": "No em dash characters were added."
+      },
+      {
+        "check": "publication-boundary",
+        "result": "Every changed path is permitted by governance.json. No exact source, global index, application file, public tending page, ratification state, or human-locked control changed."
+      },
+      {
+        "check": "distribution-archive",
+        "result": "The mirror archive rebuilt twice to the same SHA-256, includes today's audit, and excludes repository internals and recursive archive inclusion."
+      }
+    ]
+  },
+  "unresolved_questions": [
+    "Which kinds of disagreement remain invisible when perspective is inferred only from rating patterns?",
+    "What does a public storm need beyond a note that people across perspectives find helpful?",
+    "How can broad helpfulness become one signal among evidence, testimony, values, provenance, and explicit dissent?"
+  ],
+  "public_change": false,
+  "proposed_public_change": false,
+  "run_state": "valid-no-op",
+  "valid_no_op": true,
+  "human_review_required": false,
+  "note": "No public dated tending page was created. Attending remains unchanged while this audit preserves the day's methodical no-change decision."
+}
