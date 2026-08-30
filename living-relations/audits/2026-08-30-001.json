@@ -1,0 +1,226 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-08-30-001",
+  "run_type": "scheduled-governed-run",
+  "started_at": "2026-08-30T07:04:10-07:00",
+  "completed_at": "2026-08-30T08:44:19-07:00",
+  "repository": {
+    "branch": "codex/tending-2026-08-30",
+    "starting_commit": "bd995d51588540896fb773c463134fc7434ee90a",
+    "pull_request": null,
+    "pull_request_state": "pending-validation",
+    "publication_action": "pending"
+  },
+  "automation": {
+    "id": "daily-cyberdelic-tending",
+    "name": "Daily Cyberdelic Tending",
+    "status": "active",
+    "schedule": "Daily at 7:00 AM America/Vancouver",
+    "next_scheduled_run": "2026-08-31T07:00:00-07:00"
+  },
+  "office_versions": {
+    "cartographer": "0.1",
+    "gardener": "0.1",
+    "librarian": "0.1",
+    "publication_authority": "1.1"
+  },
+  "inputs": {
+    "inbox_items": 0,
+    "declared_question": "How can a gathering reveal shared structure without making consensus the measure of truth?",
+    "internal_region": [
+      {
+        "id": "cyberdelic-os:fn-25",
+        "title": "Expeditions, Storms, and the Birth of Boroughs"
+      }
+    ],
+    "external_region": [
+      "external:polis"
+    ]
+  },
+  "cartographer": {
+    "state": "no-proposal",
+    "candidate_limit": 3,
+    "candidates_created": [],
+    "existing_proposals_rechecked": [
+      "REL-P-000001",
+      "REL-P-000002"
+    ],
+    "sources_checked": [
+      {
+        "title": "The Computational Democracy Project",
+        "url": "https://compdemocracy.org/",
+        "source_kind": "official-project-site",
+        "checked_at": "2026-08-30T07:11:31-07:00"
+      },
+      {
+        "title": "Polis",
+        "url": "https://compdemocracy.org/polis/",
+        "source_kind": "official-project-documentation",
+        "checked_at": "2026-08-30T07:11:31-07:00"
+      },
+      {
+        "title": "Polis public repository",
+        "url": "https://github.com/compdemocracy/polis",
+        "source_kind": "official-source-repository",
+        "checked_at": "2026-08-30T07:11:31-07:00",
+        "branch_checked": "edge",
+        "commit_checked": "5089c6bef9eb1a1e454beb34354fb29dd0a2b6f0"
+      },
+      {
+        "title": "Polis: Scaling Deliberation by Mapping High Dimensional Opinion Spaces",
+        "url": "https://www.e-revistes.uji.es/index.php/recerca/article/view/5516/6558",
+        "source_kind": "publisher-hosted-paper",
+        "checked_at": "2026-08-30T07:11:31-07:00"
+      }
+    ],
+    "source_facts": [
+      {
+        "claim": "The Computational Democracy Project continues to describe Polis as an open-source, real-time system for gathering, analyzing, and understanding what large groups think in their own words using statistics and machine learning.",
+        "source": "https://compdemocracy.org/"
+      },
+      {
+        "claim": "The official Polis page continues to describe participant-authored short statements, agree, disagree, or pass responses, semi-random presentation, adaptive participation, and participant-created survey dimensions.",
+        "source": "https://compdemocracy.org/polis/"
+      },
+      {
+        "claim": "The maintained public repository continues to describe Polis as open-source AI for large-scale open-ended feedback and remains licensed under AGPL-3.0 with additional permission.",
+        "source": "https://github.com/compdemocracy/polis"
+      },
+      {
+        "claim": "FN-25 continues to imagine a larger gathering process that carries testimony, evidence, art, forecasts, values, and institutional histories, and may preserve disagreement rather than end in consensus.",
+        "source": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
+        "locator": "Field Note 25: Expeditions, Storms, and the Birth of Boroughs"
+      }
+    ],
+    "inference": "The existing possible shared inquiry remains accurate. Polis makes large-scale participant feedback and opinion structure legible, while FN-25 imagines a wider artifact of evidence, values, provenance, ratification, and explicit dissent. No new external node or edge is needed to restate that distinction.",
+    "uncertainty": "The selected public sources do not resolve how facilitation, moderation, identity, and data governance should transfer into a Cyberdelic gathering. Those questions remain open rather than being inferred from technical proximity.",
+    "attribution": "External facts are attributed to the Computational Democracy Project, its public Polis repository, and the publisher-hosted methods paper. Internal continuity is attributed to the exact FN-S0-001 publication.",
+    "source_fact_and_inference_separated": true,
+    "source_conflict_found": false,
+    "private_material_read": false,
+    "external_contact_performed": false,
+    "stop_reason": "The oldest external neighbour was rechecked as one bounded inquiry. Its evidence and limits remain coherent, so the Cartographer stopped without expanding to other deliberation systems."
+  },
+  "gardener": {
+    "state": "no-change",
+    "cartographer_proposals_considered": [
+      "REL-P-000001",
+      "REL-P-000002"
+    ],
+    "decisions": [
+      {
+        "kind": "evidence-stability",
+        "decision": "Keep the Polis node strongly evidenced and the FN-25 shared inquiry possible, emerging, and visibly proposed. Current primary sources support the existing distinction."
+      },
+      {
+        "kind": "lifecycle-and-attending",
+        "decision": "Do not change proposal lifecycle, rotate Attending, or publish a dated tending page. The current Community Notes arrangement remains recent and no Polis dormancy signal is present."
+      },
+      {
+        "kind": "manifest-boundary",
+        "decision": "Leave relationships.json unchanged. The recheck refreshed confidence in a proposal but did not create a ratification event."
+      }
+    ],
+    "changes": [],
+    "manifest_changed": false,
+    "attending_arrangement_changed": false,
+    "exact_publication_sources_changed": false,
+    "decision_reason": "No evidence drift, relation error, lifecycle event, or continuity gap warranted relational metadata changes today."
+  },
+  "librarian": {
+    "state": "proposed",
+    "catalog_change_limit": 3,
+    "records_examined": [
+      "catalog:cyberdelic-os:fn-25",
+      "catalog:external:polis"
+    ],
+    "records_created": [],
+    "records_revised": [
+      "catalog:external:polis"
+    ],
+    "records_removed": [],
+    "decisions": [
+      {
+        "kind": "ordinary-language-findability",
+        "decision": "Add open-ended feedback, agree disagree pass, and mutual understanding to the existing Polis search terms. Each phrase is directly supported by the official project site or public repository."
+      },
+      {
+        "kind": "catalog-continuity",
+        "decision": "Preserve the existing Polis summary, questions, proposed relation to FN-25, and every other cumulative catalog record."
+      },
+      {
+        "kind": "finite-search",
+        "decision": "Retain the six-result directory limit and unchanged three-work default Library aperture."
+      }
+    ],
+    "search_terms_added": [
+      "open-ended feedback",
+      "agree disagree pass",
+      "mutual understanding"
+    ],
+    "outward_search_performed": false,
+    "catalog_count": 10,
+    "decision_reason": "These three supported phrases improve discovery for people seeking a large-group feedback process without adding a new object, changing the relation, or ranking the project by attention."
+  },
+  "files_changed": [
+    "living-relations/catalog.json",
+    "living-relations/audits/2026-08-30-001.json",
+    "cyberdelic-space.zip"
+  ],
+  "validation": {
+    "state": "passed",
+    "checks": [
+      {
+        "check": "structured-data",
+        "result": "All 24 repository JSON documents and all three XML documents parsed successfully. The proposal queue remains at fourteen items, the catalog remains at ten records, the relational manifest remains at eight nodes and four edges, and Attending contains exactly three items."
+      },
+      {
+        "check": "exact-source-integrity",
+        "result": "All 27 indexed Field, Workshop, and Library sources matched their recorded byte lengths and SHA-256 values."
+      },
+      {
+        "check": "internal-links",
+        "result": "All local links and assets resolved across 126 HTML pages."
+      },
+      {
+        "check": "reader-regression-suite",
+        "result": "All 66 reader build tests passed."
+      },
+      {
+        "check": "responsive-browser",
+        "result": "The homepage search and Attending passed desktop and 390 by 844 phone checks with the psychedelic default, no horizontal overflow, keyboard-focusable main regions, a sticky phone header, exactly three Attending items, and no browser errors."
+      },
+      {
+        "check": "catalog-search",
+        "result": "A homepage search for open-ended feedback returned the single visibly proposed Polis record within the six-result limit. The default Library aperture remains unchanged at three works."
+      },
+      {
+        "check": "public-tending-boundary",
+        "result": "No August 30 public tending page was created because proposals, the manifest, and Attending did not materially change."
+      },
+      {
+        "check": "changed-prose-policy",
+        "result": "No em dash characters were added."
+      },
+      {
+        "check": "publication-boundary",
+        "result": "Every changed path is permitted by governance.json. No exact source, global index, application file, proposal, manifest, Attending page, ratification state, or human-locked control changed."
+      },
+      {
+        "check": "distribution-archive",
+        "result": "The mirror archive rebuilt twice to the same SHA-256, includes today's audit and catalog revision, and excludes repository internals and recursive archive inclusion."
+      }
+    ]
+  },
+  "unresolved_questions": [
+    "How do Polis facilitation, moderation, identity, and data-governance choices compare with the boundaries imagined for a Cyberdelic gathering?",
+    "How can a gathering reveal shared structure without making consensus the measure of truth?",
+    "What must remain visible when complex positions are represented as clusters?"
+  ],
+  "public_change": true,
+  "proposed_public_change": true,
+  "run_state": "validation-complete",
+  "valid_no_op": false,
+  "human_review_required": false,
+  "note": "No public dated tending page was created because the relational field and finite Attending arrangement did not materially change. The cumulative catalog became more findable through one bounded revision."
+}

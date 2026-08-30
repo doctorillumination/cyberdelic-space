@@ -1,7 +1,7 @@
 {
   "schema": "https://cyberdelic.space/schemas/living-catalog-v1.json",
   "version": "0.2",
-  "updated_at": "2026-08-28T07:17:40-07:00",
+  "updated_at": "2026-08-30T07:11:31-07:00",
   "count": 10,
   "curation": {
     "office": "OFFICE-LIBRARIAN",
@@ -102,14 +102,14 @@
       "canonical_url": "https://compdemocracy.org/polis/",
       "summary": "An open-source platform for large-group sensemaking through participant statements, agree, disagree, or pass responses, and statistical mapping of opinion space.",
       "subjects": ["collective sensemaking", "deliberation", "opinion mapping", "open-source civic technology"],
-      "search_terms": ["consensus", "public conversation", "civic dialogue", "group intelligence", "survey", "participatory democracy"],
+      "search_terms": ["consensus", "public conversation", "civic dialogue", "group intelligence", "survey", "participatory democracy", "open-ended feedback", "agree disagree pass", "mutual understanding"],
       "questions": ["How can a gathering reveal agreement without erasing important forms of disagreement?"],
       "related": [{"id": "cyberdelic-os:fn-25", "title": "Expeditions, Storms, and the Birth of Boroughs", "relation_type": "shared-inquiry", "review_state": "proposed"}],
       "evidence": [{"source": "living-relations/proposals.json", "locator": "REL-P-000001 and REL-P-000002"}],
       "epistemic_status": "possible",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
-      "last_tended_at": "2026-08-23T12:00:00-07:00"
+      "last_tended_at": "2026-08-30T07:11:31-07:00"
     },
     {
       "id": "catalog:external:art-blocks",
