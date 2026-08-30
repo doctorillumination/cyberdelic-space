@@ -3,13 +3,13 @@
   "audit_id": "TEND-2026-08-30-001",
   "run_type": "scheduled-governed-run",
   "started_at": "2026-08-30T07:04:10-07:00",
-  "completed_at": "2026-08-30T08:44:19-07:00",
+  "completed_at": "2026-08-30T08:46:11-07:00",
   "repository": {
     "branch": "codex/tending-2026-08-30",
     "starting_commit": "bd995d51588540896fb773c463134fc7434ee90a",
-    "pull_request": null,
-    "pull_request_state": "pending-validation",
-    "publication_action": "pending"
+    "pull_request": "https://github.com/doctorillumination/cyberdelic-space/pull/24",
+    "pull_request_state": "ready-auto-publication",
+    "publication_action": "validated-autonomous-publication"
   },
   "automation": {
     "id": "daily-cyberdelic-tending",
