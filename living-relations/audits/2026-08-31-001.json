@@ -1,0 +1,231 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-08-31-001",
+  "run_type": "scheduled-governed-run",
+  "started_at": "2026-08-31T07:06:33-07:00",
+  "completed_at": "2026-08-31T08:19:57-07:00",
+  "repository": {
+    "branch": "codex/tending-2026-08-31",
+    "starting_commit": "191638ce72a359d1e2566f168b59926abb5b68e1",
+    "pull_request": "https://github.com/doctorillumination/cyberdelic-space/pull/25",
+    "pull_request_state": "ready-auto-publication",
+    "publication_action": "validated-autonomous-publication"
+  },
+  "automation": {
+    "id": "daily-cyberdelic-tending",
+    "name": "Daily Cyberdelic Tending",
+    "status": "active",
+    "schedule": "Daily at 7:00 AM America/Vancouver",
+    "next_scheduled_run": "2026-09-01T07:00:00-07:00"
+  },
+  "office_versions": {
+    "cartographer": "0.1",
+    "gardener": "0.1",
+    "librarian": "0.1",
+    "publication_authority": "1.1"
+  },
+  "inputs": {
+    "inbox_items": 0,
+    "declared_question": "What would it mean to build a press that expected its own building to disappear?",
+    "internal_region": [
+      {
+        "id": "cyberdelic-os:fn-33",
+        "title": "The Plate and the Pull"
+      }
+    ],
+    "external_region": [
+      "external:art-blocks"
+    ]
+  },
+  "cartographer": {
+    "state": "no-proposal",
+    "candidate_limit": 3,
+    "candidates_created": [],
+    "existing_proposals_rechecked": [
+      "REL-P-000003",
+      "REL-P-000004",
+      "REL-P-000005"
+    ],
+    "sources_checked": [
+      {
+        "title": "Art Blocks Protocol Overview",
+        "url": "https://docs.artblocks.io/protocol/overview/",
+        "source_kind": "official-protocol-documentation",
+        "checked_at": "2026-08-31T07:10:41-07:00"
+      },
+      {
+        "title": "The Art Blocks Generator",
+        "url": "https://docs.artblocks.io/protocol/on-chain-generator/",
+        "source_kind": "official-technical-documentation",
+        "checked_at": "2026-08-31T07:10:41-07:00"
+      },
+      {
+        "title": "Core Contract V3",
+        "url": "https://docs.artblocks.io/developer/core-contract/",
+        "source_kind": "official-developer-documentation",
+        "checked_at": "2026-08-31T07:10:41-07:00"
+      },
+      {
+        "title": "Art Blocks contracts repository",
+        "url": "https://github.com/ArtBlocks/artblocks-contracts",
+        "source_kind": "official-source-repository",
+        "checked_at": "2026-08-31T07:10:41-07:00",
+        "commit_checked": "e3611897ae0a6def340da0e35fd7408da24a5a4e"
+      }
+    ],
+    "source_facts": [
+      {
+        "claim": "The official protocol overview continues to describe artist scripts, token hashes, and dependency libraries as inputs for deterministic reconstruction, including reconstruction beyond Art Blocks servers.",
+        "source": "https://docs.artblocks.io/protocol/overview/"
+      },
+      {
+        "claim": "The official generator documentation describes assembling artist scripts, token hashes, and dependency libraries into browser-viewable HTML and states that the on-chain generator removes the centralized generator dependency.",
+        "source": "https://docs.artblocks.io/protocol/on-chain-generator/"
+      },
+      {
+        "claim": "The generator documentation continues to qualify that about 90 percent of flagship projects are supported fully on-chain while the remainder reference distributed CDN packages.",
+        "source": "https://docs.artblocks.io/protocol/on-chain-generator/"
+      },
+      {
+        "claim": "The core contract documentation distinguishes a fully on-chain Engine from Engine Flex projects that may carry IPFS, Arweave, BytecodeStorage, or Dependency Registry assets while retaining the generative script on-chain.",
+        "source": "https://docs.artblocks.io/developer/core-contract/"
+      },
+      {
+        "claim": "FN-33 asks how the public algorithm, edition lineage, renderer, and capacity for encounter can remain available after the original venue disappears.",
+        "source": "living-content/cyberdelic-os/fn-s0-006/v000001.md",
+        "locator": "The Plate and the Pull"
+      }
+    ],
+    "inference": "The existing possible technical adjacency remains accurate. Art Blocks provides a concrete precedent for reconstructable generative work, while FN-33 proposes a different Bitcoin-based press, edition boundary, and public copyability model. The projects should remain adjacent without being treated as equivalent.",
+    "uncertainty": "Durability still varies by project dependency choices, and the checked sources do not settle which storage or execution bundle a Cyberdelic plate should adopt.",
+    "attribution": "External facts are attributed to Art Blocks official protocol and developer documentation and its public contracts repository. Internal continuity is attributed to the exact FN-S0-006 publication.",
+    "source_fact_and_inference_separated": true,
+    "source_conflict_found": false,
+    "private_material_read": false,
+    "external_contact_performed": false,
+    "stop_reason": "One existing external neighbour was rechecked as a bounded inquiry. Its evidence, limits, and distinction from FN-33 remain coherent, so no new proposal was warranted."
+  },
+  "gardener": {
+    "state": "no-change",
+    "cartographer_proposals_considered": [
+      "REL-P-000003",
+      "REL-P-000004",
+      "REL-P-000005"
+    ],
+    "decisions": [
+      {
+        "kind": "evidence-stability",
+        "decision": "Keep the Art Blocks node strongly evidenced and its FN-33 technical adjacency possible, emerging, and visibly proposed. Current primary sources preserve both the precedent and its dependency limits."
+      },
+      {
+        "kind": "lifecycle-and-attending",
+        "decision": "Do not alter lifecycle or rotate Attending. The relation remains alive, and today's recheck does not outweigh the current finite Community Notes arrangement."
+      },
+      {
+        "kind": "manifest-boundary",
+        "decision": "Leave relationships.json unchanged. Rechecking a proposal is not a ratification or manifest event."
+      }
+    ],
+    "changes": [],
+    "manifest_changed": false,
+    "attending_arrangement_changed": false,
+    "exact_publication_sources_changed": false,
+    "decision_reason": "No evidence drift, relation error, lifecycle event, or continuity gap warranted relational metadata changes today."
+  },
+  "librarian": {
+    "state": "proposed",
+    "catalog_change_limit": 3,
+    "records_examined": [
+      "catalog:cyberdelic-os:fn-33",
+      "catalog:external:art-blocks"
+    ],
+    "records_created": [],
+    "records_revised": [
+      "catalog:external:art-blocks"
+    ],
+    "records_removed": [],
+    "decisions": [
+      {
+        "kind": "ordinary-language-findability",
+        "decision": "Add on-chain generator, self-contained HTML, and no servers required to the existing Art Blocks search terms. Each phrase is directly supported by official protocol or generator documentation."
+      },
+      {
+        "kind": "catalog-continuity",
+        "decision": "Preserve the existing Art Blocks summary, uncertainty, proposed relation to FN-33, and all cumulative catalog records."
+      },
+      {
+        "kind": "finite-search",
+        "decision": "Retain the six-result directory limit and the unchanged three-work default Library aperture."
+      }
+    ],
+    "search_terms_added": [
+      "on-chain generator",
+      "self-contained HTML",
+      "no servers required"
+    ],
+    "outward_search_performed": false,
+    "catalog_count": 10,
+    "decision_reason": "These three supported phrases improve discovery for people seeking generative work that can render beyond one service without adding an object, changing a relation, or introducing attention-based ranking."
+  },
+  "files_changed": [
+    "living-relations/catalog.json",
+    "living-relations/audits/2026-08-31-001.json",
+    "cyberdelic-space.zip"
+  ],
+  "validation": {
+    "state": "passed",
+    "checks": [
+      {
+        "check": "structured-data",
+        "result": "All 25 repository JSON documents and all three XML documents parsed successfully. The proposal queue remains at fourteen items, the catalog remains at ten records, and the relational manifest remains at eight nodes and four edges."
+      },
+      {
+        "check": "exact-source-integrity",
+        "result": "All 27 indexed Field, Workshop, and Library sources matched their recorded byte lengths and SHA-256 values."
+      },
+      {
+        "check": "internal-links",
+        "result": "All 2,617 local links and assets resolved across 126 HTML pages."
+      },
+      {
+        "check": "application-and-data-contracts",
+        "result": "All seven JavaScript files passed syntax checks, and 191 catalog and relational contract assertions passed."
+      },
+      {
+        "check": "responsive-browser",
+        "result": "The homepage search and Attending passed desktop and 390 by 844 phone checks with the psychedelic default, no horizontal overflow, keyboard-focusable main content, sticky headers, exactly three Attending items, and no browser errors."
+      },
+      {
+        "check": "catalog-search",
+        "result": "A homepage search for no servers required returned the single visibly proposed Art Blocks record within the six-result limit. The default Library aperture remains unchanged at three works."
+      },
+      {
+        "check": "public-tending-boundary",
+        "result": "No August 31 public tending page was created because proposals, the manifest, and Attending did not materially change."
+      },
+      {
+        "check": "changed-prose-policy",
+        "result": "No em dash characters were added."
+      },
+      {
+        "check": "publication-boundary",
+        "result": "Every changed path is permitted by governance.json. No exact source, global index, application file, proposal, manifest, Attending page, ratification state, or human-locked control changed."
+      },
+      {
+        "check": "distribution-archive",
+        "result": "The deterministic mirror includes today's audit and catalog revision and excludes repository internals and recursive archive inclusion."
+      }
+    ]
+  },
+  "unresolved_questions": [
+    "Which dependencies must be carried inside a generative plate for the work to remain reconstructable without privileged infrastructure?",
+    "Can an authorized edition end while its public algorithm remains independently copyable and renderable?",
+    "Which infrastructure-independent techniques transfer to a Bitcoin-based press without importing minting or marketplace assumptions?"
+  ],
+  "public_change": true,
+  "proposed_public_change": true,
+  "run_state": "validation-complete",
+  "valid_no_op": false,
+  "human_review_required": false,
+  "note": "No public dated tending page was created because the relational field and finite Attending arrangement did not materially change. The cumulative catalog became more findable through one bounded revision."
+}

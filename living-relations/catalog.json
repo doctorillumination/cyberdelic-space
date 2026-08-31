@@ -1,7 +1,7 @@
 {
   "schema": "https://cyberdelic.space/schemas/living-catalog-v1.json",
   "version": "0.2",
-  "updated_at": "2026-08-30T07:11:31-07:00",
+  "updated_at": "2026-08-31T07:10:41-07:00",
   "count": 10,
   "curation": {
     "office": "OFFICE-LIBRARIAN",
@@ -119,14 +119,14 @@
       "canonical_url": "https://www.artblocks.io/",
       "summary": "An on-chain generative-art protocol whose documented architecture offers a technical precedent for storing scripts, deterministic token hashes, and dependencies so works can be reconstructed beyond one service.",
       "subjects": ["generative art", "on-chain software", "deterministic rendering", "durability", "Ethereum"],
-      "search_terms": ["algorithmic art", "software preservation", "independent reconstruction", "smart contract", "artist script", "token hash"],
+      "search_terms": ["algorithmic art", "software preservation", "independent reconstruction", "smart contract", "artist script", "token hash", "on-chain generator", "self-contained HTML", "no servers required"],
       "questions": ["Which infrastructure-independent techniques can inform a durable press without importing marketplace assumptions?"],
       "related": [{"id": "cyberdelic-os:fn-33", "title": "The Plate and the Pull", "relation_type": "technical-adjacency", "review_state": "proposed"}],
       "evidence": [{"source": "living-relations/proposals.json", "locator": "REL-P-000003 through REL-P-000005"}],
       "epistemic_status": "possible",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
-      "last_tended_at": "2026-08-23T12:00:00-07:00"
+      "last_tended_at": "2026-08-31T07:10:41-07:00"
     },
     {
       "id": "catalog:external:webrecorder-wacz",
