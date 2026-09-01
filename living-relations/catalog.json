@@ -1,7 +1,7 @@
 {
   "schema": "https://cyberdelic.space/schemas/living-catalog-v1.json",
   "version": "0.2",
-  "updated_at": "2026-08-31T07:10:41-07:00",
+  "updated_at": "2026-09-01T07:05:21-07:00",
   "count": 10,
   "curation": {
     "office": "OFFICE-LIBRARIAN",
@@ -132,18 +132,18 @@
       "id": "catalog:external:webrecorder-wacz",
       "record_kind": "external-neighbour",
       "title": "Web Archive Collection Zipped (WACZ)",
-      "href": "project/cyberdelic-os/relations/tending/2026-08-23/",
+      "href": "project/cyberdelic-os/relations/tending/2026-09-01/",
       "canonical_url": "https://specs.webrecorder.net/wacz/1.2.0/",
-      "summary": "A portable web-archive packaging specification that carries recorded resources, indexes, entry pages, contextual metadata, and file fixity for static hosting and browser replay.",
+      "summary": "A draft portable web-archive packaging specification that carries recorded resources, indexes, entry pages, contextual metadata, and file fixity for static hosting and browser replay.",
       "subjects": ["web archiving", "portable packages", "fixity", "browser replay", "digital preservation"],
-      "search_terms": ["WACZ", "Webrecorder", "software preservation", "ZIP", "manifest", "checksums", "portable archive", "reconstruction"],
+      "search_terms": ["WACZ", "Webrecorder", "software preservation", "ZIP", "manifest", "checksums", "portable archive", "reconstruction", "archived web pages", "static web archive", "no specialized server"],
       "questions": ["Could a generative plate carry a similarly portable manifest while preserving its own execution and lineage model?"],
       "related": [{"id": "cyberdelic-os:fn-33", "title": "The Plate and the Pull", "relation_type": "technical-adjacency", "review_state": "proposed"}],
-      "evidence": [{"source": "living-relations/proposals.json", "locator": "REL-P-000006 and REL-P-000007"}],
+      "evidence": [{"source": "living-relations/proposals.json", "locator": "REL-P-000006, REL-P-000007, and REL-P-000015"}],
       "epistemic_status": "possible",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
-      "last_tended_at": "2026-08-23T12:00:00-07:00"
+      "last_tended_at": "2026-09-01T07:05:21-07:00"
     },
     {
       "id": "catalog:external:oci-image-spec",

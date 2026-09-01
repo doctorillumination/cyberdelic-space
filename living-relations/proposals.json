@@ -1,7 +1,7 @@
 {
   "schema": "https://cyberdelic.space/schemas/relationship-proposals-v1.json",
-  "updated_at": "2026-08-28T07:17:40-07:00",
-  "count": 14,
+  "updated_at": "2026-09-01T07:05:21-07:00",
+  "count": 15,
   "items": [
     {
       "proposal_id": "REL-P-000001",
@@ -504,6 +504,40 @@
         "How can broad helpfulness become one signal among evidence, testimony, values, provenance, and explicit dissent?"
       ],
       "introduced_by": "OFFICE-CARTOGRAPHER",
+      "office_version": "0.1"
+    },
+    {
+      "proposal_id": "REL-P-000015",
+      "proposal_kind": "evidence-amendment",
+      "amends": ["REL-P-000006", "REL-P-000007"],
+      "source_node": "external:webrecorder-wacz",
+      "target_node": "cyberdelic-os:fn-33",
+      "revision_scope": "specification-status-and-trust-boundary",
+      "source_facts": [
+        {
+          "claim": "The WACZ 1.2.0 document explicitly identifies itself as a draft potential specification with no official standing and no claim of support or consensus from a standards organization.",
+          "url": "https://specs.webrecorder.net/wacz/1.2.0/",
+          "checked_at": "2026-09-01T07:05:21-07:00"
+        },
+        {
+          "claim": "The draft defines a discrete package that carries archived web content and contextual information, supports on-demand browser rendering through HTTP range requests, and can be statically hosted without specialized server-side software.",
+          "url": "https://specs.webrecorder.net/wacz/1.2.0/",
+          "checked_at": "2026-09-01T07:05:21-07:00"
+        },
+        {
+          "claim": "The draft permits signing extensions but does not require a signature or specify one trust model for archived content.",
+          "url": "https://raw.githubusercontent.com/webrecorder/specs/main/wacz/1.2.0/index.md",
+          "checked_at": "2026-09-01T07:05:21-07:00"
+        }
+      ],
+      "gardener_interpretation": "WACZ remains a useful packaging precedent, but its provisional specification status and open trust boundary should travel with the relation. This clarification preserves the possible technical adjacency without presenting WACZ as a settled standard or as an authority for generative edition lineage.",
+      "epistemic_status": "strong",
+      "review_state": "proposed",
+      "unresolved_questions": [
+        "Which parts of a draft packaging convention are stable enough to borrow before its status or trust model changes?",
+        "What independent authenticity and lineage evidence must a generative plate carry beyond package fixity?"
+      ],
+      "introduced_by": "OFFICE-GARDENER",
       "office_version": "0.1"
     }
   ]

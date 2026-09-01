@@ -1,0 +1,170 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-09-01-001",
+  "run_type": "scheduled-governed-run",
+  "started_at": "2026-09-01T07:03:40-07:00",
+  "completed_at": "2026-09-01T07:05:21-07:00",
+  "repository": {
+    "branch": "codex/tending-2026-09-01",
+    "starting_commit": "b05585080bb0f36d5144b13ee084e130d3e75d57",
+    "pull_request": "https://github.com/doctorillumination/cyberdelic-space/pull/26",
+    "pull_request_state": "ready-auto-publication",
+    "publication_action": "validated-autonomous-publication"
+  },
+  "automation": {
+    "id": "daily-cyberdelic-tending",
+    "name": "Daily Cyberdelic Tending",
+    "status": "active",
+    "schedule": "Daily at 7:00 AM America/Vancouver",
+    "next_scheduled_run": "2026-09-02T07:00:00-07:00"
+  },
+  "office_versions": {
+    "cartographer": "0.1",
+    "gardener": "0.1",
+    "librarian": "0.1",
+    "publication_authority": "1.1"
+  },
+  "inputs": {
+    "inbox_items": 0,
+    "declared_question": "Which dependencies must be carried inside a generative plate for the work to remain reconstructable without privileged infrastructure?",
+    "internal_region": [{"id": "cyberdelic-os:fn-33", "title": "The Plate and the Pull"}],
+    "external_region": ["external:webrecorder-wacz"]
+  },
+  "cartographer": {
+    "state": "no-proposal",
+    "candidate_limit": 3,
+    "candidates_created": [],
+    "existing_proposals_rechecked": ["REL-P-000006", "REL-P-000007"],
+    "sources_checked": [
+      {
+        "title": "Web Archive Collection Zipped 1.2.0",
+        "url": "https://specs.webrecorder.net/wacz/1.2.0/",
+        "source_kind": "official-specification-document",
+        "checked_at": "2026-09-01T07:05:21-07:00"
+      },
+      {
+        "title": "WACZ 1.2.0 source",
+        "url": "https://raw.githubusercontent.com/webrecorder/specs/main/wacz/1.2.0/index.md",
+        "source_kind": "official-versioned-source",
+        "checked_at": "2026-09-01T07:05:21-07:00"
+      },
+      {
+        "title": "Webrecorder specifications repository",
+        "url": "https://github.com/webrecorder/specs",
+        "source_kind": "official-source-repository",
+        "checked_at": "2026-09-01T07:05:21-07:00",
+        "commit_checked": "09268ee26718fe2da4e76fe43dbc23e0b2f13365"
+      }
+    ],
+    "source_facts": [
+      {
+        "claim": "The WACZ 1.2.0 document defines a discrete ZIP package containing archived web content and contextual information, with on-demand browser retrieval through HTTP range requests and static hosting without specialized server-side software.",
+        "source": "https://specs.webrecorder.net/wacz/1.2.0/"
+      },
+      {
+        "claim": "The document explicitly identifies itself as a draft potential specification with no official standing and no claim of standards-organization support or consensus.",
+        "source": "https://specs.webrecorder.net/wacz/1.2.0/"
+      },
+      {
+        "claim": "The draft permits signing extensions but does not require a signature or prescribe one trust model for archived content.",
+        "source": "https://raw.githubusercontent.com/webrecorder/specs/main/wacz/1.2.0/index.md"
+      },
+      {
+        "claim": "FN-33 asks what must remain publicly available so a generative work can be rendered after its original catalog, renderer, storefront, and company disappear.",
+        "source": "living-content/cyberdelic-os/fn-s0-006/v000001.md",
+        "locator": "The Plate and the Pull"
+      }
+    ],
+    "inference": "The possible technical adjacency remains useful. WACZ offers a concrete packaging pattern for carrying resources, indexes, context, and fixity, while FN-33 still requires separate execution, authenticity, authorized pull lineage, and edition-end semantics.",
+    "uncertainty": "The draft status means the packaging convention may evolve, and neither package fixity nor the optional signing extension settles the trust model needed by a generative press.",
+    "attribution": "External facts are attributed to the Webrecorder community's public specification site and repository. Internal continuity is attributed to the exact FN-S0-006 publication.",
+    "source_fact_and_inference_separated": true,
+    "source_conflict_found": false,
+    "private_material_read": false,
+    "external_contact_performed": false,
+    "stop_reason": "The existing neighbour remained coherent after one bounded recheck. No additional external node or edge was needed."
+  },
+  "gardener": {
+    "state": "proposed",
+    "cartographer_proposals_considered": ["REL-P-000006", "REL-P-000007"],
+    "decisions": [
+      {
+        "kind": "evidence-amendment",
+        "decision": "Add REL-P-000015 so the WACZ relation carries the document's draft status, lack of standards-body consensus, and unspecified trust model."
+      },
+      {
+        "kind": "relation-continuity",
+        "decision": "Keep the external node strongly evidenced and its FN-33 technical adjacency possible, emerging, and visibly proposed. The amendment deepens the boundary rather than weakening the useful packaging precedent."
+      },
+      {
+        "kind": "lifecycle-and-attending",
+        "decision": "Leave relationships.json and the current three-item Attending arrangement unchanged. The amendment is not ratification and does not justify replacing the current finite attention field."
+      }
+    ],
+    "changes": ["REL-P-000015"],
+    "manifest_changed": false,
+    "attending_arrangement_changed": false,
+    "exact_publication_sources_changed": false,
+    "decision_reason": "The public proposal needed a more precise epistemic boundary because the primary document explicitly describes itself as provisional."
+  },
+  "librarian": {
+    "state": "proposed",
+    "catalog_change_limit": 3,
+    "records_examined": ["catalog:cyberdelic-os:fn-33", "catalog:external:webrecorder-wacz"],
+    "records_created": [],
+    "records_revised": ["catalog:external:webrecorder-wacz"],
+    "records_removed": [],
+    "decisions": [
+      {
+        "kind": "epistemic-findability",
+        "decision": "Revise the WACZ summary to identify the specification as a draft and point the record to today's evidence-amendment page."
+      },
+      {
+        "kind": "ordinary-language-findability",
+        "decision": "Add archived web pages, static web archive, and no specialized server as source-grounded search terms."
+      },
+      {
+        "kind": "finite-search",
+        "decision": "Keep the ten-record cumulative catalog, six-result directory limit, and three-work default Library aperture."
+      }
+    ],
+    "search_terms_added": ["archived web pages", "static web archive", "no specialized server"],
+    "outward_search_performed": false,
+    "catalog_count": 10,
+    "decision_reason": "The revision makes both the useful packaging function and the provisional status findable without changing the relation or implying settled authority."
+  },
+  "files_changed": [
+    "living-relations/proposals.json",
+    "living-relations/catalog.json",
+    "living-relations/audits/2026-09-01-001.json",
+    "project/cyberdelic-os/relations/tending/2026-09-01/index.html",
+    "sitemap.xml",
+    "cyberdelic-space.zip"
+  ],
+  "validation": {
+    "state": "passed",
+    "checks": [
+      {"check": "structured-data", "result": "All 26 repository JSON documents and all three XML documents parsed successfully. The proposal queue contains fifteen items, the catalog contains ten records, and the relational manifest remains at eight nodes and four edges."},
+      {"check": "exact-source-integrity", "result": "All 27 indexed Field, Workshop, and Library sources matched their recorded byte lengths and SHA-256 values."},
+      {"check": "internal-links", "result": "All local links and assets resolved across 127 HTML pages."},
+      {"check": "application-and-data-contracts", "result": "All seven JavaScript files passed syntax checks, and 192 catalog and relational contract assertions passed."},
+      {"check": "responsive-browser", "result": "The homepage search, new tending page, and Attending passed desktop and 390 by 844 phone checks with the psychedelic default, no horizontal overflow, keyboard-focusable main content, sticky headers, exactly three Attending items, and no browser errors."},
+      {"check": "catalog-search", "result": "A homepage search for no specialized server returned the single visibly proposed WACZ record within the six-result limit. The default Library aperture remains unchanged at three works."},
+      {"check": "public-tending-boundary", "result": "A September 1 public tending record was created because REL-P-000015 materially deepens the evidentiary boundary of the WACZ proposal. Attending did not rotate."},
+      {"check": "changed-prose-policy", "result": "No em dash characters were added."},
+      {"check": "publication-boundary", "result": "Every changed path is permitted by governance.json. No exact source, global index outside the permitted sitemap route, application file, manifest, Attending page, ratification state, or human-locked control changed."},
+      {"check": "distribution-archive", "result": "The deterministic mirror includes today's proposal, catalog, audit, tending page, and sitemap revision and excludes repository internals and recursive archive inclusion."}
+    ]
+  },
+  "unresolved_questions": [
+    "Which parts of a draft packaging convention are stable enough to borrow before its status or trust model changes?",
+    "What independent authenticity and lineage evidence must a generative plate carry beyond package fixity?",
+    "How can portability support reconstruction without making the package itself the authority for edition lineage?"
+  ],
+  "public_change": true,
+  "proposed_public_change": true,
+  "run_state": "validation-complete",
+  "valid_no_op": false,
+  "human_review_required": false,
+  "note": "The public relational field materially deepened through one evidence amendment and one catalog revision. The finite Attending surface remains unchanged."
+}
