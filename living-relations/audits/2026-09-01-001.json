@@ -7,8 +7,8 @@
   "repository": {
     "branch": "codex/tending-2026-09-01",
     "starting_commit": "b05585080bb0f36d5144b13ee084e130d3e75d57",
-    "pull_request": null,
-    "pull_request_state": "pre-publication-validation",
+    "pull_request": "https://github.com/doctorillumination/cyberdelic-space/pull/26",
+    "pull_request_state": "ready-auto-publication",
     "publication_action": "validated-autonomous-publication"
   },
   "automation": {
