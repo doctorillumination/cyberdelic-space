@@ -1,0 +1,165 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-09-02-001",
+  "run_type": "scheduled-governed-run",
+  "started_at": "2026-09-02T07:20:00-07:00",
+  "completed_at": "2026-09-02T07:54:22-07:00",
+  "repository": {
+    "branch": "codex/tending-2026-09-02",
+    "starting_commit": "21946eb4758177c58c465efafb0b3b900a1bd0ef",
+    "pull_request": null,
+    "pull_request_state": "pending",
+    "publication_action": "validated-autonomous-publication"
+  },
+  "automation": {
+    "id": "daily-cyberdelic-tending",
+    "name": "Daily Cyberdelic Tending",
+    "status": "active",
+    "schedule": "Daily at 7:00 AM America/Vancouver",
+    "next_scheduled_run": "2026-09-03T07:00:00-07:00"
+  },
+  "office_versions": {
+    "cartographer": "0.1",
+    "gardener": "0.1",
+    "librarian": "0.1",
+    "publication_authority": "1.1"
+  },
+  "inputs": {
+    "inbox_items": 0,
+    "declared_question": "How can relations carry provenance without treating proximity as agreement?",
+    "internal_region": [
+      {"id": "cyberdelic-os:fn-29", "title": "The Living Librarian"},
+      {"id": "cyberdelic-os:fn-32", "title": "The Garden and the Living Map"},
+      {"id": "cyberdelic-os:bn-005", "title": "Building the Tending Offices"}
+    ],
+    "external_region": ["external:polis"]
+  },
+  "cartographer": {
+    "state": "no-proposal",
+    "candidate_limit": 3,
+    "candidates_created": [],
+    "existing_proposals_rechecked": ["REL-P-000001", "REL-P-000002"],
+    "sources_checked": [
+      {
+        "title": "Polis",
+        "url": "https://compdemocracy.org/polis/",
+        "source_kind": "official-project-documentation",
+        "checked_at": "2026-09-02T07:25:23-07:00"
+      },
+      {
+        "title": "Polis source repository",
+        "url": "https://github.com/compdemocracy/polis",
+        "source_kind": "official-source-repository",
+        "checked_at": "2026-09-02T07:25:23-07:00",
+        "commit_checked": "5089c6bef9eb1a1e454beb34354fb29dd0a2b6f0"
+      }
+    ],
+    "source_facts": [
+      {
+        "claim": "The Computational Democracy Project continues to describe Polis as open-source survey technology for gathering, analyzing, and understanding what large groups think in their own words through data science.",
+        "source": "https://compdemocracy.org/polis/"
+      },
+      {
+        "claim": "Participants submit short statements and respond to others with agree, disagree, or pass while the dimensions of the inquiry are created through participation.",
+        "source": "https://compdemocracy.org/polis/"
+      },
+      {
+        "claim": "The official project page frames the highest ambition of Polis as enabling collective intelligence and mutual understanding at scale.",
+        "source": "https://compdemocracy.org/polis/"
+      },
+      {
+        "claim": "FN-32 proposes Living Relationships as shared connective tissue, distinguishes Cartographer discovery from Gardener tending, and warns that proximity must not be presented as agreement.",
+        "source": "living-content/cyberdelic-os/fn-s0-005/v000001.md",
+        "locator": "The Garden and the Living Map"
+      }
+    ],
+    "inference": "The existing Polis node remains a useful neighbouring approach to collective sensemaking. Its current public description does not supply a new relation to FN-32 beyond the already proposed shared inquiry with FN-25, so adding another edge would create density without enough additional meaning.",
+    "uncertainty": "The bounded recheck did not evaluate particular deployments, facilitation choices, moderation outcomes, or data governance. Those questions remain outside today's source-grounded description.",
+    "attribution": "External facts are attributed to the Computational Democracy Project's public documentation and official repository. Internal continuity is attributed to the exact FN-S0-005 publication.",
+    "source_fact_and_inference_separated": true,
+    "source_conflict_found": false,
+    "private_material_read": false,
+    "external_contact_performed": false,
+    "stop_reason": "One existing neighbour was rechecked inside a bounded inquiry. Its evidence remained coherent, and no additional node or edge was warranted."
+  },
+  "gardener": {
+    "state": "no-change",
+    "cartographer_proposals_considered": ["REL-P-000001", "REL-P-000002"],
+    "decisions": [
+      {
+        "kind": "evidence-stability",
+        "decision": "Keep the Polis node strongly evidenced and its FN-25 shared inquiry possible, emerging, and visibly proposed. Current primary sources preserve the relation and its limits."
+      },
+      {
+        "kind": "internal-continuity",
+        "decision": "Keep the proposed FN-29 to FN-32 lineage and FN-32 to BN-005 implementation relations unchanged. The exact FN-32 source still separates the offices, while BN-005 gives that distinction a technical transaction."
+      },
+      {
+        "kind": "lifecycle-and-attending",
+        "decision": "Do not change lifecycle state, relationships.json, or Attending. Cataloging FN-32 improves findability without becoming a relation event or displacing the current three-item field."
+      }
+    ],
+    "changes": [],
+    "manifest_changed": false,
+    "attending_arrangement_changed": false,
+    "exact_publication_sources_changed": false,
+    "decision_reason": "No evidence drift, relation error, lifecycle event, or continuity gap warranted a relational metadata change today."
+  },
+  "librarian": {
+    "state": "proposed",
+    "catalog_change_limit": 3,
+    "records_examined": ["catalog:cyberdelic-os:fn-29", "catalog:cyberdelic-os:fn-32"],
+    "records_created": ["catalog:cyberdelic-os:fn-32"],
+    "records_revised": [],
+    "records_removed": [],
+    "decisions": [
+      {
+        "kind": "source-grounded-cataloging",
+        "decision": "Create a catalog record for FN-32 using its exact distinctions among Living Relationships, Cartographer discovery, Gardener care, finite Attending, and provenance-bearing edges."
+      },
+      {
+        "kind": "ordinary-language-findability",
+        "decision": "Make the work findable through mycelial network, constellation of ideas, website gardener, connection mapping, daily tending, growing deeper, and knowledge graph."
+      },
+      {
+        "kind": "finite-search",
+        "decision": "Grow the cumulative catalog from ten to eleven records while retaining the six-result directory limit and unchanged three-work default Library aperture."
+      }
+    ],
+    "search_terms_added": ["mycelial network", "constellation of ideas", "website gardener", "connection mapping", "daily tending", "growing deeper", "knowledge graph"],
+    "outward_search_performed": false,
+    "catalog_count": 11,
+    "decision_reason": "FN-32 governs the living-map idea but was only reachable through its official title or neighbouring records. One exact-source catalog entry materially improves deliberate discovery without changing the work or its relations."
+  },
+  "files_changed": [
+    "living-relations/catalog.json",
+    "living-relations/audits/2026-09-02-001.json",
+    "cyberdelic-space.zip"
+  ],
+  "validation": {
+    "state": "passed",
+    "checks": [
+      {"check": "structured-data", "result": "All 27 repository JSON documents and all three XML documents parsed successfully. The proposal queue remains at fifteen items, the catalog now contains eleven records, and the relational manifest remains at eight nodes and four edges."},
+      {"check": "exact-source-integrity", "result": "All 27 indexed Field, Workshop, and Library sources matched their recorded byte lengths and SHA-256 values."},
+      {"check": "internal-links", "result": "All 2,762 local links and assets resolved across 127 HTML pages."},
+      {"check": "application-and-data-contracts", "result": "All seven JavaScript files passed syntax checks, and 247 catalog and relational contract assertions passed."},
+      {"check": "responsive-browser", "result": "The homepage search passed a 390 by 844 phone check with the psychedelic default, no horizontal overflow, keyboard-focusable main content, a sticky header, one visibly proposed FN-32 result, and no browser errors. The unchanged Attending page retained its finite contract and passed desktop layout checks without overflow or browser errors."},
+      {"check": "catalog-search", "result": "A homepage search for mycelial network returned the single visibly proposed FN-32 record within the six-result limit. The default Library aperture remains unchanged at three works."},
+      {"check": "public-tending-boundary", "result": "No September 2 public tending page was created because proposals, the manifest, and Attending did not materially change."},
+      {"check": "changed-prose-policy", "result": "No em dash characters were added."},
+      {"check": "publication-boundary", "result": "Every changed path is permitted by governance.json. No exact source, application file, proposal, manifest, Attending page, sitemap, ratification state, or human-locked control changed."},
+      {"check": "distribution-archive", "result": "The deterministic mirror includes today's audit and catalog record and excludes repository internals and recursive archive inclusion."}
+    ]
+  },
+  "unresolved_questions": [
+    "How can a cumulative directory grow while the public encounter remains finite?",
+    "What kinds of proximity become misleading when represented as a relation?",
+    "When should an internal work enter the catalog without a new external neighbour or lifecycle event?"
+  ],
+  "public_change": true,
+  "proposed_public_change": true,
+  "run_state": "validation-complete",
+  "valid_no_op": false,
+  "human_review_required": false,
+  "note": "No public dated tending page was created because the relational field and finite Attending arrangement did not materially change. The cumulative catalog grew through one exact-source internal record."
+}
