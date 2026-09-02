@@ -1,8 +1,8 @@
 {
   "schema": "https://cyberdelic.space/schemas/living-catalog-v1.json",
   "version": "0.2",
-  "updated_at": "2026-09-01T07:05:21-07:00",
-  "count": 10,
+  "updated_at": "2026-09-02T07:25:23-07:00",
+  "count": 11,
   "curation": {
     "office": "OFFICE-LIBRARIAN",
     "office_version": "0.1",
@@ -60,6 +60,22 @@
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
       "last_tended_at": "2026-08-23T12:00:00-07:00"
+    },
+    {
+      "id": "catalog:cyberdelic-os:fn-32",
+      "record_kind": "field-note",
+      "title": "The Garden and the Living Map",
+      "href": "project/cyberdelic-os/field-notes/fn-32/",
+      "summary": "A field note that separates the Cartographer's discovery of possible paths from the Gardener's care for relations through time, proposing Living Relationships and a finite daily Attending practice.",
+      "subjects": ["living relationships", "relational metadata", "cartography", "curation", "finite attention"],
+      "search_terms": ["mycelial network", "constellation of ideas", "website gardener", "connection mapping", "daily tending", "growing deeper", "knowledge graph"],
+      "questions": ["How can a website grow deeper without demanding more from every visit?", "How can relations carry provenance without treating proximity as agreement?"],
+      "related": [{"id": "cyberdelic-os:fn-29", "title": "The Living Librarian", "relation_type": "lineage", "review_state": "proposed"}, {"id": "cyberdelic-os:bn-005", "title": "Building the Tending Offices", "relation_type": "implementation", "review_state": "proposed"}],
+      "evidence": [{"source": "living-content/cyberdelic-os/fn-s0-005/v000001.md", "locator": "The Garden and the Living Map; The pattern feels more mycelial; This could become a daily ritual for cyberdelic.space"}],
+      "epistemic_status": "strong",
+      "review_state": "model-proposed",
+      "introduced_by": "OFFICE-LIBRARIAN",
+      "last_tended_at": "2026-09-02T07:25:23-07:00"
     },
     {
       "id": "catalog:cyberdelic-os:fn-33",
