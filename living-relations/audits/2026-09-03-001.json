@@ -1,0 +1,183 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-09-03-001",
+  "run_type": "scheduled-governed-run",
+  "started_at": "2026-09-03T07:06:21-07:00",
+  "completed_at": "2026-09-03T07:16:40-07:00",
+  "repository": {
+    "branch": "codex/tending-2026-09-03",
+    "starting_commit": "06c3bc83ec5127592a464a8187ca84fb1b08beb8",
+    "pull_request": "https://github.com/doctorillumination/cyberdelic-space/pull/28",
+    "pull_request_state": "ready-auto-publication",
+    "publication_action": "validated-autonomous-publication"
+  },
+  "automation": {
+    "id": "daily-cyberdelic-tending",
+    "name": "Daily Cyberdelic Tending",
+    "status": "active",
+    "schedule": "Daily at 7:00 AM America/Vancouver",
+    "next_scheduled_run": "2026-09-04T07:00:00-07:00"
+  },
+  "office_versions": {
+    "cartographer": "0.1",
+    "gardener": "0.1",
+    "librarian": "0.1",
+    "publication_authority": "1.1"
+  },
+  "inputs": {
+    "inbox_items": 0,
+    "declared_question": "Which resources, manifests, indexes, and execution assumptions must travel with a generative plate?",
+    "internal_region": [{"id": "cyberdelic-os:fn-33", "title": "The Plate and the Pull"}],
+    "external_region": ["external:oci-image-spec"]
+  },
+  "cartographer": {
+    "state": "no-proposal",
+    "candidate_limit": 3,
+    "candidates_created": [],
+    "existing_proposals_rechecked": ["REL-P-000008", "REL-P-000009"],
+    "sources_checked": [
+      {
+        "title": "The OpenContainers Image Spec",
+        "url": "https://specs.opencontainers.org/image-spec/",
+        "source_kind": "official-specification-index",
+        "checked_at": "2026-09-03T07:15:34-07:00"
+      },
+      {
+        "title": "OCI Image Specification release v1.1.1",
+        "url": "https://github.com/opencontainers/image-spec/releases/tag/v1.1.1",
+        "source_kind": "official-release-record",
+        "checked_at": "2026-09-03T07:15:34-07:00",
+        "tag_checked": "v1.1.1"
+      },
+      {
+        "title": "OCI Image Format Specification v1.1.1",
+        "url": "https://github.com/opencontainers/image-spec/blob/v1.1.1/spec.md",
+        "source_kind": "official-versioned-specification",
+        "checked_at": "2026-09-03T07:15:34-07:00"
+      },
+      {
+        "title": "OCI Content Descriptors v1.1.1",
+        "url": "https://github.com/opencontainers/image-spec/blob/v1.1.1/descriptor.md",
+        "source_kind": "official-versioned-specification",
+        "checked_at": "2026-09-03T07:15:34-07:00"
+      },
+      {
+        "title": "OCI image-spec repository",
+        "url": "https://github.com/opencontainers/image-spec",
+        "source_kind": "official-source-repository",
+        "checked_at": "2026-09-03T07:15:34-07:00",
+        "commit_checked": "af26a05fba5ee648512f4ea3c9fda1fcc1b6d6dc"
+      }
+    ],
+    "source_facts": [
+      {
+        "claim": "The official specification index identifies the OCI Image Spec as standards-track and published in November 2025.",
+        "source": "https://specs.opencontainers.org/image-spec/"
+      },
+      {
+        "claim": "The official release record still identifies v1.1.1 as the latest release.",
+        "source": "https://github.com/opencontainers/image-spec/releases/tag/v1.1.1"
+      },
+      {
+        "claim": "Version 1.1.1 defines an OCI image through a manifest, optional image index, filesystem layers, and configuration for interoperable building, transport, and preparation for execution.",
+        "source": "https://github.com/opencontainers/image-spec/blob/v1.1.1/spec.md"
+      },
+      {
+        "claim": "Version 1.1.1 descriptors continue to carry content type, digest, and byte size, and direct consumers to verify retrieved content against those fields.",
+        "source": "https://github.com/opencontainers/image-spec/blob/v1.1.1/descriptor.md"
+      },
+      {
+        "claim": "FN-33 asks how a public algorithm and rendering encounter can remain reconstructable after the original catalog, renderer, storefront, and company disappear.",
+        "source": "living-content/cyberdelic-os/fn-s0-006/v000001.md",
+        "locator": "A Press, Not a Platform"
+      }
+    ],
+    "inference": "The existing possible technical adjacency remains accurate. OCI still provides a stable precedent for separating payload, runtime configuration, platform variants, and verifiable references, while FN-33 retains distinct concerns around browser encounter, authorized pull lineage, and edition closure.",
+    "uncertainty": "The current specification does not determine which execution environment a generative plate should carry, whether every dependency must be embedded, or how a Bitcoin-based edition should prove authorized lineage and closure.",
+    "attribution": "External facts are attributed to the Open Container Initiative's official specification site, release record, versioned documents, and public repository. Internal continuity is attributed to the exact FN-S0-006 publication.",
+    "source_fact_and_inference_separated": true,
+    "source_conflict_found": false,
+    "private_material_read": false,
+    "external_contact_performed": false,
+    "stop_reason": "One existing external neighbour was rechecked. Its primary sources, technical boundary, and distinction from FN-33 remain coherent, so a new proposal would add activity without adding meaning."
+  },
+  "gardener": {
+    "state": "no-change",
+    "cartographer_proposals_considered": ["REL-P-000008", "REL-P-000009"],
+    "decisions": [
+      {
+        "kind": "evidence-stability",
+        "decision": "Keep the OCI node strongly evidenced and its FN-33 technical adjacency possible, emerging, and visibly proposed. The latest release and current standards-track documentation preserve the relation's stated basis."
+      },
+      {
+        "kind": "relation-boundary",
+        "decision": "Keep the existing distinction between container packaging and the generative plate's browser encounter, lineage, and edition-end semantics. No evidence supports strengthening or weakening the edge."
+      },
+      {
+        "kind": "lifecycle-and-attending",
+        "decision": "Leave relationships.json and the current three-item Attending field unchanged. No dormancy, ratification, or continuity event occurred."
+      }
+    ],
+    "changes": [],
+    "manifest_changed": false,
+    "attending_arrangement_changed": false,
+    "exact_publication_sources_changed": false,
+    "decision_reason": "No evidence drift, relation error, lifecycle event, or continuity gap warranted relational metadata changes today."
+  },
+  "librarian": {
+    "state": "no-change",
+    "catalog_change_limit": 3,
+    "records_examined": ["catalog:cyberdelic-os:fn-33", "catalog:external:oci-image-spec"],
+    "records_created": [],
+    "records_revised": [],
+    "records_removed": [],
+    "decisions": [
+      {
+        "kind": "findability-stability",
+        "decision": "Keep the existing FN-33 and OCI summaries, subjects, ordinary-language terms, questions, and related paths. They already express the verified package, runtime, manifest, digest, and reconstruction concerns."
+      },
+      {
+        "kind": "evidence-restraint",
+        "decision": "Add no release-status synonym or duplicate technical term. The standards-track status improves source confidence but does not materially improve how a person would search for this work."
+      },
+      {
+        "kind": "finite-search",
+        "decision": "Keep the eleven-record cumulative catalog, six-result directory limit, and unchanged three-work default Library aperture."
+      }
+    ],
+    "search_terms_added": [],
+    "outward_search_performed": false,
+    "catalog_count": 11,
+    "decision_reason": "The relevant records remain accurate and findable. Revising them solely because the scheduled turn occurred would manufacture novelty."
+  },
+  "files_changed": [
+    "living-relations/audits/2026-09-03-001.json",
+    "cyberdelic-space.zip"
+  ],
+  "validation": {
+    "state": "passed",
+    "checks": [
+      {"check": "structured-data", "result": "All 28 repository JSON documents and all three XML documents parsed successfully. The proposal queue remains at fifteen items, the catalog remains at eleven records, and the relational manifest remains at eight nodes and four edges."},
+      {"check": "exact-source-integrity", "result": "All 27 indexed Field, Workshop, and Library sources matched their recorded byte lengths and SHA-256 values."},
+      {"check": "internal-links", "result": "All 2,762 local links and assets resolved across 127 HTML pages."},
+      {"check": "application-and-data-contracts", "result": "All seven JavaScript files passed syntax checks, and 247 catalog and relational contract assertions passed."},
+      {"check": "responsive-browser", "result": "The homepage search and unchanged Attending page passed responsive checks with the psychedelic default, no horizontal overflow, keyboard-focusable main content, sticky headers, exactly three Attending items, and no browser errors."},
+      {"check": "catalog-search", "result": "A homepage search for runtime assumptions returned the single visibly proposed OCI record within the six-result limit. The default Library aperture remains unchanged at three works."},
+      {"check": "public-tending-boundary", "result": "No September 3 public tending page was created because the relational field did not materially change."},
+      {"check": "changed-prose-policy", "result": "No em dash characters were added."},
+      {"check": "publication-boundary", "result": "Every changed path is permitted by governance.json. No exact source, application file, proposal, manifest, catalog, Attending page, sitemap, ratification state, or human-locked control changed."},
+      {"check": "distribution-archive", "result": "The deterministic mirror includes today's audit, matches every repository file byte for byte, and excludes repository internals and recursive archive inclusion."}
+    ]
+  },
+  "unresolved_questions": [
+    "Which execution assumptions belong inside a generative plate, and which should remain replaceable properties of a reader?",
+    "Must every dependency travel with the plate, or can a verifiable external reference remain sufficient?",
+    "How should a durable package distinguish technical integrity from authorized edition lineage?"
+  ],
+  "public_change": false,
+  "proposed_public_change": false,
+  "run_state": "valid-no-op",
+  "valid_no_op": true,
+  "human_review_required": false,
+  "note": "No public dated tending page was created. Attending and the cumulative catalog remain unchanged while this audit preserves today's methodical no-change decision."
+}
