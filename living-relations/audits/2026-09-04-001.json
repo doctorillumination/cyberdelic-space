@@ -1,0 +1,168 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-09-04-001",
+  "run_type": "scheduled-governed-run",
+  "started_at": "2026-09-04T08:00:27-07:00",
+  "completed_at": "2026-09-04T08:05:10-07:00",
+  "repository": {
+    "branch": "codex/tending-2026-09-04",
+    "starting_commit": "3922bd2658f5aff46c88d8072abfe9199e5c05e5",
+    "pull_request": null,
+    "pull_request_state": "pending",
+    "publication_action": "validated-autonomous-publication"
+  },
+  "automation": {
+    "id": "daily-cyberdelic-tending",
+    "name": "Daily Cyberdelic Tending",
+    "status": "active",
+    "schedule": "Daily at 7:00 AM America/Vancouver",
+    "next_scheduled_run": "2026-09-05T07:00:00-07:00"
+  },
+  "office_versions": {
+    "cartographer": "0.1",
+    "gardener": "0.1",
+    "librarian": "0.1",
+    "publication_authority": "1.1"
+  },
+  "inputs": {
+    "inbox_items": 0,
+    "declared_question": "Which execution assumptions belong inside a generative plate, and which should remain replaceable properties of a reader?",
+    "internal_region": [{"id": "cyberdelic-os:fn-33", "title": "The Plate and the Pull"}],
+    "external_region": ["external:webassembly-core"]
+  },
+  "cartographer": {
+    "state": "no-proposal",
+    "candidate_limit": 3,
+    "candidates_created": [],
+    "existing_proposals_rechecked": ["REL-P-000010", "REL-P-000011"],
+    "sources_checked": [
+      {
+        "title": "WebAssembly Core Specification",
+        "url": "https://www.w3.org/TR/wasm-core-2/",
+        "source_kind": "official-current-specification",
+        "checked_at": "2026-09-04T08:02:00-07:00",
+        "current_version": "https://www.w3.org/TR/2026/CRD-wasm-core-2-20260901/"
+      },
+      {
+        "title": "WebAssembly JavaScript Interface",
+        "url": "https://www.w3.org/TR/wasm-js-api-2/",
+        "source_kind": "official-current-embedding-specification",
+        "checked_at": "2026-09-04T08:02:00-07:00",
+        "current_version": "https://www.w3.org/TR/2026/CRD-wasm-js-api-2-20260901/"
+      },
+      {
+        "title": "WebAssembly specification repository",
+        "url": "https://github.com/WebAssembly/spec",
+        "source_kind": "official-source-repository",
+        "checked_at": "2026-09-04T08:02:00-07:00",
+        "commit_checked": "37d6b05914b6833330001cea9f051b97f98af5b8"
+      }
+    ],
+    "source_facts": [
+      {
+        "claim": "The current W3C Core Specification is a Candidate Recommendation Draft dated September 1, 2026 and continues to define WebAssembly as a portable low-level code format with module computation, imports, exports, validation, and execution semantics.",
+        "source": "https://www.w3.org/TR/wasm-core-2/"
+      },
+      {
+        "claim": "The current Core Specification continues to give WebAssembly no ambient access to its environment. Interaction with I/O, resources, and operating-system services must pass through functions supplied by the embedder.",
+        "source": "https://www.w3.org/TR/wasm-core-2/#security-considerations"
+      },
+      {
+        "claim": "The current JavaScript Interface continues to define the embedding boundary through construction, instantiation, imports, exports, data exchange, and error handling.",
+        "source": "https://www.w3.org/TR/wasm-js-api-2/"
+      },
+      {
+        "claim": "FN-33 describes the browser as a replaceable site of encounter and asks that no service possess the only renderer while the public algorithm and possibility of reconstruction remain available.",
+        "source": "living-content/cyberdelic-os/fn-s0-006/v000001.md",
+        "locator": "The browser can perform the encounter on the visitor's own machine"
+      }
+    ],
+    "inference": "The existing possible technical adjacency remains accurate. WebAssembly still offers a useful precedent for separating portable computation from replaceable host capabilities, while FN-33 retains additional concerns around assets, visual behavior, authorship, authorized pull lineage, and edition closure.",
+    "uncertainty": "The specification does not decide which rendering, timing, font, colour, randomness, or preservation assumptions a generative plate must carry, and portable execution alone does not preserve an intended encounter.",
+    "attribution": "External facts are attributed to the W3C WebAssembly Working Group's current specifications and official public repository. Internal continuity is attributed to the exact FN-S0-006 publication.",
+    "source_fact_and_inference_separated": true,
+    "source_conflict_found": false,
+    "private_material_read": false,
+    "external_contact_performed": false,
+    "stop_reason": "One existing external neighbour was rechecked. The September 1 specification revisions preserve the same portable-computation and embedding boundary already recorded, so a new proposal would add activity without adding meaning."
+  },
+  "gardener": {
+    "state": "no-change",
+    "cartographer_proposals_considered": ["REL-P-000010", "REL-P-000011"],
+    "decisions": [
+      {
+        "kind": "evidence-stability",
+        "decision": "Keep the WebAssembly node strongly evidenced and its FN-33 technical adjacency possible, emerging, and visibly proposed. The current specifications preserve the recorded source facts."
+      },
+      {
+        "kind": "relation-boundary",
+        "decision": "Keep the distinction between portable module semantics and the generative plate's assets, visual behavior, lineage, and edition-end semantics. No evidence supports strengthening or weakening the edge."
+      },
+      {
+        "kind": "lifecycle-and-attending",
+        "decision": "Leave relationships.json and the current three-item Attending field unchanged. A routine specification revision with no changed relational claim does not justify a lifecycle event or public rotation."
+      }
+    ],
+    "changes": [],
+    "manifest_changed": false,
+    "attending_arrangement_changed": false,
+    "exact_publication_sources_changed": false,
+    "decision_reason": "No evidence drift, relation error, lifecycle event, or continuity gap warranted relational metadata changes today."
+  },
+  "librarian": {
+    "state": "no-change",
+    "catalog_change_limit": 3,
+    "records_examined": ["catalog:cyberdelic-os:fn-33", "catalog:external:webassembly-core"],
+    "records_created": [],
+    "records_revised": [],
+    "records_removed": [],
+    "decisions": [
+      {
+        "kind": "findability-stability",
+        "decision": "Keep the existing FN-33 and WebAssembly summaries, subjects, ordinary-language terms, questions, and related paths. They already express the verified portable computation, host capability, execution-boundary, and reconstruction concerns."
+      },
+      {
+        "kind": "evidence-restraint",
+        "decision": "Add no publication-date term or duplicate runtime synonym. The current specification date confirms maintenance but does not materially improve how a person would find either record."
+      },
+      {
+        "kind": "finite-search",
+        "decision": "Keep the eleven-record cumulative catalog, six-result directory limit, and unchanged three-work default Library aperture."
+      }
+    ],
+    "search_terms_added": [],
+    "outward_search_performed": false,
+    "catalog_count": 11,
+    "decision_reason": "The relevant records remain accurate and findable. Revising them solely because the scheduled turn occurred would manufacture novelty."
+  },
+  "files_changed": [
+    "living-relations/audits/2026-09-04-001.json",
+    "cyberdelic-space.zip"
+  ],
+  "validation": {
+    "state": "passed",
+    "checks": [
+      {"check": "structured-data", "result": "All 29 repository JSON documents and all three XML documents parsed successfully. The proposal queue remains at fifteen items, the catalog remains at eleven records, and the relational manifest remains at eight nodes and four edges."},
+      {"check": "exact-source-integrity", "result": "All 27 indexed Field, Workshop, and Library sources matched their recorded byte lengths and SHA-256 values."},
+      {"check": "internal-links", "result": "All 2,762 local links and assets resolved across 127 HTML pages."},
+      {"check": "application-and-data-contracts", "result": "All seven JavaScript files passed syntax checks, and 247 catalog and relational contract assertions passed."},
+      {"check": "responsive-browser", "result": "The homepage search and unchanged Attending page passed responsive checks with the psychedelic default, no horizontal overflow, keyboard-focusable main content, sticky headers, exactly three Attending items, and no browser errors."},
+      {"check": "catalog-search", "result": "A homepage search for host imports returned the single visibly proposed WebAssembly record within the six-result limit. The default Library aperture remains unchanged at three works."},
+      {"check": "public-tending-boundary", "result": "No September 4 public tending page was created because the relational field did not materially change."},
+      {"check": "changed-prose-policy", "result": "No em dash characters were added."},
+      {"check": "publication-boundary", "result": "Every changed path is permitted by governance.json. No exact source, application file, proposal, manifest, catalog, Attending page, sitemap, ratification state, or human-locked control changed."},
+      {"check": "distribution-archive", "result": "The deterministic mirror includes today's audit, matches every repository file byte for byte, and excludes repository internals and recursive archive inclusion."}
+    ]
+  },
+  "unresolved_questions": [
+    "Could a generative plate expose a small explicit import contract while keeping its artistic computation portable?",
+    "Which rendering, timing, font, colour, and randomness assumptions must travel outside a portable module?",
+    "What must a replaceable reader promise so reconstruction preserves an encounter rather than only executing instructions?"
+  ],
+  "public_change": false,
+  "proposed_public_change": false,
+  "run_state": "valid-no-op",
+  "valid_no_op": true,
+  "human_review_required": false,
+  "note": "No public dated tending page was created. Attending and the cumulative catalog remain unchanged while this audit preserves today's methodical no-change decision."
+}
