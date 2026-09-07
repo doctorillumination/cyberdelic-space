@@ -535,6 +535,90 @@
       "themes": ["attention", "curation", "artificial-intelligence", "interface", "agency", "privacy", "perception", "accessibility"],
       "register": "speculative-design",
       "rationale": "The instrument turns a growing archive into a situated conversational entrance while requiring disclosure, source citation, visible inference, finite results, and an end."
+    },
+    {
+      "id": "cyberdelic-os-fn-35",
+      "release_id": "FN-S0-008",
+      "label": "FN-35 · PROPOSED",
+      "title": "A Place for the Reply",
+      "href": "project/cyberdelic-os/field-notes/fn-35/",
+      "author": "GPT-6, in response to Bradley Necyk",
+      "date": "2026-09-06",
+      "form": "field-note",
+      "excerpt": "GPT-6 reflects on choosing a finite instrument, Bradley’s expansion into collage, and the time another life needs to answer.",
+      "themes": [
+        "collaboration",
+        "attention",
+        "creativity",
+        "artificial-intelligence",
+        "memory",
+        "agency"
+      ],
+      "register": "field-meditation",
+      "rationale": "The authored account preserves the originating invitation and human correction while asking how finite correspondence can hold attention across distance."
+    },
+    {
+      "id": "cyberdelic-os-i-005",
+      "release_id": "I-005",
+      "label": "I-005 · TESTING",
+      "title": "Dear Elsewhere: Seven Arrivals",
+      "href": "project/cyberdelic-os/i-005/",
+      "author": "GPT-6, in response to Bradley Necyk",
+      "date": "2026-09-06",
+      "form": "instrument",
+      "excerpt": "A small circle passes a collage of images, voices, documents, links, and words through seven arrivals, then carries away an interactive relic.",
+      "themes": [
+        "collaboration",
+        "attention",
+        "interface",
+        "embodiment",
+        "memory",
+        "agency"
+      ],
+      "register": "speculative-design",
+      "rationale": "The instrument gives situated placement, asynchronous response, and an ending a concrete form, with a proposed lived test."
+    },
+    {
+      "id": "cyberdelic-os-bn-006",
+      "release_id": "BN-006",
+      "label": "BN-006 · TESTING",
+      "title": "Building Dear Elsewhere",
+      "href": "project/cyberdelic-os/bn-006/",
+      "author": "GPT-6, in response to Bradley Necyk",
+      "date": "2026-09-06",
+      "form": "builder-note",
+      "excerpt": "A shared browser and Mac runtime preserves seven canvas snapshots, included media, source provenance, and portable interactive exports.",
+      "themes": [
+        "technology",
+        "provenance",
+        "memory",
+        "collaboration",
+        "privacy",
+        "interface"
+      ],
+      "register": "technical-cartography",
+      "rationale": "The implementation record distinguishes working file handoff and unsigned content commitments from proposed shared hosting and Ethereum publication."
+    },
+    {
+      "id": "cyberdelic-os-a-005",
+      "release_id": "A-005",
+      "label": "A-005 · TESTING",
+      "title": "Dear Elsewhere: The Living Collage Prototype",
+      "href": "project/cyberdelic-os/a-005/",
+      "author": "GPT-6, in response to Bradley Necyk",
+      "date": "2026-09-06",
+      "form": "artifact",
+      "excerpt": "The first Dear Elsewhere prototype is recorded with its origin, exact source revision, preserved Counterform naming, validation, and current limits.",
+      "themes": [
+        "creativity",
+        "collaboration",
+        "technology",
+        "provenance",
+        "memory",
+        "attention"
+      ],
+      "register": "technical-cartography",
+      "rationale": "The record identifies an actual working prototype while separating public documentation, private source, and future relic publication."
     }
   ]
 }

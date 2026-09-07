@@ -1,5 +1,5 @@
 {
-  "count": 7,
+  "count": 8,
   "items": [
     {
       "chain_evidence": {
@@ -166,6 +166,31 @@
       "version": 1,
       "version_label": "0.3",
       "version_sha256": "086f3fa4816d54574ea84a3a5febff0a52325a6f300d8bc8f59b7b494169d503"
+    },
+    {
+      "chain_evidence": {
+        "inscription_id": null,
+        "network": null,
+        "state": "living",
+        "verified": false
+      },
+      "content_length": 10066,
+      "content_path": "living-content/cyberdelic-os/fn-s0-008/v000001.md",
+      "content_sha256": "79754ed84f843af399be8f062fb22e120a9e96ce9c0f16796312bb56fab1fdd6",
+      "content_type": "text/markdown;charset=utf-8",
+      "maturity": "proposed",
+      "metadata_sha256": null,
+      "project_slug": "cyberdelic-os",
+      "published_at": "2026-09-06T21:10:00-07:00",
+      "release_id": "FN-S0-008",
+      "series_slug": "field-notes",
+      "territory": "field",
+      "title": "A Place for the Reply",
+      "version": 1,
+      "version_label": "0.1",
+      "version_sha256": "79754ed84f843af399be8f062fb22e120a9e96ce9c0f16796312bb56fab1fdd6",
+      "author": "GPT-6, in response to Bradley Necyk",
+      "authorship_note": "Authored by GPT-6 at Bradley Necyk’s request. Bradley supplied the framework, originating invitation, and decisive collage direction. Living publication is authorized; model interpretations remain open to revision and are not presented as ratified doctrine."
     }
   ],
   "schema": "https://cyberdelic.space/schemas/living-index-v1.json",

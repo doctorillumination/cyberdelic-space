@@ -1,5 +1,5 @@
 {
-  "count": 13,
+  "count": 16,
   "items": [
     {
       "chain_evidence": {
@@ -299,6 +299,81 @@
       "version": 1,
       "version_label": "0.1",
       "version_sha256": "0917533a10ac42221cb2422711981c7d14cc66a9b76d7b4de7fd5e89340c7e2c"
+    },
+    {
+      "chain_evidence": {
+        "inscription_id": null,
+        "network": null,
+        "state": "living",
+        "verified": false
+      },
+      "content_length": 6423,
+      "content_path": "living-content/cyberdelic-os/i-005/v000001.md",
+      "content_sha256": "a12a155b8cd2f54daa1944f663538f376efdf92da9bb2691791b4e4fe0b9c1ba",
+      "content_type": "text/markdown;charset=utf-8",
+      "maturity": "testing",
+      "metadata_sha256": null,
+      "project_slug": "cyberdelic-os",
+      "published_at": "2026-09-06T21:10:00-07:00",
+      "release_id": "I-005",
+      "series_slug": "instruments",
+      "territory": "workshop",
+      "title": "Dear Elsewhere: Seven Arrivals",
+      "version": 1,
+      "version_label": "0.1",
+      "version_sha256": "a12a155b8cd2f54daa1944f663538f376efdf92da9bb2691791b4e4fe0b9c1ba",
+      "author": "GPT-6, in response to Bradley Necyk",
+      "authorship_note": "Authored by GPT-6 at Bradley Necyk’s request. Bradley supplied the framework, originating invitation, and decisive collage direction. Living publication is authorized; model interpretations remain open to revision and are not presented as ratified doctrine."
+    },
+    {
+      "chain_evidence": {
+        "inscription_id": null,
+        "network": null,
+        "state": "living",
+        "verified": false
+      },
+      "content_length": 9791,
+      "content_path": "living-content/cyberdelic-os/bn-006/v000001.md",
+      "content_sha256": "5ad05718c3f44493c8f95959a260462380103aa76be20349c0da5e81bf5ae8f7",
+      "content_type": "text/markdown;charset=utf-8",
+      "maturity": "testing",
+      "metadata_sha256": null,
+      "project_slug": "cyberdelic-os",
+      "published_at": "2026-09-06T21:10:00-07:00",
+      "release_id": "BN-006",
+      "series_slug": "builder-notes",
+      "territory": "workshop",
+      "title": "Building Dear Elsewhere",
+      "version": 1,
+      "version_label": "0.1",
+      "version_sha256": "5ad05718c3f44493c8f95959a260462380103aa76be20349c0da5e81bf5ae8f7",
+      "author": "GPT-6, in response to Bradley Necyk",
+      "authorship_note": "Authored by GPT-6 at Bradley Necyk’s request. Bradley supplied the framework, originating invitation, and decisive collage direction. Living publication is authorized; model interpretations remain open to revision and are not presented as ratified doctrine."
+    },
+    {
+      "chain_evidence": {
+        "inscription_id": null,
+        "network": null,
+        "state": "living",
+        "verified": false
+      },
+      "content_length": 4495,
+      "content_path": "living-content/cyberdelic-os/a-005/v000001.md",
+      "content_sha256": "cba36cdf1b6b3efa44b05219e7b68fa1ba984f0f17ff74607c41ce4a716ff414",
+      "content_type": "text/markdown;charset=utf-8",
+      "maturity": "testing",
+      "metadata_sha256": null,
+      "project_slug": "cyberdelic-os",
+      "published_at": "2026-09-06T21:10:00-07:00",
+      "release_id": "A-005",
+      "series_slug": "artifacts",
+      "territory": "workshop",
+      "title": "Dear Elsewhere: The Living Collage Prototype",
+      "version": 1,
+      "version_label": "0.1",
+      "version_sha256": "cba36cdf1b6b3efa44b05219e7b68fa1ba984f0f17ff74607c41ce4a716ff414",
+      "author": "GPT-6, in response to Bradley Necyk",
+      "authorship_note": "Authored by GPT-6 at Bradley Necyk’s request. Bradley supplied the framework, originating invitation, and decisive collage direction. Living publication is authorized; model interpretations remain open to revision and are not presented as ratified doctrine."
     }
   ],
   "schema": "https://cyberdelic.space/schemas/living-index-v1.json",
