@@ -1,7 +1,7 @@
 {
   "schema": "https://cyberdelic.space/schemas/living-relationships-v1.json",
-  "version": "0.2",
-  "updated_at": "2026-08-21T16:08:00+00:00",
+  "version": "0.3",
+  "updated_at": "2026-09-07T08:10:43-07:00",
   "curation": {
     "status": "model-proposed",
     "ratification": "Brad Necyk may ratify, revise, refuse, or leave any relation unresolved.",
@@ -58,6 +58,24 @@
       "kind": "office",
       "title": "Cartographer",
       "href": "project/cyberdelic-os/offices/cartographer/"
+    },
+    {
+      "id": "cyberdelic-os:fn-35",
+      "kind": "field-note",
+      "title": "A Place for the Reply",
+      "href": "project/cyberdelic-os/field-notes/fn-35/"
+    },
+    {
+      "id": "cyberdelic-os:i-005",
+      "kind": "instrument",
+      "title": "Dear Elsewhere",
+      "href": "project/cyberdelic-os/i-005/"
+    },
+    {
+      "id": "cyberdelic-os:a-005",
+      "kind": "artifact",
+      "title": "Dear Elsewhere",
+      "href": "project/cyberdelic-os/a-005/"
     }
   ],
   "edges": [
@@ -118,6 +136,52 @@
       ],
       "introduced_by": "OFFICE-GARDENER",
       "last_tended_at": "2026-08-21T16:08:00+00:00"
+    },
+    {
+      "edge_id": "REL-000005",
+      "from": "cyberdelic-os:fn-35",
+      "to": "cyberdelic-os:i-005",
+      "relation_type": "implementation",
+      "epistemic_status": "strong",
+      "lifecycle_state": "emerging",
+      "review_state": "proposed",
+      "rationale": "I-005 turns the encounter developed in FN-35 into a bounded protocol for seven addressed arrivals, preserved arrangements, explicit file handoff, and an ending that remains readable.",
+      "evidence": [
+        {
+          "source": "living-content/cyberdelic-os/fn-s0-008/v000001.md",
+          "locator": "What the canvas holds; The speed of making, the time of answering; An ending that can still be encountered"
+        },
+        {
+          "source": "living-content/cyberdelic-os/i-005/v000001.md",
+          "locator": "Pass the surface; Let seven be an ending"
+        }
+      ],
+      "introduced_by": "OFFICE-GARDENER",
+      "proposal_id": "REL-P-000016",
+      "last_tended_at": "2026-09-07T08:10:43-07:00"
+    },
+    {
+      "edge_id": "REL-000006",
+      "from": "cyberdelic-os:i-005",
+      "to": "cyberdelic-os:a-005",
+      "relation_type": "implementation",
+      "epistemic_status": "strong",
+      "lifecycle_state": "emerging",
+      "review_state": "proposed",
+      "rationale": "A-005 records the functioning browser and Mac prototype that embodies I-005 while preserving its present limits around hosting, identity, microphone testing, and public publication.",
+      "evidence": [
+        {
+          "source": "living-content/cyberdelic-os/i-005/v000001.md",
+          "locator": "Dear Elsewhere; Choose what to carry onward; The first lived test"
+        },
+        {
+          "source": "living-content/cyberdelic-os/a-005/v000001.md",
+          "locator": "The object that exists; What this record establishes"
+        }
+      ],
+      "introduced_by": "OFFICE-GARDENER",
+      "proposal_id": "REL-P-000017",
+      "last_tended_at": "2026-09-07T08:10:43-07:00"
     }
   ]
 }

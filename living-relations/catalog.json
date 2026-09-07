@@ -1,8 +1,8 @@
 {
   "schema": "https://cyberdelic.space/schemas/living-catalog-v1.json",
-  "version": "0.2",
-  "updated_at": "2026-09-02T07:25:23-07:00",
-  "count": 11,
+  "version": "0.3",
+  "updated_at": "2026-09-07T08:10:43-07:00",
+  "count": 14,
   "curation": {
     "office": "OFFICE-LIBRARIAN",
     "office_version": "0.1",
@@ -194,6 +194,54 @@
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
       "last_tended_at": "2026-08-25T08:01:40-07:00"
+    },
+    {
+      "id": "catalog:cyberdelic-os:fn-35",
+      "record_kind": "field-note",
+      "title": "A Place for the Reply",
+      "href": "project/cyberdelic-os/field-notes/fn-35/",
+      "summary": "A field note about Dear Elsewhere, a slow asynchronous collage correspondence where distinct ways of seeing can alter one shared object without being forced into one interpretation.",
+      "subjects": ["asynchronous correspondence", "collage", "shared attention", "parallax", "finite creative exchange"],
+      "search_terms": ["slow correspondence", "voice notes between friends", "collage between people", "shared canvas", "seven arrivals", "reply over time", "things worth carrying", "different perspectives together"],
+      "questions": ["How can another person's attention alter a shared object without erasing either perspective?", "Can software hold the interval before a human reply without treating delay as failure?"],
+      "related": [{"id": "cyberdelic-os:i-005", "title": "Dear Elsewhere", "relation_type": "implementation", "review_state": "proposed"}],
+      "evidence": [{"source": "living-content/cyberdelic-os/fn-s0-008/v000001.md", "locator": "What the canvas holds; The speed of making, the time of answering; An ending that can still be encountered"}],
+      "epistemic_status": "strong",
+      "review_state": "model-proposed",
+      "introduced_by": "OFFICE-LIBRARIAN",
+      "last_tended_at": "2026-09-07T08:10:43-07:00"
+    },
+    {
+      "id": "catalog:cyberdelic-os:i-005",
+      "record_kind": "instrument",
+      "title": "Dear Elsewhere",
+      "href": "project/cyberdelic-os/i-005/",
+      "summary": "A seven-arrival instrument for passing a changing collage among a small circle, preserving earlier arrangements and included media, then closing composition while keeping the finished relic interactive.",
+      "subjects": ["collage instrument", "asynchronous co-presence", "file handoff", "interactive archive", "bounded endings"],
+      "search_terms": ["portable HTML collage", "shared collage file", "seven turns", "asynchronous art", "pass a canvas", "interactive relic", "media correspondence", "finite collaboration", "manual file exchange"],
+      "questions": ["What should travel with a private creative correspondence?", "When does a visible ending release participants without closing future reading?"],
+      "related": [{"id": "cyberdelic-os:fn-35", "title": "A Place for the Reply", "relation_type": "implementation", "review_state": "proposed"}, {"id": "cyberdelic-os:a-005", "title": "Dear Elsewhere", "relation_type": "implementation", "review_state": "proposed"}],
+      "evidence": [{"source": "living-content/cyberdelic-os/i-005/v000001.md", "locator": "Pass the surface; Let seven be an ending; Choose what to carry onward"}],
+      "epistemic_status": "strong",
+      "review_state": "model-proposed",
+      "introduced_by": "OFFICE-LIBRARIAN",
+      "last_tended_at": "2026-09-07T08:10:43-07:00"
+    },
+    {
+      "id": "catalog:cyberdelic-os:a-005",
+      "record_kind": "artifact",
+      "title": "Dear Elsewhere",
+      "href": "project/cyberdelic-os/a-005/",
+      "summary": "The working browser and Mac prototype of Dear Elsewhere, with named contributors, addressed turns, media placement, preserved arrangements, and portable interactive export.",
+      "subjects": ["working prototype", "interactive collage", "portable archive", "media correspondence", "browser software"],
+      "search_terms": ["Dear Elsewhere app", "Counterform", "collage prototype", "browser collage", "Mac collage app", "portable interactive HTML", "addressed turns", "media and document import"],
+      "questions": ["What does the prototype establish before a lived interpersonal trial?", "How can a finished creative exchange remain interactive without becoming automatically public?"],
+      "related": [{"id": "cyberdelic-os:i-005", "title": "Dear Elsewhere", "relation_type": "implementation", "review_state": "proposed"}],
+      "evidence": [{"source": "living-content/cyberdelic-os/a-005/v000001.md", "locator": "The object that exists; What this record establishes; Keeping the work"}],
+      "epistemic_status": "strong",
+      "review_state": "model-proposed",
+      "introduced_by": "OFFICE-LIBRARIAN",
+      "last_tended_at": "2026-09-07T08:10:43-07:00"
     }
   ]
 }

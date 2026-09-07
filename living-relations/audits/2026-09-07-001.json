@@ -1,0 +1,134 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-09-07-001",
+  "run_type": "scheduled-governed-run",
+  "started_at": "2026-09-07T07:02:10-07:00",
+  "completed_at": "2026-09-07T08:21:58-07:00",
+  "repository": {
+    "branch": "codex/tending-2026-09-07",
+    "starting_commit": "ddf2530c09616089871ff9d3bec63e646aec6cb7",
+    "pull_request": "https://github.com/doctorillumination/cyberdelic-space/pull/32",
+    "pull_request_state": "ready-auto-publication",
+    "publication_action": "validated-autonomous-publication"
+  },
+  "automation": {
+    "id": "daily-cyberdelic-tending",
+    "name": "Daily Cyberdelic Tending",
+    "status": "active",
+    "schedule": "Daily at 7:00 AM America/Vancouver",
+    "next_scheduled_run": "2026-09-08T07:00:00-07:00"
+  },
+  "office_versions": {
+    "cartographer": "0.1",
+    "gardener": "0.1",
+    "librarian": "0.1",
+    "publication_authority": "1.1"
+  },
+  "inputs": {
+    "inbox_items": 0,
+    "declared_question": "How does a place for asynchronous reply move from an experiential proposition into a bounded instrument and a working artifact?",
+    "internal_region": [
+      {"id": "cyberdelic-os:fn-35", "title": "A Place for the Reply"},
+      {"id": "cyberdelic-os:i-005", "title": "Dear Elsewhere"},
+      {"id": "cyberdelic-os:bn-006", "title": "Building Dear Elsewhere"},
+      {"id": "cyberdelic-os:a-005", "title": "Dear Elsewhere"}
+    ],
+    "external_region": []
+  },
+  "cartographer": {
+    "state": "proposed",
+    "candidate_limit": 3,
+    "candidates_created": ["REL-P-000016", "REL-P-000017"],
+    "existing_proposals_rechecked": [],
+    "sources_checked": [
+      {"title": "A Place for the Reply", "source": "living-content/cyberdelic-os/fn-s0-008/v000001.md", "source_kind": "exact-living-publication", "checked_at": "2026-09-07T08:10:43-07:00"},
+      {"title": "Instrument I-005: Dear Elsewhere", "source": "living-content/cyberdelic-os/i-005/v000001.md", "source_kind": "exact-living-publication", "checked_at": "2026-09-07T08:10:43-07:00"},
+      {"title": "Building Dear Elsewhere", "source": "living-content/cyberdelic-os/bn-006/v000001.md", "source_kind": "exact-living-publication", "checked_at": "2026-09-07T08:10:43-07:00"},
+      {"title": "Artifact A-005: Dear Elsewhere", "source": "living-content/cyberdelic-os/a-005/v000001.md", "source_kind": "exact-living-publication", "checked_at": "2026-09-07T08:10:43-07:00"}
+    ],
+    "source_facts": [
+      {"claim": "FN-35 describes a finite collage correspondence where seven arrivals preserve a changing shared surface and end as an interactive relic.", "source": "living-content/cyberdelic-os/fn-s0-008/v000001.md", "locator": "What the canvas holds; The speed of making, the time of answering; An ending that can still be encountered"},
+      {"claim": "I-005 specifies named participants, addressed file handoff, preserved earlier arrangements, included media, a final seventh seal, and explicit export and publication boundaries.", "source": "living-content/cyberdelic-os/i-005/v000001.md", "locator": "Pass the surface; Let seven be an ending; Choose what to carry onward"},
+      {"claim": "A-005 records a functioning browser and Mac prototype with spatial composition, media and document import, historical arrangements, and portable interactive export.", "source": "living-content/cyberdelic-os/a-005/v000001.md", "locator": "The object that exists; What this record establishes"},
+      {"claim": "BN-006 documents a shared JavaScript runtime, seven preserved snapshots, bounded assets, chained turn commitments, and explicit limits around identity, recovery, hosting, and consent.", "source": "living-content/cyberdelic-os/bn-006/v000001.md", "locator": "One runtime in three places; Seven snapshots; What a commitment commits to; The next implementation threshold"}
+    ],
+    "inference": "I-005 is a direct implementation of the encounter proposed in FN-35, and A-005 is the current working embodiment of I-005. These relations are strong because the exact publications name one another and distinguish proposition, conduct, technical construction, and artifact evidence.",
+    "uncertainty": "The prototype has not yet demonstrated a completed interpersonal exchange, whether seven arrivals serve participants well, or how a future shared service can preserve addressed turns without centralizing private correspondence.",
+    "attribution": "All facts are attributed to the exact September 6 Cyberdelic OS publications. No private repository or conversation was read beyond what those public records themselves disclose.",
+    "source_fact_and_inference_separated": true,
+    "source_conflict_found": false,
+    "private_material_read": false,
+    "external_contact_performed": false,
+    "outward_search_performed": false,
+    "stop_reason": "The bounded internal continuity yielded two strong implementation proposals. A separate Builder Note relation was left for a later finite turn rather than filling every available connection."
+  },
+  "gardener": {
+    "state": "changed",
+    "cartographer_proposals_considered": ["REL-P-000016", "REL-P-000017"],
+    "decisions": [
+      {"kind": "internal-continuity", "decision": "Publish REL-000005 as a strong, emerging, visibly proposed implementation relation from FN-35 to I-005."},
+      {"kind": "artifact-continuity", "decision": "Publish REL-000006 as a strong, emerging, visibly proposed implementation relation from I-005 to A-005."},
+      {"kind": "finite-attending", "decision": "Rotate Attending to FN-35, REL-P-000016, and one unresolved privacy boundary while preserving the Community Notes arrangement in the dated archive."}
+    ],
+    "changes": ["REL-000005", "REL-000006", "ATTENDING-2026-09-07"],
+    "manifest_changed": true,
+    "attending_arrangement_changed": true,
+    "exact_publication_sources_changed": false,
+    "decision_reason": "New exact publications established a direct path from field proposition to instrument and working artifact. Publishing the path improves continuity without altering or ratifying the works."
+  },
+  "librarian": {
+    "state": "changed",
+    "catalog_change_limit": 3,
+    "records_examined": ["catalog:cyberdelic-os:fn-35", "catalog:cyberdelic-os:i-005", "catalog:cyberdelic-os:a-005", "cyberdelic-os:bn-006"],
+    "records_created": ["catalog:cyberdelic-os:fn-35", "catalog:cyberdelic-os:i-005", "catalog:cyberdelic-os:a-005"],
+    "records_revised": [],
+    "records_removed": [],
+    "decisions": [
+      {"kind": "ordinary-language-findability", "decision": "Create records for FN-35, I-005, and A-005 so people can find the work through slow correspondence, voice notes between friends, shared collage files, seven arrivals, interactive relics, and the Dear Elsewhere app."},
+      {"kind": "bounded-deferral", "decision": "Leave BN-006 reachable through related paths and the tending record, then consider its own catalog entry in a later turn rather than exceeding the three-record limit."},
+      {"kind": "finite-search", "decision": "Keep search bounded to six results and preserve the unchanged three-work default Library aperture."}
+    ],
+    "search_terms_added": ["slow correspondence", "voice notes between friends", "shared collage file", "seven arrivals", "interactive relic", "Dear Elsewhere app"],
+    "outward_search_performed": false,
+    "catalog_count": 14,
+    "decision_reason": "Three source-grounded records materially improve discovery of the newly published work without changing its claims, ranking by attention, or exceeding the daily catalog limit."
+  },
+  "files_changed": [
+    "living-relations/proposals.json",
+    "living-relations/relationships.json",
+    "living-relations/catalog.json",
+    "living-relations/audits/2026-09-07-001.json",
+    "project/cyberdelic-os/relations/index.html",
+    "project/cyberdelic-os/relations/tending/2026-09-07/index.html",
+    "project/cyberdelic-os/attending/index.html",
+    "project/cyberdelic-os/attending/archive/2026-08-28-community-notes/index.html",
+    "sitemap.xml",
+    "cyberdelic-space.zip"
+  ],
+  "validation": {
+    "state": "passed",
+    "checks": [
+      {"check": "structured-data", "result": "All 33 repository JSON documents and all three XML documents parsed successfully. The proposal queue contains seventeen items, the catalog contains fourteen records, and the relational manifest contains eleven nodes and six edges."},
+      {"check": "exact-source-integrity", "result": "All 31 indexed Field, Workshop, and Library sources matched their recorded byte lengths and SHA-256 values."},
+      {"check": "internal-links", "result": "All local links and assets resolved across 135 HTML pages."},
+      {"check": "application-and-data-contracts", "result": "All seven JavaScript files passed syntax checks, and catalog and relational data contracts passed."},
+      {"check": "responsive-browser", "result": "The homepage search, Living Relationships, current Attending, archived Attending, and September 7 tending record passed 390-pixel checks with the psychedelic default, no horizontal overflow, keyboard-focusable main content, sticky headers, and no browser warnings or errors."},
+      {"check": "catalog-search", "result": "A homepage search for seven arrivals returned FN-35 and I-005 as two tended paths within the six-result limit. The default Library aperture remains unchanged at three works."},
+      {"check": "finite-attending", "result": "Current Attending contains exactly one work, one proposed relation, and one unresolved question. The prior arrangement remains in the dated archive."},
+      {"check": "changed-prose-policy", "result": "No em dash characters were added."},
+      {"check": "publication-boundary", "result": "Every changed path is permitted by governance.json. No exact publication, application file, global index, feed, theme, script, style, authorship, right, chain record, hash, ratification event, or human-locked control changed."},
+      {"check": "distribution-archive", "result": "The deterministic mirror includes the new proposals, manifest, catalog, tending pages, archive, sitemap entries, and audit, matches every repository file byte for byte, and excludes repository internals and recursive archive inclusion."}
+    ]
+  },
+  "unresolved_questions": [
+    "Will seven arrivals feel generous or abrupt in a lived correspondence?",
+    "What forms of rearrangement will participants experience as care, permission, or intrusion?",
+    "How can easier addressed handoff remain private without turning correspondence into platform data?"
+  ],
+  "public_change": true,
+  "proposed_public_change": true,
+  "run_state": "published-proposal",
+  "valid_no_op": false,
+  "human_review_required": false,
+  "note": "Publication makes the new internal continuity and catalog records visible. It does not ratify the relations or alter the exact September 6 publications."
+}
