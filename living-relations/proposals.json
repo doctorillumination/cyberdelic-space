@@ -1,7 +1,7 @@
 {
   "schema": "https://cyberdelic.space/schemas/relationship-proposals-v1.json",
-  "updated_at": "2026-09-01T07:05:21-07:00",
-  "count": 15,
+  "updated_at": "2026-09-07T08:10:43-07:00",
+  "count": 17,
   "items": [
     {
       "proposal_id": "REL-P-000001",
@@ -538,6 +538,68 @@
         "What independent authenticity and lineage evidence must a generative plate carry beyond package fixity?"
       ],
       "introduced_by": "OFFICE-GARDENER",
+      "office_version": "0.1"
+    },
+    {
+      "proposal_id": "REL-P-000016",
+      "proposal_kind": "relationship-edge",
+      "source_node": "cyberdelic-os:fn-35",
+      "target_node": "cyberdelic-os:i-005",
+      "relation_type": "implementation",
+      "source_facts": [
+        {
+          "claim": "Field Note 35 describes Dear Elsewhere as a finite asynchronous collage correspondence in which seven arrivals preserve a changing shared surface and end as an interactive relic.",
+          "source": "living-content/cyberdelic-os/fn-s0-008/v000001.md",
+          "locator": "What the canvas holds; The speed of making, the time of answering; An ending that can still be encountered"
+        },
+        {
+          "claim": "Instrument I-005 specifies the same correspondence as seven addressed arrivals, explicit file handoff, preserved earlier arrangements, included media, bounded exports, and a completed but still readable relic.",
+          "source": "living-content/cyberdelic-os/i-005/v000001.md",
+          "locator": "Pass the surface; Let seven be an ending; Choose what to carry onward"
+        }
+      ],
+      "cartographer_inference": "I-005 is a direct implementation of the encounter proposed in FN-35. The relation is strong because each exact publication names the other and describes the same bounded correspondence, while the Instrument turns the Field Note's experiential account into an explicit protocol.",
+      "epistemic_status": "strong",
+      "lifecycle_state": "emerging",
+      "review_state": "proposed",
+      "unresolved_questions": [
+        "Will seven arrivals feel generous or abrupt in a lived correspondence?",
+        "What forms of rearrangement will participants experience as care, permission, or intrusion?"
+      ],
+      "introduced_by": "OFFICE-CARTOGRAPHER",
+      "introduced_through": "new-publication-continuity",
+      "checked_at": "2026-09-07T08:10:43-07:00",
+      "office_version": "0.1"
+    },
+    {
+      "proposal_id": "REL-P-000017",
+      "proposal_kind": "relationship-edge",
+      "source_node": "cyberdelic-os:i-005",
+      "target_node": "cyberdelic-os:a-005",
+      "relation_type": "implementation",
+      "source_facts": [
+        {
+          "claim": "Instrument I-005 defines a working browser and Mac instrument for seven asynchronous arrivals, explicit saves, portable HTML and structured archives, and no automatic publication or wallet action.",
+          "source": "living-content/cyberdelic-os/i-005/v000001.md",
+          "locator": "Dear Elsewhere; Pass the surface; Choose what to carry onward"
+        },
+        {
+          "claim": "Artifact A-005 records the functioning prototype, its spatial canvas, addressed turns, media and document import, historical arrangements, portable reopening, and current evidence limits.",
+          "source": "living-content/cyberdelic-os/a-005/v000001.md",
+          "locator": "The object that exists; What this record establishes"
+        }
+      ],
+      "cartographer_inference": "A-005 is the current working embodiment of I-005. The Artifact establishes that the Instrument has crossed from proposed conduct into functioning software while preserving explicit limits around shared hosting, identity, microphone testing, publication, and consent.",
+      "epistemic_status": "strong",
+      "lifecycle_state": "emerging",
+      "review_state": "proposed",
+      "unresolved_questions": [
+        "What evidence from a lived two-person exchange would change the Instrument?",
+        "How should a future shared service preserve addressed turns without turning private correspondence into platform data?"
+      ],
+      "introduced_by": "OFFICE-CARTOGRAPHER",
+      "introduced_through": "new-publication-continuity",
+      "checked_at": "2026-09-07T08:10:43-07:00",
       "office_version": "0.1"
     }
   ]
