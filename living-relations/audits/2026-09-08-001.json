@@ -1,0 +1,125 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-09-08-001",
+  "run_type": "scheduled-governed-run",
+  "started_at": "2026-09-08T07:55:48-07:00",
+  "completed_at": "2026-09-08T09:37:40-07:00",
+  "repository": {
+    "branch": "codex/tending-2026-09-08",
+    "starting_commit": "dfa9f607f31b0a155334e61248a993bb5e71ec3f",
+    "pull_request": null,
+    "pull_request_state": "not-created",
+    "publication_action": "validated-autonomous-publication"
+  },
+  "automation": {
+    "id": "daily-cyberdelic-tending",
+    "name": "Daily Cyberdelic Tending",
+    "status": "active",
+    "schedule": "Daily at 7:00 AM America/Vancouver",
+    "next_scheduled_run": "2026-09-09T07:00:00-07:00"
+  },
+  "office_versions": {
+    "cartographer": "0.1",
+    "gardener": "0.1",
+    "librarian": "0.1",
+    "publication_authority": "1.1"
+  },
+  "inputs": {
+    "inbox_items": 0,
+    "declared_question": "How does the Dear Elsewhere instrument carry its commitments about preserved arrangements, included media, turn history, portable reading, and a finite ending into software?",
+    "internal_region": [
+      {"id": "cyberdelic-os:i-005", "title": "Dear Elsewhere"},
+      {"id": "cyberdelic-os:bn-006", "title": "Building Dear Elsewhere"}
+    ],
+    "external_region": []
+  },
+  "cartographer": {
+    "state": "proposed",
+    "candidate_limit": 3,
+    "candidates_created": ["REL-P-000018"],
+    "existing_proposals_rechecked": [],
+    "sources_checked": [
+      {"title": "Instrument I-005: Dear Elsewhere", "source": "living-content/cyberdelic-os/i-005/v000001.md", "source_kind": "exact-living-publication", "checked_at": "2026-09-08T07:55:48-07:00"},
+      {"title": "Builder Note BN-006: Building Dear Elsewhere", "source": "living-content/cyberdelic-os/bn-006/v000001.md", "source_kind": "exact-living-publication", "checked_at": "2026-09-08T07:55:48-07:00"}
+    ],
+    "source_facts": [
+      {"claim": "I-005 defines seven addressed arrivals, preserved earlier arrangements, bounded included media, explicit saving and handoff, portable exports, and no automatic synchronization or publication.", "source": "living-content/cyberdelic-os/i-005/v000001.md", "locator": "What can arrive; Pass the surface; Let seven be an ending; Choose what to carry onward"},
+      {"claim": "BN-006 documents one shared JavaScript runtime, seven whole-canvas snapshots, bounded included files, chained turn digests, portable archives, and explicit identity, recovery, conflict, and consent limits.", "source": "living-content/cyberdelic-os/bn-006/v000001.md", "locator": "One runtime in three places; Seven snapshots; Carry bytes, retain sources; What a commitment commits to; The portable relic and the context view"}
+    ],
+    "inference": "BN-006 is the technical implementation account for I-005. It turns the Instrument's experiential and procedural commitments into an inspectable runtime and archive model while carrying forward explicit trust and recovery limits.",
+    "uncertainty": "The current prototype does not establish reliable shared hosting, authenticated identity, automatic recovery, conflict merging, consent, or a completed interpersonal trial. Its unsigned hashes cannot establish those properties on their own.",
+    "attribution": "All facts are attributed to exact public Cyberdelic OS publications. The private implementation repository named by BN-006 was not opened or inspected during this run.",
+    "source_fact_and_inference_separated": true,
+    "source_conflict_found": false,
+    "private_material_read": false,
+    "external_contact_performed": false,
+    "outward_search_performed": false,
+    "stop_reason": "One strong internal relation completed the bounded continuity explicitly deferred on September 7. No additional candidate was needed."
+  },
+  "gardener": {
+    "state": "changed",
+    "cartographer_proposals_considered": ["REL-P-000018"],
+    "decisions": [
+      {"kind": "internal-continuity", "decision": "Publish REL-000007 as a strong, emerging, visibly proposed implementation relation from I-005 to BN-006."},
+      {"kind": "finite-attending", "decision": "Leave the September 7 three-item Attending arrangement unchanged because it still carries one work, one relation, and one unresolved boundary."},
+      {"kind": "source-integrity", "decision": "Preserve all exact publication bytes, historical metadata, hashes, rights, authorship, and ratification history."}
+    ],
+    "changes": ["REL-000007"],
+    "manifest_changed": true,
+    "attending_arrangement_changed": false,
+    "exact_publication_sources_changed": false,
+    "decision_reason": "The exact Instrument and Builder Note directly name one another and describe the same bounded correspondence at procedural and technical layers. The relation deepens context without changing either work."
+  },
+  "librarian": {
+    "state": "changed",
+    "catalog_change_limit": 3,
+    "records_examined": ["catalog:cyberdelic-os:bn-006"],
+    "records_created": ["catalog:cyberdelic-os:bn-006"],
+    "records_revised": [],
+    "records_removed": [],
+    "decisions": [
+      {"kind": "ordinary-language-findability", "decision": "Create the BN-006 record deferred on September 7 so the technical account can be found through archive format, snapshots, hashes, asset commitments, recovery, conflicts, and portable HTML."},
+      {"kind": "evidence-bound-vocabulary", "decision": "Ground every summary, subject, search term, question, and related path in exact BN-006 passages."},
+      {"kind": "finite-search", "decision": "Keep search bounded to six results and preserve the unchanged three-work default Library aperture."}
+    ],
+    "search_terms_added": ["how Dear Elsewhere works", "collage archive format", "seven snapshots", "chained turn hashes", "asset commitments", "draft recovery", "conflicting copies", "portable collage HTML"],
+    "outward_search_performed": false,
+    "catalog_count": 15,
+    "decision_reason": "One source-grounded record completes yesterday's bounded deferral and improves technical findability without altering the underlying work or exceeding the daily limit."
+  },
+  "files_changed": [
+    "living-relations/proposals.json",
+    "living-relations/relationships.json",
+    "living-relations/catalog.json",
+    "living-relations/audits/2026-09-08-001.json",
+    "project/cyberdelic-os/relations/index.html",
+    "project/cyberdelic-os/relations/tending/2026-09-08/index.html",
+    "sitemap.xml",
+    "cyberdelic-space.zip"
+  ],
+  "validation": {
+    "state": "passed",
+    "checks": [
+      {"check": "structured-data", "result": "All 34 repository JSON documents and all three XML documents parsed successfully. The proposal queue contains eighteen items, the catalog contains fifteen records, and the relational manifest contains twelve nodes and seven edges."},
+      {"check": "exact-source-integrity", "result": "All 31 indexed Field, Workshop, and Library sources matched their recorded byte lengths and SHA-256 values."},
+      {"check": "internal-links", "result": "All 2,830 local links and assets resolved across 136 HTML pages."},
+      {"check": "application-and-data-contracts", "result": "All eight JavaScript files passed syntax checks. Proposal, catalog, and relational identifiers, counts, required fields, endpoints, and finite limits passed contract checks."},
+      {"check": "responsive-browser", "result": "The homepage directory, Living Relationships, September 8 tending record, and current Attending surface rendered at 390 by 844 pixels with the psychedelic default, a legible stacked layout, no visible horizontal overflow, and keyboard-addressable navigation."},
+      {"check": "catalog-search", "result": "A homepage search for chained turn hashes returned Building Dear Elsewhere as one tended path within the six-result limit. The default Library aperture remains unchanged at three works."},
+      {"check": "finite-attending", "result": "Current Attending remains unchanged with exactly one work, one proposed relation, and one unresolved question. No unnecessary daily rotation was manufactured."},
+      {"check": "changed-prose-policy", "result": "No em dash characters were added."},
+      {"check": "publication-boundary", "result": "Every changed path is permitted by governance.json. No exact publication, application file, global index, feed, theme, script, style, authorship, right, chain record, hash, ratification event, or human-locked control changed."},
+      {"check": "distribution-archive", "result": "The deterministic mirror was rebuilt twice with identical SHA-256 output, includes the new relational data, page, sitemap entry, and audit, matches every archived repository file byte for byte, and excludes repository internals and recursive archive inclusion."}
+    ]
+  },
+  "unresolved_questions": [
+    "Which recovery guarantees are necessary before manual file handoff becomes a shared service?",
+    "What independently trusted commitment could make a turn-chain comparison meaningful without claiming that a file authenticates its contributors?"
+  ],
+  "public_change": true,
+  "proposed_public_change": true,
+  "run_state": "ready-for-autonomous-publication",
+  "valid_no_op": false,
+  "human_review_required": false,
+  "note": "Publication will make one internal implementation relation and one catalog record visible. It will not ratify the relation or alter either exact publication."
+}

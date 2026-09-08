@@ -1,7 +1,7 @@
 {
   "schema": "https://cyberdelic.space/schemas/relationship-proposals-v1.json",
-  "updated_at": "2026-09-07T08:10:43-07:00",
-  "count": 17,
+  "updated_at": "2026-09-08T07:55:48-07:00",
+  "count": 18,
   "items": [
     {
       "proposal_id": "REL-P-000001",
@@ -600,6 +600,37 @@
       "introduced_by": "OFFICE-CARTOGRAPHER",
       "introduced_through": "new-publication-continuity",
       "checked_at": "2026-09-07T08:10:43-07:00",
+      "office_version": "0.1"
+    },
+    {
+      "proposal_id": "REL-P-000018",
+      "proposal_kind": "relationship-edge",
+      "source_node": "cyberdelic-os:i-005",
+      "target_node": "cyberdelic-os:bn-006",
+      "relation_type": "implementation",
+      "source_facts": [
+        {
+          "claim": "Instrument I-005 defines a seven-arrival correspondence with preserved earlier arrangements, bounded included media, explicit saving, portable exports, and no automatic synchronization or publication.",
+          "source": "living-content/cyberdelic-os/i-005/v000001.md",
+          "locator": "What can arrive; Pass the surface; Let seven be an ending; Choose what to carry onward"
+        },
+        {
+          "claim": "Builder Note BN-006 documents the implementation architecture behind those commitments: one JavaScript runtime, seven whole-canvas snapshots, bounded assets, chained turn digests, portable HTML and structured archives, and explicit identity, recovery, conflict, and consent limits.",
+          "source": "living-content/cyberdelic-os/bn-006/v000001.md",
+          "locator": "One runtime in three places; Seven snapshots; Carry bytes, retain sources; What a commitment commits to; The portable relic and the context view"
+        }
+      ],
+      "cartographer_inference": "BN-006 is the technical implementation account for I-005. It makes the Instrument's experiential and procedural commitments inspectable as a bounded archive model while stating where hashes, local files, and the current static prototype cannot establish identity, consent, recovery, accepted history, or shared service reliability.",
+      "epistemic_status": "strong",
+      "lifecycle_state": "emerging",
+      "review_state": "proposed",
+      "unresolved_questions": [
+        "Which recovery guarantees are necessary before manual file handoff becomes a shared service?",
+        "What independently trusted commitment could make a turn-chain comparison meaningful without claiming that a file authenticates its contributors?"
+      ],
+      "introduced_by": "OFFICE-CARTOGRAPHER",
+      "introduced_through": "deferred-internal-continuity",
+      "checked_at": "2026-09-08T07:55:48-07:00",
       "office_version": "0.1"
     }
   ]
