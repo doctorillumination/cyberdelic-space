@@ -1,8 +1,8 @@
 {
   "schema": "https://cyberdelic.space/schemas/living-catalog-v1.json",
-  "version": "0.3",
-  "updated_at": "2026-09-07T08:10:43-07:00",
-  "count": 14,
+  "version": "0.4",
+  "updated_at": "2026-09-08T07:55:48-07:00",
+  "count": 15,
   "curation": {
     "office": "OFFICE-LIBRARIAN",
     "office_version": "0.1",
@@ -242,6 +242,22 @@
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
       "last_tended_at": "2026-09-07T08:10:43-07:00"
+    },
+    {
+      "id": "catalog:cyberdelic-os:bn-006",
+      "record_kind": "builder-note",
+      "title": "Building Dear Elsewhere",
+      "href": "project/cyberdelic-os/bn-006/",
+      "summary": "The technical account of Dear Elsewhere's shared browser and Mac runtime, seven preserved canvas snapshots, bounded included files, chained turn digests, portable exports, and current limits around identity, recovery, conflicts, and consent.",
+      "subjects": ["portable archive", "turn history", "file integrity", "local-first correspondence", "technical limits"],
+      "search_terms": ["how Dear Elsewhere works", "Counterform format", "collage archive format", "seven snapshots", "chained turn hashes", "asset commitments", "64 MiB archive", "draft recovery", "conflicting copies", "portable collage HTML"],
+      "questions": ["What does a turn hash preserve, and what can it not prove?", "How can a portable creative correspondence recover drafts and reject conflicting continuations without centralizing private material?"],
+      "related": [{"id": "cyberdelic-os:i-005", "title": "Dear Elsewhere", "relation_type": "implementation", "review_state": "proposed"}],
+      "evidence": [{"source": "living-content/cyberdelic-os/bn-006/v000001.md", "locator": "One runtime in three places; Seven snapshots; Carry bytes, retain sources; What a commitment commits to; The portable relic and the context view; The next implementation threshold"}],
+      "epistemic_status": "strong",
+      "review_state": "model-proposed",
+      "introduced_by": "OFFICE-LIBRARIAN",
+      "last_tended_at": "2026-09-08T07:55:48-07:00"
     }
   ]
 }
