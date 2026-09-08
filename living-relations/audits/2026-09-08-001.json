@@ -3,12 +3,12 @@
   "audit_id": "TEND-2026-09-08-001",
   "run_type": "scheduled-governed-run",
   "started_at": "2026-09-08T07:55:48-07:00",
-  "completed_at": "2026-09-08T09:37:40-07:00",
+  "completed_at": "2026-09-08T09:44:31-07:00",
   "repository": {
     "branch": "codex/tending-2026-09-08",
     "starting_commit": "dfa9f607f31b0a155334e61248a993bb5e71ec3f",
-    "pull_request": null,
-    "pull_request_state": "not-created",
+    "pull_request": "https://github.com/doctorillumination/cyberdelic-space/pull/33",
+    "pull_request_state": "ready-auto-publication",
     "publication_action": "validated-autonomous-publication"
   },
   "automation": {
@@ -118,7 +118,7 @@
   ],
   "public_change": true,
   "proposed_public_change": true,
-  "run_state": "ready-for-autonomous-publication",
+  "run_state": "published-proposal",
   "valid_no_op": false,
   "human_review_required": false,
   "note": "Publication will make one internal implementation relation and one catalog record visible. It will not ratify the relation or alter either exact publication."
