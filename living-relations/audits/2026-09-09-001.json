@@ -1,0 +1,121 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-09-09-001",
+  "run_type": "scheduled-governed-run",
+  "started_at": "2026-09-09T07:18:11-07:00",
+  "completed_at": "2026-09-09T07:21:28-07:00",
+  "repository": {
+    "branch": "codex/tending-2026-09-09",
+    "starting_commit": "b6f560873213ed8451a2fb355688c30e8553ed66",
+    "pull_request": null,
+    "pull_request_state": "not-created",
+    "publication_action": "validated-autonomous-no-op-publication"
+  },
+  "automation": {
+    "id": "daily-cyberdelic-tending",
+    "name": "Daily Cyberdelic Tending",
+    "status": "active",
+    "schedule": "Daily at 7:00 AM America/Vancouver",
+    "next_scheduled_run": "2026-09-10T07:00:00-07:00"
+  },
+  "office_versions": {
+    "cartographer": "0.1",
+    "gardener": "0.1",
+    "librarian": "0.1",
+    "publication_authority": "1.1"
+  },
+  "inputs": {
+    "inbox_items": 0,
+    "declared_question": "After the September 7 and 8 Dear Elsewhere tending, is another relation, lifecycle change, Attending rotation, or catalog revision warranted by the exact public evidence?",
+    "internal_region": [
+      {"id": "cyberdelic-os:i-005", "title": "Dear Elsewhere"},
+      {"id": "cyberdelic-os:bn-006", "title": "Building Dear Elsewhere"},
+      {"id": "cyberdelic-os:a-005", "title": "Dear Elsewhere"}
+    ],
+    "external_region": []
+  },
+  "cartographer": {
+    "state": "no-op",
+    "candidate_limit": 3,
+    "candidates_created": [],
+    "existing_proposals_rechecked": ["REL-P-000016", "REL-P-000017", "REL-P-000018"],
+    "sources_checked": [
+      {"title": "Instrument I-005: Dear Elsewhere", "source": "living-content/cyberdelic-os/i-005/v000001.md", "source_kind": "exact-living-publication", "checked_at": "2026-09-09T07:18:11-07:00"},
+      {"title": "Builder Note BN-006: Building Dear Elsewhere", "source": "living-content/cyberdelic-os/bn-006/v000001.md", "source_kind": "exact-living-publication", "checked_at": "2026-09-09T07:18:11-07:00"},
+      {"title": "Artifact A-005: Dear Elsewhere", "source": "living-content/cyberdelic-os/a-005/v000001.md", "source_kind": "exact-living-publication", "checked_at": "2026-09-09T07:18:11-07:00"}
+    ],
+    "source_facts": [
+      {"claim": "I-005 directly links the Dear Elsewhere Field Note, Builder Note, Artifact, and publication suite while distinguishing conduct, current prototype limits, and the first lived test still to come.", "source": "living-content/cyberdelic-os/i-005/v000001.md", "locator": "The first lived test; Related"},
+      {"claim": "BN-006 documents the current implementation and directly links I-005 and A-005 while leaving authenticated handoff, recovery, accepted history, and lived testing as future thresholds.", "source": "living-content/cyberdelic-os/bn-006/v000001.md", "locator": "The next implementation threshold; Related"},
+      {"claim": "A-005 records the working prototype and states that it is not yet evidence of durable shared hosting, verified identity, independent security review, or a completed interpersonal study.", "source": "living-content/cyberdelic-os/a-005/v000001.md", "locator": "What this record establishes"}
+    ],
+    "inference": "The three existing Dear Elsewhere proposals already make the strongest evidenced path legible from proposition to instrument, from instrument to artifact, and from instrument to technical account. Adding another edge today would repeat proximity rather than reveal a materially distinct relation.",
+    "uncertainty": "A lived two-person exchange, a new public implementation version, or evidence of shared-service behaviour could later justify new tending. None is present in the public archive today.",
+    "attribution": "All facts are attributed to exact public Cyberdelic OS publications. No private repository, correspondence, visitor data, or external source was read.",
+    "source_fact_and_inference_separated": true,
+    "source_conflict_found": false,
+    "private_material_read": false,
+    "external_contact_performed": false,
+    "outward_search_performed": false,
+    "no_proposal_reason": "The inbox is empty, no publication changed after the September 8 merge, and the bounded internal region is already represented by three strong proposed relations. Additional mapping would be redundant."
+  },
+  "gardener": {
+    "state": "no-op",
+    "cartographer_proposals_considered": [],
+    "decisions": [
+      {"kind": "relation-lifecycle", "decision": "Leave REL-000005, REL-000006, and REL-000007 strong, emerging, and proposed. No new evidence supports strengthening, weakening, dormancy, contestation, or composting."},
+      {"kind": "finite-attending", "decision": "Leave the September 7 Attending unchanged because it still carries one work, one proposed relation, and one unresolved privacy boundary."},
+      {"kind": "source-integrity", "decision": "Preserve all exact publication bytes, historical metadata, hashes, rights, authorship, and ratification history."}
+    ],
+    "changes": [],
+    "manifest_changed": false,
+    "attending_arrangement_changed": false,
+    "exact_publication_sources_changed": false,
+    "no_change_reason": "The relational metadata remains accurate against the exact sources. The current Attending arrangement remains finite and current enough to leave still."
+  },
+  "librarian": {
+    "state": "no-op",
+    "catalog_change_limit": 3,
+    "records_examined": ["catalog:cyberdelic-os:i-005", "catalog:cyberdelic-os:a-005", "catalog:cyberdelic-os:bn-006"],
+    "records_created": [],
+    "records_revised": [],
+    "records_removed": [],
+    "decisions": [
+      {"kind": "catalog-accuracy", "decision": "Leave the I-005, A-005, and BN-006 summaries, subjects, search terms, questions, and related paths unchanged because each remains supported by its exact source."},
+      {"kind": "finite-search", "decision": "Keep search bounded to six results and preserve the unchanged three-work default Library aperture."}
+    ],
+    "search_terms_added": [],
+    "outward_search_performed": false,
+    "catalog_count": 15,
+    "no_change_reason": "The September 7 and 8 records already provide distinct experiential, artifact, and technical search paths. Adding synonyms today would not materially improve findability."
+  },
+  "files_changed": [
+    "living-relations/audits/2026-09-09-001.json",
+    "cyberdelic-space.zip"
+  ],
+  "validation": {
+    "state": "passed",
+    "checks": [
+      {"check": "structured-data", "result": "All 35 repository JSON documents and all three XML documents parsed successfully. The unchanged proposal queue contains eighteen items, the catalog contains fifteen records, and the relational manifest contains twelve nodes and seven edges."},
+      {"check": "exact-source-integrity", "result": "All 31 indexed Field, Workshop, and Library sources matched their recorded byte lengths and SHA-256 values."},
+      {"check": "internal-links", "result": "All 2,830 local links and assets resolved across 136 HTML pages."},
+      {"check": "application-and-data-contracts", "result": "All eight JavaScript files passed syntax checks. Proposal, catalog, and relational identifiers, counts, required fields, endpoints, and finite limits passed contract checks."},
+      {"check": "responsive-browser", "result": "Current Attending and the homepage directory rendered at 390 by 844 pixels with the psychedelic default, a legible stacked layout, no visible horizontal overflow, and keyboard-addressable navigation."},
+      {"check": "catalog-search", "result": "A homepage search for Dear Elsewhere returned four distinct tended paths within the six-result limit. The default Library aperture remains unchanged at three works."},
+      {"check": "finite-attending", "result": "Current Attending remains unchanged with exactly one work, one proposed relation, and one unresolved question. No daily rotation was manufactured."},
+      {"check": "changed-prose-policy", "result": "No em dash characters were added."},
+      {"check": "publication-boundary", "result": "The only changed paths are the dated audit and deterministic mirror, both permitted by governance.json. No public tending page, Attending page, exact publication, application file, index, feed, theme, script, style, authorship, right, chain record, hash, ratification event, or human-locked control changed."},
+      {"check": "distribution-archive", "result": "The deterministic mirror was rebuilt twice with identical SHA-256 output, includes the new audit, matches every archived repository file byte for byte, and excludes repository internals and recursive archive inclusion."}
+    ]
+  },
+  "unresolved_questions": [
+    "What changes after the first lived two-person exchange?",
+    "Which new evidence would justify moving any Dear Elsewhere relation from emerging to active?"
+  ],
+  "public_change": false,
+  "proposed_public_change": false,
+  "run_state": "valid-no-op",
+  "valid_no_op": true,
+  "human_review_required": false,
+  "note": "This is a valid no-op. Only the cumulative audit and deterministic mirror will be published; no public tending page or Attending rotation is warranted."
+}
