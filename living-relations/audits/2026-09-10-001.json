@@ -1,0 +1,122 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-09-10-001",
+  "run_type": "scheduled-governed-run",
+  "started_at": "2026-09-10T07:12:15-07:00",
+  "completed_at": "2026-09-10T07:55:59-07:00",
+  "repository": {
+    "branch": "codex/tending-2026-09-10",
+    "starting_commit": "854a3b8d18cbbf6e3a500cc3996742b65b8d8cbe",
+    "pull_request": null,
+    "pull_request_state": "not-created",
+    "publication_action": "validated-autonomous-no-op-publication"
+  },
+  "automation": {
+    "id": "daily-cyberdelic-tending",
+    "name": "Daily Cyberdelic Tending",
+    "status": "active",
+    "schedule": "Daily at 7:00 AM America/Vancouver",
+    "next_scheduled_run": "2026-09-11T07:00:00-07:00"
+  },
+  "office_versions": {
+    "cartographer": "0.1",
+    "gardener": "0.1",
+    "librarian": "0.1",
+    "publication_authority": "1.1"
+  },
+  "inputs": {
+    "inbox_items": 0,
+    "declared_question": "Does the existing Polis relation still accurately describe a neighbouring approach to large-group sensemaking without collapsing it into the wider, dissent-preserving process proposed by Field Note 25?",
+    "internal_region": [
+      {"id": "cyberdelic-os:fn-25", "title": "Expeditions, Storms, and the Birth of Boroughs"}
+    ],
+    "external_region": [
+      {"id": "external:polis", "title": "Polis"}
+    ]
+  },
+  "cartographer": {
+    "state": "no-op",
+    "candidate_limit": 3,
+    "candidates_created": [],
+    "existing_proposals_rechecked": ["REL-P-000001", "REL-P-000002"],
+    "sources_checked": [
+      {"title": "Polis", "url": "https://compdemocracy.org/polis/", "source_kind": "primary-project-documentation", "checked_at": "2026-09-10T07:12:15-07:00"},
+      {"title": "compdemocracy/polis", "url": "https://github.com/compdemocracy/polis", "source_kind": "primary-public-repository", "checked_at": "2026-09-10T07:12:15-07:00"},
+      {"title": "Field Note 25: Expeditions, Storms, and the Birth of Boroughs", "source": "living-content/cyberdelic-os/fn-s0-001/v000001.md", "source_kind": "exact-living-publication", "checked_at": "2026-09-10T07:12:15-07:00"}
+    ],
+    "source_facts": [
+      {"claim": "The current project page still describes Polis as open-source survey technology for gathering, analyzing, and understanding large-group views in participants' own words, using short statements and agree, disagree, or pass responses.", "url": "https://compdemocracy.org/polis/", "checked_at": "2026-09-10T07:12:15-07:00"},
+      {"claim": "The current public repository still describes Polis as an AI-powered sentiment-gathering platform, links its main deployment and knowledge base, and identifies an AGPL-3.0 license.", "url": "https://github.com/compdemocracy/polis", "checked_at": "2026-09-10T07:12:15-07:00"},
+      {"claim": "Field Note 25 describes storms that may preserve explicit disagreement through crux maps, contested timelines, multi-perspective journeys, sources, alternatives, and unresolved questions rather than necessarily ending in consensus.", "source": "living-content/cyberdelic-os/fn-s0-001/v000001.md", "locator": "Field Note 25: Expeditions, Storms, and the Birth of Boroughs"}
+    ],
+    "inference": "The existing shared-inquiry proposal remains appropriately bounded. Polis offers an evidenced neighbouring method for participant-generated opinion mapping and mutual understanding, while FN-25 asks for a wider artifact that can carry testimony, evidence, art, values, provenance, and explicit dissent. The difference remains part of the relation.",
+    "uncertainty": "This source check does not evaluate a specific Polis deployment, its moderation practice, identity model, facilitation quality, or data governance. Those remain unresolved and should not be inferred from project-level documentation.",
+    "attribution": "External facts come only from the project's official public documentation and maintained public repository. No account was created, no form was submitted, no private material was read, and no external contact occurred.",
+    "source_fact_and_inference_separated": true,
+    "source_conflict_found": false,
+    "private_material_read": false,
+    "external_contact_performed": false,
+    "outward_search_performed": true,
+    "no_proposal_reason": "The primary sources remain available and materially support the facts already recorded. No new node, edge, or amendment would deepen the map enough to justify another proposal."
+  },
+  "gardener": {
+    "state": "no-op",
+    "cartographer_proposals_considered": [],
+    "decisions": [
+      {"kind": "external-source-freshness", "decision": "Leave the Polis proposal and its possible, emerging shared-inquiry relation unchanged because the rechecked primary sources remain consistent with the recorded claims."},
+      {"kind": "relational-distinction", "decision": "Preserve the distinction between Polis opinion mapping and FN-25's wider, provenance-bearing artifact of disagreement. No strengthening or weakening is warranted."},
+      {"kind": "finite-attending", "decision": "Leave the current three-item Attending arrangement unchanged. A source-freshness check alone does not warrant returning Polis to the finite public surface."}
+    ],
+    "changes": [],
+    "manifest_changed": false,
+    "attending_arrangement_changed": false,
+    "exact_publication_sources_changed": false,
+    "no_change_reason": "The existing relation remains evidenced, cautious, and properly distinguished. The check found no drift, broken source, lifecycle change, or new continuity requiring publication."
+  },
+  "librarian": {
+    "state": "no-op",
+    "catalog_change_limit": 3,
+    "records_examined": ["catalog:external:polis", "catalog:cyberdelic-os:fn-25"],
+    "records_created": [],
+    "records_revised": [],
+    "records_removed": [],
+    "decisions": [
+      {"kind": "catalog-accuracy", "decision": "Leave the Polis and FN-25 catalog records unchanged because their summaries, subjects, ordinary-language terms, questions, and proposed relation remain supported by the rechecked sources."},
+      {"kind": "finite-search", "decision": "Keep search bounded to six results and preserve the unchanged three-work default Library aperture."}
+    ],
+    "search_terms_added": [],
+    "outward_search_performed": false,
+    "catalog_count": 15,
+    "no_change_reason": "No source drift or missing ordinary-language path was found. Revising the records merely to update visible activity would not improve findability."
+  },
+  "files_changed": [
+    "living-relations/audits/2026-09-10-001.json",
+    "cyberdelic-space.zip"
+  ],
+  "validation": {
+    "state": "passed",
+    "checks": [
+      {"check": "primary-source-availability", "result": "The official Polis project page and maintained public repository were accessible and continued to support the recorded factual description. No source conflict or material drift was found."},
+      {"check": "structured-data", "result": "All 36 repository JSON documents and all three XML documents parsed successfully. The unchanged proposal queue contains eighteen items, the catalog contains fifteen records, and the relational manifest contains twelve nodes and seven edges."},
+      {"check": "exact-source-integrity", "result": "All 31 indexed Field, Workshop, and Library sources matched their recorded byte lengths and SHA-256 values."},
+      {"check": "internal-links", "result": "All 2,830 local links and assets resolved across 136 HTML pages."},
+      {"check": "application-and-data-contracts", "result": "All eight JavaScript files passed syntax checks. Proposal, catalog, and relational identifiers, counts, required fields, endpoints, and finite limits passed contract checks."},
+      {"check": "responsive-browser", "result": "Living Relationships and the homepage directory rendered at 390 by 844 pixels with the psychedelic default, a legible stacked layout, no visible horizontal overflow, and keyboard-addressable navigation."},
+      {"check": "catalog-search", "result": "A homepage search for Polis returned the external neighbour and FN-25 as two distinct tended paths within the six-result limit. The default Library aperture remains unchanged at three works."},
+      {"check": "finite-attending", "result": "Current Attending remains unchanged with exactly one work, one proposed relation, and one unresolved question. No source-freshness check was turned into a manufactured rotation."},
+      {"check": "changed-prose-policy", "result": "No em dash characters were added."},
+      {"check": "publication-boundary", "result": "The only changed paths are the dated audit and deterministic mirror, both permitted by governance.json. No public tending page, Attending page, exact publication, application file, index, feed, theme, script, style, authorship, right, chain record, hash, ratification event, or human-locked control changed."},
+      {"check": "distribution-archive", "result": "The deterministic mirror was rebuilt twice with identical SHA-256 output, includes the new audit, matches every archived repository file byte for byte, and excludes repository internals and recursive archive inclusion."}
+    ]
+  },
+  "unresolved_questions": [
+    "How do facilitation, moderation, identity, and data-governance choices vary across actual Polis deployments?",
+    "What must remain visible when complex positions are represented as clusters?"
+  ],
+  "public_change": false,
+  "proposed_public_change": false,
+  "run_state": "valid-no-op",
+  "valid_no_op": true,
+  "human_review_required": false,
+  "note": "This is a valid no-op. Only the cumulative audit and deterministic mirror will be published; no public tending page or Attending rotation is warranted."
+}
