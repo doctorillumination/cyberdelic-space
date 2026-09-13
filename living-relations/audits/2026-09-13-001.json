@@ -1,0 +1,120 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-09-13-001",
+  "run_type": "scheduled-governed-run",
+  "started_at": "2026-09-13T07:31:31-07:00",
+  "completed_at": "2026-09-13T08:50:56-07:00",
+  "repository": {
+    "branch": "codex/tending-2026-09-13",
+    "starting_commit": "2d6461942b044bca75e5a14ec745dee03576aa54",
+    "pull_request": "https://github.com/doctorillumination/cyberdelic-space/pull/38",
+    "pull_request_state": "ready-auto-publication",
+    "publication_action": "validated-autonomous-no-op-publication"
+  },
+  "automation": {
+    "id": "daily-cyberdelic-tending",
+    "name": "Daily Cyberdelic Tending",
+    "status": "active",
+    "schedule": "Daily at 7:00 AM America/Vancouver",
+    "next_scheduled_run": "2026-09-14T07:00:00-07:00"
+  },
+  "office_versions": {
+    "cartographer": "0.1",
+    "gardener": "0.1",
+    "librarian": "0.1",
+    "publication_authority": "1.1"
+  },
+  "inputs": {
+    "inbox_items": 0,
+    "declared_question": "Does the existing OCI Image Specification relation still offer a cautious technical precedent for carrying a generative plate's dependencies and execution assumptions without suggesting that a container image is the press or its edition authority?",
+    "internal_region": [{"id": "cyberdelic-os:fn-33", "title": "The Plate and the Pull"}],
+    "external_region": [{"id": "external:oci-image-spec", "title": "Open Container Initiative Image Format Specification"}]
+  },
+  "cartographer": {
+    "state": "no-op",
+    "candidate_limit": 3,
+    "candidates_created": [],
+    "existing_proposals_rechecked": ["REL-P-000008", "REL-P-000009"],
+    "sources_checked": [
+      {"title": "The OpenContainers Image Spec", "url": "https://specs.opencontainers.org/image-spec/", "source_kind": "primary-specification-index", "checked_at": "2026-09-13T07:31:31-07:00"},
+      {"title": "OCI Image Format Specification 1.1.1", "url": "https://github.com/opencontainers/image-spec/blob/v1.1.1/spec.md", "source_kind": "primary-versioned-specification", "checked_at": "2026-09-13T07:31:31-07:00"},
+      {"title": "OCI Image Configuration 1.1.1", "url": "https://github.com/opencontainers/image-spec/blob/v1.1.1/config.md", "source_kind": "primary-versioned-specification", "checked_at": "2026-09-13T07:31:31-07:00"},
+      {"title": "OCI Content Descriptors 1.1.1", "url": "https://github.com/opencontainers/image-spec/blob/v1.1.1/descriptor.md", "source_kind": "primary-versioned-specification", "checked_at": "2026-09-13T07:31:31-07:00"},
+      {"title": "OCI Image Layout 1.1.1", "url": "https://github.com/opencontainers/image-spec/blob/v1.1.1/image-layout.md", "source_kind": "primary-versioned-specification", "checked_at": "2026-09-13T07:31:31-07:00"},
+      {"title": "Field Note 33: The Plate and the Pull", "source": "living-content/cyberdelic-os/fn-s0-006/v000001.md", "source_kind": "exact-living-publication", "checked_at": "2026-09-13T07:31:31-07:00"}
+    ],
+    "source_facts": [
+      {"claim": "Version 1.1.1 defines OCI images through a manifest, optional index, filesystem layers, and configuration for interoperable build, transport, and preparation to run.", "url": "https://github.com/opencontainers/image-spec/blob/v1.1.1/spec.md", "checked_at": "2026-09-13T07:31:31-07:00"},
+      {"claim": "Image configuration separates ordered filesystem changes from execution settings including entrypoint, default arguments, environment, and volumes.", "url": "https://github.com/opencontainers/image-spec/blob/v1.1.1/config.md", "checked_at": "2026-09-13T07:31:31-07:00"},
+      {"claim": "A content descriptor identifies referenced bytes by media type, digest, and raw size, and the specification directs consumers to verify retrieved content.", "url": "https://github.com/opencontainers/image-spec/blob/v1.1.1/descriptor.md", "checked_at": "2026-09-13T07:31:31-07:00"},
+      {"claim": "The image layout uses an index and content-addressed blobs, but permits missing referenced blobs to be fulfilled by an external blob store.", "url": "https://github.com/opencontainers/image-spec/blob/v1.1.1/image-layout.md", "checked_at": "2026-09-13T07:31:31-07:00"},
+      {"claim": "Field Note 33 asks how a public generative algorithm, recognized lineage of pulls, and browser encounter can survive the disappearance of the original venue.", "source": "living-content/cyberdelic-os/fn-s0-006/v000001.md", "locator": "The Plate and the Pull"}
+    ],
+    "inference": "The existing possible technical adjacency remains bounded. OCI demonstrates an explicit distinction among executable content, runtime configuration, platform alternatives, and verifiable references. FN-33 proposes a different object and authority: a browser-readable generative plate with Bitcoin pull lineage and a verifiable ending. OCI's allowance for externally supplied blobs remains an important portability limit.",
+    "uncertainty": "The versioned documents support a packaging analogy, not a claim that OCI alone ensures future runtime compatibility, availability of missing blobs, authentic artistic lineage, or a sufficient browser renderer.",
+    "attribution": "External facts come only from the OCI's official specification index and versioned public repository. No external person or organization was contacted, and no private material was read.",
+    "source_fact_and_inference_separated": true,
+    "source_conflict_found": false,
+    "private_material_read": false,
+    "external_contact_performed": false,
+    "outward_search_performed": true,
+    "no_proposal_reason": "The official versioned sources remain accessible and consistent with the existing node and technical-adjacency proposal. No new candidate or amendment would materially improve the map."
+  },
+  "gardener": {
+    "state": "no-op",
+    "cartographer_proposals_considered": [],
+    "decisions": [
+      {"kind": "source-freshness", "decision": "Keep REL-P-000008 and REL-P-000009 unchanged because the original source facts remain supported by the official 1.1.1 documents."},
+      {"kind": "relation-boundary", "decision": "Retain the possible, emerging technical adjacency, including the difference between a container runtime image and an authorized generative-art edition."},
+      {"kind": "finite-attending", "decision": "Leave the existing three-item Attending arrangement unchanged. A routine source recheck does not create a material relational turn."}
+    ],
+    "changes": [],
+    "manifest_changed": false,
+    "attending_arrangement_changed": false,
+    "exact_publication_sources_changed": false,
+    "no_change_reason": "No source drift, evidence gap, lifecycle transition, or newly evidenced continuity was found in the bounded region."
+  },
+  "librarian": {
+    "state": "no-op",
+    "catalog_change_limit": 3,
+    "records_examined": ["catalog:external:oci-image-spec", "catalog:cyberdelic-os:fn-33"],
+    "records_created": [],
+    "records_revised": [],
+    "records_removed": [],
+    "decisions": [
+      {"kind": "catalog-accuracy", "decision": "Retain the OCI and FN-33 records because their summaries, terms, questions, and visibly proposed relation remain grounded in the exact source and official versioned specification."},
+      {"kind": "finite-search", "decision": "Keep search bounded to six paths and the default Library aperture at three works."}
+    ],
+    "search_terms_added": [],
+    "outward_search_performed": false,
+    "catalog_count": 15,
+    "no_change_reason": "The existing vocabulary already offers ordinary-language paths through container images, runtime assumptions, manifests, digests, software portability, and independent reconstruction. No change would improve findability."
+  },
+  "files_changed": ["living-relations/audits/2026-09-13-001.json", "cyberdelic-space.zip"],
+  "validation": {
+    "state": "passed",
+    "checks": [
+      {"check": "primary-source-availability", "result": "The official OCI index and versioned 1.1.1 specification documents remained available and supported the recorded manifest, configuration, descriptor, image-layout, and external-blob qualifications without conflict."},
+      {"check": "structured-data", "result": "All 39 JSON documents and three XML documents parsed successfully."},
+      {"check": "exact-source-integrity", "result": "All 31 indexed Field, Workshop, and Library sources matched their recorded byte lengths and SHA-256 values."},
+      {"check": "internal-links", "result": "All 2,830 local links and assets resolved across 136 HTML pages."},
+      {"check": "application-and-data-contracts", "result": "All eight JavaScript files passed syntax checks. The 18 proposals, 15 catalog records, twelve relational nodes, seven edges, identifiers, required fields, and finite limits passed contract checks."},
+      {"check": "responsive-browser", "result": "Living Relationships and the homepage directory rendered at 390 by 844 pixels with the psychedelic default, keyboard-addressable links and search, and no horizontal overflow; document width equalled viewport width."},
+      {"check": "catalog-search", "result": "A homepage search for OCI returned one visibly model-proposed external-neighbour path within the six-result limit. The three-work default Library aperture remained unchanged."},
+      {"check": "finite-attending", "result": "The current Attending arrangement remained exactly three items. Source freshness was not converted into a public rotation."},
+      {"check": "changed-prose-policy", "result": "No em dash characters were added."},
+      {"check": "publication-boundary", "result": "Only the dated audit and deterministic mirror changed, as permitted by governance.json. No exact publication, public tending page, navigation, application, ratification record, or human-locked control changed."},
+      {"check": "distribution-archive", "result": "The deterministic mirror was rebuilt twice with identical SHA-256 output, includes this audit, and matches each archived source byte for byte."}
+    ]
+  },
+  "unresolved_questions": [
+    "Which execution assumptions need to travel with a generative plate, and which can remain replaceable properties of a reader?",
+    "When is a verifiable reference sufficient, and when must the referenced bytes be carried with the work?"
+  ],
+  "public_change": false,
+  "proposed_public_change": false,
+  "run_state": "valid-no-op",
+  "valid_no_op": true,
+  "human_review_required": false,
+  "note": "Only the cumulative audit and deterministic mirror are published. No public dated tending page or Attending rotation is warranted."
+}
