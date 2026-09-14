@@ -87,11 +87,11 @@
       "search_terms": ["software preservation", "executable archive", "algorithmic art", "plate", "pull", "edition", "rendering", "permanent media"],
       "questions": ["What must travel with a generative work for it to survive the disappearance of its first venue?", "Can an edition end while its public algorithm remains copyable and renderable?"],
       "related": [{"id": "external:art-blocks", "title": "Art Blocks", "relation_type": "technical-adjacency", "review_state": "proposed"}, {"id": "external:webrecorder-wacz", "title": "Web Archive Collection Zipped (WACZ)", "relation_type": "technical-adjacency", "review_state": "proposed"}, {"id": "external:oci-image-spec", "title": "Open Container Initiative Image Format Specification", "relation_type": "technical-adjacency", "review_state": "proposed"}, {"id": "external:webassembly-core", "title": "WebAssembly Core Specification", "relation_type": "technical-adjacency", "review_state": "proposed"}],
-      "evidence": [{"source": "living-content/cyberdelic-os/fn-s0-006/v000001.md", "locator": "A Press, Not a Platform; The Edition Ends. The Plate Remains."}],
+      "evidence": [{"source": "living-content/cyberdelic-os/fn-s0-006/v000001.md", "locator": "The Plate and the Pull; The browser can perform the encounter on the visitor's own machine"}],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
-      "last_tended_at": "2026-08-25T08:01:40-07:00"
+      "last_tended_at": "2026-09-14T07:09:24-07:00"
     },
     {
       "id": "catalog:external:community-notes",
