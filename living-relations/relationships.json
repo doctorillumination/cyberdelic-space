@@ -133,15 +133,15 @@
       "evidence": [
         {
           "source": "living-content/cyberdelic-os/a-001/v000001.md",
-          "locator": "Architecture and The Covenant"
+          "locator": "Where most digital systems ask people to trust the platform"
         },
         {
           "source": "living-content/cyberdelic-os/fn-s0-006/v000001.md",
-          "locator": "A Press, Not a Platform"
+          "locator": "Cyberdelic.space already approaches publication this way."
         }
       ],
       "introduced_by": "OFFICE-GARDENER",
-      "last_tended_at": "2026-08-21T16:08:00+00:00"
+      "last_tended_at": "2026-09-15T07:45:15-07:00"
     },
     {
       "edge_id": "REL-000005",
