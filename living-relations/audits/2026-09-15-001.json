@@ -1,0 +1,130 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-09-15-001",
+  "run_type": "scheduled-governed-run",
+  "started_at": "2026-09-15T07:45:15-07:00",
+  "completed_at": "2026-09-15T10:08:44-07:00",
+  "repository": {
+    "branch": "codex/tending-2026-09-15",
+    "starting_commit": "1a4823915ed415d5b817735d47e3944679d4711d",
+    "pull_request": null,
+    "pull_request_state": "pending-validation",
+    "publication_action": "pending-validation"
+  },
+  "automation": {
+    "id": "daily-cyberdelic-tending",
+    "name": "Daily Cyberdelic Tending",
+    "status": "active",
+    "schedule": "Daily at 7:00 AM America/Vancouver",
+    "next_scheduled_run": "2026-09-16T07:00:00-07:00"
+  },
+  "office_versions": {
+    "cartographer": "0.1",
+    "gardener": "0.1",
+    "librarian": "0.1",
+    "publication_authority": "1.1"
+  },
+  "inputs": {
+    "inbox_items": 0,
+    "declared_question": "Which dependencies and context must travel inside a generative plate for independent reconstruction after the first venue disappears?",
+    "internal_region": [
+      {"id": "cyberdelic-os:fn-33", "title": "The Plate and the Pull"},
+      {"id": "cyberdelic-os:a-001", "title": "Cyberdelic.space"}
+    ],
+    "external_region": [{"id": "external:webrecorder-wacz", "title": "Web Archive Collection Zipped (WACZ)"}]
+  },
+  "cartographer": {
+    "state": "no-op",
+    "candidate_limit": 3,
+    "candidates_created": [],
+    "existing_proposals_rechecked": ["REL-P-000006", "REL-P-000007", "REL-P-000015"],
+    "sources_checked": [
+      {"title": "WACZ 1.2.0 draft", "url": "https://specs.webrecorder.net/wacz/1.2.0/", "source_kind": "primary-public-specification", "checked_at": "2026-09-15T07:45:15-07:00"},
+      {"title": "Webrecorder specification repository", "url": "https://github.com/webrecorder/specs", "source_kind": "primary-public-repository", "checked_at": "2026-09-15T07:45:15-07:00"},
+      {"title": "WACZ 1.2.0 source", "url": "https://raw.githubusercontent.com/webrecorder/specs/main/wacz/1.2.0/index.md", "source_kind": "primary-public-specification-source", "checked_at": "2026-09-15T07:45:15-07:00"},
+      {"title": "Field Note 33: The Plate and the Pull", "source": "living-content/cyberdelic-os/fn-s0-006/v000001.md", "source_kind": "exact-living-publication", "checked_at": "2026-09-15T07:45:15-07:00"}
+    ],
+    "source_facts": [
+      {"claim": "The WACZ 1.2.0 draft packages recorded web resources, indexes, entry pages, context, and file fixity in a portable ZIP, with selective browser replay through HTTP range requests.", "url": "https://specs.webrecorder.net/wacz/1.2.0/", "checked_at": "2026-09-15T07:45:15-07:00"},
+      {"claim": "The document expressly says it is a draft with no official standards standing or consensus and does not require a signature or prescribe a trust model.", "url": "https://specs.webrecorder.net/wacz/1.2.0/", "checked_at": "2026-09-15T07:45:15-07:00"},
+      {"claim": "Field Note 33 describes a public algorithm, an authorized lineage of pulls, and a browser encounter that should survive a sole service.", "source": "living-content/cyberdelic-os/fn-s0-006/v000001.md", "locator": "The browser can perform the encounter on the visitor's own machine"}
+    ],
+    "inference": "WACZ remains a possible packaging precedent for carrying browser-readable context and verifiable resources, but its captured HTTP replay is not an executable generative plate or an edition authority.",
+    "uncertainty": "Draft status and optional signing limit what can be borrowed as settled preservation or authenticity practice. WACZ alone cannot establish a generative work's execution, intended rendering, authorized pull lineage, or verifiable end.",
+    "attribution": "External facts come only from the official Webrecorder public specification and repository. No external person or organization was contacted, and no private material was read.",
+    "source_fact_and_inference_separated": true,
+    "source_conflict_found": false,
+    "private_material_read": false,
+    "external_contact_performed": false,
+    "outward_search_performed": true,
+    "no_proposal_reason": "The current draft supports the existing proposed node and cautious technical adjacency, including the previously recorded status and trust qualifications. A new candidate would duplicate the queue."
+  },
+  "gardener": {
+    "state": "one-evidence-repair",
+    "cartographer_proposals_considered": [],
+    "decisions": [
+      {"kind": "evidence-locator-repair", "decision": "Replace both non-existent heading locators on REL-000004 with distinctive passages present in the exact A-001 and FN-33 sources."},
+      {"kind": "relation-boundary", "decision": "Keep the context relation strong, active, and visibly proposed. The source passages support its existing rationale; this correction does not strengthen or ratify its interpretation."},
+      {"kind": "finite-attending", "decision": "Publish a dated tending record because the relational evidence changed, but do not rotate the still-relevant three-item Attending arrangement."}
+    ],
+    "changes": ["REL-000004"],
+    "evidence": [
+      {"source": "living-content/cyberdelic-os/a-001/v000001.md", "locator": "Where most digital systems ask people to trust the platform"},
+      {"source": "living-content/cyberdelic-os/fn-s0-006/v000001.md", "locator": "Cyberdelic.space already approaches publication this way."}
+    ],
+    "manifest_changed": true,
+    "attending_arrangement_changed": false,
+    "exact_publication_sources_changed": false,
+    "decision_reason": "The prior REL-000004 locators named headings absent from both exact publications. The revised passages make the already supported relation inspectable without altering its endpoints, type, confidence, lifecycle, or review state."
+  },
+  "librarian": {
+    "state": "no-op",
+    "catalog_change_limit": 3,
+    "records_examined": ["catalog:cyberdelic-os:fn-33", "catalog:external:webrecorder-wacz"],
+    "records_created": [],
+    "records_revised": [],
+    "records_removed": [],
+    "decisions": [
+      {"kind": "catalog-accuracy", "decision": "Retain the FN-33 and WACZ records. Their summaries, search terms, questions, evidence, and visibly proposed relation remain grounded in the exact note and the provisional public draft."},
+      {"kind": "finite-search", "decision": "Keep directory results bounded to six and the default Library aperture at three works."}
+    ],
+    "search_terms_added": [],
+    "outward_search_performed": false,
+    "catalog_count": 15,
+    "no_change_reason": "The manifest evidence correction does not create a new ordinary-language finding path or make an existing catalog record inaccurate."
+  },
+  "files_changed": [
+    "living-relations/relationships.json",
+    "living-relations/audits/2026-09-15-001.json",
+    "project/cyberdelic-os/relations/index.html",
+    "project/cyberdelic-os/relations/tending/2026-09-15/index.html",
+    "sitemap.xml",
+    "cyberdelic-space.zip"
+  ],
+  "validation": {
+    "state": "passed",
+    "checks": [
+      {"check": "primary-source-availability", "result": "The official WACZ 1.2.0 draft and maintained Webrecorder source were accessible and supported the portable-package facts, explicit draft status, optional signing, and open trust boundary without conflict."},
+      {"check": "structured-data", "result": "All 41 JSON documents and three XML documents parsed successfully."},
+      {"check": "exact-source-integrity", "result": "All 31 indexed Field, Workshop, and Library sources matched recorded byte lengths and SHA-256 values. Both new REL-000004 evidence locators occur in their exact A-001 and FN-33 sources."},
+      {"check": "internal-links", "result": "All 2,850 local links and assets resolved across 137 HTML pages."},
+      {"check": "application-and-data-contracts", "result": "All eight JavaScript files passed syntax checks. The 18 proposals, 15 catalog records, twelve relational nodes, seven edges, unique identifiers, required catalog fields, and finite limits passed contract checks."},
+      {"check": "responsive-browser", "result": "The new dated record, Living Relationships, and the homepage directory rendered at 390 by 844 pixels with the psychedelic default, accessible links and search, and no horizontal overflow; document width equalled viewport width."},
+      {"check": "catalog-search", "result": "A homepage search for WACZ returned two visibly model-proposed paths within the six-result limit. The three-work default Library aperture remained unchanged."},
+      {"check": "finite-attending", "result": "The current Attending arrangement remained exactly three items and was not rotated for an evidence correction."},
+      {"check": "changed-prose-policy", "result": "No em dash characters were added."},
+      {"check": "publication-boundary", "result": "Only the relational manifest, dated audit, relationship pages, one permitted relations sitemap URL, and deterministic mirror changed. No exact publication, application, ratification record, or human-locked control changed."},
+      {"check": "distribution-archive", "result": "The deterministic mirror was rebuilt twice with identical SHA-256 output, includes the dated audit and record, and matches every archived source byte for byte."}
+    ]
+  },
+  "unresolved_questions": [
+    "Which resources must travel with a generative plate rather than remaining replaceable properties of its reader?",
+    "What independent evidence can prove authorized edition lineage beyond package fixity?"
+  ],
+  "public_change": true,
+  "proposed_public_change": true,
+  "run_state": "relational-evidence-repair",
+  "valid_no_op": false,
+  "human_review_required": false,
+  "note": "The new public dated record explains one material relational evidence correction. Attending remains finite and unchanged; prior proposal and audit history remains available."
+}
