@@ -1,0 +1,136 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-09-16-001",
+  "run_type": "scheduled-governed-run",
+  "started_at": "2026-09-16T07:02:19-07:00",
+  "completed_at": "2026-09-16T07:05:30-07:00",
+  "repository": {
+    "branch": "codex/tending-2026-09-16",
+    "starting_commit": "fa9fd8f17d9496c9fb3f8d615c7bf12038c71c4b",
+    "pull_request": "https://github.com/doctorillumination/cyberdelic-space/pull/41",
+    "pull_request_state": "ready-auto-publication",
+    "publication_action": "validated-autonomous-relational-evidence-deepening"
+  },
+  "automation": {
+    "id": "daily-cyberdelic-tending",
+    "name": "Daily Cyberdelic Tending",
+    "status": "active",
+    "schedule": "Daily at 7:00 AM America/Vancouver",
+    "next_scheduled_run": "2026-09-17T07:00:00-07:00"
+  },
+  "office_versions": {
+    "cartographer": "0.1",
+    "gardener": "0.1",
+    "librarian": "0.1",
+    "publication_authority": "1.1"
+  },
+  "inputs": {
+    "inbox_items": 0,
+    "declared_question": "Can the first three relations in the living map be followed back to exact language in the works they connect?",
+    "internal_region": [
+      {"id": "cyberdelic-os:fn-29", "title": "The Living Librarian"},
+      {"id": "cyberdelic-os:fn-32", "title": "The Garden and the Living Map"},
+      {"id": "cyberdelic-os:bn-005", "title": "Building the Tending Offices"},
+      {"id": "cyberdelic-os:i-003", "title": "The Daily Tending Ritual"}
+    ],
+    "external_region": []
+  },
+  "cartographer": {
+    "state": "no-op",
+    "candidate_limit": 3,
+    "candidates_created": [],
+    "existing_proposals_rechecked": [],
+    "sources_checked": [
+      {"title": "Field Note 29: The Living Librarian", "source": "living-content/cyberdelic-os/fn-s0-002/v000001.md", "source_kind": "exact-living-publication", "checked_at": "2026-09-16T07:02:19-07:00"},
+      {"title": "Field Note 32: The Garden and the Living Map", "source": "living-content/cyberdelic-os/fn-s0-005/v000001.md", "source_kind": "exact-living-publication", "checked_at": "2026-09-16T07:02:19-07:00"}
+    ],
+    "source_facts": [
+      {"claim": "Field Note 29 gathers Librarian, Gardener, and Cartographer functions inside one living library office.", "source": "living-content/cyberdelic-os/fn-s0-002/v000001.md", "locator": "The living library therefore needs an office that is partly librarian, partly gardener, and partly cartographer."},
+      {"claim": "Field Note 32 gives the gardening and mapping actions distinct offices and defines separate responsibilities across time and distance.", "source": "living-content/cyberdelic-os/fn-s0-005/v000001.md", "locator": "Field Note 29 imagined a Living Librarian that reads, gardens, and maps."}
+    ],
+    "inference": "The existing lineage relation from FN-29 to FN-32 is directly supported by the latter's explicit account of how it separates two actions first gathered in the earlier note.",
+    "uncertainty": "No external candidate was needed for this internal evidence audit. The interpretation remains visibly proposed rather than ratified.",
+    "attribution": "Facts come from exact public Cyberdelic OS publications. No outward search, external contact, or private reading occurred.",
+    "source_fact_and_inference_separated": true,
+    "source_conflict_found": false,
+    "private_material_read": false,
+    "external_contact_performed": false,
+    "outward_search_performed": false,
+    "no_proposal_reason": "The bounded inquiry concerned source support for existing internal relations. The exact works supplied that support without introducing a new node or edge."
+  },
+  "gardener": {
+    "state": "three-evidence-repairs",
+    "cartographer_proposals_considered": [],
+    "decisions": [
+      {"kind": "lineage-evidence", "decision": "Add exact FN-29 and FN-32 passages to REL-000001, making its existing lineage rationale directly inspectable."},
+      {"kind": "implementation-evidence", "decision": "Add exact FN-32 and BN-005 passages to REL-000002, grounding the move from office constitutions to technical architecture."},
+      {"kind": "implementation-evidence", "decision": "Add exact FN-32 and I-003 passages to REL-000003, grounding the move from proposed daily ritual to bounded active instrument."},
+      {"kind": "finite-attending", "decision": "Publish a dated tending record because three relational records gained evidence, but leave the existing three-item Attending arrangement unchanged."}
+    ],
+    "changes": ["REL-000001", "REL-000002", "REL-000003"],
+    "evidence": [
+      {"source": "living-content/cyberdelic-os/fn-s0-002/v000001.md", "locator": "The living library therefore needs an office that is partly librarian, partly gardener, and partly cartographer."},
+      {"source": "living-content/cyberdelic-os/fn-s0-005/v000001.md", "locator": "Field Note 29 imagined a Living Librarian that reads, gardens, and maps."},
+      {"source": "living-content/cyberdelic-os/fn-s0-005/v000001.md", "locator": "Both offices need constitutions, not personalities painted onto generic automation."},
+      {"source": "living-content/cyberdelic-os/bn-005/v000001.md", "locator": "One scheduled ritual gives two constitutionally separate offices ordered turns over a versioned relational graph"},
+      {"source": "living-content/cyberdelic-os/fn-s0-005/v000001.md", "locator": "This could become a daily ritual for cyberdelic.space."},
+      {"source": "living-content/cyberdelic-os/i-003/v000001.md", "locator": "The Daily Tending Ritual gives the Gardener and Cartographer bounded turns inside the living Cyberdelic OS archive."}
+    ],
+    "manifest_changed": true,
+    "attending_arrangement_changed": false,
+    "exact_publication_sources_changed": false,
+    "decision_reason": "The first three manifest edges had strong rationales but no evidence arrays. Adding exact passages closes that evidence gap without changing endpoints, relation types, confidence, lifecycle, rationales, or review states."
+  },
+  "librarian": {
+    "state": "one-record-revised",
+    "catalog_change_limit": 3,
+    "records_examined": ["catalog:cyberdelic-os:fn-29", "catalog:cyberdelic-os:fn-32"],
+    "records_created": [],
+    "records_revised": ["catalog:cyberdelic-os:fn-32"],
+    "records_removed": [],
+    "decisions": [
+      {"kind": "related-path-completion", "decision": "Add I-003 to the FN-32 catalog record beside FN-29 and BN-005, reflecting the already published implementation path from the field note into the daily ritual."},
+      {"kind": "catalog-restraint", "decision": "Leave summaries, subjects, search terms, questions, and evidence unchanged because they already describe the bounded region accurately."},
+      {"kind": "finite-search", "decision": "Keep directory results bounded to six and the default Library aperture at three works."}
+    ],
+    "search_terms_added": [],
+    "outward_search_performed": false,
+    "catalog_count": 15,
+    "decision_reason": "The missing I-003 related path limited navigation from FN-32 even though REL-000003 was already public and source-supported."
+  },
+  "files_changed": [
+    "living-relations/relationships.json",
+    "living-relations/catalog.json",
+    "living-relations/audits/2026-09-16-001.json",
+    "project/cyberdelic-os/relations/index.html",
+    "project/cyberdelic-os/relations/tending/2026-09-16/index.html",
+    "sitemap.xml",
+    "cyberdelic-space.zip"
+  ],
+  "validation": {
+    "state": "passed",
+    "checks": [
+      {"check": "bounded-source-review", "result": "The exact FN-29, FN-32, BN-005, and I-003 publications supported all three existing relation rationales without conflict. No outward search or external source claim was needed."},
+      {"check": "structured-data", "result": "All 42 JSON documents and three XML documents parsed successfully."},
+      {"check": "exact-source-integrity", "result": "All 31 indexed Field, Workshop, and Library sources matched recorded byte lengths and SHA-256 values. Every evidence locator on all seven manifest edges occurs in its cited exact source."},
+      {"check": "internal-links", "result": "All 2,871 local links and assets resolved across 138 HTML pages."},
+      {"check": "application-and-data-contracts", "result": "All eight JavaScript files passed syntax checks. The 18 proposals, 15 catalog records, twelve relational nodes, seven edges, unique identifiers, required catalog fields, and finite limits passed contract checks."},
+      {"check": "responsive-browser", "result": "The new dated record, Living Relationships, and the homepage directory rendered at 390 by 844 pixels with the psychedelic default, accessible links and search, and no horizontal overflow; document width equalled viewport width."},
+      {"check": "catalog-search", "result": "A homepage search for daily ritual returned one tended path within the six-result limit. The three-work default Library aperture remained unchanged."},
+      {"check": "finite-attending", "result": "The current Attending arrangement remained exactly three items and was not rotated for evidence deepening."},
+      {"check": "changed-prose-policy", "result": "No em dash characters were added."},
+      {"check": "publication-boundary", "result": "Only the relational manifest, catalog, dated audit, relationship pages, one permitted relations sitemap URL, and deterministic mirror changed. No exact publication, application, ratification record, or human-locked control changed."},
+      {"check": "distribution-archive", "result": "The deterministic mirror was rebuilt twice with identical SHA-256 output, includes the dated audit and record, and matches every archived source byte for byte."}
+    ]
+  },
+  "unresolved_questions": [
+    "How should a public relation reveal exact evidence without overwhelming its first encounter?",
+    "When should an active proposed relation return to Attending after its evidence deepens?"
+  ],
+  "public_change": true,
+  "proposed_public_change": true,
+  "run_state": "relational-evidence-deepening",
+  "valid_no_op": false,
+  "human_review_required": false,
+  "note": "A public dated record explains three evidence additions and one related-path completion. Attending remains finite and unchanged; prior proposal and audit history remains available."
+}
