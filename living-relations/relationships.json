@@ -94,8 +94,18 @@
       "lifecycle_state": "active",
       "review_state": "proposed",
       "rationale": "FN-32 operationally separates the Gardener and Cartographer actions first gathered inside the Living Librarian.",
+      "evidence": [
+        {
+          "source": "living-content/cyberdelic-os/fn-s0-002/v000001.md",
+          "locator": "The living library therefore needs an office that is partly librarian, partly gardener, and partly cartographer."
+        },
+        {
+          "source": "living-content/cyberdelic-os/fn-s0-005/v000001.md",
+          "locator": "Field Note 29 imagined a Living Librarian that reads, gardens, and maps."
+        }
+      ],
       "introduced_by": "OFFICE-GARDENER",
-      "last_tended_at": "2026-08-17T17:00:00+00:00"
+      "last_tended_at": "2026-09-16T07:02:19-07:00"
     },
     {
       "edge_id": "REL-000002",
@@ -106,8 +116,18 @@
       "lifecycle_state": "active",
       "review_state": "proposed",
       "rationale": "BN-005 gives the two offices, relational graph, scheduler transaction, permissions, validation, and review boundary a technical architecture.",
+      "evidence": [
+        {
+          "source": "living-content/cyberdelic-os/fn-s0-005/v000001.md",
+          "locator": "Both offices need constitutions, not personalities painted onto generic automation."
+        },
+        {
+          "source": "living-content/cyberdelic-os/bn-005/v000001.md",
+          "locator": "One scheduled ritual gives two constitutionally separate offices ordered turns over a versioned relational graph"
+        }
+      ],
       "introduced_by": "OFFICE-GARDENER",
-      "last_tended_at": "2026-08-17T17:00:00+00:00"
+      "last_tended_at": "2026-09-16T07:02:19-07:00"
     },
     {
       "edge_id": "REL-000003",
@@ -118,8 +138,18 @@
       "lifecycle_state": "active",
       "review_state": "proposed",
       "rationale": "I-003 turns the daily tending proposed in FN-32 into an active scheduled ritual and a finite public Attending contract.",
+      "evidence": [
+        {
+          "source": "living-content/cyberdelic-os/fn-s0-005/v000001.md",
+          "locator": "This could become a daily ritual for cyberdelic.space."
+        },
+        {
+          "source": "living-content/cyberdelic-os/i-003/v000001.md",
+          "locator": "The Daily Tending Ritual gives the Gardener and Cartographer bounded turns inside the living Cyberdelic OS archive."
+        }
+      ],
       "introduced_by": "OFFICE-GARDENER",
-      "last_tended_at": "2026-08-17T17:00:00+00:00"
+      "last_tended_at": "2026-09-16T07:02:19-07:00"
     },
     {
       "edge_id": "REL-000004",
