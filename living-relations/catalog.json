@@ -1,7 +1,7 @@
 {
   "schema": "https://cyberdelic.space/schemas/living-catalog-v1.json",
   "version": "0.4",
-  "updated_at": "2026-09-08T07:55:48-07:00",
+  "updated_at": "2026-09-17T07:03:54-07:00",
   "count": 15,
   "curation": {
     "office": "OFFICE-LIBRARIAN",
@@ -23,11 +23,11 @@
       "search_terms": ["open anatomy", "software organs", "Community Notes", "open source stack", "system components", "replaceable infrastructure", "helpfulness across perspectives"],
       "questions": ["Which existing open-source organs can be borrowed without inheriting the surrounding platform's physics?", "How can a system remain inspectable while its technical components stay replaceable?"],
       "related": [{"id": "external:community-notes", "title": "Community Notes", "relation_type": "technical-adjacency", "review_state": "proposed"}],
-      "evidence": [{"source": "living-content/cyberdelic-os/fn-s0-001/v000001.md", "locator": "Field Note 14: The Open Anatomy"}],
+      "evidence": [{"source": "living-content/cyberdelic-os/fn-s0-001/v000001.md", "locator": "The Open Anatomy"}],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
-      "last_tended_at": "2026-08-28T07:17:40-07:00"
+      "last_tended_at": "2026-09-17T07:03:54-07:00"
     },
     {
       "id": "catalog:cyberdelic-os:fn-25",
@@ -39,11 +39,11 @@
       "search_terms": ["consensus", "public conversation", "group intelligence", "civic dialogue", "gathering intelligence", "opinion mapping", "cross-perspective helpfulness", "context notes"],
       "questions": ["How can a gathering reveal shared structure without making consensus the measure of truth?", "What should remain visible when a complex disagreement becomes a durable public object?"],
       "related": [{"id": "external:polis", "title": "Polis", "relation_type": "shared-inquiry", "review_state": "proposed"}, {"id": "external:community-notes", "title": "Community Notes", "relation_type": "shared-inquiry", "review_state": "proposed"}],
-      "evidence": [{"source": "living-content/cyberdelic-os/fn-s0-001/v000001.md", "locator": "Field Note 25: Expeditions, Storms, and the Birth of Boroughs"}],
+      "evidence": [{"source": "living-content/cyberdelic-os/fn-s0-001/v000001.md", "locator": "Expeditions, Storms, and the Birth of Boroughs"}],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
-      "last_tended_at": "2026-08-28T07:17:40-07:00"
+      "last_tended_at": "2026-09-17T07:03:54-07:00"
     },
     {
       "id": "catalog:cyberdelic-os:fn-29",
