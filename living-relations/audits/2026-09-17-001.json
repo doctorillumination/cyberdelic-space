@@ -7,9 +7,9 @@
   "repository": {
     "branch": "codex/tending-2026-09-17",
     "starting_commit": "c689608e96be99869032c1729a0be9077f4c4d43",
-    "pull_request": null,
-    "pull_request_state": "pending-validation",
-    "publication_action": "pending"
+    "pull_request": "https://github.com/doctorillumination/cyberdelic-space/pull/42",
+    "pull_request_state": "ready-auto-publication",
+    "publication_action": "validated-autonomous-evidence-locator-repair"
   },
   "automation": {
     "id": "daily-cyberdelic-tending",
