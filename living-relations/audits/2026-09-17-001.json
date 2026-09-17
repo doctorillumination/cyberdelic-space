@@ -1,0 +1,253 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-09-17-001",
+  "run_type": "scheduled-governed-run",
+  "started_at": "2026-09-17T07:03:54-07:00",
+  "completed_at": "2026-09-17T07:08:44-07:00",
+  "repository": {
+    "branch": "codex/tending-2026-09-17",
+    "starting_commit": "c689608e96be99869032c1729a0be9077f4c4d43",
+    "pull_request": null,
+    "pull_request_state": "pending-validation",
+    "publication_action": "pending"
+  },
+  "automation": {
+    "id": "daily-cyberdelic-tending",
+    "name": "Daily Cyberdelic Tending",
+    "status": "active",
+    "schedule": "Daily at 7:00 AM America/Vancouver",
+    "next_scheduled_run": "2026-09-18T07:00:00-07:00"
+  },
+  "office_versions": {
+    "cartographer": "0.1",
+    "gardener": "0.1",
+    "librarian": "0.1",
+    "publication_authority": "1.1"
+  },
+  "inputs": {
+    "inbox_items": 0,
+    "declared_question": "Can the existing Polis and Community Notes proposals be followed to exact passages in Field Notes 14 and 25?",
+    "internal_region": [
+      {
+        "id": "cyberdelic-os:fn-14",
+        "title": "The Open Anatomy"
+      },
+      {
+        "id": "cyberdelic-os:fn-25",
+        "title": "Expeditions, Storms, and the Birth of Boroughs"
+      }
+    ],
+    "external_region": [
+      {
+        "id": "external:polis",
+        "title": "Polis"
+      },
+      {
+        "id": "external:community-notes",
+        "title": "Community Notes"
+      }
+    ]
+  },
+  "cartographer": {
+    "state": "no-op",
+    "candidate_limit": 3,
+    "candidates_created": [],
+    "existing_proposals_rechecked": [
+      "REL-P-000002",
+      "REL-P-000013",
+      "REL-P-000014"
+    ],
+    "sources_checked": [
+      {
+        "title": "Polis public repository",
+        "url": "https://github.com/compdemocracy/polis",
+        "source_kind": "primary-public-source",
+        "checked_at": "2026-09-17T07:03:54-07:00"
+      },
+      {
+        "title": "Polis: Scaling Deliberation by Mapping High Dimensional Opinion Spaces",
+        "url": "https://www.e-revistes.uji.es/index.php/recerca/article/view/5516/6558",
+        "source_kind": "primary-research-source",
+        "checked_at": "2026-09-17T07:03:54-07:00"
+      },
+      {
+        "title": "Community Notes public repository and guide source",
+        "url": "https://github.com/twitter/communitynotes",
+        "source_kind": "primary-public-source",
+        "checked_at": "2026-09-17T07:03:54-07:00"
+      },
+      {
+        "title": "Field Notes 14 and 25 exact source",
+        "source": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
+        "source_kind": "exact-living-publication",
+        "checked_at": "2026-09-17T07:03:54-07:00"
+      }
+    ],
+    "source_facts": [
+      {
+        "claim": "The Polis repository describes an open-source platform for large-scale, open-ended feedback and links its methods paper on mapping high-dimensional opinion spaces.",
+        "url": "https://github.com/compdemocracy/polis"
+      },
+      {
+        "claim": "The Community Notes repository publicly hosts program documentation and the open-source scoring implementation, and describes differing points of view as essential to helpful context.",
+        "url": "https://github.com/twitter/communitynotes"
+      },
+      {
+        "claim": "Field Note 14 names Community Notes as an open reference for cross-perspective helpfulness, while Field Note 25 imagines inquiry that may preserve explicit disagreement rather than end in consensus.",
+        "source": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
+        "locator": "The Open Anatomy; Expeditions, Storms, and the Birth of Boroughs"
+      }
+    ],
+    "inference": "The three existing proposed edges remain useful, bounded comparisons. Polis and Community Notes offer distinct methods for finding structure across disagreement, while the field notes imagine a broader system of provenance, values, testimony, and preserved dissent.",
+    "uncertainty": "The proposals remain model-proposed and do not establish equivalence, endorsement, partnership, or a settled architectural choice.",
+    "attribution": "External facts come from the projects' public repositories and linked primary research. Internal facts come from the exact public Cyberdelic OS source.",
+    "source_fact_and_inference_separated": true,
+    "source_conflict_found": false,
+    "private_material_read": false,
+    "external_contact_performed": false,
+    "outward_search_performed": true,
+    "no_proposal_reason": "The bounded source recheck supported the existing candidates and revealed no additional node or edge that would deepen this region."
+  },
+  "gardener": {
+    "state": "three-evidence-repairs",
+    "cartographer_proposals_considered": [
+      "REL-P-000002",
+      "REL-P-000013",
+      "REL-P-000014"
+    ],
+    "decisions": [
+      {
+        "kind": "proposal-evidence-repair",
+        "decision": "Replace REL-P-000002's combined field-note label with the exact FN-25 title that occurs in the cited source."
+      },
+      {
+        "kind": "proposal-evidence-repair",
+        "decision": "Replace REL-P-000013's combined field-note label with the exact FN-14 title that occurs in the cited source."
+      },
+      {
+        "kind": "proposal-evidence-repair",
+        "decision": "Replace REL-P-000014's combined field-note label with the exact FN-25 title that occurs in the cited source."
+      },
+      {
+        "kind": "finite-attending",
+        "decision": "Leave the three-item Attending arrangement unchanged and do not create a dated tending page because no node, edge, rationale, lifecycle state, or related-work path changed."
+      }
+    ],
+    "changes": [
+      "REL-P-000002",
+      "REL-P-000013",
+      "REL-P-000014"
+    ],
+    "evidence": [
+      {
+        "source": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
+        "locator": "The Open Anatomy"
+      },
+      {
+        "source": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
+        "locator": "Expeditions, Storms, and the Birth of Boroughs"
+      }
+    ],
+    "manifest_changed": false,
+    "attending_arrangement_changed": false,
+    "exact_publication_sources_changed": false,
+    "decision_reason": "Three proposal evidence locators described headings in a synthetic form that did not occur as exact source text. Exact title fragments now make the same claims directly inspectable without changing their meaning."
+  },
+  "librarian": {
+    "state": "two-records-revised",
+    "catalog_change_limit": 3,
+    "records_examined": [
+      "catalog:cyberdelic-os:fn-14",
+      "catalog:cyberdelic-os:fn-25"
+    ],
+    "records_created": [],
+    "records_revised": [
+      "catalog:cyberdelic-os:fn-14",
+      "catalog:cyberdelic-os:fn-25"
+    ],
+    "records_removed": [],
+    "decisions": [
+      {
+        "kind": "catalog-evidence-repair",
+        "decision": "Replace each synthetic field-note label with the exact title fragment present in the cited source."
+      },
+      {
+        "kind": "catalog-restraint",
+        "decision": "Leave summaries, subjects, search terms, questions, and related paths unchanged because the source recheck supports them."
+      },
+      {
+        "kind": "finite-search",
+        "decision": "Keep directory results bounded to six and the default Library aperture at three works."
+      }
+    ],
+    "search_terms_added": [],
+    "outward_search_performed": false,
+    "catalog_count": 15,
+    "decision_reason": "The two records were findable but their evidence locators did not literally occur in the exact source. Repairing those locators improves auditability without expanding the catalog."
+  },
+  "files_changed": [
+    "living-relations/proposals.json",
+    "living-relations/catalog.json",
+    "living-relations/audits/2026-09-17-001.json",
+    "cyberdelic-space.zip"
+  ],
+  "validation": {
+    "state": "passed",
+    "checks": [
+      {
+        "check": "bounded-source-review",
+        "result": "Primary Polis and Community Notes sources remain consistent with the three existing proposal descriptions. The exact Cyberdelic OS source supports all repaired local evidence locators without conflict."
+      },
+      {
+        "check": "structured-data",
+        "result": "All 43 JSON documents and three XML documents parsed successfully."
+      },
+      {
+        "check": "exact-source-integrity",
+        "result": "All 31 indexed Field, Workshop, and Library sources matched recorded byte lengths and SHA-256 values. The five repaired proposal and catalog locators, plus every evidence fragment on all seven manifest edges, occur in their cited exact sources."
+      },
+      {
+        "check": "internal-links",
+        "result": "All 2,871 local links and assets resolved across 138 HTML pages."
+      },
+      {
+        "check": "application-and-data-contracts",
+        "result": "All eight JavaScript files passed syntax checks. The 18 proposals, 15 catalog records, twelve relational nodes, seven edges, unique identifiers, required catalog fields, and finite limits passed contract checks."
+      },
+      {
+        "check": "responsive-browser",
+        "result": "Living Relationships and the homepage directory rendered at 390 by 844 pixels with the psychedelic default, accessible links and search, and no horizontal overflow; document width equalled viewport width."
+      },
+      {
+        "check": "catalog-search",
+        "result": "Homepage searches for open anatomy and boroughs returned the corresponding tended field notes within the six-result limit. The three-work default Library aperture remained unchanged."
+      },
+      {
+        "check": "finite-attending",
+        "result": "The current Attending arrangement remained exactly three items and no dated tending page was created for evidence-locator repairs."
+      },
+      {
+        "check": "changed-prose-policy",
+        "result": "No em dash characters were added."
+      },
+      {
+        "check": "publication-boundary",
+        "result": "Only proposal metadata, catalog metadata, the dated audit, and deterministic mirror changed. No exact publication, site page, application code, sitemap, ratification record, or human-locked control changed."
+      },
+      {
+        "check": "distribution-archive",
+        "result": "The deterministic mirror was rebuilt twice with identical SHA-256 output, includes the dated audit, and matches every archived source byte for byte."
+      }
+    ]
+  },
+  "unresolved_questions": [
+    "Should future evidence audits prefer exact title fragments, exact body passages, or both when a relation rests on a whole field note?",
+    "How should a public catalog expose source evidence without overwhelming the finite search surface?"
+  ],
+  "public_change": true,
+  "proposed_public_change": true,
+  "run_state": "evidence-locator-repair",
+  "valid_no_op": false,
+  "human_review_required": false,
+  "note": "Three proposal locators and two catalog locators now point to literal exact-source text. No public tending page or Attending rotation was warranted because the relational field did not materially change."
+}

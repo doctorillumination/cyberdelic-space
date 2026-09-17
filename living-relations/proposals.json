@@ -1,6 +1,6 @@
 {
   "schema": "https://cyberdelic.space/schemas/relationship-proposals-v1.json",
-  "updated_at": "2026-09-08T07:55:48-07:00",
+  "updated_at": "2026-09-17T07:03:54-07:00",
   "count": 18,
   "items": [
     {
@@ -59,7 +59,7 @@
         {
           "claim": "Field Note 25 imagines collective storms in which agents distinguish factual, definitional, and moral disagreement, while durable artifacts preserve ratification, alternatives, sources, and unresolved questions.",
           "source": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
-          "locator": "Field Note 25: Expeditions, Storms, and the Birth of Boroughs"
+          "locator": "Expeditions, Storms, and the Birth of Boroughs"
         }
       ],
       "cartographer_inference": "Polis and Field Note 25 share an inquiry into large-group sensemaking, but they should not be collapsed. Polis uses participant statements, voting, opinion-space mapping, and an explicit concern with consensus. FN-25 imagines a wider field of testimony, evidence, art, values, and provenance in which a storm may remain unresolved. The methodological difference is part of the proposed relation.",
@@ -463,7 +463,7 @@
         {
           "claim": "Field Note 14 explicitly names Community Notes as a real, open reference for ranking contributions that achieve helpfulness across differing perspectives.",
           "source": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
-          "locator": "Field Note 14: The Open Anatomy"
+          "locator": "The Open Anatomy"
         }
       ],
       "cartographer_inference": "The relation is directly stated in FN-14. Community Notes is one replaceable technical organ that Cyberdelic OS may study, not a constitutional model to import whole. The useful adjacency is its open attempt to measure cross-perspective helpfulness while avoiding raw majority rule.",
@@ -492,7 +492,7 @@
         {
           "claim": "Field Note 25 imagines storms where participants carry testimony, evidence, art, forecasts, values, and institutional histories, and where the result may preserve explicit disagreement rather than end in consensus.",
           "source": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
-          "locator": "Field Note 25: Expeditions, Storms, and the Birth of Boroughs"
+          "locator": "Expeditions, Storms, and the Birth of Boroughs"
         }
       ],
       "cartographer_inference": "Community Notes and FN-25 share an inquiry into making useful structure emerge across disagreement. Their outputs remain materially different. Community Notes assigns a global helpfulness status to a note, while FN-25 imagines durable multi-perspective artifacts that distinguish factual, definitional, moral, and trust-based conflict and may preserve dissent. The contrast is part of the proposed relation.",
