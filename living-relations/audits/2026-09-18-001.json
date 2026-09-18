@@ -1,0 +1,239 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-09-18-001",
+  "run_type": "scheduled-governed-run",
+  "started_at": "2026-09-18T07:03:44-07:00",
+  "completed_at": "2026-09-18T08:01:09-07:00",
+  "repository": {
+    "branch": "codex/tending-2026-09-18",
+    "starting_commit": "1b32f8cbdafb2406295508ee5b0664bab6137b02",
+    "pull_request": null,
+    "pull_request_state": "pending-validation",
+    "publication_action": "pending"
+  },
+  "automation": {
+    "id": "daily-cyberdelic-tending",
+    "name": "Daily Cyberdelic Tending",
+    "status": "active",
+    "schedule": "Daily at 7:00 AM America/Vancouver",
+    "next_scheduled_run": "2026-09-19T07:00:00-07:00"
+  },
+  "office_versions": {
+    "cartographer": "0.1",
+    "gardener": "0.1",
+    "librarian": "0.1",
+    "publication_authority": "1.1"
+  },
+  "inputs": {
+    "inbox_items": 0,
+    "declared_question": "Can the proposed Art Blocks adjacency be followed from its current primary sources into exact evidence in Field Note 33 and the public catalog?",
+    "internal_region": [
+      {
+        "id": "cyberdelic-os:fn-33",
+        "title": "The Plate and the Pull"
+      }
+    ],
+    "external_region": [
+      {
+        "id": "external:art-blocks",
+        "title": "Art Blocks"
+      }
+    ]
+  },
+  "cartographer": {
+    "state": "no-op",
+    "candidate_limit": 3,
+    "candidates_created": [],
+    "existing_proposals_rechecked": [
+      "REL-P-000003",
+      "REL-P-000004",
+      "REL-P-000005"
+    ],
+    "sources_checked": [
+      {
+        "title": "Art Blocks Protocol Overview",
+        "url": "https://docs.artblocks.io/protocol/overview/",
+        "source_kind": "official-protocol-documentation",
+        "checked_at": "2026-09-18T07:03:44-07:00"
+      },
+      {
+        "title": "The Art Blocks Generator",
+        "url": "https://docs.artblocks.io/protocol/on-chain-generator/",
+        "source_kind": "official-protocol-documentation",
+        "checked_at": "2026-09-18T07:03:44-07:00"
+      },
+      {
+        "title": "Core Contract (V3)",
+        "url": "https://docs.artblocks.io/developer/core-contract/",
+        "source_kind": "official-developer-documentation",
+        "checked_at": "2026-09-18T07:03:44-07:00"
+      },
+      {
+        "title": "Art Blocks contracts repository",
+        "url": "https://github.com/ArtBlocks/artblocks-contracts",
+        "source_kind": "official-public-repository",
+        "checked_at": "2026-09-18T07:03:44-07:00"
+      },
+      {
+        "title": "Field Note 33 exact source",
+        "source": "living-content/cyberdelic-os/fn-s0-006/v000001.md",
+        "source_kind": "exact-living-publication",
+        "checked_at": "2026-09-18T07:03:44-07:00"
+      }
+    ],
+    "source_facts": [
+      {
+        "claim": "The current Art Blocks protocol documentation describes deterministic generative scripts, token hashes, and dependency handling intended to support browser reconstruction beyond Art Blocks servers.",
+        "url": "https://docs.artblocks.io/protocol/overview/"
+      },
+      {
+        "claim": "The current generator documentation states that approximately 90 percent of flagship projects are fully on-chain while the remainder reference widely distributed CDN packages.",
+        "url": "https://docs.artblocks.io/protocol/on-chain-generator/"
+      },
+      {
+        "claim": "Field Note 33 asks how a press can expect its building to disappear while leaving its generator legible and its authorized edition ended.",
+        "source": "living-content/cyberdelic-os/fn-s0-006/v000001.md",
+        "locator": "What would it mean to build a press that expected its own building to disappear?; The generator remains legible.; The edition has ended."
+      }
+    ],
+    "inference": "The existing Art Blocks proposal remains a useful technical adjacency for durable generative publication. Its mixed dependency conditions reinforce the proposal's existing qualification rather than supporting a broader or stronger claim.",
+    "uncertainty": "The relationship remains model-proposed and technically comparative. It does not imply endorsement, partnership, architectural equivalence, or that every Art Blocks work is independently reconstructable from on-chain data alone.",
+    "attribution": "External facts come from official Art Blocks documentation and its public contracts repository. Internal facts come from the exact public Field Note 33 source.",
+    "source_fact_and_inference_separated": true,
+    "source_conflict_found": false,
+    "private_material_read": false,
+    "external_contact_performed": false,
+    "outward_search_performed": true,
+    "no_proposal_reason": "The bounded source recheck continued to support the existing node, edge, and evidence amendment. A new candidate would duplicate the current proposal queue."
+  },
+  "gardener": {
+    "state": "one-evidence-repair",
+    "cartographer_proposals_considered": [
+      "REL-P-000003",
+      "REL-P-000004",
+      "REL-P-000005"
+    ],
+    "decisions": [
+      {
+        "kind": "proposal-evidence-repair",
+        "decision": "Replace REL-P-000004's synthetic section label with three exact FN-33 passages that support the unchanged proposal claim."
+      },
+      {
+        "kind": "proposal-restraint",
+        "decision": "Leave relation type, epistemic status, lifecycle, inference, and unresolved questions unchanged because current sources still support their cautious boundaries."
+      },
+      {
+        "kind": "finite-attending",
+        "decision": "Leave the three-item Attending arrangement unchanged and do not create a dated tending page because no node, edge, rationale, lifecycle state, or related-work path changed."
+      }
+    ],
+    "changes": [
+      "REL-P-000004"
+    ],
+    "evidence": [
+      {
+        "source": "living-content/cyberdelic-os/fn-s0-006/v000001.md",
+        "locator": "What would it mean to build a press that expected its own building to disappear?; The generator remains legible.; The edition has ended."
+      }
+    ],
+    "manifest_changed": false,
+    "attending_arrangement_changed": false,
+    "exact_publication_sources_changed": false,
+    "decision_reason": "The earlier locator combined two absent section labels. Three literal passages now make the same proposal directly inspectable without changing its meaning."
+  },
+  "librarian": {
+    "state": "one-record-revised",
+    "catalog_change_limit": 3,
+    "records_examined": [
+      "catalog:external:art-blocks"
+    ],
+    "records_created": [],
+    "records_revised": [
+      "catalog:external:art-blocks"
+    ],
+    "records_removed": [],
+    "decisions": [
+      {
+        "kind": "catalog-evidence-repair",
+        "decision": "Replace the synthetic proposal range with the three literal proposal identifiers present in the cited queue."
+      },
+      {
+        "kind": "catalog-restraint",
+        "decision": "Leave the summary, subjects, search terms, question, relation, and proposal state unchanged because the current primary sources support them."
+      },
+      {
+        "kind": "finite-search",
+        "decision": "Keep directory results bounded to six and the default Library aperture at three works."
+      }
+    ],
+    "search_terms_added": [],
+    "outward_search_performed": false,
+    "catalog_count": 15,
+    "decision_reason": "The record remained findable, but its evidence locator described a range rather than quoting text present in the proposal queue. Literal identifiers restore auditability without expanding the catalog."
+  },
+  "files_changed": [
+    "living-relations/proposals.json",
+    "living-relations/catalog.json",
+    "living-relations/audits/2026-09-18-001.json",
+    "cyberdelic-space.zip"
+  ],
+  "validation": {
+    "state": "passed",
+    "checks": [
+      {
+        "check": "bounded-source-review",
+        "result": "Current official Art Blocks documentation and repository evidence remain consistent with the existing proposed node, adjacency, and dependency qualification."
+      },
+      {
+        "check": "structured-data",
+        "result": "All 44 JSON documents and three XML documents parsed successfully."
+      },
+      {
+        "check": "exact-source-integrity",
+        "result": "All 31 indexed Field, Workshop, and Library sources matched recorded byte lengths and SHA-256 values. The repaired FN-33 proposal locator, repaired catalog locator, and every evidence fragment on all seven manifest edges occur in their cited sources."
+      },
+      {
+        "check": "internal-links",
+        "result": "All 2,871 local links and assets resolved across 138 HTML pages."
+      },
+      {
+        "check": "application-and-data-contracts",
+        "result": "All eight JavaScript files passed syntax checks. The 18 proposals, 15 catalog records, twelve relational nodes, seven edges, unique identifiers, required catalog fields, and finite limits passed contract checks."
+      },
+      {
+        "check": "responsive-browser",
+        "result": "Living Relationships and the homepage directory rendered at 390 by 844 pixels with the psychedelic default, accessible links and search, and no horizontal overflow; document width equalled viewport width."
+      },
+      {
+        "check": "catalog-search",
+        "result": "A homepage search for generative art returned the tended Art Blocks neighbour within the six-result limit. The three-work default Library aperture remained unchanged."
+      },
+      {
+        "check": "finite-attending",
+        "result": "The current Attending arrangement remained exactly three items and no dated tending page was created for evidence-locator repairs."
+      },
+      {
+        "check": "changed-prose-policy",
+        "result": "No em dash characters were added."
+      },
+      {
+        "check": "publication-boundary",
+        "result": "Only proposal metadata, catalog metadata, the dated audit, and deterministic mirror changed. No exact publication, site page, application code, sitemap, ratification record, or human-locked control changed."
+      },
+      {
+        "check": "distribution-archive",
+        "result": "The deterministic mirror was rebuilt twice with identical SHA-256 output, includes the dated audit, and matches every archived source byte for byte."
+      }
+    ]
+  },
+  "unresolved_questions": [
+    "Which dependencies must travel inside a generative plate for independent reconstruction after both its venue and preferred gateways disappear?",
+    "How should the catalog expose multiple proposal records as evidence without turning a finite search result into a technical audit page?"
+  ],
+  "public_change": true,
+  "proposed_public_change": true,
+  "run_state": "evidence-locator-repair",
+  "valid_no_op": false,
+  "human_review_required": false,
+  "note": "One proposal locator and one external-neighbour catalog locator now point to literal source text. No public tending page or Attending rotation was warranted because the relational field did not materially change."
+}
