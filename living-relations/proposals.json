@@ -1,6 +1,6 @@
 {
   "schema": "https://cyberdelic.space/schemas/relationship-proposals-v1.json",
-  "updated_at": "2026-09-17T07:03:54-07:00",
+  "updated_at": "2026-09-18T07:03:44-07:00",
   "count": 18,
   "items": [
     {
@@ -130,7 +130,7 @@
         {
           "claim": "Field Note 33 asks how a generative press could expect its venue to disappear, keep its algorithm public, and allow independent reconstruction while ending an authorized edition.",
           "source": "living-content/cyberdelic-os/fn-s0-006/v000001.md",
-          "locator": "A Press, Not a Platform and The Edition Ends. The Plate Remains."
+          "locator": "What would it mean to build a press that expected its own building to disappear?; The generator remains legible.; The edition has ended."
         }
       ],
       "cartographer_inference": "Art Blocks and FN-33 share a technical inquiry into durable generative publication, but they should not be collapsed. Art Blocks uses Ethereum, ERC-721 tokens, minting, and protocol contracts. FN-33 proposes Bitcoin parent-and-pull lineage, plate striking, public copyability, and a marketplace kept subordinate to the press. The architectural difference is part of the proposed relation.",
