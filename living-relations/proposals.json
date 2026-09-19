@@ -1,6 +1,6 @@
 {
   "schema": "https://cyberdelic.space/schemas/relationship-proposals-v1.json",
-  "updated_at": "2026-09-18T07:03:44-07:00",
+  "updated_at": "2026-09-19T07:05:01-07:00",
   "count": 18,
   "items": [
     {
@@ -233,7 +233,7 @@
         {
           "claim": "Field Note 33 asks how a generative press can keep its public algorithm and rendering encounter reconstructable after its original catalog, renderer, storefront, and company disappear.",
           "source": "living-content/cyberdelic-os/fn-s0-006/v000001.md",
-          "locator": "A Press, Not a Platform"
+          "locator": "What vanished was the building around it: the catalog, the renderer, the storefront, and the company responsible for holding them together.; What would it mean to build a press that expected its own building to disappear?; The browser can perform the encounter on the visitor's own machine."
         }
       ],
       "cartographer_inference": "WACZ and FN-33 share a technical concern with carrying enough material and context for a browser encounter to survive its first venue. Their purposes remain different. WACZ records and replays HTTP exchanges, while FN-33 imagines an executable generative plate, an authorized lineage of pulls, and a verifiable end to an edition. The packaging pattern is adjacent, not equivalent.",
