@@ -1,0 +1,233 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-09-19-001",
+  "run_type": "scheduled-governed-run",
+  "started_at": "2026-09-19T07:05:01-07:00",
+  "completed_at": "2026-09-19T08:09:26-07:00",
+  "repository": {
+    "branch": "codex/tending-2026-09-19",
+    "starting_commit": "25493d4334fca6d0eef2670fbf317bc19d65a313",
+    "pull_request": "https://github.com/doctorillumination/cyberdelic-space/pull/44",
+    "pull_request_state": "ready-auto-publication",
+    "publication_action": "validated-autonomous-evidence-locator-repair"
+  },
+  "automation": {
+    "id": "daily-cyberdelic-tending",
+    "name": "Daily Cyberdelic Tending",
+    "status": "active",
+    "schedule": "Daily at 7:00 AM America/Vancouver",
+    "next_scheduled_run": "2026-09-20T07:00:00-07:00"
+  },
+  "office_versions": {
+    "cartographer": "0.1",
+    "gardener": "0.1",
+    "librarian": "0.1",
+    "publication_authority": "1.1"
+  },
+  "inputs": {
+    "inbox_items": 0,
+    "declared_question": "Can the proposed WACZ adjacency be followed from its current primary sources into exact evidence in Field Note 33 and the public catalog?",
+    "internal_region": [
+      {
+        "id": "cyberdelic-os:fn-33",
+        "title": "The Plate and the Pull"
+      }
+    ],
+    "external_region": [
+      {
+        "id": "external:webrecorder-wacz",
+        "title": "Web Archive Collection Zipped (WACZ)"
+      }
+    ]
+  },
+  "cartographer": {
+    "state": "no-op",
+    "candidate_limit": 3,
+    "candidates_created": [],
+    "existing_proposals_rechecked": [
+      "REL-P-000006",
+      "REL-P-000007",
+      "REL-P-000015"
+    ],
+    "sources_checked": [
+      {
+        "title": "Web Archive Collection Zipped 1.2.0",
+        "url": "https://specs.webrecorder.net/wacz/1.2.0/",
+        "source_kind": "official-specification-draft",
+        "checked_at": "2026-09-19T07:05:01-07:00"
+      },
+      {
+        "title": "Webrecorder specifications repository",
+        "url": "https://github.com/webrecorder/specs",
+        "source_kind": "official-public-repository",
+        "checked_at": "2026-09-19T07:05:01-07:00"
+      },
+      {
+        "title": "WACZ 1.2.0 source document",
+        "url": "https://raw.githubusercontent.com/webrecorder/specs/main/wacz/1.2.0/index.md",
+        "source_kind": "official-specification-source",
+        "checked_at": "2026-09-19T07:05:01-07:00"
+      },
+      {
+        "title": "Field Note 33 exact source",
+        "source": "living-content/cyberdelic-os/fn-s0-006/v000001.md",
+        "source_kind": "exact-living-publication",
+        "checked_at": "2026-09-19T07:05:01-07:00"
+      }
+    ],
+    "source_facts": [
+      {
+        "claim": "The current WACZ 1.2.0 document remains a draft potential specification for packaging archived content, indexes, entry points, contextual metadata, and fixity inside a portable ZIP file that can support static hosting and browser replay.",
+        "url": "https://specs.webrecorder.net/wacz/1.2.0/"
+      },
+      {
+        "claim": "The draft still permits signing extensions while requiring neither a signature nor one trust model for archived content.",
+        "url": "https://raw.githubusercontent.com/webrecorder/specs/main/wacz/1.2.0/index.md"
+      },
+      {
+        "claim": "Field Note 33 asks how a browser encounter and public generative work can survive the disappearance of its catalog, renderer, storefront, and company.",
+        "source": "living-content/cyberdelic-os/fn-s0-006/v000001.md",
+        "locator": "What vanished was the building around it: the catalog, the renderer, the storefront, and the company responsible for holding them together.; What would it mean to build a press that expected its own building to disappear?; The browser can perform the encounter on the visitor's own machine."
+      }
+    ],
+    "inference": "The existing WACZ proposal remains a useful packaging precedent for carrying renderable resources and context beyond one venue. Its draft status and open trust boundary continue to prevent treating it as a settled standard or an authority for generative edition lineage.",
+    "uncertainty": "The relationship remains model-proposed and technically comparative. It does not imply endorsement, partnership, architectural equivalence, or that package fixity alone establishes authenticity or lineage.",
+    "attribution": "External facts come from the official Webrecorder specification and repository. Internal facts come from the exact public Field Note 33 source.",
+    "source_fact_and_inference_separated": true,
+    "source_conflict_found": false,
+    "private_material_read": false,
+    "external_contact_performed": false,
+    "outward_search_performed": true,
+    "no_proposal_reason": "The bounded source recheck continued to support the existing node, edge, and evidence amendment. A new candidate would duplicate the current proposal queue."
+  },
+  "gardener": {
+    "state": "one-evidence-repair",
+    "cartographer_proposals_considered": [
+      "REL-P-000006",
+      "REL-P-000007",
+      "REL-P-000015"
+    ],
+    "decisions": [
+      {
+        "kind": "proposal-evidence-repair",
+        "decision": "Replace REL-P-000007's absent section label with three exact FN-33 passages that support the unchanged proposal claim."
+      },
+      {
+        "kind": "proposal-restraint",
+        "decision": "Leave relation type, epistemic status, lifecycle, inference, and unresolved questions unchanged because current sources still support their cautious boundaries."
+      },
+      {
+        "kind": "finite-attending",
+        "decision": "Leave the three-item Attending arrangement unchanged and do not create a dated tending page because no node, edge, rationale, lifecycle state, or related-work path changed."
+      }
+    ],
+    "changes": [
+      "REL-P-000007"
+    ],
+    "evidence": [
+      {
+        "source": "living-content/cyberdelic-os/fn-s0-006/v000001.md",
+        "locator": "What vanished was the building around it: the catalog, the renderer, the storefront, and the company responsible for holding them together.; What would it mean to build a press that expected its own building to disappear?; The browser can perform the encounter on the visitor's own machine."
+      }
+    ],
+    "manifest_changed": false,
+    "attending_arrangement_changed": false,
+    "exact_publication_sources_changed": false,
+    "decision_reason": "The earlier locator named a section absent from the exact source. Three literal passages now make the same proposal directly inspectable without changing its meaning."
+  },
+  "librarian": {
+    "state": "one-record-revised",
+    "catalog_change_limit": 3,
+    "records_examined": [
+      "catalog:external:webrecorder-wacz"
+    ],
+    "records_created": [],
+    "records_revised": [
+      "catalog:external:webrecorder-wacz"
+    ],
+    "records_removed": [],
+    "decisions": [
+      {
+        "kind": "catalog-evidence-repair",
+        "decision": "Replace the synthetic proposal list with the three literal proposal identifiers present in the cited queue."
+      },
+      {
+        "kind": "catalog-restraint",
+        "decision": "Leave the summary, subjects, search terms, question, relation, and proposal state unchanged because the current primary sources support them."
+      },
+      {
+        "kind": "finite-search",
+        "decision": "Keep directory results bounded to six and the default Library aperture at three works."
+      }
+    ],
+    "search_terms_added": [],
+    "outward_search_performed": false,
+    "catalog_count": 15,
+    "decision_reason": "The record remained findable, but its evidence locator described a list rather than quoting text present in the proposal queue. Literal identifiers restore auditability without expanding the catalog."
+  },
+  "files_changed": [
+    "living-relations/proposals.json",
+    "living-relations/catalog.json",
+    "living-relations/audits/2026-09-19-001.json",
+    "cyberdelic-space.zip"
+  ],
+  "validation": {
+    "state": "passed",
+    "checks": [
+      {
+        "check": "bounded-source-review",
+        "result": "Current official Webrecorder specification and repository evidence remain consistent with the existing proposed node, adjacency, and status and trust qualification."
+      },
+      {
+        "check": "structured-data",
+        "result": "All 45 JSON documents and three XML documents parsed successfully."
+      },
+      {
+        "check": "exact-source-integrity",
+        "result": "All 31 indexed Field, Workshop, and Library sources matched recorded byte lengths and SHA-256 values. The repaired FN-33 proposal locator, repaired catalog locator, and every evidence fragment on all seven manifest edges occur in their cited sources."
+      },
+      {
+        "check": "internal-links",
+        "result": "All 2,871 local links and assets resolved across 138 HTML pages."
+      },
+      {
+        "check": "application-and-data-contracts",
+        "result": "All eight JavaScript files passed syntax checks. The 18 proposals, 15 catalog records, twelve relational nodes, seven edges, unique identifiers, required catalog fields, and finite limits passed contract checks."
+      },
+      {
+        "check": "responsive-browser",
+        "result": "Living Relationships and the homepage directory rendered at 390 by 844 pixels with the psychedelic default, accessible links and search, and no horizontal overflow; document width equalled viewport width."
+      },
+      {
+        "check": "catalog-search",
+        "result": "A homepage search for portable archive returned the tended WACZ neighbour within the six-result limit. The three-work default Library aperture remained unchanged."
+      },
+      {
+        "check": "finite-attending",
+        "result": "The current Attending arrangement remained exactly three items and no dated tending page was created for evidence-locator repairs."
+      },
+      {
+        "check": "changed-prose-policy",
+        "result": "No em dash characters were added."
+      },
+      {
+        "check": "publication-boundary",
+        "result": "Only proposal metadata, catalog metadata, the dated audit, and deterministic mirror changed. No exact publication, site page, application code, sitemap, ratification record, or human-locked control changed."
+      },
+      {
+        "check": "distribution-archive",
+        "result": "The deterministic mirror was rebuilt twice with identical SHA-256 output, includes the dated audit, and matches every archived source byte for byte."
+      }
+    ]
+  },
+  "unresolved_questions": [
+    "Which resources, manifests, execution assumptions, and authenticity evidence must travel with a generative plate?",
+    "How should a portable archive distinguish package fixity from the authority of an edition lineage?"
+  ],
+  "public_change": true,
+  "proposed_public_change": true,
+  "run_state": "evidence-locator-repair",
+  "valid_no_op": false,
+  "human_review_required": false,
+  "note": "One proposal locator and one external-neighbour catalog locator now point to literal source text. No public tending page or Attending rotation was warranted because the relational field did not materially change."
+}
