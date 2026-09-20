@@ -1,6 +1,6 @@
 {
   "schema": "https://cyberdelic.space/schemas/relationship-proposals-v1.json",
-  "updated_at": "2026-09-19T07:05:01-07:00",
+  "updated_at": "2026-09-20T07:51:27-07:00",
   "count": 18,
   "items": [
     {
@@ -310,7 +310,7 @@
         {
           "claim": "Field Note 33 asks how a public algorithm and its rendering encounter can remain reconstructable after the original catalog, renderer, storefront, and company disappear.",
           "source": "living-content/cyberdelic-os/fn-s0-006/v000001.md",
-          "locator": "A Press, Not a Platform"
+          "locator": "What vanished was the building around it: the catalog, the renderer, the storefront, and the company responsible for holding them together.; What would it mean to build a press that expected its own building to disappear?; The browser can perform the encounter on the visitor's own machine."
         }
       ],
       "cartographer_inference": "OCI Image Specification 1.1.1 and FN-33 share a technical concern with making the contents and execution conditions of a software object portable and independently verifiable. Their purposes remain different. OCI prepares a runnable filesystem for a container runtime and may rely on external blob stores. FN-33 imagines a browser-readable generative plate, authorized pull lineage, and an edition that can verifiably end. The execution-manifest pattern is adjacent, not equivalent.",
