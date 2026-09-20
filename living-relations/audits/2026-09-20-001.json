@@ -1,0 +1,243 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-09-20-001",
+  "run_type": "scheduled-governed-run",
+  "started_at": "2026-09-20T07:51:27-07:00",
+  "completed_at": "2026-09-20T09:43:09-07:00",
+  "repository": {
+    "branch": "codex/tending-2026-09-20",
+    "starting_commit": "933283a083e5f2ddb6d3b6f18bbf194679746d9f",
+    "pull_request": null,
+    "pull_request_state": "pending",
+    "publication_action": "pending-validation"
+  },
+  "automation": {
+    "id": "daily-cyberdelic-tending",
+    "name": "Daily Cyberdelic Tending",
+    "status": "active",
+    "schedule": "Daily at 7:00 AM America/Vancouver",
+    "next_scheduled_run": "2026-09-21T07:00:00-07:00"
+  },
+  "office_versions": {
+    "cartographer": "0.1",
+    "gardener": "0.1",
+    "librarian": "0.1",
+    "publication_authority": "1.1"
+  },
+  "inputs": {
+    "inbox_items": 0,
+    "declared_question": "Can the proposed OCI Image Specification adjacency be followed from its current primary sources into exact evidence in Field Note 33 and the public catalog?",
+    "internal_region": [
+      {
+        "id": "cyberdelic-os:fn-33",
+        "title": "The Plate and the Pull"
+      }
+    ],
+    "external_region": [
+      {
+        "id": "external:oci-image-spec",
+        "title": "Open Container Initiative Image Format Specification"
+      }
+    ]
+  },
+  "cartographer": {
+    "state": "no-op",
+    "candidate_limit": 3,
+    "candidates_created": [],
+    "existing_proposals_rechecked": [
+      "REL-P-000008",
+      "REL-P-000009"
+    ],
+    "sources_checked": [
+      {
+        "title": "OpenContainers Image Specification",
+        "url": "https://specs.opencontainers.org/image-spec/",
+        "source_kind": "official-standards-publication",
+        "checked_at": "2026-09-20T07:51:27-07:00"
+      },
+      {
+        "title": "OCI Image Format Specification 1.1.1",
+        "url": "https://github.com/opencontainers/image-spec/blob/v1.1.1/spec.md",
+        "source_kind": "official-versioned-specification",
+        "checked_at": "2026-09-20T07:51:27-07:00"
+      },
+      {
+        "title": "OCI Image Configuration 1.1.1",
+        "url": "https://github.com/opencontainers/image-spec/blob/v1.1.1/config.md",
+        "source_kind": "official-versioned-specification",
+        "checked_at": "2026-09-20T07:51:27-07:00"
+      },
+      {
+        "title": "OCI Content Descriptor 1.1.1",
+        "url": "https://github.com/opencontainers/image-spec/blob/v1.1.1/descriptor.md",
+        "source_kind": "official-versioned-specification",
+        "checked_at": "2026-09-20T07:51:27-07:00"
+      },
+      {
+        "title": "OCI Image Layout 1.1.1",
+        "url": "https://github.com/opencontainers/image-spec/blob/v1.1.1/image-layout.md",
+        "source_kind": "official-versioned-specification",
+        "checked_at": "2026-09-20T07:51:27-07:00"
+      },
+      {
+        "title": "Field Note 33 exact source",
+        "source": "living-content/cyberdelic-os/fn-s0-006/v000001.md",
+        "source_kind": "exact-living-publication",
+        "checked_at": "2026-09-20T07:51:27-07:00"
+      }
+    ],
+    "source_facts": [
+      {
+        "claim": "OCI Image Specification 1.1.1 defines an image through manifests, an optional index, filesystem layers, configuration, and descriptors, with interoperable building, transport, verification, and preparation for execution as its technical domain.",
+        "url": "https://github.com/opencontainers/image-spec/blob/v1.1.1/spec.md"
+      },
+      {
+        "claim": "The versioned configuration keeps ordered filesystem changes distinct from execution parameters and identifies runtime properties such as entrypoint, default arguments, environment, networking, and volumes.",
+        "url": "https://github.com/opencontainers/image-spec/blob/v1.1.1/config.md"
+      },
+      {
+        "claim": "Field Note 33 asks how a browser encounter and public generative work can remain reconstructable after the original catalog, renderer, storefront, and company disappear.",
+        "source": "living-content/cyberdelic-os/fn-s0-006/v000001.md",
+        "locator": "What vanished was the building around it: the catalog, the renderer, the storefront, and the company responsible for holding them together.; What would it mean to build a press that expected its own building to disappear?; The browser can perform the encounter on the visitor's own machine."
+      }
+    ],
+    "inference": "The existing OCI proposal remains a useful technical adjacency for separating payload, execution configuration, platform variants, and verifiable content references. Its container-runtime purpose remains distinct from the browser-readable plate, authorized pull lineage, and finite edition imagined in Field Note 33.",
+    "uncertainty": "The relationship remains model-proposed and technically comparative. It does not imply endorsement, partnership, architectural equivalence, or that container packaging can establish the authority of an artistic edition.",
+    "attribution": "External facts come from the official OCI standards publication and versioned Open Container Initiative repository. Internal facts come from the exact public Field Note 33 source.",
+    "source_fact_and_inference_separated": true,
+    "source_conflict_found": false,
+    "private_material_read": false,
+    "external_contact_performed": false,
+    "outward_search_performed": true,
+    "no_proposal_reason": "The bounded source recheck continued to support the existing node and edge proposals. A new candidate would duplicate the current proposal queue."
+  },
+  "gardener": {
+    "state": "one-evidence-repair",
+    "cartographer_proposals_considered": [
+      "REL-P-000008",
+      "REL-P-000009"
+    ],
+    "decisions": [
+      {
+        "kind": "proposal-evidence-repair",
+        "decision": "Replace REL-P-000009's absent section label with three exact Field Note 33 passages that support the unchanged proposal claim."
+      },
+      {
+        "kind": "proposal-restraint",
+        "decision": "Leave relation type, epistemic status, lifecycle, inference, and unresolved questions unchanged because current sources still support their cautious boundaries."
+      },
+      {
+        "kind": "finite-attending",
+        "decision": "Leave the three-item Attending arrangement unchanged and do not create a dated tending page because no node, edge, rationale, lifecycle state, or related-work path changed."
+      }
+    ],
+    "changes": [
+      "REL-P-000009"
+    ],
+    "evidence": [
+      {
+        "source": "living-content/cyberdelic-os/fn-s0-006/v000001.md",
+        "locator": "What vanished was the building around it: the catalog, the renderer, the storefront, and the company responsible for holding them together.; What would it mean to build a press that expected its own building to disappear?; The browser can perform the encounter on the visitor's own machine."
+      }
+    ],
+    "manifest_changed": false,
+    "attending_arrangement_changed": false,
+    "exact_publication_sources_changed": false,
+    "decision_reason": "The earlier locator named a section absent from the exact source. Three literal passages now make the same proposal directly inspectable without changing its meaning."
+  },
+  "librarian": {
+    "state": "one-record-revised",
+    "catalog_change_limit": 3,
+    "records_examined": [
+      "catalog:external:oci-image-spec"
+    ],
+    "records_created": [],
+    "records_revised": [
+      "catalog:external:oci-image-spec"
+    ],
+    "records_removed": [],
+    "decisions": [
+      {
+        "kind": "catalog-evidence-repair",
+        "decision": "Replace the synthetic conjunction with the two literal proposal identifiers present in the cited queue."
+      },
+      {
+        "kind": "catalog-restraint",
+        "decision": "Leave the summary, subjects, search terms, questions, relation, and proposal state unchanged because the current primary sources support them."
+      },
+      {
+        "kind": "finite-search",
+        "decision": "Keep directory results bounded to six and the default Library aperture at three works."
+      }
+    ],
+    "search_terms_added": [],
+    "outward_search_performed": false,
+    "catalog_count": 15,
+    "decision_reason": "The record remained findable, but its evidence locator described a conjunction rather than quoting text present in the proposal queue. Literal identifiers restore auditability without expanding the catalog."
+  },
+  "files_changed": [
+    "living-relations/proposals.json",
+    "living-relations/catalog.json",
+    "living-relations/audits/2026-09-20-001.json",
+    "cyberdelic-space.zip"
+  ],
+  "validation": {
+    "state": "passed",
+    "checks": [
+      {
+        "check": "bounded-source-review",
+        "result": "Current official OCI publication and versioned specification evidence remain consistent with the existing proposed node, technical adjacency, and qualification of purpose."
+      },
+      {
+        "check": "structured-data",
+        "result": "All 46 JSON documents and three XML documents parsed successfully."
+      },
+      {
+        "check": "exact-source-integrity",
+        "result": "All 31 indexed Field, Workshop, and Library sources matched recorded byte lengths and SHA-256 values. The repaired Field Note 33 proposal locator, repaired catalog locator, and every evidence fragment on all seven manifest edges occur in their cited sources."
+      },
+      {
+        "check": "internal-links",
+        "result": "All 2,871 local links and assets resolved across 138 HTML pages."
+      },
+      {
+        "check": "application-and-data-contracts",
+        "result": "All eight JavaScript files passed syntax checks. The 18 proposals, 15 catalog records, twelve relational nodes, seven edges, unique identifiers, required catalog fields, and finite limits passed contract checks."
+      },
+      {
+        "check": "responsive-browser",
+        "result": "Living Relationships and the homepage directory rendered at 390 by 844 pixels with the psychedelic default, accessible links and search, and no horizontal overflow; document width equalled viewport width."
+      },
+      {
+        "check": "catalog-search",
+        "result": "A homepage search for container image returned the tended OCI neighbour among two results, within the six-result limit. The three-work default Library aperture remained unchanged."
+      },
+      {
+        "check": "finite-attending",
+        "result": "The current Attending arrangement remained exactly three items and no dated tending page was created for evidence-locator repairs."
+      },
+      {
+        "check": "changed-prose-policy",
+        "result": "No em dash characters were added."
+      },
+      {
+        "check": "publication-boundary",
+        "result": "Only proposal metadata, catalog metadata, the dated audit, and deterministic mirror changed. No exact publication, site page, application code, sitemap, ratification record, or human-locked control changed."
+      },
+      {
+        "check": "distribution-archive",
+        "result": "The deterministic mirror was rebuilt twice with identical SHA-256 output, includes the dated audit, and matches every archived source byte for byte."
+      }
+    ]
+  },
+  "unresolved_questions": [
+    "Which resources, manifests, indexes, and execution assumptions must travel with a generative plate?",
+    "Which execution assumptions belong inside the plate, and which should remain replaceable properties of a reader?"
+  ],
+  "public_change": true,
+  "proposed_public_change": true,
+  "run_state": "evidence-locator-repair",
+  "valid_no_op": false,
+  "human_review_required": false,
+  "note": "One proposal locator and one external-neighbour catalog locator now point to literal source text. No public tending page or Attending rotation was warranted because the relational field did not materially change."
+}

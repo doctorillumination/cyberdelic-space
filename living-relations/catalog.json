@@ -1,7 +1,7 @@
 {
   "schema": "https://cyberdelic.space/schemas/living-catalog-v1.json",
   "version": "0.4",
-  "updated_at": "2026-09-19T07:05:01-07:00",
+  "updated_at": "2026-09-20T07:51:27-07:00",
   "count": 15,
   "curation": {
     "office": "OFFICE-LIBRARIAN",
@@ -172,11 +172,11 @@
       "search_terms": ["OCI", "container image", "entrypoint", "filesystem layers", "runtime assumptions", "platform variants", "manifest", "digest", "reproducible execution"],
       "questions": ["Could a generative plate distinguish immutable work content from replaceable reader and runtime configuration?", "How much of an execution environment must travel for independent reconstruction?"],
       "related": [{"id": "cyberdelic-os:fn-33", "title": "The Plate and the Pull", "relation_type": "technical-adjacency", "review_state": "proposed"}],
-      "evidence": [{"source": "living-relations/proposals.json", "locator": "REL-P-000008 and REL-P-000009"}],
+      "evidence": [{"source": "living-relations/proposals.json", "locator": "\"proposal_id\": \"REL-P-000008\"; \"proposal_id\": \"REL-P-000009\""}],
       "epistemic_status": "possible",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
-      "last_tended_at": "2026-08-24T08:45:37-07:00"
+      "last_tended_at": "2026-09-20T07:51:27-07:00"
     },
     {
       "id": "catalog:external:webassembly-core",
