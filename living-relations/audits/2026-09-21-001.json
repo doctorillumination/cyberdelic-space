@@ -1,0 +1,232 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-09-21-001",
+  "run_type": "scheduled-governed-run",
+  "started_at": "2026-09-21T07:11:22-07:00",
+  "completed_at": "2026-09-21T08:10:48-07:00",
+  "repository": {
+    "branch": "codex/tending-2026-09-21",
+    "starting_commit": "f2f7d1374532d4d511f20704953022348b779bd2",
+    "pull_request": "https://github.com/doctorillumination/cyberdelic-space/pull/46",
+    "pull_request_state": "ready-auto-publication",
+    "publication_action": "validated-autonomous-evidence-locator-repair"
+  },
+  "automation": {
+    "id": "daily-cyberdelic-tending",
+    "name": "Daily Cyberdelic Tending",
+    "status": "active",
+    "schedule": "Daily at 7:00 AM America/Vancouver",
+    "next_scheduled_run": "2026-09-22T07:00:00-07:00"
+  },
+  "office_versions": {
+    "cartographer": "0.1",
+    "gardener": "0.1",
+    "librarian": "0.1",
+    "publication_authority": "1.1"
+  },
+  "inputs": {
+    "inbox_items": 0,
+    "declared_question": "Does the proposed WebAssembly adjacency remain supported by current W3C primary sources, and can its public catalog evidence be followed to literal proposal records?",
+    "internal_region": [
+      {
+        "id": "cyberdelic-os:fn-33",
+        "title": "The Plate and the Pull"
+      }
+    ],
+    "external_region": [
+      {
+        "id": "external:webassembly-core",
+        "title": "WebAssembly Core Specification"
+      }
+    ]
+  },
+  "cartographer": {
+    "state": "no-op",
+    "candidate_limit": 3,
+    "candidates_created": [],
+    "existing_proposals_rechecked": [
+      "REL-P-000010",
+      "REL-P-000011"
+    ],
+    "sources_checked": [
+      {
+        "title": "WebAssembly Core Specification",
+        "url": "https://www.w3.org/TR/wasm-core-2/",
+        "source_kind": "official-w3c-candidate-recommendation-draft",
+        "checked_at": "2026-09-21T07:11:22-07:00"
+      },
+      {
+        "title": "WebAssembly Core Specification dated 12 August 2026",
+        "url": "https://www.w3.org/TR/2026/CRD-wasm-core-2-20260812/",
+        "source_kind": "official-versioned-w3c-publication",
+        "checked_at": "2026-09-21T07:11:22-07:00"
+      },
+      {
+        "title": "WebAssembly JavaScript Interface",
+        "url": "https://www.w3.org/TR/wasm-js-api-2/",
+        "source_kind": "official-w3c-candidate-recommendation-draft",
+        "checked_at": "2026-09-21T07:11:22-07:00"
+      },
+      {
+        "title": "Field Note 33 exact source",
+        "source": "living-content/cyberdelic-os/fn-s0-006/v000001.md",
+        "source_kind": "exact-living-publication",
+        "checked_at": "2026-09-21T07:11:22-07:00"
+      }
+    ],
+    "source_facts": [
+      {
+        "claim": "The current W3C Core publication, dated 21 September 2026, continues to describe WebAssembly as a safe, portable, low-level code format designed for efficient execution and compact representation.",
+        "url": "https://www.w3.org/TR/wasm-core-2/"
+      },
+      {
+        "claim": "The Core publication still states that WebAssembly provides no ambient access to its computing environment and relies on an embedder to supply host interaction through imports.",
+        "url": "https://www.w3.org/TR/wasm-core-2/#security-considerations"
+      },
+      {
+        "claim": "The current JavaScript Interface describes the embedding boundary through which modules are constructed, instantiated, supplied with imports, and exposed through exports.",
+        "url": "https://www.w3.org/TR/wasm-js-api-2/"
+      },
+      {
+        "claim": "Field Note 33 places the browser encounter on the visitor's machine and refuses to let a service possess the only renderer or account of where a work belongs.",
+        "source": "living-content/cyberdelic-os/fn-s0-006/v000001.md",
+        "locator": "The browser can perform the encounter on the visitor's own machine.; Replaceable services may make access easier, but none should possess the only catalog, the only renderer, or the only account of where a work belongs."
+      }
+    ],
+    "inference": "The existing WebAssembly proposal remains a useful technical adjacency for separating portable computation from replaceable host capabilities. WebAssembly does not by itself preserve artistic assets, presentation, deterministic visual behavior, authorship, authorized pull lineage, or an edition end.",
+    "uncertainty": "The relationship remains model-proposed and technically comparative. It does not imply endorsement, partnership, architectural equivalence, or deterministic reconstruction of an artistic encounter across every host environment.",
+    "attribution": "External facts come from current and versioned W3C publications. Internal facts come from the exact public Field Note 33 source.",
+    "source_fact_and_inference_separated": true,
+    "source_conflict_found": false,
+    "private_material_read": false,
+    "external_contact_performed": false,
+    "outward_search_performed": true,
+    "no_proposal_reason": "The bounded source recheck continued to support the existing node and edge proposals. The current W3C publications add no conflict or distinct candidate that warrants expanding the queue."
+  },
+  "gardener": {
+    "state": "no-op",
+    "cartographer_proposals_considered": [
+      "REL-P-000010",
+      "REL-P-000011"
+    ],
+    "decisions": [
+      {
+        "kind": "proposal-evidence-confirmation",
+        "decision": "Keep REL-P-000011's exact Field Note 33 locator because it is literal, specific, and still supports the unchanged internal claim."
+      },
+      {
+        "kind": "proposal-restraint",
+        "decision": "Leave the proposal descriptions, relation type, epistemic status, lifecycle, inference, and unresolved questions unchanged because current W3C and exact internal sources still support their cautious boundaries."
+      },
+      {
+        "kind": "finite-attending",
+        "decision": "Leave the three-item Attending arrangement unchanged and do not create a dated tending page because no node, edge, rationale, lifecycle state, or related-work path changed."
+      }
+    ],
+    "changes": [],
+    "evidence": [
+      {
+        "source": "living-content/cyberdelic-os/fn-s0-006/v000001.md",
+        "locator": "The browser can perform the encounter on the visitor's own machine."
+      }
+    ],
+    "manifest_changed": false,
+    "attending_arrangement_changed": false,
+    "exact_publication_sources_changed": false,
+    "decision_reason": "The existing proposal evidence and qualifications remain accurate. No relational metadata change is warranted."
+  },
+  "librarian": {
+    "state": "one-record-revised",
+    "catalog_change_limit": 3,
+    "records_examined": [
+      "catalog:external:webassembly-core"
+    ],
+    "records_created": [],
+    "records_revised": [
+      "catalog:external:webassembly-core"
+    ],
+    "records_removed": [],
+    "decisions": [
+      {
+        "kind": "catalog-evidence-repair",
+        "decision": "Replace the synthetic proposal conjunction with the two literal proposal identifiers present in the cited queue."
+      },
+      {
+        "kind": "catalog-restraint",
+        "decision": "Leave the summary, subjects, search terms, questions, relation, and proposal state unchanged because current W3C and exact internal sources support them."
+      },
+      {
+        "kind": "finite-search",
+        "decision": "Keep directory results bounded to six and the default Library aperture at three works."
+      }
+    ],
+    "search_terms_added": [],
+    "outward_search_performed": false,
+    "catalog_count": 15,
+    "decision_reason": "The record remained findable, but its evidence locator described a conjunction rather than quoting text present in the proposal queue. Literal identifiers restore auditability without expanding the catalog."
+  },
+  "files_changed": [
+    "living-relations/catalog.json",
+    "living-relations/audits/2026-09-21-001.json",
+    "cyberdelic-space.zip"
+  ],
+  "validation": {
+    "state": "passed",
+    "checks": [
+      {
+        "check": "bounded-source-review",
+        "result": "Current and versioned W3C publications remain consistent with the existing proposed WebAssembly node, technical adjacency, and explicit limits."
+      },
+      {
+        "check": "structured-data",
+        "result": "All 47 JSON documents and three XML documents parsed successfully."
+      },
+      {
+        "check": "exact-source-integrity",
+        "result": "All 31 indexed Field, Workshop, and Library sources matched recorded byte lengths and SHA-256 values. The repaired catalog locator and every evidence fragment on all seven manifest edges occur in their cited sources."
+      },
+      {
+        "check": "internal-links",
+        "result": "All 2,871 local links and assets resolved across 138 HTML pages."
+      },
+      {
+        "check": "application-and-data-contracts",
+        "result": "All eight JavaScript files passed syntax checks. The 18 proposals, 15 catalog records, twelve relational nodes, seven edges, unique identifiers, required catalog fields, and finite limits passed contract checks."
+      },
+      {
+        "check": "responsive-browser",
+        "result": "Living Relationships and the homepage directory rendered at 390 by 844 pixels with the psychedelic default, accessible links and search, and no horizontal overflow; document width equalled viewport width."
+      },
+      {
+        "check": "catalog-search",
+        "result": "A homepage search for portable bytecode returned the tended WebAssembly neighbour as one result, within the six-result limit. The three-work default Library aperture remained unchanged."
+      },
+      {
+        "check": "finite-attending",
+        "result": "The current Attending arrangement remained exactly three items and no dated tending page was created for a catalog evidence-locator repair."
+      },
+      {
+        "check": "changed-prose-policy",
+        "result": "No em dash characters were added."
+      },
+      {
+        "check": "publication-boundary",
+        "result": "Only catalog metadata, the dated audit, and deterministic mirror changed. No proposal, manifest, exact publication, site page, application code, sitemap, ratification record, or human-locked control changed."
+      },
+      {
+        "check": "distribution-archive",
+        "result": "The deterministic mirror was rebuilt twice with identical SHA-256 output, includes the dated audit, and matches every archived source byte for byte."
+      }
+    ]
+  },
+  "unresolved_questions": [
+    "Where should a durable plate end and a replaceable reader begin?",
+    "What must a reader promise so independent reconstruction preserves an encounter rather than only executing instructions?"
+  ],
+  "public_change": true,
+  "proposed_public_change": true,
+  "run_state": "evidence-locator-repair",
+  "valid_no_op": false,
+  "human_review_required": false,
+  "note": "One external-neighbour catalog locator now points to literal proposal identifiers. No proposal, manifest, public tending page, or Attending rotation was warranted because the relational field did not materially change."
+}
