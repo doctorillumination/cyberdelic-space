@@ -1,8 +1,8 @@
 {
   "schema": "https://cyberdelic.space/schemas/living-catalog-v1.json",
-  "version": "0.4",
-  "updated_at": "2026-09-23T07:20:18-07:00",
-  "count": 15,
+  "version": "0.5",
+  "updated_at": "2026-09-25T07:13:36-07:00",
+  "count": 17,
   "curation": {
     "office": "OFFICE-LIBRARIAN",
     "office_version": "0.1",
@@ -76,6 +76,38 @@
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
       "last_tended_at": "2026-09-16T07:02:19-07:00"
+    },
+    {
+      "id": "catalog:cyberdelic-os:bn-005",
+      "record_kind": "builder-note",
+      "title": "Building the Tending Offices",
+      "href": "project/cyberdelic-os/bn-005/",
+      "summary": "The technical architecture for ordered Cartographer and Gardener turns over a versioned relational graph, with a proposal queue, bounded metadata patches, deterministic validation, finite Attending, and an auditable review boundary.",
+      "subjects": ["agent offices", "relational graph", "scheduled automation", "validation", "governance"],
+      "search_terms": ["how tending offices work", "Cartographer Gardener architecture", "daily website agents", "relational metadata system", "proposal queue", "audit log", "finite Attending"],
+      "questions": ["How can scheduled offices tend relational metadata without rewriting source publications?", "What transaction and validation boundaries keep daily automation bounded and inspectable?"],
+      "related": [{"id": "cyberdelic-os:fn-32", "title": "The Garden and the Living Map", "relation_type": "implementation", "review_state": "proposed"}, {"id": "cyberdelic-os:i-003", "title": "The Daily Tending Ritual", "relation_type": "implementation", "review_state": "proposed"}],
+      "evidence": [{"source": "living-content/cyberdelic-os/bn-005/v000001.md", "locator": "The build in one sentence; Scheduler transaction; Validation turn; Publication boundary"}],
+      "epistemic_status": "strong",
+      "review_state": "model-proposed",
+      "introduced_by": "OFFICE-LIBRARIAN",
+      "last_tended_at": "2026-09-25T07:13:36-07:00"
+    },
+    {
+      "id": "catalog:cyberdelic-os:i-003",
+      "record_kind": "instrument",
+      "title": "The Daily Tending Ritual",
+      "href": "project/cyberdelic-os/i-003/",
+      "summary": "A scheduled curatorial ritual that gives the Cartographer and Gardener bounded turns, allows stillness as a valid result, keeps the public Attending surface finite, and subjects every proposed change to deterministic validation.",
+      "subjects": ["scheduled curation", "finite attention", "relational metadata", "public audit", "validation"],
+      "search_terms": ["daily tending ritual", "website gardener", "website cartographer", "scheduled archive care", "three item attention", "no-op ceremony", "bounded automation"],
+      "questions": ["How can a website attend every day without manufacturing novelty?", "What should remain visible when validation refuses an interpretive change?"],
+      "related": [{"id": "cyberdelic-os:fn-32", "title": "The Garden and the Living Map", "relation_type": "implementation", "review_state": "proposed"}, {"id": "cyberdelic-os:bn-005", "title": "Building the Tending Offices", "relation_type": "implementation", "review_state": "proposed"}],
+      "evidence": [{"source": "living-content/cyberdelic-os/i-003/v000001.md", "locator": "The Daily Tending Ritual gives the Gardener and Cartographer bounded turns inside the living Cyberdelic OS archive.; Attending is not a feed. It is a temporary arrangement of the relational field.; Stillness is an output of the instrument."}],
+      "epistemic_status": "strong",
+      "review_state": "model-proposed",
+      "introduced_by": "OFFICE-LIBRARIAN",
+      "last_tended_at": "2026-09-25T07:13:36-07:00"
     },
     {
       "id": "catalog:cyberdelic-os:fn-33",

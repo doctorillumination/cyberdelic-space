@@ -1,0 +1,239 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-09-25-001",
+  "run_type": "scheduled-governed-run",
+  "started_at": "2026-09-25T07:13:36-07:00",
+  "completed_at": "2026-09-25T08:05:59-07:00",
+  "repository": {
+    "branch": "codex/tending-2026-09-25",
+    "starting_commit": "59015245a1a30ec6ab58deaa97d3dec7952b09ef",
+    "pull_request": null,
+    "pull_request_state": "pending",
+    "publication_action": "validated-for-autonomous-publication"
+  },
+  "automation": {
+    "id": "daily-cyberdelic-tending",
+    "name": "Daily Cyberdelic Tending",
+    "status": "active",
+    "schedule": "Daily at 7:00 AM America/Vancouver",
+    "next_scheduled_run": "2026-09-26T07:00:00-07:00"
+  },
+  "office_versions": {
+    "cartographer": "0.1",
+    "gardener": "0.1",
+    "librarian": "0.1",
+    "publication_authority": "1.1"
+  },
+  "inputs": {
+    "inbox_items": 0,
+    "declared_question": "Can the architecture and ritual behind the tending offices be found directly through the catalog without changing their existing relational meaning?",
+    "internal_region": [
+      {
+        "id": "cyberdelic-os:fn-29",
+        "title": "The Living Librarian"
+      },
+      {
+        "id": "cyberdelic-os:fn-32",
+        "title": "The Garden and the Living Map"
+      },
+      {
+        "id": "cyberdelic-os:bn-005",
+        "title": "Building the Tending Offices"
+      },
+      {
+        "id": "cyberdelic-os:i-003",
+        "title": "The Daily Tending Ritual"
+      }
+    ],
+    "external_region": []
+  },
+  "cartographer": {
+    "state": "no-op",
+    "candidate_limit": 3,
+    "candidates_created": [],
+    "existing_relations_rechecked": [
+      "REL-000001",
+      "REL-000002",
+      "REL-000003"
+    ],
+    "sources_checked": [
+      {
+        "title": "The Living Librarian exact source",
+        "source": "living-content/cyberdelic-os/fn-s0-002/v000001.md",
+        "source_kind": "exact-living-publication",
+        "checked_at": "2026-09-25T07:13:36-07:00"
+      },
+      {
+        "title": "The Garden and the Living Map exact source",
+        "source": "living-content/cyberdelic-os/fn-s0-005/v000001.md",
+        "source_kind": "exact-living-publication",
+        "checked_at": "2026-09-25T07:13:36-07:00"
+      },
+      {
+        "title": "Building the Tending Offices exact source",
+        "source": "living-content/cyberdelic-os/bn-005/v000001.md",
+        "source_kind": "exact-living-publication",
+        "checked_at": "2026-09-25T07:13:36-07:00"
+      },
+      {
+        "title": "The Daily Tending Ritual exact source",
+        "source": "living-content/cyberdelic-os/i-003/v000001.md",
+        "source_kind": "exact-living-publication",
+        "checked_at": "2026-09-25T07:13:36-07:00"
+      }
+    ],
+    "source_facts": [
+      {
+        "claim": "Field Note 29 proposes a living library office that reads, gardens, and maps relations around unchanged works while keeping machine interpretation visibly situated.",
+        "source": "living-content/cyberdelic-os/fn-s0-002/v000001.md",
+        "locator": "The living library therefore needs an office that is partly librarian, partly gardener, and partly cartographer."
+      },
+      {
+        "claim": "Field Note 32 separates the Cartographer and Gardener, proposes Living Relationships, limits Attending to three items, and requires evidence, provenance, lifecycle, review state, and bounded daily work.",
+        "source": "living-content/cyberdelic-os/fn-s0-005/v000001.md",
+        "locator": "The Garden and the Living Map; This could become a daily ritual for cyberdelic.space.; Both offices need constitutions, not personalities painted onto generic automation."
+      },
+      {
+        "claim": "Builder Note BN-005 specifies the storage model, ordered office turns, validation boundary, audit requirements, and finite public surface for the tending system.",
+        "source": "living-content/cyberdelic-os/bn-005/v000001.md",
+        "locator": "The build in one sentence; Storage model; Scheduler transaction; Validation turn"
+      },
+      {
+        "claim": "Instrument I-003 defines the scheduled curatorial ritual, finite Attending encounter, valid no-op ceremony, and deterministic validation behavior.",
+        "source": "living-content/cyberdelic-os/i-003/v000001.md",
+        "locator": "The Daily Tending Ritual gives the Gardener and Cartographer bounded turns inside the living Cyberdelic OS archive.; Attending is not a feed. It is a temporary arrangement of the relational field.; Stillness is an output of the instrument."
+      }
+    ],
+    "inference": "The existing lineage and implementation edges still accurately describe how the Living Librarian concept became two timed offices, a technical architecture, and an operating ritual. No further relation is needed for this bounded region.",
+    "uncertainty": "The edges remain model-proposed. The exact sources predate the later autonomous publication authority and Librarian turn, so they should be read as historical foundations rather than a complete account of the current governed transaction.",
+    "attribution": "All facts in this bounded inquiry come from exact public Cyberdelic OS sources. No private material or external source was read.",
+    "source_fact_and_inference_separated": true,
+    "source_conflict_found": false,
+    "private_material_read": false,
+    "external_contact_performed": false,
+    "outward_search_performed": false,
+    "no_proposal_reason": "The current map already contains strong lineage and implementation edges for the bounded region. The remaining gap concerns catalog findability, not a missing relation."
+  },
+  "gardener": {
+    "state": "no-op",
+    "relations_considered": [
+      "REL-000001",
+      "REL-000002",
+      "REL-000003"
+    ],
+    "decisions": [
+      {
+        "kind": "relation-evidence-confirmation",
+        "decision": "Keep all three edges because every cited locator remains literal and continues to support the stated lineage or implementation relation."
+      },
+      {
+        "kind": "historical-boundary",
+        "decision": "Do not rewrite the older exact Builder Note or Instrument to reflect later Librarian and autonomous publication changes. Current governance already records those developments without changing their historical source bytes."
+      },
+      {
+        "kind": "finite-attending",
+        "decision": "Leave the three-item Attending arrangement unchanged and do not create a dated tending page because no node, edge, rationale, lifecycle state, or related-work path changed."
+      }
+    ],
+    "changes": [],
+    "evidence": [
+      {
+        "source": "living-content/cyberdelic-os/fn-s0-005/v000001.md",
+        "locator": "Field Note 29 imagined a Living Librarian that reads, gardens, and maps."
+      },
+      {
+        "source": "living-content/cyberdelic-os/bn-005/v000001.md",
+        "locator": "One scheduled ritual gives two constitutionally separate offices ordered turns over a versioned relational graph"
+      },
+      {
+        "source": "living-content/cyberdelic-os/i-003/v000001.md",
+        "locator": "The Daily Tending Ritual gives the Gardener and Cartographer bounded turns inside the living Cyberdelic OS archive."
+      }
+    ],
+    "manifest_changed": false,
+    "attending_arrangement_changed": false,
+    "exact_publication_sources_changed": false,
+    "decision_reason": "The existing relations remain accurate and properly qualified. No relational metadata change is warranted."
+  },
+  "librarian": {
+    "state": "two-records-created",
+    "catalog_change_limit": 3,
+    "records_examined": [
+      "catalog:cyberdelic-os:fn-29",
+      "catalog:cyberdelic-os:fn-32",
+      "catalog:cyberdelic-os:bn-005",
+      "catalog:cyberdelic-os:i-003"
+    ],
+    "records_created": [
+      "catalog:cyberdelic-os:bn-005",
+      "catalog:cyberdelic-os:i-003"
+    ],
+    "records_revised": [],
+    "records_removed": [],
+    "decisions": [
+      {
+        "kind": "builder-note-cataloging",
+        "decision": "Create a source-grounded record for Building the Tending Offices so searches for agent architecture, relational graphs, proposal queues, audit logs, or validation boundaries can reach the technical account directly."
+      },
+      {
+        "kind": "instrument-cataloging",
+        "decision": "Create a source-grounded record for The Daily Tending Ritual so searches for daily archive care, finite attention, no-op ceremony, or bounded automation can reach the instrument directly."
+      },
+      {
+        "kind": "finite-search",
+        "decision": "Keep directory results bounded to six and the default Library aperture at three works."
+      }
+    ],
+    "search_terms_added": [
+      "how tending offices work",
+      "Cartographer Gardener architecture",
+      "daily website agents",
+      "relational metadata system",
+      "proposal queue",
+      "audit log",
+      "finite Attending",
+      "daily tending ritual",
+      "website gardener",
+      "website cartographer",
+      "scheduled archive care",
+      "three item attention",
+      "no-op ceremony",
+      "bounded automation"
+    ],
+    "outward_search_performed": false,
+    "catalog_count": 17,
+    "decision_reason": "The two exact works already hold distinct operational knowledge that was only reachable indirectly through the Field Note 32 record. Adding bounded records improves findability without altering any relation or source publication."
+  },
+  "files_changed": [
+    "living-relations/catalog.json",
+    "living-relations/audits/2026-09-25-001.json",
+    "cyberdelic-space.zip"
+  ],
+  "validation": {
+    "state": "passed",
+    "checks": [
+      "51 JSON documents parse",
+      "3 XML documents parse",
+      "31 indexed exact sources match recorded byte lengths and SHA-256 digests",
+      "Every catalog, proposal internal-source, and manifest evidence locator occurs literally in its cited source",
+      "18 proposals, 17 catalog records, 12 manifest nodes, and 7 manifest edges pass uniqueness and required-field checks",
+      "All 8 JavaScript files pass node --check",
+      "All 2,871 local links and assets across 138 HTML pages resolve",
+      "Attending remains finite at 3 items and no dated tending page was created",
+      "At 390 by 844 pixels, the Library and Living Relationships pages have no horizontal overflow and retain the Psychedelic default appearance",
+      "Library directory searches for proposal queue and no-op ceremony each return the intended new catalog record within the six-result bound",
+      "Changed paths are limited to the permitted catalog, audit, and deterministic mirror paths",
+      "The deterministic mirror was rebuilt twice from sorted paths with matching SHA-256 digests and exact archived bytes"
+    ]
+  },
+  "unresolved_questions": [
+    "Should a later exact publication reconcile the original two-office ritual with the active three-office transaction?",
+    "Which parts of the tending architecture should remain visible as historical scaffolding rather than current operating instructions?"
+  ],
+  "public_change": true,
+  "proposed_public_change": true,
+  "run_state": "catalog-expansion",
+  "valid_no_op": false,
+  "human_review_required": false,
+  "note": "Two exact internal works now have direct, source-grounded catalog records. Existing relations, Attending, and public tending pages remain unchanged."
+}
