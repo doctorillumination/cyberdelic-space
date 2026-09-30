@@ -1,8 +1,8 @@
 {
   "schema": "https://cyberdelic.space/schemas/living-catalog-v1.json",
-  "version": "0.6",
-  "updated_at": "2026-09-26T08:05:10-07:00",
-  "count": 20,
+  "version": "0.7",
+  "updated_at": "2026-09-30T07:13:01-07:00",
+  "count": 21,
   "curation": {
     "office": "OFFICE-LIBRARIAN",
     "office_version": "0.1",
@@ -156,6 +156,23 @@
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
       "last_tended_at": "2026-09-26T08:05:10-07:00"
+    },
+    {
+      "id": "catalog:cyberdelic-os:i-004",
+      "record_kind": "instrument",
+      "title": "The Personal Aperture",
+      "href": "project/cyberdelic-os/i-004/",
+      "summary": "A portable invitation to explore Cyberdelic OS with an AI of the visitor's choice through resonance, parallax, a dark region, and an unexpected bridge. The first encounter is limited to four works, requires honest browsing and memory disclosure, separates sources from interpretation, and leaves the conversation outside the website.",
+      "subjects": ["conversational archive", "bounded orientation", "source-grounded interpretation", "memory disclosure", "parallax"],
+      "search_terms": ["where to start", "AI reading companion", "conversation with the archive", "explore with my own AI", "copy invitation", "portable prompt", "browsing and memory limits", "resonance parallax", "four works"],
+      "questions": ["How can I explore Cyberdelic OS with my own AI without reading the entire archive first?", "How should an assistant disclose browsing and memory limits before suggesting connections?"],
+      "related": [{"id": "cyberdelic-os:i-002", "title": "The Library Aperture", "relation_type": "context", "review_state": "proposed"}, {"id": "cyberdelic-os:a-004", "title": "The Finite Library Prototype", "relation_type": "context", "review_state": "proposed"}],
+      "evidence": [{"source": "living-content/cyberdelic-os/i-004/v000001.md", "locator": "The Personal Aperture helps a person begin a situated conversation with Cyberdelic OS without requiring them to read the entire archive first.; The first aperture contains no more than four works.; Disclosure contract; Source and inference contract; Privacy boundary; Instrument I-002, *The Library Aperture*; Artifact A-004, *The Finite Library Prototype*"}],
+      "epistemic_status": "strong",
+      "review_state": "model-proposed",
+      "introduced_by": "OFFICE-LIBRARIAN",
+      "last_tended_at": "2026-09-30T07:13:01-07:00",
+      "uncertainty": "This record describes the published instrument, not guaranteed behavior by an external AI. The chosen service's browsing, memory, and privacy practices remain outside the website's control; the related placements are interpretive, not ratified graph edges."
     },
     {
       "id": "catalog:cyberdelic-os:fn-33",
