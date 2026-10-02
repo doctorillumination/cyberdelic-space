@@ -1,8 +1,8 @@
 {
   "schema": "https://cyberdelic.space/schemas/living-catalog-v1.json",
-  "version": "0.7",
-  "updated_at": "2026-09-30T07:13:01-07:00",
-  "count": 21,
+  "version": "0.8",
+  "updated_at": "2026-10-02T07:39:32-07:00",
+  "count": 22,
   "curation": {
     "office": "OFFICE-LIBRARIAN",
     "office_version": "0.1",
@@ -13,6 +13,25 @@
     "publication_is_not_ratification": true
   },
   "items": [
+    {
+      "id": "catalog:cyberdelic-os:kernel-v1",
+      "record_kind": "inscription",
+      "title": "The Cyberdelic Kernel v1.0",
+      "href": "work/f6e686a1a1884e924e350539ad686aaa0180f5c219048df8cf97e69101339aefi0/",
+      "summary": "An inscribed founding proposal for shared reality without compulsory consensus. Thirteen verbs and thirteen laws describe finite attention, contextual sharing, accurate dissent, human ratification, bounded machine offices, and distinct living, anchored, and inscribed memory. It openly holds the tension between permanent public memory and the right to forget.",
+      "subjects": ["shared reality", "finite attention", "dissent", "human ratification", "memory and consent"],
+      "search_terms": ["founding principles", "shared reality without consensus", "thirteen verbs", "right to forget", "right to remain unknown", "permanence and mercy", "bounded AI offices", "context before sharing"],
+      "questions": ["How can different perspectives remain connected without compulsory agreement?", "How can permanent public memory coexist with forgetting and consent?", "What limits should a machine office respect?"],
+      "related": [],
+      "evidence": [
+        {"source": "content/f6e686a1a1884e924e350539ad686aaa0180f5c219048df8cf97e69101339aefi0/content.md", "locator": "**Status:** Founding proposal.; to remain in relation without requiring consensus.; there are thirteen verbs.; Context is the price of propagation.; Disagreement is generative only when it is aimed at the position that actually exists.; Every composed journey is finite.; No consequential public relation becomes real until a human ratifies it.; Memory has temperatures.; Machine intelligences hold offices, not omniscience; consent travels with shared memory.; this document permanently inscribes a defense of forgetting.; it needs the right to remain unknown."}
+      ],
+      "epistemic_status": "strong",
+      "review_state": "model-proposed",
+      "introduced_by": "OFFICE-LIBRARIAN",
+      "last_tended_at": "2026-10-02T07:39:32-07:00",
+      "uncertainty": "This is a proposed catalog description of an unchanged inscription. The work sets out constitutional aspirations, not proof that every imagined system exists or that all its commitments are implemented."
+    },
     {
       "id": "catalog:cyberdelic-os:fn-14",
       "record_kind": "field-note",
