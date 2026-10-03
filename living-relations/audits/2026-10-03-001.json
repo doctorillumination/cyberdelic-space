@@ -3,8 +3,9 @@
   "audit_id": "TEND-2026-10-03-001",
   "run_type": "scheduled-governed-run",
   "started_at": "2026-10-03T07:00:41-07:00",
+  "office_turns_completed_at": "2026-10-03T15:29:46Z",
   "automation": {"id": "daily-cyberdelic-tending", "triggered_at": "2026-10-03T14:00:41.273Z"},
-  "repository": {"branch": "codex/tending-2026-10-03", "starting_commit": "c54842a53e009358692c8874bdcb36002892eaa1", "pull_request": null, "pull_request_state": "not-created", "publication_action": "validated-autonomous-no-op-audit"},
+  "repository": {"branch": "codex/tending-2026-10-03", "starting_commit": "c54842a53e009358692c8874bdcb36002892eaa1", "pull_request": "https://github.com/doctorillumination/cyberdelic-space/pull/55", "pull_request_state": "draft-validation-transaction", "publication_action": "validated-autonomous-no-op-audit"},
   "office_versions": {"cartographer": "0.1", "gardener": "0.1", "librarian": "0.1", "publication_authority": "1.1"},
   "inputs": {
     "inbox_items": 0,
