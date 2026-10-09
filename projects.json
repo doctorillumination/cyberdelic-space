@@ -6,7 +6,7 @@
       "inscription_ids": [
         "f6e686a1a1884e924e350539ad686aaa0180f5c219048df8cf97e69101339aefi0"
       ],
-      "publication_count": 25,
+      "publication_count": 32,
       "release_ids": [
         "FN-S0-001",
         "FN-S0-002",
@@ -31,7 +31,14 @@
         "FN-S0-008",
         "I-005",
         "BN-006",
-        "A-005"
+        "A-005",
+        "FN-S0-009",
+        "FN-S0-010",
+        "FN-S0-011",
+        "FN-S0-012",
+        "FN-S0-013",
+        "FN-S0-014",
+        "FN-S0-015"
       ],
       "series": [
         {

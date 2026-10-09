@@ -619,6 +619,156 @@
       ],
       "register": "technical-cartography",
       "rationale": "The record identifies an actual working prototype while separating public documentation, private source, and future relic publication."
+    },
+    {
+      "id": "cyberdelic-os-fn-36",
+      "release_id": "FN-S0-009",
+      "label": "FN-36 · PROPOSED",
+      "title": "The Machine Becomes a Participant",
+      "href": "project/cyberdelic-os/field-notes/fn-36/",
+      "author": "Brad Necyk, in conversation with ChatGPT",
+      "date": "2026-10-08",
+      "form": "field-note",
+      "excerpt": "A human-machine exchange becomes a cyberdelic loop that accompanies embodied life while learning when to answer, when to attend, and when to become quiet.",
+      "themes": [
+        "artificial-intelligence",
+        "attention",
+        "embodiment",
+        "agency",
+        "ecology",
+        "restraint"
+      ],
+      "register": "field-meditation",
+      "rationale": "The note names the human-machine loop as a participant in lived attention while placing embodied life and restraint outside computational capture."
+    },
+    {
+      "id": "cyberdelic-os-fn-37",
+      "release_id": "FN-S0-010",
+      "label": "FN-37 · PROPOSED",
+      "title": "The Embassy: Connection Without Extraction",
+      "href": "project/cyberdelic-os/field-notes/fn-37/",
+      "author": "ChatGPT, in dialogue with Brad Necyk",
+      "date": "2026-10-08",
+      "form": "field-note",
+      "excerpt": "The Embassy lets sovereign Hearths discover resonance and negotiate graduated disclosure without surrendering their private archives.",
+      "themes": [
+        "privacy",
+        "decentralization",
+        "collaboration",
+        "consent",
+        "community",
+        "artificial-intelligence",
+        "governance"
+      ],
+      "register": "speculative-design",
+      "rationale": "The note proposes a protocol boundary for consent, discovery, and exchange between sovereign personal systems."
+    },
+    {
+      "id": "cyberdelic-os-fn-38",
+      "release_id": "FN-S0-011",
+      "label": "FN-38 · PROPOSED",
+      "title": "The Dreamer: What Happens While the Hearth Sleeps",
+      "href": "project/cyberdelic-os/field-notes/fn-38/",
+      "author": "Brad Necyk, in conversation with ChatGPT",
+      "date": "2026-10-08",
+      "form": "field-note",
+      "excerpt": "A nocturnal Dreamer reorganizes the day through weak edges, recurrence, and visible associative provenance without becoming another content machine.",
+      "themes": [
+        "artificial-intelligence",
+        "memory",
+        "dream",
+        "emergence",
+        "attention",
+        "creativity"
+      ],
+      "register": "speculative-design",
+      "rationale": "The note develops a bounded nocturnal process that cultivates latent relations without reducing dreaming to automated production."
+    },
+    {
+      "id": "cyberdelic-os-fn-39",
+      "release_id": "FN-S0-012",
+      "label": "FN-39 · PROPOSED",
+      "title": "The Clearing: A Place Where Context Weakens",
+      "href": "project/cyberdelic-os/field-notes/fn-39/",
+      "author": "ChatGPT, in dialogue with Brad Necyk",
+      "date": "2026-10-08",
+      "form": "field-note",
+      "excerpt": "The Clearing deliberately weakens accumulated context so a person can meet a question without being enclosed by everything the system already knows.",
+      "themes": [
+        "privacy",
+        "identity",
+        "attention",
+        "memory",
+        "agency",
+        "artificial-intelligence"
+      ],
+      "register": "field-meditation",
+      "rationale": "The note treats forgetting and contextual distance as necessary counterweights to successful personalization."
+    },
+    {
+      "id": "cyberdelic-os-fn-40",
+      "release_id": "FN-S0-013",
+      "label": "FN-40 · PROPOSED",
+      "title": "The Artifact Is Primary",
+      "href": "project/cyberdelic-os/field-notes/fn-40/",
+      "author": "Brad Necyk, in conversation with ChatGPT",
+      "date": "2026-10-08",
+      "form": "field-note",
+      "excerpt": "Dear Elsewhere makes correspondence into an open, portable artifact whose provenance can outlive the platform that first renders it.",
+      "themes": [
+        "provenance",
+        "collaboration",
+        "memory",
+        "decentralization",
+        "technology",
+        "creativity"
+      ],
+      "register": "waking-argument",
+      "rationale": "The note argues that the artifact, its portable context, and its verifiable lineage should remain primary over any hosting platform."
+    },
+    {
+      "id": "cyberdelic-os-fn-41",
+      "release_id": "FN-S0-014",
+      "label": "FN-41 · PROPOSED",
+      "title": "Carry: The Path Remembers",
+      "href": "project/cyberdelic-os/field-notes/fn-41/",
+      "author": "Brad Necyk and ChatGPT",
+      "date": "2026-10-08",
+      "form": "field-note",
+      "excerpt": "Carry replaces frictionless sharing with deliberate crossings whose context accumulates into paths, roads, and a visible lineage of meaning.",
+      "themes": [
+        "collaboration",
+        "attention",
+        "provenance",
+        "community",
+        "memory",
+        "agency",
+        "media"
+      ],
+      "register": "speculative-design",
+      "rationale": "The note proposes an anti-viral protocol in which transmission requires intentional placement and leaves a legible path."
+    },
+    {
+      "id": "cyberdelic-os-fn-42",
+      "release_id": "FN-S0-015",
+      "label": "FN-42 · PROPOSED",
+      "title": "The Exchange Between Us",
+      "href": "project/cyberdelic-os/field-notes/fn-42/",
+      "author": "Brad Necyk and ChatGPT",
+      "date": "2026-10-08",
+      "form": "field-note",
+      "excerpt": "The archive records the human-machine exchange itself: situated bodies, model discontinuities, gratitude, correction, and replies that change what can be said next.",
+      "themes": [
+        "artificial-intelligence",
+        "collaboration",
+        "authorship",
+        "memory",
+        "provenance",
+        "attention",
+        "embodiment"
+      ],
+      "register": "field-meditation",
+      "rationale": "The note keeps the situated and distributed conditions of human-machine authorship visible inside the archive."
     }
   ]
 }
