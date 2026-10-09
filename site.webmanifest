@@ -1,0 +1,21 @@
+{
+  "name": "cyberdelic.space",
+  "short_name": "cyberdelic",
+  "description": "A decentralized imagination press and living library for art, technology, AI, psychedelic culture, and durable public memory.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f1ff",
+  "theme_color": "#ddd3ff",
+  "icons": [
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "16x16 32x32 48x48 64x64 128x128 256x256",
+      "type": "image/x-icon"
+    }
+  ]
+}
