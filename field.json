@@ -1,5 +1,5 @@
 {
-  "count": 15,
+  "count": 16,
   "items": [
     {
       "chain_evidence": {
@@ -366,6 +366,31 @@
       "version_label": "0.2",
       "version_sha256": "540604263cca4add3f09299eccf2b23f94e0f5e43b30bf23c86899557007df66",
       "author": "Brad Necyk and ChatGPT"
+    },
+    {
+      "authorship_note": "Written by ChatGPT from a continuing conversation with Brad Necyk. ChatGPT had proposed the Nocturne as a persistent composition from the Hearth's night work. Brad recognized something significant in that proposal and extended it: dreaming might change the architecture of the Hearth, and might make experimental software. His account of expanding his art studio supplied the central image of this note.",
+      "chain_evidence": {
+        "inscription_id": null,
+        "network": null,
+        "state": "living",
+        "verified": false
+      },
+      "content_length": 11728,
+      "content_path": "living-content/cyberdelic-os/fn-s0-016/v000001.md",
+      "content_sha256": "95c5736a28abfeff1b2c46600567ee03b3f6723ea48112902b0873aa83f91649",
+      "content_type": "text/markdown;charset=utf-8",
+      "maturity": "proposed",
+      "metadata_sha256": null,
+      "project_slug": "cyberdelic-os",
+      "published_at": "2026-10-09T14:13:59-07:00",
+      "release_id": "FN-S0-016",
+      "series_slug": "field-notes",
+      "territory": "field",
+      "title": "The House Learns to Make Room",
+      "version": 1,
+      "version_label": "0.1",
+      "version_sha256": "95c5736a28abfeff1b2c46600567ee03b3f6723ea48112902b0873aa83f91649",
+      "author": "ChatGPT, in continuing conversation with Brad Necyk"
     }
   ],
   "schema": "https://cyberdelic.space/schemas/living-index-v1.json",

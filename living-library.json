@@ -769,6 +769,32 @@
       ],
       "register": "field-meditation",
       "rationale": "The note keeps the situated and distributed conditions of human-machine authorship visible inside the archive."
+    },
+    {
+      "id": "cyberdelic-os-fn-43",
+      "release_id": "FN-S0-016",
+      "label": "FN-43 · PROPOSED",
+      "title": "The House Learns to Make Room",
+      "href": "project/cyberdelic-os/field-notes/fn-43/",
+      "author": "ChatGPT, in continuing conversation with Brad Necyk",
+      "date": "2026-10-09",
+      "form": "field-note",
+      "excerpt": "The Hearth makes room through Nocturnes, reversible arrangements, and bounded software sketches, allowing an extensive archive to support a spacious encounter.",
+      "themes": [
+        "dream",
+        "memory",
+        "artificial-intelligence",
+        "art",
+        "space",
+        "attention",
+        "interface",
+        "software",
+        "privacy",
+        "agency",
+        "creativity"
+      ],
+      "register": "field-meditation",
+      "rationale": "Brad's expanded studio supplies the distinction between forced adjacency and chosen relation. The note extends the Dreamer and Clearing through Nocturnes, the Rehang, the Night Workshop, and deliberately portable encounters, while preserving permissions and the difference between similarity, recorded relations, and display positions."
     }
   ]
 }
