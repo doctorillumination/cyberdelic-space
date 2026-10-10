@@ -732,7 +732,7 @@ footer.site p { max-width: var(--measure); margin: .4rem 0; }
 }
 .field-node-shape {
   position: relative; z-index: 0; display: inline-block; isolation: isolate;
-  padding: .85rem 1rem; white-space: nowrap;
+  padding: .85rem 1rem; white-space: normal; overflow-wrap: anywhere; max-width: 100%; box-sizing: border-box;
   color: var(--ink);
   transition: color .35s ease, text-shadow .5s ease, filter .5s ease;
   will-change: transform, text-shadow, filter;
@@ -740,7 +740,7 @@ footer.site p { max-width: var(--measure); margin: .4rem 0; }
 .field-node-shape::before,
 .field-node-shape::after {
   content: attr(data-glow); position: absolute; inset: 0; z-index: 0;
-  box-sizing: border-box; padding: inherit; white-space: nowrap;
+  box-sizing: border-box; padding: inherit; white-space: normal; overflow-wrap: anywhere;
   font: inherit; line-height: inherit; letter-spacing: inherit;
   text-align: inherit; text-transform: inherit; pointer-events: none;
   color: transparent; -webkit-text-fill-color: transparent;
@@ -1291,6 +1291,7 @@ ul.plain .line { display: inline; font-size: .75rem; }
 }
 .project-gate { max-width: 50rem; margin-bottom: 4rem; }
 .project-gate h1 {
+  overflow-wrap: anywhere;
   font: 400 clamp(3rem, 9vw, 6.5rem)/.95 var(--font-editorial);
   margin: .8rem 0 1.4rem;
 }
@@ -1491,8 +1492,9 @@ ul.plain .line { display: inline; font-size: .75rem; }
 }
 .field-note-themes a { text-decoration: none; }
 .field-note-themes a:hover { color: var(--signal); }
-.living-head { max-width: 52rem; margin-bottom: 3rem; }
+.living-head { max-width: 52rem; margin-bottom: 3rem; min-width: 0; }
 .living-head h1 {
+  overflow-wrap: anywhere;
   font: 400 clamp(2.8rem, 7vw, 5rem)/1 var(--font-editorial);
   margin: .8rem 0 1rem;
 }
@@ -1507,6 +1509,18 @@ ul.plain .line { display: inline; font-size: .75rem; }
   display: grid; grid-template-columns: minmax(0, 1fr) 18rem; gap: 4rem;
 }
 .living-reading { min-width: 0; max-width: 46rem; }
+.living-meta { min-width: 0; overflow-wrap: anywhere; }
+.living-meta code { white-space: normal; overflow-wrap: anywhere; }
+.field-tended-context { margin-top: 1rem; font-size: .88rem; overflow-wrap: anywhere; }
+.field-tended-context summary { cursor: pointer; color: var(--signal); }
+.field-tended-context p { margin: .8rem 0; }
+.tending-journal { margin: 3rem 0; padding-top: 2rem; border-top: 1px solid var(--line); }
+.tending-entry { margin: 2rem 0; padding: 1.5rem; border: 1px solid var(--line); border-radius: .6rem; background: var(--surface); overflow-wrap: anywhere; }
+.tending-entry h2, .tending-entry h3 { margin: .4rem 0 1rem; }
+.tending-entry li { margin: .65rem 0; max-width: 65ch; }
+.tending-status { font: .72rem/1.5 var(--font-mono); text-transform: uppercase; letter-spacing: .08em; color: var(--signal); }
+.tending-links, .tending-pagination { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.25rem; }
+.tending-entry ul { padding-left: 1.2rem; }
 .living-source {
   white-space: pre-wrap; overflow-wrap: anywhere;
   font: .85rem/1.8 var(--font-mono);
@@ -1516,6 +1530,7 @@ ul.plain .line { display: inline; font-size: .75rem; }
   background: white;
 }
 .living-aside {
+  min-width: 0; overflow-wrap: anywhere;
   border-left: 1px solid var(--line); padding-left: 1.5rem;
   color: var(--ink-2);
 }
@@ -1710,7 +1725,7 @@ table.braid tbody tr:hover td .mid::before{background:var(--line-2);}
     border: 0; padding-bottom: 0; }
   .facts td { display: block; padding-top: .2rem; }
   .project-cards, .living-layout {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
   .aperture-invitation { margin-top: 0; }
   .aperture-invitation-grid { grid-template-columns: 1fr; align-items: start; }
@@ -1742,7 +1757,8 @@ table.braid tbody tr:hover td .mid::before{background:var(--line-2);}
   .field-progress { top: .7rem; }
   .field-progress [data-field-instruction] { max-width: 17rem; }
   .field-mode { top: 3.7rem; left: 0; right: auto; }
-  .field-node { min-width: 5.5rem; max-width: 9rem; font-size: 1rem; }
+  .field-node, .field-node[data-facet] { min-width: 0; width: 7.5rem; max-width: 38%; font-size: .95rem; }
+  .field-node-shape { padding: .65rem .25rem; }
   .field-node[data-slot="0"] { left: 18%; top: 24%; }
   .field-node[data-slot="1"] { left: 54%; top: 16%; }
   .field-node[data-slot="2"] { left: 80%; top: 31%; }

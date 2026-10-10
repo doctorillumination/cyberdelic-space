@@ -2,7 +2,7 @@
  *
  * The visible page offers three choices and three works. Its vocabulary and
  * works are read from the static, hidden library already present in the page.
- * Nothing is requested, tracked, scored for popularity, or stored.
+ * Public catalogs are fetched locally. No visitor data or popularity scores.
  */
 (function () {
   "use strict";
@@ -102,6 +102,49 @@
     }
   }
 
+  function addTendedConstellation(catalog) {
+    var source = document.querySelector(".library-source");
+    if (!source || !catalog || !Array.isArray(catalog.items)) return;
+    var list = source.querySelector(".cards");
+    if (!list) return;
+    catalog.items.forEach(function (item, index) {
+      if (!item || !item.href || !item.title) return;
+      var url = new URL(item.href, document.baseURI);
+      if (url.origin !== location.origin) return;
+      var cards = Array.prototype.slice.call(list.querySelectorAll(".card"));
+      var card = cards.find(function (candidate) {
+        var link = candidate.querySelector("a");
+        return link && new URL(link.href).pathname === url.pathname;
+      });
+      if (!card) {
+        card = document.createElement("li");
+        card.className = "card tended-card";
+        card.dataset.facets = "";
+        card.dataset.order = String(850000 + index);
+        card.dataset.state = item.record_kind === "external-neighbour" ? "external proposal" : "living";
+        card.dataset.label = item.record_kind === "external-neighbour" ? "EXTERNAL NEIGHBOUR · PROPOSED" : item.record_kind.replace(/-/g, " ").toUpperCase();
+        var link = document.createElement("a");
+        link.href = item.href;
+        var heading = document.createElement("h2");
+        heading.textContent = item.title;
+        link.appendChild(heading);
+        card.appendChild(link);
+        list.appendChild(card);
+      }
+      card.tendedRecord = item;
+      var facets = (card.dataset.facets || "").split(/\s+/).filter(Boolean);
+      (item.subjects || []).forEach(function (subject) {
+        var slug = subject.toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g, "")
+          .replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+        if (!slug) return;
+        var key = "theme:" + slug;
+        if (facets.indexOf(key) === -1) facets.push(key);
+        ensureFacetChip(source, "theme", slug);
+      });
+      card.dataset.facets = facets.join(" ");
+    });
+  }
+
   function addLibrarianDirectory(catalog) {
     var form = document.querySelector("[data-directory-form]");
     var input = document.querySelector("[data-directory-query]");
@@ -111,7 +154,7 @@
 
     var items = catalog && Array.isArray(catalog.items) ? catalog.items : [];
     var limit = catalog && catalog.curation && catalog.curation.public_result_limit
-      ? catalog.curation.public_result_limit : 6;
+      ? Math.max(1, Math.min(6, catalog.curation.public_result_limit)) : 6;
 
     function normalize(value) {
       return String(value || "").toLowerCase().normalize("NFKD")
@@ -217,6 +260,7 @@
 
   function startLibrary(catalog, librarianCatalog) {
     addLivingCatalog(catalog);
+    addTendedConstellation(librarianCatalog);
     addLibrarianDirectory(librarianCatalog);
 
   var field = document.querySelector(".living-index");
@@ -258,8 +302,8 @@
   var magneticPointer = { active: false, x: 0, y: 0 };
   var facetOrder = ["form", "theme", "register", "world", "era"];
   var openingTerms = [
-    "theme:imagination", "theme:consciousness", "theme:dream",
-    "theme:technology", "theme:psychedelics", "theme:emergence"
+    "theme:shared-reality", "theme:finite-attention", "theme:imagination",
+    "theme:collective-sensemaking", "theme:consciousness", "theme:psychedelics"
   ];
 
   function termsOn(card) {
@@ -282,7 +326,8 @@
       height: card.dataset.order
         ? parseInt(card.dataset.order, 10)
         : (heightMatch ? parseInt(heightMatch[1], 10) : index),
-      terms: termsOn(card)
+      terms: termsOn(card),
+      tended: card.tendedRecord || null
     };
   });
 
@@ -872,7 +917,7 @@
     if (chosen.length < maximumSignals) {
       shown = shown.concat(candidateTerms(chosen));
     }
-    return shown.slice(0, 9);
+    return shown.slice(0, 8);
   }
 
   function populateNodes(chosen) {
@@ -1200,6 +1245,36 @@
     article.appendChild(heading);
     if (item.work.excerpt) article.appendChild(excerpt);
     article.appendChild(near);
+    var record = item.work.tended;
+    if (record) {
+      var details = document.createElement("details");
+      details.className = "field-tended-context";
+      var summary = document.createElement("summary");
+      summary.textContent = "Why this path · " + (record.review_state || "model-proposed").replace(/-/g, " ");
+      details.appendChild(summary);
+      var description = document.createElement("p");
+      description.textContent = record.summary;
+      details.appendChild(description);
+      (record.related || []).slice(0, 2).forEach(function (relation) {
+        var target = (librarianCatalog.items || []).find(function (candidate) {
+          return candidate.id === "catalog:" + relation.id;
+        });
+        if (!target) return;
+        var path = document.createElement("p");
+        var follow = document.createElement("a");
+        follow.href = target.href;
+        follow.textContent = target.title;
+        path.appendChild(document.createTextNode((relation.relation_type || "related").replace(/-/g, " ") + " · " + (relation.review_state || "proposed") + ": "));
+        path.appendChild(follow);
+        details.appendChild(path);
+      });
+      if (record.uncertainty) {
+        var uncertainty = document.createElement("p");
+        uncertainty.textContent = record.uncertainty;
+        details.appendChild(uncertainty);
+      }
+      article.appendChild(details);
+    }
     return article;
   }
 
