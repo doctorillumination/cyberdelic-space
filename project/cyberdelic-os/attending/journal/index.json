@@ -1,0 +1,701 @@
+{
+  "days": [
+    {
+      "date": "2026-10-10",
+      "outcome": "Recovery validated",
+      "bullets": [
+        "Cartographer: No new outward research during this repair. Existing proposed neighbours were retained.",
+        "Gardener: Preserved relationships, exact publications, and earlier audits, including the blocked days.",
+        "Librarian: Rechecked the pending A-001 entry. The 23-record tended catalog now informs both search and the opening constellation.",
+        "Discovery: Three results, six search paths at most, with proposed relationships, context, and uncertainty visible.",
+        "Daily record: 49 recorded days, newest first, with no more than six points per day and links to every original audit.",
+        "Checks: 70 tests passed; all 158 reader pages fit at 320 pixels. Source hashes, catalog evidence, links, and the portable mirror verified."
+      ],
+      "audits": [
+        "2026-10-10-recovery.json",
+        "2026-10-10-001.json"
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "outcome": "Blocked",
+      "bullets": [
+        "Cartographer: Did not run; preflight was blocked.",
+        "Gardener: Did not run; preflight was blocked.",
+        "Librarian: Did not run; preflight was blocked.",
+        "Checks: blocked.",
+        "Blocker: Responsive validation still fails. Repair requires a separately authorized change outside the office allowlist.",
+        "Publication: This run did not complete publication; any draft work remains distinct from published work."
+      ],
+      "audits": [
+        "2026-10-09-001.json"
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "outcome": "Blocked",
+      "bullets": [
+        "Cartographer: Did not run; preflight was blocked.",
+        "Gardener: Did not run; preflight was blocked.",
+        "Librarian: Did not run; preflight was blocked.",
+        "Checks: blocked.",
+        "Blocker: The responsive failure remains unresolved and the prior failed transaction remains unpublished. Repair requires a separately authorized change outside the office allowlist.",
+        "Publication: This run did not complete publication; any draft work remains distinct from published work."
+      ],
+      "audits": [
+        "2026-10-08-001.json"
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "outcome": "Blocked",
+      "bullets": [
+        "Cartographer: Did not run; preflight was blocked.",
+        "Gardener: Did not run; preflight was blocked.",
+        "Librarian: Did not run; preflight was blocked.",
+        "Checks: blocked.",
+        "Blocker: The responsive failure remains unresolved and the prior failed transaction remains unpublished. Repair requires a separately authorized change outside the office allowlist.",
+        "Publication: This run did not complete publication; any draft work remains distinct from published work."
+      ],
+      "audits": [
+        "2026-10-07-001.json"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "outcome": "Blocked",
+      "bullets": [
+        "Cartographer: Did not run; preflight was blocked.",
+        "Gardener: Did not run; preflight was blocked.",
+        "Librarian: Did not run; preflight was blocked.",
+        "Checks: blocked.",
+        "Blocker: The October 5 responsive validation failure remains unresolved, with its unpublished transaction still present. A layout repair is outside scheduled authority.",
+        "Publication: This run did not complete publication; any draft work remains distinct from published work."
+      ],
+      "audits": [
+        "2026-10-06-001.json"
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "outcome": "Blocked",
+      "bullets": [
+        "Cartographer: no op. The inbox is empty and existing proposals already preserve both the packaging precedent and its limited authority. Fresh confirmation is recorded here without rewriting historical evidence…",
+        "Gardener: no op. Selected cross-form evidence supports the existing distinctions between a released artifact, a generative-publication proposal, constitutional memory layers, and bounded office…",
+        "Librarian: 1 records added. A-001 exists in the relational manifest and public archive but is absent from the tended directory. This adds a concrete route to the press's own verification and copying model without…",
+        "Checks: failed.",
+        "Blocker: Responsive validation failed on the existing A-001 reader. A repair requires styles or page code outside scheduled office authority. No commit, push, PR, or merge was attempted.",
+        "Publication: This run did not complete publication; any draft work remains distinct from published work."
+      ],
+      "audits": [
+        "2026-10-05-001.json"
+      ]
+    },
+    {
+      "date": "2026-10-04",
+      "outcome": "Reviewed · no change needed",
+      "bullets": [
+        "Cartographer: no op. The inbox is empty. Today's bounded primary-source review supports the already proposed Polis connection and establishes no new node or distinct edge. Original evidence dates and proposal…",
+        "Gardener: no op. The selected summaries, themes, relation claims, and related-work paths retain the distinctions supported by exact sources. No drift or new evidential distinction was established in this…",
+        "Librarian: no op. The Cartographer and Gardener outputs identify no missing distinction needing new search vocabulary or summary changes. No underlying work, proposal, or history is removed.",
+        "Checks: passed.",
+        "Archive: No new relationship or catalog change was warranted. Existing content was retained."
+      ],
+      "audits": [
+        "2026-10-04-001.json"
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "outcome": "Reviewed · no change needed",
+      "bullets": [
+        "Cartographer: no op. The inbox is empty and the selected question is answered by existing internal publications. No new external discovery or duplicate graph placement is warranted.",
+        "Gardener: no op. The selected summaries, themes, and publication-state boundaries remain supported by exact passages across the inscription, Field Note, Builder Note, Instrument, and Artifact. No drift or…",
+        "Librarian: no op. No missing distinction or misleading term was found in the selected records. The newly available Kernel entry already answers the bounded findability need.",
+        "Checks: passed.",
+        "Archive: No new relationship or catalog change was warranted. Existing content was retained."
+      ],
+      "audits": [
+        "2026-10-03-001.json"
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "outcome": "Changes recorded",
+      "bullets": [
+        "Cartographer: no op. The empty inbox and bounded internal question provide no reason to discover new external nodes. The existing Kernel directly supplies the needed source material.",
+        "Gardener: no op. No contradiction or drift was found in this bounded cross-form reading. Preserve the existing relation claims and histories, and pass the findability gap to the Librarian.",
+        "Librarian: 1 records added. The Kernel already exists in the public Library but is absent from the tended directory. One source-grounded record provides a useful route to its commitments without changing its bytes,…",
+        "Checks: passed.",
+        "Record: These are the audit's recorded outcomes, not independent evidence of a deployment or human ratification."
+      ],
+      "audits": [
+        "2026-10-02-001.json"
+      ]
+    },
+    {
+      "date": "2026-10-01",
+      "outcome": "Reviewed · no change needed",
+      "bullets": [
+        "Cartographer: no op. The inbox remains empty. This follow-up verifies yesterday's local discovery improvement rather than manufacturing another connection or searching for novelty.",
+        "Gardener: no op. The selected cross-form metadata remains consistent with its exact sources. No drift, missing evidence, or lifecycle change was established in this bounded review. This is not a fresh audit…",
+        "Librarian: no op. The recently added entry is accurate and discoverable in live search. No useful source-supported catalog revision is warranted today.",
+        "Checks: passed.",
+        "Archive: No new relationship or catalog change was warranted. Existing content was retained."
+      ],
+      "audits": [
+        "2026-10-01-001.json"
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "outcome": "Changes recorded",
+      "bullets": [
+        "Cartographer: no op. The inbox is empty and the bounded question is directly answered by an existing published instrument. Its declared related works provide enough orientation without external discovery or…",
+        "Gardener: no op. The bounded cross-form reading supports the present distinctions between unchanged works, proposed placements, and external conversation. Cataloging can address the gap without changing…",
+        "Librarian: 1 records added. I-004 is already public but absent from the cumulative catalog. Its exact text supports one useful search record. Existing records remain intact.",
+        "Checks: passed.",
+        "Record: These are the audit's recorded outcomes, not independent evidence of a deployment or human ratification."
+      ],
+      "audits": [
+        "2026-09-30-001.json"
+      ]
+    },
+    {
+      "date": "2026-09-26",
+      "outcome": "Changes recorded",
+      "bullets": [
+        "Cartographer: no op. The inbox is empty, the inquiry is fully internal, and the exact works already identify one another. External discovery or a new relation proposal would not repair the present findability…",
+        "Gardener: no op. The three sources are mutually legible and internally consistent. Cataloging is sufficient for this run, so no relational metadata change is warranted.",
+        "Librarian: 3 records added. The three exact works contain distinct conceptual, technical, and experiential knowledge about the finite Library but were not directly searchable in the tended catalog. Three bounded…",
+        "Checks: passed.",
+        "Record: These are the audit's recorded outcomes, not independent evidence of a deployment or human ratification."
+      ],
+      "audits": [
+        "2026-09-26-001.json"
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "outcome": "Changes recorded",
+      "bullets": [
+        "Cartographer: no op. The current map already contains strong lineage and implementation edges for the bounded region. The remaining gap concerns catalog findability, not a missing relation.",
+        "Gardener: no op. The existing relations remain accurate and properly qualified. No relational metadata change is warranted.",
+        "Librarian: 2 records added. The two exact works already hold distinct operational knowledge that was only reachable indirectly through the Field Note 32 record. Adding bounded records improves findability without…",
+        "Checks: passed.",
+        "Record: These are the audit's recorded outcomes, not independent evidence of a deployment or human ratification."
+      ],
+      "audits": [
+        "2026-09-25-001.json"
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "outcome": "Reviewed · no change needed",
+      "bullets": [
+        "Cartographer: no op. The bounded internal continuity is already represented by three strong implementation proposals. No external search or additional candidate was needed, and adding one would expand the…",
+        "Gardener: no op. The internal continuity remains accurate, and the emerging lifecycle still reflects the explicit validation limits. No relational metadata change is warranted.",
+        "Librarian: no op. All four records remain accurate and findable through distinct, source-grounded vocabularies. Revising dates alone would not materially improve findability.",
+        "Checks: passed.",
+        "Archive: No new relationship or catalog change was warranted. Existing content was retained."
+      ],
+      "audits": [
+        "2026-09-24-001.json"
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "outcome": "Changes recorded",
+      "bullets": [
+        "Cartographer: no op. The bounded source recheck continued to support the existing node and edge proposals. A new candidate would duplicate the current proposal queue.",
+        "Gardener: no op. The existing proposal evidence and qualifications remain accurate. No relational metadata change is warranted.",
+        "Librarian: 1 records revised. The record remained findable, but its evidence locator described a conjunction rather than quoting text present in the proposal queue. Literal identifiers restore auditability without…",
+        "Checks: passed.",
+        "Record: These are the audit's recorded outcomes, not independent evidence of a deployment or human ratification."
+      ],
+      "audits": [
+        "2026-09-23-001.json"
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "outcome": "Changes recorded",
+      "bullets": [
+        "Cartographer: no op. The bounded source recheck continued to support the existing node and two edge proposals. A new candidate would duplicate the current proposal queue.",
+        "Gardener: no op. The current proposal evidence and qualifications remain accurate. No relational metadata change is warranted.",
+        "Librarian: 1 records revised. The record remained findable, but its evidence locator described a range rather than quoting text present in the proposal queue. Literal identifiers restore auditability without expanding…",
+        "Checks: passed.",
+        "Record: These are the audit's recorded outcomes, not independent evidence of a deployment or human ratification."
+      ],
+      "audits": [
+        "2026-09-22-001.json"
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "outcome": "Changes recorded",
+      "bullets": [
+        "Cartographer: no op. The bounded source recheck continued to support the existing node and edge proposals. The current W3C publications add no conflict or distinct candidate that warrants expanding the queue.",
+        "Gardener: no op. The existing proposal evidence and qualifications remain accurate. No relational metadata change is warranted.",
+        "Librarian: 1 records revised. The record remained findable, but its evidence locator described a conjunction rather than quoting text present in the proposal queue. Literal identifiers restore auditability without…",
+        "Checks: passed.",
+        "Record: These are the audit's recorded outcomes, not independent evidence of a deployment or human ratification."
+      ],
+      "audits": [
+        "2026-09-21-001.json"
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "outcome": "Changes recorded",
+      "bullets": [
+        "Cartographer: no op. The bounded source recheck continued to support the existing node and edge proposals. A new candidate would duplicate the current proposal queue.",
+        "Gardener: 1 metadata changes. The earlier locator named a section absent from the exact source. Three literal passages now make the same proposal directly inspectable without changing its meaning.",
+        "Librarian: 1 records revised. The record remained findable, but its evidence locator described a conjunction rather than quoting text present in the proposal queue. Literal identifiers restore auditability without…",
+        "Checks: passed.",
+        "Record: These are the audit's recorded outcomes, not independent evidence of a deployment or human ratification."
+      ],
+      "audits": [
+        "2026-09-20-001.json"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "outcome": "Changes recorded",
+      "bullets": [
+        "Cartographer: no op. The bounded source recheck continued to support the existing node, edge, and evidence amendment. A new candidate would duplicate the current proposal queue.",
+        "Gardener: 1 metadata changes. The earlier locator named a section absent from the exact source. Three literal passages now make the same proposal directly inspectable without changing its meaning.",
+        "Librarian: 1 records revised. The record remained findable, but its evidence locator described a list rather than quoting text present in the proposal queue. Literal identifiers restore auditability without expanding…",
+        "Checks: passed.",
+        "Record: These are the audit's recorded outcomes, not independent evidence of a deployment or human ratification."
+      ],
+      "audits": [
+        "2026-09-19-001.json"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "outcome": "Changes recorded",
+      "bullets": [
+        "Cartographer: no op. The bounded source recheck continued to support the existing node, edge, and evidence amendment. A new candidate would duplicate the current proposal queue.",
+        "Gardener: 1 metadata changes. The earlier locator combined two absent section labels. Three literal passages now make the same proposal directly inspectable without changing its meaning.",
+        "Librarian: 1 records revised. The record remained findable, but its evidence locator described a range rather than quoting text present in the proposal queue. Literal identifiers restore auditability without expanding…",
+        "Checks: passed.",
+        "Record: These are the audit's recorded outcomes, not independent evidence of a deployment or human ratification."
+      ],
+      "audits": [
+        "2026-09-18-001.json"
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "outcome": "Changes recorded",
+      "bullets": [
+        "Cartographer: no op. The bounded source recheck supported the existing candidates and revealed no additional node or edge that would deepen this region.",
+        "Gardener: 3 metadata changes. Three proposal evidence locators described headings in a synthetic form that did not occur as exact source text. Exact title fragments now make the same claims directly inspectable without…",
+        "Librarian: 2 records revised. The two records were findable but their evidence locators did not literally occur in the exact source. Repairing those locators improves auditability without expanding the catalog.",
+        "Checks: passed.",
+        "Record: These are the audit's recorded outcomes, not independent evidence of a deployment or human ratification."
+      ],
+      "audits": [
+        "2026-09-17-001.json"
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "outcome": "Changes recorded",
+      "bullets": [
+        "Cartographer: no op. The bounded inquiry concerned source support for existing internal relations. The exact works supplied that support without introducing a new node or edge.",
+        "Gardener: 3 metadata changes. The first three manifest edges had strong rationales but no evidence arrays. Adding exact passages closes that evidence gap without changing endpoints, relation types, confidence,…",
+        "Librarian: 1 records revised. The missing I-003 related path limited navigation from FN-32 even though REL-000003 was already public and source-supported.",
+        "Checks: passed.",
+        "Record: These are the audit's recorded outcomes, not independent evidence of a deployment or human ratification."
+      ],
+      "audits": [
+        "2026-09-16-001.json"
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "outcome": "Changes recorded",
+      "bullets": [
+        "Cartographer: no op. The current draft supports the existing proposed node and cautious technical adjacency, including the previously recorded status and trust qualifications. A new candidate would duplicate…",
+        "Gardener: 1 metadata changes. The prior REL-000004 locators named headings absent from both exact publications. The revised passages make the already supported relation inspectable without altering its endpoints, type,…",
+        "Librarian: no op. Retain the FN-33 and WACZ records. Their summaries, search terms, questions, evidence, and visibly proposed relation remain grounded in the exact note and the provisional public draft.",
+        "Checks: passed.",
+        "Record: These are the audit's recorded outcomes, not independent evidence of a deployment or human ratification."
+      ],
+      "audits": [
+        "2026-09-15-001.json"
+      ]
+    },
+    {
+      "date": "2026-09-14",
+      "outcome": "Audit recorded",
+      "bullets": [
+        "Cartographer: no op. The official sources continue to support the existing proposed node and cautious technical adjacency. A new candidate would duplicate the map.",
+        "Gardener: no op. Retain the possible WebAssembly technical adjacency and its explicit limits.",
+        "Librarian: 1 records revised. Replace an evidence locator that named headings absent from the exact FN-33 source with the real title and a distinctive sentence from that source. The summary and search vocabulary remain…",
+        "Checks: passed.",
+        "Record: These are the audit's recorded outcomes, not independent evidence of a deployment or human ratification."
+      ],
+      "audits": [
+        "2026-09-14-001.json"
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "outcome": "Reviewed · no change needed",
+      "bullets": [
+        "Cartographer: no op. The official versioned sources remain accessible and consistent with the existing node and technical-adjacency proposal. No new candidate or amendment would materially improve the map.",
+        "Gardener: no op. Keep REL-P-000008 and REL-P-000009 unchanged because the original source facts remain supported by the official 1.1.1 documents.",
+        "Librarian: no op. Retain the OCI and FN-33 records because their summaries, terms, questions, and visibly proposed relation remain grounded in the exact source and official versioned specification.",
+        "Checks: passed.",
+        "Archive: No new relationship or catalog change was warranted. Existing content was retained."
+      ],
+      "audits": [
+        "2026-09-13-001.json"
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "outcome": "Reviewed · no change needed",
+      "bullets": [
+        "Cartographer: no op. The rechecked draft and repository remain consistent with the three existing proposals. A new node, edge, or amendment would repeat their packaging and trust-boundary distinctions.",
+        "Gardener: no op. Leave the WACZ proposals unchanged. The current draft and repository still support the recorded packaging claims, draft status, and open trust boundary.",
+        "Librarian: no op. Retain the draft label, portable web-archive summary, preservation terms, and proposed relationship. Each remains supported by the exact work and rechecked primary sources.",
+        "Checks: passed.",
+        "Archive: No new relationship or catalog change was warranted. Existing content was retained."
+      ],
+      "audits": [
+        "2026-09-12-001.json"
+      ]
+    },
+    {
+      "date": "2026-09-11",
+      "outcome": "Reviewed · no change needed",
+      "bullets": [
+        "Cartographer: no op. The primary sources remain available and continue to support the existing node, technical-adjacency proposal, and dependency-durability amendment. No new candidate or amendment would…",
+        "Gardener: no op. Leave REL-P-000003 through REL-P-000005 unchanged because the rechecked primary sources continue to support both the durability precedent and its dependency qualifications.",
+        "Librarian: no op. Leave the Art Blocks and FN-33 catalog records unchanged because their summaries, ordinary-language terms, questions, and proposed relation remain supported by the exact work and rechecked…",
+        "Checks: passed.",
+        "Archive: No new relationship or catalog change was warranted. Existing content was retained."
+      ],
+      "audits": [
+        "2026-09-11-001.json"
+      ]
+    },
+    {
+      "date": "2026-09-10",
+      "outcome": "Reviewed · no change needed",
+      "bullets": [
+        "Cartographer: no op. The primary sources remain available and materially support the facts already recorded. No new node, edge, or amendment would deepen the map enough to justify another proposal.",
+        "Gardener: no op. Leave the Polis proposal and its possible, emerging shared-inquiry relation unchanged because the rechecked primary sources remain consistent with the recorded claims.",
+        "Librarian: no op. Leave the Polis and FN-25 catalog records unchanged because their summaries, subjects, ordinary-language terms, questions, and proposed relation remain supported by the rechecked sources.",
+        "Checks: passed.",
+        "Archive: No new relationship or catalog change was warranted. Existing content was retained."
+      ],
+      "audits": [
+        "2026-09-10-001.json"
+      ]
+    },
+    {
+      "date": "2026-09-09",
+      "outcome": "Reviewed · no change needed",
+      "bullets": [
+        "Cartographer: no op. The inbox is empty, no publication changed after the September 8 merge, and the bounded internal region is already represented by three strong proposed relations. Additional mapping would…",
+        "Gardener: no op. Leave REL-000005, REL-000006, and REL-000007 strong, emerging, and proposed. No new evidence supports strengthening, weakening, dormancy, contestation, or composting.",
+        "Librarian: no op. Leave the I-005, A-005, and BN-006 summaries, subjects, search terms, questions, and related paths unchanged because each remains supported by its exact source.",
+        "Checks: passed.",
+        "Archive: No new relationship or catalog change was warranted. Existing content was retained."
+      ],
+      "audits": [
+        "2026-09-09-001.json"
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "outcome": "Changes recorded",
+      "bullets": [
+        "Cartographer: 1 proposals",
+        "Gardener: 1 metadata changes. The exact Instrument and Builder Note directly name one another and describe the same bounded correspondence at procedural and technical layers. The relation deepens context without…",
+        "Librarian: 1 records added. One source-grounded record completes yesterday's bounded deferral and improves technical findability without altering the underlying work or exceeding the daily limit.",
+        "Checks: passed.",
+        "Record: These are the audit's recorded outcomes, not independent evidence of a deployment or human ratification."
+      ],
+      "audits": [
+        "2026-09-08-001.json"
+      ]
+    },
+    {
+      "date": "2026-09-07",
+      "outcome": "Changes recorded",
+      "bullets": [
+        "Cartographer: 2 proposals",
+        "Gardener: 3 metadata changes. New exact publications established a direct path from field proposition to instrument and working artifact. Publishing the path improves continuity without altering or ratifying the works.",
+        "Librarian: 3 records added. Three source-grounded records materially improve discovery of the newly published work without changing its claims, ranking by attention, or exceeding the daily catalog limit.",
+        "Checks: passed.",
+        "Record: These are the audit's recorded outcomes, not independent evidence of a deployment or human ratification."
+      ],
+      "audits": [
+        "2026-09-07-001.json"
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "outcome": "Reviewed · no change needed",
+      "bullets": [
+        "Cartographer: no proposal",
+        "Gardener: no change. No evidence drift, relation error, lifecycle event, or continuity gap warranted relational metadata changes today.",
+        "Librarian: no change. The relevant records remain accurate and findable. Revising them solely because the source repository advanced would manufacture novelty.",
+        "Checks: passed.",
+        "Archive: No new relationship or catalog change was warranted. Existing content was retained."
+      ],
+      "audits": [
+        "2026-09-06-001.json"
+      ]
+    },
+    {
+      "date": "2026-09-05",
+      "outcome": "Reviewed · no change needed",
+      "bullets": [
+        "Cartographer: no proposal",
+        "Gardener: no change. No evidence drift, relation error, lifecycle event, or continuity gap warranted relational metadata changes today.",
+        "Librarian: no change. The relevant records remain accurate and findable. Revising them solely because the scheduled turn occurred would manufacture novelty.",
+        "Checks: passed.",
+        "Archive: No new relationship or catalog change was warranted. Existing content was retained."
+      ],
+      "audits": [
+        "2026-09-05-001.json"
+      ]
+    },
+    {
+      "date": "2026-09-04",
+      "outcome": "Reviewed · no change needed",
+      "bullets": [
+        "Cartographer: no proposal",
+        "Gardener: no change. No evidence drift, relation error, lifecycle event, or continuity gap warranted relational metadata changes today.",
+        "Librarian: no change. The relevant records remain accurate and findable. Revising them solely because the scheduled turn occurred would manufacture novelty.",
+        "Checks: passed.",
+        "Archive: No new relationship or catalog change was warranted. Existing content was retained."
+      ],
+      "audits": [
+        "2026-09-04-001.json"
+      ]
+    },
+    {
+      "date": "2026-09-03",
+      "outcome": "Reviewed · no change needed",
+      "bullets": [
+        "Cartographer: no proposal",
+        "Gardener: no change. No evidence drift, relation error, lifecycle event, or continuity gap warranted relational metadata changes today.",
+        "Librarian: no change. The relevant records remain accurate and findable. Revising them solely because the scheduled turn occurred would manufacture novelty.",
+        "Checks: passed.",
+        "Archive: No new relationship or catalog change was warranted. Existing content was retained."
+      ],
+      "audits": [
+        "2026-09-03-001.json"
+      ]
+    },
+    {
+      "date": "2026-09-02",
+      "outcome": "Changes recorded",
+      "bullets": [
+        "Cartographer: no proposal",
+        "Gardener: no change. No evidence drift, relation error, lifecycle event, or continuity gap warranted a relational metadata change today.",
+        "Librarian: 1 records added. FN-32 governs the living-map idea but was only reachable through its official title or neighbouring records. One exact-source catalog entry materially improves deliberate discovery without…",
+        "Checks: passed.",
+        "Record: These are the audit's recorded outcomes, not independent evidence of a deployment or human ratification."
+      ],
+      "audits": [
+        "2026-09-02-001.json"
+      ]
+    },
+    {
+      "date": "2026-09-01",
+      "outcome": "Changes recorded",
+      "bullets": [
+        "Cartographer: no proposal",
+        "Gardener: 1 metadata changes. The public proposal needed a more precise epistemic boundary because the primary document explicitly describes itself as provisional.",
+        "Librarian: 1 records revised. The revision makes both the useful packaging function and the provisional status findable without changing the relation or implying settled authority.",
+        "Checks: passed.",
+        "Record: These are the audit's recorded outcomes, not independent evidence of a deployment or human ratification."
+      ],
+      "audits": [
+        "2026-09-01-001.json"
+      ]
+    },
+    {
+      "date": "2026-08-31",
+      "outcome": "Changes recorded",
+      "bullets": [
+        "Cartographer: no proposal",
+        "Gardener: no change. No evidence drift, relation error, lifecycle event, or continuity gap warranted relational metadata changes today.",
+        "Librarian: 1 records revised. These three supported phrases improve discovery for people seeking generative work that can render beyond one service without adding an object, changing a relation, or introducing…",
+        "Checks: passed.",
+        "Record: These are the audit's recorded outcomes, not independent evidence of a deployment or human ratification."
+      ],
+      "audits": [
+        "2026-08-31-001.json"
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "outcome": "Changes recorded",
+      "bullets": [
+        "Cartographer: no proposal",
+        "Gardener: no change. No evidence drift, relation error, lifecycle event, or continuity gap warranted relational metadata changes today.",
+        "Librarian: 1 records revised. These three supported phrases improve discovery for people seeking a large-group feedback process without adding a new object, changing the relation, or ranking the project by attention.",
+        "Checks: passed.",
+        "Record: These are the audit's recorded outcomes, not independent evidence of a deployment or human ratification."
+      ],
+      "audits": [
+        "2026-08-30-001.json"
+      ]
+    },
+    {
+      "date": "2026-08-29",
+      "outcome": "Reviewed · no change needed",
+      "bullets": [
+        "Cartographer: no proposal",
+        "Gardener: no change. No evidence drift, summary error, continuity gap, lifecycle event, or neglected work warranted a relational metadata change today.",
+        "Librarian: no change. The cumulative catalog already makes the fresh relational region findable. Revising it after one day would increase activity without improving orientation.",
+        "Checks: passed.",
+        "Archive: No new relationship or catalog change was warranted. Existing content was retained."
+      ],
+      "audits": [
+        "2026-08-29-001.json"
+      ]
+    },
+    {
+      "date": "2026-08-28",
+      "outcome": "Changes recorded",
+      "bullets": [
+        "Cartographer: 3 proposals",
+        "Gardener: 3 metadata changes. The addition reveals a continuity already present in FN-14, gives it primary-source evidence, and places its limits beside FN-25 without overstating what one ranking mechanism can do.",
+        "Librarian: 2 records added, 1 records revised. These terms are supported by the exact FN-14 and FN-25 passages or official Community Notes documentation, and they let a person find the relation without knowing any formal title.",
+        "Checks: passed.",
+        "Record: These are the audit's recorded outcomes, not independent evidence of a deployment or human ratification."
+      ],
+      "audits": [
+        "2026-08-28-001.json"
+      ]
+    },
+    {
+      "date": "2026-08-27",
+      "outcome": "Reviewed · no change needed",
+      "bullets": [
+        "Cartographer: no proposal",
+        "Gardener: no change. No evidence drift, summary error, dormancy signal, continuity gap, or lifecycle event warranted a relational metadata change today.",
+        "Librarian: no change. The cumulative catalog already lets a visitor find this boundary without knowing the formal title. A revision today would add volume without improving findability.",
+        "Checks: passed.",
+        "Archive: No new relationship or catalog change was warranted. Existing content was retained."
+      ],
+      "audits": [
+        "2026-08-27-001.json"
+      ]
+    },
+    {
+      "date": "2026-08-25",
+      "outcome": "Changes recorded",
+      "bullets": [
+        "Cartographer: 2 proposals",
+        "Gardener: 3 metadata changes. The module and embedder boundary deepens yesterday's packaging inquiry while making clear that portable execution alone cannot preserve the intended encounter.",
+        "Librarian: 1 records added, 1 records revised. These terms are supported by the W3C specifications and let a visitor find the work-reader boundary without knowing the specification's formal title.",
+        "Checks: passed.",
+        "Record: These are the audit's recorded outcomes, not independent evidence of a deployment or human ratification."
+      ],
+      "audits": [
+        "2026-08-25-001.json"
+      ]
+    },
+    {
+      "date": "2026-08-24",
+      "outcome": "Changes recorded",
+      "bullets": [
+        "Cartographer: 2 proposals",
+        "Gardener: 3 metadata changes. The specification deepens the existing portability inquiry by naming execution configuration and verifiable dependencies, while its allowance for absent blobs prevents any unsupported claim…",
+        "Librarian: 1 records added, 1 records revised. These ordinary-language terms are supported by the versioned specification and help a visitor find the execution-environment question without knowing the formal title.",
+        "Checks: passed.",
+        "Record: These are the audit's recorded outcomes, not independent evidence of a deployment or human ratification."
+      ],
+      "audits": [
+        "2026-08-24-001.json"
+      ]
+    },
+    {
+      "date": "2026-08-23",
+      "outcome": "Changes recorded",
+      "bullets": [
+        "Cartographer: 2 proposals",
+        "Gardener: 3 metadata changes. The portable package offers a materially different preservation layer from the chain and protocol comparisons already mapped, while preserving uncertainty about its transfer to generative…",
+        "Librarian: Not recorded in this audit.",
+        "Checks: passed.",
+        "Record: These are the audit's recorded outcomes, not independent evidence of a deployment or human ratification."
+      ],
+      "audits": [
+        "2026-08-23-001.json",
+        "2026-08-23-librarian-launch.json"
+      ]
+    },
+    {
+      "date": "2026-08-22",
+      "outcome": "Changes recorded",
+      "bullets": [
+        "Cartographer: valid no proposal. The existing Art Blocks node already bounds the inquiry. Adding another platform would increase breadth without improving the evidence or clarifying the relation.",
+        "Gardener: 2 metadata changes. The clarification materially deepens the evidence boundary while leaving the work, relation status, and current question unchanged.",
+        "Librarian: Not recorded in this audit.",
+        "Checks: passed.",
+        "Record: These are the audit's recorded outcomes, not independent evidence of a deployment or human ratification."
+      ],
+      "audits": [
+        "2026-08-22-001.json",
+        "2026-08-22-publication-authority.json"
+      ]
+    },
+    {
+      "date": "2026-08-21",
+      "outcome": "Changes recorded",
+      "bullets": [
+        "Cartographer: 2 proposals",
+        "Gardener: 3 metadata changes",
+        "Librarian: Not recorded in this audit.",
+        "Checks: passed after repair.",
+        "Record: These are the audit's recorded outcomes, not independent evidence of a deployment or human ratification."
+      ],
+      "audits": [
+        "2026-08-21-001.json"
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "outcome": "Audit recorded",
+      "bullets": [
+        "Cartographer: no op",
+        "Gardener: no op. No repair. FN-04 and FN-25 remain accurately represented by the existing proposal rationale and the finite Attending surface.",
+        "Librarian: Not recorded in this audit.",
+        "Checks: passed.",
+        "Record: These are the audit's recorded outcomes, not independent evidence of a deployment or human ratification."
+      ],
+      "audits": [
+        "2026-08-18-no-op-001.json"
+      ]
+    },
+    {
+      "date": "2026-08-17",
+      "outcome": "Audit recorded",
+      "bullets": [
+        "Cartographer: 2 proposals",
+        "Gardener: 3 metadata changes",
+        "Librarian: Not recorded in this audit.",
+        "Checks: passed.",
+        "Record: These are the audit's recorded outcomes, not independent evidence of a deployment or human ratification."
+      ],
+      "audits": [
+        "2026-08-17-manual-001.json",
+        "2026-08-17-bootstrap.json"
+      ]
+    }
+  ],
+  "count": 49
+}

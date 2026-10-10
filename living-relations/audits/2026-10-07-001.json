@@ -1,0 +1,73 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-10-07-001",
+  "run_type": "scheduled-governed-run",
+  "started_at": "2026-10-07T10:44:52-07:00",
+  "completed_at": "2026-10-07T17:45:41Z",
+  "automation": {"id": "daily-cyberdelic-tending", "triggered_at": "2026-10-07T17:44:52.783Z"},
+  "repository": {
+    "branch": "codex/tending-2026-10-05",
+    "starting_commit": "414b0c95a63c1d528b37432974034ad270d6dd93",
+    "remote_main_commit": "414b0c95a63c1d528b37432974034ad270d6dd93",
+    "pull_request": null,
+    "publication_action": "stopped-at-preflight",
+    "existing_uncommitted_paths": ["living-relations/catalog.json", "living-relations/audits/2026-10-05-001.json", "living-relations/audits/2026-10-06-001.json", "cyberdelic-space.zip"]
+  },
+  "office_versions": {"cartographer": "0.1", "gardener": "0.1", "librarian": "0.1", "publication_authority": "1.1"},
+  "governing_documents_read_in_full": [
+    "living-content/cyberdelic-os/offices/cartographer/charter-v1.md",
+    "living-content/cyberdelic-os/offices/gardener/charter-v1.md",
+    "living-content/cyberdelic-os/offices/librarian/charter-v1.md",
+    "living-content/cyberdelic-os/bn-005/v000001.md",
+    "living-content/cyberdelic-os/i-003/v000001.md",
+    "living-content/cyberdelic-os/offices/publication-authority-v2.md",
+    "living-relations/governance.json"
+  ],
+  "inputs": {
+    "prior_audit": "living-relations/audits/2026-10-06-001.json",
+    "region_examined": "Preflight state and unresolved A-001 responsive validation failure",
+    "private_correspondence_excluded": true
+  },
+  "cartographer": {
+    "state": "not-run-preflight-blocked",
+    "candidates_created": [],
+    "outward_search_performed": false,
+    "external_contact_performed": false,
+    "private_material_read": false,
+    "no_proposal_reason": "The failed October 5 publication transaction remains unresolved. No new research or proposal generation was started."
+  },
+  "gardener": {
+    "state": "not-run-preflight-blocked",
+    "changes": [],
+    "decision_reason": "Preserve the blocked work and prior audits. The reproduced layout defect requires styles or page code outside scheduled authority. No graph, lifecycle, or exact-source changes were attempted."
+  },
+  "librarian": {
+    "state": "not-run-preflight-blocked",
+    "records_created": [],
+    "records_revised": [],
+    "records_removed": [],
+    "decision_reason": "The October 5 A-001 catalog record remains an unpublished draft, not a new record for this run. No catalog edits were made."
+  },
+  "validation": {
+    "state": "blocked",
+    "checks": [
+      "Read all seven governing documents and the October 6 blocked audit",
+      "Inspected Git status and fetched origin; main remains at the October 4 merge, with no repair commit",
+      "Read-only production Chrome check reproduced 352-pixel document width at a 320-pixel viewport on A-001",
+      "New audit JSON parses and its path matches active governance",
+      "All four pre-existing changed files retain their preflight SHA-256 values"
+    ],
+    "layout_observation": {"checked_at": "2026-10-07", "url": "https://cyberdelic.space/project/cyberdelic-os/a-001/", "viewport_width": 320, "document_width": 352, "heading": "Cyberdelic.space"},
+    "not_run": ["Office research and metadata audit", "Full JSON/XML and internal-link validation", "Exact publication copy and hash suite", "Full responsive and search suite", "Mirror rebuild", "Post-deployment digest verification"],
+    "stop_reason": "The responsive failure remains unresolved and the prior failed transaction remains unpublished. Repair requires a separately authorized change outside the office allowlist.",
+    "scope_note": "Only today's blocked-run audit is added. The prior mirror is preserved and does not contain the October 6 or October 7 local audits. No publication is claimed."
+  },
+  "files_changed": ["living-relations/audits/2026-10-07-001.json"],
+  "public_change": false,
+  "relational_field_changed": false,
+  "run_state": "blocked-preflight",
+  "valid_no_op": false,
+  "human_review_required": true,
+  "required_next_action": "Explicitly authorize a separate responsive layout repair, preserve pending catalog work and audits, then rerun complete validation before publication.",
+  "note": "No commit, push, PR, merge, deployment, automation edit, or governance edit was performed. This is a blocked run, not a valid no-op."
+}
