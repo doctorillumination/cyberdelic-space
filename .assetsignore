@@ -1,0 +1,10 @@
+# Never publish repository metadata or local development files.
+.git/**
+.github/**
+.wrangler/**
+node_modules/**
+.DS_Store
+wrangler.jsonc
+wrangler.toml
+.assetsignore
+.gitignore
