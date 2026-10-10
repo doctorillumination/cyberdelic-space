@@ -1,0 +1,253 @@
+{
+  "id": "cyberdelic-os-fn-23",
+  "title": "A Civic Economy Without Speculative Land",
+  "form": "field-note",
+  "release_id": "FN-S0-001",
+  "pages": [
+    "project/cyberdelic-os/field-notes/fn-23/"
+  ],
+  "source_path": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
+  "source_sha256": "0e893f7e468102bd66ac563b7c6eec686e96efe508dbc5410cd8c83f2aee38f2",
+  "document_sha256": "86e44597776fed748540e8d8ba41a9a555fd010bab603215d690fd6463ffe2d3",
+  "text_sha256": "941c1db2fd2b4118bf6a5d91661fce7555c97490bfc0eef25d2a3fa9efd01e8f",
+  "reading_path": "audio/readings/941c1db2fd2b4118bf6a5d91661fce7555c97490bfc0eef25d2a3fa9efd01e8f.md",
+  "reading_sha256": "86e44597776fed748540e8d8ba41a9a555fd010bab603215d690fd6463ffe2d3",
+  "reading_length": 2921,
+  "audio_path": "audio/lewis/941c1db2fd2b4118bf6a5d91661fce7555c97490bfc0eef25d2a3fa9efd01e8f.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "ec104e908e034904b8e556ba19d2b8a4f2b30f4b49d1ad3e5b8d4b9d8943cfd2",
+  "audio_length": 2754764,
+  "duration_seconds": 229.485,
+  "chunks": [
+    {
+      "text": "A Civic Economy Without Speculative Land",
+      "start": 0.0,
+      "duration": 3.775
+    },
+    {
+      "text": "A digital world can contain an economy without pretending that artificial land is naturally scarce.",
+      "start": 3.955,
+      "duration": 7.3
+    },
+    {
+      "text": "Virtual territory can be copied. Scarcity imposed only to sell plots imports the least interesting inheritance of the metaverse: early speculation, rent seeking, and the conversion of imagined public space into property before a culture has formed.",
+      "start": 11.435,
+      "duration": 17.325
+    },
+    {
+      "text": "Cyberdelic OS should begin from resources that are genuinely limited:",
+      "start": 28.94,
+      "duration": 5.45
+    },
+    {
+      "text": "human attention;",
+      "start": 34.57,
+      "duration": 1.95
+    },
+    {
+      "text": "care;",
+      "start": 36.7,
+      "duration": 1.25
+    },
+    {
+      "text": "interpretation;",
+      "start": 38.13,
+      "duration": 2.05
+    },
+    {
+      "text": "trust;",
+      "start": 40.36,
+      "duration": 1.325
+    },
+    {
+      "text": "moderation;",
+      "start": 41.865,
+      "duration": 1.7
+    },
+    {
+      "text": "mediation;",
+      "start": 43.745,
+      "duration": 1.675
+    },
+    {
+      "text": "compute;",
+      "start": 45.6,
+      "duration": 1.55
+    },
+    {
+      "text": "storage;",
+      "start": 47.33,
+      "duration": 1.5
+    },
+    {
+      "text": "bandwidth;",
+      "start": 49.01,
+      "duration": 1.6
+    },
+    {
+      "text": "long-term stewardship;",
+      "start": 50.79,
+      "duration": 2.275
+    },
+    {
+      "text": "the cost of permanent publication.",
+      "start": 53.245,
+      "duration": 3.0
+    },
+    {
+      "text": "These resources can support a meaningful economy.",
+      "start": 56.425,
+      "duration": 4.2
+    },
+    {
+      "text": "A city may need a library, gallery, public model server, archive, translation service, gathering hall, or permanent-storage fund. Residents can propose the institution, write its charter, contribute money or labour, and decide how it will be tended.",
+      "start": 60.805,
+      "duration": 17.15
+    },
+    {
+      "text": "The result may appear spatially as a new building.",
+      "start": 78.135,
+      "duration": 4.025
+    },
+    {
+      "text": "But the building exists because a civic relationship was formed, not because someone purchased a tokenized parcel.",
+      "start": 82.34,
+      "duration": 7.825
+    },
+    {
+      "text": "People could earn contextual recognition by:",
+      "start": 90.345,
+      "duration": 3.6
+    },
+    {
+      "text": "maintaining a reliable node;",
+      "start": 94.125,
+      "duration": 2.95
+    },
+    {
+      "text": "preserving public artifacts;",
+      "start": 97.255,
+      "duration": 2.675
+    },
+    {
+      "text": "tending an archive;",
+      "start": 100.11,
+      "duration": 2.2
+    },
+    {
+      "text": "facilitating difficult gatherings;",
+      "start": 102.49,
+      "duration": 3.1
+    },
+    {
+      "text": "translating between cities;",
+      "start": 105.77,
+      "duration": 2.675
+    },
+    {
+      "text": "contributing compute;",
+      "start": 108.625,
+      "duration": 2.225
+    },
+    {
+      "text": "ratifying crux maps;",
+      "start": 111.03,
+      "duration": 2.5
+    },
+    {
+      "text": "documenting provenance;",
+      "start": 113.71,
+      "duration": 2.4
+    },
+    {
+      "text": "helping newcomers understand a region;",
+      "start": 116.29,
+      "duration": 3.575
+    },
+    {
+      "text": "creating work that illuminates a dark region.",
+      "start": 120.045,
+      "duration": 3.85
+    },
+    {
+      "text": "The economy should separate three things commonly collapsed into one token.",
+      "start": 124.075,
+      "duration": 5.675
+    },
+    {
+      "text": "Money",
+      "start": 129.93,
+      "duration": 1.45
+    },
+    {
+      "text": "Used for actual payments: compute, storage, commissions, hosting, labour, subscriptions, or publication. This may be ordinary currency, stable value, Bitcoin, or whatever a community chooses.",
+      "start": 131.56,
+      "duration": 14.05
+    },
+    {
+      "text": "Standing",
+      "start": 145.79,
+      "duration": 1.55
+    },
+    {
+      "text": "Non-transferable, contextual recognition earned through contribution. Standing is local to a domain and should decay or remain contestable. It cannot be bought and should never become a universal measure of human worth.",
+      "start": 147.52,
+      "duration": 15.8
+    },
+    {
+      "text": "Governance",
+      "start": 163.5,
+      "duration": 1.55
+    },
+    {
+      "text": "Rights grounded in membership, stewardship, affectedness, and constitutional agreement, not simply in the ability to purchase more voting power.",
+      "start": 165.23,
+      "duration": 9.725
+    },
+    {
+      "text": "This separation prevents wealth from automatically becoming wisdom.",
+      "start": 175.135,
+      "duration": 5.1
+    },
+    {
+      "text": "Cities may still develop forms of exchange that resemble game economies. A community may create credits representing compute contributed, archival storage maintained, or hours of civic tending. But these instruments should remain tied to useful activity rather than becoming speculative promises of future appreciation.",
+      "start": 180.415,
+      "duration": 21.925
+    },
+    {
+      "text": "Instead of buying land, people found and steward places .",
+      "start": 202.52,
+      "duration": 4.35
+    },
+    {
+      "text": "A gallery exists because someone tends it. A borough emerges because meaningful paths converge. A public garden belongs to the commons defined by its charter. An institution gains legitimacy through continued use, care, and accountable governance.",
+      "start": 207.05,
+      "duration": 17.3
+    },
+    {
+      "text": "The topology is grown.",
+      "start": 224.53,
+      "duration": 2.525
+    },
+    {
+      "text": "It is not auctioned.",
+      "start": 227.235,
+      "duration": 2.25
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.6628934144973755,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

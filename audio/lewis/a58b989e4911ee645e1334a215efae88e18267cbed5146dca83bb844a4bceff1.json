@@ -1,0 +1,173 @@
+{
+  "id": "cyberdelic-os-fn-07",
+  "title": "The Hearth: Intelligence Comes Home",
+  "form": "field-note",
+  "release_id": "FN-S0-001",
+  "pages": [
+    "project/cyberdelic-os/field-notes/fn-07/"
+  ],
+  "source_path": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
+  "source_sha256": "0e893f7e468102bd66ac563b7c6eec686e96efe508dbc5410cd8c83f2aee38f2",
+  "document_sha256": "79bba47605c20b7db36efefffb1eb43e9bc3bb34585e4406b6a3f47f540d7716",
+  "text_sha256": "a58b989e4911ee645e1334a215efae88e18267cbed5146dca83bb844a4bceff1",
+  "reading_path": "audio/readings/a58b989e4911ee645e1334a215efae88e18267cbed5146dca83bb844a4bceff1.md",
+  "reading_sha256": "79bba47605c20b7db36efefffb1eb43e9bc3bb34585e4406b6a3f47f540d7716",
+  "reading_length": 4431,
+  "audio_path": "audio/lewis/a58b989e4911ee645e1334a215efae88e18267cbed5146dca83bb844a4bceff1.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "67c6ed6a199a390796f9614441f42e296d04e0d739deb10065215838c5d21897",
+  "audio_length": 3634892,
+  "duration_seconds": 302.83,
+  "chunks": [
+    {
+      "text": "The Hearth: Intelligence Comes Home",
+      "start": 0.0,
+      "duration": 3.1
+    },
+    {
+      "text": "The first computers filled rooms.",
+      "start": 3.28,
+      "duration": 2.95
+    },
+    {
+      "text": "Then the room collapsed into a desk, the desk into a lap, and the lap into a pocket. Machines that once belonged only to governments, universities, and corporations became intimate objects: personal, portable, woven into daily life.",
+      "start": 6.41,
+      "duration": 16.45
+    },
+    {
+      "text": "Artificial intelligence has temporarily reversed that movement.",
+      "start": 23.04,
+      "duration": 4.675
+    },
+    {
+      "text": "The new machines are buildings again. Intelligence is being assembled inside warehouses of processors, cooling systems, electrical substations, water loops, and industrial capital. We encounter it through a narrow opening in the cloud, but the body of the system exists somewhere else, under someone else’s control.",
+      "start": 27.895,
+      "duration": 20.8
+    },
+    {
+      "text": "This may not be its final form.",
+      "start": 48.875,
+      "duration": 2.775
+    },
+    {
+      "text": "As hardware improves and capable open models become smaller, the centre of gravity can move outward again, from the data centre to the edge, from rented intelligence to situated intelligence, from the cloud to the home.",
+      "start": 51.83,
+      "duration": 14.825
+    },
+    {
+      "text": "Cyberdelic OS should be local-first not merely as a technical preference, but as part of its moral architecture.",
+      "start": 66.835,
+      "duration": 8.0
+    },
+    {
+      "text": "An aperture may eventually contain voice notes, unfinished writing, private correspondence, creative history, recurring symbols, abandoned questions, and the subtle record of how a person’s way of seeing changes over time. This is not ordinary user data. It approaches a computational model of an interior life.",
+      "start": 75.015,
+      "duration": 21.625
+    },
+    {
+      "text": "It should have a home.",
+      "start": 96.82,
+      "duration": 1.95
+    },
+    {
+      "text": "Call that home the hearth .",
+      "start": 98.95,
+      "duration": 2.375
+    },
+    {
+      "text": "The hearth is the machine, or small constellation of machines, where an aperture’s memory resides and its familiar continues to live. It may be a laptop, a workstation, a quiet device in the home, or hardware that does not yet exist. Its particular shape matters less than the principle: the person governs the memory, the models, the permissions, and the rhythms of computation.",
+      "start": 101.505,
+      "duration": 24.15
+    },
+    {
+      "text": "The agents do not each require a separate intelligence sealed inside separate weights. A capable local model can remain loaded while different agents take turns inhabiting it. The Gardener arrives with one constitution, history, memory, and set of tools. The Witness arrives with another. The Dissenter is given a different obligation and a different boundary.",
+      "start": 125.835,
+      "duration": 23.45
+    },
+    {
+      "text": "The model is an engine.",
+      "start": 149.465,
+      "duration": 2.425
+    },
+    {
+      "text": "The agent is a continuity of role, memory, permission, and relation.",
+      "start": 152.07,
+      "duration": 5.4
+    },
+    {
+      "text": "This means the underlying model can be replaced without killing the village. A familiar may survive many generations of models because its identity does not reside entirely in the machine producing its next sentence. It resides in the history it has accumulated, the commitments it has been given, the actions it has signed, and the relationship it has formed with its aperture.",
+      "start": 157.65,
+      "duration": 23.125
+    },
+    {
+      "text": "A local village might use several kinds of cognition. A small model listens, routes, and tends. A larger model is awakened for difficult reading or deliberation. Separate models perceive images, transcribe voices, search memory, or map relations. Frontier systems in the cloud remain available, but only by deliberate invitation.",
+      "start": 180.955,
+      "duration": 22.65
+    },
+    {
+      "text": "The cloud becomes a telescope, not a home.",
+      "start": 203.785,
+      "duration": 3.625
+    },
+    {
+      "text": "Local sovereignty must also extend beyond data. Intelligence has a material body. It consumes electricity, water, hardware, and time. Cyberdelic OS should let a person write a compute constitution :",
+      "start": 207.59,
+      "duration": 14.975
+    },
+    {
+      "text": "Use the smallest adequate model. Do not exceed this energy budget. Batch the night shift rather than remaining continuously awake. Run intensive dreaming when local energy is abundant. Ask before sending anything beyond the hearth. Let the village sleep.",
+      "start": 222.745,
+      "duration": 17.4
+    },
+    {
+      "text": "This makes computation perceptible as an ecological decision rather than presenting intelligence as weightless magic.",
+      "start": 240.325,
+      "duration": 8.5
+    },
+    {
+      "text": "The deepest inversion is simple.",
+      "start": 249.005,
+      "duration": 3.0
+    },
+    {
+      "text": "Today, the cloud owns the intelligence and temporarily personalizes it for you.",
+      "start": 252.185,
+      "duration": 6.125
+    },
+    {
+      "text": "At the hearth, the intelligence belongs to the aperture. The models are replaceable. The memory is portable. The permissions are yours. Cryptography can quietly prove identity and provenance without becoming the surface experience. The shared Observatory remains available, but correspondence begins from homes rather than from accounts held inside one central platform.",
+      "start": 258.49,
+      "duration": 23.875
+    },
+    {
+      "text": "The village lives on land you control.",
+      "start": 282.545,
+      "duration": 3.3
+    },
+    {
+      "text": "And from those many local hearths, a shared world can still be made, not through surrendering every interior trace to a centre, but through intentional correspondence between sovereign apertures.",
+      "start": 286.025,
+      "duration": 12.325
+    },
+    {
+      "text": "Intelligence comes home, and then chooses what to share.",
+      "start": 298.53,
+      "duration": 4.3
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.7623330354690552,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

@@ -1,0 +1,148 @@
+{
+  "id": "cyberdelic-os-fn-18",
+  "title": "You Carry the Portal",
+  "form": "field-note",
+  "release_id": "FN-S0-001",
+  "pages": [
+    "project/cyberdelic-os/field-notes/fn-18/"
+  ],
+  "source_path": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
+  "source_sha256": "0e893f7e468102bd66ac563b7c6eec686e96efe508dbc5410cd8c83f2aee38f2",
+  "document_sha256": "864a9d571ef47e52d23944060720d0561f441084cacc7dafda0cf07515c353d9",
+  "text_sha256": "52b6aeb4bda21de4a509f3be94c924b3572703a7385c003df9a38dea24ef7867",
+  "reading_path": "audio/readings/52b6aeb4bda21de4a509f3be94c924b3572703a7385c003df9a38dea24ef7867.md",
+  "reading_sha256": "864a9d571ef47e52d23944060720d0561f441084cacc7dafda0cf07515c353d9",
+  "reading_length": 2281,
+  "audio_path": "audio/lewis/52b6aeb4bda21de4a509f3be94c924b3572703a7385c003df9a38dea24ef7867.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "f3526f0d9be1a63a1338aeacaa12d3ddda98ebe310f297ccca3fd4663acf4a2e",
+  "audio_length": 1947212,
+  "duration_seconds": 162.18,
+  "chunks": [
+    {
+      "text": "You Carry the Portal",
+      "start": 0.0,
+      "duration": 2.25
+    },
+    {
+      "text": "The most powerful machine may remain at home.",
+      "start": 2.43,
+      "duration": 3.65
+    },
+    {
+      "text": "The person does not.",
+      "start": 6.26,
+      "duration": 2.325
+    },
+    {
+      "text": "We think while walking, driving, cooking, travelling, resting, talking, and moving through forests and cities. Many of the most alive thoughts arrive far from the desk. A system designed only for concentrated screen time would misunderstand the life it is meant to serve.",
+      "start": 8.765,
+      "duration": 18.025
+    },
+    {
+      "text": "The Hearth may run on a workstation, laptop, or quiet local node with the compute, storage, models, indexes, and private archive required to sustain the village.",
+      "start": 26.97,
+      "duration": 11.825
+    },
+    {
+      "text": "The phone carries the Portal .",
+      "start": 38.975,
+      "duration": 2.675
+    },
+    {
+      "text": "It does not need to reproduce the whole Hearth. It needs to provide secure, continuous access to it.",
+      "start": 41.83,
+      "duration": 6.925
+    },
+    {
+      "text": "While hiking, the interface may become almost entirely auditory. The person speaks in fragments, changes direction, pauses, and continues later. The phone performs light local work where possible and routes deeper tasks back to the Hearth when connectivity permits.",
+      "start": 48.935,
+      "duration": 18.175
+    },
+    {
+      "text": "When the path disappears, nothing is lost. Voice notes, images, links, locations, and thoughts remain locally queued and synchronize when the connection returns.",
+      "start": 67.29,
+      "duration": 11.1
+    },
+    {
+      "text": "The person might say:",
+      "start": 78.57,
+      "duration": 2.1
+    },
+    {
+      "text": "Leave this near the forest and dark-region discussion.",
+      "start": 80.85,
+      "duration": 4.225
+    },
+    {
+      "text": "Invite the Jason lens and the technical planner to sit with this, but do not interrupt me unless they find something genuinely new.",
+      "start": 85.255,
+      "duration": 8.925
+    },
+    {
+      "text": "Read me the strongest disagreement from yesterday's Writing Table.",
+      "start": 94.36,
+      "duration": 5.075
+    },
+    {
+      "text": "Give me a ten-minute constellation for this walk.",
+      "start": 99.615,
+      "duration": 3.775
+    },
+    {
+      "text": "The village continues working without demanding that the person remain inside its interface.",
+      "start": 103.57,
+      "duration": 6.725
+    },
+    {
+      "text": "Later, at a larger screen, the same activity becomes spatially visible: agents gathered around a question, a new path worn into the Field, an unresolved fork, a source carried from another city, or a clearing formed around a sequence of voice notes.",
+      "start": 110.475,
+      "duration": 17.35
+    },
+    {
+      "text": "This creates a useful division:",
+      "start": 128.005,
+      "duration": 2.95
+    },
+    {
+      "text": "The mobile device is where life enters the system. The Hearth is where it is tended. The visual world is where its relationships become visible.",
+      "start": 131.135,
+      "duration": 9.625
+    },
+    {
+      "text": "Local-first does not mean physically trapped at one machine.",
+      "start": 140.94,
+      "duration": 4.3
+    },
+    {
+      "text": "It means that the home node remains the authority over memory, permissions, models, and identity while many interfaces can reach it under the person's control.",
+      "start": 145.42,
+      "duration": 10.975
+    },
+    {
+      "text": "The Portal should be portable.",
+      "start": 156.575,
+      "duration": 2.7
+    },
+    {
+      "text": "The house should remain sovereign.",
+      "start": 159.455,
+      "duration": 2.725
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.6210665106773376,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

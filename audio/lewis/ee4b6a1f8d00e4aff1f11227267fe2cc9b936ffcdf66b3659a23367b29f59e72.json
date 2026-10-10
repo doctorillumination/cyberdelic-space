@@ -1,0 +1,184 @@
+{
+  "id": "cyberdelic-os-fn-30",
+  "title": "A Portal Opens",
+  "form": "field-note",
+  "release_id": "FN-S0-003",
+  "pages": [
+    "project/cyberdelic-os/field-notes/fn-30/",
+    "project/cyberdelic-os/fn-s0-003/"
+  ],
+  "source_path": "living-content/cyberdelic-os/fn-s0-003/v000001.md",
+  "source_sha256": "f8c39cd493df269b8d665ec2e31293b2f143a5c7ddcdde36ac5a62c5f95963e5",
+  "document_sha256": "f8c39cd493df269b8d665ec2e31293b2f143a5c7ddcdde36ac5a62c5f95963e5",
+  "text_sha256": "ee4b6a1f8d00e4aff1f11227267fe2cc9b936ffcdf66b3659a23367b29f59e72",
+  "reading_path": "audio/readings/ee4b6a1f8d00e4aff1f11227267fe2cc9b936ffcdf66b3659a23367b29f59e72.md",
+  "reading_sha256": "f8c39cd493df269b8d665ec2e31293b2f143a5c7ddcdde36ac5a62c5f95963e5",
+  "reading_length": 3439,
+  "audio_path": "audio/lewis/ee4b6a1f8d00e4aff1f11227267fe2cc9b936ffcdf66b3659a23367b29f59e72.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "33b4b3f0563102d7729dbaa33e98e40052f7f0b959710ba8f6a48b756b79889c",
+  "audio_length": 2615948,
+  "duration_seconds": 217.915,
+  "chunks": [
+    {
+      "text": "A Portal Opens",
+      "start": 0.0,
+      "duration": 2.05
+    },
+    {
+      "text": "Many of these field notes began while I was hiking on a mountain in the forests of Vancouver Island.",
+      "start": 2.23,
+      "duration": 7.0
+    },
+    {
+      "text": "Walking changes thought.",
+      "start": 9.41,
+      "duration": 2.375
+    },
+    {
+      "text": "The body moves, the mind loosens, and the world begins to offer material. The smell of the air, the movement of light through cedar and fir, the rhythm of climbing, and the soft fascination of the forest all change what becomes salient. Ideas arrive there that do not arrive at a desk.",
+      "start": 11.965,
+      "duration": 19.025
+    },
+    {
+      "text": "But the most powerful machine remains at home.",
+      "start": 31.17,
+      "duration": 3.575
+    },
+    {
+      "text": "Cyberdelic OS has long imagined the Hearth : a computer where private memory and local intelligence can live under the authority of the person whose life they concern.",
+      "start": 34.925,
+      "duration": 11.725
+    },
+    {
+      "text": "The Hearth is not a distant data centre. It is not rented intelligence hidden behind a cloud account. It is a private model downloaded onto a computer in your own home, running through software you control.",
+      "start": 46.83,
+      "duration": 14.125
+    },
+    {
+      "text": "Its memory remains on hardware you govern. Your conversations and archive do not have to be surrendered to another company's servers, policies, or business model. Privacy is not only promised. Sovereignty over your data is built into where the system lives.",
+      "start": 61.135,
+      "duration": 16.775
+    },
+    {
+      "text": "Computation also returns to an energy scale that can be perceived and governed, whether the home draws from solar panels, a hydroelectric grid, or another arrangement.",
+      "start": 78.09,
+      "duration": 11.675
+    },
+    {
+      "text": "You can choose the model.",
+      "start": 89.945,
+      "duration": 2.3
+    },
+    {
+      "text": "You can decide what it may remember.",
+      "start": 92.425,
+      "duration": 3.0
+    },
+    {
+      "text": "You can delete what it has held.",
+      "start": 95.605,
+      "duration": 2.75
+    },
+    {
+      "text": "You can let it sleep.",
+      "start": 98.535,
+      "duration": 2.075
+    },
+    {
+      "text": "You can turn it off.",
+      "start": 100.79,
+      "duration": 2.025
+    },
+    {
+      "text": "Locality makes privacy, agency, and accountability concrete.",
+      "start": 102.995,
+      "duration": 5.175
+    },
+    {
+      "text": "But the person does not remain at home.",
+      "start": 108.35,
+      "duration": 3.175
+    },
+    {
+      "text": "This is why the Hearth needs a Portal .",
+      "start": 111.705,
+      "duration": 3.35
+    },
+    {
+      "text": "We have now built the first small version. An iPhone listens and turns voice into text on the device. Only that text crosses an encrypted, authenticated threshold to a private model running on the home computer. The model responds from the Hearth. The answer returns to the phone and becomes a voice again.",
+      "start": 115.235,
+      "duration": 20.875
+    },
+    {
+      "text": "The house stays where it is.",
+      "start": 136.29,
+      "duration": 2.5
+    },
+    {
+      "text": "The doorway travels.",
+      "start": 138.97,
+      "duration": 2.175
+    },
+    {
+      "text": "I can be in the forest, moving through weather and beauty, speaking an idea before it hardens. I can remain attentive to the world while opening a conversation with the home base where Cyberdelic OS is being built. The intelligence accompanies thought without asking the body to return to a chair or the eyes to disappear into a screen.",
+      "start": 141.325,
+      "duration": 21.525
+    },
+    {
+      "text": "Portal is therefore not an escape from the physical world.",
+      "start": 163.03,
+      "duration": 4.4
+    },
+    {
+      "text": "Its purpose is to let the physical world enter the system.",
+      "start": 167.61,
+      "duration": 4.575
+    },
+    {
+      "text": "The forest affects the thought. The thought crosses the Portal. The Hearth answers. The answer returns to a moving body beneath an actual sky.",
+      "start": 172.365,
+      "duration": 9.9
+    },
+    {
+      "text": "This is one world with many interfaces, and one of those interfaces can now be carried in a pocket.",
+      "start": 182.445,
+      "duration": 6.9
+    },
+    {
+      "text": "The prototype remains private while its security boundary is tested. It is not yet the living archive, the village of agents, or the whole Cyberdelic OS. It is one beginning organ: one local Hearth, one portable Portal, one bounded conversation that can end and be forgotten.",
+      "start": 189.525,
+      "duration": 19.35
+    },
+    {
+      "text": "The computer stays home.",
+      "start": 209.055,
+      "duration": 2.4
+    },
+    {
+      "text": "The intelligence remains local.",
+      "start": 211.635,
+      "duration": 3.025
+    },
+    {
+      "text": "The person returns to the world.",
+      "start": 214.84,
+      "duration": 3.075
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.666108250617981,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

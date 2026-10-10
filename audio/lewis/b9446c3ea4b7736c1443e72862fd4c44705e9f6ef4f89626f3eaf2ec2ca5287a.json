@@ -1,0 +1,168 @@
+{
+  "id": "cyberdelic-os-fn-09",
+  "title": "The Lensmaker: Portable Apertures",
+  "form": "field-note",
+  "release_id": "FN-S0-001",
+  "pages": [
+    "project/cyberdelic-os/field-notes/fn-09/"
+  ],
+  "source_path": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
+  "source_sha256": "0e893f7e468102bd66ac563b7c6eec686e96efe508dbc5410cd8c83f2aee38f2",
+  "document_sha256": "c96a0a0310896aa4610a2f07115fd74b9f517f25c3016dffe0c5bf91eefb1b32",
+  "text_sha256": "b9446c3ea4b7736c1443e72862fd4c44705e9f6ef4f89626f3eaf2ec2ca5287a",
+  "reading_path": "audio/readings/b9446c3ea4b7736c1443e72862fd4c44705e9f6ef4f89626f3eaf2ec2ca5287a.md",
+  "reading_sha256": "c96a0a0310896aa4610a2f07115fd74b9f517f25c3016dffe0c5bf91eefb1b32",
+  "reading_length": 3090,
+  "audio_path": "audio/lewis/b9446c3ea4b7736c1443e72862fd4c44705e9f6ef4f89626f3eaf2ec2ca5287a.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "7fa80195c60c591256642ad8e4e8a336e9da828b6ca2c4ee0e33aeb613f25712",
+  "audio_length": 2601548,
+  "duration_seconds": 216.7,
+  "chunks": [
+    {
+      "text": "The Lensmaker: Portable Apertures",
+      "start": 0.0,
+      "duration": 3.025
+    },
+    {
+      "text": "A Jason Silva agent should not attempt to predict what Jason would say in every moment.",
+      "start": 3.205,
+      "duration": 6.825
+    },
+    {
+      "text": "That would be a simulation of personality: a digital twin, inevitably incomplete and easily mistaken for the person it imitates.",
+      "start": 10.21,
+      "duration": 9.6
+    },
+    {
+      "text": "The more useful artifact is a lens : a portable pattern of attention.",
+      "start": 19.99,
+      "duration": 5.45
+    },
+    {
+      "text": "What does this aperture notice? Which distant ideas does it instinctively join? What becomes luminous in its presence? Where does it find existential charge, technological possibility, poetic intensity, danger, or awe? What remains invisible to it? What contradictions does it carry without resolving?",
+      "start": 25.62,
+      "duration": 20.425
+    },
+    {
+      "text": "The purpose of the Jason lens would not be to replace Jason. It would be to let another person temporarily encounter a question through a saliency structure shaped by Jason's work and deliberately calibrated with him.",
+      "start": 46.225,
+      "duration": 14.4
+    },
+    {
+      "text": "The general model supplies linguistic and reasoning capacity.",
+      "start": 60.805,
+      "duration": 5.025
+    },
+    {
+      "text": "The lens supplies orientation.",
+      "start": 66.01,
+      "duration": 3.05
+    },
+    {
+      "text": "A lens might contain:",
+      "start": 69.24,
+      "duration": 2.475
+    },
+    {
+      "text": "an authorized source field of books, essays, talks, films, transcripts, voice notes, and recurring references;",
+      "start": 71.895,
+      "duration": 8.075
+    },
+    {
+      "text": "a constitution describing values, obligations, boundaries, and characteristic questions;",
+      "start": 80.15,
+      "duration": 6.875
+    },
+    {
+      "text": "a saliency map showing the concepts and relations habitually foregrounded;",
+      "start": 87.205,
+      "duration": 5.9
+    },
+    {
+      "text": "examples of responses that feel near to or far from the aperture;",
+      "start": 93.285,
+      "duration": 5.025
+    },
+    {
+      "text": "declared uncertainties and unresolved tensions;",
+      "start": 98.49,
+      "duration": 4.1
+    },
+    {
+      "text": "permitted tools and private-data boundaries;",
+      "start": 102.77,
+      "duration": 3.575
+    },
+    {
+      "text": "a signed identity and version history.",
+      "start": 106.525,
+      "duration": 3.5
+    },
+    {
+      "text": "Its cognitive movement might be explicit:",
+      "start": 110.205,
+      "duration": 3.525
+    },
+    {
+      "text": "Attend: What here carries charge for this aperture? Retrieve: What source material genuinely bears on it? Connect: Which unexpected relation illuminates it? Intensify: What has been rendered ordinary that deserves renewed saliency? Ground: Which part is sourced, and which is new synthesis? Offer: Speak through the lens without claiming to be the person.",
+      "start": 113.91,
+      "duration": 23.125
+    },
+    {
+      "text": "The lens should be made collaboratively. The Lensmaker proposes an initial aperture from the source field. The living person then calibrates through contrast:",
+      "start": 137.215,
+      "duration": 10.3
+    },
+    {
+      "text": "The rhythm sounds like me, but I would not notice that first. The energy is right; the certainty is wrong. This metaphor is mine. That answer is an imitation of my vocabulary but not my seeing. This feels closer to who I am becoming.",
+      "start": 147.695,
+      "duration": 15.85
+    },
+    {
+      "text": "Those corrections may be more valuable than the original corpus. They identify not merely what the person has said, but the structure by which they recognize themselves.",
+      "start": 163.725,
+      "duration": 10.875
+    },
+    {
+      "text": "A lens can remain prompt-, retrieval-, and example-based at first. It does not require training a foundational model. Later, with permission and enough calibration material, a lightweight adapter may encode some recurring behaviours while the corpus, constitution, and memories remain independently portable.",
+      "start": 174.78,
+      "duration": 20.7
+    },
+    {
+      "text": "The highest measure of a successful lens is not that it sounds convincingly like its creator.",
+      "start": 195.66,
+      "duration": 6.55
+    },
+    {
+      "text": "It is that the borrower begins noticing realities they previously walked past.",
+      "start": 202.39,
+      "duration": 5.625
+    },
+    {
+      "text": "A book carries another person's words.",
+      "start": 208.195,
+      "duration": 3.175
+    },
+    {
+      "text": "A lens carries, provisionally and imperfectly, a way of attending.",
+      "start": 211.55,
+      "duration": 5.15
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.6261113882064819,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

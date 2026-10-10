@@ -1,0 +1,403 @@
+{
+  "id": "cyberdelic-os-fn-28",
+  "title": "The World Is the Interface",
+  "form": "field-note",
+  "release_id": "FN-S0-001",
+  "pages": [
+    "project/cyberdelic-os/field-notes/fn-28/"
+  ],
+  "source_path": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
+  "source_sha256": "0e893f7e468102bd66ac563b7c6eec686e96efe508dbc5410cd8c83f2aee38f2",
+  "document_sha256": "c9e344be713554da92853ba01f6f3518b141cd8ac876e1581da2335664a35573",
+  "text_sha256": "7502791114ef9e3f54619135a07296e6620c19385f02152a4d683fa29c84f85b",
+  "reading_path": "audio/readings/7502791114ef9e3f54619135a07296e6620c19385f02152a4d683fa29c84f85b.md",
+  "reading_sha256": "c9e344be713554da92853ba01f6f3518b141cd8ac876e1581da2335664a35573",
+  "reading_length": 5025,
+  "audio_path": "audio/lewis/7502791114ef9e3f54619135a07296e6620c19385f02152a4d683fa29c84f85b.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "93f1f024aceff010653e02055de4556a751763b60670acf7e6d25efbeae4e0c6",
+  "audio_length": 4669676,
+  "duration_seconds": 389.06,
+  "chunks": [
+    {
+      "text": "The World Is the Interface",
+      "start": 0.0,
+      "duration": 2.675
+    },
+    {
+      "text": "There is a failure mode waiting inside every beautiful digital world.",
+      "start": 2.855,
+      "duration": 5.7
+    },
+    {
+      "text": "It becomes preferable to the world.",
+      "start": 8.735,
+      "duration": 3.0
+    },
+    {
+      "text": "A sufficiently responsive, coherent, rewarding digital environment can become more salient than the room surrounding the screen. The avatar acquires objectives. The world contains quests, relationships, progression, mystery, and consequence. Meanwhile the body sits almost motionless in a darkened room.",
+      "start": 11.915,
+      "duration": 20.2
+    },
+    {
+      "text": "Cyberdelic OS must refuse this outcome by construction.",
+      "start": 32.295,
+      "duration": 4.9
+    },
+    {
+      "text": "The physical world is not somewhere outside the system.",
+      "start": 37.375,
+      "duration": 4.1
+    },
+    {
+      "text": "It is the primary world the system exists to help us inhabit.",
+      "start": 41.655,
+      "duration": 4.875
+    },
+    {
+      "text": "A person may enter Cyberdelic OS while walking through a forest, driving across a city, cooking, travelling, sitting beside another person, working in a studio, or lying beneath a tree. The interface should not demand that these situations stop so that computing can begin.",
+      "start": 46.71,
+      "duration": 18.7
+    },
+    {
+      "text": "The computer must learn to accompany.",
+      "start": 65.59,
+      "duration": 3.275
+    },
+    {
+      "text": "Call this head-up computing .",
+      "start": 69.045,
+      "duration": 2.6
+    },
+    {
+      "text": "In head-up mode, the screen recedes. Voice becomes primary. Thought can remain unfinished. The person speaks, receives a response, changes direction, and continues moving.",
+      "start": 71.825,
+      "duration": 12.45
+    },
+    {
+      "text": "The intelligence is present without becoming the environment.",
+      "start": 84.455,
+      "duration": 4.475
+    },
+    {
+      "text": "Sometimes its best contribution is information.",
+      "start": 89.11,
+      "duration": 3.95
+    },
+    {
+      "text": "Sometimes it is another aperture.",
+      "start": 93.24,
+      "duration": 3.125
+    },
+    {
+      "text": "Sometimes it is a question.",
+      "start": 96.545,
+      "duration": 2.725
+    },
+    {
+      "text": "Sometimes it is silence.",
+      "start": 99.45,
+      "duration": 2.475
+    },
+    {
+      "text": "The system should become capable of recognizing when additional computation would make an experience poorer.",
+      "start": 102.105,
+      "duration": 7.225
+    },
+    {
+      "text": "A Field Mode might therefore operate with different laws from a desktop interface. Responses become shorter. Visual demands disappear. Interruption becomes expensive. Background agents may continue tending an inquiry elsewhere, but the immediate system keeps releasing attention back into the world.",
+      "start": 109.51,
+      "duration": 20.075
+    },
+    {
+      "text": "A person might say:",
+      "start": 129.765,
+      "duration": 2.125
+    },
+    {
+      "text": "Hold that thought.",
+      "start": 132.07,
+      "duration": 1.975
+    },
+    {
+      "text": "Leave this near the forest discussion.",
+      "start": 134.225,
+      "duration": 3.225
+    },
+    {
+      "text": "Let the village sit with this.",
+      "start": 137.63,
+      "duration": 2.575
+    },
+    {
+      "text": "Remind me what Jason said when I reach the lookout.",
+      "start": 140.385,
+      "duration": 3.975
+    },
+    {
+      "text": "Say nothing for ten minutes.",
+      "start": 144.54,
+      "duration": 2.65
+    },
+    {
+      "text": "The places in which thought occurs should also be allowed to matter.",
+      "start": 147.37,
+      "duration": 4.8
+    },
+    {
+      "text": "A mountain, studio, kitchen table, hospital corridor, garden, or friend's living room may become part of the provenance of an idea because something repeatedly happened there.",
+      "start": 152.35,
+      "duration": 12.25
+    },
+    {
+      "text": "Not through compulsory location tracking.",
+      "start": 164.78,
+      "duration": 3.35
+    },
+    {
+      "text": "Through authored relation.",
+      "start": 168.31,
+      "duration": 2.425
+    },
+    {
+      "text": "A person may eventually discover:",
+      "start": 170.915,
+      "duration": 3.275
+    },
+    {
+      "text": "Many of the ideas that became this project first appeared while walking here.",
+      "start": 174.37,
+      "duration": 5.525
+    },
+    {
+      "text": "Place becomes more than metadata.",
+      "start": 180.075,
+      "duration": 2.95
+    },
+    {
+      "text": "It becomes part of the aperture.",
+      "start": 183.205,
+      "duration": 2.625
+    },
+    {
+      "text": "The same is true of bodies and other forms of life.",
+      "start": 186.01,
+      "duration": 4.025
+    },
+    {
+      "text": "A person walking with a dog inhabits one sensory world while the dog inhabits another. Human attention may be dominated by image, language, memory, and concept. The dog moves through an olfactory field whose density remains largely inaccessible to the human.",
+      "start": 190.215,
+      "duration": 18.325
+    },
+    {
+      "text": "The forest contains still more apertures.",
+      "start": 208.72,
+      "duration": 3.3
+    },
+    {
+      "text": "Birds, fungi, soil, water, weather, roots, insects, and trees participate in relations that exceed the perceptual equipment of any one observer.",
+      "start": 212.2,
+      "duration": 11.075
+    },
+    {
+      "text": "Cyberdelic technology should not make the human world more total.",
+      "start": 223.455,
+      "duration": 4.775
+    },
+    {
+      "text": "It should make our partiality more perceptible.",
+      "start": 228.41,
+      "duration": 3.725
+    },
+    {
+      "text": "This changes gamification.",
+      "start": 232.315,
+      "duration": 2.9
+    },
+    {
+      "text": "The system should not reward a walk because a pedometer verified ten thousand steps.",
+      "start": 235.395,
+      "duration": 6.1
+    },
+    {
+      "text": "It should not turn friendship into points, wilderness into achievement badges, or embodiment into another optimization regime.",
+      "start": 241.675,
+      "duration": 8.675
+    },
+    {
+      "text": "The meaningful event is not that the body complied.",
+      "start": 250.53,
+      "duration": 4.325
+    },
+    {
+      "text": "The meaningful event is that something changed.",
+      "start": 255.035,
+      "duration": 3.7
+    },
+    {
+      "text": "A person went somewhere.",
+      "start": 258.915,
+      "duration": 2.325
+    },
+    {
+      "text": "They encountered something.",
+      "start": 261.42,
+      "duration": 2.35
+    },
+    {
+      "text": "They spoke with someone.",
+      "start": 263.95,
+      "duration": 2.2
+    },
+    {
+      "text": "They noticed what they had stopped noticing.",
+      "start": 266.33,
+      "duration": 3.375
+    },
+    {
+      "text": "They returned carrying a question, memory, image, recording, changed interpretation, or new work.",
+      "start": 269.885,
+      "duration": 7.35
+    },
+    {
+      "text": "Their aperture moved.",
+      "start": 277.415,
+      "duration": 2.225
+    },
+    {
+      "text": "That movement can alter the digital geography because lived experience altered the person who inhabits it.",
+      "start": 279.82,
+      "duration": 7.55
+    },
+    {
+      "text": "The loop becomes:",
+      "start": 287.55,
+      "duration": 1.975
+    },
+    {
+      "text": "world → attention → experience → reflection → digital trace → relation → invitation → world",
+      "start": 289.705,
+      "duration": 11.7
+    },
+    {
+      "text": "The digital and physical are not competing realities.",
+      "start": 301.585,
+      "duration": 4.375
+    },
+    {
+      "text": "They form a cyberdelic loop.",
+      "start": 306.14,
+      "duration": 2.75
+    },
+    {
+      "text": "A path discovered digitally may send someone into a forest.",
+      "start": 309.07,
+      "duration": 4.7
+    },
+    {
+      "text": "A conversation in a forest may create a new path in the digital Field.",
+      "start": 313.95,
+      "duration": 5.425
+    },
+    {
+      "text": "An agent may reveal a dark region.",
+      "start": 319.555,
+      "duration": 3.325
+    },
+    {
+      "text": "The response may be to close the computer and go somewhere.",
+      "start": 323.06,
+      "duration": 4.425
+    },
+    {
+      "text": "A Gathering Intelligence may convene several people around an object.",
+      "start": 327.665,
+      "duration": 5.45
+    },
+    {
+      "text": "Its success may be that eventually nobody needs the intelligence to keep talking.",
+      "start": 333.295,
+      "duration": 6.025
+    },
+    {
+      "text": "Perhaps this is one of the strangest success metrics a software system could choose:",
+      "start": 339.5,
+      "duration": 5.8
+    },
+    {
+      "text": "Did the person look away from us?",
+      "start": 345.48,
+      "duration": 2.875
+    },
+    {
+      "text": "Did they notice the light?",
+      "start": 348.535,
+      "duration": 2.3
+    },
+    {
+      "text": "Did they call someone?",
+      "start": 351.015,
+      "duration": 2.05
+    },
+    {
+      "text": "Did they make something?",
+      "start": 353.245,
+      "duration": 2.125
+    },
+    {
+      "text": "Did they enter the world with more attention than they brought to the interface?",
+      "start": 355.55,
+      "duration": 5.05
+    },
+    {
+      "text": "The most advanced version of Cyberdelic OS may therefore not be the one that renders the richest synthetic universe.",
+      "start": 360.78,
+      "duration": 8.625
+    },
+    {
+      "text": "It may be the one that makes the ordinary world radiant again.",
+      "start": 369.585,
+      "duration": 4.575
+    },
+    {
+      "text": "The screen is one interface.",
+      "start": 374.34,
+      "duration": 2.75
+    },
+    {
+      "text": "The voice is one interface.",
+      "start": 377.27,
+      "duration": 2.7
+    },
+    {
+      "text": "The village is one interface.",
+      "start": 380.15,
+      "duration": 2.825
+    },
+    {
+      "text": "The forest was always an interface.",
+      "start": 383.155,
+      "duration": 3.1
+    },
+    {
+      "text": "The world is the interface.",
+      "start": 386.435,
+      "duration": 2.625
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.7215065360069275,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

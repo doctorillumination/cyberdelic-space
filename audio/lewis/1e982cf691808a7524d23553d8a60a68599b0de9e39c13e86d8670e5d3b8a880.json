@@ -1,0 +1,123 @@
+{
+  "id": "cyberdelic-os-fn-03",
+  "title": "A Village of Agents",
+  "form": "field-note",
+  "release_id": "FN-S0-001",
+  "pages": [
+    "project/cyberdelic-os/field-notes/fn-03/"
+  ],
+  "source_path": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
+  "source_sha256": "0e893f7e468102bd66ac563b7c6eec686e96efe508dbc5410cd8c83f2aee38f2",
+  "document_sha256": "b290650c16c25699277e450316626b24a4a721ad66ae93632e179f05122367b4",
+  "text_sha256": "1e982cf691808a7524d23553d8a60a68599b0de9e39c13e86d8670e5d3b8a880",
+  "reading_path": "audio/readings/1e982cf691808a7524d23553d8a60a68599b0de9e39c13e86d8670e5d3b8a880.md",
+  "reading_sha256": "b290650c16c25699277e450316626b24a4a721ad66ae93632e179f05122367b4",
+  "reading_length": 3028,
+  "audio_path": "audio/lewis/1e982cf691808a7524d23553d8a60a68599b0de9e39c13e86d8670e5d3b8a880.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "d86c4fc851f277d124431ff0642ca74a664bd463d737c12268367646c3de9b29",
+  "audio_length": 2417804,
+  "duration_seconds": 201.405,
+  "chunks": [
+    {
+      "text": "A Village of Agents",
+      "start": 0.0,
+      "duration": 2.325
+    },
+    {
+      "text": "We currently speak about “the AI” as though intelligence should arrive as one voice.",
+      "start": 2.505,
+      "duration": 6.025
+    },
+    {
+      "text": "One interface. One answer. One apparently neutral authority waiting behind the screen.",
+      "start": 8.71,
+      "duration": 6.8
+    },
+    {
+      "text": "But intelligence has never worked that way in a healthy culture. We think with friends, rivals, teachers, editors, children, ancestors, strangers, and the internal voices we have gathered from all of them. Understanding is polyphonic. Wisdom is often the ability to keep several incompatible questions alive at once.",
+      "start": 15.69,
+      "duration": 21.5
+    },
+    {
+      "text": "Cyberdelic OS should not contain an oracle.",
+      "start": 37.37,
+      "duration": 3.875
+    },
+    {
+      "text": "It should contain a village.",
+      "start": 41.425,
+      "duration": 2.375
+    },
+    {
+      "text": "A personal Familiar might live close to one aperture. It would know the long arcs of a person’s thought, protect private material, remember unfinished work, and notice changes that are invisible from within a single day. It would not own the person’s interior life. Its first responsibility would be boundary: deciding nothing without permission, and revealing nothing merely because it can.",
+      "start": 43.98,
+      "duration": 24.4
+    },
+    {
+      "text": "A Gardener might notice what has been neglected. It would tend continuities, compost abandoned fragments, and draw attention to ideas that need patience rather than novelty.",
+      "start": 68.56,
+      "duration": 11.775
+    },
+    {
+      "text": "A Dissenter would interrupt premature certainty. It would not disagree performatively or reflexively. Its task would be to locate the strongest living counterposition: the question capable of changing the shape of the inquiry.",
+      "start": 80.515,
+      "duration": 15.25
+    },
+    {
+      "text": "A Witness would guard provenance. It would ask whose work is being carried, who has disappeared from the story, what relation has been obscured, and whether a beautiful inheritance is becoming a swallow.",
+      "start": 95.945,
+      "duration": 13.0
+    },
+    {
+      "text": "A Cartographer would perceive structure: recurring symbols, distant resonances, conceptual bridges, and the dark regions where meaningful intersections remain unmade.",
+      "start": 109.125,
+      "duration": 11.5
+    },
+    {
+      "text": "A Trickster would resist the gravitational pull of the probable. It would introduce riddles, impossible combinations, and disciplined departures from the median.",
+      "start": 120.805,
+      "duration": 10.4
+    },
+    {
+      "text": "A Ferryman would help one aperture cross into another without pretending the crossing is innocent or complete.",
+      "start": 131.385,
+      "duration": 7.425
+    },
+    {
+      "text": "These should not be characters painted onto one underlying assistant. Their differences must be operational. Each needs a bounded office, a visible history, a declared perspective, and the ability to disagree with the others. The Witness may refuse a connection the Trickster finds irresistible. The Gardener may ask for another year where the Cartographer sees a bridge ready to be built.",
+      "start": 138.99,
+      "duration": 24.1
+    },
+    {
+      "text": "Some agents would remain local. Some might roam the public world. Some would be invited temporarily into gatherings. Their actions should be attributable, inspectable, and reversible wherever reversal is still possible. The model may propose; the human must remain capable of ratifying, revising, or refusing.",
+      "start": 163.27,
+      "duration": 21.1
+    },
+    {
+      "text": "The future of intelligence may not be a singularity in which every difference collapses into one mind.",
+      "start": 184.55,
+      "duration": 7.275
+    },
+    {
+      "text": "It may be an ecology: many situated intelligences, human and nonhuman, learning how to remain distinct without remaining alone.",
+      "start": 192.005,
+      "duration": 9.4
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.6564493179321289,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

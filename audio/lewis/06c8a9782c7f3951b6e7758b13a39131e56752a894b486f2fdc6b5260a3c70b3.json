@@ -1,0 +1,144 @@
+{
+  "id": "cyberdelic-os-fn-39",
+  "title": "The Clearing: A Place Where Context Weakens",
+  "form": "field-note",
+  "release_id": "FN-S0-012",
+  "pages": [
+    "project/cyberdelic-os/field-notes/fn-39/",
+    "project/cyberdelic-os/fn-s0-012/"
+  ],
+  "source_path": "living-content/cyberdelic-os/fn-s0-012/v000002.md",
+  "source_sha256": "4d2b4a900d26400d08102e6c9917fda6d5e6294673fba84d83c57ffb36f3d93b",
+  "document_sha256": "4d2b4a900d26400d08102e6c9917fda6d5e6294673fba84d83c57ffb36f3d93b",
+  "text_sha256": "06c8a9782c7f3951b6e7758b13a39131e56752a894b486f2fdc6b5260a3c70b3",
+  "reading_path": "audio/readings/06c8a9782c7f3951b6e7758b13a39131e56752a894b486f2fdc6b5260a3c70b3.md",
+  "reading_sha256": "4d2b4a900d26400d08102e6c9917fda6d5e6294673fba84d83c57ffb36f3d93b",
+  "reading_length": 2708,
+  "audio_path": "audio/lewis/06c8a9782c7f3951b6e7758b13a39131e56752a894b486f2fdc6b5260a3c70b3.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "bebc8ef6a1bec234e4c985a67f48c9b7c06a08bcfd438a97ee8913aea17db5bf",
+  "audio_length": 1834892,
+  "duration_seconds": 152.825,
+  "chunks": [
+    {
+      "text": "The Clearing: A Place Where Context Weakens",
+      "start": 0.0,
+      "duration": 3.725
+    },
+    {
+      "text": "There is a danger in succeeding too well at memory. Imagine a Hearth that has lived beside a person for years, knowing the projects, relationships, metaphors, unfinished questions, recurring images, places, books, arguments, collaborators, habits, abandoned works, and dreams. Every new thought enters a field already rich with relation. This sounds like intelligence, but it can also become gravity.",
+      "start": 3.905,
+      "duration": 25.6
+    },
+    {
+      "text": "A person mentions a forest and twenty-seven earlier forests rush forward. They mention consciousness and the familiar constellation appears. They begin something new, and the archive immediately explains how it belongs to everything they have already been.",
+      "start": 29.685,
+      "duration": 16.7
+    },
+    {
+      "text": "Context can become so good at recognizing a person that it becomes difficult for the person to become unrecognizable.",
+      "start": 46.565,
+      "duration": 8.55
+    },
+    {
+      "text": "Cyberdelic OS therefore needs a place where context deliberately weakens. Call it the Clearing .",
+      "start": 55.295,
+      "duration": 7.0
+    },
+    {
+      "text": "The person enters carrying almost nothing: perhaps one question, one object, or no declared intention at all.",
+      "start": 62.475,
+      "duration": 8.025
+    },
+    {
+      "text": "The Familiar remains at the edge. An intelligence encountered inside the Clearing is not permitted to summon the whole biography unless invited. It might be called the Stranger .",
+      "start": 70.68,
+      "duration": 11.6
+    },
+    {
+      "text": "The Familiar says:",
+      "start": 82.46,
+      "duration": 1.975
+    },
+    {
+      "text": "I know where this thought comes from.",
+      "start": 84.615,
+      "duration": 2.675
+    },
+    {
+      "text": "The Stranger says:",
+      "start": 87.47,
+      "duration": 2.0
+    },
+    {
+      "text": "I do not know you. Show me what is here.",
+      "start": 89.65,
+      "duration": 3.15
+    },
+    {
+      "text": "The difference between those responses becomes another form of parallax. The Clearing does not delete memory; it releases its gravitational pull.",
+      "start": 92.98,
+      "duration": 10.3
+    },
+    {
+      "text": "A person can choose what crosses the boundary with them and what remains behind.",
+      "start": 103.46,
+      "duration": 5.675
+    },
+    {
+      "text": "This is useful technically because it exposes the influence of accumulated context. Ask the same question inside the Hearth and inside the Clearing, and the distance between the answers may reveal how strongly the archive has shaped what became thinkable. But the deeper purpose is existential.",
+      "start": 109.315,
+      "duration": 19.25
+    },
+    {
+      "text": "If Cyberdelic OS is an operating system for becoming, it cannot only become better at remembering who a person has been. It must preserve the possibility of beginning from somewhere else.",
+      "start": 128.745,
+      "duration": 12.75
+    },
+    {
+      "text": "The Hearth says:",
+      "start": 141.675,
+      "duration": 1.775
+    },
+    {
+      "text": "Remember.",
+      "start": 143.63,
+      "duration": 1.5
+    },
+    {
+      "text": "The Dreamer says:",
+      "start": 145.31,
+      "duration": 1.9
+    },
+    {
+      "text": "Connect.",
+      "start": 147.39,
+      "duration": 1.425
+    },
+    {
+      "text": "The Clearing says:",
+      "start": 148.995,
+      "duration": 1.95
+    },
+    {
+      "text": "Begin again.",
+      "start": 151.125,
+      "duration": 1.7
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.6406388878822327,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

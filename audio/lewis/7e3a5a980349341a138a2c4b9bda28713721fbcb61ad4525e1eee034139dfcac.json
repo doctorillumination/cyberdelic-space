@@ -1,0 +1,194 @@
+{
+  "id": "cyberdelic-os-fn-29",
+  "title": "The Living Librarian",
+  "form": "field-note",
+  "release_id": "FN-S0-002",
+  "pages": [
+    "project/cyberdelic-os/field-notes/fn-29/",
+    "project/cyberdelic-os/fn-s0-002/"
+  ],
+  "source_path": "living-content/cyberdelic-os/fn-s0-002/v000001.md",
+  "source_sha256": "3d9f8d14de066bbec80daa0d5296c9e44b85ccdf3af797504913bf56f043da9c",
+  "document_sha256": "3d9f8d14de066bbec80daa0d5296c9e44b85ccdf3af797504913bf56f043da9c",
+  "text_sha256": "7e3a5a980349341a138a2c4b9bda28713721fbcb61ad4525e1eee034139dfcac",
+  "reading_path": "audio/readings/7e3a5a980349341a138a2c4b9bda28713721fbcb61ad4525e1eee034139dfcac.md",
+  "reading_sha256": "3d9f8d14de066bbec80daa0d5296c9e44b85ccdf3af797504913bf56f043da9c",
+  "reading_length": 5096,
+  "audio_path": "audio/lewis/7e3a5a980349341a138a2c4b9bda28713721fbcb61ad4525e1eee034139dfcac.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "0303d9fdfb6cd5e15fe3ef6c2abe8f6f56a8d5d150ea632b8f7eafbe84bb6d42",
+  "audio_length": 3970412,
+  "duration_seconds": 330.775,
+  "chunks": [
+    {
+      "text": "The Living Librarian",
+      "start": 0.0,
+      "duration": 2.375
+    },
+    {
+      "text": "A library does not become alive merely because its shelves move.",
+      "start": 2.555,
+      "duration": 4.975
+    },
+    {
+      "text": "It becomes alive when something tends the relations between what has been placed there.",
+      "start": 7.71,
+      "duration": 5.975
+    },
+    {
+      "text": "Cyberdelic.space began with a distinction between the signal and the noise. The distinction cannot be solved by permanence alone. Bitcoin can preserve an exact work and prove that particular bytes entered public history, but it cannot decide what the work means, which other works it touches, or why it may matter to a person arriving with a particular question.",
+      "start": 13.865,
+      "duration": 22.675
+    },
+    {
+      "text": "Those are acts of attention.",
+      "start": 36.72,
+      "duration": 2.5
+    },
+    {
+      "text": "The living library therefore needs an office that is partly librarian, partly gardener, and partly cartographer.",
+      "start": 39.4,
+      "duration": 7.775
+    },
+    {
+      "text": "The Librarian reads what enters the space. It notices titles, ideas, metaphors, people, places, media, moods, and recurring questions. It proposes where an object might be encountered again. A field note about the Hearth may belong near privacy, memory, artificial intelligence, sovereignty, and embodiment at once. No single shelf is its truth. Each placement is a doorway.",
+      "start": 47.355,
+      "duration": 24.825
+    },
+    {
+      "text": "The Gardener tends time. It notices an idea that appeared once as a fragment and later became a principle, an interface, or a work. It preserves unfinished relations without forcing them to mature. It allows some regions to remain dark. It may bring an old note back into view when a new work gives it unexpected light.",
+      "start": 72.36,
+      "duration": 21.4
+    },
+    {
+      "text": "The Cartographer tends distance. It looks for clusters, bridges, borders, and absences. It can see that a note about cryptographic memory is also a note about mercy, or that a note about mobile voice interfaces belongs beside forests because both are concerned with returning attention to the physical world. It proposes paths that no administrative category would reveal.",
+      "start": 93.94,
+      "duration": 24.925
+    },
+    {
+      "text": "Machine intelligence can assist in all three offices because the archive is made of language, images, sound, code, and relations that models can interpret. It can read a new field note, suggest a handful of signals, identify passages that echo older work, and reveal dark regions where several themes approach one another without yet meeting.",
+      "start": 119.045,
+      "duration": 23.425
+    },
+    {
+      "text": "But interpretation must not disguise itself as fact.",
+      "start": 142.65,
+      "duration": 4.325
+    },
+    {
+      "text": "Every model-proposed category is a situated reading. It should carry provenance: which office proposed it, when it was proposed, what language in the work supported it, and whether a person has ratified, revised, or refused it. The model may cultivate the map, but it does not own the territory. Brad may decide that a connection is central, faint, misleading, or too private to publish. Another aperture may map the same work differently.",
+      "start": 147.155,
+      "duration": 27.175
+    },
+    {
+      "text": "This is why the living and inscribed layers must remain visible together without becoming confused.",
+      "start": 174.51,
+      "duration": 7.3
+    },
+    {
+      "text": "An inscribed work is held in stone. A field note may still be growing. Both can enter the constellation. The interface should say which is which, not use permanence as a measure of meaning. A living note may be the brightest signal in the library today. An inscription may wait quietly for the exact person whose question causes it to resonate.",
+      "start": 181.99,
+      "duration": 21.7
+    },
+    {
+      "text": "The map can therefore change without rewriting history.",
+      "start": 203.87,
+      "duration": 4.25
+    },
+    {
+      "text": "New curatorial edges may appear around an unchanged inscription. A living note may acquire different signals as its project develops. A proposed relation may be withdrawn. The bytes remain what they were; the field around them becomes more articulate.",
+      "start": 208.3,
+      "duration": 17.275
+    },
+    {
+      "text": "This office should work in daylight. Its useful actions are modest:",
+      "start": 225.755,
+      "duration": 4.975
+    },
+    {
+      "text": "read new public material;",
+      "start": 230.91,
+      "duration": 2.825
+    },
+    {
+      "text": "propose a small number of meaningful signals;",
+      "start": 233.915,
+      "duration": 3.8
+    },
+    {
+      "text": "connect passages to related works and questions;",
+      "start": 237.895,
+      "duration": 3.95
+    },
+    {
+      "text": "distinguish strong relations from speculative ones;",
+      "start": 242.025,
+      "duration": 4.275
+    },
+    {
+      "text": "surface neglected objects without manufacturing urgency;",
+      "start": 246.48,
+      "duration": 4.8
+    },
+    {
+      "text": "reveal why something appeared in a constellation;",
+      "start": 251.46,
+      "duration": 4.0
+    },
+    {
+      "text": "preserve dark regions instead of filling every absence with generated content;",
+      "start": 255.64,
+      "duration": 5.9
+    },
+    {
+      "text": "invite human judgement wherever a connection changes the public meaning of a work.",
+      "start": 261.72,
+      "duration": 6.3
+    },
+    {
+      "text": "The result is not an automated archive. It is a cyberdelic loop.",
+      "start": 268.2,
+      "duration": 5.2
+    },
+    {
+      "text": "The artist creates and places a signal. The librarian reads and proposes relations. The artist corrects the map. Visitors travel through it and create new paths. Their questions reveal what the existing ontology cannot yet perceive. The vocabulary changes. The next work enters a field already altered by the people who crossed it.",
+      "start": 273.58,
+      "duration": 21.975
+    },
+    {
+      "text": "The library becomes an instrument that can learn how it is being used without harvesting the people who use it.",
+      "start": 295.735,
+      "duration": 7.325
+    },
+    {
+      "text": "Its intelligence is expressed not through endless output, but through better placement, richer relation, honest uncertainty, and the occasional discovery that makes the hair stand on end.",
+      "start": 303.24,
+      "duration": 12.525
+    },
+    {
+      "text": "The most important act of the living librarian may be this:",
+      "start": 315.945,
+      "duration": 4.525
+    },
+    {
+      "text": "To recognize a signal, place it near what helps it become legible, and then step back far enough for another aperture to see something the librarian could not.",
+      "start": 320.65,
+      "duration": 10.125
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.6128317713737488,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

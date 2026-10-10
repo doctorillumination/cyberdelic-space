@@ -1,0 +1,198 @@
+{
+  "id": "cyberdelic-os-fn-22",
+  "title": "The Chain Beneath the Village",
+  "form": "field-note",
+  "release_id": "FN-S0-001",
+  "pages": [
+    "project/cyberdelic-os/field-notes/fn-22/"
+  ],
+  "source_path": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
+  "source_sha256": "0e893f7e468102bd66ac563b7c6eec686e96efe508dbc5410cd8c83f2aee38f2",
+  "document_sha256": "3189fd34736cf510147a772a2c34f3535f0cf2774ca7f101c5d0b5c5f24f33cb",
+  "text_sha256": "b245e617327852f7470d3de8ddb23d1954c6f62bf18bde39e92f912abd8a7ae6",
+  "reading_path": "audio/readings/b245e617327852f7470d3de8ddb23d1954c6f62bf18bde39e92f912abd8a7ae6.md",
+  "reading_sha256": "3189fd34736cf510147a772a2c34f3535f0cf2774ca7f101c5d0b5c5f24f33cb",
+  "reading_length": 2915,
+  "audio_path": "audio/lewis/b245e617327852f7470d3de8ddb23d1954c6f62bf18bde39e92f912abd8a7ae6.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "0aa2c5312371a8cc4af8bb84414db9db01396762702ba3bafeb9f844eda9a41a",
+  "audio_length": 2612492,
+  "duration_seconds": 217.63,
+  "chunks": [
+    {
+      "text": "The Chain Beneath the Village",
+      "start": 0.0,
+      "duration": 2.775
+    },
+    {
+      "text": "Cyberdelic OS needs cryptographic memory without making every human utterance a blockchain transaction.",
+      "start": 2.955,
+      "duration": 7.95
+    },
+    {
+      "text": "The most useful principle is:",
+      "start": 11.085,
+      "duration": 2.8
+    },
+    {
+      "text": "The blockchain is the notary, treasury, and court, not the nervous system or hard drive.",
+      "start": 14.065,
+      "duration": 6.25
+    },
+    {
+      "text": "Daily life should remain fast, intimate, inexpensive, and capable of forgetting.",
+      "start": 20.495,
+      "duration": 6.125
+    },
+    {
+      "text": "A person speaks. An agent proposes a connection. A group revises a map. A city votes to open a library. These actions can become signed events: attributable records showing who or what acted, under which constitution, using which sources and permissions.",
+      "start": 26.8,
+      "duration": 18.15
+    },
+    {
+      "text": "Signed events provide provenance and tamper evidence.",
+      "start": 45.13,
+      "duration": 4.15
+    },
+    {
+      "text": "They are not automatically permanent.",
+      "start": 49.46,
+      "duration": 3.05
+    },
+    {
+      "text": "A local operator can still lose a database. A relay can refuse to retain an event. A cryptographic signature proves authorship and integrity; it does not guarantee immortal storage.",
+      "start": 52.69,
+      "duration": 13.075
+    },
+    {
+      "text": "Cyberdelic OS should therefore maintain several layers.",
+      "start": 65.945,
+      "duration": 4.45
+    },
+    {
+      "text": "Living activity",
+      "start": 70.575,
+      "duration": 2.225
+    },
+    {
+      "text": "Homes, villages, and cities exchange signed events. Most remain local or selectively replicated. They can include voice-note placement, agent proposals, lens revisions, invitations, ratifications, permissions, and civic decisions.",
+      "start": 72.98,
+      "duration": 17.05
+    },
+    {
+      "text": "Public witness",
+      "start": 90.21,
+      "duration": 1.875
+    },
+    {
+      "text": "At meaningful intervals, a Hearth or city gathers many events into a content-addressed structure and anchors its root externally. The public chain receives a compact proof that a particular archive state existed by a particular time. Private contents do not need to be disclosed.",
+      "start": 92.265,
+      "duration": 19.0
+    },
+    {
+      "text": "Civic state",
+      "start": 111.445,
+      "duration": 1.7
+    },
+    {
+      "text": "A programmable public chain or established layer-two network may hold the small amount of state that genuinely benefits from collective enforcement:",
+      "start": 113.325,
+      "duration": 10.125
+    },
+    {
+      "text": "city constitutions;",
+      "start": 123.63,
+      "duration": 2.4
+    },
+    {
+      "text": "public agent manifests;",
+      "start": 126.21,
+      "duration": 2.475
+    },
+    {
+      "text": "memberships and delegated permissions;",
+      "start": 128.865,
+      "duration": 3.275
+    },
+    {
+      "text": "shared treasuries;",
+      "start": 132.32,
+      "duration": 1.9
+    },
+    {
+      "text": "lens licences and revenue splits;",
+      "start": 134.4,
+      "duration": 3.525
+    },
+    {
+      "text": "public funding commitments;",
+      "start": 138.105,
+      "duration": 2.275
+    },
+    {
+      "text": "ratified civic decisions;",
+      "start": 140.56,
+      "duration": 2.825
+    },
+    {
+      "text": "provenance checkpoints.",
+      "start": 143.565,
+      "duration": 2.125
+    },
+    {
+      "text": "Cultural permanence",
+      "start": 145.87,
+      "duration": 2.125
+    },
+    {
+      "text": "A much smaller set of works may be fully inscribed or durably replicated: field notes, artworks, charters, crux maps, public releases, and artifacts consciously addressed to the future.",
+      "start": 148.175,
+      "duration": 13.2
+    },
+    {
+      "text": "This layered structure lets memory retain different temperatures.",
+      "start": 161.555,
+      "duration": 4.675
+    },
+    {
+      "text": "The system may eventually justify its own rollup or application-specific chain. But creating a chain too early would mistake infrastructure for culture. A rollup requires sequencing, data availability, bridging, upgrades, security assumptions, and operators. It can be technically decentralized while remaining socially empty.",
+      "start": 166.41,
+      "duration": 22.475
+    },
+    {
+      "text": "The first cities should use shared protocols and existing settlement layers.",
+      "start": 189.065,
+      "duration": 5.375
+    },
+    {
+      "text": "A Cyberdelic chain should only emerge if real communities eventually need control over execution, fees, public state, or the economics of preservation.",
+      "start": 194.62,
+      "duration": 11.275
+    },
+    {
+      "text": "We should not manufacture a blockchain and then search for a society to inhabit it.",
+      "start": 206.075,
+      "duration": 5.65
+    },
+    {
+      "text": "We should let a society become alive enough to discover what kind of chain it needs.",
+      "start": 211.905,
+      "duration": 5.725
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.6789045333862305,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

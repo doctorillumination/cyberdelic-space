@@ -1,0 +1,158 @@
+{
+  "id": "cyberdelic-os-fn-20",
+  "title": "Aperture Design as a Cultural Form",
+  "form": "field-note",
+  "release_id": "FN-S0-001",
+  "pages": [
+    "project/cyberdelic-os/field-notes/fn-20/"
+  ],
+  "source_path": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
+  "source_sha256": "0e893f7e468102bd66ac563b7c6eec686e96efe508dbc5410cd8c83f2aee38f2",
+  "document_sha256": "a05bbf46e3356d2c623d49152452673f5f2cb50c49fd6ec6b58f158b4e44f1e1",
+  "text_sha256": "ea9f85d80e77ca2c10976a063e014402d3d2f69ce703436f7a56ba83186b7856",
+  "reading_path": "audio/readings/ea9f85d80e77ca2c10976a063e014402d3d2f69ce703436f7a56ba83186b7856.md",
+  "reading_sha256": "a05bbf46e3356d2c623d49152452673f5f2cb50c49fd6ec6b58f158b4e44f1e1",
+  "reading_length": 3055,
+  "audio_path": "audio/lewis/ea9f85d80e77ca2c10976a063e014402d3d2f69ce703436f7a56ba83186b7856.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "c30d464de95b28941ca25039ef31441b5e7cad0b4dd84abed6312d2a127b79b1",
+  "audio_length": 2543084,
+  "duration_seconds": 211.84,
+  "chunks": [
+    {
+      "text": "Aperture Design as a Cultural Form",
+      "start": 0.0,
+      "duration": 3.325
+    },
+    {
+      "text": "Human beings have invented many ways to carry one consciousness into another life.",
+      "start": 3.505,
+      "duration": 6.3
+    },
+    {
+      "text": "The book carries language. The portrait carries appearance. The film carries time, gesture, voice, and atmosphere. The lecture carries an argument. The archive carries residue. The teacher carries a practice through relation.",
+      "start": 9.985,
+      "duration": 15.2
+    },
+    {
+      "text": "A portable aperture may become another cultural form.",
+      "start": 25.365,
+      "duration": 4.5
+    },
+    {
+      "text": "It should not be confused with a digital twin. A twin promises simulation: ask what the person would say, reproduce their manner, approximate their personality.",
+      "start": 30.045,
+      "duration": 11.375
+    },
+    {
+      "text": "An aperture carries something different.",
+      "start": 41.6,
+      "duration": 3.325
+    },
+    {
+      "text": "It carries a pattern of attention.",
+      "start": 45.105,
+      "duration": 3.0
+    },
+    {
+      "text": "A Jason Silva aperture might foreground radiance, futurity, poetic connection, technological possibility, and the sudden restoration of awe to things that habit has made ordinary. A McLuhan aperture might ask what the medium is doing beneath its content. A Sontag aperture might ask what the act of looking costs. A child's aperture might recover absurdity, play, and possibility from a room full of professional certainty.",
+      "start": 48.285,
+      "duration": 27.525
+    },
+    {
+      "text": "The point is not to impersonate the source.",
+      "start": 75.99,
+      "duration": 3.575
+    },
+    {
+      "text": "The point is to widen the perceptual repertoire of the borrower.",
+      "start": 79.745,
+      "duration": 4.625
+    },
+    {
+      "text": "This suggests a new creative discipline: aperture design .",
+      "start": 84.55,
+      "duration": 4.575
+    },
+    {
+      "text": "An aperture designer works with source fields, constitutions, saliency maps, calibration dialogues, examples, exclusions, permissions, and unresolved tensions. They do not merely prompt a model to sound like someone. They create an instrument through which a question becomes differently visible.",
+      "start": 89.305,
+      "duration": 19.475
+    },
+    {
+      "text": "The source person, when living, should remain an active author of the aperture. They can say:",
+      "start": 108.96,
+      "duration": 6.35
+    },
+    {
+      "text": "This uses my vocabulary but does not notice as I do. This is too certain. This metaphor belongs to me. This answer is faithful to my older work but not to the direction I am moving. This tension should remain unresolved.",
+      "start": 115.49,
+      "duration": 15.625
+    },
+    {
+      "text": "The aperture becomes versioned rather than frozen.",
+      "start": 131.295,
+      "duration": 4.05
+    },
+    {
+      "text": "It may include public source material, private material by explicit permission, and calibration traces that distinguish resemblance from fidelity. Its public manifest should reveal what it was built from, who shaped it, what it is allowed to access, and what it must never claim.",
+      "start": 135.525,
+      "duration": 18.25
+    },
+    {
+      "text": "Apertures may become authored works in their own right.",
+      "start": 153.955,
+      "duration": 4.075
+    },
+    {
+      "text": "A thinker could publish one beside a book. An artist could release an aperture as part of an exhibition. A teacher could create a lens that allows students to encounter a field through several historical ways of seeing. A community could author a collective aperture that carries a tradition without claiming that the tradition has only one voice.",
+      "start": 158.21,
+      "duration": 21.65
+    },
+    {
+      "text": "A future Brad aperture might one day be available to his children, not as a machine pretending to be their father, but as an authored constellation of questions, metaphors, values, and patterns of attention he chose to preserve.",
+      "start": 180.04,
+      "duration": 14.825
+    },
+    {
+      "text": "The ethical difference is enormous.",
+      "start": 195.045,
+      "duration": 3.075
+    },
+    {
+      "text": "A digital twin says:",
+      "start": 198.3,
+      "duration": 2.3
+    },
+    {
+      "text": "I am the person.",
+      "start": 200.78,
+      "duration": 2.1
+    },
+    {
+      "text": "An aperture says:",
+      "start": 203.06,
+      "duration": 2.075
+    },
+    {
+      "text": "This is a situated instrument made from traces of a way of seeing. Borrow it carefully.",
+      "start": 205.315,
+      "duration": 6.525
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.754970371723175,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

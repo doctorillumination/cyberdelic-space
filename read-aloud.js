@@ -16,9 +16,16 @@
       return catalog.items.find(function (entry) { return entry.id === id; });
     }).filter(Boolean) : [];
   }
+  function startAt(tracks, hash) {
+    var note = /^#fn-(\d+)$/.exec(hash);
+    if (!note) return 0;
+    var suffix = "fn-" + String(Number(note[1])).padStart(2, "0");
+    var index = tracks.findIndex(function (entry) { return entry.id.endsWith(suffix); });
+    return index < 0 ? 0 : index;
+  }
   function Player(audio, tracks, base, notify) {
     Object.assign(this, {audio: audio, tracks: tracks, base: base, notify: notify,
-      state: "idle", speed: 1, index: 0, generation: 0, message: ""});
+      state: "idle", speed: 1, index: 0, generation: 0, message: "", retryTime: null});
     audio.preload = "none";
     audio.preservesPitch = audio.webkitPreservesPitch = true;
     var self = this;
@@ -29,8 +36,14 @@
       audio.removeAttribute("src"); self.play();
     });
     audio.addEventListener("error", function () {
+      self.retryTime = Number.isFinite(audio.currentTime) ? audio.currentTime : 0;
       self.generation++; self.state = "paused";
       self.message = "The recording could not load. Please try again."; self.paint();
+    });
+    audio.addEventListener("loadedmetadata", function () {
+      if (self.retryTime === null) return;
+      audio.currentTime = Math.min(self.retryTime, audio.duration || self.retryTime);
+      self.retryTime = null;
     });
   }
   Player.prototype.paint = function () { this.notify(this); };
@@ -40,7 +53,7 @@
     active = this;
     var token = ++this.generation;
     var url = new URL(this.tracks[this.index].audio_path, this.base).href;
-    if (this.audio.src !== url) this.audio.src = url;
+    if (this.audio.src !== url || this.retryTime !== null) this.audio.src = url;
     this.audio.playbackRate = this.speed;
     this.state = "loading"; this.message = ""; this.paint();
     try {
@@ -70,7 +83,7 @@
     this.generation++; this.audio.pause();
     if (Number.isFinite(this.audio.duration)) this.audio.currentTime = 0;
     this.audio.removeAttribute("src");
-    this.index = 0; this.state = "idle"; this.message = ""; this.paint();
+    this.index = 0; this.state = "idle"; this.message = ""; this.retryTime = null; this.paint();
     if (active === this) active = null;
   };
   function mount(container, tracks, base) {
@@ -99,7 +112,10 @@
     }
     var player = new Player(new Audio(), tracks, base, paint);
     player.setSpeed(Number(speed.value));
-    button.addEventListener("click", function () { player.toggle(); });
+    button.addEventListener("click", function () {
+      if (player.state === "idle") player.index = startAt(tracks, location.hash);
+      player.toggle();
+    });
     speed.addEventListener("change", function () {
       player.setSpeed(Number(speed.value));
       try { localStorage.setItem(KEY, speed.value); } catch (error) { /* optional */ }
@@ -132,7 +148,7 @@
     }
   }
   if (typeof module !== "undefined" && module.exports) {
-    module.exports = {Player: Player, pageKey: pageKey, tracksFor: tracksFor};
+    module.exports = {Player: Player, pageKey: pageKey, tracksFor: tracksFor, startAt: startAt};
   } else if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", initialise);
   } else initialise();

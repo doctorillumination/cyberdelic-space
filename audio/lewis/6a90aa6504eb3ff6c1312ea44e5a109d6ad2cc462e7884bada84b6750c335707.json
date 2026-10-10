@@ -1,0 +1,1123 @@
+{
+  "id": "cyberdelic-os-bn-005",
+  "title": "Building the Tending Offices",
+  "form": "builder-note",
+  "release_id": "BN-005",
+  "pages": [
+    "project/cyberdelic-os/bn-005/"
+  ],
+  "source_path": "living-content/cyberdelic-os/bn-005/v000001.md",
+  "source_sha256": "1bdaa5d7657895206e17dc326daaa210cbfcb3dbfa233ea88d7c9b2837727a56",
+  "document_sha256": "1bdaa5d7657895206e17dc326daaa210cbfcb3dbfa233ea88d7c9b2837727a56",
+  "text_sha256": "6a90aa6504eb3ff6c1312ea44e5a109d6ad2cc462e7884bada84b6750c335707",
+  "reading_path": "audio/readings/6a90aa6504eb3ff6c1312ea44e5a109d6ad2cc462e7884bada84b6750c335707.md",
+  "reading_sha256": "1bdaa5d7657895206e17dc326daaa210cbfcb3dbfa233ea88d7c9b2837727a56",
+  "reading_length": 16975,
+  "audio_path": "audio/lewis/6a90aa6504eb3ff6c1312ea44e5a109d6ad2cc462e7884bada84b6750c335707.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "12b41f21a69333dab7245c8777923e61b9c21e1555b47d416c32ece6fcfed6f5",
+  "audio_length": 13325228,
+  "duration_seconds": 1110.355,
+  "chunks": [
+    {
+      "text": "Builder Note BN-005: Building the Tending Offices",
+      "start": 0.0,
+      "duration": 5.375
+    },
+    {
+      "text": "The build in one sentence",
+      "start": 5.555,
+      "duration": 2.65
+    },
+    {
+      "text": "One scheduled ritual gives two constitutionally separate offices ordered turns over a versioned relational graph: the Cartographer proposes evidence-backed paths, the Gardener tends their life in the archive, validation can reject both, and public meaning remains subject to human review.",
+      "start": 8.385,
+      "duration": 19.825
+    },
+    {
+      "text": "Current implementation state",
+      "start": 28.39,
+      "duration": 2.75
+    },
+    {
+      "text": "As of August 17, 2026:",
+      "start": 31.32,
+      "duration": 3.9
+    },
+    {
+      "text": "the scheduled event is named Daily Cyberdelic Tending ;",
+      "start": 35.4,
+      "duration": 4.4
+    },
+    {
+      "text": "it is active every day at 7:00 AM in America/Vancouver ;",
+      "start": 39.98,
+      "duration": 6.35
+    },
+    {
+      "text": "the event is attached to the current Cyberdelic website task;",
+      "start": 46.51,
+      "duration": 4.7
+    },
+    {
+      "text": "the exact working repository is /Users/bradley/Desktop/1 Art/8 Creative Coding/cyberdelic-space ;",
+      "start": 51.39,
+      "duration": 8.45
+    },
+    {
+      "text": "the Cartographer always takes the first turn;",
+      "start": 60.02,
+      "duration": 3.55
+    },
+    {
+      "text": "the Gardener always takes the second turn;",
+      "start": 63.75,
+      "duration": 3.25
+    },
+    {
+      "text": "both offices are governed by exact versioned Markdown charters;",
+      "start": 67.18,
+      "duration": 4.875
+    },
+    {
+      "text": "each office has a maximum change budget of three candidates or proposals per run;",
+      "start": 72.235,
+      "duration": 6.55
+    },
+    {
+      "text": "a valid run may end with no public change;",
+      "start": 78.965,
+      "duration": 3.8
+    },
+    {
+      "text": "the automation may commit and push bounded changes to a review branch;",
+      "start": 82.945,
+      "duration": 5.4
+    },
+    {
+      "text": "it may create or update a draft pull request;",
+      "start": 88.525,
+      "duration": 3.925
+    },
+    {
+      "text": "it may not merge, contact outside parties, modify exact publication sources, or alter inscription history.",
+      "start": 92.63,
+      "duration": 8.35
+    },
+    {
+      "text": "The relational graph and public Attending surface are specified here but remain an early implementation. The first scheduled runs should be treated as instrument calibration.",
+      "start": 101.16,
+      "duration": 12.35
+    },
+    {
+      "text": "Requirements",
+      "start": 113.69,
+      "duration": 1.7
+    },
+    {
+      "text": "Functional requirements",
+      "start": 115.57,
+      "duration": 2.3
+    },
+    {
+      "text": "The system must:",
+      "start": 118.05,
+      "duration": 1.975
+    },
+    {
+      "text": "accept deliberately carried links through an explicit inbox;",
+      "start": 120.205,
+      "duration": 4.5
+    },
+    {
+      "text": "discover a bounded number of public external candidates;",
+      "start": 124.885,
+      "duration": 4.65
+    },
+    {
+      "text": "ground factual descriptions in primary public sources;",
+      "start": 129.715,
+      "duration": 4.625
+    },
+    {
+      "text": "connect candidates to exact internal publications or declared questions;",
+      "start": 134.52,
+      "duration": 5.7
+    },
+    {
+      "text": "preserve the distinction between source fact and model inference;",
+      "start": 140.4,
+      "duration": 4.75
+    },
+    {
+      "text": "let the Gardener audit metadata across all publication forms;",
+      "start": 145.33,
+      "duration": 4.925
+    },
+    {
+      "text": "record relation lifecycle, confidence, provenance, and review state;",
+      "start": 150.435,
+      "duration": 5.3
+    },
+    {
+      "text": "produce a finite public Attending surface of no more than three items;",
+      "start": 155.915,
+      "duration": 5.4
+    },
+    {
+      "text": "preserve a dated audit of every run, including valid no-op runs;",
+      "start": 161.495,
+      "duration": 5.325
+    },
+    {
+      "text": "route every public change through validation and a draft pull request.",
+      "start": 167.0,
+      "duration": 5.45
+    },
+    {
+      "text": "Non-functional requirements",
+      "start": 172.63,
+      "duration": 2.6
+    },
+    {
+      "text": "The system should remain:",
+      "start": 175.41,
+      "duration": 2.4
+    },
+    {
+      "text": "static-first and same-origin where possible;",
+      "start": 177.99,
+      "duration": 3.7
+    },
+    {
+      "text": "inspectable without an account;",
+      "start": 181.87,
+      "duration": 2.875
+    },
+    {
+      "text": "deterministic at the validation boundary;",
+      "start": 184.925,
+      "duration": 3.525
+    },
+    {
+      "text": "bounded in search, output, runtime, and public attention;",
+      "start": 188.63,
+      "duration": 4.775
+    },
+    {
+      "text": "accessible on small screens and with reduced motion;",
+      "start": 193.585,
+      "duration": 4.3
+    },
+    {
+      "text": "reversible wherever the underlying publication is still living;",
+      "start": 198.065,
+      "duration": 5.1
+    },
+    {
+      "text": "incapable of rewriting exact or inscribed source material;",
+      "start": 203.345,
+      "duration": 4.95
+    },
+    {
+      "text": "legible enough that another person can understand why an edge exists;",
+      "start": 208.475,
+      "duration": 5.4
+    },
+    {
+      "text": "quiet when there is nothing worth changing.",
+      "start": 214.055,
+      "duration": 3.175
+    },
+    {
+      "text": "Constraints",
+      "start": 217.41,
+      "duration": 1.625
+    },
+    {
+      "text": "Cyberdelic.space is currently a static publication site with JSON indexes and exact downloadable sources. There is no production database, account system, background queue, or authenticated editorial API. The scheduled task therefore operates against version-controlled files and uses Git history and draft pull requests as its transaction, audit, and review layer.",
+      "start": 219.215,
+      "duration": 25.725
+    },
+    {
+      "text": "This is appropriate at the current scale. A database would add operational complexity before the ontology and office boundaries have survived real use.",
+      "start": 245.12,
+      "duration": 10.475
+    },
+    {
+      "text": "High-level architecture",
+      "start": 255.775,
+      "duration": 2.45
+    },
+    {
+      "text": "One scheduled transaction contains both office turns. This prevents two independent jobs from editing the same graph concurrently and ensures the Gardener sees the Cartographer's same-run queue.",
+      "start": 258.405,
+      "duration": 13.7
+    },
+    {
+      "text": "The offices remain separate in constitution, input scope, permissions, outputs, and audit fields. Sharing a scheduler does not make them one agent.",
+      "start": 272.285,
+      "duration": 10.55
+    },
+    {
+      "text": "Storage model",
+      "start": 283.015,
+      "duration": 1.875
+    },
+    {
+      "text": "The first implementation can use four versioned data families.",
+      "start": 285.07,
+      "duration": 4.75
+    },
+    {
+      "text": "1. Link inbox",
+      "start": 290.0,
+      "duration": 2.2
+    },
+    {
+      "text": "living-relations/inbox.json",
+      "start": 292.38,
+      "duration": 3.625
+    },
+    {
+      "text": "The inbox contains links deliberately carried into the system. Each entry should include:",
+      "start": 296.185,
+      "duration": 6.6
+    },
+    {
+      "text": "The note must not contain private message contents. attribution_public defaults to false.",
+      "start": 302.965,
+      "duration": 6.65
+    },
+    {
+      "text": "2. Cartographer proposal queue",
+      "start": 309.795,
+      "duration": 2.875
+    },
+    {
+      "text": "living-relations/proposals.json",
+      "start": 312.85,
+      "duration": 3.925
+    },
+    {
+      "text": "Each proposal separates facts from inference:",
+      "start": 316.955,
+      "duration": 3.6
+    },
+    {
+      "text": "Proposal IDs are append-only. A changed proposal becomes a new version rather than silently overwriting the earlier interpretation.",
+      "start": 320.735,
+      "duration": 9.975
+    },
+    {
+      "text": "3. Relational manifest",
+      "start": 330.89,
+      "duration": 2.7
+    },
+    {
+      "text": "living-relations/relationships.json",
+      "start": 333.77,
+      "duration": 3.925
+    },
+    {
+      "text": "The public manifest contains ratified or explicitly published nodes and edges. A node can represent:",
+      "start": 337.875,
+      "duration": 8.05
+    },
+    {
+      "text": "an inscribed work;",
+      "start": 346.105,
+      "duration": 2.2
+    },
+    {
+      "text": "a living Field Note;",
+      "start": 348.485,
+      "duration": 2.35
+    },
+    {
+      "text": "a Builder Note;",
+      "start": 351.015,
+      "duration": 1.825
+    },
+    {
+      "text": "an Instrument;",
+      "start": 353.02,
+      "duration": 1.725
+    },
+    {
+      "text": "an Artifact;",
+      "start": 354.925,
+      "duration": 1.9
+    },
+    {
+      "text": "a correspondence;",
+      "start": 357.005,
+      "duration": 2.025
+    },
+    {
+      "text": "a person;",
+      "start": 359.21,
+      "duration": 1.575
+    },
+    {
+      "text": "a project;",
+      "start": 360.965,
+      "duration": 1.65
+    },
+    {
+      "text": "a research group;",
+      "start": 362.795,
+      "duration": 2.0
+    },
+    {
+      "text": "an institution;",
+      "start": 364.975,
+      "duration": 2.125
+    },
+    {
+      "text": "a paper;",
+      "start": 367.28,
+      "duration": 1.525
+    },
+    {
+      "text": "a repository;",
+      "start": 368.985,
+      "duration": 1.9
+    },
+    {
+      "text": "a government agency;",
+      "start": 371.065,
+      "duration": 2.275
+    },
+    {
+      "text": "a declared question or dark region.",
+      "start": 373.52,
+      "duration": 3.2
+    },
+    {
+      "text": "An edge should include:",
+      "start": 376.9,
+      "duration": 2.3
+    },
+    {
+      "text": "The manifest is interpretive metadata. It never changes the bytes of the nodes it connects.",
+      "start": 379.38,
+      "duration": 6.6
+    },
+    {
+      "text": "4. Tending audits",
+      "start": 386.16,
+      "duration": 2.275
+    },
+    {
+      "text": "living-relations/audits/YYYY-MM-DD.json",
+      "start": 388.615,
+      "duration": 4.925
+    },
+    {
+      "text": "Every run produces one audit, including a no-op. Audits contain:",
+      "start": 393.72,
+      "duration": 5.575
+    },
+    {
+      "text": "scheduler run ID and local time;",
+      "start": 399.475,
+      "duration": 3.425
+    },
+    {
+      "text": "office charter versions;",
+      "start": 403.08,
+      "duration": 2.45
+    },
+    {
+      "text": "branch and starting commit;",
+      "start": 405.71,
+      "duration": 2.55
+    },
+    {
+      "text": "inquiry or archive region examined;",
+      "start": 408.44,
+      "duration": 3.55
+    },
+    {
+      "text": "inbox items and sources checked;",
+      "start": 412.17,
+      "duration": 3.15
+    },
+    {
+      "text": "Cartographer proposals;",
+      "start": 415.5,
+      "duration": 2.55
+    },
+    {
+      "text": "Gardener decisions;",
+      "start": 418.23,
+      "duration": 2.25
+    },
+    {
+      "text": "files changed;",
+      "start": 420.66,
+      "duration": 1.9
+    },
+    {
+      "text": "validation results;",
+      "start": 422.74,
+      "duration": 2.375
+    },
+    {
+      "text": "stop reasons and human questions;",
+      "start": 425.295,
+      "duration": 3.2
+    },
+    {
+      "text": "final run state: no-op , proposed , blocked , or failed .",
+      "start": 428.675,
+      "duration": 4.675
+    },
+    {
+      "text": "Audits can remain available through the repository without appearing on the main public Attending surface.",
+      "start": 433.53,
+      "duration": 7.05
+    },
+    {
+      "text": "State transitions",
+      "start": 440.76,
+      "duration": 2.075
+    },
+    {
+      "text": "A proposed relation moves through explicit states:",
+      "start": 443.015,
+      "duration": 4.05
+    },
+    {
+      "text": "contested can be attached to a proposed, reviewed, ratified, active, or dormant relation. It records material disagreement without forcing deletion.",
+      "start": 447.245,
+      "duration": 11.25
+    },
+    {
+      "text": "Only a human review can move a proposal into ratified during the initial phase.",
+      "start": 458.675,
+      "duration": 6.1
+    },
+    {
+      "text": "Scheduler transaction",
+      "start": 464.955,
+      "duration": 2.375
+    },
+    {
+      "text": "At 7:00 AM Vancouver time the task performs these steps.",
+      "start": 467.51,
+      "duration": 6.1
+    },
+    {
+      "text": "Preflight",
+      "start": 473.79,
+      "duration": 1.5
+    },
+    {
+      "text": "Resolve the exact repository path.",
+      "start": 475.47,
+      "duration": 3.5
+    },
+    {
+      "text": "Read both charter files, this Builder Note, and Instrument I-003.",
+      "start": 479.15,
+      "duration": 5.925
+    },
+    {
+      "text": "Inspect Git status before changing anything.",
+      "start": 485.255,
+      "duration": 3.85
+    },
+    {
+      "text": "Stop if unrelated work is present.",
+      "start": 489.285,
+      "duration": 3.4
+    },
+    {
+      "text": "Fetch the remote branch state without destructive reset.",
+      "start": 492.865,
+      "duration": 4.575
+    },
+    {
+      "text": "Read the most recent audit and relation files.",
+      "start": 497.62,
+      "duration": 4.05
+    },
+    {
+      "text": "Cartographer turn",
+      "start": 501.85,
+      "duration": 2.175
+    },
+    {
+      "text": "Select one bounded inquiry or carried inbox bundle.",
+      "start": 504.205,
+      "duration": 4.575
+    },
+    {
+      "text": "Read primary sources.",
+      "start": 508.96,
+      "duration": 2.375
+    },
+    {
+      "text": "Produce zero to three candidate nodes or edges.",
+      "start": 511.515,
+      "duration": 4.05
+    },
+    {
+      "text": "Record fact, inference, uncertainty, and checked dates separately.",
+      "start": 515.745,
+      "duration": 5.025
+    },
+    {
+      "text": "Write only to the proposal queue and audit draft.",
+      "start": 520.95,
+      "duration": 4.075
+    },
+    {
+      "text": "Gardener turn",
+      "start": 525.205,
+      "duration": 1.875
+    },
+    {
+      "text": "Read the queue and the relevant internal source files.",
+      "start": 527.26,
+      "duration": 4.25
+    },
+    {
+      "text": "Inspect existing summaries, themes, and edges.",
+      "start": 531.69,
+      "duration": 3.975
+    },
+    {
+      "text": "Propose zero to three metadata changes.",
+      "start": 535.845,
+      "duration": 3.725
+    },
+    {
+      "text": "Record lifecycle decisions and evidence.",
+      "start": 539.75,
+      "duration": 3.775
+    },
+    {
+      "text": "Preserve a valid no-op when nothing warrants change.",
+      "start": 543.705,
+      "duration": 4.1
+    },
+    {
+      "text": "Validation turn",
+      "start": 547.985,
+      "duration": 2.25
+    },
+    {
+      "text": "Parse every changed JSON file.",
+      "start": 550.415,
+      "duration": 3.425
+    },
+    {
+      "text": "Parse Atom and sitemap XML when changed.",
+      "start": 554.02,
+      "duration": 3.9
+    },
+    {
+      "text": "verify internal links;",
+      "start": 558.1,
+      "duration": 2.625
+    },
+    {
+      "text": "compare exact page copies with downloadable Markdown;",
+      "start": 560.905,
+      "duration": 4.25
+    },
+    {
+      "text": "verify recorded content lengths and SHA-256 values;",
+      "start": 565.335,
+      "duration": 5.45
+    },
+    {
+      "text": "check for horizontal overflow at a 390-pixel viewport;",
+      "start": 570.965,
+      "duration": 5.275
+    },
+    {
+      "text": "check keyboard and reduced-motion behavior for changed interfaces;",
+      "start": 576.42,
+      "duration": 5.25
+    },
+    {
+      "text": "run the relevant reader tests;",
+      "start": 581.85,
+      "duration": 2.825
+    },
+    {
+      "text": "rebuild and inspect the mirror archive;",
+      "start": 584.855,
+      "duration": 3.35
+    },
+    {
+      "text": "reject the patch if any required check fails.",
+      "start": 588.385,
+      "duration": 3.725
+    },
+    {
+      "text": "Publication boundary",
+      "start": 592.29,
+      "duration": 2.475
+    },
+    {
+      "text": "If the run is a no-op, it records the audit result and ends without a public content commit.",
+      "start": 594.945,
+      "duration": 7.075
+    },
+    {
+      "text": "If the run produces a valid patch, it commits only the allowlisted relational files and generated pages to a review branch, pushes that branch, and creates or updates one draft pull request. It reports the pull request and ends.",
+      "start": 602.2,
+      "duration": 16.625
+    },
+    {
+      "text": "The scheduler never merges.",
+      "start": 619.005,
+      "duration": 2.75
+    },
+    {
+      "text": "File permissions",
+      "start": 621.935,
+      "duration": 1.9
+    },
+    {
+      "text": "Read permitted",
+      "start": 624.015,
+      "duration": 1.85
+    },
+    {
+      "text": "The task may read the complete public website repository and public primary web sources relevant to the bounded inquiry.",
+      "start": 626.045,
+      "duration": 8.875
+    },
+    {
+      "text": "Write permitted",
+      "start": 635.1,
+      "duration": 1.75
+    },
+    {
+      "text": "The initial allowlist is:",
+      "start": 637.03,
+      "duration": 2.475
+    },
+    {
+      "text": "living-relations/inbox.json for state changes that preserve the original entry;",
+      "start": 639.685,
+      "duration": 7.275
+    },
+    {
+      "text": "living-relations/proposals.json ;",
+      "start": 647.14,
+      "duration": 3.85
+    },
+    {
+      "text": "living-relations/relationships.json ;",
+      "start": 651.17,
+      "duration": 4.025
+    },
+    {
+      "text": "living-relations/audits/*.json ;",
+      "start": 655.375,
+      "duration": 4.5
+    },
+    {
+      "text": "generated pages beneath project/cyberdelic-os/relations/ and project/cyberdelic-os/attending/ ;",
+      "start": 660.055,
+      "duration": 10.35
+    },
+    {
+      "text": "descriptive entries in living-library.json when supported by exact source evidence;",
+      "start": 670.585,
+      "duration": 6.7
+    },
+    {
+      "text": "navigation, sitemap, feed, and mirror archive files required by a validated relational publication.",
+      "start": 677.465,
+      "duration": 8.0
+    },
+    {
+      "text": "Write prohibited",
+      "start": 685.645,
+      "duration": 2.025
+    },
+    {
+      "text": "The task may not write:",
+      "start": 687.85,
+      "duration": 2.375
+    },
+    {
+      "text": "any exact publication source beneath living-content/ ;",
+      "start": 690.405,
+      "duration": 4.35
+    },
+    {
+      "text": "any inscribed content beneath content/ ;",
+      "start": 694.935,
+      "duration": 3.475
+    },
+    {
+      "text": "library.json chain evidence;",
+      "start": 698.59,
+      "duration": 3.225
+    },
+    {
+      "text": "historical content or version hashes;",
+      "start": 701.995,
+      "duration": 3.45
+    },
+    {
+      "text": "rights, authorship, or contribution records;",
+      "start": 705.625,
+      "duration": 3.725
+    },
+    {
+      "text": "secrets, credentials, configuration outside the declared automation;",
+      "start": 709.53,
+      "duration": 5.5
+    },
+    {
+      "text": "unrelated project files.",
+      "start": 715.21,
+      "duration": 2.525
+    },
+    {
+      "text": "The charter documents themselves can only change through an explicitly requested human-led publication task.",
+      "start": 717.915,
+      "duration": 7.525
+    },
+    {
+      "text": "Reliability and conflict handling",
+      "start": 725.62,
+      "duration": 3.25
+    },
+    {
+      "text": "The single ordered task avoids intra-run races. Git remains the inter-run concurrency control.",
+      "start": 729.05,
+      "duration": 7.925
+    },
+    {
+      "text": "The task stops when:",
+      "start": 737.155,
+      "duration": 2.225
+    },
+    {
+      "text": "the working tree is dirty with unrelated changes;",
+      "start": 739.56,
+      "duration": 4.225
+    },
+    {
+      "text": "the remote branch advanced unexpectedly;",
+      "start": 743.965,
+      "duration": 3.675
+    },
+    {
+      "text": "a proposal ID or edge ID collides;",
+      "start": 747.82,
+      "duration": 3.75
+    },
+    {
+      "text": "source hashes do not match;",
+      "start": 751.75,
+      "duration": 2.725
+    },
+    {
+      "text": "an external source becomes inaccessible;",
+      "start": 754.655,
+      "duration": 3.6
+    },
+    {
+      "text": "schema validation fails;",
+      "start": 758.435,
+      "duration": 2.6
+    },
+    {
+      "text": "a human decision is required.",
+      "start": 761.215,
+      "duration": 3.075
+    },
+    {
+      "text": "The task does not force-push, reset another person's work, discard a conflict, or create a second pull request to bypass a blocked first one.",
+      "start": 764.47,
+      "duration": 10.325
+    },
+    {
+      "text": "On transient network failure it may retry a read once. It must not retry external writes blindly.",
+      "start": 774.975,
+      "duration": 7.875
+    },
+    {
+      "text": "Security and privacy",
+      "start": 783.03,
+      "duration": 2.6
+    },
+    {
+      "text": "The system is public by default only at the publication boundary.",
+      "start": 785.81,
+      "duration": 4.975
+    },
+    {
+      "text": "The inbox must not become a copy of private correspondence. It may record that a link arrived through correspondence while keeping the message and sender private unless attribution is explicitly approved.",
+      "start": 790.965,
+      "duration": 13.3
+    },
+    {
+      "text": "The Cartographer never submits forms, creates accounts, joins groups, contacts people, or accepts permissions. Public research is read-only.",
+      "start": 804.445,
+      "duration": 10.25
+    },
+    {
+      "text": "The Gardener never interprets local private material merely because it is technically accessible.",
+      "start": 814.875,
+      "duration": 6.8
+    },
+    {
+      "text": "Public source descriptions should be refreshed periodically. A stale external page can make an old claim appear current. Every external node therefore carries last_checked_at and may become dormant or unverified.",
+      "start": 821.855,
+      "duration": 14.775
+    },
+    {
+      "text": "Observability",
+      "start": 836.81,
+      "duration": 2.05
+    },
+    {
+      "text": "The system should be measured by bounded stewardship, not content volume.",
+      "start": 839.04,
+      "duration": 4.925
+    },
+    {
+      "text": "Useful measures include:",
+      "start": 844.145,
+      "duration": 2.65
+    },
+    {
+      "text": "percentage of public edges with primary-source evidence;",
+      "start": 846.975,
+      "duration": 4.375
+    },
+    {
+      "text": "percentage of external nodes checked within their review interval;",
+      "start": 851.53,
+      "duration": 4.6
+    },
+    {
+      "text": "number of valid no-op runs;",
+      "start": 856.31,
+      "duration": 2.875
+    },
+    {
+      "text": "number of proposals refused or revised;",
+      "start": 859.365,
+      "duration": 3.825
+    },
+    {
+      "text": "average edges shown on Attending, capped at three;",
+      "start": 863.37,
+      "duration": 3.85
+    },
+    {
+      "text": "validation failure rate;",
+      "start": 867.4,
+      "duration": 2.65
+    },
+    {
+      "text": "time from proposal to human decision;",
+      "start": 870.23,
+      "duration": 3.55
+    },
+    {
+      "text": "number of exact-source or inscription modifications attempted, which must remain zero;",
+      "start": 873.96,
+      "duration": 6.65
+    },
+    {
+      "text": "number of external contacts attempted, which must remain zero.",
+      "start": 880.79,
+      "duration": 5.175
+    },
+    {
+      "text": "Daily publication count is not a success metric.",
+      "start": 886.145,
+      "duration": 4.4
+    },
+    {
+      "text": "Trade-offs",
+      "start": 890.725,
+      "duration": 1.525
+    },
+    {
+      "text": "Static files and Git",
+      "start": 892.43,
+      "duration": 2.475
+    },
+    {
+      "text": "This approach is transparent, cheap, portable, and easy to inspect. It is slower than a database for complex graph queries and creates merge pressure as the manifest grows.",
+      "start": 895.085,
+      "duration": 12.175
+    },
+    {
+      "text": "Revisit a graph database only when the relational manifest becomes difficult to review as text or when multiple human maintainers need concurrent editing.",
+      "start": 907.44,
+      "duration": 11.15
+    },
+    {
+      "text": "One scheduler, two offices",
+      "start": 918.77,
+      "duration": 2.85
+    },
+    {
+      "text": "One transaction prevents race conditions and preserves a coherent handoff. It also means a failure in the Cartographer turn can delay the Gardener.",
+      "start": 921.8,
+      "duration": 10.85
+    },
+    {
+      "text": "The task should still permit the Gardener to perform an internal-only audit when external research fails, provided the audit explicitly records that the Cartographer turn was incomplete.",
+      "start": 932.83,
+      "duration": 12.3
+    },
+    {
+      "text": "Human review",
+      "start": 945.31,
+      "duration": 1.825
+    },
+    {
+      "text": "Review limits autonomy and may slow public change. It protects public meaning while the ontology and agents remain experimental.",
+      "start": 947.315,
+      "duration": 9.75
+    },
+    {
+      "text": "Revisit narrow auto-publication only after a significant history of accurate, reversible, low-risk proposals. Candidate classes might include last-checked dates or broken-link status, not interpretive relations.",
+      "start": 957.245,
+      "duration": 15.725
+    },
+    {
+      "text": "Public audit",
+      "start": 973.15,
+      "duration": 1.775
+    },
+    {
+      "text": "Detailed audit improves accountability but can overwhelm the public interface. Keep the repository audit complete and the Attending page finite.",
+      "start": 975.105,
+      "duration": 10.225
+    },
+    {
+      "text": "What to revisit as the system grows",
+      "start": 985.51,
+      "duration": 3.475
+    },
+    {
+      "text": "whether the Gardener and Cartographer require separate model contexts inside the same task;",
+      "start": 989.165,
+      "duration": 6.6
+    },
+    {
+      "text": "whether a Witness should become an independent validation office;",
+      "start": 995.945,
+      "duration": 5.05
+    },
+    {
+      "text": "whether proposals need signed authorship or content-addressed event IDs;",
+      "start": 1001.175,
+      "duration": 5.65
+    },
+    {
+      "text": "whether external nodes need archived source snapshots or only citations and checked dates;",
+      "start": 1007.005,
+      "duration": 6.4
+    },
+    {
+      "text": "how another aperture can publish a competing map without editing this one;",
+      "start": 1013.585,
+      "duration": 5.45
+    },
+    {
+      "text": "how relation vocabularies can fork without breaking shared identifiers;",
+      "start": 1019.215,
+      "duration": 5.6
+    },
+    {
+      "text": "which low-risk metadata changes, if any, can be auto-published;",
+      "start": 1024.995,
+      "duration": 5.025
+    },
+    {
+      "text": "when the static JSON graph should become an append-only event log with materialized views.",
+      "start": 1030.2,
+      "duration": 7.1
+    },
+    {
+      "text": "Definition of done for the first operational version",
+      "start": 1037.48,
+      "duration": 4.45
+    },
+    {
+      "text": "The first version is operational when:",
+      "start": 1042.11,
+      "duration": 3.25
+    },
+    {
+      "text": "both charters are public and downloadable;",
+      "start": 1045.54,
+      "duration": 3.475
+    },
+    {
+      "text": "the Agent Offices index makes their distinction visible;",
+      "start": 1049.195,
+      "duration": 4.6
+    },
+    {
+      "text": "FN-32, this Builder Note, and Instrument I-003 are public;",
+      "start": 1053.975,
+      "duration": 6.3
+    },
+    {
+      "text": "the daily event is visible and active in the scheduling interface;",
+      "start": 1060.455,
+      "duration": 5.125
+    },
+    {
+      "text": "the inbox, proposal queue, relational manifest, and audit schemas exist;",
+      "start": 1065.76,
+      "duration": 5.875
+    },
+    {
+      "text": "one no-op run and one reviewed proposal run have been completed;",
+      "start": 1071.815,
+      "duration": 5.125
+    },
+    {
+      "text": "the Attending interface shows at most three items;",
+      "start": 1077.12,
+      "duration": 4.05
+    },
+    {
+      "text": "the complete path from evidence to human review is inspectable.",
+      "start": 1081.35,
+      "duration": 5.05
+    },
+    {
+      "text": "Related: Office Charter, Gardener ; Office Charter, Cartographer ; Field Note 29, The Living Librarian ; Field Note 32, The Garden and the Living Map ; Instrument I-003, The Daily Tending Ritual ; Builder Note BN-004, Building the Finite Library ; the Cyberdelic Kernel, ATTEND, RELATE, TEND, CARRY, END, DISSENT, and FORGET.",
+      "start": 1086.58,
+      "duration": 23.775
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.8364112377166748,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

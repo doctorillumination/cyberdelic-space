@@ -1,0 +1,148 @@
+{
+  "id": "cyberdelic-os-fn-13",
+  "title": "The Ledger, the Anchor, and the Inscription",
+  "form": "field-note",
+  "release_id": "FN-S0-001",
+  "pages": [
+    "project/cyberdelic-os/field-notes/fn-13/"
+  ],
+  "source_path": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
+  "source_sha256": "0e893f7e468102bd66ac563b7c6eec686e96efe508dbc5410cd8c83f2aee38f2",
+  "document_sha256": "dbe135526e3d89d78d64cdcecaa323ff021f3f8d954af6649cb1896e59b4a8d6",
+  "text_sha256": "c1ae2bcadeb41515ea7533b67c5593525cddbf269b33a58b74913de9bf7e5a3e",
+  "reading_path": "audio/readings/c1ae2bcadeb41515ea7533b67c5593525cddbf269b33a58b74913de9bf7e5a3e.md",
+  "reading_sha256": "dbe135526e3d89d78d64cdcecaa323ff021f3f8d954af6649cb1896e59b4a8d6",
+  "reading_length": 2532,
+  "audio_path": "audio/lewis/c1ae2bcadeb41515ea7533b67c5593525cddbf269b33a58b74913de9bf7e5a3e.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "35a2c94071674bfd71154436edd94605a3c89990c07b4f2c763ffe2fee636710",
+  "audio_length": 2192588,
+  "duration_seconds": 182.63,
+  "chunks": [
+    {
+      "text": "The Ledger, the Anchor, and the Inscription",
+      "start": 0.0,
+      "duration": 3.35
+    },
+    {
+      "text": "Not all cryptographic memory is on-chain.",
+      "start": 3.53,
+      "duration": 3.6
+    },
+    {
+      "text": "This distinction is conceptually and technically important.",
+      "start": 7.31,
+      "duration": 4.625
+    },
+    {
+      "text": "A system like Buzz can represent messages, agent actions, reactions, approvals, and workflow events as signed records. A signature can establish authorship and reveal tampering. But a signed event stored by a relay or local database is not automatically a blockchain transaction, and it is not necessarily permanent. The storage operator may still lose or delete it.",
+      "start": 12.115,
+      "duration": 25.3
+    },
+    {
+      "text": "Cyberdelic OS should distinguish three memory layers.",
+      "start": 37.595,
+      "duration": 4.5
+    },
+    {
+      "text": "Living memory",
+      "start": 42.275,
+      "duration": 1.875
+    },
+    {
+      "text": "The active history of a hearth or gathering: voice notes, placements, agent proposals, revisions, permissions, and correspondence. These records can be locally encrypted and append-only. Important actions are signed by the human or agent that performed them.",
+      "start": 44.33,
+      "duration": 17.65
+    },
+    {
+      "text": "Living memory is fast, inexpensive, private by default, and still capable of change or deletion.",
+      "start": 62.16,
+      "duration": 7.775
+    },
+    {
+      "text": "Anchored memory",
+      "start": 70.115,
+      "duration": 2.0
+    },
+    {
+      "text": "At meaningful intervals, the system can gather a body of records into a Merkle tree or other content-addressed structure and publish only the root hash to a public timestamping system anchored in Bitcoin.",
+      "start": 72.295,
+      "duration": 13.425
+    },
+    {
+      "text": "The private records do not become public. The anchor proves that a particular state of the archive existed no later than a particular time and that later alterations would change its fingerprint.",
+      "start": 85.9,
+      "duration": 13.0
+    },
+    {
+      "text": "Anchoring gives history a witness without giving the world its contents.",
+      "start": 99.08,
+      "duration": 5.275
+    },
+    {
+      "text": "Inscribed memory",
+      "start": 104.535,
+      "duration": 2.275
+    },
+    {
+      "text": "A small number of works may be intentionally published into durable public memory through cyberdelic.space: field notes, constitutions, artworks, crux maps, releases, or cultural artifacts judged worthy of the cost and irreversibility.",
+      "start": 106.99,
+      "duration": 16.95
+    },
+    {
+      "text": "Inscription should be ceremonial.",
+      "start": 124.12,
+      "duration": 2.925
+    },
+    {
+      "text": "Immutability is not an automatic virtue. A living person needs revision, privacy, mercy, and forgetting. The right to preserve must remain balanced by the right not to be permanently captured by an earlier self.",
+      "start": 127.225,
+      "duration": 14.575
+    },
+    {
+      "text": "Cryptography belongs beneath the surface as trust infrastructure: portable identity, signed provenance, verifiable history, and selective anchoring. It should not force every visitor to understand wallets or guard a fragile seed phrase before they can enter the village.",
+      "start": 141.98,
+      "duration": 18.0
+    },
+    {
+      "text": "The ledger remembers activity.",
+      "start": 160.16,
+      "duration": 3.025
+    },
+    {
+      "text": "The anchor witnesses history.",
+      "start": 163.365,
+      "duration": 2.95
+    },
+    {
+      "text": "The inscription addresses the future.",
+      "start": 166.495,
+      "duration": 3.25
+    },
+    {
+      "text": "Confusing these layers would either make the system expensive and unusable or make its claims of permanence dishonest.",
+      "start": 169.925,
+      "duration": 8.475
+    },
+    {
+      "text": "Holding them apart lets memory have different temperatures.",
+      "start": 178.58,
+      "duration": 4.05
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.7792702317237854,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

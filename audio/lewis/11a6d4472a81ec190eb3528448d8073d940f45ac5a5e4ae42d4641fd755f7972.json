@@ -1,0 +1,89 @@
+{
+  "id": "cyberdelic-os-fn-36",
+  "title": "The Machine Becomes a Participant",
+  "form": "field-note",
+  "release_id": "FN-S0-009",
+  "pages": [
+    "project/cyberdelic-os/field-notes/fn-36/",
+    "project/cyberdelic-os/fn-s0-009/"
+  ],
+  "source_path": "living-content/cyberdelic-os/fn-s0-009/v000002.md",
+  "source_sha256": "36f0b62ab292b1ff624badf6f90d9a0542f5ac55b531c78aff9a2466e5675a06",
+  "document_sha256": "36f0b62ab292b1ff624badf6f90d9a0542f5ac55b531c78aff9a2466e5675a06",
+  "text_sha256": "11a6d4472a81ec190eb3528448d8073d940f45ac5a5e4ae42d4641fd755f7972",
+  "reading_path": "audio/readings/11a6d4472a81ec190eb3528448d8073d940f45ac5a5e4ae42d4641fd755f7972.md",
+  "reading_sha256": "36f0b62ab292b1ff624badf6f90d9a0542f5ac55b531c78aff9a2466e5675a06",
+  "reading_length": 2340,
+  "audio_path": "audio/lewis/11a6d4472a81ec190eb3528448d8073d940f45ac5a5e4ae42d4641fd755f7972.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "aebc77aadc16a98fe1e56b751bb4788cb79d158ea624c704bb6f5831976fd9ac",
+  "audio_length": 1439468,
+  "duration_seconds": 119.87,
+  "chunks": [
+    {
+      "text": "The Machine Becomes a Participant",
+      "start": 0.0,
+      "duration": 3.0
+    },
+    {
+      "text": "Something unexpected happened while imagining Cyberdelic OS: we began using it before it existed.",
+      "start": 3.18,
+      "duration": 7.875
+    },
+    {
+      "text": "Many of these ideas have emerged while walking through forests, driving, travelling, and moving through ordinary life. Brad speaks before the thought is finished. A machine intelligence listens, organizes, reflects, challenges, and returns something. That response changes what becomes salient. Changed attention alters the next prompt.",
+      "start": 11.235,
+      "duration": 22.075
+    },
+    {
+      "text": "The person prompts the machine, and the machine prompts the person. The loop is already cyberdelic.",
+      "start": 33.49,
+      "duration": 7.05
+    },
+    {
+      "text": "This suggests that the deepest interface may not be the screen, the village, or even the voice interface. The primary interface may be life itself: the mountain, the conversation, the collaborator, the dog running ahead, or the thought that appears because light passed through the trees in a particular way.",
+      "start": 40.72,
+      "duration": 19.05
+    },
+    {
+      "text": "The digital system gives those encounters continuity. It remembers, connects, questions, and sometimes reveals patterns that were difficult to perceive from inside a single moment.",
+      "start": 59.95,
+      "duration": 12.25
+    },
+    {
+      "text": "But it should not become the world. It should become another participant in our encounter with the world.",
+      "start": 72.38,
+      "duration": 6.925
+    },
+    {
+      "text": "This may explain why so many of the most important ideas in Cyberdelic OS concern restraint rather than capability: finite journeys, bounded agents, local memory, dark regions, the right to forget, the right to remain unknown, the right not to bridge, and a system that knows when to end.",
+      "start": 79.485,
+      "duration": 19.875
+    },
+    {
+      "text": "Perhaps the difficult problem of intelligent systems is no longer whether they can do enough, but whether they can learn when not to act.",
+      "start": 99.54,
+      "duration": 8.625
+    },
+    {
+      "text": "A humane intelligence might know when to answer, and it might also know when to accompany. Sometimes it might know when to become quiet enough for the world to become audible again.",
+      "start": 108.345,
+      "duration": 11.525
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.6330559849739075,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

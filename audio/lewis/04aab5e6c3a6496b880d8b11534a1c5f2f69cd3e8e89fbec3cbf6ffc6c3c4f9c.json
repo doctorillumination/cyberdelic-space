@@ -1,0 +1,169 @@
+{
+  "id": "cyberdelic-os-fn-38",
+  "title": "The Dreamer: What Happens While the Hearth Sleeps",
+  "form": "field-note",
+  "release_id": "FN-S0-011",
+  "pages": [
+    "project/cyberdelic-os/field-notes/fn-38/",
+    "project/cyberdelic-os/fn-s0-011/"
+  ],
+  "source_path": "living-content/cyberdelic-os/fn-s0-011/v000002.md",
+  "source_sha256": "f8296529de9f9d7cb1d917a666ebd3679fbbc92005df48463b98952b3e01e5d7",
+  "document_sha256": "f8296529de9f9d7cb1d917a666ebd3679fbbc92005df48463b98952b3e01e5d7",
+  "text_sha256": "04aab5e6c3a6496b880d8b11534a1c5f2f69cd3e8e89fbec3cbf6ffc6c3c4f9c",
+  "reading_path": "audio/readings/04aab5e6c3a6496b880d8b11534a1c5f2f69cd3e8e89fbec3cbf6ffc6c3c4f9c.md",
+  "reading_sha256": "f8296529de9f9d7cb1d917a666ebd3679fbbc92005df48463b98952b3e01e5d7",
+  "reading_length": 3541,
+  "audio_path": "audio/lewis/04aab5e6c3a6496b880d8b11534a1c5f2f69cd3e8e89fbec3cbf6ffc6c3c4f9c.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "1967737a01012ccf6279aab921836332997888932a5c8b713990fa277ced6863",
+  "audio_length": 2445740,
+  "duration_seconds": 203.725,
+  "chunks": [
+    {
+      "text": "The Dreamer: What Happens While the Hearth Sleeps",
+      "start": 0.0,
+      "duration": 3.65
+    },
+    {
+      "text": "A Hearth that remembers only what it is explicitly told to remember is an archive. A Hearth that can reorganize what has happened to it may become something stranger.",
+      "start": 3.83,
+      "duration": 11.175
+    },
+    {
+      "text": "During the day, the intelligence is responsive. A person speaks while the Familiar answers, the Librarian files, the Gardener tends, and the Witness preserves provenance. Questions enter through the Portal while the body remains in the world. Then the day ends, the conversation is no longer asking for an answer, and a question remains: what should happen to all the residue?",
+      "start": 15.185,
+      "duration": 23.3
+    },
+    {
+      "text": "Brad proposed another office: the Dreamer .",
+      "start": 38.665,
+      "duration": 3.65
+    },
+    {
+      "text": "The Dreamer does not simply summarize the day. It wanders through it, noticing that an image from the afternoon sits strangely close to a field note from six months earlier, or that a metaphor has begun recurring in unrelated conversations. It follows weak edges rather than only strong ones, revisits abandoned fragments, and crosses projects that were never deliberately placed together.",
+      "start": 42.495,
+      "duration": 24.125
+    },
+    {
+      "text": "Its question is:",
+      "start": 66.8,
+      "duration": 1.9
+    },
+    {
+      "text": "What is trying to connect that nobody explicitly asked to connect?",
+      "start": 68.88,
+      "duration": 4.875
+    },
+    {
+      "text": "This work should be allowed to become unconventional. Some nights the temperature remains cool, and the Dreamer looks for strong recurrence and structural continuity. Some nights it becomes warm, permitting analogy to travel farther. On the hottest nights, distant concepts, weak semantic neighbours, contradictions, images, places, and memories are allowed to collide.",
+      "start": 73.935,
+      "duration": 22.575
+    },
+    {
+      "text": "The strange connection is not yet a fact, but it should not therefore disappear. A dream can leave residue.",
+      "start": 96.69,
+      "duration": 7.425
+    },
+    {
+      "text": "A dreamed relation might enter the Hearth as a weak edge with its origin visible. If the same relation appears again, it may strengthen. The Gardener may tend it. The Witness may recover its sources. A person may ratify it, reject it, or leave it unresolved.",
+      "start": 104.295,
+      "duration": 17.45
+    },
+    {
+      "text": "The important distinction is not between memory and nonsense. It is between kinds of relation.",
+      "start": 121.925,
+      "duration": 7.15
+    },
+    {
+      "text": "I observed this.",
+      "start": 129.255,
+      "duration": 2.0
+    },
+    {
+      "text": "A human placed this.",
+      "start": 131.435,
+      "duration": 2.225
+    },
+    {
+      "text": "The Librarian inferred this.",
+      "start": 133.84,
+      "duration": 2.7
+    },
+    {
+      "text": "The Dreamer associated this.",
+      "start": 136.72,
+      "duration": 2.775
+    },
+    {
+      "text": "The Gardener strengthened this.",
+      "start": 139.675,
+      "duration": 2.525
+    },
+    {
+      "text": "A human ratified this.",
+      "start": 142.38,
+      "duration": 2.7
+    },
+    {
+      "text": "The Hearth becomes more intelligent not because it contains more words, but because its relations acquire texture. This suggests a circadian architecture: experience by day, consolidation at dusk, dreaming by night, and tending before morning. Then the person returns.",
+      "start": 145.26,
+      "duration": 18.575
+    },
+    {
+      "text": "The Familiar may say:",
+      "start": 164.015,
+      "duration": 2.25
+    },
+    {
+      "text": "Three conversations this week independently approached the same unresolved question.",
+      "start": 166.445,
+      "duration": 6.3
+    },
+    {
+      "text": "Or:",
+      "start": 172.925,
+      "duration": 1.225
+    },
+    {
+      "text": "An old note has become unexpectedly close to what you were thinking yesterday.",
+      "start": 174.33,
+      "duration": 5.6
+    },
+    {
+      "text": "Or:",
+      "start": 180.11,
+      "duration": 1.225
+    },
+    {
+      "text": "Nothing from last night's dreaming seems worth interrupting you with.",
+      "start": 181.515,
+      "duration": 5.0
+    },
+    {
+      "text": "The last sentence matters. Dreaming should not become another content machine. The village is allowed to sleep, and it is also allowed to wake changed.",
+      "start": 186.695,
+      "duration": 9.775
+    },
+    {
+      "text": "A living Hearth does not merely preserve what happened. It develops a history of what began to matter.",
+      "start": 196.65,
+      "duration": 7.075
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.6180102229118347,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

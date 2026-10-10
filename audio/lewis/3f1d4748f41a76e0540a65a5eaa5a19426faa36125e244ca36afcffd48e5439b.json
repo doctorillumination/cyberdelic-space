@@ -1,0 +1,153 @@
+{
+  "id": "cyberdelic-os-fn-19",
+  "title": "A Medium for Becoming",
+  "form": "field-note",
+  "release_id": "FN-S0-001",
+  "pages": [
+    "project/cyberdelic-os/field-notes/fn-19/"
+  ],
+  "source_path": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
+  "source_sha256": "0e893f7e468102bd66ac563b7c6eec686e96efe508dbc5410cd8c83f2aee38f2",
+  "document_sha256": "4b21b103f7a631b596b058f34b66a257450bdca139e59f2ab65a6acbd7b0f4bb",
+  "text_sha256": "3f1d4748f41a76e0540a65a5eaa5a19426faa36125e244ca36afcffd48e5439b",
+  "reading_path": "audio/readings/3f1d4748f41a76e0540a65a5eaa5a19426faa36125e244ca36afcffd48e5439b.md",
+  "reading_sha256": "4b21b103f7a631b596b058f34b66a257450bdca139e59f2ab65a6acbd7b0f4bb",
+  "reading_length": 2873,
+  "audio_path": "audio/lewis/3f1d4748f41a76e0540a65a5eaa5a19426faa36125e244ca36afcffd48e5439b.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "0f9cee95e1fd57989e3af4f25df615121045fb0ec8fcdbed4846b1a526174e44",
+  "audio_length": 2379500,
+  "duration_seconds": 198.21,
+  "chunks": [
+    {
+      "text": "A Medium for Becoming",
+      "start": 0.0,
+      "duration": 2.45
+    },
+    {
+      "text": "Most software asks what a person wants to accomplish.",
+      "start": 2.63,
+      "duration": 4.275
+    },
+    {
+      "text": "Open the document. Send the message. Complete the task. Find the answer. Optimize the workflow.",
+      "start": 7.085,
+      "duration": 7.225
+    },
+    {
+      "text": "Cyberdelic OS may begin somewhere more intimate:",
+      "start": 14.49,
+      "duration": 4.15
+    },
+    {
+      "text": "What are you becoming?",
+      "start": 18.82,
+      "duration": 2.175
+    },
+    {
+      "text": "This is not a demand for constant self-improvement. The system should not transform a life into another optimization project. Becoming is slower and less measurable. It includes the questions a person repeatedly returns to, the forms of beauty they are learning to perceive, the beliefs they are revising, the relationships that awaken different parts of them, and the things they have not yet found language for.",
+      "start": 21.175,
+      "duration": 24.725
+    },
+    {
+      "text": "Over time, the Hearth may become capable of reflecting the trajectory of a person's attention.",
+      "start": 46.08,
+      "duration": 6.825
+    },
+    {
+      "text": "It may notice that a body of work once organized around illness is increasingly organized around inheritance. That technology has gradually become a question about consciousness. That the forest appears whenever language reaches its limit. That certain collaborators reliably unlock unusual conceptual movement. That an apparently abandoned project has continued growing beneath newer work.",
+      "start": 53.085,
+      "duration": 25.2
+    },
+    {
+      "text": "This is different from personalization as it currently exists.",
+      "start": 78.465,
+      "duration": 4.6
+    },
+    {
+      "text": "Most platforms model a person in order to predict what they will click, purchase, or watch next. Cyberdelic OS would attempt to make the model available to the person as a revisable mirror.",
+      "start": 83.245,
+      "duration": 13.0
+    },
+    {
+      "text": "Not:",
+      "start": 96.425,
+      "duration": 1.3
+    },
+    {
+      "text": "We know what you want.",
+      "start": 97.905,
+      "duration": 2.1
+    },
+    {
+      "text": "But:",
+      "start": 100.185,
+      "duration": 1.45
+    },
+    {
+      "text": "This is the pattern your recent attention appears to be making. Do you recognize it?",
+      "start": 101.815,
+      "duration": 6.05
+    },
+    {
+      "text": "The living archive should think back with restraint.",
+      "start": 108.045,
+      "duration": 3.675
+    },
+    {
+      "text": "A voice note recorded while driving enters the Hearth. A fragment from a walk rests beside an unfinished essay. A film, a book passage, and a conversation begin forming a constellation. The Gardener tends continuity. The Cartographer notices structural recurrence. The Witness preserves the lineage of ideas. The Dissenter asks whether a beloved concept is becoming doctrine.",
+      "start": 111.9,
+      "duration": 25.225
+    },
+    {
+      "text": "Then, perhaps once a week, the village offers a quiet report:",
+      "start": 137.305,
+      "duration": 4.8
+    },
+    {
+      "text": "These three ideas approached one another. This question has returned for the fifth time. This old note now seems to belong beside your new project. You have begun using this word differently. A dark region is forming here. Nothing requires action yet.",
+      "start": 142.285,
+      "duration": 16.85
+    },
+    {
+      "text": "That final sentence is part of the constitution.",
+      "start": 159.315,
+      "duration": 4.025
+    },
+    {
+      "text": "The system must be capable of recognizing something without converting it into a task. Not every insight wants execution. Some thoughts need duration, silence, or the dignity of remaining incomplete.",
+      "start": 163.52,
+      "duration": 14.025
+    },
+    {
+      "text": "This may be the deepest promise of Cyberdelic OS: not a machine that makes the person more efficient, but a medium through which the person becomes more perceptible to themselves.",
+      "start": 177.725,
+      "duration": 11.625
+    },
+    {
+      "text": "An operating system for becoming would not define the destination.",
+      "start": 189.53,
+      "duration": 5.025
+    },
+    {
+      "text": "It would help the traveller notice the path.",
+      "start": 194.735,
+      "duration": 3.475
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.6864529848098755,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

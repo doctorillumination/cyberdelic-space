@@ -1,0 +1,243 @@
+{
+  "id": "cyberdelic-os-bn-006",
+  "title": "Building Dear Elsewhere",
+  "form": "builder-note",
+  "release_id": "BN-006",
+  "pages": [
+    "project/cyberdelic-os/bn-006/"
+  ],
+  "source_path": "living-content/cyberdelic-os/bn-006/v000001.md",
+  "source_sha256": "5ad05718c3f44493c8f95959a260462380103aa76be20349c0da5e81bf5ae8f7",
+  "document_sha256": "5ad05718c3f44493c8f95959a260462380103aa76be20349c0da5e81bf5ae8f7",
+  "text_sha256": "e27cf8aec702c82a4ed834f4e1968aea62bdfe30729f5a06c6f8b0c6f360f897",
+  "reading_path": "audio/readings/e27cf8aec702c82a4ed834f4e1968aea62bdfe30729f5a06c6f8b0c6f360f897.md",
+  "reading_sha256": "5ad05718c3f44493c8f95959a260462380103aa76be20349c0da5e81bf5ae8f7",
+  "reading_length": 9791,
+  "audio_path": "audio/lewis/e27cf8aec702c82a4ed834f4e1968aea62bdfe30729f5a06c6f8b0c6f360f897.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "9839bbb2f47588426111f807afb19f2cb2dbfd8993014cce6dabd0c5ee706317",
+  "audio_length": 7770572,
+  "duration_seconds": 647.47,
+  "chunks": [
+    {
+      "text": "Builder Note BN-006: Building Dear Elsewhere",
+      "start": 0.0,
+      "duration": 4.8
+    },
+    {
+      "text": "Dear Elsewhere preserves a collage at each of seven arrivals and packages the exchange as an independently readable interactive file. Its first implementation was named Counterform. The repository now uses Dear Elsewhere; internal format names, application labels, and the .counterform extension retain the earlier name.",
+      "start": 4.98,
+      "duration": 22.025
+    },
+    {
+      "text": "The technical commitment is that a later arrangement must not erase the earlier one, and leaving the original application must not reduce the work to a screenshot.",
+      "start": 27.185,
+      "duration": 10.85
+    },
+    {
+      "text": "One runtime in three places",
+      "start": 38.215,
+      "duration": 3.025
+    },
+    {
+      "text": "The browser canvas, the Mac companion, and the exported HTML share a JavaScript model and interface. Tools/build_collage.py assembles those sources and the styles into a standalone HTML page. There are no external JavaScript packages or required font downloads in that page.",
+      "start": 41.42,
+      "duration": 20.8
+    },
+    {
+      "text": "NativeCollage/CounterformApp.swift hosts the page in WebKit and supplies file dialogs, PDF processing, and native recording through a bounded bridge. PDFKit creates a page preview and extracts available text while retaining the original document. Browser recording uses MediaRecorder; native recording uses AVAudioRecorder.",
+      "start": 62.4,
+      "duration": 24.85
+    },
+    {
+      "text": "This shared runtime makes a native-to-browser handoff possible without translating the artwork into a second creative model. The browser remains the proposed primary home because the correspondence should be reachable from the device its recipient already has.",
+      "start": 87.43,
+      "duration": 17.125
+    },
+    {
+      "text": "The browser prototype is available at dearelsewhere.space . On September 6, its served HTML matched the inspected local build byte for byte. Static hosting distributes the instrument; it does not create shared state. Authenticated invitations, draft recovery, private media storage, and a service that accepts one addressed turn at a time remain future work.",
+      "start": 104.735,
+      "duration": 24.425
+    },
+    {
+      "text": "Seven snapshots",
+      "start": 129.34,
+      "duration": 2.15
+    },
+    {
+      "text": "The version 2 document records the exchange identity, title, roster, active participant, current turn, status, current fragments, included assets, and sealed turns.",
+      "start": 131.67,
+      "duration": 12.1
+    },
+    {
+      "text": "The allowed progression is:",
+      "start": 143.95,
+      "duration": 2.5
+    },
+    {
+      "text": "Each seal preserves the whole canvas, its roster, reflection, next recipient, and referenced file commitments. This records the arrangement at handoff, not every gesture made while composing. Earlier included media remains in the archive even if a later arrival removes it from the current canvas.",
+      "start": 146.63,
+      "duration": 20.225
+    },
+    {
+      "text": "An active author may add a participant to the circle. Names are self-attributed. Selecting the addressed name is not authentication. Separate copies can diverge; the prototype has no merge protocol or central authority that can decide which copy is the accepted continuation.",
+      "start": 167.035,
+      "duration": 18.825
+    },
+    {
+      "text": "Carry bytes, retain sources",
+      "start": 186.04,
+      "duration": 2.825
+    },
+    {
+      "text": "Fragments record their kind, words, caption, geometry, stacking order, original contributor, later editor, and declared provenance. Included assets hold the original file bytes once as base64, with metadata. PDF previews are separate included assets.",
+      "start": 189.045,
+      "duration": 19.175
+    },
+    {
+      "text": "The archive permits up to twelve participants, 160 canvas fragments, and 200 included files. An individual file may contain at most 12 MiB of decoded bytes. The JSON archive is bounded at 64 MiB, including encoded data and snapshots. Active HTML, SVG, and script media types are excluded from included attachments.",
+      "start": 208.4,
+      "duration": 24.9
+    },
+    {
+      "text": "Supported remote sources are explicit HTTP or HTTPS addresses. YouTube uses a provider player. Instagram, X, and generic websites remain source cards. Reopened archives gate remote playback behind a user action. Imported media travels locally; external sources still depend on their providers and the network.",
+      "start": 233.48,
+      "duration": 23.675
+    },
+    {
+      "text": "The player must remain useful inside its actual browser environment. In local checks, YouTube was tested in both WebKit and the browser, with a referring application identity, sufficient visible player area, and one active player at a time. This does not establish that every provider, deleted item, or local-file context will play.",
+      "start": 257.335,
+      "duration": 23.075
+    },
+    {
+      "text": "What a commitment commits to",
+      "start": 280.59,
+      "duration": 2.6
+    },
+    {
+      "text": "Each included asset is committed as a complete asset record, including its metadata and encoded bytes. The digest is not simply a hash of the decoded attachment.",
+      "start": 283.37,
+      "duration": 12.25
+    },
+    {
+      "text": "Each sealed turn carries a SHA-256 digest over a format-specific canonical JSON representation of the exchange identity and snapshot. The snapshot includes the previous turn's digest and its referenced asset commitments. Object keys are sorted; array order is retained. The import path checks structure, transitions, attribution continuity, assets, and the complete turn chain.",
+      "start": 295.8,
+      "duration": 26.925
+    },
+    {
+      "text": "These hashes are unsigned. Someone who rewrites an archive can calculate new hashes. A separately trusted earlier commitment allows comparison with that earlier version; the file alone does not authenticate its contributors, establish a true timestamp, or prove consent.",
+      "start": 322.905,
+      "duration": 18.45
+    },
+    {
+      "text": "The completion rule is enforced by this model. It does not make an editable file physically impossible to alter. A future shared service would need its own validation of permissions and accepted history.",
+      "start": 341.535,
+      "duration": 13.625
+    },
+    {
+      "text": "The portable relic and the context view",
+      "start": 355.34,
+      "duration": 3.35
+    },
+    {
+      "text": "Interactive export places the viewer and structured archive inside one HTML file. The archive data escapes characters that could otherwise terminate its script container. Importing a saved HTML work through the app reads its archive data rather than executing the imported viewer.",
+      "start": 358.87,
+      "duration": 19.925
+    },
+    {
+      "text": "The structured .counterform export remains a separate JSON representation. Markdown and JSON context exports describe recorded placements, sources, attributions, and arrivals without including binary blobs. They frame fragments as source material, not commands to a receiving model. They do not automatically transcribe audio or interpret images.",
+      "start": 378.975,
+      "duration": 24.725
+    },
+    {
+      "text": "Saving is explicit. Unsaved edits live in process memory. The current app has no IndexedDB recovery, service worker, or automatic draft storage. A credible shared-link version must address recovery as well as invitation delivery.",
+      "start": 403.88,
+      "duration": 17.4
+    },
+    {
+      "text": "Design continuity",
+      "start": 421.46,
+      "duration": 2.45
+    },
+    {
+      "text": "The interface was aligned to the actual reader.css of cyberdelic.space. At the inspected build, the local website stylesheet matched the live file byte for byte. The app carries its Avenir-based interface typography, editorial serif, monospace details, translucent surfaces, square hairline controls, and slowly moving colour field in its own portable styles.",
+      "start": 424.09,
+      "duration": 25.35
+    },
+    {
+      "text": "The site supplied the visual language. Media playback still required application-specific browser policies. Copying appearance did not justify copying a policy that would prevent the instrument's media from working.",
+      "start": 449.62,
+      "duration": 14.625
+    },
+    {
+      "text": "Evidence at this version",
+      "start": 464.425,
+      "duration": 2.575
+    },
+    {
+      "text": "The September 6 validation record reports 24 passing model scenarios and six passing build/interface scenarios. The retained drawing version also passed 171 earlier checks. The native optimized build completed with a local signature.",
+      "start": 467.18,
+      "duration": 18.075
+    },
+    {
+      "text": "Observed interface checks included a complete seven-arrival sequence, disabled composition after the final seal, history replay, a third named contributor, movement and undo, browser and native media controls, and a native HTML handoff reopened and received in the browser. A PDF test retained its preview, extracted text, and exact original bytes.",
+      "start": 485.435,
+      "duration": 25.0
+    },
+    {
+      "text": "An exported relic containing literal script tags reopened with those tags remaining text and all seven commitments verifying.",
+      "start": 510.435,
+      "duration": 9.55
+    },
+    {
+      "text": "Live microphone capture and operating-system permission paths were not exercised. The document fixture used by automated interface tests does not replace a browser or media decoder. Wider device testing, large personal archives, unavailable external sources, and a lived two-person exchange remain open validation work.",
+      "start": 520.165,
+      "duration": 23.025
+    },
+    {
+      "text": "The next implementation threshold",
+      "start": 543.37,
+      "duration": 3.2
+    },
+    {
+      "text": "The proposed web service should bind an authenticated recipient to the addressed turn, accept seals transactionally, reject stale revisions and an eighth arrival, preserve interrupted uploads, and reconstruct a complete portable archive. It should be tested against two-tab conflicts and retried requests before claiming reliable shared correspondence.",
+      "start": 546.75,
+      "duration": 23.125
+    },
+    {
+      "text": "Optional Ethereum publication follows a separate threshold. The existing manifest exporter requires a verified seven-arrival archive, but leaves network, contract, token, and hosted media addresses unset. There is no wallet connector, upload, contract, mint, or sale flow. A later implementation needs an exact publication package, contributor decisions, storage, a reviewed contract, and deliberate transaction approval. Finishing the correspondence must not submit a transaction.",
+      "start": 570.055,
+      "duration": 31.125
+    },
+    {
+      "text": "The archive format can already preserve an interactive work. Token publication remains a design and implementation proposal.",
+      "start": 601.36,
+      "duration": 9.5
+    },
+    {
+      "text": "Related: Field Note 35 , Instrument I-005 , Artifact A-005 , and the Dear Elsewhere publication suite .",
+      "start": 611.04,
+      "duration": 10.925
+    },
+    {
+      "text": "Implementation sources: The identified private repository's CONCEPT.md , CONCEPT-v2.md , FORMAT.md , DESIGN.md , WEB-ARCHITECTURE.md , ETHEREUM.md , VALIDATION.md , and the model, interface, export, and native bridge code. This public note describes the inspected prototype; it does not make the private source publicly downloadable.",
+      "start": 622.145,
+      "duration": 25.325
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.6398200988769531,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

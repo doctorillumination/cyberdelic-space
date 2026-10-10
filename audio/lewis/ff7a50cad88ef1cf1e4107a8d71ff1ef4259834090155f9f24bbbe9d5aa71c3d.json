@@ -1,0 +1,103 @@
+{
+  "id": "cyberdelic-os-fn-01",
+  "title": "An Operating System for Shared Reality",
+  "form": "field-note",
+  "release_id": "FN-S0-001",
+  "pages": [
+    "project/cyberdelic-os/field-notes/fn-01/"
+  ],
+  "source_path": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
+  "source_sha256": "0e893f7e468102bd66ac563b7c6eec686e96efe508dbc5410cd8c83f2aee38f2",
+  "document_sha256": "c4735d2cbbc764849cd933327bd61cebb3ec8f67b827bff0744759f7c8cc01fe",
+  "text_sha256": "ff7a50cad88ef1cf1e4107a8d71ff1ef4259834090155f9f24bbbe9d5aa71c3d",
+  "reading_path": "audio/readings/ff7a50cad88ef1cf1e4107a8d71ff1ef4259834090155f9f24bbbe9d5aa71c3d.md",
+  "reading_sha256": "c4735d2cbbc764849cd933327bd61cebb3ec8f67b827bff0744759f7c8cc01fe",
+  "reading_length": 2776,
+  "audio_path": "audio/lewis/ff7a50cad88ef1cf1e4107a8d71ff1ef4259834090155f9f24bbbe9d5aa71c3d.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "daba502aa29fdad74910be88e9cb2a16ec193fe8006e9bbc5d4fc744949aae59",
+  "audio_length": 2196908,
+  "duration_seconds": 182.985,
+  "chunks": [
+    {
+      "text": "An Operating System for Shared Reality",
+      "start": 0.0,
+      "duration": 3.575
+    },
+    {
+      "text": "An operating system sits between a person and a machine. It translates gesture into operation. It hides almost impossible complexity behind a surface that can be touched, spoken to, and understood. Beneath the icons are switches, logic gates, memory addresses, permissions, and processes competing for time. The interface does not remove the machinery. It gives the human a way to enter into relation with it.",
+      "start": 3.755,
+      "duration": 26.425
+    },
+    {
+      "text": "What would an operating system for shared reality do?",
+      "start": 30.36,
+      "duration": 4.0
+    },
+    {
+      "text": "Not a system that declares one worldview correct. Not a machine for manufacturing consensus. Shared reality has never meant that everyone sees the same thing. It means that our differences remain connected to common objects, common times, and common worlds.",
+      "start": 34.54,
+      "duration": 16.95
+    },
+    {
+      "text": "Cyberdelic OS would sit between the private universe of a person and the continuously negotiated world we inhabit together. Its first unit would not be the account, the post, or the follower. It would be the aperture : the irreducible position from which one life encounters existence. Each aperture carries a history, a body, a vocabulary, a set of wounds, a way of noticing, and a field of things it has not yet learned to see.",
+      "start": 51.67,
+      "duration": 27.3
+    },
+    {
+      "text": "The system would begin with intention:",
+      "start": 79.15,
+      "duration": 3.225
+    },
+    {
+      "text": "What are you trying to understand, cultivate, feel, or become capable of seeing?",
+      "start": 82.555,
+      "duration": 6.1
+    },
+    {
+      "text": "From that intention it might compose a finite constellation: a few works, ideas, voices, memories, and counterpositions. Then it would end. Ending would not be a failure of supply. It would be an act of respect.",
+      "start": 88.835,
+      "duration": 14.6
+    },
+    {
+      "text": "Across many apertures there would be a shared sky. The same object might appear differently in different lives. One person finds in it evidence; another finds testimony; another finds beauty; another finds danger. The distance between these placements is not noise to eliminate. It is parallax. It is how depth becomes visible.",
+      "start": 103.615,
+      "duration": 21.45
+    },
+    {
+      "text": "The kernel of this operating system would be ethical before it was technical. It would distinguish observation from interpretation, testimony from forecast, art from argument. It would make provenance legible. It would protect the right to dissent, but also ask us to represent what we oppose accurately. It would preserve the possibility that some things should remain ambiguous, private, sacred, or unmeasured.",
+      "start": 125.245,
+      "duration": 25.65
+    },
+    {
+      "text": "Its scheduler would allocate attention, but not according to outrage or addiction. Its gravity would pull toward depth, resonance, surprise, and clarification across difference. Its network layer would be correspondence. Its memory would not merely store what we encountered, but how we saw it, and how that seeing changed.",
+      "start": 151.075,
+      "duration": 20.6
+    },
+    {
+      "text": "Cyberdelic OS would not tell us what reality is.",
+      "start": 171.855,
+      "duration": 4.25
+    },
+    {
+      "text": "It would help us perceive the living relation between reality, interpretation, and one another.",
+      "start": 176.285,
+      "duration": 6.7
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.666969895362854,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

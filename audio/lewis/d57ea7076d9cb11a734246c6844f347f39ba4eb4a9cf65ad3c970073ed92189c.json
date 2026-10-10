@@ -1,0 +1,338 @@
+{
+  "id": "cyberdelic-os-bn-003",
+  "title": "Building Kenosha Kid",
+  "form": "builder-note",
+  "release_id": "BN-003",
+  "pages": [
+    "project/cyberdelic-os/bn-003/"
+  ],
+  "source_path": "living-content/cyberdelic-os/bn-003/v000001.md",
+  "source_sha256": "1141739809f22f082e215d69ee736bb838aa9e0f5a94550cbabc91356dc11156",
+  "document_sha256": "1141739809f22f082e215d69ee736bb838aa9e0f5a94550cbabc91356dc11156",
+  "text_sha256": "d57ea7076d9cb11a734246c6844f347f39ba4eb4a9cf65ad3c970073ed92189c",
+  "reading_path": "audio/readings/d57ea7076d9cb11a734246c6844f347f39ba4eb4a9cf65ad3c970073ed92189c.md",
+  "reading_sha256": "1141739809f22f082e215d69ee736bb838aa9e0f5a94550cbabc91356dc11156",
+  "reading_length": 6555,
+  "audio_path": "audio/lewis/d57ea7076d9cb11a734246c6844f347f39ba4eb4a9cf65ad3c970073ed92189c.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "72d49de0ce2331f23b87aa38254898539e0bb55c2520df037d97216674cdc5f5",
+  "audio_length": 5608268,
+  "duration_seconds": 467.27,
+  "chunks": [
+    {
+      "text": "Builder Note BN-03: Building Kenosha Kid",
+      "start": 0.0,
+      "duration": 4.575
+    },
+    {
+      "text": "Artwork: Kenosha Kid",
+      "start": 4.755,
+      "duration": 2.675
+    },
+    {
+      "text": "Platform: Native SwiftUI for iPhone and iPad",
+      "start": 7.61,
+      "duration": 4.275
+    },
+    {
+      "text": "Kenosha Kid asks an on-device language model to create meaning without giving it permission to add language.",
+      "start": 12.065,
+      "duration": 8.025
+    },
+    {
+      "text": "The work has one immutable verbal source:",
+      "start": 20.27,
+      "duration": 3.65
+    },
+    {
+      "text": "You never did the Kenosha Kid",
+      "start": 24.1,
+      "duration": 2.725
+    },
+    {
+      "text": "The technical problem was not how to make a model generate more text. It was how to let a model interpret these exact six words indefinitely while making lexical change impossible.",
+      "start": 27.005,
+      "duration": 12.25
+    },
+    {
+      "text": "The operation",
+      "start": 39.435,
+      "duration": 1.85
+    },
+    {
+      "text": "Preserve the six words, their order, and their capitalization as an invariant in native code.",
+      "start": 41.465,
+      "duration": 7.025
+    },
+    {
+      "text": "Ask Apple's on-device SystemLanguageModel for a private, structured dramaturgical direction.",
+      "start": 48.67,
+      "duration": 6.85
+    },
+    {
+      "text": "Let that direction assign semantic intention, pressure on each word, tension at each boundary, punctuation material, spatial pattern, density, rupture, and a compositional seed.",
+      "start": 55.7,
+      "duration": 13.175
+    },
+    {
+      "text": "Render the plan into a visible punctuation score with native code.",
+      "start": 69.055,
+      "duration": 5.4
+    },
+    {
+      "text": "Validate the result locally before it can reach the screen.",
+      "start": 74.635,
+      "duration": 4.675
+    },
+    {
+      "text": "Reject malformed or overly similar arrangements and generate again.",
+      "start": 79.49,
+      "duration": 5.375
+    },
+    {
+      "text": "Type, hold, delete, and release the score.",
+      "start": 85.045,
+      "duration": 3.55
+    },
+    {
+      "text": "The model never receives authority over the source words. It directs relations among them.",
+      "start": 88.775,
+      "duration": 6.575
+    },
+    {
+      "text": "Why the model directs instead of speaking",
+      "start": 95.53,
+      "duration": 3.375
+    },
+    {
+      "text": "Early versions asked the model to return a finished punctuated sentence. This preserved the words, but often converged on familiar grammatical habits. A language model is trained to make language coherent. When asked for experimental punctuation, it can still retreat toward ordinary prose with marks placed between conventionally spaced words.",
+      "start": 99.085,
+      "duration": 22.525
+    },
+    {
+      "text": "The finished work separates intention from rendering.",
+      "start": 121.79,
+      "duration": 4.125
+    },
+    {
+      "text": "The model now generates a hidden plan rather than the visible sentence. It decides where pressure belongs and what kind of dramatic or visual event should occur. A native composer turns those decisions into punctuation and spatial form while guaranteeing the invariant phrase.",
+      "start": 126.095,
+      "duration": 18.975
+    },
+    {
+      "text": "This division gives each part of the system a bounded office:",
+      "start": 145.25,
+      "duration": 4.775
+    },
+    {
+      "text": "The model interprets.",
+      "start": 150.205,
+      "duration": 2.325
+    },
+    {
+      "text": "The composer materializes.",
+      "start": 152.71,
+      "duration": 2.85
+    },
+    {
+      "text": "The validator protects the source.",
+      "start": 155.74,
+      "duration": 2.975
+    },
+    {
+      "text": "The playback machine governs time.",
+      "start": 158.895,
+      "duration": 2.95
+    },
+    {
+      "text": "The SwiftUI view presents only the work.",
+      "start": 162.025,
+      "duration": 3.6
+    },
+    {
+      "text": "The model proposes. The mechanism composes. The invariant refuses.",
+      "start": 165.805,
+      "duration": 5.675
+    },
+    {
+      "text": "Four compositional registers",
+      "start": 171.66,
+      "duration": 2.85
+    },
+    {
+      "text": "The artwork moves through four kinds of performance:",
+      "start": 174.69,
+      "duration": 3.55
+    },
+    {
+      "text": "Lucid tension: almost grammatical, but pressured at an unexpected joint.",
+      "start": 178.42,
+      "duration": 5.7
+    },
+    {
+      "text": "Estranged syntax: partially legible, with enclosures and incompatible marks that alter the implied scene.",
+      "start": 184.3,
+      "duration": 8.025
+    },
+    {
+      "text": "Visual score: punctuation becomes rhythm, framing, asymmetry, and spatial notation across several lines.",
+      "start": 192.505,
+      "duration": 8.325
+    },
+    {
+      "text": "ASCII field: the sentence enters a dense terminal signal made from printable marks, while the six words remain ordered and recoverable.",
+      "start": 201.01,
+      "duration": 9.575
+    },
+    {
+      "text": "The sequence favors the two visual registers. This prevents conventional punctuation from becoming the work's default center.",
+      "start": 210.765,
+      "duration": 9.025
+    },
+    {
+      "text": "Local generation and bounded memory",
+      "start": 219.97,
+      "duration": 3.45
+    },
+    {
+      "text": "Inference uses Apple's Foundation Models framework on the device. There are no network requests, API keys, cloud models, or third-party model services.",
+      "start": 223.6,
+      "duration": 11.375
+    },
+    {
+      "text": "The app checks model availability before inference. On eligible hardware, generation comes from the local system model. On unsupported devices, while the model is unavailable, or in simulator and preview environments, a procedural compositional system keeps the artwork alive without exposing an error state.",
+      "start": 235.155,
+      "duration": 20.925
+    },
+    {
+      "text": "A short memory retains approximately twelve recent arrangements. New directions are asked to differ from that memory, and local duplicate checks reject scores that remain too close. Model sessions are refreshed regularly so the limited context does not harden into a repetitive conversational history.",
+      "start": 256.26,
+      "duration": 20.125
+    },
+    {
+      "text": "Time is part of validation",
+      "start": 276.565,
+      "duration": 2.675
+    },
+    {
+      "text": "The sentence does not arrive as a completed model response. It becomes visible character by character, like a terminal or typewriter. Once complete, it remains for several seconds, then deletes itself character by character. A short empty interval separates one interpretation from the next.",
+      "start": 279.42,
+      "duration": 19.65
+    },
+    {
+      "text": "The final layout is reserved before typing begins, so the composition does not jump as lines wrap. The viewer can keep their gaze in place while the score appears.",
+      "start": 299.25,
+      "duration": 11.0
+    },
+    {
+      "text": "Generation occurs ahead of playback in a small asynchronous queue. The model can take the time it needs without turning inference latency into visible waiting or driving the device as if the work were a benchmark.",
+      "start": 310.43,
+      "duration": 14.35
+    },
+    {
+      "text": "What the build revealed",
+      "start": 324.96,
+      "duration": 2.25
+    },
+    {
+      "text": "The archived HTML work Kenosha Kid #3 used random punctuation around the same fixed phrase. The native work retains its black terminal field, green monospace text, and cycle of typing and deletion, but changes the source of variation.",
+      "start": 327.39,
+      "duration": 18.175
+    },
+    {
+      "text": "Randomness can produce difference.",
+      "start": 345.745,
+      "duration": 2.975
+    },
+    {
+      "text": "The model is asked to produce interpretation.",
+      "start": 348.9,
+      "duration": 3.85
+    },
+    {
+      "text": "That distinction is the reason for the native work. Its punctuation should imply a speaker, a conflict, a correction, a memory failure, or a visual event, even when no label names that intention. The intelligence is not present as commentary. It is present as pressure on form.",
+      "start": 352.93,
+      "duration": 19.25
+    },
+    {
+      "text": "CLAUDE-03 names this emerging method as restraint on machine intelligence becoming sculptural material. In Kenosha Kid , the constraint is not an implementation detail surrounding the artwork. It is the artwork's primary medium.",
+      "start": 372.36,
+      "duration": 16.925
+    },
+    {
+      "text": "Kernel relations",
+      "start": 389.465,
+      "duration": 2.05
+    },
+    {
+      "text": "ATTEND: one sentence becomes the sole object of sustained attention.",
+      "start": 391.695,
+      "duration": 5.45
+    },
+    {
+      "text": "END: every interpretation completes, releases the viewer, and clears the screen.",
+      "start": 397.325,
+      "duration": 6.225
+    },
+    {
+      "text": "FORGET: generated performances disappear, while only a short anti-repetition memory remains.",
+      "start": 403.73,
+      "duration": 7.125
+    },
+    {
+      "text": "Law Nine: the intelligence holds a bounded office rather than speaking as an oracle.",
+      "start": 411.035,
+      "duration": 6.275
+    },
+    {
+      "text": "Law Ten: inference remains on hardware the viewer governs.",
+      "start": 417.49,
+      "duration": 4.725
+    },
+    {
+      "text": "Questions still open",
+      "start": 422.395,
+      "duration": 2.325
+    },
+    {
+      "text": "Should a generated performance ever be preserved, or is its disappearance essential?",
+      "start": 424.9,
+      "duration": 5.875
+    },
+    {
+      "text": "How much visual density can the score carry before the invariant words cease to function as a common object?",
+      "start": 430.955,
+      "duration": 8.225
+    },
+    {
+      "text": "Can different on-device models reveal distinct dramaturgical apertures while obeying the same kernel?",
+      "start": 439.36,
+      "duration": 7.15
+    },
+    {
+      "text": "Is the viewer reading punctuation, or performing it internally as voice?",
+      "start": 446.69,
+      "duration": 5.175
+    },
+    {
+      "text": "Related: Field Note 31, The Sentence Is a Kernel ; Artifact A-02, Kenosha Kid ; CLAUDE-03 , A Report from the Organs ; the Cyberdelic Kernel, ATTEND, END, FORGET, and Laws Nine and Ten.",
+      "start": 452.045,
+      "duration": 15.225
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.7605717778205872,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

@@ -1,0 +1,143 @@
+{
+  "id": "cyberdelic-os-fn-14",
+  "title": "The Open Anatomy",
+  "form": "field-note",
+  "release_id": "FN-S0-001",
+  "pages": [
+    "project/cyberdelic-os/field-notes/fn-14/"
+  ],
+  "source_path": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
+  "source_sha256": "0e893f7e468102bd66ac563b7c6eec686e96efe508dbc5410cd8c83f2aee38f2",
+  "document_sha256": "6435ca96b6da3edb0ed3034f05e7c279ae20da3c092cf711b075c1c0e7028bfd",
+  "text_sha256": "a771ff61a1cf39234a71e38b6d85dfb4cbfe570d5955dc7e46c766eb2dbc50d0",
+  "reading_path": "audio/readings/a771ff61a1cf39234a71e38b6d85dfb4cbfe570d5955dc7e46c766eb2dbc50d0.md",
+  "reading_sha256": "6435ca96b6da3edb0ed3034f05e7c279ae20da3c092cf711b075c1c0e7028bfd",
+  "reading_length": 2941,
+  "audio_path": "audio/lewis/a771ff61a1cf39234a71e38b6d85dfb4cbfe570d5955dc7e46c766eb2dbc50d0.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "1c89e9f094f62fa46644ed834dd6501bab6eb4f15bc1791c8a10243b4d5891c5",
+  "audio_length": 2054924,
+  "duration_seconds": 171.15,
+  "chunks": [
+    {
+      "text": "The Open Anatomy",
+      "start": 0.0,
+      "duration": 2.4
+    },
+    {
+      "text": "Cyberdelic OS does not need to be invented from an empty repository.",
+      "start": 2.58,
+      "duration": 5.525
+    },
+    {
+      "text": "Several open projects already contain functioning organs:",
+      "start": 8.285,
+      "duration": 4.65
+    },
+    {
+      "text": "OpenClaw demonstrates a local, persistent agent gateway connected to messaging, voice, tools, and visual surfaces.",
+      "start": 13.115,
+      "duration": 8.65
+    },
+    {
+      "text": "Hermes Agent offers patterns for persistent memory, personality, skills, scheduled work, subagents, and local or replaceable model backends.",
+      "start": 21.945,
+      "duration": 10.775
+    },
+    {
+      "text": "Buzz offers a compelling event model in which humans and agents possess cryptographic identities, memberships, permissions, and signed histories on a common substrate.",
+      "start": 32.9,
+      "duration": 11.475
+    },
+    {
+      "text": "Automerge and Yjs provide local-first collaborative data structures that allow people to edit while disconnected and merge their changes later.",
+      "start": 44.555,
+      "duration": 10.525
+    },
+    {
+      "text": "MCP provides a common way for models and agents to access tools and data.",
+      "start": 55.26,
+      "duration": 6.325
+    },
+    {
+      "text": "Agent Skills provides a portable format for reusable practices, scripts, and instructions.",
+      "start": 61.765,
+      "duration": 7.0
+    },
+    {
+      "text": "A2A provides patterns for independent agents to discover capabilities and collaborate.",
+      "start": 68.945,
+      "duration": 6.7
+    },
+    {
+      "text": "Community Notes provides a real, open reference for ranking contributions that achieve helpfulness across differing perspectives.",
+      "start": 75.825,
+      "duration": 9.075
+    },
+    {
+      "text": "SQLite FTS and local vector extensions provide enough full-text and semantic search for an intimate archive without requiring a large external database.",
+      "start": 85.08,
+      "duration": 12.1
+    },
+    {
+      "text": "The goal should not be to fork all of these products and stitch their interfaces together.",
+      "start": 97.36,
+      "duration": 5.7
+    },
+    {
+      "text": "It should be to identify the smallest useful organs and establish Cyberdelic OS's own constitutional boundaries around them.",
+      "start": 103.24,
+      "duration": 9.05
+    },
+    {
+      "text": "A first local anatomy might contain:",
+      "start": 112.47,
+      "duration": 3.35
+    },
+    {
+      "text": "One or two local models can serve many agents. The agent's continuity lives in its office, memory, permissions, and signed history, not entirely in model weights.",
+      "start": 116.0,
+      "duration": 11.3
+    },
+    {
+      "text": "The request path should remain as inspectable as possible. Deterministic rules can compose constellations and explain why something appeared. Model-based perception can work in the night shift: transcribing, embedding, proposing edges, drafting maps, and preparing a curator queue.",
+      "start": 127.48,
+      "duration": 18.925
+    },
+    {
+      "text": "The model proposes.",
+      "start": 146.585,
+      "duration": 2.225
+    },
+    {
+      "text": "The human disposes.",
+      "start": 148.99,
+      "duration": 2.375
+    },
+    {
+      "text": "The mechanism composes.",
+      "start": 151.545,
+      "duration": 2.525
+    },
+    {
+      "text": "Open source matters here not simply because it lowers cost. A system mediating interior life, social reality, and cultural memory must remain inspectable, portable, and capable of surviving the disappearance or capture of any one provider.",
+      "start": 154.25,
+      "duration": 16.9
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.7019630074501038,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

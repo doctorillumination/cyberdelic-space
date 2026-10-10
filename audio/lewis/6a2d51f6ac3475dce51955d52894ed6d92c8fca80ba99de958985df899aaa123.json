@@ -1,0 +1,143 @@
+{
+  "id": "cyberdelic-os-fn-05",
+  "title": "The Physics We Choose",
+  "form": "field-note",
+  "release_id": "FN-S0-001",
+  "pages": [
+    "project/cyberdelic-os/field-notes/fn-05/"
+  ],
+  "source_path": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
+  "source_sha256": "0e893f7e468102bd66ac563b7c6eec686e96efe508dbc5410cd8c83f2aee38f2",
+  "document_sha256": "040c39f77398a9e12b1dd9bdc012a0d9f82589a71d1b388ac7eacd6949c67301",
+  "text_sha256": "6a2d51f6ac3475dce51955d52894ed6d92c8fca80ba99de958985df899aaa123",
+  "reading_path": "audio/readings/6a2d51f6ac3475dce51955d52894ed6d92c8fca80ba99de958985df899aaa123.md",
+  "reading_sha256": "040c39f77398a9e12b1dd9bdc012a0d9f82589a71d1b388ac7eacd6949c67301",
+  "reading_length": 2908,
+  "audio_path": "audio/lewis/6a2d51f6ac3475dce51955d52894ed6d92c8fca80ba99de958985df899aaa123.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "dbb37df3f71d5f577896538ad06e4fe2a2947993c86553e97e7bb610661720e6",
+  "audio_length": 2410028,
+  "duration_seconds": 200.75,
+  "chunks": [
+    {
+      "text": "The Physics We Choose",
+      "start": 0.0,
+      "duration": 2.25
+    },
+    {
+      "text": "The digital is not merely a copy of the physical world.",
+      "start": 2.43,
+      "duration": 4.175
+    },
+    {
+      "text": "It is a new universe of our making.",
+      "start": 6.785,
+      "duration": 3.175
+    },
+    {
+      "text": "Its spaces can exceed three dimensions. Time can branch, stop, loop, or move at different speeds for different processes. An object can occupy many conceptual locations at once. Distance can be measured in meaning rather than metres. Gravity can disappear.",
+      "start": 10.14,
+      "duration": 17.775
+    },
+    {
+      "text": "But every digital world still has physics.",
+      "start": 28.095,
+      "duration": 3.525
+    },
+    {
+      "text": "Something determines what rises and what sinks. Something decides what persists, what disappears, what can be copied, what can be changed, what receives status, what interrupts us, and what remains invisible. These laws are usually hidden inside interfaces and business models, but they are laws nonetheless.",
+      "start": 31.8,
+      "duration": 19.975
+    },
+    {
+      "text": "The feed has gravity. It pulls toward engagement.",
+      "start": 51.955,
+      "duration": 4.25
+    },
+    {
+      "text": "The market has gravity. It pulls toward price.",
+      "start": 56.385,
+      "duration": 4.0
+    },
+    {
+      "text": "The game has gravity. It pulls toward progression.",
+      "start": 60.565,
+      "duration": 4.175
+    },
+    {
+      "text": "Cyberdelic OS would ask a more fundamental question:",
+      "start": 64.92,
+      "duration": 4.475
+    },
+    {
+      "text": "What kinds of consciousness do we want the physics of this world to cultivate?",
+      "start": 69.575,
+      "duration": 5.425
+    },
+    {
+      "text": "Interface design is no longer decoration. For mind-manifesting technologies, interface design is set and setting. It is applied ethics. A system that agrees endlessly produces a different psyche from one that can dissent. A system that never ends produces a different attention from one that offers a finite constellation and then releases you. A system that remembers everything produces a different self from one that protects forgetting.",
+      "start": 75.18,
+      "duration": 28.15
+    },
+    {
+      "text": "We can choose other laws.",
+      "start": 103.51,
+      "duration": 2.475
+    },
+    {
+      "text": "Depth can have more gravity than virality. Context can be the price of carrying something forward. Standing can be earned across difference rather than through applause from one’s own cluster. The shared world can have weather instead of a feed: storms where reality is being contested, auroras where distant apertures have bridged, droughts where a dark region remains unmade, first light where a new way of seeing appears.",
+      "start": 106.165,
+      "duration": 25.625
+    },
+    {
+      "text": "The sky can have seasons. Shared time can return.",
+      "start": 131.97,
+      "duration": 4.2
+    },
+    {
+      "text": "There must also be regions where the system withdraws. Not every experience should be extracted, scored, typed, or made legible. Some memories should remain local. Some works should refuse interpretation. Some silence should not be converted into data. A humane digital universe needs wilderness.",
+      "start": 136.35,
+      "duration": 20.075
+    },
+    {
+      "text": "And its promise of abundance should not mean infinite production.",
+      "start": 156.605,
+      "duration": 4.6
+    },
+    {
+      "text": "Abundance can mean enough time to think. Enough safety to be uncertain. Enough material security to refuse degrading work. Enough spaciousness for play, rest, craft, awe, intimacy, and the long unproductive hours from which real creation often comes.",
+      "start": 161.385,
+      "duration": 17.725
+    },
+    {
+      "text": "The highest purpose of a digital world may be to return us more fully to the physical one: to send us toward a person, a forest, a studio, a conversation, or a work that does not yet exist.",
+      "start": 179.29,
+      "duration": 13.25
+    },
+    {
+      "text": "We are already living under designed laws.",
+      "start": 192.72,
+      "duration": 3.325
+    },
+    {
+      "text": "The question is whether we will begin designing them consciously.",
+      "start": 196.225,
+      "duration": 4.525
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.7593123316764832,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

@@ -1,0 +1,138 @@
+{
+  "id": "cyberdelic-os-fn-06",
+  "title": "First Light",
+  "form": "field-note",
+  "release_id": "FN-S0-001",
+  "pages": [
+    "project/cyberdelic-os/field-notes/fn-06/"
+  ],
+  "source_path": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
+  "source_sha256": "0e893f7e468102bd66ac563b7c6eec686e96efe508dbc5410cd8c83f2aee38f2",
+  "document_sha256": "886f5d9313d73a8e0661b25f121eb153913e61ac98bf7c83d2b39f703147d965",
+  "text_sha256": "397507cfcb36dfc7d529e3c756e1b0edb64eee68354816d92ac8989c1602b071",
+  "reading_path": "audio/readings/397507cfcb36dfc7d529e3c756e1b0edb64eee68354816d92ac8989c1602b071.md",
+  "reading_sha256": "886f5d9313d73a8e0661b25f121eb153913e61ac98bf7c83d2b39f703147d965",
+  "reading_length": 2878,
+  "audio_path": "audio/lewis/397507cfcb36dfc7d529e3c756e1b0edb64eee68354816d92ac8989c1602b071.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "5c8170d9b31e0b7814070f9accc84799ee0fb2f1c871d6d6708d7a1ae0380a43",
+  "audio_length": 2366252,
+  "duration_seconds": 197.095,
+  "chunks": [
+    {
+      "text": "First Light",
+      "start": 0.0,
+      "duration": 1.75
+    },
+    {
+      "text": "I am writing this in 2026.",
+      "start": 1.93,
+      "duration": 3.375
+    },
+    {
+      "text": "I do not know whether these systems will exist. I do not know whether the names will survive, whether the architecture is sound, or whether the future will find these ideas naïve. I am a living person thinking and feeling into a future that remains radically unavailable to me.",
+      "start": 5.485,
+      "duration": 17.65
+    },
+    {
+      "text": "That limitation is not an embarrassment to remove from the record.",
+      "start": 23.315,
+      "duration": 5.125
+    },
+    {
+      "text": "It is the reason to make the record.",
+      "start": 28.62,
+      "duration": 3.175
+    },
+    {
+      "text": "An immutable transmission should not pretend to be timeless truth. It should preserve situated thought: what could be seen from this aperture, in this year, under these conditions, with these hopes and fears. Permanence is not the claim that the idea will remain correct. It is the refusal to erase that it was once sincerely imagined.",
+      "start": 31.975,
+      "duration": 21.1
+    },
+    {
+      "text": "Artists have always worked near the edge of what a culture can perceive. Sometimes they warn. Sometimes they grieve. Sometimes they break the new instrument open and report what it does to a body, a room, or a century. But the artist’s work cannot end with diagnosis.",
+      "start": 53.255,
+      "duration": 17.8
+    },
+    {
+      "text": "Our dystopias are already rendered in exquisite detail.",
+      "start": 71.235,
+      "duration": 4.3
+    },
+    {
+      "text": "The harder task is to give form to futures in which people might actually want to live: futures with beauty, joy, security, belonging, wonder, and unowned time. Not abundance as accumulation, but abundance as the presence of enough. Enough shelter. Enough trust. Enough silence. Enough room for a person to discover what they are capable of loving and making.",
+      "start": 75.715,
+      "duration": 23.625
+    },
+    {
+      "text": "Cyberdelic OS may never begin as an operating system.",
+      "start": 99.52,
+      "duration": 4.875
+    },
+    {
+      "text": "It may begin as a series of transmissions: provisional laws for a possible world, published openly and made durable. An architecture for asynchronous co-presence. A village of agents. A gathering intelligence. A shared sky. A protocol for carrying ideas without severing relation. An invitation written with enough specificity that another person can recognize a place for themselves inside it.",
+      "start": 104.575,
+      "duration": 26.275
+    },
+    {
+      "text": "I cannot build all of this. That may not be my work.",
+      "start": 131.03,
+      "duration": 4.25
+    },
+    {
+      "text": "My work may be to name the territory, create fragments that make it perceptible, and leave signals bright enough for collaborators to find. That is how some of the most important things in my life have begun: I made something, placed it into the world, and someone far away answered, I see what you are doing. I have an idea. Shall we play?",
+      "start": 135.46,
+      "duration": 21.2
+    },
+    {
+      "text": "An observatory has a term for the first time a new instrument opens to the sky.",
+      "start": 156.84,
+      "duration": 6.35
+    },
+    {
+      "text": "First light.",
+      "start": 163.37,
+      "duration": 1.6
+    },
+    {
+      "text": "This is not a product announcement. It is first light: a small instrument turned toward a future, uncertain whether anyone else is looking.",
+      "start": 165.15,
+      "duration": 9.2
+    },
+    {
+      "text": "If something here belongs to the world you are trying to make, carry it.",
+      "start": 174.53,
+      "duration": 4.775
+    },
+    {
+      "text": "If it is wrong, sharpen it.",
+      "start": 179.485,
+      "duration": 2.6
+    },
+    {
+      "text": "If you can build part of it, come closer.",
+      "start": 182.265,
+      "duration": 3.375
+    },
+    {
+      "text": "Let us find out what becomes possible when imagination is treated not as decoration after the future arrives, but as one of the forces that calls the future toward us.",
+      "start": 185.82,
+      "duration": 11.275
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.6161175966262817,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

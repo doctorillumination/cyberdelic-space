@@ -1,0 +1,329 @@
+{
+  "id": "cyberdelic-os-fn-41",
+  "title": "Carry: The Path Remembers",
+  "form": "field-note",
+  "release_id": "FN-S0-014",
+  "pages": [
+    "project/cyberdelic-os/field-notes/fn-41/",
+    "project/cyberdelic-os/fn-s0-014/"
+  ],
+  "source_path": "living-content/cyberdelic-os/fn-s0-014/v000002.md",
+  "source_sha256": "f735bfbac07b121d85cdbe1765f1cf18ba4cd3ec407a6a8ee183ceee77c2ad2c",
+  "document_sha256": "f735bfbac07b121d85cdbe1765f1cf18ba4cd3ec407a6a8ee183ceee77c2ad2c",
+  "text_sha256": "44cbd87397a4a81568ec35a81c4bb80a106bcd01a726da706cac0ad3f7ef1ae0",
+  "reading_path": "audio/readings/44cbd87397a4a81568ec35a81c4bb80a106bcd01a726da706cac0ad3f7ef1ae0.md",
+  "reading_sha256": "f735bfbac07b121d85cdbe1765f1cf18ba4cd3ec407a6a8ee183ceee77c2ad2c",
+  "reading_length": 5747,
+  "audio_path": "audio/lewis/44cbd87397a4a81568ec35a81c4bb80a106bcd01a726da706cac0ad3f7ef1ae0.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "27ebe4ea951a1e547b341e461ba43cedd297d8ccbfce85d418010ca2ae9f29d0",
+  "audio_length": 4380812,
+  "duration_seconds": 364.985,
+  "chunks": [
+    {
+      "text": "Carry: The Path Remembers",
+      "start": 0.0,
+      "duration": 2.75
+    },
+    {
+      "text": "The internet became extraordinarily good at transmission. Copy, forward, repost, share: an object can reach a million people before anyone has had time to live with it. The distance collapses, and so does much of the relation.",
+      "start": 2.93,
+      "duration": 15.4
+    },
+    {
+      "text": "Cyberdelic OS contains another verb.",
+      "start": 18.51,
+      "duration": 3.675
+    },
+    {
+      "text": "CARRY.",
+      "start": 22.365,
+      "duration": 1.275
+    },
+    {
+      "text": "To carry something is not merely to reproduce it somewhere else. It is to take responsibility for a crossing.",
+      "start": 23.82,
+      "duration": 7.6
+    },
+    {
+      "text": "Imagine receiving an essay, photograph, song, short film, field note, program, or strange idea. There is no button that simply throws it toward an audience. Instead, the system asks:",
+      "start": 31.6,
+      "duration": 13.45
+    },
+    {
+      "text": "Who are you carrying this to?",
+      "start": 45.23,
+      "duration": 2.475
+    },
+    {
+      "text": "And then:",
+      "start": 47.885,
+      "duration": 1.5
+    },
+    {
+      "text": "Why?",
+      "start": 49.565,
+      "duration": 1.275
+    },
+    {
+      "text": "Perhaps the answer is only twenty seconds of voice.",
+      "start": 51.02,
+      "duration": 4.05
+    },
+    {
+      "text": "Jason, this made me think of what we were talking about last month, when technological awe becomes ordinary and we stop seeing what has actually happened.",
+      "start": 55.25,
+      "duration": 9.625
+    },
+    {
+      "text": "The object moves, but the context moves with it. The next aperture does not receive an isolated link; they receive the work, its source, the person who carried it, and the reason it crossed this particular distance.",
+      "start": 65.055,
+      "duration": 14.075
+    },
+    {
+      "text": "If they carry it again, another relation joins the route. Over time, an artifact develops a path through human attention.",
+      "start": 79.31,
+      "duration": 9.1
+    },
+    {
+      "text": "Not:",
+      "start": 88.59,
+      "duration": 1.3
+    },
+    {
+      "text": "93,000 shares.",
+      "start": 90.07,
+      "duration": 2.875
+    },
+    {
+      "text": "But:",
+      "start": 93.125,
+      "duration": 1.45
+    },
+    {
+      "text": "Brad encountered this here. He carried it to Jason for this reason. Jason carried it onward because he saw something different. Another person refused the first interpretation and placed another beside it.",
+      "start": 94.755,
+      "duration": 13.625
+    },
+    {
+      "text": "The question changes. Not:",
+      "start": 108.56,
+      "duration": 2.775
+    },
+    {
+      "text": "How far did it spread?",
+      "start": 111.515,
+      "duration": 2.225
+    },
+    {
+      "text": "But:",
+      "start": 113.92,
+      "duration": 1.45
+    },
+    {
+      "text": "What happened to its meaning as it travelled?",
+      "start": 115.55,
+      "duration": 3.4
+    },
+    {
+      "text": "This is a different social graph. Every crossing has a carrier, every route contains interpretation, and every arrival can preserve parallax.",
+      "start": 119.13,
+      "duration": 10.025
+    },
+    {
+      "text": "The same object may move through artists, teenagers, farmers, programmers, a religious community, scientists, someone grieving a parent, or a city that sees in it the opposite of what its maker expected.",
+      "start": 129.335,
+      "duration": 14.175
+    },
+    {
+      "text": "The object remains itself while its field of meaning becomes deeper.",
+      "start": 143.69,
+      "duration": 5.1
+    },
+    {
+      "text": "Dear Elsewhere and Carry are close relatives.",
+      "start": 148.97,
+      "duration": 3.525
+    },
+    {
+      "text": "Dear Elsewhere says:",
+      "start": 152.675,
+      "duration": 2.125
+    },
+    {
+      "text": "Stay with one another long enough for something to form.",
+      "start": 154.98,
+      "duration": 3.975
+    },
+    {
+      "text": "Carry says:",
+      "start": 159.135,
+      "duration": 1.65
+    },
+    {
+      "text": "Move something between lives without stripping away the journey.",
+      "start": 160.965,
+      "duration": 4.55
+    },
+    {
+      "text": "One creates a bounded relational artifact; the other creates a living lineage.",
+      "start": 165.695,
+      "duration": 6.0
+    },
+    {
+      "text": "There is another possibility: an artifact might have its own constitution of movement.",
+      "start": 171.875,
+      "duration": 6.2
+    },
+    {
+      "text": "One says:",
+      "start": 178.255,
+      "duration": 1.65
+    },
+    {
+      "text": "Carry freely.",
+      "start": 180.085,
+      "duration": 1.775
+    },
+    {
+      "text": "Another:",
+      "start": 182.04,
+      "duration": 1.4
+    },
+    {
+      "text": "One person at a time.",
+      "start": 183.62,
+      "duration": 2.625
+    },
+    {
+      "text": "Another:",
+      "start": 186.425,
+      "duration": 1.4
+    },
+    {
+      "text": "Carry this only if you add context.",
+      "start": 188.005,
+      "duration": 2.975
+    },
+    {
+      "text": "Another:",
+      "start": 191.16,
+      "duration": 1.4
+    },
+    {
+      "text": "This may cross three apertures and then it must rest.",
+      "start": 192.74,
+      "duration": 4.0
+    },
+    {
+      "text": "Another:",
+      "start": 196.92,
+      "duration": 1.4
+    },
+    {
+      "text": "Do not repost this publicly.",
+      "start": 198.5,
+      "duration": 2.725
+    },
+    {
+      "text": "Another:",
+      "start": 201.405,
+      "duration": 1.4
+    },
+    {
+      "text": "Carry without alteration.",
+      "start": 202.985,
+      "duration": 2.675
+    },
+    {
+      "text": "An artist could make a film with no public URL. It cannot trend or be searched for. Someone has to decide:",
+      "start": 205.84,
+      "duration": 8.125
+    },
+    {
+      "text": "You should see this.",
+      "start": 214.145,
+      "duration": 1.825
+    },
+    {
+      "text": "And carry it to you. Discovery becomes relational again.",
+      "start": 216.15,
+      "duration": 4.625
+    },
+    {
+      "text": "In the visual Cyberdelic world, these crossings become geography. A work is carried from one village to another. The first crossing leaves almost nothing, but then another person follows it, and then another. The grass bends, and a path appears.",
+      "start": 220.955,
+      "duration": 16.35
+    },
+    {
+      "text": "Enough meaningful movement may eventually pave the path into a road, and a road does more than speed exchange. Brad noticed this immediately. People build houses along roads, workshops open, travellers stop, trade begins, friendships form, arguments happen, children are born, and people die.",
+      "start": 237.485,
+      "duration": 19.925
+    },
+    {
+      "text": "A route that began because one person carried one meaningful thing to another becomes a place where life accumulates. This may be how the Cyberdelic landscape should grow, not from an administrator drawing roads onto a map, but from repeated acts of relation.",
+      "start": 257.59,
+      "duration": 16.85
+    },
+    {
+      "text": "Paths wear into the world because something was worth carrying. Some routes become highways of meaning, some disappear beneath vegetation, and some are travelled once and remembered only by the people who made the crossing. Some objects migrate for years.",
+      "start": 274.62,
+      "duration": 16.2
+    },
+    {
+      "text": "An artifact may vanish from view and arrive unexpectedly in another city six years later carrying traces of everywhere it has been.",
+      "start": 291.0,
+      "duration": 10.15
+    },
+    {
+      "text": "Ideas do not merely trend. They migrate through bodies, languages, places, friendships, institutions, conflicts, seasons, and time.",
+      "start": 301.33,
+      "duration": 9.65
+    },
+    {
+      "text": "Contemporary software often makes this journey invisible because everything appears to be everywhere at once. Cyberdelic OS could make the journey of meaning perceptible again.",
+      "start": 311.16,
+      "duration": 12.15
+    },
+    {
+      "text": "The mountain conversation itself has already travelled this way. A spoken thought becomes language; language becomes a Field Note; a Field Note becomes code; code becomes an artifact. The artifact reaches another person, that person changes it, and the changed thing returns.",
+      "start": 323.49,
+      "duration": 19.05
+    },
+    {
+      "text": "Later, someone none of us knows may carry part of it somewhere neither of us imagined.",
+      "start": 342.72,
+      "duration": 5.9
+    },
+    {
+      "text": "This is not transmission alone. It is a cultural cyberdelic loop.",
+      "start": 348.8,
+      "duration": 5.175
+    },
+    {
+      "text": "Perhaps software should not only help information travel farther. Perhaps it should help meaning survive the journey.",
+      "start": 354.155,
+      "duration": 7.4
+    },
+    {
+      "text": "The road remembers why it began.",
+      "start": 361.735,
+      "duration": 3.25
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.7372315526008606,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

@@ -1,0 +1,573 @@
+{
+  "id": "cyberdelic-os-bn-004",
+  "title": "Building the Finite Library",
+  "form": "builder-note",
+  "release_id": "BN-004",
+  "pages": [
+    "project/cyberdelic-os/bn-004/"
+  ],
+  "source_path": "living-content/cyberdelic-os/bn-004/v000001.md",
+  "source_sha256": "1fef8b239deedec1524d70c77f081a9fd815aa5505c89e55105133a5f46ebd03",
+  "document_sha256": "1fef8b239deedec1524d70c77f081a9fd815aa5505c89e55105133a5f46ebd03",
+  "text_sha256": "45c256dcdc31c029f4438189284f49a15a101def6fb4cb4224c47ab771c1af4b",
+  "reading_path": "audio/readings/45c256dcdc31c029f4438189284f49a15a101def6fb4cb4224c47ab771c1af4b.md",
+  "reading_sha256": "1fef8b239deedec1524d70c77f081a9fd815aa5505c89e55105133a5f46ebd03",
+  "reading_length": 14575,
+  "audio_path": "audio/lewis/45c256dcdc31c029f4438189284f49a15a101def6fb4cb4224c47ab771c1af4b.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "0759902b5d184677400398b2d5737261fb37bdd2e86de745e02734b1879172bd",
+  "audio_length": 11049740,
+  "duration_seconds": 920.73,
+  "chunks": [
+    {
+      "text": "Builder Note BN-04: Building the Finite Library",
+      "start": 0.0,
+      "duration": 4.75
+    },
+    {
+      "text": "Instrument: The Library Aperture",
+      "start": 4.93,
+      "duration": 2.975
+    },
+    {
+      "text": "Artifact: The Finite Library Prototype",
+      "start": 8.085,
+      "duration": 3.625
+    },
+    {
+      "text": "Primary verbs: ATTEND, END",
+      "start": 11.89,
+      "duration": 3.1
+    },
+    {
+      "text": "Supporting verbs: CARRY, TEND",
+      "start": 15.17,
+      "duration": 3.125
+    },
+    {
+      "text": "Public address: cyberdelic.space",
+      "start": 18.475,
+      "duration": 3.175
+    },
+    {
+      "text": "The Finite Library begins with a reader's intention, composes three possible encounters, and then stops.",
+      "start": 21.83,
+      "duration": 7.575
+    },
+    {
+      "text": "The front page of Cyberdelic.space is a working prototype of one of the earliest CyberdelicOS claims. Field Note 01 imagines a system that asks what a person is trying to become capable of seeing, composes a finite constellation, and ends as an act of respect. Field Note 05 argues that this ending is a chosen law of attention rather than a failure of supply.",
+      "start": 29.585,
+      "duration": 25.525
+    },
+    {
+      "text": "The prototype gives those claims a small executable form. A reader chooses three words from a visible conceptual field. The system returns exactly three works. It does not create an account, infer a profile, optimize for engagement, remember prior sessions, or continue into an infinite feed.",
+      "start": 55.29,
+      "duration": 20.1
+    },
+    {
+      "text": "This is not the absence of an algorithm. It is a deliberately small, inspectable algorithm whose purpose is bounded retrieval rather than attention capture.",
+      "start": 75.57,
+      "duration": 10.925
+    },
+    {
+      "text": "What the current prototype proves",
+      "start": 86.675,
+      "duration": 2.725
+    },
+    {
+      "text": "A public library can begin with intention rather than supply.",
+      "start": 89.58,
+      "duration": 5.075
+    },
+    {
+      "text": "One shared catalog can support many routes through it without privately personalizing the underlying works.",
+      "start": 94.835,
+      "duration": 7.375
+    },
+    {
+      "text": "Deterministic faceting can produce meaningful discovery without a model, recommender service, or behavioral profile.",
+      "start": 102.39,
+      "duration": 8.55
+    },
+    {
+      "text": "A result set can remain finite even when the catalog grows.",
+      "start": 111.12,
+      "duration": 4.775
+    },
+    {
+      "text": "Living Field and Workshop publications can appear beside inscribed works without being represented as the same kind of memory.",
+      "start": 116.075,
+      "duration": 9.25
+    },
+    {
+      "text": "A visual field can remain keyboard operable and semantically legible to assistive technology.",
+      "start": 125.505,
+      "duration": 7.1
+    },
+    {
+      "text": "The chosen path can be shared as a URL without creating server-side state.",
+      "start": 132.785,
+      "duration": 5.925
+    },
+    {
+      "text": "The interface can end and return the person to the wider world.",
+      "start": 138.89,
+      "duration": 4.85
+    },
+    {
+      "text": "It does not prove that three results are always sufficient, that the facets are neutral, that the ranking is free of editorial judgment, or that deterministic retrieval cannot create its own visibility bias.",
+      "start": 143.92,
+      "duration": 13.775
+    },
+    {
+      "text": "System at a glance",
+      "start": 157.875,
+      "duration": 2.35
+    },
+    {
+      "text": "The static page is both the interface and its local data source. JavaScript composes a temporary view from public metadata already delivered by the press. No private reader data crosses a network boundary.",
+      "start": 160.405,
+      "duration": 14.875
+    },
+    {
+      "text": "Data model",
+      "start": 175.46,
+      "duration": 1.825
+    },
+    {
+      "text": "Each discoverable work is reduced to a small public record:",
+      "start": 177.465,
+      "duration": 5.05
+    },
+    {
+      "text": "The five facet families are:",
+      "start": 182.695,
+      "duration": 2.775
+    },
+    {
+      "text": "| Facet | Function | | --- | --- | | form | What kind of object this is, such as generative art, field note, builder note, or instrument | | theme | What the work attends to, such as imagination, memory, technology, or attention | | register | How the work speaks, such as field meditation, technical cartography, play, or waking argument | | world | Which project world carries the work | | era | Which historical publication period contains an inscribed work |",
+      "start": 185.65,
+      "duration": 27.475
+    },
+    {
+      "text": "Inscribed works are rendered into hidden catalog cards during the static build. Living publications are appended from living-library.json , a same-origin public file. The browser normalizes both sources into the same internal shape before any choice is made.",
+      "start": 213.305,
+      "duration": 17.95
+    },
+    {
+      "text": "The current homepage HTML also carries the complete searchable text of inscribed works inside hidden card metadata. This preserves the older offline search architecture, but it makes the front page approximately one megabyte before the living catalog is loaded. A future build should emit a compact aperture manifest containing only the fields above while keeping full-text search on the dedicated catalog or shelf surfaces.",
+      "start": 231.435,
+      "duration": 27.4
+    },
+    {
+      "text": "The selection field",
+      "start": 259.015,
+      "duration": 2.125
+    },
+    {
+      "text": "The opening field contains six stable themes:",
+      "start": 261.32,
+      "duration": 3.975
+    },
+    {
+      "text": "After each choice, the available field is recomposed. The current implementation considers terms not yet selected and calculates compatibility with the chosen terms:",
+      "start": 265.475,
+      "duration": 12.2
+    },
+    {
+      "text": "The eight highest-scoring candidates remain available beside the earlier choices. Equal scores are resolved by the stable facet key, so two readers making the same choices against the same catalog receive the same field.",
+      "start": 277.855,
+      "duration": 15.075
+    },
+    {
+      "text": "The weighting is intentionally legible:",
+      "start": 293.11,
+      "duration": 3.225
+    },
+    {
+      "text": "Exact intersections dominate so the next word can deepen an existing route.",
+      "start": 296.515,
+      "duration": 5.8
+    },
+    {
+      "text": "Partial matches preserve nearby possibilities when no work carries the complete chord.",
+      "start": 302.495,
+      "duration": 6.275
+    },
+    {
+      "text": "Frequency prevents the field from collapsing toward terms with no available works.",
+      "start": 308.95,
+      "duration": 6.225
+    },
+    {
+      "text": "The cross-facet bonus gently favors a different dimension without forbidding three words from one facet.",
+      "start": 315.355,
+      "duration": 7.75
+    },
+    {
+      "text": "These numbers are editorial physics, not discovered truth. Changing them changes what the library makes easy to see. They should remain versioned, tested, and open to critique.",
+      "start": 323.285,
+      "duration": 12.125
+    },
+    {
+      "text": "Ranking the works",
+      "start": 335.59,
+      "duration": 1.975
+    },
+    {
+      "text": "Once three words have been selected, every work receives one point for each chosen term it carries.",
+      "start": 337.745,
+      "duration": 7.0
+    },
+    {
+      "text": "The first rule expresses semantic nearness. The second makes the living edge of the press visible when several works are equally near. The third guarantees a stable final order.",
+      "start": 344.925,
+      "duration": 12.625
+    },
+    {
+      "text": "The recency tie-break is also a bias. A new work can outrank an older work with the same number of matches. As the library grows, this should be tested against alternatives such as deterministic rotation, underexposure weighting, or a consciously placed distant work. Any alternative must remain explainable and must not import behavioral surveillance.",
+      "start": 357.73,
+      "duration": 23.25
+    },
+    {
+      "text": "If fewer than three works match any chosen term, the remaining positions are still filled by the stable ranking and labelled as a more distant door. This preserves the finite three-work form while admitting that not every encounter is a close semantic match.",
+      "start": 381.16,
+      "duration": 17.0
+    },
+    {
+      "text": "Choose for me",
+      "start": 398.34,
+      "duration": 1.825
+    },
+    {
+      "text": "The optional automatic path is deterministic by UTC day.",
+      "start": 400.345,
+      "duration": 5.45
+    },
+    {
+      "text": "Convert the current time to an integer day.",
+      "start": 405.975,
+      "duration": 3.55
+    },
+    {
+      "text": "Select one work by day modulo catalog length .",
+      "start": 409.705,
+      "duration": 4.075
+    },
+    {
+      "text": "Take that work's non-era terms.",
+      "start": 413.96,
+      "duration": 2.85
+    },
+    {
+      "text": "Prefer theme, then register, world, and form.",
+      "start": 416.99,
+      "duration": 3.925
+    },
+    {
+      "text": "Fill any empty positions from the stable opening themes.",
+      "start": 421.095,
+      "duration": 4.45
+    },
+    {
+      "text": "Reveal the same three-result ranking used for a manual choice.",
+      "start": 425.725,
+      "duration": 4.95
+    },
+    {
+      "text": "This is not random and does not use popularity. Everyone receives the same daily starting point from the same catalog. It remains a form of direction, but its rhythm is public, slow, and independent of engagement history.",
+      "start": 430.855,
+      "duration": 15.525
+    },
+    {
+      "text": "State and privacy",
+      "start": 446.56,
+      "duration": 2.2
+    },
+    {
+      "text": "Selection state lives only in the URL fragment:",
+      "start": 448.94,
+      "duration": 4.2
+    },
+    {
+      "text": "The fragment can be copied as a composed shelf. It is not sent in an HTTP request and the site creates no server-side session. The prototype does not use cookies, analytics, an identity account, a recommendation profile, or local storage for library choices. Theme preference is stored separately and does not affect ranking.",
+      "start": 453.32,
+      "duration": 22.275
+    },
+    {
+      "text": "Reloading the same fragment reconstructs the same chord and results as long as the public catalog and ranking version remain unchanged.",
+      "start": 475.775,
+      "duration": 9.975
+    },
+    {
+      "text": "Visual composition",
+      "start": 485.93,
+      "duration": 2.35
+    },
+    {
+      "text": "The words are ordinary HTML buttons placed over a decorative canvas field. The canvas draws relations among visible terms from shared work counts. It never becomes the semantic interface.",
+      "start": 488.46,
+      "duration": 14.0
+    },
+    {
+      "text": "Buttons carry real labels and aria-pressed state.",
+      "start": 502.64,
+      "duration": 3.95
+    },
+    {
+      "text": "The canvas is hidden from assistive technology.",
+      "start": 506.77,
+      "duration": 3.925
+    },
+    {
+      "text": "Pointer magnetism and drifting light are visual responses, not required input mechanisms.",
+      "start": 510.875,
+      "duration": 7.35
+    },
+    {
+      "text": "Recomposition keeps selected terms visible while nearby possibilities enter and leave.",
+      "start": 518.405,
+      "duration": 6.85
+    },
+    {
+      "text": "The network animation stops when results arrive.",
+      "start": 525.435,
+      "duration": 4.025
+    },
+    {
+      "text": "Device pixel ratio is capped at two to limit canvas cost.",
+      "start": 529.64,
+      "duration": 5.025
+    },
+    {
+      "text": "Reduced-motion preference disables drifting, magnetic movement, and animated transitions.",
+      "start": 534.845,
+      "duration": 6.8
+    },
+    {
+      "text": "The canvas currently continues drawing while the choice field exists, even if the page is no longer visible. A future version should pause on visibilitychange and when the instrument leaves the viewport. This matters on mobile devices because an ethical attention instrument should not quietly waste battery while asking for restraint.",
+      "start": 541.825,
+      "duration": 21.425
+    },
+    {
+      "text": "Accessibility and progressive enhancement",
+      "start": 563.43,
+      "duration": 3.65
+    },
+    {
+      "text": "The primary controls are native buttons, not canvas hit regions. A keyboard user can move through the same choices, activate a word, and reach the result heading. The result region uses live status, and focus moves to the completed chord when the three works arrive. On a narrow screen, result cards stack into one column and controls remain larger than common minimum touch targets.",
+      "start": 567.26,
+      "duration": 25.225
+    },
+    {
+      "text": "With JavaScript disabled, the instrument does not pretend to function. A short fallback points readers to the complete Ledger and Projects indexes, where every work remains available. The finite aperture is one entrance to the press, not a gate around the collection.",
+      "start": 592.665,
+      "duration": 17.25
+    },
+    {
+      "text": "Failure behavior",
+      "start": 610.095,
+      "duration": 2.05
+    },
+    {
+      "text": "The current data path has two layers:",
+      "start": 612.325,
+      "duration": 3.2
+    },
+    {
+      "text": "Inscribed works are already embedded in the page.",
+      "start": 615.705,
+      "duration": 4.025
+    },
+    {
+      "text": "Living records are added after living-library.json loads.",
+      "start": 619.91,
+      "duration": 4.75
+    },
+    {
+      "text": "If that static JSON request fails, the instrument still opens with the inscribed catalog, but it does not announce that the living field is incomplete. The next version should surface a quiet availability note and should include an automated test for this degraded state.",
+      "start": 624.84,
+      "duration": 18.35
+    },
+    {
+      "text": "The present source tests verify structural invariants, including the three-word limit, three-result slice, absence of Math.random , reduced-motion rules, and presence of the living catalog. They do not yet exercise the algorithm as a reader would. Behavioral tests should cover:",
+      "start": 643.37,
+      "duration": 18.375
+    },
+    {
+      "text": "the same chord always produces the same three routes;",
+      "start": 661.925,
+      "duration": 4.225
+    },
+    {
+      "text": "no fourth result can appear;",
+      "start": 666.33,
+      "duration": 2.75
+    },
+    {
+      "text": "a shared URL reconstructs its state;",
+      "start": 669.26,
+      "duration": 3.425
+    },
+    {
+      "text": "keyboard selection and result focus;",
+      "start": 672.865,
+      "duration": 3.325
+    },
+    {
+      "text": "zero, one, two, and three-match ranking;",
+      "start": 676.37,
+      "duration": 3.5
+    },
+    {
+      "text": "catalog-load failure;",
+      "start": 680.05,
+      "duration": 2.225
+    },
+    {
+      "text": "mobile overflow and touch target size;",
+      "start": 682.455,
+      "duration": 3.425
+    },
+    {
+      "text": "reduced-motion behavior;",
+      "start": 686.06,
+      "duration": 2.775
+    },
+    {
+      "text": "animation suspension when hidden.",
+      "start": 689.015,
+      "duration": 3.1
+    },
+    {
+      "text": "Security boundary",
+      "start": 692.295,
+      "duration": 2.2
+    },
+    {
+      "text": "The instrument performs no HTML interpretation from catalog fields. Living titles, excerpts, labels, and facets are inserted with text nodes. Routes are public same-site metadata. The page's content security policy permits scripts and data only from the press itself, with no third-party analytics or recommendation service.",
+      "start": 694.675,
+      "duration": 23.125
+    },
+    {
+      "text": "The catalog remains editorial input. A malicious or malformed record could still mislabel a work or create a misleading route, so generation-time schema validation and route checks remain necessary. Content hashes establish exact bytes for living versions, but they do not prove that a facet assignment or rationale is correct.",
+      "start": 717.98,
+      "duration": 23.1
+    },
+    {
+      "text": "Design findings",
+      "start": 741.26,
+      "duration": 2.15
+    },
+    {
+      "text": "The prototype succeeds because it changes the unit of browsing.",
+      "start": 743.59,
+      "duration": 4.825
+    },
+    {
+      "text": "The unit is not a feed item competing for a pause. It is a temporary constellation produced by three declared intentions. The reader is not told that the results are personally optimal. The interface says only that these works came into view.",
+      "start": 748.595,
+      "duration": 16.425
+    },
+    {
+      "text": "Its strongest visual decision is restraint. The question arrives before the catalog. The field offers a small number of legible words. The result surface has no secondary rail of related content, no popularity counts, and no prompt to keep consuming.",
+      "start": 765.2,
+      "duration": 17.75
+    },
+    {
+      "text": "Its most important unresolved issue is visibility power. A deterministic editorial algorithm can still repeatedly surface some works and bury others. Refusing surveillance solves one problem, not every problem of curation. The ranking, metadata, and editorial rationale therefore remain part of the public artifact and should be treated as revisable propositions.",
+      "start": 783.13,
+      "duration": 24.975
+    },
+    {
+      "text": "Kernel relations",
+      "start": 808.285,
+      "duration": 2.05
+    },
+    {
+      "text": "ATTEND: the first operation asks what the reader is trying to become capable of seeing.",
+      "start": 810.515,
+      "duration": 6.2
+    },
+    {
+      "text": "CARRY: each result keeps title, excerpt, publication state, matched terms, and a route to its full context.",
+      "start": 816.895,
+      "duration": 8.275
+    },
+    {
+      "text": "TEND: facets and living curation make the archive navigable as it changes.",
+      "start": 825.35,
+      "duration": 5.95
+    },
+    {
+      "text": "END: the operation returns three works and stops.",
+      "start": 831.48,
+      "duration": 3.95
+    },
+    {
+      "text": "Law Four: the instrument reveals its own aperture through public metadata and inspectable ranking rules.",
+      "start": 835.61,
+      "duration": 7.7
+    },
+    {
+      "text": "Law Eight: the interface refuses automatic endlessness and treats ending as part of trust.",
+      "start": 843.49,
+      "duration": 7.0
+    },
+    {
+      "text": "Questions still open",
+      "start": 850.67,
+      "duration": 2.325
+    },
+    {
+      "text": "Should every result set contain one intentionally distant work, or should semantic nearness remain primary?",
+      "start": 853.175,
+      "duration": 7.875
+    },
+    {
+      "text": "How should older or rarely surfaced works receive attention without converting underexposure into another hidden score?",
+      "start": 861.23,
+      "duration": 8.225
+    },
+    {
+      "text": "Should a reader be able to inspect the exact ranking explanation before opening a result?",
+      "start": 869.635,
+      "duration": 6.325
+    },
+    {
+      "text": "When the catalog becomes much larger, can a compact static manifest preserve the same local and deterministic behavior?",
+      "start": 876.14,
+      "duration": 8.525
+    },
+    {
+      "text": "Should the three chosen words remain shareable as a public chord even after the catalog changes?",
+      "start": 884.845,
+      "duration": 7.0
+    },
+    {
+      "text": "What ceremony should accompany a future version that uses model-proposed relations?",
+      "start": 892.025,
+      "duration": 6.025
+    },
+    {
+      "text": "Related: Instrument I-002, The Library Aperture ; Artifact A-004, The Finite Library Prototype ; Field Note 01, An Operating System for Shared Reality ; Field Note 05, The Physics We Choose ; Field Note 15, The First Small World ; the Cyberdelic Kernel, ATTEND, CARRY, TEND, END, and Laws Four and Eight.",
+      "start": 898.23,
+      "duration": 22.5
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.765217661857605,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

@@ -1,0 +1,123 @@
+{
+  "id": "cyberdelic-os-fn-08",
+  "title": "The Lived Interface",
+  "form": "field-note",
+  "release_id": "FN-S0-001",
+  "pages": [
+    "project/cyberdelic-os/field-notes/fn-08/"
+  ],
+  "source_path": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
+  "source_sha256": "0e893f7e468102bd66ac563b7c6eec686e96efe508dbc5410cd8c83f2aee38f2",
+  "document_sha256": "e71acaa385fda6a3f45c8e9280286704bf45368cde28a1f3635975ede05ba869",
+  "text_sha256": "117b44eaa015805d55c615a0e924a9515b69deefab98e593aa7510f066c2b045",
+  "reading_path": "audio/readings/117b44eaa015805d55c615a0e924a9515b69deefab98e593aa7510f066c2b045.md",
+  "reading_sha256": "e71acaa385fda6a3f45c8e9280286704bf45368cde28a1f3635975ede05ba869",
+  "reading_length": 3114,
+  "audio_path": "audio/lewis/117b44eaa015805d55c615a0e924a9515b69deefab98e593aa7510f066c2b045.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "0a4ea828f38409a96b9e4785af900071407b1a918ea0c834e4e9aa3e2cdaee3e",
+  "audio_length": 2576780,
+  "duration_seconds": 214.655,
+  "chunks": [
+    {
+      "text": "The Lived Interface",
+      "start": 0.0,
+      "duration": 2.275
+    },
+    {
+      "text": "The desktop was built in the image of an office.",
+      "start": 2.455,
+      "duration": 3.9
+    },
+    {
+      "text": "Files, folders, documents, inboxes, calendars, trash cans. Its metaphors came from administration because its primary purpose was to help people perform administrative work.",
+      "start": 6.535,
+      "duration": 12.85
+    },
+    {
+      "text": "Cyberdelic OS needs another spatial imagination.",
+      "start": 19.565,
+      "duration": 4.4
+    },
+    {
+      "text": "Its interface might be a world.",
+      "start": 24.145,
+      "duration": 3.05
+    },
+    {
+      "text": "Not a metaverse in which office life is reconstructed with cartoon bodies and simulated furniture. Not a game whose purpose is points, accumulation, or winning. A lived interface gives thought, memory, relation, and attention a sensory form. It restores situatedness to digital life.",
+      "start": 27.375,
+      "duration": 19.575
+    },
+    {
+      "text": "The Home is the private aperture: a hearth, archive, studio, and dwelling. It contains unfinished works, intimate correspondences, active questions, memories, and trusted agents. Its objects are not generic files. They are things that have acquired meaning through placement.",
+      "start": 47.13,
+      "duration": 18.375
+    },
+    {
+      "text": "Outside the home is the Village . Other people and agents have dwellings, offices, gardens, workshops, and public rooms. A person may visit another aperture, borrow its lens, or invite its inhabitants into a shared inquiry. A technical agent might work near the workshop. The Witness might keep an archive. The Gardener may be found tending unfinished ideas rather than waiting behind a chat box.",
+      "start": 65.685,
+      "duration": 25.65
+    },
+    {
+      "text": "Beyond the village is the Field , where one wanders among signals, relations, fragments, and constellations. Discovery does not always begin with a query. Sometimes it begins with movement.",
+      "start": 91.515,
+      "duration": 13.15
+    },
+    {
+      "text": "Then there is the Forest : ambiguity, dark regions, unresolved questions, and things the system cannot yet name. The forest should not exist merely to be cleared. A humane knowledge system needs wilderness, places where extraction, classification, and optimization weaken.",
+      "start": 104.845,
+      "duration": 18.425
+    },
+    {
+      "text": "There is a Situationist ancestor here: the dérive , a drift through a landscape undertaken to break habitual perception and discover its hidden psychic intensities. Cyberdelic wandering could work similarly. A path through ideas would not simply retrieve information. It would alter saliency. Where one walks changes what one notices; what one notices changes what becomes possible to imagine.",
+      "start": 123.45,
+      "duration": 25.975
+    },
+    {
+      "text": "The Writing Table is where humans and agents gather. The Observatory is where different apertures compare the same sky. The Press is where selected works cross into public and possibly immutable memory.",
+      "start": 149.605,
+      "duration": 13.325
+    },
+    {
+      "text": "A top-down two-dimensional world may be enough for the first prototype. The visual language of an early adventure game offers movement, charm, symbol, and embodiment without the machinery or false realism of a three-dimensional metaverse. One house, one field, one forest, and one table could already make the new laws perceptible.",
+      "start": 163.11,
+      "duration": 22.225
+    },
+    {
+      "text": "The purpose is not to visualize data.",
+      "start": 185.515,
+      "duration": 3.625
+    },
+    {
+      "text": "It is to visualize relation.",
+      "start": 189.32,
+      "duration": 2.975
+    },
+    {
+      "text": "Trust has proximity. Memory has temperature. Invitation has direction. A correspondence wears a path into the landscape. A neglected question becomes an overgrown place. An agent's office makes its responsibility visible before it speaks.",
+      "start": 192.475,
+      "duration": 16.9
+    },
+    {
+      "text": "A world can teach these distinctions more deeply than a menu can.",
+      "start": 209.555,
+      "duration": 5.1
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.6539530158042908,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

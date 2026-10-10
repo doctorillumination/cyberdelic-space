@@ -1,0 +1,108 @@
+{
+  "id": "cyberdelic-os-fn-02",
+  "title": "Asynchronous Co-Presence",
+  "form": "field-note",
+  "release_id": "FN-S0-001",
+  "pages": [
+    "project/cyberdelic-os/field-notes/fn-02/"
+  ],
+  "source_path": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
+  "source_sha256": "0e893f7e468102bd66ac563b7c6eec686e96efe508dbc5410cd8c83f2aee38f2",
+  "document_sha256": "7fe454332e89e4092042b19159d8861530f80f9a7a49b2bf63eaaca247f790ad",
+  "text_sha256": "f9f86e13abc4ecb63bbab296aaffe2273dc24cba158782b37e8cae0af5c9382a",
+  "reading_path": "audio/readings/f9f86e13abc4ecb63bbab296aaffe2273dc24cba158782b37e8cae0af5c9382a.md",
+  "reading_sha256": "7fe454332e89e4092042b19159d8861530f80f9a7a49b2bf63eaaca247f790ad",
+  "reading_length": 2820,
+  "audio_path": "audio/lewis/f9f86e13abc4ecb63bbab296aaffe2273dc24cba158782b37e8cae0af5c9382a.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "58c541e8a3d98fef90f79a5f435ee05a6fe21a28f649ff056e09d78c22ecc08c",
+  "audio_length": 2240108,
+  "duration_seconds": 186.59,
+  "chunks": [
+    {
+      "text": "Asynchronous Co-Presence",
+      "start": 0.0,
+      "duration": 2.425
+    },
+    {
+      "text": "Some of my most meaningful collaborations do not happen in meetings.",
+      "start": 2.605,
+      "duration": 5.1
+    },
+    {
+      "text": "My friend and collaborator Jason lives in Amsterdam. I live on Vancouver Island. Our days overlap imperfectly, and our creative rhythms are different. We leave one another voice notes. We send links, fragments, half-formed thoughts, images, passages, music, and glimpses of whatever we are making. One of us enters the thread as the other leaves it. Hours later, the response arrives.",
+      "start": 7.885,
+      "duration": 24.85
+    },
+    {
+      "text": "Yet the exchange does not feel disembodied.",
+      "start": 32.915,
+      "duration": 3.65
+    },
+    {
+      "text": "A voice note carries breath, cadence, hesitation, fatigue, weather, excitement, and the small acoustic evidence of the life surrounding it. A thought arrives not as polished text but as an event in a body. You hear someone discovering what they mean while they are saying it. Errors remain. Sentences change direction. The living mind leaves fingerprints.",
+      "start": 36.745,
+      "duration": 22.875
+    },
+    {
+      "text": "Presence, then, may not require simultaneity.",
+      "start": 59.8,
+      "duration": 3.85
+    },
+    {
+      "text": "There is another kind of presence made from continuity: the knowledge that a shared thread remains open, that something you leave will be received into another life, and that the other person can enter when their attention is genuinely available. This is not delayed conversation. It is asynchronous co-presence .",
+      "start": 63.83,
+      "duration": 19.1
+    },
+    {
+      "text": "Most contemporary software treats delay as a defect. It wants immediacy, notifications, rapid replies, visible availability, constant return. But human creativity often needs latency. An idea may need to sit beside someone for a night before it can be answered. A link may need to ferment. Silence may be an active part of the exchange.",
+      "start": 83.11,
+      "duration": 23.225
+    },
+    {
+      "text": "Cyberdelic OS could treat correspondence as a living medium rather than a failed imitation of real-time conversation.",
+      "start": 106.515,
+      "duration": 9.225
+    },
+    {
+      "text": "The thread might remember its unresolved questions without demanding resolution. It might gather the works exchanged around a theme and reveal the constellation that has slowly formed between two people. It might notice that a word used casually six months ago has become central to both practices. It might allow personal agents to tend the space between arrivals: transcribing, connecting, preserving, and gently surfacing what appears to matter, without speaking on anyone’s behalf.",
+      "start": 115.92,
+      "duration": 29.85
+    },
+    {
+      "text": "This would not be a feed. It would be closer to a garden path worn by repeated crossings.",
+      "start": 145.95,
+      "duration": 6.25
+    },
+    {
+      "text": "And it could expand beyond two people. A correspondence might remain open for weeks or years, with participants entering at different times, from different places, leaving situated traces for one another. The shared object would not be a stream that disappears beneath newer material. It would be a place that acquires depth through return.",
+      "start": 152.38,
+      "duration": 21.525
+    },
+    {
+      "text": "The abundance promised here is not more content or faster communication.",
+      "start": 174.085,
+      "duration": 5.625
+    },
+    {
+      "text": "It is abundance of time. Spaciousness. The right to answer when the answer has become real.",
+      "start": 179.89,
+      "duration": 6.7
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.6271309852600098,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

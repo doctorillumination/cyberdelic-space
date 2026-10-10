@@ -1,0 +1,243 @@
+{
+  "id": "cyberdelic-os-fn-27",
+  "title": "Vocations, Not Classes",
+  "form": "field-note",
+  "release_id": "FN-S0-001",
+  "pages": [
+    "project/cyberdelic-os/field-notes/fn-27/"
+  ],
+  "source_path": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
+  "source_sha256": "0e893f7e468102bd66ac563b7c6eec686e96efe508dbc5410cd8c83f2aee38f2",
+  "document_sha256": "0dbcc6a3ad06bef2131f7ac846324094f6a9617988bd5edee5b406dea5d756a7",
+  "text_sha256": "37117d16b7913ec4ea36571e715de306b4a653710e0aeb10ef80f086d812f822",
+  "reading_path": "audio/readings/37117d16b7913ec4ea36571e715de306b4a653710e0aeb10ef80f086d812f822.md",
+  "reading_sha256": "0dbcc6a3ad06bef2131f7ac846324094f6a9617988bd5edee5b406dea5d756a7",
+  "reading_length": 4120,
+  "audio_path": "audio/lewis/37117d16b7913ec4ea36571e715de306b4a653710e0aeb10ef80f086d812f822.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "ea035c84a6e4941e56d8c2cbfcce1f898b112a5962c5d8078bc3c3982250971f",
+  "audio_length": 3604652,
+  "duration_seconds": 300.3,
+  "chunks": [
+    {
+      "text": "Vocations, Not Classes",
+      "start": 0.0,
+      "duration": 2.675
+    },
+    {
+      "text": "A role-playing world begins with a peculiar question:",
+      "start": 2.855,
+      "duration": 4.35
+    },
+    {
+      "text": "Who are you able to be here?",
+      "start": 7.385,
+      "duration": 2.55
+    },
+    {
+      "text": "Most games answer with classes. Warrior. Mage. Healer. Thief. The class grants capabilities and imposes constraints. No single character can do everything, and that limitation is part of what makes cooperation meaningful.",
+      "start": 10.115,
+      "duration": 15.9
+    },
+    {
+      "text": "Cyberdelic OS may need classes for the same reason, but with a different object.",
+      "start": 26.195,
+      "duration": 6.25
+    },
+    {
+      "text": "The scarce capacity is not combat power.",
+      "start": 32.625,
+      "duration": 3.65
+    },
+    {
+      "text": "It is attention.",
+      "start": 36.455,
+      "duration": 2.0
+    },
+    {
+      "text": "A person might enter the world as a Witness , Gardener , Cartographer , Builder , Ferryman , Host , Forager , Archivist , or Trickster .",
+      "start": 38.635,
+      "duration": 9.025
+    },
+    {
+      "text": "These are not personality types. They are offices of attention .",
+      "start": 47.84,
+      "duration": 4.8
+    },
+    {
+      "text": "A Witness receives powerful provenance tools but accepts an obligation to preserve attribution, source, and uncertainty.",
+      "start": 52.82,
+      "duration": 8.55
+    },
+    {
+      "text": "A Gardener tends neglected questions, abandoned paths, and long temporal arcs. Their work is patient by construction.",
+      "start": 61.55,
+      "duration": 8.6
+    },
+    {
+      "text": "A Cartographer perceives relations, borders, clusters, routes, and dark regions without claiming that the map is the territory.",
+      "start": 70.33,
+      "duration": 8.925
+    },
+    {
+      "text": "A Ferryman specializes in crossing between distant apertures. Their obligation is to return with the other world intact enough that its inhabitants recognize the representation.",
+      "start": 79.435,
+      "duration": 12.1
+    },
+    {
+      "text": "A Builder turns a dark region into an experiment, instrument, institution, artwork, or prototype.",
+      "start": 91.715,
+      "duration": 7.525
+    },
+    {
+      "text": "A Host convenes people and intelligences around a shared object and accepts responsibility for the conditions of encounter.",
+      "start": 99.42,
+      "duration": 9.275
+    },
+    {
+      "text": "A Trickster receives extraordinary permission to introduce improbable relations, riddles, contradictions, and departures from the statistical center, while being prohibited from silently converting invention into fact.",
+      "start": 108.875,
+      "duration": 14.75
+    },
+    {
+      "text": "Each vocation grants tools because it accepts constraints.",
+      "start": 123.805,
+      "duration": 4.55
+    },
+    {
+      "text": "The limitation is the source of the ability.",
+      "start": 128.535,
+      "duration": 3.675
+    },
+    {
+      "text": "This creates another possibility. Roles need not all be designed in advance.",
+      "start": 132.39,
+      "duration": 5.8
+    },
+    {
+      "text": "A living world may discover professions it does not yet possess.",
+      "start": 138.37,
+      "duration": 4.875
+    },
+    {
+      "text": "Perhaps a person repeatedly travels between ideologically distant cities and returns with interpretations that both sides recognize as accurate. The system notices a pattern but does not assign an identity:",
+      "start": 143.425,
+      "duration": 14.65
+    },
+    {
+      "text": "You have performed this kind of crossing repeatedly. Something like a vocation may be forming here. Do you recognize it?",
+      "start": 158.255,
+      "duration": 7.825
+    },
+    {
+      "text": "The person may accept the description, reject it, rename it, or invite others to help define the practice.",
+      "start": 166.26,
+      "duration": 7.475
+    },
+    {
+      "text": "If the practice proves useful, a guild may form around it. Its members write obligations. Tools emerge. Failures are documented. Other communities begin requesting its presence.",
+      "start": 173.915,
+      "duration": 13.15
+    },
+    {
+      "text": "A new civic role has been born inside a digital world.",
+      "start": 187.245,
+      "duration": 4.675
+    },
+    {
+      "text": "It may eventually become useful outside it.",
+      "start": 192.1,
+      "duration": 3.6
+    },
+    {
+      "text": "Progression therefore need not mean increasing numerical power. A vocation deepens through demonstrated practice, trusted relation, and the consequences of work.",
+      "start": 195.88,
+      "duration": 11.25
+    },
+    {
+      "text": "A Cartographer becomes capable of more consequential mapping because earlier maps survived contact with other apertures.",
+      "start": 207.31,
+      "duration": 8.1
+    },
+    {
+      "text": "A Ferryman earns trust because distant worlds recognize themselves in what was carried home.",
+      "start": 215.59,
+      "duration": 6.65
+    },
+    {
+      "text": "A Witness gains responsibility because their provenance work has remained reliable across time.",
+      "start": 222.42,
+      "duration": 7.325
+    },
+    {
+      "text": "Standing remains contextual. Someone may be a remarkable Ferryman between art and technology and have no special standing in medicine. No level summarizes the human being.",
+      "start": 229.925,
+      "duration": 12.625
+    },
+    {
+      "text": "People may also inhabit more than one role.",
+      "start": 242.73,
+      "duration": 3.65
+    },
+    {
+      "text": "One person can enter Art City as a Trickster, a collaborative project as a Builder, and their own Hearth as a Gardener. Identity remains plural. A vocation describes a relation to the current world, not the totality of the person.",
+      "start": 246.56,
+      "duration": 15.875
+    },
+    {
+      "text": "This makes role-playing something more than entertainment.",
+      "start": 262.615,
+      "duration": 3.975
+    },
+    {
+      "text": "It becomes a practice of intentional situatedness.",
+      "start": 266.77,
+      "duration": 4.325
+    },
+    {
+      "text": "Instead of entering digital space as the generic USER , endowed with every available operation and no declared responsibility, one enters by choosing:",
+      "start": 271.275,
+      "duration": 11.1
+    },
+    {
+      "text": "How will I attend?",
+      "start": 282.555,
+      "duration": 1.95
+    },
+    {
+      "text": "What am I here to offer?",
+      "start": 284.685,
+      "duration": 2.35
+    },
+    {
+      "text": "What am I willing not to do?",
+      "start": 287.215,
+      "duration": 2.65
+    },
+    {
+      "text": "And perhaps, over enough time, the world answers with another question:",
+      "start": 290.045,
+      "duration": 5.175
+    },
+    {
+      "text": "What kind of person have your actions been teaching you how to become?",
+      "start": 295.4,
+      "duration": 4.9
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.7113602161407471,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

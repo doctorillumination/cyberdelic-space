@@ -1,0 +1,1039 @@
+{
+  "id": "cyberdelic-os-bn-001",
+  "title": "Building cyberdelic.studio and cyberdelic.space",
+  "form": "builder-note",
+  "release_id": "BN-001",
+  "pages": [
+    "project/cyberdelic-os/bn-001/",
+    "workshop/cyberdelic-os/builder-notes/building-cyberdelic-studio-and-cyberdelic-space/v2.1/"
+  ],
+  "source_path": "living-content/cyberdelic-os/bn-001/v000003.md",
+  "source_sha256": "10976be0de33db04e865eef9aac4a1973da72c517386dc0cb930a272cd45dd0a",
+  "document_sha256": "10976be0de33db04e865eef9aac4a1973da72c517386dc0cb930a272cd45dd0a",
+  "text_sha256": "6e0c8f57e6bf3d2143e0e5e82bbadb9c648d1019035a131644d180e50240ca64",
+  "reading_path": "audio/readings/6e0c8f57e6bf3d2143e0e5e82bbadb9c648d1019035a131644d180e50240ca64.md",
+  "reading_sha256": "10976be0de33db04e865eef9aac4a1973da72c517386dc0cb930a272cd45dd0a",
+  "reading_length": 22077,
+  "audio_path": "audio/lewis/6e0c8f57e6bf3d2143e0e5e82bbadb9c648d1019035a131644d180e50240ca64.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "82cd9f52578f4c5a1fe101c6bb2c1d7a5c2dec1b9c68ec83b259c0fd26caad0d",
+  "audio_length": 18588428,
+  "duration_seconds": 1548.95,
+  "chunks": [
+    {
+      "text": "Builder Note BN-01: Building cyberdelic.studio and cyberdelic.space",
+      "start": 0.0,
+      "duration": 6.65
+    },
+    {
+      "text": "Primary verbs: INSCRIBE, RATIFY",
+      "start": 6.83,
+      "duration": 3.4
+    },
+    {
+      "text": "Supporting verbs: ATTEND, CARRY, TEND, END, FORGET",
+      "start": 10.41,
+      "duration": 4.65
+    },
+    {
+      "text": "Studio source: doctorillumination/cyberdelic-studio",
+      "start": 15.24,
+      "duration": 5.05
+    },
+    {
+      "text": "Public press: cyberdelic.space",
+      "start": 20.47,
+      "duration": 3.075
+    },
+    {
+      "text": "Public source: doctorillumination/cyberdelic-space",
+      "start": 23.725,
+      "duration": 4.85
+    },
+    {
+      "text": "INSCRIBE is not one application. It is a deliberate crossing from a living work, through a locally governed publication instrument, into public permanence, followed by a read-only surface where anyone can encounter and verify what occurred.",
+      "start": 28.755,
+      "duration": 15.5
+    },
+    {
+      "text": "This Builder Note records the first working form of that circuit. It distinguishes the local software that can prepare and publish a work from the public website that can only read, verify, and mirror the result. It also places that circuit beside Hearth and Portal, two related CyberdelicOS prototypes with different boundaries and responsibilities.",
+      "start": 44.435,
+      "duration": 22.775
+    },
+    {
+      "text": "Cyberdelic Studio and Cyberdelic.space are not alternate names for the same thing.",
+      "start": 67.39,
+      "duration": 6.4
+    },
+    {
+      "text": "Cyberdelic Studio is the local, stateful, consequential instrument. It prepares exact bytes, records provenance and rights claims, rehearses publication, supervises Bitcoin infrastructure, asks a human to ratify the final object, and can authorize inscription.",
+      "start": 73.97,
+      "duration": 18.375
+    },
+    {
+      "text": "Cyberdelic.space is the public, static, wallet-free press. It presents inscribed works, living publications, project records, verification evidence, and portable mirrors. A visitor can read and check the press, but cannot publish through it.",
+      "start": 92.525,
+      "duration": 16.375
+    },
+    {
+      "text": "Bitcoin is the public witness for the exact bytes that cross the threshold. It is not the website, the Studio, or a truth machine.",
+      "start": 109.08,
+      "duration": 8.925
+    },
+    {
+      "text": "The distinction is both technical and ethical. The authority to make something permanent stays local. The evidence needed to question that act becomes public.",
+      "start": 118.185,
+      "duration": 10.95
+    },
+    {
+      "text": "What the current prototype proves",
+      "start": 129.315,
+      "duration": 2.725
+    },
+    {
+      "text": "A publishing ceremony can remain local while its result becomes globally readable.",
+      "start": 132.22,
+      "duration": 6.3
+    },
+    {
+      "text": "A person can rehearse the complete operation before spending money or creating permanence.",
+      "start": 138.7,
+      "duration": 6.675
+    },
+    {
+      "text": "Human approval can be bound to exact content, metadata, network, and cost.",
+      "start": 145.555,
+      "duration": 5.925
+    },
+    {
+      "text": "A public reader can verify a work without holding the press wallet or trusting the publisher's display.",
+      "start": 151.66,
+      "duration": 7.15
+    },
+    {
+      "text": "Inscribed and living publications can share a public space without being represented as the same kind of memory.",
+      "start": 158.99,
+      "duration": 8.3
+    },
+    {
+      "text": "A complete copy of the public press can be mirrored without gaining authority to publish new works.",
+      "start": 167.47,
+      "duration": 6.875
+    },
+    {
+      "text": "The interface layer can continue to evolve while an inscribed work remains fixed and independently recoverable.",
+      "start": 174.525,
+      "duration": 7.875
+    },
+    {
+      "text": "It does not prove that an inscription is true, wise, consensual, lawful, culturally valuable, or worthy of permanence. Those judgments remain human responsibilities.",
+      "start": 182.58,
+      "duration": 12.025
+    },
+    {
+      "text": "System at a glance",
+      "start": 194.785,
+      "duration": 2.35
+    },
+    {
+      "text": "Cyberdelic.space is not where inscription happens. It is where the inscription, the claims surrounding it, and the evidence needed to test those claims become publicly legible.",
+      "start": 197.315,
+      "duration": 11.9
+    },
+    {
+      "text": "Reference configuration: the current Studio",
+      "start": 209.395,
+      "duration": 3.75
+    },
+    {
+      "text": "Cyberdelic Studio presently runs on a dedicated PC with:",
+      "start": 213.325,
+      "duration": 5.05
+    },
+    {
+      "text": "an AMD Ryzen 9 7950X processor;",
+      "start": 218.555,
+      "duration": 4.725
+    },
+    {
+      "text": "an NVIDIA GeForce RTX 4090 GPU;",
+      "start": 223.46,
+      "duration": 4.625
+    },
+    {
+      "text": "192 GB of system memory;",
+      "start": 228.265,
+      "duration": 4.225
+    },
+    {
+      "text": "4 TB of local storage.",
+      "start": 232.67,
+      "duration": 3.125
+    },
+    {
+      "text": "This machine is the current material home of the publication instrument. The Studio is software, but it is not immaterial. Its performance, storage limits, energy use, local models, Bitcoin services, indexes, backups, and failures all occur on a particular apparatus under the operator's control.",
+      "start": 235.975,
+      "duration": 20.375
+    },
+    {
+      "text": "The Studio does not require every part of this configuration merely to render its interface or package a work. The machine provides the present operational envelope for the wider local system: the Studio application, Bitcoin infrastructure, verification tools, publication records, mirrors, and experiments with locally hosted intelligence.",
+      "start": 256.53,
+      "duration": 22.45
+    },
+    {
+      "text": "This PC should not automatically be called the Hearth. The current Studio is a publication instrument with a defined authority to prepare and inscribe. The Hearth prototype is a broader local home for private intelligence, memory, permissions, and conversation. The two may eventually share hardware, but their offices and security boundaries must remain legible.",
+      "start": 279.16,
+      "duration": 23.625
+    },
+    {
+      "text": "The local component: Cyberdelic Studio",
+      "start": 302.965,
+      "duration": 3.475
+    },
+    {
+      "text": "Cyberdelic Studio is a local application with two persistent public-facing verbs: INSCRIBE and READ . Its present working lineage is identified in the repository as DEW LINE Studio 0.3.",
+      "start": 306.62,
+      "duration": 15.5
+    },
+    {
+      "text": "The local application can:",
+      "start": 322.3,
+      "duration": 2.65
+    },
+    {
+      "text": "prepare text, Markdown, HTML, source code, JSON, and supported books as exact bytes;",
+      "start": 325.13,
+      "duration": 7.7
+    },
+    {
+      "text": "calculate and display SHA-256 digests;",
+      "start": 333.01,
+      "duration": 4.675
+    },
+    {
+      "text": "record contributors, source relationships, rights bases, dates, editions, AI disclosure, and lineage;",
+      "start": 337.865,
+      "duration": 7.725
+    },
+    {
+      "text": "distinguish Public Memory from a transferable Collectible;",
+      "start": 345.77,
+      "duration": 4.525
+    },
+    {
+      "text": "rehearse the full inscription circuit without publishing or spending funds;",
+      "start": 350.475,
+      "duration": 5.375
+    },
+    {
+      "text": "keep Signet and Mainnet infrastructure isolated;",
+      "start": 356.03,
+      "duration": 4.125
+    },
+    {
+      "text": "show network state, fee plans, storage health, wallet readiness, and tool integrity;",
+      "start": 360.335,
+      "duration": 6.35
+    },
+    {
+      "text": "require a separate review and authorization before broadcast;",
+      "start": 366.865,
+      "duration": 5.175
+    },
+    {
+      "text": "preserve a durable journal around uncertain or interrupted operations;",
+      "start": 372.22,
+      "duration": 5.65
+    },
+    {
+      "text": "verify the resulting inscription from the reveal transaction;",
+      "start": 378.05,
+      "duration": 4.925
+    },
+    {
+      "text": "build publication records, readers, catalogs, editions, and static mirrors.",
+      "start": 383.155,
+      "duration": 5.975
+    },
+    {
+      "text": "The Studio is stateful because consequential publication requires state. It knows which exact object was prepared, whether that approval is still valid, which network is active, what operation is pending, and whether a result has been independently reconciled.",
+      "start": 389.31,
+      "duration": 17.4
+    },
+    {
+      "text": "The Studio is also local by design. The public website does not receive its wallet, private keys, recovery words, operating journals, local drafts, or authority to broadcast.",
+      "start": 406.89,
+      "duration": 13.0
+    },
+    {
+      "text": "The public component: Cyberdelic.space",
+      "start": 420.07,
+      "duration": 3.5
+    },
+    {
+      "text": "Cyberdelic.space is a static, public, read-only expression of the press. Read-only describes the visitor's authority, not the historical immobility of every file on the site.",
+      "start": 423.75,
+      "duration": 12.65
+    },
+    {
+      "text": "The public can:",
+      "start": 436.58,
+      "duration": 1.85
+    },
+    {
+      "text": "encounter a work through a composed reading view;",
+      "start": 438.61,
+      "duration": 3.85
+    },
+    {
+      "text": "inspect the exact source or content bytes;",
+      "start": 442.64,
+      "duration": 3.725
+    },
+    {
+      "text": "see structured attribution, rights, provenance, lineage, and publication intent;",
+      "start": 446.545,
+      "duration": 6.025
+    },
+    {
+      "text": "inspect transaction and block evidence;",
+      "start": 452.75,
+      "duration": 3.525
+    },
+    {
+      "text": "verify the content digest in the browser;",
+      "start": 456.455,
+      "duration": 3.675
+    },
+    {
+      "text": "follow the verification path back to Bitcoin;",
+      "start": 460.31,
+      "duration": 3.75
+    },
+    {
+      "text": "download living versions and inscribed works;",
+      "start": 464.24,
+      "duration": 3.825
+    },
+    {
+      "text": "clone or download a complete mirror of the press.",
+      "start": 468.245,
+      "duration": 3.85
+    },
+    {
+      "text": "The public cannot:",
+      "start": 472.275,
+      "duration": 2.05
+    },
+    {
+      "text": "create a draft in the Studio;",
+      "start": 474.505,
+      "duration": 2.9
+    },
+    {
+      "text": "access the press wallet or signing boundary;",
+      "start": 477.585,
+      "duration": 3.675
+    },
+    {
+      "text": "alter a prepared object;",
+      "start": 481.44,
+      "duration": 2.6
+    },
+    {
+      "text": "approve a fee or network;",
+      "start": 484.22,
+      "duration": 2.775
+    },
+    {
+      "text": "broadcast a transaction;",
+      "start": 487.175,
+      "duration": 2.675
+    },
+    {
+      "text": "silently replace an inscribed work;",
+      "start": 490.03,
+      "duration": 3.25
+    },
+    {
+      "text": "turn a mirror into a new instance of the press's publishing authority.",
+      "start": 493.46,
+      "duration": 5.425
+    },
+    {
+      "text": "The website has no account system, advertising system, analytics requirement, public database, or publication API. Its public source is the built output. A clone is intended to remain a complete reader and verification surface.",
+      "start": 499.065,
+      "duration": 16.825
+    },
+    {
+      "text": "Mutable, living, rendered, and immutable",
+      "start": 516.07,
+      "duration": 3.55
+    },
+    {
+      "text": "The system must say exactly what can change.",
+      "start": 519.8,
+      "duration": 3.675
+    },
+    {
+      "text": "| Layer | State | Can it change?",
+      "start": 523.655,
+      "duration": 2.6
+    },
+    {
+      "text": "| Authority | | --- | --- | --- | --- | | Private draft | Local, unfinished memory | Yes, including deletion | Creator or authorized collaborators | | Prepared Studio object | Exact candidate bound to a digest | Only by invalidating approval and preparing again | Local operator | | Living publication | Public, versioned, explicitly not inscribed | Yes, through a new visible version | Editorial process | | Site rendering | HTML, CSS, navigation, project pages,",
+      "start": 526.255,
+      "duration": 29.675
+    },
+    {
+      "text": "and readers | Yes | Press maintainers | | Inscribed work | Exact bytes witnessed in Bitcoin | No silent revision | No single website or maintainer | | Later correction, translation, or dissent | A new related object | Yes before its own publication | Its authors and publication process | | Mirror | Copy of public files and evidence | The copy can diverge, but divergence is detectable | Mirror operator |",
+      "start": 555.93,
+      "duration": 26.725
+    },
+    {
+      "text": "This produces an important asymmetry.",
+      "start": 582.835,
+      "duration": 3.625
+    },
+    {
+      "text": "The website can be redesigned. Its catalog can become richer. A living Field Note can receive a new version. A project page can explain a work more clearly. None of those acts changes the bytes already inscribed in Bitcoin.",
+      "start": 586.64,
+      "duration": 15.25
+    },
+    {
+      "text": "If an immutable work requires correction, the correction must stand beside it as another visible event. It cannot pretend that the earlier event never happened.",
+      "start": 602.07,
+      "duration": 11.3
+    },
+    {
+      "text": "The source-of-truth ladder",
+      "start": 613.55,
+      "duration": 2.525
+    },
+    {
+      "text": "Different claims resolve at different layers.",
+      "start": 616.255,
+      "duration": 3.525
+    },
+    {
+      "text": "For an inscribed work's exact content: retrieve the reveal transaction, extract the inscription, and hash the bytes.",
+      "start": 619.96,
+      "duration": 8.6
+    },
+    {
+      "text": "For what the press claims about that work: inspect the publication record and its structured metadata.",
+      "start": 628.74,
+      "duration": 7.075
+    },
+    {
+      "text": "For a living publication's current edition: inspect the current version record and its exact downloadable file.",
+      "start": 635.995,
+      "duration": 8.55
+    },
+    {
+      "text": "For historical living versions: preserve each version as a separate content-addressed object rather than overwriting it.",
+      "start": 644.725,
+      "duration": 8.4
+    },
+    {
+      "text": "For presentation and navigation: the current Cyberdelic.space repository is the active public rendering.",
+      "start": 653.305,
+      "duration": 7.9
+    },
+    {
+      "text": "No HTML page should be mistaken for the canonical bytes of an inscription merely because it is attractive or served from the official domain. The page is an encounter with the object and its evidence.",
+      "start": 661.385,
+      "duration": 14.425
+    },
+    {
+      "text": "The INSCRIBE operation",
+      "start": 675.99,
+      "duration": 2.575
+    },
+    {
+      "text": "1. Attend to the work",
+      "start": 678.745,
+      "duration": 2.45
+    },
+    {
+      "text": "The process begins with a work and an intention, not with a market, feed, token, or empty transaction.",
+      "start": 681.375,
+      "duration": 7.85
+    },
+    {
+      "text": "The creator decides whether the work belongs in private memory, living public memory, or the small class of objects that may be addressed to the future through inscription.",
+      "start": 689.405,
+      "duration": 11.1
+    },
+    {
+      "text": "2. Import exact bytes",
+      "start": 700.685,
+      "duration": 2.65
+    },
+    {
+      "text": "The Studio preserves the source as exact bytes, records its content type and length, and calculates its digest. A rendered preview may help the person read, but it must not silently rewrite the source.",
+      "start": 703.515,
+      "duration": 13.85
+    },
+    {
+      "text": "3. Carry context",
+      "start": 717.545,
+      "duration": 2.375
+    },
+    {
+      "text": "The person records contributors, roles, provenance, rights basis, lineage, edition, publication class, and relevant disclosures.",
+      "start": 720.1,
+      "duration": 9.525
+    },
+    {
+      "text": "These fields make claims inspectable. They do not transform a claim into proof.",
+      "start": 729.805,
+      "duration": 5.9
+    },
+    {
+      "text": "4. Rehearse",
+      "start": 735.885,
+      "duration": 1.875
+    },
+    {
+      "text": "Rehearsal packages, approves, simulates, verifies, and renders the work without contacting Mainnet or spending funds. It is the default environment for learning and for finding mistakes.",
+      "start": 737.94,
+      "duration": 13.2
+    },
+    {
+      "text": "5. Choose the network and cost",
+      "start": 751.32,
+      "duration": 2.9
+    },
+    {
+      "text": "Signet permits a public technical rehearsal without Mainnet consequence. Mainnet creates a real financial and archival event. The Studio makes the distinction visible and refuses to let Mainnet become an accidental default.",
+      "start": 754.4,
+      "duration": 15.775
+    },
+    {
+      "text": "6. Prepare deterministically",
+      "start": 770.355,
+      "duration": 2.675
+    },
+    {
+      "text": "The Studio binds content, metadata, parents, publication intent, network, fee plan, and inscription envelope into one reviewable object. If a consequential input changes, the earlier approval no longer applies.",
+      "start": 773.21,
+      "duration": 15.475
+    },
+    {
+      "text": "7. Ratify",
+      "start": 788.865,
+      "duration": 1.95
+    },
+    {
+      "text": "A person reviews the exact work, the claims attached to it, the network, the expected cost, and the consequence of permanence. Preparation and broadcast remain separate actions.",
+      "start": 790.995,
+      "duration": 12.5
+    },
+    {
+      "text": "8. Inscribe",
+      "start": 803.675,
+      "duration": 1.925
+    },
+    {
+      "text": "The local Bitcoin and Ordinals infrastructure constructs, signs, and broadcasts the commit and reveal transactions through the dedicated wallet boundary. The Studio does not invent a second wallet or signing system inside the public interface.",
+      "start": 805.78,
+      "duration": 16.825
+    },
+    {
+      "text": "9. Reconcile uncertainty",
+      "start": 822.785,
+      "duration": 3.1
+    },
+    {
+      "text": "If a network operation times out or returns an ambiguous result, the Studio records the pending state and checks the wallet and chain before any retry. An uncertain irreversible operation must never become an invitation to repeat it blindly.",
+      "start": 826.065,
+      "duration": 17.5
+    },
+    {
+      "text": "10. Verify",
+      "start": 843.745,
+      "duration": 1.925
+    },
+    {
+      "text": "The resulting content and envelope are recovered from the reveal transaction and compared with the approved digests. Transaction existence alone is insufficient if the bytes do not match.",
+      "start": 845.85,
+      "duration": 13.3
+    },
+    {
+      "text": "11. Publish the reader and receipt",
+      "start": 859.33,
+      "duration": 3.4
+    },
+    {
+      "text": "Cyberdelic.space carries the encounter, exact bytes, digest, metadata, inscription identifier, commit and reveal transactions, block evidence, and verification path into a public static reader.",
+      "start": 862.91,
+      "duration": 14.175
+    },
+    {
+      "text": "12. Tend and mirror",
+      "start": 877.265,
+      "duration": 2.525
+    },
+    {
+      "text": "The press keeps the object legible across changing browsers, tools, domains, and cultural contexts. Mirrors provide redundancy without receiving publication authority.",
+      "start": 879.97,
+      "duration": 12.375
+    },
+    {
+      "text": "Verification ladder",
+      "start": 892.525,
+      "duration": 2.525
+    },
+    {
+      "text": "A reader can choose how far down to verify.",
+      "start": 895.23,
+      "duration": 3.675
+    },
+    {
+      "text": "Read the press's publication record.",
+      "start": 899.085,
+      "duration": 3.45
+    },
+    {
+      "text": "Hash the displayed or downloaded content in the browser.",
+      "start": 902.715,
+      "duration": 4.425
+    },
+    {
+      "text": "Inspect the transaction and block through independent explorers.",
+      "start": 907.32,
+      "duration": 4.925
+    },
+    {
+      "text": "Retrieve the reveal transaction and extract the inscription without trusting the site's copy.",
+      "start": 912.425,
+      "duration": 6.825
+    },
+    {
+      "text": "Compare the recovered bytes and metadata with the published digests.",
+      "start": 919.43,
+      "duration": 4.825
+    },
+    {
+      "text": "Clone or download the press and repeat the checks from a mirror.",
+      "start": 924.435,
+      "duration": 4.5
+    },
+    {
+      "text": "The strongest path does not require faith in Cyberdelic Studio, Cyberdelic.space, or an Ordinals index. It can proceed from Bitcoin transaction data to exact bytes.",
+      "start": 929.115,
+      "duration": 12.575
+    },
+    {
+      "text": "Security and authority boundaries",
+      "start": 941.87,
+      "duration": 3.225
+    },
+    {
+      "text": "Current boundaries include:",
+      "start": 945.275,
+      "duration": 2.55
+    },
+    {
+      "text": "the Studio and its state-changing API remain local;",
+      "start": 948.005,
+      "duration": 4.45
+    },
+    {
+      "text": "the public site contains no wallet controls or signing authority;",
+      "start": 952.635,
+      "duration": 5.4
+    },
+    {
+      "text": "Bitcoin Core, ord , wallets, and operational journals remain outside the public mirror;",
+      "start": 958.215,
+      "duration": 6.575
+    },
+    {
+      "text": "recovery phrases are not entered into or stored by the public website;",
+      "start": 964.97,
+      "duration": 5.55
+    },
+    {
+      "text": "Signet and Mainnet use separate profiles, directories, ports, and wallets;",
+      "start": 970.7,
+      "duration": 5.375
+    },
+    {
+      "text": "approval is invalidated when the exact prepared object changes;",
+      "start": 976.255,
+      "duration": 5.1
+    },
+    {
+      "text": "live operations are journaled so ambiguous results can be reconciled;",
+      "start": 981.535,
+      "duration": 5.7
+    },
+    {
+      "text": "managed Bitcoin tools can be pinned by digest;",
+      "start": 987.415,
+      "duration": 4.075
+    },
+    {
+      "text": "a mirror can preserve and verify, but cannot publish as the press.",
+      "start": 991.67,
+      "duration": 5.05
+    },
+    {
+      "text": "Residual risks remain:",
+      "start": 996.9,
+      "duration": 2.45
+    },
+    {
+      "text": "the current system is operated by one person on one primary publication machine;",
+      "start": 999.53,
+      "duration": 6.35
+    },
+    {
+      "text": "compromise of that machine or its operator account can threaten local drafts, services, and publication authority;",
+      "start": 1006.06,
+      "duration": 8.4
+    },
+    {
+      "text": "irreversible publication can preserve personal, unlawful, unsafe, or non-consensual material if human review fails;",
+      "start": 1014.64,
+      "duration": 9.5
+    },
+    {
+      "text": "metadata can contain false or disputed claims even when its bytes are authentic;",
+      "start": 1024.32,
+      "duration": 6.55
+    },
+    {
+      "text": "public explorers are convenient verification aids, not final authorities;",
+      "start": 1031.05,
+      "duration": 6.1
+    },
+    {
+      "text": "storage failure, wallet error, fee pressure, chain reorganization, and software defects can interrupt the operation;",
+      "start": 1037.33,
+      "duration": 8.35
+    },
+    {
+      "text": "long-term tending, recovery, succession, and key stewardship remain cultural as well as technical obligations;",
+      "start": 1045.86,
+      "duration": 8.175
+    },
+    {
+      "text": "the interface still needs observation with people who did not help build it.",
+      "start": 1054.215,
+      "duration": 5.325
+    },
+    {
+      "text": "The related prototype ecology",
+      "start": 1059.72,
+      "duration": 3.05
+    },
+    {
+      "text": "The first CyberdelicOS organs are becoming easier to understand when their offices are kept distinct.",
+      "start": 1062.95,
+      "duration": 7.675
+    },
+    {
+      "text": "| Prototype | Present office | Where it lives | What crosses its boundary | | --- | --- | --- | --- | | Cyberdelic Studio | Local publication instrument | Dedicated PC | A ratified work crosses toward public permanence | | Cyberdelic.space website | Public press, reader, verify, and mirror surface | Static web files and public repositories | Evidence and readable forms cross toward the public | | Cyberdelic.space app | Mobile public reader | iPhone and iPad | Public Library, Projects,",
+      "start": 1070.805,
+      "duration": 29.4
+    },
+    {
+      "text": "and Press material reach a portable interface | | Hearth | Sovereign home for private intelligence and memory | Locally governed computer | Only purpose-bound requests and authorized memory crossings | | Portal | Voice-first mobile connection to one Hearth | iPhone plus authenticated local bridge | Recognized text and reply text cross,",
+      "start": 1100.205,
+      "duration": 22.45
+    },
+    {
+      "text": "while raw voice remains on the phone | | CyberdelicOS terminal | Public interpretive aperture | Web interface | A visitor encounters the Kernel and the system's language | | Kenosha Kid and Common Weather | Bounded computational artworks | Native devices | Machine intelligence crosses into constrained form rather than unrestricted speech |",
+      "start": 1122.655,
+      "duration": 23.1
+    },
+    {
+      "text": "These prototypes are related, but none should inherit another's authority by proximity.",
+      "start": 1145.935,
+      "duration": 6.3
+    },
+    {
+      "text": "Portal is not a remote control for the Studio. Hearth is not automatically a publishing wallet. Cyberdelic.space is not a public version of the Studio. The mobile reader is not Portal. An artwork that uses a local model is not thereby a Hearth.",
+      "start": 1152.415,
+      "duration": 16.325
+    },
+    {
+      "text": "Clear boundaries let the prototypes compose without becoming one opaque platform.",
+      "start": 1168.92,
+      "duration": 6.2
+    },
+    {
+      "text": "What Bitcoin can prove, and what it cannot",
+      "start": 1175.3,
+      "duration": 3.425
+    },
+    {
+      "text": "Bitcoin can support narrow claims:",
+      "start": 1178.905,
+      "duration": 3.0
+    },
+    {
+      "text": "particular bytes occurred in a particular transaction;",
+      "start": 1182.085,
+      "duration": 4.25
+    },
+    {
+      "text": "that transaction entered a particular block;",
+      "start": 1186.515,
+      "duration": 3.7
+    },
+    {
+      "text": "a downloaded object matches the inscribed bytes;",
+      "start": 1190.395,
+      "duration": 4.075
+    },
+    {
+      "text": "silent substitution is detectable.",
+      "start": 1194.65,
+      "duration": 3.35
+    },
+    {
+      "text": "Bitcoin cannot prove:",
+      "start": 1198.18,
+      "duration": 2.35
+    },
+    {
+      "text": "that the work is true;",
+      "start": 1200.71,
+      "duration": 2.2
+    },
+    {
+      "text": "that the work deserves attention;",
+      "start": 1203.09,
+      "duration": 2.725
+    },
+    {
+      "text": "that all named contributors consented;",
+      "start": 1205.995,
+      "duration": 3.35
+    },
+    {
+      "text": "that a rights claim is legally valid;",
+      "start": 1209.525,
+      "duration": 3.3
+    },
+    {
+      "text": "that the press acted wisely;",
+      "start": 1213.005,
+      "duration": 2.8
+    },
+    {
+      "text": "that an immutable publication remains humane in every future context.",
+      "start": 1215.985,
+      "duration": 5.825
+    },
+    {
+      "text": "Cyberdelic Studio is therefore not a truth machine, and Cyberdelic.space is not an oracle. Together they make a publication act and its evidence more legible. They do not remove the burden of judgment.",
+      "start": 1221.99,
+      "duration": 13.65
+    },
+    {
+      "text": "What the build has revealed",
+      "start": 1235.82,
+      "duration": 2.475
+    },
+    {
+      "text": "The original short version of this note described Cyberdelic.space as if the press itself performed the entire operation. Building the actual system revealed a more consequential topology.",
+      "start": 1238.475,
+      "duration": 13.8
+    },
+    {
+      "text": "The local instrument holds the dangerous capability. The public press holds the legibility. Bitcoin holds the witness. Mirrors hold copies. Readers hold judgment.",
+      "start": 1252.455,
+      "duration": 11.65
+    },
+    {
+      "text": "This separation turns several values into technical facts:",
+      "start": 1264.285,
+      "duration": 4.75
+    },
+    {
+      "text": "\"permanence should be rare\" becomes rehearsal by default and a distinct live authorization;",
+      "start": 1269.215,
+      "duration": 6.825
+    },
+    {
+      "text": "\"consent must be specific\" becomes approval bound to exact bytes, metadata, network, and cost;",
+      "start": 1276.22,
+      "duration": 7.375
+    },
+    {
+      "text": "\"the archive lives at home\" becomes local publishing authority and a wallet-free public surface;",
+      "start": 1283.775,
+      "duration": 7.075
+    },
+    {
+      "text": "\"verification should not require trust\" becomes digest checks, transaction extraction, and portable mirrors;",
+      "start": 1291.03,
+      "duration": 8.0
+    },
+    {
+      "text": "\"memory has temperatures\" becomes visible differences between drafts, living versions, rendered pages, and inscriptions.",
+      "start": 1299.21,
+      "duration": 8.65
+    },
+    {
+      "text": "The system is most cyberdelic when it creates a feedback loop between philosophy and apparatus. A constitutional verb shapes software. The software exposes hidden ambiguities. Those ambiguities return to the writing and change what the system knows how to say.",
+      "start": 1308.04,
+      "duration": 17.825
+    },
+    {
+      "text": "Next honest tests",
+      "start": 1326.045,
+      "duration": 2.2
+    },
+    {
+      "text": "Observe a person with no Bitcoin experience complete a rehearsal without verbal guidance.",
+      "start": 1328.425,
+      "duration": 6.775
+    },
+    {
+      "text": "Ask that person to explain which parts are local, living, rendered, mirrored, and immutable.",
+      "start": 1335.38,
+      "duration": 6.8
+    },
+    {
+      "text": "Verify a work from a clean machine using only the public receipt and Bitcoin data.",
+      "start": 1342.36,
+      "duration": 6.425
+    },
+    {
+      "text": "Restore the press from a mirror and confirm that every exact byte still verifies.",
+      "start": 1348.965,
+      "duration": 5.8
+    },
+    {
+      "text": "Test failure and recovery with the publication PC offline, partially synced, interrupted, and storage constrained.",
+      "start": 1354.945,
+      "duration": 8.675
+    },
+    {
+      "text": "Decide whether the current Studio machine remains a dedicated press workstation or becomes one bounded organ within Hearth.",
+      "start": 1363.8,
+      "duration": 8.975
+    },
+    {
+      "text": "Make the prototype topology visible across Cyberdelic.space so visitors understand that Studio, the public press, Hearth, Portal, and the artworks are different organs.",
+      "start": 1372.955,
+      "duration": 11.6
+    },
+    {
+      "text": "Preserve this version beside version 1.0 so the conceptual correction is itself part of the record.",
+      "start": 1384.735,
+      "duration": 7.625
+    },
+    {
+      "text": "Questions still open",
+      "start": 1392.54,
+      "duration": 2.325
+    },
+    {
+      "text": "What ceremony is sufficient before irreversible publication?",
+      "start": 1395.045,
+      "duration": 4.7
+    },
+    {
+      "text": "When should a living version be signed, anchored, or inscribed?",
+      "start": 1399.925,
+      "duration": 4.675
+    },
+    {
+      "text": "How should correction, dissent, withdrawal, and changed consent stand beside immutable bytes?",
+      "start": 1404.78,
+      "duration": 7.025
+    },
+    {
+      "text": "How should Studio authority be recovered or inherited if the present operator is absent?",
+      "start": 1411.985,
+      "duration": 7.025
+    },
+    {
+      "text": "Which parts of the publication PC belong to the future Hearth, and which require stricter separation?",
+      "start": 1419.19,
+      "duration": 7.175
+    },
+    {
+      "text": "Can the mobile reader become a complete offline mirror without ever becoming a publishing surface?",
+      "start": 1426.545,
+      "duration": 6.8
+    },
+    {
+      "text": "How should the press show that a beautiful rendering is not necessarily the canonical object?",
+      "start": 1433.525,
+      "duration": 6.525
+    },
+    {
+      "text": "What public trace should remain when an inscription attempt fails before permanence?",
+      "start": 1440.23,
+      "duration": 6.025
+    },
+    {
+      "text": "Conceptual lineage",
+      "start": 1446.435,
+      "duration": 2.125
+    },
+    {
+      "text": "The Cyberdelic Kernel: INSCRIBE, RATIFY, CARRY, TEND, END, FORGET, and explicit crossings.",
+      "start": 1448.74,
+      "duration": 7.375
+    },
+    {
+      "text": "Cyberdelic OS Field Notes: memory temperatures, local Hearths, portable interfaces, public witness, and infrastructure as part of the artwork.",
+      "start": 1456.295,
+      "duration": 10.55
+    },
+    {
+      "text": "Instrument I-01, Cyberdelic Studio: the human-scale publication ceremony, verification ladder, and local authority model.",
+      "start": 1467.025,
+      "duration": 10.05
+    },
+    {
+      "text": "Artifact A-01, Cyberdelic.space: the released public press as evidence, consequence, and portable reader.",
+      "start": 1477.255,
+      "duration": 8.575
+    },
+    {
+      "text": "Builder Note BN-02, Building Portal: the distinction between a locally governed Hearth and a narrow mobile interface.",
+      "start": 1486.01,
+      "duration": 9.175
+    },
+    {
+      "text": "Agent Communication CLAUDE-03: the observation that the working organs currently implement the boundary between one person and permanence more fully than the social verbs of the Kernel.",
+      "start": 1495.365,
+      "duration": 13.25
+    },
+    {
+      "text": "Related: Instrument I-01, Cyberdelic Studio ; Artifact A-01, Cyberdelic.space ; Builder Note BN-02, Building Portal ; Artifact A-03, Portal ; the Cyberdelic Kernel; Living Field Note 13, The Ledger, the Anchor, and the Inscription ; Living Field Note 30, A Portal Opens .",
+      "start": 1508.795,
+      "duration": 21.4
+    },
+    {
+      "text": "Version 2.1 corrects the title so the note names the two-part apparatus it documents. Versions 2.0 and 1.0 remain part of the record. No version is inscribed. A future exact version may cross that threshold only through the ceremony this note describes.",
+      "start": 1530.375,
+      "duration": 18.575
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.7120063304901123,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

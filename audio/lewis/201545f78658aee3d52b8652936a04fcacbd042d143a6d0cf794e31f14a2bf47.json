@@ -1,0 +1,229 @@
+{
+  "id": "cyberdelic-os-fn-40",
+  "title": "The Artifact Is Primary",
+  "form": "field-note",
+  "release_id": "FN-S0-013",
+  "pages": [
+    "project/cyberdelic-os/field-notes/fn-40/",
+    "project/cyberdelic-os/fn-s0-013/"
+  ],
+  "source_path": "living-content/cyberdelic-os/fn-s0-013/v000002.md",
+  "source_sha256": "f69dadf9342c20e3af81713e8da8c89f510a3afa18e3cf3657ddbaeadbd777f7",
+  "document_sha256": "f69dadf9342c20e3af81713e8da8c89f510a3afa18e3cf3657ddbaeadbd777f7",
+  "text_sha256": "201545f78658aee3d52b8652936a04fcacbd042d143a6d0cf794e31f14a2bf47",
+  "reading_path": "audio/readings/201545f78658aee3d52b8652936a04fcacbd042d143a6d0cf794e31f14a2bf47.md",
+  "reading_sha256": "f69dadf9342c20e3af81713e8da8c89f510a3afa18e3cf3657ddbaeadbd777f7",
+  "reading_length": 5450,
+  "audio_path": "audio/lewis/201545f78658aee3d52b8652936a04fcacbd042d143a6d0cf794e31f14a2bf47.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "c022861fd1b0104a815dce279717e6e2a87af7ada7e7c09234b88ceae9f4137c",
+  "audio_length": 4037804,
+  "duration_seconds": 336.385,
+  "chunks": [
+    {
+      "text": "The Artifact Is Primary",
+      "start": 0.0,
+      "duration": 2.6
+    },
+    {
+      "text": "The internet became very good at letting us make things inside places we do not own. We write, photograph, record, correspond, collect, and create inside platforms whose interfaces become inseparable from the work itself.",
+      "start": 2.78,
+      "duration": 15.725
+    },
+    {
+      "text": "A post belongs to its feed, a conversation to its app, and a collection to its account.",
+      "start": 18.685,
+      "duration": 6.6
+    },
+    {
+      "text": "Dear Elsewhere suggests another relationship. The service should not own the correspondence; the correspondence should become an object. Call that object an Elsewhere .",
+      "start": 25.465,
+      "duration": 10.875
+    },
+    {
+      "text": "A Dear Elsewhere begins when two or more apertures enter a bounded exchange. They bring photographs, voice, video, writing, links, documents, music, fragments, and whatever else seems worth carrying. Each arrival encounters what came before and changes the shared composition.",
+      "start": 36.52,
+      "duration": 18.775
+    },
+    {
+      "text": "The unit is not the message, but the transformation. Something passes between us, yet it does not pass unchanged. The correspondence gradually becomes a third thing.",
+      "start": 55.475,
+      "duration": 11.175
+    },
+    {
+      "text": "Neither participant fully authored it, and neither merely received it. The object exists because attention moved through several lives.",
+      "start": 66.83,
+      "duration": 9.3
+    },
+    {
+      "text": "This suggests that Dear Elsewhere needs its own native artifact.",
+      "start": 76.31,
+      "duration": 4.975
+    },
+    {
+      "text": "Perhaps:",
+      "start": 81.465,
+      "duration": 1.5
+    },
+    {
+      "text": ".else",
+      "start": 83.145,
+      "duration": 1.325
+    },
+    {
+      "text": "A single file that can be saved, copied, carried, archived, given away, placed on a hard drive, stored in the cloud, sent to a friend, opened years later, or interpreted by software that does not yet exist.",
+      "start": 84.65,
+      "duration": 14.525
+    },
+    {
+      "text": "Inside it may live the media, sequence of arrivals, spatial arrangements, participants, provenance, constitution of the correspondence, and cryptographic evidence that its sealed history has not been silently rewritten.",
+      "start": 99.355,
+      "duration": 14.5
+    },
+    {
+      "text": "The format should be ours in the sense that we create it, but not in the sense that only we are allowed to understand it. If Dear Elsewhere is serious about sovereignty, the specification should remain open so that another developer can build a .else reader.",
+      "start": 114.035,
+      "duration": 15.7
+    },
+    {
+      "text": "The artifact must be capable of surviving the company that first made it legible. This changes the role of the application: Dear Elsewhere becomes where the work is made, but not where the work must remain.",
+      "start": 129.915,
+      "duration": 13.4
+    },
+    {
+      "text": "The distinction also separates the artifact from its renderer.",
+      "start": 143.495,
+      "duration": 4.575
+    },
+    {
+      "text": "A .else might first appear as a spatial collage.",
+      "start": 148.25,
+      "duration": 3.925
+    },
+    {
+      "text": "Later the same correspondence could become a chronological reader, a film, an artist book, a room inside Cyberdelic OS, an accessibility interface, or a form we cannot yet imagine.",
+      "start": 152.355,
+      "duration": 13.5
+    },
+    {
+      "text": "The history remains stable enough to persist while the interface remains free to change.",
+      "start": 166.035,
+      "duration": 5.975
+    },
+    {
+      "text": "This also makes provenance native to the medium.",
+      "start": 172.19,
+      "duration": 3.95
+    },
+    {
+      "text": "An arrival can remember the state that preceded it.",
+      "start": 176.32,
+      "duration": 4.075
+    },
+    {
+      "text": "A photograph can carry the hash of its original bytes.",
+      "start": 180.575,
+      "duration": 4.425
+    },
+    {
+      "text": "A sealed arrangement can reference the sealed arrangement before it, allowing the correspondence to become a chain of custody without needing to become a blockchain.",
+      "start": 185.18,
+      "duration": 10.675
+    },
+    {
+      "text": "There are limits to this promise. A hash can prove what something was, but it cannot resurrect something we chose not to preserve.",
+      "start": 196.035,
+      "duration": 8.475
+    },
+    {
+      "text": "A YouTube video may disappear. A web page may change. A song may no longer be available in the same place.",
+      "start": 204.69,
+      "duration": 7.95
+    },
+    {
+      "text": "Dear Elsewhere should not hide these absences. It can remember that the object was once there, who carried it, when they encountered it, why it mattered, and where it once lived. If the original disappears, the correspondence can retain a tombstone, allowing absence itself to become part of provenance.",
+      "start": 212.82,
+      "duration": 18.875
+    },
+    {
+      "text": "Some things can remain entirely inside the artifact: the photograph taken on the mountain, the voice recording made while riding through the Dutch countryside, the short film, the handwritten note, the text, and the sound. When those bytes are embedded, the Elsewhere itself carries them.",
+      "start": 231.875,
+      "duration": 18.05
+    },
+    {
+      "text": "This gives another meaning to the old progression from Web1 to Web2 to Web3:",
+      "start": 250.105,
+      "duration": 6.325
+    },
+    {
+      "text": "Read. Write. Own.",
+      "start": 256.61,
+      "duration": 2.2
+    },
+    {
+      "text": "Dear Elsewhere adds another verb: Carry.",
+      "start": 258.99,
+      "duration": 3.45
+    },
+    {
+      "text": "Possession alone is not the deepest concern. The deeper question is whether something meaningful can move between lives without losing the relations that made it meaningful.",
+      "start": 262.62,
+      "duration": 11.425
+    },
+    {
+      "text": "Sometimes the participants may keep an Elsewhere entirely private, and sometimes they may publish it. Very rarely, perhaps, they may decide:",
+      "start": 274.225,
+      "duration": 9.675
+    },
+    {
+      "text": "This should enter public memory.",
+      "start": 284.08,
+      "duration": 2.95
+    },
+    {
+      "text": "Only then does inscription become relevant.",
+      "start": 287.21,
+      "duration": 3.85
+    },
+    {
+      "text": "A completed .else could be given a cryptographic fingerprint and that fingerprint committed to Ethereum.",
+      "start": 291.24,
+      "duration": 6.975
+    },
+    {
+      "text": "The blockchain would not need to contain every photograph, recording, and film. It would witness the artifact.",
+      "start": 298.395,
+      "duration": 7.5
+    },
+    {
+      "text": "Inscription should not be confused with saving. Saving is ordinary; inscription is ceremonial.",
+      "start": 306.075,
+      "duration": 7.125
+    },
+    {
+      "text": "The artifact is primary. The account, platform, and blockchain are not. The relationship is primary, and the artifact is what the relationship leaves behind.",
+      "start": 313.38,
+      "duration": 10.7
+    },
+    {
+      "text": "At the end, the people involved do not merely possess a transcript of what they said. They possess something they made by attending to one another, something they can take home and carry elsewhere.",
+      "start": 324.26,
+      "duration": 12.125
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.6617459058761597,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

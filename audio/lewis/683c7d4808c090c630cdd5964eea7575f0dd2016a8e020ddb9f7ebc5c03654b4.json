@@ -1,0 +1,189 @@
+{
+  "id": "cyberdelic-os-fn-33",
+  "title": "The Plate and the Pull",
+  "form": "field-note",
+  "release_id": "FN-S0-006",
+  "pages": [
+    "project/cyberdelic-os/field-notes/fn-33/",
+    "project/cyberdelic-os/fn-s0-006/"
+  ],
+  "source_path": "living-content/cyberdelic-os/fn-s0-006/v000001.md",
+  "source_sha256": "83b5988f27b7f6cd7c77fcbe7eeb7d8e9cde05970ca7d2ee3268052e45f7e076",
+  "document_sha256": "83b5988f27b7f6cd7c77fcbe7eeb7d8e9cde05970ca7d2ee3268052e45f7e076",
+  "text_sha256": "683c7d4808c090c630cdd5964eea7575f0dd2016a8e020ddb9f7ebc5c03654b4",
+  "reading_path": "audio/readings/683c7d4808c090c630cdd5964eea7575f0dd2016a8e020ddb9f7ebc5c03654b4.md",
+  "reading_sha256": "83b5988f27b7f6cd7c77fcbe7eeb7d8e9cde05970ca7d2ee3268052e45f7e076",
+  "reading_length": 3953,
+  "audio_path": "audio/lewis/683c7d4808c090c630cdd5964eea7575f0dd2016a8e020ddb9f7ebc5c03654b4.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "7314429a32fe42ef97bd53669b1c66e3af5cf508335a75e557b55047921e05cd",
+  "audio_length": 2838572,
+  "duration_seconds": 236.47,
+  "chunks": [
+    {
+      "text": "The Plate and the Pull",
+      "start": 0.0,
+      "duration": 1.875
+    },
+    {
+      "text": "Several places where generative art had gathered began to disappear in the same year.",
+      "start": 2.055,
+      "duration": 6.475
+    },
+    {
+      "text": "Claude and I spent a day looking at what had happened. Companies closed. Interfaces went dark. The familiar conclusion was that the market had collapsed and taken the medium with it.",
+      "start": 8.71,
+      "duration": 11.75
+    },
+    {
+      "text": "But the works had not disappeared.",
+      "start": 20.64,
+      "duration": 2.7
+    },
+    {
+      "text": "The code remained. The transactions remained. In some cases, the exact material needed to render a work remained in public memory. What vanished was the building around it: the catalog, the renderer, the storefront, and the company responsible for holding them together.",
+      "start": 23.52,
+      "duration": 18.125
+    },
+    {
+      "text": "That changed the question.",
+      "start": 41.825,
+      "duration": 2.4
+    },
+    {
+      "text": "What would it mean to build a press that expected its own building to disappear?",
+      "start": 44.405,
+      "duration": 5.425
+    },
+    {
+      "text": "Cyberdelic.space already approaches publication this way. The website is an entrance, not the final authority. A reader can inspect the source, follow an inscription to Bitcoin, or carry the files elsewhere. Another reader can be made.",
+      "start": 50.01,
+      "duration": 15.85
+    },
+    {
+      "text": "Generative art turns this architecture into a medium.",
+      "start": 66.04,
+      "duration": 4.425
+    },
+    {
+      "text": "In printmaking, the plate is not one finished image. It is a structured field from which many impressions can be pulled.",
+      "start": 70.645,
+      "duration": 8.05
+    },
+    {
+      "text": "Long-form generative art has a similar anatomy.",
+      "start": 78.875,
+      "duration": 4.25
+    },
+    {
+      "text": "The algorithm is the plate.",
+      "start": 83.305,
+      "duration": 2.725
+    },
+    {
+      "text": "The rendered work is a pull.",
+      "start": 86.21,
+      "duration": 2.75
+    },
+    {
+      "text": "The edition is a folio.",
+      "start": 89.14,
+      "duration": 2.6
+    },
+    {
+      "text": "These words change what kind of thing we imagine we are making. To mint is to place a token into circulation. To pull is to bring one impression through a process. The work returns from the language of inventory to the language of a studio.",
+      "start": 91.92,
+      "duration": 16.2
+    },
+    {
+      "text": "The plate also gives END a material form.",
+      "start": 108.3,
+      "duration": 3.6
+    },
+    {
+      "text": "When a print edition is complete, the artist may strike the plate so that no further authorized impressions can be made. A generative edition on Bitcoin can carry a related boundary. Its recognized pulls descend from a parent inscription. If the parent is deliberately placed beyond future use, the authorized lineage ends.",
+      "start": 112.08,
+      "duration": 21.6
+    },
+    {
+      "text": "This does not prevent copying. The public algorithm can still be studied, carried, or answered elsewhere. The strike does something narrower and more honest: it lets anyone verify that no further pulls belong to this edition.",
+      "start": 133.86,
+      "duration": 14.8
+    },
+    {
+      "text": "The generator remains legible.",
+      "start": 148.84,
+      "duration": 3.075
+    },
+    {
+      "text": "The edition has ended.",
+      "start": 152.095,
+      "duration": 2.45
+    },
+    {
+      "text": "Each pull is also an aperture onto the plate. No seed is the complete work. One may reveal a density another makes almost invisible. The folio acquires depth through parallax: many situated impressions of one generative structure.",
+      "start": 154.725,
+      "duration": 15.875
+    },
+    {
+      "text": "Around them lies a much larger absence.",
+      "start": 170.78,
+      "duration": 3.65
+    },
+    {
+      "text": "Most possible seeds will never be pulled. Their images remain latent, mathematically possible and historically unrealized. This is not failed inventory. It is wilderness held inside the work.",
+      "start": 174.61,
+      "duration": 13.95
+    },
+    {
+      "text": "The browser can perform the encounter on the visitor's own machine. Replaceable services may make access easier, but none should possess the only catalog, the only renderer, or the only account of where a work belongs.",
+      "start": 188.74,
+      "duration": 14.2
+    },
+    {
+      "text": "The chain is not the whole building.",
+      "start": 203.12,
+      "duration": 3.05
+    },
+    {
+      "text": "It is the memory beneath a building that can be rebuilt.",
+      "start": 206.35,
+      "duration": 4.375
+    },
+    {
+      "text": "This makes the marketplace one operation inside the press rather than its meaning. Artists may be paid. Pulls may move between collections. But the deeper work is to preserve the plate, the lineage, and the possibility of encounter after the original venue has gone quiet.",
+      "start": 210.905,
+      "duration": 18.2
+    },
+    {
+      "text": "The plate remains.",
+      "start": 229.285,
+      "duration": 2.1
+    },
+    {
+      "text": "The pull travels.",
+      "start": 231.565,
+      "duration": 2.025
+    },
+    {
+      "text": "The press is allowed to end.",
+      "start": 233.77,
+      "duration": 2.7
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.6725842356681824,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

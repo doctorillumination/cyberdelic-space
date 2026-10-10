@@ -1,0 +1,323 @@
+{
+  "id": "cyberdelic-os-fn-15",
+  "title": "The First Small World",
+  "form": "field-note",
+  "release_id": "FN-S0-001",
+  "pages": [
+    "project/cyberdelic-os/field-notes/fn-15/"
+  ],
+  "source_path": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
+  "source_sha256": "0e893f7e468102bd66ac563b7c6eec686e96efe508dbc5410cd8c83f2aee38f2",
+  "document_sha256": "af4ff1807c7be1b42c9a241e88d2bd50129217ca5c7f5ffbb39151635fac6b19",
+  "text_sha256": "425a4e8cc94510cc66b2d94318a409ebcf96f23ecbe36acdc37f2ee928ec4ed9",
+  "reading_path": "audio/readings/425a4e8cc94510cc66b2d94318a409ebcf96f23ecbe36acdc37f2ee928ec4ed9.md",
+  "reading_sha256": "af4ff1807c7be1b42c9a241e88d2bd50129217ca5c7f5ffbb39151635fac6b19",
+  "reading_length": 5354,
+  "audio_path": "audio/lewis/425a4e8cc94510cc66b2d94318a409ebcf96f23ecbe36acdc37f2ee928ec4ed9.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "d7f31a87ec221c542f2932e60266c0c825cbf76c300fc48f33e291d24c70380f",
+  "audio_length": 4543820,
+  "duration_seconds": 378.57,
+  "chunks": [
+    {
+      "text": "The First Small World",
+      "start": 0.0,
+      "duration": 2.3
+    },
+    {
+      "text": "The danger of an operating-system vision is that it can remain indefinitely too large to build.",
+      "start": 2.48,
+      "duration": 6.65
+    },
+    {
+      "text": "The first prototype should not attempt to simulate the whole future.",
+      "start": 9.31,
+      "duration": 4.825
+    },
+    {
+      "text": "It should create one small world in which the future's laws can be felt.",
+      "start": 14.315,
+      "duration": 5.1
+    },
+    {
+      "text": "A possible first build:",
+      "start": 19.595,
+      "duration": 2.4
+    },
+    {
+      "text": "One home",
+      "start": 22.175,
+      "duration": 1.675
+    },
+    {
+      "text": "A local hearth containing a selected archive: field notes, works, voice notes, links, and current projects. The user can walk among meaningful objects rather than browse an undifferentiated file tree.",
+      "start": 24.03,
+      "duration": 14.65
+    },
+    {
+      "text": "One Familiar",
+      "start": 38.86,
+      "duration": 1.85
+    },
+    {
+      "text": "A persistent local agent that remembers the project's long arc, protects permissions, and introduces other agents without claiming authority over the person.",
+      "start": 40.89,
+      "duration": 10.9
+    },
+    {
+      "text": "One Lensmaker",
+      "start": 51.97,
+      "duration": 2.05
+    },
+    {
+      "text": "A studio for creating a first portable aperture from an authorized corpus and calibration dialogue. The first lens might be Jason's, built with his participation and clearly distinguished from Jason himself.",
+      "start": 54.2,
+      "duration": 14.6
+    },
+    {
+      "text": "One writing table",
+      "start": 68.98,
+      "duration": 2.3
+    },
+    {
+      "text": "The user can invite the Familiar, the Jason lens, a technical planner, and a Witness into a structured inquiry. Each attends independently before discussion. The result remains polyphonic.",
+      "start": 71.46,
+      "duration": 13.85
+    },
+    {
+      "text": "One living correspondence",
+      "start": 85.49,
+      "duration": 2.55
+    },
+    {
+      "text": "The real Jason can enter asynchronously through voice notes and links. His contributions remain distinct from the Jason lens. The difference between the living person and the authored aperture becomes visible rather than concealed.",
+      "start": 88.22,
+      "duration": 15.225
+    },
+    {
+      "text": "One field",
+      "start": 103.625,
+      "duration": 1.775
+    },
+    {
+      "text": "A small navigable region where the system places related works, unresolved questions, and one dark region. Walking becomes a method of discovery.",
+      "start": 105.58,
+      "duration": 11.15
+    },
+    {
+      "text": "One memory ritual",
+      "start": 116.91,
+      "duration": 2.35
+    },
+    {
+      "text": "All actions remain local and revisable. Significant events are signed. At the end of a week, the archive may create an optional Bitcoin timestamp anchor. A finished field note can be consciously carried to cyberdelic.space for inscription.",
+      "start": 119.44,
+      "duration": 16.3
+    },
+    {
+      "text": "This prototype tests nearly every foundational claim:",
+      "start": 135.92,
+      "duration": 4.4
+    },
+    {
+      "text": "local intelligence;",
+      "start": 140.5,
+      "duration": 2.275
+    },
+    {
+      "text": "portable apertures;",
+      "start": 142.955,
+      "duration": 2.0
+    },
+    {
+      "text": "agents with bounded offices;",
+      "start": 145.135,
+      "duration": 2.75
+    },
+    {
+      "text": "voice-first asynchronous co-presence;",
+      "start": 148.065,
+      "duration": 3.4
+    },
+    {
+      "text": "visual and spatial embodiment;",
+      "start": 151.645,
+      "duration": 3.075
+    },
+    {
+      "text": "human-agent gatherings;",
+      "start": 154.9,
+      "duration": 2.325
+    },
+    {
+      "text": "signed provenance;",
+      "start": 157.405,
+      "duration": 2.0
+    },
+    {
+      "text": "selective immutable memory;",
+      "start": 159.585,
+      "duration": 2.85
+    },
+    {
+      "text": "and a public invitation to play.",
+      "start": 162.615,
+      "duration": 3.05
+    },
+    {
+      "text": "It does not need a token, a global network, or a general-purpose metaverse.",
+      "start": 165.845,
+      "duration": 5.75
+    },
+    {
+      "text": "It needs one house, one path, one table, and one question worth gathering around.",
+      "start": 171.775,
+      "duration": 6.15
+    },
+    {
+      "text": "Builder's Reference Appendix",
+      "start": 178.105,
+      "duration": 2.775
+    },
+    {
+      "text": "Current technical correspondences",
+      "start": 181.06,
+      "duration": 3.2
+    },
+    {
+      "text": "| Cyberdelic OS concept | Candidate technical references | |---|---| | Local hearth and persistent agent shell | OpenClaw; Hermes Agent; llama.cpp; Ollama; MLX | | Agent offices and workflow | Agent manifests; LangGraph-like state machines; isolated memory namespaces | | Lens construction | Authorized corpus + retrieval + constitution + calibration examples; optional DSPy-style optimization; optional LoRA later | | Local search | SQLite FTS5;",
+      "start": 184.44,
+      "duration": 31.975
+    },
+    {
+      "text": "sqlite-vec or comparable embedded vector search | | Shared asynchronous spaces | Automerge or Yjs CRDT documents | | Tool access | Model Context Protocol | | Portable skills | Agent Skills | | Agent-to-agent interoperability | A2A-style capability exchange | | Signed human and agent events | Nostr-inspired events or another signed event envelope | | Portable public identity and records | AT Protocol DIDs and signed personal data repositories | | User-controlled algorithms |",
+      "start": 216.415,
+      "duration": 31.325
+    },
+    {
+      "text": "AT Protocol custom feed generators | | Bridging across perspectives | Community Notes ranking as a reference, not a complete solution | | Anchored private history | Merkle roots + OpenTimestamps/Bitcoin | | Immutable public artifacts | cyberdelic.space inscription workflow |",
+      "start": 247.74,
+      "duration": 19.275
+    },
+    {
+      "text": "Important distinctions for implementation",
+      "start": 267.195,
+      "duration": 3.75
+    },
+    {
+      "text": "A system prompt is not an agent identity.",
+      "start": 271.125,
+      "duration": 3.875
+    },
+    {
+      "text": "A source corpus is not a person.",
+      "start": 275.18,
+      "duration": 3.1
+    },
+    {
+      "text": "A signed event is not necessarily on-chain.",
+      "start": 278.46,
+      "duration": 3.8
+    },
+    {
+      "text": "A content hash proves integrity, not permanent availability.",
+      "start": 282.44,
+      "duration": 4.925
+    },
+    {
+      "text": "Anchoring private data does not require publishing private data.",
+      "start": 287.545,
+      "duration": 4.95
+    },
+    {
+      "text": "A platform API does not expose the full ranking algorithm or the full reality a user experiences there.",
+      "start": 292.675,
+      "duration": 8.575
+    },
+    {
+      "text": "A derived aperture must remain editable, source-cited, versioned, and explicitly incomplete.",
+      "start": 301.43,
+      "duration": 7.1
+    },
+    {
+      "text": "Local-first does not mean local-only; it means the hearth decides when and what crosses the boundary.",
+      "start": 308.71,
+      "duration": 7.25
+    },
+    {
+      "text": "The village interface should reveal permissions, provenance, and modes of relation without forcing the user to manage cryptographic machinery at every step.",
+      "start": 316.14,
+      "duration": 10.7
+    },
+    {
+      "text": "Primary technical sources consulted",
+      "start": 327.02,
+      "duration": 3.45
+    },
+    {
+      "text": "AT Protocol overview, repositories, feeds, and sync:",
+      "start": 330.65,
+      "duration": 4.775
+    },
+    {
+      "text": "AT Protocol custom feeds:",
+      "start": 335.605,
+      "duration": 2.925
+    },
+    {
+      "text": "AT Protocol personal data repositories:",
+      "start": 338.71,
+      "duration": 4.0
+    },
+    {
+      "text": "AT Protocol repository specification:",
+      "start": 342.89,
+      "duration": 3.825
+    },
+    {
+      "text": "AT Protocol streaming data:",
+      "start": 346.895,
+      "duration": 2.975
+    },
+    {
+      "text": "X API tools and access-plan note:",
+      "start": 350.05,
+      "duration": 3.55
+    },
+    {
+      "text": "Reddit API overview:",
+      "start": 353.78,
+      "duration": 2.725
+    },
+    {
+      "text": "Reddit user actions:",
+      "start": 356.685,
+      "duration": 2.45
+    },
+    {
+      "text": "Reddit Data API terms:",
+      "start": 359.315,
+      "duration": 3.0
+    },
+    {
+      "text": "These references are implementation clues, not the constitution of the project. APIs, access terms, and open-source projects will change. The Field Notes describe the intended physics; the chosen software should remain replaceable.",
+      "start": 362.495,
+      "duration": 16.075
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.6699273586273193,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

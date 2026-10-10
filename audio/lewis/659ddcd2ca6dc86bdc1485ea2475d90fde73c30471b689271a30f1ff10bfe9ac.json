@@ -1,0 +1,158 @@
+{
+  "id": "cyberdelic-os-fn-11",
+  "title": "The Writing Table",
+  "form": "field-note",
+  "release_id": "FN-S0-001",
+  "pages": [
+    "project/cyberdelic-os/field-notes/fn-11/"
+  ],
+  "source_path": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
+  "source_sha256": "0e893f7e468102bd66ac563b7c6eec686e96efe508dbc5410cd8c83f2aee38f2",
+  "document_sha256": "3ea7f718934f6582f20c82ba63abb7dbe63351d815900921134c1de6af775c78",
+  "text_sha256": "659ddcd2ca6dc86bdc1485ea2475d90fde73c30471b689271a30f1ff10bfe9ac",
+  "reading_path": "audio/readings/659ddcd2ca6dc86bdc1485ea2475d90fde73c30471b689271a30f1ff10bfe9ac.md",
+  "reading_sha256": "3ea7f718934f6582f20c82ba63abb7dbe63351d815900921134c1de6af775c78",
+  "reading_length": 2658,
+  "audio_path": "audio/lewis/659ddcd2ca6dc86bdc1485ea2475d90fde73c30471b689271a30f1ff10bfe9ac.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "fd94a8482d4715ee5e4a740522cfc29b975b7ceef09f4ff3e6f296901952b92c",
+  "audio_length": 2298860,
+  "duration_seconds": 191.49,
+  "chunks": [
+    {
+      "text": "The Writing Table",
+      "start": 0.0,
+      "duration": 2.1
+    },
+    {
+      "text": "I increasingly do not work with one intelligence.",
+      "start": 2.28,
+      "duration": 4.225
+    },
+    {
+      "text": "I bring several into the room.",
+      "start": 6.685,
+      "duration": 2.8
+    },
+    {
+      "text": "ChatGPT, Claude, Gemini, collaborators, friends, and my own judgement encounter the same project from different positions. I carry outputs between them. One identifies a conceptual structure. Another finds the technical weakness. A living collaborator introduces an experience none of the models possesses. I return with a revised question. The work forms through correspondence.",
+      "start": 9.665,
+      "duration": 25.45
+    },
+    {
+      "text": "Cyberdelic OS should make this existing practice native.",
+      "start": 35.295,
+      "duration": 4.7
+    },
+    {
+      "text": "The Writing Table is a room for humans and lenses.",
+      "start": 40.175,
+      "duration": 4.075
+    },
+    {
+      "text": "A person enters with an inquiry and invites a temporary assembly: a Familiar, a Jason lens, a technical planner, a Witness, a Dissenter, a capital-allocation lens, a real collaborator sending asynchronous voice notes, or any other aperture appropriate to the work.",
+      "start": 44.43,
+      "duration": 18.675
+    },
+    {
+      "text": "The participants should not immediately fall into free-form chatter. Language models anchor on confident preceding statements, imitate one another, and can manufacture the appearance of agreement. The room needs a ritual.",
+      "start": 63.285,
+      "duration": 14.625
+    },
+    {
+      "text": "First, each participant attends independently. No one sees the other answers.",
+      "start": 78.09,
+      "duration": 6.05
+    },
+    {
+      "text": "Second, the responses are placed around the table with their sources, assumptions, and declared lenses visible.",
+      "start": 84.32,
+      "duration": 7.525
+    },
+    {
+      "text": "Third, each participant may question another, not to win, but to clarify what that aperture notices and what it has omitted.",
+      "start": 92.025,
+      "duration": 8.5
+    },
+    {
+      "text": "Fourth, the Dissenter identifies premature convergence. The Witness identifies obscured lineage. The Engineer tests what can survive implementation. The Cartographer maps the emerging structure.",
+      "start": 100.705,
+      "duration": 13.75
+    },
+    {
+      "text": "Finally, the Familiar returns the room to its human:",
+      "start": 114.635,
+      "duration": 4.15
+    },
+    {
+      "text": "the strongest shared insight;",
+      "start": 118.965,
+      "duration": 2.575
+    },
+    {
+      "text": "the live disagreements;",
+      "start": 121.72,
+      "duration": 2.375
+    },
+    {
+      "text": "the assumptions on which the disagreements turn;",
+      "start": 124.275,
+      "duration": 3.85
+    },
+    {
+      "text": "the idea that no participant entered with;",
+      "start": 128.305,
+      "duration": 3.625
+    },
+    {
+      "text": "the source that must not be lost;",
+      "start": 132.11,
+      "duration": 2.725
+    },
+    {
+      "text": "the question that should remain open.",
+      "start": 135.015,
+      "duration": 2.85
+    },
+    {
+      "text": "The table should preserve polyphony rather than laundering it into consensus.",
+      "start": 138.045,
+      "duration": 5.475
+    },
+    {
+      "text": "A real person may enter synchronously by voice or asynchronously by leaving a note. Their Familiar can protect private context and ask permission before carrying anything across the boundary. The room can remain open for days, allowing thought to ferment rather than forcing meeting-time resolution.",
+      "start": 143.7,
+      "duration": 19.725
+    },
+    {
+      "text": "Some tables are private. Some belong to a collaboration. Some may become public salons. At the end, the participants decide what persists: a constellation, a plan, a crux map, a field note, or nothing.",
+      "start": 163.605,
+      "duration": 14.85
+    },
+    {
+      "text": "The Writing Table is not an agent swarm.",
+      "start": 178.635,
+      "duration": 3.6
+    },
+    {
+      "text": "It is a designed situation in which distinct forms of attention become mutually available without becoming interchangeable.",
+      "start": 182.415,
+      "duration": 9.075
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.7213089466094971,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

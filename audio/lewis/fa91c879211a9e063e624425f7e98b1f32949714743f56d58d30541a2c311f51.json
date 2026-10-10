@@ -1,0 +1,153 @@
+{
+  "id": "cyberdelic-os-fn-12",
+  "title": "Ports and Weather Stations",
+  "form": "field-note",
+  "release_id": "FN-S0-001",
+  "pages": [
+    "project/cyberdelic-os/field-notes/fn-12/"
+  ],
+  "source_path": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
+  "source_sha256": "0e893f7e468102bd66ac563b7c6eec686e96efe508dbc5410cd8c83f2aee38f2",
+  "document_sha256": "89f00040f9e1c6eacce41cb98b25b1d8d5ed9cb1688a88e18bce16546dd1af53",
+  "text_sha256": "fa91c879211a9e063e624425f7e98b1f32949714743f56d58d30541a2c311f51",
+  "reading_path": "audio/readings/fa91c879211a9e063e624425f7e98b1f32949714743f56d58d30541a2c311f51.md",
+  "reading_sha256": "89f00040f9e1c6eacce41cb98b25b1d8d5ed9cb1688a88e18bce16546dd1af53",
+  "reading_length": 3233,
+  "audio_path": "audio/lewis/fa91c879211a9e063e624425f7e98b1f32949714743f56d58d30541a2c311f51.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "82296b890bc3d98a979a96da941617c2a33b8a84c68572f64fbc34865ebd3f22",
+  "audio_length": 2739212,
+  "duration_seconds": 228.18,
+  "chunks": [
+    {
+      "text": "Ports and Weather Stations",
+      "start": 0.0,
+      "duration": 2.55
+    },
+    {
+      "text": "An operating system allows movement across applications without requiring the person to become a different self inside each one.",
+      "start": 2.73,
+      "duration": 9.525
+    },
+    {
+      "text": "Cyberdelic OS may need a similar relationship with the existing social world.",
+      "start": 12.435,
+      "duration": 6.3
+    },
+    {
+      "text": "X, Instagram, Reddit, YouTube, newsletters, podcasts, journals, and open social protocols are not neutral containers holding different versions of the same information. Each is an algorithmic climate . It has characteristic speeds, incentives, formats, emotional temperatures, and ways of deciding what becomes visible.",
+      "start": 18.915,
+      "duration": 22.075
+    },
+    {
+      "text": "X creates one kind of saliency. Instagram creates another. Reddit organizes attention through communities, voting, moderation, and threaded argument. The same event enters each environment and returns wearing a different reality.",
+      "start": 41.17,
+      "duration": 16.5
+    },
+    {
+      "text": "Cyberdelic OS should not simply become an everything app that reproduces all of these feeds inside one larger feed.",
+      "start": 57.85,
+      "duration": 8.825
+    },
+    {
+      "text": "It should build ports and weather stations .",
+      "start": 66.855,
+      "duration": 3.275
+    },
+    {
+      "text": "A port lets a person deliberately carry something inward: a post, thread, image, video, comment exchange, saved item, data export, or link shared from a phone. It preserves the source platform, author, time, surrounding context, and the person's reason for bringing it.",
+      "start": 70.31,
+      "duration": 18.575
+    },
+    {
+      "text": "A weather station observes patterns in an algorithmic environment:",
+      "start": 89.065,
+      "duration": 5.025
+    },
+    {
+      "text": "What subjects are being amplified?",
+      "start": 94.27,
+      "duration": 2.925
+    },
+    {
+      "text": "Which emotions dominate?",
+      "start": 97.375,
+      "duration": 2.575
+    },
+    {
+      "text": "What is treated as credible?",
+      "start": 100.13,
+      "duration": 2.75
+    },
+    {
+      "text": "Which voices recur?",
+      "start": 103.06,
+      "duration": 2.525
+    },
+    {
+      "text": "What disappears from view?",
+      "start": 105.765,
+      "duration": 2.425
+    },
+    {
+      "text": "How does this platform's version of an event differ from another's?",
+      "start": 108.37,
+      "duration": 4.8
+    },
+    {
+      "text": "The system could place the same signal as encountered across several platforms side by side. The difference between them becomes a kind of institutional parallax.",
+      "start": 113.35,
+      "duration": 11.2
+    },
+    {
+      "text": "Technically, the ports will be uneven. Some platforms offer official APIs but require authentication, access plans, review, or restricted scopes. X's official developer tools require enrollment in an API access plan. Reddit's current developer platform supports reading and writing posts and comments within app contexts, while explicitly withholding categories of private user data such as saved items, vote histories, subscriptions, and browsing history from Devvit apps.",
+      "start": 124.73,
+      "duration": 31.0
+    },
+    {
+      "text": "Open protocols offer a more hospitable foundation: AT Protocol gives users signed data repositories, portable decentralized identities, and the ability to choose or create custom feed algorithms. Its architecture deliberately separates speech from reach and permits independent feed generators. These differences should shape the implementation, not be hidden from users.",
+      "start": 155.73,
+      "duration": 24.825
+    },
+    {
+      "text": "Where APIs are closed or narrow, the first port may be a share sheet, browser extension, email-forwarding address, RSS bridge, or user-provided data export. The system should not scrape private worlds covertly or pretend to possess access it does not have.",
+      "start": 180.735,
+      "duration": 17.875
+    },
+    {
+      "text": "Every imported object should retain a visible atmospheric label:",
+      "start": 198.79,
+      "duration": 5.25
+    },
+    {
+      "text": "Encountered through X. Selected by a particular ranking environment. Carried by Brad with this context. Re-placed here for this inquiry.",
+      "start": 204.22,
+      "duration": 9.725
+    },
+    {
+      "text": "The goal is not freedom from mediation. There is no unmediated view.",
+      "start": 214.125,
+      "duration": 5.525
+    },
+    {
+      "text": "The goal is to make the mediation perceptible, and to give the person greater freedom to choose which climates shape their attention.",
+      "start": 219.83,
+      "duration": 8.35
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.650366485118866,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

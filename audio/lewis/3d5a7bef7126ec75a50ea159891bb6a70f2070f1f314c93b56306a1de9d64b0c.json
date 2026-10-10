@@ -1,0 +1,113 @@
+{
+  "id": "cyberdelic-os-fn-04",
+  "title": "The Gathering Intelligence",
+  "form": "field-note",
+  "release_id": "FN-S0-001",
+  "pages": [
+    "project/cyberdelic-os/field-notes/fn-04/"
+  ],
+  "source_path": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
+  "source_sha256": "0e893f7e468102bd66ac563b7c6eec686e96efe508dbc5410cd8c83f2aee38f2",
+  "document_sha256": "720e8f4ec8d11326bcd9ba262771cef4f7657fca2912e6411ee45e408a967ffb",
+  "text_sha256": "3d5a7bef7126ec75a50ea159891bb6a70f2070f1f314c93b56306a1de9d64b0c",
+  "reading_path": "audio/readings/3d5a7bef7126ec75a50ea159891bb6a70f2070f1f314c93b56306a1de9d64b0c.md",
+  "reading_sha256": "720e8f4ec8d11326bcd9ba262771cef4f7657fca2912e6411ee45e408a967ffb",
+  "reading_length": 2778,
+  "audio_path": "audio/lewis/3d5a7bef7126ec75a50ea159891bb6a70f2070f1f314c93b56306a1de9d64b0c.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "52280caa4989444b45862d878e350b1f40b74c69572868bbc8bcc1a86a700940",
+  "audio_length": 2228588,
+  "duration_seconds": 185.62,
+  "chunks": [
+    {
+      "text": "The Gathering Intelligence",
+      "start": 0.0,
+      "duration": 2.55
+    },
+    {
+      "text": "The most powerful artificial intelligence may not be the one that answers an individual.",
+      "start": 2.73,
+      "duration": 6.425
+    },
+    {
+      "text": "It may be the one that gathers people around a shared object of attention.",
+      "start": 9.335,
+      "duration": 5.15
+    },
+    {
+      "text": "We already know how to experience meaning together. We go to films, concerts, classrooms, ceremonies, dinners, exhibitions, and long walks. We sit near one another while something unfolds. We do not receive individually optimized versions of the symphony. Part of the event is that it happened between us, in common time, and became available for conversation afterward.",
+      "start": 14.665,
+      "duration": 23.975
+    },
+    {
+      "text": "Most intelligent systems move in the opposite direction. They create a private dyad: one person and one infinitely patient response. This can be useful, intimate, and generative. It can also make every person the centre of a reality produced only for them.",
+      "start": 38.82,
+      "duration": 18.15
+    },
+    {
+      "text": "Cyberdelic OS could create another form: the Gathering Intelligence .",
+      "start": 57.15,
+      "duration": 5.525
+    },
+    {
+      "text": "A gathering might begin through speech. Several people, together in a room or distributed across continents, enter with a question. Their personal familiars accompany them but do not silently merge their private histories. Each familiar protects the boundary of its aperture and asks permission before bringing personal context into the shared space.",
+      "start": 62.855,
+      "duration": 22.075
+    },
+    {
+      "text": "The gathering intelligence belongs to no single participant. Its work is to hold the encounter.",
+      "start": 85.11,
+      "duration": 7.3
+    },
+    {
+      "text": "It listens for what is emerging between people. It notices when one voice has disappeared, when a disagreement is factual and when it is really about values or trust, when the group is rushing toward consensus because uncertainty has become uncomfortable. It can call in the Witness, the Dissenter, or the Cartographer. It can retrieve a film fragment, a passage, a piece of music, or an earlier voice note and place it before everyone at the same moment.",
+      "start": 92.59,
+      "duration": 28.025
+    },
+    {
+      "text": "The experience might be primarily auditory: language, silence, sound, the natural corrections of conversation. But voice should not be the whole building.",
+      "start": 120.795,
+      "duration": 10.65
+    },
+    {
+      "text": "Speak to explore. See to inspect. Touch to commit.",
+      "start": 131.625,
+      "duration": 4.4
+    },
+    {
+      "text": "When relationships become too complex to hold in time, the conversation can crystallize into a visible constellation. When a claim needs scrutiny, its source can appear. When a disagreement becomes precise, the group can form a crux map. When something should persist, everyone can ratify the shared artifact. What is not ratified may be allowed to dissolve.",
+      "start": 136.205,
+      "duration": 23.175
+    },
+    {
+      "text": "This is digital embodiment without simulated bodies. Presence emerges through shared time, mutual consequence, continuity, and memory. We do not need cartoon avatars seated around a virtual conference table to know that we went somewhere together.",
+      "start": 159.56,
+      "duration": 16.825
+    },
+    {
+      "text": "The metaverse tried to reproduce the appearance of a room.",
+      "start": 176.565,
+      "duration": 4.3
+    },
+    {
+      "text": "The gathering intelligence could reproduce what rooms are for.",
+      "start": 181.045,
+      "duration": 4.575
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.7288534641265869,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

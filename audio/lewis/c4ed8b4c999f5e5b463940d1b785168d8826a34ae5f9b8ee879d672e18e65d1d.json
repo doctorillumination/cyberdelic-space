@@ -1,0 +1,183 @@
+{
+  "id": "cyberdelic-os-fn-25",
+  "title": "Expeditions, Storms, and the Birth of Boroughs",
+  "form": "field-note",
+  "release_id": "FN-S0-001",
+  "pages": [
+    "project/cyberdelic-os/field-notes/fn-25/"
+  ],
+  "source_path": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
+  "source_sha256": "0e893f7e468102bd66ac563b7c6eec686e96efe508dbc5410cd8c83f2aee38f2",
+  "document_sha256": "ee9e03b3bdd15b8e50208b558de33e9bb55699382d02c2315e3c5de9b19476fe",
+  "text_sha256": "c4ed8b4c999f5e5b463940d1b785168d8826a34ae5f9b8ee879d672e18e65d1d",
+  "reading_path": "audio/readings/c4ed8b4c999f5e5b463940d1b785168d8826a34ae5f9b8ee879d672e18e65d1d.md",
+  "reading_sha256": "ee9e03b3bdd15b8e50208b558de33e9bb55699382d02c2315e3c5de9b19476fe",
+  "reading_length": 2938,
+  "audio_path": "audio/lewis/c4ed8b4c999f5e5b463940d1b785168d8826a34ae5f9b8ee879d672e18e65d1d.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "14646238a2753a34ae102d4d835b4c644345643ff0e727d5a2dfdd98d5dc5983",
+  "audio_length": 2546540,
+  "duration_seconds": 212.115,
+  "chunks": [
+    {
+      "text": "Expeditions, Storms, and the Birth of Boroughs",
+      "start": 0.0,
+      "duration": 3.95
+    },
+    {
+      "text": "The shared world needs quests, but not enemies manufactured merely to be defeated.",
+      "start": 4.13,
+      "duration": 5.75
+    },
+    {
+      "text": "An expedition sends a person beyond the comfort of their home aperture.",
+      "start": 10.06,
+      "duration": 5.45
+    },
+    {
+      "text": "A resident of Solarpunk City might travel to a conservative agricultural city. The objective is not to win a debate or collect screenshots of error.",
+      "start": 15.69,
+      "duration": 10.75
+    },
+    {
+      "text": "The expedition could ask:",
+      "start": 26.62,
+      "duration": 2.45
+    },
+    {
+      "text": "Return with three concerns your own city does not understand well. Bring back one source that the people of the other city agree you represented accurately. Identify one value shared by both cities but expressed through different political languages. Find one blind spot that genuinely changes your home city's map.",
+      "start": 29.25,
+      "duration": 20.675
+    },
+    {
+      "text": "Agents can assist with translation, context, provenance, and steelmanning. But the traveller must encounter the other world as a coherent world, not merely as content extracted from it.",
+      "start": 50.105,
+      "duration": 12.65
+    },
+    {
+      "text": "A successful expedition may create a ferry route, an embassy, a jointly tended collection, or a shared institution devoted to one difficult question.",
+      "start": 62.935,
+      "duration": 10.6
+    },
+    {
+      "text": "The reward is not domination.",
+      "start": 73.715,
+      "duration": 2.9
+    },
+    {
+      "text": "It is increased dimensionality.",
+      "start": 76.795,
+      "duration": 3.075
+    },
+    {
+      "text": "The shared sky can also generate collective events.",
+      "start": 80.05,
+      "duration": 4.05
+    },
+    {
+      "text": "A storm appears where reality is being interpreted with high parallax: artificial intelligence and labour, a war, a public-health controversy, migration, energy transition, or an event whose basic facts are themselves contested.",
+      "start": 84.28,
+      "duration": 15.85
+    },
+    {
+      "text": "People enter from different cities carrying testimony, evidence, art, forecasts, values, and institutional histories. Agents trace claims, detect copied rumours, distinguish factual disagreement from definitional or moral disagreement, and identify what evidence could actually change a position.",
+      "start": 100.31,
+      "duration": 20.075
+    },
+    {
+      "text": "The storm does not necessarily end in consensus.",
+      "start": 120.565,
+      "duration": 4.125
+    },
+    {
+      "text": "It may settle into a durable public artifact:",
+      "start": 124.87,
+      "duration": 4.05
+    },
+    {
+      "text": "a ratified crux map;",
+      "start": 129.1,
+      "duration": 2.475
+    },
+    {
+      "text": "a contested timeline;",
+      "start": 131.755,
+      "duration": 2.325
+    },
+    {
+      "text": "a multi-perspective learning journey;",
+      "start": 134.26,
+      "duration": 2.975
+    },
+    {
+      "text": "a collection whose disagreements remain explicit;",
+      "start": 137.415,
+      "duration": 3.875
+    },
+    {
+      "text": "a set of questions answerable by future evidence;",
+      "start": 141.47,
+      "duration": 3.975
+    },
+    {
+      "text": "an honest declaration that the central conflict concerns values or trust.",
+      "start": 145.625,
+      "duration": 5.85
+    },
+    {
+      "text": "When enough signal has been drawn from the noise, the weather changes.",
+      "start": 151.655,
+      "duration": 4.725
+    },
+    {
+      "text": "Some storms may become mountains: unresolved but finally given shape, visible from several cities, no longer ambient confusion.",
+      "start": 156.56,
+      "duration": 9.625
+    },
+    {
+      "text": "Private interaction should feed public artifact rather than public noise.",
+      "start": 166.365,
+      "duration": 5.55
+    },
+    {
+      "text": "Most conversation happens in correspondence, gatherings, invitations, Writing Tables, and bounded civic processes. The public layer contains what has survived attention, context, provenance, and acknowledged dissent.",
+      "start": 172.095,
+      "duration": 15.6
+    },
+    {
+      "text": "A public map might say:",
+      "start": 187.875,
+      "duration": 2.4
+    },
+    {
+      "text": "Twelve people ratified this structure. Three reject this branch and have attached an alternative. These agents assisted. These sources support the factual claims. This question remains unresolved.",
+      "start": 190.455,
+      "duration": 13.775
+    },
+    {
+      "text": "Boroughs emerge where this kind of sustained work accumulates.",
+      "start": 204.41,
+      "duration": 4.3
+    },
+    {
+      "text": "Not where the loudest group posts most often.",
+      "start": 208.89,
+      "duration": 3.225
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.5812790393829346,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

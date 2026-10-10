@@ -1,0 +1,173 @@
+{
+  "id": "cyberdelic-os-fn-10",
+  "title": "The Mirror Archive",
+  "form": "field-note",
+  "release_id": "FN-S0-001",
+  "pages": [
+    "project/cyberdelic-os/field-notes/fn-10/"
+  ],
+  "source_path": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
+  "source_sha256": "0e893f7e468102bd66ac563b7c6eec686e96efe508dbc5410cd8c83f2aee38f2",
+  "document_sha256": "623cf342cf98376e721a74f322c1db0318f66788fd692edac419e48023e0e85a",
+  "text_sha256": "7653a9adfb7b8784e1b4c7c33a5f9d804faa06a86354ca78345d23c4381d2d3e",
+  "reading_path": "audio/readings/7653a9adfb7b8784e1b4c7c33a5f9d804faa06a86354ca78345d23c4381d2d3e.md",
+  "reading_sha256": "623cf342cf98376e721a74f322c1db0318f66788fd692edac419e48023e0e85a",
+  "reading_length": 2891,
+  "audio_path": "audio/lewis/7653a9adfb7b8784e1b4c7c33a5f9d804faa06a86354ca78345d23c4381d2d3e.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "2bfc9f712211200d2a59af96595ae5ae07207809d69f11e00d6f33395251219d",
+  "audio_length": 2481740,
+  "duration_seconds": 206.73,
+  "chunks": [
+    {
+      "text": "The Mirror Archive",
+      "start": 0.0,
+      "duration": 2.125
+    },
+    {
+      "text": "For years, people have been thinking aloud with language models.",
+      "start": 2.305,
+      "duration": 4.4
+    },
+    {
+      "text": "They have brought drafts, fears, plans, arguments, obsessions, unfinished works, medical questions, family concerns, business ideas, aesthetic preferences, and private attempts to understand themselves. Across enough conversations, patterns begin to appear that no single session contains.",
+      "start": 6.885,
+      "duration": 19.6
+    },
+    {
+      "text": "This record could become one of the first materials from which an aperture is drafted.",
+      "start": 26.665,
+      "duration": 6.225
+    },
+    {
+      "text": "A system that has accompanied someone over time may be able to notice recurring metaphors, values, unresolved tensions, characteristic leaps, preferred forms of evidence, emotional rhythms, persistent questions, and changes in the way a person frames the world.",
+      "start": 33.07,
+      "duration": 17.725
+    },
+    {
+      "text": "But this possibility needs a severe boundary.",
+      "start": 50.975,
+      "duration": 3.8
+    },
+    {
+      "text": "The model's inferred portrait is not the person.",
+      "start": 54.955,
+      "duration": 3.85
+    },
+    {
+      "text": "It is a mirror archive : a structured reflection generated from the traces a person chose to leave in one medium, under particular conditions, across a particular period of life. It contains distortions. The conversations themselves were shaped by the system's questions, defaults, agreements, and omissions. The observer is inside the observed loop.",
+      "start": 58.985,
+      "duration": 23.475
+    },
+    {
+      "text": "Therefore, the first constitution of an aperture should be offered as a proposal:",
+      "start": 82.64,
+      "duration": 5.4
+    },
+    {
+      "text": "These appear to be the ideas around which your attention bends. These metaphors recur. These questions remain unresolved. These values seem stable. These relationships may be changing. These absences may be meaningful.",
+      "start": 88.22,
+      "duration": 15.1
+    },
+    {
+      "text": "The person then corrects it.",
+      "start": 103.5,
+      "duration": 2.75
+    },
+    {
+      "text": "They can reject a pattern, name a missing influence, mark an era as obsolete, separate a public position from a private exploration, or preserve a contradiction rather than letting the system synthesize it away. The constitution becomes an act of self-authorship undertaken in dialogue with the archive.",
+      "start": 106.43,
+      "duration": 20.125
+    },
+    {
+      "text": "A possible process:",
+      "start": 126.735,
+      "duration": 2.2
+    },
+    {
+      "text": "Import only conversations, documents, and recordings the person explicitly selects.",
+      "start": 129.115,
+      "duration": 6.75
+    },
+    {
+      "text": "Keep the raw material local at the hearth.",
+      "start": 136.045,
+      "duration": 3.425
+    },
+    {
+      "text": "Extract candidate motifs, values, metaphors, tensions, and temporal changes.",
+      "start": 139.65,
+      "duration": 6.325
+    },
+    {
+      "text": "Cite every proposal back to its source traces.",
+      "start": 146.155,
+      "duration": 3.775
+    },
+    {
+      "text": "Invite line-by-line revision and counterexample.",
+      "start": 150.11,
+      "duration": 4.3
+    },
+    {
+      "text": "Preserve disagreement between the person and the machine.",
+      "start": 154.59,
+      "duration": 4.35
+    },
+    {
+      "text": "Publish nothing by default.",
+      "start": 159.12,
+      "duration": 2.75
+    },
+    {
+      "text": "Allow multiple constitutions for different domains or periods of life.",
+      "start": 162.05,
+      "duration": 5.575
+    },
+    {
+      "text": "There should never be one totalizing \"Brad model.\" A person is not internally uniform. The artist, pharmacist, father, teacher, collaborator, entrepreneur, and private dreamer may overlap without collapsing into one profile.",
+      "start": 167.805,
+      "duration": 15.775
+    },
+    {
+      "text": "The mirror archive is useful precisely because it can reveal continuity and change without pretending to complete the self.",
+      "start": 183.76,
+      "duration": 8.425
+    },
+    {
+      "text": "Its proper message is not:",
+      "start": 192.365,
+      "duration": 2.7
+    },
+    {
+      "text": "This is who you are.",
+      "start": 195.245,
+      "duration": 2.275
+    },
+    {
+      "text": "It is:",
+      "start": 197.7,
+      "duration": 1.475
+    },
+    {
+      "text": "This is one pattern your traces make when seen together. What do you recognize, and what have I failed to see?",
+      "start": 199.355,
+      "duration": 7.375
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.633586049079895,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}
