@@ -1,8 +1,8 @@
 {
   "schema": "https://cyberdelic.space/schemas/living-catalog-v1.json",
-  "version": "0.8",
-  "updated_at": "2026-10-02T07:39:32-07:00",
-  "count": 22,
+  "version": "0.9",
+  "updated_at": "2026-10-05T15:50:15Z",
+  "count": 23,
   "curation": {
     "office": "OFFICE-LIBRARIAN",
     "office_version": "0.1",
@@ -13,6 +13,26 @@
     "publication_is_not_ratification": true
   },
   "items": [
+    {
+      "id": "catalog:cyberdelic-os:a-001",
+      "record_kind": "artifact",
+      "title": "Cyberdelic.space",
+      "href": "project/cyberdelic-os/a-001/",
+      "summary": "A released press prototype that places exact work bytes, cryptographic digests, inscription identifiers, transactions, and Bitcoin blocks beside its publications. Its static reader can be copied and mirrored while keeping living publications distinct from inscribed works. The artifact treats permanence as a deliberate choice, not the default for every memory.",
+      "subjects": ["independent verification", "portable publishing", "selective permanence", "living and inscribed memory", "Bitcoin inscriptions"],
+      "search_terms": ["verify a publication", "exact bytes", "cryptographic digest", "copy the press", "website mirror", "static portable reader", "permanence by choice", "publication evidence"],
+      "questions": ["How can someone verify a published work without trusting its website?", "What can a mirror preserve, and what distinguishes copying from the original act of publication?"],
+      "related": [{"id": "cyberdelic-os:fn-33", "title": "The Plate and the Pull", "relation_type": "context", "review_state": "proposed"}],
+      "evidence": [
+        {"source": "living-content/cyberdelic-os/a-001/v000001.md", "locator": "**Type:** Released prototype; Each Library work carries its exact bytes, cryptographic digest, inscription identifier, transactions, and Bitcoin block.; A mirror can preserve and verify the library, but it cannot counterfeit the act of publication.; Immutable and living memory can share one press without being confused.; A complete reader can be static, portable, and freely mirrored.; The press does not make every memory permanent. It makes permanence a choice."},
+        {"source": "living-relations/relationships.json", "locator": "\"edge_id\": \"REL-000004\""}
+      ],
+      "epistemic_status": "strong",
+      "review_state": "model-proposed",
+      "introduced_by": "OFFICE-LIBRARIAN",
+      "last_tended_at": "2026-10-05T15:50:15Z",
+      "uncertainty": "This catalog describes the published artifact record, not a guarantee of perpetual availability. A byte digest supports integrity checking, not the truth of a work's claims. The related FN-33 placement already exists as a proposed context relation and is not ratified by this index entry."
+    },
     {
       "id": "catalog:cyberdelic-os:kernel-v1",
       "record_kind": "inscription",

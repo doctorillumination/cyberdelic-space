@@ -1,0 +1,100 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-10-05-001",
+  "run_type": "scheduled-governed-run",
+  "started_at": "2026-10-05T07:06:50-07:00",
+  "office_turns_completed_at": "2026-10-05T15:50:15Z",
+  "automation": {"id": "daily-cyberdelic-tending", "triggered_at": "2026-10-05T14:06:50.016Z"},
+  "repository": {"branch": "codex/tending-2026-10-05", "starting_commit": "414b0c95a63c1d528b37432974034ad270d6dd93", "pull_request": null, "pull_request_state": "not-created", "publication_action": "stopped-before-commit"},
+  "office_versions": {"cartographer": "0.1", "gardener": "0.1", "librarian": "0.1", "publication_authority": "1.1"},
+  "inputs": {
+    "inbox_items": 0,
+    "declared_question": "How can portability support reconstruction without making the package itself the authority for edition lineage?",
+    "internal_region": ["cyberdelic-os:fn-33", "cyberdelic-os:a-001", "cyberdelic-os:bn-005", "cyberdelic-os:i-003", "The Cyberdelic Kernel v1.0"],
+    "external_region": ["external:webrecorder-wacz"],
+    "prior_audit": "living-relations/audits/2026-10-04-001.json",
+    "private_correspondence_excluded": true
+  },
+  "cartographer": {
+    "state": "no-op",
+    "candidate_limit": 3,
+    "candidates_created": [],
+    "proposals_examined": ["REL-P-000006", "REL-P-000007", "REL-P-000015"],
+    "sources_checked": [
+      {"source": "https://specs.webrecorder.net/wacz/1.2.0/", "checked_at": "2026-10-05", "scope": "Status, motivation, package metadata, signing and verification, and static publication requirements"},
+      {"source": "living-content/cyberdelic-os/fn-s0-006/v000001.md", "checked_at": "2026-10-05", "scope": "Complete FN-33 exact public source"},
+      {"source": "living-content/cyberdelic-os/a-001/v000001.md", "checked_at": "2026-10-05", "scope": "Complete A-001 exact public source"}
+    ],
+    "source_facts": [
+      {"claim": "WACZ 1.2.0 identifies itself as a draft without standards-body standing. Its package includes archived resources, context, indexes, and fixity. It permits static hosting and selective retrieval, while neither requiring signatures nor prescribing a trust model.", "source": "https://specs.webrecorder.net/wacz/1.2.0/", "attribution": "Webrecorder public WACZ 1.2.0 draft", "checked_at": "2026-10-05"},
+      {"claim": "FN-33 explicitly identifies Cyberdelic.space as an existing approach to publication whose website can be replaced. A-001 distinguishes preserving a copy from counterfeiting the original publication act.", "source": "living-content/cyberdelic-os/fn-s0-006/v000001.md", "locator": "Cyberdelic.space already approaches publication this way.; Another reader can be made."}
+    ],
+    "inference": "The existing WACZ technical-adjacency proposal and its trust-boundary amendment already capture the useful distinction. Packaging and fixity can assist reconstruction without supplying authority for an edition's lineage. No additional external node or duplicate edge is warranted.",
+    "uncertainty": "This is a bounded reading of version 1.2.0, not a claim about the newest WACZ version, implementation interoperability, or long-term replay success. Technical adjacency remains proposed and does not imply partnership or endorsement.",
+    "source_fact_and_inference_separated": true,
+    "source_conflict_found": false,
+    "outward_search_performed": true,
+    "external_contact_performed": false,
+    "private_material_read": false,
+    "no_proposal_reason": "The inbox is empty and existing proposals already preserve both the packaging precedent and its limited authority. Fresh confirmation is recorded here without rewriting historical evidence dates."
+  },
+  "gardener": {
+    "state": "no-op",
+    "changes": [],
+    "decisions": [
+      {"kind": "preserve-context", "decision": "Retain REL-000004, the proposed A-001 to FN-33 context relation. FN-33 explicitly describes the press as a precedent; no new relation or stronger review state is needed."},
+      {"kind": "retain-trust-boundary", "decision": "Retain the WACZ draft and trust-model qualifications. Neither fixity nor a catalog entry proves truth, edition authority, or permanent availability."},
+      {"kind": "finite-attending", "decision": "Keep Attending and the graph unchanged. Hand A-001's established context to the Librarian for a findability check, not a new relation claim."}
+    ],
+    "evidence": [
+      {"source": "living-content/cyberdelic-os/a-001/v000001.md", "locator": "A mirror can preserve and verify the library, but it cannot counterfeit the act of publication.; Immutable and living memory can share one press without being confused."},
+      {"source": "living-content/cyberdelic-os/fn-s0-006/v000001.md", "locator": "Cyberdelic.space already approaches publication this way.; The website is an entrance, not the final authority."},
+      {"source": "content/f6e686a1a1884e924e350539ad686aaa0180f5c219048df8cf97e69101339aefi0/content.md", "locator": "Permanence is never automatic.; Memory has temperatures."},
+      {"source": "living-content/cyberdelic-os/bn-005/v000001.md", "locator": "The manifest is interpretive metadata. It never changes the bytes of the nodes it connects."},
+      {"source": "living-content/cyberdelic-os/i-003/v000001.md", "locator": "Silence does not convert a proposal into assent."}
+    ],
+    "manifest_changed": false,
+    "attending_arrangement_changed": false,
+    "exact_publication_sources_changed": false,
+    "decision_reason": "Selected cross-form evidence supports the existing distinctions between a released artifact, a generative-publication proposal, constitutional memory layers, and bounded office interpretation. No relation or lifecycle repair is warranted."
+  },
+  "librarian": {
+    "state": "one-record-created",
+    "catalog_change_limit": 3,
+    "cumulative_catalog_read": true,
+    "records_examined": ["catalog:cyberdelic-os:fn-33", "catalog:external:webrecorder-wacz", "catalog:cyberdelic-os:kernel-v1", "catalog:cyberdelic-os:bn-005", "catalog:cyberdelic-os:i-003"],
+    "records_created": ["catalog:cyberdelic-os:a-001"],
+    "records_revised": [],
+    "records_removed": [],
+    "catalog_count": 23,
+    "outward_search_performed": false,
+    "decisions": [{"kind": "publication-evidence-findability", "decision": "Add one model-proposed A-001 catalog record so searches for publication verification, exact bytes, copying the press, website mirrors, and deliberate permanence can reach the already public artifact. Reuse the existing proposed FN-33 context placement, preserve all 22 prior records, and avoid presenting the artifact's historical work count as a current count."}],
+    "decision_reason": "A-001 exists in the relational manifest and public archive but is absent from the tended directory. This adds a concrete route to the press's own verification and copying model without inventing a relationship or changing an exact source."
+  },
+  "files_changed": ["living-relations/catalog.json", "living-relations/audits/2026-10-05-001.json", "cyberdelic-space.zip"],
+  "validation": {
+    "state": "failed",
+    "checks": [
+      "58 JSON and 3 XML documents parse",
+      "31 indexed source SHA-256 values and byte lengths match",
+      "All local evidence locators resolve; all 22 existing catalog records remain unchanged; one model-proposed record is added",
+      "2,871 local references across 138 HTML pages resolve; eight JavaScript files pass syntax checks",
+      "Four embedded Markdown copies match exact bytes; A-001's complete rendered text, exact download path, displayed digest and byte count match its source",
+      "All changed paths match the active governance allowlist; exact publications, history, code, and graph remain unchanged",
+      "Sorted 260-member mirror rebuilt twice with identical bytes and exact member contents",
+      "At 320 pixels the local homepage passes five A-001 searches, model-proposed labels, six-result limit, empty results, and three-work default Library",
+      "FAIL: A-001 reader has a 352-pixel document width in a 320-pixel viewport, reproduced locally and on production; its large Cyberdelic.space heading visibly clips",
+      "A-001 reader fits a 390-pixel viewport locally and on production; the full multi-viewport UI suite stopped at the 320-pixel failure"
+    ],
+    "test_harness_note": "The initial source-copy check assumed raw Markdown in every reader. A-001 is statically rendered, so its full rendered text, download path, displayed digest, and byte count were checked instead. No source mismatch was found. The subsequent mobile overflow is a real reproduced layout failure, not a test-format assumption.",
+    "stop_reason": "Responsive validation failed on the existing A-001 reader. A repair requires styles or page code outside scheduled office authority. No commit, push, PR, or merge was attempted.",
+    "production_verification": "Read-only comparison reproduced the pre-existing overflow. No new production deployment or changed-file live verification occurred."
+  },
+  "public_change": false,
+  "proposed_public_change": true,
+  "relational_field_changed": false,
+  "run_state": "blocked-validation",
+  "valid_no_op": false,
+  "human_review_required": true,
+  "note": "The catalog addition, current audit, and mirror remain local and uncommitted on codex/tending-2026-10-05. No dated tending page is added because no relation, lifecycle, or Attending arrangement changes. Prior research and exact publications are preserved. Publication requires a separately authorized layout repair and a complete validation rerun."
+}

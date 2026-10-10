@@ -1,0 +1,60 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-10-10-RECOVERY",
+  "run_type": "human-authorized-recovery",
+  "completed_at": "2026-10-10T16:00:29Z",
+  "authority": "Brad Necyk explicitly authorized layout repair, tended constellation integration, Today's Tending, daily archive, testing, and production publication.",
+  "repository": {
+    "branch": "codex/tending-recovery-2026-10-10",
+    "starting_commit": "535f2ca899cb1a58560220c3574e3a2d73669604",
+    "publication_action": "validated-for-pull-request; production verification follows merge"
+  },
+  "cartographer": {
+    "state": "retained-existing-proposals",
+    "candidates_created": [],
+    "outward_search_performed": false,
+    "no_proposal_reason": "This was a human-authorized interface and publication recovery, not a new outward research turn. No relationship was created or ratified."
+  },
+  "gardener": {
+    "state": "preserved-relational-field",
+    "changes": [],
+    "decision_reason": "Existing relationships, exact publications, and historical audits were preserved. Earlier blocked runs remain explicitly blocked in their original records."
+  },
+  "librarian": {
+    "state": "validated-pending-catalog-entry",
+    "records_created": [],
+    "records_revised": [],
+    "records_removed": [],
+    "pending_record_recovered": "catalog:cyberdelic-os:a-001",
+    "decision_reason": "Rechecked the October 5 A-001 record's exact local evidence and retained all 23 cumulative records. Its index entry remains model-proposed."
+  },
+  "public_summary": [
+    "Cartographer: No new outward research during this repair. Existing proposed neighbours were retained.",
+    "Gardener: Preserved relationships, exact publications, and earlier audits, including the blocked days.",
+    "Librarian: Rechecked the pending A-001 entry. The 23-record tended catalog now informs both search and the opening constellation.",
+    "Discovery: Three results, six search paths at most, with proposed relationships, context, and uncertainty visible.",
+    "Daily record: 49 recorded days, newest first, with no more than six points per day and links to every original audit.",
+    "Checks: 70 tests passed; all 158 reader pages fit at 320 pixels. Source hashes, catalog evidence, links, and the portable mirror verified."
+  ],
+  "validation": {
+    "state": "passed",
+    "checks": [
+      "70 reader, server, and daily journal tests",
+      "158 reader pages at 320 pixels without document overflow",
+      "Core journeys at 320, 390, 768, and 1280 pixels; three themes; keyboard selection",
+      "Three-result constellation, proposed-neighbour labels, context links, future catalog update fixture, six-result search, no-JavaScript archive, missing-catalog fallback",
+      "All JSON and XML parse; local link targets and root JavaScript syntax pass",
+      "39 indexed exact-source SHA-256 values and lengths match",
+      "All catalog local evidence locators match their sources",
+      "Exact publications, source indexes, governance, relationships, and proposals are unchanged from current main",
+      "Deterministic mirror contains the current site bytes"
+    ],
+    "boundary_note": "Code, styles, and generated navigation changes are separately human-authorized. The scheduled office allowlist and constitutional source documents are unchanged."
+  },
+  "public_change": true,
+  "relational_field_changed": false,
+  "run_state": "recovery-validated",
+  "valid_no_op": false,
+  "historical_runs_rewritten": false,
+  "note": "This recovery does not reclassify earlier blocked runs as successful. It prepares their preserved audits and the pending catalog entry for a validated publication. No deployment success is asserted before production verification."
+}
