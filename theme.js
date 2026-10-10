@@ -7,6 +7,7 @@
  */
 (function () {
   "use strict";
+  var assetBase = document.currentScript && document.currentScript.src;
   var KEY = "cyberdelic-theme";
   var DEFAULT = "psychedelic";
   var MODES = ["light", "dark", "psychedelic"];
@@ -30,6 +31,23 @@
   apply(MODES.indexOf(saved) === -1 ? DEFAULT : saved);
 
   document.addEventListener("DOMContentLoaded", function () {
+    // Load the optional reader only for the three publication families.
+    var article = document.querySelector("article.living-page");
+    var kind = article && article.querySelector(".shelf-kind");
+    var title = article && article.querySelector(".living-head h1");
+    var eligible = article && (article.classList.contains("correspondence-page") ||
+      (kind && /field notes|builder notes|correspondence/i.test(kind.textContent)) ||
+      (title && /field notes|builder notes|correspondence/i.test(title.textContent)));
+    if (eligible && assetBase && !document.querySelector("script[data-listen-asset]")) {
+      var styles = document.createElement("link");
+      styles.rel = "stylesheet";
+      styles.href = new URL("read-aloud.css?v=2-lewis", assetBase).href;
+      document.head.appendChild(styles);
+      var reader = document.createElement("script");
+      reader.src = new URL("read-aloud.js?v=2-lewis", assetBase).href;
+      reader.dataset.listenAsset = "";
+      document.head.appendChild(reader);
+    }
     var button = document.querySelector(".theme-toggle");
     if (!button) return;
     button.hidden = false;

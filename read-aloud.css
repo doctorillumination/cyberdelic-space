@@ -1,0 +1,45 @@
+/* A quiet reading control, using the press's existing tokens. */
+.listen-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .25rem 1rem;
+  margin-top: 1rem;
+  color: var(--ink-2);
+  font: 11px/1.5 var(--font-mono);
+  letter-spacing: .06em;
+}
+.listen-controls button,
+.listen-controls select {
+  min-height: 44px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  cursor: pointer;
+}
+.listen-controls button {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .5rem .1rem;
+  text-transform: uppercase;
+}
+.listen-controls button svg { width: 12px; height: 12px; }
+.listen-controls button:hover,
+.listen-controls button[aria-pressed="true"] { color: var(--signal); }
+.listen-controls button:disabled { opacity: .6; cursor: default; }
+.listen-speed { display: inline-flex; align-items: center; gap: .45rem; }
+.listen-speed select { padding: .4rem .2rem; }
+.listen-voice { opacity: .8; letter-spacing: normal; }
+.letters .listen-controls { margin-top: .25rem; gap: .1rem .8rem; }
+.listen-controls .listen-status {
+  flex-basis: 100%;
+  margin: 0;
+  max-width: 34rem;
+  font: 11px/1.5 var(--font-mono);
+  letter-spacing: normal;
+}
+.listen-status:empty { display: none; }
