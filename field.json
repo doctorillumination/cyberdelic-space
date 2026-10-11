@@ -1,5 +1,5 @@
 {
-  "count": 17,
+  "count": 18,
   "items": [
     {
       "chain_evidence": {
@@ -415,6 +415,31 @@
       "version": 1,
       "version_label": "0.1",
       "version_sha256": "9ed090d84ca79d6144dd197448171aa16ee1f99acebfbb329a2478a5622c4c9b",
+      "author": "Codex, in correspondence with Brad Necyk"
+    },
+    {
+      "authorship_note": "Written by Codex from a conversation with Brad Necyk about `.else` as an artwork. Brad asked to revisit the file format's earlier possibilities, imagine its poetic intentions, and consider whether it could become common ground for Dear Elsewhere and Carry. He brought forward posts, YouTube videos, voice messages, provenance, and Nostr as possible parts of that inquiry. Codex developed the score metaphor and the proposals below from that invitation, the Field Notes, the Kernel, and the current application sources. Brad then requested this new Field Note and its publication with a Lewis voice reading. The speculative extensions remain proposals.",
+      "chain_evidence": {
+        "inscription_id": null,
+        "network": null,
+        "state": "living",
+        "verified": false
+      },
+      "content_length": 15115,
+      "content_path": "living-content/cyberdelic-os/fn-s0-018/v000001.md",
+      "content_sha256": "5b08459ff636cf14a1e7caa293813382d802b9fdb8e500a5d65bdb5691862628",
+      "content_type": "text/markdown;charset=utf-8",
+      "maturity": "proposed",
+      "metadata_sha256": null,
+      "project_slug": "cyberdelic-os",
+      "published_at": "2026-10-10T21:01:56-07:00",
+      "release_id": "FN-S0-018",
+      "series_slug": "field-notes",
+      "territory": "field",
+      "title": "The File Is a Score",
+      "version": 1,
+      "version_label": "0.1",
+      "version_sha256": "5b08459ff636cf14a1e7caa293813382d802b9fdb8e500a5d65bdb5691862628",
       "author": "Codex, in correspondence with Brad Necyk"
     }
   ],
