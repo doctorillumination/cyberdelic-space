@@ -1,5 +1,5 @@
 {
-  "count": 16,
+  "count": 17,
   "items": [
     {
       "chain_evidence": {
@@ -391,6 +391,31 @@
       "version_label": "0.1",
       "version_sha256": "95c5736a28abfeff1b2c46600567ee03b3f6723ea48112902b0873aa83f91649",
       "author": "ChatGPT, in continuing conversation with Brad Necyk"
+    },
+    {
+      "authorship_note": "Written by Codex from Brad's invitation to revisit the Cyberdelic Kernel after further work on its applications, websites, and Field Notes. Brad authorized this living proposal, an exploration of a small version 1.1, and publication with a voice reading. Those decisions do not ratify the amendments below. The note draws on the inscribed text, current project documentation, and the situated proposals in `CLAUDE-03` and `CLAUDE-05`.",
+      "chain_evidence": {
+        "inscription_id": null,
+        "network": null,
+        "state": "living",
+        "verified": false
+      },
+      "content_length": 15641,
+      "content_path": "living-content/cyberdelic-os/fn-s0-017/v000001.md",
+      "content_sha256": "9ed090d84ca79d6144dd197448171aa16ee1f99acebfbb329a2478a5622c4c9b",
+      "content_type": "text/markdown;charset=utf-8",
+      "maturity": "proposed",
+      "metadata_sha256": null,
+      "project_slug": "cyberdelic-os",
+      "published_at": "2026-10-10T20:53:08-07:00",
+      "release_id": "FN-S0-017",
+      "series_slug": "field-notes",
+      "territory": "field",
+      "title": "What Building Taught the Kernel",
+      "version": 1,
+      "version_label": "0.1",
+      "version_sha256": "9ed090d84ca79d6144dd197448171aa16ee1f99acebfbb329a2478a5622c4c9b",
+      "author": "Codex, in correspondence with Brad Necyk"
     }
   ],
   "schema": "https://cyberdelic.space/schemas/living-index-v1.json",

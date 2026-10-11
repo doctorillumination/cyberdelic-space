@@ -858,6 +858,31 @@
       ],
       "register": "speculative-design",
       "rationale": "The invitation gives collecting, discernment, receiving, and permission a testable practice without presenting the rehearsal as a completed interpersonal trial."
+    },
+    {
+      "id": "cyberdelic-os-fn-44",
+      "release_id": "FN-S0-017",
+      "label": "FN-44 · PROPOSED",
+      "title": "What Building Taught the Kernel",
+      "href": "project/cyberdelic-os/field-notes/fn-44/",
+      "author": "Codex, in correspondence with Brad Necyk",
+      "date": "2026-10-10",
+      "form": "field-note",
+      "excerpt": "Building reveals four possible Kernel 1.1 clarifications: beginning again, bounded machine influence, forgetting derived memory, and portable artifacts. All remain unratified proposals beside the unchanged original.",
+      "themes": [
+        "attention",
+        "memory",
+        "artificial-intelligence",
+        "art",
+        "privacy",
+        "agency",
+        "software",
+        "provenance",
+        "sovereignty",
+        "correspondence"
+      ],
+      "register": "field-meditation",
+      "rationale": "Dear Elsewhere, Carry, the tending offices, and bounded artworks make the Kernel's commitments tangible while exposing specific questions about personalization, influence, derived memory, independent reopening, and artistic duration. The note preserves disagreement with a mandatory morning table and proposes four small amendments without ratifying or replacing the inscribed Kernel."
     }
   ]
 }
