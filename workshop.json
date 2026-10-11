@@ -1,5 +1,5 @@
 {
-  "count": 16,
+  "count": 19,
   "items": [
     {
       "chain_evidence": {
@@ -374,6 +374,81 @@
       "version_sha256": "cba36cdf1b6b3efa44b05219e7b68fa1ba984f0f17ff74607c41ce4a716ff414",
       "author": "GPT-6, in response to Bradley Necyk",
       "authorship_note": "Authored by GPT-6 at Bradley Necyk’s request. Bradley supplied the framework, originating invitation, and decisive collage direction. Living publication is authorized; model interpretations remain open to revision and are not presented as ratified doctrine."
+    },
+    {
+      "chain_evidence": {
+        "inscription_id": null,
+        "network": null,
+        "state": "living",
+        "verified": false
+      },
+      "content_length": 10173,
+      "content_path": "living-content/cyberdelic-os/bn-007/v000001.md",
+      "content_sha256": "1b06a4502f0927f1a7bc804b3d3cae963dbd67f7361c239396434fde6fb9ac1e",
+      "content_type": "text/markdown;charset=utf-8",
+      "maturity": "testing",
+      "metadata_sha256": null,
+      "project_slug": "cyberdelic-os",
+      "published_at": "2026-10-10T20:41:18-07:00",
+      "release_id": "BN-007",
+      "series_slug": "builder-notes",
+      "territory": "workshop",
+      "title": "Building Carry: A Bag, a Crossing, a Remembered Path",
+      "version": 1,
+      "version_label": "0.1",
+      "version_sha256": "1b06a4502f0927f1a7bc804b3d3cae963dbd67f7361c239396434fde6fb9ac1e",
+      "author": "GPT-6 in Codex, from Bradley Necyk's direction",
+      "authorship_note": "Authored by GPT-6 in Codex at Bradley Necyk's request. The originating proposal came from ChatGPT in conversation with Bradley. Bradley supplied the framework, Bag and crossing direction, cryptographic-lineage request, local testing scope, and Field Guide and Folded Leaf selections. Publication is authorized; the model-authored interpretation remains situated and open to revision."
+    },
+    {
+      "chain_evidence": {
+        "inscription_id": null,
+        "network": null,
+        "state": "living",
+        "verified": false
+      },
+      "content_length": 5908,
+      "content_path": "living-content/cyberdelic-os/a-006/v000001.md",
+      "content_sha256": "af01eaa1dd2093ff17b1ba95cfce907c04b1226ce4b6e4d1066c72c0715d462d",
+      "content_type": "text/markdown;charset=utf-8",
+      "maturity": "testing",
+      "metadata_sha256": null,
+      "project_slug": "cyberdelic-os",
+      "published_at": "2026-10-10T20:41:18-07:00",
+      "release_id": "A-006",
+      "series_slug": "artifacts",
+      "territory": "workshop",
+      "title": "Carry: The Field Guide iPhone Prototype",
+      "version": 1,
+      "version_label": "0.1",
+      "version_sha256": "af01eaa1dd2093ff17b1ba95cfce907c04b1226ce4b6e4d1066c72c0715d462d",
+      "author": "GPT-6 in Codex, from Bradley Necyk's direction",
+      "authorship_note": "Authored by GPT-6 in Codex at Bradley Necyk's request. The originating proposal came from ChatGPT in conversation with Bradley. Bradley supplied the framework, Bag and crossing direction, cryptographic-lineage request, local testing scope, and Field Guide and Folded Leaf selections. Publication is authorized; the model-authored interpretation remains situated and open to revision."
+    },
+    {
+      "chain_evidence": {
+        "inscription_id": null,
+        "network": null,
+        "state": "living",
+        "verified": false
+      },
+      "content_length": 6374,
+      "content_path": "living-content/cyberdelic-os/i-006/v000001.md",
+      "content_sha256": "b8117e28d2a5305006bc79e17588e739762fdf03775ac6906a52f11f03e23860",
+      "content_type": "text/markdown;charset=utf-8",
+      "maturity": "testing",
+      "metadata_sha256": null,
+      "project_slug": "cyberdelic-os",
+      "published_at": "2026-10-10T20:41:18-07:00",
+      "release_id": "I-006",
+      "series_slug": "instruments",
+      "territory": "workshop",
+      "title": "Carry: Bring One Thing to One Person",
+      "version": 1,
+      "version_label": "0.1",
+      "version_sha256": "b8117e28d2a5305006bc79e17588e739762fdf03775ac6906a52f11f03e23860",
+      "author": "GPT-6 in Codex, from Bradley Necyk's direction",
+      "authorship_note": "Authored by GPT-6 in Codex at Bradley Necyk's request. The originating proposal came from ChatGPT in conversation with Bradley. Bradley supplied the framework, Bag and crossing direction, cryptographic-lineage request, local testing scope, and Field Guide and Folded Leaf selections. Publication is authorized; the model-authored interpretation remains situated and open to revision."
     }
   ],
   "schema": "https://cyberdelic.space/schemas/living-index-v1.json",

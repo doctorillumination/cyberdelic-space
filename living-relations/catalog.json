@@ -1,8 +1,8 @@
 {
   "schema": "https://cyberdelic.space/schemas/living-catalog-v1.json",
-  "version": "0.9",
-  "updated_at": "2026-10-05T15:50:15Z",
-  "count": 23,
+  "version": "0.10",
+  "updated_at": "2026-10-10T20:41:18-07:00",
+  "count": 26,
   "curation": {
     "office": "OFFICE-LIBRARIAN",
     "office_version": "0.1",
@@ -394,6 +394,120 @@
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
       "last_tended_at": "2026-09-08T07:55:48-07:00"
+    },
+    {
+      "id": "catalog:cyberdelic-os:bn-007",
+      "record_kind": "builder-note",
+      "title": "Building Carry: A Bag, a Crossing, a Remembered Path",
+      "href": "project/cyberdelic-os/bn-007/",
+      "summary": "The native local edition separates private collection from signed crossings, preserves permitted lineage, and brings sources and files into Carry.",
+      "subjects": [
+        "deliberate sharing",
+        "signed lineage",
+        "private collection",
+        "local-first software",
+        "in-app reading"
+      ],
+      "search_terms": [
+        "Carry iPhone app",
+        "Field Guide",
+        "Bag and crossing",
+        "cryptographic provenance",
+        "history permissions",
+        "YouTube X posts PDF"
+      ],
+      "questions": [
+        "How can software keep private collecting notes separate from an explanation carried to someone else?",
+        "What do local signatures establish before a connected service exists?"
+      ],
+      "related": [],
+      "evidence": [
+        {
+          "source": "living-content/cyberdelic-os/bn-007/v000001.md",
+          "locator": "Collection creates no crossing; What the cryptographic lineage records; Evidence and the next threshold"
+        }
+      ],
+      "epistemic_status": "strong",
+      "review_state": "model-proposed",
+      "introduced_by": "OFFICE-LIBRARIAN",
+      "last_tended_at": "2026-10-10T20:41:18-07:00",
+      "uncertainty": "Describes an inspected local software revision and its recorded checks. Local integrity proofs are not independently authenticated identities, and the service and lived test remain future work."
+    },
+    {
+      "id": "catalog:cyberdelic-os:a-006",
+      "record_kind": "artifact",
+      "title": "Carry: The Field Guide iPhone Prototype",
+      "href": "project/cyberdelic-os/a-006/",
+      "summary": "Carry 0.1.0, build 3 is recorded as a working native iPhone prototype with its exact revision, provenance, archives, availability, and preservation needs.",
+      "subjects": [
+        "iPhone prototype",
+        "portable archive",
+        "software preservation",
+        "private distribution",
+        "Field Guide"
+      ],
+      "search_terms": [
+        "Carry app",
+        "carrybag",
+        "build 3",
+        "Folded Leaf",
+        "native prototype",
+        "preserve the software"
+      ],
+      "questions": [
+        "What version of Carry exists and what would keep it readable?",
+        "What does installing the prototype establish about its availability?"
+      ],
+      "related": [],
+      "evidence": [
+        {
+          "source": "living-content/cyberdelic-os/a-006/v000001.md",
+          "locator": "What exists; The portable object; What has been observed; Keeping this version"
+        }
+      ],
+      "epistemic_status": "strong",
+      "review_state": "model-proposed",
+      "introduced_by": "OFFICE-LIBRARIAN",
+      "last_tended_at": "2026-10-10T20:41:18-07:00",
+      "uncertainty": "A public record of private software is not a public download. The installed local edition has no connected delivery service or completed interpersonal trial."
+    },
+    {
+      "id": "catalog:cyberdelic-os:i-006",
+      "record_kind": "instrument",
+      "title": "Carry: Bring One Thing to One Person",
+      "href": "project/cyberdelic-os/i-006/",
+      "summary": "Gather privately, choose someone, and carry a find with context. A proposed lived test asks whether deliberate exchange changes what arrives.",
+      "subjects": [
+        "thoughtful exchange",
+        "finite attention",
+        "contextual sharing",
+        "receiving without obligation",
+        "consent"
+      ],
+      "search_terms": [
+        "Carry app",
+        "bring one thing to one person",
+        "private Bag",
+        "collect then choose",
+        "voice context",
+        "lived test"
+      ],
+      "questions": [
+        "Does gathering privately change what someone chooses to carry?",
+        "Can an arrival remain meaningful without requiring a reply?"
+      ],
+      "related": [],
+      "evidence": [
+        {
+          "source": "living-content/cyberdelic-os/i-006/v000001.md",
+          "locator": "Gather during a day; Choose with someone in mind; Receive without an obligation; A first lived test"
+        }
+      ],
+      "epistemic_status": "strong",
+      "review_state": "model-proposed",
+      "introduced_by": "OFFICE-LIBRARIAN",
+      "last_tended_at": "2026-10-10T20:41:18-07:00",
+      "uncertainty": "This is a proposed experience and lived test. The current evidence comes from synthetic practice and software checks, not an observed interpersonal study."
     }
   ]
 }

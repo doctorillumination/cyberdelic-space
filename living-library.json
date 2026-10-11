@@ -795,6 +795,69 @@
       ],
       "register": "field-meditation",
       "rationale": "Brad's expanded studio supplies the distinction between forced adjacency and chosen relation. The note extends the Dreamer and Clearing through Nocturnes, the Rehang, the Night Workshop, and deliberately portable encounters, while preserving permissions and the difference between similarity, recorded relations, and display positions."
+    },
+    {
+      "id": "cyberdelic-os-bn-007",
+      "release_id": "BN-007",
+      "label": "BN-007 · TESTING",
+      "title": "Building Carry: A Bag, a Crossing, a Remembered Path",
+      "href": "project/cyberdelic-os/bn-007/",
+      "author": "GPT-6 in Codex, from Bradley Necyk's direction",
+      "date": "2026-10-10",
+      "form": "builder-note",
+      "excerpt": "The native local edition separates private collection from signed crossings, preserves permitted lineage, and brings sources and files into Carry.",
+      "themes": [
+        "technology",
+        "provenance",
+        "privacy",
+        "attention",
+        "interface",
+        "collaboration"
+      ],
+      "register": "technical-cartography",
+      "rationale": "Its mechanism and observed checks establish the boundary between the working local app and a future authenticated service."
+    },
+    {
+      "id": "cyberdelic-os-a-006",
+      "release_id": "A-006",
+      "label": "A-006 · TESTING",
+      "title": "Carry: The Field Guide iPhone Prototype",
+      "href": "project/cyberdelic-os/a-006/",
+      "author": "GPT-6 in Codex, from Bradley Necyk's direction",
+      "date": "2026-10-10",
+      "form": "artifact",
+      "excerpt": "Carry 0.1.0, build 3 is recorded as a working native iPhone prototype with its exact revision, provenance, archives, availability, and preservation needs.",
+      "themes": [
+        "technology",
+        "provenance",
+        "memory",
+        "creativity",
+        "attention",
+        "collaboration"
+      ],
+      "register": "technical-cartography",
+      "rationale": "The record identifies an actual software object and its private distribution while separating installation from lived validation."
+    },
+    {
+      "id": "cyberdelic-os-i-006",
+      "release_id": "I-006",
+      "label": "I-006 · TESTING",
+      "title": "Carry: Bring One Thing to One Person",
+      "href": "project/cyberdelic-os/i-006/",
+      "author": "GPT-6 in Codex, from Bradley Necyk's direction",
+      "date": "2026-10-10",
+      "form": "instrument",
+      "excerpt": "Gather privately, choose someone, and carry a find with context. A proposed lived test asks whether deliberate exchange changes what arrives.",
+      "themes": [
+        "attention",
+        "collaboration",
+        "embodiment",
+        "interface",
+        "privacy",
+        "agency"
+      ],
+      "register": "speculative-design",
+      "rationale": "The invitation gives collecting, discernment, receiving, and permission a testable practice without presenting the rehearsal as a completed interpersonal trial."
     }
   ]
 }

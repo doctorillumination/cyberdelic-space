@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "slug": "carry",
+  "title": "Carry",
+  "published_at": "2026-10-10T20:41:18-07:00",
+  "date": "October 10, 2026",
+  "date_iso": "2026-10-10",
+  "version": "0.1",
+  "project_slug": "cyberdelic-os",
+  "description": "A private Bag. One thoughtful crossing. A path that can remember why.",
+  "authorship_note": "Authored by GPT-6 in Codex at Bradley Necyk's request. The originating proposal came from ChatGPT in conversation with Bradley. Bradley supplied the framework, Bag and crossing direction, cryptographic-lineage request, local testing scope, and Field Guide and Folded Leaf selections. Publication is authorized; the model-authored interpretation remains situated and open to revision.",
+  "repository": "https://github.com/doctorillumination/carry-iphone",
+  "repository_visibility": "private",
+  "software_version": "0.1.0",
+  "software_build": 3,
+  "software_commit": "83fc0887665588b754dcf07bf33a7e1016fc0fb8",
+  "origin_note": "https://cyberdelic.space/project/cyberdelic-os/field-notes/fn-41/",
+  "items": [
+    {
+      "release_id": "BN-007",
+      "title": "Building Carry: A Bag, a Crossing, a Remembered Path",
+      "series_slug": "builder-notes",
+      "series_label": "Builder Notes",
+      "territory": "workshop",
+      "form": "builder-note",
+      "maturity": "testing",
+      "excerpt": "The native local edition separates private collection from signed crossings, preserves permitted lineage, and brings sources and files into Carry.",
+      "themes": [
+        "technology",
+        "provenance",
+        "privacy",
+        "attention",
+        "interface",
+        "collaboration"
+      ],
+      "register": "technical-cartography",
+      "rationale": "Its mechanism and observed checks establish the boundary between the working local app and a future authenticated service.",
+      "version_label": "0.1",
+      "author": "GPT-6 in Codex, from Bradley Necyk's direction",
+      "content_sha256": "1b06a4502f0927f1a7bc804b3d3cae963dbd67f7361c239396434fde6fb9ac1e",
+      "discovery": {
+        "subjects": [
+          "deliberate sharing",
+          "signed lineage",
+          "private collection",
+          "local-first software",
+          "in-app reading"
+        ],
+        "search_terms": [
+          "Carry iPhone app",
+          "Field Guide",
+          "Bag and crossing",
+          "cryptographic provenance",
+          "history permissions",
+          "YouTube X posts PDF"
+        ],
+        "questions": [
+          "How can software keep private collecting notes separate from an explanation carried to someone else?",
+          "What do local signatures establish before a connected service exists?"
+        ],
+        "locator": "Collection creates no crossing; What the cryptographic lineage records; Evidence and the next threshold",
+        "uncertainty": "Describes an inspected local software revision and its recorded checks. Local integrity proofs are not independently authenticated identities, and the service and lived test remain future work."
+      },
+      "slug": "bn-007",
+      "content_path": "living-content/cyberdelic-os/bn-007/v000001.md",
+      "href": "project/cyberdelic-os/bn-007/",
+      "publication_date": "2026-10-10"
+    },
+    {
+      "release_id": "A-006",
+      "title": "Carry: The Field Guide iPhone Prototype",
+      "series_slug": "artifacts",
+      "series_label": "Artifacts",
+      "territory": "workshop",
+      "form": "artifact",
+      "maturity": "testing",
+      "excerpt": "Carry 0.1.0, build 3 is recorded as a working native iPhone prototype with its exact revision, provenance, archives, availability, and preservation needs.",
+      "themes": [
+        "technology",
+        "provenance",
+        "memory",
+        "creativity",
+        "attention",
+        "collaboration"
+      ],
+      "register": "technical-cartography",
+      "rationale": "The record identifies an actual software object and its private distribution while separating installation from lived validation.",
+      "version_label": "0.1",
+      "author": "GPT-6 in Codex, from Bradley Necyk's direction",
+      "content_sha256": "af01eaa1dd2093ff17b1ba95cfce907c04b1226ce4b6e4d1066c72c0715d462d",
+      "discovery": {
+        "subjects": [
+          "iPhone prototype",
+          "portable archive",
+          "software preservation",
+          "private distribution",
+          "Field Guide"
+        ],
+        "search_terms": [
+          "Carry app",
+          "carrybag",
+          "build 3",
+          "Folded Leaf",
+          "native prototype",
+          "preserve the software"
+        ],
+        "questions": [
+          "What version of Carry exists and what would keep it readable?",
+          "What does installing the prototype establish about its availability?"
+        ],
+        "locator": "What exists; The portable object; What has been observed; Keeping this version",
+        "uncertainty": "A public record of private software is not a public download. The installed local edition has no connected delivery service or completed interpersonal trial."
+      },
+      "slug": "a-006",
+      "content_path": "living-content/cyberdelic-os/a-006/v000001.md",
+      "href": "project/cyberdelic-os/a-006/",
+      "publication_date": "2026-10-10"
+    },
+    {
+      "release_id": "I-006",
+      "title": "Carry: Bring One Thing to One Person",
+      "series_slug": "instruments",
+      "series_label": "Instruments",
+      "territory": "workshop",
+      "form": "instrument",
+      "maturity": "testing",
+      "excerpt": "Gather privately, choose someone, and carry a find with context. A proposed lived test asks whether deliberate exchange changes what arrives.",
+      "themes": [
+        "attention",
+        "collaboration",
+        "embodiment",
+        "interface",
+        "privacy",
+        "agency"
+      ],
+      "register": "speculative-design",
+      "rationale": "The invitation gives collecting, discernment, receiving, and permission a testable practice without presenting the rehearsal as a completed interpersonal trial.",
+      "version_label": "0.1",
+      "author": "GPT-6 in Codex, from Bradley Necyk's direction",
+      "content_sha256": "b8117e28d2a5305006bc79e17588e739762fdf03775ac6906a52f11f03e23860",
+      "discovery": {
+        "subjects": [
+          "thoughtful exchange",
+          "finite attention",
+          "contextual sharing",
+          "receiving without obligation",
+          "consent"
+        ],
+        "search_terms": [
+          "Carry app",
+          "bring one thing to one person",
+          "private Bag",
+          "collect then choose",
+          "voice context",
+          "lived test"
+        ],
+        "questions": [
+          "Does gathering privately change what someone chooses to carry?",
+          "Can an arrival remain meaningful without requiring a reply?"
+        ],
+        "locator": "Gather during a day; Choose with someone in mind; Receive without an obligation; A first lived test",
+        "uncertainty": "This is a proposed experience and lived test. The current evidence comes from synthetic practice and software checks, not an observed interpersonal study."
+      },
+      "slug": "i-006",
+      "content_path": "living-content/cyberdelic-os/i-006/v000001.md",
+      "href": "project/cyberdelic-os/i-006/",
+      "publication_date": "2026-10-10"
+    }
+  ],
+  "assets": [
+    {
+      "content_path": "project/cyberdelic-os/carry/images/field-guide-bag.png",
+      "content_sha256": "9b1d067edea9c4c3ce71e5fe6ea68db6dbfe266618cd17e242d1aad4889a449a",
+      "alt": "The native Field Guide Bag, with a chronological collection, search, forest green accents, and Bag, Arrivals, and People tabs.",
+      "caption": "Native simulator screenshot with synthetic practice finds. The forest and coast images are generated studies."
+    }
+  ]
+}

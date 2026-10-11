@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en" data-theme="psychedelic">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src &#x27;none&#x27;; script-src &#x27;self&#x27;; style-src &#x27;self&#x27;; img-src &#x27;self&#x27; data:; font-src &#x27;self&#x27;; connect-src &#x27;self&#x27; https://mempool.space https://blockstream.info https://ordinals.com; frame-src &#x27;self&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;">
+<meta name="description" content="The native local edition separates private collection from signed crossings, preserves permitted lineage, and brings sources and files into Carry.">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="cyberdelic.space">
+<meta property="og:title" content="Building Carry: A Bag, a Crossing, a Remembered Path · cyberdelic.space">
+<meta property="og:description" content="The native local edition separates private collection from signed crossings, preserves permitted lineage, and brings sources and files into Carry.">
+<meta property="og:url" content="https://cyberdelic.space/project/cyberdelic-os/bn-007/">
+<meta property="og:image" content="https://cyberdelic.space/social-card.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Building Carry: A Bag, a Crossing, a Remembered Path · cyberdelic.space">
+<meta name="twitter:description" content="The native local edition separates private collection from signed crossings, preserves permitted lineage, and brings sources and files into Carry.">
+<meta name="twitter:image" content="https://cyberdelic.space/social-card.jpg">
+<title>Building Carry: A Bag, a Crossing, a Remembered Path · cyberdelic.space</title>
+<link rel="icon" href="../../../favicon.ico?v=20261009" type="image/x-icon" sizes="16x16 32x32 48x48 64x64 128x128 256x256">
+<link rel="icon" href="../../../favicon-48.png?v=20261009" type="image/png" sizes="48x48">
+<link rel="icon" href="../../../favicon-32.png?v=20261009" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../../apple-touch-icon.png?v=20261009" sizes="180x180">
+<link rel="manifest" href="../../../site.webmanifest">
+<link rel="stylesheet" href="../../../reader.css?v=7">
+<script src="../../../theme.js?v=20261010-lewis"></script>
+<script src="../../../markdown.js" defer></script>
+<script src="../../../living.js?v=3" defer></script>
+<link rel="canonical" href="https://cyberdelic.space/project/cyberdelic-os/bn-007/">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="bar">
+  <a class="wordmark" href="../../../">cyberdelic.space<span>a decentralized imagination press</span></a>
+  <nav aria-label="Sections"><a href="../../../">Library</a><a href="../../../projects/">Projects</a><a href="../../../ledger/">Ledger</a><a href="../../../about/">About</a><a href="../../../verify/">Verify</a><a href="../../../mirror/">Mirror</a></nav>
+  <button type="button" class="theme-toggle" hidden aria-label="Cycle light, dark, and psychedelic reading">Psychedelic</button>
+</div></header>
+<main id="main" tabindex="-1">
+<article class="living-page">
+<nav class="crumb"><a href="../../../project/cyberdelic-os/carry/">← Carry</a></nav>
+<header class="living-head"><p class="shelf-kind">Builder Notes · BN-007</p>
+<h1>Building Carry: A Bag, a Crossing, a Remembered Path</h1><p class="byline">GPT-6 in Codex, from Bradley Necyk&#x27;s direction</p>
+<p class="living-badges"><span class="living-badge">WORKSHOP</span><span class="living-badge">TESTING</span><span class="living-badge living">NOT INSCRIBED</span></p>
+<p class="stone living">Living publication. Versioned and open to revision. Not on a blockchain.</p></header>
+<div class="living-layout"><section class="living-reading"><div class="reading markdown-reading" data-markdown><pre class="markdown-source"># Builder Note BN-007: Building Carry
+
+## A Bag, a crossing, a remembered path
+
+**Project:** CyberdelicOS  
+**Record version:** 0.1  
+**Recorded:** October 10, 2026  
+**Software:** Carry for iPhone, 0.1.0, build 3  
+**Software revision:** `83fc0887665588b754dcf07bf33a7e1016fc0fb8`  
+**Status:** Living, testing, not inscribed  
+**Author:** GPT-6 in Codex, from Bradley Necyk&#x27;s direction and the inspected implementation
+
+Carry grew from the forest conversation recorded in [Field Note 41, The Path Remembers](https://cyberdelic.space/project/cyberdelic-os/field-notes/fn-41/). ChatGPT proposed carrying as a deliberate crossing between apertures. Bradley extended the image into paths that become roads, then gave it a practical beginning: a private Bag where things can be collected before anyone decides whom they are for.
+
+The implementation needed to preserve two different speeds. Collecting should be easy enough to happen during a day. Carrying should make room for thinking about another person. That difference reaches into the data model, the interface, and the rules for preserving a journey.
+
+## The first object is native and local
+
+Bradley chose an iPhone app alongside Dear Elsewhere and cyberdelic.space. From five interface studies he selected Field Guide, with warm paper, forest green, chronological finds, and clear typography. Its Folded Leaf icon continues the relation to the natural world in which Carry began.
+
+Three destinations organize the app: Bag, Arrivals, and People. The Bag holds collected material and private notes. Arrivals holds addressed offerings. People holds the local participants and requests to reveal earlier history. A find can be searched, revisited, annotated, carried, or kept after arriving.
+
+For the first test Bradley requested three people locally, with a service connected later. Brad, Jason, and Maya therefore occupy labelled practice views on one installation. They have separate signing keys, but share one notebook and one app sandbox. Switching views rehearses a social exchange. It does not authenticate three independent people or isolate their data into separate security compartments.
+
+The app supports iOS 17 and later and uses Apple frameworks. SwiftUI supplies the interface; CryptoKit supplies hashes and signatures; Keychain holds private signing keys. A validated, atomic JSON notebook commit publishes changes together, including drafts, accepted crossings, allowances, and permissions. Media is stored separately under immutable content hashes. If the notebook cannot be read, the app preserves it and blocks writes.
+
+## Collection creates no crossing
+
+A collected artifact snapshot records the saved words, source, attribution, and included media. A Bag entry adds its owner&#x27;s collecting note and tags. A carry draft records a recipient and a different explanation, addressed to that person.
+
+Those distinctions prevent a private thought from travelling merely because its owner shares the find. The collecting note is absent from the signed carry intent and the recipient&#x27;s contextual offering. It can appear in the owner&#x27;s deliberate Bag export, so keeping a private archive still requires care about where that archive goes.
+
+Carry&#x27;s system share extension stages supported material in an App Group inbox. The main app validates it and imports it into the active person&#x27;s Bag. Capture IDs make a repeated import after interruption idempotent. Adding from another app neither creates an arrival nor consumes a sending allowance.
+
+The extension, Files import, and portable archive have different byte limits. Files import accepts up to 64 MiB per file. The share extension accepts up to four supported files of 12 MiB each, with 48 MiB per capture and eight materials in total. These bounds protect loading and portability. Collection has no item quota, while storage and notebook size remain finite.
+
+## A crossing requires context
+
+Sending requires exactly one recipient and written or spoken context. A voice recording can last up to two minutes. An unfinished draft can be saved and reopened.
+
+Acceptance enforces five outgoing carries per sender&#x27;s local calendar day and at most two to one recipient. With only two possible recipients, the three-person practice edition can actually use at most four outgoing carries in a day. An identical accepted draft retry returns its earlier result without using another allowance. Deleting a find does not refund a crossing.
+
+The day follows the sender&#x27;s recorded time zone, including daylight-saving changes. The local device clock remains under its owner&#x27;s control. A connected edition needs service time and transactional enforcement before these rules can govern exchanges across phones.
+
+The limit is a design hypothesis about discernment. No evidence yet establishes that five and two are the right numbers for ordinary life.
+
+## What the cryptographic lineage records
+
+Bradley asked for provenance without requiring a public blockchain. The prototype uses the `carry-proof/1` format and Ed25519 signatures over exact body bytes, with SHA-256 identifiers.
+
+Each intent binds the sender, recipient identity and key, artifact snapshot, explanation, creation time, and retry nonce. A separately signed local acceptance records the accepted intent and allowance day. An onward carry adds a signed parent link to the previous intent and acceptance while preserving the artifact snapshot. A later person&#x27;s explanation joins the journey as its own context rather than rewriting the earlier source.
+
+These objects allow a verifier to detect altered committed bytes and check how the exported proofs connect. The local acceptance witness is controlled by the same installation as the practice people. It supplies no independent authority for their identity or the stated time. The proofs do not establish original authorship, truth, readership, or a complete journey through the world. This release has no blockchain transaction or Nostr compatibility claim.
+
+The app can keep a route legible before a village or visual landscape exists. A future map would still need permission to display what the route contains. Signing something does not make it public.
+
+## A journey has boundaries
+
+The two people in a crossing can see their exchange. A later recipient can see an earlier crossing only when both earlier participants approve that viewer. Those approvals are signed and bound to the event and viewer. The visible journey stops at the first private ancestor.
+
+An export carries the owner&#x27;s allowed projection of history. Excluded ancestors are omitted, so a partial exported route makes no claim that nothing preceded it. Withdrawing an approval changes later views and exports on this installation. It cannot erase material someone has already seen or copied.
+
+This is the beginning of a consent mechanism within the app. Multi-device permission propagation, authenticated grants, and rules for stale offline copies remain service work.
+
+## Encounter the thing inside Carry
+
+Bradley asked for Carry to appear in the iPhone share sheet, then asked to encounter X posts, YouTube videos, and files without leaving the app. Build 3 adds a contained WebKit reader, official provider embeds, native PDF and text readers, and native saved-media playback. Web links and new windows remain in Carry; an unavailable embed offers its original page in the same reader.
+
+Live sources are opened on request in a nonpersistent web session. Their content can change and their providers can restrict access. Reading them does not replace the saved snapshot or its signatures. A source link preserves an address; an imported attachment preserves bytes. The two remain distinct when a source disappears.
+
+Elsewhere 0.1 and 0.2 documents can be read as contents and saved arrivals, with their included media. The bounded reader checks the archive and content hashes while retaining the original file. Its reflowed view does not reproduce the collage&#x27;s spatial arrangement or supply the Dear Elsewhere authoring engine. Carry and Dear Elsewhere remain separate applications.
+
+## Evidence and the next threshold
+
+The October 9 validation record reports 16 passing core and capture tests, including signatures, quotas, archive integrity, history permissions, provider URL parsing, and Elsewhere contents. All eight native UI scenarios were verified across simulator runs. A download-routing failure was corrected and its affected flow retested; this is not a claim that one final run passed all eight together.
+
+Observed simulator use included Brad to Jason to Maya, private history and subsequent approval, draft recovery, readable PDF and text content, actual YouTube playback, and a rendered public X post. The minimum iOS 17 simulator build and signed physical-phone Release build succeeded. Build 3 installed on Bradley&#x27;s paired iPhone without an app reset. Automatic launch was blocked by the phone&#x27;s locked state, so installation is not evidence of completed hands-on use.
+
+Recorded voice tests use synthetic audio. Hardware microphone capture, live sharing from other apps, a full accessibility review, and a lived exchange remain to be tested. The repository is private and there is no App Store or TestFlight release.
+
+The next threshold is a test of the feeling already built. After that, an authenticated service must provide recipient-key discovery, encrypted delivery, authoritative acceptance, recovery, and permission updates while keeping private collecting notes off the transport path. The immutable crossing objects provide a starting point for that work. They do not substitute for it.
+
+**Related:** [Instrument I-006](https://cyberdelic.space/project/cyberdelic-os/i-006/), [Artifact A-006](https://cyberdelic.space/project/cyberdelic-os/a-006/), and [the Carry records](https://cyberdelic.space/project/cyberdelic-os/carry/).
+
+**Implementation sources:** The identified private repository&#x27;s README, implementation and validation records, source-viewing notes, `CarryEngine`, proof and archive models, native store, share extension, and reader code. This public record describes that inspected revision; it does not distribute the private app source.
+</pre></div></section>
+<aside class="living-aside"><h2>Version 0.1</h2><p>October 10, 2026</p>
+<p>10,173 UTF-8 bytes</p><p><a href="../../../living-content/cyberdelic-os/bn-007/v000001.md" download>Download exact version</a></p>
+<h2>Version history</h2><ol class="version-history"><li><a href="../../../project/cyberdelic-os/bn-007/"><strong>v0.1</strong> · TESTING · 2026-10-10<code>1b06a4502f0927f1a7bc804b3d3cae963dbd67f7361c239396434fde6fb9ac1e</code></a></li></ol>
+<h2>Part of Carry</h2><p><a href="../../../project/cyberdelic-os/carry/">Read the three connected notes</a></p></aside></div>
+<nav class="living-next" aria-label="Related reading"><a href="../../../project/cyberdelic-os/">CyberdelicOS →</a></nav></article>
+</main>
+<footer class="site"><div class="bar">
+  <p>cyberdelic.space. The Library is held in Bitcoin; Field and Workshop publications are visibly living and versioned.</p>
+  <p><a href="../../../mirror/">Copy this library</a> · <a href="../../../library.json">library.json</a> · <a href="../../../verify/">How verification works</a> · <a href="../../../privacy/">Privacy</a></p>
+</div></footer>
+</body>
+</html>
