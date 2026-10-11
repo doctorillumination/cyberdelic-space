@@ -1,0 +1,238 @@
+{
+  "id": "cyberdelic-os-bn-007",
+  "title": "Building Carry: A Bag, a Crossing, a Remembered Path",
+  "form": "builder-note",
+  "release_id": "BN-007",
+  "pages": [
+    "project/cyberdelic-os/bn-007/"
+  ],
+  "source_path": "living-content/cyberdelic-os/bn-007/v000001.md",
+  "source_sha256": "1b06a4502f0927f1a7bc804b3d3cae963dbd67f7361c239396434fde6fb9ac1e",
+  "document_sha256": "1b06a4502f0927f1a7bc804b3d3cae963dbd67f7361c239396434fde6fb9ac1e",
+  "text_sha256": "3454fb55926ae4d92723937281579c1d512c5b062f2f0265e5627bb6d2d4139c",
+  "reading_path": "audio/readings/3454fb55926ae4d92723937281579c1d512c5b062f2f0265e5627bb6d2d4139c.md",
+  "reading_sha256": "1b06a4502f0927f1a7bc804b3d3cae963dbd67f7361c239396434fde6fb9ac1e",
+  "reading_length": 10173,
+  "audio_path": "audio/lewis/3454fb55926ae4d92723937281579c1d512c5b062f2f0265e5627bb6d2d4139c.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "285512fb5a9170095619c15a69d6f1600682b68318d609643389b4138b2f0065",
+  "audio_length": 8023148,
+  "duration_seconds": 668.515,
+  "chunks": [
+    {
+      "text": "Builder Note BN-007: Building Carry",
+      "start": 0.0,
+      "duration": 4.4
+    },
+    {
+      "text": "A Bag, a crossing, a remembered path",
+      "start": 4.58,
+      "duration": 3.45
+    },
+    {
+      "text": "Carry grew from the forest conversation recorded in Field Note 41, The Path Remembers . ChatGPT proposed carrying as a deliberate crossing between apertures. Bradley extended the image into paths that become roads, then gave it a practical beginning: a private Bag where things can be collected before anyone decides whom they are for.",
+      "start": 8.21,
+      "duration": 22.7
+    },
+    {
+      "text": "The implementation needed to preserve two different speeds. Collecting should be easy enough to happen during a day. Carrying should make room for thinking about another person. That difference reaches into the data model, the interface, and the rules for preserving a journey.",
+      "start": 31.09,
+      "duration": 17.1
+    },
+    {
+      "text": "The first object is native and local",
+      "start": 48.37,
+      "duration": 3.55
+    },
+    {
+      "text": "Bradley chose an iPhone app alongside Dear Elsewhere and cyberdelic.space. From five interface studies he selected Field Guide, with warm paper, forest green, chronological finds, and clear typography. Its Folded Leaf icon continues the relation to the natural world in which Carry began.",
+      "start": 52.1,
+      "duration": 20.675
+    },
+    {
+      "text": "Three destinations organize the app: Bag, Arrivals, and People. The Bag holds collected material and private notes. Arrivals holds addressed offerings. People holds the local participants and requests to reveal earlier history. A find can be searched, revisited, annotated, carried, or kept after arriving.",
+      "start": 72.955,
+      "duration": 21.525
+    },
+    {
+      "text": "For the first test Bradley requested three people locally, with a service connected later. Brad, Jason, and Maya therefore occupy labelled practice views on one installation. They have separate signing keys, but share one notebook and one app sandbox. Switching views rehearses a social exchange. It does not authenticate three independent people or isolate their data into separate security compartments.",
+      "start": 94.66,
+      "duration": 26.15
+    },
+    {
+      "text": "The app supports iOS 17 and later and uses Apple frameworks. SwiftUI supplies the interface; CryptoKit supplies hashes and signatures; Keychain holds private signing keys. A validated, atomic JSON notebook commit publishes changes together, including drafts, accepted crossings, allowances, and permissions. Media is stored separately under immutable content hashes. If the notebook cannot be read, the app preserves it and blocks writes.",
+      "start": 120.99,
+      "duration": 28.9
+    },
+    {
+      "text": "Collection creates no crossing",
+      "start": 150.07,
+      "duration": 2.9
+    },
+    {
+      "text": "A collected artifact snapshot records the saved words, source, attribution, and included media. A Bag entry adds its owner's collecting note and tags. A carry draft records a recipient and a different explanation, addressed to that person.",
+      "start": 153.15,
+      "duration": 17.225
+    },
+    {
+      "text": "Those distinctions prevent a private thought from travelling merely because its owner shares the find. The collecting note is absent from the signed carry intent and the recipient's contextual offering. It can appear in the owner's deliberate Bag export, so keeping a private archive still requires care about where that archive goes.",
+      "start": 170.555,
+      "duration": 20.8
+    },
+    {
+      "text": "Carry's system share extension stages supported material in an App Group inbox. The main app validates it and imports it into the active person's Bag. Capture IDs make a repeated import after interruption idempotent. Adding from another app neither creates an arrival nor consumes a sending allowance.",
+      "start": 191.535,
+      "duration": 21.125
+    },
+    {
+      "text": "The extension, Files import, and portable archive have different byte limits. Files import accepts up to 64 MiB per file. The share extension accepts up to four supported files of 12 MiB each, with 48 MiB per capture and eight materials in total. These bounds protect loading and portability. Collection has no item quota, while storage and notebook size remain finite.",
+      "start": 212.84,
+      "duration": 26.6
+    },
+    {
+      "text": "A crossing requires context",
+      "start": 239.62,
+      "duration": 2.875
+    },
+    {
+      "text": "Sending requires exactly one recipient and written or spoken context. A voice recording can last up to two minutes. An unfinished draft can be saved and reopened.",
+      "start": 242.675,
+      "duration": 12.175
+    },
+    {
+      "text": "Acceptance enforces five outgoing carries per sender's local calendar day and at most two to one recipient. With only two possible recipients, the three-person practice edition can actually use at most four outgoing carries in a day. An identical accepted draft retry returns its earlier result without using another allowance. Deleting a find does not refund a crossing.",
+      "start": 255.03,
+      "duration": 24.775
+    },
+    {
+      "text": "The day follows the sender's recorded time zone, including daylight-saving changes. The local device clock remains under its owner's control. A connected edition needs service time and transactional enforcement before these rules can govern exchanges across phones.",
+      "start": 279.985,
+      "duration": 18.625
+    },
+    {
+      "text": "The limit is a design hypothesis about discernment. No evidence yet establishes that five and two are the right numbers for ordinary life.",
+      "start": 298.79,
+      "duration": 10.075
+    },
+    {
+      "text": "What the cryptographic lineage records",
+      "start": 309.045,
+      "duration": 3.275
+    },
+    {
+      "text": "Bradley asked for provenance without requiring a public blockchain. The prototype uses the carry-proof/1 format and Ed25519 signatures over exact body bytes, with SHA-256 identifiers.",
+      "start": 312.5,
+      "duration": 17.1
+    },
+    {
+      "text": "Each intent binds the sender, recipient identity and key, artifact snapshot, explanation, creation time, and retry nonce. A separately signed local acceptance records the accepted intent and allowance day. An onward carry adds a signed parent link to the previous intent and acceptance while preserving the artifact snapshot. A later person's explanation joins the journey as its own context rather than rewriting the earlier source.",
+      "start": 329.78,
+      "duration": 29.275
+    },
+    {
+      "text": "These objects allow a verifier to detect altered committed bytes and check how the exported proofs connect. The local acceptance witness is controlled by the same installation as the practice people. It supplies no independent authority for their identity or the stated time. The proofs do not establish original authorship, truth, readership, or a complete journey through the world. This release has no blockchain transaction or Nostr compatibility claim.",
+      "start": 359.235,
+      "duration": 28.9
+    },
+    {
+      "text": "The app can keep a route legible before a village or visual landscape exists. A future map would still need permission to display what the route contains. Signing something does not make it public.",
+      "start": 388.315,
+      "duration": 12.95
+    },
+    {
+      "text": "A journey has boundaries",
+      "start": 401.445,
+      "duration": 2.5
+    },
+    {
+      "text": "The two people in a crossing can see their exchange. A later recipient can see an earlier crossing only when both earlier participants approve that viewer. Those approvals are signed and bound to the event and viewer. The visible journey stops at the first private ancestor.",
+      "start": 404.125,
+      "duration": 18.1
+    },
+    {
+      "text": "An export carries the owner's allowed projection of history. Excluded ancestors are omitted, so a partial exported route makes no claim that nothing preceded it. Withdrawing an approval changes later views and exports on this installation. It cannot erase material someone has already seen or copied.",
+      "start": 422.405,
+      "duration": 20.475
+    },
+    {
+      "text": "This is the beginning of a consent mechanism within the app. Multi-device permission propagation, authenticated grants, and rules for stale offline copies remain service work.",
+      "start": 443.06,
+      "duration": 12.375
+    },
+    {
+      "text": "Encounter the thing inside Carry",
+      "start": 455.615,
+      "duration": 3.075
+    },
+    {
+      "text": "Bradley asked for Carry to appear in the iPhone share sheet, then asked to encounter X posts, YouTube videos, and files without leaving the app. Build 3 adds a contained WebKit reader, official provider embeds, native PDF and text readers, and native saved-media playback. Web links and new windows remain in Carry; an unavailable embed offers its original page in the same reader.",
+      "start": 458.87,
+      "duration": 26.075
+    },
+    {
+      "text": "Live sources are opened on request in a nonpersistent web session. Their content can change and their providers can restrict access. Reading them does not replace the saved snapshot or its signatures. A source link preserves an address; an imported attachment preserves bytes. The two remain distinct when a source disappears.",
+      "start": 485.125,
+      "duration": 21.8
+    },
+    {
+      "text": "Elsewhere 0.1 and 0.2 documents can be read as contents and saved arrivals, with their included media. The bounded reader checks the archive and content hashes while retaining the original file. Its reflowed view does not reproduce the collage's spatial arrangement or supply the Dear Elsewhere authoring engine. Carry and Dear Elsewhere remain separate applications.",
+      "start": 507.105,
+      "duration": 25.275
+    },
+    {
+      "text": "Evidence and the next threshold",
+      "start": 532.56,
+      "duration": 2.825
+    },
+    {
+      "text": "The October 9 validation record reports 16 passing core and capture tests, including signatures, quotas, archive integrity, history permissions, provider URL parsing, and Elsewhere contents. All eight native UI scenarios were verified across simulator runs. A download-routing failure was corrected and its affected flow retested; this is not a claim that one final run passed all eight together.",
+      "start": 535.565,
+      "duration": 27.35
+    },
+    {
+      "text": "Observed simulator use included Brad to Jason to Maya, private history and subsequent approval, draft recovery, readable PDF and text content, actual YouTube playback, and a rendered public X post. The minimum iOS 17 simulator build and signed physical-phone Release build succeeded. Build 3 installed on Bradley's paired iPhone without an app reset.",
+      "start": 563.095,
+      "duration": 25.175
+    },
+    {
+      "text": "Automatic launch was blocked by the phone's locked state, so installation is not evidence of completed hands-on use.",
+      "start": 588.27,
+      "duration": 8.375
+    },
+    {
+      "text": "Recorded voice tests use synthetic audio. Hardware microphone capture, live sharing from other apps, a full accessibility review, and a lived exchange remain to be tested. The repository is private and there is no App Store or TestFlight release.",
+      "start": 596.825,
+      "duration": 17.25
+    },
+    {
+      "text": "The next threshold is a test of the feeling already built. After that, an authenticated service must provide recipient-key discovery, encrypted delivery, authoritative acceptance, recovery, and permission updates while keeping private collecting notes off the transport path. The immutable crossing objects provide a starting point for that work. They do not substitute for it.",
+      "start": 614.255,
+      "duration": 23.9
+    },
+    {
+      "text": "Related: Instrument I-006 , Artifact A-006 , and the Carry records .",
+      "start": 638.335,
+      "duration": 7.85
+    },
+    {
+      "text": "Implementation sources: The identified private repository's README, implementation and validation records, source-viewing notes, CarryEngine , proof and archive models, native store, share extension, and reader code. This public record describes that inspected revision; it does not distribute the private app source.",
+      "start": 646.365,
+      "duration": 22.15
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.7183650135993958,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}
