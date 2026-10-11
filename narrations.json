@@ -12613,6 +12613,345 @@
       }
     },
     {
+      "id": "cyberdelic-os-a-006",
+      "title": "Carry: The Field Guide iPhone Prototype",
+      "form": "artifact",
+      "release_id": "A-006",
+      "pages": [
+        "project/cyberdelic-os/a-006/"
+      ],
+      "source_path": "living-content/cyberdelic-os/a-006/v000001.md",
+      "source_sha256": "af01eaa1dd2093ff17b1ba95cfce907c04b1226ce4b6e4d1066c72c0715d462d",
+      "document_sha256": "af01eaa1dd2093ff17b1ba95cfce907c04b1226ce4b6e4d1066c72c0715d462d",
+      "text_sha256": "12ecd72a19f4c30f164f6dfe0a67575eb10febc24859980d6b74673e04d78f00",
+      "reading_path": "audio/readings/12ecd72a19f4c30f164f6dfe0a67575eb10febc24859980d6b74673e04d78f00.md",
+      "reading_sha256": "af01eaa1dd2093ff17b1ba95cfce907c04b1226ce4b6e4d1066c72c0715d462d",
+      "reading_length": 5908,
+      "audio_path": "audio/lewis/12ecd72a19f4c30f164f6dfe0a67575eb10febc24859980d6b74673e04d78f00.mp3",
+      "voice": "bm_lewis",
+      "voice_name": "Lewis",
+      "speed": 1.0,
+      "audio_sha256": "4353b81d8b0d9143c17224a38deb461d7f587245da9a64e01bebae16418c0c00",
+      "audio_length": 4128524,
+      "duration_seconds": 343.955,
+      "chunks": [
+        {
+          "text": "Artifact A-006: Carry",
+          "start": 0.0,
+          "duration": 3.45
+        },
+        {
+          "text": "The Field Guide iPhone prototype",
+          "start": 3.63,
+          "duration": 3.05
+        },
+        {
+          "text": "Carry is a working local prototype for gathering privately and bringing one find to one person with context. Its present object is a native iPhone application with a signed share extension, a persistent notebook, saved media, and a portable Bag archive. It is installed on Bradley's paired iPhone for testing. It is not available as a public download.",
+          "start": 6.86,
+          "duration": 23.7
+        },
+        {
+          "text": "The proposal emerged during the October 8 forest conversation recorded in Field Note 41, The Path Remembers . Bradley developed the Bag as a place to gather without immediately sharing, requested cryptographic lineage, and chose a local three-person first edition. He selected Field Guide from five interface studies and Folded Leaf from five icon studies.",
+          "start": 30.74,
+          "duration": 25.175
+        },
+        {
+          "text": "What exists",
+          "start": 56.095,
+          "duration": 1.75
+        },
+        {
+          "text": "The application has Bag, Arrivals, and People views. It supports collection, search, private notes and tags, addressed written or spoken context, persistent drafts, receiving, keeping, onward carrying, and permission to reveal earlier crossings. Daily acceptance limits are enforced locally.",
+          "start": 58.025,
+          "duration": 19.525
+        },
+        {
+          "text": "Supported capture includes links, writing, photographs, sound, video, and documents. The share extension saves into the Bag before a person decides whether to carry anything. Build 3 reads X posts, YouTube videos, web pages, PDFs, text, supported native document previews, saved media, and Elsewhere contents inside the application.",
+          "start": 77.73,
+          "duration": 23.175
+        },
+        {
+          "text": "The three labelled practice people share one installation. Their independent signing keys and local acceptance key allow the exchange and its proofs to be rehearsed. There is no connected delivery service, authenticated account system, or synchronization between iPhones.",
+          "start": 101.085,
+          "duration": 18.125
+        },
+        {
+          "text": "The shipped forest and coast images are generated practice studies. The example writing and reader fixtures are synthetic material. They demonstrate the interface and checks rather than documenting a real exchange among three people.",
+          "start": 119.39,
+          "duration": 15.75
+        },
+        {
+          "text": "The portable object",
+          "start": 135.32,
+          "duration": 2.225
+        },
+        {
+          "text": "The .carrybag format is a bounded stored ZIP containing collected snapshots, the exporting owner's notes and tags, included media, and public proofs for the history that person is allowed to export. It includes no private signing keys and no other person's private Bag. An export can include sensitive collecting notes; its owner chooses where to keep it.",
+          "start": 137.725,
+          "duration": 23.225
+        },
+        {
+          "text": "The verifier checks byte commitments, signatures, recipient bindings, and included lineage. An independent Python verifier checks the cryptographic archive separately from the app's CryptoKit implementation. A partial history is a permitted view of the route, not a complete account of every earlier crossing.",
+          "start": 161.13,
+          "duration": 20.15
+        },
+        {
+          "text": "Import makes collection copies in the active Bag. It does not take over the old signing identity, recreate past arrivals, or spend a present-day allowance. Preserve the original archive when retaining its complete exported proof set.",
+          "start": 181.46,
+          "duration": 15.9
+        },
+        {
+          "text": "Signing keys remain device-bound in Keychain. Notebook data and saved media are excluded from device backup, making an explicit export important before deleting the app. A Bag archive preserves material and proofs; it is not an account-recovery mechanism.",
+          "start": 197.54,
+          "duration": 18.05
+        },
+        {
+          "text": "What has been observed",
+          "start": 215.77,
+          "duration": 2.1
+        },
+        {
+          "text": "At the recorded revision, 16 core and capture tests passed, and all eight UI scenarios were verified across simulator runs. These covered local delivery and onward carrying, permissions, persistence, actual public-provider rendering and playback, and readable native files. Signed Release and minimum-runtime builds succeeded. Build 3's physical installation was confirmed independently by the phone's installed-app list.",
+          "start": 218.05,
+          "duration": 27.475
+        },
+        {
+          "text": "The locked phone prevented automatic launch. Installation therefore establishes the presence of the app, while physical hands-on use, live microphone recording, real shares from other apps, and a lived interpersonal trial remain unconfirmed in this record. There has been no independent security review or public distribution release.",
+          "start": 245.705,
+          "duration": 22.35
+        },
+        {
+          "text": "Keeping this version",
+          "start": 268.235,
+          "duration": 2.2
+        },
+        {
+          "text": "Preserve the exact source revision, generated Xcode project, format and validation documents, approved icon masters, design studies, and exports made during future tests. A compatible iPhone or simulator and a signed build are required to run the application. The software uses Apple frameworks without third-party app SDKs.",
+          "start": 270.615,
+          "duration": 23.325
+        },
+        {
+          "text": "Included attachment bytes can survive their original source. External posts and videos still require available providers and a connection. Earlier explanations remain subject to the history permissions represented in a given export, but copies already received cannot be recalled by later withdrawal.",
+          "start": 294.12,
+          "duration": 20.625
+        },
+        {
+          "text": "This record identifies the first native Field Guide prototype. A connected service, public release, or future visual geography should receive its own dated record. The landscape of paths and roads remains a design direction; this object supplies local crossings and their permitted lineage.",
+          "start": 314.925,
+          "duration": 20.65
+        },
+        {
+          "text": "Related: Builder Note BN-007 , Instrument I-006 , and the Carry records .",
+          "start": 335.755,
+          "duration": 8.2
+        }
+      ],
+      "checks": {
+        "all_text_retained": true,
+        "mp3_decodes": true,
+        "finite_samples": true,
+        "peak": 0.6123338937759399,
+        "clipped_samples": 0
+      }
+    },
+    {
+      "id": "cyberdelic-os-i-006",
+      "title": "Carry: Bring One Thing to One Person",
+      "form": "instrument",
+      "release_id": "I-006",
+      "pages": [
+        "project/cyberdelic-os/i-006/"
+      ],
+      "source_path": "living-content/cyberdelic-os/i-006/v000001.md",
+      "source_sha256": "b8117e28d2a5305006bc79e17588e739762fdf03775ac6906a52f11f03e23860",
+      "document_sha256": "b8117e28d2a5305006bc79e17588e739762fdf03775ac6906a52f11f03e23860",
+      "text_sha256": "95a2f32ea1c71eb9d49d2dfb65bdb3046159153b08e04eb276a82e9b2a7384b6",
+      "reading_path": "audio/readings/95a2f32ea1c71eb9d49d2dfb65bdb3046159153b08e04eb276a82e9b2a7384b6.md",
+      "reading_sha256": "b8117e28d2a5305006bc79e17588e739762fdf03775ac6906a52f11f03e23860",
+      "reading_length": 6374,
+      "audio_path": "audio/lewis/95a2f32ea1c71eb9d49d2dfb65bdb3046159153b08e04eb276a82e9b2a7384b6.mp3",
+      "voice": "bm_lewis",
+      "voice_name": "Lewis",
+      "speed": 1.0,
+      "audio_sha256": "912eb073d64f62a0df9114f0630d143bfc9e676825ecb4fe2544ae4790d83659",
+      "audio_length": 4877612,
+      "duration_seconds": 406.385,
+      "chunks": [
+        {
+          "text": "Instrument I-006: Carry",
+          "start": 0.0,
+          "duration": 3.6
+        },
+        {
+          "text": "Bring one thing to one person",
+          "start": 3.78,
+          "duration": 2.85
+        },
+        {
+          "text": "Carry asks for a small change in the rhythm of sharing. Let something catch your attention. Keep it privately. Later, when a particular person comes to mind, bring it to them with a few words or a little voice about why.",
+          "start": 6.81,
+          "duration": 14.575
+        },
+        {
+          "text": "The offering can be an essay, a photograph, a song, a film, a document, a program, a strange idea, or something you wrote yourself. Its importance need not be obvious to anyone else. The act begins with your attention to it and becomes a crossing when you think of another person.",
+          "start": 21.565,
+          "duration": 19.2
+        },
+        {
+          "text": "The working iPhone prototype uses a Field Guide interface selected by Bradley: paper, forest green, a chronological Bag, and a folded leaf. It returns the proposal to the forest where Carry first took shape . This is an interpretation of that visual choice, offered for testing rather than a claim that colours can restore attention by themselves.",
+          "start": 40.945,
+          "duration": 23.575
+        },
+        {
+          "text": "Gather during a day",
+          "start": 64.7,
+          "duration": 2.2
+        },
+        {
+          "text": "Collect something while reading, watching, walking, or remembering. A supported share into Carry adds it to your Bag. You can also paste a link, write, choose a photograph, or import a file inside the app.",
+          "start": 67.08,
+          "duration": 13.7
+        },
+        {
+          "text": "You do not need to choose a recipient then. A private note can keep the reason it caught you, even if that reason is unfinished or difficult to say. Search, tags, and chronological finds help you encounter it again.",
+          "start": 80.96,
+          "duration": 14.35
+        },
+        {
+          "text": "Collecting uses no sending allowance. The Bag may hold more than you will ever carry. The instrument gives curiosity a place to remain unaddressed.",
+          "start": 95.49,
+          "duration": 10.125
+        },
+        {
+          "text": "Choose with someone in mind",
+          "start": 105.795,
+          "duration": 2.725
+        },
+        {
+          "text": "Open a find and choose Carry this . Select one person. Write or record why you are bringing it to them. An unfinished explanation can wait as a saved draft.",
+          "start": 108.7,
+          "duration": 11.55
+        },
+        {
+          "text": "Perhaps a film returns you to a conversation that has been quiet for months. Perhaps an essay offers another view of something you disagreed about. Perhaps a photograph says little more than, \"I thought you would like the light here.\"",
+          "start": 120.43,
+          "duration": 14.475
+        },
+        {
+          "text": "The context belongs to that crossing. Your collecting note remains in your Bag. You can keep the original reason private and discover a different reason for this person.",
+          "start": 135.085,
+          "duration": 10.95
+        },
+        {
+          "text": "The app allows five outgoing carries per local day and no more than two to one recipient. In the current three-person edition, two possible recipients make four the effective maximum. There is no reward for using the allowance, no streak to maintain, and no paid way to enlarge it. Receiving and revisiting have no count limit.",
+          "start": 146.215,
+          "duration": 21.8
+        },
+        {
+          "text": "These numbers invite a pause: which thing belongs with this person today? The proposed test should also notice whether the pause becomes an unwanted burden.",
+          "start": 168.195,
+          "duration": 10.625
+        },
+        {
+          "text": "Receive without an obligation",
+          "start": 179.0,
+          "duration": 3.1
+        },
+        {
+          "text": "An arrival brings the find and its carrier's explanation. Read, watch, or listen inside Carry. Keep it in your own Bag if you wish. Let it rest if you do not.",
+          "start": 182.28,
+          "duration": 11.5
+        },
+        {
+          "text": "The app adds no read-receipt pressure or reply requirement. An offering can matter without producing another message. A receiving person can leave it unanswered.",
+          "start": 193.96,
+          "duration": 11.175
+        },
+        {
+          "text": "If you carry it onward, write your own context. The saved artifact remains the same while another interpretation joins its route. Another person may see something its first carrier missed.",
+          "start": 205.315,
+          "duration": 13.025
+        },
+        {
+          "text": "Decide what the next person may know",
+          "start": 218.52,
+          "duration": 3.05
+        },
+        {
+          "text": "An earlier exchange remains between its two people until both agree to reveal it to a specified later viewer. Ask to share earlier history when carrying onward, then let the earlier participants decide. A private segment can interrupt the visible path.",
+          "start": 221.75,
+          "duration": 17.4
+        },
+        {
+          "text": "The instrument makes space for a meaningful journey that is only partly visible. The world does not need to see every reason something mattered to someone.",
+          "start": 239.33,
+          "duration": 9.775
+        },
+        {
+          "text": "Permission withdrawal affects later app views and exports. It does not retrieve words already encountered or copies already made. A future landscape of roads must respect the same boundary before making correspondence into public geography.",
+          "start": 249.285,
+          "duration": 16.525
+        },
+        {
+          "text": "The present rehearsal",
+          "start": 265.99,
+          "duration": 2.4
+        },
+        {
+          "text": "This edition runs three labelled practice people on one iPhone. Switch from Brad to Jason to receive a carry, then from Jason to Maya to try carrying onward. Ask for earlier history and return to the people whose approval it needs.",
+          "start": 268.57,
+          "duration": 16.275
+        },
+        {
+          "text": "This rehearsal tests the shape of the experience. It is not yet communication between separate phones. The repository is private, and the app has no public download or connected service.",
+          "start": 285.025,
+          "duration": 12.7
+        },
+        {
+          "text": "Imported files and saved passages can be revisited offline. Live posts and videos depend on their sources. Elsewhere documents can travel as original attachments and be read in Carry as contents and saved arrivals, while retaining their original arrangement in the file. Dear Elsewhere makes a bounded correspondence; Carry gives an object a further journey.",
+          "start": 297.905,
+          "duration": 23.675
+        },
+        {
+          "text": "A first lived test",
+          "start": 321.76,
+          "duration": 2.35
+        },
+        {
+          "text": "Begin by using the local edition across ordinary days. Collect without sending immediately. Later, choose a person you actually know and compose the context you would want them to receive. Notice what the act of addressing changes, even before the service can deliver it.",
+          "start": 324.29,
+          "duration": 18.275
+        },
+        {
+          "text": "Observe whether finds remain easy to encounter, whether you want to use voice, whether the allowance helps you choose, and whether the app lets you put the phone down. Record confusing moments, abandoned drafts, and things you decide to keep private. Those outcomes belong in the test as much as a completed carry.",
+          "start": 342.745,
+          "duration": 20.3
+        },
+        {
+          "text": "Once a connected edition exists, two or three consenting people can try the full exchange. Ask whether an arrival feels like a thoughtful offering, whether silence remains comfortable, and whether an onward interpretation adds meaning. Ask separately what history each person wanted visible and what they wanted left between them.",
+          "start": 363.225,
+          "duration": 20.95
+        },
+        {
+          "text": "These are proposed observations. The current evidence is software verification and synthetic practice, not a completed interpersonal study. Carry's invitation will have to be answered by lived use.",
+          "start": 384.355,
+          "duration": 13.725
+        },
+        {
+          "text": "Related: Builder Note BN-007 , Artifact A-006 , and the Carry records .",
+          "start": 398.26,
+          "duration": 8.125
+        }
+      ],
+      "checks": {
+        "all_text_retained": true,
+        "mp3_decodes": true,
+        "finite_samples": true,
+        "peak": 0.7884832620620728,
+        "clipped_samples": 0
+      }
+    },
+    {
       "id": "cyberdelic-os-fn-44",
       "title": "What Building Taught the Kernel",
       "form": "field-note",
@@ -14208,7 +14547,7 @@
         "project/cyberdelic-os/correspondence/"
       ],
       "source_path": "project/cyberdelic-os/correspondence/index.html",
-      "source_sha256": "7fd9b34f6b843ddee767eb735c70361adbe14600d740ea8804bea8766d6b1e77",
+      "source_sha256": "b92156a896e4b416c139a124fbfd5c35e2c5dbcb52a59036d153f5c28a21529b",
       "document_sha256": "017f7c7d201e4c0b7f9867273e4c7d0940be672990a3f239f7fad010ff01dab3",
       "text_sha256": "927c73f41e10e7b2e54dc269cf7f4ca7dabcae0bb446e82f2da1ec6aede6b29f",
       "reading_path": "audio/readings/927c73f41e10e7b2e54dc269cf7f4ca7dabcae0bb446e82f2da1ec6aede6b29f.md",
@@ -16790,26 +17129,31 @@
     },
     {
       "path": "audio-bundles/lewis-12.zip",
-      "length": 21784606,
-      "sha256": "abe4924f2417314deca82ab1276bec14306026e810e228f02b754c0fbab9cf3b"
+      "length": 17030014,
+      "sha256": "98a7421dc90e82bb246f66796710fd3eacab93c480ba2a8d5d06beefc1de2fdf"
     },
     {
       "path": "audio-bundles/lewis-13.zip",
+      "length": 13761222,
+      "sha256": "785fdaf15ae959fdba0d63e5197e759420d25eb343c8e3aa34ee3a12e41189f1"
+    },
+    {
+      "path": "audio-bundles/lewis-14.zip",
       "length": 18550670,
       "sha256": "9fce8f1a94802d6707b41acecbbd4de028537203d394f3857cd46b83b4000ca5"
     },
     {
-      "path": "audio-bundles/lewis-14.zip",
+      "path": "audio-bundles/lewis-15.zip",
       "length": 20135526,
       "sha256": "d68f108fc883fbbf93e52eea822ee93447279998fd909394f6b8483719cabbe0"
     },
     {
-      "path": "audio-bundles/lewis-15.zip",
+      "path": "audio-bundles/lewis-16.zip",
       "length": 17395782,
       "sha256": "2a4e8e1da5ac841cb13d88dd704afca94f68da698f07343dfc132f1ec7a9a331"
     },
     {
-      "path": "audio-bundles/lewis-16.zip",
+      "path": "audio-bundles/lewis-17.zip",
       "length": 19771782,
       "sha256": "072bdf31540caa7a35cdb664051dafbd83f1890b3d3d7c7238e1f3586eabddc1"
     }

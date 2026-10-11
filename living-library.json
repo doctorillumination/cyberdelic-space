@@ -798,6 +798,7 @@
     },
     {
       "id": "cyberdelic-os-bn-007",
+      "narration_required": true,
       "release_id": "BN-007",
       "label": "BN-007 · TESTING",
       "title": "Building Carry: A Bag, a Crossing, a Remembered Path",
@@ -819,6 +820,7 @@
     },
     {
       "id": "cyberdelic-os-a-006",
+      "narration_required": true,
       "release_id": "A-006",
       "label": "A-006 · TESTING",
       "title": "Carry: The Field Guide iPhone Prototype",
@@ -840,6 +842,7 @@
     },
     {
       "id": "cyberdelic-os-i-006",
+      "narration_required": true,
       "release_id": "I-006",
       "label": "I-006 · TESTING",
       "title": "Carry: Bring One Thing to One Person",

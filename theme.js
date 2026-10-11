@@ -31,13 +31,13 @@
   apply(MODES.indexOf(saved) === -1 ? DEFAULT : saved);
 
   document.addEventListener("DOMContentLoaded", function () {
-    // Load the optional reader only for the three publication families.
+    // Load the optional reader for the supported written publication families.
     var article = document.querySelector("article.living-page");
     var kind = article && article.querySelector(".shelf-kind");
     var title = article && article.querySelector(".living-head h1");
     var eligible = article && (article.classList.contains("correspondence-page") ||
-      (kind && /field notes|builder notes|correspondence/i.test(kind.textContent)) ||
-      (title && /field notes|builder notes|correspondence/i.test(title.textContent)));
+      (kind && /field notes|builder notes|correspondence|artifacts|instruments/i.test(kind.textContent)) ||
+      (title && /field notes|builder notes|correspondence|artifacts|instruments/i.test(title.textContent)));
     if (eligible && assetBase && !document.querySelector("script[data-listen-asset]")) {
       var styles = document.createElement("link");
       styles.rel = "stylesheet";

@@ -1,0 +1,148 @@
+{
+  "id": "cyberdelic-os-a-006",
+  "title": "Carry: The Field Guide iPhone Prototype",
+  "form": "artifact",
+  "release_id": "A-006",
+  "pages": [
+    "project/cyberdelic-os/a-006/"
+  ],
+  "source_path": "living-content/cyberdelic-os/a-006/v000001.md",
+  "source_sha256": "af01eaa1dd2093ff17b1ba95cfce907c04b1226ce4b6e4d1066c72c0715d462d",
+  "document_sha256": "af01eaa1dd2093ff17b1ba95cfce907c04b1226ce4b6e4d1066c72c0715d462d",
+  "text_sha256": "12ecd72a19f4c30f164f6dfe0a67575eb10febc24859980d6b74673e04d78f00",
+  "reading_path": "audio/readings/12ecd72a19f4c30f164f6dfe0a67575eb10febc24859980d6b74673e04d78f00.md",
+  "reading_sha256": "af01eaa1dd2093ff17b1ba95cfce907c04b1226ce4b6e4d1066c72c0715d462d",
+  "reading_length": 5908,
+  "audio_path": "audio/lewis/12ecd72a19f4c30f164f6dfe0a67575eb10febc24859980d6b74673e04d78f00.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "4353b81d8b0d9143c17224a38deb461d7f587245da9a64e01bebae16418c0c00",
+  "audio_length": 4128524,
+  "duration_seconds": 343.955,
+  "chunks": [
+    {
+      "text": "Artifact A-006: Carry",
+      "start": 0.0,
+      "duration": 3.45
+    },
+    {
+      "text": "The Field Guide iPhone prototype",
+      "start": 3.63,
+      "duration": 3.05
+    },
+    {
+      "text": "Carry is a working local prototype for gathering privately and bringing one find to one person with context. Its present object is a native iPhone application with a signed share extension, a persistent notebook, saved media, and a portable Bag archive. It is installed on Bradley's paired iPhone for testing. It is not available as a public download.",
+      "start": 6.86,
+      "duration": 23.7
+    },
+    {
+      "text": "The proposal emerged during the October 8 forest conversation recorded in Field Note 41, The Path Remembers . Bradley developed the Bag as a place to gather without immediately sharing, requested cryptographic lineage, and chose a local three-person first edition. He selected Field Guide from five interface studies and Folded Leaf from five icon studies.",
+      "start": 30.74,
+      "duration": 25.175
+    },
+    {
+      "text": "What exists",
+      "start": 56.095,
+      "duration": 1.75
+    },
+    {
+      "text": "The application has Bag, Arrivals, and People views. It supports collection, search, private notes and tags, addressed written or spoken context, persistent drafts, receiving, keeping, onward carrying, and permission to reveal earlier crossings. Daily acceptance limits are enforced locally.",
+      "start": 58.025,
+      "duration": 19.525
+    },
+    {
+      "text": "Supported capture includes links, writing, photographs, sound, video, and documents. The share extension saves into the Bag before a person decides whether to carry anything. Build 3 reads X posts, YouTube videos, web pages, PDFs, text, supported native document previews, saved media, and Elsewhere contents inside the application.",
+      "start": 77.73,
+      "duration": 23.175
+    },
+    {
+      "text": "The three labelled practice people share one installation. Their independent signing keys and local acceptance key allow the exchange and its proofs to be rehearsed. There is no connected delivery service, authenticated account system, or synchronization between iPhones.",
+      "start": 101.085,
+      "duration": 18.125
+    },
+    {
+      "text": "The shipped forest and coast images are generated practice studies. The example writing and reader fixtures are synthetic material. They demonstrate the interface and checks rather than documenting a real exchange among three people.",
+      "start": 119.39,
+      "duration": 15.75
+    },
+    {
+      "text": "The portable object",
+      "start": 135.32,
+      "duration": 2.225
+    },
+    {
+      "text": "The .carrybag format is a bounded stored ZIP containing collected snapshots, the exporting owner's notes and tags, included media, and public proofs for the history that person is allowed to export. It includes no private signing keys and no other person's private Bag. An export can include sensitive collecting notes; its owner chooses where to keep it.",
+      "start": 137.725,
+      "duration": 23.225
+    },
+    {
+      "text": "The verifier checks byte commitments, signatures, recipient bindings, and included lineage. An independent Python verifier checks the cryptographic archive separately from the app's CryptoKit implementation. A partial history is a permitted view of the route, not a complete account of every earlier crossing.",
+      "start": 161.13,
+      "duration": 20.15
+    },
+    {
+      "text": "Import makes collection copies in the active Bag. It does not take over the old signing identity, recreate past arrivals, or spend a present-day allowance. Preserve the original archive when retaining its complete exported proof set.",
+      "start": 181.46,
+      "duration": 15.9
+    },
+    {
+      "text": "Signing keys remain device-bound in Keychain. Notebook data and saved media are excluded from device backup, making an explicit export important before deleting the app. A Bag archive preserves material and proofs; it is not an account-recovery mechanism.",
+      "start": 197.54,
+      "duration": 18.05
+    },
+    {
+      "text": "What has been observed",
+      "start": 215.77,
+      "duration": 2.1
+    },
+    {
+      "text": "At the recorded revision, 16 core and capture tests passed, and all eight UI scenarios were verified across simulator runs. These covered local delivery and onward carrying, permissions, persistence, actual public-provider rendering and playback, and readable native files. Signed Release and minimum-runtime builds succeeded. Build 3's physical installation was confirmed independently by the phone's installed-app list.",
+      "start": 218.05,
+      "duration": 27.475
+    },
+    {
+      "text": "The locked phone prevented automatic launch. Installation therefore establishes the presence of the app, while physical hands-on use, live microphone recording, real shares from other apps, and a lived interpersonal trial remain unconfirmed in this record. There has been no independent security review or public distribution release.",
+      "start": 245.705,
+      "duration": 22.35
+    },
+    {
+      "text": "Keeping this version",
+      "start": 268.235,
+      "duration": 2.2
+    },
+    {
+      "text": "Preserve the exact source revision, generated Xcode project, format and validation documents, approved icon masters, design studies, and exports made during future tests. A compatible iPhone or simulator and a signed build are required to run the application. The software uses Apple frameworks without third-party app SDKs.",
+      "start": 270.615,
+      "duration": 23.325
+    },
+    {
+      "text": "Included attachment bytes can survive their original source. External posts and videos still require available providers and a connection. Earlier explanations remain subject to the history permissions represented in a given export, but copies already received cannot be recalled by later withdrawal.",
+      "start": 294.12,
+      "duration": 20.625
+    },
+    {
+      "text": "This record identifies the first native Field Guide prototype. A connected service, public release, or future visual geography should receive its own dated record. The landscape of paths and roads remains a design direction; this object supplies local crossings and their permitted lineage.",
+      "start": 314.925,
+      "duration": 20.65
+    },
+    {
+      "text": "Related: Builder Note BN-007 , Instrument I-006 , and the Carry records .",
+      "start": 335.755,
+      "duration": 8.2
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.6123338937759399,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}
