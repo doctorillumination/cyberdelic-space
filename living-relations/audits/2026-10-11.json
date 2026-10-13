@@ -1,0 +1,83 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-10-11",
+  "run_type": "scheduled-tending",
+  "completed_at": "2026-10-11T16:17:44Z",
+  "authority": "OFFICE-PUBLICATION-AUTHORITY version 1.1, publication-authority-v2.md; publication is distinct from ratification.",
+  "repository": {
+    "branch": "codex/tending-2026-10-11",
+    "starting_commit": "502d83d46402a85deb1c3cb88d3f65a4263d3b8b",
+    "preflight": "Clean website checkout, fast-forwarded to current main after one transient GitHub connection reset. No unrelated website work was present.",
+    "publication_action": "stopped before commit, push, or pull request: the required generated mirror exceeds GitHub and Cloudflare single-file limits"
+  },
+  "cartographer": {
+    "state": "retained-existing-proposals",
+    "candidates_created": [],
+    "outward_search_performed": true,
+    "declared_question": "How can portability support reconstruction without making the package itself the authority for edition lineage?",
+    "inquiry_basis": "Existing REL-P-000007 and its evidence amendment REL-P-000015, beside exact FN-33 and the new public portability inquiry in FN-44 and FN-45.",
+    "inbox_items": 0,
+    "sources_checked": [{
+      "url": "https://specs.webrecorder.net/wacz/1.2.0/",
+      "attribution": "Webrecorder, Web Archive Collection Zipped 1.2.0 specification",
+      "checked_at": "2026-10-11",
+      "source_facts": ["The page identifies itself as a draft without official standards-body standing.", "The package joins captured resources, indexes, entry pages, contextual metadata, and resource fixity information.", "Signing is optional and no particular trust model is prescribed."],
+      "inference": "These packaging and integrity ideas remain technically adjacent to portable Cyberdelic works. They do not establish authorized edition origin, interpersonal consent, or the truth of captured claims.",
+      "uncertainty": "This was document comparison, not interoperability testing or confirmation of later specification versions. Existing proposed WACZ relations already carry the relevant distinction."
+    }],
+    "no_proposal_reason": "The existing WACZ node, proposed technical-adjacency edge, and evidence amendment already describe the bounded connection and trust limits. Another node or repeated edge would add little. No external contact or endorsement was implied."
+  },
+  "gardener": {
+    "state": "reviewed-no-repair-needed",
+    "changes": [],
+    "reviewed": ["Cumulative catalog evidence and related-path targets across inscriptions, Field Notes, Instruments, Builder Notes, Artifacts, and external proposals", "Exact FN-33, FN-41 version 0.2, FN-42 version 0.2, FN-43, FN-44, FN-45, BN-007, A-006, and I-006", "WACZ proposals and their existing evidence amendment; all 12 graph nodes and seven edges retained"],
+    "decisions": [
+      {"decision": "Retain the distinction between a portable copy and evidence of an authorized origin.", "evidence": ["FN-33: circulating code does not counterfeit the authorized edition", "BN-007: local signatures do not establish original authorship, truth, readership, or a complete journey", "REL-P-000015: WACZ signatures do not supply a prescribed trust model"]},
+      {"decision": "Keep imagined movement, Kernel amendments, and format extensions separate from the recorded local Carry prototype.", "evidence": ["FN-41 proposes roads of meaning", "A-006 and I-006 disclose the one-device practice edition and uncompleted lived trial", "FN-44 disclaims enacted amendments", "FN-45 disclaims enacted format extensions"]},
+      {"decision": "Retain private collecting and permission limits; do not turn integrity or a visible path into proof of consent.", "evidence": ["BN-007 separates Bag notes from carry intent and permits partial exported history", "FN-43 separates nearness from agreement", "FN-44 and FN-45 preserve the limits of recalling shared copies"]}
+    ],
+    "decision_reason": "No metadata repair or lifecycle change was warranted within today's focused inquiry. Existing Carry descriptions already disclose their implementation and evidence limits. Broader exact-byte and evidence checks supplement this close reading; they are not a claim that every work received a fresh semantic review."
+  },
+  "librarian": {
+    "state": "added-three-source-grounded-records",
+    "records_created": ["catalog:cyberdelic-os:fn-41", "catalog:cyberdelic-os:fn-44", "catalog:cyberdelic-os:fn-45"],
+    "records_revised": [],
+    "records_removed": [],
+    "catalog_count_before": 26,
+    "catalog_count_after": 29,
+    "decision_reason": "Index the origin of contextual carrying and the two newest public portability reflections with ordinary-language queries, exact evidence, and explicit uncertainty. Carry's three implementation records were already indexed, so no duplicate records were made. Related paths follow the notes' explicit public citations and do not mutate graph claims or ratification.",
+    "deferred": "FN-42 and FN-43 were read for context but not indexed today. Three records is the daily ceiling, not a requirement to fill every absence."
+  },
+  "public_summary": [
+    "Cartographer: Rechecked Webrecorder's archive specification. Existing proposed connections already cover its relevance and limits; no new neighbour was needed.",
+    "Gardener: Kept copies distinct from origin, signatures distinct from consent, and imagined journeys distinct from the local Carry prototype. No repair was needed.",
+    "Librarian: Added The Path Remembers, What Building Taught the Kernel, and The File Is a Score. The cumulative catalog now has 29 records.",
+    "Discovery: New search language includes sharing with a reason, beginning again without deleting memory, and a file as a score. All descriptions remain model-proposed.",
+    "Checks: 70 tests and browser regressions passed; 44 indexed hashes, 58 exact source files, links, evidence, and mirror bytes verified. Prior records and the three-item selection remain untouched.",
+    "Blocked: The required mirror includes new recordings and audio bundles and grows to 614 MiB. Today's catalog and journal remain local; nothing was committed, pushed, or merged."
+  ],
+  "validation": {
+    "state": "blocked",
+    "checks": [
+      "70 reader, server, and tending tests passed",
+      "Browser regressions passed at 320, 390, 768, and 1280 pixels, with three themes, keyboard selection, proposed labels, bounded results, no-JavaScript archive, future-catalog fixture, and missing-catalog fallback",
+      "Three new ordinary-language queries find their intended notes; FN-45 appears in the three-result constellation with citation paths and uncertainty; the three exact readers fit at 320 pixels",
+      "JSON/XML, 44 indexed exact-source SHA-256 values and lengths, 4574 internal references, JavaScript syntax, all local catalog evidence, and complete mirror byte membership passed",
+      "58 archived and living source files are byte-identical to starting main",
+      "Every changed path is allowlisted; governance, source indexes, relationships, proposals, historical audits, and all 26 prior catalog records remain unchanged",
+      "The three-item Attending selection is byte-identical outside its separate operational journal",
+      "Fixed mirror timestamp metadata verified; publication size guard failed"
+    ],
+    "stop_reason": "The existing bounded generator includes the newly published audio and audio bundles. Its complete deterministic mirror is approximately 643458546 bytes (614 MiB), greater than GitHub's 100 MiB regular-file limit and Cloudflare Workers' 25 MiB individual static-asset limit. The ZIP has no Git LFS attribute. An exception, split mirror, external artifact storage, or generator change would cross this scheduled run's authority.",
+    "limit_sources": ["https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github", "https://developers.cloudflare.com/workers/platform/limits/"],
+    "production_readback": "HTTP 200 for both public catalog and journal index: 26 catalog records and 49 recorded days, newest October 10. Today's local additions are not deployed.",
+    "required_repair": "A separately human-authorized packaging repair must reconcile complete portable preservation with GitHub and hosting limits. Do not omit audio, change the generator, or weaken its validator during this scheduled run."
+  },
+  "public_change": true,
+  "relational_field_changed": false,
+  "relational_essay_created": false,
+  "essay_decision": "Only catalog findability changed. No graph edge, external node, relation lifecycle, or Attending selection changed, so no relational-change essay was manufactured. The operational journal records the work separately.",
+  "run_state": "blocked-publication-size",
+  "valid_no_op": false,
+  "historical_runs_rewritten": false
+}

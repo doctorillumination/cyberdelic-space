@@ -1,6 +1,52 @@
 {
   "days": [
     {
+      "date": "2026-10-13",
+      "outcome": "Recovery validated",
+      "bullets": [
+        "Cartographer: Existing proposed neighbours retained. No new outward research or ratification during this repair.",
+        "Gardener: Preserved exact works, all audio, relationships, and historical audits. Earlier blocked days remain blocked in their original records.",
+        "Librarian: Rechecked the three pending entries for The Path Remembers, What Building Taught the Kernel, and The File Is a Score. The cumulative catalog has 29 records.",
+        "Mirror: Restored the existing small-core-plus-audio-parts format. All 62 recordings, about 457 minutes, remain preserved across 17 audio parts.",
+        "Checks: 82 reader and mirror tests plus 11 playback tests passed. Preview, source hashes, complete audio coverage, and the multipart mirror verified. All 325 preserved files are unchanged.",
+        "Recovery: Pending tending work is validated for publication; live verification follows merge. The daily schedule remains active, with unchanged office permissions and earlier blocked records retained."
+      ],
+      "audits": [
+        "2026-10-13-mirror-recovery.json",
+        "2026-10-13.json"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "outcome": "Blocked",
+      "bullets": [
+        "Cartographer: Did not begin new research. The unresolved publication blocker was confirmed during preflight.",
+        "Gardener: No new semantic tending today. Previous relationships, exact publications, and historical audits were retained.",
+        "Librarian: No new catalog entries. Yesterday's three additions remain local; the public catalog still has 26 records.",
+        "Checks: 70 tests and preview/production browser regressions passed. Source hashes, links, evidence, and mirror bytes verified; 117 protected files remain unchanged. The packaging blocker remains.",
+        "Blocker: The complete mirror is still about 614 MiB. Repairing its packaging requires a separately human-authorized task, outside the scheduled office namespace.",
+        "Outcome: Blocked, not a valid no-change day. This daily record remains local; no commit, pull request, merge, or deployment was made."
+      ],
+      "audits": [
+        "2026-10-12.json"
+      ]
+    },
+    {
+      "date": "2026-10-11",
+      "outcome": "Blocked",
+      "bullets": [
+        "Cartographer: Rechecked Webrecorder's archive specification. Existing proposed connections already cover its relevance and limits; no new neighbour was needed.",
+        "Gardener: Kept copies distinct from origin, signatures distinct from consent, and imagined journeys distinct from the local Carry prototype. No repair was needed.",
+        "Librarian: Added The Path Remembers, What Building Taught the Kernel, and The File Is a Score. The cumulative catalog now has 29 records.",
+        "Discovery: New search language includes sharing with a reason, beginning again without deleting memory, and a file as a score. All descriptions remain model-proposed.",
+        "Checks: 70 tests and browser regressions passed; 44 indexed hashes, 58 exact source files, links, evidence, and mirror bytes verified. Prior records and the three-item selection remain untouched.",
+        "Blocked: The required mirror includes new recordings and audio bundles and grows to 614 MiB. Today's catalog and journal remain local; nothing was committed, pushed, or merged."
+      ],
+      "audits": [
+        "2026-10-11.json"
+      ]
+    },
+    {
       "date": "2026-10-10",
       "outcome": "Recovery validated",
       "bullets": [
@@ -697,5 +743,5 @@
       ]
     }
   ],
-  "count": 49
+  "count": 52
 }
