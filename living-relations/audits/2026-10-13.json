@@ -1,0 +1,99 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-10-13",
+  "run_type": "scheduled-tending",
+  "completed_at": "2026-10-13T15:27:20Z",
+  "authority": "OFFICE-PUBLICATION-AUTHORITY version 1.1 and the current daily tending instructions. Publication is not ratification.",
+  "repository": {
+    "branch": "codex/tending-2026-10-11",
+    "starting_commit": "502d83d46402a85deb1c3cb88d3f65a4263d3b8b",
+    "remote_main": "502d83d46402a85deb1c3cb88d3f65a4263d3b8b",
+    "preflight": "GitHub fetch succeeded. Main has not advanced. Pending files match the prior allowlisted tending work, including October 11 catalog additions and blocked October 11 and October 12 audits. No pending content was discarded or classified as newly produced today.",
+    "publication_action": "Stopped before commit, push, pull request, or merge because the mirror packaging blocker remains unresolved."
+  },
+  "governing_documents_read": [
+    "living-content/cyberdelic-os/offices/cartographer/charter-v1.md",
+    "living-content/cyberdelic-os/offices/gardener/charter-v1.md",
+    "living-content/cyberdelic-os/offices/librarian/charter-v1.md",
+    "living-content/cyberdelic-os/bn-005/v000001.md",
+    "living-content/cyberdelic-os/i-003/v000001.md",
+    "living-content/cyberdelic-os/offices/publication-authority-v2.md",
+    "living-relations/governance.json",
+    "reader/TENDING.md in the source repository"
+  ],
+  "cartographer": {
+    "state": "not-run-publication-preflight-blocked",
+    "office_version": "0.1",
+    "candidates_created": [],
+    "outward_search_performed": false,
+    "no_proposal_reason": "The mandatory mirror remains unpublishable. No research turn or new proposal was begun after the known publication blocker was confirmed. GitHub and Cloudflare limit checks are operational diagnostics, not Cartographer discovery."
+  },
+  "gardener": {
+    "state": "not-run-publication-preflight-blocked",
+    "office_version": "0.1",
+    "changes": [],
+    "decision_reason": "No new semantic tending or relation lifecycle decision was made after preflight stopped the transaction. Prior relationships, exact publications, and historical audits remain preserved. Integrity checks do not constitute a fresh semantic review of the archive."
+  },
+  "librarian": {
+    "state": "not-run-publication-preflight-blocked",
+    "office_version": "0.1",
+    "records_created": [],
+    "records_revised": [],
+    "records_removed": [],
+    "local_catalog_count": 29,
+    "verified_public_catalog_count": 26,
+    "decision_reason": "No new catalog work was begun. FN-41, FN-44, and FN-45 remain the retained, uncommitted October 11 additions, not today's output. The 26 prior catalog records are unchanged."
+  },
+  "public_summary": [
+    "Cartographer: No new research or proposals. Preflight confirmed the unresolved publication blocker.",
+    "Gardener: No new semantic tending. Existing relationships, publications, and historical audits were preserved.",
+    "Librarian: No new catalog changes. The three October 11 additions remain local; production still has 26 records.",
+    "Checks: 70 tests and browser regressions on the correct preview and production passed. Source hashes, links, catalog evidence, and mirror bytes verified; 119 protected files remain unchanged.",
+    "Blocker: The complete mirror remains about 614 MiB, above GitHub and Cloudflare single-file limits. A separately human-authorized packaging repair is still required.",
+    "Outcome: Blocked, not a valid no-op. Today's journal remains local; nothing was committed, pushed, merged, or deployed."
+  ],
+  "validation": {
+    "state": "blocked",
+    "checks": [
+      "All governing documents and generator guidance read in full",
+      "GitHub fetch succeeded; HEAD and origin/main match",
+      "All pending paths are allowlisted; all 26 prior catalog entries are preserved",
+      "70 reader, server, and daily journal tests passed",
+      "The existing browser regression suite passed against the correct header-faithful preview at port 8787 and production: four widths, three themes, keyboard discovery, three-result aperture, six-result search bound, proposed labels, related context, future-catalog updates, missing-catalog fallback, and no-JavaScript archive",
+      "The read-only validator passed JSON/XML, 44 indexed exact-source hashes and lengths, 4598 internal references, JavaScript syntax, local catalog evidence, and complete mirror byte membership",
+      "119 protected files, including all prior audits, exact sources, catalog, graph, inbox, governance, and the bounded generator, remain byte-identical to the preflight baseline",
+      "The finite Attending selection remains unchanged. The 52-day local archive shows October 13 honestly and preserves October 11, 12, and 13 as blocked",
+      "Three existing public Field Note sources, FN-41, FN-44, and FN-45, match the local exact-source SHA-256 digests. This checks existing production, not today's deployment",
+      "Git diff whitespace check passed, with the binary mirror excluded from whitespace scanning"
+    ],
+    "rerun_checks": "passed on the correct preview and production; publication size guard remains blocked",
+    "preview_attempts": [
+      {"url": "http://127.0.0.1:8786", "result": "failed", "reason": "The first browser run timed out looking for the opening constellation. Read-only diagnostics confirmed that this port served unrelated documentation, not the website checkout. The existing server was left untouched."},
+      {"url": "http://127.0.0.1:8787", "result": "passed", "reason": "Started the existing header-faithful preview server with an explicit absolute website root. Verified the served homepage bytes, then reran the unchanged browser suite successfully."}
+    ],
+    "stop_reason": "The required mirror is 643465231 bytes before today's regeneration, approximately 614 MiB. It exceeds GitHub's 100 MiB limit for a regular Git file and Cloudflare Workers' 25 MiB limit for an individual static asset. Git LFS is not configured for this ZIP. The existing bounded generator still includes recordings and audio bundles. Changing its packaging, site code, hosting configuration, or validation policy is prohibited in a scheduled run.",
+    "primary_limit_sources_checked_at": "2026-10-13",
+    "primary_limit_sources": ["https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github", "https://developers.cloudflare.com/workers/platform/limits/"],
+    "production_readback": "HTTP 200 for catalog and journal index: 26 public catalog records, 49 recorded days, and newest public audit date October 10. This verifies existing production, not today's deployment.",
+    "required_repair": "Separate human authorization is needed to repair mirror packaging and storage while preserving portable material. Do not omit audio, alter the generator or validator, or bypass the mirror requirement during this scheduled run."
+  },
+  "files_written": [
+    "living-relations/audits/2026-10-13.json",
+    "project/cyberdelic-os/attending/index.html",
+    "project/cyberdelic-os/attending/journal/index.json",
+    "project/cyberdelic-os/attending/journal/index.html",
+    "project/cyberdelic-os/attending/journal/page-2.html",
+    "project/cyberdelic-os/attending/journal/page-3.html",
+    "project/cyberdelic-os/attending/journal/page-4.html",
+    "project/cyberdelic-os/attending/journal/page-5.html",
+    "project/cyberdelic-os/attending/journal/page-6.html",
+    "cyberdelic-space.zip"
+  ],
+  "public_change": false,
+  "relational_field_changed": false,
+  "relational_essay_created": false,
+  "valid_no_op": false,
+  "run_state": "blocked-publication-preflight",
+  "historical_runs_rewritten": false,
+  "journal_boundary": "Only the operational daily journal is regenerated locally. Earlier blocked runs stay blocked, and the finite three-item Attending selection remains unchanged."
+}

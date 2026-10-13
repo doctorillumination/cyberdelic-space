@@ -1,8 +1,8 @@
 {
   "schema": "https://cyberdelic.space/schemas/living-catalog-v1.json",
-  "version": "0.10",
-  "updated_at": "2026-10-10T20:41:18-07:00",
-  "count": 26,
+  "version": "0.11",
+  "updated_at": "2026-10-11T16:13:25Z",
+  "count": 29,
   "curation": {
     "office": "OFFICE-LIBRARIAN",
     "office_version": "0.1",
@@ -508,6 +508,57 @@
       "introduced_by": "OFFICE-LIBRARIAN",
       "last_tended_at": "2026-10-10T20:41:18-07:00",
       "uncertainty": "This is a proposed experience and lived test. The current evidence comes from synthetic practice and software checks, not an observed interpersonal study."
+    },
+    {
+      "id": "catalog:cyberdelic-os:fn-41",
+      "record_kind": "field-note",
+      "title": "Carry: The Path Remembers",
+      "href": "project/cyberdelic-os/field-notes/fn-41/",
+      "summary": "A forest conversation proposes carrying a work to one person with its source and a reason, rather than broadcasting an isolated link. Each onward interpretation adds to the journey without replacing the object. Paths becoming roads is an imagined geography of meaningful exchange, not a measure of popularity.",
+      "subjects": ["contextual sharing", "deliberate exchange", "living lineage", "meaningful journeys", "relational discovery"],
+      "search_terms": ["share with a reason", "why I sent this", "meaning survives the journey", "one person at a time", "paths into roads", "anti-viral sharing"],
+      "questions": ["What changes when a work travels with a reason addressed to one person?", "How can an onward interpretation deepen a work without replacing its source?"],
+      "related": [],
+      "evidence": [{"source": "living-content/cyberdelic-os/fn-s0-014/v000002.md", "locator": "The object moves, but the context moves with it.; The object remains itself while its field of meaning becomes deeper.; One creates a bounded relational artifact; the other creates a living lineage.; One person at a time.; Paths wear into the world because something was worth carrying.; Perhaps it should help meaning survive the journey."}],
+      "epistemic_status": "strong",
+      "review_state": "model-proposed",
+      "introduced_by": "OFFICE-LIBRARIAN",
+      "last_tended_at": "2026-10-11T16:13:25Z",
+      "uncertainty": "Describes the published proposal, not implemented public delivery, measured social effects, or an existing visual landscape. The later Carry records document a local testing edition separately."
+    },
+    {
+      "id": "catalog:cyberdelic-os:fn-44",
+      "record_kind": "field-note",
+      "title": "What Building Taught the Kernel",
+      "href": "project/cyberdelic-os/field-notes/fn-44/",
+      "summary": "A living response places lessons from building beside the unchanged Kernel. Four possible clarifications concern suspending remembered context, separating exploration from publication and ratification, forgetting derived memory, and taking a work beyond its first application. It preserves unresolved tensions instead of enacting a new constitution.",
+      "subjects": ["memory and consent", "context suspension", "derived-memory forgetting", "portable works", "publication and ratification"],
+      "search_terms": ["begin again without deleting memory", "personalization can enclose", "permission follows influence", "delete summaries too", "work leaves its first home", "possible Kernel amendments"],
+      "questions": ["Can a person keep an archive while suspending its influence on a new encounter?", "What should forgetting do to summaries and associations derived from a source?", "How can a published proposal remain contestable without becoming authority?"],
+      "related": [{"id": "cyberdelic-os:kernel-v1", "title": "The Cyberdelic Kernel v1.0", "relation_type": "context", "review_state": "proposed"}],
+      "evidence": [{"source": "living-content/cyberdelic-os/fn-s0-017/v000001.md", "locator": "The purpose of this note is to place what building has taught beside the original.; A person may suspend the influence of remembered context without deleting the archive.; Permission to explore, permission to publish a labelled proposal, and ratification of a consequential relation are distinct.; Forgetting must reach retained sources and their derivatives within the system's control.; A person must be able to carry their work out of the system in a documented form; No Kernel amendment, ratification, governance change, or inscription is enacted by this note."}],
+      "epistemic_status": "strong",
+      "review_state": "model-proposed",
+      "introduced_by": "OFFICE-LIBRARIAN",
+      "last_tended_at": "2026-10-11T16:13:25Z",
+      "uncertainty": "The four passages are possible amendments, not a ratified Kernel v1.1. This record describes source reading and reflection, not a fresh runtime audit or evidence of long-term use. The Kernel path is explicitly cited by the note; this catalog context does not add a graph edge or confer ratification."
+    },
+    {
+      "id": "catalog:cyberdelic-os:fn-45",
+      "record_kind": "field-note",
+      "title": "The File Is a Score",
+      "href": "project/cyberdelic-os/field-notes/fn-45/",
+      "summary": "A living proposal treats a file format as an authored score for encounters: source fragments, chosen interpretations, arrangements, permissions, and endings can remain distinct across readers. It imagines common ground for Dear Elsewhere and Carry while preserving private notes and the right to decline. Signatures establish limited byte evidence, not identity, understanding, or permission to exhibit.",
+      "subjects": ["file formats as art", "portable works", "contextual sharing", "permission boundaries", "independent readers"],
+      "search_terms": ["file as a score", "poetry in a file format", "else format", "two interpretations two readers", "preserve a voice explanation", "saved excerpt versus live link", "signatures do not prove identity"],
+      "questions": ["Could an open file preserve different interpretations without merging them into one public history?", "What survives when a source disappears and another reader encounters the work?", "Can a work invite a next action without commanding its reader?"],
+      "related": [{"id": "cyberdelic-os:fn-41", "title": "Carry: The Path Remembers", "relation_type": "context", "review_state": "proposed"}, {"id": "cyberdelic-os:kernel-v1", "title": "The Cyberdelic Kernel v1.0", "relation_type": "context", "review_state": "proposed"}],
+      "evidence": [{"source": "living-content/cyberdelic-os/fn-s0-018/v000001.md", "locator": "The file becomes a score.; This is a possible future format family; Receiving an object does not confer its entire past.; These would be invitations that a person can decline.; A signature can establish that a key signed particular bytes.; A source may vanish while its saved excerpt and explanation remain.; A small experiment could test the proposal: one fragment, two interpretations, two readers.; Carry: The Path Remembers, FN-41; The Cyberdelic Kernel, Transmission 01, version 1.0"}],
+      "epistemic_status": "strong",
+      "review_state": "model-proposed",
+      "introduced_by": "OFFICE-LIBRARIAN",
+      "last_tended_at": "2026-10-11T16:13:25Z",
+      "uncertainty": "The shared format family and artistic scores are speculative extensions, not current .else capabilities. The note records that .else is unsigned and unencrypted and that Carry's practice identities share one installation. Related paths reproduce the note's public citations, not newly ratified relationships or a Nostr compatibility claim."
     }
   ]
 }

@@ -1,0 +1,74 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-10-13-MIRROR-RECOVERY",
+  "run_type": "human-authorized-recovery",
+  "completed_at": "2026-10-13T16:03:21Z",
+  "authority": "Brad Necyk explicitly authorized mirror-packaging repair, preservation of all content and audio, publication of pending tending work, and restoration of automatic office publication.",
+  "repository": {
+    "branch": "codex/mirror-recovery-2026-10-13",
+    "starting_commit": "502d83d46402a85deb1c3cb88d3f65a4263d3b8b",
+    "publication_action": "Validated for pull-request publication; deployment verification follows merge."
+  },
+  "cartographer": {
+    "state": "retained-existing-proposals",
+    "candidates_created": [],
+    "outward_search_performed": false,
+    "no_proposal_reason": "This is an authorized publication recovery, not a new outward inquiry. The existing proposal queue remains unchanged and no relationship is ratified."
+  },
+  "gardener": {
+    "state": "preserved-exact-sources-and-history",
+    "changes": [],
+    "decision_reason": "Retain all exact works, graph claims, source hashes, audio, offline audio parts, and historical audits. Earlier blocked runs remain blocked in their own immutable records. The recovery does not pretend their semantic office turns occurred."
+  },
+  "librarian": {
+    "state": "validated-pending-catalog-records",
+    "records_created": [],
+    "records_revised": [],
+    "records_removed": [],
+    "records_recovered": ["catalog:cyberdelic-os:fn-41", "catalog:cyberdelic-os:fn-44", "catalog:cyberdelic-os:fn-45"],
+    "catalog_count": 29,
+    "decision_reason": "The October 11 additions remain source-grounded and visibly model-proposed. This recovery carries the cumulative 29-record catalog to publication, without reattributing its earlier work or changing graph relations."
+  },
+  "mirror_repair": {
+    "source_repository": "https://github.com/doctorillumination/cyberdelic-studio",
+    "source_commit": "2483dac",
+    "source_branch": "codex/mirror-packaging-2026-10-13",
+    "root_cause": "The tending generator duplicated both standalone recordings and the already published audio ZIP parts inside the core archive, contrary to the existing narration publication format.",
+    "solution": "Share one deterministic multipart-mirror contract across scheduled tending and the publication builders. The small core preserves all texts, readers, audio metadata, and reading documents. The unchanged 17 audio parts preserve all 62 MP3s. Extract every audio part alongside the core for a complete listening mirror.",
+    "preservation_checks": "Core membership and bytes, narration and reading digests, exact part inventory, every audio-part digest and entry byte, full recording coverage, duplicate detection, safe paths, and the 25 MiB per-file limit. Missing or changed audio blocks publication instead of being omitted.",
+    "scheduled_write_boundary": "Unchanged. Daily generation writes only the existing Attending journal and core ZIP. It verifies, but never regenerates or edits, audio and its parts. Governance, charters, and automation instructions are unchanged.",
+    "recording_count": 62,
+    "audio_part_count": 17,
+    "recorded_minutes": 456.9
+  },
+  "public_summary": [
+    "Cartographer: Existing proposed neighbours retained. No new outward research or ratification during this repair.",
+    "Gardener: Preserved exact works, all audio, relationships, and historical audits. Earlier blocked days remain blocked in their original records.",
+    "Librarian: Rechecked the three pending entries for The Path Remembers, What Building Taught the Kernel, and The File Is a Score. The cumulative catalog has 29 records.",
+    "Mirror: Restored the existing small-core-plus-audio-parts format. All 62 recordings, about 457 minutes, remain preserved across 17 audio parts.",
+    "Checks: 82 reader and mirror tests plus 11 playback tests passed. Preview, source hashes, complete audio coverage, and the multipart mirror verified. All 325 preserved files are unchanged.",
+    "Recovery: Pending tending work is validated for publication; live verification follows merge. The daily schedule remains active, with unchanged office permissions and earlier blocked records retained."
+  ],
+  "validation": {
+    "state": "passed",
+    "checks": [
+      "82 reader, mirror, journal, and server tests passed, including restoration, determinism, missing media, digest drift, missing coverage, path safety, and asset size limits",
+      "11 recording-player tests passed",
+      "62 source-bound Lewis recordings and all 17 offline parts validated without audio regeneration",
+      "All 325 protected files, including original audits, publications, source indexes, graph metadata, recordings, audio parts, and governance, remain byte-identical",
+      "Browser regression passed at 320, 390, 768, and 1280 pixels, with three themes, keyboard selection, finite discovery/search, proposed labels, related context, future catalog fixture, missing-catalog fallback, and no-JavaScript archive",
+      "JSON/XML, 44 indexed exact-source hashes and lengths, internal references, JavaScript syntax, exact catalog evidence, core membership, and complete audio-part bytes verified",
+      "Website changed paths remain inside the original autonomous office allowlist",
+      "Active daily 7:00 schedule and calling thread verified; automation configuration and constitutional controls were not changed",
+      "Unrelated Studio source note remains untracked and unchanged"
+    ],
+    "production_boundary": "Do not claim live publication before merge and HTTP byte verification."
+  },
+  "public_change": true,
+  "relational_field_changed": false,
+  "relational_essay_created": false,
+  "valid_no_op": false,
+  "run_state": "recovery-validated",
+  "historical_runs_rewritten": false,
+  "scheduled_configuration_changed": false
+}
