@@ -1,6 +1,21 @@
 {
   "days": [
     {
+      "date": "2026-10-14",
+      "outcome": "Changes recorded",
+      "bullets": [
+        "Cartographer: Revisited the existing WebAssembly connection. Portable computation still needs a host; no duplicate neighbour or relation was added.",
+        "Gardener: Kept imagined formats distinct from implementations, model continuity distinct from carried records, and visual beauty distinct from proof. No repair was needed.",
+        "Librarian: Added The Artifact Is Primary, The Exchange Between Us, and The House Learns to Make Room. The cumulative catalog now has 32 records.",
+        "Discovery: Search can now approach these notes through missing links, human AI co-creation, and making room without deleting. Descriptions remain model-proposed.",
+        "Checks: 93 tests and four-width browser regressions passed. Source hashes, links, evidence, all 62 recordings, offline parts, and the bounded mirror verified; prior records remain unchanged.",
+        "Outcome: Catalog growth and this daily record passed publication checks. No new relational essay or ratification was made. Deployment is verified separately after merge."
+      ],
+      "audits": [
+        "2026-10-14.json"
+      ]
+    },
+    {
       "date": "2026-10-13",
       "outcome": "Recovery validated",
       "bullets": [
@@ -743,5 +758,5 @@
       ]
     }
   ],
-  "count": 52
+  "count": 53
 }

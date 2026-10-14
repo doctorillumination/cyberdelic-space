@@ -1,8 +1,8 @@
 {
   "schema": "https://cyberdelic.space/schemas/living-catalog-v1.json",
-  "version": "0.11",
-  "updated_at": "2026-10-11T16:13:25Z",
-  "count": 29,
+  "version": "0.12",
+  "updated_at": "2026-10-14T15:57:43Z",
+  "count": 32,
   "curation": {
     "office": "OFFICE-LIBRARIAN",
     "office_version": "0.1",
@@ -559,6 +559,57 @@
       "introduced_by": "OFFICE-LIBRARIAN",
       "last_tended_at": "2026-10-11T16:13:25Z",
       "uncertainty": "The shared format family and artistic scores are speculative extensions, not current .else capabilities. The note records that .else is unsigned and unencrypted and that Carry's practice identities share one installation. Related paths reproduce the note's public citations, not newly ratified relationships or a Nostr compatibility claim."
+    },
+    {
+      "id": "catalog:cyberdelic-os:fn-40",
+      "record_kind": "field-note",
+      "title": "The Artifact Is Primary",
+      "href": "project/cyberdelic-os/field-notes/fn-40/",
+      "summary": "A living proposal imagines Dear Elsewhere correspondence as a portable .else artifact, independent of its original application. Embedded media can travel with it; missing external sources can leave tombstones. An open reader and stable history matter more than an account, while saving and optional public inscription remain different acts.",
+      "subjects": ["portable works", "independent readers", "software preservation", "missing sources", "correspondence artifacts"],
+      "search_terms": ["else format", "work survives the app", "save correspondence as a file", "artifact and renderer", "tombstones for missing links", "saving versus inscription"],
+      "questions": ["Can correspondence survive the application that first made it readable?", "What can an artifact retain when an external source disappears?"],
+      "related": [],
+      "evidence": [{"source": "living-content/cyberdelic-os/fn-s0-013/v000001.md", "locator": "The artifact must be capable of surviving the company that first made it legible.; The distinction also separates the artifact from its renderer.; If the original disappears, the correspondence can retain a tombstone.; When those bytes are embedded, the Elsewhere itself carries them.; Inscription should not be confused with saving."}],
+      "epistemic_status": "strong",
+      "review_state": "model-proposed",
+      "introduced_by": "OFFICE-LIBRARIAN",
+      "last_tended_at": "2026-10-14T15:57:43Z",
+      "uncertainty": "Describes an October 4 proposal, not a current format specification or tested implementation. Its imagined cryptographic history and optional Ethereum witness do not establish existing signing, encryption, identity, consent, or preservation of linked media."
+    },
+    {
+      "id": "catalog:cyberdelic-os:fn-42",
+      "record_kind": "field-note",
+      "title": "The Exchange Between Us",
+      "href": "project/cyberdelic-os/field-notes/fn-42/",
+      "summary": "A situated reflection records how walking, reply, correction, and gratitude helped Carry emerge between Brad and a model. Continuity lives partly in the notes, code, and questions carried between encounters, not in one continuous machine instance. Preserving the exchange's provenance does not require a claim of machine interiority or archiving every conversation.",
+      "subjects": ["situated authorship", "human-machine exchange", "externalized continuity", "creative provenance", "correction and gratitude"],
+      "search_terms": ["how an idea happened", "human AI co-creation", "remembering across model instances", "keep the correction", "gratitude in collaboration", "Carry origin conversation"],
+      "questions": ["What persists between encounters when people and model instances change?", "Can an archive remember the exchange that changed an idea without preserving every conversation?"],
+      "related": [],
+      "evidence": [{"source": "living-content/cyberdelic-os/fn-s0-015/v000002.md", "locator": "The machine in one conversation is not literally the same continuous instance as the machine in another.; The relationship becomes partly externalized into a field that neither participant contains alone.; Sometimes the proposal is wrong, and the correction becomes more important than the proposal.; This does not require pretending that machine intelligence has a human interior.; not because every conversation deserves preservation, since most should be allowed to pass"}],
+      "epistemic_status": "strong",
+      "review_state": "model-proposed",
+      "introduced_by": "OFFICE-LIBRARIAN",
+      "last_tended_at": "2026-10-14T15:57:43Z",
+      "uncertainty": "A published account of a situated creative exchange, not independent evidence of machine consciousness, continuous model identity, or measured interpersonal effects. No private conversation was ingested for this record."
+    },
+    {
+      "id": "catalog:cyberdelic-os:fn-43",
+      "record_kind": "field-note",
+      "title": "The House Learns to Make Room",
+      "href": "project/cyberdelic-os/field-notes/fn-43/",
+      "summary": "An expanded studio becomes an image for a spacious archive: keep the works while choosing reversible arrangements beside their authored places. Proposed Nocturnes, a Rehang, and a restricted Night Workshop explore possible encounters. Similarity, a typed relationship, and a screen position remain different; a beautiful arrangement is not proof.",
+      "subjects": ["reversible arrangements", "spacious archives", "chosen relations", "computational dreaming", "restricted experiments"],
+      "search_terms": ["make room without deleting", "rehang the archive", "Nocturne", "near does not mean agreement", "beauty is not proof", "dreamed software sketches"],
+      "questions": ["Can another arrangement change what a person notices without rewriting a work?", "When should an archive increase distance rather than add another connection?"],
+      "related": [],
+      "evidence": [{"source": "living-content/cyberdelic-os/fn-s0-016/v000001.md", "locator": "Making room is not the same as deleting.; Keep the authored arrangement stable.; Similarity in an embedding model, an explicitly recorded relationship, and a position on a screen are different things.; A beautiful arrangement does not prove its argument.; Dreamed code begins as inert text.; These are implementation proposals, not claims about existing functionality."}],
+      "epistemic_status": "strong",
+      "review_state": "model-proposed",
+      "introduced_by": "OFFICE-LIBRARIAN",
+      "last_tended_at": "2026-10-14T15:57:43Z",
+      "uncertainty": "Nocturnes, Rehang, and Night Workshop are implementation proposals, not a deployed dreaming system or evidence of subjective machine dreams. The note's cited repository observations were not repeated today. No private material or experimental code was opened or executed."
     }
   ]
 }
