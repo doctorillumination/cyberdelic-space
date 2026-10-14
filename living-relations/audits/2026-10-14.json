@@ -1,0 +1,81 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-10-14",
+  "run_type": "scheduled-tending",
+  "completed_at": "2026-10-14T16:00:30Z",
+  "authority": "OFFICE-PUBLICATION-AUTHORITY version 1.1; publication is distinct from ratification.",
+  "repository": {
+    "branch": "codex/tending-2026-10-14",
+    "starting_commit": "7b568346e85cc553bccbec3453b01a34f6d85160",
+    "preflight": "Clean website checkout matched origin/main after one recovered read-only fetch timeout. The sibling source runtime's unrelated untracked FN-45 file was left untouched.",
+    "publication_action": "Validated for pull-request publication. Production verification follows merge and is reported separately; this immutable audit does not claim a future deployment."
+  },
+  "cartographer": {
+    "state": "retained-existing-proposals",
+    "candidates_created": [],
+    "outward_search_performed": true,
+    "inbox_items": 0,
+    "declared_question": "Where should a durable plate end and a replaceable reader begin?",
+    "inquiry_basis": "Existing REL-P-000010 and REL-P-000011 beside exact FN-33, including the distinction between computation and a complete artistic encounter.",
+    "sources_checked": [{
+      "url": "https://webassembly.github.io/spec/core/intro/introduction.html",
+      "attribution": "WebAssembly Community Group, Core Specification introduction, version 3.0 dated 2026-10-13",
+      "checked_at": "2026-10-14",
+      "source_facts": ["The core defines instructions, binary encoding, validation, and execution semantics, while environment interaction and invocation belong to embedding APIs.", "The embedder supplies imported capabilities; the core has no ambient environmental access."],
+      "inference": "The computation/host distinction remains a useful technical adjacency to FN-33's replaceable reader. Portable computation alone does not preserve presentation, assets, authorized editions, or consent.",
+      "uncertainty": "The current official editor text identifies itself as version 3.0. It is not a fresh verification of the historically cited Core 2 snapshot or a runtime/interoperability test. The W3C monolithic page exceeded the browser fetch size; the official split introduction was read instead."
+    }],
+    "no_proposal_reason": "Existing proposed node and edge already carry this narrow distinction. No duplicate relation or new external neighbour is warranted. Historical versioned claims remain unchanged; no endorsement, partnership, or ratification is implied."
+  },
+  "gardener": {
+    "state": "reviewed-no-repair-needed",
+    "changes": [],
+    "reviewed": ["Exact FN-33, FN-40, FN-42 version 0.2, FN-43, BN-007, A-006, I-006; current graph and relevant catalog entries", "Cross-type catalog evidence, indexed source commitments, internal links, and complete multipart preservation are subject to mechanical validation"],
+    "decisions": [
+      {"decision": "Retain the difference between an envisioned portable artifact and a tested implementation.", "evidence": ["FN-40 imagines native .else provenance and optional inscription", "BN-007 distinguishes saved bytes from live sources and records limits of the local prototype"]},
+      {"decision": "Preserve model-instance discontinuity, correction, and limited claims of authorship.", "evidence": ["FN-42 explicitly denies one continuous machine instance and does not require machine interiority"]},
+      {"decision": "Keep similarity, a proposed relation, and visual nearness distinct; do not mistake beauty for factual support.", "evidence": ["FN-43 retains authored arrangements and treats dreamed code as inert until separately permitted"]}
+    ],
+    "decision_reason": "No graph, summary repair, or lifecycle change was needed in the reviewed records. Exact-evidence validation across the catalog supplements focused semantic reading, not a claim that every publication was freshly interpreted."
+  },
+  "librarian": {
+    "state": "added-three-source-grounded-records",
+    "records_created": ["catalog:cyberdelic-os:fn-40", "catalog:cyberdelic-os:fn-42", "catalog:cyberdelic-os:fn-43"],
+    "records_revised": [],
+    "records_removed": [],
+    "catalog_count_before": 29,
+    "catalog_count_after": 32,
+    "decision_reason": "Make three existing public notes findable through supported ordinary-language questions about portability, creative exchange, and spacious arrangements. Preserve all previous records. No new graph relations are inferred from shared vocabulary; no external search was performed by the Librarian."
+  },
+  "public_summary": [
+    "Cartographer: Revisited the existing WebAssembly connection. Portable computation still needs a host; no duplicate neighbour or relation was added.",
+    "Gardener: Kept imagined formats distinct from implementations, model continuity distinct from carried records, and visual beauty distinct from proof. No repair was needed.",
+    "Librarian: Added The Artifact Is Primary, The Exchange Between Us, and The House Learns to Make Room. The cumulative catalog now has 32 records.",
+    "Discovery: Search can now approach these notes through missing links, human AI co-creation, and making room without deleting. Descriptions remain model-proposed.",
+    "Checks: 93 tests and four-width browser regressions passed. Source hashes, links, evidence, all 62 recordings, offline parts, and the bounded mirror verified; prior records remain unchanged.",
+    "Outcome: Catalog growth and this daily record passed publication checks. No new relational essay or ratification was made. Deployment is verified separately after merge."
+  ],
+  "validation": {
+    "state": "passed",
+    "checks": [
+      "82 reader, server, mirror, and journal tests; 11 playback tests",
+      "Browser regressions at 320, 390, 768, and 1280 pixels, three themes, keyboard discovery, proposed labels, three-result constellation, six-result directory, no-JavaScript archive, future-catalog fixture, and missing-catalog fallback",
+      "New ordinary-language queries find all three notes; FN-43 enters the opening constellation through its evidenced subjects; all three exact readers fit at 320 pixels",
+      "JSON/XML, 44 indexed exact-source SHA-256 values and lengths, 4600 internal references, JavaScript syntax, and every local catalog evidence locator",
+      "Complete deterministic multipart mirror and narration validation preserve 62 recordings, 456.9 minutes, 313.8 MiB, and all offline audio parts",
+      "All 11 changed paths match the active governance allowlist; 318 protected files and all 29 earlier catalog records are byte-identical or structurally identical to starting main",
+      "Governance, exact works, source indexes, graph and proposals, historical audits, audio and bundles remain unchanged; Attending selection is byte-identical outside its operational journal",
+      "Sibling source runtime and unrelated untracked FN-45 metadata remain unchanged"
+    ],
+    "preview_url": "http://127.0.0.1:8787/",
+    "production_verification": "Not claimed by this pre-merge audit. Changed URLs, exact sources, and browser regressions must be verified after the production build."
+  },
+  "public_change": true,
+  "relational_field_changed": false,
+  "relational_essay_created": false,
+  "essay_decision": "Only catalog findability changed. No graph or selected Attending relationship changed; the operational journal records the work without manufacturing a relational essay.",
+  "run_state": "validated-for-publication",
+  "valid_no_op": false,
+  "historical_runs_rewritten": false,
+  "scheduled_configuration_changed": false
+}
