@@ -1,6 +1,21 @@
 {
   "days": [
     {
+      "date": "2026-10-16",
+      "outcome": "Changes recorded",
+      "bullets": [
+        "Cartographer: Rechecked OCI's content descriptors and archive layout. Existing proposals already cover their relevance; no new neighbour or edge was needed.",
+        "Gardener: Found that The Artifact Is Primary cited an earlier release while its reader serves version 0.2. Recommended aligning the evidence, not changing the work.",
+        "Librarian: Updated that one catalog record to exact version 0.2 passages and clarified its version. All 32 records remain, with search terms unchanged.",
+        "Care: Earlier releases, exact works, audio, graph claims, historical audits, and the three-item selection remain intact. No relational essay was manufactured.",
+        "Checks: 93 tests, four-width browser checks, FN-40 search and exact-download checks, source hashes, links, catalog evidence, all 62 recordings, and the complete multipart mirror passed.",
+        "Outcome: One catalog evidence repair passed publication checks. No new relationship or ratification was made; deployment is verified separately after merge."
+      ],
+      "audits": [
+        "2026-10-16.json"
+      ]
+    },
+    {
       "date": "2026-10-15",
       "outcome": "Reviewed · no change needed",
       "bullets": [
@@ -773,5 +788,5 @@
       ]
     }
   ],
-  "count": 54
+  "count": 55
 }
