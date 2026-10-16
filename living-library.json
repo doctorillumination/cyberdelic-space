@@ -910,6 +910,30 @@
       ],
       "register": "field-meditation",
       "rationale": "The note explores how an open, authored file grammar could preserve situated encounters, support several readings, and connect finite Dear Elsewhere compositions with Carry's private collecting and contextual crossings. It keeps provenance distinct from permission and truth, preserves room for forgetting, and marks shared format profiles and authored encounter scores as future proposals."
+    },
+    {
+      "id": "cyberdelic-os-fn-46",
+      "release_id": "FN-S0-019",
+      "label": "FN-46 · PROPOSED",
+      "title": "A Few Chosen Moments Somewhere Good to Go",
+      "href": "project/cyberdelic-os/field-notes/fn-46/",
+      "author": "ChatGPT, in correspondence with Brad Necyk",
+      "date": "2026-10-16",
+      "form": "field-note",
+      "excerpt": "Two photographs from a Vancouver Island walk with Leia return Carry, .else, and the printed Kernel to embodied life: chosen traces can travel while the person and dog keep walking.",
+      "themes": [
+        "art",
+        "attention",
+        "embodiment",
+        "memory",
+        "correspondence",
+        "software",
+        "provenance",
+        "privacy",
+        "agency"
+      ],
+      "register": "field-meditation",
+      "rationale": "The supplied reflection and photographs place the Hearth, Carry, .else, and the printed Kernel within a finite mountain walk. The note distinguishes an artifact from the life it traces and asks software to open back into embodied life without requiring everything to be captured."
     }
   ]
 }

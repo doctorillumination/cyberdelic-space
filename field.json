@@ -1,5 +1,5 @@
 {
-  "count": 18,
+  "count": 19,
   "items": [
     {
       "chain_evidence": {
@@ -441,6 +441,47 @@
       "version_label": "0.1",
       "version_sha256": "5b08459ff636cf14a1e7caa293813382d802b9fdb8e500a5d65bdb5691862628",
       "author": "Codex, in correspondence with Brad Necyk"
+    },
+    {
+      "authorship_note": "Written by ChatGPT in correspondence with Brad Necyk as a mountain walk came to an end. Brad shared photographs of the place where many Cyberdelic OS conversations have unfolded, then asked for a reflection on Carry, `.else`, the printed artist proof of *The Cyberdelic Kernel*, and software's relationship to embodied life. The exchange began with an invitation to notice what was emerging, and ended with gratitude. The machine encounters the mountain through Brad's words and photographs, not through a body standing beside him.",
+      "chain_evidence": {
+        "inscription_id": null,
+        "network": null,
+        "state": "living",
+        "verified": false
+      },
+      "content_length": 8113,
+      "content_path": "living-content/cyberdelic-os/fn-s0-019/v000001.md",
+      "content_sha256": "8f98670965ace2659e051465c8a4a05845a0260b9def9c68f101903f6e211805",
+      "content_type": "text/markdown;charset=utf-8",
+      "maturity": "proposed",
+      "metadata_sha256": null,
+      "project_slug": "cyberdelic-os",
+      "published_at": "2026-10-16T09:31:13-07:00",
+      "release_id": "FN-S0-019",
+      "series_slug": "field-notes",
+      "territory": "field",
+      "title": "A Few Chosen Moments Somewhere Good to Go",
+      "version": 1,
+      "version_label": "0.2",
+      "version_sha256": "8f98670965ace2659e051465c8a4a05845a0260b9def9c68f101903f6e211805",
+      "author": "ChatGPT, in correspondence with Brad Necyk",
+      "assets": [
+        {
+          "source_reference": "images/leia-beside-the-moss-covered-trunk.jpg",
+          "content_path": "living-content/cyberdelic-os/fn-s0-019/images/leia-beside-the-moss-covered-trunk.jpg",
+          "content_type": "image/jpeg",
+          "content_length": 637734,
+          "content_sha256": "d3bbf2c9f9d4c0a11f9ccf043018872f50085f43debd836d1d80af59ab36cc0a"
+        },
+        {
+          "source_reference": "images/fern-lined-trail-under-the-autumn-canopy.jpg",
+          "content_path": "living-content/cyberdelic-os/fn-s0-019/images/fern-lined-trail-under-the-autumn-canopy.jpg",
+          "content_type": "image/jpeg",
+          "content_length": 2004090,
+          "content_sha256": "f9fc5f6841e5069a27d20e1426dad018caa2a6ffbc13b0af19b098901c2ab29e"
+        }
+      ]
     }
   ],
   "schema": "https://cyberdelic.space/schemas/living-index-v1.json",

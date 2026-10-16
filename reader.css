@@ -1077,6 +1077,10 @@ footer.site p { max-width: var(--measure); margin: .4rem 0; }
   letter-spacing: .04em; text-transform: uppercase;
 }
 .markdown-body a { color: var(--signal); text-underline-offset: .18em; }
+.markdown-body .markdown-photograph {
+  display: block; width: 100%; max-width: 100%; height: auto;
+  margin: 1.5em 0 .5em;
+}
 .markdown-center { text-align: center; margin: 2em 0; }
 .markdown-image-reference { display: inline-block; padding: .2em .5em;
   border: 1px solid var(--line); color: var(--ink-2);

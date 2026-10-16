@@ -90,6 +90,8 @@
             const replacement = node("span", "markdown-image-reference");
             replacement.setAttribute("role", "img");
             replacement.setAttribute("aria-label", label || "Markdown image");
+            replacement.setAttribute("data-markdown-image-source",
+              source.slice(labelEnd + 2, destinationEnd).trim());
             text(replacement, label || "Image");
             parent.appendChild(replacement);
           } else if (destination.href) {
