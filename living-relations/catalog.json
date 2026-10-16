@@ -1,7 +1,7 @@
 {
   "schema": "https://cyberdelic.space/schemas/living-catalog-v1.json",
-  "version": "0.12",
-  "updated_at": "2026-10-14T15:57:43Z",
+  "version": "0.13",
+  "updated_at": "2026-10-16T13:58:56Z",
   "count": 32,
   "curation": {
     "office": "OFFICE-LIBRARIAN",
@@ -570,12 +570,12 @@
       "search_terms": ["else format", "work survives the app", "save correspondence as a file", "artifact and renderer", "tombstones for missing links", "saving versus inscription"],
       "questions": ["Can correspondence survive the application that first made it readable?", "What can an artifact retain when an external source disappears?"],
       "related": [],
-      "evidence": [{"source": "living-content/cyberdelic-os/fn-s0-013/v000001.md", "locator": "The artifact must be capable of surviving the company that first made it legible.; The distinction also separates the artifact from its renderer.; If the original disappears, the correspondence can retain a tombstone.; When those bytes are embedded, the Elsewhere itself carries them.; Inscription should not be confused with saving."}],
+      "evidence": [{"source": "living-content/cyberdelic-os/fn-s0-013/v000002.md", "locator": "**Version:** 0.2; The artifact must be capable of surviving the company that first made it legible.; The distinction also separates the artifact from its renderer.; If the original disappears, the correspondence can retain a tombstone; When those bytes are embedded, the Elsewhere itself carries them.; Inscription should not be confused with saving."}],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
-      "last_tended_at": "2026-10-14T15:57:43Z",
-      "uncertainty": "Describes an October 4 proposal, not a current format specification or tested implementation. Its imagined cryptographic history and optional Ethereum witness do not establish existing signing, encryption, identity, consent, or preservation of linked media."
+      "last_tended_at": "2026-10-16T13:58:56Z",
+      "uncertainty": "Describes the published proposal in version 0.2 of the October 4 note, not a current format specification or tested implementation. The earlier 0.1 release remains in the archive. Imagined cryptographic history and an optional Ethereum witness do not establish existing signing, encryption, identity, consent, or preservation of linked media."
     },
     {
       "id": "catalog:cyberdelic-os:fn-42",

@@ -1,0 +1,110 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-10-16",
+  "run_type": "scheduled-tending",
+  "started_at": "2026-10-16T13:57:44Z",
+  "completed_at": "2026-10-16T14:01:13Z",
+  "timezone": "America/Vancouver",
+  "office_versions": {"cartographer": "0.1", "gardener": "0.1", "librarian": "0.1"},
+  "authority": "OFFICE-PUBLICATION-AUTHORITY version 1.1; publication is distinct from ratification.",
+  "repository": {
+    "branch": "codex/tending-2026-10-16",
+    "starting_commit": "0e4aabd4958d3ead23d6df81578307d21f096b18",
+    "preflight": "Clean website checkout matched fetched origin/main. Sibling reader source was read only; unrelated untracked FN-45 metadata was left untouched.",
+    "publication_action": "Validated for pull-request publication. Production verification follows merge and is reported separately; this immutable audit does not claim a future deployment."
+  },
+  "cartographer": {
+    "state": "retained-existing-proposals",
+    "inbox_items": 0,
+    "outward_search_performed": true,
+    "declared_question": "Must every referenced dependency travel with a plate, or can a verifiable reference remain sufficient?",
+    "inquiry_basis": "Existing OCI proposals REL-P-000008 and REL-P-000009 and exact FN-33's independent-reconstruction question.",
+    "sources_checked": [
+      {
+        "url": "https://raw.githubusercontent.com/opencontainers/image-spec/v1.1.1/descriptor.md",
+        "attribution": "Open Container Initiative Image Specification 1.1.1, Content Descriptors",
+        "checked_at": "2026-10-16",
+        "source_facts": ["Descriptors identify referenced content by media type, digest, and raw byte size.", "Consumers are directed to check retrieved content against its stated size and digest."],
+        "inference": "A verifiable content reference can support integrity checking, but does not itself carry the referenced bytes or preserve an artistic encounter.",
+        "uncertainty": "Document comparison only, not a fresh interoperability test or claim about later OCI versions."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/opencontainers/image-spec/v1.1.1/image-layout.md",
+        "attribution": "Open Container Initiative Image Specification 1.1.1, Image Layout",
+        "checked_at": "2026-10-16",
+        "source_facts": ["A layout can omit referenced blobs and obtain them from an external blob store."],
+        "inference": "A content-addressed package is not necessarily a self-contained preservation copy. This limit remains relevant to FN-33 and FN-40's distinction between carrying bytes and carrying an address.",
+        "uncertainty": "Technical adjacency does not establish architectural equivalence, endorsement, affiliation, or authorized edition lineage."
+      }
+    ],
+    "candidates_created": [],
+    "no_proposal_reason": "The existing OCI node and proposed edge already record the dependency and external-storage distinction. Another proposal would duplicate that evidence. No graph claim or ratification was changed.",
+    "handoff": "Existing proposal queue retained unchanged for the Gardener."
+  },
+  "gardener": {
+    "state": "recommended-one-evidence-alignment",
+    "reviewed": ["Current relational manifest and OCI proposal pair", "Exact FN-33, both FN-40 releases, BN-006, I-005, A-001, and the Kernel's thirteen-verb section", "Catalog evidence and canonical reader for FN-40; related portability records across publication kinds"],
+    "changes": [{
+      "target": "catalog:cyberdelic-os:fn-40",
+      "path": "living-relations/catalog.json",
+      "decision": "Align evidence with the version 0.2 exact source served by the canonical reader, while retaining the earlier version and unchanged interpretation.",
+      "evidence": ["field.json selects living-content/cyberdelic-os/fn-s0-013/v000002.md", "The FN-40 reader identifies version 0.2 and downloads v000002.md", "Comparison with v000001.md shows the same portability proposal expressed in revised prose, not a contradictory implementation claim"],
+      "confidence": "strong",
+      "rationale": "The index should point to exact evidence in the edition its visitor encounters. This is an evidence-version repair, not a rewrite, new relation, or ratification."
+    }],
+    "retained_decisions": ["Keep a content digest distinct from availability, identity, consent, and authorized edition origin.", "Keep the graph, lifecycle states, and three-item selection unchanged."],
+    "decision_reason": "One current-evidence alignment is warranted. No other change was needed in the focused portability comparison; mechanical checks supplement, rather than replace, semantic reading."
+  },
+  "librarian": {
+    "state": "revised-one-catalog-record",
+    "records_created": [],
+    "records_revised": ["catalog:cyberdelic-os:fn-40"],
+    "records_removed": [],
+    "catalog_count_before": 32,
+    "catalog_count_after": 32,
+    "decision_reason": "Applied the Gardener's same-run evidence alignment to FN-40, using exact version 0.2 locators and an explicit version caveat. Existing title, summary, subjects, ordinary-language search terms, questions, review state, and related paths remain unchanged. All 31 other records are retained. No external search or new relation was made by the Librarian."
+  },
+  "public_summary": [
+    "Cartographer: Rechecked OCI's content descriptors and archive layout. Existing proposals already cover their relevance; no new neighbour or edge was needed.",
+    "Gardener: Found that The Artifact Is Primary cited an earlier release while its reader serves version 0.2. Recommended aligning the evidence, not changing the work.",
+    "Librarian: Updated that one catalog record to exact version 0.2 passages and clarified its version. All 32 records remain, with search terms unchanged.",
+    "Care: Earlier releases, exact works, audio, graph claims, historical audits, and the three-item selection remain intact. No relational essay was manufactured.",
+    "Checks: 93 tests, four-width browser checks, FN-40 search and exact-download checks, source hashes, links, catalog evidence, all 62 recordings, and the complete multipart mirror passed.",
+    "Outcome: One catalog evidence repair passed publication checks. No new relationship or ratification was made; deployment is verified separately after merge."
+  ],
+  "validation": {
+    "state": "passed",
+    "checks": [
+      "82 reader/server/mirror/journal tests and 11 playback tests passed",
+      "Browser regression passed at 320, 390, 768, and 1280 pixels, three themes, keyboard discovery, proposed labels, three-work results, six-result search, no-JavaScript archive, future-catalog fixture, and missing-catalog fallback",
+      "FN-40 remains findable through tombstones, its canonical exact download is version 0.2, its reader fits at 320 pixels, and the journal shows October 16 with six short bullets",
+      "JSON/XML, 44 indexed source SHA-256 values and lengths, 4602 internal references, JavaScript syntax, and all catalog evidence locators passed",
+      "Narration and complete multipart mirror validation preserve 62 recordings, 456.9 minutes, 313.8 MiB, and all offline audio parts",
+      "All 11 changed paths match active governance; all 320 protected files and 31 other catalog records remain unchanged; the revised record retains its title, summary, terms, questions, related paths, and model-proposed state",
+      "Public indexes, graph, proposals, governance, historical audits, and Attending selection outside its operational journal are unchanged; sibling source and unrelated FN-45 metadata retain their earlier state"
+    ],
+    "preview_note": "Initial browser attempts found no listener at the old preview port. The header-faithful server was started with the absolute website path, served root bytes were confirmed against the checkout, and all browser checks then passed without site-code changes.",
+    "preview_url": "http://127.0.0.1:8787/",
+    "production_verification": "Not claimed by this pre-merge audit. Changed public files, exact-source digests, and production browser behavior must be verified after deployment."
+  },
+  "files_changed": [
+    "living-relations/catalog.json",
+    "living-relations/audits/2026-10-16.json",
+    "project/cyberdelic-os/attending/index.html",
+    "project/cyberdelic-os/attending/journal/index.json",
+    "project/cyberdelic-os/attending/journal/index.html",
+    "project/cyberdelic-os/attending/journal/page-2.html",
+    "project/cyberdelic-os/attending/journal/page-3.html",
+    "project/cyberdelic-os/attending/journal/page-4.html",
+    "project/cyberdelic-os/attending/journal/page-5.html",
+    "project/cyberdelic-os/attending/journal/page-6.html",
+    "cyberdelic-space.zip"
+  ],
+  "public_change": true,
+  "relational_field_changed": false,
+  "relational_essay_created": false,
+  "valid_no_op": false,
+  "run_state": "validated-for-publication",
+  "historical_runs_rewritten": false,
+  "scheduled_configuration_changed": false
+}
