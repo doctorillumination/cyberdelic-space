@@ -2,6 +2,28 @@
 (function () {
   "use strict";
 
+  function showPublishedImages(container) {
+    var attribute = container.getAttribute("data-markdown-images");
+    if (!attribute) return;
+    var images;
+    try { images = JSON.parse(attribute); } catch (error) { return; }
+    if (!images || typeof images !== "object" || Array.isArray(images)) return;
+    container.querySelectorAll("[data-markdown-image-source]").forEach(function (reference) {
+      var source = reference.getAttribute("data-markdown-image-source");
+      if (!Object.prototype.hasOwnProperty.call(images, source)) return;
+      var path = images[source];
+      if (typeof path !== "string" ||
+          !/^\/living-content\/cyberdelic-os\/fn-s0-\d{3}\/images\/[a-z0-9][a-z0-9.-]*\.(?:jpg|jpeg)$/.test(path)) return;
+      var image = document.createElement("img");
+      image.className = "markdown-photograph";
+      image.alt = reference.getAttribute("aria-label") || "";
+      image.loading = "lazy";
+      image.decoding = "async";
+      image.src = path;
+      reference.replaceWith(image);
+    });
+  }
+
   function fieldNoteRecords(container) {
     return Array.prototype.slice.call(container.querySelectorAll("h1"))
       .map(function (heading) {
@@ -106,6 +128,7 @@
       var source = container.querySelector(".markdown-source");
       if (!source || !window.DEWMarkdown) return;
       container.replaceChildren(window.DEWMarkdown.render(source.textContent || ""));
+      showPublishedImages(container);
     });
     var reading = document.querySelector(".living-reading .markdown-body, " +
       ".markdown-reading .markdown-body");
