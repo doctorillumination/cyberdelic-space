@@ -1,6 +1,21 @@
 {
   "days": [
     {
+      "date": "2026-10-17",
+      "outcome": "Changes recorded",
+      "bullets": [
+        "Cartographer: Rechecked Community Notes' documented perspective method. Existing proposals suffice; no new neighbour or edge was needed.",
+        "Gardener: Compared source context across notes, Carry records, the press artifact, and Kernel. Kept proposals, implementation evidence, and ratification distinct; no graph repair was warranted.",
+        "Librarian: Added The Embassy and A Few Chosen Moments Somewhere Good to Go for searches about careful disclosure and life beyond the screen. The catalog grows from 32 to 34 records.",
+        "Care: Existing works, photographs, audio, earlier catalog entries, historical audits, and the three-item selection remain intact. No relational essay was manufactured.",
+        "Checks: 93 tests, four-width browser checks, both new search and constellation paths, source hashes, links, 63 recordings, and the complete multipart mirror passed.",
+        "Outcome: Two model-proposed catalog additions passed publication checks. No new relationship or ratification was made; deployment is verified separately after merge."
+      ],
+      "audits": [
+        "2026-10-17.json"
+      ]
+    },
+    {
       "date": "2026-10-16",
       "outcome": "Changes recorded",
       "bullets": [
@@ -788,5 +803,5 @@
       ]
     }
   ],
-  "count": 55
+  "count": 56
 }

@@ -1,8 +1,8 @@
 {
   "schema": "https://cyberdelic.space/schemas/living-catalog-v1.json",
-  "version": "0.13",
-  "updated_at": "2026-10-16T13:58:56Z",
-  "count": 32,
+  "version": "0.14",
+  "updated_at": "2026-10-17T14:59:00Z",
+  "count": 34,
   "curation": {
     "office": "OFFICE-LIBRARIAN",
     "office_version": "0.1",
@@ -610,6 +610,40 @@
       "introduced_by": "OFFICE-LIBRARIAN",
       "last_tended_at": "2026-10-14T15:57:43Z",
       "uncertainty": "Nocturnes, Rehang, and Night Workshop are implementation proposals, not a deployed dreaming system or evidence of subjective machine dreams. The note's cited repository observations were not repeated today. No private material or experimental code was opened or executed."
+    },
+    {
+      "id": "catalog:cyberdelic-os:fn-37",
+      "record_kind": "field-note",
+      "title": "The Embassy: Connection Without Extraction",
+      "href": "project/cyberdelic-os/field-notes/fn-37/",
+      "summary": "A proposed Embassy at the boundary of a private Hearth would negotiate what may cross. Two people could choose to reveal a shared question gradually before allowing particular sources or memories to travel. Refusal remains part of the architecture, and connection need not begin by exposing an entire archive.",
+      "subjects": ["graduated disclosure", "private archives", "consensual connection", "shared questions", "right to refuse"],
+      "search_terms": ["connect without sharing my archive", "reveal a little at a time", "refuse a connection", "connection without extraction", "Embassy", "trust changes bandwidth"],
+      "questions": ["Could two people discover a shared question without exposing their private archives?", "What may cross a boundary when both people choose to reveal more?"],
+      "related": [],
+      "evidence": [{"source": "living-content/cyberdelic-os/fn-s0-010/v000002.md", "locator": "The Embassy sits at the boundary of the Hearth. Its purpose is not to expose the interior, but to negotiate what may cross.; If both people agree, another layer can be revealed.; Only later, if both people choose, do particular notes, works, memories, or sources cross the boundary.; That refusal is part of the architecture.; The long-term promise is strange and simple:"}],
+      "epistemic_status": "strong",
+      "review_state": "model-proposed",
+      "introduced_by": "OFFICE-LIBRARIAN",
+      "last_tended_at": "2026-10-17T14:59:00Z",
+      "uncertainty": "Describes the published version 0.2 proposal, not deployed private discovery or a demonstrated cryptographic overlap protocol. The note preserves ChatGPT's proposal provenance and Brad's invitation to publish it. No private archive or correspondence was opened, and no graph edge or ratification is added."
+    },
+    {
+      "id": "catalog:cyberdelic-os:fn-46",
+      "record_kind": "field-note",
+      "title": "A Few Chosen Moments Somewhere Good to Go",
+      "href": "project/cyberdelic-os/field-notes/fn-46/",
+      "summary": "A forest walk with Leia and two photographs become a reflection on software that opens back into embodied life. Carry, the .else experiment, and a printed Kernel offer different ways for chosen traces to travel without claiming to contain the afternoon. A moment can matter without being saved, and an ending need not become another task.",
+      "subjects": ["embodied life", "selective memory", "finite attention", "portable interpretation", "life beyond the screen"],
+      "search_terms": ["software that lets me leave", "not every moment needs saving", "forest walk and software", "memory is not the life", "Carry and the printed Kernel", "Leia", "a photograph is not the afternoon"],
+      "questions": ["Does software open back into life, or require life to take place inside it?", "What can a chosen trace carry without claiming to preserve the whole encounter?"],
+      "related": [],
+      "evidence": [{"source": "living-content/cyberdelic-os/fn-s0-019/v000001.md", "locator": "A moment can matter without being saved.; The question is whether these possibilities open back into life, or gradually require life to take place inside them.; A source can remain distinct from a reading of it.; A hash can help us recognize particular bytes.; A photograph carried with its context is still not the afternoon.; The artist proof of *The Cyberdelic Kernel* has reached Brad's hands.; Give memory a form without mistaking it for the life.; There is no need to turn the ending into another beginning immediately."}],
+      "epistemic_status": "strong",
+      "review_state": "model-proposed",
+      "introduced_by": "OFFICE-LIBRARIAN",
+      "last_tended_at": "2026-10-17T14:59:00Z",
+      "uncertainty": "A situated public reflection, not a usability study, product-feature verification, or evidence of machine embodiment. The exact source is labelled version 0.2 within v000001.md. Its authored text, Brad Necyk's photographs, source-bound reading, and publication metadata are retained unchanged. No private correspondence was ingested."
     }
   ]
 }
