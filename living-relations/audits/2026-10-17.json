@@ -1,0 +1,82 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-10-17",
+  "run_type": "scheduled-tending",
+  "started_at": "2026-10-17T14:12:34Z",
+  "completed_at": "2026-10-17T15:01:47Z",
+  "timezone": "America/Vancouver",
+  "office_versions": {"cartographer": "0.1", "gardener": "0.1", "librarian": "0.1"},
+  "authority": "OFFICE-PUBLICATION-AUTHORITY version 1.1; publication is distinct from ratification.",
+  "repository": {
+    "branch": "codex/tending-2026-10-17",
+    "starting_commit": "235c0fb6ab65e4e1ecebf0059881aded1b4681d5",
+    "preflight": "Clean website checkout fast-forwarded to fetched origin/main, including the already-published FN-46 text, photographs, narration, and audio parts. These are preserved as the baseline. Sibling reader source and unrelated local work were not modified.",
+    "publication_action": "Validated for pull-request publication. Production verification follows merge and is reported separately; this audit does not claim a future deployment."
+  },
+  "cartographer": {
+    "state": "retained-existing-proposals",
+    "inbox_items": 0,
+    "outward_search_performed": true,
+    "declared_question": "How can a system make cross-perspective usefulness visible without treating agreement as truth or majority rule?",
+    "inquiry_basis": "Existing Community Notes proposals REL-P-000012 through REL-P-000014, FN-14, and FN-25.",
+    "sources_checked": [{
+      "url": "https://github.com/twitter/communitynotes/blob/93647eb9ad57642c05a9dc79fba9d6df42c5ae06/documentation/contributing/diversity-of-perspectives.md",
+      "attribution": "Community Notes maintainers, Diversity of perspectives; official public documentation repository at commit 93647eb9ad57642c05a9dc79fba9d6df42c5ae06.",
+      "checked_at": "2026-10-17",
+      "source_facts": ["The helpfulness method considers differing prior rating patterns as well as the number of ratings.", "Perspective inference uses past note ratings, not demographics or X follows or posts.", "The documentation separately describes analyses of follow, like, and repost graphs as quality measures that do not directly affect specific note ratings."],
+      "inference": "This remains a bounded technical reference for usefulness across disagreement, not proof of truth, complete representation, or Cyberdelic architectural equivalence. Quality analysis and the perspective-inference inputs are distinct.",
+      "uncertainty": "Documentation review only. No algorithm was executed, no survey result independently reproduced, and no affiliation or endorsement is implied."
+    }],
+    "access_note": "Official guide pages returned no readable article body. The repository README identifies its Markdown as the guide's source of truth, so the named document was read through the public GitHub API at a pinned commit. Empty guide responses were not treated as verified source facts.",
+    "candidates_created": [],
+    "no_proposal_reason": "The existing node and two proposed edges already express this inquiry and its limits. Another proposal would duplicate them. No graph claims, lifecycle states, or ratifications changed.",
+    "handoff": "Existing Community Notes proposals retained for same-run Gardener comparison."
+  },
+  "gardener": {
+    "state": "reviewed-no-relational-change",
+    "reviewed": ["Current 12-node, 7-edge manifest and Community Notes proposal group", "Exact FN-14 and FN-25, FN-37 version 0.2, FN-46, I-006, BN-007, A-001, and the Kernel's verbs and laws", "Cumulative catalog, evidence versions, publication-versus-ratification boundaries, and inscription-versus-living status"],
+    "changes": [],
+    "retained_decisions": ["Keep cross-perspective helpfulness distinct from truth, and rating-based perspective inference distinct from separate quality analyses.", "Read the Embassy as proposed graduated disclosure, not a deployed private discovery or proof protocol.", "Read FN-46 as a situated reflection, not a new implementation claim or evidence of machine embodiment. Preserve its photographs, reading, and exact source.", "Keep Carry's public prototype and proposed lived test distinct from connected delivery or completed interpersonal evidence.", "Keep source integrity distinct from the life, meaning, consent, or authorship a digest cannot establish."],
+    "decision_reason": "Focused source comparison found continuity without a warranted graph repair or new relational claim. Existing caveats remain adequate. Handed two previously unindexed public works to the Librarian for findability, not new relations. Mechanical evidence checks supplement, rather than replace, this bounded semantic review."
+  },
+  "librarian": {
+    "state": "created-two-catalog-records",
+    "records_created": ["catalog:cyberdelic-os:fn-37", "catalog:cyberdelic-os:fn-46"],
+    "records_revised": [],
+    "records_removed": [],
+    "catalog_count_before": 32,
+    "catalog_count_after": 34,
+    "decision_reason": "Read the full cumulative catalog and same-run office outputs, then added concise source-grounded summaries, subjects, ordinary-language terms, questions, exact evidence, uncertainty, and tending dates for two existing public works. All 32 previous records remain unchanged. No outward search was performed by the Librarian and no related-path or graph claim was invented."
+  },
+  "public_summary": [
+    "Cartographer: Rechecked Community Notes' documented perspective method. Existing proposals suffice; no new neighbour or edge was needed.",
+    "Gardener: Compared source context across notes, Carry records, the press artifact, and Kernel. Kept proposals, implementation evidence, and ratification distinct; no graph repair was warranted.",
+    "Librarian: Added The Embassy and A Few Chosen Moments Somewhere Good to Go for searches about careful disclosure and life beyond the screen. The catalog grows from 32 to 34 records.",
+    "Care: Existing works, photographs, audio, earlier catalog entries, historical audits, and the three-item selection remain intact. No relational essay was manufactured.",
+    "Checks: 93 tests, four-width browser checks, both new search and constellation paths, source hashes, links, 63 recordings, and the complete multipart mirror passed.",
+    "Outcome: Two model-proposed catalog additions passed publication checks. No new relationship or ratification was made; deployment is verified separately after merge."
+  ],
+  "validation": {
+    "state": "passed",
+    "checks": [
+      "82 reader/server/mirror/journal tests and 11 playback tests passed",
+      "Browser regression passed at 320, 390, 768, and 1280 pixels, three themes, keyboard discovery, proposed labels, three-work results, six-result search, no-JavaScript archive, future-catalog fixture, and missing-catalog fallback",
+      "Both new ordinary-language queries and catalog-derived constellation paths return their works; readers fit at 320 pixels; both FN-46 photographs decode after scrolling; latest journal has six bullets and the selection still has three items",
+      "JSON/XML, 47 indexed source and image SHA-256 values and lengths, 4660 internal references, JavaScript syntax, and every catalog evidence locator passed",
+      "Narration and complete multipart mirror validation preserve 63 recordings, 465.0 minutes, 319.4 MiB, and all 18 offline audio parts",
+      "All 11 changed paths match active governance; all 328 protected files and all 32 earlier catalog records are unchanged",
+      "Public indexes, graph, proposals, governance, historical audits, sitemap, exact publications, photographs, audio, and Attending selection outside its operational journal remain unchanged; sibling source and unrelated FN-45 metadata retain their earlier state"
+    ],
+    "preview_note": "An initial focused photograph check ran before lazy images entered the viewport. Scrolling and decoding confirmed both images are intact; the complete focused check then passed. One temporary test invocation selected Node 18 outside the website directory; rerunning with the website's Node 25 runtime passed without changing site or source code.",
+    "preview_url": "http://127.0.0.1:8787/",
+    "production_verification": "Not claimed by this pre-merge audit. Verify changed public files, exact-source digests, and production behavior after deployment."
+  },
+  "files_changed": ["living-relations/catalog.json", "living-relations/audits/2026-10-17.json", "project/cyberdelic-os/attending/index.html", "project/cyberdelic-os/attending/journal/index.json", "project/cyberdelic-os/attending/journal/index.html", "project/cyberdelic-os/attending/journal/page-2.html", "project/cyberdelic-os/attending/journal/page-3.html", "project/cyberdelic-os/attending/journal/page-4.html", "project/cyberdelic-os/attending/journal/page-5.html", "project/cyberdelic-os/attending/journal/page-6.html", "cyberdelic-space.zip"],
+  "public_change": true,
+  "relational_field_changed": false,
+  "relational_essay_created": false,
+  "valid_no_op": false,
+  "run_state": "validated-for-publication",
+  "historical_runs_rewritten": false,
+  "scheduled_configuration_changed": false
+}
