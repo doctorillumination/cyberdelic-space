@@ -1,7 +1,7 @@
 {
   "schema": "https://cyberdelic.space/schemas/living-catalog-v1.json",
-  "version": "0.14",
-  "updated_at": "2026-10-17T14:59:00Z",
+  "version": "0.15",
+  "updated_at": "2026-10-19T15:29:06Z",
   "count": 34,
   "curation": {
     "office": "OFFICE-LIBRARIAN",
@@ -370,14 +370,15 @@
       "href": "project/cyberdelic-os/a-005/",
       "summary": "The working browser and Mac prototype of Dear Elsewhere, with named contributors, addressed turns, media placement, preserved arrangements, and portable interactive export.",
       "subjects": ["working prototype", "interactive collage", "portable archive", "media correspondence", "browser software"],
-      "search_terms": ["Dear Elsewhere app", "Counterform", "collage prototype", "browser collage", "Mac collage app", "portable interactive HTML", "addressed turns", "media and document import"],
+      "search_terms": ["Dear Elsewhere app", "Counterform", "collage prototype", "browser collage", "Mac collage app", "portable interactive HTML", "addressed turns", "media and document import", "compatible browser", "external links may disappear"],
       "questions": ["What does the prototype establish before a lived interpersonal trial?", "How can a finished creative exchange remain interactive without becoming automatically public?"],
       "related": [{"id": "cyberdelic-os:i-005", "title": "Dear Elsewhere", "relation_type": "implementation", "review_state": "proposed"}],
-      "evidence": [{"source": "living-content/cyberdelic-os/a-005/v000001.md", "locator": "The object that exists; What this record establishes; Keeping the work"}],
+      "evidence": [{"source": "living-content/cyberdelic-os/a-005/v000001.md", "locator": "The object that exists; What this record establishes; Keeping the work; A compatible browser is still needed to perform the viewer, and external links may stop resolving.; This is evidence of a functioning prototype.; It is not yet evidence of durable shared hosting, verified participant identity, an independent security review, or a completed interpersonal study.; They do not establish identity, rights, consent, or unbroken availability."}],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
-      "last_tended_at": "2026-09-07T08:10:43-07:00"
+      "last_tended_at": "2026-10-19T15:29:06Z",
+      "uncertainty": "Describes the recorded September 6 prototype, not a fresh runtime or security audit. Its portable viewer still requires a compatible browser, and external links may stop resolving. The record does not establish shared hosting, verified participant identity, or a completed interpersonal study. History hashes do not establish rights, consent, or unbroken availability. No private repository or correspondence was opened."
     },
     {
       "id": "catalog:cyberdelic-os:bn-006",
