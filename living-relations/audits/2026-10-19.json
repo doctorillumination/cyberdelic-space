@@ -1,0 +1,89 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-10-19",
+  "run_type": "scheduled-tending",
+  "started_at": "2026-10-19T14:14:59Z",
+  "completed_at": "2026-10-19T15:31:03Z",
+  "timezone": "America/Vancouver",
+  "office_versions": {"cartographer": "0.1", "gardener": "0.1", "librarian": "0.1"},
+  "authority": "OFFICE-PUBLICATION-AUTHORITY version 1.1; publication is distinct from ratification.",
+  "repository": {
+    "branch": "codex/tending-2026-10-19",
+    "starting_commit": "895db089a1866524a57b24e7a6f8cc2f33307660",
+    "preflight": "Clean website checkout matched fetched origin/main. Reader source and unrelated untracked FN-45 metadata were left untouched. Private correspondence and Agent Comms were excluded.",
+    "publication_action": "Validated for pull-request publication. Production verification follows merge and is reported separately; this audit does not claim a future deployment."
+  },
+  "cartographer": {
+    "state": "retained-existing-proposals",
+    "inbox_items": 0,
+    "outward_search_performed": true,
+    "declared_question": "Which execution assumptions belong inside a generative plate, and which should remain replaceable properties of a reader?",
+    "inquiry_basis": "Existing WebAssembly proposals REL-P-000010 and REL-P-000011 and exact FN-33.",
+    "sources_checked": [{
+      "url": "https://www.w3.org/TR/wasm-core-2/",
+      "attribution": "W3C WebAssembly Core Specification, sections Scope, Security Considerations, and Embedding.",
+      "checked_at": "2026-10-19",
+      "source_facts": ["The core defines computational semantics but leaves environment-specific invocation and interaction to embedding interfaces.", "Environmental capabilities are supplied through imported functions controlled by the embedder.", "The embedding interface connects the host to the defined semantics."],
+      "inference": "The portable-module precedent remains relevant to FN-33, but executing instructions is not the same as preserving an artwork's full encounter, assets, or authorized edition lineage.",
+      "uncertainty": "Focused primary-document review only, not a module execution, browser interoperability test, security assessment, or claim about the entire specification. No endorsement or architectural equivalence is implied."
+    }],
+    "access_note": "A guessed split introduction path returned 404, while the canonical document exceeded the web reader's size limit. A direct read of the canonical W3C document succeeded; relevant scope, security, and embedding passages were extracted. Failed reads were not evidence and no failed candidate was published.",
+    "candidates_created": [],
+    "no_proposal_reason": "The existing proposal pair already states the portable-computation and replaceable-host distinction with explicit artistic and lineage limits. No duplicate node or edge was needed.",
+    "handoff": "Existing WebAssembly queue and focused source comparison handed to the Gardener."
+  },
+  "gardener": {
+    "state": "recommended-one-catalog-clarification",
+    "reviewed": ["Current 12-node, 7-edge manifest and WebAssembly proposal pair", "Exact FN-33, I-005, BN-006, A-005, BN-005, I-003, and the Kernel's verbs and laws", "Catalog descriptions and related paths across portability, execution boundaries, and Dear Elsewhere's public prototype records"],
+    "changes": [{
+      "target": "catalog:cyberdelic-os:a-005",
+      "path": "living-relations/catalog.json",
+      "decision": "Make the public artifact record's browser dependency and external-source limits visible in catalog context.",
+      "evidence": [{"source": "living-content/cyberdelic-os/a-005/v000001.md", "locator": "A compatible browser is still needed to perform the viewer, and external links may stop resolving.; They do not establish identity, rights, consent, or unbroken availability."}],
+      "confidence": "strong",
+      "rationale": "The portable-export description is accurate, but this record lacked an explicit uncertainty field. Its own Keeping the work section gives concrete limits a reader should encounter beside the export promise. This clarifies metadata without changing source, attribution, lifecycle, or relation claims."
+    }],
+    "retained_decisions": ["Keep portable computation distinct from a complete visual or media encounter.", "Keep included file bytes distinct from external references and browser capabilities.", "Keep the dated prototype record distinct from a current runtime audit or completed interpersonal study.", "Keep graph, review states, ratification history, and the finite selection unchanged."],
+    "decision_reason": "One source-grounded context clarification was warranted. No graph repair, lifecycle change, or relational-change essay was needed. The review was bounded and does not claim full semantic inspection of every publication."
+  },
+  "librarian": {
+    "state": "revised-one-catalog-record",
+    "records_created": [],
+    "records_revised": ["catalog:cyberdelic-os:a-005"],
+    "records_removed": [],
+    "catalog_count_before": 34,
+    "catalog_count_after": 34,
+    "decision_reason": "Read all 34 cumulative records and the same-run office outputs. Applied the Gardener's clarification to A-005, adding exact evidence, dated uncertainty, and two ordinary-language terms: compatible browser and external links may disappear. Existing title, summary, subjects, questions, related path, and model-proposed status remain unchanged. All 33 other records are retained. The Librarian performed no outward search."
+  },
+  "public_summary": [
+    "Cartographer: Rechecked WebAssembly's host boundary against the existing question. Existing proposals suffice; no new neighbour or edge was added.",
+    "Gardener: Found a useful catalog clarification: Dear Elsewhere's portable viewer still needs a compatible browser, and external links can disappear.",
+    "Librarian: Added that record's documented limits, exact evidence, and two search phrases. All 34 records remain; none was added or removed.",
+    "Care: Exact works, photographs, audio, earlier audits, graph claims, and the three-item selection remain intact. No relational essay was manufactured.",
+    "Checks: 93 tests, four-width browser checks, both new search phrases, source hashes, links, all 63 recordings, and the complete multipart mirror passed.",
+    "Outcome: One catalog context improvement passed publication checks. No new relationship or ratification was made; deployment is verified separately after merge."
+  ],
+  "validation": {
+    "state": "passed",
+    "checks": [
+      "82 reader/server/mirror/journal tests and 11 playback tests passed",
+      "Browser regression passed at 320, 390, 768, and 1280 pixels, three themes, keyboard discovery, proposed labels, three-work results, six-result search, no-JavaScript archive, future-catalog fixture, and missing-catalog fallback",
+      "Both new search phrases find A-005; its expanded constellation context shows the browser dependency and dated uncertainty; the artifact reader fits at 320 pixels; the latest journal has six bullets and the selection remains three items",
+      "JSON/XML, 47 indexed source and image SHA-256 values and lengths, 4662 internal references, JavaScript syntax, and every catalog evidence locator passed",
+      "Narration and complete multipart mirror validation preserve 63 Lewis recordings, 465.0 minutes, 319.4 MiB, and all 18 offline audio parts",
+      "All 11 changed paths match active governance; all 334 protected source/audio/relation/history files and 33 other catalog records remain unchanged",
+      "A-005's existing title, summary, subjects, questions, related path, confidence, and proposal state are unchanged; public indexes, sitemap, exact publications, photographs, audio, graph, proposals, governance, historical audits, and the Attending selection outside its journal remain unchanged",
+      "The sibling reader source and unrelated FN-45 metadata retain their earlier state"
+    ],
+    "preview_url": "http://127.0.0.1:8787/",
+    "production_verification": "Not claimed by this pre-merge audit. Verify changed public URLs, exact-source digests, and production behavior after deployment."
+  },
+  "files_changed": ["living-relations/catalog.json", "living-relations/audits/2026-10-19.json", "project/cyberdelic-os/attending/index.html", "project/cyberdelic-os/attending/journal/index.json", "project/cyberdelic-os/attending/journal/index.html", "project/cyberdelic-os/attending/journal/page-2.html", "project/cyberdelic-os/attending/journal/page-3.html", "project/cyberdelic-os/attending/journal/page-4.html", "project/cyberdelic-os/attending/journal/page-5.html", "project/cyberdelic-os/attending/journal/page-6.html", "cyberdelic-space.zip"],
+  "public_change": true,
+  "relational_field_changed": false,
+  "relational_essay_created": false,
+  "valid_no_op": false,
+  "run_state": "validated-for-publication",
+  "historical_runs_rewritten": false,
+  "scheduled_configuration_changed": false
+}
