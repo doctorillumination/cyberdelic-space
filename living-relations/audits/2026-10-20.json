@@ -1,0 +1,83 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-10-20",
+  "run_type": "scheduled-tending",
+  "started_at": "2026-10-20T14:10:23Z",
+  "completed_at": "2026-10-20T14:59:15Z",
+  "timezone": "America/Vancouver",
+  "office_versions": {"cartographer": "0.1", "gardener": "0.1", "librarian": "0.1"},
+  "authority": "OFFICE-PUBLICATION-AUTHORITY version 1.1; publication is distinct from ratification.",
+  "repository": {
+    "branch": "codex/tending-2026-10-20",
+    "starting_commit": "5405a694b1216a0e1ea7b93b870ea55fa3840400",
+    "preflight": "Clean website checkout matched fetched origin/main. Reader source and unrelated untracked FN-45 metadata were left untouched. Private correspondence and Agent Comms were excluded.",
+    "publication_action": "Validated for pull-request publication of a semantic no-op. Production verification follows merge and is reported separately; this audit does not claim a future deployment."
+  },
+  "cartographer": {
+    "state": "retained-existing-proposals",
+    "inbox_items": 0,
+    "outward_search_performed": true,
+    "declared_question": "How can shared intelligence make disagreement and common ground legible without manufacturing consensus?",
+    "inquiry_basis": "Existing Polis proposals REL-P-000001 and REL-P-000002 and exact Field Note 25.",
+    "sources_checked": [{
+      "url": "https://compdemocracy.org/polis/",
+      "attribution": "The Computational Democracy Project, official Polis overview.",
+      "checked_at": "2026-10-20",
+      "source_facts": ["The overview describes open-source survey technology using statistics and machine learning.", "Participants submit statements and respond with agree, disagree, or pass.", "Participants shape the inquiry and need not complete every response to contribute."],
+      "inference": "Polis remains a useful neighbouring approach to group sensemaking, not an equivalent of FN-25's broader treatment of evidence, values, dissent, ratification, and unresolved questions.",
+      "uncertainty": "Primary-document comparison only, not a fresh participant trial, facilitation assessment, or evaluation of reported social outcomes. No endorsement, partnership, or settled truth is implied."
+    }],
+    "candidates_created": [],
+    "no_proposal_reason": "The existing proposal pair already records both the shared question and the methodological difference. Another node or edge would duplicate it. Today's checked date is retained in this audit without rewriting historical source facts.",
+    "handoff": "Existing Polis queue and focused primary-source comparison handed to the Gardener."
+  },
+  "gardener": {
+    "state": "reviewed-no-relational-change",
+    "reviewed": ["Current 12-node, 7-edge manifest and Polis proposal pair", "Exact FN-25, FN-29, FN-32, BN-005, I-003, A-001, and the Kernel's verbs and laws", "Catalog summaries, subjects, related paths, public-work status, and source evidence around collective sensemaking and the tending offices"],
+    "changes": [],
+    "retained_decisions": ["Keep a statistical opinion map distinct from proof of truth or the full representation of a person's position.", "Keep consensus-oriented methods distinct from FN-25's permission for unresolved questions and explicit dissent.", "Keep exact works distinct from situated curatorial interpretation and human ratification.", "Keep a growing cumulative directory distinct from finite discovery and the three-item Attending selection.", "Preserve historical office publications as dated sources while applying the active publication authority to this run."],
+    "decision_reason": "The focused cross-form comparison found existing metadata and caveats adequate. No relation, lifecycle, evidence, or placement change was warranted. No relational-change essay or selection rotation was needed. Mechanical checks supplement this bounded semantic reading rather than imply a reading of every exact work."
+  },
+  "librarian": {
+    "state": "reviewed-no-catalog-change",
+    "records_created": [],
+    "records_revised": [],
+    "records_removed": [],
+    "catalog_count_before": 34,
+    "catalog_count_after": 34,
+    "records_examined": ["Read all 34 cumulative catalog records and the same-run office outputs", "Focused exact evidence for FN-25, FN-29, FN-32, BN-005, I-003, A-001, the Kernel, and the existing Polis proposal"],
+    "decision_reason": "Existing ordinary-language terms already support collective sensemaking, group intelligence, opinion mapping, daily tending, and archive search. No material source-grounded improvement was needed in the focused region. Retained every record, uncertainty label, related path, and prior tending date without a date-only refresh. The Librarian performed no outward search."
+  },
+  "public_summary": [
+    "Cartographer: Rechecked Polis against the existing shared-sensemaking question. Its proposed connection remains adequate; no duplicate proposal was added.",
+    "Gardener: Compared exact notes, office records, the press artifact, and Kernel passages. No relational repair or lifecycle change was warranted.",
+    "Librarian: Existing terms and caveats remain useful. All 34 catalog records stay unchanged, including their prior tending dates.",
+    "Care: Exact works, photographs, audio, graph claims, history, and the three-item selection remain intact. No relational essay or novelty was manufactured.",
+    "Checks: 93 tests, four-width browser checks, retained search paths, source hashes, links, all 63 recordings, and the complete multipart mirror passed.",
+    "Outcome: Valid no-change review. Only the audit, daily journal, and mirror are updated; deployment is verified separately after merge."
+  ],
+  "validation": {
+    "state": "passed",
+    "checks": [
+      "82 reader/server/mirror/journal tests and 11 playback tests passed",
+      "Browser regression passed at 320, 390, 768, and 1280 pixels, three themes, keyboard discovery, proposed labels, three-work results, six-result search, no-JavaScript archive, future-catalog fixture, and missing-catalog fallback",
+      "Existing sensemaking, daily-tending, and browser-dependency queries remain useful; Polis stays proposed in constellation results; the latest six-bullet no-change journal, ten-date archive page, and unchanged three-item selection fit at 320 pixels",
+      "JSON/XML, 47 indexed source and image SHA-256 values and lengths, 4663 internal references, JavaScript syntax, and every catalog evidence locator passed",
+      "Narration and complete multipart mirror validation preserve 63 Lewis recordings, 465.0 minutes, 319.4 MiB, and all 18 offline audio parts",
+      "All 10 changed paths match active governance; all 336 protected source/audio/relation/history files remain unchanged, including every one of the 34 catalog records and all prior tending dates",
+      "Exact publications, photographs, audio, graph, proposals, inbox, governance, historical audits, public indexes, sitemap, and Attending selection outside its journal remain unchanged; sibling reader source and unrelated FN-45 metadata retain their earlier state"
+    ],
+    "preview_note": "The first focused Polis assertion also matched another result that mentions Polis in related context. The test was narrowed to the primary title link and passed. No site or generator change was needed.",
+    "preview_url": "http://127.0.0.1:8787/",
+    "production_verification": "Not claimed by this pre-merge audit. Verify changed public URLs, exact-source digests, and production browser behavior after deployment."
+  },
+  "files_changed": ["living-relations/audits/2026-10-20.json", "project/cyberdelic-os/attending/index.html", "project/cyberdelic-os/attending/journal/index.json", "project/cyberdelic-os/attending/journal/index.html", "project/cyberdelic-os/attending/journal/page-2.html", "project/cyberdelic-os/attending/journal/page-3.html", "project/cyberdelic-os/attending/journal/page-4.html", "project/cyberdelic-os/attending/journal/page-5.html", "project/cyberdelic-os/attending/journal/page-6.html", "cyberdelic-space.zip"],
+  "public_change": false,
+  "operational_journal_updated": true,
+  "relational_field_changed": false,
+  "relational_essay_created": false,
+  "valid_no_op": true,
+  "run_state": "validated-for-publication",
+  "historical_runs_rewritten": false,
+  "scheduled_configuration_changed": false
+}
