@@ -1,6 +1,21 @@
 {
   "days": [
     {
+      "date": "2026-10-21",
+      "outcome": "Changes recorded",
+      "bullets": [
+        "Cartographer: Rechecked the existing OCI portability proposals. No duplicate external node or edge was needed.",
+        "Gardener: Compared exact works across the publication forms. Kept byte integrity, consent, and authorized lineage distinct; no relational repair was needed.",
+        "Librarian: Added Cyberdelic Studio to the tended catalog, with routes for local rehearsal and publishing nothing by accident. Its dated software claims remain qualified.",
+        "Care: All prior catalog records, exact works, audio, history, and the three-item Attending selection remain intact. No relational essay was manufactured.",
+        "Checks: 93 tests, four-width browser checks, the new search and constellation routes, source hashes, links, all 63 recordings, and the complete multipart mirror passed.",
+        "Outcome: One catalog addition passed publication checks. No graph relation or ratification changed; deployment is verified separately after merge."
+      ],
+      "audits": [
+        "2026-10-21.json"
+      ]
+    },
+    {
       "date": "2026-10-20",
       "outcome": "Reviewed · no change needed",
       "bullets": [
@@ -848,5 +863,5 @@
       ]
     }
   ],
-  "count": 59
+  "count": 60
 }

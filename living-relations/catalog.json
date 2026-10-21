@@ -1,8 +1,8 @@
 {
   "schema": "https://cyberdelic.space/schemas/living-catalog-v1.json",
-  "version": "0.15",
-  "updated_at": "2026-10-19T15:29:06Z",
-  "count": 34,
+  "version": "0.16",
+  "updated_at": "2026-10-21T16:25:00Z",
+  "count": 35,
   "curation": {
     "office": "OFFICE-LIBRARIAN",
     "office_version": "0.1",
@@ -645,6 +645,23 @@
       "introduced_by": "OFFICE-LIBRARIAN",
       "last_tended_at": "2026-10-17T14:59:00Z",
       "uncertainty": "A situated public reflection, not a usability study, product-feature verification, or evidence of machine embodiment. The exact source is labelled version 0.2 within v000001.md. Its authored text, Brad Necyk's photographs, source-bound reading, and publication metadata are retained unchanged. No private correspondence was ingested."
+    },
+    {
+      "id": "catalog:cyberdelic-os:i-001",
+      "record_kind": "instrument",
+      "title": "Cyberdelic Studio",
+      "href": "project/cyberdelic-os/i-001/",
+      "summary": "A proposed instrument for deliberate public memory separates local rehearsal from irreversible publication. A person reviews the exact work, attribution, network, and cost before authorizing broadcast. A copyable, wallet-free reader carries evidence afterward, while most memory remains private, revisable, or forgettable.",
+      "subjects": ["deliberate publication", "local rehearsal", "exact-byte approval", "selective permanence", "independent verification"],
+      "search_terms": ["publish nothing by accident", "practice without publishing", "review before broadcast", "consent bound to bytes", "wallet-free public reader", "humane publication ceremony"],
+      "questions": ["What would a humane ceremony for irreversible publication require?", "How can someone rehearse publication without spending money or making a work permanent?", "What can a publication record verify without proving consent or truth?"],
+      "related": [],
+      "evidence": [{"source": "living-content/cyberdelic-os/i-001/v000001.md", "locator": "**Status:** Proposed, living, and versioned; What would a humane ceremony for irreversible publication require?; **Rehearsal** simulates the complete circuit locally without spending money or publishing anything.; The final review binds consent to the exact content, metadata, inscription envelope, network, and cost.; Preparation and broadcast are separate actions.; The public reader has no wallet, account, analytics, advertising, or publishing authority.; Most thoughts, drafts, conversations, and unfinished works should remain private, revisable, or forgettable.; Publish nothing by accident.; The ledger can witness a decision. It cannot make the decision for us."}],
+      "epistemic_status": "strong",
+      "review_state": "model-proposed",
+      "introduced_by": "OFFICE-LIBRARIAN",
+      "last_tended_at": "2026-10-21T16:25:00Z",
+      "uncertainty": "Describes Brad Necyk's published August 15 instrument, version 0.1, with machine collaborators, not a fresh test of Studio software or a completed novice study. Its recorded implementation state is dated. Byte evidence does not establish truth, authorship, rights, consent, or wise publication. No private repository or correspondence was opened, and no graph edge or ratification is added."
     }
   ]
 }
