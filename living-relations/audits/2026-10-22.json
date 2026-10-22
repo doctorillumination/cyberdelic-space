@@ -1,0 +1,93 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-10-22",
+  "run_type": "scheduled-tending-with-publication-recovery",
+  "started_at": "2026-10-22T14:14:28Z",
+  "completed_at": "2026-10-22T15:43:03Z",
+  "timezone": "America/Vancouver",
+  "office_versions": {"cartographer": "0.1", "gardener": "0.1", "librarian": "0.1"},
+  "authority": "OFFICE-PUBLICATION-AUTHORITY version 1.1; publication is distinct from ratification.",
+  "repository": {
+    "branch": "codex/tending-2026-10-21",
+    "starting_commit": "abefdf969d9677aa58882b9e3050d26eb532e409",
+    "publication_base": "1d2863bb71445ea3656dc474038033daff62a086",
+    "preflight": "Five uncommitted paths match yesterday's retained blocked audit, journal, and mirror. The branch contains only the pending office patch and remote main remains unchanged. No unrelated website work was found. Sibling source has the same unrelated untracked FN-45 metadata and is not modified. Agent Comms private correspondence is excluded.",
+    "publication_action": "Fresh local validation passed. Update draft pull request 69 with the retained blocked audit and today's no-change review. Require hosting success before merge and production verification afterward. No deployment is claimed by this pre-merge audit."
+  },
+  "recovery": {
+    "prior_audit": "living-relations/audits/2026-10-21.json",
+    "prior_audit_sha256": "73b458bd6966cdb62ebfb303fca79d1fb300c5de9a87a91a5fba3de41229a56f",
+    "prior_run_remains": "blocked",
+    "pending_work": "One model-proposed Cyberdelic Studio catalog record prepared October 21, plus its audit and operational journal.",
+    "incident_source": "https://www.githubstatus.com/incidents/nms1dpzmh9d9",
+    "source_fact": "GitHub marks the incident resolved at 19:22 UTC on October 21. The old branch commit still has no hosting check run at today's preflight.",
+    "decision": "Revalidate the related pending work through the same review branch. Preserve the exact blocked audit rather than relabelling yesterday as successful. Require a fresh hosting result and production verification."
+  },
+  "cartographer": {
+    "state": "retained-existing-proposals",
+    "inbox_items": 0,
+    "outward_search_performed": true,
+    "declared_question": "Which resources, manifests, indexes, and execution assumptions must travel with a generative plate?",
+    "inquiry_basis": "Existing WACZ proposals REL-P-000006 and REL-P-000007, evidence amendment REL-P-000015, and FN-33.",
+    "sources_checked": [{
+      "url": "https://specs.webrecorder.net/wacz/1.2.0/",
+      "attribution": "Webrecorder community, Web Archive Collection Zipped, version 1.2.0.",
+      "checked_at": "2026-10-22",
+      "source_facts": ["The document identifies itself as a draft without standards-organization standing.", "The package carries archived resources, indexes, entry pages, context, and a manifest of paths, sizes, and fixity.", "Browser replay can retrieve selected ranges from statically hosted files.", "Signing is optional and the draft does not require a particular trust model."],
+      "inference": "The packaging convention remains technically adjacent to FN-33's reconstruction question, not equivalent to an executable generative plate or authority for authorized edition lineage.",
+      "uncertainty": "Comparison of the cited version only, not a claim about the latest version, a replay trial, or a guarantee that an arbitrary archive is complete. No endorsement, partnership, or collaboration is implied."
+    }],
+    "candidates_created": [],
+    "no_proposal_reason": "The existing proposal pair and evidence amendment already carry the useful adjacency and its draft-status and trust caveats. Another candidate would duplicate them.",
+    "handoff": "Existing WACZ proposals and today's bounded source comparison handed to the Gardener."
+  },
+  "gardener": {
+    "state": "reviewed-no-relational-change",
+    "reviewed": ["Current 12-node, 7-edge relational manifest and WACZ proposal family", "Complete exact FN-33, I-001, A-001, BN-005, and I-003, plus Kernel verbs and laws", "Focused catalog summaries, themes, related paths, evidence, and the pending I-001 record"],
+    "changes": [],
+    "decision_reason": "No relational drift or lifecycle repair was warranted. Keep file fixity distinct from authenticity, consent, and authorized lineage. Keep dated software observations distinct from fresh runtime evidence. The pending I-001 record is supported by its exact public instrument. No relational essay or selection rotation is needed. This bounded review does not imply a fresh reading of every exact publication."
+  },
+  "librarian": {
+    "state": "reviewed-no-catalog-change",
+    "records_created": [],
+    "records_revised": [],
+    "records_removed": [],
+    "catalog_count_before": 35,
+    "catalog_count_after": 35,
+    "records_examined": ["All 35 cumulative catalog records, including yesterday's pending I-001 entry", "Same-run Cartographer and Gardener outputs and exact public works in their focused review"],
+    "decision_reason": "The existing ordinary-language routes for portable archives, reconstruction, rehearsal, and deliberate publication are supported and useful. Preserve every record and tending date without a date-only refresh. No new catalog change is needed today. Carrying yesterday's record into publication is recovery, not a second new record or a successful October 21 run. The Librarian performed no outward search."
+  },
+  "public_summary": [
+    "Cartographer: Rechecked WACZ's portable-archive proposal. Its existing draft-status and trust caveats remain adequate; no new candidate was needed.",
+    "Gardener: Compared exact works and their metadata. No relational repair, lifecycle change, or selection rotation was warranted.",
+    "Librarian: Retained all 35 records unchanged today, including yesterday's pending Studio entry for rehearsal and deliberate publication.",
+    "History: October 21 remains blocked. Today's recovery carries its work without rewriting that outcome or any exact publication, photograph, or recording.",
+    "Checks: 93 tests, four-width browser checks, retained discovery routes, exact-source hashes, links, all 63 recordings, and the complete multipart mirror passed locally.",
+    "Outcome: Valid no-change review today. PR 69 carries the pending Studio entry and journal recovery; production verification follows deployment, not this audit."
+  ],
+  "validation": {
+    "state": "passed",
+    "checks": [
+      "82 reader/server/mirror/journal tests and 11 playback tests passed",
+      "Browser regression passed at 320, 390, 768, and 1280 pixels, with three themes, keyboard discovery, proposed labels, three-work results, six-result search, no-JavaScript archive, future-catalog fixture, missing-catalog fallback, and no page errors",
+      "Focused checks preserve Studio search routes and its three-work catalog-fed constellation with qualified context; today's six-bullet no-change journal, seven-page archive, and unchanged three-item selection fit at 320 pixels",
+      "JSON/XML, 47 indexed source/image SHA-256 values and lengths, 4687 internal references, JavaScript syntax, and every catalog evidence locator passed",
+      "Narration and complete multipart mirror checks preserve 63 Lewis recordings, 465.0 minutes, 319.4 MiB, and all 18 audio parts",
+      "All 13 transaction paths match governance; 336 retained protected files and all 35 prepared catalog records remain unchanged, including all 34 records preceding October 21",
+      "The final October 21 blocked audit retains SHA-256 73b458bd6966cdb62ebfb303fca79d1fb300c5de9a87a91a5fba3de41229a56f; October 11, 12, and 21 remain blocked in the 61-date journal",
+      "Exact publications, photographs, audio, graph, proposals, inbox, governance, historical audits, global indexes, sitemap, and selection outside its journal remain unchanged; sibling source and unrelated FN-45 metadata preserve their preflight state"
+    ],
+    "preview_url": "http://127.0.0.1:8787/",
+    "production_verification": "Not claimed by this pre-merge audit. Require hosting success, changed public URL and exact-source digest checks, and production browser regression after merge."
+  },
+  "files_changed": ["living-relations/catalog.json", "living-relations/audits/2026-10-21.json", "living-relations/audits/2026-10-22.json", "project/cyberdelic-os/attending/index.html", "project/cyberdelic-os/attending/journal/index.json", "project/cyberdelic-os/attending/journal/index.html", "project/cyberdelic-os/attending/journal/page-2.html", "project/cyberdelic-os/attending/journal/page-3.html", "project/cyberdelic-os/attending/journal/page-4.html", "project/cyberdelic-os/attending/journal/page-5.html", "project/cyberdelic-os/attending/journal/page-6.html", "project/cyberdelic-os/attending/journal/page-7.html", "cyberdelic-space.zip"],
+  "public_change": true,
+  "operational_journal_updated": true,
+  "relational_field_changed": false,
+  "relational_essay_created": false,
+  "valid_no_op": true,
+  "valid_no_op_scope": "Today's ordered office review only; the publication transaction also carries one pending catalog record from the blocked October 21 run.",
+  "run_state": "validated-for-publication",
+  "historical_runs_rewritten": false,
+  "scheduled_configuration_changed": false
+}
