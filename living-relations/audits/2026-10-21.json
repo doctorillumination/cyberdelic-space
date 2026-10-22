@@ -1,0 +1,101 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-10-21",
+  "run_type": "scheduled-tending",
+  "started_at": "2026-10-21T14:11:00Z",
+  "completed_at": "2026-10-21T16:34:20Z",
+  "timezone": "America/Vancouver",
+  "office_versions": {"cartographer": "0.1", "gardener": "0.1", "librarian": "0.1"},
+  "authority": "OFFICE-PUBLICATION-AUTHORITY version 1.1; publication is distinct from ratification.",
+  "repository": {
+    "branch": "codex/tending-2026-10-21",
+    "starting_commit": "1d2863bb71445ea3656dc474038033daff62a086",
+    "preflight": "Clean website checkout matched fetched origin/main. Sibling reader source and unrelated untracked FN-45 metadata remain untouched. Private correspondence and Agent Comms were excluded.",
+    "publication_action": "Draft pull request 69 contains the locally validated patch. Publication is blocked by delayed GitHub push-event delivery to Cloudflare. No merge or deployment is claimed. This blocked audit and regenerated journal are retained locally."
+  },
+  "cartographer": {
+    "state": "retained-existing-proposals",
+    "inbox_items": 0,
+    "outward_search_performed": true,
+    "declared_question": "Which resources, manifests, indexes, and execution assumptions must travel with a generative plate?",
+    "inquiry_basis": "Existing OCI proposals REL-P-000008 and REL-P-000009, and FN-33's independent reconstruction question.",
+    "sources_checked": [
+      {
+        "url": "https://raw.githubusercontent.com/opencontainers/image-spec/v1.1.1/spec.md",
+        "attribution": "Open Container Initiative contributors, Image Format Specification, pinned version 1.1.1.",
+        "checked_at": "2026-10-21",
+        "source_facts": ["The format carries a manifest, optional index, filesystem layers, and configuration.", "The specification addresses interoperable tools for building, transporting, and preparing images for execution."],
+        "inference": "Separating work payload from execution configuration remains a useful technical adjacency to FN-33, not a proposal to equate a plate with a container image.",
+        "uncertainty": "Pinned primary-document comparison only, not a claim about the newest release or an independent reconstruction test. No endorsement or partnership is implied."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/opencontainers/image-spec/v1.1.1/descriptor.md",
+        "attribution": "Open Container Initiative contributors, Content Descriptors, pinned version 1.1.1.",
+        "checked_at": "2026-10-21",
+        "source_facts": ["Descriptors identify referenced content through a media type, digest, and byte size.", "Consumers verify untrusted content against the descriptor before using it."],
+        "inference": "Integrity checking can support portable reconstruction, but does not by itself establish authorship, consent, or authorized edition lineage.",
+        "uncertainty": "A byte-integrity specification is not an artistic lineage or consent protocol. Existing proposal caveats remain necessary."
+      }
+    ],
+    "candidates_created": [],
+    "no_proposal_reason": "The current OCI node and proposed adjacency already record this distinction. Another node or edge would duplicate them. Today's check is recorded here without rewriting historical provenance.",
+    "handoff": "Existing OCI proposals and the payload/configuration distinction handed to the Gardener."
+  },
+  "gardener": {
+    "state": "reviewed-no-relational-change",
+    "reviewed": ["Current 12-node, 7-edge manifest and OCI proposal pair", "Exact FN-33, I-001, A-001, BN-005, I-003, and Kernel verbs and laws", "Cumulative catalog summaries, subjects, related paths, public-work statuses, and evidence in the focused region"],
+    "changes": [],
+    "retained_decisions": ["Retain the distinction between a work, its reader, its execution assumptions, and its authorized lineage.", "Keep byte integrity distinct from truth, identity, consent, and rights.", "Keep I-001's August 15 software observations dated rather than presenting them as current runtime validation.", "No graph, lifecycle, or related-work repair was warranted. Pass the unindexed public instrument to the Librarian as a findability opportunity, not a new relation claim."],
+    "decision_reason": "The bounded exact-source comparison found no relational drift requiring a patch. No relational-change essay or selection rotation is warranted. This is a focused semantic reading, not a claim to have reread every exact work."
+  },
+  "librarian": {
+    "state": "created-source-grounded-record",
+    "records_created": ["catalog:cyberdelic-os:i-001"],
+    "records_revised": [],
+    "records_removed": [],
+    "catalog_count_before": 34,
+    "catalog_count_after": 35,
+    "records_examined": ["All 34 cumulative catalog records and same-run office outputs", "Complete exact I-001 and focused cross-form sources reviewed by the Gardener"],
+    "decision_reason": "I-001 lacked a tended record for its distinct publication ceremony. Added evidenced ordinary-language routes for rehearsal without publishing, exact approval, and publishing nothing by accident. The record explicitly preserves the source's date, proposed status, attribution, and limits. All 34 prior records and tending dates remain unchanged. No external search, related path, graph claim, or lifecycle change was introduced by the Librarian."
+  },
+  "public_summary": [
+    "Cartographer: Rechecked the existing OCI portability proposals. No duplicate external node or edge was needed.",
+    "Gardener: Compared exact works across the publication forms. Kept byte integrity, consent, and authorized lineage distinct; no relational repair was needed.",
+    "Librarian: Added Cyberdelic Studio to the tended catalog, with routes for local rehearsal and publishing nothing by accident. Its dated software claims remain qualified.",
+    "Care: All prior catalog records, exact works, audio, history, and the three-item Attending selection remain intact. No relational essay was manufactured.",
+    "Checks: 93 local tests, four-width browser checks, the new discovery routes, source hashes, links, all 63 recordings, and the complete multipart mirror passed. The hosting check has not started.",
+    "Outcome: Publication blocked by a GitHub webhook incident delaying Cloudflare builds. Draft PR 69 is not merged. This is not a valid no-op or a verified deployment."
+  ],
+  "validation": {
+    "state": "blocked",
+    "local_checks_state": "passed",
+    "blocker": {
+      "kind": "external-publication-check-unavailable",
+      "checked_at": "2026-10-21T16:34:20Z",
+      "github_incident": "https://www.githubstatus.com/incidents/nms1dpzmh9d9",
+      "evidence": "GitHub reports delayed pull-request updates and webhook deliveries. Cloudflare's authenticated build history reports degraded GitHub push events and shows no build for abefdf969d9677aa58882b9e3050d26eb532e409. Its GitHub check suite remains queued with no check run.",
+      "pull_request": "https://github.com/doctorillumination/cyberdelic-space/pull/69",
+      "action": "Leave the pull request draft and unmerged. Retain the blocked audit and regenerated journal locally. Revalidate and require hosting success before any later publication."
+    },
+    "checks": [
+      "82 reader/server/mirror/journal tests and 11 playback tests passed",
+      "Browser regression passed at 320, 390, 768, and 1280 pixels, three themes, keyboard discovery, proposed labels, three-work results, six-result search, no-JavaScript archive, future-catalog fixture, missing-catalog fallback, and no page errors",
+      "Three new ordinary-language search routes return I-001; its catalog-fed constellation returns three works with qualified expanded context; the latest six-bullet journal, ten-date archive page, and unchanged three-item selection fit at 320 pixels",
+      "JSON/XML, 47 indexed source and image SHA-256 values and lengths, 4664 internal references, JavaScript syntax, and every catalog evidence locator passed",
+      "Narration and complete multipart mirror validation preserve 63 Lewis recordings, 465.0 minutes, 319.4 MiB, and all 18 offline audio parts",
+      "All 11 changed paths match active governance; all 336 retained protected source/audio/relation/history files and all 34 prior catalog records remain unchanged",
+      "Exact publications, photographs, audio, graph, proposals, inbox, governance, historical audits, public indexes, sitemap, and Attending selection outside its journal remain unchanged; sibling reader source and unrelated FN-45 metadata retain their earlier state"
+    ],
+    "preview_url": "http://127.0.0.1:8787/",
+    "production_verification": "Blocked before merge. Today's changed URLs and source digests have not been verified in production."
+  },
+  "files_changed": ["living-relations/catalog.json", "living-relations/audits/2026-10-21.json", "project/cyberdelic-os/attending/index.html", "project/cyberdelic-os/attending/journal/index.json", "project/cyberdelic-os/attending/journal/index.html", "project/cyberdelic-os/attending/journal/page-2.html", "project/cyberdelic-os/attending/journal/page-3.html", "project/cyberdelic-os/attending/journal/page-4.html", "project/cyberdelic-os/attending/journal/page-5.html", "project/cyberdelic-os/attending/journal/page-6.html", "cyberdelic-space.zip"],
+  "public_change": true,
+  "operational_journal_updated": true,
+  "relational_field_changed": false,
+  "relational_essay_created": false,
+  "valid_no_op": false,
+  "run_state": "blocked",
+  "historical_runs_rewritten": false,
+  "scheduled_configuration_changed": false
+}
