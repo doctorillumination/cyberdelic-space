@@ -1,0 +1,86 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-10-23",
+  "run_type": "scheduled-tending",
+  "started_at": "2026-10-23T14:13:26Z",
+  "completed_at": "2026-10-23T15:45:58Z",
+  "timezone": "America/Vancouver",
+  "office_versions": {"cartographer": "0.1", "gardener": "0.1", "librarian": "0.1"},
+  "authority": "OFFICE-PUBLICATION-AUTHORITY version 1.1; publication is distinct from ratification.",
+  "repository": {
+    "branch": "codex/tending-2026-10-23",
+    "starting_commit": "d688f57d46b5a9e39e15618a9c032d03362e53b5",
+    "preflight": "Clean website checkout matched fetched origin/main. Sibling reader source and unrelated untracked FN-45 metadata are left untouched. Private correspondence and Agent Comms are excluded.",
+    "publication_action": "Local validation passed for pull-request publication of a semantic no-op. Require hosting success before merge and production verification afterward. This pre-merge audit does not claim deployment."
+  },
+  "cartographer": {
+    "state": "retained-existing-proposals",
+    "inbox_items": 0,
+    "outward_search_performed": true,
+    "declared_question": "Which execution assumptions belong inside a generative plate, and which should remain replaceable properties of a reader?",
+    "inquiry_basis": "Existing WebAssembly proposals REL-P-000010 and REL-P-000011 and exact FN-33.",
+    "sources_checked": [{
+      "url": "https://www.w3.org/TR/wasm-core-2/",
+      "versioned_source_urls": ["https://www.w3.org/TR/2026/CRD-wasm-core-2-20260812/", "https://www.w3.org/TR/2026/CRD-wasm-core-2-20261023/"],
+      "attribution": "W3C WebAssembly Working Group, WebAssembly Core Specification, introduction, scope, security considerations, and embedder overview.",
+      "checked_at": "2026-10-23",
+      "source_facts": ["Both the cited August draft and today's canonical draft describe portable low-level computation without Web-specific assumptions.", "The core defines instructions, binary encoding, validation, and execution semantics, while complementary embedding APIs define environmental interaction and invocation.", "Environmental I/O and resource access depend on functions provided by the embedder and imported into the module; policies and hardware side-channel mitigations remain embedding responsibilities.", "The canonical document is a Candidate Recommendation Draft dated October 23, not a claim of W3C endorsement or a finished Recommendation."],
+      "inference": "The portable-computation and explicit-host boundary remains technically adjacent to FN-33's replaceable reader. It is not preservation of artistic assets, presentation, timing, randomness, authorized edition lineage, or deterministic visual behavior.",
+      "uncertainty": "Bounded document comparison, not a runtime trial, implementation security audit, or guarantee of reconstruction. No endorsement, partnership, or collaboration is implied.",
+      "access_note": "The canonical document exceeded the web reader's size limit and was read through a read-only HTTP download, alongside the dated source already cited by the proposal. Two guessed split-document paths returned 404; the actual canonical and cited dated documents were available. Their supported boundary claims agree."
+    }],
+    "candidates_created": [],
+    "no_proposal_reason": "The existing proposal pair already carries this useful adjacency and its limits. A new node or edge would duplicate it. Today's source check belongs in this audit, without replacing historical checked dates.",
+    "handoff": "Existing WebAssembly proposals and today's source-fact/inference comparison handed to the Gardener."
+  },
+  "gardener": {
+    "state": "reviewed-no-relational-change",
+    "reviewed": ["Current 12-node, 7-edge manifest and existing WebAssembly proposal pair", "Complete exact FN-33, A-001, BN-005, and I-003, plus the Kernel's verbs and laws", "Focused catalog summaries, themes, related paths, source evidence, and the same-run Cartographer output"],
+    "changes": [],
+    "retained_decisions": ["Keep portable execution distinct from faithful presentation and independent reconstruction of an artwork.", "Keep an explicit import boundary distinct from a guarantee that a particular host is secure.", "Keep technical adjacency model-proposed, without implying architectural equivalence, endorsement, or ratification.", "Keep dated public software observations distinct from a fresh runtime trial.", "Keep the finite three-item Attending selection and every historical audit intact."],
+    "decision_reason": "The focused cross-form comparison found existing metadata and uncertainty adequate. No relation, lifecycle, evidence, or placement repair was warranted. No relational-change essay or selection rotation is needed. This bounded semantic reading does not imply a fresh reading of every exact publication."
+  },
+  "librarian": {
+    "state": "reviewed-no-catalog-change",
+    "records_created": [],
+    "records_revised": [],
+    "records_removed": [],
+    "catalog_count_before": 35,
+    "catalog_count_after": 35,
+    "records_examined": ["All 35 cumulative catalog records", "Current relational manifest, same-run Cartographer and Gardener outputs, and focused exact public evidence for FN-33, A-001, BN-005, I-003, and the Kernel"],
+    "decision_reason": "Existing ordinary-language routes for portable computation, host capabilities, replaceable readers, and independent reconstruction remain supported and useful. Retain every record and prior tending date without a date-only refresh. External neighbours remain proposed. The Librarian performed no outward search."
+  },
+  "public_summary": [
+    "Cartographer: Rechecked the WebAssembly proposal against its cited draft and today's primary source. The existing portable-computation connection and caveats remain adequate.",
+    "Gardener: Compared exact notes, office instruments, the press artifact, and Kernel passages. No relational repair or lifecycle change was warranted.",
+    "Librarian: Existing search terms remain useful. All 35 catalog records and their earlier tending dates stay unchanged.",
+    "Care: Exact works, photographs, audio, graph claims, history, and the three-item selection remain intact. No duplicate proposal or relational essay was manufactured.",
+    "Checks: 93 tests, four-width browser checks, retained discovery routes, exact-source hashes, links, all 63 recordings, and the complete multipart mirror passed locally.",
+    "Outcome: Valid no-change review. Only the audit, daily journal, and mirror are updated; production verification follows deployment, not this audit."
+  ],
+  "validation": {
+    "state": "passed",
+    "checks": [
+      "82 reader/server/mirror/journal tests and 11 playback tests passed",
+      "Browser regression passed at 320, 390, 768, and 1280 pixels, with three themes, keyboard discovery, proposed labels, three-work results, six-result search, no-JavaScript archive, future-catalog fixture, missing-catalog fallback, and no page errors",
+      "Focused checks preserve portable-bytecode and host-import searches, Studio discovery, and the proposed WebAssembly three-work constellation with qualified context; the six-bullet journal, 62-date seven-page archive, and unchanged three-item selection fit at 320 pixels",
+      "JSON/XML, 47 indexed source/image SHA-256 values and lengths, 4688 internal references, JavaScript syntax, and every catalog evidence locator passed",
+      "Narration and complete multipart mirror checks preserve 63 Lewis recordings, 465.0 minutes, 319.4 MiB, and all 18 audio parts",
+      "All 11 transaction paths match active governance; all 339 protected publication/audio/relation/history files remain unchanged, including all 35 catalog records and prior tending dates",
+      "Exact publications, photographs, audio, graph, proposals, inbox, governance, historical audits, global indexes, sitemap, and selection outside its journal remain unchanged; sibling source and unrelated FN-45 metadata preserve their preflight state",
+      "October 11, 12, and 21 remain blocked in the journal; no historical audit is relabelled by later publication"
+    ],
+    "preview_note": "The first focused date assertion expected ISO text inside an English date label. Checking the time element's datetime attribute passed without changing the site or generator.",
+    "preview_url": "http://127.0.0.1:8787/",
+    "production_verification": "Not claimed by this pre-merge audit. Require hosting success, exact public bytes and digests, and production browser regression after merge."
+  },
+  "files_changed": ["living-relations/audits/2026-10-23.json", "project/cyberdelic-os/attending/index.html", "project/cyberdelic-os/attending/journal/index.json", "project/cyberdelic-os/attending/journal/index.html", "project/cyberdelic-os/attending/journal/page-2.html", "project/cyberdelic-os/attending/journal/page-3.html", "project/cyberdelic-os/attending/journal/page-4.html", "project/cyberdelic-os/attending/journal/page-5.html", "project/cyberdelic-os/attending/journal/page-6.html", "project/cyberdelic-os/attending/journal/page-7.html", "cyberdelic-space.zip"],
+  "public_change": false,
+  "operational_journal_updated": true,
+  "relational_field_changed": false,
+  "relational_essay_created": false,
+  "valid_no_op": true,
+  "run_state": "validated-for-publication",
+  "historical_runs_rewritten": false,
+  "scheduled_configuration_changed": false
+}
