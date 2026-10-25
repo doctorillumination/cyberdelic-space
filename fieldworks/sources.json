@@ -537,15 +537,19 @@
       "source_files": [
         {
           "path": "app.js",
-          "sha256": "55fbc1a53f195d48122a8b72812d3e633475ce76a39f73dfb716d241f6e1bdc8"
+          "sha256": "ecd52727a3c542de8c4256d846f621cd42bb85b6cdb836aad7c63872d96f7697"
         },
         {
           "path": "autofocus.js",
           "sha256": "19204c0be30ddc0b9dd4289bf50e73021c8f189b5a606f124fd019b07f1f3dd4"
         },
         {
+          "path": "bootstrap.js",
+          "sha256": "a4c876d26f922e92bc8c876520d2a72d4723eaee19f1707ca0c4b2625c31cddd"
+        },
+        {
           "path": "bulb-shaders.js",
-          "sha256": "42ebab7ccd76851101d2539de1ae2cd11105f687035e0ed5ca67ccf388b6412c"
+          "sha256": "8a4d067327e1ae5954841712ecaf10d577f38d4c863ac164f087d0bacc2dc6b6"
         },
         {
           "path": "cinematographer.js",
@@ -554,6 +558,14 @@
         {
           "path": "crystal-shaders.js",
           "sha256": "5d6032ef233f2b6d2839e906fc74021ac3493edf0c896430226593d6ca0320dd"
+        },
+        {
+          "path": "field-camera.js",
+          "sha256": "3b261c6096d639c0c7b8caeabf33e597930394bac96b72a07fb5abfd182a6704"
+        },
+        {
+          "path": "field-rendering.js",
+          "sha256": "e3ac941d122c27d0f8677145aa87213bf9a3a3f9a4b25f49569ec6a487d6a97c"
         },
         {
           "path": "growth.js",
@@ -565,15 +577,15 @@
         },
         {
           "path": "index.html",
-          "sha256": "db5d76f1bf0ae3a9821395b4146f7f42cc9cda2cdac24652c330c997a8a31c32"
+          "sha256": "b740874fb427140942dac098dfdf92e65cca52e1b425abcc0365448078b0deea"
         },
         {
           "path": "julia-shaders.js",
-          "sha256": "a90f1bf8f3401a18faf3ad02b8c9bfff968c70dfaf00b6c1d75a5537948ca610"
+          "sha256": "694e146d2c92ed707c28c949c88913ffc2223f3f647ba70c19ba857559a8537f"
         },
         {
           "path": "lens.js",
-          "sha256": "d1a53721d4fc7151d642e4984d017e2909acdc7864edf29e05e37e1de02d6761"
+          "sha256": "ed454d14ad590460d9b57d417965e2e9c8f7f58b2c8f46bed58ad0d402e27ef9"
         },
         {
           "path": "living-growth.js",
@@ -585,11 +597,11 @@
         },
         {
           "path": "oil-shaders.js",
-          "sha256": "699149ed9e8616bc72761b309c180af3aeae2bffc2d42748282b45c5a835c787"
+          "sha256": "4a83c7c57724fb933de1aec083406e842c1b7cf5ad5adf28a662c27c5e33f9be"
         },
         {
           "path": "pigment.js",
-          "sha256": "342204477e2d0fe068833d265f73fbb1f967adbc253c9fe0433999e67ed2d23e"
+          "sha256": "ed98c9f67e07d435b94938325e5ab791f7610f1a17507128c8e6c07bcf218642"
         },
         {
           "path": "shape-worker.js",
@@ -603,15 +615,19 @@
       "packaged_files": [
         {
           "path": "app.js",
-          "sha256": "55fbc1a53f195d48122a8b72812d3e633475ce76a39f73dfb716d241f6e1bdc8"
+          "sha256": "ecd52727a3c542de8c4256d846f621cd42bb85b6cdb836aad7c63872d96f7697"
         },
         {
           "path": "autofocus.js",
           "sha256": "19204c0be30ddc0b9dd4289bf50e73021c8f189b5a606f124fd019b07f1f3dd4"
         },
         {
+          "path": "bootstrap.js",
+          "sha256": "a4c876d26f922e92bc8c876520d2a72d4723eaee19f1707ca0c4b2625c31cddd"
+        },
+        {
           "path": "bulb-shaders.js",
-          "sha256": "42ebab7ccd76851101d2539de1ae2cd11105f687035e0ed5ca67ccf388b6412c"
+          "sha256": "8a4d067327e1ae5954841712ecaf10d577f38d4c863ac164f087d0bacc2dc6b6"
         },
         {
           "path": "cinematographer.js",
@@ -620,6 +636,14 @@
         {
           "path": "crystal-shaders.js",
           "sha256": "5d6032ef233f2b6d2839e906fc74021ac3493edf0c896430226593d6ca0320dd"
+        },
+        {
+          "path": "field-camera.js",
+          "sha256": "3b261c6096d639c0c7b8caeabf33e597930394bac96b72a07fb5abfd182a6704"
+        },
+        {
+          "path": "field-rendering.js",
+          "sha256": "e3ac941d122c27d0f8677145aa87213bf9a3a3f9a4b25f49569ec6a487d6a97c"
         },
         {
           "path": "growth.js",
@@ -631,15 +655,15 @@
         },
         {
           "path": "index.html",
-          "sha256": "db5d76f1bf0ae3a9821395b4146f7f42cc9cda2cdac24652c330c997a8a31c32"
+          "sha256": "b740874fb427140942dac098dfdf92e65cca52e1b425abcc0365448078b0deea"
         },
         {
           "path": "julia-shaders.js",
-          "sha256": "a90f1bf8f3401a18faf3ad02b8c9bfff968c70dfaf00b6c1d75a5537948ca610"
+          "sha256": "694e146d2c92ed707c28c949c88913ffc2223f3f647ba70c19ba857559a8537f"
         },
         {
           "path": "lens.js",
-          "sha256": "d1a53721d4fc7151d642e4984d017e2909acdc7864edf29e05e37e1de02d6761"
+          "sha256": "ed454d14ad590460d9b57d417965e2e9c8f7f58b2c8f46bed58ad0d402e27ef9"
         },
         {
           "path": "living-growth.js",
@@ -651,11 +675,11 @@
         },
         {
           "path": "oil-shaders.js",
-          "sha256": "699149ed9e8616bc72761b309c180af3aeae2bffc2d42748282b45c5a835c787"
+          "sha256": "4a83c7c57724fb933de1aec083406e842c1b7cf5ad5adf28a662c27c5e33f9be"
         },
         {
           "path": "pigment.js",
-          "sha256": "342204477e2d0fe068833d265f73fbb1f967adbc253c9fe0433999e67ed2d23e"
+          "sha256": "ed98c9f67e07d435b94938325e5ab791f7610f1a17507128c8e6c07bcf218642"
         },
         {
           "path": "shape-worker.js",
@@ -667,7 +691,7 @@
         }
       ],
       "adaptations": "Exact portable Form Atlas files. No renderer adaptations.",
-      "release_id": "59b27ae6126f4230ec09f393f3b6df5524cc2e87e699f237bb0ee2ba79c81705"
+      "release_id": "1fe6a7b93924de4830e29a664cf8eedf268ea894aa3e1ff9193c4b7f27fdce29"
     }
   ]
 }

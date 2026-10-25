@@ -178,18 +178,18 @@
       "href": "fieldworks/lumen/",
       "poster": {
         "path": "fieldworks/images/lumen.jpg",
-        "sha256": "2abeadd29fab0ed8b9197f4f7f51b3d4df725cdbe3709bb034d4a20c507900f4",
-        "length": 74194,
+        "sha256": "879f5a25089304eb8aae7268a9c6b18f559065073710967122018555c2f5f21d",
+        "length": 78382,
         "kind": "actual-browser-capture"
       },
       "preview": {
         "path": "fieldworks/previews/lumen.mp4",
-        "sha256": "c38eca7b93842f3c4a8e0a5a00dff22eabca5a5b3bbbc51ad902a25498bb4d92",
-        "length": 1148636,
+        "sha256": "e1ef3a954fee02137e565a89e441e86e64a3a7b5d44e2dec28a22c1508dacf17",
+        "length": 713042,
         "kind": "recorded-artwork-loop"
       },
-      "release_id": "59b27ae6126f4230ec09f393f3b6df5524cc2e87e699f237bb0ee2ba79c81705",
-      "runtime_published_at": "2026-10-25T17:07:23.895069Z"
+      "release_id": "1fe6a7b93924de4830e29a664cf8eedf268ea894aa3e1ff9193c4b7f27fdce29",
+      "runtime_published_at": "2026-10-25T21:30:41.223261Z"
     }
   ]
 }

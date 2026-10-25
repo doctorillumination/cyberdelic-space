@@ -3,6 +3,7 @@ import {SHAPES,shapeById,createShape} from './models.js';
 import * as oil from './oil-shaders.js';
 import * as julia from './julia-shaders.js';
 import * as bulb from './bulb-shaders.js';
+import {fieldCameraPose} from './field-camera.js';
 import {lensPose,stepLens} from './lens.js';
 import {stepCamera} from './cinematographer.js';
 import {stepGrowth} from './living-growth.js';
@@ -17,7 +18,7 @@ const state={angle:.12,tilt:-.1,phase:0,focus:11.1,aperture:.64,transmission:.72
 let rig={time:0,blend:state.cinema?1:0};
 let lensRig={time:0,blend:0};
 let growthClock={time:0,blend:state.growth?1:0};
-let focusCloud=[],focusTracker={index:-1};
+let focusCloud=[],focusTracker={index:-1},previousFieldPose=null;
 let selected=shapeById(params.get('shape')),pending=true,request=0,worker,front=0;
 const fields={oil,julia,bulb},fieldPrograms=new Map();
 let programs,geometry,targets,dragging=false,lastX=0,lastY=0,lastTime=0,toastTimer,renderHandle;
@@ -27,7 +28,7 @@ function program(source,vertexSource=vertex){const p=gl.createProgram();const vs
 function uniform(prog,name,value){if(!prog.uniforms.has(name))prog.uniforms.set(name,gl.getUniformLocation(prog.p,name));const loc=prog.uniforms.get(name);if(Array.isArray(value))gl.uniform2fv(loc,value);else gl.uniform1f(loc,value);}
 function sampler(prog,name,unit){gl.uniform1i(gl.getUniformLocation(prog.p,name),unit);}
 function reset(){state.samples=0;state.dirty=true;}
-function resize(){if(!gl||!programs)return;const field=selected.engine==='field';const cap=state.quality===1.5?(field?1600:2000):state.quality===1?(field?1150:1450):(field?800:900);const scale=Math.min(devicePixelRatio*state.quality,cap/Math.max(innerWidth,innerHeight));const w=Math.max(1,Math.round(innerWidth*scale)),h=Math.max(1,Math.round(innerHeight*scale));if(canvas.width===w&&canvas.height===h&&targets)return;canvas.width=w;canvas.height=h;if(targets)for(const t of targets){gl.deleteFramebuffer(t.fbo);gl.deleteTexture(t.texture);}targets=Array.from({length:2},()=>{const texture=gl.createTexture();gl.bindTexture(gl.TEXTURE_2D,texture);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.NEAREST);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.NEAREST);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA16F,w,h,0,gl.RGBA,gl.HALF_FLOAT,null);const fbo=gl.createFramebuffer();gl.bindFramebuffer(gl.FRAMEBUFFER,fbo);gl.framebufferTexture2D(gl.FRAMEBUFFER,gl.COLOR_ATTACHMENT0,gl.TEXTURE_2D,texture,0);if(gl.checkFramebufferStatus(gl.FRAMEBUFFER)!==gl.FRAMEBUFFER_COMPLETE)throw Error('The graphics device cannot create the light buffer.');gl.clearColor(0,0,0,1);gl.clear(gl.COLOR_BUFFER_BIT);return {texture,fbo};});gl.bindFramebuffer(gl.FRAMEBUFFER,null);reset();}
+function resize(){if(!gl||!programs)return;const field=selected.engine==='field';const cap=field?(state.quality===1.5?1600:state.quality===1?1200:900):(state.quality===1.5?2000:state.quality===1?1450:900);const scale=Math.min(devicePixelRatio*state.quality,cap/Math.max(innerWidth,innerHeight));const w=Math.max(1,Math.round(innerWidth*scale)),h=Math.max(1,Math.round(innerHeight*scale));if(canvas.width===w&&canvas.height===h&&targets&&targets.length===2)return;canvas.width=w;canvas.height=h;if(targets)for(const t of targets){gl.deleteFramebuffer(t.fbo);gl.deleteTexture(t.texture);}targets=Array.from({length:2},()=>{const texture=gl.createTexture();gl.bindTexture(gl.TEXTURE_2D,texture);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,field?gl.LINEAR:gl.NEAREST);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,field?gl.LINEAR:gl.NEAREST);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA16F,w,h,0,gl.RGBA,gl.HALF_FLOAT,null);const fbo=gl.createFramebuffer();gl.bindFramebuffer(gl.FRAMEBUFFER,fbo);gl.framebufferTexture2D(gl.FRAMEBUFFER,gl.COLOR_ATTACHMENT0,gl.TEXTURE_2D,texture,0);if(gl.checkFramebufferStatus(gl.FRAMEBUFFER)!==gl.FRAMEBUFFER_COMPLETE)throw Error('The graphics device cannot create the light buffer.');gl.clearColor(0,0,0,1);gl.clear(gl.COLOR_BUFFER_BIT);return {texture,fbo};});gl.bindFramebuffer(gl.FRAMEBUFFER,null);reset();}
 function releaseGeometry(){if(geometry){for(const buffer of geometry.buffers)gl.deleteBuffer(buffer);gl.deleteVertexArray(geometry.vao);geometry=null;}}
 function installGeometry(model){
  focusCloud=createFocusCloud(model);focusTracker={index:-1};releaseGeometry();
@@ -42,7 +43,7 @@ function selectShape(id,push=true){
  $('shape').value=selected.id;$('form-name').textContent=selected.name;$('form-description').textContent=selected.description;
  $('form-number').textContent=String(SHAPES.indexOf(selected)+1).padStart(2,'0')+' / '+SHAPES.length;
  document.title='Lumen / '+selected.name;canvas.dataset.shape=selected.id;delete canvas.dataset.sharpSamples;
- state.angle=selected.angle??.12;state.tilt=selected.tilt??-.1;state.distanceToEye=11.5;state.focus=11.1;$('focus').value=state.focus;$('focus-value').value='Centre';
+ previousFieldPose=null;state.angle=selected.angle??.12;state.tilt=selected.tilt??-.1;state.distanceToEye=11.5;state.focus=11.1;$('focus').value=state.focus;$('focus-value').value='Centre';
  syncGrowth();syncCinema();resize();reset();if(push)updateURL(true);
  try{
   if(selected.engine==='field'){
@@ -54,23 +55,29 @@ function selectShape(id,push=true){
 }
 function cycle(direction){selectShape(SHAPES[(SHAPES.indexOf(selected)+direction+SHAPES.length)%SHAPES.length].id);}
 function drawField(pose,moving){
- if(moving)state.samples=Math.min(state.samples,5);
+ if(moving)state.samples=Math.min(state.samples,32);
  const prog=fieldPrograms.get(selected.id);gl.bindVertexArray(null);gl.disable(gl.BLEND);gl.useProgram(prog.p);
  gl.bindFramebuffer(gl.FRAMEBUFFER,targets[front].fbo);gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_2D,targets[1-front].texture);sampler(prog,'previous',0);
  const mapped={...pose,seed:state.seed%12,frame:state.frame};
  for(const key of ['angle','tilt','phase','focus','aperture','transmission','distanceToEye','seed','frame','lens'])uniform(prog,key,mapped[key]);
+ const prior=previousFieldPose??pose;
+ for(const key of ['angle','tilt','distanceToEye','lens','focus','aperture'])uniform(prog,'previous'+key[0].toUpperCase()+key.slice(1),prior[key]);
+ uniform(prog,'rayCount',state.quality===1.5?4:state.quality===1?2:1);
  uniform(prog,'resolution',[canvas.width,canvas.height]);uniform(prog,'blend',state.samples/(state.samples+1));gl.drawArrays(gl.TRIANGLES,0,3);
- gl.bindFramebuffer(gl.FRAMEBUFFER,null);const output=programs.oilDisplay;gl.useProgram(output.p);gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_2D,targets[front].texture);sampler(output,'image',0);uniform(output,'resolution',[canvas.width,canvas.height]);uniform(output,'frame',state.frame);gl.drawArrays(gl.TRIANGLES,0,3);front=1-front;
+ const output=programs.oilDisplay;gl.useProgram(output.p);gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_2D,targets[front].texture);sampler(output,'image',0);
+ gl.bindFramebuffer(gl.FRAMEBUFFER,null);gl.drawArrays(gl.TRIANGLES,0,3);front=1-front;previousFieldPose={...pose};
 }
 function render(now){
  renderHandle=requestAnimationFrame(render);
  if(document.hidden||pending){lastTime=now;return;}
  const dt=Math.min((now-(lastTime||now))/1000,.1);lastTime=now;
  const moving=state.playing&&!dragging&&(state.cinema||rig.blend>0||selected.growth&&(state.growth||growthClock.blend>0)||state.lensDrift||lensRig.blend>0||state.speed>0||state.drift>0);
- const camera=stepCamera(rig,state,dt,moving);
+ const field=selected.engine==='field';
+ const camera=stepCamera(rig,field?{...state,speed:state.speed*.4}:state,dt,moving);
  rig=camera.rig;state.angle=camera.angle;state.phase=camera.phase;
  lensRig=stepLens(lensRig,state.lensDrift,dt,moving);
- const pose=lensPose(camera.pose,state.compression,lensRig,selected.engine);
+ const cameraPose=field?fieldCameraPose({...state,angle:camera.angle,phase:camera.phase},rig.time,rig.blend):camera.pose;
+ const pose=lensPose(cameraPose,state.compression,lensRig,selected.engine);
  growthClock=stepGrowth(growthClock,!!selected.growth&&state.growth,dt,moving);
  pose.growthTime=growthClock.time;pose.growthBlend=growthClock.blend;
  if(!moving&&!state.dirty&&(selected.engine!=='field'||state.samples>=256))return;
@@ -89,8 +96,8 @@ function render(now){
  gl.bindFramebuffer(gl.FRAMEBUFFER,null);gl.useProgram(programs.display.p);gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_2D,targets[0].texture);sampler(programs.display,'image',0);gl.activeTexture(gl.TEXTURE1);gl.bindTexture(gl.TEXTURE_2D,targets[1].texture);sampler(programs.display,'highlights',1);uniform(programs.display,'frame',state.frame);gl.drawArrays(gl.TRIANGLES,0,3);}
  state.frame++;state.samples++;state.dirty=false;
  if(document.body.dataset.renderer!=='ready'){document.body.dataset.renderer='ready';$('loading').style.opacity='0';const token=request;setTimeout(()=>{if(token===request)$('loading').hidden=true;},600);}
- canvas.dataset.frames=state.frame;canvas.dataset.lensScale=pose.lensScale.toFixed(3);canvas.dataset.lens=pose.lens.toFixed(4);canvas.dataset.eye=pose.distanceToEye.toFixed(3);
- if(state.frame%15===1){canvas.dataset.cameraTime=rig.time.toFixed(3);canvas.dataset.angle=pose.angle.toFixed(3);canvas.dataset.focus=pose.focus.toFixed(3);canvas.dataset.aperture=pose.aperture.toFixed(3);canvas.dataset.cinema=String(state.cinema);canvas.dataset.growthTime=growthClock.time.toFixed(3);} canvas.dataset.resolution=`${canvas.width} × ${canvas.height}`;
+ canvas.dataset.frames=state.frame;canvas.dataset.samples=state.samples;canvas.dataset.focus=pose.focus.toFixed(4);canvas.dataset.aperture=pose.aperture.toFixed(4);canvas.dataset.lensScale=pose.lensScale.toFixed(3);canvas.dataset.lens=pose.lens.toFixed(4);canvas.dataset.eye=pose.distanceToEye.toFixed(3);
+ if(state.frame%15===1){canvas.dataset.cameraTime=rig.time.toFixed(3);canvas.dataset.angle=pose.angle.toFixed(3);canvas.dataset.cinema=String(state.cinema);canvas.dataset.growthTime=growthClock.time.toFixed(3);} canvas.dataset.resolution=`${canvas.width} × ${canvas.height}`;
 }
 function toast(text){$('toast').textContent=text;$('toast').classList.add('visible');clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').classList.remove('visible'),2400);}
 function play(){state.playing=!state.playing;syncPlay();reset();}
@@ -99,7 +106,7 @@ function syncCinema(){
  for(const id of ['cinema','cinema-studio'])$(id).setAttribute('aria-pressed',String(state.cinema));
  $('cinema-status').textContent=state.cinema?'On':'Off';
  $('cinema').title=`Cinematographer ${state.cinema?'on':'off'} (C)`;
- $('cinema-helper').textContent=state.cinema?'Focus, aperture, spectral light, and orbit drift around your settings.':'Your slider settings hold steady as the specimen turns.';
+ $('cinema-helper').textContent=state.cinema?(selected.engine==='field'?'A steady macro focus plane, gentle iris breathing, and a slow orbit.':'Focus, aperture, spectral light, and orbit drift around your settings.'):'Your slider settings hold steady as the specimen turns.';
  syncPlay();
 }
 function toggleCinema(){

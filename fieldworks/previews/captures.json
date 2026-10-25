@@ -35,14 +35,14 @@
     },
     {
       "kind": "actual browser canvas, silent",
-      "raw_sha256": "88a702c85f20dabe0001741f0cb2ba78de5e0ccbacf3e825bad410d3a26e61be",
-      "raw_duration": 7.956583,
+      "raw_sha256": "9dd886469766a4448dd75834c3368ca522b841c1d70178fb70f98f014344618b",
+      "raw_duration": 7.770351,
       "loop_method": "one-second end-to-start crossfade",
-      "source_snapshot_sha256": "234c9b23f6f13f3c2def7583eabfc83a7af409b6c15ad46f014cfd2e9204bd3a",
+      "source_snapshot_sha256": "9c7061117081cfe19eff177075092c6901f35383779b465cf35242d403ad090f",
       "slug": "lumen",
       "path": "lumen.mp4",
-      "sha256": "c38eca7b93842f3c4a8e0a5a00dff22eabca5a5b3bbbc51ad902a25498bb4d92",
-      "length": 1148636
+      "sha256": "e1ef3a954fee02137e565a89e441e86e64a3a7b5d44e2dec28a22c1508dacf17",
+      "length": 713042
     }
   ]
 }

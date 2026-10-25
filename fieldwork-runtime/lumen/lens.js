@@ -16,5 +16,5 @@ export function lensPose(pose,compression=.5,rig={time:0,blend:0},engine='grains
  const field=engine==='field';
  const eye=field?4.6+(pose.distanceToEye-11.5)*.4:pose.distanceToEye;
  const focus=field?4.05+(pose.focus-11.1)*.4:pose.focus;
- return {...pose,distanceToEye:eye*scale,focus:focus+eye*(scale-1),aperture:pose.aperture*(field?.117:1)*scale,lens:(field?.69:.255)/scale,lensScale:scale,compression:setting};
+ return {...pose,distanceToEye:eye*scale,focus:focus+eye*(scale-1),aperture:pose.aperture*(field?.078125:1)*scale,lens:(field?.69:.255)/scale,lensScale:scale,compression:setting};
 }
