@@ -666,7 +666,8 @@
           "sha256": "c907fd2f257516e3b5a0341d3392a0e269eb9b50ba3ffe4a5a01b61e1528f88f"
         }
       ],
-      "adaptations": "Exact portable Form Atlas files. No renderer adaptations."
+      "adaptations": "Exact portable Form Atlas files. No renderer adaptations.",
+      "release_id": "59b27ae6126f4230ec09f393f3b6df5524cc2e87e699f237bb0ee2ba79c81705"
     }
   ]
 }
