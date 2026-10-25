@@ -1,16 +1,27 @@
 {
   "schema": "cyberdelic.space/fieldworks-v1",
-  "version": "1.0",
-  "date": "2026-10-24",
-  "published_at": "2026-10-25T03:56:22Z",
+  "version": "1.1",
+  "date": "2026-10-25",
+  "published_at": "2026-10-25T15:24:11Z",
   "overview": {
     "title": "Fieldworks",
     "href": "fieldworks/",
     "source": "overview.md",
     "source_path": "fieldworks/readings/overview.md",
-    "source_sha256": "e84f912dadf5bc612b0e675f6ac9ec03f77bfe4501119e85e2d392fa54362712",
-    "source_length": 273
+    "source_sha256": "be2fd026661676d11c18d7a1a3a9b19b6ea437d3ae8feefb28becee31c5843d4",
+    "source_length": 291
   },
+  "archived_readings": [
+    {
+      "slug": "overview-v1",
+      "title": "Fieldworks, first edition",
+      "href": "fieldworks/readings/overview-v1.md",
+      "source": "overview-v1.md",
+      "source_path": "fieldworks/readings/overview-v1.md",
+      "source_sha256": "e84f912dadf5bc612b0e675f6ac9ec03f77bfe4501119e85e2d392fa54362712",
+      "source_length": 273
+    }
+  ],
   "items": [
     {
       "slug": "undra",
@@ -39,9 +50,15 @@
       "href": "fieldworks/undra/",
       "poster": {
         "path": "fieldworks/images/undra.jpg",
-        "sha256": "fef1452c10edb18f6c7359fee06d79e8701363fd25aadc96fc9b9fb706eb48e9",
-        "length": 46984,
+        "sha256": "1d1fa002e7e3058ba4375af450a32ca472ae548502a7dffa2fa2b354f47d5d8f",
+        "length": 52949,
         "kind": "actual-browser-capture"
+      },
+      "preview": {
+        "path": "fieldworks/previews/undra.mp4",
+        "sha256": "50b072404f4faf644a6300257621bb27a7cec002787667cf77f37dfdbc18af0e",
+        "length": 427222,
+        "kind": "recorded-artwork-loop"
       }
     },
     {
@@ -71,9 +88,15 @@
       "href": "fieldworks/opalia/",
       "poster": {
         "path": "fieldworks/images/opalia.jpg",
-        "sha256": "97c82698a78e8f6bbed1c7e4402c334e9ddff4452fb6f038aefade46294f52cc",
-        "length": 47147,
+        "sha256": "1c2dd1cc98d0edb0acb3aff5d158a454fd4d14fd86247b9664c3d7e12d6de5fe",
+        "length": 64021,
         "kind": "actual-browser-capture"
+      },
+      "preview": {
+        "path": "fieldworks/previews/opalia.mp4",
+        "sha256": "a332d620c5b7e72a38c388154ff2316ad685e7db28e6243683feed7e4a9ae8d2",
+        "length": 609568,
+        "kind": "recorded-artwork-loop"
       }
     },
     {
@@ -103,9 +126,54 @@
       "href": "fieldworks/aeria/",
       "poster": {
         "path": "fieldworks/images/aeria.jpg",
-        "sha256": "e90d3f92b3cbe13f8e5a4ad157207687f0adac86f9dfd84e9ccb1d859fc58e4d",
-        "length": 13859,
+        "sha256": "1b0c4bf8eaefbeb0fb5ec9523c51ad5acc3e6119a6f17356d5b71063f649d1d7",
+        "length": 17910,
         "kind": "actual-browser-capture"
+      },
+      "preview": {
+        "path": "fieldworks/previews/aeria.mp4",
+        "sha256": "9b24041420c9c30bb85891957395924d1b06367673bca29a22af0ebf5ff1bed4",
+        "length": 115522,
+        "kind": "recorded-artwork-loop"
+      }
+    },
+    {
+      "slug": "lumen",
+      "title": "Lumen",
+      "former_title": "Lumen / Specimen / Hollow Macro",
+      "project": "lumen-specimen",
+      "repository": null,
+      "status": "in-progress",
+      "caption": "Impossible matter. A small universe under a macro lens.",
+      "description": "A crystalline fractal unfolds through spectral light. Fine branches emerge and recede as the camera follows its tendrils. In progress.",
+      "alt": "A translucent branching crystalline specimen suspended in black, captured from Lumen.",
+      "gesture": "Drag to turn. Scroll to approach. Open the studio to shape the light.",
+      "source": "lumen.md",
+      "themes": [
+        "light",
+        "perception",
+        "emergence",
+        "matter",
+        "imagination",
+        "time"
+      ],
+      "related_note": "fn-05",
+      "related_title": "The Physics We Choose",
+      "source_path": "fieldworks/readings/lumen.md",
+      "source_sha256": "f34e23a8d776708de1e964506b9e306d3516127532173381b5f53534853852a8",
+      "source_length": 913,
+      "href": "fieldworks/lumen/",
+      "poster": {
+        "path": "fieldworks/images/lumen.jpg",
+        "sha256": "b55dd8697308322409399e44c26cf8ad3b3d3abc64f71cc2fcf9c4b9ef27ffb3",
+        "length": 44159,
+        "kind": "actual-browser-capture"
+      },
+      "preview": {
+        "path": "fieldworks/previews/lumen.mp4",
+        "sha256": "ca6daa6f3f4e77247020bb4b25b5698760fbb9081156026f89e3527749b0088d",
+        "length": 437185,
+        "kind": "recorded-artwork-loop"
       }
     }
   ]

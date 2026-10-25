@@ -1,8 +1,8 @@
 {
   "schema": "https://cyberdelic.space/schemas/living-catalog-v1.json",
   "version": "0.16",
-  "updated_at": "2026-10-25T04:00:00Z",
-  "count": 38,
+  "updated_at": "2026-10-25T15:24:11Z",
+  "count": 39,
   "curation": {
     "office": "OFFICE-LIBRARIAN",
     "office_version": "0.1",
@@ -1687,7 +1687,7 @@
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "human-authorized-fieldworks-publication",
-      "last_tended_at": "2026-10-25T03:56:22Z",
+      "last_tended_at": "2026-10-25T15:24:11Z",
       "uncertainty": "Brad authorized the artwork names and publication. Thematic placements remain interpretive. These living works are not inscriptions."
     },
     {
@@ -1728,7 +1728,7 @@
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "human-authorized-fieldworks-publication",
-      "last_tended_at": "2026-10-25T03:56:22Z",
+      "last_tended_at": "2026-10-25T15:24:11Z",
       "uncertainty": "Brad authorized the artwork names and publication. Thematic placements remain interpretive. These living works are not inscriptions."
     },
     {
@@ -1769,7 +1769,48 @@
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "human-authorized-fieldworks-publication",
-      "last_tended_at": "2026-10-25T03:56:22Z",
+      "last_tended_at": "2026-10-25T15:24:11Z",
+      "uncertainty": "Brad authorized the artwork names and publication. Thematic placements remain interpretive. These living works are not inscriptions."
+    },
+    {
+      "id": "catalog:fieldworks:lumen",
+      "record_kind": "artifact",
+      "title": "Lumen",
+      "href": "fieldworks/lumen/",
+      "summary": "A crystalline fractal unfolds through spectral light. Fine branches emerge and recede as the camera follows its tendrils. In progress.",
+      "subjects": [
+        "light",
+        "perception",
+        "emergence",
+        "matter",
+        "imagination",
+        "time",
+        "generative art",
+        "interactive artwork",
+        "Fieldworks"
+      ],
+      "search_terms": [
+        "Lumen / Specimen / Hollow Macro",
+        "lumen-specimen",
+        "computational art",
+        "Impossible matter. A small universe under a macro lens.",
+        "Drag to turn. Scroll to approach. Open the studio to shape the light."
+      ],
+      "questions": [
+        "What can a gesture change?",
+        "How can an artwork make a designed world perceptible?"
+      ],
+      "related": [],
+      "evidence": [
+        {
+          "source": "fieldworks/readings/lumen.md",
+          "locator": "# Lumen"
+        }
+      ],
+      "epistemic_status": "strong",
+      "review_state": "model-proposed",
+      "introduced_by": "human-authorized-fieldworks-publication",
+      "last_tended_at": "2026-10-25T15:24:11Z",
       "uncertainty": "Brad authorized the artwork names and publication. Thematic placements remain interpretive. These living works are not inscriptions."
     }
   ]

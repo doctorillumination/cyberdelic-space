@@ -1,12 +1,12 @@
 {
-  "id": "fieldworks-overview",
-  "title": "Fieldworks",
+  "id": "fieldworks-overview-v1",
+  "title": "Fieldworks, first edition",
   "form": "fieldwork",
   "release_id": null,
   "pages": [
-    "fieldworks/"
+    "fieldworks/readings/overview-v1.md"
   ],
-  "source_path": "fieldworks/readings/overview.md",
+  "source_path": "fieldworks/readings/overview-v1.md",
   "source_sha256": "e84f912dadf5bc612b0e675f6ac9ec03f77bfe4501119e85e2d392fa54362712",
   "document_sha256": "e84f912dadf5bc612b0e675f6ac9ec03f77bfe4501119e85e2d392fa54362712",
   "text_sha256": "0a045c0f92866f82a37b62697a3a490c5ec40ad320c421f102b6831367e36496",

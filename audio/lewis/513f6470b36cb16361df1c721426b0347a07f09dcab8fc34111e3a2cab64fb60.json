@@ -1,0 +1,68 @@
+{
+  "id": "fieldworks-lumen",
+  "title": "Lumen",
+  "form": "fieldwork",
+  "release_id": null,
+  "pages": [
+    "fieldworks/lumen/"
+  ],
+  "source_path": "fieldworks/readings/lumen.md",
+  "source_sha256": "f34e23a8d776708de1e964506b9e306d3516127532173381b5f53534853852a8",
+  "document_sha256": "f34e23a8d776708de1e964506b9e306d3516127532173381b5f53534853852a8",
+  "text_sha256": "513f6470b36cb16361df1c721426b0347a07f09dcab8fc34111e3a2cab64fb60",
+  "reading_path": "audio/readings/513f6470b36cb16361df1c721426b0347a07f09dcab8fc34111e3a2cab64fb60.md",
+  "reading_sha256": "f34e23a8d776708de1e964506b9e306d3516127532173381b5f53534853852a8",
+  "reading_length": 913,
+  "audio_path": "audio/lewis/513f6470b36cb16361df1c721426b0347a07f09dcab8fc34111e3a2cab64fb60.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "dcac7bff2da3f1795c095a6516703939ada3a0c30f8bfe54b735d2ccb62cd439",
+  "audio_length": 790028,
+  "duration_seconds": 65.75,
+  "chunks": [
+    {
+      "text": "Lumen",
+      "start": 0.0,
+      "duration": 1.425
+    },
+    {
+      "text": "Impossible matter. A small universe under a macro lens.",
+      "start": 1.605,
+      "duration": 4.775
+    },
+    {
+      "text": "A translucent crystalline colony turns through spectral light. Its branching structure grows from a seed, while a procedural renderer gives its surfaces a photographic quality. Drag to turn the specimen, scroll to approach, or open the studio to explore focus, aperture, transmission, and colour drift.",
+      "start": 6.56,
+      "duration": 20.375
+    },
+    {
+      "text": "Fine branches unfold and draw back into the colony. Cinematographer mode moves through the specimen while focus follows visible tendrils. Both modes can be switched off, and pausing holds the entire scene still.",
+      "start": 27.115,
+      "duration": 14.825
+    },
+    {
+      "text": "Lumen approaches a fractal as something to encounter, rather than a diagram to decode. Its light and material are optical approximations, not a measured physical specimen. This living study is still in progress, and this Fieldworks edition is a snapshot of that ongoing work.",
+      "start": 42.12,
+      "duration": 18.8
+    },
+    {
+      "text": "By Brad Necyk. This living artwork is not inscribed.",
+      "start": 61.1,
+      "duration": 4.65
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.6063810586929321,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

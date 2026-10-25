@@ -513,6 +513,91 @@
           "sha256": "fde5ea9da8c63e23bae3a53c02f4ae2db1c2535b20f5d298831252e23a106c39"
         }
       ]
+    },
+    {
+      "slug": "lumen",
+      "project": "lumen-specimen",
+      "revision": null,
+      "repository": null,
+      "source_files": [
+        {
+          "path": "app.js",
+          "sha256": "03736f5da795261064cacd66eb2e402d21261cc7da69bbfc6f0dd9090bb165e4"
+        },
+        {
+          "path": "autofocus.js",
+          "sha256": "3558b6035274ba03d864d4796df14f806b289111482f33d4512180d1e26c318d"
+        },
+        {
+          "path": "cinematographer.js",
+          "sha256": "2572594ddda5a2dc9c80b4da0fb4b961b6d2866b10bf24fcd074fbb3d000f689"
+        },
+        {
+          "path": "crystal-shaders.js",
+          "sha256": "c2f1d67d79d6b9c41ddf89979fe337fc5874319fd0b44d1dd877b7bc613a5cb2"
+        },
+        {
+          "path": "growth.js",
+          "sha256": "971052401aec784f5d6d61c4cba514473a02ba92948d74d0c967ca3d8e49e338"
+        },
+        {
+          "path": "icon.svg",
+          "sha256": "c17bd5732422fd7e5ec6558a6759851245ffc5501a52375c08322fcbaccf7ce4"
+        },
+        {
+          "path": "index.html",
+          "sha256": "beda561b2449f1e0aa7aef2a926d66241c4a379895950f3931893a4d1c98753f"
+        },
+        {
+          "path": "living-growth.js",
+          "sha256": "edc35e442b0aea8394d781938de109041d6d6c1435a78abd374b7facacf8d79a"
+        },
+        {
+          "path": "style.css",
+          "sha256": "efd8e62be9e293bdb391dfca1c5bf24635dae9cc5de6eabf8108f117466b0ff3"
+        }
+      ],
+      "packaged_files": [
+        {
+          "path": "app.js",
+          "sha256": "03736f5da795261064cacd66eb2e402d21261cc7da69bbfc6f0dd9090bb165e4"
+        },
+        {
+          "path": "autofocus.js",
+          "sha256": "3558b6035274ba03d864d4796df14f806b289111482f33d4512180d1e26c318d"
+        },
+        {
+          "path": "cinematographer.js",
+          "sha256": "2572594ddda5a2dc9c80b4da0fb4b961b6d2866b10bf24fcd074fbb3d000f689"
+        },
+        {
+          "path": "crystal-shaders.js",
+          "sha256": "c2f1d67d79d6b9c41ddf89979fe337fc5874319fd0b44d1dd877b7bc613a5cb2"
+        },
+        {
+          "path": "growth.js",
+          "sha256": "971052401aec784f5d6d61c4cba514473a02ba92948d74d0c967ca3d8e49e338"
+        },
+        {
+          "path": "icon.svg",
+          "sha256": "c17bd5732422fd7e5ec6558a6759851245ffc5501a52375c08322fcbaccf7ce4"
+        },
+        {
+          "path": "index.html",
+          "sha256": "30649737b351ea4f80285da02c5007c46adf1c805304a99515a3338d9fcfcb96"
+        },
+        {
+          "path": "living-growth.js",
+          "sha256": "edc35e442b0aea8394d781938de109041d6d6c1435a78abd374b7facacf8d79a"
+        },
+        {
+          "path": "style.css",
+          "sha256": "efd8e62be9e293bdb391dfca1c5bf24635dae9cc5de6eabf8108f117466b0ff3"
+        }
+      ],
+      "adaptations": "Current Hollow Macro, including Cinematographer, tracked focus, and living growth. Exact renderer and simulation. Only index.html wordmark link redirects to the local artwork home instead of the unshipped comparison page. Previous Specimen preview preserved in source commit 62799f3.",
+      "source_subdirectory": "dist/hollow",
+      "source_version": "1.4.0 / Hollow Macro, living macro study 004"
     }
   ]
 }

@@ -17800,19 +17800,19 @@
         "fieldworks/"
       ],
       "source_path": "fieldworks/readings/overview.md",
-      "source_sha256": "e84f912dadf5bc612b0e675f6ac9ec03f77bfe4501119e85e2d392fa54362712",
-      "document_sha256": "e84f912dadf5bc612b0e675f6ac9ec03f77bfe4501119e85e2d392fa54362712",
-      "text_sha256": "0a045c0f92866f82a37b62697a3a490c5ec40ad320c421f102b6831367e36496",
-      "reading_path": "audio/readings/0a045c0f92866f82a37b62697a3a490c5ec40ad320c421f102b6831367e36496.md",
-      "reading_sha256": "e84f912dadf5bc612b0e675f6ac9ec03f77bfe4501119e85e2d392fa54362712",
-      "reading_length": 273,
-      "audio_path": "audio/lewis/0a045c0f92866f82a37b62697a3a490c5ec40ad320c421f102b6831367e36496.mp3",
+      "source_sha256": "be2fd026661676d11c18d7a1a3a9b19b6ea437d3ae8feefb28becee31c5843d4",
+      "document_sha256": "be2fd026661676d11c18d7a1a3a9b19b6ea437d3ae8feefb28becee31c5843d4",
+      "text_sha256": "d2ebabf39bd0ee19471c9b71089c5e37a225a486363e94e04b05830830b19ebd",
+      "reading_path": "audio/readings/d2ebabf39bd0ee19471c9b71089c5e37a225a486363e94e04b05830830b19ebd.md",
+      "reading_sha256": "be2fd026661676d11c18d7a1a3a9b19b6ea437d3ae8feefb28becee31c5843d4",
+      "reading_length": 291,
+      "audio_path": "audio/lewis/d2ebabf39bd0ee19471c9b71089c5e37a225a486363e94e04b05830830b19ebd.mp3",
       "voice": "bm_lewis",
       "voice_name": "Lewis",
       "speed": 1.0,
-      "audio_sha256": "4d73c68d70cfc256381d98b44a18ad1b9d74fa64d1609ac0d74f4f82df9689c4",
-      "audio_length": 265292,
-      "duration_seconds": 22.015,
+      "audio_sha256": "d80eed6ea4f8d1d3c9d7717ff8a28eb86d54b9d8873c3cc4a257fd0c8270de21",
+      "audio_length": 282284,
+      "duration_seconds": 23.44,
       "chunks": [
         {
           "text": "Fieldworks",
@@ -17825,13 +17825,13 @@
           "duration": 5.15
         },
         {
-          "text": "A surface that answers. A fold in seeing. An unfinished sky. Three encounters with the living physics of Cyberdelic OS.",
+          "text": "A surface that answers. A fold in seeing. An unfinished sky. Impossible matter. Four encounters with the living physics of Cyberdelic OS.",
           "start": 7.16,
-          "duration": 9.475
+          "duration": 10.9
         },
         {
           "text": "These are living, revisable artworks. They are not Bitcoin inscriptions.",
-          "start": 16.815,
+          "start": 18.24,
           "duration": 5.2
         }
       ],
@@ -17839,7 +17839,7 @@
         "all_text_retained": true,
         "mp3_decodes": true,
         "finite_samples": true,
-        "peak": 0.4922001361846924,
+        "peak": 0.598943293094635,
         "clipped_samples": 0
       }
     },
@@ -18013,6 +18013,120 @@
         "peak": 0.562687337398529,
         "clipped_samples": 0
       }
+    },
+    {
+      "id": "fieldworks-lumen",
+      "title": "Lumen",
+      "form": "fieldwork",
+      "release_id": null,
+      "pages": [
+        "fieldworks/lumen/"
+      ],
+      "source_path": "fieldworks/readings/lumen.md",
+      "source_sha256": "f34e23a8d776708de1e964506b9e306d3516127532173381b5f53534853852a8",
+      "document_sha256": "f34e23a8d776708de1e964506b9e306d3516127532173381b5f53534853852a8",
+      "text_sha256": "513f6470b36cb16361df1c721426b0347a07f09dcab8fc34111e3a2cab64fb60",
+      "reading_path": "audio/readings/513f6470b36cb16361df1c721426b0347a07f09dcab8fc34111e3a2cab64fb60.md",
+      "reading_sha256": "f34e23a8d776708de1e964506b9e306d3516127532173381b5f53534853852a8",
+      "reading_length": 913,
+      "audio_path": "audio/lewis/513f6470b36cb16361df1c721426b0347a07f09dcab8fc34111e3a2cab64fb60.mp3",
+      "voice": "bm_lewis",
+      "voice_name": "Lewis",
+      "speed": 1.0,
+      "audio_sha256": "dcac7bff2da3f1795c095a6516703939ada3a0c30f8bfe54b735d2ccb62cd439",
+      "audio_length": 790028,
+      "duration_seconds": 65.75,
+      "chunks": [
+        {
+          "text": "Lumen",
+          "start": 0.0,
+          "duration": 1.425
+        },
+        {
+          "text": "Impossible matter. A small universe under a macro lens.",
+          "start": 1.605,
+          "duration": 4.775
+        },
+        {
+          "text": "A translucent crystalline colony turns through spectral light. Its branching structure grows from a seed, while a procedural renderer gives its surfaces a photographic quality. Drag to turn the specimen, scroll to approach, or open the studio to explore focus, aperture, transmission, and colour drift.",
+          "start": 6.56,
+          "duration": 20.375
+        },
+        {
+          "text": "Fine branches unfold and draw back into the colony. Cinematographer mode moves through the specimen while focus follows visible tendrils. Both modes can be switched off, and pausing holds the entire scene still.",
+          "start": 27.115,
+          "duration": 14.825
+        },
+        {
+          "text": "Lumen approaches a fractal as something to encounter, rather than a diagram to decode. Its light and material are optical approximations, not a measured physical specimen. This living study is still in progress, and this Fieldworks edition is a snapshot of that ongoing work.",
+          "start": 42.12,
+          "duration": 18.8
+        },
+        {
+          "text": "By Brad Necyk. This living artwork is not inscribed.",
+          "start": 61.1,
+          "duration": 4.65
+        }
+      ],
+      "checks": {
+        "all_text_retained": true,
+        "mp3_decodes": true,
+        "finite_samples": true,
+        "peak": 0.6063810586929321,
+        "clipped_samples": 0
+      }
+    },
+    {
+      "id": "fieldworks-overview-v1",
+      "title": "Fieldworks, first edition",
+      "form": "fieldwork",
+      "release_id": null,
+      "pages": [
+        "fieldworks/readings/overview-v1.md"
+      ],
+      "source_path": "fieldworks/readings/overview-v1.md",
+      "source_sha256": "e84f912dadf5bc612b0e675f6ac9ec03f77bfe4501119e85e2d392fa54362712",
+      "document_sha256": "e84f912dadf5bc612b0e675f6ac9ec03f77bfe4501119e85e2d392fa54362712",
+      "text_sha256": "0a045c0f92866f82a37b62697a3a490c5ec40ad320c421f102b6831367e36496",
+      "reading_path": "audio/readings/0a045c0f92866f82a37b62697a3a490c5ec40ad320c421f102b6831367e36496.md",
+      "reading_sha256": "e84f912dadf5bc612b0e675f6ac9ec03f77bfe4501119e85e2d392fa54362712",
+      "reading_length": 273,
+      "audio_path": "audio/lewis/0a045c0f92866f82a37b62697a3a490c5ec40ad320c421f102b6831367e36496.mp3",
+      "voice": "bm_lewis",
+      "voice_name": "Lewis",
+      "speed": 1.0,
+      "audio_sha256": "4d73c68d70cfc256381d98b44a18ad1b9d74fa64d1609ac0d74f4f82df9689c4",
+      "audio_length": 265292,
+      "duration_seconds": 22.015,
+      "chunks": [
+        {
+          "text": "Fieldworks",
+          "start": 0.0,
+          "duration": 1.65
+        },
+        {
+          "text": "Generative artworks and interactive environments by Brad Necyk.",
+          "start": 1.83,
+          "duration": 5.15
+        },
+        {
+          "text": "A surface that answers. A fold in seeing. An unfinished sky. Three encounters with the living physics of Cyberdelic OS.",
+          "start": 7.16,
+          "duration": 9.475
+        },
+        {
+          "text": "These are living, revisable artworks. They are not Bitcoin inscriptions.",
+          "start": 16.815,
+          "duration": 5.2
+        }
+      ],
+      "checks": {
+        "all_text_retained": true,
+        "mp3_decodes": true,
+        "finite_samples": true,
+        "peak": 0.4922001361846924,
+        "clipped_samples": 0
+      }
     }
   ],
   "playlists": [
@@ -18138,8 +18252,8 @@
     },
     {
       "path": "audio-bundles/lewis-18.zip",
-      "length": 21892870,
-      "sha256": "5d00fe58c634446b651adff2ce1ca95543cfa8bb8b8080c2578d5a7781fdb3ed"
+      "length": 22965654,
+      "sha256": "2588fc4bc4aba89bc28857a8e38b99dd4898cf857befd63974dc0f14b1420aba"
     }
   ]
 }
