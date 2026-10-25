@@ -12,7 +12,7 @@ layout(location=2)in float facet;
 layout(location=3)in vec3 surfaceNormal;
 layout(location=4)in vec4 development;
 uniform vec2 resolution;
-uniform float angle,tilt,distanceToEye,focus,aperture,phase,roll,focusBand,growthTime,growthBlend;
+uniform float angle,tilt,distanceToEye,focus,aperture,phase,roll,focusBand,growthTime,growthBlend,lens;
 out vec3 tint;
 out float energy,softness,sparkle,depth,growthAlpha;
 out vec3 macroNormal;
@@ -36,7 +36,7 @@ void main(){
  macroNormal=n;
  depth=distanceToEye-p.z;
  // A more distant eye and narrower view retain size with less perspective.
- const float lens=.255;
+
  float fit=min(1.,resolution.x/resolution.y/.9);
  vec2 screen=p.xy/(depth*lens)*fit;
  screen.x*=resolution.y/resolution.x;
@@ -58,7 +58,7 @@ export const crystalFragment = `#version 300 es
 precision highp float;
 in vec3 tint,macroNormal;
 in float energy,softness,sparkle,depth,growthAlpha;
-uniform float transmission,lightPass,lightTurn;
+uniform float transmission,lightPass,lightTurn,distanceToEye;
 out vec4 frag;
 void main(){
  vec2 q=gl_PointCoord*2.-1.;
@@ -89,7 +89,7 @@ void main(){
   return;
  }
  // Optical depth is carried by a thin, uneven shell rather than a dense core.
- float opacity=.1*energy*disk*growthAlpha*shellLight*exp(-(depth-10.4)*.28);
+ float opacity=.1*energy*disk*growthAlpha*shellLight*exp(-(depth-distanceToEye+1.1)*.28);
  frag=vec4(light*opacity,opacity);
 }`;
 

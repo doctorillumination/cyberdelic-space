@@ -1,3 +1,4 @@
+import { VolumeGPU } from './volume-gpu.js';
 import { cloudState, livingPoint, cloudUndersides } from './cloud-life.js';
 import { CloudRenderer, vertexShader, previewShader } from './renderer.js';
 const $ = (s) => document.querySelector(s);
@@ -19,26 +20,21 @@ if(!noiseResponse.ok)throw new Error('Could not load the cloud density field.');
 const noise=new Uint8Array(await noiseResponse.arrayBuffer());
 if(noise.length!==64**3*4)throw new Error('The cloud density field is incomplete.');
 texture3D(1,'noiseField',64,64,64,noise,true,4);
-const NX=384, NY=256, NZ=96; let data = new Uint8Array(NX*NY*NZ), mask = new Uint8Array(NX*NY);
+const NX=384, NY=256, NZ=96; const data=null, mask=null;
 const volumeTexture = texture3D(0,'volume',NX,NY,NZ,data);
 const maskTexture = gl.createTexture(); gl.activeTexture(gl.TEXTURE2); gl.bindTexture(gl.TEXTURE_2D,maskTexture); gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR); gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE); gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);gl.texImage2D(gl.TEXTURE_2D,0,gl.R8,NX,NY,0,gl.RED,gl.UNSIGNED_BYTE,mask);gl.uniform1i(uniforms.footprint,2);
+const geometry=new VolumeGPU(gl,volumeTexture,maskTexture,NX,NY,NZ);
 const tracer=new CloudRenderer(gl,program);
-let aspect = innerWidth/innerHeight, strokes=[], history=[], future=[], active=null, pending=[], dirty=true, brush=53, preset=0, fullness=1, sunAngle=-.65, sunDepth=-.62, quality=256, rainEnabled=false, rainAmount=.6, rainWind=.15, rainPaused=false, rainTime=0, weatherDirty=true, drift=true, lifeSpeed=1, driftTime=0, lastLifeBuild=0, lastTime=performance.now(), pointer=null, saveTimer, toastTimer;
+let aspect = innerWidth/innerHeight, strokes=[], history=[], future=[], active=null, pending=[], dirty=true, brush=53, preset=0, fullness=1, sunAngle=-.65, sunDepth=-.62, quality=256, rainEnabled=false, rainAmount=.6, rainWind=.15, rainPaused=false, rainTime=0, weatherDirty=true, drift=true, lifeSpeed=1, driftTime=0, lastLifeBuild=0, lastLifeFrame=0, lastTime=performance.now(), pointer=null, saveTimer, toastTimer;
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
-function setResolution(preview=false){
- const cap=preview?850000:quality===64?1200000:quality===256?2200000:3600000;
+function setResolution(){
+ const cap=quality===64?1200000:quality===256?2200000:3600000;
  const scale=Math.min(devicePixelRatio||1,1.5,Math.sqrt(cap/(innerWidth*innerHeight)));
  const w=Math.round(innerWidth*scale),h=Math.round(innerHeight*scale);
  if(canvas.width!==w||canvas.height!==h){canvas.width=w;canvas.height=h;tracer.reset();weatherDirty=true;}
 }
 function resize(){aspect=innerWidth/innerHeight;setResolution();rebuild();}
-function sphere(x,y,z,r,stretch=1,strength=1){
- const wx=aspect*3.2,wy=3.2; const cx=x*wx,cy=y*wy;
- const x0=Math.max(0,Math.floor((cx-r)/wx*NX)),x1=Math.min(NX-1,Math.ceil((cx+r)/wx*NX));
- const y0=Math.max(0,Math.floor((cy-r)/wy*NY)),y1=Math.min(NY-1,Math.ceil((cy+r)/wy*NY));
- const z0=Math.max(0,Math.floor((z-r*stretch+0.7)/1.4*NZ)),z1=Math.min(NZ-1,Math.ceil((z+r*stretch+.7)/1.4*NZ));
- for(let iz=z0;iz<=z1;iz++) {const dz=((iz+.5)/NZ*1.4-.7-z)/(r*stretch); for(let iy=y0;iy<=y1;iy++){const dy=((iy+.5)/NY*wy-cy)/r;const yz=dy*dy+dz*dz;if(yz>=1)continue;let index=iz*NX*NY+iy*NX+x0;for(let ix=x0;ix<=x1;ix++,index++){const dx=((ix+.5)/NX*wx-cx)/r;const rr=dx*dx+yz;if(rr>=1)continue;const v=Math.round((1-Math.sqrt(rr))*255*strength);if(v>data[index])data[index]=v;const mi=iy*NX+ix;if(v>mask[mi])mask[mi]=v;}}}
-}
+function sphere(...args){geometry.sphere(...args);}
 function billow(point, radius, seed, growth=1,strength=1){
  const r=rng(seed),worldRadius=radius*3.2*growth*(.88+r()*.24),x=point.x,y=point.y,z=(r()-.5)*.24;
  sphere(x,y,z,worldRadius,1.05,strength);
@@ -54,7 +50,7 @@ function billow(point, radius, seed, growth=1,strength=1){
 }
 function addPoint(point, stroke, grow=true){if(stroke.points.length>=2400)return;const seed=(stroke.seed+(stroke.points.length+1)*9137)>>>0;stroke.points.push(point);const radius=stroke.radius*(point.p || 1);if(grow&&!reducedMotion){pending.push({point,radius,seed,start:performance.now(),last:0});billow(point,radius,seed,.35);}else billow(point,radius,seed);dirty=true;}
 function rebuild(){
- data.fill(0);mask.fill(0);pending=[];
+ geometry.reset();pending=[];
  for(const s of strokes){
   const state=cloudState(s,driftTime,aspect);
   if(state.mass<.012)continue;
@@ -66,17 +62,28 @@ function rebuild(){
  dirty=true;lastLifeBuild=driftTime;updateUI();
 }
 function upload(){
- gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_3D,volumeTexture);gl.texSubImage3D(gl.TEXTURE_3D,0,0,0,0,NX,NY,NZ,gl.RED,gl.UNSIGNED_BYTE,data);
- gl.activeTexture(gl.TEXTURE2);gl.bindTexture(gl.TEXTURE_2D,maskTexture);gl.texSubImage2D(gl.TEXTURE_2D,0,0,0,NX,NY,gl.RED,gl.UNSIGNED_BYTE,mask);
- tracer.rain.setSources(cloudUndersides(mask,NX,NY));
+ if(!exporting)tracer.beginWork();geometry.flush(aspect,rainEnabled);
  dirty=false;weatherDirty=true;
 }
+// Keep enough headroom for input, compositing, and rain between volume updates.
+let motionPixels=1000000,lastBudgetChange=0,busyFrames=0,measureStart=performance.now(),lastGpuSample=0,previousPresentations=0,previousVolumeFrames=0;
+function tuneBudget(now){
+ if(now-lastBudgetChange<1500)return;
+ const limit=quality===64?650000:quality===256?1400000:2200000;
+ if((tracer.gpuSample!==lastGpuSample&&tracer.gpuMs>12)||(!tracer.gpuSample&&busyFrames>6))motionPixels=Math.max(360000,motionPixels*.8);
+ else if(tracer.gpuSample!==lastGpuSample&&tracer.gpuMs<8)motionPixels=Math.min(limit,motionPixels*1.1);
+ motionPixels=Math.min(limit,motionPixels);lastGpuSample=tracer.gpuSample;lastBudgetChange=now;busyFrames=0;
+}
 let exporting=false, exportCancelled=false, sceneRevision=0, lastSignature='';
-function settings(){return{aspect,time:lastLifeBuild,fullness,lightMode:preset,sunAngle,sunDepth,rainAmount:rainEnabled?rainAmount:0,rainWind,rainTime,hasClouds:strokes.length>0};}
+function settings(){return{aspect,time:lastLifeBuild,fullness,lightMode:preset,sunAngle,sunDepth,rainAmount:rainEnabled?rainAmount:0,rainWind,rainTime,hasClouds:strokes.length>0,renderPixels:exporting||!drift&&!active&&!pending.length?Infinity:motionPixels};}
 function render(now){
- if(document.hidden||exporting||!tracer.ready())return;
+ if(document.hidden||exporting)return;
  const delta=Math.min((now-lastTime)/1000,.15);lastTime=now;if(drift&&strokes.length&&!active&&!pending.length)driftTime+=delta*lifeSpeed;
  if(rainEnabled&&!rainPaused){rainTime+=delta;tracer.rain.update(delta,rainAmount,rainWind,aspect);}
+ if(!tracer.ready()){busyFrames++;return;}
+ const cpuStart=performance.now();
+ const latestMask=geometry.pollMask();if(latestMask&&rainEnabled)tracer.rain.setSources(cloudUndersides(latestMask,NX,NY));
+ tuneBudget(now);
  const remaining=[];
  for(const item of pending){
   const age=Math.min((now-item.start)/550,1);
@@ -84,18 +91,20 @@ function render(now){
   if(age<1)remaining.push(item);
  }
  pending=remaining;
- if(drift&&strokes.length&&!active&&!pending.length&&driftTime-lastLifeBuild>=.12)rebuild();
+ if(drift&&strokes.length&&!active&&!pending.length&&now-lastLifeFrame>=1000/30-2){rebuild();lastLifeFrame=now;}
  if(dirty){upload();sceneRevision++;}
  const interactive=Boolean(active||pending.length);
- setResolution(interactive);
- const signature=[canvas.width,canvas.height,fullness,preset,sunAngle,sunDepth,lastLifeBuild,sceneRevision].join(',');
+ setResolution();
+ const signature=[canvas.width,canvas.height,fullness,preset,sunAngle,sunDepth,lastLifeBuild,sceneRevision,settings().renderPixels].join(',');
  const changed=signature!==lastSignature;
  if(changed||tracer.invalid){tracer.render(settings());lastSignature=signature;}
  else if(weatherDirty||rainEnabled&&!rainPaused&&(tracer.rain.model.drops.length||tracer.rain.model.sources.length)){tracer.present(settings());}
- weatherDirty=false;
+ weatherDirty=false;canvas.dataset.cpuMs=(performance.now()-cpuStart).toFixed(1);
  const status=$('#render-status');
  const message=!strokes.length?'':interactive?'Following your hand':drift?'A living sky':'A still moment';if(status.textContent!==message)status.textContent=message;
  status.dataset.settled=String(!interactive);
+ if(now-measureStart>=1000){canvas.dataset.fps=((tracer.presentations-previousPresentations)*1000/(now-measureStart)).toFixed(1);canvas.dataset.cloudFps=((tracer.frames-previousVolumeFrames)*1000/(now-measureStart)).toFixed(1);previousPresentations=tracer.presentations;previousVolumeFrames=tracer.frames;measureStart=now;}
+ canvas.dataset.gpuMs=tracer.gpuMs.toFixed(1);canvas.dataset.volumeResolution=`${tracer.width}x${tracer.height}`;
  canvas.dataset.frames=String(tracer.frames);
  canvas.dataset.renderer='stable-volume';
  canvas.dataset.quality=String(quality);
@@ -107,7 +116,7 @@ function render(now){
 }
 let raf;function frame(now){render(now);raf=requestAnimationFrame(frame);}
 document.addEventListener('visibilitychange',()=>{if(document.hidden){saveState();cancelAnimationFrame(raf);}else{lastTime=performance.now();raf=requestAnimationFrame(frame);}});
-function updateUI(){const any=strokes.length>0;document.body.classList.toggle('has-clouds',any);$('#undo').disabled=!history.length;$('#redo').disabled=!future.length;$('#clear').disabled=!any;}
+function updateUI(){canvas.dataset.points=String(strokes.reduce((n,s)=>n+s.points.length,0));const any=strokes.length>0;document.body.classList.toggle('has-clouds',any);$('#undo').disabled=!history.length;$('#redo').disabled=!future.length;$('#clear').disabled=!any;}
 function saveState(){try{localStorage.setItem('cloudroom-v1',JSON.stringify({strokes,preset,fullness,sunAngle,sunDepth,quality,rainEnabled,rainAmount,rainWind,rainPaused,lifeVersion:2,living:drift,lifeSpeed,lifeTime:driftTime,brush}));}catch{toast('Your browser could not remember this sky. You can still save an image.');}}
 function persist(){clearTimeout(saveTimer);saveTimer=setTimeout(saveState,400);}
 window.addEventListener('pagehide',saveState);
@@ -134,10 +143,10 @@ function syncLife(){
 }
 function toggleDrift(){drift=!drift;syncLife();persist();toast(drift?'The sky is breathing.':'A still moment.');}$('#drift').onclick=toggleDrift;
 $('#life-speed').oninput=e=>{lifeSpeed=+e.target.value;syncLife();persist();};
-$('#clear').onclick=()=>{finish();if(!strokes.length)return;history.push(strokes.slice());future=[];strokes=[];tracer.rain.clear();rebuild();persist();toast('A fresh sky. Undo to bring it back.');};
+$('#clear').onclick=()=>{finish();if(!strokes.length)return;history.push(strokes.slice());future=[];strokes=[];tracer.rain.clear();tracer.rain.setSources([]);rebuild();persist();toast('A fresh sky. Undo to bring it back.');};
 async function save(){
  if(exporting)return;
- finish();rebuild();upload();sceneRevision++;exporting=true;exportCancelled=false;document.body.classList.add('exporting');$('#export-progress').hidden=false;
+ exporting=true;finish();rebuild();upload();sceneRevision++;exportCancelled=false;document.body.classList.add('exporting');$('#export-progress').hidden=false;
  const wasDrifting=drift;drift=false;
  const width=canvas.width,height=canvas.height,button=$('#save');button.disabled=true;
  const scale=Math.min(2,2400/Math.max(innerWidth,innerHeight));
@@ -174,7 +183,7 @@ function syncRain(){
  $('#wind-value').textContent=Math.abs(rainWind)<.12?'Still':rainWind<0?'From the right':'From the left';
  weatherDirty=true;
 }
-function toggleRain(){rainEnabled=!rainEnabled;if(!rainEnabled)tracer.rain.clear();if(rainEnabled&&reducedMotion)rainPaused=true;syncRain();persist();toast(rainEnabled?'A little weather.':'The rain has passed.');}
+function toggleRain(){rainEnabled=!rainEnabled;if(rainEnabled)dirty=true;if(!rainEnabled)tracer.rain.clear();if(rainEnabled&&reducedMotion)rainPaused=true;syncRain();persist();toast(rainEnabled?'A little weather.':'The rain has passed.');}
 $('#rain').onclick=toggleRain;
 $('#rain-amount').oninput=e=>{rainAmount=+e.target.value;syncRain();persist();};
 $('#rain-wind').oninput=e=>{rainWind=+e.target.value;syncRain();persist();};

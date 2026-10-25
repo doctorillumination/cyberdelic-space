@@ -25,24 +25,24 @@
     {
       "slug": "aeria",
       "capture": "actual browser canvas, 30 fps, no audio",
-      "raw_sha256": "6cbfb9f531c017cb9006e6a4316046a9ebd03e9ba0b0ed63c1d833eaa9e68224",
-      "raw_duration": 7.876361,
+      "raw_sha256": "83f89a0b3a12ffc3870b58fbb7365878f15cb30c05d48d23c143a507e937ee9d",
+      "raw_duration": 7.949886,
       "loop_method": "one-second end-to-start crossfade",
-      "source_snapshot_sha256": "e92b4435a7b71e10874a2d9709ab0f1d84133bac9ddacf568d100bd506536fa9",
+      "source_snapshot_sha256": "04824945c8d95e467b4ca5ae0396969b55ef8ee9d0dc4e0ea68e3690f652420a",
       "path": "aeria.mp4",
-      "sha256": "9b24041420c9c30bb85891957395924d1b06367673bca29a22af0ebf5ff1bed4",
-      "length": 115522
+      "sha256": "dfb577194ce39525c19b32f248c9646f42644a94cfd66d1b37cfbea0a3b5a5a2",
+      "length": 113605
     },
     {
       "slug": "lumen",
       "capture": "actual browser canvas, 30 fps, no audio",
-      "raw_sha256": "de973812005c8e66f71b739e47c13d07aeb17685d138c24b52e4d4cb3a5e97b5",
-      "raw_duration": 7.863878,
+      "raw_sha256": "037363b1939280a9e2a588c5266af03834164f539ad79db8fab5d5030eec9938",
+      "raw_duration": 7.931586,
       "loop_method": "one-second end-to-start crossfade",
-      "source_snapshot_sha256": "b97a6c08b2023b9c2cf1ed44d5ece8e397c7d2c059c25df5491a7cdb39333804",
+      "source_snapshot_sha256": "234c9b23f6f13f3c2def7583eabfc83a7af409b6c15ad46f014cfd2e9204bd3a",
       "path": "lumen.mp4",
-      "sha256": "ca6daa6f3f4e77247020bb4b25b5698760fbb9081156026f89e3527749b0088d",
-      "length": 437185
+      "sha256": "ce33ff2e7751c7e475e078dba0b08d66dc281023b62d2efc9d5cc01589f5751a",
+      "length": 792414
     }
   ]
 }

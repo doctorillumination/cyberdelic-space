@@ -442,16 +442,19 @@
     {
       "slug": "aeria",
       "project": "cloudroom",
-      "revision": "0142ccee55047c6c88fe041e9bc3b5be66e166b6",
       "repository": "https://github.com/doctorillumination/clouds",
+      "revision": "2ef696aeafce23091ebc61a5a909a9bf0d4711fb",
+      "source_subdirectory": "dist",
+      "source_version": "cloudroom-gpu",
+      "edition": "cloudroom-gpu",
       "source_files": [
         {
           "path": "app.js",
-          "sha256": "2d6fe32eedf5810ff56402768288e36cb485eb1a6a955051bb20f3298a7d7302"
+          "sha256": "08801813716178e6ed702668bd228e8bd110348223867997b3213629568c02ef"
         },
         {
           "path": "cloud-life.js",
-          "sha256": "f00d46c363f6b24dc6403c54cae0a8ce2bbdb77d670d1d481d6b963316cd0d66"
+          "sha256": "b5d0379bd6a6a159b13b7381c89ce8a3edcb72c6f8b6476b628a795d7887d6ab"
         },
         {
           "path": "cloud-noise.bin",
@@ -471,22 +474,25 @@
         },
         {
           "path": "renderer.js",
-          "sha256": "4d44ac8bcdf50dee27e8a642fecd725382d66d5c54efd77ba289aee74b8d5ce7"
+          "sha256": "4a9a4a3159fabb0fc1399775d064306b8d37fe2af0a98ddfa0806edfa30dc643"
         },
         {
           "path": "style.css",
           "sha256": "fde5ea9da8c63e23bae3a53c02f4ae2db1c2535b20f5d298831252e23a106c39"
+        },
+        {
+          "path": "volume-gpu.js",
+          "sha256": "20bdd7f80bb53138a544fc4847e10b9e0d16bf561e25a9be6814526a7467f8d5"
         }
       ],
-      "adaptations": "Display names and export filenames updated for Fieldworks. Opalia dependencies bundled locally. Rendering and simulation code preserved.",
       "packaged_files": [
         {
           "path": "app.js",
-          "sha256": "351e6347feced57ce98ca9af73a186d6911b2f2aee5e380db017b2bbea05449e"
+          "sha256": "409080a1d2124eb08e4c3b69b6be80ad08a5b20da3a20429a67297f58dc97e79"
         },
         {
           "path": "cloud-life.js",
-          "sha256": "f00d46c363f6b24dc6403c54cae0a8ce2bbdb77d670d1d481d6b963316cd0d66"
+          "sha256": "b5d0379bd6a6a159b13b7381c89ce8a3edcb72c6f8b6476b628a795d7887d6ab"
         },
         {
           "path": "cloud-noise.bin",
@@ -506,27 +512,39 @@
         },
         {
           "path": "renderer.js",
-          "sha256": "4d44ac8bcdf50dee27e8a642fecd725382d66d5c54efd77ba289aee74b8d5ce7"
+          "sha256": "4a9a4a3159fabb0fc1399775d064306b8d37fe2af0a98ddfa0806edfa30dc643"
         },
         {
           "path": "style.css",
           "sha256": "fde5ea9da8c63e23bae3a53c02f4ae2db1c2535b20f5d298831252e23a106c39"
+        },
+        {
+          "path": "volume-gpu.js",
+          "sha256": "20bdd7f80bb53138a544fc4847e10b9e0d16bf561e25a9be6814526a7467f8d5"
         }
-      ]
+      ],
+      "adaptations": "Aeria display name and export prefix only; renderer unchanged."
     },
     {
       "slug": "lumen",
       "project": "lumen-specimen",
-      "revision": null,
       "repository": null,
+      "revision": null,
+      "source_subdirectory": "dist/explore",
+      "source_version": "form-atlas",
+      "edition": "form-atlas",
       "source_files": [
         {
           "path": "app.js",
-          "sha256": "03736f5da795261064cacd66eb2e402d21261cc7da69bbfc6f0dd9090bb165e4"
+          "sha256": "55fbc1a53f195d48122a8b72812d3e633475ce76a39f73dfb716d241f6e1bdc8"
         },
         {
           "path": "autofocus.js",
-          "sha256": "3558b6035274ba03d864d4796df14f806b289111482f33d4512180d1e26c318d"
+          "sha256": "19204c0be30ddc0b9dd4289bf50e73021c8f189b5a606f124fd019b07f1f3dd4"
+        },
+        {
+          "path": "bulb-shaders.js",
+          "sha256": "42ebab7ccd76851101d2539de1ae2cd11105f687035e0ed5ca67ccf388b6412c"
         },
         {
           "path": "cinematographer.js",
@@ -534,7 +552,7 @@
         },
         {
           "path": "crystal-shaders.js",
-          "sha256": "c2f1d67d79d6b9c41ddf89979fe337fc5874319fd0b44d1dd877b7bc613a5cb2"
+          "sha256": "5d6032ef233f2b6d2839e906fc74021ac3493edf0c896430226593d6ca0320dd"
         },
         {
           "path": "growth.js",
@@ -546,25 +564,53 @@
         },
         {
           "path": "index.html",
-          "sha256": "beda561b2449f1e0aa7aef2a926d66241c4a379895950f3931893a4d1c98753f"
+          "sha256": "db5d76f1bf0ae3a9821395b4146f7f42cc9cda2cdac24652c330c997a8a31c32"
+        },
+        {
+          "path": "julia-shaders.js",
+          "sha256": "a90f1bf8f3401a18faf3ad02b8c9bfff968c70dfaf00b6c1d75a5537948ca610"
+        },
+        {
+          "path": "lens.js",
+          "sha256": "d1a53721d4fc7151d642e4984d017e2909acdc7864edf29e05e37e1de02d6761"
         },
         {
           "path": "living-growth.js",
           "sha256": "edc35e442b0aea8394d781938de109041d6d6c1435a78abd374b7facacf8d79a"
         },
         {
+          "path": "models.js",
+          "sha256": "b65d1e7cfdca3603b48847a1b04b072cbc990c95743afea3e853d6293573021b"
+        },
+        {
+          "path": "oil-shaders.js",
+          "sha256": "699149ed9e8616bc72761b309c180af3aeae2bffc2d42748282b45c5a835c787"
+        },
+        {
+          "path": "pigment.js",
+          "sha256": "342204477e2d0fe068833d265f73fbb1f967adbc253c9fe0433999e67ed2d23e"
+        },
+        {
+          "path": "shape-worker.js",
+          "sha256": "b84737e53c9f6f69e7b0b3aec210c5832b0e1540109dd5401da206dfe54b9056"
+        },
+        {
           "path": "style.css",
-          "sha256": "efd8e62be9e293bdb391dfca1c5bf24635dae9cc5de6eabf8108f117466b0ff3"
+          "sha256": "c907fd2f257516e3b5a0341d3392a0e269eb9b50ba3ffe4a5a01b61e1528f88f"
         }
       ],
       "packaged_files": [
         {
           "path": "app.js",
-          "sha256": "03736f5da795261064cacd66eb2e402d21261cc7da69bbfc6f0dd9090bb165e4"
+          "sha256": "55fbc1a53f195d48122a8b72812d3e633475ce76a39f73dfb716d241f6e1bdc8"
         },
         {
           "path": "autofocus.js",
-          "sha256": "3558b6035274ba03d864d4796df14f806b289111482f33d4512180d1e26c318d"
+          "sha256": "19204c0be30ddc0b9dd4289bf50e73021c8f189b5a606f124fd019b07f1f3dd4"
+        },
+        {
+          "path": "bulb-shaders.js",
+          "sha256": "42ebab7ccd76851101d2539de1ae2cd11105f687035e0ed5ca67ccf388b6412c"
         },
         {
           "path": "cinematographer.js",
@@ -572,7 +618,7 @@
         },
         {
           "path": "crystal-shaders.js",
-          "sha256": "c2f1d67d79d6b9c41ddf89979fe337fc5874319fd0b44d1dd877b7bc613a5cb2"
+          "sha256": "5d6032ef233f2b6d2839e906fc74021ac3493edf0c896430226593d6ca0320dd"
         },
         {
           "path": "growth.js",
@@ -584,20 +630,42 @@
         },
         {
           "path": "index.html",
-          "sha256": "30649737b351ea4f80285da02c5007c46adf1c805304a99515a3338d9fcfcb96"
+          "sha256": "db5d76f1bf0ae3a9821395b4146f7f42cc9cda2cdac24652c330c997a8a31c32"
+        },
+        {
+          "path": "julia-shaders.js",
+          "sha256": "a90f1bf8f3401a18faf3ad02b8c9bfff968c70dfaf00b6c1d75a5537948ca610"
+        },
+        {
+          "path": "lens.js",
+          "sha256": "d1a53721d4fc7151d642e4984d017e2909acdc7864edf29e05e37e1de02d6761"
         },
         {
           "path": "living-growth.js",
           "sha256": "edc35e442b0aea8394d781938de109041d6d6c1435a78abd374b7facacf8d79a"
         },
         {
+          "path": "models.js",
+          "sha256": "b65d1e7cfdca3603b48847a1b04b072cbc990c95743afea3e853d6293573021b"
+        },
+        {
+          "path": "oil-shaders.js",
+          "sha256": "699149ed9e8616bc72761b309c180af3aeae2bffc2d42748282b45c5a835c787"
+        },
+        {
+          "path": "pigment.js",
+          "sha256": "342204477e2d0fe068833d265f73fbb1f967adbc253c9fe0433999e67ed2d23e"
+        },
+        {
+          "path": "shape-worker.js",
+          "sha256": "b84737e53c9f6f69e7b0b3aec210c5832b0e1540109dd5401da206dfe54b9056"
+        },
+        {
           "path": "style.css",
-          "sha256": "efd8e62be9e293bdb391dfca1c5bf24635dae9cc5de6eabf8108f117466b0ff3"
+          "sha256": "c907fd2f257516e3b5a0341d3392a0e269eb9b50ba3ffe4a5a01b61e1528f88f"
         }
       ],
-      "adaptations": "Current Hollow Macro, including Cinematographer, tracked focus, and living growth. Exact renderer and simulation. Only index.html wordmark link redirects to the local artwork home instead of the unshipped comparison page. Previous Specimen preview preserved in source commit 62799f3.",
-      "source_subdirectory": "dist/hollow",
-      "source_version": "1.4.0 / Hollow Macro, living macro study 004"
+      "adaptations": "Exact portable Form Atlas files. No renderer adaptations."
     }
   ]
 }

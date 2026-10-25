@@ -32,8 +32,8 @@ export function trackFocus(tracker,cloud,pose,viewport,elapsed,advance=true){
  for(let index=0;index<cloud.length;index++){
   const sample=cloud[index],p=rotated(sample.position,trig),n=rotated(sample.normal,trig);
   const depth=pose.distanceToEye-p[2];
-  const x=p[0]/(depth*.255)*fit/aspect,y=p[1]/(depth*.255)*fit;
-  const radius=sample.radius*viewport.height/(depth*.255)*fit;
+  const x=p[0]/(depth*(pose.lens??.255))*fit/aspect,y=p[1]/(depth*(pose.lens??.255))*fit;
+  const radius=sample.radius*viewport.height/(depth*(pose.lens??.255))*fit;
   if(Math.abs(x)>.44||Math.abs(y)>.44||radius<.18)continue;
   const lit=Math.max(0,(-.8*n[0]+1.5*n[1]+1.3*n[2])/2.14);
   const edge=Math.pow(1-Math.abs(n[2]),1.6);

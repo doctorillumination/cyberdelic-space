@@ -42,12 +42,12 @@ export class RainModel {
  clear(){this.drops=[];this.carry=0;}
  update(delta,amount,wind,aspect=1){
   const dt=Math.max(0,Math.min(delta,.15));if(!dt)return;
-  const surviving=[];
+  let surviving=0;
   for(const d of this.drops){
    d.age+=dt;d.vx+=(wind*d.speed*.17/aspect-d.vx)*Math.min(dt*3,1);d.x+=d.vx*dt;d.y-=d.speed*dt;
-   if(d.y>-.07&&d.x>-.1&&d.x<1.1&&d.age<5)surviving.push(d);
+   if(d.y>-.07&&d.x>-.1&&d.x<1.1&&d.age<5)this.drops[surviving++]=d;
   }
-  this.drops=surviving;
+  this.drops.length=surviving;
   if(!this.sources.length||amount<=0){this.carry=0;return;}
   const rate=this.sources.reduce((sum,s)=>sum+s.strength,0)*(2+amount*8);
   this.carry+=rate*dt;

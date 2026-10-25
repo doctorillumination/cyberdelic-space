@@ -18023,19 +18023,19 @@
         "fieldworks/lumen/"
       ],
       "source_path": "fieldworks/readings/lumen.md",
-      "source_sha256": "f34e23a8d776708de1e964506b9e306d3516127532173381b5f53534853852a8",
-      "document_sha256": "f34e23a8d776708de1e964506b9e306d3516127532173381b5f53534853852a8",
-      "text_sha256": "513f6470b36cb16361df1c721426b0347a07f09dcab8fc34111e3a2cab64fb60",
-      "reading_path": "audio/readings/513f6470b36cb16361df1c721426b0347a07f09dcab8fc34111e3a2cab64fb60.md",
-      "reading_sha256": "f34e23a8d776708de1e964506b9e306d3516127532173381b5f53534853852a8",
-      "reading_length": 913,
-      "audio_path": "audio/lewis/513f6470b36cb16361df1c721426b0347a07f09dcab8fc34111e3a2cab64fb60.mp3",
+      "source_sha256": "284192a0abdcbeb31905866fe74fbb7184b425597f38683ebc6a3a218cdcba49",
+      "document_sha256": "284192a0abdcbeb31905866fe74fbb7184b425597f38683ebc6a3a218cdcba49",
+      "text_sha256": "5c28f2ce8ad08cb583f33031b2639536a02f013cdce7a10c2925af160bd3b461",
+      "reading_path": "audio/readings/5c28f2ce8ad08cb583f33031b2639536a02f013cdce7a10c2925af160bd3b461.md",
+      "reading_sha256": "284192a0abdcbeb31905866fe74fbb7184b425597f38683ebc6a3a218cdcba49",
+      "reading_length": 1121,
+      "audio_path": "audio/lewis/5c28f2ce8ad08cb583f33031b2639536a02f013cdce7a10c2925af160bd3b461.mp3",
       "voice": "bm_lewis",
       "voice_name": "Lewis",
       "speed": 1.0,
-      "audio_sha256": "dcac7bff2da3f1795c095a6516703939ada3a0c30f8bfe54b735d2ccb62cd439",
-      "audio_length": 790028,
-      "duration_seconds": 65.75,
+      "audio_sha256": "873d2870bc5e48b201defd6cba2c0f499673ae2fe46197b9179d41bb95a090c7",
+      "audio_length": 955916,
+      "duration_seconds": 79.575,
       "chunks": [
         {
           "text": "Lumen",
@@ -18048,23 +18048,23 @@
           "duration": 4.775
         },
         {
-          "text": "A translucent crystalline colony turns through spectral light. Its branching structure grows from a seed, while a procedural renderer gives its surfaces a photographic quality. Drag to turn the specimen, scroll to approach, or open the studio to explore focus, aperture, transmission, and colour drift.",
+          "text": "A collection of impossible forms turns through spectral light: crystalline colonies, branching groves, strange attractors, and sculpted fractals. Choose a form, drag to turn it, scroll to approach, or open the studio to explore focus, aperture, transmission, and colour drift. Each form offers another way of encountering the same small universe.",
           "start": 6.56,
-          "duration": 20.375
+          "duration": 23.1
         },
         {
-          "text": "Fine branches unfold and draw back into the colony. Cinematographer mode moves through the specimen while focus follows visible tendrils. Both modes can be switched off, and pausing holds the entire scene still.",
-          "start": 27.115,
-          "duration": 14.825
+          "text": "Some forms unfold fine branches and draw them back again. Cinematographer mode guides the view, while lens compression changes the relationship between near and distant surfaces. Optional lens breathing slowly shifts that perspective. The controls remain yours, and pausing holds the motion still.",
+          "start": 29.84,
+          "duration": 20.625
         },
         {
-          "text": "Lumen approaches a fractal as something to encounter, rather than a diagram to decode. Its light and material are optical approximations, not a measured physical specimen. This living study is still in progress, and this Fieldworks edition is a snapshot of that ongoing work.",
-          "start": 42.12,
-          "duration": 18.8
+          "text": "Lumen approaches mathematical form as something to encounter, rather than a diagram to decode. Its light, material, and lens are artistic approximations, not measured physical specimens or scientific simulations. The current edition is Form Atlas. The earlier studies remain preserved in the source project, and this living artwork is still in progress.",
+          "start": 50.645,
+          "duration": 24.1
         },
         {
           "text": "By Brad Necyk. This living artwork is not inscribed.",
-          "start": 61.1,
+          "start": 74.925,
           "duration": 4.65
         }
       ],
@@ -18072,7 +18072,7 @@
         "all_text_retained": true,
         "mp3_decodes": true,
         "finite_samples": true,
-        "peak": 0.6063810586929321,
+        "peak": 0.5434364676475525,
         "clipped_samples": 0
       }
     },
@@ -18125,6 +18125,68 @@
         "mp3_decodes": true,
         "finite_samples": true,
         "peak": 0.4922001361846924,
+        "clipped_samples": 0
+      }
+    },
+    {
+      "id": "fieldworks-lumen-hollow-macro",
+      "title": "Lumen, Hollow Macro edition",
+      "form": "fieldwork",
+      "release_id": null,
+      "pages": [
+        "fieldworks/readings/lumen-hollow-macro.md"
+      ],
+      "source_path": "fieldworks/readings/lumen-hollow-macro.md",
+      "source_sha256": "f34e23a8d776708de1e964506b9e306d3516127532173381b5f53534853852a8",
+      "document_sha256": "f34e23a8d776708de1e964506b9e306d3516127532173381b5f53534853852a8",
+      "text_sha256": "513f6470b36cb16361df1c721426b0347a07f09dcab8fc34111e3a2cab64fb60",
+      "reading_path": "audio/readings/513f6470b36cb16361df1c721426b0347a07f09dcab8fc34111e3a2cab64fb60.md",
+      "reading_sha256": "f34e23a8d776708de1e964506b9e306d3516127532173381b5f53534853852a8",
+      "reading_length": 913,
+      "audio_path": "audio/lewis/513f6470b36cb16361df1c721426b0347a07f09dcab8fc34111e3a2cab64fb60.mp3",
+      "voice": "bm_lewis",
+      "voice_name": "Lewis",
+      "speed": 1.0,
+      "audio_sha256": "dcac7bff2da3f1795c095a6516703939ada3a0c30f8bfe54b735d2ccb62cd439",
+      "audio_length": 790028,
+      "duration_seconds": 65.75,
+      "chunks": [
+        {
+          "text": "Lumen",
+          "start": 0.0,
+          "duration": 1.425
+        },
+        {
+          "text": "Impossible matter. A small universe under a macro lens.",
+          "start": 1.605,
+          "duration": 4.775
+        },
+        {
+          "text": "A translucent crystalline colony turns through spectral light. Its branching structure grows from a seed, while a procedural renderer gives its surfaces a photographic quality. Drag to turn the specimen, scroll to approach, or open the studio to explore focus, aperture, transmission, and colour drift.",
+          "start": 6.56,
+          "duration": 20.375
+        },
+        {
+          "text": "Fine branches unfold and draw back into the colony. Cinematographer mode moves through the specimen while focus follows visible tendrils. Both modes can be switched off, and pausing holds the entire scene still.",
+          "start": 27.115,
+          "duration": 14.825
+        },
+        {
+          "text": "Lumen approaches a fractal as something to encounter, rather than a diagram to decode. Its light and material are optical approximations, not a measured physical specimen. This living study is still in progress, and this Fieldworks edition is a snapshot of that ongoing work.",
+          "start": 42.12,
+          "duration": 18.8
+        },
+        {
+          "text": "By Brad Necyk. This living artwork is not inscribed.",
+          "start": 61.1,
+          "duration": 4.65
+        }
+      ],
+      "checks": {
+        "all_text_retained": true,
+        "mp3_decodes": true,
+        "finite_samples": true,
+        "peak": 0.6063810586929321,
         "clipped_samples": 0
       }
     }
@@ -18252,8 +18314,8 @@
     },
     {
       "path": "audio-bundles/lewis-18.zip",
-      "length": 22965654,
-      "sha256": "2588fc4bc4aba89bc28857a8e38b99dd4898cf857befd63974dc0f14b1420aba"
+      "length": 23921806,
+      "sha256": "ca2fb63100d31d7e1398f3440a0fc74b6e8aa0243e444657db0dfac884288874"
     }
   ]
 }

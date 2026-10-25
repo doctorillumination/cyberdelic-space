@@ -145,7 +145,8 @@ function program(gl,fragment){
 export class CloudRenderer {
  constructor(gl,preview){
   this.gl=gl;this.rain=new CloudRain(gl);this.preview=preview;this.display=program(gl,displayShader);this.locations=new Map();
-  this.floatTargets=Boolean(gl.getExtension('EXT_color_buffer_float'));this.frames=0;
+  this.floatTargets=Boolean(gl.getExtension('EXT_color_buffer_float'));this.frames=0;this.presentations=0;
+  this.timer=gl.getExtension('EXT_disjoint_timer_query_webgl2');this.queries=[];this.gpuMs=0;this.gpuSample=0;
  }
  uniform(p,name){const key=(p===this.preview?'volume:':'display:')+name;if(!this.locations.has(key))this.locations.set(key,this.gl.getUniformLocation(p,name));return this.locations.get(key);}
  allocate(w,h){
@@ -160,30 +161,46 @@ export class CloudRenderer {
   gl.bindFramebuffer(gl.FRAMEBUFFER,null);
  }
  ready(){
+  this.pollTiming();
   if(!this.fence)return true;const gl=this.gl,result=gl.clientWaitSync(this.fence,0,0);
   if(result===gl.TIMEOUT_EXPIRED)return false;
   if(result===gl.WAIT_FAILED)throw new Error('The GPU could not complete the cloud lighting pass.');
   gl.deleteSync(this.fence);this.fence=null;return true;
  }
- submit(){this.fence=this.gl.fenceSync(this.gl.SYNC_GPU_COMMANDS_COMPLETE,0);this.gl.flush();}
+ beginWork(){
+  if(this.query||!this.timer||this.queries.length>=4)return;
+  this.query=this.gl.createQuery();this.gl.beginQuery(this.timer.TIME_ELAPSED_EXT,this.query);
+ }
+ pollTiming(){
+  const gl=this.gl;if(!this.timer)return;
+  const disjoint=gl.getParameter(this.timer.GPU_DISJOINT_EXT);
+  if(disjoint){for(const q of this.queries)gl.deleteQuery(q);this.queries.length=0;this.gpuMs=0;this.gpuSample=0;return;}
+  while(this.queries.length&&gl.getQueryParameter(this.queries[0],gl.QUERY_RESULT_AVAILABLE)){
+   const q=this.queries.shift();if(!disjoint){this.gpuMs=gl.getQueryParameter(q,gl.QUERY_RESULT)/1e6;this.gpuSample++;}gl.deleteQuery(q);
+  }
+ }
+ submit(){if(this.fence)this.gl.deleteSync(this.fence);this.fence=this.gl.fenceSync(this.gl.SYNC_GPU_COMMANDS_COMPLETE,0);this.gl.flush();}
  reset(){this.invalid=true;}
  render(settings){
-  const gl=this.gl,w=gl.canvas.width,h=gl.canvas.height;
+  const gl=this.gl,scale=Math.min(1,Math.sqrt((settings.renderPixels||Infinity)/(gl.canvas.width*gl.canvas.height))),w=Math.round(gl.canvas.width*scale),h=Math.round(gl.canvas.height*scale);
   if(w!==this.width||h!==this.height)this.allocate(w,h);
   gl.viewport(0,0,w,h);gl.bindFramebuffer(gl.FRAMEBUFFER,this.framebuffer);gl.useProgram(this.preview);
   for(const name of ['aspect','time','fullness','lightMode','sunAngle','sunDepth'])gl.uniform1f(this.uniform(this.preview,name),settings[name]);
   gl.uniform1f(this.uniform(this.preview,'encodedHDR'),this.floatTargets?0:1);gl.uniform2f(this.uniform(this.preview,'pixels'),w,h);
   for(const [name,unit] of [['volume',0],['noiseField',1],['footprint',2]])gl.uniform1i(this.uniform(this.preview,name),unit);
-  gl.drawArrays(gl.TRIANGLES,0,6);this.frames++;this.invalid=false;this.present(settings);
+  this.beginWork();
+  gl.drawArrays(gl.TRIANGLES,0,6);
+  if(this.query){gl.endQuery(this.timer.TIME_ELAPSED_EXT);this.queries.push(this.query);this.query=null;}
+  this.frames++;this.invalid=false;this.present(settings);
  }
  present(settings){
   if(!this.texture)return;
-  const gl=this.gl,w=this.width,h=this.height;
+  const gl=this.gl,w=gl.canvas.width,h=gl.canvas.height;
   gl.viewport(0,0,w,h);gl.bindFramebuffer(gl.FRAMEBUFFER,null);gl.useProgram(this.display);
   gl.activeTexture(gl.TEXTURE3);gl.bindTexture(gl.TEXTURE_2D,this.texture);
   gl.uniform1i(this.uniform(this.display,'image'),3);
   gl.uniform1f(this.uniform(this.display,'encodedHDR'),this.floatTargets?0:1);
   gl.uniform2f(this.uniform(this.display,'pixels'),w,h);
-  gl.drawArrays(gl.TRIANGLES,0,6);this.rain.draw(settings,w,h,this.floatTargets?0:1);this.submit();
+  gl.drawArrays(gl.TRIANGLES,0,6);this.presentations++;this.rain.draw(settings,w,h,this.floatTargets?0:1);this.submit();
  }
 }

@@ -1,0 +1,37 @@
+name: Publish Fieldwork release
+on:
+  push:
+    branches: ['fieldworks-release/**']
+  workflow_dispatch:
+    inputs:
+      release_ref:
+        description: Bounded release branch to install or retry
+        required: true
+        type: string
+permissions:
+  contents: write
+concurrency:
+  group: fieldworks-publication
+  cancel-in-progress: false
+  queue: max
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Check video inspection support
+        run: command -v ffprobe >/dev/null || (sudo apt-get update -qq && sudo apt-get install -y ffmpeg)
+      - name: Validate, install, publish, and verify only the declared artwork
+        env:
+          RELEASE_REF: ${{ inputs.release_ref || github.ref_name }}
+        run: python .github/scripts/fieldworks_sync.py --ref "$RELEASE_REF"
