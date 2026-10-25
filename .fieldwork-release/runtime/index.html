@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#030403">
+<meta name="description" content="A study of impossible matter. Translucent fractal geometry, slow spectral light, and a macro lens in a black void.">
+<title>Lumen / Form Atlas</title>
+<link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main aria-label="Lumen, an interactive generative light sculpture">
+<canvas tabindex="-1" id="art" aria-label="A rotating translucent fractal sculpture in shifting spectral light. Drag to turn it, scroll to move closer."></canvas>
+<div id="loading" role="status">Gathering light<span></span></div>
+<header class="chrome"><a class="wordmark" href="./" aria-label="Lumen Form Atlas">LUMEN<span> / </span>FORM ATLAS</a><span class="edition">ELEVEN FORMS <i>006</i></span></header>
+<nav class="shape-picker chrome" aria-label="Choose a sculpture"><button id="previous" aria-label="Previous shape" title="Previous shape (Left arrow)">‹</button><select id="shape" aria-label="Shape"></select><button id="next" aria-label="Next shape" title="Next shape (Right arrow)">›</button></nav>
+<div class="form-caption chrome"><span id="form-number">02 / 11</span><h1 id="form-name">Living coral</h1><p id="form-description">A crystalline colony, unfolding into finer branches.</p></div>
+<div class="caption chrome"><span class="live-dot"></span><span id="state-label">A living study of light</span></div>
+<nav class="toolbar chrome" aria-label="Artwork controls">
+<button id="play" aria-label="Pause motion" title="Pause motion (Space)"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7 5v10M13 5v10"/></svg></button>
+<button id="cinema" aria-label="Cinematographer mode" aria-pressed="true" title="Cinematographer on (C)"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 7h14v10H3zM3 7l-1-4 14-2 1 4zM6 2l2 4M11 1.7l2 3.7"/><path d="m8 10 5 2-5 2z"/></svg></button>
+<button id="growth" aria-label="Living growth" aria-pressed="true" title="Living growth on (G)"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 17V8M10 12 5 8M5 8V4M5 8H2M10 9l5-4M15 5V2M15 5h3M10 8V3"/></svg></button>
+<button id="settings" aria-label="Open studio controls" aria-expanded="false" aria-controls="studio" title="Studio controls"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 6h12M4 14h12M8 3v6M13 11v6"/></svg></button>
+<button id="capture" aria-label="Save image" title="Save image (S)"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 6h3l1-2h4l1 2h3v10H4z"/><circle cx="10" cy="11" r="3"/></svg></button>
+<button id="fullscreen" aria-label="Enter fullscreen" title="Fullscreen (F)"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7 3H3v4M13 3h4v4M3 13v4h4M17 13v4h-4"/></svg></button>
+<button id="hide" aria-label="Hide interface" title="Hide interface (H)"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 10s3-5 8-5 8 5 8 5-3 5-8 5-8-5-8-5z"/><circle cx="10" cy="10" r="2"/></svg></button>
+</nav>
+<aside id="studio" class="chrome" aria-label="Studio controls" hidden>
+<div class="panel-heading"><h1>The macro studio</h1><button id="close" aria-label="Close studio controls">×</button></div>
+<p>A collection of impossible matter under a macro lens.</p>
+<div class="cinema-card"><button id="cinema-studio" aria-pressed="true">Cinematographer <span id="cinema-status">On</span></button><p id="cinema-helper">Focus, aperture, spectral light, and orbit drift around your settings.</p></div>
+<div class="cinema-card growth-card"><button id="growth-studio" aria-pressed="true">Living growth <span id="growth-status">On</span></button><p>Fine branches unfold, divide, and draw back into the colony.</p></div>
+<div class="lens-controls"><label>Lens compression <output id="compression-value">Balanced</output><input id="compression" type="range" min="0" max="1" value="0.5" step="0.005"></label><p class="lens-help">Wide to telephoto. Framing stays roughly the same as depth opens or compresses.</p><button id="lens-drift" class="lens-toggle" aria-pressed="false">Lens breathing <span id="lens-status">Off</span></button><p class="lens-help">A slow lens shift, independent of Cinematographer.</p></div>
+<label>Focal plane <output id="focus-value">Centre</output><input id="focus" type="range" min="8.5" max="16" value="11.1" step="0.01"></label>
+<label>Macro aperture <output id="aperture-value">Shallow</output><input id="aperture" type="range" min="0" max="1.3" value="0.64" step="0.005"></label>
+<label>Edge transmission <output id="transmission-value">72%</output><input id="transmission" type="range" min="0" max="1" value="0.72" step="0.01"></label>
+<label>Spectral drift <output id="drift-value">Slow</output><input id="drift" type="range" min="0" max="1" value="0.28" step="0.01"></label>
+<label>Rotation <output id="speed-value">Slow</output><input id="speed" type="range" min="0" max="1" value="0.15" step="0.01"></label>
+<label class="select-row" for="quality">Rendering <select id="quality"><option value="0.75">Gentle</option><option value="1" selected>Balanced</option><option value="1.5">Fine</option></select></label>
+<button id="new" class="text-button">Another variation <span>↗</span></button>
+<div class="instructions">Drag to turn · Scroll to approach<br>Space to pause · C for cinema · G for growth<br>← → to change form · H to disappear</div>
+</aside>
+<button id="restore" aria-label="Show interface" hidden>Show controls</button>
+<div id="toast" role="status"></div>
+<div id="error" role="alert" hidden></div>
+</main><script type="module" src="app.js"></script>
+</body></html>
