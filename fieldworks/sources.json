@@ -523,7 +523,8 @@
           "sha256": "20bdd7f80bb53138a544fc4847e10b9e0d16bf561e25a9be6814526a7467f8d5"
         }
       ],
-      "adaptations": "Aeria display name and export prefix only; renderer unchanged."
+      "adaptations": "Aeria display name and export prefix only; renderer unchanged.",
+      "release_id": "6a80cc9a822547ed7655148c5c4a36aaa294597bbb9634a629863fff73e2e674"
     },
     {
       "slug": "lumen",

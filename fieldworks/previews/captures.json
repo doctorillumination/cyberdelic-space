@@ -23,12 +23,12 @@
       "length": 609568
     },
     {
-      "slug": "aeria",
-      "capture": "actual browser canvas, 30 fps, no audio",
+      "kind": "actual browser canvas, silent",
       "raw_sha256": "83f89a0b3a12ffc3870b58fbb7365878f15cb30c05d48d23c143a507e937ee9d",
       "raw_duration": 7.949886,
       "loop_method": "one-second end-to-start crossfade",
       "source_snapshot_sha256": "04824945c8d95e467b4ca5ae0396969b55ef8ee9d0dc4e0ea68e3690f652420a",
+      "slug": "aeria",
       "path": "aeria.mp4",
       "sha256": "dfb577194ce39525c19b32f248c9646f42644a94cfd66d1b37cfbea0a3b5a5a2",
       "length": 113605
