@@ -163,7 +163,7 @@ def fetch_bundle(site, ref):
     return bundle
 
 
-def verify_live(site, paths, attempts=36):
+def verify_live(site, paths, attempts=72):
     expected = {name: (site / name).read_bytes() for name in paths if (site / name).is_file()}
     def matches(pair):
         name, data = pair
