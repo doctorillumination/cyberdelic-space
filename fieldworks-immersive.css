@@ -1,4 +1,14 @@
 /* Press-owned presentation adapter. Artwork files and renderer state stay intact. */
+/* Only the host owns view controls. Keep native rendering and settings intact. */
+html[data-fieldwork-slot] :is(#fullscreen, #fullscreen-button, #hide, #restore, #show) { display: none !important; }
+html[data-fieldwork-slot="lumen"] .toolbar { right: calc(max(12px, env(safe-area-inset-right)) + 112px) !important; bottom: max(12px, env(safe-area-inset-bottom)) !important; }
+html[data-fieldwork-slot="opalia"] .art-tools { right: calc(max(12px, env(safe-area-inset-right)) + 112px) !important; bottom: max(12px, env(safe-area-inset-bottom)) !important; }
+html[data-fieldwork-slot="opalia"] body:not(.immersive) .art-tools { top: auto !important; }
+html[data-fieldwork-slot="opalia"] body:not(.immersive) .sidebar { padding-bottom: 96px; scroll-padding-bottom: 96px; }
+html[data-fieldwork-slot="undra"] #interface-footer,
+html[data-fieldwork-slot="aeria"] footer { transform: translateY(-60px); }
+html[data-fieldwork-slot="undra"] .settings { transform: translateY(-60px); max-height: calc(100dvh - 340px); }
+html[data-fieldwork-slot="undra"] #intro-hint { bottom: calc(max(28px, env(safe-area-inset-bottom)) + 60px); }
 html[data-fieldwork-artwork-only][data-fieldwork-slot="undra"] :is(#interface-toggle, #intro-hint, #interface-header, #interface-footer, .panel, #play-cue, #notice),
 html[data-fieldwork-artwork-only][data-fieldwork-slot="opalia"] :is(.sidebar, .art-caption, .art-tools, .motion-status),
 html[data-fieldwork-artwork-only][data-fieldwork-slot="aeria"] :is(.chrome, .popover, #welcome, #show, #toast),
@@ -7,3 +17,8 @@ html[data-fieldwork-artwork-only][data-fieldwork-slot="opalia"] body { overflow:
 html[data-fieldwork-artwork-only][data-fieldwork-slot="opalia"] .container { padding: 0 !important; display: block !important; height: 100dvh !important; }
 html[data-fieldwork-artwork-only][data-fieldwork-slot="opalia"] .canvas-area { position: fixed !important; inset: 0 !important; display: block !important; padding: 0 !important; }
 html[data-fieldwork-artwork-only][data-fieldwork-slot="opalia"] #canvas-container { max-width: none !important; max-height: none !important; width: 100% !important; height: 100% !important; border-radius: 0 !important; aspect-ratio: auto !important; box-shadow: none !important; }
+@media (max-width: 360px) {
+  html[data-fieldwork-slot="lumen"] .toolbar { right: max(12px, env(safe-area-inset-right)) !important; bottom: calc(max(12px, env(safe-area-inset-bottom)) + 64px) !important; }
+  html[data-fieldwork-slot="lumen"] .caption { bottom: 151px; }
+  html[data-fieldwork-slot="lumen"] .form-caption { bottom: 182px; }
+}
