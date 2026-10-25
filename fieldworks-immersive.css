@@ -1,0 +1,9 @@
+/* Press-owned presentation adapter. Artwork files and renderer state stay intact. */
+html[data-fieldwork-artwork-only][data-fieldwork-slot="undra"] :is(#interface-toggle, #intro-hint, #interface-header, #interface-footer, .panel, #play-cue, #notice),
+html[data-fieldwork-artwork-only][data-fieldwork-slot="opalia"] :is(.sidebar, .art-caption, .art-tools, .motion-status),
+html[data-fieldwork-artwork-only][data-fieldwork-slot="aeria"] :is(.chrome, .popover, #welcome, #show, #toast),
+html[data-fieldwork-artwork-only][data-fieldwork-slot="lumen"] :is(.chrome, #restore, #toast) { display: none !important; }
+html[data-fieldwork-artwork-only][data-fieldwork-slot="opalia"] body { overflow: hidden !important; }
+html[data-fieldwork-artwork-only][data-fieldwork-slot="opalia"] .container { padding: 0 !important; display: block !important; height: 100dvh !important; }
+html[data-fieldwork-artwork-only][data-fieldwork-slot="opalia"] .canvas-area { position: fixed !important; inset: 0 !important; display: block !important; padding: 0 !important; }
+html[data-fieldwork-artwork-only][data-fieldwork-slot="opalia"] #canvas-container { max-width: none !important; max-height: none !important; width: 100% !important; height: 100% !important; border-radius: 0 !important; aspect-ratio: auto !important; box-shadow: none !important; }
