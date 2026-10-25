@@ -1,6 +1,7 @@
 # Never publish repository metadata or local development files.
 .git/**
 .github/**
+.fieldwork-release/**
 .wrangler/**
 node_modules/**
 .DS_Store

@@ -4,14 +4,16 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#030403">
 <meta name="description" content="A study of impossible matter. Translucent fractal geometry, slow spectral light, and a macro lens in a black void.">
-<title>Lumen / Hollow Macro</title>
+<title>Lumen / Form Atlas</title>
 <link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main aria-label="Lumen, an interactive generative light sculpture">
 <canvas tabindex="-1" id="art" aria-label="A rotating translucent fractal sculpture in shifting spectral light. Drag to turn it, scroll to move closer."></canvas>
 <div id="loading" role="status">Gathering light<span></span></div>
-<header class="chrome"><a class="wordmark" href="./" aria-label="Lumen home">LUMEN<span> / </span>HOLLOW MACRO</a><span class="edition">LIVING MACRO STUDY <i>004</i></span></header>
+<header class="chrome"><a class="wordmark" href="./" aria-label="Lumen Form Atlas">LUMEN<span> / </span>FORM ATLAS</a><span class="edition">ELEVEN FORMS <i>006</i></span></header>
+<nav class="shape-picker chrome" aria-label="Choose a sculpture"><button id="previous" aria-label="Previous shape" title="Previous shape (Left arrow)">‹</button><select id="shape" aria-label="Shape"></select><button id="next" aria-label="Next shape" title="Next shape (Right arrow)">›</button></nav>
+<div class="form-caption chrome"><span id="form-number">02 / 11</span><h1 id="form-name">Living coral</h1><p id="form-description">A crystalline colony, unfolding into finer branches.</p></div>
 <div class="caption chrome"><span class="live-dot"></span><span id="state-label">A living study of light</span></div>
 <nav class="toolbar chrome" aria-label="Artwork controls">
 <button id="play" aria-label="Pause motion" title="Pause motion (Space)"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7 5v10M13 5v10"/></svg></button>
@@ -24,17 +26,18 @@
 </nav>
 <aside id="studio" class="chrome" aria-label="Studio controls" hidden>
 <div class="panel-heading"><h1>The macro studio</h1><button id="close" aria-label="Close studio controls">×</button></div>
-<p>Scattered light on a curved crystalline skin.</p>
-<div class="cinema-card"><button id="cinema-studio" aria-pressed="true">Cinematographer <span id="cinema-status">On</span></button><p id="cinema-helper">Focus follows visible tendrils as aperture and orbit drift around your settings.</p></div>
+<p>A collection of impossible matter under a macro lens.</p>
+<div class="cinema-card"><button id="cinema-studio" aria-pressed="true">Cinematographer <span id="cinema-status">On</span></button><p id="cinema-helper">Focus, aperture, spectral light, and orbit drift around your settings.</p></div>
 <div class="cinema-card growth-card"><button id="growth-studio" aria-pressed="true">Living growth <span id="growth-status">On</span></button><p>Fine branches unfold, divide, and draw back into the colony.</p></div>
+<div class="lens-controls"><label>Lens compression <output id="compression-value">Balanced</output><input id="compression" type="range" min="0" max="1" value="0.5" step="0.005"></label><p class="lens-help">Wide to telephoto. Framing stays roughly the same as depth opens or compresses.</p><button id="lens-drift" class="lens-toggle" aria-pressed="false">Lens breathing <span id="lens-status">Off</span></button><p class="lens-help">A slow lens shift, independent of Cinematographer.</p></div>
 <label>Focal plane <output id="focus-value">Centre</output><input id="focus" type="range" min="8.5" max="16" value="11.1" step="0.01"></label>
 <label>Macro aperture <output id="aperture-value">Shallow</output><input id="aperture" type="range" min="0" max="1.3" value="0.64" step="0.005"></label>
 <label>Edge transmission <output id="transmission-value">72%</output><input id="transmission" type="range" min="0" max="1" value="0.72" step="0.01"></label>
 <label>Spectral drift <output id="drift-value">Slow</output><input id="drift" type="range" min="0" max="1" value="0.28" step="0.01"></label>
-<label>Rotation <output id="speed-value">Flowing</output><input id="speed" type="range" min="0" max="1" value="0.6" step="0.01"></label>
+<label>Rotation <output id="speed-value">Slow</output><input id="speed" type="range" min="0" max="1" value="0.15" step="0.01"></label>
 <label class="select-row" for="quality">Rendering <select id="quality"><option value="0.75">Gentle</option><option value="1" selected>Balanced</option><option value="1.5">Fine</option></select></label>
-<button id="new" class="text-button">Grow another specimen <span>↗</span></button>
-<div class="instructions">Drag to turn · Scroll to approach<br>Space to pause · C for cinema · G for growth<br>H to disappear</div>
+<button id="new" class="text-button">Another variation <span>↗</span></button>
+<div class="instructions">Drag to turn · Scroll to approach<br>Space to pause · C for cinema · G for growth<br>← → to change form · H to disappear</div>
 </aside>
 <button id="restore" aria-label="Show interface" hidden>Show controls</button>
 <div id="toast" role="status"></div>

@@ -1,0 +1,68 @@
+{
+  "id": "fieldworks-lumen",
+  "title": "Lumen",
+  "form": "fieldwork",
+  "release_id": null,
+  "pages": [
+    "fieldworks/lumen/"
+  ],
+  "source_path": "fieldworks/readings/lumen.md",
+  "source_sha256": "284192a0abdcbeb31905866fe74fbb7184b425597f38683ebc6a3a218cdcba49",
+  "document_sha256": "284192a0abdcbeb31905866fe74fbb7184b425597f38683ebc6a3a218cdcba49",
+  "text_sha256": "5c28f2ce8ad08cb583f33031b2639536a02f013cdce7a10c2925af160bd3b461",
+  "reading_path": "audio/readings/5c28f2ce8ad08cb583f33031b2639536a02f013cdce7a10c2925af160bd3b461.md",
+  "reading_sha256": "284192a0abdcbeb31905866fe74fbb7184b425597f38683ebc6a3a218cdcba49",
+  "reading_length": 1121,
+  "audio_path": "audio/lewis/5c28f2ce8ad08cb583f33031b2639536a02f013cdce7a10c2925af160bd3b461.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "873d2870bc5e48b201defd6cba2c0f499673ae2fe46197b9179d41bb95a090c7",
+  "audio_length": 955916,
+  "duration_seconds": 79.575,
+  "chunks": [
+    {
+      "text": "Lumen",
+      "start": 0.0,
+      "duration": 1.425
+    },
+    {
+      "text": "Impossible matter. A small universe under a macro lens.",
+      "start": 1.605,
+      "duration": 4.775
+    },
+    {
+      "text": "A collection of impossible forms turns through spectral light: crystalline colonies, branching groves, strange attractors, and sculpted fractals. Choose a form, drag to turn it, scroll to approach, or open the studio to explore focus, aperture, transmission, and colour drift. Each form offers another way of encountering the same small universe.",
+      "start": 6.56,
+      "duration": 23.1
+    },
+    {
+      "text": "Some forms unfold fine branches and draw them back again. Cinematographer mode guides the view, while lens compression changes the relationship between near and distant surfaces. Optional lens breathing slowly shifts that perspective. The controls remain yours, and pausing holds the motion still.",
+      "start": 29.84,
+      "duration": 20.625
+    },
+    {
+      "text": "Lumen approaches mathematical form as something to encounter, rather than a diagram to decode. Its light, material, and lens are artistic approximations, not measured physical specimens or scientific simulations. The current edition is Form Atlas. The earlier studies remain preserved in the source project, and this living artwork is still in progress.",
+      "start": 50.645,
+      "duration": 24.1
+    },
+    {
+      "text": "By Brad Necyk. This living artwork is not inscribed.",
+      "start": 74.925,
+      "duration": 4.65
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.5434364676475525,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

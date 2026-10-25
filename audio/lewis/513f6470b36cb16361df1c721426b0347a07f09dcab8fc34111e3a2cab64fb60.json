@@ -1,12 +1,12 @@
 {
-  "id": "fieldworks-lumen",
-  "title": "Lumen",
+  "id": "fieldworks-lumen-hollow-macro",
+  "title": "Lumen, Hollow Macro edition",
   "form": "fieldwork",
   "release_id": null,
   "pages": [
-    "fieldworks/lumen/"
+    "fieldworks/readings/lumen-hollow-macro.md"
   ],
-  "source_path": "fieldworks/readings/lumen.md",
+  "source_path": "fieldworks/readings/lumen-hollow-macro.md",
   "source_sha256": "f34e23a8d776708de1e964506b9e306d3516127532173381b5f53534853852a8",
   "document_sha256": "f34e23a8d776708de1e964506b9e306d3516127532173381b5f53534853852a8",
   "text_sha256": "513f6470b36cb16361df1c721426b0347a07f09dcab8fc34111e3a2cab64fb60",
