@@ -1,0 +1,58 @@
+{
+  "id": "fieldworks-overview",
+  "title": "Fieldworks",
+  "form": "fieldwork",
+  "release_id": null,
+  "pages": [
+    "fieldworks/"
+  ],
+  "source_path": "fieldworks/readings/overview.md",
+  "source_sha256": "be2fd026661676d11c18d7a1a3a9b19b6ea437d3ae8feefb28becee31c5843d4",
+  "document_sha256": "be2fd026661676d11c18d7a1a3a9b19b6ea437d3ae8feefb28becee31c5843d4",
+  "text_sha256": "d2ebabf39bd0ee19471c9b71089c5e37a225a486363e94e04b05830830b19ebd",
+  "reading_path": "audio/readings/d2ebabf39bd0ee19471c9b71089c5e37a225a486363e94e04b05830830b19ebd.md",
+  "reading_sha256": "be2fd026661676d11c18d7a1a3a9b19b6ea437d3ae8feefb28becee31c5843d4",
+  "reading_length": 291,
+  "audio_path": "audio/lewis/d2ebabf39bd0ee19471c9b71089c5e37a225a486363e94e04b05830830b19ebd.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "d80eed6ea4f8d1d3c9d7717ff8a28eb86d54b9d8873c3cc4a257fd0c8270de21",
+  "audio_length": 282284,
+  "duration_seconds": 23.44,
+  "chunks": [
+    {
+      "text": "Fieldworks",
+      "start": 0.0,
+      "duration": 1.65
+    },
+    {
+      "text": "Generative artworks and interactive environments by Brad Necyk.",
+      "start": 1.83,
+      "duration": 5.15
+    },
+    {
+      "text": "A surface that answers. A fold in seeing. An unfinished sky. Impossible matter. Four encounters with the living physics of Cyberdelic OS.",
+      "start": 7.16,
+      "duration": 10.9
+    },
+    {
+      "text": "These are living, revisable artworks. They are not Bitcoin inscriptions.",
+      "start": 18.24,
+      "duration": 5.2
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.598943293094635,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}
