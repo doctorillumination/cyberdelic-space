@@ -136,18 +136,18 @@
       "href": "fieldworks/aeria/",
       "poster": {
         "path": "fieldworks/images/aeria.jpg",
-        "sha256": "f23561771282836ff9dddf2193fcdc4758ad59b1f60a5922d8db0fcee363a08a",
-        "length": 17638,
+        "sha256": "1967d79f63232e0842c1b45ff908687802e33251ebfb7b27a6432c1c37aaa8aa",
+        "length": 15846,
         "kind": "actual-browser-capture"
       },
       "preview": {
         "path": "fieldworks/previews/aeria.mp4",
-        "sha256": "dfb577194ce39525c19b32f248c9646f42644a94cfd66d1b37cfbea0a3b5a5a2",
-        "length": 113605,
+        "sha256": "1eb56fbe18c3fbc482922849e6a9d7f65e3f3c9b02c79920468c5a79c32300ef",
+        "length": 118170,
         "kind": "recorded-artwork-loop"
       },
-      "release_id": "6a80cc9a822547ed7655148c5c4a36aaa294597bbb9634a629863fff73e2e674",
-      "runtime_published_at": "2026-10-25T17:03:15.854755Z"
+      "release_id": "d91f438c31d0fca396a670979439d5e10afc1675d1772ddb926057c14ae940fe",
+      "runtime_published_at": "2026-10-25T21:29:41.737524Z"
     },
     {
       "slug": "lumen",

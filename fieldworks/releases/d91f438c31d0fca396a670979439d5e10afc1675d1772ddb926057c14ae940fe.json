@@ -1,0 +1,157 @@
+{
+  "schema": "cyberdelic.space/fieldwork-release-v1",
+  "slug": "aeria",
+  "edition": "cloudroom-gpu",
+  "release_id": "d91f438c31d0fca396a670979439d5e10afc1675d1772ddb926057c14ae940fe",
+  "published_at": "2026-10-25T21:29:41.737524Z",
+  "source_record": {
+    "slug": "aeria",
+    "project": "cloudroom",
+    "repository": "https://github.com/doctorillumination/clouds",
+    "revision": "c0d966598b8ecd325fb3ac6a5542dd9d1bda8965",
+    "source_subdirectory": "dist",
+    "source_version": "cloudroom-gpu",
+    "edition": "cloudroom-gpu",
+    "source_files": [
+      {
+        "path": "app.js",
+        "sha256": "55e1250019894cdf68aafe91d6877a5a41c5c5c202bf45a3cc0e175dd7becce4"
+      },
+      {
+        "path": "cloud-life.js",
+        "sha256": "b5d0379bd6a6a159b13b7381c89ce8a3edcb72c6f8b6476b628a795d7887d6ab"
+      },
+      {
+        "path": "cloud-noise.bin",
+        "sha256": "c5036886fcf7c85320e567fb1ba4fb270b37293951ce62dbb3a777e36d71ac3e"
+      },
+      {
+        "path": "icon.svg",
+        "sha256": "fd7f0c8379af02aa7c57cb8f722ddaee3c54e64e37296f41652cb629b22892bd"
+      },
+      {
+        "path": "index.html",
+        "sha256": "413d8f389b593f3e7958ce0097c0740e3987fc5fd96d6e7ebb213d6739eea512"
+      },
+      {
+        "path": "rain.js",
+        "sha256": "5c6759065576975d57c975339b69f1b01c1877363eab44b0d21eddd28372b557"
+      },
+      {
+        "path": "renderer.js",
+        "sha256": "2c13446b38166249b0488d2f67eaf0413adb76ff32687505ea9f619a06d230bf"
+      },
+      {
+        "path": "style.css",
+        "sha256": "f9926a1b1b4a64b3f25df5425e62abf40efeb57fbbf186b326a32382b71481e1"
+      },
+      {
+        "path": "volume-gpu.js",
+        "sha256": "20bdd7f80bb53138a544fc4847e10b9e0d16bf561e25a9be6814526a7467f8d5"
+      }
+    ],
+    "packaged_files": [
+      {
+        "path": "app.js",
+        "sha256": "7a7a74c773c1f1d179449676a066292e8f4e7ac49bcf361e2a073ccb6287b98f"
+      },
+      {
+        "path": "cloud-life.js",
+        "sha256": "b5d0379bd6a6a159b13b7381c89ce8a3edcb72c6f8b6476b628a795d7887d6ab"
+      },
+      {
+        "path": "cloud-noise.bin",
+        "sha256": "c5036886fcf7c85320e567fb1ba4fb270b37293951ce62dbb3a777e36d71ac3e"
+      },
+      {
+        "path": "icon.svg",
+        "sha256": "fd7f0c8379af02aa7c57cb8f722ddaee3c54e64e37296f41652cb629b22892bd"
+      },
+      {
+        "path": "index.html",
+        "sha256": "4f1db267ab12ea3d1bd8ff6552c5ceb02ea3d987c4d8643628d801d77d267062"
+      },
+      {
+        "path": "rain.js",
+        "sha256": "5c6759065576975d57c975339b69f1b01c1877363eab44b0d21eddd28372b557"
+      },
+      {
+        "path": "renderer.js",
+        "sha256": "2c13446b38166249b0488d2f67eaf0413adb76ff32687505ea9f619a06d230bf"
+      },
+      {
+        "path": "style.css",
+        "sha256": "f9926a1b1b4a64b3f25df5425e62abf40efeb57fbbf186b326a32382b71481e1"
+      },
+      {
+        "path": "volume-gpu.js",
+        "sha256": "20bdd7f80bb53138a544fc4847e10b9e0d16bf561e25a9be6814526a7467f8d5"
+      }
+    ],
+    "adaptations": "Aeria display name and export prefix only; renderer unchanged."
+  },
+  "files": [
+    {
+      "path": "poster.jpg",
+      "length": 15846,
+      "sha256": "1967d79f63232e0842c1b45ff908687802e33251ebfb7b27a6432c1c37aaa8aa"
+    },
+    {
+      "path": "preview.mp4",
+      "length": 118170,
+      "sha256": "1eb56fbe18c3fbc482922849e6a9d7f65e3f3c9b02c79920468c5a79c32300ef"
+    },
+    {
+      "path": "runtime/app.js",
+      "length": 23316,
+      "sha256": "7a7a74c773c1f1d179449676a066292e8f4e7ac49bcf361e2a073ccb6287b98f"
+    },
+    {
+      "path": "runtime/cloud-life.js",
+      "length": 3487,
+      "sha256": "b5d0379bd6a6a159b13b7381c89ce8a3edcb72c6f8b6476b628a795d7887d6ab"
+    },
+    {
+      "path": "runtime/cloud-noise.bin",
+      "length": 1048576,
+      "sha256": "c5036886fcf7c85320e567fb1ba4fb270b37293951ce62dbb3a777e36d71ac3e"
+    },
+    {
+      "path": "runtime/icon.svg",
+      "length": 207,
+      "sha256": "fd7f0c8379af02aa7c57cb8f722ddaee3c54e64e37296f41652cb629b22892bd"
+    },
+    {
+      "path": "runtime/index.html",
+      "length": 8938,
+      "sha256": "4f1db267ab12ea3d1bd8ff6552c5ceb02ea3d987c4d8643628d801d77d267062"
+    },
+    {
+      "path": "runtime/rain.js",
+      "length": 4168,
+      "sha256": "5c6759065576975d57c975339b69f1b01c1877363eab44b0d21eddd28372b557"
+    },
+    {
+      "path": "runtime/renderer.js",
+      "length": 11877,
+      "sha256": "2c13446b38166249b0488d2f67eaf0413adb76ff32687505ea9f619a06d230bf"
+    },
+    {
+      "path": "runtime/style.css",
+      "length": 11388,
+      "sha256": "f9926a1b1b4a64b3f25df5425e62abf40efeb57fbbf186b326a32382b71481e1"
+    },
+    {
+      "path": "runtime/volume-gpu.js",
+      "length": 6004,
+      "sha256": "20bdd7f80bb53138a544fc4847e10b9e0d16bf561e25a9be6814526a7467f8d5"
+    }
+  ],
+  "capture": {
+    "kind": "actual browser canvas, silent",
+    "raw_sha256": "f6b1239a403e7cb6e821f393822a5b909a2420e128d2b71b866f308ba19c24e3",
+    "raw_duration": 7.853112,
+    "loop_method": "one-second end-to-start crossfade",
+    "source_snapshot_sha256": "563c4ff0fc45a8198087181fd37bbb7d65bf09c491f3bc8b7f829395ddf915d7"
+  }
+}

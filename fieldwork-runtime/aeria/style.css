@@ -5,3 +5,18 @@
 #export-progress{position:fixed;bottom:125px;left:50%;transform:translateX(-50%);padding:12px 14px 12px 20px;border-radius:25px;display:flex;align-items:center;gap:20px;font-size:11px;z-index:25;white-space:nowrap}#export-cancel{border:1px solid #426f8b30;border-radius:14px;padding:5px 10px;font-size:10px}.exporting .chrome,.exporting .popover{pointer-events:none!important;opacity:.55}.exporting .chrome *{pointer-events:none!important}.exporting #sky{cursor:progress}
 
 .weather-title{font:17px Georgia,serif;margin:22px 0 17px;padding-top:20px;border-top:1px solid #426f8b20}.rain-motion{border:1px solid #426f8b30;border-radius:15px;padding:7px 12px;font-size:10px;background:#ffffff80}.rain-motion[aria-pressed=true]{background:#d6e8ef}.popover{scrollbar-width:thin}.toolbar{max-width:calc(100vw - 24px)}@media(max-width:380px){.toolbar{gap:0;padding:6px}.brush-control{padding:0 4px}#brush{width:36px}.tool{padding:0 5px;min-width:28px}.divider{margin:0 3px}}
+
+.espresso{background:radial-gradient(circle at 27% 23%,#fff4d5 0%,#ca813b 25%,#4b2313 48%,#050403 73%);box-shadow:inset 0 0 0 1px #956c3e40}
+.light-description{font-size:10px;line-height:1.6;margin:-12px 0 21px;opacity:.7}
+body[data-theme=espresso]{background:#000;--ink:#624832}
+body[data-theme=espresso] .glass{background:rgba(31,23,18,.86);color:#ead6bc;border-color:#d7ac7336;box-shadow:0 4px 24px #0004,inset 0 1px 0 #e5b47d1a}
+body[data-theme=espresso] .popover{background:#f8efdfef;border-color:#fff0d280}
+body[data-theme=espresso] .tool:hover:enabled{background:#eac29314}
+body[data-theme=espresso] .tool[aria-pressed=true]{background:#d6a35b25}
+body[data-theme=espresso] .brush-dot{background:#d9b988}
+body[data-theme=espresso] .divider{background:#d9b98829}
+body[data-theme=espresso] input[type=range]::-webkit-slider-runnable-track{background:#ad84554d}
+body[data-theme=espresso] input[type=range]::-webkit-slider-thumb{background:#a47c4f;box-shadow:0 0 0 3px #f6e8d3}
+body[data-theme=espresso] .toolbar input[type=range]::-webkit-slider-thumb{box-shadow:0 0 0 3px #2a2019}
+body[data-theme=espresso] input[type=range]::-moz-range-track{background:#ad84554d}
+body[data-theme=espresso] input[type=range]::-moz-range-thumb{background:#a47c4f}

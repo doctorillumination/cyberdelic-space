@@ -43,19 +43,40 @@ float density(vec3 p){
 }
 float shadowDensity(vec3 p){
  vec3 q=vec3(p.x/(aspect*3.2)+.5,p.y/3.2+.5,p.z/1.4+.5);
+#ifdef ESPRESSO
+ if(q.z<0.||q.z>1.)return 0.;
+ float base=texture(volume,q).r;
+ // Continue cropped support softly past the frame instead of cutting each shadow sample off abruptly.
+ vec2 outside=(q.xy-clamp(q.xy,vec2(0),vec2(1)))*vec2(aspect*3.2,3.2);
+ float support=max(0.,1.-dot(outside,outside)*7.);base*=support*support;
+#else
  if(any(lessThan(q,vec3(0)))||any(greaterThan(q,vec3(1))))return 0.;
- float base=texture(volume,q).r;if(base<.006)return 0.;
+ float base=texture(volume,q).r;
+#endif
+ if(base<.006)return 0.;
  vec4 n=texture(noiseField,p*.95+vec3(time*.008,0,time*.004));
  float field=base-.075+(n.r*.42+n.g*.58-.50)*.60;
  return smoothstep(.012,.25,field)*smoothstep(.006,.085,base)*fullness;
 }
 vec3 encodeLight(vec3 c){return encodedHDR>.5?c/(1.+c):c;}
-vec3 sunDirection(){return normalize(vec3(sunAngle,.52,sunDepth));}
+vec3 sunDirection(){
+#ifdef ESPRESSO
+ return normalize(vec3(sunAngle*1.4,.62,sunDepth*.85));
+#else
+ return normalize(vec3(sunAngle,.52,sunDepth));
+#endif
+}
 vec3 sunRadiance(){
+#ifdef ESPRESSO
+ return vec3(52.,44.,33.);
+#endif
  vec3 c=mix(vec3(25.,23.5,21.),vec3(33.,21.,11.),min(lightMode,1.));
  return lightMode>1.?mix(c,vec3(9.,10.,16.),lightMode-1.):c;
 }
 vec3 skyColor(vec2 v){
+#ifdef ESPRESSO
+ return vec3(0);
+#endif
  float h=clamp(v.y,0.,1.);
  vec3 low=mix(vec3(.58,.79,.91),vec3(.88,.72,.56),min(lightMode,1.));
  vec3 high=mix(vec3(.22,.49,.78),vec3(.35,.45,.65),min(lightMode,1.));
@@ -67,6 +88,9 @@ vec3 skyColor(vec2 v){
  return -log(max(vec3(.001),1.-pow(c,vec3(2.2))))/1.25;
 }
 vec3 environment(vec3 d){
+#ifdef ESPRESSO
+ return vec3(.013,.006,.003);
+#endif
  vec3 horizon=mix(vec3(.49,.65,.83),vec3(.74,.51,.34),min(lightMode,1.));
  vec3 zenith=mix(vec3(.17,.37,.68),vec3(.25,.32,.52),min(lightMode,1.));
  vec3 lower=mix(vec3(.20,.27,.36),vec3(.30,.23,.22),min(lightMode,1.));
@@ -93,6 +117,8 @@ void main(){
  if(texture(footprint,coord).r<.008){fragColor=vec4(encodeLight(sky),0);return;}
  vec2 xy=(coord-.5)*vec2(aspect*3.2,3.2);
  vec3 sun=sunDirection(),L=vec3(0);float T=1.;
+ vec3 key=sunRadiance()*phase(dot(vec3(0,0,-1),sun));
+ vec3 fill=environment(vec3(0,1,0))*.65;
  const float jitter=.5;
  for(int i=0;i<96;i++){
   vec3 p=vec3(xy,.7-(float(i)+jitter)*1.4/96.);
@@ -100,8 +126,17 @@ void main(){
   if(d>.002){
    float optical=0.;float t=.012;
    for(int j=0;j<10;j++){float ds=.023+float(j)*.019;optical+=shadowDensity(p+sun*t)*ds;t+=ds;}
-   float direct=exp(-optical*32.);
-   vec3 light=sunRadiance()*phase(dot(vec3(0,0,-1),sun))*direct+environment(vec3(0,1,0))*.65;
+   float tau=optical*32.;
+   vec3 light;
+#ifdef ESPRESSO
+    // Shorter wavelengths fade first along the light path, turning cream into amber and espresso.
+    vec3 transmission=exp(-tau*vec3(.72,1.12,1.90));
+    // A broader scattering lobe carries warm light into the interior without adding shadow rays.
+    vec3 warmScatter=key*.32*(1.-exp(-tau*.6))*exp(-tau*vec3(.10,.20,.38));
+    light=key*transmission+warmScatter+fill;
+#else
+   light=key*exp(-tau)+fill;
+#endif
    float alpha=1.-exp(-d*32.*1.4/96.);
    L+=T*alpha*light;T*=1.-alpha;
    if(T<.005)break;
@@ -109,6 +144,9 @@ void main(){
  }
  fragColor=vec4(encodeLight(L+T*sky),1.-T);
 }`;
+
+// Compile the warm medium separately so daytime shading has no Espresso branches.
+export const espressoShader=previewShader.replace('#version 300 es','#version 300 es\n#define ESPRESSO');
 
 const displayShader = `#version 300 es
 precision highp float;
@@ -143,12 +181,12 @@ function program(gl,fragment){
  return p;
 }
 export class CloudRenderer {
- constructor(gl,preview){
-  this.gl=gl;this.rain=new CloudRain(gl);this.preview=preview;this.display=program(gl,displayShader);this.locations=new Map();
+ constructor(gl,preview,espressoSource=espressoShader){
+  this.gl=gl;this.rain=new CloudRain(gl);this.preview=preview;this.espresso=program(gl,espressoSource);this.display=program(gl,displayShader);this.locations=new Map();
   this.floatTargets=Boolean(gl.getExtension('EXT_color_buffer_float'));this.frames=0;this.presentations=0;
   this.timer=gl.getExtension('EXT_disjoint_timer_query_webgl2');this.queries=[];this.gpuMs=0;this.gpuSample=0;
  }
- uniform(p,name){const key=(p===this.preview?'volume:':'display:')+name;if(!this.locations.has(key))this.locations.set(key,this.gl.getUniformLocation(p,name));return this.locations.get(key);}
+ uniform(p,name){const key=(p===this.preview?'volume:':p===this.espresso?'espresso:':'display:')+name;if(!this.locations.has(key))this.locations.set(key,this.gl.getUniformLocation(p,name));return this.locations.get(key);}
  allocate(w,h){
   const gl=this.gl;
   if(this.texture)gl.deleteTexture(this.texture);if(this.framebuffer)gl.deleteFramebuffer(this.framebuffer);
@@ -183,11 +221,12 @@ export class CloudRenderer {
  reset(){this.invalid=true;}
  render(settings){
   const gl=this.gl,scale=Math.min(1,Math.sqrt((settings.renderPixels||Infinity)/(gl.canvas.width*gl.canvas.height))),w=Math.round(gl.canvas.width*scale),h=Math.round(gl.canvas.height*scale);
+  const lighting=settings.lightMode===3?this.espresso:this.preview;
   if(w!==this.width||h!==this.height)this.allocate(w,h);
-  gl.viewport(0,0,w,h);gl.bindFramebuffer(gl.FRAMEBUFFER,this.framebuffer);gl.useProgram(this.preview);
-  for(const name of ['aspect','time','fullness','lightMode','sunAngle','sunDepth'])gl.uniform1f(this.uniform(this.preview,name),settings[name]);
-  gl.uniform1f(this.uniform(this.preview,'encodedHDR'),this.floatTargets?0:1);gl.uniform2f(this.uniform(this.preview,'pixels'),w,h);
-  for(const [name,unit] of [['volume',0],['noiseField',1],['footprint',2]])gl.uniform1i(this.uniform(this.preview,name),unit);
+  gl.viewport(0,0,w,h);gl.bindFramebuffer(gl.FRAMEBUFFER,this.framebuffer);gl.useProgram(lighting);
+  for(const name of ['aspect','time','fullness','lightMode','sunAngle','sunDepth'])gl.uniform1f(this.uniform(lighting,name),settings[name]);
+  gl.uniform1f(this.uniform(lighting,'encodedHDR'),this.floatTargets?0:1);gl.uniform2f(this.uniform(lighting,'pixels'),w,h);
+  for(const [name,unit] of [['volume',0],['noiseField',1],['footprint',2]])gl.uniform1i(this.uniform(lighting,name),unit);
   this.beginWork();
   gl.drawArrays(gl.TRIANGLES,0,6);
   if(this.query){gl.endQuery(this.timer.TIME_ELAPSED_EXT);this.queries.push(this.query);this.query=null;}

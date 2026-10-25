@@ -33,7 +33,8 @@ void main(){
  vec3 c=under.rgb;if(encodedHDR>.5)c/=max(vec3(.001),1.-c);
  vec3 background=pow(1.-exp(-max(c,vec3(0))*1.25),vec3(1./2.2));
  vec3 light=mix(vec3(.76,.87,.98),vec3(1.,.90,.72),min(lightMode,1.));
- if(lightMode>1.)light=mix(light,vec3(.57,.70,.91),lightMode-1.);
+ if(lightMode>2.5)light=vec3(.92,.69,.43);
+ else if(lightMode>1.)light=mix(light,vec3(.57,.70,.91),lightMode-1.);
  // A narrow highlight and darker refracted side give each translucent streak depth.
  vec3 color=mix(background*.64,light,smoothstep(-.9,.2,local.x));
  float alpha=streak*opacity*visible*(.20+depth*.28);

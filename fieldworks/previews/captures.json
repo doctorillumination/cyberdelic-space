@@ -24,14 +24,14 @@
     },
     {
       "kind": "actual browser canvas, silent",
-      "raw_sha256": "83f89a0b3a12ffc3870b58fbb7365878f15cb30c05d48d23c143a507e937ee9d",
-      "raw_duration": 7.949886,
+      "raw_sha256": "f6b1239a403e7cb6e821f393822a5b909a2420e128d2b71b866f308ba19c24e3",
+      "raw_duration": 7.853112,
       "loop_method": "one-second end-to-start crossfade",
-      "source_snapshot_sha256": "04824945c8d95e467b4ca5ae0396969b55ef8ee9d0dc4e0ea68e3690f652420a",
+      "source_snapshot_sha256": "563c4ff0fc45a8198087181fd37bbb7d65bf09c491f3bc8b7f829395ddf915d7",
       "slug": "aeria",
       "path": "aeria.mp4",
-      "sha256": "dfb577194ce39525c19b32f248c9646f42644a94cfd66d1b37cfbea0a3b5a5a2",
-      "length": 113605
+      "sha256": "1eb56fbe18c3fbc482922849e6a9d7f65e3f3c9b02c79920468c5a79c32300ef",
+      "length": 118170
     },
     {
       "kind": "actual browser canvas, silent",
