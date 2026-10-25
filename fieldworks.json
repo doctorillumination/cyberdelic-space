@@ -117,7 +117,7 @@
       "repository": "https://github.com/doctorillumination/clouds",
       "caption": "An unfinished sky. A little weather of your own.",
       "description": "Draw luminous clouds into an open sky. Let them drift, gather, dissolve, and become weather.",
-      "alt": "A luminous cloud formation against an open blue sky, drawn in Aeria.",
+      "alt": "A luminous cloud formation drawn in Aeria's interactive sky.",
       "gesture": "Draw a cloud, or choose Make a cloud. Let the sky breathe.",
       "source": "aeria.md",
       "themes": [
