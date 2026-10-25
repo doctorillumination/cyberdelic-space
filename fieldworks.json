@@ -1,0 +1,112 @@
+{
+  "schema": "cyberdelic.space/fieldworks-v1",
+  "version": "1.0",
+  "date": "2026-10-24",
+  "published_at": "2026-10-25T03:56:22Z",
+  "overview": {
+    "title": "Fieldworks",
+    "href": "fieldworks/",
+    "source": "overview.md",
+    "source_path": "fieldworks/readings/overview.md",
+    "source_sha256": "e84f912dadf5bc612b0e675f6ac9ec03f77bfe4501119e85e2d392fa54362712",
+    "source_length": 273
+  },
+  "items": [
+    {
+      "slug": "undra",
+      "title": "Undra",
+      "former_title": "Glop / Water Droplet",
+      "project": "liquid-field",
+      "repository": "https://github.com/doctorillumination/water-droplets",
+      "caption": "A living surface. A conversation with water.",
+      "description": "Gather, stretch, grow, and separate luminous water. A small gesture changes the field.",
+      "alt": "Luminous green water droplets gathering on a pale surface, captured from Undra.",
+      "gesture": "Hold to grow. Drag to gather. Double-tap to separate.",
+      "source": "undra.md",
+      "themes": [
+        "water",
+        "agency",
+        "embodiment",
+        "play",
+        "emergence",
+        "perception"
+      ],
+      "related_note": "fn-05",
+      "related_title": "The Physics We Choose",
+      "source_path": "fieldworks/readings/undra.md",
+      "source_sha256": "8a89ec4cf907ce20c844c5eb127bb7fd7245f212511cf0e976f638d286a93626",
+      "source_length": 681,
+      "href": "fieldworks/undra/",
+      "poster": {
+        "path": "fieldworks/images/undra.jpg",
+        "sha256": "fef1452c10edb18f6c7359fee06d79e8701363fd25aadc96fc9b9fb706eb48e9",
+        "length": 46984,
+        "kind": "actual-browser-capture"
+      }
+    },
+    {
+      "slug": "opalia",
+      "title": "Opalia",
+      "former_title": "Phase Loom",
+      "project": "phase-loom",
+      "repository": "https://github.com/doctorillumination/phaseloom",
+      "caption": "A fold in seeing. Light, continually becoming.",
+      "description": "Pearlescent waves unfold through a continuous field of light. Change the rhythm, or simply stay awhile.",
+      "alt": "Pastel cyan, coral, and gold folds radiating through the pearlescent light field of Opalia.",
+      "gesture": "Watch the field unfold. Open Controls to change its rhythm.",
+      "source": "opalia.md",
+      "themes": [
+        "light",
+        "attention",
+        "perception",
+        "time",
+        "rhythm",
+        "emergence"
+      ],
+      "related_note": "fn-08",
+      "related_title": "The Lived Interface",
+      "source_path": "fieldworks/readings/opalia.md",
+      "source_sha256": "59b4b23efaa88f8217808f020f16afbf97450996cb7762391510245cd8a3df8e",
+      "source_length": 699,
+      "href": "fieldworks/opalia/",
+      "poster": {
+        "path": "fieldworks/images/opalia.jpg",
+        "sha256": "97c82698a78e8f6bbed1c7e4402c334e9ddff4452fb6f038aefade46294f52cc",
+        "length": 47147,
+        "kind": "actual-browser-capture"
+      }
+    },
+    {
+      "slug": "aeria",
+      "title": "Aeria",
+      "former_title": "Clouds / Cloudroom",
+      "project": "cloudroom",
+      "repository": "https://github.com/doctorillumination/clouds",
+      "caption": "An unfinished sky. A little weather of your own.",
+      "description": "Draw luminous clouds into an open sky. Let them drift, gather, dissolve, and become weather.",
+      "alt": "A luminous cloud formation against an open blue sky, drawn in Aeria.",
+      "gesture": "Draw a cloud, or choose Make a cloud. Let the sky breathe.",
+      "source": "aeria.md",
+      "themes": [
+        "weather",
+        "ecology",
+        "imagination",
+        "play",
+        "emergence",
+        "time"
+      ],
+      "related_note": "fn-19",
+      "related_title": "A Medium for Becoming",
+      "source_path": "fieldworks/readings/aeria.md",
+      "source_sha256": "e41a38547989407604318fc73a63c613898a232df2c8b8ee0bbc75f4b6642d1b",
+      "source_length": 721,
+      "href": "fieldworks/aeria/",
+      "poster": {
+        "path": "fieldworks/images/aeria.jpg",
+        "sha256": "e90d3f92b3cbe13f8e5a4ad157207687f0adac86f9dfd84e9ccb1d859fc58e4d",
+        "length": 13859,
+        "kind": "actual-browser-capture"
+      }
+    }
+  ]
+}

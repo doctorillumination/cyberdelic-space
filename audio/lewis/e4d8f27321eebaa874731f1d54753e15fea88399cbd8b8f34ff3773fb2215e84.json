@@ -1,0 +1,63 @@
+{
+  "id": "fieldworks-opalia",
+  "title": "Opalia",
+  "form": "fieldwork",
+  "release_id": null,
+  "pages": [
+    "fieldworks/opalia/"
+  ],
+  "source_path": "fieldworks/readings/opalia.md",
+  "source_sha256": "59b4b23efaa88f8217808f020f16afbf97450996cb7762391510245cd8a3df8e",
+  "document_sha256": "59b4b23efaa88f8217808f020f16afbf97450996cb7762391510245cd8a3df8e",
+  "text_sha256": "e4d8f27321eebaa874731f1d54753e15fea88399cbd8b8f34ff3773fb2215e84",
+  "reading_path": "audio/readings/e4d8f27321eebaa874731f1d54753e15fea88399cbd8b8f34ff3773fb2215e84.md",
+  "reading_sha256": "59b4b23efaa88f8217808f020f16afbf97450996cb7762391510245cd8a3df8e",
+  "reading_length": 699,
+  "audio_path": "audio/lewis/e4d8f27321eebaa874731f1d54753e15fea88399cbd8b8f34ff3773fb2215e84.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "703ae63696fb8b946821b828108c94e9b862c6fbe2d9afa760784989074d096e",
+  "audio_length": 620684,
+  "duration_seconds": 51.645,
+  "chunks": [
+    {
+      "text": "Opalia",
+      "start": 0.0,
+      "duration": 1.475
+    },
+    {
+      "text": "A fold in seeing. Light, continually becoming.",
+      "start": 1.655,
+      "duration": 4.3
+    },
+    {
+      "text": "Pearlescent waves pass through a continuous generative field. Their contours breathe while the colours separate, overlap, and return. Open Controls to change the rhythm, seed, spacing, contour, or iridescence, or leave the surface to unfold.",
+      "start": 6.135,
+      "duration": 16.7
+    },
+    {
+      "text": "Opalia invites attention without a task. Repetition becomes a way of noticing difference, rather than a demand to arrive somewhere. Its relation to Cyberdelic OS lies in that encounter with perception and time. This is a curatorial reading, not a claim about consciousness or a physical simulation of light.",
+      "start": 23.015,
+      "duration": 21.5
+    },
+    {
+      "text": "By Brad Necyk. Previously developed as Phase Loom. This living artwork is not inscribed.",
+      "start": 44.695,
+      "duration": 6.95
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.4907299280166626,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

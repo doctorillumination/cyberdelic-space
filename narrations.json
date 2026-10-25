@@ -15303,7 +15303,7 @@
         "project/cyberdelic-os/correspondence/"
       ],
       "source_path": "project/cyberdelic-os/correspondence/index.html",
-      "source_sha256": "b92156a896e4b416c139a124fbfd5c35e2c5dbcb52a59036d153f5c28a21529b",
+      "source_sha256": "04b9f0ed03f52119eb54945f6fbd876d65a5108194ba1571c2746f7093a758d4",
       "document_sha256": "017f7c7d201e4c0b7f9867273e4c7d0940be672990a3f239f7fad010ff01dab3",
       "text_sha256": "927c73f41e10e7b2e54dc269cf7f4ca7dabcae0bb446e82f2da1ec6aede6b29f",
       "reading_path": "audio/readings/927c73f41e10e7b2e54dc269cf7f4ca7dabcae0bb446e82f2da1ec6aede6b29f.md",
@@ -17790,6 +17790,229 @@
         "peak": 0.719974160194397,
         "clipped_samples": 0
       }
+    },
+    {
+      "id": "fieldworks-overview",
+      "title": "Fieldworks",
+      "form": "fieldwork",
+      "release_id": null,
+      "pages": [
+        "fieldworks/"
+      ],
+      "source_path": "fieldworks/readings/overview.md",
+      "source_sha256": "e84f912dadf5bc612b0e675f6ac9ec03f77bfe4501119e85e2d392fa54362712",
+      "document_sha256": "e84f912dadf5bc612b0e675f6ac9ec03f77bfe4501119e85e2d392fa54362712",
+      "text_sha256": "0a045c0f92866f82a37b62697a3a490c5ec40ad320c421f102b6831367e36496",
+      "reading_path": "audio/readings/0a045c0f92866f82a37b62697a3a490c5ec40ad320c421f102b6831367e36496.md",
+      "reading_sha256": "e84f912dadf5bc612b0e675f6ac9ec03f77bfe4501119e85e2d392fa54362712",
+      "reading_length": 273,
+      "audio_path": "audio/lewis/0a045c0f92866f82a37b62697a3a490c5ec40ad320c421f102b6831367e36496.mp3",
+      "voice": "bm_lewis",
+      "voice_name": "Lewis",
+      "speed": 1.0,
+      "audio_sha256": "4d73c68d70cfc256381d98b44a18ad1b9d74fa64d1609ac0d74f4f82df9689c4",
+      "audio_length": 265292,
+      "duration_seconds": 22.015,
+      "chunks": [
+        {
+          "text": "Fieldworks",
+          "start": 0.0,
+          "duration": 1.65
+        },
+        {
+          "text": "Generative artworks and interactive environments by Brad Necyk.",
+          "start": 1.83,
+          "duration": 5.15
+        },
+        {
+          "text": "A surface that answers. A fold in seeing. An unfinished sky. Three encounters with the living physics of Cyberdelic OS.",
+          "start": 7.16,
+          "duration": 9.475
+        },
+        {
+          "text": "These are living, revisable artworks. They are not Bitcoin inscriptions.",
+          "start": 16.815,
+          "duration": 5.2
+        }
+      ],
+      "checks": {
+        "all_text_retained": true,
+        "mp3_decodes": true,
+        "finite_samples": true,
+        "peak": 0.4922001361846924,
+        "clipped_samples": 0
+      }
+    },
+    {
+      "id": "fieldworks-undra",
+      "title": "Undra",
+      "form": "fieldwork",
+      "release_id": null,
+      "pages": [
+        "fieldworks/undra/"
+      ],
+      "source_path": "fieldworks/readings/undra.md",
+      "source_sha256": "8a89ec4cf907ce20c844c5eb127bb7fd7245f212511cf0e976f638d286a93626",
+      "document_sha256": "8a89ec4cf907ce20c844c5eb127bb7fd7245f212511cf0e976f638d286a93626",
+      "text_sha256": "b7b08420093958b70db94788d6cfbef9cd80a6c2d682de4380802aa56a8e429a",
+      "reading_path": "audio/readings/b7b08420093958b70db94788d6cfbef9cd80a6c2d682de4380802aa56a8e429a.md",
+      "reading_sha256": "8a89ec4cf907ce20c844c5eb127bb7fd7245f212511cf0e976f638d286a93626",
+      "reading_length": 681,
+      "audio_path": "audio/lewis/b7b08420093958b70db94788d6cfbef9cd80a6c2d682de4380802aa56a8e429a.mp3",
+      "voice": "bm_lewis",
+      "voice_name": "Lewis",
+      "speed": 1.0,
+      "audio_sha256": "6baf6f9fee43593616e59c1df234b6fab8bd00ba166244642e710d62f72f3db8",
+      "audio_length": 612620,
+      "duration_seconds": 50.97,
+      "chunks": [
+        {
+          "text": "Undra",
+          "start": 0.0,
+          "duration": 1.525
+        },
+        {
+          "text": "A living surface. A conversation with water.",
+          "start": 1.705,
+          "duration": 3.975
+        },
+        {
+          "text": "Hold empty space to grow a droplet. Drag water together, let it gather, then separate it again. The field responds through a procedural model of fluid motion and light. Its forms are generated in the browser, not played from a film.",
+          "start": 5.86,
+          "duration": 16.325
+        },
+        {
+          "text": "Undra offers a small experience of agency without complete control. Your gesture changes the conditions, and the material answers in its own way. This connection to Cyberdelic OS is a curatorial interpretation, not a claim that the artwork implements the whole operating system.",
+          "start": 22.365,
+          "duration": 19.575
+        },
+        {
+          "text": "By Brad Necyk. Previously developed as Glop, also known as Water Droplet. This living artwork is not inscribed.",
+          "start": 42.12,
+          "duration": 8.85
+        }
+      ],
+      "checks": {
+        "all_text_retained": true,
+        "mp3_decodes": true,
+        "finite_samples": true,
+        "peak": 0.5838226079940796,
+        "clipped_samples": 0
+      }
+    },
+    {
+      "id": "fieldworks-opalia",
+      "title": "Opalia",
+      "form": "fieldwork",
+      "release_id": null,
+      "pages": [
+        "fieldworks/opalia/"
+      ],
+      "source_path": "fieldworks/readings/opalia.md",
+      "source_sha256": "59b4b23efaa88f8217808f020f16afbf97450996cb7762391510245cd8a3df8e",
+      "document_sha256": "59b4b23efaa88f8217808f020f16afbf97450996cb7762391510245cd8a3df8e",
+      "text_sha256": "e4d8f27321eebaa874731f1d54753e15fea88399cbd8b8f34ff3773fb2215e84",
+      "reading_path": "audio/readings/e4d8f27321eebaa874731f1d54753e15fea88399cbd8b8f34ff3773fb2215e84.md",
+      "reading_sha256": "59b4b23efaa88f8217808f020f16afbf97450996cb7762391510245cd8a3df8e",
+      "reading_length": 699,
+      "audio_path": "audio/lewis/e4d8f27321eebaa874731f1d54753e15fea88399cbd8b8f34ff3773fb2215e84.mp3",
+      "voice": "bm_lewis",
+      "voice_name": "Lewis",
+      "speed": 1.0,
+      "audio_sha256": "703ae63696fb8b946821b828108c94e9b862c6fbe2d9afa760784989074d096e",
+      "audio_length": 620684,
+      "duration_seconds": 51.645,
+      "chunks": [
+        {
+          "text": "Opalia",
+          "start": 0.0,
+          "duration": 1.475
+        },
+        {
+          "text": "A fold in seeing. Light, continually becoming.",
+          "start": 1.655,
+          "duration": 4.3
+        },
+        {
+          "text": "Pearlescent waves pass through a continuous generative field. Their contours breathe while the colours separate, overlap, and return. Open Controls to change the rhythm, seed, spacing, contour, or iridescence, or leave the surface to unfold.",
+          "start": 6.135,
+          "duration": 16.7
+        },
+        {
+          "text": "Opalia invites attention without a task. Repetition becomes a way of noticing difference, rather than a demand to arrive somewhere. Its relation to Cyberdelic OS lies in that encounter with perception and time. This is a curatorial reading, not a claim about consciousness or a physical simulation of light.",
+          "start": 23.015,
+          "duration": 21.5
+        },
+        {
+          "text": "By Brad Necyk. Previously developed as Phase Loom. This living artwork is not inscribed.",
+          "start": 44.695,
+          "duration": 6.95
+        }
+      ],
+      "checks": {
+        "all_text_retained": true,
+        "mp3_decodes": true,
+        "finite_samples": true,
+        "peak": 0.4907299280166626,
+        "clipped_samples": 0
+      }
+    },
+    {
+      "id": "fieldworks-aeria",
+      "title": "Aeria",
+      "form": "fieldwork",
+      "release_id": null,
+      "pages": [
+        "fieldworks/aeria/"
+      ],
+      "source_path": "fieldworks/readings/aeria.md",
+      "source_sha256": "e41a38547989407604318fc73a63c613898a232df2c8b8ee0bbc75f4b6642d1b",
+      "document_sha256": "e41a38547989407604318fc73a63c613898a232df2c8b8ee0bbc75f4b6642d1b",
+      "text_sha256": "eaa7a4c44878245c42fe1892892768f19f119ea706b200b2d28f752be82ec7ef",
+      "reading_path": "audio/readings/eaa7a4c44878245c42fe1892892768f19f119ea706b200b2d28f752be82ec7ef.md",
+      "reading_sha256": "e41a38547989407604318fc73a63c613898a232df2c8b8ee0bbc75f4b6642d1b",
+      "reading_length": 721,
+      "audio_path": "audio/lewis/eaa7a4c44878245c42fe1892892768f19f119ea706b200b2d28f752be82ec7ef.mp3",
+      "voice": "bm_lewis",
+      "voice_name": "Lewis",
+      "speed": 1.0,
+      "audio_sha256": "6195f2fdb0c5cbc9ed6b69a7eb3c3f71236e4dd499d6fe9fc29d9d10a40203f9",
+      "audio_length": 621548,
+      "duration_seconds": 51.72,
+      "chunks": [
+        {
+          "text": "Aeria",
+          "start": 0.0,
+          "duration": 1.425
+        },
+        {
+          "text": "An unfinished sky. A little weather of your own.",
+          "start": 1.605,
+          "duration": 3.975
+        },
+        {
+          "text": "Draw a cloud with a mouse, finger, or pen, or choose Make a cloud. Change the light, invite rain, and allow the formations to drift, overlap, evaporate, and gather again. You can pause Life to keep a still moment.",
+          "start": 5.76,
+          "duration": 14.6
+        },
+        {
+          "text": "Aeria begins with a gesture, then makes room for something to continue beyond it. It offers a small, playful encounter with emergence and impermanence. Its weather is an artistic model, not a meteorological simulation, and its connection to Cyberdelic OS is an interpretation rather than a complete implementation.",
+          "start": 20.54,
+          "duration": 21.1
+        },
+        {
+          "text": "By Brad Necyk. Previously developed as Clouds and Cloudroom. Your sky stays in this browser. This living artwork is not inscribed.",
+          "start": 41.82,
+          "duration": 9.9
+        }
+      ],
+      "checks": {
+        "all_text_retained": true,
+        "mp3_decodes": true,
+        "finite_samples": true,
+        "peak": 0.562687337398529,
+        "clipped_samples": 0
+      }
     }
   ],
   "playlists": [
@@ -17915,8 +18138,8 @@
     },
     {
       "path": "audio-bundles/lewis-18.zip",
-      "length": 19771782,
-      "sha256": "072bdf31540caa7a35cdb664051dafbd83f1890b3d3d7c7238e1f3586eabddc1"
+      "length": 21892870,
+      "sha256": "5d00fe58c634446b651adff2ce1ca95543cfa8bb8b8080c2578d5a7781fdb3ed"
     }
   ]
 }

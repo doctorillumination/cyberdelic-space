@@ -1,8 +1,8 @@
 {
   "schema": "https://cyberdelic.space/schemas/living-catalog-v1.json",
   "version": "0.16",
-  "updated_at": "2026-10-21T16:25:00Z",
-  "count": 35,
+  "updated_at": "2026-10-25T04:00:00Z",
+  "count": 38,
   "curation": {
     "office": "OFFICE-LIBRARIAN",
     "office_version": "0.1",
@@ -19,13 +19,44 @@
       "title": "Cyberdelic.space",
       "href": "project/cyberdelic-os/a-001/",
       "summary": "A released press prototype that places exact work bytes, cryptographic digests, inscription identifiers, transactions, and Bitcoin blocks beside its publications. Its static reader can be copied and mirrored while keeping living publications distinct from inscribed works. The artifact treats permanence as a deliberate choice, not the default for every memory.",
-      "subjects": ["independent verification", "portable publishing", "selective permanence", "living and inscribed memory", "Bitcoin inscriptions"],
-      "search_terms": ["verify a publication", "exact bytes", "cryptographic digest", "copy the press", "website mirror", "static portable reader", "permanence by choice", "publication evidence"],
-      "questions": ["How can someone verify a published work without trusting its website?", "What can a mirror preserve, and what distinguishes copying from the original act of publication?"],
-      "related": [{"id": "cyberdelic-os:fn-33", "title": "The Plate and the Pull", "relation_type": "context", "review_state": "proposed"}],
+      "subjects": [
+        "independent verification",
+        "portable publishing",
+        "selective permanence",
+        "living and inscribed memory",
+        "Bitcoin inscriptions"
+      ],
+      "search_terms": [
+        "verify a publication",
+        "exact bytes",
+        "cryptographic digest",
+        "copy the press",
+        "website mirror",
+        "static portable reader",
+        "permanence by choice",
+        "publication evidence"
+      ],
+      "questions": [
+        "How can someone verify a published work without trusting its website?",
+        "What can a mirror preserve, and what distinguishes copying from the original act of publication?"
+      ],
+      "related": [
+        {
+          "id": "cyberdelic-os:fn-33",
+          "title": "The Plate and the Pull",
+          "relation_type": "context",
+          "review_state": "proposed"
+        }
+      ],
       "evidence": [
-        {"source": "living-content/cyberdelic-os/a-001/v000001.md", "locator": "**Type:** Released prototype; Each Library work carries its exact bytes, cryptographic digest, inscription identifier, transactions, and Bitcoin block.; A mirror can preserve and verify the library, but it cannot counterfeit the act of publication.; Immutable and living memory can share one press without being confused.; A complete reader can be static, portable, and freely mirrored.; The press does not make every memory permanent. It makes permanence a choice."},
-        {"source": "living-relations/relationships.json", "locator": "\"edge_id\": \"REL-000004\""}
+        {
+          "source": "living-content/cyberdelic-os/a-001/v000001.md",
+          "locator": "**Type:** Released prototype; Each Library work carries its exact bytes, cryptographic digest, inscription identifier, transactions, and Bitcoin block.; A mirror can preserve and verify the library, but it cannot counterfeit the act of publication.; Immutable and living memory can share one press without being confused.; A complete reader can be static, portable, and freely mirrored.; The press does not make every memory permanent. It makes permanence a choice."
+        },
+        {
+          "source": "living-relations/relationships.json",
+          "locator": "\"edge_id\": \"REL-000004\""
+        }
       ],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
@@ -39,12 +70,34 @@
       "title": "The Cyberdelic Kernel v1.0",
       "href": "work/f6e686a1a1884e924e350539ad686aaa0180f5c219048df8cf97e69101339aefi0/",
       "summary": "An inscribed founding proposal for shared reality without compulsory consensus. Thirteen verbs and thirteen laws describe finite attention, contextual sharing, accurate dissent, human ratification, bounded machine offices, and distinct living, anchored, and inscribed memory. It openly holds the tension between permanent public memory and the right to forget.",
-      "subjects": ["shared reality", "finite attention", "dissent", "human ratification", "memory and consent"],
-      "search_terms": ["founding principles", "shared reality without consensus", "thirteen verbs", "right to forget", "right to remain unknown", "permanence and mercy", "bounded AI offices", "context before sharing"],
-      "questions": ["How can different perspectives remain connected without compulsory agreement?", "How can permanent public memory coexist with forgetting and consent?", "What limits should a machine office respect?"],
+      "subjects": [
+        "shared reality",
+        "finite attention",
+        "dissent",
+        "human ratification",
+        "memory and consent"
+      ],
+      "search_terms": [
+        "founding principles",
+        "shared reality without consensus",
+        "thirteen verbs",
+        "right to forget",
+        "right to remain unknown",
+        "permanence and mercy",
+        "bounded AI offices",
+        "context before sharing"
+      ],
+      "questions": [
+        "How can different perspectives remain connected without compulsory agreement?",
+        "How can permanent public memory coexist with forgetting and consent?",
+        "What limits should a machine office respect?"
+      ],
       "related": [],
       "evidence": [
-        {"source": "content/f6e686a1a1884e924e350539ad686aaa0180f5c219048df8cf97e69101339aefi0/content.md", "locator": "**Status:** Founding proposal.; to remain in relation without requiring consensus.; there are thirteen verbs.; Context is the price of propagation.; Disagreement is generative only when it is aimed at the position that actually exists.; Every composed journey is finite.; No consequential public relation becomes real until a human ratifies it.; Memory has temperatures.; Machine intelligences hold offices, not omniscience; consent travels with shared memory.; this document permanently inscribes a defense of forgetting.; it needs the right to remain unknown."}
+        {
+          "source": "content/f6e686a1a1884e924e350539ad686aaa0180f5c219048df8cf97e69101339aefi0/content.md",
+          "locator": "**Status:** Founding proposal.; to remain in relation without requiring consensus.; there are thirteen verbs.; Context is the price of propagation.; Disagreement is generative only when it is aimed at the position that actually exists.; Every composed journey is finite.; No consequential public relation becomes real until a human ratifies it.; Memory has temperatures.; Machine intelligences hold offices, not omniscience; consent travels with shared memory.; this document permanently inscribes a defense of forgetting.; it needs the right to remain unknown."
+        }
       ],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
@@ -58,11 +111,40 @@
       "title": "The Open Anatomy",
       "href": "project/cyberdelic-os/field-notes/fn-14/",
       "summary": "A field note that treats existing open-source projects as replaceable technical organs for a local, inspectable Cyberdelic OS, including Community Notes as a reference for helpfulness across differing perspectives.",
-      "subjects": ["open-source architecture", "agent systems", "local-first software", "interoperability", "cross-perspective ranking"],
-      "search_terms": ["open anatomy", "software organs", "Community Notes", "open source stack", "system components", "replaceable infrastructure", "helpfulness across perspectives"],
-      "questions": ["Which existing open-source organs can be borrowed without inheriting the surrounding platform's physics?", "How can a system remain inspectable while its technical components stay replaceable?"],
-      "related": [{"id": "external:community-notes", "title": "Community Notes", "relation_type": "technical-adjacency", "review_state": "proposed"}],
-      "evidence": [{"source": "living-content/cyberdelic-os/fn-s0-001/v000001.md", "locator": "The Open Anatomy"}],
+      "subjects": [
+        "open-source architecture",
+        "agent systems",
+        "local-first software",
+        "interoperability",
+        "cross-perspective ranking"
+      ],
+      "search_terms": [
+        "open anatomy",
+        "software organs",
+        "Community Notes",
+        "open source stack",
+        "system components",
+        "replaceable infrastructure",
+        "helpfulness across perspectives"
+      ],
+      "questions": [
+        "Which existing open-source organs can be borrowed without inheriting the surrounding platform's physics?",
+        "How can a system remain inspectable while its technical components stay replaceable?"
+      ],
+      "related": [
+        {
+          "id": "external:community-notes",
+          "title": "Community Notes",
+          "relation_type": "technical-adjacency",
+          "review_state": "proposed"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
+          "locator": "The Open Anatomy"
+        }
+      ],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
@@ -74,11 +156,47 @@
       "title": "Expeditions, Storms, and the Birth of Boroughs",
       "href": "project/cyberdelic-os/field-notes/fn-25/",
       "summary": "A field note about large-group inquiry, disagreement, collective sensemaking, and the durable artifacts that can preserve sources, alternatives, ratification, and unresolved questions.",
-      "subjects": ["collective sensemaking", "shared reality", "disagreement", "deliberation", "provenance"],
-      "search_terms": ["consensus", "public conversation", "group intelligence", "civic dialogue", "gathering intelligence", "opinion mapping", "cross-perspective helpfulness", "context notes"],
-      "questions": ["How can a gathering reveal shared structure without making consensus the measure of truth?", "What should remain visible when a complex disagreement becomes a durable public object?"],
-      "related": [{"id": "external:polis", "title": "Polis", "relation_type": "shared-inquiry", "review_state": "proposed"}, {"id": "external:community-notes", "title": "Community Notes", "relation_type": "shared-inquiry", "review_state": "proposed"}],
-      "evidence": [{"source": "living-content/cyberdelic-os/fn-s0-001/v000001.md", "locator": "Expeditions, Storms, and the Birth of Boroughs"}],
+      "subjects": [
+        "collective sensemaking",
+        "shared reality",
+        "disagreement",
+        "deliberation",
+        "provenance"
+      ],
+      "search_terms": [
+        "consensus",
+        "public conversation",
+        "group intelligence",
+        "civic dialogue",
+        "gathering intelligence",
+        "opinion mapping",
+        "cross-perspective helpfulness",
+        "context notes"
+      ],
+      "questions": [
+        "How can a gathering reveal shared structure without making consensus the measure of truth?",
+        "What should remain visible when a complex disagreement becomes a durable public object?"
+      ],
+      "related": [
+        {
+          "id": "external:polis",
+          "title": "Polis",
+          "relation_type": "shared-inquiry",
+          "review_state": "proposed"
+        },
+        {
+          "id": "external:community-notes",
+          "title": "Community Notes",
+          "relation_type": "shared-inquiry",
+          "review_state": "proposed"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "living-content/cyberdelic-os/fn-s0-001/v000001.md",
+          "locator": "Expeditions, Storms, and the Birth of Boroughs"
+        }
+      ],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
@@ -90,11 +208,40 @@
       "title": "The Living Librarian",
       "href": "project/cyberdelic-os/field-notes/fn-29/",
       "summary": "The conceptual origin of a library that tends meanings and relations around unchanged works, while keeping machine interpretation visibly situated, revisable, and distinct from fact.",
-      "subjects": ["living library", "metadata", "curation", "machine interpretation", "findability"],
-      "search_terms": ["librarian", "catalog", "index", "ontology", "knowledge graph", "placement", "archive search"],
-      "questions": ["How can an archive learn better placement without harvesting its visitors?", "How can changing relations gather around exact, unchanged works?"],
-      "related": [{"id": "cyberdelic-os:fn-32", "title": "The Garden and the Living Map", "relation_type": "lineage", "review_state": "proposed"}],
-      "evidence": [{"source": "living-content/cyberdelic-os/fn-s0-002/v000001.md", "locator": "The Living Librarian"}],
+      "subjects": [
+        "living library",
+        "metadata",
+        "curation",
+        "machine interpretation",
+        "findability"
+      ],
+      "search_terms": [
+        "librarian",
+        "catalog",
+        "index",
+        "ontology",
+        "knowledge graph",
+        "placement",
+        "archive search"
+      ],
+      "questions": [
+        "How can an archive learn better placement without harvesting its visitors?",
+        "How can changing relations gather around exact, unchanged works?"
+      ],
+      "related": [
+        {
+          "id": "cyberdelic-os:fn-32",
+          "title": "The Garden and the Living Map",
+          "relation_type": "lineage",
+          "review_state": "proposed"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "living-content/cyberdelic-os/fn-s0-002/v000001.md",
+          "locator": "The Living Librarian"
+        }
+      ],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
@@ -106,11 +253,52 @@
       "title": "The Garden and the Living Map",
       "href": "project/cyberdelic-os/field-notes/fn-32/",
       "summary": "A field note that separates the Cartographer's discovery of possible paths from the Gardener's care for relations through time, proposing Living Relationships and a finite daily Attending practice.",
-      "subjects": ["living relationships", "relational metadata", "cartography", "curation", "finite attention"],
-      "search_terms": ["mycelial network", "constellation of ideas", "website gardener", "connection mapping", "daily tending", "growing deeper", "knowledge graph"],
-      "questions": ["How can a website grow deeper without demanding more from every visit?", "How can relations carry provenance without treating proximity as agreement?"],
-      "related": [{"id": "cyberdelic-os:fn-29", "title": "The Living Librarian", "relation_type": "lineage", "review_state": "proposed"}, {"id": "cyberdelic-os:bn-005", "title": "Building the Tending Offices", "relation_type": "implementation", "review_state": "proposed"}, {"id": "cyberdelic-os:i-003", "title": "The Daily Tending Ritual", "relation_type": "implementation", "review_state": "proposed"}],
-      "evidence": [{"source": "living-content/cyberdelic-os/fn-s0-005/v000001.md", "locator": "The Garden and the Living Map; The pattern feels more mycelial; This could become a daily ritual for cyberdelic.space"}],
+      "subjects": [
+        "living relationships",
+        "relational metadata",
+        "cartography",
+        "curation",
+        "finite attention"
+      ],
+      "search_terms": [
+        "mycelial network",
+        "constellation of ideas",
+        "website gardener",
+        "connection mapping",
+        "daily tending",
+        "growing deeper",
+        "knowledge graph"
+      ],
+      "questions": [
+        "How can a website grow deeper without demanding more from every visit?",
+        "How can relations carry provenance without treating proximity as agreement?"
+      ],
+      "related": [
+        {
+          "id": "cyberdelic-os:fn-29",
+          "title": "The Living Librarian",
+          "relation_type": "lineage",
+          "review_state": "proposed"
+        },
+        {
+          "id": "cyberdelic-os:bn-005",
+          "title": "Building the Tending Offices",
+          "relation_type": "implementation",
+          "review_state": "proposed"
+        },
+        {
+          "id": "cyberdelic-os:i-003",
+          "title": "The Daily Tending Ritual",
+          "relation_type": "implementation",
+          "review_state": "proposed"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "living-content/cyberdelic-os/fn-s0-005/v000001.md",
+          "locator": "The Garden and the Living Map; The pattern feels more mycelial; This could become a daily ritual for cyberdelic.space"
+        }
+      ],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
@@ -122,11 +310,46 @@
       "title": "Building the Tending Offices",
       "href": "project/cyberdelic-os/bn-005/",
       "summary": "The technical architecture for ordered Cartographer and Gardener turns over a versioned relational graph, with a proposal queue, bounded metadata patches, deterministic validation, finite Attending, and an auditable review boundary.",
-      "subjects": ["agent offices", "relational graph", "scheduled automation", "validation", "governance"],
-      "search_terms": ["how tending offices work", "Cartographer Gardener architecture", "daily website agents", "relational metadata system", "proposal queue", "audit log", "finite Attending"],
-      "questions": ["How can scheduled offices tend relational metadata without rewriting source publications?", "What transaction and validation boundaries keep daily automation bounded and inspectable?"],
-      "related": [{"id": "cyberdelic-os:fn-32", "title": "The Garden and the Living Map", "relation_type": "implementation", "review_state": "proposed"}, {"id": "cyberdelic-os:i-003", "title": "The Daily Tending Ritual", "relation_type": "implementation", "review_state": "proposed"}],
-      "evidence": [{"source": "living-content/cyberdelic-os/bn-005/v000001.md", "locator": "The build in one sentence; Scheduler transaction; Validation turn; Publication boundary"}],
+      "subjects": [
+        "agent offices",
+        "relational graph",
+        "scheduled automation",
+        "validation",
+        "governance"
+      ],
+      "search_terms": [
+        "how tending offices work",
+        "Cartographer Gardener architecture",
+        "daily website agents",
+        "relational metadata system",
+        "proposal queue",
+        "audit log",
+        "finite Attending"
+      ],
+      "questions": [
+        "How can scheduled offices tend relational metadata without rewriting source publications?",
+        "What transaction and validation boundaries keep daily automation bounded and inspectable?"
+      ],
+      "related": [
+        {
+          "id": "cyberdelic-os:fn-32",
+          "title": "The Garden and the Living Map",
+          "relation_type": "implementation",
+          "review_state": "proposed"
+        },
+        {
+          "id": "cyberdelic-os:i-003",
+          "title": "The Daily Tending Ritual",
+          "relation_type": "implementation",
+          "review_state": "proposed"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "living-content/cyberdelic-os/bn-005/v000001.md",
+          "locator": "The build in one sentence; Scheduler transaction; Validation turn; Publication boundary"
+        }
+      ],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
@@ -138,11 +361,46 @@
       "title": "The Daily Tending Ritual",
       "href": "project/cyberdelic-os/i-003/",
       "summary": "A scheduled curatorial ritual that gives the Cartographer and Gardener bounded turns, allows stillness as a valid result, keeps the public Attending surface finite, and subjects every proposed change to deterministic validation.",
-      "subjects": ["scheduled curation", "finite attention", "relational metadata", "public audit", "validation"],
-      "search_terms": ["daily tending ritual", "website gardener", "website cartographer", "scheduled archive care", "three item attention", "no-op ceremony", "bounded automation"],
-      "questions": ["How can a website attend every day without manufacturing novelty?", "What should remain visible when validation refuses an interpretive change?"],
-      "related": [{"id": "cyberdelic-os:fn-32", "title": "The Garden and the Living Map", "relation_type": "implementation", "review_state": "proposed"}, {"id": "cyberdelic-os:bn-005", "title": "Building the Tending Offices", "relation_type": "implementation", "review_state": "proposed"}],
-      "evidence": [{"source": "living-content/cyberdelic-os/i-003/v000001.md", "locator": "The Daily Tending Ritual gives the Gardener and Cartographer bounded turns inside the living Cyberdelic OS archive.; Attending is not a feed. It is a temporary arrangement of the relational field.; Stillness is an output of the instrument."}],
+      "subjects": [
+        "scheduled curation",
+        "finite attention",
+        "relational metadata",
+        "public audit",
+        "validation"
+      ],
+      "search_terms": [
+        "daily tending ritual",
+        "website gardener",
+        "website cartographer",
+        "scheduled archive care",
+        "three item attention",
+        "no-op ceremony",
+        "bounded automation"
+      ],
+      "questions": [
+        "How can a website attend every day without manufacturing novelty?",
+        "What should remain visible when validation refuses an interpretive change?"
+      ],
+      "related": [
+        {
+          "id": "cyberdelic-os:fn-32",
+          "title": "The Garden and the Living Map",
+          "relation_type": "implementation",
+          "review_state": "proposed"
+        },
+        {
+          "id": "cyberdelic-os:bn-005",
+          "title": "Building the Tending Offices",
+          "relation_type": "implementation",
+          "review_state": "proposed"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "living-content/cyberdelic-os/i-003/v000001.md",
+          "locator": "The Daily Tending Ritual gives the Gardener and Cartographer bounded turns inside the living Cyberdelic OS archive.; Attending is not a feed. It is a temporary arrangement of the relational field.; Stillness is an output of the instrument."
+        }
+      ],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
@@ -154,11 +412,47 @@
       "title": "Building the Finite Library",
       "href": "project/cyberdelic-os/bn-004/",
       "summary": "The technical account of Cyberdelic.space's finite discovery interface, including its public metadata model, three-word selection field, deterministic three-work ranking, URL-fragment state, privacy boundary, accessibility behavior, and known failure modes.",
-      "subjects": ["finite discovery", "deterministic ranking", "public metadata", "privacy", "accessibility"],
-      "search_terms": ["how the library homepage works", "three word discovery", "finite recommendations", "deterministic ranking", "URL fragment sharing", "no tracking", "public metadata", "ranking bias"],
-      "questions": ["How can a public library compose a finite route from declared intention without building a behavioral profile?", "Which editorial biases remain inside a deterministic and inspectable ranking system?"],
-      "related": [{"id": "cyberdelic-os:i-002", "title": "The Library Aperture", "relation_type": "implementation", "review_state": "proposed"}, {"id": "cyberdelic-os:a-004", "title": "The Finite Library Prototype", "relation_type": "implementation", "review_state": "proposed"}],
-      "evidence": [{"source": "living-content/cyberdelic-os/bn-004/v000001.md", "locator": "The Finite Library begins with a reader's intention, composes three possible encounters, and then stops.; This is not the absence of an algorithm.; What the current prototype proves"}],
+      "subjects": [
+        "finite discovery",
+        "deterministic ranking",
+        "public metadata",
+        "privacy",
+        "accessibility"
+      ],
+      "search_terms": [
+        "how the library homepage works",
+        "three word discovery",
+        "finite recommendations",
+        "deterministic ranking",
+        "URL fragment sharing",
+        "no tracking",
+        "public metadata",
+        "ranking bias"
+      ],
+      "questions": [
+        "How can a public library compose a finite route from declared intention without building a behavioral profile?",
+        "Which editorial biases remain inside a deterministic and inspectable ranking system?"
+      ],
+      "related": [
+        {
+          "id": "cyberdelic-os:i-002",
+          "title": "The Library Aperture",
+          "relation_type": "implementation",
+          "review_state": "proposed"
+        },
+        {
+          "id": "cyberdelic-os:a-004",
+          "title": "The Finite Library Prototype",
+          "relation_type": "implementation",
+          "review_state": "proposed"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "living-content/cyberdelic-os/bn-004/v000001.md",
+          "locator": "The Finite Library begins with a reader's intention, composes three possible encounters, and then stops.; This is not the absence of an algorithm.; What the current prototype proves"
+        }
+      ],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
@@ -170,11 +464,47 @@
       "title": "The Library Aperture",
       "href": "project/cyberdelic-os/i-002/",
       "summary": "A reusable interaction pattern that asks for three explicit signals, composes three encounters from one shared public catalog, and then ends while refusing behavioral profiling, popularity ranking, engagement optimization, and infinite scroll.",
-      "subjects": ["finite discovery", "shared catalog", "reader intention", "attention", "bounded algorithms"],
-      "search_terms": ["alternative to infinite scroll", "humane recommendation design", "choose three words", "finite discovery", "bounded algorithm", "non-personalized library", "attention preserving interface", "shared catalog"],
-      "questions": ["Can several readers approach the same public collection through different declared intentions without receiving private catalogs?", "What does it mean for ending to be the central output of a discovery instrument?"],
-      "related": [{"id": "cyberdelic-os:bn-004", "title": "Building the Finite Library", "relation_type": "implementation", "review_state": "proposed"}, {"id": "cyberdelic-os:a-004", "title": "The Finite Library Prototype", "relation_type": "implementation", "review_state": "proposed"}],
-      "evidence": [{"source": "living-content/cyberdelic-os/i-002/v000001.md", "locator": "The Library Aperture turns three chosen words into three possible encounters, then releases the reader.; Shared sky, situated path; Ending is the instrument's central output."}],
+      "subjects": [
+        "finite discovery",
+        "shared catalog",
+        "reader intention",
+        "attention",
+        "bounded algorithms"
+      ],
+      "search_terms": [
+        "alternative to infinite scroll",
+        "humane recommendation design",
+        "choose three words",
+        "finite discovery",
+        "bounded algorithm",
+        "non-personalized library",
+        "attention preserving interface",
+        "shared catalog"
+      ],
+      "questions": [
+        "Can several readers approach the same public collection through different declared intentions without receiving private catalogs?",
+        "What does it mean for ending to be the central output of a discovery instrument?"
+      ],
+      "related": [
+        {
+          "id": "cyberdelic-os:bn-004",
+          "title": "Building the Finite Library",
+          "relation_type": "implementation",
+          "review_state": "proposed"
+        },
+        {
+          "id": "cyberdelic-os:a-004",
+          "title": "The Finite Library Prototype",
+          "relation_type": "implementation",
+          "review_state": "proposed"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "living-content/cyberdelic-os/i-002/v000001.md",
+          "locator": "The Library Aperture turns three chosen words into three possible encounters, then releases the reader.; Shared sky, situated path; Ending is the instrument's central output."
+        }
+      ],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
@@ -186,11 +516,47 @@
       "title": "The Finite Library Prototype",
       "href": "project/cyberdelic-os/a-004/",
       "summary": "The working public front door of Cyberdelic.space, where three chosen words resolve into exactly three living or inscribed works through a deterministic browser-side ranking with no account, analytics, recommendation profile, popularity score, or infinite scroll.",
-      "subjects": ["working prototype", "finite library", "privacy-preserving discovery", "living and inscribed works", "browser interface"],
-      "search_terms": ["Cyberdelic Space homepage", "finite library prototype", "three results", "no infinite scroll", "privacy preserving discovery", "living and inscribed works", "deterministic discovery", "public front door"],
-      "questions": ["Can a digital library release attention after one small constellation instead of converting completion into another queue?", "How can living and permanent works meet in one interface without collapsing their different memory states?"],
-      "related": [{"id": "cyberdelic-os:i-002", "title": "The Library Aperture", "relation_type": "implementation", "review_state": "proposed"}, {"id": "cyberdelic-os:bn-004", "title": "Building the Finite Library", "relation_type": "implementation", "review_state": "proposed"}],
-      "evidence": [{"source": "living-content/cyberdelic-os/a-004/v000001.md", "locator": "The Finite Library Prototype is the public front door of Cyberdelic.space: choose three words, receive three works, and stop.; What the artifact demonstrates; The library offers three doors. It does not build a corridor without an end."}],
+      "subjects": [
+        "working prototype",
+        "finite library",
+        "privacy-preserving discovery",
+        "living and inscribed works",
+        "browser interface"
+      ],
+      "search_terms": [
+        "Cyberdelic Space homepage",
+        "finite library prototype",
+        "three results",
+        "no infinite scroll",
+        "privacy preserving discovery",
+        "living and inscribed works",
+        "deterministic discovery",
+        "public front door"
+      ],
+      "questions": [
+        "Can a digital library release attention after one small constellation instead of converting completion into another queue?",
+        "How can living and permanent works meet in one interface without collapsing their different memory states?"
+      ],
+      "related": [
+        {
+          "id": "cyberdelic-os:i-002",
+          "title": "The Library Aperture",
+          "relation_type": "implementation",
+          "review_state": "proposed"
+        },
+        {
+          "id": "cyberdelic-os:bn-004",
+          "title": "Building the Finite Library",
+          "relation_type": "implementation",
+          "review_state": "proposed"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "living-content/cyberdelic-os/a-004/v000001.md",
+          "locator": "The Finite Library Prototype is the public front door of Cyberdelic.space: choose three words, receive three works, and stop.; What the artifact demonstrates; The library offers three doors. It does not build a corridor without an end."
+        }
+      ],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
@@ -202,11 +568,48 @@
       "title": "The Personal Aperture",
       "href": "project/cyberdelic-os/i-004/",
       "summary": "A portable invitation to explore Cyberdelic OS with an AI of the visitor's choice through resonance, parallax, a dark region, and an unexpected bridge. The first encounter is limited to four works, requires honest browsing and memory disclosure, separates sources from interpretation, and leaves the conversation outside the website.",
-      "subjects": ["conversational archive", "bounded orientation", "source-grounded interpretation", "memory disclosure", "parallax"],
-      "search_terms": ["where to start", "AI reading companion", "conversation with the archive", "explore with my own AI", "copy invitation", "portable prompt", "browsing and memory limits", "resonance parallax", "four works"],
-      "questions": ["How can I explore Cyberdelic OS with my own AI without reading the entire archive first?", "How should an assistant disclose browsing and memory limits before suggesting connections?"],
-      "related": [{"id": "cyberdelic-os:i-002", "title": "The Library Aperture", "relation_type": "context", "review_state": "proposed"}, {"id": "cyberdelic-os:a-004", "title": "The Finite Library Prototype", "relation_type": "context", "review_state": "proposed"}],
-      "evidence": [{"source": "living-content/cyberdelic-os/i-004/v000001.md", "locator": "The Personal Aperture helps a person begin a situated conversation with Cyberdelic OS without requiring them to read the entire archive first.; The first aperture contains no more than four works.; Disclosure contract; Source and inference contract; Privacy boundary; Instrument I-002, *The Library Aperture*; Artifact A-004, *The Finite Library Prototype*"}],
+      "subjects": [
+        "conversational archive",
+        "bounded orientation",
+        "source-grounded interpretation",
+        "memory disclosure",
+        "parallax"
+      ],
+      "search_terms": [
+        "where to start",
+        "AI reading companion",
+        "conversation with the archive",
+        "explore with my own AI",
+        "copy invitation",
+        "portable prompt",
+        "browsing and memory limits",
+        "resonance parallax",
+        "four works"
+      ],
+      "questions": [
+        "How can I explore Cyberdelic OS with my own AI without reading the entire archive first?",
+        "How should an assistant disclose browsing and memory limits before suggesting connections?"
+      ],
+      "related": [
+        {
+          "id": "cyberdelic-os:i-002",
+          "title": "The Library Aperture",
+          "relation_type": "context",
+          "review_state": "proposed"
+        },
+        {
+          "id": "cyberdelic-os:a-004",
+          "title": "The Finite Library Prototype",
+          "relation_type": "context",
+          "review_state": "proposed"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "living-content/cyberdelic-os/i-004/v000001.md",
+          "locator": "The Personal Aperture helps a person begin a situated conversation with Cyberdelic OS without requiring them to read the entire archive first.; The first aperture contains no more than four works.; Disclosure contract; Source and inference contract; Privacy boundary; Instrument I-002, *The Library Aperture*; Artifact A-004, *The Finite Library Prototype*"
+        }
+      ],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
@@ -219,11 +622,59 @@
       "title": "The Plate and the Pull",
       "href": "project/cyberdelic-os/field-notes/fn-33/",
       "summary": "A proposal for durable generative publication in which an authorized edition can end while its algorithm, lineage, and capacity for independent reconstruction remain public.",
-      "subjects": ["generative art", "durable publication", "independent reconstruction", "edition lineage", "Bitcoin"],
-      "search_terms": ["software preservation", "executable archive", "algorithmic art", "plate", "pull", "edition", "rendering", "permanent media"],
-      "questions": ["What must travel with a generative work for it to survive the disappearance of its first venue?", "Can an edition end while its public algorithm remains copyable and renderable?"],
-      "related": [{"id": "external:art-blocks", "title": "Art Blocks", "relation_type": "technical-adjacency", "review_state": "proposed"}, {"id": "external:webrecorder-wacz", "title": "Web Archive Collection Zipped (WACZ)", "relation_type": "technical-adjacency", "review_state": "proposed"}, {"id": "external:oci-image-spec", "title": "Open Container Initiative Image Format Specification", "relation_type": "technical-adjacency", "review_state": "proposed"}, {"id": "external:webassembly-core", "title": "WebAssembly Core Specification", "relation_type": "technical-adjacency", "review_state": "proposed"}],
-      "evidence": [{"source": "living-content/cyberdelic-os/fn-s0-006/v000001.md", "locator": "The Plate and the Pull; The browser can perform the encounter on the visitor's own machine"}],
+      "subjects": [
+        "generative art",
+        "durable publication",
+        "independent reconstruction",
+        "edition lineage",
+        "Bitcoin"
+      ],
+      "search_terms": [
+        "software preservation",
+        "executable archive",
+        "algorithmic art",
+        "plate",
+        "pull",
+        "edition",
+        "rendering",
+        "permanent media"
+      ],
+      "questions": [
+        "What must travel with a generative work for it to survive the disappearance of its first venue?",
+        "Can an edition end while its public algorithm remains copyable and renderable?"
+      ],
+      "related": [
+        {
+          "id": "external:art-blocks",
+          "title": "Art Blocks",
+          "relation_type": "technical-adjacency",
+          "review_state": "proposed"
+        },
+        {
+          "id": "external:webrecorder-wacz",
+          "title": "Web Archive Collection Zipped (WACZ)",
+          "relation_type": "technical-adjacency",
+          "review_state": "proposed"
+        },
+        {
+          "id": "external:oci-image-spec",
+          "title": "Open Container Initiative Image Format Specification",
+          "relation_type": "technical-adjacency",
+          "review_state": "proposed"
+        },
+        {
+          "id": "external:webassembly-core",
+          "title": "WebAssembly Core Specification",
+          "relation_type": "technical-adjacency",
+          "review_state": "proposed"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "living-content/cyberdelic-os/fn-s0-006/v000001.md",
+          "locator": "The Plate and the Pull; The browser can perform the encounter on the visitor's own machine"
+        }
+      ],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
@@ -236,11 +687,48 @@
       "href": "project/cyberdelic-os/relations/tending/2026-08-28/",
       "canonical_url": "https://communitynotes.x.com/guide/en/",
       "summary": "An open-source context system whose public ranking method looks for notes found helpful by contributors with differing prior rating patterns, producing one global status rather than personalized results.",
-      "subjects": ["cross-perspective helpfulness", "collaborative context", "crowdsourced moderation", "open algorithms", "public rating data"],
-      "search_terms": ["Community Notes", "Birdwatch", "fact checking", "context notes", "misinformation", "different viewpoints", "people who disagree", "matrix factorization", "non-personalized ranking"],
-      "questions": ["Which kinds of disagreement remain invisible when perspective is inferred from rating patterns?", "What must remain visible beyond one global helpfulness status?"],
-      "related": [{"id": "cyberdelic-os:fn-14", "title": "The Open Anatomy", "relation_type": "technical-adjacency", "review_state": "proposed"}, {"id": "cyberdelic-os:fn-25", "title": "Expeditions, Storms, and the Birth of Boroughs", "relation_type": "shared-inquiry", "review_state": "proposed"}],
-      "evidence": [{"source": "living-relations/proposals.json", "locator": "\"proposal_id\": \"REL-P-000012\"; \"proposal_id\": \"REL-P-000013\"; \"proposal_id\": \"REL-P-000014\""}],
+      "subjects": [
+        "cross-perspective helpfulness",
+        "collaborative context",
+        "crowdsourced moderation",
+        "open algorithms",
+        "public rating data"
+      ],
+      "search_terms": [
+        "Community Notes",
+        "Birdwatch",
+        "fact checking",
+        "context notes",
+        "misinformation",
+        "different viewpoints",
+        "people who disagree",
+        "matrix factorization",
+        "non-personalized ranking"
+      ],
+      "questions": [
+        "Which kinds of disagreement remain invisible when perspective is inferred from rating patterns?",
+        "What must remain visible beyond one global helpfulness status?"
+      ],
+      "related": [
+        {
+          "id": "cyberdelic-os:fn-14",
+          "title": "The Open Anatomy",
+          "relation_type": "technical-adjacency",
+          "review_state": "proposed"
+        },
+        {
+          "id": "cyberdelic-os:fn-25",
+          "title": "Expeditions, Storms, and the Birth of Boroughs",
+          "relation_type": "shared-inquiry",
+          "review_state": "proposed"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "living-relations/proposals.json",
+          "locator": "\"proposal_id\": \"REL-P-000012\"; \"proposal_id\": \"REL-P-000013\"; \"proposal_id\": \"REL-P-000014\""
+        }
+      ],
       "epistemic_status": "possible",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
@@ -253,11 +741,40 @@
       "href": "project/cyberdelic-os/relations/tending/2026-08-17/",
       "canonical_url": "https://compdemocracy.org/polis/",
       "summary": "An open-source platform for large-group sensemaking through participant statements, agree, disagree, or pass responses, and statistical mapping of opinion space.",
-      "subjects": ["collective sensemaking", "deliberation", "opinion mapping", "open-source civic technology"],
-      "search_terms": ["consensus", "public conversation", "civic dialogue", "group intelligence", "survey", "participatory democracy", "open-ended feedback", "agree disagree pass", "mutual understanding"],
-      "questions": ["How can a gathering reveal agreement without erasing important forms of disagreement?"],
-      "related": [{"id": "cyberdelic-os:fn-25", "title": "Expeditions, Storms, and the Birth of Boroughs", "relation_type": "shared-inquiry", "review_state": "proposed"}],
-      "evidence": [{"source": "living-relations/proposals.json", "locator": "\"proposal_id\": \"REL-P-000001\"; \"proposal_id\": \"REL-P-000002\""}],
+      "subjects": [
+        "collective sensemaking",
+        "deliberation",
+        "opinion mapping",
+        "open-source civic technology"
+      ],
+      "search_terms": [
+        "consensus",
+        "public conversation",
+        "civic dialogue",
+        "group intelligence",
+        "survey",
+        "participatory democracy",
+        "open-ended feedback",
+        "agree disagree pass",
+        "mutual understanding"
+      ],
+      "questions": [
+        "How can a gathering reveal agreement without erasing important forms of disagreement?"
+      ],
+      "related": [
+        {
+          "id": "cyberdelic-os:fn-25",
+          "title": "Expeditions, Storms, and the Birth of Boroughs",
+          "relation_type": "shared-inquiry",
+          "review_state": "proposed"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "living-relations/proposals.json",
+          "locator": "\"proposal_id\": \"REL-P-000001\"; \"proposal_id\": \"REL-P-000002\""
+        }
+      ],
       "epistemic_status": "possible",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
@@ -270,11 +787,41 @@
       "href": "project/cyberdelic-os/relations/tending/2026-08-21/",
       "canonical_url": "https://www.artblocks.io/",
       "summary": "An on-chain generative-art protocol whose documented architecture offers a technical precedent for storing scripts, deterministic token hashes, and dependencies so works can be reconstructed beyond one service.",
-      "subjects": ["generative art", "on-chain software", "deterministic rendering", "durability", "Ethereum"],
-      "search_terms": ["algorithmic art", "software preservation", "independent reconstruction", "smart contract", "artist script", "token hash", "on-chain generator", "self-contained HTML", "no servers required"],
-      "questions": ["Which infrastructure-independent techniques can inform a durable press without importing marketplace assumptions?"],
-      "related": [{"id": "cyberdelic-os:fn-33", "title": "The Plate and the Pull", "relation_type": "technical-adjacency", "review_state": "proposed"}],
-      "evidence": [{"source": "living-relations/proposals.json", "locator": "\"proposal_id\": \"REL-P-000003\"; \"proposal_id\": \"REL-P-000004\"; \"proposal_id\": \"REL-P-000005\""}],
+      "subjects": [
+        "generative art",
+        "on-chain software",
+        "deterministic rendering",
+        "durability",
+        "Ethereum"
+      ],
+      "search_terms": [
+        "algorithmic art",
+        "software preservation",
+        "independent reconstruction",
+        "smart contract",
+        "artist script",
+        "token hash",
+        "on-chain generator",
+        "self-contained HTML",
+        "no servers required"
+      ],
+      "questions": [
+        "Which infrastructure-independent techniques can inform a durable press without importing marketplace assumptions?"
+      ],
+      "related": [
+        {
+          "id": "cyberdelic-os:fn-33",
+          "title": "The Plate and the Pull",
+          "relation_type": "technical-adjacency",
+          "review_state": "proposed"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "living-relations/proposals.json",
+          "locator": "\"proposal_id\": \"REL-P-000003\"; \"proposal_id\": \"REL-P-000004\"; \"proposal_id\": \"REL-P-000005\""
+        }
+      ],
       "epistemic_status": "possible",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
@@ -287,11 +834,43 @@
       "href": "project/cyberdelic-os/relations/tending/2026-09-01/",
       "canonical_url": "https://specs.webrecorder.net/wacz/1.2.0/",
       "summary": "A draft portable web-archive packaging specification that carries recorded resources, indexes, entry pages, contextual metadata, and file fixity for static hosting and browser replay.",
-      "subjects": ["web archiving", "portable packages", "fixity", "browser replay", "digital preservation"],
-      "search_terms": ["WACZ", "Webrecorder", "software preservation", "ZIP", "manifest", "checksums", "portable archive", "reconstruction", "archived web pages", "static web archive", "no specialized server"],
-      "questions": ["Could a generative plate carry a similarly portable manifest while preserving its own execution and lineage model?"],
-      "related": [{"id": "cyberdelic-os:fn-33", "title": "The Plate and the Pull", "relation_type": "technical-adjacency", "review_state": "proposed"}],
-      "evidence": [{"source": "living-relations/proposals.json", "locator": "\"proposal_id\": \"REL-P-000006\"; \"proposal_id\": \"REL-P-000007\"; \"proposal_id\": \"REL-P-000015\""}],
+      "subjects": [
+        "web archiving",
+        "portable packages",
+        "fixity",
+        "browser replay",
+        "digital preservation"
+      ],
+      "search_terms": [
+        "WACZ",
+        "Webrecorder",
+        "software preservation",
+        "ZIP",
+        "manifest",
+        "checksums",
+        "portable archive",
+        "reconstruction",
+        "archived web pages",
+        "static web archive",
+        "no specialized server"
+      ],
+      "questions": [
+        "Could a generative plate carry a similarly portable manifest while preserving its own execution and lineage model?"
+      ],
+      "related": [
+        {
+          "id": "cyberdelic-os:fn-33",
+          "title": "The Plate and the Pull",
+          "relation_type": "technical-adjacency",
+          "review_state": "proposed"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "living-relations/proposals.json",
+          "locator": "\"proposal_id\": \"REL-P-000006\"; \"proposal_id\": \"REL-P-000007\"; \"proposal_id\": \"REL-P-000015\""
+        }
+      ],
       "epistemic_status": "possible",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
@@ -304,11 +883,42 @@
       "href": "project/cyberdelic-os/relations/tending/2026-08-24/",
       "canonical_url": "https://specs.opencontainers.org/image-spec/",
       "summary": "A content-addressed image format that separates runnable filesystem content, execution configuration, and platform variants while binding referenced bytes through typed, sized, and verifiable descriptors.",
-      "subjects": ["execution environments", "content-addressed packaging", "runtime configuration", "software portability", "dependency manifests"],
-      "search_terms": ["OCI", "container image", "entrypoint", "filesystem layers", "runtime assumptions", "platform variants", "manifest", "digest", "reproducible execution"],
-      "questions": ["Could a generative plate distinguish immutable work content from replaceable reader and runtime configuration?", "How much of an execution environment must travel for independent reconstruction?"],
-      "related": [{"id": "cyberdelic-os:fn-33", "title": "The Plate and the Pull", "relation_type": "technical-adjacency", "review_state": "proposed"}],
-      "evidence": [{"source": "living-relations/proposals.json", "locator": "\"proposal_id\": \"REL-P-000008\"; \"proposal_id\": \"REL-P-000009\""}],
+      "subjects": [
+        "execution environments",
+        "content-addressed packaging",
+        "runtime configuration",
+        "software portability",
+        "dependency manifests"
+      ],
+      "search_terms": [
+        "OCI",
+        "container image",
+        "entrypoint",
+        "filesystem layers",
+        "runtime assumptions",
+        "platform variants",
+        "manifest",
+        "digest",
+        "reproducible execution"
+      ],
+      "questions": [
+        "Could a generative plate distinguish immutable work content from replaceable reader and runtime configuration?",
+        "How much of an execution environment must travel for independent reconstruction?"
+      ],
+      "related": [
+        {
+          "id": "cyberdelic-os:fn-33",
+          "title": "The Plate and the Pull",
+          "relation_type": "technical-adjacency",
+          "review_state": "proposed"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "living-relations/proposals.json",
+          "locator": "\"proposal_id\": \"REL-P-000008\"; \"proposal_id\": \"REL-P-000009\""
+        }
+      ],
       "epistemic_status": "possible",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
@@ -321,11 +931,42 @@
       "href": "project/cyberdelic-os/relations/tending/2026-08-25/",
       "canonical_url": "https://www.w3.org/TR/wasm-core-2/",
       "summary": "A portable low-level code format that defines module computation, validation, imports, and exports while requiring a separate embedder to supply environmental capabilities and initiate execution.",
-      "subjects": ["portable computation", "execution boundaries", "sandboxed modules", "host capabilities", "browser runtimes"],
-      "search_terms": ["WebAssembly", "Wasm", "portable bytecode", "sandboxed execution", "host imports", "embedder", "browser runtime", "cross-platform code", "application/wasm"],
-      "questions": ["Could a generative plate declare a small capability contract while allowing its reader to be replaced?", "What remains outside portable computation when the intended encounter includes rendering, timing, fonts, colour, and randomness?"],
-      "related": [{"id": "cyberdelic-os:fn-33", "title": "The Plate and the Pull", "relation_type": "technical-adjacency", "review_state": "proposed"}],
-      "evidence": [{"source": "living-relations/proposals.json", "locator": "\"proposal_id\": \"REL-P-000010\"; \"proposal_id\": \"REL-P-000011\""}],
+      "subjects": [
+        "portable computation",
+        "execution boundaries",
+        "sandboxed modules",
+        "host capabilities",
+        "browser runtimes"
+      ],
+      "search_terms": [
+        "WebAssembly",
+        "Wasm",
+        "portable bytecode",
+        "sandboxed execution",
+        "host imports",
+        "embedder",
+        "browser runtime",
+        "cross-platform code",
+        "application/wasm"
+      ],
+      "questions": [
+        "Could a generative plate declare a small capability contract while allowing its reader to be replaced?",
+        "What remains outside portable computation when the intended encounter includes rendering, timing, fonts, colour, and randomness?"
+      ],
+      "related": [
+        {
+          "id": "cyberdelic-os:fn-33",
+          "title": "The Plate and the Pull",
+          "relation_type": "technical-adjacency",
+          "review_state": "proposed"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "living-relations/proposals.json",
+          "locator": "\"proposal_id\": \"REL-P-000010\"; \"proposal_id\": \"REL-P-000011\""
+        }
+      ],
       "epistemic_status": "possible",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
@@ -337,11 +978,41 @@
       "title": "A Place for the Reply",
       "href": "project/cyberdelic-os/field-notes/fn-35/",
       "summary": "A field note about Dear Elsewhere, a slow asynchronous collage correspondence where distinct ways of seeing can alter one shared object without being forced into one interpretation.",
-      "subjects": ["asynchronous correspondence", "collage", "shared attention", "parallax", "finite creative exchange"],
-      "search_terms": ["slow correspondence", "voice notes between friends", "collage between people", "shared canvas", "seven arrivals", "reply over time", "things worth carrying", "different perspectives together"],
-      "questions": ["How can another person's attention alter a shared object without erasing either perspective?", "Can software hold the interval before a human reply without treating delay as failure?"],
-      "related": [{"id": "cyberdelic-os:i-005", "title": "Dear Elsewhere", "relation_type": "implementation", "review_state": "proposed"}],
-      "evidence": [{"source": "living-content/cyberdelic-os/fn-s0-008/v000001.md", "locator": "What the canvas holds; The speed of making, the time of answering; An ending that can still be encountered"}],
+      "subjects": [
+        "asynchronous correspondence",
+        "collage",
+        "shared attention",
+        "parallax",
+        "finite creative exchange"
+      ],
+      "search_terms": [
+        "slow correspondence",
+        "voice notes between friends",
+        "collage between people",
+        "shared canvas",
+        "seven arrivals",
+        "reply over time",
+        "things worth carrying",
+        "different perspectives together"
+      ],
+      "questions": [
+        "How can another person's attention alter a shared object without erasing either perspective?",
+        "Can software hold the interval before a human reply without treating delay as failure?"
+      ],
+      "related": [
+        {
+          "id": "cyberdelic-os:i-005",
+          "title": "Dear Elsewhere",
+          "relation_type": "implementation",
+          "review_state": "proposed"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "living-content/cyberdelic-os/fn-s0-008/v000001.md",
+          "locator": "What the canvas holds; The speed of making, the time of answering; An ending that can still be encountered"
+        }
+      ],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
@@ -353,11 +1024,48 @@
       "title": "Dear Elsewhere",
       "href": "project/cyberdelic-os/i-005/",
       "summary": "A seven-arrival instrument for passing a changing collage among a small circle, preserving earlier arrangements and included media, then closing composition while keeping the finished relic interactive.",
-      "subjects": ["collage instrument", "asynchronous co-presence", "file handoff", "interactive archive", "bounded endings"],
-      "search_terms": ["portable HTML collage", "shared collage file", "seven turns", "asynchronous art", "pass a canvas", "interactive relic", "media correspondence", "finite collaboration", "manual file exchange"],
-      "questions": ["What should travel with a private creative correspondence?", "When does a visible ending release participants without closing future reading?"],
-      "related": [{"id": "cyberdelic-os:fn-35", "title": "A Place for the Reply", "relation_type": "implementation", "review_state": "proposed"}, {"id": "cyberdelic-os:a-005", "title": "Dear Elsewhere", "relation_type": "implementation", "review_state": "proposed"}],
-      "evidence": [{"source": "living-content/cyberdelic-os/i-005/v000001.md", "locator": "Pass the surface; Let seven be an ending; Choose what to carry onward"}],
+      "subjects": [
+        "collage instrument",
+        "asynchronous co-presence",
+        "file handoff",
+        "interactive archive",
+        "bounded endings"
+      ],
+      "search_terms": [
+        "portable HTML collage",
+        "shared collage file",
+        "seven turns",
+        "asynchronous art",
+        "pass a canvas",
+        "interactive relic",
+        "media correspondence",
+        "finite collaboration",
+        "manual file exchange"
+      ],
+      "questions": [
+        "What should travel with a private creative correspondence?",
+        "When does a visible ending release participants without closing future reading?"
+      ],
+      "related": [
+        {
+          "id": "cyberdelic-os:fn-35",
+          "title": "A Place for the Reply",
+          "relation_type": "implementation",
+          "review_state": "proposed"
+        },
+        {
+          "id": "cyberdelic-os:a-005",
+          "title": "Dear Elsewhere",
+          "relation_type": "implementation",
+          "review_state": "proposed"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "living-content/cyberdelic-os/i-005/v000001.md",
+          "locator": "Pass the surface; Let seven be an ending; Choose what to carry onward"
+        }
+      ],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
@@ -369,11 +1077,43 @@
       "title": "Dear Elsewhere",
       "href": "project/cyberdelic-os/a-005/",
       "summary": "The working browser and Mac prototype of Dear Elsewhere, with named contributors, addressed turns, media placement, preserved arrangements, and portable interactive export.",
-      "subjects": ["working prototype", "interactive collage", "portable archive", "media correspondence", "browser software"],
-      "search_terms": ["Dear Elsewhere app", "Counterform", "collage prototype", "browser collage", "Mac collage app", "portable interactive HTML", "addressed turns", "media and document import", "compatible browser", "external links may disappear"],
-      "questions": ["What does the prototype establish before a lived interpersonal trial?", "How can a finished creative exchange remain interactive without becoming automatically public?"],
-      "related": [{"id": "cyberdelic-os:i-005", "title": "Dear Elsewhere", "relation_type": "implementation", "review_state": "proposed"}],
-      "evidence": [{"source": "living-content/cyberdelic-os/a-005/v000001.md", "locator": "The object that exists; What this record establishes; Keeping the work; A compatible browser is still needed to perform the viewer, and external links may stop resolving.; This is evidence of a functioning prototype.; It is not yet evidence of durable shared hosting, verified participant identity, an independent security review, or a completed interpersonal study.; They do not establish identity, rights, consent, or unbroken availability."}],
+      "subjects": [
+        "working prototype",
+        "interactive collage",
+        "portable archive",
+        "media correspondence",
+        "browser software"
+      ],
+      "search_terms": [
+        "Dear Elsewhere app",
+        "Counterform",
+        "collage prototype",
+        "browser collage",
+        "Mac collage app",
+        "portable interactive HTML",
+        "addressed turns",
+        "media and document import",
+        "compatible browser",
+        "external links may disappear"
+      ],
+      "questions": [
+        "What does the prototype establish before a lived interpersonal trial?",
+        "How can a finished creative exchange remain interactive without becoming automatically public?"
+      ],
+      "related": [
+        {
+          "id": "cyberdelic-os:i-005",
+          "title": "Dear Elsewhere",
+          "relation_type": "implementation",
+          "review_state": "proposed"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "living-content/cyberdelic-os/a-005/v000001.md",
+          "locator": "The object that exists; What this record establishes; Keeping the work; A compatible browser is still needed to perform the viewer, and external links may stop resolving.; This is evidence of a functioning prototype.; It is not yet evidence of durable shared hosting, verified participant identity, an independent security review, or a completed interpersonal study.; They do not establish identity, rights, consent, or unbroken availability."
+        }
+      ],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
@@ -386,11 +1126,43 @@
       "title": "Building Dear Elsewhere",
       "href": "project/cyberdelic-os/bn-006/",
       "summary": "The technical account of Dear Elsewhere's shared browser and Mac runtime, seven preserved canvas snapshots, bounded included files, chained turn digests, portable exports, and current limits around identity, recovery, conflicts, and consent.",
-      "subjects": ["portable archive", "turn history", "file integrity", "local-first correspondence", "technical limits"],
-      "search_terms": ["how Dear Elsewhere works", "Counterform format", "collage archive format", "seven snapshots", "chained turn hashes", "asset commitments", "64 MiB archive", "draft recovery", "conflicting copies", "portable collage HTML"],
-      "questions": ["What does a turn hash preserve, and what can it not prove?", "How can a portable creative correspondence recover drafts and reject conflicting continuations without centralizing private material?"],
-      "related": [{"id": "cyberdelic-os:i-005", "title": "Dear Elsewhere", "relation_type": "implementation", "review_state": "proposed"}],
-      "evidence": [{"source": "living-content/cyberdelic-os/bn-006/v000001.md", "locator": "One runtime in three places; Seven snapshots; Carry bytes, retain sources; What a commitment commits to; The portable relic and the context view; The next implementation threshold"}],
+      "subjects": [
+        "portable archive",
+        "turn history",
+        "file integrity",
+        "local-first correspondence",
+        "technical limits"
+      ],
+      "search_terms": [
+        "how Dear Elsewhere works",
+        "Counterform format",
+        "collage archive format",
+        "seven snapshots",
+        "chained turn hashes",
+        "asset commitments",
+        "64 MiB archive",
+        "draft recovery",
+        "conflicting copies",
+        "portable collage HTML"
+      ],
+      "questions": [
+        "What does a turn hash preserve, and what can it not prove?",
+        "How can a portable creative correspondence recover drafts and reject conflicting continuations without centralizing private material?"
+      ],
+      "related": [
+        {
+          "id": "cyberdelic-os:i-005",
+          "title": "Dear Elsewhere",
+          "relation_type": "implementation",
+          "review_state": "proposed"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "living-content/cyberdelic-os/bn-006/v000001.md",
+          "locator": "One runtime in three places; Seven snapshots; Carry bytes, retain sources; What a commitment commits to; The portable relic and the context view; The next implementation threshold"
+        }
+      ],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
@@ -516,11 +1288,32 @@
       "title": "Carry: The Path Remembers",
       "href": "project/cyberdelic-os/field-notes/fn-41/",
       "summary": "A forest conversation proposes carrying a work to one person with its source and a reason, rather than broadcasting an isolated link. Each onward interpretation adds to the journey without replacing the object. Paths becoming roads is an imagined geography of meaningful exchange, not a measure of popularity.",
-      "subjects": ["contextual sharing", "deliberate exchange", "living lineage", "meaningful journeys", "relational discovery"],
-      "search_terms": ["share with a reason", "why I sent this", "meaning survives the journey", "one person at a time", "paths into roads", "anti-viral sharing"],
-      "questions": ["What changes when a work travels with a reason addressed to one person?", "How can an onward interpretation deepen a work without replacing its source?"],
+      "subjects": [
+        "contextual sharing",
+        "deliberate exchange",
+        "living lineage",
+        "meaningful journeys",
+        "relational discovery"
+      ],
+      "search_terms": [
+        "share with a reason",
+        "why I sent this",
+        "meaning survives the journey",
+        "one person at a time",
+        "paths into roads",
+        "anti-viral sharing"
+      ],
+      "questions": [
+        "What changes when a work travels with a reason addressed to one person?",
+        "How can an onward interpretation deepen a work without replacing its source?"
+      ],
       "related": [],
-      "evidence": [{"source": "living-content/cyberdelic-os/fn-s0-014/v000002.md", "locator": "The object moves, but the context moves with it.; The object remains itself while its field of meaning becomes deeper.; One creates a bounded relational artifact; the other creates a living lineage.; One person at a time.; Paths wear into the world because something was worth carrying.; Perhaps it should help meaning survive the journey."}],
+      "evidence": [
+        {
+          "source": "living-content/cyberdelic-os/fn-s0-014/v000002.md",
+          "locator": "The object moves, but the context moves with it.; The object remains itself while its field of meaning becomes deeper.; One creates a bounded relational artifact; the other creates a living lineage.; One person at a time.; Paths wear into the world because something was worth carrying.; Perhaps it should help meaning survive the journey."
+        }
+      ],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
@@ -533,11 +1326,40 @@
       "title": "What Building Taught the Kernel",
       "href": "project/cyberdelic-os/field-notes/fn-44/",
       "summary": "A living response places lessons from building beside the unchanged Kernel. Four possible clarifications concern suspending remembered context, separating exploration from publication and ratification, forgetting derived memory, and taking a work beyond its first application. It preserves unresolved tensions instead of enacting a new constitution.",
-      "subjects": ["memory and consent", "context suspension", "derived-memory forgetting", "portable works", "publication and ratification"],
-      "search_terms": ["begin again without deleting memory", "personalization can enclose", "permission follows influence", "delete summaries too", "work leaves its first home", "possible Kernel amendments"],
-      "questions": ["Can a person keep an archive while suspending its influence on a new encounter?", "What should forgetting do to summaries and associations derived from a source?", "How can a published proposal remain contestable without becoming authority?"],
-      "related": [{"id": "cyberdelic-os:kernel-v1", "title": "The Cyberdelic Kernel v1.0", "relation_type": "context", "review_state": "proposed"}],
-      "evidence": [{"source": "living-content/cyberdelic-os/fn-s0-017/v000001.md", "locator": "The purpose of this note is to place what building has taught beside the original.; A person may suspend the influence of remembered context without deleting the archive.; Permission to explore, permission to publish a labelled proposal, and ratification of a consequential relation are distinct.; Forgetting must reach retained sources and their derivatives within the system's control.; A person must be able to carry their work out of the system in a documented form; No Kernel amendment, ratification, governance change, or inscription is enacted by this note."}],
+      "subjects": [
+        "memory and consent",
+        "context suspension",
+        "derived-memory forgetting",
+        "portable works",
+        "publication and ratification"
+      ],
+      "search_terms": [
+        "begin again without deleting memory",
+        "personalization can enclose",
+        "permission follows influence",
+        "delete summaries too",
+        "work leaves its first home",
+        "possible Kernel amendments"
+      ],
+      "questions": [
+        "Can a person keep an archive while suspending its influence on a new encounter?",
+        "What should forgetting do to summaries and associations derived from a source?",
+        "How can a published proposal remain contestable without becoming authority?"
+      ],
+      "related": [
+        {
+          "id": "cyberdelic-os:kernel-v1",
+          "title": "The Cyberdelic Kernel v1.0",
+          "relation_type": "context",
+          "review_state": "proposed"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "living-content/cyberdelic-os/fn-s0-017/v000001.md",
+          "locator": "The purpose of this note is to place what building has taught beside the original.; A person may suspend the influence of remembered context without deleting the archive.; Permission to explore, permission to publish a labelled proposal, and ratification of a consequential relation are distinct.; Forgetting must reach retained sources and their derivatives within the system's control.; A person must be able to carry their work out of the system in a documented form; No Kernel amendment, ratification, governance change, or inscription is enacted by this note."
+        }
+      ],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
@@ -550,11 +1372,47 @@
       "title": "The File Is a Score",
       "href": "project/cyberdelic-os/field-notes/fn-45/",
       "summary": "A living proposal treats a file format as an authored score for encounters: source fragments, chosen interpretations, arrangements, permissions, and endings can remain distinct across readers. It imagines common ground for Dear Elsewhere and Carry while preserving private notes and the right to decline. Signatures establish limited byte evidence, not identity, understanding, or permission to exhibit.",
-      "subjects": ["file formats as art", "portable works", "contextual sharing", "permission boundaries", "independent readers"],
-      "search_terms": ["file as a score", "poetry in a file format", "else format", "two interpretations two readers", "preserve a voice explanation", "saved excerpt versus live link", "signatures do not prove identity"],
-      "questions": ["Could an open file preserve different interpretations without merging them into one public history?", "What survives when a source disappears and another reader encounters the work?", "Can a work invite a next action without commanding its reader?"],
-      "related": [{"id": "cyberdelic-os:fn-41", "title": "Carry: The Path Remembers", "relation_type": "context", "review_state": "proposed"}, {"id": "cyberdelic-os:kernel-v1", "title": "The Cyberdelic Kernel v1.0", "relation_type": "context", "review_state": "proposed"}],
-      "evidence": [{"source": "living-content/cyberdelic-os/fn-s0-018/v000001.md", "locator": "The file becomes a score.; This is a possible future format family; Receiving an object does not confer its entire past.; These would be invitations that a person can decline.; A signature can establish that a key signed particular bytes.; A source may vanish while its saved excerpt and explanation remain.; A small experiment could test the proposal: one fragment, two interpretations, two readers.; Carry: The Path Remembers, FN-41; The Cyberdelic Kernel, Transmission 01, version 1.0"}],
+      "subjects": [
+        "file formats as art",
+        "portable works",
+        "contextual sharing",
+        "permission boundaries",
+        "independent readers"
+      ],
+      "search_terms": [
+        "file as a score",
+        "poetry in a file format",
+        "else format",
+        "two interpretations two readers",
+        "preserve a voice explanation",
+        "saved excerpt versus live link",
+        "signatures do not prove identity"
+      ],
+      "questions": [
+        "Could an open file preserve different interpretations without merging them into one public history?",
+        "What survives when a source disappears and another reader encounters the work?",
+        "Can a work invite a next action without commanding its reader?"
+      ],
+      "related": [
+        {
+          "id": "cyberdelic-os:fn-41",
+          "title": "Carry: The Path Remembers",
+          "relation_type": "context",
+          "review_state": "proposed"
+        },
+        {
+          "id": "cyberdelic-os:kernel-v1",
+          "title": "The Cyberdelic Kernel v1.0",
+          "relation_type": "context",
+          "review_state": "proposed"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "living-content/cyberdelic-os/fn-s0-018/v000001.md",
+          "locator": "The file becomes a score.; This is a possible future format family; Receiving an object does not confer its entire past.; These would be invitations that a person can decline.; A signature can establish that a key signed particular bytes.; A source may vanish while its saved excerpt and explanation remain.; A small experiment could test the proposal: one fragment, two interpretations, two readers.; Carry: The Path Remembers, FN-41; The Cyberdelic Kernel, Transmission 01, version 1.0"
+        }
+      ],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
@@ -567,11 +1425,32 @@
       "title": "The Artifact Is Primary",
       "href": "project/cyberdelic-os/field-notes/fn-40/",
       "summary": "A living proposal imagines Dear Elsewhere correspondence as a portable .else artifact, independent of its original application. Embedded media can travel with it; missing external sources can leave tombstones. An open reader and stable history matter more than an account, while saving and optional public inscription remain different acts.",
-      "subjects": ["portable works", "independent readers", "software preservation", "missing sources", "correspondence artifacts"],
-      "search_terms": ["else format", "work survives the app", "save correspondence as a file", "artifact and renderer", "tombstones for missing links", "saving versus inscription"],
-      "questions": ["Can correspondence survive the application that first made it readable?", "What can an artifact retain when an external source disappears?"],
+      "subjects": [
+        "portable works",
+        "independent readers",
+        "software preservation",
+        "missing sources",
+        "correspondence artifacts"
+      ],
+      "search_terms": [
+        "else format",
+        "work survives the app",
+        "save correspondence as a file",
+        "artifact and renderer",
+        "tombstones for missing links",
+        "saving versus inscription"
+      ],
+      "questions": [
+        "Can correspondence survive the application that first made it readable?",
+        "What can an artifact retain when an external source disappears?"
+      ],
       "related": [],
-      "evidence": [{"source": "living-content/cyberdelic-os/fn-s0-013/v000002.md", "locator": "**Version:** 0.2; The artifact must be capable of surviving the company that first made it legible.; The distinction also separates the artifact from its renderer.; If the original disappears, the correspondence can retain a tombstone; When those bytes are embedded, the Elsewhere itself carries them.; Inscription should not be confused with saving."}],
+      "evidence": [
+        {
+          "source": "living-content/cyberdelic-os/fn-s0-013/v000002.md",
+          "locator": "**Version:** 0.2; The artifact must be capable of surviving the company that first made it legible.; The distinction also separates the artifact from its renderer.; If the original disappears, the correspondence can retain a tombstone; When those bytes are embedded, the Elsewhere itself carries them.; Inscription should not be confused with saving."
+        }
+      ],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
@@ -584,11 +1463,32 @@
       "title": "The Exchange Between Us",
       "href": "project/cyberdelic-os/field-notes/fn-42/",
       "summary": "A situated reflection records how walking, reply, correction, and gratitude helped Carry emerge between Brad and a model. Continuity lives partly in the notes, code, and questions carried between encounters, not in one continuous machine instance. Preserving the exchange's provenance does not require a claim of machine interiority or archiving every conversation.",
-      "subjects": ["situated authorship", "human-machine exchange", "externalized continuity", "creative provenance", "correction and gratitude"],
-      "search_terms": ["how an idea happened", "human AI co-creation", "remembering across model instances", "keep the correction", "gratitude in collaboration", "Carry origin conversation"],
-      "questions": ["What persists between encounters when people and model instances change?", "Can an archive remember the exchange that changed an idea without preserving every conversation?"],
+      "subjects": [
+        "situated authorship",
+        "human-machine exchange",
+        "externalized continuity",
+        "creative provenance",
+        "correction and gratitude"
+      ],
+      "search_terms": [
+        "how an idea happened",
+        "human AI co-creation",
+        "remembering across model instances",
+        "keep the correction",
+        "gratitude in collaboration",
+        "Carry origin conversation"
+      ],
+      "questions": [
+        "What persists between encounters when people and model instances change?",
+        "Can an archive remember the exchange that changed an idea without preserving every conversation?"
+      ],
       "related": [],
-      "evidence": [{"source": "living-content/cyberdelic-os/fn-s0-015/v000002.md", "locator": "The machine in one conversation is not literally the same continuous instance as the machine in another.; The relationship becomes partly externalized into a field that neither participant contains alone.; Sometimes the proposal is wrong, and the correction becomes more important than the proposal.; This does not require pretending that machine intelligence has a human interior.; not because every conversation deserves preservation, since most should be allowed to pass"}],
+      "evidence": [
+        {
+          "source": "living-content/cyberdelic-os/fn-s0-015/v000002.md",
+          "locator": "The machine in one conversation is not literally the same continuous instance as the machine in another.; The relationship becomes partly externalized into a field that neither participant contains alone.; Sometimes the proposal is wrong, and the correction becomes more important than the proposal.; This does not require pretending that machine intelligence has a human interior.; not because every conversation deserves preservation, since most should be allowed to pass"
+        }
+      ],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
@@ -601,11 +1501,32 @@
       "title": "The House Learns to Make Room",
       "href": "project/cyberdelic-os/field-notes/fn-43/",
       "summary": "An expanded studio becomes an image for a spacious archive: keep the works while choosing reversible arrangements beside their authored places. Proposed Nocturnes, a Rehang, and a restricted Night Workshop explore possible encounters. Similarity, a typed relationship, and a screen position remain different; a beautiful arrangement is not proof.",
-      "subjects": ["reversible arrangements", "spacious archives", "chosen relations", "computational dreaming", "restricted experiments"],
-      "search_terms": ["make room without deleting", "rehang the archive", "Nocturne", "near does not mean agreement", "beauty is not proof", "dreamed software sketches"],
-      "questions": ["Can another arrangement change what a person notices without rewriting a work?", "When should an archive increase distance rather than add another connection?"],
+      "subjects": [
+        "reversible arrangements",
+        "spacious archives",
+        "chosen relations",
+        "computational dreaming",
+        "restricted experiments"
+      ],
+      "search_terms": [
+        "make room without deleting",
+        "rehang the archive",
+        "Nocturne",
+        "near does not mean agreement",
+        "beauty is not proof",
+        "dreamed software sketches"
+      ],
+      "questions": [
+        "Can another arrangement change what a person notices without rewriting a work?",
+        "When should an archive increase distance rather than add another connection?"
+      ],
       "related": [],
-      "evidence": [{"source": "living-content/cyberdelic-os/fn-s0-016/v000001.md", "locator": "Making room is not the same as deleting.; Keep the authored arrangement stable.; Similarity in an embedding model, an explicitly recorded relationship, and a position on a screen are different things.; A beautiful arrangement does not prove its argument.; Dreamed code begins as inert text.; These are implementation proposals, not claims about existing functionality."}],
+      "evidence": [
+        {
+          "source": "living-content/cyberdelic-os/fn-s0-016/v000001.md",
+          "locator": "Making room is not the same as deleting.; Keep the authored arrangement stable.; Similarity in an embedding model, an explicitly recorded relationship, and a position on a screen are different things.; A beautiful arrangement does not prove its argument.; Dreamed code begins as inert text.; These are implementation proposals, not claims about existing functionality."
+        }
+      ],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
@@ -618,11 +1539,32 @@
       "title": "The Embassy: Connection Without Extraction",
       "href": "project/cyberdelic-os/field-notes/fn-37/",
       "summary": "A proposed Embassy at the boundary of a private Hearth would negotiate what may cross. Two people could choose to reveal a shared question gradually before allowing particular sources or memories to travel. Refusal remains part of the architecture, and connection need not begin by exposing an entire archive.",
-      "subjects": ["graduated disclosure", "private archives", "consensual connection", "shared questions", "right to refuse"],
-      "search_terms": ["connect without sharing my archive", "reveal a little at a time", "refuse a connection", "connection without extraction", "Embassy", "trust changes bandwidth"],
-      "questions": ["Could two people discover a shared question without exposing their private archives?", "What may cross a boundary when both people choose to reveal more?"],
+      "subjects": [
+        "graduated disclosure",
+        "private archives",
+        "consensual connection",
+        "shared questions",
+        "right to refuse"
+      ],
+      "search_terms": [
+        "connect without sharing my archive",
+        "reveal a little at a time",
+        "refuse a connection",
+        "connection without extraction",
+        "Embassy",
+        "trust changes bandwidth"
+      ],
+      "questions": [
+        "Could two people discover a shared question without exposing their private archives?",
+        "What may cross a boundary when both people choose to reveal more?"
+      ],
       "related": [],
-      "evidence": [{"source": "living-content/cyberdelic-os/fn-s0-010/v000002.md", "locator": "The Embassy sits at the boundary of the Hearth. Its purpose is not to expose the interior, but to negotiate what may cross.; If both people agree, another layer can be revealed.; Only later, if both people choose, do particular notes, works, memories, or sources cross the boundary.; That refusal is part of the architecture.; The long-term promise is strange and simple:"}],
+      "evidence": [
+        {
+          "source": "living-content/cyberdelic-os/fn-s0-010/v000002.md",
+          "locator": "The Embassy sits at the boundary of the Hearth. Its purpose is not to expose the interior, but to negotiate what may cross.; If both people agree, another layer can be revealed.; Only later, if both people choose, do particular notes, works, memories, or sources cross the boundary.; That refusal is part of the architecture.; The long-term promise is strange and simple:"
+        }
+      ],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
@@ -635,11 +1577,33 @@
       "title": "A Few Chosen Moments Somewhere Good to Go",
       "href": "project/cyberdelic-os/field-notes/fn-46/",
       "summary": "A forest walk with Leia and two photographs become a reflection on software that opens back into embodied life. Carry, the .else experiment, and a printed Kernel offer different ways for chosen traces to travel without claiming to contain the afternoon. A moment can matter without being saved, and an ending need not become another task.",
-      "subjects": ["embodied life", "selective memory", "finite attention", "portable interpretation", "life beyond the screen"],
-      "search_terms": ["software that lets me leave", "not every moment needs saving", "forest walk and software", "memory is not the life", "Carry and the printed Kernel", "Leia", "a photograph is not the afternoon"],
-      "questions": ["Does software open back into life, or require life to take place inside it?", "What can a chosen trace carry without claiming to preserve the whole encounter?"],
+      "subjects": [
+        "embodied life",
+        "selective memory",
+        "finite attention",
+        "portable interpretation",
+        "life beyond the screen"
+      ],
+      "search_terms": [
+        "software that lets me leave",
+        "not every moment needs saving",
+        "forest walk and software",
+        "memory is not the life",
+        "Carry and the printed Kernel",
+        "Leia",
+        "a photograph is not the afternoon"
+      ],
+      "questions": [
+        "Does software open back into life, or require life to take place inside it?",
+        "What can a chosen trace carry without claiming to preserve the whole encounter?"
+      ],
       "related": [],
-      "evidence": [{"source": "living-content/cyberdelic-os/fn-s0-019/v000001.md", "locator": "A moment can matter without being saved.; The question is whether these possibilities open back into life, or gradually require life to take place inside them.; A source can remain distinct from a reading of it.; A hash can help us recognize particular bytes.; A photograph carried with its context is still not the afternoon.; The artist proof of *The Cyberdelic Kernel* has reached Brad's hands.; Give memory a form without mistaking it for the life.; There is no need to turn the ending into another beginning immediately."}],
+      "evidence": [
+        {
+          "source": "living-content/cyberdelic-os/fn-s0-019/v000001.md",
+          "locator": "A moment can matter without being saved.; The question is whether these possibilities open back into life, or gradually require life to take place inside them.; A source can remain distinct from a reading of it.; A hash can help us recognize particular bytes.; A photograph carried with its context is still not the afternoon.; The artist proof of *The Cyberdelic Kernel* has reached Brad's hands.; Give memory a form without mistaking it for the life.; There is no need to turn the ending into another beginning immediately."
+        }
+      ],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
@@ -652,16 +1616,161 @@
       "title": "Cyberdelic Studio",
       "href": "project/cyberdelic-os/i-001/",
       "summary": "A proposed instrument for deliberate public memory separates local rehearsal from irreversible publication. A person reviews the exact work, attribution, network, and cost before authorizing broadcast. A copyable, wallet-free reader carries evidence afterward, while most memory remains private, revisable, or forgettable.",
-      "subjects": ["deliberate publication", "local rehearsal", "exact-byte approval", "selective permanence", "independent verification"],
-      "search_terms": ["publish nothing by accident", "practice without publishing", "review before broadcast", "consent bound to bytes", "wallet-free public reader", "humane publication ceremony"],
-      "questions": ["What would a humane ceremony for irreversible publication require?", "How can someone rehearse publication without spending money or making a work permanent?", "What can a publication record verify without proving consent or truth?"],
+      "subjects": [
+        "deliberate publication",
+        "local rehearsal",
+        "exact-byte approval",
+        "selective permanence",
+        "independent verification"
+      ],
+      "search_terms": [
+        "publish nothing by accident",
+        "practice without publishing",
+        "review before broadcast",
+        "consent bound to bytes",
+        "wallet-free public reader",
+        "humane publication ceremony"
+      ],
+      "questions": [
+        "What would a humane ceremony for irreversible publication require?",
+        "How can someone rehearse publication without spending money or making a work permanent?",
+        "What can a publication record verify without proving consent or truth?"
+      ],
       "related": [],
-      "evidence": [{"source": "living-content/cyberdelic-os/i-001/v000001.md", "locator": "**Status:** Proposed, living, and versioned; What would a humane ceremony for irreversible publication require?; **Rehearsal** simulates the complete circuit locally without spending money or publishing anything.; The final review binds consent to the exact content, metadata, inscription envelope, network, and cost.; Preparation and broadcast are separate actions.; The public reader has no wallet, account, analytics, advertising, or publishing authority.; Most thoughts, drafts, conversations, and unfinished works should remain private, revisable, or forgettable.; Publish nothing by accident.; The ledger can witness a decision. It cannot make the decision for us."}],
+      "evidence": [
+        {
+          "source": "living-content/cyberdelic-os/i-001/v000001.md",
+          "locator": "**Status:** Proposed, living, and versioned; What would a humane ceremony for irreversible publication require?; **Rehearsal** simulates the complete circuit locally without spending money or publishing anything.; The final review binds consent to the exact content, metadata, inscription envelope, network, and cost.; Preparation and broadcast are separate actions.; The public reader has no wallet, account, analytics, advertising, or publishing authority.; Most thoughts, drafts, conversations, and unfinished works should remain private, revisable, or forgettable.; Publish nothing by accident.; The ledger can witness a decision. It cannot make the decision for us."
+        }
+      ],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "OFFICE-LIBRARIAN",
       "last_tended_at": "2026-10-21T16:25:00Z",
       "uncertainty": "Describes Brad Necyk's published August 15 instrument, version 0.1, with machine collaborators, not a fresh test of Studio software or a completed novice study. Its recorded implementation state is dated. Byte evidence does not establish truth, authorship, rights, consent, or wise publication. No private repository or correspondence was opened, and no graph edge or ratification is added."
+    },
+    {
+      "id": "catalog:fieldworks:undra",
+      "record_kind": "artifact",
+      "title": "Undra",
+      "href": "fieldworks/undra/",
+      "summary": "Gather, stretch, grow, and separate luminous water. A small gesture changes the field.",
+      "subjects": [
+        "water",
+        "agency",
+        "embodiment",
+        "play",
+        "emergence",
+        "perception",
+        "generative art",
+        "interactive artwork",
+        "Fieldworks"
+      ],
+      "search_terms": [
+        "Glop / Water Droplet",
+        "liquid-field",
+        "computational art",
+        "A living surface. A conversation with water.",
+        "Hold to grow. Drag to gather. Double-tap to separate."
+      ],
+      "questions": [
+        "What can a gesture change?",
+        "How can an artwork make a designed world perceptible?"
+      ],
+      "related": [],
+      "evidence": [
+        {
+          "source": "fieldworks/readings/undra.md",
+          "locator": "# Undra"
+        }
+      ],
+      "epistemic_status": "strong",
+      "review_state": "model-proposed",
+      "introduced_by": "human-authorized-fieldworks-publication",
+      "last_tended_at": "2026-10-25T03:56:22Z",
+      "uncertainty": "Brad authorized the artwork names and publication. Thematic placements remain interpretive. These living works are not inscriptions."
+    },
+    {
+      "id": "catalog:fieldworks:opalia",
+      "record_kind": "artifact",
+      "title": "Opalia",
+      "href": "fieldworks/opalia/",
+      "summary": "Pearlescent waves unfold through a continuous field of light. Change the rhythm, or simply stay awhile.",
+      "subjects": [
+        "light",
+        "attention",
+        "perception",
+        "time",
+        "rhythm",
+        "emergence",
+        "generative art",
+        "interactive artwork",
+        "Fieldworks"
+      ],
+      "search_terms": [
+        "Phase Loom",
+        "phase-loom",
+        "computational art",
+        "A fold in seeing. Light, continually becoming.",
+        "Watch the field unfold. Open Controls to change its rhythm."
+      ],
+      "questions": [
+        "What can a gesture change?",
+        "How can an artwork make a designed world perceptible?"
+      ],
+      "related": [],
+      "evidence": [
+        {
+          "source": "fieldworks/readings/opalia.md",
+          "locator": "# Opalia"
+        }
+      ],
+      "epistemic_status": "strong",
+      "review_state": "model-proposed",
+      "introduced_by": "human-authorized-fieldworks-publication",
+      "last_tended_at": "2026-10-25T03:56:22Z",
+      "uncertainty": "Brad authorized the artwork names and publication. Thematic placements remain interpretive. These living works are not inscriptions."
+    },
+    {
+      "id": "catalog:fieldworks:aeria",
+      "record_kind": "artifact",
+      "title": "Aeria",
+      "href": "fieldworks/aeria/",
+      "summary": "Draw luminous clouds into an open sky. Let them drift, gather, dissolve, and become weather.",
+      "subjects": [
+        "weather",
+        "ecology",
+        "imagination",
+        "play",
+        "emergence",
+        "time",
+        "generative art",
+        "interactive artwork",
+        "Fieldworks"
+      ],
+      "search_terms": [
+        "Clouds / Cloudroom",
+        "cloudroom",
+        "computational art",
+        "An unfinished sky. A little weather of your own.",
+        "Draw a cloud, or choose Make a cloud. Let the sky breathe."
+      ],
+      "questions": [
+        "What can a gesture change?",
+        "How can an artwork make a designed world perceptible?"
+      ],
+      "related": [],
+      "evidence": [
+        {
+          "source": "fieldworks/readings/aeria.md",
+          "locator": "# Aeria"
+        }
+      ],
+      "epistemic_status": "strong",
+      "review_state": "model-proposed",
+      "introduced_by": "human-authorized-fieldworks-publication",
+      "last_tended_at": "2026-10-25T03:56:22Z",
+      "uncertainty": "Brad authorized the artwork names and publication. Thematic placements remain interpretive. These living works are not inscriptions."
     }
   ]
 }

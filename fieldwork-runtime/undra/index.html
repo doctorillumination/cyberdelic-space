@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#668629">
+  <title>Undra</title>
+  <meta name="description" content="A living field of droplets. A generative study of surface tension, light, and green.">
+  <link rel="icon" href="favicon.ico?v=1" sizes="16x16 32x32 48x48 256x256">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png?v=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=1">
+  <link rel="icon" type="image/png" sizes="256x256" href="favicon.png?v=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=1">
+  <link rel="stylesheet" href="style.css?v=2.21.1">
+</head>
+<body class="clean">
+  <canvas id="art" aria-label="Animated liquid droplets. Hold empty space to grow a new droplet. Turn on Gather to gently draw nearby liquid together. Drag droplets together to grow a pool. Double-click or double-tap water to stretch it apart."></canvas>
+  <button id="interface-toggle" class="interface-toggle" aria-label="Show controls" aria-expanded="false" aria-controls="interface-header interface-footer settings colour-panel sampling-panel record-panel shapes-panel experiments-panel about-panel" aria-keyshortcuts="H" title="Show controls (H)"><svg width="15" height="15" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14M7 3v4M13 8v4M8 13v4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg><span id="interface-label">Controls</span></button>
+  <div id="intro-hint" class="intro-hint" role="status" hidden>Hold empty space to grow a drop.<span>Drag drops together. Double-click or double-tap to split.</span><span>Open Controls for the gentle Gather brush.</span></div>
+  <header id="interface-header"><div class="identity"><span class="eyebrow">STUDY 001 / GENERATIVE MATTER</span><h1>Undra<span>.</span></h1></div><button id="about" class="text-button" aria-expanded="false" aria-controls="about-panel">About the study <span aria-hidden="true">↗</span></button></header>
+  <div id="loading" role="status">Gathering light<span></span></div>
+  <div id="graphics-recovery" hidden role="alert" style="position:fixed;z-index:1000;left:50%;bottom:32px;transform:translateX(-50%);width:min(420px,90vw);padding:20px;background:#edf1df;color:#1d2c14;border-radius:14px;font:14px/1.6 Arial,sans-serif;text-align:center">Graphics could not start normally.<br><a href="?safe=1">Try compatibility mode</a> · <a href="diagnostics/">Graphics diagnostics</a></div>
+  <div id="about-panel" class="panel about-panel" hidden><button class="close" id="close-about" aria-label="Close about">×</button><span class="eyebrow">LIGHT MEETS LIQUID</span><h2>A small, living surface.</h2><p>Inspired by a macro film of green droplets. Every form is generated. Light bends through the liquid and catches its surface. Hold empty space to grow a new drop, then release to keep it. Grab it to drag. Choose Gather and drag anywhere to gently draw nearby liquid together. Drag droplets together to grow a pool. Double-click or double-tap to scatter smaller drops, then gather them again. <span data-shapes-lab hidden>Open Shapes to add experimental hard ceramic or soft jelly. Hold a soft shape to press a dent into it. Choose Move to carry it around. </span>Pause and let the light settle.</p><p class="fine">The field opens in Dance. Grab a drop to take over, then choose Dance to watch again. Adjust lets you change the amount, from a few spacious drops to a crowded surface. Sampling adds detail for a more powerful computer. Record pauses playback to render a clean 1080p or 4K film, frame by frame.</p><p class="fine">A procedural study of surface-fluid motion and studio light. No video or image textures are used.</p></div>
+  <aside id="settings" class="panel settings" hidden aria-label="Artwork settings"><div class="panel-head"><h2>Shape the field</h2><button id="close-settings" class="close" aria-label="Close settings">×</button></div>
+    <label>Starting amount <output id="amount-out">252 drops</output><input id="amount" type="range" min="63" max="504" step="63" value="252" aria-describedby="amount-help"></label>
+    <div class="range-ends" aria-hidden="true"><span>Sparse</span><span>Crowded</span></div>
+    <p class="fine" id="amount-help">Choose how many drops a new field starts with. Holding empty space adds water to this field. Changing the amount starts fresh; more drops need more graphics power.</p>
+    <label>Camera tilt <output id="tilt-out">18°</output><input id="tilt" type="range" min="0" max="22" step="1" value="18"></label>
+    <label class="toggle-label"><span>Macro depth of field</span><input id="macro" type="checkbox" checked></label>
+    <div id="macro-options">
+      <label>Softness <output id="softness-out">45%</output><input id="softness" type="range" min="0" max="1" step="0.01" value="0.45"></label>
+      <label>Focus position <output id="focus-out">50%</output><input id="focus" type="range" min="0" max="1" step="0.01" value="0.5"></label>
+      <p class="fine">Shift focus from the near edge to the far edge. Pause for a finer lens effect.</p>
+    </div>
+    <label>Flow <output id="flow-out">0.18</output><input id="flow" type="range" min="0" max="1" step="0.01" value="0.18"></label>
+    <label>Dance energy <output id="energy-out">55%</output><input id="energy" type="range" min="0.1" max="1" step="0.01" value="0.55"></label>
+    <p class="fine">Dance gathers nearby beads into larger drops, then lets them separate. Energy changes the pace. Grab a drop to take over; choose Dance to watch again.</p>
+    <label>Viscosity <output id="viscosity-out">0.65</output><input id="viscosity" type="range" min="0" max="1" step="0.01" value="0.65"></label>
+    <label>Surface tension <output id="tension-out">0.58</output><input id="tension" type="range" min="0" max="1" step="0.01" value="0.58"></label>
+    <p class="fine">Hold drops together to grow a larger pool. Double-click or double-tap a grown drop or pool to stretch it into smaller drops. Keep splitting until tiny beads remain. Gather them again whenever you like.</p>
+    <label>Refraction <output id="ior-out">1.33</output><input id="ior" type="range" min="1.05" max="1.7" step="0.01" value="1.33"></label>
+    <label>Liquid haze <output id="scattering-out">1.00</output><input id="scattering" type="range" min="0" max="3" step="0.01" value="1.00"></label>
+    <label>Surface texture <output id="texture-out">15%</output><input id="texture" type="range" min="0" max="1" step="0.01" value="0.15"></label>
+    <p class="fine">Keep a faint texture, or lower it for a polished surface.</p>
+    <button id="open-colour" class="colour-link" aria-controls="colour-panel">Explore colours <span aria-hidden="true">↗</span></button>
+  </aside>
+  <aside id="colour-panel" class="panel settings colour-panel" hidden aria-label="Colour customization">
+    <button id="close-colour" class="close" aria-label="Close colour customization">×</button>
+    <span class="eyebrow">A DIFFERENT KIND OF LIGHT</span><h2>Find your colour.</h2>
+    <p class="fine colour-intro">Choose a shade, or let colours melt into one another.</p>
+    <label class="toggle-label"><span>Blend colours</span><input id="mix-colours" type="checkbox"></label>
+    <div id="single-colours" class="colour-swatches" role="group" aria-label="Colour palette"></div>
+    <div id="mixed-colours" hidden>
+      <label class="quality-label">Starting blend<select id="blend-preset" aria-label="Starting blend"></select></label>
+      <div id="colour-preview" class="colour-preview" aria-hidden="true"></div>
+      <div class="colour-stops">
+        <label>First<input id="colour-1" type="color" value="#a8dfe6" aria-label="First blend colour"></label>
+        <label>Second<input id="colour-2" type="color" value="#b9a9df" aria-label="Second blend colour"></label>
+        <label>Third<input id="colour-3" type="color" value="#edb6d0" aria-label="Third blend colour"></label>
+      </div>
+      <label>Blend softness <output id="blend-softness-out">70%</output><input id="blend-softness" type="range" min="0" max="1" step="0.01" value="0.7"></label>
+      <label>Direction <output id="blend-direction-out">0°</output><input id="blend-direction" type="range" min="0" max="360" step="5" value="0"></label>
+    </div>
+    <p class="fine colour-note">Your palette stays on this browser and follows the light into saved images and films.</p>
+  </aside>
+  <aside id="shapes-panel" class="panel settings shapes-panel" hidden aria-label="Play shapes">
+    <button id="close-shapes" class="close" aria-label="Close shapes">×</button>
+    <span class="eyebrow">EXPERIMENTAL SHAPE LAB</span><h2>A little push.</h2>
+    <p class="fine">Ceramic pushes the water. Jelly grips the surface, squishes, and springs back.</p>
+    <div class="setting-label">New shapes</div>
+    <div class="sample-options body-options" role="group" aria-label="New shape material"><button data-body-type="hard" aria-pressed="false">Hard ceramic</button><button data-body-type="soft" aria-pressed="true" class="selected">Soft jelly</button></div>
+    <div class="shape-options" role="group" aria-label="Add a shape">
+      <button data-shape="sphere"><span class="shape-icon sphere" aria-hidden="true"></span>Sphere</button>
+      <button data-shape="cube"><span class="shape-icon cube" aria-hidden="true"></span>Rounded cube</button>
+      <button data-shape="capsule"><span class="shape-icon capsule" aria-hidden="true"></span>Capsule</button>
+      <button data-shape="soft"><span class="shape-icon pebble" aria-hidden="true"></span>Pebble</button>
+    </div>
+    <div class="setting-label">Touch soft shapes</div>
+    <div class="sample-options" role="group" aria-label="Soft shape interaction"><button data-soft-touch="press" class="selected" aria-pressed="true">Press</button><button data-soft-touch="move" aria-pressed="false">Move</button></div>
+    <label>Softness <output id="shape-softness-out">92%</output><input id="shape-softness" aria-label="Softness" type="range" min=".2" max="1" step=".01" value=".92"></label>
+    <div class="setting-label">Jelly finish</div>
+    <div class="sample-options jelly-finishes" role="group" aria-label="Jelly finish"><button data-jelly-finish="opal" aria-pressed="true" class="selected"><span class="jelly-swatch opal" aria-hidden="true"></span>Opal</button><button data-jelly-finish="sorbet" aria-pressed="false"><span class="jelly-swatch sorbet" aria-hidden="true"></span>Sorbet</button><button data-jelly-finish="satin" aria-pressed="false"><span class="jelly-swatch satin" aria-hidden="true"></span>Satin</button></div>
+    <p class="fine">A little color through the jelly. Changes all soft shapes.</p>
+    <label>Translucency <output id="jelly-clarity-out">68%</output><input id="jelly-clarity" aria-label="Jelly translucency" type="range" min="0" max="1" step=".01" value=".68"></label>
+    <p class="fine">Milky to clear. Light bends through the jelly and picks up its color.</p>
+    <p class="fine">Hold to make a dent, then slide to knead. Release to let it recover. Jelly takes a gentler pull to move. Hard shapes always move.</p>
+    <div class="shape-footer"><span id="shape-count">0 / 6 shapes</span><button id="clear-shapes" class="colour-link">Clear shapes</button></div>
+  </aside>
+  <aside id="experiments-panel" class="panel settings experiments-panel" hidden aria-label="Experimental playground">
+    <button id="close-experiments" class="close" aria-label="Close Experimental">×</button>
+    <span class="eyebrow">WORK IN PLAY</span><h2>A little laboratory.</h2>
+    <p class="fine">Early ideas to sit with, listen to, and play. They live here while we find their shape.</p>
+    <a class="experiment-card" href="experiments/?study=pool"><strong>Ripple pool <span>↗</span></strong><span>A shallow sheet of water. Music radiates from the centre. Touch to make a ripple.</span></a>
+    <a class="experiment-card" href="experiments/?study=droplets"><strong>Singing droplets <span>↗</span></strong><span>Beads of water responding to music and passing waves.</span></a>
+    <a class="experiment-card" href="?learn=1"><strong>Water lab <span>↗</span></strong><span>The same beautiful droplets. Play with charge and detergent, or look closer with a molecular lens.</span></a>
+    <a class="experiment-card" href="?shapes=1"><strong>Shapes <span>↗</span></strong><span>Hard primitives and soft jelly. A work in progress.</span></a>
+    <a class="colour-link" data-shapes-lab hidden href="./">Return to the water artwork ↗</a>
+    <p class="fine">Music files stay on your device. Compatible desktop browsers can listen to a shared YouTube or music tab.</p>
+  </aside>
+  <aside id="sampling-panel" class="panel settings" hidden aria-label="Live sampling settings">
+    <button id="close-sampling" class="close" aria-label="Close sampling">×</button><span class="eyebrow">GATHER MORE LIGHT</span><h2>Make it finer.</h2>
+    <div class="setting-label">Live samples per pixel</div>
+    <div class="sample-options" role="group" aria-label="Live sampling"><button data-sampling="1" aria-pressed="true" class="selected">1×</button><button data-sampling="2" aria-pressed="false">2×</button><button data-sampling="4" aria-pressed="false">4×</button><button data-sampling="8" aria-pressed="false">8×</button></div>
+    <p class="fine">More samples smooth fine edges and reflections while the water moves. Try 2× first, then increase if motion stays comfortable.</p>
+    <label class="quality-label">Resolution<select id="quality"><option value="balanced">Balanced</option><option value="high">Fine</option><option value="ultra">Exhibition</option></select></label>
+    <label class="quality-label">Bounced light<select id="bounce-quality" aria-label="Bounced light"><option value="3">Gentle, lighter</option><option value="6">Rich, more detail</option></select></label>
+    <p class="fine">Both include soft bounced light. Rich gathers more light around the droplets. Pause for fuller path tracing.</p>
+    <label class="quality-label">Paused refinement<select id="refinement"><option value="1024">1,024 samples</option><option value="4096">4,096 samples</option><option value="16384">16,384 samples</option></select></label>
+    <p id="performance" class="performance">Measuring the light…</p>
+    <label class="quality-label">Motion limit<select id="motion-fps"><option value="60">60 fps</option><option value="30">30 fps, quieter</option></select></label>
+    <label class="quality-label">Lighting<select id="lighting-refresh"><option value="smooth">Smooth motion</option><option value="full">Full lighting</option></select></label>
+    <p class="fine">Smooth motion eases the lighting workload. Full lighting refreshes every frame. Neither changes image resolution.</p>
+    <details class="graphics-details"><summary>Device details</summary><p class="fine"><a href="diagnostics/">Open graphics diagnostics ↗</a></p><p id="device-info" class="fine"></p><button id="copy-diagnostics" class="colour-link">Copy performance details</button></details>
+  </aside>
+  <aside id="record-panel" class="panel settings record-panel" hidden aria-label="Video render settings">
+    <button id="close-record" class="close" aria-label="Close video settings">×</button>
+    <span class="eyebrow">A MOMENT, MADE FINER</span><h2>Make a film.</h2>
+    <label class="quality-label">Resolution<select id="render-resolution"><option value="1080p">1080p HD</option><option value="4k">4K UHD</option></select></label>
+    <label class="quality-label">Sampling quality<select id="render-samples"><option value="32">Clean, 32 samples</option><option value="64" selected>Fine, 64 samples</option><option value="256">Studio, 256 samples</option></select></label>
+    <label class="quality-label">Render style<select id="render-style"><option value="fast">Quick studio</option><option value="precision">Precision studio</option></select></label>
+    <label class="quality-label">Length<select id="duration"><option value="10">10 seconds</option><option value="20">20 seconds</option><option value="30">30 seconds</option></select></label>
+    <label class="quality-label">Frame rate<select id="record-fps"><option value="30">30 fps</option><option value="60">60 fps</option></select></label>
+    <p id="render-summary" class="performance">1,920 × 1,080 · 30 fps · 64 samples per pixel</p>
+    <p class="fine">Both styles keep your resolution, samples, and macro lens. Precision studio gives finer reflections and refraction, and takes longer. 4K saves larger files.</p>
+    <button id="start-render" class="render-button"><span class="record-dot" aria-hidden="true"></span>Render video</button>
+    <p class="fine render-note">Playback pauses while your MP4 renders. Stop saves the completed frames.</p>
+  </aside>
+  <footer id="interface-footer"><div class="caption"><span class="live-dot"></span><span id="status">LIVING SURFACE</span><span id="samples"></span><span id="drop-count">252 drops</span></div>
+    <div class="toolbar"><nav aria-label="Motion and recording"><button id="play" aria-label="Pause motion" title="Pause motion (Space)"><span id="play-icon">Ⅱ</span><span id="play-label">Pause</span></button><button id="dance" aria-pressed="true" title="Watch the droplets dance"><span aria-hidden="true">≈</span><span>Dance</span></button><button id="gather" aria-pressed="false" aria-keyshortcuts="G" title="Gently draw nearby drops together (G)"><span aria-hidden="true">◎</span><span>Gather</span></button><button id="record" aria-label="Video render settings" aria-expanded="false" aria-controls="record-panel" title="Choose resolution, quality, and clip length"><span class="record-dot" aria-hidden="true"></span><span id="record-label">Record</span></button></nav>
+    <nav aria-label="Artwork controls"><button id="renew" title="Generate a new field (R)"><span aria-hidden="true">↻</span><span>New field</span></button><button id="tune" aria-expanded="false" aria-controls="settings"><span aria-hidden="true">☷</span><span>Adjust</span></button><button id="colour" aria-expanded="false" aria-controls="colour-panel"><span class="colour-indicator" aria-hidden="true"></span><span>Colour</span></button><button id="shapes" data-shapes-lab hidden aria-expanded="false" aria-controls="shapes-panel"><span aria-hidden="true">◒</span><span>Shapes</span></button><button id="experiments" aria-expanded="false" aria-controls="experiments-panel"><span aria-hidden="true">◌</span><span>Experimental</span></button><button id="sampling" aria-expanded="false" aria-controls="sampling-panel"><span aria-hidden="true">✧</span><span>Sampling <small id="sampling-label">1×</small></span></button><button id="capture" aria-label="Save image" title="Save the artwork as a PNG"><span aria-hidden="true">↓</span><span>Save image</span></button><button id="fullscreen" class="icon-button" aria-label="Enter full screen" title="Full screen (F)">⛶</button></nav></div>
+    <p class="gesture" id="gesture-help">HOLD EMPTY SPACE TO GROW · DRAG TO GATHER · DOUBLE-TAP TO SPLIT</p></footer>
+  <div id="recording-status" role="status" hidden><div class="render-heading"><span class="record-dot" aria-hidden="true"></span><span id="recording-time">Preparing video render</span></div><progress id="render-progress" max="1" value="0" aria-label="Video render progress"></progress><span id="render-eta">Every frame, in its own time.</span></div>
+  <div id="play-cue" class="play-cue" aria-hidden="true" hidden><span id="play-cue-label">Hold to grow</span></div>
+  <div id="notice" role="status" hidden></div>
+  <script>
+    function graphicsFailure(message) {
+      const art=document.getElementById('art');
+      art.dataset.error = String(message || art.dataset.error || 'Graphics stopped');
+      const loading = document.getElementById('loading');
+      loading.hidden = false;
+      loading.style.opacity = '1';
+      loading.textContent = 'The artwork could not start. Reload to try again.';
+      document.getElementById('graphics-recovery').hidden=false;
+      try{localStorage.setItem('glop-last-graphics-error',JSON.stringify({time:new Date().toISOString(),route:location.pathname+location.search,...art.dataset}));}catch{}
+    }
+    addEventListener('error',event=>graphicsFailure(event.message || 'Script loading failed'));
+    addEventListener('unhandledrejection',event=>graphicsFailure(event.reason?.message || 'Startup failed'));
+    addEventListener('glop-graphics-error',()=>graphicsFailure());
+  </script>
+  <script type="module" src="app.js?v=2.24.2"></script>
+</body>
+</html>
