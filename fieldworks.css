@@ -1,0 +1,66 @@
+/* Fieldworks: the press at the threshold, the artwork inside. */
+main.fieldworks-main { max-width: none; padding: 0; }
+.fieldworks-index { max-width: 1400px; margin: 0 auto; padding: clamp(28px, 4vw, 48px) clamp(20px, 4vw, 64px) 80px; }
+.fieldworks-index .living-head { max-width: 760px; margin-bottom: 32px; }
+.fieldworks-index h1 { font: normal clamp(48px, 6vw, 80px)/1.05 var(--font-editorial); letter-spacing: -.05em; margin: 12px 0 20px; }
+.fieldworks-intro { font: normal clamp(17px, 1.5vw, 20px)/1.55 var(--font-editorial); max-width: 38em; }
+.fieldworks-intro p { margin: 10px 0; }
+.fieldworks-kicker, .fieldwork-number, .fieldworks-foot { font: 11px/1.7 var(--font-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-2); }
+.fieldworks-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(20px, 3vw, 44px); padding: 0; margin: 0; list-style: none; }
+.fieldworks-card { min-width: 0; }
+.fieldworks-link { color: inherit; text-decoration: none; display: block; }
+.fieldworks-image { aspect-ratio: 4/3; overflow: hidden; border-radius: 3px; background: var(--surface); }
+.fieldworks-image img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 650ms cubic-bezier(.2,.7,.2,1); }
+.fieldworks-link:hover img { transform: scale(1.025); }
+.fieldworks-link:focus-visible { outline: 2px solid var(--signal); outline-offset: 8px; border-radius: 3px; }
+.fieldwork-number { margin: 22px 0 8px; }
+.fieldworks-card h2 { font: normal clamp(32px, 3vw, 48px)/1.15 var(--font-editorial); letter-spacing: -.035em; margin: 0 0 12px; }
+.fieldworks-card p:not(.fieldwork-number) { color: var(--ink-2); font-size: 15px; line-height: 1.6; min-height: 4.8em; margin: 0 0 18px; }
+.fieldworks-enter { font: 11px/1.5 var(--font-mono); text-transform: uppercase; letter-spacing: .12em; display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid var(--line-2); }
+.fieldworks-enter span { font-size: 20px; transition: transform 250ms; }
+.fieldworks-link:hover .fieldworks-enter span { transform: translateX(4px); }
+.fieldworks-foot { margin-top: 52px; max-width: 64em; }
+.fieldworks-project { margin: 32px 0; padding: 24px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.fieldworks-project h2 { margin: 0 0 8px; }
+.fieldworks-project p { max-width: 48em; }
+.fieldworks-project a { display: inline-block; min-height: 44px; padding: 10px 0; }
+.fieldwork-stage { height: 100vh; height: 100dvh; overflow: hidden; }
+.fieldwork-stage::before, .fieldwork-stage::after { display: none; }
+.fieldwork-player { height: 100%; width: 100%; max-width: none; margin: 0; padding: 0; border: 0; display: grid; grid-template-rows: auto minmax(0,1fr); background: #f6f7f4; color: #291a3a; }
+.fieldwork-bar { display: grid; grid-template-columns: 1fr auto 1fr; gap: 12px; align-items: center; min-height: 56px; padding: 4px max(12px, env(safe-area-inset-right)) 4px max(12px, env(safe-area-inset-left)); background: #f4f3f8; z-index: 2; }
+.fieldwork-bar a, .fieldwork-bar button { min-height: 44px; min-width: 44px; padding: 10px 8px; border: 0; background: transparent; color: inherit; font: 11px/1.4 var(--font-mono); letter-spacing: .06em; text-decoration: none; cursor: pointer; border-radius: 3px; }
+.fieldwork-bar a:focus-visible, .fieldwork-bar button:focus-visible { outline: 2px solid #087b8a; outline-offset: -2px; }
+.fieldwork-bar a:hover, .fieldwork-bar button:hover { background: rgba(40,30,60,.05); }
+.fieldwork-bar h1 { font: normal 22px/1.2 var(--font-editorial); margin: 0; letter-spacing: -.02em; }
+.fieldwork-actions { display: flex; justify-content: flex-end; gap: 4px; }
+.fieldwork-return { justify-self: start; white-space: nowrap; }
+.fieldwork-canvas { min-height: 0; position: relative; }
+.fieldwork-canvas iframe { display: block; width: 100%; height: 100%; border: 0; background: #edf4ee; }
+.fieldwork-status { position: absolute; inset: 0; display: grid; place-content: center; padding: 24px; text-align: center; background: #f4f3f8; pointer-events: none; }
+.fieldwork-status[hidden] { display: none; }
+.fieldwork-status a { pointer-events: auto; }
+.fieldwork-about { width: min(680px, calc(100% - 24px)); max-height: min(820px, calc(100dvh - 32px)); border: 1px solid var(--line); border-radius: 8px; padding: clamp(20px, 4vw, 40px); color: var(--ink); background: var(--surface); overflow: auto; }
+.fieldwork-about::backdrop { background: rgba(20,14,35,.28); backdrop-filter: blur(8px); }
+:root[data-theme="psychedelic"] .fieldwork-about { background: #f5f2fa; }
+.fieldwork-about .living-page, .fieldwork-about .living-head { margin: 0; padding: 0; }
+.fieldwork-about h2 { font: normal 42px/1.1 var(--font-editorial); letter-spacing: -.04em; margin: 8px 0 18px; }
+.fieldwork-about .fieldwork-prose { font: 17px/1.7 var(--font-editorial); }
+.fieldwork-close { float: right; min-width: 44px; min-height: 44px; border: 1px solid var(--line); background: transparent; color: var(--ink); border-radius: 50%; cursor: pointer; font-size: 22px; }
+.fieldwork-related { border-top: 1px solid var(--line); margin-top: 24px; padding-top: 18px; }
+.fieldwork-related a { display: inline-block; min-height: 44px; padding: 10px 0; }
+.fieldwork-switch { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+.fieldwork-attribution { font: 11px/1.7 var(--font-mono); color: var(--ink-2); }
+.fieldwork-status, .fieldwork-about, .fieldwork-bar { -webkit-text-size-adjust: 100%; }
+@media (max-width: 720px) {
+  .fieldworks-grid { grid-template-columns: minmax(0, 1fr); gap: 44px; }
+  .fieldworks-image { aspect-ratio: 4/3; }
+  .fieldworks-card p:not(.fieldwork-number) { min-height: 0; max-width: 36em; }
+  .fieldworks-index .living-head { margin-bottom: 36px; }
+  .fieldwork-bar { gap: 2px; }
+  .fieldwork-bar a, .fieldwork-bar button { font-size: 10px; padding-inline: 6px; }
+  .fieldwork-bar h1 { font-size: 20px; }
+  .fieldwork-actions { gap: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .fieldworks-image img, .fieldworks-enter span { transition: none; }
+}

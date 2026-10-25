@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>glop / experimental</title><meta name="theme-color" content="#668629"><link rel="icon" href="../favicon.ico"><link rel="stylesheet" href="lab.css?v=2.22.0"></head>
+<body>
+<canvas id="art" aria-label="Experimental water responding to music. Touch or drag the surface to send ripples outward."></canvas>
+<a class="back" href="../">← glop <span>experimental</span></a>
+<button id="controls" class="controls" aria-controls="panel" aria-expanded="true" title="Show or hide controls (H)">Hide controls</button>
+<section id="panel" aria-label="Experimental water settings">
+  <span class="eyebrow">WORK IN PLAY</span><h1 id="study-title">Ripple pool.</h1><p class="intro" id="study-intro">A shallow sheet of water. Music makes waves; your touch leaves a ripple.</p>
+  <div class="switch" role="group" aria-label="Water study"><button data-study="pool" aria-pressed="true">Ripple pool</button><button data-study="droplets" aria-pressed="false">Singing droplets</button></div>
+  <div class="section-title">Give it something to listen to</div>
+  <label class="file-button" for="music">Choose a music file<input id="music" type="file" accept="audio/*,.mp3,.m4a,.wav,.ogg,.flac"></label>
+  <audio id="player" controls preload="metadata" hidden aria-label="Selected music playback"></audio>
+  <div class="audio-actions"><button id="share">Listen to another tab</button><button id="ambient">Ambient rhythm</button></div>
+  <p class="fine" id="share-help">For YouTube, play music in <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">another tab ↗</a>, then share that tab with its audio. Desktop Chrome or Edge works best. Choose a file on iPad.</p>
+  <p id="audio-status" class="status" role="status">Ambient rhythm. No sound plays.</p>
+  <div class="meter" aria-hidden="true"><span id="level"></span></div>
+  <button id="stop" class="quiet-button">Stop listening</button>
+  <label class="range-label">Response <output id="strength-out">60%</output><input id="strength" aria-label="Response" type="range" min=".1" max="1" step=".01" value=".6"></label>
+  <label class="range-label" id="depth-control">Water depth <output id="depth-out">2.5 cm</output><input id="depth" aria-label="Water depth" type="range" min="10" max="80" step="1" value="25"></label>
+  <div id="pool-detergent-control"><label class="range-label">Detergent (SDS) <output id="pool-detergent-out">0.0 mM</output><input id="pool-detergent" aria-label="Pool detergent concentration" type="range" min="0" max="20" step=".1" value="0"></label><p class="fine">Surface tension: <span id="pool-gamma">72.8 mN/m</span>. Detergent changes the fine capillary ripples. <a href="education/">Inspect molecules ↗</a></p></div>
+  <label class="range-label">Ripple speed <output id="speed-out">Gentle</output><input id="speed" aria-label="Ripple speed" type="range" min="1.5" max="4.5" step=".1" value="2.8"></label>
+  <label class="range-label">Lingering ripples <output id="linger-out">55%</output><input id="linger" aria-label="Lingering ripples" type="range" min="0" max="1" step=".01" value=".55"></label>
+  <label class="colour-label">Colour<select id="colour" aria-label="Colour"></select></label>
+  <div class="bottom-actions"><button id="pause">Pause</button><button id="reset">Clear ripples</button><button id="fullscreen" aria-label="Full screen">⛶</button></div>
+  <p class="fine">These studies stay Experimental until they are ready. Your music stays on this device. Stop releases shared audio. <a href="../?shapes=1">Try shapes ↗</a></p>
+</section>
+<div id="hint" role="status">Touch the water. Let the music radiate.</div>
+<div id="loading" role="status">Gathering light…</div>
+<noscript>This artwork needs JavaScript and WebGL 2.</noscript>
+<script>addEventListener('error',event=>{const loading=document.getElementById('loading');loading.hidden=false;loading.textContent='Graphics could not start. ';const link=document.createElement('a');link.href='../diagnostics/';link.textContent='Open graphics diagnostics';loading.append(link);});</script>
+<script type="module" src="app.js?v=2.24.2"></script>
+</body></html>

@@ -123,6 +123,8 @@
     window.addEventListener("pagehide", function () { player.stop(); });
     document.addEventListener("visibilitychange", function () { if (document.hidden) player.pause(); });
     window.addEventListener("hashchange", function () { player.stop(); });
+    var dialog = container.closest("dialog");
+    if (dialog) dialog.addEventListener("close", function () { player.pause(); });
   }
   async function initialise() {
     var article = document.querySelector("article.living-page");

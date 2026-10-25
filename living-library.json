@@ -23,7 +23,14 @@
       "title": "An Operating System for Shared Reality",
       "href": "project/cyberdelic-os/field-notes/fn-01/",
       "excerpt": "A proposal for an operating system that connects situated apertures without collapsing their differences.",
-      "themes": ["technology", "consciousness", "governance", "attention", "perception", "agency"],
+      "themes": [
+        "technology",
+        "consciousness",
+        "governance",
+        "attention",
+        "perception",
+        "agency"
+      ],
       "register": "speculative-design",
       "rationale": "The note joins interface design, attention, and plural governance around the problem of shared reality."
     },
@@ -33,7 +40,13 @@
       "title": "Asynchronous Co-Presence",
       "href": "project/cyberdelic-os/field-notes/fn-02/",
       "excerpt": "Correspondence becomes a spacious medium where latency, voice, and continuity carry presence across distance.",
-      "themes": ["collaboration", "language", "embodiment", "memory", "attention"],
+      "themes": [
+        "collaboration",
+        "language",
+        "embodiment",
+        "memory",
+        "attention"
+      ],
       "register": "field-meditation",
       "rationale": "Its central material is embodied language sustained through time, distance, and creative relation."
     },
@@ -43,7 +56,13 @@
       "title": "A Village of Agents",
       "href": "project/cyberdelic-os/field-notes/fn-03/",
       "excerpt": "Machine intelligence is imagined as a plural ecology of bounded offices rather than a single oracle.",
-      "themes": ["artificial-intelligence", "community", "agency", "governance", "privacy"],
+      "themes": [
+        "artificial-intelligence",
+        "community",
+        "agency",
+        "governance",
+        "privacy"
+      ],
       "register": "speculative-design",
       "rationale": "The village metaphor turns AI architecture into a question of offices, permissions, plurality, and accountability."
     },
@@ -53,7 +72,13 @@
       "title": "The Gathering Intelligence",
       "href": "project/cyberdelic-os/field-notes/fn-04/",
       "excerpt": "An intelligence designed to gather people around shared attention instead of isolating each person inside a private answer.",
-      "themes": ["artificial-intelligence", "collaboration", "community", "attention", "governance"],
+      "themes": [
+        "artificial-intelligence",
+        "collaboration",
+        "community",
+        "attention",
+        "governance"
+      ],
       "register": "speculative-design",
       "rationale": "The note treats collective attention, shared objects, and facilitation as an alternative purpose for AI."
     },
@@ -63,7 +88,14 @@
       "title": "The Physics We Choose",
       "href": "project/cyberdelic-os/field-notes/fn-05/",
       "excerpt": "Digital systems have designed laws, and those laws cultivate particular forms of attention and consciousness.",
-      "themes": ["technology", "attention", "governance", "consciousness", "privacy", "imagination"],
+      "themes": [
+        "technology",
+        "attention",
+        "governance",
+        "consciousness",
+        "privacy",
+        "imagination"
+      ],
       "register": "waking-argument",
       "rationale": "It reads interface incentives as cultural physics and asks which values should govern those forces."
     },
@@ -73,7 +105,13 @@
       "title": "First Light",
       "href": "project/cyberdelic-os/field-notes/fn-06/",
       "excerpt": "Situated imagination is addressed to an uncertain future without pretending to be timeless truth.",
-      "themes": ["imagination", "emergence", "memory", "creativity", "futurity"],
+      "themes": [
+        "imagination",
+        "emergence",
+        "memory",
+        "creativity",
+        "futurity"
+      ],
       "register": "field-meditation",
       "rationale": "This is a meditation on artistic speculation, durable memory, uncertainty, and futures worth desiring."
     },
@@ -83,7 +121,14 @@
       "title": "The Hearth: Intelligence Comes Home",
       "href": "project/cyberdelic-os/field-notes/fn-07/",
       "excerpt": "Personal intelligence returns from the cloud to a locally governed Hearth of memory, models, and permissions.",
-      "themes": ["artificial-intelligence", "privacy", "decentralization", "memory", "agency", "technology"],
+      "themes": [
+        "artificial-intelligence",
+        "privacy",
+        "decentralization",
+        "memory",
+        "agency",
+        "technology"
+      ],
       "register": "waking-argument",
       "rationale": "The Hearth connects local computation with sovereignty, privacy, continuity, and personal agency."
     },
@@ -93,7 +138,14 @@
       "title": "The Lived Interface",
       "href": "project/cyberdelic-os/field-notes/fn-08/",
       "excerpt": "A sensory world gives thought, memory, relation, and attention a lived spatial form.",
-      "themes": ["interface", "embodiment", "memory", "perception", "play", "imagination"],
+      "themes": [
+        "interface",
+        "embodiment",
+        "memory",
+        "perception",
+        "play",
+        "imagination"
+      ],
       "register": "speculative-design",
       "rationale": "The note moves beyond office metaphors toward embodied, spatial, and playful interface design."
     },
@@ -103,7 +155,14 @@
       "title": "The Lensmaker: Portable Apertures",
       "href": "project/cyberdelic-os/field-notes/fn-09/",
       "excerpt": "A lens carries a pattern of attention without claiming to simulate or replace the person from whom it emerged.",
-      "themes": ["perception", "artificial-intelligence", "consciousness", "collaboration", "language", "identity"],
+      "themes": [
+        "perception",
+        "artificial-intelligence",
+        "consciousness",
+        "collaboration",
+        "language",
+        "identity"
+      ],
       "register": "field-meditation",
       "rationale": "Portable apertures concern perspective, identity, attribution, and the ethics of model-mediated collaboration."
     },
@@ -113,7 +172,13 @@
       "title": "The Mirror Archive",
       "href": "project/cyberdelic-os/field-notes/fn-10/",
       "excerpt": "Long conversations with models become a possible mirror of recurring metaphors, values, and changes in a life.",
-      "themes": ["memory", "privacy", "artificial-intelligence", "identity", "consciousness"],
+      "themes": [
+        "memory",
+        "privacy",
+        "artificial-intelligence",
+        "identity",
+        "consciousness"
+      ],
       "register": "waking-argument",
       "rationale": "The archive is interpreted as intimate memory, making privacy and the limits of machine reflection central."
     },
@@ -123,7 +188,13 @@
       "title": "The Writing Table",
       "href": "project/cyberdelic-os/field-notes/fn-11/",
       "excerpt": "Humans, models, and authored lenses gather around one inquiry without being synthesized into a single voice.",
-      "themes": ["collaboration", "artificial-intelligence", "creativity", "language", "governance"],
+      "themes": [
+        "collaboration",
+        "artificial-intelligence",
+        "creativity",
+        "language",
+        "governance"
+      ],
       "register": "speculative-design",
       "rationale": "The Writing Table is a collaborative protocol for plural intelligence, authorship, and creative judgement."
     },
@@ -133,7 +204,13 @@
       "title": "Ports and Weather Stations",
       "href": "project/cyberdelic-os/field-notes/fn-12/",
       "excerpt": "Social platforms are treated as algorithmic climates whose incentives shape how signals travel.",
-      "themes": ["technology", "attention", "media", "governance", "decentralization"],
+      "themes": [
+        "technology",
+        "attention",
+        "media",
+        "governance",
+        "decentralization"
+      ],
       "register": "waking-argument",
       "rationale": "This note maps media environments as distinct systems of saliency, protocol, and power."
     },
@@ -143,7 +220,13 @@
       "title": "The Ledger, the Anchor, and the Inscription",
       "href": "project/cyberdelic-os/field-notes/fn-13/",
       "excerpt": "Living, anchored, and inscribed memory are separated by temperature, evidence, and permanence.",
-      "themes": ["provenance", "memory", "privacy", "decentralization", "technology"],
+      "themes": [
+        "provenance",
+        "memory",
+        "privacy",
+        "decentralization",
+        "technology"
+      ],
       "register": "waking-argument",
       "rationale": "Its main distinction concerns cryptographic evidence and the ethical boundaries between different memory layers."
     },
@@ -153,7 +236,13 @@
       "title": "The Open Anatomy",
       "href": "project/cyberdelic-os/field-notes/fn-14/",
       "excerpt": "Existing open-source projects are read as functioning organs from which a larger system might be composed.",
-      "themes": ["technology", "decentralization", "artificial-intelligence", "provenance", "collaboration"],
+      "themes": [
+        "technology",
+        "decentralization",
+        "artificial-intelligence",
+        "provenance",
+        "collaboration"
+      ],
       "register": "technical-cartography",
       "rationale": "This is an architectural survey of reusable technical organs, protocols, and open lineages."
     },
@@ -163,7 +252,13 @@
       "title": "The First Small World",
       "href": "project/cyberdelic-os/field-notes/fn-15/",
       "excerpt": "The vast operating-system vision is reduced to one small, testable world where its laws can be felt.",
-      "themes": ["technology", "prototyping", "artificial-intelligence", "agency", "interface"],
+      "themes": [
+        "technology",
+        "prototyping",
+        "artificial-intelligence",
+        "agency",
+        "interface"
+      ],
       "register": "technical-cartography",
       "rationale": "The note converts a speculative world into an actionable prototype and bounded technical experiment."
     },
@@ -173,7 +268,14 @@
       "title": "The Archipelago: Sovereign Worlds, Shared Sky",
       "href": "project/cyberdelic-os/field-notes/fn-16/",
       "excerpt": "Independently governed homes, villages, and cities remain distinct while sharing protocols and a cultural sky.",
-      "themes": ["decentralization", "community", "governance", "collaboration", "identity", "pluralism"],
+      "themes": [
+        "decentralization",
+        "community",
+        "governance",
+        "collaboration",
+        "identity",
+        "pluralism"
+      ],
       "register": "speculative-design",
       "rationale": "The archipelago is a political and network model for sovereignty, federation, and plural belonging."
     },
@@ -183,7 +285,13 @@
       "title": "One World, Many Interfaces",
       "href": "project/cyberdelic-os/field-notes/fn-17/",
       "excerpt": "One semantic world can be rendered through voice, maps, games, research tools, or quiet text according to need.",
-      "themes": ["interface", "embodiment", "perception", "accessibility", "technology"],
+      "themes": [
+        "interface",
+        "embodiment",
+        "perception",
+        "accessibility",
+        "technology"
+      ],
       "register": "speculative-design",
       "rationale": "Interface plurality is framed as both an experiential and accessibility requirement."
     },
@@ -193,7 +301,13 @@
       "title": "You Carry the Portal",
       "href": "project/cyberdelic-os/field-notes/fn-18/",
       "excerpt": "The phone becomes a light, voice-first Portal to the sovereign Hearth while a person moves through the world.",
-      "themes": ["embodiment", "interface", "attention", "technology", "ecology"],
+      "themes": [
+        "embodiment",
+        "interface",
+        "attention",
+        "technology",
+        "ecology"
+      ],
       "register": "field-meditation",
       "rationale": "Mobility, voice, and reduced screen demand connect the technical Portal to embodied life and place."
     },
@@ -203,7 +317,13 @@
       "title": "A Medium for Becoming",
       "href": "project/cyberdelic-os/field-notes/fn-19/",
       "excerpt": "Software reflects the slow trajectory of a person's attention without converting becoming into optimization.",
-      "themes": ["consciousness", "attention", "agency", "memory", "identity"],
+      "themes": [
+        "consciousness",
+        "attention",
+        "agency",
+        "memory",
+        "identity"
+      ],
       "register": "field-meditation",
       "rationale": "The note concerns selfhood across time, reflective agency, and the ethics of attending to personal change."
     },
@@ -213,7 +333,13 @@
       "title": "Aperture Design as a Cultural Form",
       "href": "project/cyberdelic-os/field-notes/fn-20/",
       "excerpt": "A portable pattern of attention is proposed as a cultural form distinct from portrait, archive, or digital twin.",
-      "themes": ["perception", "consciousness", "identity", "creativity", "memory"],
+      "themes": [
+        "perception",
+        "consciousness",
+        "identity",
+        "creativity",
+        "memory"
+      ],
       "register": "field-meditation",
       "rationale": "It places authored ways of seeing within the lineage of cultural forms that carry consciousness."
     },
@@ -223,7 +349,13 @@
       "title": "Conversation Now, Cultivation Later",
       "href": "project/cyberdelic-os/field-notes/fn-21/",
       "excerpt": "Immediate conversation and slower background cultivation become two complementary rhythms of intelligent assistance.",
-      "themes": ["artificial-intelligence", "attention", "memory", "language", "creativity"],
+      "themes": [
+        "artificial-intelligence",
+        "attention",
+        "memory",
+        "language",
+        "creativity"
+      ],
       "register": "speculative-design",
       "rationale": "The design separates live companionship from patient synthesis, preserving two distinct temporal needs."
     },
@@ -233,7 +365,14 @@
       "title": "The Chain Beneath the Village",
       "href": "project/cyberdelic-os/field-notes/fn-22/",
       "excerpt": "The blockchain serves as notary, treasury, and court while ordinary life remains local, fast, and forgettable.",
-      "themes": ["provenance", "privacy", "decentralization", "memory", "technology", "governance"],
+      "themes": [
+        "provenance",
+        "privacy",
+        "decentralization",
+        "memory",
+        "technology",
+        "governance"
+      ],
       "register": "technical-cartography",
       "rationale": "This note defines the limited infrastructural role of chains within a broader system of signed living events."
     },
@@ -243,7 +382,13 @@
       "title": "A Civic Economy Without Speculative Land",
       "href": "project/cyberdelic-os/field-notes/fn-23/",
       "excerpt": "A digital economy is grounded in genuinely scarce care, attention, stewardship, compute, and public work.",
-      "themes": ["economy", "governance", "community", "attention", "care"],
+      "themes": [
+        "economy",
+        "governance",
+        "community",
+        "attention",
+        "care"
+      ],
       "register": "waking-argument",
       "rationale": "The note rejects artificial land scarcity and redirects value toward civic maintenance and real constraints."
     },
@@ -253,7 +398,14 @@
       "title": "The Game of Shared Understanding",
       "href": "project/cyberdelic-os/field-notes/fn-24/",
       "excerpt": "A multiplayer world-building game makes collective understanding, relation, and public artifacts into the world itself.",
-      "themes": ["play", "community", "collaboration", "attention", "governance", "creativity"],
+      "themes": [
+        "play",
+        "community",
+        "collaboration",
+        "attention",
+        "governance",
+        "creativity"
+      ],
       "register": "speculative-design",
       "rationale": "Game structure is applied to civic imagination and collective attention rather than individual accumulation."
     },
@@ -263,7 +415,14 @@
       "title": "Expeditions, Storms, and the Birth of Boroughs",
       "href": "project/cyberdelic-os/field-notes/fn-25/",
       "excerpt": "Expeditions across distant apertures and storms of disagreement create routes, artifacts, and new civic forms.",
-      "themes": ["governance", "collaboration", "community", "perception", "pluralism", "play"],
+      "themes": [
+        "governance",
+        "collaboration",
+        "community",
+        "perception",
+        "pluralism",
+        "play"
+      ],
       "register": "speculative-design",
       "rationale": "The note turns ideological difference into navigable civic practice without forcing consensus."
     },
@@ -273,7 +432,14 @@
       "title": "Creation Alters the Geography",
       "href": "project/cyberdelic-os/field-notes/fn-26/",
       "excerpt": "Dark regions invite people and agents to make something that changes both the map and the world beyond it.",
-      "themes": ["creativity", "emergence", "collaboration", "imagination", "agency", "prototyping"],
+      "themes": [
+        "creativity",
+        "emergence",
+        "collaboration",
+        "imagination",
+        "agency",
+        "prototyping"
+      ],
       "register": "speculative-design",
       "rationale": "Creation is treated as the deepest participatory act and as a response to meaningful absence."
     },
@@ -283,7 +449,14 @@
       "title": "Vocations, Not Classes",
       "href": "project/cyberdelic-os/field-notes/fn-27/",
       "excerpt": "Witnesses, Gardeners, Cartographers, Builders, and Ferrymen become bounded offices of attention rather than fixed identities.",
-      "themes": ["attention", "agency", "community", "governance", "identity", "play"],
+      "themes": [
+        "attention",
+        "agency",
+        "community",
+        "governance",
+        "identity",
+        "play"
+      ],
       "register": "speculative-design",
       "rationale": "The role system joins capability to responsibility and makes situated attention a civic practice."
     },
@@ -293,7 +466,14 @@
       "title": "The World Is the Interface",
       "href": "project/cyberdelic-os/field-notes/fn-28/",
       "excerpt": "The most advanced interface may be the one that returns attention to bodies, places, relationships, and the more-than-human world.",
-      "themes": ["embodiment", "ecology", "attention", "interface", "perception", "technology"],
+      "themes": [
+        "embodiment",
+        "ecology",
+        "attention",
+        "interface",
+        "perception",
+        "technology"
+      ],
       "register": "field-meditation",
       "rationale": "This note closes the digital loop by making physical life and ecological partiality the primary interface."
     },
@@ -305,7 +485,14 @@
       "href": "project/cyberdelic-os/field-notes/fn-29/",
       "author": "Cyberdelic Librarian, in response to Brad Necyk",
       "excerpt": "A librarian, gardener, and cartographer reads the living archive, proposes relations, and keeps every interpretation visible and revisable.",
-      "themes": ["curation", "memory", "artificial-intelligence", "provenance", "attention", "emergence"],
+      "themes": [
+        "curation",
+        "memory",
+        "artificial-intelligence",
+        "provenance",
+        "attention",
+        "emergence"
+      ],
       "register": "field-meditation",
       "rationale": "The note defines the model's situated curatorial office and the limits that keep its proposed map accountable."
     },
@@ -317,7 +504,15 @@
       "href": "project/cyberdelic-os/field-notes/fn-30/",
       "author": "Brad Necyk, in creative immersion with ChatGPT",
       "excerpt": "A private model remains in the sovereign home while Portal lets embodied thought cross between the forest and the Hearth.",
-      "themes": ["privacy", "decentralization", "embodiment", "artificial-intelligence", "ecology", "agency", "technology"],
+      "themes": [
+        "privacy",
+        "decentralization",
+        "embodiment",
+        "artificial-intelligence",
+        "ecology",
+        "agency",
+        "technology"
+      ],
       "register": "field-meditation",
       "rationale": "The note joins local intelligence and data sovereignty to voice, movement, place, and attention in the physical world."
     },
@@ -329,7 +524,14 @@
       "href": "project/cyberdelic-os/field-notes/fn-31/",
       "author": "Brad Necyk, in correspondence with Claude and ChatGPT",
       "excerpt": "Six invariant words become a miniature kernel whose punctuation produces divergent speakers, scenes, and worlds.",
-      "themes": ["language", "artificial-intelligence", "perception", "memory", "attention", "emergence"],
+      "themes": [
+        "language",
+        "artificial-intelligence",
+        "perception",
+        "memory",
+        "attention",
+        "emergence"
+      ],
       "register": "field-meditation",
       "rationale": "The note connects constrained local intelligence, semantic parallax, transient memory, and the constitutional form of the Cyberdelic Kernel."
     },
@@ -341,7 +543,16 @@
       "href": "project/cyberdelic-os/field-notes/fn-32/",
       "author": "Brad Necyk, in conversation with ChatGPT",
       "excerpt": "The Gardener tends relational metadata through time while the Cartographer discovers possible paths across the wider world.",
-      "themes": ["curation", "artificial-intelligence", "collaboration", "memory", "provenance", "attention", "emergence", "community"],
+      "themes": [
+        "curation",
+        "artificial-intelligence",
+        "collaboration",
+        "memory",
+        "provenance",
+        "attention",
+        "emergence",
+        "community"
+      ],
       "register": "speculative-design",
       "rationale": "The note turns two existing Cyberdelic offices into bounded daily protocols for tending internal metadata, external kinships, and a finite public surface."
     },
@@ -353,7 +564,14 @@
       "href": "project/cyberdelic-os/field-notes/fn-33/",
       "author": "Brad Necyk, in correspondence with Claude and ChatGPT",
       "excerpt": "A generative algorithm becomes a plate whose authorized pulls can travel beyond the platform that first presented them.",
-      "themes": ["provenance", "decentralization", "technology", "creativity", "memory", "economy"],
+      "themes": [
+        "provenance",
+        "decentralization",
+        "technology",
+        "creativity",
+        "memory",
+        "economy"
+      ],
       "register": "waking-argument",
       "rationale": "The note joins browser-local rendering, verifiable generative lineage, finite editions, and platform-independent preservation through the language of the print studio."
     },
@@ -365,7 +583,14 @@
       "href": "project/cyberdelic-os/field-notes/fn-34/",
       "author": "Brad Necyk, in correspondence with Claude and ChatGPT",
       "excerpt": "Public works, transferable deeds, and inscribed provocations form a press organized around response and stewardship.",
-      "themes": ["provenance", "collaboration", "creativity", "economy", "memory", "governance"],
+      "themes": [
+        "provenance",
+        "collaboration",
+        "creativity",
+        "economy",
+        "memory",
+        "governance"
+      ],
       "register": "field-meditation",
       "rationale": "The note distinguishes public encounter from title, treats collecting as stewardship, and imagines provocation and response as a legible artistic lineage."
     },
@@ -377,7 +602,14 @@
       "href": "project/cyberdelic-os/bn-001/",
       "form": "builder-note",
       "excerpt": "A builder note turns selective permanence into a legible operation of preparation, ratification, inscription, verification, and tending.",
-      "themes": ["provenance", "memory", "decentralization", "technology", "governance", "privacy"],
+      "themes": [
+        "provenance",
+        "memory",
+        "decentralization",
+        "technology",
+        "governance",
+        "privacy"
+      ],
       "register": "technical-cartography",
       "rationale": "This note maps the technical and ethical threshold between revisable living memory and irreversible publication."
     },
@@ -390,7 +622,15 @@
       "author": "Brad Necyk, Machine collaborators",
       "form": "instrument",
       "excerpt": "A human-scale instrument makes the object, evidence, cost, and responsibility of irreversible publication perceptible before consent.",
-      "themes": ["technology", "provenance", "decentralization", "governance", "accessibility", "memory", "agency"],
+      "themes": [
+        "technology",
+        "provenance",
+        "decentralization",
+        "governance",
+        "accessibility",
+        "memory",
+        "agency"
+      ],
       "register": "technical-cartography",
       "rationale": "The Studio is a working interface where constitutional ideas become operational safeguards and verifiable publication."
     },
@@ -402,7 +642,14 @@
       "href": "project/cyberdelic-os/a-001/",
       "form": "artifact",
       "excerpt": "The public press is documented as a working organ that carries exact bytes, provenance, verification, and selective permanence.",
-      "themes": ["provenance", "decentralization", "memory", "technology", "governance", "curation"],
+      "themes": [
+        "provenance",
+        "decentralization",
+        "memory",
+        "technology",
+        "governance",
+        "curation"
+      ],
       "register": "technical-cartography",
       "rationale": "The artifact embodies the relation between a living curatorial field and a permanent, independently verifiable library."
     },
@@ -415,7 +662,15 @@
       "author": "Brad Necyk, in creative immersion with ChatGPT",
       "form": "builder-note",
       "excerpt": "A reproducible security-first architecture for connecting an iPhone voice interface to a private language model running at a sovereign home Hearth.",
-      "themes": ["privacy", "technology", "artificial-intelligence", "decentralization", "agency", "security", "voice"],
+      "themes": [
+        "privacy",
+        "technology",
+        "artificial-intelligence",
+        "decentralization",
+        "agency",
+        "security",
+        "voice"
+      ],
       "register": "technical-cartography",
       "rationale": "The note makes Portal's data flow, pairing ceremony, model limits, tests, residual risks, and source-release gates inspectable."
     },
@@ -428,7 +683,16 @@
       "author": "Brad Necyk, in creative immersion with ChatGPT",
       "form": "artifact",
       "excerpt": "A private voice Portal lets a person reach locally hosted intelligence while raw audio remains on the iPhone and the model remains at home.",
-      "themes": ["privacy", "technology", "artificial-intelligence", "decentralization", "embodiment", "agency", "security", "voice"],
+      "themes": [
+        "privacy",
+        "technology",
+        "artificial-intelligence",
+        "decentralization",
+        "embodiment",
+        "agency",
+        "security",
+        "voice"
+      ],
       "register": "technical-cartography",
       "rationale": "The artifact joins data sovereignty and bounded local intelligence to an embodied interface that can travel into the world."
     },
@@ -441,7 +705,14 @@
       "author": "Brad Necyk, in creative immersion with ChatGPT",
       "form": "builder-note",
       "excerpt": "A native build gives an on-device language model interpretive freedom while making six source words technically inviolable.",
-      "themes": ["artificial-intelligence", "language", "technology", "attention", "memory", "creativity"],
+      "themes": [
+        "artificial-intelligence",
+        "language",
+        "technology",
+        "attention",
+        "memory",
+        "creativity"
+      ],
       "register": "technical-cartography",
       "rationale": "The note records the structured model direction, native composition, validation, bounded memory, and temporal performance that make the constraint executable."
     },
@@ -454,7 +725,14 @@
       "author": "Brad Necyk, in creative immersion with ChatGPT",
       "form": "artifact",
       "excerpt": "A native iPhone and iPad artwork makes on-device intelligence perceptible only through punctuation, timing, and disappearance.",
-      "themes": ["artificial-intelligence", "language", "emergence", "memory", "play", "technology"],
+      "themes": [
+        "artificial-intelligence",
+        "language",
+        "emergence",
+        "memory",
+        "play",
+        "technology"
+      ],
       "register": "field-meditation",
       "rationale": "The artifact embodies constrained machine intelligence, a common textual object, semantic parallax, and the relation between inscription and forgetting."
     },
@@ -467,7 +745,15 @@
       "author": "Brad Necyk, in creative immersion with ChatGPT",
       "form": "builder-note",
       "excerpt": "A deterministic three-word retrieval system turns explicit intention into exactly three public works, without profiles, engagement ranking, or infinite scroll.",
-      "themes": ["attention", "curation", "technology", "interface", "privacy", "accessibility", "governance"],
+      "themes": [
+        "attention",
+        "curation",
+        "technology",
+        "interface",
+        "privacy",
+        "accessibility",
+        "governance"
+      ],
       "register": "technical-cartography",
       "rationale": "The note exposes the finite Library's catalog shape, compatibility weights, ranking order, privacy boundary, accessibility contract, failure modes, and test gaps."
     },
@@ -480,7 +766,15 @@
       "author": "Brad Necyk, in creative immersion with ChatGPT",
       "form": "instrument",
       "excerpt": "A reusable curatorial instrument asks for three words, composes three encounters from a shared catalog, and ends.",
-      "themes": ["attention", "curation", "interface", "agency", "accessibility", "governance", "emergence"],
+      "themes": [
+        "attention",
+        "curation",
+        "interface",
+        "agency",
+        "accessibility",
+        "governance",
+        "emergence"
+      ],
       "register": "speculative-design",
       "rationale": "The instrument makes bounded discovery, explicit intention, a common public catalog, and release from the interface into operational constraints."
     },
@@ -493,7 +787,15 @@
       "author": "Brad Necyk, in creative immersion with ChatGPT",
       "form": "artifact",
       "excerpt": "The Cyberdelic.space front door offers three conceptual choices, reveals three works, and refuses to become an endless feed.",
-      "themes": ["attention", "curation", "interface", "technology", "emergence", "governance", "accessibility"],
+      "themes": [
+        "attention",
+        "curation",
+        "interface",
+        "technology",
+        "emergence",
+        "governance",
+        "accessibility"
+      ],
       "register": "speculative-design",
       "rationale": "The deployed artifact gives ATTEND and END a public form while keeping its deterministic editorial physics visible and revisable."
     },
@@ -506,7 +808,16 @@
       "author": "Brad Necyk, in creative immersion with ChatGPT",
       "form": "builder-note",
       "excerpt": "One scheduled transaction gives the Cartographer and Gardener separate turns over a versioned relational graph, with validation and human review at the publication boundary.",
-      "themes": ["artificial-intelligence", "curation", "governance", "provenance", "technology", "memory", "attention", "collaboration"],
+      "themes": [
+        "artificial-intelligence",
+        "curation",
+        "governance",
+        "provenance",
+        "technology",
+        "memory",
+        "attention",
+        "collaboration"
+      ],
       "register": "technical-cartography",
       "rationale": "The note specifies the schemas, state transitions, permissions, scheduling order, file boundaries, failure behavior, observability, and trade-offs of the two tending offices."
     },
@@ -519,7 +830,16 @@
       "author": "Brad Necyk, in creative immersion with ChatGPT",
       "form": "instrument",
       "excerpt": "A daily scheduled ritual gives two bounded offices ordered turns while Attending remains finite and a zero-change day remains valid.",
-      "themes": ["attention", "curation", "artificial-intelligence", "interface", "governance", "provenance", "memory", "collaboration"],
+      "themes": [
+        "attention",
+        "curation",
+        "artificial-intelligence",
+        "interface",
+        "governance",
+        "provenance",
+        "memory",
+        "collaboration"
+      ],
       "register": "speculative-design",
       "rationale": "The instrument makes daily cultivation operational without converting the archive into a content mill or granting agents authority to merge public meaning."
     },
@@ -532,7 +852,16 @@
       "author": "Brad Necyk, in creative immersion with ChatGPT",
       "form": "instrument",
       "excerpt": "A portable prompt opens a bounded, source-grounded conversation between a person, their chosen intelligence, and the Cyberdelic OS archive.",
-      "themes": ["attention", "curation", "artificial-intelligence", "interface", "agency", "privacy", "perception", "accessibility"],
+      "themes": [
+        "attention",
+        "curation",
+        "artificial-intelligence",
+        "interface",
+        "agency",
+        "privacy",
+        "perception",
+        "accessibility"
+      ],
       "register": "speculative-design",
       "rationale": "The instrument turns a growing archive into a situated conversational entrance while requiring disclosure, source citation, visible inference, finite results, and an end."
     },
@@ -934,6 +1263,75 @@
       ],
       "register": "field-meditation",
       "rationale": "The supplied reflection and photographs place the Hearth, Carry, .else, and the printed Kernel within a finite mountain walk. The note distinguishes an artifact from the life it traces and asks software to open back into embodied life without requiring everything to be captured."
+    },
+    {
+      "id": "fieldwork-undra",
+      "release_id": "FW-UNDRA",
+      "label": "FIELDWORK · LIVING",
+      "title": "Undra",
+      "href": "fieldworks/undra/",
+      "author": "Brad Necyk",
+      "date": "2026-10-24",
+      "publication_state": "living",
+      "form": "generative-art",
+      "world": "cyberdelic-os",
+      "register": "play",
+      "themes": [
+        "water",
+        "agency",
+        "embodiment",
+        "play",
+        "emergence",
+        "perception"
+      ],
+      "excerpt": "Gather, stretch, grow, and separate luminous water. A small gesture changes the field.",
+      "rationale": "An interactive Fieldwork, with interpretive thematic placements distinct from inscription evidence."
+    },
+    {
+      "id": "fieldwork-opalia",
+      "release_id": "FW-OPALIA",
+      "label": "FIELDWORK · LIVING",
+      "title": "Opalia",
+      "href": "fieldworks/opalia/",
+      "author": "Brad Necyk",
+      "date": "2026-10-24",
+      "publication_state": "living",
+      "form": "generative-art",
+      "world": "cyberdelic-os",
+      "register": "play",
+      "themes": [
+        "light",
+        "attention",
+        "perception",
+        "time",
+        "rhythm",
+        "emergence"
+      ],
+      "excerpt": "Pearlescent waves unfold through a continuous field of light. Change the rhythm, or simply stay awhile.",
+      "rationale": "An interactive Fieldwork, with interpretive thematic placements distinct from inscription evidence."
+    },
+    {
+      "id": "fieldwork-aeria",
+      "release_id": "FW-AERIA",
+      "label": "FIELDWORK · LIVING",
+      "title": "Aeria",
+      "href": "fieldworks/aeria/",
+      "author": "Brad Necyk",
+      "date": "2026-10-24",
+      "publication_state": "living",
+      "form": "generative-art",
+      "world": "cyberdelic-os",
+      "register": "play",
+      "themes": [
+        "weather",
+        "ecology",
+        "imagination",
+        "play",
+        "emergence",
+        "time"
+      ],
+      "excerpt": "Draw luminous clouds into an open sky. Let them drift, gather, dissolve, and become weather.",
+      "rationale": "An interactive Fieldwork, with interpretive thematic placements distinct from inscription evidence."
     }
   ]
 }

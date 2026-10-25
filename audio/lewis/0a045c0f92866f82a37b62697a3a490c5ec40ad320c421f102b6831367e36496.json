@@ -1,0 +1,58 @@
+{
+  "id": "fieldworks-overview",
+  "title": "Fieldworks",
+  "form": "fieldwork",
+  "release_id": null,
+  "pages": [
+    "fieldworks/"
+  ],
+  "source_path": "fieldworks/readings/overview.md",
+  "source_sha256": "e84f912dadf5bc612b0e675f6ac9ec03f77bfe4501119e85e2d392fa54362712",
+  "document_sha256": "e84f912dadf5bc612b0e675f6ac9ec03f77bfe4501119e85e2d392fa54362712",
+  "text_sha256": "0a045c0f92866f82a37b62697a3a490c5ec40ad320c421f102b6831367e36496",
+  "reading_path": "audio/readings/0a045c0f92866f82a37b62697a3a490c5ec40ad320c421f102b6831367e36496.md",
+  "reading_sha256": "e84f912dadf5bc612b0e675f6ac9ec03f77bfe4501119e85e2d392fa54362712",
+  "reading_length": 273,
+  "audio_path": "audio/lewis/0a045c0f92866f82a37b62697a3a490c5ec40ad320c421f102b6831367e36496.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "4d73c68d70cfc256381d98b44a18ad1b9d74fa64d1609ac0d74f4f82df9689c4",
+  "audio_length": 265292,
+  "duration_seconds": 22.015,
+  "chunks": [
+    {
+      "text": "Fieldworks",
+      "start": 0.0,
+      "duration": 1.65
+    },
+    {
+      "text": "Generative artworks and interactive environments by Brad Necyk.",
+      "start": 1.83,
+      "duration": 5.15
+    },
+    {
+      "text": "A surface that answers. A fold in seeing. An unfinished sky. Three encounters with the living physics of Cyberdelic OS.",
+      "start": 7.16,
+      "duration": 9.475
+    },
+    {
+      "text": "These are living, revisable artworks. They are not Bitcoin inscriptions.",
+      "start": 16.815,
+      "duration": 5.2
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.4922001361846924,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

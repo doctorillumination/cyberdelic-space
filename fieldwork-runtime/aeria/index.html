@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#5298d2"><meta name="description" content="Draw a little daydream. A quiet, interactive sky for making luminous, puffy clouds.">
+<title>Aeria · Draw a little daydream</title>
+<link rel="icon" href="./icon.svg" type="image/svg+xml"><link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<canvas id="sky" aria-label="An open sky. Drag to draw clouds. Use the Make a cloud button for a keyboard-accessible starting cloud." tabindex="0"></canvas>
+<div id="cursor" aria-hidden="true"></div>
+<header class="chrome"><a class="wordmark" href="./" aria-label="Aeria home"><svg width="28" height="22"><use href="#cloud"/></svg>Aeria<span class="edition">a sky to play in</span></a><div class="top-actions"><button id="light-toggle" class="glass light-toggle" aria-expanded="false" aria-controls="light-panel"><svg><use href="#sun"/></svg><span id="light-label">Daylight</span><svg class="chevron"><use href="#chevron"/></svg></button><button id="help-toggle" class="icon-button" aria-label="About Aeria" title="About & shortcuts"><svg><use href="#help"/></svg></button></div></header>
+<section id="light-panel" class="popover" aria-label="Light and weather" hidden>
+<p class="panel-title">A different kind of light</p>
+<div class="presets"><button data-light="0" aria-pressed="true"><i class="swatch day"></i>Daylight</button><button data-light="1" aria-pressed="false"><i class="swatch gold"></i>Golden hour</button><button data-light="2" aria-pressed="false"><i class="swatch dusk"></i>Blue hour</button></div>
+<label class="range-label" for="sun-angle">Sun position <span id="sun-value">Upper left</span></label><input id="sun-angle" type="range" min="-1" max="1" step="0.01" value="-0.65">
+<label class="range-label" for="sun-depth">Sunlight <span id="depth-value">Glowing edges</span></label><input id="sun-depth" type="range" min="-1" max="1" step="0.01" value="-0.62">
+<label class="range-label" for="softness">Cloud fullness <span id="softness-value">Puffy</span></label><input id="softness" type="range" min="0.6" max="1.5" step="0.01" value="1">
+<label class="range-label" for="life-speed">Cloud life <span id="life-value">Unhurried</span></label><input id="life-speed" type="range" min="0.25" max="2" step="0.05" value="1">
+<label class="range-label" for="render-quality">Resolution</label><select id="render-quality"><option value="64">Quick</option><option value="256" selected>Fine</option><option value="1024">Exhibition</option></select><p class="quality-hint">Pause Life to keep a still moment.</p>
+<div id="rain-controls" hidden><p class="weather-title">A passing shower</p><label class="range-label" for="rain-amount">Rainfall <span id="rain-value">Steady rain</span></label><input id="rain-amount" type="range" min="0.1" max="1" step="0.01" value="0.6"><label class="range-label" for="rain-wind">Wind <span id="wind-value">From the left</span></label><input id="rain-wind" type="range" min="-1" max="1" step="0.01" value="0.15"><button id="rain-motion" class="rain-motion" aria-pressed="false">Pause rain</button><p class="quality-hint">Drops are born at your clouds’ undersides. An empty sky stays dry.</p></div>
+</section>
+<main id="welcome"><span class="eyebrow">NOTHING TO DO. JUST A LITTLE SKY.</span><h1>Make something<br>out of thin air.</h1><p>Draw anywhere. Let your imagination drift.</p><button id="first-cloud">Or start with a little cloud <span aria-hidden="true">↗</span></button><svg class="welcome-mark" viewBox="0 0 110 55" aria-hidden="true"><path d="M5 38C10 5 40 7 36 29S8 56 15 39 70 5 94 31M82 28l13 5 3-13"/></svg></main>
+<footer class="chrome"><div class="toolbar glass" role="toolbar" aria-label="Cloud drawing tools"><div class="brush-control"><svg><use href="#brush-icon"/></svg><label class="sr-only" for="brush">Brush size</label><input id="brush" aria-label="Brush size" type="range" min="20" max="100" value="53"><span class="brush-dot" aria-hidden="true"></span></div><span class="divider"></span><button id="undo" class="tool" aria-label="Undo last stroke" title="Undo (⌘Z)" disabled><svg><use href="#undo-icon"/></svg></button><button id="redo" class="tool" aria-label="Redo stroke" title="Redo (⌘⇧Z)" disabled><svg><use href="#redo-icon"/></svg></button><span class="divider"></span><button id="drift" class="tool" aria-label="Pause cloud life" aria-pressed="true" title="Cloud life (Space)"><svg><use href="#wind"/></svg><span>Life</span></button><button id="rain" class="tool" aria-label="Turn on rain" aria-pressed="false" title="Rain (R)"><svg><use href="#rain-icon"/></svg><span>Rain</span></button><button id="clear" class="tool" aria-label="Clear the sky" title="A fresh sky" disabled><svg><use href="#clear-icon"/></svg></button><span class="divider"></span><button id="save" class="tool" aria-label="Save sky as an image" title="Save your sky"><svg><use href="#download"/></svg><span>Keep this sky</span></button></div><div class="footer-note"><span>no right way to make a cloud</span><span id="render-status" role="status" aria-live="off"></span><button id="hide" class="icon-button" aria-label="Hide controls" title="Hide controls (H)"><svg><use href="#expand"/></svg></button></div></footer>
+<button id="show" class="glass" hidden>Show controls <span>H</span></button>
+<div id="export-progress" class="glass" role="status" hidden><span id="export-label">Keeping your sky…</span><button id="export-cancel">Cancel</button></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<dialog id="about"><button id="close-about" class="icon-button" aria-label="Close about">×</button><span class="eyebrow">A SMALL JOY</span><h2>Head in the clouds.</h2><p>An empty sky. A wandering hand. Something lovely taking shape.</p><p>Draw with your mouse, finger, or pen. Slow strokes make soft little billows. Draw a shape, a creature, a word, or absolutely nothing in particular.</p><div class="shortcuts"><span>Undo / redo</span><kbd>⌘ / Ctrl Z · ⇧ Z</kbd><span>Brush size</span><kbd>[ &nbsp; ]</kbd><span>Cloud life</span><kbd>Space</kbd><span>Rain on / off</span><kbd>R</kbd><span>Hide controls</span><kbd>H</kbd></div><button id="make-cloud" class="about-cloud">Make a cloud</button><p class="fine-print">Made of light and a little mathematics. Clouds drift, breathe, dissipate, and gather again. Overlapping clouds coalesce into a shared volume. Stable lighting follows the changing shape, with no grainy mode switch. Your sky stays in this browser. Images save without controls. Resolution controls the sharpness of the finished sky. Rain can be turned on from the toolbar, then adjusted in Light and weather. Pause it to inspect individual drops.</p></dialog>
+<div id="fallback" hidden><h2>A little more sky power needed.</h2><p>This artwork needs WebGL 2. Try a recent browser with graphics acceleration enabled.</p></div>
+<svg class="sprite" xmlns="http://www.w3.org/2000/svg"><defs>
+<symbol id="cloud" viewBox="0 0 28 22"><path d="M7 17.5h14a4.5 4.5 0 0 0 .3-9 6.7 6.7 0 0 0-12.9-1A5.1 5.1 0 0 0 7 17.5Z"/></symbol>
+<symbol id="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></symbol>
+<symbol id="chevron" viewBox="0 0 24 24"><path d="m8 10 4 4 4-4"/></symbol>
+<symbol id="help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M9.8 9a2.3 2.3 0 0 1 4.5.6c0 1.8-2.3 1.8-2.3 3.6m0 2.6v.2"/></symbol>
+<symbol id="brush-icon" viewBox="0 0 24 24"><path d="m11 14 8-10 2 2-9 9M11 14c-2-3-6-1-5 2s-3 3-3 3c5 3 11 0 8-5Z"/></symbol>
+<symbol id="undo-icon" viewBox="0 0 24 24"><path d="m8 5-5 5 5 5M3 10h11a6 6 0 0 1 0 12" transform="translate(0 -2)"/></symbol>
+<symbol id="redo-icon" viewBox="0 0 24 24"><path d="m16 5 5 5-5 5m5-5H10a6 6 0 0 0 0 12" transform="translate(0 -2)"/></symbol>
+<symbol id="wind" viewBox="0 0 24 24"><path d="M3 8h12a3 3 0 1 0-3-3M3 12h16a2 2 0 1 1-2 2M3 16h7a3 3 0 1 1-3 3"/></symbol>
+<symbol id="rain-icon" viewBox="0 0 24 24"><path d="M7 13h11a3.5 3.5 0 0 0 .2-7 5.2 5.2 0 0 0-10-1A4 4 0 0 0 7 13Zm0 4-1 3m6-3-1 3m6-3-1 3"/></symbol>
+<symbol id="clear-icon" viewBox="0 0 24 24"><path d="m4 14 9-10a2 2 0 0 1 3 0l5 5a2 2 0 0 1 0 3l-9 9H9l-5-4a2 2 0 0 1 0-3Zm4-4 9 8M12 21h9"/></symbol>
+<symbol id="download" viewBox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4M4 16v5h16v-5"/></symbol>
+<symbol id="expand" viewBox="0 0 24 24"><path d="M4 9V4h5m6 0h5v5M4 15v5h5m6 0h5v-5"/></symbol>
+</defs></svg>
+<script type="module" src="./app.js"></script>
+</body></html>

@@ -1,0 +1,518 @@
+{
+  "schema": "cyberdelic.space/fieldwork-sources-v1",
+  "items": [
+    {
+      "slug": "undra",
+      "project": "liquid-field",
+      "revision": "6c4e67b7f4f22e7780dea6c4a0aebbe3e7965c64",
+      "repository": "https://github.com/doctorillumination/water-droplets",
+      "source_files": [
+        {
+          "path": "app.js",
+          "sha256": "eaa94121c092fd67878599be3a5adf3bd691d4a95094435b97a13a1ae0a405f8"
+        },
+        {
+          "path": "apple-touch-icon.png",
+          "sha256": "9c180463fcdf12231686e53ac865ebf149e8da6d280ca3fb3d5ccdf679a06e8d"
+        },
+        {
+          "path": "camera.js",
+          "sha256": "89a8a6da42d60104811aeb22633982aa043bd0ee4ad8c7be3be7d16fc6cf2945"
+        },
+        {
+          "path": "coalescence.js",
+          "sha256": "60d2787c1243d5cfa47bea86797d5cdb81c0afb113e3f83e75b0ba1a1f909714"
+        },
+        {
+          "path": "dance.js",
+          "sha256": "99b27c4999c0a78f3a5212b55e25ca076ebac5c64a0ffc17957389545a8cf178"
+        },
+        {
+          "path": "diagnostics/diagnostics.js",
+          "sha256": "b2e6a4b6114c969a85f5a4aac1dad769919af60812c510c6db27054a05f126ec"
+        },
+        {
+          "path": "diagnostics/index.html",
+          "sha256": "9d80de18b915e323ff749779f4cfea8b9437a7874d13dc9b6b4ec8e82e5f0893"
+        },
+        {
+          "path": "experiments/app.js",
+          "sha256": "dc014873d03363a3553828480b892febb4e3e82cdf2e269e3eb040a590b64ad1"
+        },
+        {
+          "path": "experiments/audio.js",
+          "sha256": "de7517ea7396a75ec10d94172c969cf2f62f1da386d4f7fe1766b77015f994f8"
+        },
+        {
+          "path": "experiments/dispersion.js",
+          "sha256": "90b44be0fbb0a8147a8c9e83f2e083d0766c63d7e06fb178a6dc51e0d4365cf3"
+        },
+        {
+          "path": "experiments/education/index.html",
+          "sha256": "0b7615665e70acfbcf17067f6bff1de5c2d11132893824447619e86954b169d3"
+        },
+        {
+          "path": "experiments/education-physics.js",
+          "sha256": "1281d4d89c3c8219d5ab0b57c8c3b18332b2067a28898a655b52ed666a99fd46"
+        },
+        {
+          "path": "experiments/index.html",
+          "sha256": "ab15d620a892be89a66eca9321be0975680cbac4d4bf15b52680d4b5f3e9cc40"
+        },
+        {
+          "path": "experiments/lab-lens.js",
+          "sha256": "57263b85a7a675cbeeb1244ffce45954fd6728846247dbe962b63a59182d83d6"
+        },
+        {
+          "path": "experiments/lab-model.js",
+          "sha256": "b04874fa2303379d991e9c7d647c8e2a5d7a6704d4185d4e7354261f6690acea"
+        },
+        {
+          "path": "experiments/lab.css",
+          "sha256": "cecdf2f2e78b097184677f05c24da70e403187da6caf6c0ec3ff3d2ac6fb6b4f"
+        },
+        {
+          "path": "experiments/pool-shader.js",
+          "sha256": "b30f18e6c574b8d79c73ad3d46014eae39acfaa428edf99769825566c2a73ca5"
+        },
+        {
+          "path": "experiments/spectral-water.js",
+          "sha256": "c5e88e95ec731a519d06b8d59ac9d89dffd8de91cf37ccd3d64043be6e80e637"
+        },
+        {
+          "path": "experiments/water-lab.css",
+          "sha256": "faf11ec84f8d748b7b55393141af6a81f7e106f14b66fecbb61acbdc78998d72"
+        },
+        {
+          "path": "experiments/water-lab.js",
+          "sha256": "7b7240f6cb3009b29042bc6131e2bf191ca3b0dcdf4efc794e3048e1a915ca56"
+        },
+        {
+          "path": "experiments/waves.js",
+          "sha256": "2351a6a195a246c9e51e703d9492e71b766ebbce26c81358d48268fe184a3fca"
+        },
+        {
+          "path": "favicon-16.png",
+          "sha256": "62c40f837ceb24625c40aa5662cb61ddf674e44b4ccfbeb4ea344456512d8eb6"
+        },
+        {
+          "path": "favicon-32.png",
+          "sha256": "da520c22cd858c98581871a7d2e775cd727ec096ef5aa4aa7ed4d4518ad4990d"
+        },
+        {
+          "path": "favicon.ico",
+          "sha256": "f5acd10b59b0314244580057008473f6839d10f2be10ad36d426a3438545250b"
+        },
+        {
+          "path": "favicon.png",
+          "sha256": "2880ccb88c4e262cdf9345c22e6c215d32ea525c8608d0b4783666710362f09f"
+        },
+        {
+          "path": "fluid.js",
+          "sha256": "6b76c3632d0a21dfa61b0e913b0fa42bd7f3066961feab469b44743f13f02c4c"
+        },
+        {
+          "path": "gesture.js",
+          "sha256": "34e52f9936f52d06ebf58b6c72c21798327d466a509a92a772503d9e47e2242a"
+        },
+        {
+          "path": "gpu-fluid.js",
+          "sha256": "b7c77e8af7ac72d8a77da8fe5ac131786bf6b3417e92ee657311f7bbeb98d812"
+        },
+        {
+          "path": "index.html",
+          "sha256": "64a78d3e9917675e26440099017d6aa3e8af4590894b848548e44fb90753068d"
+        },
+        {
+          "path": "jelly-optics.js",
+          "sha256": "b556859d459958d27a8258c453a8589ffd47bc270856b6983a3c48a9f7a9ca14"
+        },
+        {
+          "path": "objects.js",
+          "sha256": "1802260740a06ec1d23f8d14ccf91071341a3a775e363f3ac96e6d1c23cb7996"
+        },
+        {
+          "path": "palette.js",
+          "sha256": "bd051bd08e67adcc3eeeba8a168b9b63e1c4d0c3e3c93a3e764cdc36e38376a8"
+        },
+        {
+          "path": "performance.js",
+          "sha256": "8412ad649b4868f109a259767e3ca310816e1850a708da3780258cbe4a67d39e"
+        },
+        {
+          "path": "play.js",
+          "sha256": "ad00a9f49c5da2be6a04664434f0c3be4b4dcbf633cdf168b77649f5ce5f5e9e"
+        },
+        {
+          "path": "recorder.js",
+          "sha256": "50dbdc5d679ee26cccf21acbabce88ca03958775ac194931851ce6492be63b5c"
+        },
+        {
+          "path": "shader-tools.js",
+          "sha256": "c49d8c1fcc763ca2f640d9ca7f765ec7604d496062a4ff7053f08a90a82e9d72"
+        },
+        {
+          "path": "shaders.js",
+          "sha256": "8eed4053ad414993ce3814d7a695fb0ea9f87e80a18fe53785c91a0046a0be7f"
+        },
+        {
+          "path": "soft-body.js",
+          "sha256": "60e9000a8474f7a0530253643e88750026beb7779a15bee7388bd8a74a641274"
+        },
+        {
+          "path": "soft-surface.js",
+          "sha256": "7e80f04c1c66e16bac938c3c558abedc916847b6a8213416ad501ad09965fafe"
+        },
+        {
+          "path": "style.css",
+          "sha256": "1b4fed893838060f64833d5f69b380895bca07effe2e8779f7a0dfae012a2059"
+        },
+        {
+          "path": "surface-cache.js",
+          "sha256": "37b3307a405bc6140246587581916c3ea7d44db2d3f899eab2880bbee7308b60"
+        },
+        {
+          "path": "vendor/MEDIABUNNY-LICENSE.txt",
+          "sha256": "3f3d9e0024b1921b067d6f7f88deb4a60cbe7a78e76c64e3f1d7fc3b779b9d04"
+        },
+        {
+          "path": "vendor/THREE-LICENSE.txt",
+          "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+        },
+        {
+          "path": "vendor/mediabunny.mjs",
+          "sha256": "d7b3a90e82158a7022729cbd4f861daf73cbb4f69d23349d2aefc9c8281cf70c"
+        },
+        {
+          "path": "vendor/three.core.js",
+          "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+        },
+        {
+          "path": "vendor/three.module.js",
+          "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+        }
+      ],
+      "adaptations": "Display names and export filenames updated for Fieldworks. Opalia dependencies bundled locally. Rendering and simulation code preserved.",
+      "packaged_files": [
+        {
+          "path": "app.js",
+          "sha256": "602b8b1aca59b1a07a54d63d75fae12e04c22637d6f97bf6181d02450073860b"
+        },
+        {
+          "path": "apple-touch-icon.png",
+          "sha256": "9c180463fcdf12231686e53ac865ebf149e8da6d280ca3fb3d5ccdf679a06e8d"
+        },
+        {
+          "path": "camera.js",
+          "sha256": "89a8a6da42d60104811aeb22633982aa043bd0ee4ad8c7be3be7d16fc6cf2945"
+        },
+        {
+          "path": "coalescence.js",
+          "sha256": "60d2787c1243d5cfa47bea86797d5cdb81c0afb113e3f83e75b0ba1a1f909714"
+        },
+        {
+          "path": "dance.js",
+          "sha256": "99b27c4999c0a78f3a5212b55e25ca076ebac5c64a0ffc17957389545a8cf178"
+        },
+        {
+          "path": "diagnostics/diagnostics.js",
+          "sha256": "b2e6a4b6114c969a85f5a4aac1dad769919af60812c510c6db27054a05f126ec"
+        },
+        {
+          "path": "diagnostics/index.html",
+          "sha256": "9d80de18b915e323ff749779f4cfea8b9437a7874d13dc9b6b4ec8e82e5f0893"
+        },
+        {
+          "path": "experiments/app.js",
+          "sha256": "dc014873d03363a3553828480b892febb4e3e82cdf2e269e3eb040a590b64ad1"
+        },
+        {
+          "path": "experiments/audio.js",
+          "sha256": "de7517ea7396a75ec10d94172c969cf2f62f1da386d4f7fe1766b77015f994f8"
+        },
+        {
+          "path": "experiments/dispersion.js",
+          "sha256": "90b44be0fbb0a8147a8c9e83f2e083d0766c63d7e06fb178a6dc51e0d4365cf3"
+        },
+        {
+          "path": "experiments/education/index.html",
+          "sha256": "0b7615665e70acfbcf17067f6bff1de5c2d11132893824447619e86954b169d3"
+        },
+        {
+          "path": "experiments/education-physics.js",
+          "sha256": "1281d4d89c3c8219d5ab0b57c8c3b18332b2067a28898a655b52ed666a99fd46"
+        },
+        {
+          "path": "experiments/index.html",
+          "sha256": "ab15d620a892be89a66eca9321be0975680cbac4d4bf15b52680d4b5f3e9cc40"
+        },
+        {
+          "path": "experiments/lab-lens.js",
+          "sha256": "57263b85a7a675cbeeb1244ffce45954fd6728846247dbe962b63a59182d83d6"
+        },
+        {
+          "path": "experiments/lab-model.js",
+          "sha256": "b04874fa2303379d991e9c7d647c8e2a5d7a6704d4185d4e7354261f6690acea"
+        },
+        {
+          "path": "experiments/lab.css",
+          "sha256": "cecdf2f2e78b097184677f05c24da70e403187da6caf6c0ec3ff3d2ac6fb6b4f"
+        },
+        {
+          "path": "experiments/pool-shader.js",
+          "sha256": "b30f18e6c574b8d79c73ad3d46014eae39acfaa428edf99769825566c2a73ca5"
+        },
+        {
+          "path": "experiments/spectral-water.js",
+          "sha256": "c5e88e95ec731a519d06b8d59ac9d89dffd8de91cf37ccd3d64043be6e80e637"
+        },
+        {
+          "path": "experiments/water-lab.css",
+          "sha256": "faf11ec84f8d748b7b55393141af6a81f7e106f14b66fecbb61acbdc78998d72"
+        },
+        {
+          "path": "experiments/water-lab.js",
+          "sha256": "7b7240f6cb3009b29042bc6131e2bf191ca3b0dcdf4efc794e3048e1a915ca56"
+        },
+        {
+          "path": "experiments/waves.js",
+          "sha256": "2351a6a195a246c9e51e703d9492e71b766ebbce26c81358d48268fe184a3fca"
+        },
+        {
+          "path": "favicon-16.png",
+          "sha256": "62c40f837ceb24625c40aa5662cb61ddf674e44b4ccfbeb4ea344456512d8eb6"
+        },
+        {
+          "path": "favicon-32.png",
+          "sha256": "da520c22cd858c98581871a7d2e775cd727ec096ef5aa4aa7ed4d4518ad4990d"
+        },
+        {
+          "path": "favicon.ico",
+          "sha256": "f5acd10b59b0314244580057008473f6839d10f2be10ad36d426a3438545250b"
+        },
+        {
+          "path": "favicon.png",
+          "sha256": "2880ccb88c4e262cdf9345c22e6c215d32ea525c8608d0b4783666710362f09f"
+        },
+        {
+          "path": "fluid.js",
+          "sha256": "6b76c3632d0a21dfa61b0e913b0fa42bd7f3066961feab469b44743f13f02c4c"
+        },
+        {
+          "path": "gesture.js",
+          "sha256": "34e52f9936f52d06ebf58b6c72c21798327d466a509a92a772503d9e47e2242a"
+        },
+        {
+          "path": "gpu-fluid.js",
+          "sha256": "b7c77e8af7ac72d8a77da8fe5ac131786bf6b3417e92ee657311f7bbeb98d812"
+        },
+        {
+          "path": "index.html",
+          "sha256": "6ea23f33dd23431718632e4a268e31d2b201146fb0abad39ab04b12753aac722"
+        },
+        {
+          "path": "jelly-optics.js",
+          "sha256": "b556859d459958d27a8258c453a8589ffd47bc270856b6983a3c48a9f7a9ca14"
+        },
+        {
+          "path": "objects.js",
+          "sha256": "1802260740a06ec1d23f8d14ccf91071341a3a775e363f3ac96e6d1c23cb7996"
+        },
+        {
+          "path": "palette.js",
+          "sha256": "bd051bd08e67adcc3eeeba8a168b9b63e1c4d0c3e3c93a3e764cdc36e38376a8"
+        },
+        {
+          "path": "performance.js",
+          "sha256": "8412ad649b4868f109a259767e3ca310816e1850a708da3780258cbe4a67d39e"
+        },
+        {
+          "path": "play.js",
+          "sha256": "ad00a9f49c5da2be6a04664434f0c3be4b4dcbf633cdf168b77649f5ce5f5e9e"
+        },
+        {
+          "path": "recorder.js",
+          "sha256": "50dbdc5d679ee26cccf21acbabce88ca03958775ac194931851ce6492be63b5c"
+        },
+        {
+          "path": "shader-tools.js",
+          "sha256": "c49d8c1fcc763ca2f640d9ca7f765ec7604d496062a4ff7053f08a90a82e9d72"
+        },
+        {
+          "path": "shaders.js",
+          "sha256": "8eed4053ad414993ce3814d7a695fb0ea9f87e80a18fe53785c91a0046a0be7f"
+        },
+        {
+          "path": "soft-body.js",
+          "sha256": "60e9000a8474f7a0530253643e88750026beb7779a15bee7388bd8a74a641274"
+        },
+        {
+          "path": "soft-surface.js",
+          "sha256": "7e80f04c1c66e16bac938c3c558abedc916847b6a8213416ad501ad09965fafe"
+        },
+        {
+          "path": "style.css",
+          "sha256": "1b4fed893838060f64833d5f69b380895bca07effe2e8779f7a0dfae012a2059"
+        },
+        {
+          "path": "surface-cache.js",
+          "sha256": "37b3307a405bc6140246587581916c3ea7d44db2d3f899eab2880bbee7308b60"
+        },
+        {
+          "path": "vendor/MEDIABUNNY-LICENSE.txt",
+          "sha256": "3f3d9e0024b1921b067d6f7f88deb4a60cbe7a78e76c64e3f1d7fc3b779b9d04"
+        },
+        {
+          "path": "vendor/THREE-LICENSE.txt",
+          "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+        },
+        {
+          "path": "vendor/mediabunny.mjs",
+          "sha256": "d7b3a90e82158a7022729cbd4f861daf73cbb4f69d23349d2aefc9c8281cf70c"
+        },
+        {
+          "path": "vendor/three.core.js",
+          "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+        },
+        {
+          "path": "vendor/three.module.js",
+          "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+        }
+      ]
+    },
+    {
+      "slug": "opalia",
+      "project": "phase-loom",
+      "revision": "2a9b42a8c32488bd48e49c485302cc3793f11842",
+      "repository": "https://github.com/doctorillumination/phaseloom",
+      "source_files": [
+        {
+          "path": "index.html",
+          "sha256": "d7f719ece3c26e0b1a7b2666fa665368e775b3268205d15ab7f62f4c3235bbc5"
+        }
+      ],
+      "adaptations": "Display names and export filenames updated for Fieldworks. Opalia dependencies bundled locally. Rendering and simulation code preserved.",
+      "packaged_files": [
+        {
+          "path": "index.html",
+          "sha256": "5ee8077dff050846d99be878ed55e4fde401900e61e230b00e6abd7a55936075"
+        },
+        {
+          "path": "vendor/LORA-OFL.txt",
+          "sha256": "1d9a970809ac804b582a6ce7f0ebc4e7fefcbfd7ff6299cad35ee656a21be716"
+        },
+        {
+          "path": "vendor/P5-LICENSE.txt",
+          "sha256": "eb2f25f8f165d5f20682c1ce7e99ce69144ecfd80fbed8c17dfd327ecd8b6cb6"
+        },
+        {
+          "path": "vendor/POPPINS-OFL.txt",
+          "sha256": "6be04893d770899a015649c7aa3b582f871b272f8747a92b78b17c3e5c8b2573"
+        },
+        {
+          "path": "vendor/p5.min.js",
+          "sha256": "bb7f8f14b9ce2e2344ff5cd6c06f2e105eb99541ecbfec77139e2886d9c0b9ba"
+        },
+        {
+          "path": "vendor/type-0.ttf",
+          "sha256": "1d37d1e34c77be80f0119754ad78df9aad30d5b1c78132a4cbdac0fe567f5d4f"
+        },
+        {
+          "path": "vendor/type-1.ttf",
+          "sha256": "9bfe70fd1d70600c523d7ef66c8a024187270f115570d82baf97df7f05e6c2aa"
+        },
+        {
+          "path": "vendor/type-2.ttf",
+          "sha256": "cdedb1729acac414ed01744a11da7badb86adf13108e7bd3fa161b9323f7fe54"
+        },
+        {
+          "path": "vendor/type-3.ttf",
+          "sha256": "fcff04f4bec2b3636f05ed894dc1f9a752c4cb587ee49857ec7a82abaf6ca016"
+        },
+        {
+          "path": "vendor/type-4.ttf",
+          "sha256": "dae40ca7b35fe7501bda2e4140a6860b1db47330be5d3c8ab6971fd83a70e9a5"
+        },
+        {
+          "path": "vendor/type.css",
+          "sha256": "74146e60ec4ef07cb53ad9dfe40c8f0750f1502ba99935c4717222b8369bde73"
+        }
+      ]
+    },
+    {
+      "slug": "aeria",
+      "project": "cloudroom",
+      "revision": "0142ccee55047c6c88fe041e9bc3b5be66e166b6",
+      "repository": "https://github.com/doctorillumination/clouds",
+      "source_files": [
+        {
+          "path": "app.js",
+          "sha256": "2d6fe32eedf5810ff56402768288e36cb485eb1a6a955051bb20f3298a7d7302"
+        },
+        {
+          "path": "cloud-life.js",
+          "sha256": "f00d46c363f6b24dc6403c54cae0a8ce2bbdb77d670d1d481d6b963316cd0d66"
+        },
+        {
+          "path": "cloud-noise.bin",
+          "sha256": "c5036886fcf7c85320e567fb1ba4fb270b37293951ce62dbb3a777e36d71ac3e"
+        },
+        {
+          "path": "icon.svg",
+          "sha256": "fd7f0c8379af02aa7c57cb8f722ddaee3c54e64e37296f41652cb629b22892bd"
+        },
+        {
+          "path": "index.html",
+          "sha256": "1cf7e7596f7a71b02f448a4c72d63d07f4f7fe73126bd7dc251f543b05ae114f"
+        },
+        {
+          "path": "rain.js",
+          "sha256": "f0682982ef25127a508c95f79ac6b4d9ccca9ec00f8097758ec1831f63c45025"
+        },
+        {
+          "path": "renderer.js",
+          "sha256": "4d44ac8bcdf50dee27e8a642fecd725382d66d5c54efd77ba289aee74b8d5ce7"
+        },
+        {
+          "path": "style.css",
+          "sha256": "fde5ea9da8c63e23bae3a53c02f4ae2db1c2535b20f5d298831252e23a106c39"
+        }
+      ],
+      "adaptations": "Display names and export filenames updated for Fieldworks. Opalia dependencies bundled locally. Rendering and simulation code preserved.",
+      "packaged_files": [
+        {
+          "path": "app.js",
+          "sha256": "351e6347feced57ce98ca9af73a186d6911b2f2aee5e380db017b2bbea05449e"
+        },
+        {
+          "path": "cloud-life.js",
+          "sha256": "f00d46c363f6b24dc6403c54cae0a8ce2bbdb77d670d1d481d6b963316cd0d66"
+        },
+        {
+          "path": "cloud-noise.bin",
+          "sha256": "c5036886fcf7c85320e567fb1ba4fb270b37293951ce62dbb3a777e36d71ac3e"
+        },
+        {
+          "path": "icon.svg",
+          "sha256": "fd7f0c8379af02aa7c57cb8f722ddaee3c54e64e37296f41652cb629b22892bd"
+        },
+        {
+          "path": "index.html",
+          "sha256": "19f56706def028292d65ce1b6990c7bdd4d305b6daf9f92ef6949cb11200489c"
+        },
+        {
+          "path": "rain.js",
+          "sha256": "f0682982ef25127a508c95f79ac6b4d9ccca9ec00f8097758ec1831f63c45025"
+        },
+        {
+          "path": "renderer.js",
+          "sha256": "4d44ac8bcdf50dee27e8a642fecd725382d66d5c54efd77ba289aee74b8d5ce7"
+        },
+        {
+          "path": "style.css",
+          "sha256": "fde5ea9da8c63e23bae3a53c02f4ae2db1c2535b20f5d298831252e23a106c39"
+        }
+      ]
+    }
+  ]
+}

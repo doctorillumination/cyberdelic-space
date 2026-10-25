@@ -1,0 +1,63 @@
+{
+  "id": "fieldworks-undra",
+  "title": "Undra",
+  "form": "fieldwork",
+  "release_id": null,
+  "pages": [
+    "fieldworks/undra/"
+  ],
+  "source_path": "fieldworks/readings/undra.md",
+  "source_sha256": "8a89ec4cf907ce20c844c5eb127bb7fd7245f212511cf0e976f638d286a93626",
+  "document_sha256": "8a89ec4cf907ce20c844c5eb127bb7fd7245f212511cf0e976f638d286a93626",
+  "text_sha256": "b7b08420093958b70db94788d6cfbef9cd80a6c2d682de4380802aa56a8e429a",
+  "reading_path": "audio/readings/b7b08420093958b70db94788d6cfbef9cd80a6c2d682de4380802aa56a8e429a.md",
+  "reading_sha256": "8a89ec4cf907ce20c844c5eb127bb7fd7245f212511cf0e976f638d286a93626",
+  "reading_length": 681,
+  "audio_path": "audio/lewis/b7b08420093958b70db94788d6cfbef9cd80a6c2d682de4380802aa56a8e429a.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "6baf6f9fee43593616e59c1df234b6fab8bd00ba166244642e710d62f72f3db8",
+  "audio_length": 612620,
+  "duration_seconds": 50.97,
+  "chunks": [
+    {
+      "text": "Undra",
+      "start": 0.0,
+      "duration": 1.525
+    },
+    {
+      "text": "A living surface. A conversation with water.",
+      "start": 1.705,
+      "duration": 3.975
+    },
+    {
+      "text": "Hold empty space to grow a droplet. Drag water together, let it gather, then separate it again. The field responds through a procedural model of fluid motion and light. Its forms are generated in the browser, not played from a film.",
+      "start": 5.86,
+      "duration": 16.325
+    },
+    {
+      "text": "Undra offers a small experience of agency without complete control. Your gesture changes the conditions, and the material answers in its own way. This connection to Cyberdelic OS is a curatorial interpretation, not a claim that the artwork implements the whole operating system.",
+      "start": 22.365,
+      "duration": 19.575
+    },
+    {
+      "text": "By Brad Necyk. Previously developed as Glop, also known as Water Droplet. This living artwork is not inscribed.",
+      "start": 42.12,
+      "duration": 8.85
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.5838226079940796,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

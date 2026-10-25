@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opalia | Living pearl</title>
+<meta name="description" content="An endless, generative field of pearlescent ripples. Tune the rhythm, change the seed, or simply watch.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3CradialGradient id='g'%3E%3Cstop stop-color='%23b2ffff'/%3E%3Cstop offset='.6' stop-color='%23eac2cf'/%3E%3Cstop offset='.8' stop-color='%23ffffb0'/%3E%3Cstop offset='1' stop-color='%239779dd'/%3E%3C/radialGradient%3E%3C/defs%3E%3Ccircle cx='32' cy='32' r='30' fill='url(%23g)'/%3E%3C/svg%3E">
+    <script src="./vendor/p5.min.js"></script>
+    <link href="./vendor/type.css" rel="stylesheet">
+    <style>
+        /* Anthropic Brand Colors */
+        :root {
+            --anthropic-dark: #141413;
+            --anthropic-light: #faf9f5;
+            --anthropic-mid-gray: #b0aea5;
+            --anthropic-light-gray: #e8e6dc;
+            --anthropic-orange: #d97757;
+            --anthropic-blue: #6a9bcc;
+            --anthropic-green: #788c5d;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, var(--anthropic-light) 0%, #f5f3ee 100%);
+            min-height: 100vh;
+            color: var(--anthropic-dark);
+        }
+
+        .container {
+            display: flex;
+            min-height: 100vh;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 320px;
+            flex-shrink: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(20, 20, 19, 0.1);
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+
+        .sidebar h1 {
+            font-family: 'Lora', serif;
+            font-size: 24px;
+            font-weight: 500;
+            color: var(--anthropic-dark);
+            margin-bottom: 8px;
+        }
+
+        .sidebar .subtitle {
+            color: var(--anthropic-mid-gray);
+            font-size: 14px;
+            margin-bottom: 32px;
+            line-height: 1.4;
+        }
+
+        /* Control Sections */
+        .control-section {
+            margin-bottom: 32px;
+        }
+
+        .control-section h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--anthropic-dark);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .control-section h3::before {
+            content: '•';
+            color: var(--anthropic-orange);
+            font-weight: bold;
+        }
+
+        /* Seed Controls */
+        .seed-input {
+            width: 100%;
+            background: var(--anthropic-light);
+            padding: 12px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            margin-bottom: 12px;
+            border: 1px solid var(--anthropic-light-gray);
+            text-align: center;
+        }
+
+        .seed-input:focus {
+            outline: none;
+            border-color: var(--anthropic-orange);
+            box-shadow: 0 0 0 2px rgba(217, 119, 87, 0.1);
+            background: white;
+        }
+
+        .seed-controls {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        .regen-button {
+            margin-bottom: 0;
+        }
+
+        /* Parameter Controls */
+        .control-group {
+            margin-bottom: 20px;
+        }
+
+        .control-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--anthropic-dark);
+            margin-bottom: 8px;
+        }
+
+        .slider-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .slider-container input[type="range"] {
+            flex: 1;
+            height: 4px;
+            background: var(--anthropic-light-gray);
+            border-radius: 2px;
+            outline: none;
+            -webkit-appearance: none;
+        }
+
+        .slider-container input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 16px;
+            height: 16px;
+            background: var(--anthropic-orange);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .slider-container input[type="range"]::-webkit-slider-thumb:hover {
+            transform: scale(1.1);
+            background: #c86641;
+        }
+
+        .slider-container input[type="range"]::-moz-range-thumb {
+            width: 16px;
+            height: 16px;
+            background: var(--anthropic-orange);
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .value-display {
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            color: var(--anthropic-mid-gray);
+            min-width: 60px;
+            text-align: right;
+        }
+
+        /* Color Pickers */
+        .color-group {
+            margin-bottom: 16px;
+        }
+
+        .color-group label {
+            display: block;
+            font-size: 12px;
+            color: var(--anthropic-mid-gray);
+            margin-bottom: 4px;
+        }
+
+        .color-picker-container {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .color-picker-container input[type="color"] {
+            width: 32px;
+            height: 32px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            background: none;
+            padding: 0;
+        }
+
+        .color-value {
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            color: var(--anthropic-mid-gray);
+        }
+
+        /* Buttons */
+        .button {
+            background: var(--anthropic-orange);
+            color: white;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            width: 100%;
+        }
+
+        .button:hover {
+            background: #c86641;
+            transform: translateY(-1px);
+        }
+
+        .button:active {
+            transform: translateY(0);
+        }
+
+        .button.secondary {
+            background: var(--anthropic-blue);
+        }
+
+        .button.secondary:hover {
+            background: #5a8bb8;
+        }
+
+        .button.tertiary {
+            background: var(--anthropic-green);
+        }
+
+        .button.tertiary:hover {
+            background: #6b7b52;
+        }
+
+        .button-row {
+            display: flex;
+            gap: 8px;
+        }
+
+        .button-row .button {
+            flex: 1;
+        }
+
+        /* Canvas Area */
+        .canvas-area {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 0;
+        }
+
+        #canvas-container {
+            width: 100%;
+            max-width: 1000px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(20, 20, 19, 0.1);
+            background: white;
+        }
+
+        #canvas-container canvas {
+            display: block;
+            width: 100% !important;
+            height: auto !important;
+        }
+
+        /* Loading State */
+        .loading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: var(--anthropic-mid-gray);
+        }
+
+        /* Responsive - Stack on mobile */
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+            }
+
+            .canvas-area {
+                padding: 20px;
+            }
+        }
+
+        .help {font-size:11px;line-height:1.8;color:#77766f;margin-top:18px}
+        #treatment {width:100%;padding:10px 12px;border:1px solid #deddd5;border-radius:8px;background:#faf9f5;color:#35322f;font:12px 'Poppins',sans-serif}
+        .container {height:100svh;min-height:0}
+        .sidebar {height:calc(100svh - 40px)}
+        .canvas-area {min-height:0}
+        #canvas-container {aspect-ratio:1;max-height:calc(100svh - 40px);max-width:min(100%,calc(100svh - 40px));position:relative;background:#cfcec9}
+        #canvas-container canvas {height:100% !important;object-fit:cover;touch-action:none}
+        button:focus-visible,input:focus-visible {outline:2px solid #543e80;outline-offset:4px}
+        .art-caption {position:fixed;bottom:30px;left:32px;pointer-events:none;color:#29262d;text-shadow:0 1px 20px #fff8}
+        .eyebrow {display:block;letter-spacing:.2em;font-size:9px;margin-bottom:8px;font-weight:500}
+        .art-title {font-family:'Lora',serif;font-size:28px;letter-spacing:-1px}
+        .art-tools {position:fixed;bottom:32px;right:32px;display:flex;gap:6px;z-index:4}
+        .art-tools button {border:1px solid #ffffff55;background:#faf9f570;backdrop-filter:blur(18px);border-radius:30px;padding:11px 17px;font:500 12px 'Poppins',sans-serif;color:#302d35;cursor:pointer;box-shadow:0 2px 18px #40304709}
+        .art-tools button:hover {background:#fff9}
+        .motion-status {position:fixed;top:25px;right:30px;font-size:10px;letter-spacing:.12em;color:#44404c;pointer-events:none}
+        body.immersive {overflow:hidden}
+        body.immersive .container {padding:0;display:block}
+        body.immersive .sidebar {display:none}
+        body.immersive .canvas-area {position:fixed;inset:0;display:block;padding:0}
+        body.immersive #canvas-container {max-width:none;max-height:none;width:100%;height:100%;border-radius:0;aspect-ratio:auto;box-shadow:none}
+        body:not(.immersive) .art-caption,body:not(.immersive) .motion-status {display:none}
+        body:not(.immersive) .art-tools {top:30px;bottom:auto}
+        @media(max-width:700px) {
+          .art-tools {right:16px;bottom:20px;gap:4px}
+          .art-tools button {padding:10px 13px;font-size:11px}
+          .art-caption {left:18px;bottom:75px}
+          .art-title {font-size:24px}
+          .eyebrow {font-size:8px}
+          .motion-status {top:18px;right:18px;font-size:9px}
+          body:not(.immersive) {overflow:auto}
+          body:not(.immersive) .container {height:auto;padding:12px;flex-direction:column;gap:12px}
+          body:not(.immersive) .canvas-area {order:-1;padding:0;display:block}
+          body:not(.immersive) #canvas-container {max-width:100%;max-height:none;width:100%}
+          body:not(.immersive) .sidebar {height:auto;width:100%}
+          body:not(.immersive) .art-tools {top:22px;right:22px}
+        }
+        @media(prefers-reduced-motion:reduce) {* {scroll-behavior:auto !important;transition:none !important}}
+        body.qa .art-caption,body.qa .art-tools,body.qa .motion-status {display:none}
+        body.qa #qa-results {display:block;position:fixed;z-index:10;top:8px;left:8px;right:8px;white-space:pre-wrap;font:12px monospace;background:#fffE;padding:12px;max-height:45vh;overflow:auto}
+    </style>
+</head>
+<body class="immersive">
+    <div class="container">
+        
+        <div class="sidebar">
+            
+            <h1>Opalia</h1>
+            <div class="subtitle">A living surface of light. Small changes, endless ripples.</div>
+
+            
+            <div class="control-section">
+                <h3>Seed</h3>
+                <input type="number" aria-label="Seed" id="seed-input" class="seed-input" value="12345" onchange="updateSeed()">
+                <div class="seed-controls">
+                    <button class="button secondary" onclick="previousSeed()">← Prev</button>
+                    <button class="button secondary" onclick="nextSeed()">Next →</button>
+                </div>
+                <button class="button tertiary regen-button" onclick="randomSeedAndUpdate()">↻ Random</button>
+            </div>
+
+            
+            <div class="control-section">
+                <h3>Parameters</h3>
+                <div class="control-group"><label for="treatment">Light treatment</label><select id="treatment" onchange="updateTreatment(this.value)"><option value="optical">Optical pearl</option><option value="psychedelic">Psychedelic</option></select></div><div class="control-group"><label for="speed">Rhythm</label><div class="slider-container"><input type="range" id="speed" min="0.25" max="2" step="0.05" value="1" oninput="updateParam('speed',this.value)"><span class="value-display" id="speed-value">1</span></div></div><div class="control-group"><label for="spacing">Ring spacing</label><div class="slider-container"><input type="range" id="spacing" min="0.75" max="1.5" step="0.01" value="1" oninput="updateParam('spacing',this.value)"><span class="value-display" id="spacing-value">1</span></div></div><div class="control-group"><label for="wobble">Liquid contour</label><div class="slider-container"><input type="range" id="wobble" min="0" max="2" step="0.05" value="1" oninput="updateParam('wobble',this.value)"><span class="value-display" id="wobble-value">1</span></div></div><div class="control-group"><label for="iridescence">Iridescence</label><div class="slider-container"><input type="range" id="iridescence" min="0" max="1.5" step="0.05" value="1" oninput="updateParam('iridescence',this.value)"><span class="value-display" id="iridescence-value">1</span></div></div>
+            </div>
+            <div class="control-section">
+                <h3>Actions</h3>
+                <div class="button-row">
+                    <button class="button" onclick="resetParameters()">Reset</button><button class="button secondary" onclick="initializeSystem()">Regenerate</button>
+                </div>
+                <button class="button tertiary" style="margin-top:8px" onclick="downloadFrame()">Download PNG</button>
+                <button class="button secondary" style="margin-top:8px" onclick="toggleControls()">Return to artwork</button>
+                <p class="help">Space to pause · H for controls · F for fullscreen · R for a new seed</p>
+            </div>
+        </div>
+
+        <div class="canvas-area">
+            <div id="canvas-container">
+                <div class="loading">Initializing generative art...</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="art-caption" aria-hidden="true"><span class="eyebrow">A STUDY IN CONTINUOUS MOTION</span><span class="art-title">Opalia</span></div>
+    <nav class="art-tools" aria-label="Artwork controls">
+      <button id="pause-button" onclick="togglePause()" aria-label="Pause animation">Pause</button>
+      <button id="controls-button" onclick="toggleControls()" aria-expanded="false">Controls</button>
+      <button id="fullscreen-button" onclick="toggleFullscreen()">Fullscreen</button>
+    </nav>
+    <output id="motion-status" class="motion-status" aria-live="off">Living pearl</output>
+    <output id="qa-results" hidden></output>
+    <script>
+const query = new URLSearchParams(location.search);
+const defaultParams = Object.freeze({seed:12345,speed:1,spacing:1,wobble:1,iridescence:1,treatment:0});
+let params = {...defaultParams};
+if(query.get('look')==='psychedelic')params.treatment=1;
+let visualParams = {...defaultParams};
+let surface, renderer, simTime = Number(query.get('t') || 0), previousTick = 0;
+let running = !matchMedia('(prefers-reduced-motion: reduce)').matches && !query.has('t') && !query.has('test');
+let frameSamples = [], lastStatus = 0, contextLost = false;
+let qaActive = query.has('test');
+const seedPhase = () => params.seed === 12345 ? 0 : ((params.seed * 0.61803398875) % 1) * Math.PI * 2;
+const VERTEX = `
+precision highp float;
+attribute vec3 aPosition;
+attribute vec2 aTexCoord;
+uniform mat4 uModelViewMatrix;
+uniform mat4 uProjectionMatrix;
+varying vec2 uv;
+void main(){uv=aTexCoord;gl_Position=uProjectionMatrix*uModelViewMatrix*vec4(aPosition,1.0);}`;
+const FRAGMENT = `
+precision highp float;
+varying vec2 uv;
+uniform vec2 resolution;
+uniform float time;
+uniform float lightTime;
+uniform float spacing;
+uniform float wobble;
+uniform float iridescence;
+uniform float variation;
+uniform float geometryPass;
+uniform float treatment;
+const float TAU=6.28318530718;
+// A continuous radial coordinate and its spatial gradient. Each angular mode
+// has its own retarded radial phase, so neighbouring folds never move in lockstep.
+vec4 liquidCoordinate(vec2 p,float t){
+  float r=sqrt(dot(p,p)+0.000001);
+  float travel=t-3.4*r;
+  float a=atan(p.y,p.x)+0.88*travel;
+  vec2 er=p/r,et=vec2(-er.y,er.x);
+  float rSafe=max(r,0.002);
+  float z=variation;
+  float f1=r/(r+0.12)*exp(-r*0.8);
+  float df1=exp(-r*0.8)*(0.12/((r+0.12)*(r+0.12))-0.8*r/(r+0.12));
+  float u1=1.18*t-4.3*r+z;
+  float a1=0.019*f1*sin(u1);
+  float da1=0.019*(df1*sin(u1)-4.3*f1*cos(u1));
+  float f2=r*exp(-r*5.5),df2=exp(-r*5.5)*(1.0-5.5*r);
+  float u2=1.85*t-5.0*r+0.25+z;
+  float f2b=r*exp(-r*0.7),df2b=exp(-r*0.7)*(1.0-0.7*r);
+  float v2=0.98*t-5.6*r+0.8;
+  float a2=0.32*f2*sin(u2)+0.024*f2b*sin(v2);
+  float da2=0.32*(df2*sin(u2)-5.0*f2*cos(u2))
+             +0.024*(df2b*sin(v2)-5.6*f2b*cos(v2));
+  float f3=r*exp(-r*3.4),df3=exp(-r*3.4)*(1.0-3.4*r);
+  float u3=1.47*t-7.0*r+1.1+z;
+  float a3=0.105*f3*sin(u3);
+  float da3=0.105*(df3*sin(u3)-7.0*f3*cos(u3));
+  float p1=a-t*0.52,p2=2.0*a-t*0.73+z,p3=3.0*a+t*0.41-z;
+  // A localized bulge opens, collapses, and is carried into the next fold.
+  float fb=r/(r+0.10)*exp(-r*1.1);
+  float dfb=exp(-r*1.1)*(0.10/((r+0.10)*(r+0.10))-1.1*r/(r+0.10));
+  float ub=1.20*travel+0.6+z;
+  float ab=0.032*fb*sin(ub),dab=0.032*(dfb*sin(ub)-4.08*fb*cos(ub));
+  float pa=a-0.32*travel-z;
+  float gate=0.5+0.5*cos(pa),gate2=gate*gate,gate3=gate2*gate;
+  float bump=gate2*gate2,dbump=-2.0*gate3*sin(pa);
+  // Outer folds keep their own breathing modes instead of losing amplitude.
+  float outerX=clamp((r-0.28)/0.34,0.0,1.0);
+  float outer=outerX*outerX*(3.0-2.0*outerX);
+  float dOuter=6.0*outerX*(1.0-outerX)/0.34;
+  float ue=1.21*t-5.9*r+0.9+z,ve=0.83*t+9.0*r-z;
+  float ae=outer*(0.020*sin(ue)+0.012*sin(ve));
+  float dae=dOuter*(0.020*sin(ue)+0.012*sin(ve))
+            +outer*(-0.118*cos(ue)+0.108*cos(ve));
+  float pe=2.0*a-0.47*t+1.7*r+z;
+  // Two broad bulges sweep in different directions and collapse out of phase.
+  // Their radial angle offsets put neighbouring rings' bulges on different sides.
+  float uo=ub,vo=0.91*t+8.3*r+1.5;
+  float ao=0.035*outer*sin(uo),dao=0.035*(dOuter*sin(uo)-4.08*outer*cos(uo));
+  float bo=0.024*outer*sin(vo),dbo=0.024*(dOuter*sin(vo)+8.3*outer*cos(vo));
+  float po=pa,qo=a+0.33*t-4.2*r+2.1-z;
+  float og=0.5+0.5*cos(po),og2=og*og,og3=og2*og;
+  float ob=og2*og2,dob=-2.0*og3*sin(po);
+  float qg=0.5+0.5*cos(qo),qg2=qg*qg,qg4=qg2*qg2;
+  float qb=qg4*qg,dqb=-2.5*qg4*sin(qo);
+  // Sustained far-field modes scale with radius, keeping the wide view alive.
+  // Their envelope is zero throughout the centre's existing movement.
+  float farX=clamp((r-0.50)/0.40,0.0,1.0);
+  float far=farX*farX*(3.0-2.0*farX);
+  float farR=r*far,dFarR=far+r*6.0*farX*(1.0-farX)/0.40;
+  float uf=1.09*t-5.2*r+z,vf=1.43*t+4.1*r+0.7;
+  float af=0.045*farR*sin(uf),daf=0.045*(dFarR*sin(uf)-5.2*farR*cos(uf));
+  float bf=0.022*farR*sin(vf),dbf=0.022*(dFarR*sin(vf)+4.1*farR*cos(vf));
+  float pf=2.0*a+0.35*t-1.9*r,qf=3.0*a-0.24*t+2.5*r;
+  float ug=ub;
+  float cf=0.040*farR*sin(ug),dcf=0.040*(dFarR*sin(ug)-4.08*farR*cos(ug));
+  float pg=pa;
+  float fg=0.5+0.5*cos(pg),fg2=fg*fg,fg3=fg2*fg;
+  float fbump=fg2*fg2,dfbump=-2.0*fg3*sin(pg);
+  float shape=a1*cos(p1)+a2*cos(p2)+a3*cos(p3)+ab*bump
+              +ae*cos(pe)+ao*ob+bo*qb+af*cos(pf)+bf*cos(qf)+cf*fbump;
+  float dr=1.0+wobble*(da1*cos(p1)+da2*cos(p2)+da3*cos(p3)+dab*bump+1.088*ab*dbump
+              +dae*cos(pe)-1.7*ae*sin(pe)+dao*ob+1.088*ao*dob+dbo*qb-4.2*bo*dqb
+              +daf*cos(pf)+1.9*af*sin(pf)+dbf*cos(qf)-2.5*bf*sin(qf)+dcf*fbump+1.088*cf*dfbump);
+  float dt=wobble*(-a1*sin(p1)-2.0*a2*sin(p2)-3.0*a3*sin(p3)+ab*dbump
+              -2.0*ae*sin(pe)+ao*dob+bo*dqb-2.0*af*sin(pf)-3.0*bf*sin(qf)+cf*dfbump);
+  // The radial delay twists the sheet. Include its chain-rule contribution
+  // so the refracted light bends with the counterclockwise travelling swell.
+  dr-=2.992*dt;
+  vec2 gradient=er*dr+et*(dt/rSafe);
+  float bulgeActivity=clamp((abs(ab)*bump+abs(ao)*ob+abs(bo)*qb+abs(cf)*fbump)/0.055,0.0,1.0);
+  return vec4(r+wobble*shape,gradient,bulgeActivity*clamp(wobble,0.0,1.0));
+
+}
+float foldSlope(float w){
+  // Derivative of a smooth logarithmic ripple: opposite faces meet in a soft crest.
+  return 0.43*sin(w)/(0.032+1.0-cos(w));
+}
+float refractedLight(float w,float defocus){
+  // Broaden the wavelength spots as they separate, preserving soft overlap.
+  float focus=1.0+defocus;
+  return 0.045*cos(w-0.55)+0.40/sqrt(focus)*exp(-29.0/focus*(1.0-cos(w)))
+       -0.42*exp(-5.0/focus*(1.0-cos(w+0.42)));
+}
+void main(){
+  vec2 p=(uv*2.0-1.0)*resolution/min(resolution.x,resolution.y);
+  if(geometryPass>4.5) p*=1.35;
+  else if(geometryPass>3.5) p*=2.65;
+  else if(geometryPass>1.5 && geometryPass<2.5) p*=1.32;
+  float t=time,lt=lightTime;
+  p-=wobble*vec2(0.030*cos(t*0.81+0.65+variation),0.034*sin(t*0.73+1.2+variation));
+  vec4 field=liquidCoordinate(p,t);
+  float radial=field.x;
+  if(geometryPass>4.5){
+    gl_FragColor=vec4(vec3(0.5+3.0*(radial-length(p))),1.0);
+    return;
+  }
+  float phase=radial*4.0/spacing-t*0.385;
+  float wave=TAU*phase;
+  if((geometryPass>0.5 && geometryPass<2.5) || geometryPass>3.5){
+    float crest=0.5+0.5*cos(wave);
+    if(geometryPass>1.5){
+      float ringId=floor(phase+0.5)+floor(t*0.385);
+      gl_FragColor=vec4(crest,(ringId+1.0)/16.0,0.0,1.0);
+    }else gl_FragColor=vec4(vec3(crest),1.0);
+    return;
+  }
+  float slope=foldSlope(wave);
+  vec2 gradient=field.yz;
+  vec3 normal=normalize(vec3(-gradient*slope,1.0));
+  float compression=length(gradient);
+  // Colour is transported over the whole sheet, including its pastel valleys.
+  float turn=lt*0.19+variation;
+  mat2 rotation=mat2(cos(turn),-sin(turn),sin(turn),cos(turn));
+  vec2 q=rotation*p;
+  q+=0.20*vec2(sin(q.y*1.9-lt*0.27),cos(q.x*1.7+lt*0.23));
+  float film=1.10*sin(q.x*1.65+q.y*0.70-lt*0.31)
+            +0.80*cos(q.y*1.85-q.x*0.55+lt*0.24);
+  // Pigment slips inward while the folds travel outward. Its angular currents
+  // shear at different radii, so colour can cross a crest instead of riding it.
+  float materialRadius=length(p);
+  float angle=atan(p.y,p.x);
+  float counterPhase=materialRadius*8.8+lt*1.05
+      +0.55*sin(angle-lt*0.29+materialRadius*2.2)
+      +0.32*sin(2.0*angle+lt*0.21-materialRadius*3.4);
+  float twist=materialRadius*4.5+lt*0.36+film*0.28;
+  float pigmentPhase=0.80*counterPhase+0.55*film;
+  if(geometryPass>2.5){
+    // Isolate the transported pigment for the radial advection diagnostic.
+    gl_FragColor=vec4(0.5+0.5*cos(pigmentPhase),0.5+0.5*sin(pigmentPhase),0.0,1.0);
+    return;
+  }
+  if(treatment<0.5){
+    // A local lens opens and relaxes independently of the ring's silhouette.
+    float swellClock=lt-3.4*materialRadius;
+    float sector=pow(0.5+0.5*cos(angle+0.56*swellClock-variation),4.0);
+    float sectorB=pow(0.5+0.5*cos(angle-lt*0.25+materialRadius*4.1+2.2),4.0);
+    float breath=0.5+0.5*sin(1.20*swellClock+0.6+variation);
+    float breathB=0.5+0.5*sin(lt*0.87+materialRadius*6.3+1.4);
+    float lens=0.60*sector*breath*breath+0.25*sectorB*breathB*breathB+0.65*field.w;
+    float separation=0.18+0.80*lens+0.12*field.w;
+    float lensWarp=0.22*sector*sin(1.20*swellClock+0.6+variation)
+                 +0.12*sectorB*sin(lt*0.87+materialRadius*6.3+1.4);
+    float orientation=angle+materialRadius*2.2+lt*0.22+film*0.25;
+    vec3 dispersion=vec3(-cos(orientation),-0.55*sin(orientation),cos(orientation)+0.55*sin(orientation));
+    float refractedWave=wave-0.62*clamp(lens,0.0,1.0)*sin(wave);
+    vec3 samplePhase=vec3(refractedWave+lensWarp)+separation*dispersion;
+    float defocus=0.18+0.45*lens;
+    vec3 response=vec3(refractedLight(samplePhase.r,defocus*0.85),refractedLight(samplePhase.g,defocus),refractedLight(samplePhase.b,defocus*1.2));
+    response=mix(response,vec3(dot(response,vec3(0.333333))),0.08);
+    // Keep the spectral differences while reducing the common dark/white band.
+    float sharedLight=dot(response,vec3(0.333333));
+    response-=vec3(sharedLight*0.78);
+    // One bright cyan-to-warm gradient spans each face. There is no second
+    // pale opening on the warm side; the spectral crest covers the next join.
+    float face=fract(phase+0.025*sin(pigmentPhase*0.4));
+    vec3 cyan=vec3(0.650,0.930,0.965);
+    float warmth=0.5+0.5*sin(film*0.65+lt*0.18+materialRadius*1.1);
+    vec3 warmEdge=mix(vec3(1.000,0.690,0.600),vec3(1.000,0.800,0.560),warmth);
+    vec3 pearl=mix(cyan,warmEdge,smoothstep(0.03,0.94,face));
+    float join=exp(-90.0*(1.0-cos(TAU*(phase+0.025*sin(pigmentPhase*0.4)))));
+    pearl=mix(pearl,mix(cyan,warmEdge,0.5),join);
+    float coreLight=exp(-materialRadius*materialRadius/0.008);
+    pearl=mix(pearl,cyan,coreLight)+0.015*coreLight;
+    vec3 colour=pearl+response;
+    colour=mix(vec3(0.835,0.825,0.815),colour,iridescence);
+    colour*=0.98+0.02*normal.z;
+    gl_FragColor=vec4(clamp(colour,0.0,1.0),1.0);
+    return;
+  }
+  float optical=pigmentPhase
+      +1.45*(normal.x*cos(twist)+normal.y*sin(twist));
+  vec3 spectrum=0.5+0.5*cos(optical*vec3(1.0,1.06,1.12)+vec3(0.15,2.25,4.20));
+  float isolatedGreen=max(spectrum.g-max(spectrum.r,spectrum.b),0.0);
+  spectrum+=vec3(0.12,0.0,0.72)*isolatedGreen;
+  spectrum=pow(clamp(spectrum,0.0,1.0),vec3(1.05));
+  // The pale body and luminous shoulders share the same flowing pigment.
+  // This carries a faint version of every edge hue through the lighter valleys.
+  vec3 milk=vec3(0.87,0.845,0.835);
+  vec3 tintedMilk=0.48+0.49*spectrum;
+  float bodyTint=0.32+0.08*sin(counterPhase*0.7+film*0.4);
+  vec3 pearl=mix(milk,tintedMilk,bodyTint);
+  pearl+=vec3(0.012,-0.006,0.009)*sin(film+0.4*normal.y);
+  float grazing=1.0-normal.z;
+  float shoulderLight=0.52+0.48*pow(0.5+0.5*cos(angle+materialRadius*4.8+lt*0.48+film*0.3+variation),0.85);
+  shoulderLight=mix(shoulderLight,0.96,0.58*field.w);
+  float edge=clamp(pow(grazing,0.58)*1.18,0.0,0.78)*shoulderLight;
+  vec3 colour=mix(pearl,0.20+0.76*spectrum,edge);
+  // Separate wavelength responses bend around the actual local fold gradient.
+  float spread=0.055*(0.65+0.70*compression+0.30*field.w);
+  vec3 channelSlope=vec3(foldSlope(wave+spread),slope,foldSlope(wave-spread));
+  colour+=(channelSlope-vec3(slope))*0.085*shoulderLight;
+  vec3 neutral=vec3(0.835,0.825,0.815);
+  colour=mix(neutral,colour,iridescence);
+  vec3 light=normalize(vec3(0.48*cos(lt*0.23),0.48*sin(lt*0.23),1.0));
+  float diffuse=dot(normal,light);
+  vec3 halfVector=normalize(light+vec3(0.0,0.0,1.0));
+  float reflection=pow(max(dot(normal,halfVector),0.0),18.0);
+  colour*=0.92+0.10*diffuse;
+  vec3 pearlescentHighlight=mix(vec3(0.98,0.98,0.95),tintedMilk,0.28);
+  colour=mix(colour,pearlescentHighlight,reflection*0.14);
+  gl_FragColor=vec4(clamp(colour,0.0,1.0),1.0);
+}`;
+function stageSize(){
+  const el=document.getElementById('canvas-container');
+  return [Math.max(1,Math.round(el.clientWidth)),Math.max(1,Math.round(el.clientHeight))];
+}
+function setup(){
+  document.querySelector('.loading').remove();
+  const [w,h]=stageSize();
+  pixelDensity(1);
+  frameRate(120);
+  setAttributes({alpha:false,antialias:false,preserveDrawingBuffer:true});
+  renderer=createCanvas(w,h,WEBGL);
+  renderer.parent('canvas-container');
+  renderer.elt.setAttribute('aria-label','Animated pearlescent concentric ripples');
+  renderer.elt.setAttribute('role','img');
+  surface=createShader(VERTEX,FRAGMENT);
+  noStroke();
+  initializeSystem();
+  previousTick=performance.now();
+  document.getElementById('pause-button').textContent=running?'Pause':'Play';
+  document.getElementById('pause-button').setAttribute('aria-label',running?'Pause animation':'Play animation');
+  renderer.elt.addEventListener('webglcontextlost',event=>{
+    event.preventDefault();contextLost=true;running=false;
+    document.getElementById('motion-status').textContent='Graphics paused. Reload to restore.';
+  });
+  new ResizeObserver(()=>resizeStage()).observe(document.getElementById('canvas-container'));
+  if(qaActive) runVisualChecks();
+  if(query.has('capture')) requestAnimationFrame(recordMotionPreview);
+}
+function initializeSystem(){
+  randomSeed(params.seed);noiseSeed(params.seed);
+  visualParams={...params};
+  simTime=Number(query.get('t') || 0);
+  previousTick=performance.now();
+  updateSeedDisplay();
+  document.getElementById('treatment').value=params.treatment?'psychedelic':'optical';
+}
+function paintAt(t,settings=params,illuminationTime=t,geometryOnly=false){
+  shader(surface);
+  surface.setUniform('resolution',[width,height]);
+  surface.setUniform('time',t);
+  surface.setUniform('lightTime',illuminationTime);
+  surface.setUniform('spacing',settings.spacing);
+  surface.setUniform('wobble',settings.wobble);
+  surface.setUniform('iridescence',settings.iridescence);
+  surface.setUniform('variation',seedPhase());
+  surface.setUniform('geometryPass',Number(geometryOnly));
+  surface.setUniform('treatment',settings.treatment);
+  rect(-width/2,-height/2,width,height);
+}
+function draw(){
+  if(contextLost || qaActive) return;
+  const now=performance.now(),dt=(now-previousTick)/1000;
+  previousTick=now;
+  const step=Math.min(dt,0.1),ease=1-Math.exp(-step*7.0);
+  for(const key of ['speed','spacing','wobble','iridescence']){
+    visualParams[key]+=(params[key]-visualParams[key])*ease;
+  }
+  visualParams.treatment=params.treatment;
+  if(running){simTime+=step*visualParams.speed;frameSamples.push(dt);}
+  paintAt(simTime,visualParams);
+  if(now-lastStatus>1000){
+    const fps=frameSamples.length?Math.round(frameSamples.length/frameSamples.reduce((a,b)=>a+b,0)):0;
+    document.getElementById('motion-status').textContent=running?'Living pearl':'Still pearl';
+    renderer.elt.dataset.time=simTime.toFixed(4);
+    renderer.elt.dataset.fps=String(fps);
+    frameSamples=[];lastStatus=now;
+  }
+}
+function resizeStage(){
+  if(!renderer) return;
+  const [w,h]=stageSize();
+  if(w!==width || h!==height) resizeCanvas(w,h);
+}
+function updateParam(name,value){
+  if(!(name in defaultParams) || name==='seed') return;
+  params[name]=Number(value);
+  document.getElementById(name+'-value').textContent=Number(value).toFixed(2);
+}
+function updateTreatment(value){
+  params.treatment=value==='psychedelic'?1:0;
+  visualParams.treatment=params.treatment;
+  document.getElementById('treatment').value=params.treatment?'psychedelic':'optical';
+}
+function updateSeedDisplay(){document.getElementById('seed-input').value=params.seed;}
+function updateSeed(){
+  const value=Number(document.getElementById('seed-input').value);
+  if(Number.isSafeInteger(value)&&value>0&&value<=999999999){params.seed=value;initializeSystem();}
+  else updateSeedDisplay();
+}
+function previousSeed(){params.seed=Math.max(1,params.seed-1);initializeSystem();}
+function nextSeed(){params.seed++;initializeSystem();}
+function randomSeedAndUpdate(){params.seed=Math.floor(Math.random()*999999)+1;initializeSystem();}
+function resetParameters(){
+  params={...defaultParams};
+  document.getElementById('treatment').value='optical';
+  for(const key of ['speed','spacing','wobble','iridescence']){
+    document.getElementById(key).value=params[key];
+    document.getElementById(key+'-value').textContent=params[key].toFixed(2);
+  }
+  initializeSystem();
+}
+function togglePause(){
+  running=!running;previousTick=performance.now();
+  const el=document.getElementById('pause-button');
+  el.textContent=running?'Pause':'Play';el.setAttribute('aria-label',running?'Pause animation':'Play animation');
+}
+function toggleControls(){
+  document.body.classList.toggle('immersive');
+  const opened=!document.body.classList.contains('immersive');
+  document.getElementById('controls-button').setAttribute('aria-expanded',String(opened));
+  document.getElementById('controls-button').textContent=opened?'Hide controls':'Controls';
+  requestAnimationFrame(resizeStage);
+}
+async function toggleFullscreen(){
+  try{
+    if(document.fullscreenElement) await document.exitFullscreen();
+    else if(document.documentElement.requestFullscreen) await document.documentElement.requestFullscreen();
+    else {document.body.classList.add('immersive');resizeStage();}
+  }catch{document.getElementById('motion-status').textContent='Use the browser fullscreen control';}
+}
+function downloadFrame(){paintAt(simTime,visualParams);saveCanvas('opalia-seed-'+params.seed,'png');}
+document.addEventListener('keydown',event=>{
+  if(event.target.matches('input,textarea,select')||event.metaKey||event.ctrlKey||event.altKey)return;
+  if(event.code==='Space'){event.preventDefault();togglePause();}
+  if(event.key.toLowerCase()==='h')toggleControls();
+  if(event.key.toLowerCase()==='r')randomSeedAndUpdate();
+  if(event.key.toLowerCase()==='f')toggleFullscreen();
+  if(event.key==='Escape'&&!document.body.classList.contains('immersive'))toggleControls();
+});
+document.addEventListener('visibilitychange',()=>{previousTick=performance.now();});
+matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change',event=>{if(event.matches&&running)togglePause();});
+// Browser-side diagnostics measure rendered pixels, continuity and real presentation cadence.
+async function runVisualChecks(){
+  document.body.classList.add('qa');
+  const results={};
+  const gl=drawingContext;
+  function capture(t,illuminationTime=t,geometryOnly=false){
+    paintAt(t,params,illuminationTime,geometryOnly);gl.finish();
+    const pixels=new Uint8Array(gl.drawingBufferWidth*gl.drawingBufferHeight*4);
+    gl.readPixels(0,0,gl.drawingBufferWidth,gl.drawingBufferHeight,gl.RGBA,gl.UNSIGNED_BYTE,pixels);
+    return pixels;
+  }
+  function delta(a,b){let d=0;for(let i=0;i<a.length;i++)if(i%4!==3)d+=Math.abs(a[i]-b[i]);return d/(a.length*.75);}
+  const a=capture(1.5),b=capture(1.5);
+  results.deterministic=delta(a,b)===0;
+  results.animated=delta(a,capture(1.7))>0.5;
+  results.independentLightFlow=delta(a,capture(1.5,3.0))>0.5;
+  params.treatment=1;
+  const psychedelic=capture(1.5);
+  results.treatmentsAreDistinct=delta(a,psychedelic)>5;
+  results.psychedelicAnimated=delta(psychedelic,capture(1.7))>0.5;
+  params.treatment=0;
+  // Measure the actual coloured band's radial width while its contour is still.
+  const bandWidths=[];
+  for(const illumination of [0.2,1.4,2.6,3.8,5.0,6.2,7.4]){
+    const pixels=capture(1.5,illumination),w=gl.drawingBufferWidth,h=gl.drawingBufferHeight;
+    const scale=Math.min(w,h)/2,widths=[];
+    for(let ray=0;ray<24;ray++){
+      const angle=ray*Math.PI/12;
+      let count=0;
+      for(let j=0;j<100;j++){
+        const r=0.30+j*0.002;
+        const x=Math.round(w/2+scale*r*Math.cos(angle)),y=Math.round(h/2+scale*r*Math.sin(angle));
+        const i=(y*w+x)*4;
+        const chroma=Math.max(pixels[i],pixels[i+1],pixels[i+2])-Math.min(pixels[i],pixels[i+1],pixels[i+2]);
+        if(chroma>56)count++;
+      }
+      widths.push(count*0.002);
+    }
+    bandWidths.push(widths);
+  }
+  let widestRange=[0,0];
+  for(let ray=0;ray<24;ray++){
+    const samples=bandWidths.map(widths=>widths[ray]);
+    const range=[Math.min(...samples),Math.max(...samples)];
+    if(range[1]-range[0]>widestRange[1]-widestRange[0])widestRange=range;
+  }
+  results.chromaticBandWidthRange=widestRange;
+  results.chromaticBandsOpenAndClose=widestRange[1]-widestRange[0]>0.012;
+  // Track rendered pigment landmarks with the geometry held fixed. A negative
+  // best radial displacement means the colour travels against the ripple.
+  const pigmentA=capture(1.5,1.5,3),pigmentB=capture(1.5,1.85,3);
+  const pw=gl.drawingBufferWidth,ph=gl.drawingBufferHeight,ps=Math.min(pw,ph)/2;
+  let bestError=Infinity,bestShift=0;
+  for(let shift=-0.06;shift<=0.0601;shift+=0.002){
+    let error=0;
+    for(let angle=0;angle<48;angle++)for(let r=0.25;r<=0.85;r+=0.025){
+      const theta=angle*Math.PI/24;
+      const ax=Math.round(pw/2+ps*r*Math.cos(theta)),ay=Math.round(ph/2+ps*r*Math.sin(theta));
+      const bx=Math.round(pw/2+ps*(r+shift)*Math.cos(theta)),by=Math.round(ph/2+ps*(r+shift)*Math.sin(theta));
+      for(let c=0;c<2;c++)error+=Math.abs(pigmentA[(ay*pw+ax)*4+c]-pigmentB[(by*pw+bx)*4+c]);
+    }
+    if(error<bestError){bestError=error;bestShift=shift;}
+  }
+  results.colourRadialDisplacement=Number(bestShift.toFixed(3));
+  results.colourFlowsAgainstRipple=bestShift<-0.008;
+  results.lightFlowStep=delta(a,capture(1.5,1.5+1/60));
+  results.smoothLightFlow=results.lightFlowStep>0.001&&results.lightFlowStep<3;
+  results.smallStep=delta(a,capture(1.5+1/60));
+  results.tenSecondStep=delta(capture(10-1/60),capture(10));
+  results.noReplayCut=results.tenSecondStep<results.smallStep*3;
+  params.seed=12346;results.seedChangesSurface=delta(a,capture(1.5))>1;params.seed=12345;
+  params.iridescence=0;results.colourControlWorks=delta(a,capture(1.5))>1;params.iridescence=1;
+  params.spacing=1.25;results.spacingControlWorks=delta(a,capture(1.5))>1;params.spacing=1;
+  params.wobble=0;results.contourControlWorks=delta(a,capture(1.5))>0.5;params.wobble=1;
+  results.nearTenSecondContinuity=delta(capture(9.99),capture(10.01))<10;
+  results.longRunContinuity=delta(capture(999.99),capture(1000.01))<10;
+  // Inspect the shader's rendered level sets, independent of its colour model.
+  function ringMoments(pixels,t,ringCount=3,zoom=1){
+    const w=gl.drawingBufferWidth,h=gl.drawingBufferHeight,scale=Math.min(w,h)/2/zoom;
+    const carrier=(t*0.385)%1,halfBand=scale/4*0.43;
+    const moments=[];
+    for(let ring=0;ring<ringCount;ring++){
+      const target=(carrier+ring)/4*scale;
+      let n=0,sx=0,sy=0,sxx=0,syy=0,sxy=0;
+      for(let y=0;y<h;y++)for(let x=0;x<w;x++){
+        if(pixels[(y*w+x)*4]<252)continue;
+        if(zoom>1){
+          if(Math.round(pixels[(y*w+x)*4+1]/255*16)-1!==ring)continue;
+        }else{
+          const radius=Math.hypot(x-w/2,y-h/2);
+          if(Math.abs(radius-target)>halfBand)continue;
+        }
+        n++;sx+=x;sy+=y;sxx+=x*x;syy+=y*y;sxy+=x*y;
+      }
+      const cx=sx/n,cy=sy/n,xx=sxx/n-cx*cx,yy=syy/n-cy*cy,xy=sxy/n-cx*cy;
+      const discriminant=Math.hypot(xx-yy,2*xy);
+      const axisRatio=Math.sqrt((xx+yy+discriminant)/(xx+yy-discriminant));
+      moments.push({axisRatio,cx,cy,pixels:n});
+    }
+    return moments;
+  }
+  const shapeTimes=[0.55,1.05,1.65,2.2,3.25];
+  const shapes=shapeTimes.map(t=>({time:t,rings:ringMoments(capture(t,t,true),t)}));
+  const coreRatios=shapes.map(s=>s.rings[0].axisRatio);
+  results.coreEllipseRange=[Math.min(...coreRatios),Math.max(...coreRatios)];
+  results.rhythmicEllipses=results.coreEllipseRange[1]>1.18&&results.coreEllipseRange[1]-results.coreEllipseRange[0]>0.10;
+  results.neighbourAxisDifference=Math.max(...shapes.map(s=>Math.abs(s.rings[0].axisRatio-s.rings[1].axisRatio)));
+  results.neighbourCentreSeparation=Math.max(...shapes.map(s=>Math.hypot(s.rings[0].cx-s.rings[1].cx,s.rings[0].cy-s.rings[1].cy)));
+  results.neighboursMoveDifferently=results.neighbourAxisDifference>0.05&&results.neighbourCentreSeparation>Math.min(gl.drawingBufferWidth,gl.drawingBufferHeight)*0.0015;
+  results.renderedContours=shapes;
+  const outerTimes=[0.4,1.8,3.2,4.6,6.0,7.4,8.8,10.2];
+  const outerShapes=outerTimes.map(t=>({time:t,rings:ringMoments(capture(t,t,2),t,4,1.32)}));
+  const outerRanges=[2,3].map(index=>{
+    const ratios=outerShapes.map(s=>s.rings[index].axisRatio);
+    return [Math.min(...ratios),Math.max(...ratios)];
+  });
+  results.outerEllipseRanges=outerRanges;
+  results.outerRingsBreathe=outerRanges.every(range=>range[1]-range[0]>0.035)&&Math.max(...outerRanges.map(range=>range[1]))>1.08;
+  let opposed=0;
+  for(let i=1;i<outerShapes.length;i++){
+    const a=outerShapes[i].rings[2].axisRatio-outerShapes[i-1].rings[2].axisRatio;
+    const b=outerShapes[i].rings[3].axisRatio-outerShapes[i-1].rings[3].axisRatio;
+    if(a*b<0)opposed++;
+  }
+  results.outerOpposedMotionFraction=opposed/(outerShapes.length-1);
+  results.outerRingsMoveDifferently=results.outerOpposedMotionFraction>0.25;
+  results.renderedOuterContours=outerShapes;
+  // Track angular motion in the rendered deformation, without colour or the
+  // expanding wave carrier. Positive image-space angles are counterclockwise.
+  const flowRadii=[0.22,0.45,0.75,1.05],angularShifts=[];
+  function angularProfile(pixels,r,t){
+    const w=gl.drawingBufferWidth,h=gl.drawingBufferHeight,s=Math.min(w,h)/2/1.35;
+    const cx=w/2+s*0.030*Math.cos(t*0.81+0.65);
+    const cy=h/2-s*0.034*Math.sin(t*0.73+1.2);
+    const values=Array.from({length:180},(_,j)=>{
+      const angle=j*Math.PI/90,x=Math.round(cx+s*r*Math.cos(angle)),y=Math.round(cy+s*r*Math.sin(angle));
+      return pixels[(y*w+x)*4];
+    });
+    const mean=values.reduce((a,b)=>a+b,0)/values.length;
+    const deviation=Math.sqrt(values.reduce((a,b)=>a+(b-mean)**2,0)/values.length)||1;
+    return values.map(v=>(v-mean)/deviation);
+  }
+  for(const t of [1.0,2.6,4.2]){
+    const before=capture(t,t,5),after=capture(t+0.18,t+0.18,5);
+    angularShifts.push(flowRadii.map(r=>{
+      const a=angularProfile(before,r,t),b=angularProfile(after,r,t+0.18);
+      let best=Infinity,shift=0;
+      for(let k=-8;k<=8;k++){
+        const error=a.reduce((sum,value,j)=>sum+(value-b[(j+k+180)%180])**2,0);
+        if(error<best){best=error;shift=k;}
+      }
+      return shift*2;
+    }));
+  }
+  results.renderedAngularShiftsDegrees=angularShifts;
+  results.counterclockwiseFraction=angularShifts.flat().filter(v=>v>0).length/12;
+  results.counterclockwiseFlow=results.counterclockwiseFraction>0.65;
+  const farShapes=outerTimes.map(t=>({time:t,rings:ringMoments(capture(t,t,4),t,8,2.65)}));
+  results.farEllipseRanges=[4,6,7].map(index=>{
+    const values=farShapes.map(s=>s.rings[index].axisRatio);
+    return [Math.min(...values),Math.max(...values)];
+  });
+  results.farRingsStayDynamic=results.farEllipseRanges.every(range=>range[1]-range[0]>0.04&&range[1]>1.08);
+  function faceColour(radius){
+    const w=gl.drawingBufferWidth,h=gl.drawingBufferHeight,s=Math.min(w,h)/2;
+    const colour=[0,0,0];
+    for(let j=0;j<48;j++){
+      const angle=j*Math.PI/24,x=Math.round(w/2+s*radius*Math.cos(angle)),y=Math.round(h/2+s*radius*Math.sin(angle));
+      for(let c=0;c<3;c++)colour[c]+=a[(y*w+x)*4+c]/(48*255);
+    }
+    return colour;
+  }
+  const faceColours=[0.19,0.27,0.34].map(faceColour);
+  results.innerFaceColours=faceColours;
+  results.centreColour=faceColour(0.015);
+  results.centreIsCyan=results.centreColour[1]-results.centreColour[0]>0.20&&results.centreColour[2]-results.centreColour[0]>0.20;
+  const luminance=c=>c[0]*0.2126+c[1]*0.7152+c[2]*0.0722;
+  results.innerFaceLightToDark=luminance(faceColours[0])-luminance(faceColours[2])>0.025;
+  results.innerFaceCyanOpening=faceColours[0][1]-faceColours[0][0]>0.15&&faceColours[0][2]-faceColours[0][0]>0.15;
+  results.innerFaceBrightOpening=luminance(faceColours[0])>0.80;
+  results.innerFaceCoolToWarm=faceColours[0][2]-faceColours[0][0]>0.15&&faceColours[2][0]-faceColours[2][2]>0.15;
+
+  let pastel=0,vivid=0,peakChroma=0,luminous=0;
+  for(let i=0;i<a.length;i+=4){
+    const chroma=(Math.max(a[i],a[i+1],a[i+2])-Math.min(a[i],a[i+1],a[i+2]))/255;
+    peakChroma=Math.max(peakChroma,chroma);if(chroma<0.3)pastel++;if(chroma>0.5)vivid++;
+    if((a[i]*0.2126+a[i+1]*0.7152+a[i+2]*0.0722)/255>0.75)luminous++;
+  }
+  results.pastelFraction=pastel/(a.length/4);
+  results.vividFraction=vivid/(a.length/4);
+  results.peakChroma=peakChroma;
+  results.luminousFraction=luminous/(a.length/4);
+  results.luminousSurface=results.luminousFraction>0.65;
+  results.pastelInteriorAndVividEdges=results.pastelFraction>0.40&&results.vividFraction>0.002&&results.vividFraction<0.20;
+  let lo=255,hi=0;for(let i=0;i<a.length;i+=4){lo=Math.min(lo,a[i],a[i+1],a[i+2]);hi=Math.max(hi,a[i],a[i+1],a[i+2]);}
+  results.pixelRange=[lo,hi];results.notBlank=hi-lo>70;
+  results.glError=gl.getError();
+  const stamps=[];
+  await new Promise(resolve=>{
+    function step(t){paintAt(t/1000);stamps.push(t);if(stamps.length<241)requestAnimationFrame(step);else resolve();}
+    requestAnimationFrame(step);
+  });
+  const stableStamps=stamps.slice(30);
+  const intervals=stableStamps.slice(1).map((v,i)=>v-stableStamps[i]);
+  const sorted=[...intervals].sort((a,b)=>a-b);
+  results.presentationFPS=1000/(intervals.reduce((a,b)=>a+b,0)/intervals.length);
+  results.p95FrameMS=sorted[Math.floor(sorted.length*.95)];
+  results.over50MS=intervals.filter(v=>v>50).length;
+  results.canvas=[width,height,gl.drawingBufferWidth,gl.drawingBufferHeight];
+  results.passed=results.deterministic&&results.animated&&results.independentLightFlow&&results.chromaticBandsOpenAndClose&&results.counterclockwiseFlow&&results.treatmentsAreDistinct&&results.psychedelicAnimated&&results.colourFlowsAgainstRipple&&results.luminousSurface&&results.smoothLightFlow&&results.noReplayCut&&results.seedChangesSurface&&results.colourControlWorks&&results.spacingControlWorks&&results.contourControlWorks&&results.nearTenSecondContinuity&&results.longRunContinuity&&results.notBlank&&results.rhythmicEllipses&&results.neighboursMoveDifferently&&results.outerRingsBreathe&&results.outerRingsMoveDifferently&&results.farRingsStayDynamic&&results.centreIsCyan&&results.innerFaceLightToDark&&results.innerFaceCyanOpening&&results.innerFaceBrightOpening&&results.innerFaceCoolToWarm&&results.pastelInteriorAndVividEdges&&results.glError===0;
+  document.getElementById('qa-results').textContent=JSON.stringify(results,null,2);
+  document.getElementById('qa-results').dataset.complete='true';
+  document.title=results.passed?'PASS | Opalia':'FAIL | Opalia';
+}
+
+// An optional local QA route records the rendered surface for motion review.
+function recordMotionPreview(){
+  if(!renderer.elt.captureStream || typeof MediaRecorder==='undefined') return;
+  const mime=['video/webm;codecs=vp9','video/webm;codecs=vp8','video/webm'].find(type=>MediaRecorder.isTypeSupported(type));
+  if(!mime)return;
+  const stream=renderer.elt.captureStream(60),chunks=[];
+  const recorder=new MediaRecorder(stream,{mimeType:mime,videoBitsPerSecond:6000000});
+  recorder.ondataavailable=event=>{if(event.data.size)chunks.push(event.data);};
+  recorder.onstop=()=>{
+    const url=URL.createObjectURL(new Blob(chunks,{type:mime}));
+    const link=document.createElement('a');link.href=url;link.download='opalia-swirl.webm';link.click();
+    setTimeout(()=>URL.revokeObjectURL(url),1000);
+    stream.getTracks().forEach(track=>track.stop());
+  };
+  recorder.start();setTimeout(()=>recorder.stop(),8000);
+}
+
+    </script>
+</body>
+</html>

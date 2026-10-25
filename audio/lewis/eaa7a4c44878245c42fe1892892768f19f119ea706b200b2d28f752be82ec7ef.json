@@ -1,0 +1,63 @@
+{
+  "id": "fieldworks-aeria",
+  "title": "Aeria",
+  "form": "fieldwork",
+  "release_id": null,
+  "pages": [
+    "fieldworks/aeria/"
+  ],
+  "source_path": "fieldworks/readings/aeria.md",
+  "source_sha256": "e41a38547989407604318fc73a63c613898a232df2c8b8ee0bbc75f4b6642d1b",
+  "document_sha256": "e41a38547989407604318fc73a63c613898a232df2c8b8ee0bbc75f4b6642d1b",
+  "text_sha256": "eaa7a4c44878245c42fe1892892768f19f119ea706b200b2d28f752be82ec7ef",
+  "reading_path": "audio/readings/eaa7a4c44878245c42fe1892892768f19f119ea706b200b2d28f752be82ec7ef.md",
+  "reading_sha256": "e41a38547989407604318fc73a63c613898a232df2c8b8ee0bbc75f4b6642d1b",
+  "reading_length": 721,
+  "audio_path": "audio/lewis/eaa7a4c44878245c42fe1892892768f19f119ea706b200b2d28f752be82ec7ef.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "6195f2fdb0c5cbc9ed6b69a7eb3c3f71236e4dd499d6fe9fc29d9d10a40203f9",
+  "audio_length": 621548,
+  "duration_seconds": 51.72,
+  "chunks": [
+    {
+      "text": "Aeria",
+      "start": 0.0,
+      "duration": 1.425
+    },
+    {
+      "text": "An unfinished sky. A little weather of your own.",
+      "start": 1.605,
+      "duration": 3.975
+    },
+    {
+      "text": "Draw a cloud with a mouse, finger, or pen, or choose Make a cloud. Change the light, invite rain, and allow the formations to drift, overlap, evaporate, and gather again. You can pause Life to keep a still moment.",
+      "start": 5.76,
+      "duration": 14.6
+    },
+    {
+      "text": "Aeria begins with a gesture, then makes room for something to continue beyond it. It offers a small, playful encounter with emergence and impermanence. Its weather is an artistic model, not a meteorological simulation, and its connection to Cyberdelic OS is an interpretation rather than a complete implementation.",
+      "start": 20.54,
+      "duration": 21.1
+    },
+    {
+      "text": "By Brad Necyk. Previously developed as Clouds and Cloudroom. Your sky stays in this browser. This living artwork is not inscribed.",
+      "start": 41.82,
+      "duration": 9.9
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.562687337398529,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}
