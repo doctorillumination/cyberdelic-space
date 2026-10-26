@@ -33,6 +33,89 @@
   ],
   "items": [
     {
+      "slug": "lumen",
+      "title": "Lumen",
+      "former_title": "Lumen / Form Atlas / Specimen / Hollow Macro",
+      "edition": "form-atlas",
+      "project": "lumen-specimen",
+      "repository": null,
+      "status": "living",
+      "caption": "Impossible matter. A small universe under a macro lens.",
+      "description": "Move among crystalline colonies, strange attractors, and sculpted fractals. Shape the light, lens, and motion.",
+      "alt": "Luminous folded fractal surfaces suspended in black, captured from Lumen's Form Atlas.",
+      "gesture": "Choose a form. Drag to turn. Open the studio to shape light and lens.",
+      "source": "lumen.md",
+      "themes": [
+        "light",
+        "perception",
+        "emergence",
+        "matter",
+        "imagination",
+        "time"
+      ],
+      "related_note": "fn-05",
+      "related_title": "The Physics We Choose",
+      "source_path": "fieldworks/readings/lumen.md",
+      "source_sha256": "284192a0abdcbeb31905866fe74fbb7184b425597f38683ebc6a3a218cdcba49",
+      "source_length": 1121,
+      "href": "fieldworks/lumen/",
+      "poster": {
+        "path": "fieldworks/images/lumen.jpg",
+        "sha256": "879f5a25089304eb8aae7268a9c6b18f559065073710967122018555c2f5f21d",
+        "length": 78382,
+        "kind": "actual-browser-capture"
+      },
+      "preview": {
+        "path": "fieldworks/previews/lumen.mp4",
+        "sha256": "e1ef3a954fee02137e565a89e441e86e64a3a7b5d44e2dec28a22c1508dacf17",
+        "length": 713042,
+        "kind": "recorded-artwork-loop"
+      },
+      "release_id": "1fe6a7b93924de4830e29a664cf8eedf268ea894aa3e1ff9193c4b7f27fdce29",
+      "runtime_published_at": "2026-10-25T21:30:41.223261Z"
+    },
+    {
+      "slug": "aeria",
+      "title": "Aeria",
+      "former_title": "Clouds / Cloudroom",
+      "edition": "cloudroom-gpu",
+      "project": "cloudroom",
+      "repository": "https://github.com/doctorillumination/clouds",
+      "caption": "An unfinished sky. A little weather of your own.",
+      "description": "Draw luminous clouds into an open sky. Let them drift, gather, dissolve, and become weather.",
+      "alt": "A luminous cloud formation drawn in Aeria's interactive sky.",
+      "gesture": "Draw a cloud, or choose Make a cloud. Let the sky breathe.",
+      "source": "aeria.md",
+      "themes": [
+        "weather",
+        "ecology",
+        "imagination",
+        "play",
+        "emergence",
+        "time"
+      ],
+      "related_note": "fn-19",
+      "related_title": "A Medium for Becoming",
+      "source_path": "fieldworks/readings/aeria.md",
+      "source_sha256": "e41a38547989407604318fc73a63c613898a232df2c8b8ee0bbc75f4b6642d1b",
+      "source_length": 721,
+      "href": "fieldworks/aeria/",
+      "poster": {
+        "path": "fieldworks/images/aeria.jpg",
+        "sha256": "1967d79f63232e0842c1b45ff908687802e33251ebfb7b27a6432c1c37aaa8aa",
+        "length": 15846,
+        "kind": "actual-browser-capture"
+      },
+      "preview": {
+        "path": "fieldworks/previews/aeria.mp4",
+        "sha256": "1eb56fbe18c3fbc482922849e6a9d7f65e3f3c9b02c79920468c5a79c32300ef",
+        "length": 118170,
+        "kind": "recorded-artwork-loop"
+      },
+      "release_id": "d91f438c31d0fca396a670979439d5e10afc1675d1772ddb926057c14ae940fe",
+      "runtime_published_at": "2026-10-25T21:29:41.737524Z"
+    },
+    {
       "slug": "undra",
       "title": "Undra",
       "former_title": "Glop / Water Droplet",
@@ -107,89 +190,6 @@
         "length": 609568,
         "kind": "recorded-artwork-loop"
       }
-    },
-    {
-      "slug": "aeria",
-      "title": "Aeria",
-      "former_title": "Clouds / Cloudroom",
-      "edition": "cloudroom-gpu",
-      "project": "cloudroom",
-      "repository": "https://github.com/doctorillumination/clouds",
-      "caption": "An unfinished sky. A little weather of your own.",
-      "description": "Draw luminous clouds into an open sky. Let them drift, gather, dissolve, and become weather.",
-      "alt": "A luminous cloud formation drawn in Aeria's interactive sky.",
-      "gesture": "Draw a cloud, or choose Make a cloud. Let the sky breathe.",
-      "source": "aeria.md",
-      "themes": [
-        "weather",
-        "ecology",
-        "imagination",
-        "play",
-        "emergence",
-        "time"
-      ],
-      "related_note": "fn-19",
-      "related_title": "A Medium for Becoming",
-      "source_path": "fieldworks/readings/aeria.md",
-      "source_sha256": "e41a38547989407604318fc73a63c613898a232df2c8b8ee0bbc75f4b6642d1b",
-      "source_length": 721,
-      "href": "fieldworks/aeria/",
-      "poster": {
-        "path": "fieldworks/images/aeria.jpg",
-        "sha256": "1967d79f63232e0842c1b45ff908687802e33251ebfb7b27a6432c1c37aaa8aa",
-        "length": 15846,
-        "kind": "actual-browser-capture"
-      },
-      "preview": {
-        "path": "fieldworks/previews/aeria.mp4",
-        "sha256": "1eb56fbe18c3fbc482922849e6a9d7f65e3f3c9b02c79920468c5a79c32300ef",
-        "length": 118170,
-        "kind": "recorded-artwork-loop"
-      },
-      "release_id": "d91f438c31d0fca396a670979439d5e10afc1675d1772ddb926057c14ae940fe",
-      "runtime_published_at": "2026-10-25T21:29:41.737524Z"
-    },
-    {
-      "slug": "lumen",
-      "title": "Lumen",
-      "former_title": "Lumen / Form Atlas / Specimen / Hollow Macro",
-      "edition": "form-atlas",
-      "project": "lumen-specimen",
-      "repository": null,
-      "status": "in-progress",
-      "caption": "Impossible matter. A small universe under a macro lens.",
-      "description": "Move among crystalline colonies, strange attractors, and sculpted fractals. Shape the light, lens, and motion. In progress.",
-      "alt": "Luminous folded fractal surfaces suspended in black, captured from Lumen's Form Atlas.",
-      "gesture": "Choose a form. Drag to turn. Open the studio to shape light and lens.",
-      "source": "lumen.md",
-      "themes": [
-        "light",
-        "perception",
-        "emergence",
-        "matter",
-        "imagination",
-        "time"
-      ],
-      "related_note": "fn-05",
-      "related_title": "The Physics We Choose",
-      "source_path": "fieldworks/readings/lumen.md",
-      "source_sha256": "284192a0abdcbeb31905866fe74fbb7184b425597f38683ebc6a3a218cdcba49",
-      "source_length": 1121,
-      "href": "fieldworks/lumen/",
-      "poster": {
-        "path": "fieldworks/images/lumen.jpg",
-        "sha256": "879f5a25089304eb8aae7268a9c6b18f559065073710967122018555c2f5f21d",
-        "length": 78382,
-        "kind": "actual-browser-capture"
-      },
-      "preview": {
-        "path": "fieldworks/previews/lumen.mp4",
-        "sha256": "e1ef3a954fee02137e565a89e441e86e64a3a7b5d44e2dec28a22c1508dacf17",
-        "length": 713042,
-        "kind": "recorded-artwork-loop"
-      },
-      "release_id": "1fe6a7b93924de4830e29a664cf8eedf268ea894aa3e1ff9193c4b7f27fdce29",
-      "runtime_published_at": "2026-10-25T21:30:41.223261Z"
     }
   ]
 }
