@@ -22,3 +22,13 @@ html[data-fieldwork-artwork-only][data-fieldwork-slot="opalia"] #canvas-containe
   html[data-fieldwork-slot="lumen"] .caption { bottom: 151px; }
   html[data-fieldwork-slot="lumen"] .form-caption { bottom: 182px; }
 }
+
+html[data-fieldwork-slot="vellum"] .bottom-bar { bottom: 76px; }
+html[data-fieldwork-slot="vellum"] .gesture-hint { bottom: 142px; }
+html[data-fieldwork-artwork-only][data-fieldwork-slot="vellum"] :is(.ui, .sidebar, #cursor) { display: none !important; }
+@media (max-width: 700px) {
+  html[data-fieldwork-slot="vellum"] .bottom-bar { bottom: 98px; }
+  html[data-fieldwork-slot="vellum"] .legend { bottom: 76px; }
+  html[data-fieldwork-slot="vellum"] .playback { bottom: 66px; }
+  html[data-fieldwork-slot="vellum"] .gesture-hint { bottom: 160px; }
+}

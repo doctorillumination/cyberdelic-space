@@ -3,7 +3,7 @@
   "audit_id": "TEND-2026-10-25-RECOVERY",
   "run_type": "human-authorized-recovery",
   "started_at": "2026-10-26T04:00:00Z",
-  "completed_at": "2026-10-26T04:09:29Z",
+  "completed_at": "2026-10-26T04:14:10Z",
   "timezone": "America/Vancouver",
   "local_date": "2026-10-25",
   "authority": "Brad requested automatic tending recovery and an up-to-date public journal. OFFICE-PUBLICATION-AUTHORITY 1.1 remains active; publication is distinct from ratification.",
@@ -11,7 +11,9 @@
   "recovery_of": "living-relations/audits/2026-10-25.json",
   "repository": {
     "branch": "codex/tending-recovery-2026-10-25",
-    "starting_commit": "24dab81fe73baea5932d343b83585c4eb3a3bc5e",
+    "starting_commit": "f73f303ea9a1193fe8e5032bb4c394d6dba1b938",
+    "initial_commit": "24dab81fe73baea5932d343b83585c4eb3a3bc5e",
+    "main_advance": "The independently authorized Vellum publication reached main before this recovery merged. Its complete artwork, source records, reading, audio, and new audio part are retained. The three refinements are reapplied by stable record ID onto the new 40-record catalog. The core mirror is regenerated from this reconciled site, followed by fresh validation.",
     "preflight": "Fresh clean website worktree from current main. The original checkout's pending changes are related to this recovery and remain preserved until publication. A concurrent artwork task changed the shared Studio source during the first validation attempt, so those results were rejected. Fresh validation uses a separate detached copy of committed Studio 6ef24780bd3412b86a763c3893dc889842e8a7aa. Shared uncommitted artwork work and FN-45 metadata remain untouched. No whole-press rebuild or artwork replacement is performed.",
     "publication_action": "Fresh validation with isolated committed tools passes. Publish through one review branch and pull request, then wait for production and verify exact public bytes and browser behavior. The earlier blocked audit is copied exactly, not changed into a successful run."
   },
@@ -48,9 +50,9 @@
       {"id": "catalog:fieldworks:aeria", "source": "fieldworks/readings/aeria.md", "changes": "Making a cloud, inviting rain, pausing the sky, and impermanence, with exact passage locators and an artistic-weather caveat."}
     ],
     "records_removed": [],
-    "catalog_count_before": 39,
-    "catalog_count_after": 39,
-    "decision_reason": "Apply only the five reviewed descriptive fields and a fresh tending date from the pending refinements. Preserve all current titles, summaries, related paths, provenance, review states, and epistemic statuses, including the newer Lumen record and living-artwork label. The remaining 36 records stay exact. No outward discovery or relation change is performed by the Librarian."
+    "catalog_count_before": 40,
+    "catalog_count_after": 40,
+    "decision_reason": "Apply only the five reviewed descriptive fields and a fresh tending date from the pending refinements. Preserve all current titles, summaries, related paths, provenance, review states, and epistemic statuses, including the current Lumen and newly published Vellum records. The remaining 37 records stay exact against reconciled main. No outward discovery or relation change is performed by the Librarian."
   },
   "automation": {
     "id": "daily-cyberdelic-tending",
@@ -65,7 +67,7 @@
     "Cartographer: Rechecked the existing portability proposal and its dependency caveat. No duplicate relationship was added.",
     "Gardener: Compared current sources and artwork readings. The graph and three-item selection stay unchanged; artistic models remain distinct from scientific claims.",
     "Librarian: Revalidated three pending records. Find Undra through growing a droplet, Opalia through pearlescent waves, and Aeria through making clouds or inviting rain.",
-    "Care: All 39 catalog records, the latest Lumen and Aeria editions, exact readings, audio, and earlier audits are preserved.",
+    "Care: All 40 catalog records, including the newly published Vellum, latest artwork editions, exact readings, audio, and earlier audits are preserved.",
     "Checks: 131 tests, phone and desktop browser checks, source digests, and complete audio checks pass. The daily 7 AM automation now uses isolated committed tools.",
     "Outcome: Recovery validated. The earlier blocked run remains unchanged and linked below; its three catalog refinements are carried forward by this separate transaction."
   ],
@@ -75,9 +77,9 @@
     "checks": [
       "104 Python reader, server, journal, mirror, Fieldworks, and release tests and 27 JavaScript player, preview, and playback tests passed using the isolated committed tools.",
       "Browser regression passed at 320, 390, 768, and 1280 pixels: three themes, keyboard discovery, three-work aperture, six-result search, proposed labels, no-JavaScript archive, future-catalog fixture, missing-catalog fallback, and no page errors.",
-      "JSON/XML, 47 exact source hashes and lengths, 4992 internal references, JavaScript syntax, and catalog evidence passed.",
-      "Narration and complete multipart mirror checks preserved all 70 Lewis recordings, 470.8 minutes, 323.3 MiB, and 18 audio parts.",
-      "Only three catalog records change in subjects, search terms, questions, evidence, uncertainty, and tending dates. All exact evidence locators match their current readings. The remaining 36 records and all relationship claims are preserved.",
+      "After reconciliation with the Vellum publication, JSON/XML, 47 exact source hashes and lengths, 5014 internal references, JavaScript syntax, and catalog evidence passed again.",
+      "Fresh narration and complete multipart mirror validation preserved all 72 Lewis recordings, 472.1 minutes, 324.2 MiB, and 19 audio parts, including Vellum's additional recordings and new part.",
+      "Only three catalog records change in subjects, search terms, questions, evidence, uncertainty, and tending dates. All exact evidence locators match their current readings. The remaining 37 records and all relationship claims are preserved.",
       "Every changed website path is governed by the autonomous allowlist. Original blocked audit bytes, all prior audits, exact works, artwork releases, readings, previews, indexes, selection, and source digests are preserved.",
       "All 457 files in the detached committed tool checkout remain unchanged. Concurrent shared Studio work is not consumed by this transaction.",
       "Final pre-commit validation also requires the regenerated journal, focused artwork search and recovery checks, and two identical deterministic mirror builds."

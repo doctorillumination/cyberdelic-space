@@ -76,7 +76,7 @@
     // Host presentation is separate from the exact, independently published runtime.
     var style = childDocument.createElement("link");
     style.rel = "stylesheet";
-    style.href = new URL("../../fieldworks-immersive.css?v=20261025-dock", location.href).href;
+    style.href = new URL("../../fieldworks-immersive.css?v=20261025-vellum", location.href).href;
     style.onload = function () { if (status) status.hidden = true; };
     style.onerror = function () {
       if (status) status.hidden = true;
