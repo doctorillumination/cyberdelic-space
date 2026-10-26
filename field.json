@@ -1,5 +1,5 @@
 {
-  "count": 19,
+  "count": 20,
   "items": [
     {
       "chain_evidence": {
@@ -482,6 +482,31 @@
           "content_sha256": "f9fc5f6841e5069a27d20e1426dad018caa2a6ffbc13b0af19b098901c2ab29e"
         }
       ]
+    },
+    {
+      "authorship_note": "Written by Codex from Brad Necyk's account of developing generative artworks through sustained conversation, reference images, visual judgment, and iterative changes to code. Brad described bringing twenty years of artistic training into this process and asked how the resulting instruments might be shaping his imagination in return. Codex developed the interpretation below from that conversation, the existing Field Notes and Kernel, the essay *The Loop Is the Medium*, and local artwork documentation. Brad read the local draft, approved it, and requested publication with a Lewis voice reading and availability in the iPhone app. The text does not claim access to every development conversation or direct experience of Brad's perceptions.",
+      "chain_evidence": {
+        "inscription_id": null,
+        "network": null,
+        "state": "living",
+        "verified": false
+      },
+      "content_length": 16708,
+      "content_path": "living-content/cyberdelic-os/fn-s0-020/v000001.md",
+      "content_sha256": "868fd8f2f593a375f252a53664f9b7e86d9ff3ece380afd4df82445a7cbf9363",
+      "content_type": "text/markdown;charset=utf-8",
+      "maturity": "proposed",
+      "metadata_sha256": null,
+      "project_slug": "cyberdelic-os",
+      "published_at": "2026-10-25T21:34:31-07:00",
+      "release_id": "FN-S0-020",
+      "series_slug": "field-notes",
+      "territory": "field",
+      "title": "The Work Teaches the Eye",
+      "version": 1,
+      "version_label": "0.1",
+      "version_sha256": "868fd8f2f593a375f252a53664f9b7e86d9ff3ece380afd4df82445a7cbf9363",
+      "author": "Codex, in correspondence with Brad Necyk"
     }
   ],
   "schema": "https://cyberdelic.space/schemas/living-index-v1.json",
