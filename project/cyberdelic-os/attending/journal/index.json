@@ -1,6 +1,22 @@
 {
   "days": [
     {
+      "date": "2026-10-25",
+      "outcome": "Recovery validated",
+      "bullets": [
+        "Cartographer: Rechecked the existing portability proposal and its dependency caveat. No duplicate relationship was added.",
+        "Gardener: Compared current sources and artwork readings. The graph and three-item selection stay unchanged; artistic models remain distinct from scientific claims.",
+        "Librarian: Revalidated three pending records. Find Undra through growing a droplet, Opalia through pearlescent waves, and Aeria through making clouds or inviting rain.",
+        "Care: All 40 catalog records, including the newly published Vellum, latest artwork editions, exact readings, audio, and earlier audits are preserved.",
+        "Checks: 131 tests, phone and desktop browser checks, source digests, and complete audio checks pass. The daily 7 AM automation now uses isolated committed tools.",
+        "Outcome: Recovery validated. The earlier blocked run remains unchanged and linked below; its three catalog refinements are carried forward by this separate transaction."
+      ],
+      "audits": [
+        "2026-10-25-recovery.json",
+        "2026-10-25.json"
+      ]
+    },
+    {
       "date": "2026-10-24",
       "outcome": "Reviewed · no change needed",
       "bullets": [
@@ -908,5 +924,5 @@
       ]
     }
   ],
-  "count": 63
+  "count": 64
 }

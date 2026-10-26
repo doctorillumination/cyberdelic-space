@@ -1,0 +1,99 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-10-25-RECOVERY",
+  "run_type": "human-authorized-recovery",
+  "started_at": "2026-10-26T04:00:00Z",
+  "completed_at": "2026-10-26T04:14:10Z",
+  "timezone": "America/Vancouver",
+  "local_date": "2026-10-25",
+  "authority": "Brad requested automatic tending recovery and an up-to-date public journal. OFFICE-PUBLICATION-AUTHORITY 1.1 remains active; publication is distinct from ratification.",
+  "office_versions": {"cartographer": "0.1", "gardener": "0.1", "librarian": "0.1"},
+  "recovery_of": "living-relations/audits/2026-10-25.json",
+  "repository": {
+    "branch": "codex/tending-recovery-2026-10-25",
+    "starting_commit": "f73f303ea9a1193fe8e5032bb4c394d6dba1b938",
+    "initial_commit": "24dab81fe73baea5932d343b83585c4eb3a3bc5e",
+    "main_advance": "The independently authorized Vellum publication reached main before this recovery merged. Its complete artwork, source records, reading, audio, and new audio part are retained. The three refinements are reapplied by stable record ID onto the new 40-record catalog. The core mirror is regenerated from this reconciled site, followed by fresh validation.",
+    "preflight": "Fresh clean website worktree from current main. The original checkout's pending changes are related to this recovery and remain preserved until publication. A concurrent artwork task changed the shared Studio source during the first validation attempt, so those results were rejected. Fresh validation uses a separate detached copy of committed Studio 6ef24780bd3412b86a763c3893dc889842e8a7aa. Shared uncommitted artwork work and FN-45 metadata remain untouched. No whole-press rebuild or artwork replacement is performed.",
+    "publication_action": "Fresh validation with isolated committed tools passes. Publish through one review branch and pull request, then wait for production and verify exact public bytes and browser behavior. The earlier blocked audit is copied exactly, not changed into a successful run."
+  },
+  "cartographer": {
+    "state": "reviewed-existing-proposals-no-addition",
+    "inbox_items": 0,
+    "candidates_created": [],
+    "reviewed_proposals": ["REL-P-000008", "REL-P-000009"],
+    "declared_question": "Which resources, manifests, indexes, and execution assumptions must travel with a generative plate?",
+    "sources_checked": [{
+      "urls": ["https://raw.githubusercontent.com/opencontainers/image-spec/v1.1.1/spec.md", "https://raw.githubusercontent.com/opencontainers/image-spec/v1.1.1/descriptor.md", "https://raw.githubusercontent.com/opencontainers/image-spec/v1.1.1/image-layout.md"],
+      "attribution": "Open Container Initiative contributors, Image Specification 1.1.1",
+      "checked_at": "2026-10-25T21:05:00-07:00",
+      "source_facts": ["The versioned image specification separates manifests, optional indexes, layers, and configuration.", "Descriptors carry type, digest, and byte size, with verification guidance.", "The layout may omit referenced blobs and rely on an external blob store."],
+      "inference": "The existing portability adjacency to exact FN-33 remains useful. Byte verification alone does not establish dependency availability, execution, artistic survival, consent, or authorized lineage.",
+      "uncertainty": "Version-specific comparison, not a claim about the latest specification or a tested container runtime. No collaboration, endorsement, partnership, or architectural equivalence is implied."
+    }],
+    "no_proposal_reason": "The existing pair already expresses this adjacency and its limits. Adding another node or edge would duplicate it.",
+    "handoff": "Existing proposal evidence and limits handed to the Gardener."
+  },
+  "gardener": {
+    "state": "reviewed-no-relational-change",
+    "reviewed": ["Current 12-node, seven-edge manifest and existing OCI proposal pair", "Exact FN-33 and A-001, the governing BN-005 and I-003, and the three office charters", "All four current Fieldworks readings and the proposed Undra, Opalia, and Aeria catalog refinements"],
+    "changes": [],
+    "decision_reason": "The pending refinements remain grounded in current exact readings. Preserve the distinction between artistic encounters and scientific models, living works and inscriptions, technical adjacency and equivalence, and public proposals and ratification. No edge, lifecycle, selection rotation, or relational-change essay is warranted.",
+    "handoff": "The three pending findability refinements may proceed to the Librarian for fresh comparison with the current catalog."
+  },
+  "librarian": {
+    "state": "revalidated-three-pending-record-revisions",
+    "records_created": [],
+    "records_revised": [
+      {"id": "catalog:fieldworks:undra", "source": "fieldworks/readings/undra.md", "changes": "Growing a droplet, procedural water, gesture and response, and agency without complete control, with exact passage locators and a curatorial caveat."},
+      {"id": "catalog:fieldworks:opalia", "source": "fieldworks/readings/opalia.md", "changes": "Pearlescent waves, seed and iridescence controls, and attention without a task, with exact passage locators and a non-physical-simulation caveat."},
+      {"id": "catalog:fieldworks:aeria", "source": "fieldworks/readings/aeria.md", "changes": "Making a cloud, inviting rain, pausing the sky, and impermanence, with exact passage locators and an artistic-weather caveat."}
+    ],
+    "records_removed": [],
+    "catalog_count_before": 40,
+    "catalog_count_after": 40,
+    "decision_reason": "Apply only the five reviewed descriptive fields and a fresh tending date from the pending refinements. Preserve all current titles, summaries, related paths, provenance, review states, and epistemic statuses, including the current Lumen and newly published Vellum records. The remaining 37 records stay exact against reconciled main. No outward discovery or relation change is performed by the Librarian."
+  },
+  "automation": {
+    "id": "daily-cyberdelic-tending",
+    "status_checked": "ACTIVE",
+    "schedule_checked": "Daily at 07:00, America/Vancouver",
+    "configuration_changed": true,
+    "setup_change": "Brad authorized operational recovery. The existing daily automation now requires separate clean website and committed-tool worktrees, records and verifies the tool revision, preserves every existing publication gate, and leaves the primary checkout clean. It never consumes uncommitted Studio work. Cadence, attached chat, authority, office budgets, and write allowlist remain unchanged.",
+    "execution_requirement": "This local automation needs the computer available and the desktop app running.",
+    "checkout_recovery": "After verified publication, retain the original pending patch on its local recovery branch, then fast-forward the primary checkout to current main so the next run begins clean. Never discard unrelated work."
+  },
+  "public_summary": [
+    "Cartographer: Rechecked the existing portability proposal and its dependency caveat. No duplicate relationship was added.",
+    "Gardener: Compared current sources and artwork readings. The graph and three-item selection stay unchanged; artistic models remain distinct from scientific claims.",
+    "Librarian: Revalidated three pending records. Find Undra through growing a droplet, Opalia through pearlescent waves, and Aeria through making clouds or inviting rain.",
+    "Care: All 40 catalog records, including the newly published Vellum, latest artwork editions, exact readings, audio, and earlier audits are preserved.",
+    "Checks: 131 tests, phone and desktop browser checks, source digests, and complete audio checks pass. The daily 7 AM automation now uses isolated committed tools.",
+    "Outcome: Recovery validated. The earlier blocked run remains unchanged and linked below; its three catalog refinements are carried forward by this separate transaction."
+  ],
+  "validation": {
+    "state": "passed",
+    "tool_revision": "6ef24780bd3412b86a763c3893dc889842e8a7aa",
+    "checks": [
+      "104 Python reader, server, journal, mirror, Fieldworks, and release tests and 27 JavaScript player, preview, and playback tests passed using the isolated committed tools.",
+      "Browser regression passed at 320, 390, 768, and 1280 pixels: three themes, keyboard discovery, three-work aperture, six-result search, proposed labels, no-JavaScript archive, future-catalog fixture, missing-catalog fallback, and no page errors.",
+      "After reconciliation with the Vellum publication, JSON/XML, 47 exact source hashes and lengths, 5014 internal references, JavaScript syntax, and catalog evidence passed again.",
+      "Fresh narration and complete multipart mirror validation preserved all 72 Lewis recordings, 472.1 minutes, 324.2 MiB, and 19 audio parts, including Vellum's additional recordings and new part.",
+      "Only three catalog records change in subjects, search terms, questions, evidence, uncertainty, and tending dates. All exact evidence locators match their current readings. The remaining 37 records and all relationship claims are preserved.",
+      "Every changed website path is governed by the autonomous allowlist. Original blocked audit bytes, all prior audits, exact works, artwork releases, readings, previews, indexes, selection, and source digests are preserved.",
+      "All 457 files in the detached committed tool checkout remain unchanged. Concurrent shared Studio work is not consumed by this transaction.",
+      "Final pre-commit validation also requires the regenerated journal, focused artwork search and recovery checks, and two identical deterministic mirror builds."
+    ],
+    "rejected_attempt": "The first attempt used the shared Studio source and detected concurrent artwork edits. Its results were not accepted for publication. The committed tool checkout and fresh validation replace that attempt without weakening the source-change gate.",
+    "production_verification": "Required after merge. This pre-merge audit does not claim a deployment. Hosting and exact public byte verification will be recorded in the pull request after they pass."
+  },
+  "public_change": true,
+  "operational_journal_updated": true,
+  "relational_field_changed": false,
+  "relational_essay_created": false,
+  "valid_no_op": false,
+  "run_state": "recovery-validated",
+  "publication_state": "validated-for-publication",
+  "historical_runs_rewritten": false,
+  "scheduled_configuration_changed": true
+}

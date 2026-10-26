@@ -1,0 +1,92 @@
+{
+  "schema": "https://cyberdelic.space/schemas/tending-audit-v1.json",
+  "audit_id": "TEND-2026-10-25",
+  "run_type": "scheduled-tending",
+  "started_at": "2026-10-25T14:16:25Z",
+  "completed_at": "2026-10-25T15:26:44Z",
+  "timezone": "America/Vancouver",
+  "office_versions": {"cartographer": "0.1", "gardener": "0.1", "librarian": "0.1"},
+  "authority": "OFFICE-PUBLICATION-AUTHORITY version 1.1; publication is distinct from ratification.",
+  "repository": {
+    "branch": "codex/tending-2026-10-25",
+    "starting_commit": "d60aed5fe6e4fdea9677e799045b93cc77f2016a",
+    "preflight": "The clean checkout was fast-forwarded to the already merged Fieldworks publication, PR 72. All seven governing documents were unchanged by that publication. No unrelated uncommitted website work was present. Sibling reader source and unrelated untracked FN-45 metadata are left untouched. Private correspondence and Agent Comms are excluded.",
+    "publication_action": "Stopped before commit, push, pull request, or merge. The sibling publishing source acquired unrelated work during validation and failed the preservation/concurrency guard. Retain the prepared catalog revisions and blocked audit locally for fresh validation after the tooling is stable. No deployment is claimed."
+  },
+  "cartographer": {
+    "state": "retained-existing-proposals",
+    "inbox_items": 0,
+    "outward_search_performed": true,
+    "declared_question": "Which resources, manifests, indexes, and execution assumptions must travel with a generative plate?",
+    "inquiry_basis": "Existing OCI proposals REL-P-000008 and REL-P-000009 and exact FN-33.",
+    "sources_checked": [{
+      "urls": ["https://github.com/opencontainers/image-spec/blob/v1.1.1/spec.md", "https://github.com/opencontainers/image-spec/blob/v1.1.1/descriptor.md", "https://github.com/opencontainers/image-spec/blob/v1.1.1/image-layout.md"],
+      "attribution": "Open Container Initiative contributors, Image Specification version 1.1.1.",
+      "checked_at": "2026-10-25",
+      "source_facts": ["The specification separates image manifests, optional indexes, filesystem layers, and configuration for interoperable transport and preparation for execution.", "Descriptors identify referenced content by type, digest, and byte size, and describe verification before consuming untrusted content.", "The layout permits referenced blobs to be absent and supplied by an external blob store."],
+      "inference": "An explicit content and execution manifest remains adjacent to FN-33's reconstruction question. A verifiable reference alone does not guarantee that all dependencies are carried, that a work can still run, or that its artistic encounter survives.",
+      "uncertainty": "Comparison of the cited version, not a claim about the latest release, a container runtime trial, or proof of artistic preservation, identity, consent, or authorized edition lineage. No endorsement, partnership, or collaboration is implied."
+    }],
+    "candidates_created": [],
+    "no_proposal_reason": "The existing proposal pair already records this adjacency and its external-dependency caveat. Another node or edge would duplicate it. Today's checked date remains in this audit without replacing historical source checks.",
+    "handoff": "Existing OCI proposals and today's source-fact/inference comparison handed to the Gardener."
+  },
+  "gardener": {
+    "state": "reviewed-no-relational-change",
+    "reviewed": ["Current 12-node, 7-edge manifest and OCI proposal pair", "Complete exact FN-33, A-001, BN-005, and I-003, plus Kernel verbs and laws", "The four exact public Fieldworks readings, Fieldworks manifest, and existing Undra, Opalia, and Aeria catalog records", "Focused summaries, themes, related paths, evidence, and same-run Cartographer output"],
+    "changes": [],
+    "retained_decisions": ["Keep byte verification distinct from availability, execution, artistic reconstruction, and authorized lineage.", "Keep technical adjacency model-proposed without architectural equivalence or endorsement.", "Keep Fieldworks visibly living and revisable, not inscribed and not implementations of the whole Cyberdelic OS.", "Keep Opalia's light and Aeria's weather as artistic encounters, not scientific or consciousness claims.", "Keep the three-item Attending selection, graph claims, and every historical audit intact."],
+    "decision_reason": "No relational or lifecycle repair was warranted. The newly published Fieldworks already have catalog records and adequate curatorial boundaries; the useful next step is more work-specific findability, not new edges. No relational-change essay or selection rotation is needed. This bounded semantic reading does not imply a fresh reading of every exact publication.",
+    "handoff": "Existing records and exact reading passages handed to the Librarian for three bounded findability revisions."
+  },
+  "librarian": {
+    "state": "revised-three-catalog-records",
+    "records_created": [],
+    "records_revised": [
+      {"id": "catalog:fieldworks:undra", "source": "fieldworks/readings/undra.md", "changes": "Add grow-a-droplet, procedural-water, and agency-without-complete-control routes; a gesture-and-response subject; a work-specific question; precise evidence locators; and an explicit curatorial caveat.", "reason": "A visitor can find the living water encounter without knowing its title or former project name."},
+      {"id": "catalog:fieldworks:opalia", "source": "fieldworks/readings/opalia.md", "changes": "Add pearlescent-wave, seed, and iridescence-control routes; attention-without-a-task as a subject; a work-specific question; precise evidence locators; and the reading's non-physical-simulation caveat.", "reason": "A visitor can find the light encounter through its material and mode of attention, not only Phase Loom or Opalia."},
+      {"id": "catalog:fieldworks:aeria", "source": "fieldworks/readings/aeria.md", "changes": "Add make-a-cloud, invite-rain, and pause-the-sky routes; impermanence as a subject; a work-specific question; precise evidence locators; and the artistic-weather caveat.", "reason": "A visitor can find the sky encounter through a desired gesture or its impermanence without knowing Cloudroom or Aeria."}
+    ],
+    "records_removed": [],
+    "catalog_count_before": 38,
+    "catalog_count_after": 38,
+    "records_examined": ["All 38 cumulative catalog records, including the three already published Fieldworks records", "Current relational manifest, same-run Cartographer and Gardener outputs, and their focused exact public sources"],
+    "decision_reason": "Revise only the three Fieldworks records with ordinary-language routes and distinctions present in their exact public readings. Preserve their titles, summaries, original introduction provenance, related arrays, review states, and epistemic statuses. The other 35 records and prior tending dates remain unchanged. No external neighbour is discovered or relation claim altered, and the Librarian performs no outward search."
+  },
+  "public_summary": [
+    "Cartographer: Rechecked the existing OCI portability proposal. Its dependency caveat remains adequate; no duplicate proposal was added.",
+    "Gardener: Compared exact works and the new Fieldworks readings. No graph or lifecycle repair was needed; artistic models stay distinct from scientific claims.",
+    "Librarian: Deepened three existing records. Find Undra through growing a droplet, Opalia through pearlescent waves, and Aeria through making clouds or inviting rain.",
+    "Care: All 38 records remain. Exact artworks, readings, recordings, provenance, historical audits, and the three-item selection are preserved; no new relationship is asserted.",
+    "Checks: 111 tests and site checks passed, but the publishing source changed during validation and failed the concurrency guard.",
+    "Outcome: Blocked, not a valid no-op. Three catalog revisions and the journal remain local; nothing was committed, pushed, merged, or deployed."
+  ],
+  "validation": {
+    "state": "blocked",
+    "checks": [
+      "92 reader/server/mirror/journal/Fieldworks tests and 19 playback/preview tests passed before the concurrent source change was detected",
+      "Browser regression passed at 320, 390, 768, and 1280 pixels, with three themes, keyboard discovery, proposed labels, three-work results, six-result search, no-JavaScript archive, future-catalog fixture, missing-catalog fallback, and no page errors",
+      "Focused browser checks proved three new Fieldworks search routes were absent from the baseline catalog and present in the prepared revision; six artwork queries, three deduplicated catalog-fed constellations with qualified context, retained prior queries, 64 journal dates, and the finite selection passed",
+      "JSON/XML, 47 indexed source/image hashes and lengths, 4971 internal references, JavaScript syntax, catalog evidence, and complete mirror validation passed before the concurrency stop",
+      "Narration validation preserved 67 Lewis recordings, 468.0 minutes, 321.4 MiB, and all 18 offline audio parts",
+      "Website-only preservation diagnostics verified 429 protected files, seven Fieldworks reading/poster digests, and 65 runtime digests; these diagnostics do not clear the failed publishing-source gate",
+      "Only three catalog records differ, within subjects, search terms, questions, evidence, uncertainty, and tending dates; the other 35 records, all relation claims, introduction provenance, exact sources, prior audits, indexes, sitemap, and selection remain unchanged"
+    ],
+    "failed_gate": "The preservation check required the sibling reader source to retain its preflight state. It acquired unrelated tracked and untracked publishing work while validation ran. No content of that work was inspected or modified, and the guard was not weakened or bypassed.",
+    "source_revision_at_checks": "62799f3d88a63ef3dbd38038f5906c6228202af0",
+    "live_baseline_check": "The live catalog and journal index were fetched read-only and matched the pre-run d60aed5 publication exactly. The prepared changes are not live.",
+    "mirror_reproducibility": "A complete mirror check passed, but the final two-build reproducibility gate was not completed after the concurrency failure. Do not publish this prepared patch without fresh validation.",
+    "preview_url": "http://127.0.0.1:8787/",
+    "production_verification": "No changed URL or deployment is claimed because publication stopped. A later recovery must preserve this blocked audit and separately verify its own hosting build, exact public bytes, and production browser behavior."
+  },
+  "files_changed": ["living-relations/catalog.json", "living-relations/audits/2026-10-25.json", "project/cyberdelic-os/attending/index.html", "project/cyberdelic-os/attending/journal/index.json", "project/cyberdelic-os/attending/journal/index.html", "project/cyberdelic-os/attending/journal/page-2.html", "project/cyberdelic-os/attending/journal/page-3.html", "project/cyberdelic-os/attending/journal/page-4.html", "project/cyberdelic-os/attending/journal/page-5.html", "project/cyberdelic-os/attending/journal/page-6.html", "project/cyberdelic-os/attending/journal/page-7.html", "cyberdelic-space.zip"],
+  "public_change": true,
+  "operational_journal_updated": true,
+  "relational_field_changed": false,
+  "relational_essay_created": false,
+  "valid_no_op": false,
+  "run_state": "blocked",
+  "publication_state": "local-only",
+  "historical_runs_rewritten": false,
+  "scheduled_configuration_changed": false
+}

@@ -1,7 +1,7 @@
 {
   "schema": "https://cyberdelic.space/schemas/living-catalog-v1.json",
-  "version": "0.16",
-  "updated_at": "2026-10-26T04:06:36.676606Z",
+  "version": "0.17",
+  "updated_at": "2026-10-26T04:14:00Z",
   "count": 40,
   "curation": {
     "office": "OFFICE-LIBRARIAN",
@@ -1705,31 +1705,35 @@
         "time",
         "generative art",
         "interactive artwork",
-        "Fieldworks"
+        "Fieldworks",
+        "impermanence"
       ],
       "search_terms": [
         "Clouds / Cloudroom",
         "cloudroom",
         "computational art",
         "An unfinished sky. A little weather of your own.",
-        "Draw a cloud, or choose Make a cloud. Let the sky breathe."
+        "Draw a cloud, or choose Make a cloud. Let the sky breathe.",
+        "make a cloud",
+        "invite rain",
+        "pause the sky"
       ],
       "questions": [
-        "What can a gesture change?",
+        "What can continue after the first gesture, and what can be allowed to dissolve?",
         "How can an artwork make a designed world perceptible?"
       ],
       "related": [],
       "evidence": [
         {
           "source": "fieldworks/readings/aeria.md",
-          "locator": "# Aeria"
+          "locator": "# Aeria; Draw a cloud with a mouse, finger, or pen, or choose Make a cloud.; Change the light, invite rain, and allow the formations to drift, overlap, evaporate, and gather again.; You can pause Life to keep a still moment.; It offers a small, playful encounter with emergence and impermanence."
         }
       ],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "human-authorized-fieldworks-publication",
-      "last_tended_at": "2026-10-26T04:06:36.676606Z",
-      "uncertainty": "Brad authorized the artwork names and publication. Thematic placements remain interpretive. These living works are not inscriptions."
+      "last_tended_at": "2026-10-26T04:14:00Z",
+      "uncertainty": "Brad authorized the artwork name and publication. This record describes the public reading, not an independent implementation test. Its weather is an artistic model, not a meteorological simulation, and its Cyberdelic OS placement remains interpretive. This living work is not inscribed."
     },
     {
       "id": "catalog:fieldworks:vellum",
@@ -1787,31 +1791,35 @@
         "perception",
         "generative art",
         "interactive artwork",
-        "Fieldworks"
+        "Fieldworks",
+        "gesture and response"
       ],
       "search_terms": [
         "Glop / Water Droplet",
         "liquid-field",
         "computational art",
         "A living surface. A conversation with water.",
-        "Hold to grow. Drag to gather. Double-tap to separate."
+        "Hold to grow. Drag to gather. Double-tap to separate.",
+        "grow a droplet",
+        "procedural water",
+        "agency without complete control"
       ],
       "questions": [
-        "What can a gesture change?",
+        "What changes when a material answers a gesture without giving complete control?",
         "How can an artwork make a designed world perceptible?"
       ],
       "related": [],
       "evidence": [
         {
           "source": "fieldworks/readings/undra.md",
-          "locator": "# Undra"
+          "locator": "# Undra; Hold empty space to grow a droplet.; procedural model of fluid motion and light.; Undra offers a small experience of agency without complete control.; Your gesture changes the conditions, and the material answers in its own way."
         }
       ],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "human-authorized-fieldworks-publication",
-      "last_tended_at": "2026-10-26T04:06:36.676606Z",
-      "uncertainty": "Brad authorized the artwork names and publication. Thematic placements remain interpretive. These living works are not inscriptions."
+      "last_tended_at": "2026-10-26T04:14:00Z",
+      "uncertainty": "Brad authorized the artwork name and publication. This record describes the public reading, not an independent implementation test. Its Cyberdelic OS connection remains curatorial, not a claim that the artwork implements the whole operating system. This living work is not inscribed."
     },
     {
       "id": "catalog:fieldworks:opalia",
@@ -1828,31 +1836,35 @@
         "emergence",
         "generative art",
         "interactive artwork",
-        "Fieldworks"
+        "Fieldworks",
+        "attention without a task"
       ],
       "search_terms": [
         "Phase Loom",
         "phase-loom",
         "computational art",
         "A fold in seeing. Light, continually becoming.",
-        "Watch the field unfold. Open Controls to change its rhythm."
+        "Watch the field unfold. Open Controls to change its rhythm.",
+        "pearlescent waves",
+        "change the seed",
+        "iridescence controls"
       ],
       "questions": [
-        "What can a gesture change?",
+        "Can an artwork invite attention without giving its visitor a task?",
         "How can an artwork make a designed world perceptible?"
       ],
       "related": [],
       "evidence": [
         {
           "source": "fieldworks/readings/opalia.md",
-          "locator": "# Opalia"
+          "locator": "# Opalia; Pearlescent waves pass through a continuous generative field.; Open Controls to change the rhythm, seed, spacing, contour, or iridescence; Opalia invites attention without a task."
         }
       ],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "human-authorized-fieldworks-publication",
-      "last_tended_at": "2026-10-26T04:06:36.676606Z",
-      "uncertainty": "Brad authorized the artwork names and publication. Thematic placements remain interpretive. These living works are not inscriptions."
+      "last_tended_at": "2026-10-26T04:14:00Z",
+      "uncertainty": "Brad authorized the artwork name and publication. This record describes the public reading, not an independent implementation test. Its relation to perception and time is a curatorial reading, not evidence of consciousness or a physical simulation of light. This living work is not inscribed."
     }
   ]
 }
