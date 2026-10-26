@@ -43,6 +43,17 @@
       "path": "lumen.mp4",
       "sha256": "e1ef3a954fee02137e565a89e441e86e64a3a7b5d44e2dec28a22c1508dacf17",
       "length": 713042
+    },
+    {
+      "slug": "vellum",
+      "capture": "actual browser canvas, 30 fps, no audio",
+      "raw_sha256": "d701ae79c9979c8e1769829de31e8b3a980dbc6539072f1e7b3b683950fd8bbe",
+      "raw_duration": 7.922208,
+      "loop_method": "one-second end-to-start crossfade",
+      "source_snapshot_sha256": "b9f62ddc09bd23605e4939b73c07cb7978a88d3166b57c1de58efb9325d989b5",
+      "path": "vellum.mp4",
+      "sha256": "8ba42ec38b8b18dc03a183e633d18bc3b67a95bd642e3b2b97938817b6e21b88",
+      "length": 1752330
     }
   ]
 }

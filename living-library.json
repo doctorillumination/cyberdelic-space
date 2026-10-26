@@ -1265,6 +1265,75 @@
       "rationale": "The supplied reflection and photographs place the Hearth, Carry, .else, and the printed Kernel within a finite mountain walk. The note distinguishes an artifact from the life it traces and asks software to open back into embodied life without requiring everything to be captured."
     },
     {
+      "id": "fieldwork-lumen",
+      "release_id": "FW-LUMEN",
+      "label": "FIELDWORK · LIVING",
+      "title": "Lumen",
+      "href": "fieldworks/lumen/",
+      "author": "Brad Necyk",
+      "date": "2026-10-25",
+      "publication_state": "living",
+      "form": "generative-art",
+      "world": "cyberdelic-os",
+      "register": "play",
+      "themes": [
+        "light",
+        "perception",
+        "emergence",
+        "matter",
+        "imagination",
+        "time"
+      ],
+      "excerpt": "Move among crystalline colonies, strange attractors, and sculpted fractals. Shape the light, lens, and motion.",
+      "rationale": "An interactive Fieldwork, with interpretive thematic placements distinct from inscription evidence."
+    },
+    {
+      "id": "fieldwork-aeria",
+      "release_id": "FW-AERIA",
+      "label": "FIELDWORK · LIVING",
+      "title": "Aeria",
+      "href": "fieldworks/aeria/",
+      "author": "Brad Necyk",
+      "date": "2026-10-25",
+      "publication_state": "living",
+      "form": "generative-art",
+      "world": "cyberdelic-os",
+      "register": "play",
+      "themes": [
+        "weather",
+        "ecology",
+        "imagination",
+        "play",
+        "emergence",
+        "time"
+      ],
+      "excerpt": "Draw luminous clouds into an open sky. Let them drift, gather, dissolve, and become weather.",
+      "rationale": "An interactive Fieldwork, with interpretive thematic placements distinct from inscription evidence."
+    },
+    {
+      "id": "fieldwork-vellum",
+      "release_id": "FW-VELLUM",
+      "label": "FIELDWORK · LIVING",
+      "title": "Vellum",
+      "href": "fieldworks/vellum/",
+      "author": "Brad Necyk",
+      "date": "2026-10-25",
+      "publication_state": "living",
+      "form": "generative-art",
+      "world": "cyberdelic-os",
+      "register": "play",
+      "themes": [
+        "water",
+        "matter",
+        "gesture",
+        "emergence",
+        "time",
+        "play"
+      ],
+      "excerpt": "Release pigment into a living drawing. Fine currents fold into eddies, pool around geometry, and leave diluted traces on warm paper.",
+      "rationale": "An interactive Fieldwork, with interpretive thematic placements distinct from inscription evidence."
+    },
+    {
       "id": "fieldwork-undra",
       "release_id": "FW-UNDRA",
       "label": "FIELDWORK · LIVING",
@@ -1308,52 +1377,6 @@
         "emergence"
       ],
       "excerpt": "Pearlescent waves unfold through a continuous field of light. Change the rhythm, or simply stay awhile.",
-      "rationale": "An interactive Fieldwork, with interpretive thematic placements distinct from inscription evidence."
-    },
-    {
-      "id": "fieldwork-aeria",
-      "release_id": "FW-AERIA",
-      "label": "FIELDWORK · LIVING",
-      "title": "Aeria",
-      "href": "fieldworks/aeria/",
-      "author": "Brad Necyk",
-      "date": "2026-10-25",
-      "publication_state": "living",
-      "form": "generative-art",
-      "world": "cyberdelic-os",
-      "register": "play",
-      "themes": [
-        "weather",
-        "ecology",
-        "imagination",
-        "play",
-        "emergence",
-        "time"
-      ],
-      "excerpt": "Draw luminous clouds into an open sky. Let them drift, gather, dissolve, and become weather.",
-      "rationale": "An interactive Fieldwork, with interpretive thematic placements distinct from inscription evidence."
-    },
-    {
-      "id": "fieldwork-lumen",
-      "release_id": "FW-LUMEN",
-      "label": "FIELDWORK · LIVING",
-      "title": "Lumen",
-      "href": "fieldworks/lumen/",
-      "author": "Brad Necyk",
-      "date": "2026-10-25",
-      "publication_state": "living",
-      "form": "generative-art",
-      "world": "cyberdelic-os",
-      "register": "play",
-      "themes": [
-        "light",
-        "perception",
-        "emergence",
-        "matter",
-        "imagination",
-        "time"
-      ],
-      "excerpt": "Move among crystalline colonies, strange attractors, and sculpted fractals. Shape the light, lens, and motion.",
       "rationale": "An interactive Fieldwork, with interpretive thematic placements distinct from inscription evidence."
     }
   ]

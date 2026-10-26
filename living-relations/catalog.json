@@ -1,8 +1,8 @@
 {
   "schema": "https://cyberdelic.space/schemas/living-catalog-v1.json",
   "version": "0.16",
-  "updated_at": "2026-10-25T16:58:15Z",
-  "count": 39,
+  "updated_at": "2026-10-26T04:06:36.676606Z",
+  "count": 40,
   "curation": {
     "office": "OFFICE-LIBRARIAN",
     "office_version": "0.1",
@@ -1650,69 +1650,28 @@
       "uncertainty": "Describes Brad Necyk's published August 15 instrument, version 0.1, with machine collaborators, not a fresh test of Studio software or a completed novice study. Its recorded implementation state is dated. Byte evidence does not establish truth, authorship, rights, consent, or wise publication. No private repository or correspondence was opened, and no graph edge or ratification is added."
     },
     {
-      "id": "catalog:fieldworks:undra",
+      "id": "catalog:fieldworks:lumen",
       "record_kind": "artifact",
-      "title": "Undra",
-      "href": "fieldworks/undra/",
-      "summary": "Gather, stretch, grow, and separate luminous water. A small gesture changes the field.",
-      "subjects": [
-        "water",
-        "agency",
-        "embodiment",
-        "play",
-        "emergence",
-        "perception",
-        "generative art",
-        "interactive artwork",
-        "Fieldworks"
-      ],
-      "search_terms": [
-        "Glop / Water Droplet",
-        "liquid-field",
-        "computational art",
-        "A living surface. A conversation with water.",
-        "Hold to grow. Drag to gather. Double-tap to separate."
-      ],
-      "questions": [
-        "What can a gesture change?",
-        "How can an artwork make a designed world perceptible?"
-      ],
-      "related": [],
-      "evidence": [
-        {
-          "source": "fieldworks/readings/undra.md",
-          "locator": "# Undra"
-        }
-      ],
-      "epistemic_status": "strong",
-      "review_state": "model-proposed",
-      "introduced_by": "human-authorized-fieldworks-publication",
-      "last_tended_at": "2026-10-25T16:58:15Z",
-      "uncertainty": "Brad authorized the artwork names and publication. Thematic placements remain interpretive. These living works are not inscriptions."
-    },
-    {
-      "id": "catalog:fieldworks:opalia",
-      "record_kind": "artifact",
-      "title": "Opalia",
-      "href": "fieldworks/opalia/",
-      "summary": "Pearlescent waves unfold through a continuous field of light. Change the rhythm, or simply stay awhile.",
+      "title": "Lumen",
+      "href": "fieldworks/lumen/",
+      "summary": "Move among crystalline colonies, strange attractors, and sculpted fractals. Shape the light, lens, and motion.",
       "subjects": [
         "light",
-        "attention",
         "perception",
-        "time",
-        "rhythm",
         "emergence",
+        "matter",
+        "imagination",
+        "time",
         "generative art",
         "interactive artwork",
         "Fieldworks"
       ],
       "search_terms": [
-        "Phase Loom",
-        "phase-loom",
+        "Lumen / Form Atlas / Specimen / Hollow Macro",
+        "lumen-specimen",
         "computational art",
-        "A fold in seeing. Light, continually becoming.",
-        "Watch the field unfold. Open Controls to change its rhythm."
+        "Impossible matter. A small universe under a macro lens.",
+        "Choose a form. Drag to turn. Open the studio to shape light and lens."
       ],
       "questions": [
         "What can a gesture change?",
@@ -1721,14 +1680,14 @@
       "related": [],
       "evidence": [
         {
-          "source": "fieldworks/readings/opalia.md",
-          "locator": "# Opalia"
+          "source": "fieldworks/readings/lumen.md",
+          "locator": "# Lumen"
         }
       ],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "human-authorized-fieldworks-publication",
-      "last_tended_at": "2026-10-25T16:58:15Z",
+      "last_tended_at": "2026-10-26T04:06:36.676606Z",
       "uncertainty": "Brad authorized the artwork names and publication. Thematic placements remain interpretive. These living works are not inscriptions."
     },
     {
@@ -1769,32 +1728,32 @@
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "human-authorized-fieldworks-publication",
-      "last_tended_at": "2026-10-25T16:58:15Z",
+      "last_tended_at": "2026-10-26T04:06:36.676606Z",
       "uncertainty": "Brad authorized the artwork names and publication. Thematic placements remain interpretive. These living works are not inscriptions."
     },
     {
-      "id": "catalog:fieldworks:lumen",
+      "id": "catalog:fieldworks:vellum",
       "record_kind": "artifact",
-      "title": "Lumen",
-      "href": "fieldworks/lumen/",
-      "summary": "Move among crystalline colonies, strange attractors, and sculpted fractals. Shape the light, lens, and motion.",
+      "title": "Vellum",
+      "href": "fieldworks/vellum/",
+      "summary": "Release pigment into a living drawing. Fine currents fold into eddies, pool around geometry, and leave diluted traces on warm paper.",
       "subjects": [
-        "light",
-        "perception",
-        "emergence",
+        "water",
         "matter",
-        "imagination",
+        "gesture",
+        "emergence",
         "time",
+        "play",
         "generative art",
         "interactive artwork",
         "Fieldworks"
       ],
       "search_terms": [
-        "Lumen / Form Atlas / Specimen / Hollow Macro",
-        "lumen-specimen",
+        "Capillary / Ink",
+        "ink",
         "computational art",
-        "Impossible matter. A small universe under a macro lens.",
-        "Choose a form. Drag to turn. Open the studio to shape light and lens."
+        "A river remembering a drawing.",
+        "Release ink. Stir the water. Place an eddy, or save a moment as a print."
       ],
       "questions": [
         "What can a gesture change?",
@@ -1803,14 +1762,96 @@
       "related": [],
       "evidence": [
         {
-          "source": "fieldworks/readings/lumen.md",
-          "locator": "# Lumen"
+          "source": "fieldworks/readings/vellum.md",
+          "locator": "# Vellum"
         }
       ],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "human-authorized-fieldworks-publication",
-      "last_tended_at": "2026-10-25T16:58:15Z",
+      "last_tended_at": "2026-10-26T04:06:36.676606Z",
+      "uncertainty": "Brad authorized the artwork names and publication. Thematic placements remain interpretive. These living works are not inscriptions."
+    },
+    {
+      "id": "catalog:fieldworks:undra",
+      "record_kind": "artifact",
+      "title": "Undra",
+      "href": "fieldworks/undra/",
+      "summary": "Gather, stretch, grow, and separate luminous water. A small gesture changes the field.",
+      "subjects": [
+        "water",
+        "agency",
+        "embodiment",
+        "play",
+        "emergence",
+        "perception",
+        "generative art",
+        "interactive artwork",
+        "Fieldworks"
+      ],
+      "search_terms": [
+        "Glop / Water Droplet",
+        "liquid-field",
+        "computational art",
+        "A living surface. A conversation with water.",
+        "Hold to grow. Drag to gather. Double-tap to separate."
+      ],
+      "questions": [
+        "What can a gesture change?",
+        "How can an artwork make a designed world perceptible?"
+      ],
+      "related": [],
+      "evidence": [
+        {
+          "source": "fieldworks/readings/undra.md",
+          "locator": "# Undra"
+        }
+      ],
+      "epistemic_status": "strong",
+      "review_state": "model-proposed",
+      "introduced_by": "human-authorized-fieldworks-publication",
+      "last_tended_at": "2026-10-26T04:06:36.676606Z",
+      "uncertainty": "Brad authorized the artwork names and publication. Thematic placements remain interpretive. These living works are not inscriptions."
+    },
+    {
+      "id": "catalog:fieldworks:opalia",
+      "record_kind": "artifact",
+      "title": "Opalia",
+      "href": "fieldworks/opalia/",
+      "summary": "Pearlescent waves unfold through a continuous field of light. Change the rhythm, or simply stay awhile.",
+      "subjects": [
+        "light",
+        "attention",
+        "perception",
+        "time",
+        "rhythm",
+        "emergence",
+        "generative art",
+        "interactive artwork",
+        "Fieldworks"
+      ],
+      "search_terms": [
+        "Phase Loom",
+        "phase-loom",
+        "computational art",
+        "A fold in seeing. Light, continually becoming.",
+        "Watch the field unfold. Open Controls to change its rhythm."
+      ],
+      "questions": [
+        "What can a gesture change?",
+        "How can an artwork make a designed world perceptible?"
+      ],
+      "related": [],
+      "evidence": [
+        {
+          "source": "fieldworks/readings/opalia.md",
+          "locator": "# Opalia"
+        }
+      ],
+      "epistemic_status": "strong",
+      "review_state": "model-proposed",
+      "introduced_by": "human-authorized-fieldworks-publication",
+      "last_tended_at": "2026-10-26T04:06:36.676606Z",
       "uncertainty": "Brad authorized the artwork names and publication. Thematic placements remain interpretive. These living works are not inscriptions."
     }
   ]
