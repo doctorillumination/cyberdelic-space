@@ -34,7 +34,7 @@ def safe(name):
 
 def validate(bundle):
     data = json.loads((bundle / 'manifest.json').read_text())
-    if data['schema'] != SCHEMA or data['slug'] not in ('aeria', 'lumen'):
+    if data['schema'] != SCHEMA or data['slug'] not in ('aeria', 'lumen', 'vellum'):
         raise ValueError('Unknown release schema or artwork')
     if len(data['files']) > 102 or len({f['path'] for f in data['files']}) != len(data['files']):
         raise ValueError('Duplicate or excessive files')
@@ -142,7 +142,7 @@ def install(site, bundle):
 
 
 def fetch_bundle(site, ref):
-    if not re.fullmatch(r'fieldworks-release/(aeria|lumen)/[a-f0-9]{20}', ref):
+    if not re.fullmatch(r'fieldworks-release/(aeria|lumen|vellum)/[a-f0-9]{20}', ref):
         raise ValueError('Invalid release reference')
     subprocess.run(['git', 'fetch', '--quiet', '--depth=1', 'origin', ref], cwd=site, check=True)
     names = subprocess.check_output(['git', 'ls-tree', '-r', 'FETCH_HEAD', '--', '.fieldwork-release'], cwd=site, text=True).splitlines()

@@ -1,0 +1,58 @@
+{
+  "id": "fieldworks-overview",
+  "title": "Fieldworks",
+  "form": "fieldwork",
+  "release_id": null,
+  "pages": [
+    "fieldworks/"
+  ],
+  "source_path": "fieldworks/readings/overview.md",
+  "source_sha256": "0bb000c58f312f2dd338be9c50c346c9e5c0e9445b3fda53a2d0ef01be1bff78",
+  "document_sha256": "0bb000c58f312f2dd338be9c50c346c9e5c0e9445b3fda53a2d0ef01be1bff78",
+  "text_sha256": "a7fd0fe2bdc5b271bb90af03f95f94948fcba2a30cae0af3feb0b3a3c7efaefa",
+  "reading_path": "audio/readings/a7fd0fe2bdc5b271bb90af03f95f94948fcba2a30cae0af3feb0b3a3c7efaefa.md",
+  "reading_sha256": "0bb000c58f312f2dd338be9c50c346c9e5c0e9445b3fda53a2d0ef01be1bff78",
+  "reading_length": 322,
+  "audio_path": "audio/lewis/a7fd0fe2bdc5b271bb90af03f95f94948fcba2a30cae0af3feb0b3a3c7efaefa.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "4f583d2d2e4b7901bd76f0282fd7c857dbd2b0963014e56aec4fd44cebf1b565",
+  "audio_length": 309068,
+  "duration_seconds": 25.665,
+  "chunks": [
+    {
+      "text": "Fieldworks",
+      "start": 0.0,
+      "duration": 1.65
+    },
+    {
+      "text": "Generative artworks and interactive environments by Brad Necyk.",
+      "start": 1.83,
+      "duration": 5.15
+    },
+    {
+      "text": "A surface that answers. A fold in seeing. An unfinished sky. Impossible matter. A river remembering a drawing. Five encounters with the living physics of Cyberdelic OS.",
+      "start": 7.16,
+      "duration": 13.125
+    },
+    {
+      "text": "These are living, revisable artworks. They are not Bitcoin inscriptions.",
+      "start": 20.465,
+      "duration": 5.2
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.5474486947059631,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

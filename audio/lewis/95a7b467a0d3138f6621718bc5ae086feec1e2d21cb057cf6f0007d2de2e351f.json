@@ -1,0 +1,68 @@
+{
+  "id": "fieldworks-vellum",
+  "title": "Vellum",
+  "form": "fieldwork",
+  "release_id": null,
+  "pages": [
+    "fieldworks/vellum/"
+  ],
+  "source_path": "fieldworks/readings/vellum.md",
+  "source_sha256": "e2f01b1c370ae33a457d39542ba545f78665c14ae05e7788095f547940536d56",
+  "document_sha256": "e2f01b1c370ae33a457d39542ba545f78665c14ae05e7788095f547940536d56",
+  "text_sha256": "95a7b467a0d3138f6621718bc5ae086feec1e2d21cb057cf6f0007d2de2e351f",
+  "reading_path": "audio/readings/95a7b467a0d3138f6621718bc5ae086feec1e2d21cb057cf6f0007d2de2e351f.md",
+  "reading_sha256": "e2f01b1c370ae33a457d39542ba545f78665c14ae05e7788095f547940536d56",
+  "reading_length": 752,
+  "audio_path": "audio/lewis/95a7b467a0d3138f6621718bc5ae086feec1e2d21cb057cf6f0007d2de2e351f.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "97d402df7bc0abda5809ca35ac752c3546e5c1bbdfccf9b598415d91ba253015",
+  "audio_length": 657548,
+  "duration_seconds": 54.7,
+  "chunks": [
+    {
+      "text": "Vellum",
+      "start": 0.0,
+      "duration": 1.4
+    },
+    {
+      "text": "A river remembering a drawing.",
+      "start": 1.58,
+      "duration": 2.925
+    },
+    {
+      "text": "Blue, green, and orange pigment move across warm paper, carried by currents that fold into eddies and gather around circular basins. A faint pencil construction gives the water something to follow, and something to escape. Concentrated colour passes into delicate, diluted traces.",
+      "start": 4.685,
+      "duration": 19.275
+    },
+    {
+      "text": "Release ink, stir the water, or place an eddy. A gesture joins the same currents already moving through the sheet. Change the seed to begin another composition, or hold a moment and save it as a print.",
+      "start": 24.14,
+      "duration": 13.9
+    },
+    {
+      "text": "The work explores the meeting of a drawn structure and a moving material. The surface holds their traces as the currents keep changing.",
+      "start": 38.22,
+      "duration": 9.275
+    },
+    {
+      "text": "By Brad Necyk. Previously developed as Capillary. This living artwork is not inscribed.",
+      "start": 47.675,
+      "duration": 7.025
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.6225528717041016,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

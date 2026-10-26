@@ -1,15 +1,15 @@
 {
   "schema": "cyberdelic.space/fieldworks-v1",
-  "version": "1.2",
+  "version": "1.3",
   "date": "2026-10-25",
-  "published_at": "2026-10-25T16:58:15Z",
+  "published_at": "2026-10-26T04:06:36.676606Z",
   "overview": {
     "title": "Fieldworks",
     "href": "fieldworks/",
     "source": "overview.md",
     "source_path": "fieldworks/readings/overview.md",
-    "source_sha256": "be2fd026661676d11c18d7a1a3a9b19b6ea437d3ae8feefb28becee31c5843d4",
-    "source_length": 291
+    "source_sha256": "0bb000c58f312f2dd338be9c50c346c9e5c0e9445b3fda53a2d0ef01be1bff78",
+    "source_length": 322
   },
   "archived_readings": [
     {
@@ -29,6 +29,15 @@
       "source_path": "fieldworks/readings/lumen-hollow-macro.md",
       "source_sha256": "f34e23a8d776708de1e964506b9e306d3516127532173381b5f53534853852a8",
       "source_length": 913
+    },
+    {
+      "slug": "overview-v1-2",
+      "title": "Fieldworks, four-work edition",
+      "href": "fieldworks/readings/overview-v1-2.md",
+      "source": "overview-v1-2.md",
+      "source_path": "fieldworks/readings/overview-v1-2.md",
+      "source_sha256": "be2fd026661676d11c18d7a1a3a9b19b6ea437d3ae8feefb28becee31c5843d4",
+      "source_length": 291
     }
   ],
   "items": [
@@ -55,6 +64,8 @@
       ],
       "related_note": "fn-05",
       "related_title": "The Physics We Choose",
+      "release_id": "1fe6a7b93924de4830e29a664cf8eedf268ea894aa3e1ff9193c4b7f27fdce29",
+      "runtime_published_at": "2026-10-25T21:30:41.223261Z",
       "source_path": "fieldworks/readings/lumen.md",
       "source_sha256": "284192a0abdcbeb31905866fe74fbb7184b425597f38683ebc6a3a218cdcba49",
       "source_length": 1121,
@@ -70,9 +81,7 @@
         "sha256": "e1ef3a954fee02137e565a89e441e86e64a3a7b5d44e2dec28a22c1508dacf17",
         "length": 713042,
         "kind": "recorded-artwork-loop"
-      },
-      "release_id": "1fe6a7b93924de4830e29a664cf8eedf268ea894aa3e1ff9193c4b7f27fdce29",
-      "runtime_published_at": "2026-10-25T21:30:41.223261Z"
+      }
     },
     {
       "slug": "aeria",
@@ -96,6 +105,8 @@
       ],
       "related_note": "fn-19",
       "related_title": "A Medium for Becoming",
+      "release_id": "d91f438c31d0fca396a670979439d5e10afc1675d1772ddb926057c14ae940fe",
+      "runtime_published_at": "2026-10-25T21:29:41.737524Z",
       "source_path": "fieldworks/readings/aeria.md",
       "source_sha256": "e41a38547989407604318fc73a63c613898a232df2c8b8ee0bbc75f4b6642d1b",
       "source_length": 721,
@@ -111,9 +122,46 @@
         "sha256": "1eb56fbe18c3fbc482922849e6a9d7f65e3f3c9b02c79920468c5a79c32300ef",
         "length": 118170,
         "kind": "recorded-artwork-loop"
+      }
+    },
+    {
+      "slug": "vellum",
+      "title": "Vellum",
+      "former_title": "Capillary / Ink",
+      "edition": "liquid-filaments",
+      "project": "ink",
+      "repository": "https://github.com/doctorillumination/ink",
+      "caption": "A river remembering a drawing.",
+      "description": "Release pigment into a living drawing. Fine currents fold into eddies, pool around geometry, and leave diluted traces on warm paper.",
+      "alt": "Fine blue, green, and orange pigment currents flowing through circular basins and branching channels on warm, lightly gridded paper.",
+      "gesture": "Release ink. Stir the water. Place an eddy, or save a moment as a print.",
+      "source": "vellum.md",
+      "themes": [
+        "water",
+        "matter",
+        "gesture",
+        "emergence",
+        "time",
+        "play"
+      ],
+      "related_note": "fn-05",
+      "related_title": "The Physics We Choose",
+      "source_path": "fieldworks/readings/vellum.md",
+      "source_sha256": "e2f01b1c370ae33a457d39542ba545f78665c14ae05e7788095f547940536d56",
+      "source_length": 752,
+      "href": "fieldworks/vellum/",
+      "poster": {
+        "path": "fieldworks/images/vellum.jpg",
+        "sha256": "28dbab36d7c0996ca6b209553b60064d3353b4ae17fb1200f017eef6c2da15e1",
+        "length": 82032,
+        "kind": "actual-browser-capture"
       },
-      "release_id": "d91f438c31d0fca396a670979439d5e10afc1675d1772ddb926057c14ae940fe",
-      "runtime_published_at": "2026-10-25T21:29:41.737524Z"
+      "preview": {
+        "path": "fieldworks/previews/vellum.mp4",
+        "sha256": "8ba42ec38b8b18dc03a183e633d18bc3b67a95bd642e3b2b97938817b6e21b88",
+        "length": 1752330,
+        "kind": "recorded-artwork-loop"
+      }
     },
     {
       "slug": "undra",
