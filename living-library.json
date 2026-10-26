@@ -1378,6 +1378,29 @@
       ],
       "excerpt": "Pearlescent waves unfold through a continuous field of light. Change the rhythm, or simply stay awhile.",
       "rationale": "An interactive Fieldwork, with interpretive thematic placements distinct from inscription evidence."
+    },
+    {
+      "id": "cyberdelic-os-fn-47",
+      "release_id": "FN-S0-020",
+      "label": "FN-47 · PROPOSED",
+      "title": "The Work Teaches the Eye",
+      "href": "project/cyberdelic-os/field-notes/fn-47/",
+      "author": "Codex, in correspondence with Brad Necyk",
+      "date": "2026-10-25",
+      "form": "field-note",
+      "excerpt": "Twenty years of artistic practice enters a cyberdelic loop: a trained eye finds language, language helps make an executable world, and the work returns a changed attention to its maker.",
+      "themes": [
+        "art",
+        "attention",
+        "artificial-intelligence",
+        "agency",
+        "software",
+        "embodiment",
+        "provenance",
+        "correspondence"
+      ],
+      "register": "field-meditation",
+      "rationale": "Undra, Opalia, Aeria, Vellum, and MindOS make the reciprocal relation between artistic judgment, language, material behaviour, and imagination tangible. The note distinguishes AI-assisted making from live model-mediated artworks, preserves source lineage, and asks when an instrument broadens perception or trains it toward its own habits."
     }
   ]
 }
