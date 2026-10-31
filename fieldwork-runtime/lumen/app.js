@@ -149,16 +149,23 @@ function syncPlay(){$('play').setAttribute('aria-label',state.playing?'Pause mot
 function syncCinema(){
  for(const id of ['cinema','cinema-studio'])$(id).setAttribute('aria-pressed',String(state.cinema));
  $('cinema-status').textContent=state.cinema?'On':'Off';
- $('cinema').title=`Cinematographer ${state.cinema?'on':'off'} (C)`;
+ $('cinema').title=handLens?.busy?'Return to cinema (C)':`Cinematographer ${state.cinema?'on':'off'} (C)`;
+ $('cinema').setAttribute('aria-label',handLens?.busy?'Return to cinema':'Cinematographer mode');
  $('cinema-helper').textContent=handLens?.active?'Your hand controls focus and aperture. The orbit and light can continue.':state.cinema?(selected.engine==='field'?'A steady macro focus plane, gentle iris breathing, and a slow orbit.':'Focus, aperture, spectral light, and orbit drift around your settings.'):'Your slider settings hold steady as the specimen turns.';
  syncPlay();
 }
 function toggleCinema(){
+ if(handLens?.busy){handLens.returnToCinema();return;}
  state.cinema=!state.cinema;
  if(!state.playing)rig.blend=state.cinema?1:0;
  syncCinema();reset();
  const url=new URL(location.href);url.searchParams.set('cinema',state.cinema?'1':'0');history.replaceState(null,'',url);
  toast(state.cinema?'Cinematographer on':'Manual camera');
+}
+function returnToCinema(){
+ state.cinema=true;state.playing=true;syncCinema();reset();
+ const url=new URL(location.href);url.searchParams.set('cinema','1');url.searchParams.delete('paused');history.replaceState(null,'',url);
+ toast('Camera off · Cinematographer on');
 }
 function syncGrowth(){
  $('growth').hidden=!selected.growth;document.querySelector('.growth-card').hidden=!selected.growth;
@@ -208,7 +215,7 @@ addEventListener('keydown',e=>{
 });
 canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();cancelAnimationFrame(renderHandle);handLens?.stop();fail('The graphics session was interrupted. Reload this page to gather light again.');});addEventListener('resize',resize);
 document.addEventListener('fullscreenchange',()=>{const active=!!document.fullscreenElement;$('fullscreen').setAttribute('aria-label',active?'Exit fullscreen':'Enter fullscreen');});
-handLens=new HandLens({readLens:()=>readHandLens(lastPose??lensPose(state,state.compression,lensRig,selected.engine),selected.engine),closeStudio:()=>studio(false),onChange:()=>{
+handLens=new HandLens({readLens:()=>readHandLens(lastPose??lensPose(state,state.compression,lensRig,selected.engine),selected.engine),closeStudio:()=>studio(false),onReturnToCinema:returnToCinema,onChange:()=>{
  const owned=!!handLens?.active;
  if(owned!==handOwnership){handOwnership=owned;for(const id of ['focus','aperture','lens-drift'])$(id).disabled=owned;resize();reset();syncCinema();}
 }});

@@ -13,8 +13,8 @@ const messages={
  reacquiring:'Finding your hand again. The lens is held steady.'
 };
 export class HandLens{
- constructor({readLens,onChange,closeStudio}){
-  this.errorMessage=null;this.readLens=readLens;this.onChange=onChange;this.controls=new HandControls();this.guide=new HandGuide();this.guideStage=null;this.pending=false;this.request=0;this.status='off';
+ constructor({readLens,onChange,closeStudio,onReturnToCinema=()=>{}}){
+  this.errorMessage=null;this.readLens=readLens;this.onChange=onChange;this.onReturnToCinema=onReturnToCinema;this.controls=new HandControls();this.guide=new HandGuide();this.guideStage=null;this.pending=false;this.request=0;this.status='off';
   this.camera=new HandCamera({onResult:data=>{
    const video=$('hand-video');
    const measurement=measureHand(data.landmarks,data.world,video.videoWidth/Math.max(1,video.videoHeight));
@@ -26,11 +26,11 @@ export class HandLens{
   },onEnded:error=>this.fail(error)});
   $('hands').onclick=()=>{closeStudio();this.panel($('hand-panel').hidden);};
   $('hand-close').onclick=()=>this.panel(false);$('hand-enable').onclick=()=>this.start();
-  $('hand-stop').onclick=$('hand-quick-stop').onclick=()=>this.stop();
+  $('hand-stop').onclick=$('hand-quick-stop').onclick=()=>this.returnToCinema();
   $('hand-recentre').onclick=()=>{this.guide.start();this.controls.recentre();this.panel(false);this.sync();};
   $('hand-recalibrate').onclick=()=>{this.guide.start();this.controls.calibrate();this.panel(false);this.sync();};
   $('hand-guide-skip').onclick=()=>{this.guide.dismiss();this.syncGuide();};
-  $('hand-guide-stop').onclick=()=>this.stop();
+  $('hand-guide-stop').onclick=()=>this.returnToCinema();
   $('hand-preview-toggle').onclick=()=>{const show=!document.body.classList.contains('hand-preview-visible');document.body.classList.toggle('hand-preview-visible',show);$('hand-video').setAttribute('aria-hidden',String(!show));$('hand-preview-toggle').setAttribute('aria-pressed',show);$('hand-preview-toggle').textContent=show?'Hide camera preview':'Show camera preview';};
   addEventListener('pagehide',()=>this.stop());this.sync();
  }
@@ -58,6 +58,7 @@ export class HandLens{
   this.errorMessage=null;++this.request;this.camera.stop();this.controls.stop();this.guide.reset();this.pending=false;this.status='off';
   $('hand-preview-wrap').hidden=true;document.body.classList.remove('hand-preview-visible');$('hand-video').setAttribute('aria-hidden','true');$('hand-preview-toggle').setAttribute('aria-pressed','false');$('hand-preview-toggle').textContent='Show camera preview';this.sync();
  }
+ returnToCinema(){this.stop();this.panel(false);this.onReturnToCinema();}
  tick(dt){const changed=this.controls.step(dt,performance.now()/1000);this.sync(false);this.syncGuide(dt);return changed;}
  syncGuide(dt=0){
   const view=this.guide.update(this.status,this.controls,dt),overlay=$('hand-guide');

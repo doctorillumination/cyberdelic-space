@@ -35,14 +35,14 @@
     },
     {
       "kind": "actual browser canvas, silent",
-      "raw_sha256": "8553d439d17eebfdfa299b2f5df16da4db00b007d96050aa7721ec017471a0b5",
-      "raw_duration": 7.93271,
+      "raw_sha256": "598be768ce06f1efe633cc277b500925160f0cc7e541ce3f81537276357b9714",
+      "raw_duration": 7.862955,
       "loop_method": "one-second end-to-start crossfade",
-      "source_snapshot_sha256": "65fc21c3da138c208e7bed85d38f212bc43b6aef1e4c1b63466fd0a67a5ce9f0",
+      "source_snapshot_sha256": "1a883a84c0100e17d95938c01e54a191b69e0ed5a2a97336bf176a05aa472857",
       "slug": "lumen",
       "path": "lumen.mp4",
-      "sha256": "33863cb7a7d435fb7425f3e79ce10baa0e329a35d264ea7231b377b3d45c5d36",
-      "length": 464448
+      "sha256": "be8caa06b10d493ea68e5e2b24b9ef843819a1e3be6a71540ff609e61f7af432",
+      "length": 708051
     },
     {
       "slug": "vellum",
@@ -103,6 +103,18 @@
       "sha256": "2fc3a9d0e5a72a48c848ed26c078e78f69fad454cc691f7f34865de2f01c99f0",
       "length": 396147,
       "release_id": "c550f89393aad0dd7c0d370e4de10c8d9257ba8ea30f74fd44a6f11550be28db"
+    },
+    {
+      "kind": "actual browser canvas, silent",
+      "raw_sha256": "8553d439d17eebfdfa299b2f5df16da4db00b007d96050aa7721ec017471a0b5",
+      "raw_duration": 7.93271,
+      "loop_method": "one-second end-to-start crossfade",
+      "source_snapshot_sha256": "65fc21c3da138c208e7bed85d38f212bc43b6aef1e4c1b63466fd0a67a5ce9f0",
+      "slug": "lumen",
+      "path": "archive/lumen-0d850b5ac6b722d97acacba63280b6b17af922205d24d767e57ac07f1e704c8d.mp4",
+      "sha256": "33863cb7a7d435fb7425f3e79ce10baa0e329a35d264ea7231b377b3d45c5d36",
+      "length": 464448,
+      "release_id": "0d850b5ac6b722d97acacba63280b6b17af922205d24d767e57ac07f1e704c8d"
     }
   ]
 }

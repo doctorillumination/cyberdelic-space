@@ -34,3 +34,4 @@
 #hand-preview-wrap{position:fixed;left:0;bottom:0;width:2px;height:2px;opacity:.001;pointer-events:none;z-index:7;overflow:hidden}#hand-preview-wrap #hand-video{width:100%;height:100%;object-fit:cover}
 .hand-preview-visible #hand-preview-wrap{left:30px;bottom:90px;width:224px;height:168px;opacity:1;border:1px solid #d8eacb38;border-radius:12px;box-shadow:0 8px 30px #0008}
 @media(max-width:650px){.hand-preview-visible #hand-preview-wrap{left:20px;bottom:80px;width:120px;height:90px}}
+#hand-indicator{max-width:calc(100vw - 32px)}#hand-indicator-text{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}#hand-indicator #hand-quick-stop{width:auto;height:auto;min-height:32px;padding:7px 12px;flex-shrink:0;border:1px solid #c4deb938;border-radius:20px;font:11px/1.4 Arial,sans-serif;color:#d8eacb;background:#c4deb911}
