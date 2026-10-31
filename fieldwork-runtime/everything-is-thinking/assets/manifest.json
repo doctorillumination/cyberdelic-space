@@ -1,0 +1,3513 @@
+{
+  "title": "Everything Is Thinking",
+  "version": "0.3.0",
+  "assetVersion": 2,
+  "seed": 5479,
+  "palette": {
+    "ink": "#080e2b",
+    "navy": "#101c57",
+    "blue": "#1534cd",
+    "royal": "#2a4bff",
+    "mid": "#526eac",
+    "sky": "#8ca9d6",
+    "ice": "#bfdbef",
+    "white": "#edf0da",
+    "silver": "#b7bac0",
+    "gray": "#777e94",
+    "steel": "#414d70",
+    "black": "#080a16",
+    "yellow": "#ffdf38",
+    "orange": "#ff8d24",
+    "red": "#ed482c",
+    "rust": "#9d3029",
+    "pink": "#dc59b7",
+    "green": "#8cbab1",
+    "mint": "#80d6bd",
+    "violet": "#7352b5",
+    "cream": "#fff07b",
+    "extra_lime": "#a8ed18",
+    "extra_emerald": "#19c66b",
+    "extra_cyan": "#10d4ee",
+    "extra_teal": "#088f9e",
+    "extra_magenta": "#ff24bc",
+    "extra_purple": "#9143eb",
+    "extra_ultra": "#5133ff",
+    "extra_scarlet": "#ff2929",
+    "extra_coral": "#ff7355",
+    "extra_gold": "#ffbb18",
+    "extra_lemon": "#ffff5b",
+    "extra_peach": "#ffc49a",
+    "extra_rose": "#ff8bbd",
+    "extra_lavender": "#c3a7ff",
+    "extra_indigo": "#28229c",
+    "extra_cobalt": "#0624f5",
+    "extra_azure": "#168bff",
+    "extra_grass": "#47852c",
+    "extra_brown": "#7d4226",
+    "extra_cream": "#fff4c4",
+    "extra_paper": "#fffef0",
+    "extra_coal": "#15131e",
+    "extra_gblue": "#4285f4",
+    "extra_gred": "#ea4335",
+    "extra_gyellow": "#fbbc05",
+    "extra_ggreen": "#34a853"
+  },
+  "assets": [
+    {
+      "id": "sun-01",
+      "family": "sun",
+      "title": "Solar witness / 1",
+      "tone": "human",
+      "width": 93,
+      "height": 93,
+      "file": "png/sun-01.png"
+    },
+    {
+      "id": "sun-02",
+      "family": "sun",
+      "title": "Solar witness / 2",
+      "tone": "human",
+      "width": 93,
+      "height": 93,
+      "file": "png/sun-02.png"
+    },
+    {
+      "id": "sun-03",
+      "family": "sun",
+      "title": "Solar witness / 3",
+      "tone": "human",
+      "width": 93,
+      "height": 93,
+      "file": "png/sun-03.png"
+    },
+    {
+      "id": "sun-04",
+      "family": "sun",
+      "title": "Solar witness / 4",
+      "tone": "human",
+      "width": 93,
+      "height": 93,
+      "file": "png/sun-04.png"
+    },
+    {
+      "id": "sun-05",
+      "family": "sun",
+      "title": "Solar witness / 5",
+      "tone": "human",
+      "width": 93,
+      "height": 93,
+      "file": "png/sun-05.png"
+    },
+    {
+      "id": "sun-06",
+      "family": "sun",
+      "title": "Solar witness / 6",
+      "tone": "human",
+      "width": 93,
+      "height": 93,
+      "file": "png/sun-06.png"
+    },
+    {
+      "id": "chip-01",
+      "family": "chip",
+      "title": "Thinking silicon / 1",
+      "tone": "material",
+      "width": 78,
+      "height": 76,
+      "file": "png/chip-01.png"
+    },
+    {
+      "id": "chip-02",
+      "family": "chip",
+      "title": "Thinking silicon / 2",
+      "tone": "material",
+      "width": 78,
+      "height": 76,
+      "file": "png/chip-02.png"
+    },
+    {
+      "id": "chip-03",
+      "family": "chip",
+      "title": "Thinking silicon / 3",
+      "tone": "material",
+      "width": 78,
+      "height": 76,
+      "file": "png/chip-03.png"
+    },
+    {
+      "id": "chip-04",
+      "family": "chip",
+      "title": "Thinking silicon / 4",
+      "tone": "material",
+      "width": 78,
+      "height": 76,
+      "file": "png/chip-04.png"
+    },
+    {
+      "id": "chip-05",
+      "family": "chip",
+      "title": "Thinking silicon / 5",
+      "tone": "material",
+      "width": 78,
+      "height": 76,
+      "file": "png/chip-05.png"
+    },
+    {
+      "id": "chip-06",
+      "family": "chip",
+      "title": "Thinking silicon / 6",
+      "tone": "material",
+      "width": 78,
+      "height": 76,
+      "file": "png/chip-06.png"
+    },
+    {
+      "id": "rack-01",
+      "family": "rack",
+      "title": "The cloud has a body / 1",
+      "tone": "material",
+      "width": 63,
+      "height": 95,
+      "file": "png/rack-01.png"
+    },
+    {
+      "id": "rack-02",
+      "family": "rack",
+      "title": "The cloud has a body / 2",
+      "tone": "material",
+      "width": 63,
+      "height": 95,
+      "file": "png/rack-02.png"
+    },
+    {
+      "id": "rack-03",
+      "family": "rack",
+      "title": "The cloud has a body / 3",
+      "tone": "material",
+      "width": 63,
+      "height": 95,
+      "file": "png/rack-03.png"
+    },
+    {
+      "id": "rack-04",
+      "family": "rack",
+      "title": "The cloud has a body / 4",
+      "tone": "material",
+      "width": 63,
+      "height": 95,
+      "file": "png/rack-04.png"
+    },
+    {
+      "id": "rack-05",
+      "family": "rack",
+      "title": "The cloud has a body / 5",
+      "tone": "material",
+      "width": 63,
+      "height": 95,
+      "file": "png/rack-05.png"
+    },
+    {
+      "id": "rack-06",
+      "family": "rack",
+      "title": "The cloud has a body / 6",
+      "tone": "material",
+      "width": 63,
+      "height": 95,
+      "file": "png/rack-06.png"
+    },
+    {
+      "id": "wafer-01",
+      "family": "wafer",
+      "title": "Silicon wafer / 1",
+      "tone": "material",
+      "width": 84,
+      "height": 85,
+      "file": "png/wafer-01.png"
+    },
+    {
+      "id": "wafer-02",
+      "family": "wafer",
+      "title": "Silicon wafer / 2",
+      "tone": "material",
+      "width": 84,
+      "height": 85,
+      "file": "png/wafer-02.png"
+    },
+    {
+      "id": "wafer-03",
+      "family": "wafer",
+      "title": "Silicon wafer / 3",
+      "tone": "material",
+      "width": 84,
+      "height": 85,
+      "file": "png/wafer-03.png"
+    },
+    {
+      "id": "wafer-04",
+      "family": "wafer",
+      "title": "Silicon wafer / 4",
+      "tone": "material",
+      "width": 84,
+      "height": 85,
+      "file": "png/wafer-04.png"
+    },
+    {
+      "id": "wafer-05",
+      "family": "wafer",
+      "title": "Silicon wafer / 5",
+      "tone": "material",
+      "width": 84,
+      "height": 85,
+      "file": "png/wafer-05.png"
+    },
+    {
+      "id": "wafer-06",
+      "family": "wafer",
+      "title": "Silicon wafer / 6",
+      "tone": "material",
+      "width": 84,
+      "height": 85,
+      "file": "png/wafer-06.png"
+    },
+    {
+      "id": "cloud-01",
+      "family": "cloud",
+      "title": "Someone else's computer / 1",
+      "tone": "material",
+      "width": 86,
+      "height": 73,
+      "file": "png/cloud-01.png"
+    },
+    {
+      "id": "cloud-02",
+      "family": "cloud",
+      "title": "Someone else's computer / 2",
+      "tone": "material",
+      "width": 86,
+      "height": 73,
+      "file": "png/cloud-02.png"
+    },
+    {
+      "id": "cloud-03",
+      "family": "cloud",
+      "title": "Someone else's computer / 3",
+      "tone": "material",
+      "width": 86,
+      "height": 73,
+      "file": "png/cloud-03.png"
+    },
+    {
+      "id": "cloud-04",
+      "family": "cloud",
+      "title": "Someone else's computer / 4",
+      "tone": "material",
+      "width": 86,
+      "height": 73,
+      "file": "png/cloud-04.png"
+    },
+    {
+      "id": "cloud-05",
+      "family": "cloud",
+      "title": "Someone else's computer / 5",
+      "tone": "material",
+      "width": 86,
+      "height": 73,
+      "file": "png/cloud-05.png"
+    },
+    {
+      "id": "cloud-06",
+      "family": "cloud",
+      "title": "Someone else's computer / 6",
+      "tone": "material",
+      "width": 86,
+      "height": 73,
+      "file": "png/cloud-06.png"
+    },
+    {
+      "id": "eye-01",
+      "family": "eye",
+      "title": "Machine vision / 1",
+      "tone": "material",
+      "width": 92,
+      "height": 46,
+      "file": "png/eye-01.png"
+    },
+    {
+      "id": "eye-02",
+      "family": "eye",
+      "title": "Machine vision / 2",
+      "tone": "material",
+      "width": 92,
+      "height": 46,
+      "file": "png/eye-02.png"
+    },
+    {
+      "id": "eye-03",
+      "family": "eye",
+      "title": "Machine vision / 3",
+      "tone": "material",
+      "width": 92,
+      "height": 57,
+      "file": "png/eye-03.png"
+    },
+    {
+      "id": "eye-04",
+      "family": "eye",
+      "title": "Machine vision / 4",
+      "tone": "material",
+      "width": 92,
+      "height": 46,
+      "file": "png/eye-04.png"
+    },
+    {
+      "id": "eye-05",
+      "family": "eye",
+      "title": "Machine vision / 5",
+      "tone": "material",
+      "width": 92,
+      "height": 46,
+      "file": "png/eye-05.png"
+    },
+    {
+      "id": "eye-06",
+      "family": "eye",
+      "title": "Machine vision / 6",
+      "tone": "material",
+      "width": 92,
+      "height": 57,
+      "file": "png/eye-06.png"
+    },
+    {
+      "id": "heart-01",
+      "family": "heart",
+      "title": "Uncompressed feeling / 1",
+      "tone": "human",
+      "width": 82,
+      "height": 73,
+      "file": "png/heart-01.png"
+    },
+    {
+      "id": "heart-02",
+      "family": "heart",
+      "title": "Uncompressed feeling / 2",
+      "tone": "human",
+      "width": 82,
+      "height": 73,
+      "file": "png/heart-02.png"
+    },
+    {
+      "id": "heart-03",
+      "family": "heart",
+      "title": "Uncompressed feeling / 3",
+      "tone": "human",
+      "width": 82,
+      "height": 73,
+      "file": "png/heart-03.png"
+    },
+    {
+      "id": "heart-04",
+      "family": "heart",
+      "title": "Uncompressed feeling / 4",
+      "tone": "human",
+      "width": 82,
+      "height": 73,
+      "file": "png/heart-04.png"
+    },
+    {
+      "id": "heart-05",
+      "family": "heart",
+      "title": "Uncompressed feeling / 5",
+      "tone": "human",
+      "width": 82,
+      "height": 73,
+      "file": "png/heart-05.png"
+    },
+    {
+      "id": "heart-06",
+      "family": "heart",
+      "title": "Uncompressed feeling / 6",
+      "tone": "human",
+      "width": 82,
+      "height": 73,
+      "file": "png/heart-06.png"
+    },
+    {
+      "id": "cursor-01",
+      "family": "cursor",
+      "title": "Human input / 1",
+      "tone": "material",
+      "width": 56,
+      "height": 81,
+      "file": "png/cursor-01.png"
+    },
+    {
+      "id": "cursor-02",
+      "family": "cursor",
+      "title": "Human input / 2",
+      "tone": "material",
+      "width": 75,
+      "height": 81,
+      "file": "png/cursor-02.png"
+    },
+    {
+      "id": "cursor-03",
+      "family": "cursor",
+      "title": "Human input / 3",
+      "tone": "material",
+      "width": 56,
+      "height": 81,
+      "file": "png/cursor-03.png"
+    },
+    {
+      "id": "cursor-04",
+      "family": "cursor",
+      "title": "Human input / 4",
+      "tone": "material",
+      "width": 75,
+      "height": 81,
+      "file": "png/cursor-04.png"
+    },
+    {
+      "id": "cursor-05",
+      "family": "cursor",
+      "title": "Human input / 5",
+      "tone": "material",
+      "width": 56,
+      "height": 81,
+      "file": "png/cursor-05.png"
+    },
+    {
+      "id": "cursor-06",
+      "family": "cursor",
+      "title": "Human input / 6",
+      "tone": "material",
+      "width": 75,
+      "height": 81,
+      "file": "png/cursor-06.png"
+    },
+    {
+      "id": "earth-01",
+      "family": "earth",
+      "title": "One planet / 1",
+      "tone": "material",
+      "width": 80,
+      "height": 81,
+      "file": "png/earth-01.png"
+    },
+    {
+      "id": "earth-02",
+      "family": "earth",
+      "title": "One planet / 2",
+      "tone": "material",
+      "width": 80,
+      "height": 81,
+      "file": "png/earth-02.png"
+    },
+    {
+      "id": "earth-03",
+      "family": "earth",
+      "title": "One planet / 3",
+      "tone": "material",
+      "width": 80,
+      "height": 81,
+      "file": "png/earth-03.png"
+    },
+    {
+      "id": "earth-04",
+      "family": "earth",
+      "title": "One planet / 4",
+      "tone": "material",
+      "width": 80,
+      "height": 81,
+      "file": "png/earth-04.png"
+    },
+    {
+      "id": "earth-05",
+      "family": "earth",
+      "title": "One planet / 5",
+      "tone": "material",
+      "width": 80,
+      "height": 81,
+      "file": "png/earth-05.png"
+    },
+    {
+      "id": "earth-06",
+      "family": "earth",
+      "title": "One planet / 6",
+      "tone": "material",
+      "width": 80,
+      "height": 81,
+      "file": "png/earth-06.png"
+    },
+    {
+      "id": "cooling-01",
+      "family": "cooling",
+      "title": "Cooling demand / 1",
+      "tone": "material",
+      "width": 83,
+      "height": 96,
+      "file": "png/cooling-01.png"
+    },
+    {
+      "id": "cooling-02",
+      "family": "cooling",
+      "title": "Cooling demand / 2",
+      "tone": "material",
+      "width": 83,
+      "height": 96,
+      "file": "png/cooling-02.png"
+    },
+    {
+      "id": "cooling-03",
+      "family": "cooling",
+      "title": "Cooling demand / 3",
+      "tone": "material",
+      "width": 83,
+      "height": 96,
+      "file": "png/cooling-03.png"
+    },
+    {
+      "id": "cooling-04",
+      "family": "cooling",
+      "title": "Cooling demand / 4",
+      "tone": "material",
+      "width": 83,
+      "height": 96,
+      "file": "png/cooling-04.png"
+    },
+    {
+      "id": "cooling-05",
+      "family": "cooling",
+      "title": "Cooling demand / 5",
+      "tone": "material",
+      "width": 83,
+      "height": 96,
+      "file": "png/cooling-05.png"
+    },
+    {
+      "id": "cooling-06",
+      "family": "cooling",
+      "title": "Cooling demand / 6",
+      "tone": "material",
+      "width": 83,
+      "height": 96,
+      "file": "png/cooling-06.png"
+    },
+    {
+      "id": "disk-01",
+      "family": "disk",
+      "title": "Collected memory / 1",
+      "tone": "material",
+      "width": 71,
+      "height": 82,
+      "file": "png/disk-01.png"
+    },
+    {
+      "id": "disk-02",
+      "family": "disk",
+      "title": "Collected memory / 2",
+      "tone": "material",
+      "width": 71,
+      "height": 82,
+      "file": "png/disk-02.png"
+    },
+    {
+      "id": "disk-03",
+      "family": "disk",
+      "title": "Collected memory / 3",
+      "tone": "material",
+      "width": 71,
+      "height": 82,
+      "file": "png/disk-03.png"
+    },
+    {
+      "id": "disk-04",
+      "family": "disk",
+      "title": "Collected memory / 4",
+      "tone": "material",
+      "width": 71,
+      "height": 82,
+      "file": "png/disk-04.png"
+    },
+    {
+      "id": "disk-05",
+      "family": "disk",
+      "title": "Collected memory / 5",
+      "tone": "material",
+      "width": 71,
+      "height": 82,
+      "file": "png/disk-05.png"
+    },
+    {
+      "id": "disk-06",
+      "family": "disk",
+      "title": "Collected memory / 6",
+      "tone": "material",
+      "width": 71,
+      "height": 82,
+      "file": "png/disk-06.png"
+    },
+    {
+      "id": "robot-01",
+      "family": "robot",
+      "title": "Artificial friend / 1",
+      "tone": "material",
+      "width": 92,
+      "height": 86,
+      "file": "png/robot-01.png"
+    },
+    {
+      "id": "robot-02",
+      "family": "robot",
+      "title": "Artificial friend / 2",
+      "tone": "material",
+      "width": 92,
+      "height": 86,
+      "file": "png/robot-02.png"
+    },
+    {
+      "id": "robot-03",
+      "family": "robot",
+      "title": "Artificial friend / 3",
+      "tone": "material",
+      "width": 92,
+      "height": 86,
+      "file": "png/robot-03.png"
+    },
+    {
+      "id": "robot-04",
+      "family": "robot",
+      "title": "Artificial friend / 4",
+      "tone": "material",
+      "width": 92,
+      "height": 86,
+      "file": "png/robot-04.png"
+    },
+    {
+      "id": "robot-05",
+      "family": "robot",
+      "title": "Artificial friend / 5",
+      "tone": "material",
+      "width": 92,
+      "height": 86,
+      "file": "png/robot-05.png"
+    },
+    {
+      "id": "robot-06",
+      "family": "robot",
+      "title": "Artificial friend / 6",
+      "tone": "material",
+      "width": 92,
+      "height": 86,
+      "file": "png/robot-06.png"
+    },
+    {
+      "id": "satellite-01",
+      "family": "satellite",
+      "title": "Orbital inference / 1",
+      "tone": "material",
+      "width": 100,
+      "height": 77,
+      "file": "png/satellite-01.png"
+    },
+    {
+      "id": "satellite-02",
+      "family": "satellite",
+      "title": "Orbital inference / 2",
+      "tone": "material",
+      "width": 99,
+      "height": 73,
+      "file": "png/satellite-02.png"
+    },
+    {
+      "id": "satellite-03",
+      "family": "satellite",
+      "title": "Orbital inference / 3",
+      "tone": "material",
+      "width": 99,
+      "height": 69,
+      "file": "png/satellite-03.png"
+    },
+    {
+      "id": "satellite-04",
+      "family": "satellite",
+      "title": "Orbital inference / 4",
+      "tone": "material",
+      "width": 96,
+      "height": 67,
+      "file": "png/satellite-04.png"
+    },
+    {
+      "id": "satellite-05",
+      "family": "satellite",
+      "title": "Orbital inference / 5",
+      "tone": "material",
+      "width": 96,
+      "height": 66,
+      "file": "png/satellite-05.png"
+    },
+    {
+      "id": "satellite-06",
+      "family": "satellite",
+      "title": "Orbital inference / 6",
+      "tone": "material",
+      "width": 99,
+      "height": 70,
+      "file": "png/satellite-06.png"
+    },
+    {
+      "id": "pylon-01",
+      "family": "pylon",
+      "title": "Grid dependency / 1",
+      "tone": "material",
+      "width": 91,
+      "height": 92,
+      "file": "png/pylon-01.png"
+    },
+    {
+      "id": "pylon-02",
+      "family": "pylon",
+      "title": "Grid dependency / 2",
+      "tone": "material",
+      "width": 91,
+      "height": 92,
+      "file": "png/pylon-02.png"
+    },
+    {
+      "id": "pylon-03",
+      "family": "pylon",
+      "title": "Grid dependency / 3",
+      "tone": "material",
+      "width": 91,
+      "height": 92,
+      "file": "png/pylon-03.png"
+    },
+    {
+      "id": "pylon-04",
+      "family": "pylon",
+      "title": "Grid dependency / 4",
+      "tone": "material",
+      "width": 91,
+      "height": 92,
+      "file": "png/pylon-04.png"
+    },
+    {
+      "id": "pylon-05",
+      "family": "pylon",
+      "title": "Grid dependency / 5",
+      "tone": "material",
+      "width": 91,
+      "height": 92,
+      "file": "png/pylon-05.png"
+    },
+    {
+      "id": "pylon-06",
+      "family": "pylon",
+      "title": "Grid dependency / 6",
+      "tone": "material",
+      "width": 91,
+      "height": 92,
+      "file": "png/pylon-06.png"
+    },
+    {
+      "id": "ear-01",
+      "family": "ear",
+      "title": "Synthetic listening / 1",
+      "tone": "human",
+      "width": 63,
+      "height": 84,
+      "file": "png/ear-01.png"
+    },
+    {
+      "id": "ear-02",
+      "family": "ear",
+      "title": "Synthetic listening / 2",
+      "tone": "human",
+      "width": 63,
+      "height": 84,
+      "file": "png/ear-02.png"
+    },
+    {
+      "id": "ear-03",
+      "family": "ear",
+      "title": "Synthetic listening / 3",
+      "tone": "human",
+      "width": 63,
+      "height": 84,
+      "file": "png/ear-03.png"
+    },
+    {
+      "id": "ear-04",
+      "family": "ear",
+      "title": "Synthetic listening / 4",
+      "tone": "human",
+      "width": 63,
+      "height": 84,
+      "file": "png/ear-04.png"
+    },
+    {
+      "id": "ear-05",
+      "family": "ear",
+      "title": "Synthetic listening / 5",
+      "tone": "human",
+      "width": 63,
+      "height": 84,
+      "file": "png/ear-05.png"
+    },
+    {
+      "id": "ear-06",
+      "family": "ear",
+      "title": "Synthetic listening / 6",
+      "tone": "human",
+      "width": 63,
+      "height": 84,
+      "file": "png/ear-06.png"
+    },
+    {
+      "id": "flower-01",
+      "family": "flower",
+      "title": "Unmodelled life / 1",
+      "tone": "human",
+      "width": 57,
+      "height": 87,
+      "file": "png/flower-01.png"
+    },
+    {
+      "id": "flower-02",
+      "family": "flower",
+      "title": "Unmodelled life / 2",
+      "tone": "human",
+      "width": 57,
+      "height": 87,
+      "file": "png/flower-02.png"
+    },
+    {
+      "id": "flower-03",
+      "family": "flower",
+      "title": "Unmodelled life / 3",
+      "tone": "human",
+      "width": 57,
+      "height": 87,
+      "file": "png/flower-03.png"
+    },
+    {
+      "id": "flower-04",
+      "family": "flower",
+      "title": "Unmodelled life / 4",
+      "tone": "human",
+      "width": 57,
+      "height": 87,
+      "file": "png/flower-04.png"
+    },
+    {
+      "id": "flower-05",
+      "family": "flower",
+      "title": "Unmodelled life / 5",
+      "tone": "human",
+      "width": 57,
+      "height": 87,
+      "file": "png/flower-05.png"
+    },
+    {
+      "id": "flower-06",
+      "family": "flower",
+      "title": "Unmodelled life / 6",
+      "tone": "human",
+      "width": 57,
+      "height": 87,
+      "file": "png/flower-06.png"
+    },
+    {
+      "id": "hourglass-01",
+      "family": "hourglass",
+      "title": "Please wait / 1",
+      "tone": "material",
+      "width": 58,
+      "height": 81,
+      "file": "png/hourglass-01.png"
+    },
+    {
+      "id": "hourglass-02",
+      "family": "hourglass",
+      "title": "Please wait / 2",
+      "tone": "material",
+      "width": 58,
+      "height": 81,
+      "file": "png/hourglass-02.png"
+    },
+    {
+      "id": "hourglass-03",
+      "family": "hourglass",
+      "title": "Please wait / 3",
+      "tone": "material",
+      "width": 58,
+      "height": 81,
+      "file": "png/hourglass-03.png"
+    },
+    {
+      "id": "hourglass-04",
+      "family": "hourglass",
+      "title": "Please wait / 4",
+      "tone": "material",
+      "width": 58,
+      "height": 81,
+      "file": "png/hourglass-04.png"
+    },
+    {
+      "id": "hourglass-05",
+      "family": "hourglass",
+      "title": "Please wait / 5",
+      "tone": "material",
+      "width": 58,
+      "height": 81,
+      "file": "png/hourglass-05.png"
+    },
+    {
+      "id": "hourglass-06",
+      "family": "hourglass",
+      "title": "Please wait / 6",
+      "tone": "material",
+      "width": 58,
+      "height": 81,
+      "file": "png/hourglass-06.png"
+    },
+    {
+      "id": "hand-01",
+      "family": "hand",
+      "title": "A hand remains / 1",
+      "tone": "human",
+      "width": 81,
+      "height": 86,
+      "file": "png/hand-01.png"
+    },
+    {
+      "id": "hand-02",
+      "family": "hand",
+      "title": "A hand remains / 2",
+      "tone": "human",
+      "width": 81,
+      "height": 86,
+      "file": "png/hand-02.png"
+    },
+    {
+      "id": "hand-03",
+      "family": "hand",
+      "title": "A hand remains / 3",
+      "tone": "human",
+      "width": 81,
+      "height": 86,
+      "file": "png/hand-03.png"
+    },
+    {
+      "id": "hand-04",
+      "family": "hand",
+      "title": "A hand remains / 4",
+      "tone": "human",
+      "width": 81,
+      "height": 86,
+      "file": "png/hand-04.png"
+    },
+    {
+      "id": "hand-05",
+      "family": "hand",
+      "title": "A hand remains / 5",
+      "tone": "human",
+      "width": 81,
+      "height": 86,
+      "file": "png/hand-05.png"
+    },
+    {
+      "id": "hand-06",
+      "family": "hand",
+      "title": "A hand remains / 6",
+      "tone": "human",
+      "width": 81,
+      "height": 86,
+      "file": "png/hand-06.png"
+    },
+    {
+      "id": "banner-01",
+      "family": "banner",
+      "title": "EVERYTHING IS THINKING",
+      "tone": "promise",
+      "width": 174,
+      "height": 54,
+      "file": "png/banner-01.png"
+    },
+    {
+      "id": "banner-02",
+      "family": "banner",
+      "title": "A BETTER WORLD IS LOADING",
+      "tone": "promise",
+      "width": 186,
+      "height": 54,
+      "file": "png/banner-02.png"
+    },
+    {
+      "id": "banner-03",
+      "family": "banner",
+      "title": "THE FUTURE NEEDS YOU",
+      "tone": "promise",
+      "width": 148,
+      "height": 54,
+      "file": "png/banner-03.png"
+    },
+    {
+      "id": "banner-04",
+      "family": "banner",
+      "title": "MAKE SOMETHING IMPOSSIBLE",
+      "tone": "promise",
+      "width": 186,
+      "height": 54,
+      "file": "png/banner-04.png"
+    },
+    {
+      "id": "banner-05",
+      "family": "banner",
+      "title": "INTELLIGENCE FOR EVERYONE",
+      "tone": "promise",
+      "width": 162,
+      "height": 54,
+      "file": "png/banner-05.png"
+    },
+    {
+      "id": "banner-06",
+      "family": "banner",
+      "title": "A SMALL TOOL A LARGE DREAM",
+      "tone": "promise",
+      "width": 174,
+      "height": 54,
+      "file": "png/banner-06.png"
+    },
+    {
+      "id": "banner-07",
+      "family": "banner",
+      "title": "LEARN FASTER WONDER LONGER",
+      "tone": "promise",
+      "width": 174,
+      "height": 54,
+      "file": "png/banner-07.png"
+    },
+    {
+      "id": "banner-08",
+      "family": "banner",
+      "title": "YOUR NEW COLLABORATOR",
+      "tone": "promise",
+      "width": 162,
+      "height": 54,
+      "file": "png/banner-08.png"
+    },
+    {
+      "id": "banner-09",
+      "family": "banner",
+      "title": "OPENAI OPEN ENDED",
+      "tone": "promise",
+      "width": 148,
+      "height": 54,
+      "file": "png/banner-09.png"
+    },
+    {
+      "id": "banner-10",
+      "family": "banner",
+      "title": "ANTHROPIC HUMAN SHAPED",
+      "tone": "promise",
+      "width": 162,
+      "height": 54,
+      "file": "png/banner-10.png"
+    },
+    {
+      "id": "banner-11",
+      "family": "banner",
+      "title": "GEMINI DOUBLE VISION",
+      "tone": "promise",
+      "width": 174,
+      "height": 54,
+      "file": "png/banner-11.png"
+    },
+    {
+      "id": "banner-12",
+      "family": "banner",
+      "title": "GROK ORBITAL DREAMS",
+      "tone": "promise",
+      "width": 186,
+      "height": 54,
+      "file": "png/banner-12.png"
+    },
+    {
+      "id": "banner-13",
+      "family": "banner",
+      "title": "NVIDIA SILICON WEATHER",
+      "tone": "promise",
+      "width": 198,
+      "height": 54,
+      "file": "png/banner-13.png"
+    },
+    {
+      "id": "banner-14",
+      "family": "banner",
+      "title": "TSMC MADE OF SAND",
+      "tone": "promise",
+      "width": 162,
+      "height": 54,
+      "file": "png/banner-14.png"
+    },
+    {
+      "id": "banner-15",
+      "family": "banner",
+      "title": "DIFFUSION DREAMS IN STEPS",
+      "tone": "promise",
+      "width": 198,
+      "height": 54,
+      "file": "png/banner-15.png"
+    },
+    {
+      "id": "banner-16",
+      "family": "banner",
+      "title": "SOUND MODEL LISTEN AGAIN",
+      "tone": "promise",
+      "width": 162,
+      "height": 54,
+      "file": "png/banner-16.png"
+    },
+    {
+      "id": "banner-17",
+      "family": "banner",
+      "title": "WHO OWNS THE TRAINING?",
+      "tone": "friction",
+      "width": 174,
+      "height": 54,
+      "file": "png/banner-17.png"
+    },
+    {
+      "id": "banner-18",
+      "family": "banner",
+      "title": "CONSENT NOT FOUND",
+      "tone": "friction",
+      "width": 148,
+      "height": 54,
+      "file": "png/banner-18.png"
+    },
+    {
+      "id": "banner-19",
+      "family": "banner",
+      "title": "THE CLOUD IS VERY HOT",
+      "tone": "friction",
+      "width": 150,
+      "height": 54,
+      "file": "png/banner-19.png"
+    },
+    {
+      "id": "banner-20",
+      "family": "banner",
+      "title": "REPLACE ME? REMEMBER ME?",
+      "tone": "friction",
+      "width": 162,
+      "height": 54,
+      "file": "png/banner-20.png"
+    },
+    {
+      "id": "banner-21",
+      "family": "banner",
+      "title": "TRUST ME VERIFY ME",
+      "tone": "friction",
+      "width": 148,
+      "height": 54,
+      "file": "png/banner-21.png"
+    },
+    {
+      "id": "banner-22",
+      "family": "banner",
+      "title": "IS THIS YOUR VOICE?",
+      "tone": "friction",
+      "width": 150,
+      "height": 54,
+      "file": "png/banner-22.png"
+    },
+    {
+      "id": "banner-23",
+      "family": "banner",
+      "title": "ASK A MACHINE ASK A PERSON",
+      "tone": "friction",
+      "width": 174,
+      "height": 54,
+      "file": "png/banner-23.png"
+    },
+    {
+      "id": "banner-24",
+      "family": "banner",
+      "title": "NO ONE KNOWS EVERYTHING",
+      "tone": "friction",
+      "width": 162,
+      "height": 54,
+      "file": "png/banner-24.png"
+    },
+    {
+      "id": "banner-25",
+      "family": "banner",
+      "title": "PLEASE HOLD YOUR BREATH",
+      "tone": "friction",
+      "width": 150,
+      "height": 54,
+      "file": "png/banner-25.png"
+    },
+    {
+      "id": "banner-26",
+      "family": "banner",
+      "title": "HUMAN WORK STILL HERE",
+      "tone": "friction",
+      "width": 148,
+      "height": 54,
+      "file": "png/banner-26.png"
+    },
+    {
+      "id": "banner-27",
+      "family": "banner",
+      "title": "MY JOB IS BUFFERING",
+      "tone": "friction",
+      "width": 148,
+      "height": 54,
+      "file": "png/banner-27.png"
+    },
+    {
+      "id": "banner-28",
+      "family": "banner",
+      "title": "POWER DEMAND MEETS A RIVER",
+      "tone": "friction",
+      "width": 174,
+      "height": 54,
+      "file": "png/banner-28.png"
+    },
+    {
+      "id": "banner-29",
+      "family": "banner",
+      "title": "PLEASE DO NOT AUTOMATE THE SUN",
+      "tone": "friction",
+      "width": 210,
+      "height": 54,
+      "file": "png/banner-29.png"
+    },
+    {
+      "id": "banner-30",
+      "family": "banner",
+      "title": "INFINITE GROWTH FINITE PLANET",
+      "tone": "friction",
+      "width": 198,
+      "height": 54,
+      "file": "png/banner-30.png"
+    },
+    {
+      "id": "banner-31",
+      "family": "banner",
+      "title": "BUY MORE TIME SELL MORE CHIPS",
+      "tone": "friction",
+      "width": 198,
+      "height": 54,
+      "file": "png/banner-31.png"
+    },
+    {
+      "id": "banner-32",
+      "family": "banner",
+      "title": "TERMS OF SERVICE TERMS OF LIFE",
+      "tone": "friction",
+      "width": 210,
+      "height": 54,
+      "file": "png/banner-32.png"
+    },
+    {
+      "id": "banner-33",
+      "family": "banner",
+      "title": "I MADE THIS WE MADE THIS",
+      "tone": "friction",
+      "width": 162,
+      "height": 54,
+      "file": "png/banner-33.png"
+    },
+    {
+      "id": "banner-34",
+      "family": "banner",
+      "title": "ORIGINALITY UNDER REVIEW",
+      "tone": "friction",
+      "width": 162,
+      "height": 54,
+      "file": "png/banner-34.png"
+    },
+    {
+      "id": "banner-35",
+      "family": "banner",
+      "title": "GHOSTS IN THE DATASET",
+      "tone": "friction",
+      "width": 150,
+      "height": 54,
+      "file": "png/banner-35.png"
+    },
+    {
+      "id": "banner-36",
+      "family": "banner",
+      "title": "SCRAPED BUT NOT FORGOTTEN",
+      "tone": "friction",
+      "width": 222,
+      "height": 54,
+      "file": "png/banner-36.png"
+    },
+    {
+      "id": "banner-37",
+      "family": "banner",
+      "title": "SOMEONE TAUGHT THE MACHINE",
+      "tone": "ambivalent",
+      "width": 186,
+      "height": 54,
+      "file": "png/banner-37.png"
+    },
+    {
+      "id": "banner-38",
+      "family": "banner",
+      "title": "SOMEONE LOVES THIS WORLD",
+      "tone": "ambivalent",
+      "width": 174,
+      "height": 54,
+      "file": "png/banner-38.png"
+    },
+    {
+      "id": "banner-39",
+      "family": "banner",
+      "title": "KEEP A LITTLE MYSTERY",
+      "tone": "ambivalent",
+      "width": 174,
+      "height": 54,
+      "file": "png/banner-39.png"
+    },
+    {
+      "id": "banner-40",
+      "family": "banner",
+      "title": "MORE THAN A BENCHMARK",
+      "tone": "ambivalent",
+      "width": 150,
+      "height": 54,
+      "file": "png/banner-40.png"
+    },
+    {
+      "id": "banner-41",
+      "family": "banner",
+      "title": "TOUCH GRASS RENDER GRASS",
+      "tone": "ambivalent",
+      "width": 162,
+      "height": 54,
+      "file": "png/banner-41.png"
+    },
+    {
+      "id": "banner-42",
+      "family": "banner",
+      "title": "THANK YOU FOR WAITING",
+      "tone": "ambivalent",
+      "width": 150,
+      "height": 54,
+      "file": "png/banner-42.png"
+    },
+    {
+      "id": "banner-43",
+      "family": "banner",
+      "title": "SO MUCH FEAR SO MUCH WONDER",
+      "tone": "ambivalent",
+      "width": 186,
+      "height": 54,
+      "file": "png/banner-43.png"
+    },
+    {
+      "id": "banner-44",
+      "family": "banner",
+      "title": "BOTH THINGS CAN BE TRUE",
+      "tone": "ambivalent",
+      "width": 150,
+      "height": 54,
+      "file": "png/banner-44.png"
+    },
+    {
+      "id": "banner-45",
+      "family": "banner",
+      "title": "THE NEXT MODEL WILL FIX IT",
+      "tone": "ambivalent",
+      "width": 186,
+      "height": 54,
+      "file": "png/banner-45.png"
+    },
+    {
+      "id": "banner-46",
+      "family": "banner",
+      "title": "UNDER CONSTRUCTION",
+      "tone": "ambivalent",
+      "width": 162,
+      "height": 54,
+      "file": "png/banner-46.png"
+    },
+    {
+      "id": "banner-47",
+      "family": "banner",
+      "title": "AGENT TO AGENT HUMAN TO HUMAN",
+      "tone": "ambivalent",
+      "width": 186,
+      "height": 54,
+      "file": "png/banner-47.png"
+    },
+    {
+      "id": "banner-48",
+      "family": "banner",
+      "title": "STILL BECOMING STILL UNSURE",
+      "tone": "ambivalent",
+      "width": 186,
+      "height": 54,
+      "file": "png/banner-48.png"
+    },
+    {
+      "id": "dialog-01",
+      "family": "dialog",
+      "title": "HUMAN.EXE / STILL RUNNING / DO NOT CLOSE",
+      "tone": "ambivalent",
+      "width": 160,
+      "height": 92,
+      "file": "png/dialog-01.png"
+    },
+    {
+      "id": "dialog-02",
+      "family": "dialog",
+      "title": "INFERENCE / THINKING... / PLEASE WAIT",
+      "tone": "ambivalent",
+      "width": 160,
+      "height": 92,
+      "file": "png/dialog-02.png"
+    },
+    {
+      "id": "dialog-03",
+      "family": "dialog",
+      "title": "ALIGNMENT / WITH WHOM? / ASK AGAIN",
+      "tone": "ambivalent",
+      "width": 160,
+      "height": 92,
+      "file": "png/dialog-03.png"
+    },
+    {
+      "id": "dialog-04",
+      "family": "dialog",
+      "title": "CREATIVITY / SOURCE UNKNOWN / KEEP GOING",
+      "tone": "ambivalent",
+      "width": 160,
+      "height": 92,
+      "file": "png/dialog-04.png"
+    },
+    {
+      "id": "dialog-05",
+      "family": "dialog",
+      "title": "ENERGY / CLOUD = EARTH / MORE POWER",
+      "tone": "ambivalent",
+      "width": 160,
+      "height": 92,
+      "file": "png/dialog-05.png"
+    },
+    {
+      "id": "dialog-06",
+      "family": "dialog",
+      "title": "MEMORY / FORGET ME? / YES / NO",
+      "tone": "ambivalent",
+      "width": 160,
+      "height": 92,
+      "file": "png/dialog-06.png"
+    },
+    {
+      "id": "dialog-07",
+      "family": "dialog",
+      "title": "VOICE MODEL / IS THAT YOU? / LISTEN",
+      "tone": "ambivalent",
+      "width": 160,
+      "height": 92,
+      "file": "png/dialog-07.png"
+    },
+    {
+      "id": "dialog-08",
+      "family": "dialog",
+      "title": "WORLD MODEL / RAIN EXPECTED / LOOK OUTSIDE",
+      "tone": "ambivalent",
+      "width": 160,
+      "height": 92,
+      "file": "png/dialog-08.png"
+    },
+    {
+      "id": "dialog-09",
+      "family": "dialog",
+      "title": "VISION / I SEE PIXELS / DO YOU?",
+      "tone": "ambivalent",
+      "width": 160,
+      "height": 92,
+      "file": "png/dialog-09.png"
+    },
+    {
+      "id": "dialog-10",
+      "family": "dialog",
+      "title": "SAFETY / FEAR DETECTED / STAY CURIOUS",
+      "tone": "ambivalent",
+      "width": 160,
+      "height": 92,
+      "file": "png/dialog-10.png"
+    },
+    {
+      "id": "dialog-11",
+      "family": "dialog",
+      "title": "BENCHMARK / HUMAN: ??? / TRY AGAIN",
+      "tone": "ambivalent",
+      "width": 160,
+      "height": 92,
+      "file": "png/dialog-11.png"
+    },
+    {
+      "id": "dialog-12",
+      "family": "dialog",
+      "title": "AGENT / TASK COMPLETE / WHAT NOW?",
+      "tone": "ambivalent",
+      "width": 160,
+      "height": 92,
+      "file": "png/dialog-12.png"
+    },
+    {
+      "id": "dialog-13",
+      "family": "dialog",
+      "title": "AUDIO / A HUMAN HUMS / UNMUTE",
+      "tone": "ambivalent",
+      "width": 160,
+      "height": 92,
+      "file": "png/dialog-13.png"
+    },
+    {
+      "id": "dialog-14",
+      "family": "dialog",
+      "title": "DATASET / MISSING CONTEXT / RESTORE",
+      "tone": "ambivalent",
+      "width": 160,
+      "height": 92,
+      "file": "png/dialog-14.png"
+    },
+    {
+      "id": "dialog-15",
+      "family": "dialog",
+      "title": "PROMPT / BEAUTY + PAIN / GENERATE",
+      "tone": "ambivalent",
+      "width": 160,
+      "height": 92,
+      "file": "png/dialog-15.png"
+    },
+    {
+      "id": "dialog-16",
+      "family": "dialog",
+      "title": "COPYRIGHT / WHO WAS HERE? / REMEMBER",
+      "tone": "ambivalent",
+      "width": 160,
+      "height": 92,
+      "file": "png/dialog-16.png"
+    },
+    {
+      "id": "dialog-17",
+      "family": "dialog",
+      "title": "CONNECTION / YOU ARE HERE / STAY",
+      "tone": "ambivalent",
+      "width": 160,
+      "height": 92,
+      "file": "png/dialog-17.png"
+    },
+    {
+      "id": "dialog-18",
+      "family": "dialog",
+      "title": "MODEL UPDATE / AGAIN ALREADY? / LATER",
+      "tone": "ambivalent",
+      "width": 160,
+      "height": 92,
+      "file": "png/dialog-18.png"
+    },
+    {
+      "id": "dialog-19",
+      "family": "dialog",
+      "title": "CAPTCHA / AM I HUMAN? / I THINK SO",
+      "tone": "ambivalent",
+      "width": 160,
+      "height": 92,
+      "file": "png/dialog-19.png"
+    },
+    {
+      "id": "dialog-20",
+      "family": "dialog",
+      "title": "ATTENTION / ALL YOU NEED? / LOOK CLOSER",
+      "tone": "ambivalent",
+      "width": 160,
+      "height": 92,
+      "file": "png/dialog-20.png"
+    },
+    {
+      "id": "dialog-21",
+      "family": "dialog",
+      "title": "LOSS / DECREASING / FEELING?",
+      "tone": "ambivalent",
+      "width": 160,
+      "height": 92,
+      "file": "png/dialog-21.png"
+    },
+    {
+      "id": "dialog-22",
+      "family": "dialog",
+      "title": "CONTEXT / WINDOW FULL / LET GO",
+      "tone": "ambivalent",
+      "width": 160,
+      "height": 92,
+      "file": "png/dialog-22.png"
+    },
+    {
+      "id": "dialog-23",
+      "family": "dialog",
+      "title": "COMPUTE / CORES: MANY / HEARTS: 1",
+      "tone": "ambivalent",
+      "width": 160,
+      "height": 92,
+      "file": "png/dialog-23.png"
+    },
+    {
+      "id": "dialog-24",
+      "family": "dialog",
+      "title": "CONFIDENCE / UNCERTAIN / CONTINUE",
+      "tone": "ambivalent",
+      "width": 160,
+      "height": 92,
+      "file": "png/dialog-24.png"
+    },
+    {
+      "id": "badge-01",
+      "family": "badge",
+      "title": "100% HUMAN",
+      "tone": "ambivalent",
+      "width": 112,
+      "height": 31,
+      "file": "png/badge-01.png"
+    },
+    {
+      "id": "badge-02",
+      "family": "badge",
+      "title": "AI INSIDE",
+      "tone": "ambivalent",
+      "width": 112,
+      "height": 31,
+      "file": "png/badge-02.png"
+    },
+    {
+      "id": "badge-03",
+      "family": "badge",
+      "title": "NOW WITH DOUBT",
+      "tone": "ambivalent",
+      "width": 115,
+      "height": 31,
+      "file": "png/badge-03.png"
+    },
+    {
+      "id": "badge-04",
+      "family": "badge",
+      "title": "FREE WILL",
+      "tone": "ambivalent",
+      "width": 112,
+      "height": 31,
+      "file": "png/badge-04.png"
+    },
+    {
+      "id": "badge-05",
+      "family": "badge",
+      "title": "NO FREE LUNCH",
+      "tone": "ambivalent",
+      "width": 112,
+      "height": 31,
+      "file": "png/badge-05.png"
+    },
+    {
+      "id": "badge-06",
+      "family": "badge",
+      "title": "LOW CONFIDENCE",
+      "tone": "ambivalent",
+      "width": 115,
+      "height": 31,
+      "file": "png/badge-06.png"
+    },
+    {
+      "id": "badge-07",
+      "family": "badge",
+      "title": "HIGH HOPES",
+      "tone": "ambivalent",
+      "width": 112,
+      "height": 31,
+      "file": "png/badge-07.png"
+    },
+    {
+      "id": "badge-08",
+      "family": "badge",
+      "title": "NEW MODEL!",
+      "tone": "ambivalent",
+      "width": 112,
+      "height": 31,
+      "file": "png/badge-08.png"
+    },
+    {
+      "id": "badge-09",
+      "family": "badge",
+      "title": "NO SIGNAL",
+      "tone": "ambivalent",
+      "width": 112,
+      "height": 31,
+      "file": "png/badge-09.png"
+    },
+    {
+      "id": "badge-10",
+      "family": "badge",
+      "title": "ALWAYS ONLINE",
+      "tone": "ambivalent",
+      "width": 112,
+      "height": 31,
+      "file": "png/badge-10.png"
+    },
+    {
+      "id": "badge-11",
+      "family": "badge",
+      "title": "32 BIT FEELINGS",
+      "tone": "ambivalent",
+      "width": 121,
+      "height": 31,
+      "file": "png/badge-11.png"
+    },
+    {
+      "id": "badge-12",
+      "family": "badge",
+      "title": "PLEASE WAIT",
+      "tone": "ambivalent",
+      "width": 112,
+      "height": 31,
+      "file": "png/badge-12.png"
+    },
+    {
+      "id": "badge-13",
+      "family": "badge",
+      "title": "BETA FOREVER",
+      "tone": "ambivalent",
+      "width": 112,
+      "height": 31,
+      "file": "png/badge-13.png"
+    },
+    {
+      "id": "badge-14",
+      "family": "badge",
+      "title": "OPEN WEIGHTS",
+      "tone": "ambivalent",
+      "width": 112,
+      "height": 31,
+      "file": "png/badge-14.png"
+    },
+    {
+      "id": "badge-15",
+      "family": "badge",
+      "title": "CLOSED DOORS",
+      "tone": "ambivalent",
+      "width": 112,
+      "height": 31,
+      "file": "png/badge-15.png"
+    },
+    {
+      "id": "badge-16",
+      "family": "badge",
+      "title": "HOT SILICON",
+      "tone": "ambivalent",
+      "width": 112,
+      "height": 31,
+      "file": "png/badge-16.png"
+    },
+    {
+      "id": "badge-17",
+      "family": "badge",
+      "title": "COOL WATER",
+      "tone": "ambivalent",
+      "width": 112,
+      "height": 31,
+      "file": "png/badge-17.png"
+    },
+    {
+      "id": "badge-18",
+      "family": "badge",
+      "title": "REAL TEARS",
+      "tone": "ambivalent",
+      "width": 112,
+      "height": 31,
+      "file": "png/badge-18.png"
+    },
+    {
+      "id": "badge-19",
+      "family": "badge",
+      "title": "SOFT MACHINE",
+      "tone": "ambivalent",
+      "width": 112,
+      "height": 31,
+      "file": "png/badge-19.png"
+    },
+    {
+      "id": "badge-20",
+      "family": "badge",
+      "title": "UNFINISHED",
+      "tone": "ambivalent",
+      "width": 112,
+      "height": 31,
+      "file": "png/badge-20.png"
+    },
+    {
+      "id": "brand-openai-1",
+      "family": "brand",
+      "title": "OPENAI / pixel reinterpretation 1",
+      "tone": "brand",
+      "width": 64,
+      "height": 64,
+      "file": "png/brand-openai-1.png"
+    },
+    {
+      "id": "brand-openai-2",
+      "family": "brand",
+      "title": "OPENAI / pixel reinterpretation 2",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-openai-2.png"
+    },
+    {
+      "id": "brand-openai-3",
+      "family": "brand",
+      "title": "OPENAI / pixel reinterpretation 3",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-openai-3.png"
+    },
+    {
+      "id": "brand-claude-1",
+      "family": "brand",
+      "title": "CLAUDE / pixel reinterpretation 1",
+      "tone": "brand",
+      "width": 64,
+      "height": 64,
+      "file": "png/brand-claude-1.png"
+    },
+    {
+      "id": "brand-claude-2",
+      "family": "brand",
+      "title": "CLAUDE / pixel reinterpretation 2",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-claude-2.png"
+    },
+    {
+      "id": "brand-claude-3",
+      "family": "brand",
+      "title": "CLAUDE / pixel reinterpretation 3",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-claude-3.png"
+    },
+    {
+      "id": "brand-anthropic-1",
+      "family": "brand",
+      "title": "ANTHROPIC / pixel reinterpretation 1",
+      "tone": "brand",
+      "width": 64,
+      "height": 64,
+      "file": "png/brand-anthropic-1.png"
+    },
+    {
+      "id": "brand-anthropic-2",
+      "family": "brand",
+      "title": "ANTHROPIC / pixel reinterpretation 2",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-anthropic-2.png"
+    },
+    {
+      "id": "brand-anthropic-3",
+      "family": "brand",
+      "title": "ANTHROPIC / pixel reinterpretation 3",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-anthropic-3.png"
+    },
+    {
+      "id": "brand-grok-1",
+      "family": "brand",
+      "title": "GROK / pixel reinterpretation 1",
+      "tone": "brand",
+      "width": 64,
+      "height": 64,
+      "file": "png/brand-grok-1.png"
+    },
+    {
+      "id": "brand-grok-2",
+      "family": "brand",
+      "title": "GROK / pixel reinterpretation 2",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-grok-2.png"
+    },
+    {
+      "id": "brand-grok-3",
+      "family": "brand",
+      "title": "GROK / pixel reinterpretation 3",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-grok-3.png"
+    },
+    {
+      "id": "brand-google-1",
+      "family": "brand",
+      "title": "GOOGLE / pixel reinterpretation 1",
+      "tone": "brand",
+      "width": 64,
+      "height": 64,
+      "file": "png/brand-google-1.png"
+    },
+    {
+      "id": "brand-google-2",
+      "family": "brand",
+      "title": "GOOGLE / pixel reinterpretation 2",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-google-2.png"
+    },
+    {
+      "id": "brand-google-3",
+      "family": "brand",
+      "title": "GOOGLE / pixel reinterpretation 3",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-google-3.png"
+    },
+    {
+      "id": "brand-gemini-1",
+      "family": "brand",
+      "title": "GEMINI / pixel reinterpretation 1",
+      "tone": "brand",
+      "width": 64,
+      "height": 64,
+      "file": "png/brand-gemini-1.png"
+    },
+    {
+      "id": "brand-gemini-2",
+      "family": "brand",
+      "title": "GEMINI / pixel reinterpretation 2",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-gemini-2.png"
+    },
+    {
+      "id": "brand-gemini-3",
+      "family": "brand",
+      "title": "GEMINI / pixel reinterpretation 3",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-gemini-3.png"
+    },
+    {
+      "id": "brand-meta-1",
+      "family": "brand",
+      "title": "META / pixel reinterpretation 1",
+      "tone": "brand",
+      "width": 64,
+      "height": 64,
+      "file": "png/brand-meta-1.png"
+    },
+    {
+      "id": "brand-meta-2",
+      "family": "brand",
+      "title": "META / pixel reinterpretation 2",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-meta-2.png"
+    },
+    {
+      "id": "brand-meta-3",
+      "family": "brand",
+      "title": "META / pixel reinterpretation 3",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-meta-3.png"
+    },
+    {
+      "id": "brand-nvidia-1",
+      "family": "brand",
+      "title": "NVIDIA / pixel reinterpretation 1",
+      "tone": "brand",
+      "width": 64,
+      "height": 64,
+      "file": "png/brand-nvidia-1.png"
+    },
+    {
+      "id": "brand-nvidia-2",
+      "family": "brand",
+      "title": "NVIDIA / pixel reinterpretation 2",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-nvidia-2.png"
+    },
+    {
+      "id": "brand-nvidia-3",
+      "family": "brand",
+      "title": "NVIDIA / pixel reinterpretation 3",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-nvidia-3.png"
+    },
+    {
+      "id": "brand-intel-1",
+      "family": "brand",
+      "title": "INTEL / pixel reinterpretation 1",
+      "tone": "brand",
+      "width": 64,
+      "height": 64,
+      "file": "png/brand-intel-1.png"
+    },
+    {
+      "id": "brand-intel-2",
+      "family": "brand",
+      "title": "INTEL / pixel reinterpretation 2",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-intel-2.png"
+    },
+    {
+      "id": "brand-intel-3",
+      "family": "brand",
+      "title": "INTEL / pixel reinterpretation 3",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-intel-3.png"
+    },
+    {
+      "id": "brand-amd-1",
+      "family": "brand",
+      "title": "AMD / pixel reinterpretation 1",
+      "tone": "brand",
+      "width": 64,
+      "height": 64,
+      "file": "png/brand-amd-1.png"
+    },
+    {
+      "id": "brand-amd-2",
+      "family": "brand",
+      "title": "AMD / pixel reinterpretation 2",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-amd-2.png"
+    },
+    {
+      "id": "brand-amd-3",
+      "family": "brand",
+      "title": "AMD / pixel reinterpretation 3",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-amd-3.png"
+    },
+    {
+      "id": "brand-tsmc-1",
+      "family": "brand",
+      "title": "TSMC / pixel reinterpretation 1",
+      "tone": "brand",
+      "width": 64,
+      "height": 64,
+      "file": "png/brand-tsmc-1.png"
+    },
+    {
+      "id": "brand-tsmc-2",
+      "family": "brand",
+      "title": "TSMC / pixel reinterpretation 2",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-tsmc-2.png"
+    },
+    {
+      "id": "brand-tsmc-3",
+      "family": "brand",
+      "title": "TSMC / pixel reinterpretation 3",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-tsmc-3.png"
+    },
+    {
+      "id": "brand-asml-1",
+      "family": "brand",
+      "title": "ASML / pixel reinterpretation 1",
+      "tone": "brand",
+      "width": 64,
+      "height": 64,
+      "file": "png/brand-asml-1.png"
+    },
+    {
+      "id": "brand-asml-2",
+      "family": "brand",
+      "title": "ASML / pixel reinterpretation 2",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-asml-2.png"
+    },
+    {
+      "id": "brand-asml-3",
+      "family": "brand",
+      "title": "ASML / pixel reinterpretation 3",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-asml-3.png"
+    },
+    {
+      "id": "brand-microsoft-1",
+      "family": "brand",
+      "title": "MICROSOFT / pixel reinterpretation 1",
+      "tone": "brand",
+      "width": 64,
+      "height": 64,
+      "file": "png/brand-microsoft-1.png"
+    },
+    {
+      "id": "brand-microsoft-2",
+      "family": "brand",
+      "title": "MICROSOFT / pixel reinterpretation 2",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-microsoft-2.png"
+    },
+    {
+      "id": "brand-microsoft-3",
+      "family": "brand",
+      "title": "MICROSOFT / pixel reinterpretation 3",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-microsoft-3.png"
+    },
+    {
+      "id": "brand-amazon-1",
+      "family": "brand",
+      "title": "AMAZON / pixel reinterpretation 1",
+      "tone": "brand",
+      "width": 64,
+      "height": 64,
+      "file": "png/brand-amazon-1.png"
+    },
+    {
+      "id": "brand-amazon-2",
+      "family": "brand",
+      "title": "AMAZON / pixel reinterpretation 2",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-amazon-2.png"
+    },
+    {
+      "id": "brand-amazon-3",
+      "family": "brand",
+      "title": "AMAZON / pixel reinterpretation 3",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-amazon-3.png"
+    },
+    {
+      "id": "brand-apple-1",
+      "family": "brand",
+      "title": "APPLE / pixel reinterpretation 1",
+      "tone": "brand",
+      "width": 64,
+      "height": 64,
+      "file": "png/brand-apple-1.png"
+    },
+    {
+      "id": "brand-apple-2",
+      "family": "brand",
+      "title": "APPLE / pixel reinterpretation 2",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-apple-2.png"
+    },
+    {
+      "id": "brand-apple-3",
+      "family": "brand",
+      "title": "APPLE / pixel reinterpretation 3",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-apple-3.png"
+    },
+    {
+      "id": "brand-arm-1",
+      "family": "brand",
+      "title": "ARM / pixel reinterpretation 1",
+      "tone": "brand",
+      "width": 64,
+      "height": 64,
+      "file": "png/brand-arm-1.png"
+    },
+    {
+      "id": "brand-arm-2",
+      "family": "brand",
+      "title": "ARM / pixel reinterpretation 2",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-arm-2.png"
+    },
+    {
+      "id": "brand-arm-3",
+      "family": "brand",
+      "title": "ARM / pixel reinterpretation 3",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-arm-3.png"
+    },
+    {
+      "id": "brand-oracle-1",
+      "family": "brand",
+      "title": "ORACLE / pixel reinterpretation 1",
+      "tone": "brand",
+      "width": 64,
+      "height": 64,
+      "file": "png/brand-oracle-1.png"
+    },
+    {
+      "id": "brand-oracle-2",
+      "family": "brand",
+      "title": "ORACLE / pixel reinterpretation 2",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-oracle-2.png"
+    },
+    {
+      "id": "brand-oracle-3",
+      "family": "brand",
+      "title": "ORACLE / pixel reinterpretation 3",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-oracle-3.png"
+    },
+    {
+      "id": "brand-ibm-1",
+      "family": "brand",
+      "title": "IBM / pixel reinterpretation 1",
+      "tone": "brand",
+      "width": 64,
+      "height": 64,
+      "file": "png/brand-ibm-1.png"
+    },
+    {
+      "id": "brand-ibm-2",
+      "family": "brand",
+      "title": "IBM / pixel reinterpretation 2",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-ibm-2.png"
+    },
+    {
+      "id": "brand-ibm-3",
+      "family": "brand",
+      "title": "IBM / pixel reinterpretation 3",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-ibm-3.png"
+    },
+    {
+      "id": "brand-deepseek-1",
+      "family": "brand",
+      "title": "DEEPSEEK / pixel reinterpretation 1",
+      "tone": "brand",
+      "width": 64,
+      "height": 64,
+      "file": "png/brand-deepseek-1.png"
+    },
+    {
+      "id": "brand-deepseek-2",
+      "family": "brand",
+      "title": "DEEPSEEK / pixel reinterpretation 2",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-deepseek-2.png"
+    },
+    {
+      "id": "brand-deepseek-3",
+      "family": "brand",
+      "title": "DEEPSEEK / pixel reinterpretation 3",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-deepseek-3.png"
+    },
+    {
+      "id": "brand-mistral-1",
+      "family": "brand",
+      "title": "MISTRAL / pixel reinterpretation 1",
+      "tone": "brand",
+      "width": 64,
+      "height": 64,
+      "file": "png/brand-mistral-1.png"
+    },
+    {
+      "id": "brand-mistral-2",
+      "family": "brand",
+      "title": "MISTRAL / pixel reinterpretation 2",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-mistral-2.png"
+    },
+    {
+      "id": "brand-mistral-3",
+      "family": "brand",
+      "title": "MISTRAL / pixel reinterpretation 3",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-mistral-3.png"
+    },
+    {
+      "id": "brand-qwen-1",
+      "family": "brand",
+      "title": "QWEN / pixel reinterpretation 1",
+      "tone": "brand",
+      "width": 64,
+      "height": 64,
+      "file": "png/brand-qwen-1.png"
+    },
+    {
+      "id": "brand-qwen-2",
+      "family": "brand",
+      "title": "QWEN / pixel reinterpretation 2",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-qwen-2.png"
+    },
+    {
+      "id": "brand-qwen-3",
+      "family": "brand",
+      "title": "QWEN / pixel reinterpretation 3",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-qwen-3.png"
+    },
+    {
+      "id": "brand-huggingface-1",
+      "family": "brand",
+      "title": "HUGGING FACE / pixel reinterpretation 1",
+      "tone": "brand",
+      "width": 64,
+      "height": 64,
+      "file": "png/brand-huggingface-1.png"
+    },
+    {
+      "id": "brand-huggingface-2",
+      "family": "brand",
+      "title": "HUGGING FACE / pixel reinterpretation 2",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-huggingface-2.png"
+    },
+    {
+      "id": "brand-huggingface-3",
+      "family": "brand",
+      "title": "HUGGING FACE / pixel reinterpretation 3",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-huggingface-3.png"
+    },
+    {
+      "id": "brand-cohere-1",
+      "family": "brand",
+      "title": "COHERE / pixel reinterpretation 1",
+      "tone": "brand",
+      "width": 64,
+      "height": 64,
+      "file": "png/brand-cohere-1.png"
+    },
+    {
+      "id": "brand-cohere-2",
+      "family": "brand",
+      "title": "COHERE / pixel reinterpretation 2",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-cohere-2.png"
+    },
+    {
+      "id": "brand-cohere-3",
+      "family": "brand",
+      "title": "COHERE / pixel reinterpretation 3",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-cohere-3.png"
+    },
+    {
+      "id": "brand-perplexity-1",
+      "family": "brand",
+      "title": "PERPLEXITY / pixel reinterpretation 1",
+      "tone": "brand",
+      "width": 64,
+      "height": 64,
+      "file": "png/brand-perplexity-1.png"
+    },
+    {
+      "id": "brand-perplexity-2",
+      "family": "brand",
+      "title": "PERPLEXITY / pixel reinterpretation 2",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-perplexity-2.png"
+    },
+    {
+      "id": "brand-perplexity-3",
+      "family": "brand",
+      "title": "PERPLEXITY / pixel reinterpretation 3",
+      "tone": "brand",
+      "width": 144,
+      "height": 48,
+      "file": "png/brand-perplexity-3.png"
+    },
+    {
+      "id": "scene-data-city-1",
+      "family": "pixel-scene",
+      "title": "data city / 1",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-data-city-1.png"
+    },
+    {
+      "id": "scene-data-city-2",
+      "family": "pixel-scene",
+      "title": "data city / 2",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-data-city-2.png"
+    },
+    {
+      "id": "scene-data-city-3",
+      "family": "pixel-scene",
+      "title": "data city / 3",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-data-city-3.png"
+    },
+    {
+      "id": "scene-data-city-4",
+      "family": "pixel-scene",
+      "title": "data city / 4",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-data-city-4.png"
+    },
+    {
+      "id": "scene-silicon-fab-1",
+      "family": "pixel-scene",
+      "title": "silicon fab / 1",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-silicon-fab-1.png"
+    },
+    {
+      "id": "scene-silicon-fab-2",
+      "family": "pixel-scene",
+      "title": "silicon fab / 2",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-silicon-fab-2.png"
+    },
+    {
+      "id": "scene-silicon-fab-3",
+      "family": "pixel-scene",
+      "title": "silicon fab / 3",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-silicon-fab-3.png"
+    },
+    {
+      "id": "scene-silicon-fab-4",
+      "family": "pixel-scene",
+      "title": "silicon fab / 4",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-silicon-fab-4.png"
+    },
+    {
+      "id": "scene-cooling-pool-1",
+      "family": "pixel-scene",
+      "title": "cooling pool / 1",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-cooling-pool-1.png"
+    },
+    {
+      "id": "scene-cooling-pool-2",
+      "family": "pixel-scene",
+      "title": "cooling pool / 2",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-cooling-pool-2.png"
+    },
+    {
+      "id": "scene-cooling-pool-3",
+      "family": "pixel-scene",
+      "title": "cooling pool / 3",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-cooling-pool-3.png"
+    },
+    {
+      "id": "scene-cooling-pool-4",
+      "family": "pixel-scene",
+      "title": "cooling pool / 4",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-cooling-pool-4.png"
+    },
+    {
+      "id": "scene-megaphone-1",
+      "family": "pixel-scene",
+      "title": "megaphone / 1",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-megaphone-1.png"
+    },
+    {
+      "id": "scene-megaphone-2",
+      "family": "pixel-scene",
+      "title": "megaphone / 2",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-megaphone-2.png"
+    },
+    {
+      "id": "scene-megaphone-3",
+      "family": "pixel-scene",
+      "title": "megaphone / 3",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-megaphone-3.png"
+    },
+    {
+      "id": "scene-megaphone-4",
+      "family": "pixel-scene",
+      "title": "megaphone / 4",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-megaphone-4.png"
+    },
+    {
+      "id": "scene-handshake-1",
+      "family": "pixel-scene",
+      "title": "handshake / 1",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-handshake-1.png"
+    },
+    {
+      "id": "scene-handshake-2",
+      "family": "pixel-scene",
+      "title": "handshake / 2",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-handshake-2.png"
+    },
+    {
+      "id": "scene-handshake-3",
+      "family": "pixel-scene",
+      "title": "handshake / 3",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-handshake-3.png"
+    },
+    {
+      "id": "scene-handshake-4",
+      "family": "pixel-scene",
+      "title": "handshake / 4",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-handshake-4.png"
+    },
+    {
+      "id": "scene-electric-brain-1",
+      "family": "pixel-scene",
+      "title": "electric brain / 1",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-electric-brain-1.png"
+    },
+    {
+      "id": "scene-electric-brain-2",
+      "family": "pixel-scene",
+      "title": "electric brain / 2",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-electric-brain-2.png"
+    },
+    {
+      "id": "scene-electric-brain-3",
+      "family": "pixel-scene",
+      "title": "electric brain / 3",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-electric-brain-3.png"
+    },
+    {
+      "id": "scene-electric-brain-4",
+      "family": "pixel-scene",
+      "title": "electric brain / 4",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-electric-brain-4.png"
+    },
+    {
+      "id": "scene-robot-pet-1",
+      "family": "pixel-scene",
+      "title": "robot pet / 1",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-robot-pet-1.png"
+    },
+    {
+      "id": "scene-robot-pet-2",
+      "family": "pixel-scene",
+      "title": "robot pet / 2",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-robot-pet-2.png"
+    },
+    {
+      "id": "scene-robot-pet-3",
+      "family": "pixel-scene",
+      "title": "robot pet / 3",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-robot-pet-3.png"
+    },
+    {
+      "id": "scene-robot-pet-4",
+      "family": "pixel-scene",
+      "title": "robot pet / 4",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-robot-pet-4.png"
+    },
+    {
+      "id": "scene-wired-earth-1",
+      "family": "pixel-scene",
+      "title": "wired earth / 1",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-wired-earth-1.png"
+    },
+    {
+      "id": "scene-wired-earth-2",
+      "family": "pixel-scene",
+      "title": "wired earth / 2",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-wired-earth-2.png"
+    },
+    {
+      "id": "scene-wired-earth-3",
+      "family": "pixel-scene",
+      "title": "wired earth / 3",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-wired-earth-3.png"
+    },
+    {
+      "id": "scene-wired-earth-4",
+      "family": "pixel-scene",
+      "title": "wired earth / 4",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-wired-earth-4.png"
+    },
+    {
+      "id": "scene-modem-1",
+      "family": "pixel-scene",
+      "title": "modem / 1",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-modem-1.png"
+    },
+    {
+      "id": "scene-modem-2",
+      "family": "pixel-scene",
+      "title": "modem / 2",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-modem-2.png"
+    },
+    {
+      "id": "scene-modem-3",
+      "family": "pixel-scene",
+      "title": "modem / 3",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-modem-3.png"
+    },
+    {
+      "id": "scene-modem-4",
+      "family": "pixel-scene",
+      "title": "modem / 4",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-modem-4.png"
+    },
+    {
+      "id": "scene-dream-crt-1",
+      "family": "pixel-scene",
+      "title": "dream crt / 1",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-dream-crt-1.png"
+    },
+    {
+      "id": "scene-dream-crt-2",
+      "family": "pixel-scene",
+      "title": "dream crt / 2",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-dream-crt-2.png"
+    },
+    {
+      "id": "scene-dream-crt-3",
+      "family": "pixel-scene",
+      "title": "dream crt / 3",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-dream-crt-3.png"
+    },
+    {
+      "id": "scene-dream-crt-4",
+      "family": "pixel-scene",
+      "title": "dream crt / 4",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-dream-crt-4.png"
+    },
+    {
+      "id": "scene-sound-system-1",
+      "family": "pixel-scene",
+      "title": "sound system / 1",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-sound-system-1.png"
+    },
+    {
+      "id": "scene-sound-system-2",
+      "family": "pixel-scene",
+      "title": "sound system / 2",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-sound-system-2.png"
+    },
+    {
+      "id": "scene-sound-system-3",
+      "family": "pixel-scene",
+      "title": "sound system / 3",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-sound-system-3.png"
+    },
+    {
+      "id": "scene-sound-system-4",
+      "family": "pixel-scene",
+      "title": "sound system / 4",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-sound-system-4.png"
+    },
+    {
+      "id": "scene-diffusion-landscape-1",
+      "family": "pixel-scene",
+      "title": "diffusion landscape / 1",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-diffusion-landscape-1.png"
+    },
+    {
+      "id": "scene-diffusion-landscape-2",
+      "family": "pixel-scene",
+      "title": "diffusion landscape / 2",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-diffusion-landscape-2.png"
+    },
+    {
+      "id": "scene-diffusion-landscape-3",
+      "family": "pixel-scene",
+      "title": "diffusion landscape / 3",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-diffusion-landscape-3.png"
+    },
+    {
+      "id": "scene-diffusion-landscape-4",
+      "family": "pixel-scene",
+      "title": "diffusion landscape / 4",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-diffusion-landscape-4.png"
+    },
+    {
+      "id": "scene-keyboard-1",
+      "family": "pixel-scene",
+      "title": "keyboard / 1",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-keyboard-1.png"
+    },
+    {
+      "id": "scene-keyboard-2",
+      "family": "pixel-scene",
+      "title": "keyboard / 2",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-keyboard-2.png"
+    },
+    {
+      "id": "scene-keyboard-3",
+      "family": "pixel-scene",
+      "title": "keyboard / 3",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-keyboard-3.png"
+    },
+    {
+      "id": "scene-keyboard-4",
+      "family": "pixel-scene",
+      "title": "keyboard / 4",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-keyboard-4.png"
+    },
+    {
+      "id": "scene-camera-eye-1",
+      "family": "pixel-scene",
+      "title": "camera eye / 1",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-camera-eye-1.png"
+    },
+    {
+      "id": "scene-camera-eye-2",
+      "family": "pixel-scene",
+      "title": "camera eye / 2",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-camera-eye-2.png"
+    },
+    {
+      "id": "scene-camera-eye-3",
+      "family": "pixel-scene",
+      "title": "camera eye / 3",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-camera-eye-3.png"
+    },
+    {
+      "id": "scene-camera-eye-4",
+      "family": "pixel-scene",
+      "title": "camera eye / 4",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-camera-eye-4.png"
+    },
+    {
+      "id": "scene-neural-circuit-1",
+      "family": "pixel-scene",
+      "title": "neural circuit / 1",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-neural-circuit-1.png"
+    },
+    {
+      "id": "scene-neural-circuit-2",
+      "family": "pixel-scene",
+      "title": "neural circuit / 2",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-neural-circuit-2.png"
+    },
+    {
+      "id": "scene-neural-circuit-3",
+      "family": "pixel-scene",
+      "title": "neural circuit / 3",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-neural-circuit-3.png"
+    },
+    {
+      "id": "scene-neural-circuit-4",
+      "family": "pixel-scene",
+      "title": "neural circuit / 4",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-neural-circuit-4.png"
+    },
+    {
+      "id": "scene-satellite-dish-1",
+      "family": "pixel-scene",
+      "title": "satellite dish / 1",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-satellite-dish-1.png"
+    },
+    {
+      "id": "scene-satellite-dish-2",
+      "family": "pixel-scene",
+      "title": "satellite dish / 2",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-satellite-dish-2.png"
+    },
+    {
+      "id": "scene-satellite-dish-3",
+      "family": "pixel-scene",
+      "title": "satellite dish / 3",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-satellite-dish-3.png"
+    },
+    {
+      "id": "scene-satellite-dish-4",
+      "family": "pixel-scene",
+      "title": "satellite dish / 4",
+      "tone": "graphic",
+      "width": 96,
+      "height": 72,
+      "file": "png/scene-satellite-dish-4.png"
+    },
+    {
+      "id": "ticker-nvda-1",
+      "family": "ticker",
+      "title": "NVDA / invented graphic trace 1",
+      "tone": "symbol",
+      "width": 144,
+      "height": 48,
+      "file": "png/ticker-nvda-1.png"
+    },
+    {
+      "id": "ticker-nvda-2",
+      "family": "ticker",
+      "title": "NVDA / invented graphic trace 2",
+      "tone": "symbol",
+      "width": 144,
+      "height": 48,
+      "file": "png/ticker-nvda-2.png"
+    },
+    {
+      "id": "ticker-nvda-3",
+      "family": "ticker",
+      "title": "NVDA / invented graphic trace 3",
+      "tone": "symbol",
+      "width": 144,
+      "height": 48,
+      "file": "png/ticker-nvda-3.png"
+    },
+    {
+      "id": "ticker-intc-1",
+      "family": "ticker",
+      "title": "INTC / invented graphic trace 1",
+      "tone": "symbol",
+      "width": 144,
+      "height": 48,
+      "file": "png/ticker-intc-1.png"
+    },
+    {
+      "id": "ticker-intc-2",
+      "family": "ticker",
+      "title": "INTC / invented graphic trace 2",
+      "tone": "symbol",
+      "width": 144,
+      "height": 48,
+      "file": "png/ticker-intc-2.png"
+    },
+    {
+      "id": "ticker-intc-3",
+      "family": "ticker",
+      "title": "INTC / invented graphic trace 3",
+      "tone": "symbol",
+      "width": 144,
+      "height": 48,
+      "file": "png/ticker-intc-3.png"
+    },
+    {
+      "id": "ticker-meta-1",
+      "family": "ticker",
+      "title": "META / invented graphic trace 1",
+      "tone": "symbol",
+      "width": 144,
+      "height": 48,
+      "file": "png/ticker-meta-1.png"
+    },
+    {
+      "id": "ticker-meta-2",
+      "family": "ticker",
+      "title": "META / invented graphic trace 2",
+      "tone": "symbol",
+      "width": 144,
+      "height": 48,
+      "file": "png/ticker-meta-2.png"
+    },
+    {
+      "id": "ticker-meta-3",
+      "family": "ticker",
+      "title": "META / invented graphic trace 3",
+      "tone": "symbol",
+      "width": 144,
+      "height": 48,
+      "file": "png/ticker-meta-3.png"
+    },
+    {
+      "id": "ticker-googl-1",
+      "family": "ticker",
+      "title": "GOOGL / invented graphic trace 1",
+      "tone": "symbol",
+      "width": 144,
+      "height": 48,
+      "file": "png/ticker-googl-1.png"
+    },
+    {
+      "id": "ticker-googl-2",
+      "family": "ticker",
+      "title": "GOOGL / invented graphic trace 2",
+      "tone": "symbol",
+      "width": 144,
+      "height": 48,
+      "file": "png/ticker-googl-2.png"
+    },
+    {
+      "id": "ticker-googl-3",
+      "family": "ticker",
+      "title": "GOOGL / invented graphic trace 3",
+      "tone": "symbol",
+      "width": 144,
+      "height": 48,
+      "file": "png/ticker-googl-3.png"
+    },
+    {
+      "id": "ticker-amd-1",
+      "family": "ticker",
+      "title": "AMD / invented graphic trace 1",
+      "tone": "symbol",
+      "width": 144,
+      "height": 48,
+      "file": "png/ticker-amd-1.png"
+    },
+    {
+      "id": "ticker-amd-2",
+      "family": "ticker",
+      "title": "AMD / invented graphic trace 2",
+      "tone": "symbol",
+      "width": 144,
+      "height": 48,
+      "file": "png/ticker-amd-2.png"
+    },
+    {
+      "id": "ticker-amd-3",
+      "family": "ticker",
+      "title": "AMD / invented graphic trace 3",
+      "tone": "symbol",
+      "width": 144,
+      "height": 48,
+      "file": "png/ticker-amd-3.png"
+    },
+    {
+      "id": "ticker-msft-1",
+      "family": "ticker",
+      "title": "MSFT / invented graphic trace 1",
+      "tone": "symbol",
+      "width": 144,
+      "height": 48,
+      "file": "png/ticker-msft-1.png"
+    },
+    {
+      "id": "ticker-msft-2",
+      "family": "ticker",
+      "title": "MSFT / invented graphic trace 2",
+      "tone": "symbol",
+      "width": 144,
+      "height": 48,
+      "file": "png/ticker-msft-2.png"
+    },
+    {
+      "id": "ticker-msft-3",
+      "family": "ticker",
+      "title": "MSFT / invented graphic trace 3",
+      "tone": "symbol",
+      "width": 144,
+      "height": 48,
+      "file": "png/ticker-msft-3.png"
+    },
+    {
+      "id": "ticker-tsm-1",
+      "family": "ticker",
+      "title": "TSM / invented graphic trace 1",
+      "tone": "symbol",
+      "width": 144,
+      "height": 48,
+      "file": "png/ticker-tsm-1.png"
+    },
+    {
+      "id": "ticker-tsm-2",
+      "family": "ticker",
+      "title": "TSM / invented graphic trace 2",
+      "tone": "symbol",
+      "width": 144,
+      "height": 48,
+      "file": "png/ticker-tsm-2.png"
+    },
+    {
+      "id": "ticker-tsm-3",
+      "family": "ticker",
+      "title": "TSM / invented graphic trace 3",
+      "tone": "symbol",
+      "width": 144,
+      "height": 48,
+      "file": "png/ticker-tsm-3.png"
+    },
+    {
+      "id": "ticker-asml-1",
+      "family": "ticker",
+      "title": "ASML / invented graphic trace 1",
+      "tone": "symbol",
+      "width": 144,
+      "height": 48,
+      "file": "png/ticker-asml-1.png"
+    },
+    {
+      "id": "ticker-asml-2",
+      "family": "ticker",
+      "title": "ASML / invented graphic trace 2",
+      "tone": "symbol",
+      "width": 144,
+      "height": 48,
+      "file": "png/ticker-asml-2.png"
+    },
+    {
+      "id": "ticker-asml-3",
+      "family": "ticker",
+      "title": "ASML / invented graphic trace 3",
+      "tone": "symbol",
+      "width": 144,
+      "height": 48,
+      "file": "png/ticker-asml-3.png"
+    },
+    {
+      "id": "stamp-01-1",
+      "family": "web-stamp",
+      "title": "AI INSIDE / 1",
+      "tone": "graphic",
+      "width": 124,
+      "height": 34,
+      "file": "png/stamp-01-1.png"
+    },
+    {
+      "id": "stamp-01-2",
+      "family": "web-stamp",
+      "title": "AI INSIDE / 2",
+      "tone": "graphic",
+      "width": 124,
+      "height": 34,
+      "file": "png/stamp-01-2.png"
+    },
+    {
+      "id": "stamp-02-1",
+      "family": "web-stamp",
+      "title": "MAKE / BREAK / 1",
+      "tone": "graphic",
+      "width": 124,
+      "height": 34,
+      "file": "png/stamp-02-1.png"
+    },
+    {
+      "id": "stamp-02-2",
+      "family": "web-stamp",
+      "title": "MAKE / BREAK / 2",
+      "tone": "graphic",
+      "width": 124,
+      "height": 34,
+      "file": "png/stamp-02-2.png"
+    },
+    {
+      "id": "stamp-03-1",
+      "family": "web-stamp",
+      "title": "WORLD WIDE AI / 1",
+      "tone": "graphic",
+      "width": 124,
+      "height": 34,
+      "file": "png/stamp-03-1.png"
+    },
+    {
+      "id": "stamp-03-2",
+      "family": "web-stamp",
+      "title": "WORLD WIDE AI / 2",
+      "tone": "graphic",
+      "width": 124,
+      "height": 34,
+      "file": "png/stamp-03-2.png"
+    },
+    {
+      "id": "stamp-04-1",
+      "family": "web-stamp",
+      "title": "HOT COMPUTE / 1",
+      "tone": "graphic",
+      "width": 124,
+      "height": 34,
+      "file": "png/stamp-04-1.png"
+    },
+    {
+      "id": "stamp-04-2",
+      "family": "web-stamp",
+      "title": "HOT COMPUTE / 2",
+      "tone": "graphic",
+      "width": 124,
+      "height": 34,
+      "file": "png/stamp-04-2.png"
+    },
+    {
+      "id": "stamp-05-1",
+      "family": "web-stamp",
+      "title": "OPEN WEIGHTS / 1",
+      "tone": "graphic",
+      "width": 124,
+      "height": 34,
+      "file": "png/stamp-05-1.png"
+    },
+    {
+      "id": "stamp-05-2",
+      "family": "web-stamp",
+      "title": "OPEN WEIGHTS / 2",
+      "tone": "graphic",
+      "width": 124,
+      "height": 34,
+      "file": "png/stamp-05-2.png"
+    },
+    {
+      "id": "stamp-06-1",
+      "family": "web-stamp",
+      "title": "HUMAN INPUT / 1",
+      "tone": "graphic",
+      "width": 124,
+      "height": 34,
+      "file": "png/stamp-06-1.png"
+    },
+    {
+      "id": "stamp-06-2",
+      "family": "web-stamp",
+      "title": "HUMAN INPUT / 2",
+      "tone": "graphic",
+      "width": 124,
+      "height": 34,
+      "file": "png/stamp-06-2.png"
+    },
+    {
+      "id": "stamp-07-1",
+      "family": "web-stamp",
+      "title": "LIVE FROM EARTH / 1",
+      "tone": "graphic",
+      "width": 124,
+      "height": 34,
+      "file": "png/stamp-07-1.png"
+    },
+    {
+      "id": "stamp-07-2",
+      "family": "web-stamp",
+      "title": "LIVE FROM EARTH / 2",
+      "tone": "graphic",
+      "width": 124,
+      "height": 34,
+      "file": "png/stamp-07-2.png"
+    },
+    {
+      "id": "stamp-08-1",
+      "family": "web-stamp",
+      "title": "MORE PIXELS / 1",
+      "tone": "graphic",
+      "width": 124,
+      "height": 34,
+      "file": "png/stamp-08-1.png"
+    },
+    {
+      "id": "stamp-08-2",
+      "family": "web-stamp",
+      "title": "MORE PIXELS / 2",
+      "tone": "graphic",
+      "width": 124,
+      "height": 34,
+      "file": "png/stamp-08-2.png"
+    },
+    {
+      "id": "stamp-09-1",
+      "family": "web-stamp",
+      "title": "DREAM MACHINE / 1",
+      "tone": "graphic",
+      "width": 124,
+      "height": 34,
+      "file": "png/stamp-09-1.png"
+    },
+    {
+      "id": "stamp-09-2",
+      "family": "web-stamp",
+      "title": "DREAM MACHINE / 2",
+      "tone": "graphic",
+      "width": 124,
+      "height": 34,
+      "file": "png/stamp-09-2.png"
+    },
+    {
+      "id": "stamp-10-1",
+      "family": "web-stamp",
+      "title": "MODEL WEATHER / 1",
+      "tone": "graphic",
+      "width": 124,
+      "height": 34,
+      "file": "png/stamp-10-1.png"
+    },
+    {
+      "id": "stamp-10-2",
+      "family": "web-stamp",
+      "title": "MODEL WEATHER / 2",
+      "tone": "graphic",
+      "width": 124,
+      "height": 34,
+      "file": "png/stamp-10-2.png"
+    },
+    {
+      "id": "stamp-11-1",
+      "family": "web-stamp",
+      "title": "ALWAYS BETA / 1",
+      "tone": "graphic",
+      "width": 124,
+      "height": 34,
+      "file": "png/stamp-11-1.png"
+    },
+    {
+      "id": "stamp-11-2",
+      "family": "web-stamp",
+      "title": "ALWAYS BETA / 2",
+      "tone": "graphic",
+      "width": 124,
+      "height": 34,
+      "file": "png/stamp-11-2.png"
+    },
+    {
+      "id": "stamp-12-1",
+      "family": "web-stamp",
+      "title": "PLEASE FEEL / 1",
+      "tone": "graphic",
+      "width": 124,
+      "height": 34,
+      "file": "png/stamp-12-1.png"
+    },
+    {
+      "id": "stamp-12-2",
+      "family": "web-stamp",
+      "title": "PLEASE FEEL / 2",
+      "tone": "graphic",
+      "width": 124,
+      "height": 34,
+      "file": "png/stamp-12-2.png"
+    }
+  ]
+}

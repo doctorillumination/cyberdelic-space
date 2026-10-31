@@ -39,3 +39,12 @@ html[data-fieldwork-artwork-only][data-fieldwork-slot="primitives"] :is(#control
  html[data-fieldwork-slot="primitives"] #controls { bottom:80px; }
  html[data-fieldwork-slot="primitives"] .pattern-lab { max-height:calc(100dvh - 176px); }
 }
+
+/* Host viewing controls sit below the original composition dock. */
+html[data-fieldwork-slot="everything-is-thinking"] .dock { bottom:76px; }
+html[data-fieldwork-slot="everything-is-thinking"] .sidebar { bottom:140px; }
+html[data-fieldwork-artwork-only][data-fieldwork-slot="everything-is-thinking"] :is(.chrome,#library) { display:none !important; }
+@media (max-width:800px) {
+ html[data-fieldwork-slot="everything-is-thinking"] .dock { bottom:76px; }
+ html[data-fieldwork-slot="everything-is-thinking"] .sidebar { bottom:182px; }
+}

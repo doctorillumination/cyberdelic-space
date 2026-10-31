@@ -605,3 +605,17 @@
   Referrer-Policy: no-referrer
   X-Content-Type-Options: nosniff
   Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
+
+/fieldworks/everything-is-thinking/*
+  Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self' https://mempool.space https://blockstream.info https://ordinals.com; frame-src 'self'; base-uri 'none'; form-action 'none'
+  X-Frame-Options: DENY
+  Referrer-Policy: no-referrer
+  X-Content-Type-Options: nosniff
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
+
+/fieldwork-runtime/everything-is-thinking/*
+  Content-Security-Policy: default-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; media-src 'self' blob:; worker-src 'self' blob:; frame-src 'self'; frame-ancestors 'self'; base-uri 'none'; form-action 'none'
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: no-referrer
+  X-Content-Type-Options: nosniff
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()

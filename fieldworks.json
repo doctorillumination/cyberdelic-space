@@ -1,15 +1,15 @@
 {
   "schema": "cyberdelic.space/fieldworks-v1",
-  "version": "1.4",
+  "version": "1.5",
   "date": "2026-10-31",
-  "published_at": "2026-10-31T15:36:03.316707Z",
+  "published_at": "2026-10-31T16:13:44.711644Z",
   "overview": {
     "title": "Fieldworks",
     "href": "fieldworks/",
     "source": "overview.md",
     "source_path": "fieldworks/readings/overview.md",
-    "source_sha256": "ee7b363be8ed11761e87ed9f8da0096849591ed7595c8c36ae4fb71c3ccdb930",
-    "source_length": 361
+    "source_sha256": "097174fa96f6ec13ba5910ee031c5848720da1467d844c0a017687f1039bc230",
+    "source_length": 393
   },
   "archived_readings": [
     {
@@ -47,6 +47,15 @@
       "source_sha256": "0bb000c58f312f2dd338be9c50c346c9e5c0e9445b3fda53a2d0ef01be1bff78",
       "source_length": 322,
       "slug": "overview-five-works"
+    },
+    {
+      "title": "Fieldworks, six-work edition",
+      "href": "fieldworks/readings/overview-six-works.md",
+      "source": "overview-six-works.md",
+      "source_path": "fieldworks/readings/overview-six-works.md",
+      "source_sha256": "ee7b363be8ed11761e87ed9f8da0096849591ed7595c8c36ae4fb71c3ccdb930",
+      "source_length": 361,
+      "slug": "overview-six-works"
     }
   ],
   "items": [
@@ -289,6 +298,48 @@
         "length": 1297980,
         "kind": "recorded-artwork-loop"
       }
+    },
+    {
+      "slug": "everything-is-thinking",
+      "title": "Everything Is Thinking",
+      "edition": "whole-fragments",
+      "project": "everything-is-thinking",
+      "repository": "https://github.com/doctorillumination/everything-is-thinking",
+      "status": "living",
+      "caption": "A field of competing futures.",
+      "description": "Pixel suns, company emblems, and competing AI futures crowd a slowly moving room. Look around, collide the field, or explore its 384 original images.",
+      "alt": "A dense blue and silver pixel collage of suns, company emblems, computer windows, and colourful signs at different depths.",
+      "gesture": "Move the pointer to look around. Pause, collide, or open the asset library.",
+      "source": "everything-is-thinking.md",
+      "themes": [
+        "artificial intelligence",
+        "imagination",
+        "attention",
+        "uncertainty",
+        "play",
+        "perception"
+      ],
+      "related_note": "fn-05",
+      "related_title": "The Physics We Choose",
+      "release_id": "f0acfdda1cc576ad0462a133c3a66ed1368c237426683cba425ff339feddb7c7",
+      "runtime_published_at": "2026-10-31T16:13:44.711644Z",
+      "source_path": "fieldworks/readings/everything-is-thinking.md",
+      "source_sha256": "951b624507ef44fa9b41d2ca751dfb785aec7f8df044257a0f958be7e1db16e1",
+      "source_length": 1205,
+      "href": "fieldworks/everything-is-thinking/",
+      "poster": {
+        "path": "fieldworks/images/everything-is-thinking.jpg",
+        "sha256": "9bf33500443e6dd0c2c4f3abeee3e7b7533b70e28f97194eafb3eec110402022",
+        "length": 356376,
+        "kind": "actual-browser-capture"
+      },
+      "preview": {
+        "path": "fieldworks/previews/everything-is-thinking.mp4",
+        "sha256": "3152ead49bb36013c3a0b1f758c937820dee402112f25461faa076bb525a1713",
+        "length": 1545767,
+        "kind": "recorded-artwork-loop"
+      },
+      "former_title": "Everything Is Thinking"
     }
   ]
 }

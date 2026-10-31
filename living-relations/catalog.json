@@ -1,8 +1,8 @@
 {
   "schema": "https://cyberdelic.space/schemas/living-catalog-v1.json",
   "version": "0.17",
-  "updated_at": "2026-10-31T15:36:03.316707Z",
-  "count": 41,
+  "updated_at": "2026-10-31T16:13:44.711644Z",
+  "count": 42,
   "curation": {
     "office": "OFFICE-LIBRARIAN",
     "office_version": "0.1",
@@ -1904,6 +1904,47 @@
       "review_state": "model-proposed",
       "introduced_by": "human-authorized-fieldworks-publication",
       "last_tended_at": "2026-10-31T15:36:03.316707Z",
+      "uncertainty": "Thematic placements remain interpretive. This living artwork is not an inscription."
+    },
+    {
+      "id": "catalog:fieldworks:everything-is-thinking",
+      "record_kind": "artifact",
+      "title": "Everything Is Thinking",
+      "href": "fieldworks/everything-is-thinking/",
+      "summary": "Pixel suns, company emblems, and competing AI futures crowd a slowly moving room. Look around, collide the field, or explore its 384 original images.",
+      "subjects": [
+        "artificial intelligence",
+        "imagination",
+        "attention",
+        "uncertainty",
+        "play",
+        "perception",
+        "generative art",
+        "interactive artwork",
+        "Fieldworks"
+      ],
+      "search_terms": [
+        "Everything Is Thinking",
+        "pixel art",
+        "parallax",
+        "AI",
+        "A field of competing futures.",
+        "Move the pointer to look around. Pause, collide, or open the asset library."
+      ],
+      "questions": [
+        "How can competing futures share one visual field?"
+      ],
+      "related": [],
+      "evidence": [
+        {
+          "source": "fieldworks/readings/everything-is-thinking.md",
+          "locator": "# Everything Is Thinking"
+        }
+      ],
+      "epistemic_status": "strong",
+      "review_state": "model-proposed",
+      "introduced_by": "human-authorized-fieldworks-publication",
+      "last_tended_at": "2026-10-31T16:13:44.711644Z",
       "uncertainty": "Thematic placements remain interpretive. This living artwork is not an inscription."
     }
   ]

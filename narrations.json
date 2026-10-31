@@ -18068,19 +18068,19 @@
         "fieldworks/"
       ],
       "source_path": "fieldworks/readings/overview.md",
-      "source_sha256": "ee7b363be8ed11761e87ed9f8da0096849591ed7595c8c36ae4fb71c3ccdb930",
-      "document_sha256": "ee7b363be8ed11761e87ed9f8da0096849591ed7595c8c36ae4fb71c3ccdb930",
-      "text_sha256": "65f90cb69a31ddf6fe93b761ec3f26372b845b9d5c4092ad3e65113e6291c3ca",
-      "reading_path": "audio/readings/65f90cb69a31ddf6fe93b761ec3f26372b845b9d5c4092ad3e65113e6291c3ca.md",
-      "reading_sha256": "ee7b363be8ed11761e87ed9f8da0096849591ed7595c8c36ae4fb71c3ccdb930",
-      "reading_length": 361,
-      "audio_path": "audio/lewis/65f90cb69a31ddf6fe93b761ec3f26372b845b9d5c4092ad3e65113e6291c3ca.mp3",
+      "source_sha256": "097174fa96f6ec13ba5910ee031c5848720da1467d844c0a017687f1039bc230",
+      "document_sha256": "097174fa96f6ec13ba5910ee031c5848720da1467d844c0a017687f1039bc230",
+      "text_sha256": "6f0ebfff72a60583130c0f2a5f14b7fae25cdb0a15e22f9ac453a95e7b0fc1b3",
+      "reading_path": "audio/readings/6f0ebfff72a60583130c0f2a5f14b7fae25cdb0a15e22f9ac453a95e7b0fc1b3.md",
+      "reading_sha256": "097174fa96f6ec13ba5910ee031c5848720da1467d844c0a017687f1039bc230",
+      "reading_length": 393,
+      "audio_path": "audio/lewis/6f0ebfff72a60583130c0f2a5f14b7fae25cdb0a15e22f9ac453a95e7b0fc1b3.mp3",
       "voice": "bm_lewis",
       "voice_name": "Lewis",
       "speed": 1.0,
-      "audio_sha256": "c3cb7169f42c3e53059a433ea32b03bcd8a93ef790355d603bb554cfb9164891",
-      "audio_length": 345068,
-      "duration_seconds": 28.665,
+      "audio_sha256": "7b4cd1b024c3867af9b0b9d5a90add3c240ea7a1713c8c7d7646ee60930d4842",
+      "audio_length": 372428,
+      "duration_seconds": 30.94,
       "chunks": [
         {
           "text": "Fieldworks",
@@ -18093,13 +18093,13 @@
           "duration": 5.15
         },
         {
-          "text": "A surface that answers. A fold in seeing. An unfinished sky. Impossible matter. A river remembering a drawing. A small vocabulary, an expanding field. Six encounters with the living physics of Cyberdelic OS.",
+          "text": "A surface that answers. A fold in seeing. An unfinished sky. Impossible matter. A river remembering a drawing. A small vocabulary, an expanding field. A field of competing futures. Seven encounters with the living physics of Cyberdelic OS.",
           "start": 7.16,
-          "duration": 16.125
+          "duration": 18.4
         },
         {
           "text": "These are living, revisable artworks. They are not Bitcoin inscriptions.",
-          "start": 23.465,
+          "start": 25.74,
           "duration": 5.2
         }
       ],
@@ -18107,7 +18107,7 @@
         "all_text_retained": true,
         "mp3_decodes": true,
         "finite_samples": true,
-        "peak": 0.5440541505813599,
+        "peak": 0.5182052254676819,
         "clipped_samples": 0
       }
     },
@@ -18469,6 +18469,73 @@
       }
     },
     {
+      "id": "fieldworks-everything-is-thinking",
+      "title": "Everything Is Thinking",
+      "form": "fieldwork",
+      "release_id": null,
+      "pages": [
+        "fieldworks/everything-is-thinking/"
+      ],
+      "source_path": "fieldworks/readings/everything-is-thinking.md",
+      "source_sha256": "951b624507ef44fa9b41d2ca751dfb785aec7f8df044257a0f958be7e1db16e1",
+      "document_sha256": "951b624507ef44fa9b41d2ca751dfb785aec7f8df044257a0f958be7e1db16e1",
+      "text_sha256": "782fcfe21b9440ee6857eef5ca5973656c618817b013d59e2dd9cc8868847383",
+      "reading_path": "audio/readings/782fcfe21b9440ee6857eef5ca5973656c618817b013d59e2dd9cc8868847383.md",
+      "reading_sha256": "951b624507ef44fa9b41d2ca751dfb785aec7f8df044257a0f958be7e1db16e1",
+      "reading_length": 1205,
+      "audio_path": "audio/lewis/782fcfe21b9440ee6857eef5ca5973656c618817b013d59e2dd9cc8868847383.mp3",
+      "voice": "bm_lewis",
+      "voice_name": "Lewis",
+      "speed": 1.0,
+      "audio_sha256": "9767709d6c5ab64706423b908710062380f699e023b27db07f222ad892d9320e",
+      "audio_length": 1031660,
+      "duration_seconds": 85.88,
+      "chunks": [
+        {
+          "text": "Everything Is Thinking",
+          "start": 0.0,
+          "duration": 2.4
+        },
+        {
+          "text": "A field of competing futures.",
+          "start": 2.58,
+          "duration": 2.85
+        },
+        {
+          "text": "Pixel suns, cooling towers, company emblems, error messages, and promises crowd the screen. The visual language remembers the early internet. The argument belongs to the present: artificial intelligence as abundance, appetite, uncertainty, fear, and play, all speaking at once.",
+          "start": 5.61,
+          "duration": 18.95
+        },
+        {
+          "text": "The work draws from a library of 384 individual pixel images. Blue and silver hold the field together while yellow, green, red, and violet interrupt it. Cheerful advertisements sit beside questions of consent, energy, labour, and imagination. These are fictional voices within the artwork, not live market data or company statements.",
+          "start": 24.74,
+          "duration": 23.3
+        },
+        {
+          "text": "A camera travels slowly through the collage. Move the pointer and a room begins to appear: a floor, a wall, a doorway, fragments hanging at different distances. Other images cling to the screen. Every piece stays whole as its neighbours pass, overlap, and reveal another view.",
+          "start": 48.22,
+          "duration": 18.5
+        },
+        {
+          "text": "Pause, change the composition, explore the asset library, or save an image. No live artificial intelligence is running. The field holds its conflicting futures together without settling their argument.",
+          "start": 66.9,
+          "duration": 14.15
+        },
+        {
+          "text": "By Brad Necyk. This living artwork is not inscribed.",
+          "start": 81.23,
+          "duration": 4.65
+        }
+      ],
+      "checks": {
+        "all_text_retained": true,
+        "mp3_decodes": true,
+        "finite_samples": true,
+        "peak": 0.588277280330658,
+        "clipped_samples": 0
+      }
+    },
+    {
       "id": "fieldworks-overview-v1",
       "title": "Fieldworks, first edition",
       "form": "fieldwork",
@@ -18685,6 +18752,58 @@
         "peak": 0.5474486947059631,
         "clipped_samples": 0
       }
+    },
+    {
+      "id": "fieldworks-overview-six-works",
+      "title": "Fieldworks, six-work edition",
+      "form": "fieldwork",
+      "release_id": null,
+      "pages": [
+        "fieldworks/readings/overview-six-works.md"
+      ],
+      "source_path": "fieldworks/readings/overview-six-works.md",
+      "source_sha256": "ee7b363be8ed11761e87ed9f8da0096849591ed7595c8c36ae4fb71c3ccdb930",
+      "document_sha256": "ee7b363be8ed11761e87ed9f8da0096849591ed7595c8c36ae4fb71c3ccdb930",
+      "text_sha256": "65f90cb69a31ddf6fe93b761ec3f26372b845b9d5c4092ad3e65113e6291c3ca",
+      "reading_path": "audio/readings/65f90cb69a31ddf6fe93b761ec3f26372b845b9d5c4092ad3e65113e6291c3ca.md",
+      "reading_sha256": "ee7b363be8ed11761e87ed9f8da0096849591ed7595c8c36ae4fb71c3ccdb930",
+      "reading_length": 361,
+      "audio_path": "audio/lewis/65f90cb69a31ddf6fe93b761ec3f26372b845b9d5c4092ad3e65113e6291c3ca.mp3",
+      "voice": "bm_lewis",
+      "voice_name": "Lewis",
+      "speed": 1.0,
+      "audio_sha256": "c3cb7169f42c3e53059a433ea32b03bcd8a93ef790355d603bb554cfb9164891",
+      "audio_length": 345068,
+      "duration_seconds": 28.665,
+      "chunks": [
+        {
+          "text": "Fieldworks",
+          "start": 0.0,
+          "duration": 1.65
+        },
+        {
+          "text": "Generative artworks and interactive environments by Brad Necyk.",
+          "start": 1.83,
+          "duration": 5.15
+        },
+        {
+          "text": "A surface that answers. A fold in seeing. An unfinished sky. Impossible matter. A river remembering a drawing. A small vocabulary, an expanding field. Six encounters with the living physics of Cyberdelic OS.",
+          "start": 7.16,
+          "duration": 16.125
+        },
+        {
+          "text": "These are living, revisable artworks. They are not Bitcoin inscriptions.",
+          "start": 23.465,
+          "duration": 5.2
+        }
+      ],
+      "checks": {
+        "all_text_retained": true,
+        "mp3_decodes": true,
+        "finite_samples": true,
+        "peak": 0.5440541505813599,
+        "clipped_samples": 0
+      }
     }
   ],
   "playlists": [
@@ -18822,6 +18941,11 @@
       "path": "audio-bundles/lewis-20.zip",
       "length": 1217094,
       "sha256": "ce69b918778951a105fff32c65f30a283c7ccbcee60194982b02ed03fa24232e"
+    },
+    {
+      "path": "audio-bundles/lewis-21.zip",
+      "length": 1404582,
+      "sha256": "1e07c838d619db86f90531929da7b08870f8b21d52a2aad107619dc57f3a094a"
     }
   ]
 }

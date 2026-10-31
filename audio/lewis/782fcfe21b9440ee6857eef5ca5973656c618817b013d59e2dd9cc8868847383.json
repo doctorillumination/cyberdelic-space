@@ -1,0 +1,73 @@
+{
+  "id": "fieldworks-everything-is-thinking",
+  "title": "Everything Is Thinking",
+  "form": "fieldwork",
+  "release_id": null,
+  "pages": [
+    "fieldworks/everything-is-thinking/"
+  ],
+  "source_path": "fieldworks/readings/everything-is-thinking.md",
+  "source_sha256": "951b624507ef44fa9b41d2ca751dfb785aec7f8df044257a0f958be7e1db16e1",
+  "document_sha256": "951b624507ef44fa9b41d2ca751dfb785aec7f8df044257a0f958be7e1db16e1",
+  "text_sha256": "782fcfe21b9440ee6857eef5ca5973656c618817b013d59e2dd9cc8868847383",
+  "reading_path": "audio/readings/782fcfe21b9440ee6857eef5ca5973656c618817b013d59e2dd9cc8868847383.md",
+  "reading_sha256": "951b624507ef44fa9b41d2ca751dfb785aec7f8df044257a0f958be7e1db16e1",
+  "reading_length": 1205,
+  "audio_path": "audio/lewis/782fcfe21b9440ee6857eef5ca5973656c618817b013d59e2dd9cc8868847383.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "9767709d6c5ab64706423b908710062380f699e023b27db07f222ad892d9320e",
+  "audio_length": 1031660,
+  "duration_seconds": 85.88,
+  "chunks": [
+    {
+      "text": "Everything Is Thinking",
+      "start": 0.0,
+      "duration": 2.4
+    },
+    {
+      "text": "A field of competing futures.",
+      "start": 2.58,
+      "duration": 2.85
+    },
+    {
+      "text": "Pixel suns, cooling towers, company emblems, error messages, and promises crowd the screen. The visual language remembers the early internet. The argument belongs to the present: artificial intelligence as abundance, appetite, uncertainty, fear, and play, all speaking at once.",
+      "start": 5.61,
+      "duration": 18.95
+    },
+    {
+      "text": "The work draws from a library of 384 individual pixel images. Blue and silver hold the field together while yellow, green, red, and violet interrupt it. Cheerful advertisements sit beside questions of consent, energy, labour, and imagination. These are fictional voices within the artwork, not live market data or company statements.",
+      "start": 24.74,
+      "duration": 23.3
+    },
+    {
+      "text": "A camera travels slowly through the collage. Move the pointer and a room begins to appear: a floor, a wall, a doorway, fragments hanging at different distances. Other images cling to the screen. Every piece stays whole as its neighbours pass, overlap, and reveal another view.",
+      "start": 48.22,
+      "duration": 18.5
+    },
+    {
+      "text": "Pause, change the composition, explore the asset library, or save an image. No live artificial intelligence is running. The field holds its conflicting futures together without settling their argument.",
+      "start": 66.9,
+      "duration": 14.15
+    },
+    {
+      "text": "By Brad Necyk. This living artwork is not inscribed.",
+      "start": 81.23,
+      "duration": 4.65
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.588277280330658,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

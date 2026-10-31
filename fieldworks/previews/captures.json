@@ -65,6 +65,17 @@
       "path": "primitives.mp4",
       "sha256": "9d45565131a2b986a8db6842aaa45c8f520bc5415a235148fc02735ac951246f",
       "length": 1297980
+    },
+    {
+      "slug": "everything-is-thinking",
+      "capture": "actual browser canvas, 30 fps, no audio",
+      "raw_sha256": "138fa02309d35575cec73ab1e2682a769d22167d8a91a135e7fdfaff33f05952",
+      "raw_duration": 8.2,
+      "loop_method": "one-second end-to-start crossfade",
+      "source_snapshot_sha256": "4c3ee6ae17ae91d913dbd766cd952682f615ae0c23a178492d6d4d68a6ede08a",
+      "path": "everything-is-thinking.mp4",
+      "sha256": "3152ead49bb36013c3a0b1f758c937820dee402112f25461faa076bb525a1713",
+      "length": 1545767
     }
   ],
   "archived_items": [

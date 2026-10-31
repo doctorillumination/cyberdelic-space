@@ -1424,6 +1424,29 @@
       ],
       "excerpt": "Explore a field of translucent geometric marks. Move between simple shapes and fine constellations, or let rows and columns shuffle through the grid.",
       "rationale": "An interactive Fieldwork, with interpretive thematic placements distinct from inscription evidence."
+    },
+    {
+      "id": "fieldwork-everything-is-thinking",
+      "release_id": "FW-EVERYTHING-IS-THINKING",
+      "label": "FIELDWORK · LIVING",
+      "title": "Everything Is Thinking",
+      "href": "fieldworks/everything-is-thinking/",
+      "author": "Brad Necyk",
+      "date": "2026-10-31",
+      "publication_state": "living",
+      "form": "generative-art",
+      "world": "cyberdelic-os",
+      "register": "play",
+      "themes": [
+        "artificial intelligence",
+        "imagination",
+        "attention",
+        "uncertainty",
+        "play",
+        "perception"
+      ],
+      "excerpt": "Pixel suns, company emblems, and competing AI futures crowd a slowly moving room. Look around, collide the field, or explore its 384 original images.",
+      "rationale": "An interactive Fieldwork, with interpretive thematic placements distinct from inscription evidence."
     }
   ]
 }
