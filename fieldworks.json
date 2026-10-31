@@ -143,6 +143,48 @@
       }
     },
     {
+      "slug": "everything-is-thinking",
+      "title": "Everything Is Thinking",
+      "edition": "whole-fragments",
+      "project": "everything-is-thinking",
+      "repository": "https://github.com/doctorillumination/everything-is-thinking",
+      "status": "living",
+      "caption": "A field of competing futures.",
+      "description": "Pixel suns, company emblems, and competing AI futures crowd a slowly moving room. Look around, collide the field, or explore its 384 original images.",
+      "alt": "A dense blue and silver pixel collage of suns, company emblems, computer windows, and colourful signs at different depths.",
+      "gesture": "Move the pointer to look around. Pause, collide, or open the asset library.",
+      "source": "everything-is-thinking.md",
+      "themes": [
+        "artificial intelligence",
+        "imagination",
+        "attention",
+        "uncertainty",
+        "play",
+        "perception"
+      ],
+      "related_note": "fn-05",
+      "related_title": "The Physics We Choose",
+      "release_id": "f0acfdda1cc576ad0462a133c3a66ed1368c237426683cba425ff339feddb7c7",
+      "runtime_published_at": "2026-10-31T16:13:44.711644Z",
+      "source_path": "fieldworks/readings/everything-is-thinking.md",
+      "source_sha256": "951b624507ef44fa9b41d2ca751dfb785aec7f8df044257a0f958be7e1db16e1",
+      "source_length": 1205,
+      "href": "fieldworks/everything-is-thinking/",
+      "poster": {
+        "path": "fieldworks/images/everything-is-thinking.jpg",
+        "sha256": "9bf33500443e6dd0c2c4f3abeee3e7b7533b70e28f97194eafb3eec110402022",
+        "length": 356376,
+        "kind": "actual-browser-capture"
+      },
+      "preview": {
+        "path": "fieldworks/previews/everything-is-thinking.mp4",
+        "sha256": "3152ead49bb36013c3a0b1f758c937820dee402112f25461faa076bb525a1713",
+        "length": 1545767,
+        "kind": "recorded-artwork-loop"
+      },
+      "former_title": "Everything Is Thinking"
+    },
+    {
       "slug": "vellum",
       "title": "Vellum",
       "former_title": "Capillary / Ink",
@@ -178,82 +220,6 @@
         "path": "fieldworks/previews/vellum.mp4",
         "sha256": "8ba42ec38b8b18dc03a183e633d18bc3b67a95bd642e3b2b97938817b6e21b88",
         "length": 1752330,
-        "kind": "recorded-artwork-loop"
-      }
-    },
-    {
-      "slug": "undra",
-      "title": "Undra",
-      "former_title": "Glop / Water Droplet",
-      "project": "liquid-field",
-      "repository": "https://github.com/doctorillumination/water-droplets",
-      "caption": "A living surface. A conversation with water.",
-      "description": "Gather, stretch, grow, and separate luminous water. A small gesture changes the field.",
-      "alt": "Luminous green water droplets gathering on a pale surface, captured from Undra.",
-      "gesture": "Hold to grow. Drag to gather. Double-tap to separate.",
-      "source": "undra.md",
-      "themes": [
-        "water",
-        "agency",
-        "embodiment",
-        "play",
-        "emergence",
-        "perception"
-      ],
-      "related_note": "fn-05",
-      "related_title": "The Physics We Choose",
-      "source_path": "fieldworks/readings/undra.md",
-      "source_sha256": "8a89ec4cf907ce20c844c5eb127bb7fd7245f212511cf0e976f638d286a93626",
-      "source_length": 681,
-      "href": "fieldworks/undra/",
-      "poster": {
-        "path": "fieldworks/images/undra.jpg",
-        "sha256": "1d1fa002e7e3058ba4375af450a32ca472ae548502a7dffa2fa2b354f47d5d8f",
-        "length": 52949,
-        "kind": "actual-browser-capture"
-      },
-      "preview": {
-        "path": "fieldworks/previews/undra.mp4",
-        "sha256": "50b072404f4faf644a6300257621bb27a7cec002787667cf77f37dfdbc18af0e",
-        "length": 427222,
-        "kind": "recorded-artwork-loop"
-      }
-    },
-    {
-      "slug": "opalia",
-      "title": "Opalia",
-      "former_title": "Phase Loom",
-      "project": "phase-loom",
-      "repository": "https://github.com/doctorillumination/phaseloom",
-      "caption": "A fold in seeing. Light, continually becoming.",
-      "description": "Pearlescent waves unfold through a continuous field of light. Change the rhythm, or simply stay awhile.",
-      "alt": "Pastel cyan, coral, and gold folds radiating through the pearlescent light field of Opalia.",
-      "gesture": "Watch the field unfold. Open Controls to change its rhythm.",
-      "source": "opalia.md",
-      "themes": [
-        "light",
-        "attention",
-        "perception",
-        "time",
-        "rhythm",
-        "emergence"
-      ],
-      "related_note": "fn-08",
-      "related_title": "The Lived Interface",
-      "source_path": "fieldworks/readings/opalia.md",
-      "source_sha256": "59b4b23efaa88f8217808f020f16afbf97450996cb7762391510245cd8a3df8e",
-      "source_length": 699,
-      "href": "fieldworks/opalia/",
-      "poster": {
-        "path": "fieldworks/images/opalia.jpg",
-        "sha256": "1c2dd1cc98d0edb0acb3aff5d158a454fd4d14fd86247b9664c3d7e12d6de5fe",
-        "length": 64021,
-        "kind": "actual-browser-capture"
-      },
-      "preview": {
-        "path": "fieldworks/previews/opalia.mp4",
-        "sha256": "a332d620c5b7e72a38c388154ff2316ad685e7db28e6243683feed7e4a9ae8d2",
-        "length": 609568,
         "kind": "recorded-artwork-loop"
       }
     },
@@ -300,46 +266,80 @@
       }
     },
     {
-      "slug": "everything-is-thinking",
-      "title": "Everything Is Thinking",
-      "edition": "whole-fragments",
-      "project": "everything-is-thinking",
-      "repository": "https://github.com/doctorillumination/everything-is-thinking",
-      "status": "living",
-      "caption": "A field of competing futures.",
-      "description": "Pixel suns, company emblems, and competing AI futures crowd a slowly moving room. Look around, collide the field, or explore its 384 original images.",
-      "alt": "A dense blue and silver pixel collage of suns, company emblems, computer windows, and colourful signs at different depths.",
-      "gesture": "Move the pointer to look around. Pause, collide, or open the asset library.",
-      "source": "everything-is-thinking.md",
+      "slug": "opalia",
+      "title": "Opalia",
+      "former_title": "Phase Loom",
+      "project": "phase-loom",
+      "repository": "https://github.com/doctorillumination/phaseloom",
+      "caption": "A fold in seeing. Light, continually becoming.",
+      "description": "Pearlescent waves unfold through a continuous field of light. Change the rhythm, or simply stay awhile.",
+      "alt": "Pastel cyan, coral, and gold folds radiating through the pearlescent light field of Opalia.",
+      "gesture": "Watch the field unfold. Open Controls to change its rhythm.",
+      "source": "opalia.md",
       "themes": [
-        "artificial intelligence",
-        "imagination",
+        "light",
         "attention",
-        "uncertainty",
+        "perception",
+        "time",
+        "rhythm",
+        "emergence"
+      ],
+      "related_note": "fn-08",
+      "related_title": "The Lived Interface",
+      "source_path": "fieldworks/readings/opalia.md",
+      "source_sha256": "59b4b23efaa88f8217808f020f16afbf97450996cb7762391510245cd8a3df8e",
+      "source_length": 699,
+      "href": "fieldworks/opalia/",
+      "poster": {
+        "path": "fieldworks/images/opalia.jpg",
+        "sha256": "1c2dd1cc98d0edb0acb3aff5d158a454fd4d14fd86247b9664c3d7e12d6de5fe",
+        "length": 64021,
+        "kind": "actual-browser-capture"
+      },
+      "preview": {
+        "path": "fieldworks/previews/opalia.mp4",
+        "sha256": "a332d620c5b7e72a38c388154ff2316ad685e7db28e6243683feed7e4a9ae8d2",
+        "length": 609568,
+        "kind": "recorded-artwork-loop"
+      }
+    },
+    {
+      "slug": "undra",
+      "title": "Undra",
+      "former_title": "Glop / Water Droplet",
+      "project": "liquid-field",
+      "repository": "https://github.com/doctorillumination/water-droplets",
+      "caption": "A living surface. A conversation with water.",
+      "description": "Gather, stretch, grow, and separate luminous water. A small gesture changes the field.",
+      "alt": "Luminous green water droplets gathering on a pale surface, captured from Undra.",
+      "gesture": "Hold to grow. Drag to gather. Double-tap to separate.",
+      "source": "undra.md",
+      "themes": [
+        "water",
+        "agency",
+        "embodiment",
         "play",
+        "emergence",
         "perception"
       ],
       "related_note": "fn-05",
       "related_title": "The Physics We Choose",
-      "release_id": "f0acfdda1cc576ad0462a133c3a66ed1368c237426683cba425ff339feddb7c7",
-      "runtime_published_at": "2026-10-31T16:13:44.711644Z",
-      "source_path": "fieldworks/readings/everything-is-thinking.md",
-      "source_sha256": "951b624507ef44fa9b41d2ca751dfb785aec7f8df044257a0f958be7e1db16e1",
-      "source_length": 1205,
-      "href": "fieldworks/everything-is-thinking/",
+      "source_path": "fieldworks/readings/undra.md",
+      "source_sha256": "8a89ec4cf907ce20c844c5eb127bb7fd7245f212511cf0e976f638d286a93626",
+      "source_length": 681,
+      "href": "fieldworks/undra/",
       "poster": {
-        "path": "fieldworks/images/everything-is-thinking.jpg",
-        "sha256": "9bf33500443e6dd0c2c4f3abeee3e7b7533b70e28f97194eafb3eec110402022",
-        "length": 356376,
+        "path": "fieldworks/images/undra.jpg",
+        "sha256": "1d1fa002e7e3058ba4375af450a32ca472ae548502a7dffa2fa2b354f47d5d8f",
+        "length": 52949,
         "kind": "actual-browser-capture"
       },
       "preview": {
-        "path": "fieldworks/previews/everything-is-thinking.mp4",
-        "sha256": "3152ead49bb36013c3a0b1f758c937820dee402112f25461faa076bb525a1713",
-        "length": 1545767,
+        "path": "fieldworks/previews/undra.mp4",
+        "sha256": "50b072404f4faf644a6300257621bb27a7cec002787667cf77f37dfdbc18af0e",
+        "length": 427222,
         "kind": "recorded-artwork-loop"
-      },
-      "former_title": "Everything Is Thinking"
+      }
     }
   ]
 }
