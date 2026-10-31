@@ -69,13 +69,13 @@
     {
       "slug": "everything-is-thinking",
       "capture": "actual browser canvas, 30 fps, no audio",
-      "raw_sha256": "138fa02309d35575cec73ab1e2682a769d22167d8a91a135e7fdfaff33f05952",
+      "raw_sha256": "3ffcb0b35953e7fe0ad0c2e646e1498bfc4db5fe5b0604c347d298d1f739101b",
       "raw_duration": 8.2,
       "loop_method": "one-second end-to-start crossfade",
-      "source_snapshot_sha256": "4c3ee6ae17ae91d913dbd766cd952682f615ae0c23a178492d6d4d68a6ede08a",
+      "source_snapshot_sha256": "8689500f457529ac6df7b12b1ba2c351575000b6768946efc4507e0c4c91f2b0",
       "path": "everything-is-thinking.mp4",
-      "sha256": "3152ead49bb36013c3a0b1f758c937820dee402112f25461faa076bb525a1713",
-      "length": 1545767
+      "sha256": "7b5e09c34ecada37d492cce3691867ba1a5373f331013b364daf122fbec70676",
+      "length": 2529738
     }
   ],
   "archived_items": [
