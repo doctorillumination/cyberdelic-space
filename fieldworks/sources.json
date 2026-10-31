@@ -1261,18 +1261,18 @@
       "slug": "everything-is-thinking",
       "project": "everything-is-thinking",
       "repository": "https://github.com/doctorillumination/everything-is-thinking",
-      "revision": "7b5fab5d01e900afa68f580b9dbc6cc19c784d92",
+      "revision": "0cdf54035b6167666b25290eefeb7290eccb9937",
       "edition": "whole-fragments",
-      "source_version": "0.5.0",
+      "source_version": "0.6.0",
       "source_subdirectory": ".",
       "source_files": [
         {
           "path": "index.html",
-          "sha256": "1d1d3483c08e9a3eec5f80feedc3e0dfad9ab4f5df6b8f4e399cad71b0b5d665"
+          "sha256": "c4bdc71dfaf1c41928d03c432f27a56e4af81af85eee1753d66dd4699c81b84d"
         },
         {
           "path": "library.html",
-          "sha256": "f80a4ba4e9ae3cfaae573dc54b1811755f733baed7717908046046ca55d3860c"
+          "sha256": "e5845bc3c020516b7819fb2f915523d8442b464f70947c9aaa08a89daf39a376"
         },
         {
           "path": "assets/manifest.json",
@@ -2818,11 +2818,11 @@
       "packaged_files": [
         {
           "path": "index.html",
-          "sha256": "1d1d3483c08e9a3eec5f80feedc3e0dfad9ab4f5df6b8f4e399cad71b0b5d665"
+          "sha256": "c4bdc71dfaf1c41928d03c432f27a56e4af81af85eee1753d66dd4699c81b84d"
         },
         {
           "path": "library.html",
-          "sha256": "f80a4ba4e9ae3cfaae573dc54b1811755f733baed7717908046046ca55d3860c"
+          "sha256": "e5845bc3c020516b7819fb2f915523d8442b464f70947c9aaa08a89daf39a376"
         },
         {
           "path": "assets/manifest.json",
@@ -4365,7 +4365,7 @@
           "sha256": "83b7256b6235a4ba5af3b339efb72814363a89bbd07e67b59c965fd44d35def0"
         }
       ],
-      "adaptations": "Exact study 05 index, library, and original pixel assets. No renderer adaptations. Host-only styles position and hide viewing controls."
+      "adaptations": "Exact study 06 index, library, and original pixel assets. No renderer adaptations. Host-only styles position and hide viewing controls."
     }
   ]
 }
