@@ -11,7 +11,7 @@
 <main aria-label="Lumen, an interactive generative light sculpture">
 <canvas tabindex="-1" id="art" aria-label="A rotating translucent fractal sculpture in shifting spectral light. Drag to turn it, scroll to move closer."></canvas>
 <div id="loading" role="status">Gathering light<span></span></div>
-<header class="chrome"><a class="wordmark" href="./" aria-label="Lumen Form Atlas">LUMEN<span> / </span>FORM ATLAS</a><span class="edition">ELEVEN FORMS <i>013</i></span></header>
+<header class="chrome"><a class="wordmark" href="./" aria-label="Lumen Form Atlas">LUMEN<span> / </span>FORM ATLAS</a><span class="edition">ELEVEN FORMS <i>014</i></span></header>
 <nav class="shape-picker chrome" aria-label="Choose a sculpture"><button id="previous" aria-label="Previous shape" title="Previous shape (Left arrow)">‹</button><select id="shape" aria-label="Shape"></select><button id="next" aria-label="Next shape" title="Next shape (Right arrow)">›</button></nav>
 <div class="form-caption chrome"><span id="form-number">02 / 11</span><h1 id="form-name">Living coral</h1><p id="form-description">A crystalline colony, unfolding into finer branches.</p></div>
 <div class="caption chrome"><span class="live-dot"></span><span id="state-label">A living study of light</span></div>
@@ -53,6 +53,15 @@
 <p class="hand-privacy">Processed on this device. Camera frames are never uploaded or recorded. Camera access starts only when you enable it.</p>
 </aside>
 <div id="hand-indicator" hidden><span id="hand-indicator-text">Hand lens</span><button id="hand-quick-stop" aria-label="Turn camera off" title="Turn camera off">×</button></div>
+<section id="hand-guide" aria-label="Learn the hand lens" hidden>
+<div class="hand-guide-content">
+<p id="hand-guide-count">Hand lens</p>
+<div class="hand-guide-words" aria-live="polite" aria-atomic="true"><h2 id="hand-guide-title"></h2><p id="hand-guide-copy"></p></div>
+<div id="hand-guide-steps" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+<p id="hand-guide-hint"></p>
+<div class="hand-guide-actions"><button id="hand-guide-skip" hidden>Start exploring <span aria-hidden="true">↗</span></button><button id="hand-guide-stop">Turn camera off</button></div>
+</div>
+</section>
 <button id="restore" aria-label="Show interface" hidden>Show controls</button>
 <div id="toast" role="status"></div>
 <div id="error" role="alert" hidden></div>

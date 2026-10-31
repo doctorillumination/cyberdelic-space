@@ -5,6 +5,7 @@ import * as julia from './julia-shaders.js';
 import * as bulb from './bulb-shaders.js';
 import {HandLens} from './hand-lens.js';
 import {applyHandLens,readHandLens} from './hand-pose.js';
+import {keepHandFocus,fieldFocusSamples,fieldDepthFragment} from './hand-focus.js';
 import {fieldCameraPose} from './field-camera.js';
 import {lensPose,stepLens} from './lens.js';
 import {stepCamera} from './cinematographer.js';
@@ -22,6 +23,7 @@ let rig={time:0,blend:state.cinema?1:0};
 let lensRig={time:0,blend:0};
 let growthClock={time:0,blend:state.growth?1:0};
 let focusCloud=[],focusTracker={index:-1},previousFieldPose=null;
+let fieldFocusCloud=[],fieldProbe=null,lastFieldProbe=-Infinity;
 let selected=shapeById(params.get('shape')),pending=true,request=0,worker,front=0;
 const fields={oil,julia,bulb},fieldPrograms=new Map();
 let programs,geometry,targets,dragging=false,lastX=0,lastY=0,lastTime=0,toastTimer,renderHandle;
@@ -46,7 +48,7 @@ function selectShape(id,push=true){
  $('shape').value=selected.id;$('form-name').textContent=selected.name;$('form-description').textContent=selected.description;
  $('form-number').textContent=String(SHAPES.indexOf(selected)+1).padStart(2,'0')+' / '+SHAPES.length;
  document.title='Lumen / '+selected.name;canvas.dataset.shape=selected.id;delete canvas.dataset.sharpSamples;
- previousFieldPose=null;state.angle=selected.angle??.12;state.tilt=selected.tilt??-.1;state.distanceToEye=11.5;state.focus=11.1;$('focus').value=state.focus;$('focus-value').value='Centre';
+ previousFieldPose=null;fieldFocusCloud=[];lastFieldProbe=-Infinity;state.angle=selected.angle??.12;state.tilt=selected.tilt??-.1;state.distanceToEye=11.5;state.focus=11.1;$('focus').value=state.focus;$('focus-value').value='Centre';
  syncGrowth();syncCinema();resize();reset();if(push)updateURL(true);
  try{
   if(selected.engine==='field'){
@@ -57,6 +59,20 @@ function selectShape(id,push=true){
  }catch(error){fail(error.message);}
 }
 function cycle(direction){selectShape(SHAPES[(SHAPES.indexOf(selected)+direction+SHAPES.length)%SHAPES.length].id);}
+function sampleFieldFocus(now){
+ if(!previousFieldPose||now-lastFieldProbe<220)return;
+ if(!fieldProbe){
+  const texture=gl.createTexture();gl.bindTexture(gl.TEXTURE_2D,texture);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.NEAREST);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.NEAREST);
+  gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA32F,32,32,0,gl.RGBA,gl.FLOAT,null);
+  const fbo=gl.createFramebuffer();gl.bindFramebuffer(gl.FRAMEBUFFER,fbo);gl.framebufferTexture2D(gl.FRAMEBUFFER,gl.COLOR_ATTACHMENT0,gl.TEXTURE_2D,texture,0);
+  if(gl.checkFramebufferStatus(gl.FRAMEBUFFER)!==gl.FRAMEBUFFER_COMPLETE)throw Error('The graphics device cannot sample surface depth.');
+  fieldProbe={texture,fbo,pixels:new Float32Array(32*32*4),program:program(fieldDepthFragment)};
+ }
+ const probe=fieldProbe;gl.bindVertexArray(null);gl.disable(gl.BLEND);gl.bindFramebuffer(gl.FRAMEBUFFER,probe.fbo);gl.viewport(0,0,32,32);gl.useProgram(probe.program.p);
+ gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_2D,targets[1-front].texture);sampler(probe.program,'image',0);gl.drawArrays(gl.TRIANGLES,0,3);
+ gl.readPixels(0,0,32,32,gl.RGBA,gl.FLOAT,probe.pixels);
+ fieldFocusCloud=fieldFocusSamples(probe.pixels,32,previousFieldPose,{width:canvas.width,height:canvas.height});lastFieldProbe=now;
+}
 function drawField(pose,moving){
  if(moving)state.samples=Math.min(state.samples,32);
  const prog=fieldPrograms.get(selected.id);gl.bindVertexArray(null);gl.disable(gl.BLEND);gl.useProgram(prog.p);
@@ -96,7 +112,15 @@ function render(now){
   pose.focusBand=FOCUS_BAND*rig.blend;
   canvas.dataset.sharpSamples=tracked.sharpSamples;
  }
- if(handMix>0)pose=applyHandLens(pose,handLens.controls,handMix,selected.engine);
+ if(handMix>0){
+  pose=applyHandLens(pose,handLens.controls,handMix,selected.engine);
+  if(field)sampleFieldFocus(now);
+  const protectedFocus=keepHandFocus(field?fieldFocusCloud:focusCloud,pose,{width:canvas.width,height:canvas.height},selected.engine);
+  pose.focus+=(protectedFocus.focus-pose.focus)*handMix;
+  pose.focusBand+=protectedFocus.focusBand*handMix;
+  canvas.dataset.sharpSamples=protectedFocus.sharpSamples;
+  canvas.dataset.focusSurfaces=protectedFocus.visible;
+ }
  lastPose={...pose};
  gl.viewport(0,0,canvas.width,canvas.height);
  if(selected.engine==='field')drawField(pose,moving||handChanged||handMix!==previousHandMix);else{

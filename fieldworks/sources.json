@@ -537,7 +537,7 @@
       "source_files": [
         {
           "path": "app.js",
-          "sha256": "6bf41def7ee22262342188ab9d9886a9430f529fef35eb347a9193d63277e0dd"
+          "sha256": "0d161270c0563bf84c4d39442e45174a71f58facdbf1f888be972a2a83515ad5"
         },
         {
           "path": "autofocus.js",
@@ -580,8 +580,16 @@
           "sha256": "af9faddf050f1fbfb97d66912d369fed01651836503ab0303eaa07b7339db17e"
         },
         {
+          "path": "hand-focus.js",
+          "sha256": "b440235e14ec28de43c37ef18843cd35d2ac605d318ce49d2e5d15783061e0dd"
+        },
+        {
+          "path": "hand-guide.js",
+          "sha256": "f83ccd72aeeb2997d3f56e0aec62cb6fa5cccb6faca5004d726999a67446e070"
+        },
+        {
           "path": "hand-lens.js",
-          "sha256": "dc8b016776ec6f58711fa27a7f8e1b76f033ca00de32ec90df49a99b4dd70df5"
+          "sha256": "25a575cd73101c389dda4d5bc49015f23cecb01727290e2e09f1907d48e8f07f"
         },
         {
           "path": "hand-pose.js",
@@ -597,7 +605,7 @@
         },
         {
           "path": "index.html",
-          "sha256": "53f9ef3e7b644dec0ce761e9e8091573db9082017a4317a6b74f527d64a67f22"
+          "sha256": "1d1162258f875833165810c90a3c772305feeb14bec9252942dd19b00c1f4b77"
         },
         {
           "path": "julia-shaders.js",
@@ -629,7 +637,7 @@
         },
         {
           "path": "style.css",
-          "sha256": "daa142c063f48e797953e3aba1612b2a0c1275d5309f9f4b98eab01d8790c28c"
+          "sha256": "a327f05b98708dc54be0d5a77d2afa940eb02433a2c8c606f70312e94c2a0261"
         },
         {
           "path": "vendor/mediapipe/LICENSE",
@@ -675,7 +683,7 @@
       "packaged_files": [
         {
           "path": "app.js",
-          "sha256": "6bf41def7ee22262342188ab9d9886a9430f529fef35eb347a9193d63277e0dd"
+          "sha256": "0d161270c0563bf84c4d39442e45174a71f58facdbf1f888be972a2a83515ad5"
         },
         {
           "path": "autofocus.js",
@@ -718,8 +726,16 @@
           "sha256": "af9faddf050f1fbfb97d66912d369fed01651836503ab0303eaa07b7339db17e"
         },
         {
+          "path": "hand-focus.js",
+          "sha256": "b440235e14ec28de43c37ef18843cd35d2ac605d318ce49d2e5d15783061e0dd"
+        },
+        {
+          "path": "hand-guide.js",
+          "sha256": "f83ccd72aeeb2997d3f56e0aec62cb6fa5cccb6faca5004d726999a67446e070"
+        },
+        {
           "path": "hand-lens.js",
-          "sha256": "dc8b016776ec6f58711fa27a7f8e1b76f033ca00de32ec90df49a99b4dd70df5"
+          "sha256": "25a575cd73101c389dda4d5bc49015f23cecb01727290e2e09f1907d48e8f07f"
         },
         {
           "path": "hand-pose.js",
@@ -735,7 +751,7 @@
         },
         {
           "path": "index.html",
-          "sha256": "53f9ef3e7b644dec0ce761e9e8091573db9082017a4317a6b74f527d64a67f22"
+          "sha256": "1d1162258f875833165810c90a3c772305feeb14bec9252942dd19b00c1f4b77"
         },
         {
           "path": "julia-shaders.js",
@@ -767,7 +783,7 @@
         },
         {
           "path": "style.css",
-          "sha256": "daa142c063f48e797953e3aba1612b2a0c1275d5309f9f4b98eab01d8790c28c"
+          "sha256": "a327f05b98708dc54be0d5a77d2afa940eb02433a2c8c606f70312e94c2a0261"
         },
         {
           "path": "vendor/mediapipe/LICENSE",
@@ -810,8 +826,8 @@
           "sha256": "3821ea9b1f7fb8c549ef2a064ef5c85750bf375c545a49fd6eea0df44a95f1f4"
         }
       ],
-      "adaptations": "Exact portable Form Atlas edition 013. No renderer adaptations.",
-      "release_id": "43d9564e68f8e9bbfc6188d5ec185f42571ab9275f0126ea539ea0e3801adba8"
+      "adaptations": "Exact portable Form Atlas edition 014. No renderer adaptations.",
+      "release_id": "c550f89393aad0dd7c0d370e4de10c8d9257ba8ea30f74fd44a6f11550be28db"
     },
     {
       "slug": "vellum",
