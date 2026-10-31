@@ -537,7 +537,7 @@
       "source_files": [
         {
           "path": "app.js",
-          "sha256": "0d161270c0563bf84c4d39442e45174a71f58facdbf1f888be972a2a83515ad5"
+          "sha256": "504affb572dbb7088534af1f660580d2e0cc03e431a186036c046b61e9191d00"
         },
         {
           "path": "autofocus.js",
@@ -545,7 +545,7 @@
         },
         {
           "path": "bootstrap.js",
-          "sha256": "a4c876d26f922e92bc8c876520d2a72d4723eaee19f1707ca0c4b2625c31cddd"
+          "sha256": "24873cc2e95756bef5421ffebf3d1efa1d86419852f742fd9e152e4b03ffae04"
         },
         {
           "path": "bulb-shaders.js",
@@ -568,12 +568,24 @@
           "sha256": "e3ac941d122c27d0f8677145aa87213bf9a3a3f9a4b25f49569ec6a487d6a97c"
         },
         {
+          "path": "generated-artwork-54f8aa56439bac2e.js",
+          "sha256": "54f8aa56439bac2eabb7e40843ccb3996349480f366f6f003ebe3e624f7174b9"
+        },
+        {
+          "path": "generated-hands-120d366ea41352d1.js",
+          "sha256": "120d366ea41352d16260d97f72b74b35ed43d2211478d6c08fbb4b5eba6af38b"
+        },
+        {
+          "path": "generated-shape-b5aad2969e448849.js",
+          "sha256": "b5aad2969e448849fab0107d117c98d91f8cc1bdf7788dead60b90165f153bdb"
+        },
+        {
           "path": "growth.js",
           "sha256": "971052401aec784f5d6d61c4cba514473a02ba92948d74d0c967ca3d8e49e338"
         },
         {
           "path": "hand-camera.js",
-          "sha256": "6d07e4102e7d4a293fe8f766c37393fcda2bef9354dc09196aa0b59a4ec62767"
+          "sha256": "02d24b1122a56e870c7a3edb90e3621053e1836a25a161cf907a1970bce067f8"
         },
         {
           "path": "hand-controls.js",
@@ -589,7 +601,7 @@
         },
         {
           "path": "hand-lens.js",
-          "sha256": "25a575cd73101c389dda4d5bc49015f23cecb01727290e2e09f1907d48e8f07f"
+          "sha256": "06c05a17fb2a561c7f46f37e91ebc47d451e5a3fef8a2426cc3229ab796193da"
         },
         {
           "path": "hand-pose.js",
@@ -597,7 +609,7 @@
         },
         {
           "path": "hand-worker.js",
-          "sha256": "bf633c21a9dca2c3e14f4b2513c06ef277959fd9a2b59ad98abf58efa79b0564"
+          "sha256": "120d366ea41352d16260d97f72b74b35ed43d2211478d6c08fbb4b5eba6af38b"
         },
         {
           "path": "icon.svg",
@@ -605,7 +617,7 @@
         },
         {
           "path": "index.html",
-          "sha256": "1d1162258f875833165810c90a3c772305feeb14bec9252942dd19b00c1f4b77"
+          "sha256": "f9825d8c4e53e27bf59f53f2abdb738d1c77b551e258c98740bea1f95093d9f3"
         },
         {
           "path": "julia-shaders.js",
@@ -637,7 +649,7 @@
         },
         {
           "path": "style.css",
-          "sha256": "a327f05b98708dc54be0d5a77d2afa940eb02433a2c8c606f70312e94c2a0261"
+          "sha256": "1523bc01e8da50787f2586cce750c96880f70538f05d59247f46e7119d5a203f"
         },
         {
           "path": "vendor/mediapipe/LICENSE",
@@ -683,7 +695,7 @@
       "packaged_files": [
         {
           "path": "app.js",
-          "sha256": "0d161270c0563bf84c4d39442e45174a71f58facdbf1f888be972a2a83515ad5"
+          "sha256": "504affb572dbb7088534af1f660580d2e0cc03e431a186036c046b61e9191d00"
         },
         {
           "path": "autofocus.js",
@@ -691,7 +703,7 @@
         },
         {
           "path": "bootstrap.js",
-          "sha256": "a4c876d26f922e92bc8c876520d2a72d4723eaee19f1707ca0c4b2625c31cddd"
+          "sha256": "24873cc2e95756bef5421ffebf3d1efa1d86419852f742fd9e152e4b03ffae04"
         },
         {
           "path": "bulb-shaders.js",
@@ -714,12 +726,24 @@
           "sha256": "e3ac941d122c27d0f8677145aa87213bf9a3a3f9a4b25f49569ec6a487d6a97c"
         },
         {
+          "path": "generated-artwork-54f8aa56439bac2e.js",
+          "sha256": "54f8aa56439bac2eabb7e40843ccb3996349480f366f6f003ebe3e624f7174b9"
+        },
+        {
+          "path": "generated-hands-120d366ea41352d1.js",
+          "sha256": "120d366ea41352d16260d97f72b74b35ed43d2211478d6c08fbb4b5eba6af38b"
+        },
+        {
+          "path": "generated-shape-b5aad2969e448849.js",
+          "sha256": "b5aad2969e448849fab0107d117c98d91f8cc1bdf7788dead60b90165f153bdb"
+        },
+        {
           "path": "growth.js",
           "sha256": "971052401aec784f5d6d61c4cba514473a02ba92948d74d0c967ca3d8e49e338"
         },
         {
           "path": "hand-camera.js",
-          "sha256": "6d07e4102e7d4a293fe8f766c37393fcda2bef9354dc09196aa0b59a4ec62767"
+          "sha256": "02d24b1122a56e870c7a3edb90e3621053e1836a25a161cf907a1970bce067f8"
         },
         {
           "path": "hand-controls.js",
@@ -735,7 +759,7 @@
         },
         {
           "path": "hand-lens.js",
-          "sha256": "25a575cd73101c389dda4d5bc49015f23cecb01727290e2e09f1907d48e8f07f"
+          "sha256": "06c05a17fb2a561c7f46f37e91ebc47d451e5a3fef8a2426cc3229ab796193da"
         },
         {
           "path": "hand-pose.js",
@@ -743,7 +767,7 @@
         },
         {
           "path": "hand-worker.js",
-          "sha256": "bf633c21a9dca2c3e14f4b2513c06ef277959fd9a2b59ad98abf58efa79b0564"
+          "sha256": "120d366ea41352d16260d97f72b74b35ed43d2211478d6c08fbb4b5eba6af38b"
         },
         {
           "path": "icon.svg",
@@ -751,7 +775,7 @@
         },
         {
           "path": "index.html",
-          "sha256": "1d1162258f875833165810c90a3c772305feeb14bec9252942dd19b00c1f4b77"
+          "sha256": "f9825d8c4e53e27bf59f53f2abdb738d1c77b551e258c98740bea1f95093d9f3"
         },
         {
           "path": "julia-shaders.js",
@@ -783,7 +807,7 @@
         },
         {
           "path": "style.css",
-          "sha256": "a327f05b98708dc54be0d5a77d2afa940eb02433a2c8c606f70312e94c2a0261"
+          "sha256": "1523bc01e8da50787f2586cce750c96880f70538f05d59247f46e7119d5a203f"
         },
         {
           "path": "vendor/mediapipe/LICENSE",
@@ -826,8 +850,8 @@
           "sha256": "3821ea9b1f7fb8c549ef2a064ef5c85750bf375c545a49fd6eea0df44a95f1f4"
         }
       ],
-      "adaptations": "Exact portable Form Atlas edition 014. No renderer adaptations.",
-      "release_id": "c550f89393aad0dd7c0d370e4de10c8d9257ba8ea30f74fd44a6f11550be28db"
+      "adaptations": "Exact portable Form Atlas edition 015. No renderer adaptations.",
+      "release_id": "0d850b5ac6b722d97acacba63280b6b17af922205d24d767e57ac07f1e704c8d"
     },
     {
       "slug": "vellum",

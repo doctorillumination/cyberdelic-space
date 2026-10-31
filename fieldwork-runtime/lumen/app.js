@@ -26,7 +26,7 @@ let focusCloud=[],focusTracker={index:-1},previousFieldPose=null;
 let fieldFocusCloud=[],fieldProbe=null,lastFieldProbe=-Infinity;
 let selected=shapeById(params.get('shape')),pending=true,request=0,worker,front=0;
 const fields={oil,julia,bulb},fieldPrograms=new Map();
-let programs,geometry,targets,dragging=false,lastX=0,lastY=0,lastTime=0,toastTimer,renderHandle;
+let programs,geometry,targets,dragging=false,lastX=0,lastY=0,lastTime=0,toastTimer,renderHandle,geometryTimer;
 function fail(message){$('loading').hidden=true;$('error').textContent=message;$('error').hidden=false;document.body.dataset.renderer='failed';}
 function compile(type,source){const s=gl.createShader(type);gl.shaderSource(s,source);gl.compileShader(s);if(!gl.getShaderParameter(s,gl.COMPILE_STATUS)){const log=gl.getShaderInfoLog(s);gl.deleteShader(s);throw Error(log);}return s;}
 function program(source,vertexSource=vertex){const p=gl.createProgram();const vs=compile(gl.VERTEX_SHADER,vertexSource),fs=compile(gl.FRAGMENT_SHADER,source);gl.attachShader(p,vs);gl.attachShader(p,fs);gl.linkProgram(p);gl.deleteShader(vs);gl.deleteShader(fs);if(!gl.getProgramParameter(p,gl.LINK_STATUS))throw Error(gl.getProgramInfoLog(p));return {p,uniforms:new Map()};}
@@ -36,6 +36,7 @@ function reset(){state.samples=0;state.dirty=true;}
 function resize(){if(!gl||!programs)return;const field=selected.engine==='field';const precision=(handLens?.active||handMix>0)&&!field?gl.RGBA32F:gl.RGBA16F;const cap=field?(state.quality===1.5?1600:state.quality===1?1200:900):(state.quality===1.5?2000:state.quality===1?1450:900);const scale=Math.min(devicePixelRatio*state.quality,cap/Math.max(innerWidth,innerHeight));const w=Math.max(1,Math.round(innerWidth*scale)),h=Math.max(1,Math.round(innerHeight*scale));if(canvas.width===w&&canvas.height===h&&targets&&targets.length===2&&targets[0].precision===precision)return;canvas.width=w;canvas.height=h;if(targets)for(const t of targets){gl.deleteFramebuffer(t.fbo);gl.deleteTexture(t.texture);}targets=Array.from({length:2},()=>{const texture=gl.createTexture();gl.bindTexture(gl.TEXTURE_2D,texture);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,field?gl.LINEAR:gl.NEAREST);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,field?gl.LINEAR:gl.NEAREST);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);gl.texImage2D(gl.TEXTURE_2D,0,precision,w,h,0,gl.RGBA,precision===gl.RGBA32F?gl.FLOAT:gl.HALF_FLOAT,null);const fbo=gl.createFramebuffer();gl.bindFramebuffer(gl.FRAMEBUFFER,fbo);gl.framebufferTexture2D(gl.FRAMEBUFFER,gl.COLOR_ATTACHMENT0,gl.TEXTURE_2D,texture,0);if(gl.checkFramebufferStatus(gl.FRAMEBUFFER)!==gl.FRAMEBUFFER_COMPLETE)throw Error('The graphics device cannot create the light buffer.');gl.clearColor(0,0,0,1);gl.clear(gl.COLOR_BUFFER_BIT);return {texture,fbo,precision};});gl.bindFramebuffer(gl.FRAMEBUFFER,null);reset();}
 function releaseGeometry(){if(geometry){for(const buffer of geometry.buffers)gl.deleteBuffer(buffer);gl.deleteVertexArray(geometry.vao);geometry=null;}}
 function installGeometry(model){
+ clearTimeout(geometryTimer);
  focusCloud=createFocusCloud(model);focusTracker={index:-1};releaseGeometry();
  const vao=gl.createVertexArray();gl.bindVertexArray(vao);
  const buffers=[model.positions,model.radii,model.facets,model.normals,model.development].map((data,i)=>{const buffer=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buffer);gl.bufferData(gl.ARRAY_BUFFER,data,gl.STATIC_DRAW);gl.enableVertexAttribArray(i);gl.vertexAttribPointer(i,i===4?4:i===0||i===3?3:1,gl.FLOAT,false,0,0);return buffer;});
@@ -43,6 +44,7 @@ function installGeometry(model){
 }
 function updateURL(push=false){const url=new URL(location.href);url.searchParams.set('shape',selected.id);url.searchParams.set('seed',state.seed+1);history[push?'pushState':'replaceState'](null,'',url);}
 function selectShape(id,push=true){
+ clearTimeout(geometryTimer);
  selected=shapeById(id);lastPose=null;const token=++request;pending=true;document.body.dataset.renderer='loading';
  $('loading').hidden=false;$('loading').style.opacity='1';$('error').hidden=true;
  $('shape').value=selected.id;$('form-name').textContent=selected.name;$('form-description').textContent=selected.description;
@@ -54,7 +56,14 @@ function selectShape(id,push=true){
   if(selected.engine==='field'){
    if(!fieldPrograms.has(selected.id))fieldPrograms.set(selected.id,program(fields[selected.id].specimen,fields[selected.id].vertex));
    releaseGeometry();focusCloud=[];canvas.dataset.grains='0';pending=false;
-  }else if(worker)worker.postMessage({id:selected.id,seed:state.seed+1,request:token});
+  }else if(worker){
+   document.body.dataset.bootStage='geometry';
+   worker.postMessage({id:selected.id,seed:state.seed+1,request:token});
+   geometryTimer=setTimeout(()=>{
+    if(token!==request||!pending)return;
+    worker.terminate();worker=null;document.body.dataset.geometryRecovery='main-thread';selectShape(selected.id,false);
+   },6000);
+  }
   else setTimeout(()=>{if(token!==request)return;try{installGeometry(createShape(selected.id,state.seed+1));}catch(error){fail(error.message);}},20);
  }catch(error){fail(error.message);}
 }
@@ -204,7 +213,7 @@ handLens=new HandLens({readLens:()=>readHandLens(lastPose??lensPose(state,state.
  if(owned!==handOwnership){handOwnership=owned;for(const id of ['focus','aperture','lens-drift'])$(id).disabled=owned;resize();reset();syncCinema();}
 }});
 if(params.get('embed')==='1')immersive(true,false);
-try{if(!gl)throw Error('This artwork needs a browser with WebGL 2 enabled.');if(!gl.getExtension('EXT_color_buffer_float'))throw Error('This artwork needs floating point graphics buffers. Try a recent desktop browser.');programs={specimen:program(crystalFragment,crystalVertex),display:program(display),oilDisplay:program(oil.display,oil.vertex)};
+try{document.body.dataset.bootStage='graphics';if(!gl)throw Error('This artwork needs a browser with WebGL 2 enabled.');if(!gl.getExtension('EXT_color_buffer_float'))throw Error('This artwork needs floating point graphics buffers. Try a recent desktop browser.');programs={specimen:program(crystalFragment,crystalVertex),display:program(display),oilDisplay:program(oil.display,oil.vertex)};
  for(const group of [...new Set(SHAPES.map(s=>s.group))]){const optgroup=document.createElement('optgroup');optgroup.label=group;for(const shape of SHAPES.filter(s=>s.group===group)){const option=document.createElement('option');option.value=shape.id;option.textContent=shape.name;optgroup.append(option);}$('shape').append(optgroup);}
- try{worker=new Worker(new URL('./shape-worker.js',import.meta.url),{type:'module'});worker.onmessage=({data})=>{if(data.request!==request)return;if(data.error)fail(data.error);else installGeometry(data.model);};worker.onerror=()=>{worker.terminate();worker=null;selectShape(selected.id,false);};}catch{worker=null;}
+ try{const workerPath=typeof LUMEN_SHAPE_WORKER==='undefined'?'./shape-worker.js':LUMEN_SHAPE_WORKER;worker=new Worker(new URL(workerPath,import.meta.url),{type:'module'});worker.onmessage=({data})=>{if(data.request!==request)return;clearTimeout(geometryTimer);if(data.error)fail(data.error);else installGeometry(data.model);};worker.onerror=()=>{clearTimeout(geometryTimer);worker.terminate();worker=null;selectShape(selected.id,false);};}catch{worker=null;}
  selectShape(selected.id,false);requestAnimationFrame(render);}catch(error){console.error(error);fail(error.message);}

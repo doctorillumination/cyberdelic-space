@@ -31,7 +31,7 @@ export class HandLens{
   $('hand-recalibrate').onclick=()=>{this.guide.start();this.controls.calibrate();this.panel(false);this.sync();};
   $('hand-guide-skip').onclick=()=>{this.guide.dismiss();this.syncGuide();};
   $('hand-guide-stop').onclick=()=>this.stop();
-  $('hand-preview-toggle').onclick=()=>{const show=$('hand-preview-wrap').hidden;$('hand-preview-wrap').hidden=!show;$('hand-preview-toggle').setAttribute('aria-pressed',show);$('hand-preview-toggle').textContent=show?'Hide camera preview':'Show camera preview';};
+  $('hand-preview-toggle').onclick=()=>{const show=!document.body.classList.contains('hand-preview-visible');document.body.classList.toggle('hand-preview-visible',show);$('hand-video').setAttribute('aria-hidden',String(!show));$('hand-preview-toggle').setAttribute('aria-pressed',show);$('hand-preview-toggle').textContent=show?'Hide camera preview':'Show camera preview';};
   addEventListener('pagehide',()=>this.stop());this.sync();
  }
  get active(){return this.controls.enabled;}
@@ -56,7 +56,7 @@ export class HandLens{
  }
  stop(){
   this.errorMessage=null;++this.request;this.camera.stop();this.controls.stop();this.guide.reset();this.pending=false;this.status='off';
-  $('hand-preview-wrap').hidden=true;$('hand-preview-toggle').setAttribute('aria-pressed','false');$('hand-preview-toggle').textContent='Show camera preview';this.sync();
+  $('hand-preview-wrap').hidden=true;document.body.classList.remove('hand-preview-visible');$('hand-video').setAttribute('aria-hidden','true');$('hand-preview-toggle').setAttribute('aria-pressed','false');$('hand-preview-toggle').textContent='Show camera preview';this.sync();
  }
  tick(dt){const changed=this.controls.step(dt,performance.now()/1000);this.sync(false);this.syncGuide(dt);return changed;}
  syncGuide(dt=0){
@@ -72,7 +72,8 @@ export class HandLens{
    for(const [i,dot] of [...$('hand-guide-steps').children].entries())dot.dataset.complete=String(i<view.step);
    $('hand-guide-skip').hidden=!view.canDismiss;
   }
-  if($('hand-guide-hint').textContent!==view.hint)$('hand-guide-hint').textContent=view.hint;
+  const hint=this.active&&document.body.dataset.handDetection==='not-found'?'Bring your whole hand into view, with your palm towards the camera.':view.hint;
+  if($('hand-guide-hint').textContent!==hint)$('hand-guide-hint').textContent=hint;
  }
  sync(notify=true){
   const status=this.errorMessage?'error':this.pending?'loading':this.active?this.controls.status:'off';
@@ -83,6 +84,7 @@ export class HandLens{
    return;
   }
   const busy=this.busy;
+  $('hand-preview-wrap').hidden=!busy;
   $('hand-enable').hidden=busy;$('hand-active-controls').hidden=!busy;$('hand-recentre').disabled=this.pending||this.controls.pinchClosed==null;$('hand-recalibrate').disabled=this.pending;
   $('hand-preview-toggle').hidden=!this.active;$('hand-readouts').hidden=!this.active;$('hand-indicator').hidden=!busy;
   $('hands').setAttribute('aria-pressed',String(busy));

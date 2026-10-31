@@ -29,3 +29,8 @@
 @media(max-width:650px){.hand-guide-content{width:calc(100% - 28px);padding:24px 10px}#hand-guide-count{font-size:9px;letter-spacing:2px;margin-bottom:20px}#hand-guide-title{font-size:clamp(32px,8.5vw,46px);letter-spacing:-1px}#hand-guide-copy{font-size:15px;line-height:1.55;max-width:370px}#hand-guide-hint{font-size:11px;max-width:290px}#hand-guide-steps{margin-top:23px}.hand-guide-actions{margin-top:13px}}
 @media(max-height:540px){.hand-guide-content{padding:10px 20px}#hand-guide-count{margin-bottom:12px}#hand-guide-title{font-size:36px;margin-bottom:12px}#hand-guide-copy{font-size:15px;max-width:540px}#hand-guide-steps{margin:15px auto 10px}#hand-guide-hint{font-size:11px}.hand-guide-actions{margin-top:8px}}
 @media(prefers-reduced-motion:reduce){#hand-guide-steps span,.hand-guide-content{transition:none}}
+#error{inset:auto;top:50%;left:50%;transform:translate(-50%,-50%);width:min(480px,calc(100% - 48px));padding:28px;background:#080c09f5;border:1px solid #ffffff20;border-radius:14px;z-index:9}#error p{margin:0 0 18px}#error button{padding:10px 22px;border:1px solid #c1d5b24d;border-radius:22px;color:#e5eedc;font:13px Arial,sans-serif}
+/* Keep live video outside closed panels so decoding can continue during the guide. */
+#hand-preview-wrap{position:fixed;left:0;bottom:0;width:2px;height:2px;opacity:.001;pointer-events:none;z-index:7;overflow:hidden}#hand-preview-wrap #hand-video{width:100%;height:100%;object-fit:cover}
+.hand-preview-visible #hand-preview-wrap{left:30px;bottom:90px;width:224px;height:168px;opacity:1;border:1px solid #d8eacb38;border-radius:12px;box-shadow:0 8px 30px #0008}
+@media(max-width:650px){.hand-preview-visible #hand-preview-wrap{left:20px;bottom:80px;width:120px;height:90px}}

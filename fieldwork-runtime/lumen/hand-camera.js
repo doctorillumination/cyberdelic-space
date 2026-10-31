@@ -3,7 +3,8 @@ export class HandCamera{
  constructor({onResult,onEnded=()=>{}}){this.onResult=onResult;this.onEnded=onEnded;this.generation=0;this.stream=null;this.worker=null;this.enabled=false;}
  async start(video){
   const generation=++this.generation;this.enabled=true;
-  const worker=new Worker(new URL('./hand-worker.js',import.meta.url));this.worker=worker;
+  const workerPath=typeof LUMEN_HAND_WORKER==='undefined'?'./hand-worker.js':LUMEN_HAND_WORKER;
+  const worker=new Worker(new URL(workerPath,import.meta.url));this.worker=worker;
   let armTimeout;
   const ready=new Promise((resolve,reject)=>{
    let timer;armTimeout=()=>{timer=setTimeout(()=>reject(Error('The local hand tracker took too long to load.')),25000);};

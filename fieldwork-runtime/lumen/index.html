@@ -11,7 +11,7 @@
 <main aria-label="Lumen, an interactive generative light sculpture">
 <canvas tabindex="-1" id="art" aria-label="A rotating translucent fractal sculpture in shifting spectral light. Drag to turn it, scroll to move closer."></canvas>
 <div id="loading" role="status">Gathering light<span></span></div>
-<header class="chrome"><a class="wordmark" href="./" aria-label="Lumen Form Atlas">LUMEN<span> / </span>FORM ATLAS</a><span class="edition">ELEVEN FORMS <i>014</i></span></header>
+<header class="chrome"><a class="wordmark" href="./" aria-label="Lumen Form Atlas">LUMEN<span> / </span>FORM ATLAS</a><span class="edition">ELEVEN FORMS <i>015</i></span></header>
 <nav class="shape-picker chrome" aria-label="Choose a sculpture"><button id="previous" aria-label="Previous shape" title="Previous shape (Left arrow)">‹</button><select id="shape" aria-label="Shape"></select><button id="next" aria-label="Next shape" title="Next shape (Right arrow)">›</button></nav>
 <div class="form-caption chrome"><span id="form-number">02 / 11</span><h1 id="form-name">Living coral</h1><p id="form-description">A crystalline colony, unfolding into finer branches.</p></div>
 <div class="caption chrome"><span class="live-dot"></span><span id="state-label">A living study of light</span></div>
@@ -49,9 +49,9 @@
 <div id="hand-active-controls" hidden><button id="hand-recentre">Re-centre focus</button><button id="hand-recalibrate">Calibrate fingers</button><button id="hand-stop">Turn camera off</button></div>
 <div id="hand-readouts" hidden><div><span>Whole</span><meter id="hand-detail" min="0" max="1" value="0.5" aria-label="Depth of field"></meter><span>Detail <output id="hand-detail-value">0%</output></span></div><div><span>Front</span><meter id="hand-depth" min="0" max="1" value="0.5" aria-label="Focal plane depth"></meter><span>Back</span></div></div>
 <button id="hand-preview-toggle" aria-pressed="false" hidden>Show camera preview</button>
-<div id="hand-preview-wrap" hidden><video id="hand-video" autoplay muted playsinline aria-label="Local camera preview"></video></div>
 <p class="hand-privacy">Processed on this device. Camera frames are never uploaded or recorded. Camera access starts only when you enable it.</p>
 </aside>
+<div id="hand-preview-wrap" hidden><video id="hand-video" autoplay muted playsinline aria-label="Local camera preview" aria-hidden="true"></video></div>
 <div id="hand-indicator" hidden><span id="hand-indicator-text">Hand lens</span><button id="hand-quick-stop" aria-label="Turn camera off" title="Turn camera off">×</button></div>
 <section id="hand-guide" aria-label="Learn the hand lens" hidden>
 <div class="hand-guide-content">
@@ -65,5 +65,39 @@
 <button id="restore" aria-label="Show interface" hidden>Show controls</button>
 <div id="toast" role="status"></div>
 <div id="error" role="alert" hidden></div>
-</main><script type="module" src="bootstrap.js"></script>
+</main><script id="lumen-boot" data-runtime="./generated-artwork-54f8aa56439bac2e.js">
+(()=>{
+ const script=document.currentScript;
+ const runtime=new URL(script?.dataset.runtime||'./app.js',document.baseURI);
+ const loading=document.getElementById('loading'),error=document.getElementById('error');
+ let elapsed=0,previous=performance.now(),recovering=false;
+ function offerRetry(message){
+  loading.hidden=true;error.hidden=false;recovering=true;
+  const text=document.createElement('p');text.textContent=message;
+  const retry=document.createElement('button');retry.textContent='Try again';retry.onclick=()=>location.reload();
+  error.replaceChildren(text,retry);document.body.dataset.startupRecovery='available';
+ }
+ const watch=setInterval(()=>{
+  const now=performance.now(),dt=Math.min(2,(now-previous)/1000);previous=now;
+  if(document.body.dataset.renderer==='ready'){
+   clearInterval(watch);loading.hidden=true;
+   if(recovering)error.hidden=true;
+   document.body.dataset.startupRecovery='ready';return;
+  }
+  if(document.body.dataset.renderer==='failed'){
+   clearInterval(watch);offerRetry(error.textContent||'The graphics session could not start. Try opening the artwork again.');return;
+  }
+  if(!document.hidden)elapsed+=dt;
+  if(elapsed>=18&&!recovering)offerRetry('The artwork is taking longer than expected to open. Try again to reconnect to the sculpture.');
+ },500);
+ addEventListener('error',event=>{
+  if(document.body.dataset.renderer!=='ready'&&event.error){document.body.dataset.renderer='failed';offerRetry('The artwork could not start: '+event.message);}
+ });
+ document.body.dataset.bootStage='scripts';
+ import(runtime.href).catch(cause=>{
+  console.error(cause);document.body.dataset.renderer='failed';
+  offerRetry('The artwork could not start: '+cause.message);
+ });
+})();
+</script>
 </body></html>
