@@ -3,6 +3,8 @@ import {SHAPES,shapeById,createShape} from './models.js';
 import * as oil from './oil-shaders.js';
 import * as julia from './julia-shaders.js';
 import * as bulb from './bulb-shaders.js';
+import {HandLens} from './hand-lens.js';
+import {applyHandLens,readHandLens} from './hand-pose.js';
 import {fieldCameraPose} from './field-camera.js';
 import {lensPose,stepLens} from './lens.js';
 import {stepCamera} from './cinematographer.js';
@@ -15,6 +17,7 @@ const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const params=new URLSearchParams(location.search);
 const requestedSeed=Number.parseInt(params.get('seed')||'1',10);
 const state={angle:.12,tilt:-.1,phase:0,focus:11.1,aperture:.64,transmission:.72,distanceToEye:11.5,seed:Number.isFinite(requestedSeed)?Math.max(0,Math.min(999,requestedSeed-1)):0,speed:.15,compression:.5,lensDrift:false,drift:.28,cinema:params.get('cinema')!=='0'&&!reduced,growth:params.get('growth')!=='0',quality:1,playing:!reduced&&params.get('paused')!=='1',frame:0,samples:0,dirty:true};
+let handLens,handMix=0,lastPose=null,handOwnership=false;
 let rig={time:0,blend:state.cinema?1:0};
 let lensRig={time:0,blend:0};
 let growthClock={time:0,blend:state.growth?1:0};
@@ -28,7 +31,7 @@ function program(source,vertexSource=vertex){const p=gl.createProgram();const vs
 function uniform(prog,name,value){if(!prog.uniforms.has(name))prog.uniforms.set(name,gl.getUniformLocation(prog.p,name));const loc=prog.uniforms.get(name);if(Array.isArray(value))gl.uniform2fv(loc,value);else gl.uniform1f(loc,value);}
 function sampler(prog,name,unit){gl.uniform1i(gl.getUniformLocation(prog.p,name),unit);}
 function reset(){state.samples=0;state.dirty=true;}
-function resize(){if(!gl||!programs)return;const field=selected.engine==='field';const cap=field?(state.quality===1.5?1600:state.quality===1?1200:900):(state.quality===1.5?2000:state.quality===1?1450:900);const scale=Math.min(devicePixelRatio*state.quality,cap/Math.max(innerWidth,innerHeight));const w=Math.max(1,Math.round(innerWidth*scale)),h=Math.max(1,Math.round(innerHeight*scale));if(canvas.width===w&&canvas.height===h&&targets&&targets.length===2)return;canvas.width=w;canvas.height=h;if(targets)for(const t of targets){gl.deleteFramebuffer(t.fbo);gl.deleteTexture(t.texture);}targets=Array.from({length:2},()=>{const texture=gl.createTexture();gl.bindTexture(gl.TEXTURE_2D,texture);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,field?gl.LINEAR:gl.NEAREST);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,field?gl.LINEAR:gl.NEAREST);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA16F,w,h,0,gl.RGBA,gl.HALF_FLOAT,null);const fbo=gl.createFramebuffer();gl.bindFramebuffer(gl.FRAMEBUFFER,fbo);gl.framebufferTexture2D(gl.FRAMEBUFFER,gl.COLOR_ATTACHMENT0,gl.TEXTURE_2D,texture,0);if(gl.checkFramebufferStatus(gl.FRAMEBUFFER)!==gl.FRAMEBUFFER_COMPLETE)throw Error('The graphics device cannot create the light buffer.');gl.clearColor(0,0,0,1);gl.clear(gl.COLOR_BUFFER_BIT);return {texture,fbo};});gl.bindFramebuffer(gl.FRAMEBUFFER,null);reset();}
+function resize(){if(!gl||!programs)return;const field=selected.engine==='field';const precision=(handLens?.active||handMix>0)&&!field?gl.RGBA32F:gl.RGBA16F;const cap=field?(state.quality===1.5?1600:state.quality===1?1200:900):(state.quality===1.5?2000:state.quality===1?1450:900);const scale=Math.min(devicePixelRatio*state.quality,cap/Math.max(innerWidth,innerHeight));const w=Math.max(1,Math.round(innerWidth*scale)),h=Math.max(1,Math.round(innerHeight*scale));if(canvas.width===w&&canvas.height===h&&targets&&targets.length===2&&targets[0].precision===precision)return;canvas.width=w;canvas.height=h;if(targets)for(const t of targets){gl.deleteFramebuffer(t.fbo);gl.deleteTexture(t.texture);}targets=Array.from({length:2},()=>{const texture=gl.createTexture();gl.bindTexture(gl.TEXTURE_2D,texture);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,field?gl.LINEAR:gl.NEAREST);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,field?gl.LINEAR:gl.NEAREST);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);gl.texImage2D(gl.TEXTURE_2D,0,precision,w,h,0,gl.RGBA,precision===gl.RGBA32F?gl.FLOAT:gl.HALF_FLOAT,null);const fbo=gl.createFramebuffer();gl.bindFramebuffer(gl.FRAMEBUFFER,fbo);gl.framebufferTexture2D(gl.FRAMEBUFFER,gl.COLOR_ATTACHMENT0,gl.TEXTURE_2D,texture,0);if(gl.checkFramebufferStatus(gl.FRAMEBUFFER)!==gl.FRAMEBUFFER_COMPLETE)throw Error('The graphics device cannot create the light buffer.');gl.clearColor(0,0,0,1);gl.clear(gl.COLOR_BUFFER_BIT);return {texture,fbo,precision};});gl.bindFramebuffer(gl.FRAMEBUFFER,null);reset();}
 function releaseGeometry(){if(geometry){for(const buffer of geometry.buffers)gl.deleteBuffer(buffer);gl.deleteVertexArray(geometry.vao);geometry=null;}}
 function installGeometry(model){
  focusCloud=createFocusCloud(model);focusTracker={index:-1};releaseGeometry();
@@ -38,7 +41,7 @@ function installGeometry(model){
 }
 function updateURL(push=false){const url=new URL(location.href);url.searchParams.set('shape',selected.id);url.searchParams.set('seed',state.seed+1);history[push?'pushState':'replaceState'](null,'',url);}
 function selectShape(id,push=true){
- selected=shapeById(id);const token=++request;pending=true;document.body.dataset.renderer='loading';
+ selected=shapeById(id);lastPose=null;const token=++request;pending=true;document.body.dataset.renderer='loading';
  $('loading').hidden=false;$('loading').style.opacity='1';$('error').hidden=true;
  $('shape').value=selected.id;$('form-name').textContent=selected.name;$('form-description').textContent=selected.description;
  $('form-number').textContent=String(SHAPES.indexOf(selected)+1).padStart(2,'0')+' / '+SHAPES.length;
@@ -75,22 +78,30 @@ function render(now){
  const field=selected.engine==='field';
  const camera=stepCamera(rig,field?{...state,speed:state.speed*.4}:state,dt,moving);
  rig=camera.rig;state.angle=camera.angle;state.phase=camera.phase;
- lensRig=stepLens(lensRig,state.lensDrift,dt,moving);
+ lensRig=stepLens(lensRig,state.lensDrift,dt,moving&&!handLens?.active);
  const cameraPose=field?fieldCameraPose({...state,angle:camera.angle,phase:camera.phase},rig.time,rig.blend):camera.pose;
- const pose=lensPose(cameraPose,state.compression,lensRig,selected.engine);
+ let pose=lensPose(cameraPose,state.compression,lensRig,selected.engine);
  growthClock=stepGrowth(growthClock,!!selected.growth&&state.growth,dt,moving);
  pose.growthTime=growthClock.time;pose.growthBlend=growthClock.blend;
+ const handChanged=handLens?.tick(dt);
+ const previousHandMix=handMix;const handTarget=handLens?.active?1:0;
+ handMix+=(handTarget-handMix)*(1-Math.exp(-dt/.4));if(Math.abs(handMix-handTarget)<.0001)handMix=handTarget;
+ if(handChanged||handMix!==previousHandMix)state.dirty=true;
+ if(previousHandMix>0&&handMix===0)resize();
  if(!moving&&!state.dirty&&(selected.engine!=='field'||state.samples>=256))return;
  pose.focusBand=0;
- if(rig.blend>0&&selected.engine==='grains'){
+ if(rig.blend>0&&selected.engine==='grains'&&handMix<.999){
   const tracked=trackFocus(focusTracker,focusCloud,pose,{width:canvas.width,height:canvas.height},dt,moving);
   pose.focus+=(tracked.focus-pose.focus)*rig.blend;
   pose.focusBand=FOCUS_BAND*rig.blend;
   canvas.dataset.sharpSamples=tracked.sharpSamples;
  }
+ if(handMix>0)pose=applyHandLens(pose,handLens.controls,handMix,selected.engine);
+ lastPose={...pose};
  gl.viewport(0,0,canvas.width,canvas.height);
- if(selected.engine==='field')drawField(pose,moving);else{
+ if(selected.engine==='field')drawField(pose,moving||handChanged||handMix!==previousHandMix);else{
  const prog=programs.specimen;gl.useProgram(prog.p);gl.bindFramebuffer(gl.FRAMEBUFFER,targets[0].fbo);gl.clearColor(0,0,0,0);gl.clear(gl.COLOR_BUFFER_BIT);
+ uniform(prog,'handSampling',handMix);
  for(const key of ['angle','tilt','phase','focus','aperture','transmission','distanceToEye','roll','lightTurn','focusBand','growthTime','growthBlend','lens','lensScale'])uniform(prog,key,pose[key]);uniform(prog,'resolution',[canvas.width,canvas.height]);
  gl.enable(gl.BLEND);gl.blendFunc(gl.ONE,gl.ONE);gl.bindVertexArray(geometry.vao);uniform(prog,'lightPass',0);gl.drawArrays(gl.POINTS,0,geometry.count);gl.bindFramebuffer(gl.FRAMEBUFFER,targets[1].fbo);gl.clear(gl.COLOR_BUFFER_BIT);uniform(prog,'lightPass',1);gl.drawArrays(gl.POINTS,0,geometry.count);gl.bindVertexArray(null);gl.disable(gl.BLEND);
  gl.bindFramebuffer(gl.FRAMEBUFFER,null);gl.useProgram(programs.display.p);gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_2D,targets[0].texture);sampler(programs.display,'image',0);gl.activeTexture(gl.TEXTURE1);gl.bindTexture(gl.TEXTURE_2D,targets[1].texture);sampler(programs.display,'highlights',1);uniform(programs.display,'frame',state.frame);gl.drawArrays(gl.TRIANGLES,0,3);}
@@ -101,12 +112,12 @@ function render(now){
 }
 function toast(text){$('toast').textContent=text;$('toast').classList.add('visible');clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').classList.remove('visible'),2400);}
 function play(){state.playing=!state.playing;syncPlay();reset();}
-function syncPlay(){$('play').setAttribute('aria-label',state.playing?'Pause motion':'Resume motion');$('play').title=state.playing?'Pause motion (Space)':'Resume motion (Space)';$('play').innerHTML=state.playing?'<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7 5v10M13 5v10"/></svg>':'<svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7 4 9 6-9 6z"/></svg>';$('state-label').textContent=state.playing?(state.cinema?(state.growth&&selected.growth?'Cinematographer · Living growth':'Cinematographer'):(state.growth&&selected.growth?'Living growth':'A living study of light')):'A moment held in light';}
+function syncPlay(){$('play').setAttribute('aria-label',state.playing?'Pause motion':'Resume motion');$('play').title=state.playing?'Pause motion (Space)':'Resume motion (Space)';$('play').innerHTML=state.playing?'<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7 5v10M13 5v10"/></svg>':'<svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7 4 9 6-9 6z"/></svg>';$('state-label').textContent=handLens?.active?'Hand lens · Open, pinch, push and pull':state.playing?(state.cinema?(state.growth&&selected.growth?'Cinematographer · Living growth':'Cinematographer'):(state.growth&&selected.growth?'Living growth':'A living study of light')):'A moment held in light';}
 function syncCinema(){
  for(const id of ['cinema','cinema-studio'])$(id).setAttribute('aria-pressed',String(state.cinema));
  $('cinema-status').textContent=state.cinema?'On':'Off';
  $('cinema').title=`Cinematographer ${state.cinema?'on':'off'} (C)`;
- $('cinema-helper').textContent=state.cinema?(selected.engine==='field'?'A steady macro focus plane, gentle iris breathing, and a slow orbit.':'Focus, aperture, spectral light, and orbit drift around your settings.'):'Your slider settings hold steady as the specimen turns.';
+ $('cinema-helper').textContent=handLens?.active?'Your hand controls focus and aperture. The orbit and light can continue.':state.cinema?(selected.engine==='field'?'A steady macro focus plane, gentle iris breathing, and a slow orbit.':'Focus, aperture, spectral light, and orbit drift around your settings.'):'Your slider settings hold steady as the specimen turns.';
  syncPlay();
 }
 function toggleCinema(){
@@ -131,8 +142,8 @@ function toggleGrowth(){
  const url=new URL(location.href);url.searchParams.set('growth',state.growth?'1':'0');history.replaceState(null,'',url);
  toast(state.growth?'Living growth on':'Growth resting');
 }
-function studio(open){$('studio').hidden=!open;$('settings').setAttribute('aria-expanded',String(open));}
-function immersive(value,giveFocus=true){document.body.classList.toggle('immersive',value);$('restore').hidden=!value;for(const el of document.querySelectorAll('.chrome'))el.inert=value;if(value)studio(false);if(giveFocus)canvas.focus({preventScroll:true});}
+function studio(open){if(open)handLens?.panel(false);$('studio').hidden=!open;$('settings').setAttribute('aria-expanded',String(open));}
+function immersive(value,giveFocus=true){document.body.classList.toggle('immersive',value);$('restore').hidden=!value;for(const el of document.querySelectorAll('.chrome'))el.inert=value;if(value){studio(false);handLens?.panel(false);}if(giveFocus)canvas.focus({preventScroll:true});}
 async function fullscreen(){try{if(document.fullscreenElement)await document.exitFullscreen();else await document.documentElement.requestFullscreen();}catch{toast('Use your browser’s fullscreen command.');}}
 function capture(){
  const filename=`lumen-${selected.id}-${state.seed+1}-${new Date().toISOString().replace(/[:.]/g,'-')}.png`;
@@ -151,7 +162,7 @@ canvas.addEventListener('pointerdown',e=>{dragging=true;lastX=e.clientX;lastY=e.
 canvas.addEventListener('wheel',e=>{e.preventDefault();const old=state.distanceToEye;state.distanceToEye=Math.max(9.4,Math.min(15.5,old+e.deltaY*.005));state.focus+=state.distanceToEye-old;state.focus=Math.min(16,Math.max(8.5,state.focus));$('focus').value=state.focus;reset();},{passive:false});
 addEventListener('keydown',e=>{
  if(e.repeat)return;
- if(e.key==='Escape'){immersive(false);studio(false);return;}
+ if(e.key==='Escape'){immersive(false);studio(false);handLens?.panel(false);return;}
  if(e.target.matches('input,select,textarea'))return;
  if(e.code==='Space'&&!e.target.closest('button,a')){e.preventDefault();play();}
  if(e.key.toLowerCase()==='h')immersive(!document.body.classList.contains('immersive'));
@@ -162,8 +173,12 @@ addEventListener('keydown',e=>{
  if(e.key==='ArrowRight'||e.key===']'){e.preventDefault();cycle(1);}
  if(e.key==='ArrowLeft'||e.key==='['){e.preventDefault();cycle(-1);}
 });
-canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();cancelAnimationFrame(renderHandle);fail('The graphics session was interrupted. Reload this page to gather light again.');});addEventListener('resize',resize);
+canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();cancelAnimationFrame(renderHandle);handLens?.stop();fail('The graphics session was interrupted. Reload this page to gather light again.');});addEventListener('resize',resize);
 document.addEventListener('fullscreenchange',()=>{const active=!!document.fullscreenElement;$('fullscreen').setAttribute('aria-label',active?'Exit fullscreen':'Enter fullscreen');});
+handLens=new HandLens({readLens:()=>readHandLens(lastPose??lensPose(state,state.compression,lensRig,selected.engine),selected.engine),closeStudio:()=>studio(false),onChange:()=>{
+ const owned=!!handLens?.active;
+ if(owned!==handOwnership){handOwnership=owned;for(const id of ['focus','aperture','lens-drift'])$(id).disabled=owned;resize();reset();syncCinema();}
+}});
 if(params.get('embed')==='1')immersive(true,false);
 try{if(!gl)throw Error('This artwork needs a browser with WebGL 2 enabled.');if(!gl.getExtension('EXT_color_buffer_float'))throw Error('This artwork needs floating point graphics buffers. Try a recent desktop browser.');programs={specimen:program(crystalFragment,crystalVertex),display:program(display),oilDisplay:program(oil.display,oil.vertex)};
  for(const group of [...new Set(SHAPES.map(s=>s.group))]){const optgroup=document.createElement('optgroup');optgroup.label=group;for(const shape of SHAPES.filter(s=>s.group===group)){const option=document.createElement('option');option.value=shape.id;option.textContent=shape.name;optgroup.append(option);}$('shape').append(optgroup);}

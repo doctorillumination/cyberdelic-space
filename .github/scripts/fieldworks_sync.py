@@ -41,21 +41,24 @@ def validate(bundle):
     expected = {'manifest.json'}
     for f in data['files']:
         p = safe(f['path'])
-        if str(p) not in ('poster.jpg', 'preview.mp4') and (p.parts[0] != 'runtime' or p.suffix not in SUFFIXES):
+        vendor = p.parts[:3] == ('runtime', 'vendor', 'mediapipe')
+        vendor_type = vendor and (p.suffix in {'.mjs', '.wasm', '.task', '.json', '.md'} or p.name == 'LICENSE')
+        if str(p) not in ('poster.jpg', 'preview.mp4') and (p.parts[0] != 'runtime' or not (p.suffix in SUFFIXES or vendor_type)):
             raise ValueError('Unexpected release asset')
         target = bundle / str(p)
         if target.is_symlink() or not target.resolve().is_relative_to(bundle.resolve()):
             raise ValueError('Linked release asset')
         content = target.read_bytes()
-        if len(content) != f['length'] or sha(content) != f['sha256'] or len(content) > 3*1024*1024:
+        limit = 12*1024*1024 if vendor and p.suffix in {'.wasm', '.task'} else 3*1024*1024
+        if len(content) != f['length'] or sha(content) != f['sha256'] or len(content) > limit:
             raise ValueError('Release asset integrity failed: ' + str(p))
-        if p.suffix == '.js':
+        if p.suffix in {'.js', '.mjs'}:
             subprocess.run(['node', '--check', str(target)], capture_output=True, check=True)
         expected.add(str(p))
     actual = {p.relative_to(bundle).as_posix() for p in bundle.rglob('*') if p.is_file()}
     if actual != expected or 'runtime/index.html' not in expected or not {'poster.jpg', 'preview.mp4'} <= expected:
         raise ValueError('Incomplete or extra release files')
-    if sum(f['length'] for f in data['files']) > 12*1024*1024:
+    if sum(f['length'] for f in data['files']) > 40*1024*1024:
         raise ValueError('Release exceeds total budget')
     if sha(json.dumps(data['files'], sort_keys=True).encode()) != data['release_id']:
         raise ValueError('Release identity failed')

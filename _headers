@@ -124,7 +124,77 @@
   X-Content-Type-Options: nosniff
   Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
 
-/fieldworks/*
+/fieldworks/
+  Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self' https://mempool.space https://blockstream.info https://ordinals.com; frame-src 'self'; base-uri 'none'; form-action 'none'
+  X-Frame-Options: DENY
+  Referrer-Policy: no-referrer
+  X-Content-Type-Options: nosniff
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
+
+/fieldworks/lumen/*
+  Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self' https://mempool.space https://blockstream.info https://ordinals.com; frame-src 'self'; base-uri 'none'; form-action 'none'
+  X-Frame-Options: DENY
+  Referrer-Policy: no-referrer
+  X-Content-Type-Options: nosniff
+  Permissions-Policy: geolocation=(), microphone=(), camera=(self), payment=()
+
+/fieldworks/aeria/*
+  Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self' https://mempool.space https://blockstream.info https://ordinals.com; frame-src 'self'; base-uri 'none'; form-action 'none'
+  X-Frame-Options: DENY
+  Referrer-Policy: no-referrer
+  X-Content-Type-Options: nosniff
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
+
+/fieldworks/vellum/*
+  Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self' https://mempool.space https://blockstream.info https://ordinals.com; frame-src 'self'; base-uri 'none'; form-action 'none'
+  X-Frame-Options: DENY
+  Referrer-Policy: no-referrer
+  X-Content-Type-Options: nosniff
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
+
+/fieldworks/undra/*
+  Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self' https://mempool.space https://blockstream.info https://ordinals.com; frame-src 'self'; base-uri 'none'; form-action 'none'
+  X-Frame-Options: DENY
+  Referrer-Policy: no-referrer
+  X-Content-Type-Options: nosniff
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
+
+/fieldworks/opalia/*
+  Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self' https://mempool.space https://blockstream.info https://ordinals.com; frame-src 'self'; base-uri 'none'; form-action 'none'
+  X-Frame-Options: DENY
+  Referrer-Policy: no-referrer
+  X-Content-Type-Options: nosniff
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
+
+/fieldworks/images/*
+  Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self' https://mempool.space https://blockstream.info https://ordinals.com; frame-src 'self'; base-uri 'none'; form-action 'none'
+  X-Frame-Options: DENY
+  Referrer-Policy: no-referrer
+  X-Content-Type-Options: nosniff
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
+
+/fieldworks/previews/*
+  Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self' https://mempool.space https://blockstream.info https://ordinals.com; frame-src 'self'; base-uri 'none'; form-action 'none'
+  X-Frame-Options: DENY
+  Referrer-Policy: no-referrer
+  X-Content-Type-Options: nosniff
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
+
+/fieldworks/readings/*
+  Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self' https://mempool.space https://blockstream.info https://ordinals.com; frame-src 'self'; base-uri 'none'; form-action 'none'
+  X-Frame-Options: DENY
+  Referrer-Policy: no-referrer
+  X-Content-Type-Options: nosniff
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
+
+/fieldworks/releases/*
+  Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self' https://mempool.space https://blockstream.info https://ordinals.com; frame-src 'self'; base-uri 'none'; form-action 'none'
+  X-Frame-Options: DENY
+  Referrer-Policy: no-referrer
+  X-Content-Type-Options: nosniff
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
+
+/fieldworks/sources.json
   Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self' https://mempool.space https://blockstream.info https://ordinals.com; frame-src 'self'; base-uri 'none'; form-action 'none'
   X-Frame-Options: DENY
   Referrer-Policy: no-referrer
@@ -466,7 +536,35 @@
   X-Content-Type-Options: nosniff
   Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
 
-/fieldwork-runtime/*
+/fieldwork-runtime/lumen/*
+  Content-Security-Policy: default-src 'none'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; media-src 'self' blob:; worker-src 'self' blob:; frame-src 'self'; frame-ancestors 'self'; base-uri 'none'; form-action 'none'
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: no-referrer
+  X-Content-Type-Options: nosniff
+  Permissions-Policy: geolocation=(), microphone=(), camera=(self), payment=()
+
+/fieldwork-runtime/aeria/*
+  Content-Security-Policy: default-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; media-src 'self' blob:; worker-src 'self' blob:; frame-src 'self'; frame-ancestors 'self'; base-uri 'none'; form-action 'none'
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: no-referrer
+  X-Content-Type-Options: nosniff
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
+
+/fieldwork-runtime/vellum/*
+  Content-Security-Policy: default-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; media-src 'self' blob:; worker-src 'self' blob:; frame-src 'self'; frame-ancestors 'self'; base-uri 'none'; form-action 'none'
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: no-referrer
+  X-Content-Type-Options: nosniff
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
+
+/fieldwork-runtime/undra/*
+  Content-Security-Policy: default-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; media-src 'self' blob:; worker-src 'self' blob:; frame-src 'self'; frame-ancestors 'self'; base-uri 'none'; form-action 'none'
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: no-referrer
+  X-Content-Type-Options: nosniff
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
+
+/fieldwork-runtime/opalia/*
   Content-Security-Policy: default-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; media-src 'self' blob:; worker-src 'self' blob:; frame-src 'self'; frame-ancestors 'self'; base-uri 'none'; form-action 'none'
   X-Frame-Options: SAMEORIGIN
   Referrer-Policy: no-referrer

@@ -35,14 +35,14 @@
     },
     {
       "kind": "actual browser canvas, silent",
-      "raw_sha256": "9dd886469766a4448dd75834c3368ca522b841c1d70178fb70f98f014344618b",
-      "raw_duration": 7.770351,
+      "raw_sha256": "057824f0d48aacd86ff17d60e66b6893f3bf1b2443293849d0873cefceea1bba",
+      "raw_duration": 7.926105,
       "loop_method": "one-second end-to-start crossfade",
-      "source_snapshot_sha256": "9c7061117081cfe19eff177075092c6901f35383779b465cf35242d403ad090f",
+      "source_snapshot_sha256": "83d2d1909c5f2b1d30c8a6676f688a89fe74095c5a1c72d47291015c06758535",
       "slug": "lumen",
       "path": "lumen.mp4",
-      "sha256": "e1ef3a954fee02137e565a89e441e86e64a3a7b5d44e2dec28a22c1508dacf17",
-      "length": 713042
+      "sha256": "60d03055c5bfe6cb7f1853945ac3a547b00c3c3375e768d6ee1da8b2e8ded472",
+      "length": 377555
     },
     {
       "slug": "vellum",
@@ -54,6 +54,20 @@
       "path": "vellum.mp4",
       "sha256": "8ba42ec38b8b18dc03a183e633d18bc3b67a95bd642e3b2b97938817b6e21b88",
       "length": 1752330
+    }
+  ],
+  "archived_items": [
+    {
+      "kind": "actual browser canvas, silent",
+      "raw_sha256": "9dd886469766a4448dd75834c3368ca522b841c1d70178fb70f98f014344618b",
+      "raw_duration": 7.770351,
+      "loop_method": "one-second end-to-start crossfade",
+      "source_snapshot_sha256": "9c7061117081cfe19eff177075092c6901f35383779b465cf35242d403ad090f",
+      "slug": "lumen",
+      "path": "archive/lumen-1fe6a7b93924de4830e29a664cf8eedf268ea894aa3e1ff9193c4b7f27fdce29.mp4",
+      "sha256": "e1ef3a954fee02137e565a89e441e86e64a3a7b5d44e2dec28a22c1508dacf17",
+      "length": 713042,
+      "release_id": "1fe6a7b93924de4830e29a664cf8eedf268ea894aa3e1ff9193c4b7f27fdce29"
     }
   ]
 }

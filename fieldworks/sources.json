@@ -537,7 +537,7 @@
       "source_files": [
         {
           "path": "app.js",
-          "sha256": "ecd52727a3c542de8c4256d846f621cd42bb85b6cdb836aad7c63872d96f7697"
+          "sha256": "6bf41def7ee22262342188ab9d9886a9430f529fef35eb347a9193d63277e0dd"
         },
         {
           "path": "autofocus.js",
@@ -557,7 +557,7 @@
         },
         {
           "path": "crystal-shaders.js",
-          "sha256": "5d6032ef233f2b6d2839e906fc74021ac3493edf0c896430226593d6ca0320dd"
+          "sha256": "bba004ed9753c9935a86dda63877e0eb183aec71a4ae8a831cb5502ee536c7a5"
         },
         {
           "path": "field-camera.js",
@@ -572,12 +572,32 @@
           "sha256": "971052401aec784f5d6d61c4cba514473a02ba92948d74d0c967ca3d8e49e338"
         },
         {
+          "path": "hand-camera.js",
+          "sha256": "6d07e4102e7d4a293fe8f766c37393fcda2bef9354dc09196aa0b59a4ec62767"
+        },
+        {
+          "path": "hand-controls.js",
+          "sha256": "af9faddf050f1fbfb97d66912d369fed01651836503ab0303eaa07b7339db17e"
+        },
+        {
+          "path": "hand-lens.js",
+          "sha256": "dc8b016776ec6f58711fa27a7f8e1b76f033ca00de32ec90df49a99b4dd70df5"
+        },
+        {
+          "path": "hand-pose.js",
+          "sha256": "4e289042e8f123c51bf772f14bf6e36002d9e2814219c291b0d5a13ad2843d6e"
+        },
+        {
+          "path": "hand-worker.js",
+          "sha256": "bf633c21a9dca2c3e14f4b2513c06ef277959fd9a2b59ad98abf58efa79b0564"
+        },
+        {
           "path": "icon.svg",
           "sha256": "c17bd5732422fd7e5ec6558a6759851245ffc5501a52375c08322fcbaccf7ce4"
         },
         {
           "path": "index.html",
-          "sha256": "b740874fb427140942dac098dfdf92e65cca52e1b425abcc0365448078b0deea"
+          "sha256": "53f9ef3e7b644dec0ce761e9e8091573db9082017a4317a6b74f527d64a67f22"
         },
         {
           "path": "julia-shaders.js",
@@ -585,7 +605,7 @@
         },
         {
           "path": "lens.js",
-          "sha256": "ed454d14ad590460d9b57d417965e2e9c8f7f58b2c8f46bed58ad0d402e27ef9"
+          "sha256": "a2e5a604fad84fae2f77920b408fb48ccfcae7220d19b965cc3ee6a75eef8a99"
         },
         {
           "path": "living-growth.js",
@@ -609,13 +629,53 @@
         },
         {
           "path": "style.css",
-          "sha256": "c907fd2f257516e3b5a0341d3392a0e269eb9b50ba3ffe4a5a01b61e1528f88f"
+          "sha256": "daa142c063f48e797953e3aba1612b2a0c1275d5309f9f4b98eab01d8790c28c"
+        },
+        {
+          "path": "vendor/mediapipe/LICENSE",
+          "sha256": "8707eef0533987efc5b155d64761eeb6e20793f50b9bd1a68dad1cf4719d0ed8"
+        },
+        {
+          "path": "vendor/mediapipe/NOTICE.md",
+          "sha256": "62d45012ae2f02d63d104957d38719ee46d0df397397c61cb45424dfd1ee62cf"
+        },
+        {
+          "path": "vendor/mediapipe/UPSTREAM-README.md",
+          "sha256": "7ba4e6e531c8a158020d545025024ab636e0e54bbcdd01dbc37b618506ef3d2e"
+        },
+        {
+          "path": "vendor/mediapipe/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        },
+        {
+          "path": "vendor/mediapipe/sha256.json",
+          "sha256": "006ff5912fab3671160d4f070c5190fb92d16e86fca234e5e6ffd9ab7513b1d0"
+        },
+        {
+          "path": "vendor/mediapipe/vision_bundle.mjs",
+          "sha256": "40f4123dfcd75cfa58add046919cc6f52fde66f009ff582997c09ba54c6ba27c"
+        },
+        {
+          "path": "vendor/mediapipe/wasm/vision_wasm_internal.js",
+          "sha256": "4a97e2520ba506c680ecd6ba6acfb146888afa0e2746d57f205352bc6ebb82eb"
+        },
+        {
+          "path": "vendor/mediapipe/wasm/vision_wasm_internal.wasm",
+          "sha256": "f00ec4731faa23b3e714d00e88d4d10e2df5c0a427d3a2b4ae6e3526fdd14ef7"
+        },
+        {
+          "path": "vendor/mediapipe/wasm/vision_wasm_nosimd_internal.js",
+          "sha256": "927def7b465c51b86e4b3060f93646aca4e27121f4b8fc0483786e407ea9cf1f"
+        },
+        {
+          "path": "vendor/mediapipe/wasm/vision_wasm_nosimd_internal.wasm",
+          "sha256": "3821ea9b1f7fb8c549ef2a064ef5c85750bf375c545a49fd6eea0df44a95f1f4"
         }
       ],
       "packaged_files": [
         {
           "path": "app.js",
-          "sha256": "ecd52727a3c542de8c4256d846f621cd42bb85b6cdb836aad7c63872d96f7697"
+          "sha256": "6bf41def7ee22262342188ab9d9886a9430f529fef35eb347a9193d63277e0dd"
         },
         {
           "path": "autofocus.js",
@@ -635,7 +695,7 @@
         },
         {
           "path": "crystal-shaders.js",
-          "sha256": "5d6032ef233f2b6d2839e906fc74021ac3493edf0c896430226593d6ca0320dd"
+          "sha256": "bba004ed9753c9935a86dda63877e0eb183aec71a4ae8a831cb5502ee536c7a5"
         },
         {
           "path": "field-camera.js",
@@ -650,12 +710,32 @@
           "sha256": "971052401aec784f5d6d61c4cba514473a02ba92948d74d0c967ca3d8e49e338"
         },
         {
+          "path": "hand-camera.js",
+          "sha256": "6d07e4102e7d4a293fe8f766c37393fcda2bef9354dc09196aa0b59a4ec62767"
+        },
+        {
+          "path": "hand-controls.js",
+          "sha256": "af9faddf050f1fbfb97d66912d369fed01651836503ab0303eaa07b7339db17e"
+        },
+        {
+          "path": "hand-lens.js",
+          "sha256": "dc8b016776ec6f58711fa27a7f8e1b76f033ca00de32ec90df49a99b4dd70df5"
+        },
+        {
+          "path": "hand-pose.js",
+          "sha256": "4e289042e8f123c51bf772f14bf6e36002d9e2814219c291b0d5a13ad2843d6e"
+        },
+        {
+          "path": "hand-worker.js",
+          "sha256": "bf633c21a9dca2c3e14f4b2513c06ef277959fd9a2b59ad98abf58efa79b0564"
+        },
+        {
           "path": "icon.svg",
           "sha256": "c17bd5732422fd7e5ec6558a6759851245ffc5501a52375c08322fcbaccf7ce4"
         },
         {
           "path": "index.html",
-          "sha256": "b740874fb427140942dac098dfdf92e65cca52e1b425abcc0365448078b0deea"
+          "sha256": "53f9ef3e7b644dec0ce761e9e8091573db9082017a4317a6b74f527d64a67f22"
         },
         {
           "path": "julia-shaders.js",
@@ -663,7 +743,7 @@
         },
         {
           "path": "lens.js",
-          "sha256": "ed454d14ad590460d9b57d417965e2e9c8f7f58b2c8f46bed58ad0d402e27ef9"
+          "sha256": "a2e5a604fad84fae2f77920b408fb48ccfcae7220d19b965cc3ee6a75eef8a99"
         },
         {
           "path": "living-growth.js",
@@ -687,11 +767,51 @@
         },
         {
           "path": "style.css",
-          "sha256": "c907fd2f257516e3b5a0341d3392a0e269eb9b50ba3ffe4a5a01b61e1528f88f"
+          "sha256": "daa142c063f48e797953e3aba1612b2a0c1275d5309f9f4b98eab01d8790c28c"
+        },
+        {
+          "path": "vendor/mediapipe/LICENSE",
+          "sha256": "8707eef0533987efc5b155d64761eeb6e20793f50b9bd1a68dad1cf4719d0ed8"
+        },
+        {
+          "path": "vendor/mediapipe/NOTICE.md",
+          "sha256": "62d45012ae2f02d63d104957d38719ee46d0df397397c61cb45424dfd1ee62cf"
+        },
+        {
+          "path": "vendor/mediapipe/UPSTREAM-README.md",
+          "sha256": "7ba4e6e531c8a158020d545025024ab636e0e54bbcdd01dbc37b618506ef3d2e"
+        },
+        {
+          "path": "vendor/mediapipe/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        },
+        {
+          "path": "vendor/mediapipe/sha256.json",
+          "sha256": "006ff5912fab3671160d4f070c5190fb92d16e86fca234e5e6ffd9ab7513b1d0"
+        },
+        {
+          "path": "vendor/mediapipe/vision_bundle.mjs",
+          "sha256": "40f4123dfcd75cfa58add046919cc6f52fde66f009ff582997c09ba54c6ba27c"
+        },
+        {
+          "path": "vendor/mediapipe/wasm/vision_wasm_internal.js",
+          "sha256": "4a97e2520ba506c680ecd6ba6acfb146888afa0e2746d57f205352bc6ebb82eb"
+        },
+        {
+          "path": "vendor/mediapipe/wasm/vision_wasm_internal.wasm",
+          "sha256": "f00ec4731faa23b3e714d00e88d4d10e2df5c0a427d3a2b4ae6e3526fdd14ef7"
+        },
+        {
+          "path": "vendor/mediapipe/wasm/vision_wasm_nosimd_internal.js",
+          "sha256": "927def7b465c51b86e4b3060f93646aca4e27121f4b8fc0483786e407ea9cf1f"
+        },
+        {
+          "path": "vendor/mediapipe/wasm/vision_wasm_nosimd_internal.wasm",
+          "sha256": "3821ea9b1f7fb8c549ef2a064ef5c85750bf375c545a49fd6eea0df44a95f1f4"
         }
       ],
-      "adaptations": "Exact portable Form Atlas files. No renderer adaptations.",
-      "release_id": "1fe6a7b93924de4830e29a664cf8eedf268ea894aa3e1ff9193c4b7f27fdce29"
+      "adaptations": "Exact portable Form Atlas edition 013. No renderer adaptations.",
+      "release_id": "43d9564e68f8e9bbfc6188d5ec185f42571ab9275f0126ea539ea0e3801adba8"
     },
     {
       "slug": "vellum",

@@ -64,22 +64,22 @@
       ],
       "related_note": "fn-05",
       "related_title": "The Physics We Choose",
-      "release_id": "1fe6a7b93924de4830e29a664cf8eedf268ea894aa3e1ff9193c4b7f27fdce29",
-      "runtime_published_at": "2026-10-25T21:30:41.223261Z",
+      "release_id": "43d9564e68f8e9bbfc6188d5ec185f42571ab9275f0126ea539ea0e3801adba8",
+      "runtime_published_at": "2026-10-31T02:50:50.345565Z",
       "source_path": "fieldworks/readings/lumen.md",
       "source_sha256": "284192a0abdcbeb31905866fe74fbb7184b425597f38683ebc6a3a218cdcba49",
       "source_length": 1121,
       "href": "fieldworks/lumen/",
       "poster": {
         "path": "fieldworks/images/lumen.jpg",
-        "sha256": "879f5a25089304eb8aae7268a9c6b18f559065073710967122018555c2f5f21d",
-        "length": 78382,
+        "sha256": "98f6675e9e1f6896f5395682b71408e267f5906b71c811ccbd48596b00df461d",
+        "length": 37585,
         "kind": "actual-browser-capture"
       },
       "preview": {
         "path": "fieldworks/previews/lumen.mp4",
-        "sha256": "e1ef3a954fee02137e565a89e441e86e64a3a7b5d44e2dec28a22c1508dacf17",
-        "length": 713042,
+        "sha256": "60d03055c5bfe6cb7f1853945ac3a547b00c3c3375e768d6ee1da8b2e8ded472",
+        "length": 377555,
         "kind": "recorded-artwork-loop"
       }
     },

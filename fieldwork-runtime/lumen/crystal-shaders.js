@@ -12,7 +12,7 @@ layout(location=2)in float facet;
 layout(location=3)in vec3 surfaceNormal;
 layout(location=4)in vec4 development;
 uniform vec2 resolution;
-uniform float angle,tilt,distanceToEye,focus,aperture,phase,roll,focusBand,growthTime,growthBlend,lens;
+uniform float angle,tilt,distanceToEye,focus,aperture,phase,roll,focusBand,growthTime,growthBlend,lens,handSampling;
 out vec3 tint;
 out float energy,softness,sparkle,depth,growthAlpha;
 out vec3 macroNormal;
@@ -48,7 +48,19 @@ void main(){
  float coc=aperture*defocus/depth*resolution.y/(focus*lens)*fit;
  float size=sqrt(projected*projected+coc*coc+.14);
  gl_PointSize=clamp(size*2.,1.,180.);
- energy=projected*projected/(size*size);
+ energy=projected*projected/min(size*size,8100.);
+ // Keep every sharp grain. Stable weighted sampling limits overlapping bokeh
+ // during the extended hand aperture without dimming its transmitted light.
+ float sampling=smoothstep(8.,12.,coc)*handSampling;
+ if(sampling>0.){
+  uint h=uint(gl_VertexID)+1u;
+  h=(h^(h>>16u))*0x7feb352du;h=(h^(h>>15u))*0x846ca68bu;h^=h>>16u;
+  float chance=clamp(64./max(coc*coc,64.),.004,1.);
+  float retained=clamp((chance-float(h)/4294967296.)/(chance*.2),0.,1.);
+  float weight=mix(1.,retained,sampling);
+  if(weight<.0001){gl_Position=vec4(2.,2.,2.,1.);gl_PointSize=1.;return;}
+  energy*=weight/mix(1.,chance*.9,sampling);
+ }
  softness=clamp(coc/max(projected,.01),0.,1.);
  tint=spectrum(.5+p.x*.72+p.y*.08+.2*sin(phase));
  sparkle=facet;
