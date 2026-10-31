@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#faf9f3"><meta name="application-name" content="Primitives">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-eval' 'wasm-unsafe-eval'; worker-src 'self' blob:; connect-src 'self'; img-src 'self' data: blob:; media-src 'self' blob:; style-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'self'">
+  <meta name="description" content="A living field of translucent geometric ink. Explore with mouse, trackpad, touch, or webcam hand zoom.">
+  <title>Primitives / the living grid</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23e82a83' d='M5 5h8v8H5zm14 0h8v8h-8zM5 19h8v8H5zm14 0h8v8h-8z'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="grid.css">
+  <script defer src="field.js"></script><script defer src="geometry.js"></script><script defer src="physics.js"></script><script defer src="cyber-motion.js"></script><script defer src="grid-model.js"></script>
+  <script defer src="grid-renderer.js"></script><script defer src="interaction.js"></script><script defer src="hand-zoom.js"></script><script defer src="hand-view.js"></script><script defer src="hand-input.js"></script><script defer src="grid.js"></script>
+</head>
+<body data-ui="visible">
+  <main id="grid-wrap" aria-label="Primitives artwork"><canvas id="grid-stage" tabindex="0" aria-label="A woven field of translucent shapes." aria-describedby="gesture-help"></canvas></main>
+  <p id="gesture-help" class="sr-only">Scroll or pinch to zoom. Double-click to look closer or return. Drag to explore when zoomed. Space pauses, R remixes, zero fits the view, and brackets change grid density. Controls appear near the bottom or when using the keyboard.</p>
+  <button id="fullscreen" class="chrome corner icon-button" aria-label="Enter fullscreen" title="Enter fullscreen"><svg aria-hidden="true"><use href="#expand"/></svg></button>
+  <aside id="hand-panel" aria-label="Hand zoom" data-preview="visible" hidden>
+    <div class="hand-heading"><span>Hand zoom</span><button id="hand-preview-toggle" aria-label="Hide camera preview" aria-expanded="true" aria-controls="hand-preview"><svg aria-hidden="true"><use href="#preview-icon"/></svg></button><button id="hand-close" aria-label="Stop hand zoom"><svg aria-hidden="true"><use href="#close-icon"/></svg></button></div>
+    <div id="hand-preview"><video id="hand-video" autoplay muted playsinline aria-label="Mirrored camera preview"></video><canvas id="hand-overlay" width="320" height="240" aria-hidden="true"></canvas></div>
+    <p id="hand-message" role="status" aria-live="polite"></p><button id="hand-retry" hidden>Try camera again</button><p class="hand-hint">Apart: wide · Together: close<br>Lower either hand to hold the view.</p>
+  </aside>
+  <footer id="controls" class="chrome">
+    <section id="composition-panel" class="panel" aria-label="Composition" hidden>
+      <div class="symmetry" role="group" aria-label="Symmetry">
+        <button data-symmetry="none" aria-label="Free woven field" title="Free woven field" aria-pressed="true"><svg aria-hidden="true"><use href="#field-icon"/></svg></button>
+        <button data-symmetry="mirror" aria-label="Mirror symmetry" title="Mirror symmetry" aria-pressed="false"><svg aria-hidden="true"><use href="#mirror"/></svg></button>
+        <button data-symmetry="rotate" aria-label="Quarter-turn symmetry" title="Quarter-turn symmetry" aria-pressed="false"><svg aria-hidden="true"><use href="#turn"/></svg></button>
+        <button data-symmetry="eightfold" aria-label="Eightfold symmetry" title="Eightfold symmetry" aria-pressed="false"><svg aria-hidden="true"><use href="#eightfold"/></svg></button>
+      </div>
+      <button id="patterns" class="pattern-entry" aria-expanded="false" aria-controls="patterns-panel"><span>Pattern lab <small>Experimental</small></span><span><span id="pattern-value">Constellation</span> ↗</span></button>
+      <label class="range-row" title="Grid density"><svg aria-hidden="true"><use href="#few"/></svg><input id="density" type="range" min="4" max="64" step="2" value="40" aria-label="Grid density"><svg aria-hidden="true"><use href="#many"/></svg><output id="density-value" aria-hidden="true">40 columns</output></label>
+      <label class="range-row" title="Filled cells"><svg aria-hidden="true"><use href="#sparse"/></svg><input id="coverage" type="range" min="15" max="100" value="55" aria-label="Filled cells"><svg aria-hidden="true"><use href="#filled"/></svg><output id="coverage-value" aria-hidden="true">55% filled</output></label>
+      <label class="range-row" title="Maximum layers"><svg aria-hidden="true"><use href="#single"/></svg><input id="layers" type="range" min="1" max="6" value="6" aria-label="Maximum layers"><svg aria-hidden="true"><use href="#stack"/></svg><output id="layers-value" aria-hidden="true">Up to 6 layers</output></label>
+      <label class="range-row" title="Pace"><svg aria-hidden="true"><use href="#slow"/></svg><input id="pace" type="range" min="0" max="100" value="42" aria-label="Animation pace"><svg aria-hidden="true"><use href="#fast"/></svg><output id="pace-value" aria-hidden="true">Pace 42</output></label>
+    </section>
+    <section id="patterns-panel" class="panel pattern-lab" aria-label="Pattern lab" hidden>
+      <header class="lab-heading"><div><h1>Pattern lab</h1><span>Experimental</span></div><button id="patterns-close" aria-label="Close pattern lab"><svg aria-hidden="true"><use href="#close-icon"/></svg></button></header>
+      <p class="lab-intro">Compare islands, constellations, and their hybrid.</p>
+      <div id="pattern-options" class="pattern-options" role="group" aria-label="Field patterns"></div>
+      <footer class="lab-footer"><button id="patterns-back">← Composition</button><span id="pattern-description" role="status">Fine marks and tiny gatherings.</span></footer>
+    </section>
+    <nav id="more-panel" class="panel menu" aria-label="More controls" hidden>
+      <button id="auto-change" aria-pressed="true">Automatic changes<span class="check" aria-hidden="true">✓</span></button>
+      <button id="loose" aria-pressed="false">Loose motion<span class="check" aria-hidden="true">✓</span></button>
+      <span class="menu-rule"></span>
+      <button id="save-study">Save study</button><button id="load-study">Open study</button>
+      <a href="playground.html#library">Shape library <span aria-hidden="true">↗</span></a>
+      <a href="archive/v0.3-centered-studio/index.html">Studio edition <span aria-hidden="true">↗</span></a>
+      <span class="menu-rule"></span><button id="reset">Start over</button>
+    </nav>
+    <div class="dock" role="toolbar" aria-label="Artwork controls">
+      <button id="pause" class="icon-button" aria-label="Pause animation" title="Pause animation" aria-pressed="false"><svg aria-hidden="true"><use id="pause-symbol" href="#pause-icon"/></svg></button>
+      <button id="remix" class="icon-button" aria-label="Remix the field" title="Remix the field"><svg aria-hidden="true"><use href="#remix-icon"/></svg></button>
+      <button id="composition" class="icon-button" aria-label="Adjust composition" title="Adjust composition" aria-expanded="false" aria-controls="composition-panel"><svg aria-hidden="true"><use href="#many"/></svg></button>
+      <button id="energy" class="icon-button" aria-label="Turn on Cyber motion" title="Turn on Cyber motion" aria-pressed="false"><svg aria-hidden="true"><use href="#bolt"/></svg></button>
+      <button id="camera" class="icon-button" aria-label="Turn on hand zoom" title="Turn on hand zoom" aria-pressed="false" aria-controls="hand-panel"><svg aria-hidden="true"><use href="#hand-icon"/></svg></button>
+      <button id="fit" class="icon-button" aria-label="Return to the whole field" title="Return to the whole field" hidden><svg aria-hidden="true"><use href="#fit-icon"/></svg></button>
+      <button id="save" class="icon-button" aria-label="Save image" title="Save image"><svg aria-hidden="true"><use href="#download"/></svg></button>
+      <button id="more" class="icon-button" aria-label="More controls" title="More controls" aria-expanded="false" aria-controls="more-panel"><svg aria-hidden="true"><use href="#dots"/></svg></button>
+    </div>
+  </footer>
+  <button id="reveal" aria-label="Show controls" title="Show controls" hidden><svg aria-hidden="true"><use href="#dots"/></svg></button>
+  <input id="study-file" type="file" accept=".json,application/json" hidden>
+  <div id="status" class="sr-only" role="status" aria-live="polite"></div>
+  <div id="toast" role="status" hidden></div>
+  <svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><defs>
+    <symbol id="pause-icon" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></symbol>
+    <symbol id="play-icon" viewBox="0 0 24 24"><path d="m8 4 12 8-12 8Z"/></symbol>
+    <symbol id="remix-icon" viewBox="0 0 24 24"><path d="M4 9a8 8 0 0 1 14-3l2 3m0-6v6h-6M20 15a8 8 0 0 1-14 3l-2-3m0 6v-6h6"/></symbol>
+    <symbol id="few" viewBox="0 0 24 24"><path d="M4 4h6v6H4zm10 0h6v6h-6zM4 14h6v6H4zm10 0h6v6h-6z"/></symbol>
+    <symbol id="many" viewBox="0 0 24 24"><path d="M4 4h3v3H4zm6.5 0h3v3h-3zM17 4h3v3h-3zM4 10.5h3v3H4zm6.5 0h3v3h-3zM17 10.5h3v3h-3zM4 17h3v3H4zm6.5 0h3v3h-3zM17 17h3v3h-3z"/></symbol>
+    <symbol id="sparse" viewBox="0 0 24 24"><circle cx="5" cy="5" r="1.5"/><circle cx="19" cy="12" r="1.5"/><circle cx="8" cy="19" r="1.5"/></symbol>
+    <symbol id="filled" viewBox="0 0 24 24"><path d="M4 4h5v5H4zm11 0h5v5h-5zM4 15h5v5H4zm11 0h5v5h-5zM9.5 9.5h5v5h-5z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="single" viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/></symbol>
+    <symbol id="stack" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5.5"/><circle cx="12" cy="12" r="2"/></symbol>
+    <symbol id="slow" viewBox="0 0 24 24"><path d="M4 12h16"/><circle cx="6" cy="12" r="2.5" fill="currentColor"/></symbol>
+    <symbol id="fast" viewBox="0 0 24 24"><path d="m4 7 7 5-7 5m9-10 7 5-7 5"/></symbol>
+    <symbol id="mirror" viewBox="0 0 24 24"><path d="M12 3v18M8 5 3 12l5 7Zm8 0 5 7-5 7Z"/></symbol>
+    <symbol id="field-icon" viewBox="0 0 24 24"><circle cx="5" cy="6" r="2"/><circle cx="17" cy="4" r="1.5"/><circle cx="12" cy="13" r="3"/><circle cx="5" cy="19" r="1"/><circle cx="20" cy="18" r="2"/></symbol>
+    <symbol id="turn" viewBox="0 0 24 24"><path d="M12 3v6h9v3h-6v9h-3v-6H3v-3h6V3Z"/></symbol>
+    <symbol id="eightfold" viewBox="0 0 24 24"><path d="m12 2 3 7 7 3-7 3-3 7-3-7-7-3 7-3Z"/></symbol>
+    <symbol id="bolt" viewBox="0 0 24 24"><path d="m14 2-9 12h7l-2 8 9-12h-7Z"/></symbol>
+    <symbol id="hand-icon" viewBox="0 0 24 24"><path d="M8 12V5a1.5 1.5 0 0 1 3 0v6-8a1.5 1.5 0 0 1 3 0v8-6a1.5 1.5 0 0 1 3 0v7-4a1.5 1.5 0 0 1 3 0v7c0 4-2 6-6 6-3 0-4-1-6-3l-4-5a1.7 1.7 0 0 1 2.5-2Z"/></symbol>
+    <symbol id="preview-icon" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="close-icon" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="fit-icon" viewBox="0 0 24 24"><path d="M3 8V3h5m8 0h5v5M3 16v5h5m8 0h5v-5M8 8h8v8H8Z"/></symbol>
+    <symbol id="expand" viewBox="0 0 24 24"><path d="M4 9V4h5m6 0h5v5M4 15v5h5m6 0h5v-5"/></symbol>
+    <symbol id="download" viewBox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4M4 16v5h16v-5"/></symbol>
+    <symbol id="dots" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.2" fill="currentColor"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/><circle cx="19" cy="12" r="1.2" fill="currentColor"/></symbol>
+  </defs></svg>
+</body></html>

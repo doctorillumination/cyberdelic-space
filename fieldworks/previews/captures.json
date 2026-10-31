@@ -54,6 +54,17 @@
       "path": "vellum.mp4",
       "sha256": "8ba42ec38b8b18dc03a183e633d18bc3b67a95bd642e3b2b97938817b6e21b88",
       "length": 1752330
+    },
+    {
+      "slug": "primitives",
+      "capture": "actual browser canvas, 30 fps, no audio",
+      "raw_sha256": "f164acf923dc07b1c4f1823a449ce00040875f95f5b96b12a59f6de8fc0ab54c",
+      "raw_duration": 8.0,
+      "loop_method": "one-second end-to-start crossfade",
+      "source_snapshot_sha256": "243fcd76c4214fa73866ac182184ee869c5410a9e5d73d3d14ab157ce1c9719e",
+      "path": "primitives.mp4",
+      "sha256": "9d45565131a2b986a8db6842aaa45c8f520bc5415a235148fc02735ac951246f",
+      "length": 1297980
     }
   ],
   "archived_items": [

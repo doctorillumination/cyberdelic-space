@@ -18068,19 +18068,19 @@
         "fieldworks/"
       ],
       "source_path": "fieldworks/readings/overview.md",
-      "source_sha256": "0bb000c58f312f2dd338be9c50c346c9e5c0e9445b3fda53a2d0ef01be1bff78",
-      "document_sha256": "0bb000c58f312f2dd338be9c50c346c9e5c0e9445b3fda53a2d0ef01be1bff78",
-      "text_sha256": "a7fd0fe2bdc5b271bb90af03f95f94948fcba2a30cae0af3feb0b3a3c7efaefa",
-      "reading_path": "audio/readings/a7fd0fe2bdc5b271bb90af03f95f94948fcba2a30cae0af3feb0b3a3c7efaefa.md",
-      "reading_sha256": "0bb000c58f312f2dd338be9c50c346c9e5c0e9445b3fda53a2d0ef01be1bff78",
-      "reading_length": 322,
-      "audio_path": "audio/lewis/a7fd0fe2bdc5b271bb90af03f95f94948fcba2a30cae0af3feb0b3a3c7efaefa.mp3",
+      "source_sha256": "ee7b363be8ed11761e87ed9f8da0096849591ed7595c8c36ae4fb71c3ccdb930",
+      "document_sha256": "ee7b363be8ed11761e87ed9f8da0096849591ed7595c8c36ae4fb71c3ccdb930",
+      "text_sha256": "65f90cb69a31ddf6fe93b761ec3f26372b845b9d5c4092ad3e65113e6291c3ca",
+      "reading_path": "audio/readings/65f90cb69a31ddf6fe93b761ec3f26372b845b9d5c4092ad3e65113e6291c3ca.md",
+      "reading_sha256": "ee7b363be8ed11761e87ed9f8da0096849591ed7595c8c36ae4fb71c3ccdb930",
+      "reading_length": 361,
+      "audio_path": "audio/lewis/65f90cb69a31ddf6fe93b761ec3f26372b845b9d5c4092ad3e65113e6291c3ca.mp3",
       "voice": "bm_lewis",
       "voice_name": "Lewis",
       "speed": 1.0,
-      "audio_sha256": "4f583d2d2e4b7901bd76f0282fd7c857dbd2b0963014e56aec4fd44cebf1b565",
-      "audio_length": 309068,
-      "duration_seconds": 25.665,
+      "audio_sha256": "c3cb7169f42c3e53059a433ea32b03bcd8a93ef790355d603bb554cfb9164891",
+      "audio_length": 345068,
+      "duration_seconds": 28.665,
       "chunks": [
         {
           "text": "Fieldworks",
@@ -18093,13 +18093,13 @@
           "duration": 5.15
         },
         {
-          "text": "A surface that answers. A fold in seeing. An unfinished sky. Impossible matter. A river remembering a drawing. Five encounters with the living physics of Cyberdelic OS.",
+          "text": "A surface that answers. A fold in seeing. An unfinished sky. Impossible matter. A river remembering a drawing. A small vocabulary, an expanding field. Six encounters with the living physics of Cyberdelic OS.",
           "start": 7.16,
-          "duration": 13.125
+          "duration": 16.125
         },
         {
           "text": "These are living, revisable artworks. They are not Bitcoin inscriptions.",
-          "start": 20.465,
+          "start": 23.465,
           "duration": 5.2
         }
       ],
@@ -18107,7 +18107,7 @@
         "all_text_retained": true,
         "mp3_decodes": true,
         "finite_samples": true,
-        "peak": 0.5474486947059631,
+        "peak": 0.5440541505813599,
         "clipped_samples": 0
       }
     },
@@ -18407,6 +18407,68 @@
       }
     },
     {
+      "id": "fieldworks-primitives",
+      "title": "Primitives",
+      "form": "fieldwork",
+      "release_id": null,
+      "pages": [
+        "fieldworks/primitives/"
+      ],
+      "source_path": "fieldworks/readings/primitives.md",
+      "source_sha256": "eae6ef6edfd727ff35413936746d8c83d85f2c8f09276efb247555265c7ee839",
+      "document_sha256": "eae6ef6edfd727ff35413936746d8c83d85f2c8f09276efb247555265c7ee839",
+      "text_sha256": "50db3f60040f38e06010a154ebf1742657ea8bcca5d55c11c922f44b56d3b3bf",
+      "reading_path": "audio/readings/50db3f60040f38e06010a154ebf1742657ea8bcca5d55c11c922f44b56d3b3bf.md",
+      "reading_sha256": "eae6ef6edfd727ff35413936746d8c83d85f2c8f09276efb247555265c7ee839",
+      "reading_length": 1030,
+      "audio_path": "audio/lewis/50db3f60040f38e06010a154ebf1742657ea8bcca5d55c11c922f44b56d3b3bf.mp3",
+      "voice": "bm_lewis",
+      "voice_name": "Lewis",
+      "speed": 1.0,
+      "audio_sha256": "43420308175546ba8c9502ce80452f245432c3259d0d5a7a5b703a60e4d0fc36",
+      "audio_length": 871532,
+      "duration_seconds": 72.55,
+      "chunks": [
+        {
+          "text": "Primitives",
+          "start": 0.0,
+          "duration": 1.575
+        },
+        {
+          "text": "A small vocabulary, an expanding field.",
+          "start": 1.755,
+          "duration": 3.725
+        },
+        {
+          "text": "Circles, crosses, rings, and repeated marks gather in a grid. Each shape is flat and translucent. Where the inks overlap, a darker colour appears. A complex design can be only two or three simple forms sharing the same center.",
+          "start": 5.66,
+          "duration": 16.325
+        },
+        {
+          "text": "Constellation opens the work as a field of individual marks and small gatherings. Scroll or pinch to move between large shapes and a distant composition of fine, distinct cells. In Pattern lab, stepped islands gather, break into fragments, or dissolve into scattered cells. Empty space travels with the marks.",
+          "start": 22.165,
+          "duration": 21.075
+        },
+        {
+          "text": "Cyber motion guides the view through smooth changes of scale while individual rows and columns shift one cell at a time. Pause to hold a composition, remix it, or save an image. Optional hand zoom lets you move through the field with two hands: apart for a wider view, together to approach. Hand tracking runs locally in your browser, and the camera starts only when you choose it.",
+          "start": 43.42,
+          "duration": 24.3
+        },
+        {
+          "text": "By Brad Necyk. This living artwork is not inscribed.",
+          "start": 67.9,
+          "duration": 4.65
+        }
+      ],
+      "checks": {
+        "all_text_retained": true,
+        "mp3_decodes": true,
+        "finite_samples": true,
+        "peak": 0.6462122797966003,
+        "clipped_samples": 0
+      }
+    },
+    {
       "id": "fieldworks-overview-v1",
       "title": "Fieldworks, first edition",
       "form": "fieldwork",
@@ -18571,6 +18633,58 @@
         "peak": 0.598943293094635,
         "clipped_samples": 0
       }
+    },
+    {
+      "id": "fieldworks-overview-five-works",
+      "title": "Fieldworks, five-work edition",
+      "form": "fieldwork",
+      "release_id": null,
+      "pages": [
+        "fieldworks/readings/overview-five-works.md"
+      ],
+      "source_path": "fieldworks/readings/overview-five-works.md",
+      "source_sha256": "0bb000c58f312f2dd338be9c50c346c9e5c0e9445b3fda53a2d0ef01be1bff78",
+      "document_sha256": "0bb000c58f312f2dd338be9c50c346c9e5c0e9445b3fda53a2d0ef01be1bff78",
+      "text_sha256": "a7fd0fe2bdc5b271bb90af03f95f94948fcba2a30cae0af3feb0b3a3c7efaefa",
+      "reading_path": "audio/readings/a7fd0fe2bdc5b271bb90af03f95f94948fcba2a30cae0af3feb0b3a3c7efaefa.md",
+      "reading_sha256": "0bb000c58f312f2dd338be9c50c346c9e5c0e9445b3fda53a2d0ef01be1bff78",
+      "reading_length": 322,
+      "audio_path": "audio/lewis/a7fd0fe2bdc5b271bb90af03f95f94948fcba2a30cae0af3feb0b3a3c7efaefa.mp3",
+      "voice": "bm_lewis",
+      "voice_name": "Lewis",
+      "speed": 1.0,
+      "audio_sha256": "4f583d2d2e4b7901bd76f0282fd7c857dbd2b0963014e56aec4fd44cebf1b565",
+      "audio_length": 309068,
+      "duration_seconds": 25.665,
+      "chunks": [
+        {
+          "text": "Fieldworks",
+          "start": 0.0,
+          "duration": 1.65
+        },
+        {
+          "text": "Generative artworks and interactive environments by Brad Necyk.",
+          "start": 1.83,
+          "duration": 5.15
+        },
+        {
+          "text": "A surface that answers. A fold in seeing. An unfinished sky. Impossible matter. A river remembering a drawing. Five encounters with the living physics of Cyberdelic OS.",
+          "start": 7.16,
+          "duration": 13.125
+        },
+        {
+          "text": "These are living, revisable artworks. They are not Bitcoin inscriptions.",
+          "start": 20.465,
+          "duration": 5.2
+        }
+      ],
+      "checks": {
+        "all_text_retained": true,
+        "mp3_decodes": true,
+        "finite_samples": true,
+        "peak": 0.5474486947059631,
+        "clipped_samples": 0
+      }
     }
   ],
   "playlists": [
@@ -18703,6 +18817,11 @@
       "path": "audio-bundles/lewis-19.zip",
       "length": 1072806,
       "sha256": "af4a8347b84eac5bc65427b0aa7ab8c0b92d21aee05a52add3d8a7337723014c"
+    },
+    {
+      "path": "audio-bundles/lewis-20.zip",
+      "length": 1217094,
+      "sha256": "ce69b918778951a105fff32c65f30a283c7ccbcee60194982b02ed03fa24232e"
     }
   ]
 }

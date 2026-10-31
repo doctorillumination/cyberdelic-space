@@ -1,8 +1,8 @@
 {
   "schema": "https://cyberdelic.space/schemas/living-catalog-v1.json",
   "version": "0.17",
-  "updated_at": "2026-10-26T04:14:00Z",
-  "count": 40,
+  "updated_at": "2026-10-31T15:36:03.316707Z",
+  "count": 41,
   "curation": {
     "office": "OFFICE-LIBRARIAN",
     "office_version": "0.1",
@@ -1865,6 +1865,46 @@
       "introduced_by": "human-authorized-fieldworks-publication",
       "last_tended_at": "2026-10-26T04:14:00Z",
       "uncertainty": "Brad authorized the artwork name and publication. This record describes the public reading, not an independent implementation test. Its relation to perception and time is a curatorial reading, not evidence of consciousness or a physical simulation of light. This living work is not inscribed."
+    },
+    {
+      "id": "catalog:fieldworks:primitives",
+      "record_kind": "artifact",
+      "title": "Primitives",
+      "href": "fieldworks/primitives/",
+      "summary": "Explore a field of translucent geometric marks. Move between simple shapes and fine constellations, or let rows and columns shuffle through the grid.",
+      "subjects": [
+        "gesture",
+        "play",
+        "perception",
+        "rhythm",
+        "emergence",
+        "time",
+        "generative art",
+        "interactive artwork",
+        "Fieldworks"
+      ],
+      "search_terms": [
+        "Primitives",
+        "Constellation",
+        "geometric marks",
+        "A small vocabulary, an expanding field.",
+        "Scroll or pinch to explore. Optional hand zoom: apart for a wide view, together to approach."
+      ],
+      "questions": [
+        "What can a gesture change?"
+      ],
+      "related": [],
+      "evidence": [
+        {
+          "source": "fieldworks/readings/primitives.md",
+          "locator": "# Primitives"
+        }
+      ],
+      "epistemic_status": "strong",
+      "review_state": "model-proposed",
+      "introduced_by": "human-authorized-fieldworks-publication",
+      "last_tended_at": "2026-10-31T15:36:03.316707Z",
+      "uncertainty": "Thematic placements remain interpretive. This living artwork is not an inscription."
     }
   ]
 }

@@ -1,0 +1,51 @@
+{
+  "schema": "cyberdelic.space/artwork-bundles-v1",
+  "parts": [
+    {
+      "artwork": "lumen",
+      "path": "artwork-bundles/lumen-hand-tracking.zip",
+      "length": 11675285,
+      "sha256": "d36359224137b3d43303241eab2457118440125d436824c155216b6d661e2caf",
+      "files": [
+        {
+          "path": "fieldwork-runtime/lumen/vendor/mediapipe/hand_landmarker.task",
+          "length": 7819105,
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        },
+        {
+          "path": "fieldwork-runtime/lumen/vendor/mediapipe/wasm/vision_wasm_internal.wasm",
+          "length": 9574032,
+          "sha256": "f00ec4731faa23b3e714d00e88d4d10e2df5c0a427d3a2b4ae6e3526fdd14ef7"
+        },
+        {
+          "path": "fieldwork-runtime/lumen/vendor/mediapipe/wasm/vision_wasm_nosimd_internal.wasm",
+          "length": 9448638,
+          "sha256": "3821ea9b1f7fb8c549ef2a064ef5c85750bf375c545a49fd6eea0df44a95f1f4"
+        }
+      ]
+    },
+    {
+      "artwork": "primitives",
+      "path": "artwork-bundles/primitives-hand-tracking.zip",
+      "length": 12454857,
+      "sha256": "46b2eb00f2f7bcc0d07dbfc95dc6620c110a1d2d996f55b4f9077e39c3945c2f",
+      "files": [
+        {
+          "path": "fieldwork-runtime/primitives/vendor/hand_landmarker.task",
+          "length": 7819105,
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        },
+        {
+          "path": "fieldwork-runtime/primitives/vendor/wasm/vision_wasm_internal.wasm",
+          "length": 11453626,
+          "sha256": "cb3ec20026a9aecc2a81a93c25630ceb5389297ddb7a5f0bd61dd09cde606b9b"
+        },
+        {
+          "path": "fieldwork-runtime/primitives/vendor/wasm/vision_wasm_nosimd_internal.wasm",
+          "length": 10647962,
+          "sha256": "924274fcd5ac8985f6570a8573e7971b7bd2d580ba1b8f3beb0ba8f95db6347c"
+        }
+      ]
+    }
+  ]
+}

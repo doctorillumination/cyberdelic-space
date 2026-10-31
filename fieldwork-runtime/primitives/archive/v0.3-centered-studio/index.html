@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f4ed">
+  <meta name="application-name" content="Primitives">
+  <meta name="description" content="A living symmetrical grid of translucent geometric ink. Made to play locally.">
+  <title>Primitives / the living grid</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23e82a83' d='M5 5h8v8H5zm14 0h8v8h-8zM5 19h8v8H5zm14 0h8v8h-8z'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="grid.css">
+  <script defer src="geometry.js"></script>
+  <script defer src="physics.js"></script>
+  <script defer src="grid-model.js"></script>
+  <script defer src="grid-renderer.js"></script>
+  <script defer src="grid.js"></script>
+</head>
+<body class="grid-page">
+  <header class="masthead">
+    <a class="identity" href="./" aria-label="Primitives home"><span class="identity-symbol" aria-hidden="true">✳</span><span>Primitives<span class="subtitle">a study in overlap</span></span></a>
+    <nav class="view-switch" aria-label="Studio view"><a class="active" href="./" aria-current="page">Living grid</a><a href="playground.html">Playground</a><a href="playground.html#library">Shape library <span>32</span></a></nav>
+    <div class="edition"><span class="live-dot"></span> LOCAL STUDY <span class="edition-number">/ 003</span></div>
+  </header>
+  <main>
+    <section class="studio" aria-label="Living symmetrical grid">
+      <div class="workspace">
+        <div class="workspace-heading"><div><span class="eyebrow">ONE GESTURE, MANY ECHOES</span><h1>A field of encounters.</h1></div><button class="text-button" id="remix">Remix grid <span aria-hidden="true">↗</span></button></div>
+        <div class="canvas-wrap" id="grid-wrap">
+          <canvas id="grid-stage" tabindex="0" aria-label="Animated symmetrical grid. Scroll or use the zoom slider to inspect the primitives. Drag to pan when zoomed. Double-click toggles a close view. Space pauses. R remixes. Zero fits the grid."></canvas>
+          <div class="stage-tag"><span class="live-dot"></span><span id="grid-label">Mirrored / evolving</span></div>
+          <div class="stage-actions"><button id="grid-fit" title="Fit the field to the page" aria-label="Fit grid">⌖</button><button id="grid-fullscreen" title="Expand canvas" aria-label="Expand canvas">⤢</button></div>
+          <div class="stage-hint" id="grid-hint">Scroll to zoom. Double-click a mark to look closer.</div>
+          <div class="stage-count" id="grid-count">40 × 22 cells</div>
+        </div>
+        <div class="transport"><div class="transport-group"><button id="grid-pause" class="transport-button" aria-pressed="false"><span id="grid-pause-icon" aria-hidden="true">Ⅱ</span><span id="grid-pause-text">Pause</span></button><button id="grid-nudge" class="transport-button"><span aria-hidden="true">✳</span> Nudge</button><span class="transport-divider"></span><label class="check-label"><input type="checkbox" id="grid-breathe" checked> Breathe</label></div><div class="density-stepper"><button id="fewer" aria-label="Fewer cells">−</button><output id="cells-readout">40 × 22</output><button id="more" aria-label="More cells">+</button></div></div>
+        <div class="grid-view-controls"><label for="grid-zoom">Zoom</label><button id="zoom-less" aria-label="Zoom out">−</button><input type="range" id="grid-zoom" min="1" max="16" step="any" value="1"><output id="grid-zoom-value">100%</output><button id="zoom-more" aria-label="Zoom in">+</button><button id="zoom-fit">Fit</button><span>Drag to pan when zoomed</span></div>
+        <div class="grid-caption"><span id="symmetry-caption">Four reflections, one shared motion.</span><span id="generation">GEN 001</span></div>
+        <div class="grid-preset-bar" role="group" aria-label="Grid presets"><span class="eyebrow">TRY A FIELD</span><button data-preset="open">Open</button><button data-preset="woven">Woven</button><button data-preset="dense" class="active" aria-pressed="true">Dense</button><button data-preset="kaleidoscope">Kaleidoscope</button></div>
+        <div class="grid-note"><span class="note-symbol" aria-hidden="true">✳</span><p>A dense field, a simple alphabet. Each stack shares one exact centre. Zoom in to find circles, crosses, rings, and blank paper inside the complexity.</p><a href="playground.html#library">Explore the 32 forms <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <aside class="inspector grid-inspector" aria-label="Grid composition controls">
+        <div class="inspector-title"><span class="eyebrow">THE COMPOSITION</span><span class="tiny-cross" aria-hidden="true">+</span></div>
+        <h2>Many marks.<br>One shared rhythm.</h2>
+        <p class="intro">A little order. A little mischief.</p>
+        <fieldset class="control-section"><legend>01 <span>Grid</span></legend><label class="slider-label" for="grid-cells">Cells across <output id="grid-cells-value">40</output></label><input type="range" id="grid-cells" min="4" max="64" step="2" value="40"><label class="slider-label second-label" for="grid-spread">Spread <output id="grid-spread-value">104%</output></label><input type="range" id="grid-spread" min="45" max="120" value="104"><label class="slider-label second-label" for="grid-scale">Mark size <output id="grid-scale-value">100%</output></label><input type="range" id="grid-scale" min="65" max="165" value="100"><div class="segmented symmetry-options" role="group" aria-label="Grid symmetry"><button data-symmetry="mirror" class="active" aria-pressed="true">Mirror</button><button data-symmetry="rotate" aria-pressed="false">Rotate</button><button data-symmetry="eightfold" aria-pressed="false">Eightfold</button></div></fieldset>
+        <fieldset class="control-section grid-layer-controls"><legend>02 <span>Mix</span></legend>
+          <label class="slider-label" for="grid-layers">Maximum layers <output id="grid-layers-value">Up to 6</output></label><input type="range" id="grid-layers" min="1" max="6" value="6">
+          <label class="slider-label second-label" for="grid-coverage">Filled cells <output id="grid-coverage-value">80%</output></label><input type="range" id="grid-coverage" min="0" max="100" value="80">
+          <label class="slider-label second-label" for="grid-variety">Layer variety <output id="grid-variety-value">100%</output></label><input type="range" id="grid-variety" min="0" max="100" value="100">
+          <p class="control-note">Blank paper, light marks, and deep stacks.</p>
+          <div class="segmented" role="group" aria-label="Stack alignment"><button data-alignment="centered" class="active" aria-pressed="true">Centered</button><button data-alignment="loose" aria-pressed="false">Loose</button></div>
+          <label class="select-label" for="grid-vocabulary">Vocabulary</label><select id="grid-vocabulary"><option value="core">Rings, crosses & checks</option><option value="all">All 32 forms</option><option value="radial">Rings & petals</option><option value="graphic">Crosses & checks</option><option value="simple">Simple shapes</option></select>
+        </fieldset>
+        <fieldset class="control-section"><legend>03 <span>Ink</span></legend><label class="slider-label" for="grid-opacity">Density <output id="grid-opacity-value">76%</output></label><input type="range" id="grid-opacity" min="15" max="100" value="76"><div class="segmented" role="group" aria-label="Grid ink blend"><button data-blend="multiply" class="active" aria-pressed="true">Marker</button><button data-blend="source-over" aria-pressed="false">Transparent</button></div><p class="control-note">Translucent layers deepen where they meet.</p></fieldset>
+        <fieldset class="control-section"><legend>04 <span>Motion</span></legend><label class="slider-label" for="grid-motion">Playfulness <output id="grid-motion-value">55%</output></label><input type="range" id="grid-motion" min="0" max="100" value="55"><label class="slider-label second-label" for="grid-pace">Pace <output id="grid-pace-value">Unhurried</output></label><input type="range" id="grid-pace" min="0" max="100" value="42"><div class="motion-toggles"><label class="check-label"><input type="checkbox" id="grid-evolve" checked> Auto remix</label><label class="check-label"><input type="checkbox" id="grid-grow"> Auto grow</label></div></fieldset>
+        <div class="grid-seed"><label class="select-label" for="grid-seed">Seed</label><div><button id="seed-prev" aria-label="Previous seed">←</button><input id="grid-seed" type="number" min="0" max="4294967295" step="1" value="29001" aria-label="Grid seed"><button id="seed-go">Go</button><button id="seed-next" aria-label="Next seed">→</button></div></div>
+        <div class="inspector-footer"><button id="grid-export" class="export-button">Save image <span aria-hidden="true">↗</span></button><div class="quiet-actions"><button id="grid-save">Save grid</button><button id="grid-load">Load grid</button><button id="grid-reset">Reset</button></div><input id="grid-file" type="file" accept=".json,application/json" hidden></div>
+      </aside>
+    </section>
+    <footer class="page-footer"><span>32 forms / 7 inks / a living symmetry</span><span>PRIMITIVES <span class="footer-dot">·</span> V0.3</span></footer>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

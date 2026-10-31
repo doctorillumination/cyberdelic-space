@@ -32,3 +32,10 @@ html[data-fieldwork-artwork-only][data-fieldwork-slot="vellum"] :is(.ui, .sideba
   html[data-fieldwork-slot="vellum"] .playback { bottom: 66px; }
   html[data-fieldwork-slot="vellum"] .gesture-hint { bottom: 160px; }
 }
+
+/* Primitives uses the host view controls and keeps its own composition dock. */
+html[data-fieldwork-artwork-only][data-fieldwork-slot="primitives"] :is(#controls,#reveal,#hand-panel,#toast) { display:none !important; }
+@media (max-width:700px) {
+ html[data-fieldwork-slot="primitives"] #controls { bottom:80px; }
+ html[data-fieldwork-slot="primitives"] .pattern-lab { max-height:calc(100dvh - 176px); }
+}

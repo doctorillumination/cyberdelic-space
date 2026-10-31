@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f4ed">
+  <meta name="description" content="A playful local study of geometric forms, translucent colour, and spring motion.">
+  <title>Primitives / a study in overlap</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='12' fill='none' stroke='%23e62c86' stroke-width='7'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="geometry.js"></script>
+  <script defer src="physics.js"></script>
+  <script defer src="studio.js"></script>
+</head>
+<body>
+  <header class="masthead">
+    <a class="identity" href="./" aria-label="Primitives home"><span class="identity-symbol" aria-hidden="true">✳</span><span>Primitives<span class="subtitle">a study in overlap</span></span></a>
+    <nav class="view-switch" aria-label="Studio view">
+      <a href="./" class="grid-nav-link">Living grid</a>
+      <button class="active" id="playground-tab" aria-pressed="true">Playground</button>
+      <button id="library-tab" aria-pressed="false">Shape library <span>32</span></button>
+    </nav>
+    <div class="edition"><span class="live-dot"></span> LOCAL STUDY <span class="edition-number">/ 001</span></div>
+  </header>
+
+  <main>
+    <section class="studio" id="studio-view" aria-label="Overlap playground">
+      <div class="workspace">
+        <div class="workspace-heading"><div><span class="eyebrow">FORM, COLOUR & CONTACT</span><h1>A little common ground.</h1></div><button class="text-button" id="new-study" title="Try another arrangement">New study <span aria-hidden="true">↗</span></button></div>
+        <div class="canvas-wrap" id="canvas-wrap">
+          <canvas id="stage" tabindex="0" aria-label="Interactive shape playground. Drag a shape to overlap it with another. Use the shape list below for keyboard selection."></canvas>
+          <div class="stage-tag"><span class="live-dot"></span><span id="stage-label">Overlap study</span></div>
+          <div class="stage-actions"><button id="fit" title="Return shapes to their resting places" aria-label="Recenter shapes">⌖</button><button id="fullscreen" title="Expand canvas" aria-label="Expand canvas">⤢</button></div>
+          <div class="stage-hint" id="stage-hint">Drag a shape. Let the colours meet.</div>
+          <div class="stage-count" id="stage-count">18 pieces</div>
+        </div>
+        <div class="transport"><div class="transport-group"><button id="pause" class="transport-button" aria-pressed="false"><span id="pause-icon" aria-hidden="true">Ⅱ</span><span id="pause-text">Pause</span></button><button id="nudge" class="transport-button"><span aria-hidden="true">✳</span> Nudge</button><span class="transport-divider"></span><label class="check-label"><input type="checkbox" id="breathe"> Breathe</label></div><div class="zoom"><button id="zoom-out" aria-label="Zoom out">−</button><output id="zoom-value">100%</output><button id="zoom-in" aria-label="Zoom in">+</button></div></div>
+        <div class="selection-bar" id="selection-bar"><span id="selection-name">Select a piece to make it your own.</span><div id="selection-actions" hidden><button id="duplicate">Duplicate</button><button id="front">To front</button><button id="remove">Remove</button></div></div>
+      </div>
+
+      <aside class="inspector" aria-label="Ink and motion controls">
+        <div class="inspector-title"><span class="eyebrow">THE MATERIAL</span><span class="tiny-cross" aria-hidden="true">+</span></div>
+        <h2>Flat forms.<br>Layers of possibility.</h2>
+        <p class="intro">A small vocabulary of shapes.<br>A surprising amount to say.</p>
+
+        <fieldset class="control-section"><legend>01 <span>Colour</span></legend><div class="swatches" id="swatches" aria-label="Ink colour"></div><div class="colour-caption"><span id="colour-name">Rose</span><span id="colour-code">#E82A83</span></div><p class="control-note">Colours the selected piece, or your next one.</p></fieldset>
+
+        <fieldset class="control-section"><legend>02 <span>Ink</span></legend><label class="slider-label" for="opacity">Density <output id="opacity-value">76%</output></label><input id="opacity" type="range" min="15" max="100" value="76"><div class="segmented" aria-label="Colour blending"><button id="blend-multiply" class="active" aria-pressed="true">Marker</button><button id="blend-normal" aria-pressed="false">Transparent</button></div><p class="control-note" id="blend-note">Layers multiply into deeper, mixed colours.</p></fieldset>
+
+        <fieldset class="control-section"><legend>03 <span>Motion</span></legend><label class="slider-label" for="spring">Spring <output id="spring-value">Soft</output></label><input id="spring" type="range" min="0" max="100" value="35"><label class="slider-label second-label" for="damping">Damping <output id="damping-value">Balanced</output></label><input id="damping" type="range" min="0" max="100" value="58"><label class="check-label return-label"><input id="return-home" type="checkbox"> Return after release</label></fieldset>
+
+        <fieldset class="control-section piece-controls"><legend>04 <span>Selected piece</span></legend><label class="slider-label" for="size">Scale <output id="size-value">100%</output></label><input id="size" type="range" min="40" max="200" value="100" disabled><label class="slider-label second-label" for="rotation">Rotation <output id="rotation-value">0°</output></label><input id="rotation" type="range" min="-180" max="180" value="0" disabled><label class="sr-only" for="piece-select">Select a piece</label><select id="piece-select"><option value="">Select a piece…</option></select></fieldset>
+
+        <div class="inspector-footer"><button id="export" class="export-button">Save image <span aria-hidden="true">↗</span></button><div class="quiet-actions"><button id="save-study">Save study</button><button id="load-study">Load study</button><button id="clear">Clear</button></div><input id="study-file" type="file" accept=".json,application/json" hidden></div>
+      </aside>
+    </section>
+
+    <section class="library-panel" id="library-panel" aria-labelledby="library-title">
+      <div class="library-heading"><div><span class="eyebrow">THE BUILDING BLOCKS</span><h2 id="library-title">An alphabet of shapes.</h2></div><div class="library-tools"><div class="filters" role="group" aria-label="Shape family"><button class="active" data-filter="all" aria-pressed="true">All <span>32</span></button><button data-filter="simple" aria-pressed="false">Simple</button><button data-filter="radial" aria-pressed="false">Radial</button><button data-filter="pattern" aria-pressed="false">Pattern</button></div><span class="library-instruction" id="library-instruction">Click a form to add it to the playground <span aria-hidden="true">↗</span></span></div></div>
+      <div class="shape-library" id="shape-library"></div>
+    </section>
+    <footer class="page-footer"><span>32 forms / 7 inks / endless encounters</span><span>PRIMITIVES <span class="footer-dot">·</span> V0.1</span></footer>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

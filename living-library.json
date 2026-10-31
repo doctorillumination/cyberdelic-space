@@ -1401,6 +1401,29 @@
       ],
       "register": "field-meditation",
       "rationale": "Undra, Opalia, Aeria, Vellum, and MindOS make the reciprocal relation between artistic judgment, language, material behaviour, and imagination tangible. The note distinguishes AI-assisted making from live model-mediated artworks, preserves source lineage, and asks when an instrument broadens perception or trains it toward its own habits."
+    },
+    {
+      "id": "fieldwork-primitives",
+      "release_id": "FW-PRIMITIVES",
+      "label": "FIELDWORK · LIVING",
+      "title": "Primitives",
+      "href": "fieldworks/primitives/",
+      "author": "Brad Necyk",
+      "date": "2026-10-31",
+      "publication_state": "living",
+      "form": "generative-art",
+      "world": "cyberdelic-os",
+      "register": "play",
+      "themes": [
+        "gesture",
+        "play",
+        "perception",
+        "rhythm",
+        "emergence",
+        "time"
+      ],
+      "excerpt": "Explore a field of translucent geometric marks. Move between simple shapes and fine constellations, or let rows and columns shuffle through the grid.",
+      "rationale": "An interactive Fieldwork, with interpretive thematic placements distinct from inscription evidence."
     }
   ]
 }

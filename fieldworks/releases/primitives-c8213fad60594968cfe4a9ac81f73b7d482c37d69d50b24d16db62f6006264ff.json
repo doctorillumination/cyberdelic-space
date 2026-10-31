@@ -1,0 +1,542 @@
+{
+  "schema": "cyberdelic.space/fieldwork-release-v1",
+  "slug": "primitives",
+  "edition": "constellation-grid",
+  "published_at": "2026-10-31T15:36:03.316707Z",
+  "source_record": {
+    "slug": "primitives",
+    "project": "primitives",
+    "repository": null,
+    "revision": null,
+    "edition": "constellation-grid",
+    "source_version": "0.9.0",
+    "source_subdirectory": "dist",
+    "source_files": [
+      {
+        "path": "archive/v0.3-centered-studio/DESIGN.md",
+        "sha256": "cd10b40a3b4afbe1b6fa0e85677ff143207b61f9717dce9c3e132c5e6438b979"
+      },
+      {
+        "path": "archive/v0.3-centered-studio/geometry.js",
+        "sha256": "19cf2699f4802f5fb208fefd1af1a5ff524b3d50ea35620841023f26a236269e"
+      },
+      {
+        "path": "archive/v0.3-centered-studio/grid-model.js",
+        "sha256": "9842df2de80991fb9308b2ffadd53e3d770799002835f4089f0bbc892f7bfc0a"
+      },
+      {
+        "path": "archive/v0.3-centered-studio/grid-renderer.js",
+        "sha256": "b059b43ab60a2292d2c2f9a3fc14ba75dfdac80c9a3deea4082b54c8691cf391"
+      },
+      {
+        "path": "archive/v0.3-centered-studio/grid.css",
+        "sha256": "14b04989ed016f214b116ba6f85bd670177c715a0746a433c7e99c6ab72badb5"
+      },
+      {
+        "path": "archive/v0.3-centered-studio/grid.js",
+        "sha256": "2fe13e53812775edb053b02c76d46c075522646ee6215412a33fecc11fedd1b5"
+      },
+      {
+        "path": "archive/v0.3-centered-studio/index.html",
+        "sha256": "c3e10ed1744441503747424411da1a064707a9eb29eda2f3bdb7896f3bd760eb"
+      },
+      {
+        "path": "archive/v0.3-centered-studio/physics.js",
+        "sha256": "c53036d072887cfa91bcc39cd636aa4fa646d77e9982002e979a2260a7b2b136"
+      },
+      {
+        "path": "archive/v0.3-centered-studio/playground.html",
+        "sha256": "3004d89ad5ae9a718d57cd366caf5a4943267c3a107632ec2245f7d5c1684386"
+      },
+      {
+        "path": "archive/v0.3-centered-studio/README.md",
+        "sha256": "4a2d53a3215395abee6eff4213f87028257dc90c3315394dc486a7e55f64f82c"
+      },
+      {
+        "path": "archive/v0.3-centered-studio/studio.js",
+        "sha256": "daf2d50cc3d68037fe1615dad2e6ba9f44af70a87f1db6407715521569fdbcc7"
+      },
+      {
+        "path": "archive/v0.3-centered-studio/style.css",
+        "sha256": "0f6a90598e069b8d6f0c3accc161d6bc0a5e156e3195a089b64680f07e613c40"
+      },
+      {
+        "path": "cyber-motion.js",
+        "sha256": "0826239e06f6f5325b691fe27dee093ebe1b6a58f16dc00691f4634e7b30642f"
+      },
+      {
+        "path": "field.js",
+        "sha256": "25280a5ad0b4e7f83bc6f740d852940447fb9342f2b83cf5a54d749b4c24c75f"
+      },
+      {
+        "path": "geometry.js",
+        "sha256": "19cf2699f4802f5fb208fefd1af1a5ff524b3d50ea35620841023f26a236269e"
+      },
+      {
+        "path": "grid-model.js",
+        "sha256": "5b9bf35338826daee8db9542a44e4d1a16565b1b10427d0305fbf8d1a35308e1"
+      },
+      {
+        "path": "grid-renderer.js",
+        "sha256": "1a9535978a5c32cf45cfb79f76e5b2cee238bfe8ab524c34d1f3f88adf351a84"
+      },
+      {
+        "path": "grid.css",
+        "sha256": "ca761c8b0efde11afa993297a46f8d1d87667a74ccb031b89cb9d6c51b7722a9"
+      },
+      {
+        "path": "grid.js",
+        "sha256": "37fbec3a0c191bed5dc477cf1c05e6c5d523e9fcce4e5148ba6bdceea74f2b1c"
+      },
+      {
+        "path": "hand-input.js",
+        "sha256": "3536ef1fa44757f0c424ac1a63cb279524d9d37d0f7c9bb5e0e08842f6e9de54"
+      },
+      {
+        "path": "hand-view.js",
+        "sha256": "0e0d3e3f430c5690ba4a8ce229c2ab3d336860f0fb43b83a45e9a703685d0cb1"
+      },
+      {
+        "path": "hand-worker.js",
+        "sha256": "449084108fefeeca4346828271e937e8a26927d25a69c3ce4b56d316be0aea99"
+      },
+      {
+        "path": "hand-zoom.js",
+        "sha256": "03ea13e2df3ce6f32449be155f82ed44aded651a0cf4f0b84f43e4afd957a292"
+      },
+      {
+        "path": "index.html",
+        "sha256": "b4719a31007a5bc99b41e509530378b7c49b6f213abc2a3c86ff55c064f43505"
+      },
+      {
+        "path": "interaction.js",
+        "sha256": "934c6c04504fa03898184820217c039a3173eb33ccb3d2fdb42a8ebf34272cfa"
+      },
+      {
+        "path": "physics.js",
+        "sha256": "c53036d072887cfa91bcc39cd636aa4fa646d77e9982002e979a2260a7b2b136"
+      },
+      {
+        "path": "playground.html",
+        "sha256": "3004d89ad5ae9a718d57cd366caf5a4943267c3a107632ec2245f7d5c1684386"
+      },
+      {
+        "path": "studio.js",
+        "sha256": "daf2d50cc3d68037fe1615dad2e6ba9f44af70a87f1db6407715521569fdbcc7"
+      },
+      {
+        "path": "style.css",
+        "sha256": "0f6a90598e069b8d6f0c3accc161d6bc0a5e156e3195a089b64680f07e613c40"
+      },
+      {
+        "path": "vendor/hand_landmarker.task",
+        "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+      },
+      {
+        "path": "vendor/LICENSE",
+        "sha256": "8707eef0533987efc5b155d64761eeb6e20793f50b9bd1a68dad1cf4719d0ed8"
+      },
+      {
+        "path": "vendor/manifest.json",
+        "sha256": "fd8fc5a87370f289f90318d0ae67ab0b59fe716663bb0b1880caf236f08a676a"
+      },
+      {
+        "path": "vendor/README.md",
+        "sha256": "38533707f431ec43baf7d3500ced2d8f810ac5cac08f44a44315956c3425a030"
+      },
+      {
+        "path": "vendor/vision_bundle.js",
+        "sha256": "43c65a77825c5d5af7456d4781a64cd15cb3e53f479ff1f923c12b5adecf2b44"
+      },
+      {
+        "path": "vendor/wasm/vision_wasm_internal.js",
+        "sha256": "6f6b86509cf9e163ea1cfec7edc8cf53732699c04781e4c21c557c1ba402310e"
+      },
+      {
+        "path": "vendor/wasm/vision_wasm_internal.wasm",
+        "sha256": "cb3ec20026a9aecc2a81a93c25630ceb5389297ddb7a5f0bd61dd09cde606b9b"
+      },
+      {
+        "path": "vendor/wasm/vision_wasm_nosimd_internal.js",
+        "sha256": "9f8fc960e363f0fb2f42f7937b97ae9cf9a5630490f71031fa90caa9bb121938"
+      },
+      {
+        "path": "vendor/wasm/vision_wasm_nosimd_internal.wasm",
+        "sha256": "924274fcd5ac8985f6570a8573e7971b7bd2d580ba1b8f3beb0ba8f95db6347c"
+      }
+    ],
+    "packaged_files": [
+      {
+        "path": "archive/v0.3-centered-studio/DESIGN.md",
+        "sha256": "cd10b40a3b4afbe1b6fa0e85677ff143207b61f9717dce9c3e132c5e6438b979"
+      },
+      {
+        "path": "archive/v0.3-centered-studio/geometry.js",
+        "sha256": "19cf2699f4802f5fb208fefd1af1a5ff524b3d50ea35620841023f26a236269e"
+      },
+      {
+        "path": "archive/v0.3-centered-studio/grid-model.js",
+        "sha256": "9842df2de80991fb9308b2ffadd53e3d770799002835f4089f0bbc892f7bfc0a"
+      },
+      {
+        "path": "archive/v0.3-centered-studio/grid-renderer.js",
+        "sha256": "b059b43ab60a2292d2c2f9a3fc14ba75dfdac80c9a3deea4082b54c8691cf391"
+      },
+      {
+        "path": "archive/v0.3-centered-studio/grid.css",
+        "sha256": "14b04989ed016f214b116ba6f85bd670177c715a0746a433c7e99c6ab72badb5"
+      },
+      {
+        "path": "archive/v0.3-centered-studio/grid.js",
+        "sha256": "2fe13e53812775edb053b02c76d46c075522646ee6215412a33fecc11fedd1b5"
+      },
+      {
+        "path": "archive/v0.3-centered-studio/index.html",
+        "sha256": "c3e10ed1744441503747424411da1a064707a9eb29eda2f3bdb7896f3bd760eb"
+      },
+      {
+        "path": "archive/v0.3-centered-studio/physics.js",
+        "sha256": "c53036d072887cfa91bcc39cd636aa4fa646d77e9982002e979a2260a7b2b136"
+      },
+      {
+        "path": "archive/v0.3-centered-studio/playground.html",
+        "sha256": "3004d89ad5ae9a718d57cd366caf5a4943267c3a107632ec2245f7d5c1684386"
+      },
+      {
+        "path": "archive/v0.3-centered-studio/README.md",
+        "sha256": "4a2d53a3215395abee6eff4213f87028257dc90c3315394dc486a7e55f64f82c"
+      },
+      {
+        "path": "archive/v0.3-centered-studio/studio.js",
+        "sha256": "daf2d50cc3d68037fe1615dad2e6ba9f44af70a87f1db6407715521569fdbcc7"
+      },
+      {
+        "path": "archive/v0.3-centered-studio/style.css",
+        "sha256": "0f6a90598e069b8d6f0c3accc161d6bc0a5e156e3195a089b64680f07e613c40"
+      },
+      {
+        "path": "cyber-motion.js",
+        "sha256": "0826239e06f6f5325b691fe27dee093ebe1b6a58f16dc00691f4634e7b30642f"
+      },
+      {
+        "path": "field.js",
+        "sha256": "25280a5ad0b4e7f83bc6f740d852940447fb9342f2b83cf5a54d749b4c24c75f"
+      },
+      {
+        "path": "geometry.js",
+        "sha256": "19cf2699f4802f5fb208fefd1af1a5ff524b3d50ea35620841023f26a236269e"
+      },
+      {
+        "path": "grid-model.js",
+        "sha256": "5b9bf35338826daee8db9542a44e4d1a16565b1b10427d0305fbf8d1a35308e1"
+      },
+      {
+        "path": "grid-renderer.js",
+        "sha256": "1a9535978a5c32cf45cfb79f76e5b2cee238bfe8ab524c34d1f3f88adf351a84"
+      },
+      {
+        "path": "grid.css",
+        "sha256": "ca761c8b0efde11afa993297a46f8d1d87667a74ccb031b89cb9d6c51b7722a9"
+      },
+      {
+        "path": "grid.js",
+        "sha256": "37fbec3a0c191bed5dc477cf1c05e6c5d523e9fcce4e5148ba6bdceea74f2b1c"
+      },
+      {
+        "path": "hand-input.js",
+        "sha256": "3536ef1fa44757f0c424ac1a63cb279524d9d37d0f7c9bb5e0e08842f6e9de54"
+      },
+      {
+        "path": "hand-view.js",
+        "sha256": "0e0d3e3f430c5690ba4a8ce229c2ab3d336860f0fb43b83a45e9a703685d0cb1"
+      },
+      {
+        "path": "hand-worker.js",
+        "sha256": "449084108fefeeca4346828271e937e8a26927d25a69c3ce4b56d316be0aea99"
+      },
+      {
+        "path": "hand-zoom.js",
+        "sha256": "03ea13e2df3ce6f32449be155f82ed44aded651a0cf4f0b84f43e4afd957a292"
+      },
+      {
+        "path": "index.html",
+        "sha256": "b4719a31007a5bc99b41e509530378b7c49b6f213abc2a3c86ff55c064f43505"
+      },
+      {
+        "path": "interaction.js",
+        "sha256": "934c6c04504fa03898184820217c039a3173eb33ccb3d2fdb42a8ebf34272cfa"
+      },
+      {
+        "path": "physics.js",
+        "sha256": "c53036d072887cfa91bcc39cd636aa4fa646d77e9982002e979a2260a7b2b136"
+      },
+      {
+        "path": "playground.html",
+        "sha256": "3004d89ad5ae9a718d57cd366caf5a4943267c3a107632ec2245f7d5c1684386"
+      },
+      {
+        "path": "studio.js",
+        "sha256": "daf2d50cc3d68037fe1615dad2e6ba9f44af70a87f1db6407715521569fdbcc7"
+      },
+      {
+        "path": "style.css",
+        "sha256": "0f6a90598e069b8d6f0c3accc161d6bc0a5e156e3195a089b64680f07e613c40"
+      },
+      {
+        "path": "vendor/hand_landmarker.task",
+        "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+      },
+      {
+        "path": "vendor/LICENSE",
+        "sha256": "8707eef0533987efc5b155d64761eeb6e20793f50b9bd1a68dad1cf4719d0ed8"
+      },
+      {
+        "path": "vendor/manifest.json",
+        "sha256": "fd8fc5a87370f289f90318d0ae67ab0b59fe716663bb0b1880caf236f08a676a"
+      },
+      {
+        "path": "vendor/README.md",
+        "sha256": "38533707f431ec43baf7d3500ced2d8f810ac5cac08f44a44315956c3425a030"
+      },
+      {
+        "path": "vendor/vision_bundle.js",
+        "sha256": "43c65a77825c5d5af7456d4781a64cd15cb3e53f479ff1f923c12b5adecf2b44"
+      },
+      {
+        "path": "vendor/wasm/vision_wasm_internal.js",
+        "sha256": "6f6b86509cf9e163ea1cfec7edc8cf53732699c04781e4c21c557c1ba402310e"
+      },
+      {
+        "path": "vendor/wasm/vision_wasm_internal.wasm",
+        "sha256": "cb3ec20026a9aecc2a81a93c25630ceb5389297ddb7a5f0bd61dd09cde606b9b"
+      },
+      {
+        "path": "vendor/wasm/vision_wasm_nosimd_internal.js",
+        "sha256": "9f8fc960e363f0fb2f42f7937b97ae9cf9a5630490f71031fa90caa9bb121938"
+      },
+      {
+        "path": "vendor/wasm/vision_wasm_nosimd_internal.wasm",
+        "sha256": "924274fcd5ac8985f6570a8573e7971b7bd2d580ba1b8f3beb0ba8f95db6347c"
+      }
+    ],
+    "adaptations": "Exact portable Primitives files. Constellation opens by default; no renderer adaptations."
+  },
+  "files": [
+    {
+      "path": "runtime/archive/v0.3-centered-studio/DESIGN.md",
+      "length": 2930,
+      "sha256": "cd10b40a3b4afbe1b6fa0e85677ff143207b61f9717dce9c3e132c5e6438b979"
+    },
+    {
+      "path": "runtime/archive/v0.3-centered-studio/geometry.js",
+      "length": 5149,
+      "sha256": "19cf2699f4802f5fb208fefd1af1a5ff524b3d50ea35620841023f26a236269e"
+    },
+    {
+      "path": "runtime/archive/v0.3-centered-studio/grid-model.js",
+      "length": 13590,
+      "sha256": "9842df2de80991fb9308b2ffadd53e3d770799002835f4089f0bbc892f7bfc0a"
+    },
+    {
+      "path": "runtime/archive/v0.3-centered-studio/grid-renderer.js",
+      "length": 5112,
+      "sha256": "b059b43ab60a2292d2c2f9a3fc14ba75dfdac80c9a3deea4082b54c8691cf391"
+    },
+    {
+      "path": "runtime/archive/v0.3-centered-studio/grid.css",
+      "length": 6469,
+      "sha256": "14b04989ed016f214b116ba6f85bd670177c715a0746a433c7e99c6ab72badb5"
+    },
+    {
+      "path": "runtime/archive/v0.3-centered-studio/grid.js",
+      "length": 13419,
+      "sha256": "2fe13e53812775edb053b02c76d46c075522646ee6215412a33fecc11fedd1b5"
+    },
+    {
+      "path": "runtime/archive/v0.3-centered-studio/index.html",
+      "length": 9511,
+      "sha256": "c3e10ed1744441503747424411da1a064707a9eb29eda2f3bdb7896f3bd760eb"
+    },
+    {
+      "path": "runtime/archive/v0.3-centered-studio/physics.js",
+      "length": 1449,
+      "sha256": "c53036d072887cfa91bcc39cd636aa4fa646d77e9982002e979a2260a7b2b136"
+    },
+    {
+      "path": "runtime/archive/v0.3-centered-studio/playground.html",
+      "length": 7317,
+      "sha256": "3004d89ad5ae9a718d57cd366caf5a4943267c3a107632ec2245f7d5c1684386"
+    },
+    {
+      "path": "runtime/archive/v0.3-centered-studio/README.md",
+      "length": 10090,
+      "sha256": "4a2d53a3215395abee6eff4213f87028257dc90c3315394dc486a7e55f64f82c"
+    },
+    {
+      "path": "runtime/archive/v0.3-centered-studio/studio.js",
+      "length": 21931,
+      "sha256": "daf2d50cc3d68037fe1615dad2e6ba9f44af70a87f1db6407715521569fdbcc7"
+    },
+    {
+      "path": "runtime/archive/v0.3-centered-studio/style.css",
+      "length": 12374,
+      "sha256": "0f6a90598e069b8d6f0c3accc161d6bc0a5e156e3195a089b64680f07e613c40"
+    },
+    {
+      "path": "runtime/cyber-motion.js",
+      "length": 4812,
+      "sha256": "0826239e06f6f5325b691fe27dee093ebe1b6a58f16dc00691f4634e7b30642f"
+    },
+    {
+      "path": "runtime/field.js",
+      "length": 13080,
+      "sha256": "25280a5ad0b4e7f83bc6f740d852940447fb9342f2b83cf5a54d749b4c24c75f"
+    },
+    {
+      "path": "runtime/geometry.js",
+      "length": 5149,
+      "sha256": "19cf2699f4802f5fb208fefd1af1a5ff524b3d50ea35620841023f26a236269e"
+    },
+    {
+      "path": "runtime/grid-model.js",
+      "length": 19068,
+      "sha256": "5b9bf35338826daee8db9542a44e4d1a16565b1b10427d0305fbf8d1a35308e1"
+    },
+    {
+      "path": "runtime/grid-renderer.js",
+      "length": 13499,
+      "sha256": "1a9535978a5c32cf45cfb79f76e5b2cee238bfe8ab524c34d1f3f88adf351a84"
+    },
+    {
+      "path": "runtime/grid.css",
+      "length": 9144,
+      "sha256": "ca761c8b0efde11afa993297a46f8d1d87667a74ccb031b89cb9d6c51b7722a9"
+    },
+    {
+      "path": "runtime/grid.js",
+      "length": 17572,
+      "sha256": "37fbec3a0c191bed5dc477cf1c05e6c5d523e9fcce4e5148ba6bdceea74f2b1c"
+    },
+    {
+      "path": "runtime/hand-input.js",
+      "length": 13073,
+      "sha256": "3536ef1fa44757f0c424ac1a63cb279524d9d37d0f7c9bb5e0e08842f6e9de54"
+    },
+    {
+      "path": "runtime/hand-view.js",
+      "length": 3429,
+      "sha256": "0e0d3e3f430c5690ba4a8ce229c2ab3d336860f0fb43b83a45e9a703685d0cb1"
+    },
+    {
+      "path": "runtime/hand-worker.js",
+      "length": 1231,
+      "sha256": "449084108fefeeca4346828271e937e8a26927d25a69c3ce4b56d316be0aea99"
+    },
+    {
+      "path": "runtime/hand-zoom.js",
+      "length": 3097,
+      "sha256": "03ea13e2df3ce6f32449be155f82ed44aded651a0cf4f0b84f43e4afd957a292"
+    },
+    {
+      "path": "runtime/index.html",
+      "length": 11870,
+      "sha256": "b4719a31007a5bc99b41e509530378b7c49b6f213abc2a3c86ff55c064f43505"
+    },
+    {
+      "path": "runtime/interaction.js",
+      "length": 1750,
+      "sha256": "934c6c04504fa03898184820217c039a3173eb33ccb3d2fdb42a8ebf34272cfa"
+    },
+    {
+      "path": "runtime/physics.js",
+      "length": 1449,
+      "sha256": "c53036d072887cfa91bcc39cd636aa4fa646d77e9982002e979a2260a7b2b136"
+    },
+    {
+      "path": "runtime/playground.html",
+      "length": 7317,
+      "sha256": "3004d89ad5ae9a718d57cd366caf5a4943267c3a107632ec2245f7d5c1684386"
+    },
+    {
+      "path": "runtime/studio.js",
+      "length": 21931,
+      "sha256": "daf2d50cc3d68037fe1615dad2e6ba9f44af70a87f1db6407715521569fdbcc7"
+    },
+    {
+      "path": "runtime/style.css",
+      "length": 12374,
+      "sha256": "0f6a90598e069b8d6f0c3accc161d6bc0a5e156e3195a089b64680f07e613c40"
+    },
+    {
+      "path": "runtime/vendor/hand_landmarker.task",
+      "length": 7819105,
+      "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+    },
+    {
+      "path": "runtime/vendor/LICENSE",
+      "length": 12331,
+      "sha256": "8707eef0533987efc5b155d64761eeb6e20793f50b9bd1a68dad1cf4719d0ed8"
+    },
+    {
+      "path": "runtime/vendor/manifest.json",
+      "length": 1021,
+      "sha256": "fd8fc5a87370f289f90318d0ae67ab0b59fe716663bb0b1880caf236f08a676a"
+    },
+    {
+      "path": "runtime/vendor/README.md",
+      "length": 1026,
+      "sha256": "38533707f431ec43baf7d3500ced2d8f810ac5cac08f44a44315956c3425a030"
+    },
+    {
+      "path": "runtime/vendor/vision_bundle.js",
+      "length": 137315,
+      "sha256": "43c65a77825c5d5af7456d4781a64cd15cb3e53f479ff1f923c12b5adecf2b44"
+    },
+    {
+      "path": "runtime/vendor/wasm/vision_wasm_internal.js",
+      "length": 204816,
+      "sha256": "6f6b86509cf9e163ea1cfec7edc8cf53732699c04781e4c21c557c1ba402310e"
+    },
+    {
+      "path": "runtime/vendor/wasm/vision_wasm_internal.wasm",
+      "length": 11453626,
+      "sha256": "cb3ec20026a9aecc2a81a93c25630ceb5389297ddb7a5f0bd61dd09cde606b9b"
+    },
+    {
+      "path": "runtime/vendor/wasm/vision_wasm_nosimd_internal.js",
+      "length": 204669,
+      "sha256": "9f8fc960e363f0fb2f42f7937b97ae9cf9a5630490f71031fa90caa9bb121938"
+    },
+    {
+      "path": "runtime/vendor/wasm/vision_wasm_nosimd_internal.wasm",
+      "length": 10647962,
+      "sha256": "924274fcd5ac8985f6570a8573e7971b7bd2d580ba1b8f3beb0ba8f95db6347c"
+    },
+    {
+      "path": "poster.jpg",
+      "length": 118628,
+      "sha256": "bc0e2012d834abe5b90f6d2314621f403db166c0ab80ec9c0e651f4e2796084d"
+    },
+    {
+      "path": "preview.mp4",
+      "length": 1297980,
+      "sha256": "9d45565131a2b986a8db6842aaa45c8f520bc5415a235148fc02735ac951246f"
+    }
+  ],
+  "release_id": "c8213fad60594968cfe4a9ac81f73b7d482c37d69d50b24d16db62f6006264ff",
+  "capture": {
+    "kind": "actual browser canvas, silent",
+    "raw_sha256": "f164acf923dc07b1c4f1823a449ce00040875f95f5b96b12a59f6de8fc0ab54c",
+    "opening_pattern": "scatter",
+    "camera_recorded": false,
+    "loop_method": "one-second end-to-start crossfade",
+    "source_snapshot_sha256": "243fcd76c4214fa73866ac182184ee869c5410a9e5d73d3d14ab157ce1c9719e",
+    "encoded_video": {
+      "codec": "h264",
+      "width": 960,
+      "height": 720,
+      "streams": 1,
+      "duration": 6.866667
+    }
+  }
+}

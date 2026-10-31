@@ -32,3 +32,7 @@ A mirror holds no keys and no wallet, so it can never publish anything. It can
 only be checked against the chain. That asymmetry is why copying it freely is
 safe, and why a press that means what it says about permanence should want you
 to.
+
+## Offline hand tracking
+
+The core archive includes the artwork code, text, and verified asset catalog. For a complete offline edition, also extract the hand-tracking parts linked on the Mirror page into the same folder. `artwork-bundles.json` binds each model and WASM file to its exact bytes. Audio remains in the separate Lewis recording parts. Hosted artworks load their tracking assets normally from the same origin.

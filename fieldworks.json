@@ -1,15 +1,15 @@
 {
   "schema": "cyberdelic.space/fieldworks-v1",
-  "version": "1.3",
-  "date": "2026-10-25",
-  "published_at": "2026-10-26T04:06:36.676606Z",
+  "version": "1.4",
+  "date": "2026-10-31",
+  "published_at": "2026-10-31T15:36:03.316707Z",
   "overview": {
     "title": "Fieldworks",
     "href": "fieldworks/",
     "source": "overview.md",
     "source_path": "fieldworks/readings/overview.md",
-    "source_sha256": "0bb000c58f312f2dd338be9c50c346c9e5c0e9445b3fda53a2d0ef01be1bff78",
-    "source_length": 322
+    "source_sha256": "ee7b363be8ed11761e87ed9f8da0096849591ed7595c8c36ae4fb71c3ccdb930",
+    "source_length": 361
   },
   "archived_readings": [
     {
@@ -38,6 +38,15 @@
       "source_path": "fieldworks/readings/overview-v1-2.md",
       "source_sha256": "be2fd026661676d11c18d7a1a3a9b19b6ea437d3ae8feefb28becee31c5843d4",
       "source_length": 291
+    },
+    {
+      "title": "Fieldworks, five-work edition",
+      "href": "fieldworks/readings/overview-five-works.md",
+      "source": "overview-five-works.md",
+      "source_path": "fieldworks/readings/overview-five-works.md",
+      "source_sha256": "0bb000c58f312f2dd338be9c50c346c9e5c0e9445b3fda53a2d0ef01be1bff78",
+      "source_length": 322,
+      "slug": "overview-five-works"
     }
   ],
   "items": [
@@ -236,6 +245,48 @@
         "path": "fieldworks/previews/opalia.mp4",
         "sha256": "a332d620c5b7e72a38c388154ff2316ad685e7db28e6243683feed7e4a9ae8d2",
         "length": 609568,
+        "kind": "recorded-artwork-loop"
+      }
+    },
+    {
+      "slug": "primitives",
+      "title": "Primitives",
+      "former_title": "Primitives / the living grid",
+      "edition": "constellation-grid",
+      "project": "primitives",
+      "repository": null,
+      "status": "living",
+      "caption": "A small vocabulary, an expanding field.",
+      "description": "Explore a field of translucent geometric marks. Move between simple shapes and fine constellations, or let rows and columns shuffle through the grid.",
+      "alt": "Colourful circles, crosses, rings, and layered geometric marks gathering across an open ivory grid in Primitives.",
+      "gesture": "Scroll or pinch to explore. Optional hand zoom: apart for a wide view, together to approach.",
+      "source": "primitives.md",
+      "themes": [
+        "gesture",
+        "play",
+        "perception",
+        "rhythm",
+        "emergence",
+        "time"
+      ],
+      "related_note": "fn-05",
+      "related_title": "The Physics We Choose",
+      "release_id": "c8213fad60594968cfe4a9ac81f73b7d482c37d69d50b24d16db62f6006264ff",
+      "runtime_published_at": "2026-10-31T15:36:03.316707Z",
+      "source_path": "fieldworks/readings/primitives.md",
+      "source_sha256": "eae6ef6edfd727ff35413936746d8c83d85f2c8f09276efb247555265c7ee839",
+      "source_length": 1030,
+      "href": "fieldworks/primitives/",
+      "poster": {
+        "path": "fieldworks/images/primitives.jpg",
+        "sha256": "bc0e2012d834abe5b90f6d2314621f403db166c0ab80ec9c0e651f4e2796084d",
+        "length": 118628,
+        "kind": "actual-browser-capture"
+      },
+      "preview": {
+        "path": "fieldworks/previews/primitives.mp4",
+        "sha256": "9d45565131a2b986a8db6842aaa45c8f520bc5415a235148fc02735ac951246f",
+        "length": 1297980,
         "kind": "recorded-artwork-loop"
       }
     }
