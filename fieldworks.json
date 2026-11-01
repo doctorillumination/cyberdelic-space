@@ -164,22 +164,22 @@
       ],
       "related_note": "fn-05",
       "related_title": "The Physics We Choose",
-      "release_id": "09e559f205f24a8cbdd9b3bc4f1e16dff96ec83ba23a87cdd4882cd50bd95a87",
-      "runtime_published_at": "2026-10-31T17:35:56.235053Z",
+      "release_id": "a07f46d26ab6d5db1b623f40e2dc347bff422f0f9883ff9553475d17ddf79261",
+      "runtime_published_at": "2026-11-01T04:29:44.100681Z",
       "source_path": "fieldworks/readings/everything-is-thinking.md",
       "source_sha256": "951b624507ef44fa9b41d2ca751dfb785aec7f8df044257a0f958be7e1db16e1",
       "source_length": 1205,
       "href": "fieldworks/everything-is-thinking/",
       "poster": {
         "path": "fieldworks/images/everything-is-thinking.jpg",
-        "sha256": "c7ddbf3c3769c810993290c234b2d3adea84ca0c5590748ee4ea255426b47044",
-        "length": 623867,
+        "sha256": "96e2b42f8c6e9bd8d61fe3cc6c3677e57ba0ec13ff2dc2d3fb6ca14a81110743",
+        "length": 623978,
         "kind": "actual-browser-capture"
       },
       "preview": {
         "path": "fieldworks/previews/everything-is-thinking.mp4",
-        "sha256": "7b5e09c34ecada37d492cce3691867ba1a5373f331013b364daf122fbec70676",
-        "length": 2529738,
+        "sha256": "6741faf6845d1a7423e5cfc2a6414d718e565f396fbd2f7ae31ff3e7e741bf4d",
+        "length": 2520516,
         "kind": "recorded-artwork-loop"
       },
       "former_title": "Everything Is Thinking"
