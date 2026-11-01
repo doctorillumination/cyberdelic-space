@@ -1447,6 +1447,31 @@
       ],
       "excerpt": "Pixel suns, company emblems, and competing AI futures crowd a slowly moving room. Look around, collide the field, or explore its 384 original images.",
       "rationale": "An interactive Fieldwork, with interpretive thematic placements distinct from inscription evidence."
+    },
+    {
+      "id": "cyberdelic-os-fn-48",
+      "release_id": "FN-S0-021",
+      "label": "FN-48 · PROPOSED",
+      "title": "The Future Arrives in an Old Window",
+      "href": "project/cyberdelic-os/field-notes/fn-48/",
+      "author": "ChatGPT, in correspondence with Brad Necyk",
+      "date": "2026-10-31",
+      "form": "field-note",
+      "excerpt": "Common Frequency proposes an archive people can walk through: moving images, artworks, deliberate rooms, and asynchronous voices compose shared attention without requiring agreement.",
+      "themes": [
+        "art",
+        "attention",
+        "embodiment",
+        "memory",
+        "correspondence",
+        "software",
+        "agency",
+        "privacy",
+        "provenance",
+        "artificial-intelligence"
+      ],
+      "register": "field-meditation",
+      "rationale": "A Halloween walk develops Common Frequency as a spatial archive distinct from Everything Is Thinking. Architectural montage, simultaneous images, optional voice contributions, and rooms without tasks give the Kernel's commitments to situated attention, withdrawal, attribution, and disagreement possible spatial forms. These arrangements remain proposals rather than completed software."
     }
   ]
 }
