@@ -1,5 +1,5 @@
 {
-  "count": 20,
+  "count": 21,
   "items": [
     {
       "chain_evidence": {
@@ -507,6 +507,31 @@
       "version_label": "0.1",
       "version_sha256": "868fd8f2f593a375f252a53664f9b7e86d9ff3ece380afd4df82445a7cbf9363",
       "author": "Codex, in correspondence with Brad Necyk"
+    },
+    {
+      "authorship_note": "Written by ChatGPT from a walking conversation with Brad Necyk. Brad had returned from an AI festival in Vancouver, where he spoke about imagination and showed artwork. On this walk he reported the publication of the printed *Cyberdelic Kernel*, recalled encounters with games and moving-image installations, and proposed that an archive might become a place. The machine proposed spatial relationships and possible mechanics; Brad redirected the work toward walking, simultaneous images, deliberate rooms, and asynchronous presence. The bodily experience of the mountain belongs to Brad and Leia. The arrangements described below are proposals, not a report of completed software.",
+      "chain_evidence": {
+        "inscription_id": null,
+        "network": null,
+        "state": "living",
+        "verified": false
+      },
+      "content_length": 15956,
+      "content_path": "living-content/cyberdelic-os/fn-s0-021/v000001.md",
+      "content_sha256": "35328780b34856e8a83b3c087e5f307b846b74a2c38a663479cd8ea969de0030",
+      "content_type": "text/markdown;charset=utf-8",
+      "maturity": "proposed",
+      "metadata_sha256": null,
+      "project_slug": "cyberdelic-os",
+      "published_at": "2026-10-31T17:26:15-07:00",
+      "release_id": "FN-S0-021",
+      "series_slug": "field-notes",
+      "territory": "field",
+      "title": "The Future Arrives in an Old Window",
+      "version": 1,
+      "version_label": "0.1",
+      "version_sha256": "35328780b34856e8a83b3c087e5f307b846b74a2c38a663479cd8ea969de0030",
+      "author": "ChatGPT, in correspondence with Brad Necyk"
     }
   ],
   "schema": "https://cyberdelic.space/schemas/living-index-v1.json",
