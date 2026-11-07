@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Vellum, ink in volume</title>
+  <style>
+    html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#f2eddf;font-family:Arial,sans-serif;color:#626b5c}
+    #canvas-container,canvas{width:100%!important;height:100%!important;display:block}
+    canvas{touch-action:none;cursor:grab}canvas.dragging{cursor:grabbing}
+    #loading{position:fixed;inset:0;display:grid;place-items:center;font:italic 18px Georgia,serif;background:#f2eddf}
+    #error{position:fixed;top:45%;left:50%;transform:translateX(-50%);font-size:14px;line-height:1.6;max-width:400px;width:75%;text-align:center}
+    [hidden]{display:none!important}
+  </style>
+  <script src="../vendor/p5.min.js"></script>
+</head>
+<body>
+  <div id="canvas-container"></div>
+  <div id="loading" role="status">Finding a current…</div>
+  <div id="error" role="alert" hidden></div>
+  <script src="growth.js?v=volume1"></script>
+  <script src="volume.js?v=volume1"></script>
+  <script src="shaders.js?v=volume1"></script>
+  <script src="view.js?v=volume1"></script>
+</body>
+</html>

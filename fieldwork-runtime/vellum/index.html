@@ -20,8 +20,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vellum | A living ink study</title>
-    <meta name="description" content="An interactive generative ink work on warm paper. Release pigment, stir water, and place eddies.">
+    <meta name="description" content="Living ink on warm paper, with an optional three-dimensional view. Drop pigment into the currents or turn a flowing volume.">
     <meta name="theme-color" content="#f2eddf">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23f2eddf'/%3E%3Cpath d='M16 5s-8 10-8 15a8 8 0 0 0 16 0C24 15 16 5 16 5Z' fill='%23255f77'/%3E%3C/svg%3E">
     <script src="vendor/p5.min.js"></script>
     <style>
         /* Anthropic Brand Colors */
@@ -326,9 +327,9 @@
             }
         }
     </style>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=20261107-volume2">
 </head>
-<body>
+<body data-view="2d">
     <div class="container">
         <aside class="sidebar" id="studio" aria-label="Ink studio">
             <button id="close-studio" class="close-studio" aria-label="Close studio">×</button>
@@ -336,8 +337,15 @@
             <div class="subtitle">An ink and water studio</div>
             <p class="render-stats"><output id="fps" aria-live="off">Measuring frame rate…</output></p>
             <div class="control-section">
-                <h3>Seed</h3>
-                <label class="sr-only" for="seed-input">Composition seed</label>
+                <h3>Composition</h3>
+                <label class="select-label" for="design">Design</label>
+                <select id="design"><option value="auto">Surprise me</option></select>
+                <div id="portrait-modes" class="portrait-modes" role="group" aria-label="Portrait response" hidden>
+                    <button type="button" data-portrait="still" aria-pressed="true">Still portrait</button>
+                    <button type="button" data-portrait="motion" aria-pressed="false">Movement</button>
+                </div>
+                <p id="camera-note" class="camera-note" hidden>Start the camera to make an ink portrait. Video stays on this device.</p>
+                <label class="select-label seed-label" for="seed-input">Seed</label>
                 <input type="number" id="seed-input" class="seed-input" value="21" min="1" max="2147483647" onchange="updateSeed()">
                 <div class="seed-controls">
                     <button class="button secondary" onclick="previousSeed()">← Prev</button>
@@ -385,40 +393,37 @@
             </div>
             <div class="control-section">
                 <h3>Surface & colour</h3>
-                <label class="select-label" for="palette">Pigments</label>
+                <label class="select-label" for="palette">Pigment preset</label>
                 <select id="palette">
-                    <option value="0">Blue / orange / green ink</option>
-                    <option value="1">Earth spectrum</option>
-                    <option value="2">Dusk spectrum</option>
-                    <option value="3">Moss & mineral</option>
-                    <option value="4">Graphite & stone</option>
+                    <option value="0">Original · blue / orange / green</option>
                 </select>
                 <label class="check-label"><input type="checkbox" id="grid" checked> Pencil construction lines</label>
             </div>
             <div class="control-section">
                 <h3>Actions</h3>
                 <div class="button-row">
-                    <button class="button" onclick="initializeSystem()">Regenerate</button>
+                    <button id="studio-regenerate" class="button" onclick="designMode==='camera'?clearPortraitInk():initializeSystem()">Regenerate</button>
                     <button class="button secondary" onclick="resetParameters()">Reset</button>
                 </div>
                 <button class="button tertiary export" onclick="downloadPNG()">Save a print</button>
             </div>
-            <p class="studio-note">Space to pause · S to save · H to hide<br>1 ink · 2 water · 3 eddy<br>Escape to return</p>
+            <p class="studio-note">Space to pause · S to save · H to hide<br>1 ink · 2 water<br>Escape to return</p>
         </aside>
         <main class="canvas-area">
             <div id="canvas-container"><div class="loading" id="loading">Wetting the paper…</div></div>
+            <div id="volume-host" hidden></div>
         </main>
     </div>
     <header class="masthead ui">
         <div><div class="eyebrow">A LIVING INK STUDY</div><h1>Vellum<span class="title-dot">.</span></h1></div>
-        <div class="header-actions">
-            <button id="save" class="quiet-button" title="Save PNG (S)">Save a print <span aria-hidden="true">↗</span></button>
-            <button id="studio-toggle" class="icon-button" aria-label="Open ink studio" aria-expanded="false" aria-controls="studio" title="Ink studio"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M5 3v18M12 3v18M19 3v18"/><path d="M2 8h6M9 16h6M16 7h6" stroke-width="3"/></svg></button>
-        </div>
     </header>
-    <div class="bottom-bar ui">
-        <div class="legend"><span class="live-dot"></span><span id="flow-state">INK IN MOTION</span><span class="edition">Nº <span id="edition">021</span></span></div>
-        <div class="tool-dock" role="group" aria-label="Paper tools">
+    <footer class="bottom-bar ui" aria-label="Artwork controls">
+        <div class="view-switch" role="group" aria-label="Ink dimensions">
+                <button type="button" data-view="2d" aria-label="2D ink on paper" aria-pressed="true" title="2D ink on paper"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><rect x="5" y="5" width="14" height="14" rx=".5"/></svg></button>
+                <button type="button" data-view="3d" aria-label="3D ink in space" aria-pressed="false" title="3D ink in space"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><path d="m12 2.5 8.2 4.7v9.6L12 21.5l-8.2-4.7V7.2Z"/><path d="m3.8 7.2 8.2 4.7 8.2-4.7M12 11.9v9.6M12 2.5v9.4"/></svg></button>
+            </div>
+        <div class="material-controls">
+        <div class="tool-dock" id="paper-tools" role="group" aria-label="Paper tools">
             <div class="swatches" role="group" aria-label="Ink colour">
                 <button class="swatch active" data-color="0" style="--swatch:#003fae" aria-label="Blue ink" aria-pressed="true"></button>
                 <button class="swatch" data-color="1" style="--swatch:#e66500" aria-label="Orange ink" aria-pressed="false"></button>
@@ -427,22 +432,37 @@
             <span class="divider"></span>
             <button class="tool active" data-tool="ink" aria-pressed="true"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2S5 8 5 12a5 5 0 0 0 10 0c0-4-5-10-5-10Z"/></svg>Ink</button>
             <button class="tool" data-tool="water" aria-pressed="false"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 7q3-4 6 0t6 0t5 0M2 13q3-4 6 0t6 0t5 0"/></svg>Water</button>
-            <button class="tool" data-tool="eddy" aria-pressed="false"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M16 13a7 7 0 1 0-6 4c4 0 5-6 1-7-3-1-5 3-2 4"/></svg>Eddy</button>
         </div>
-        <div class="playback"><button id="pause" class="quiet-button" aria-pressed="false">Pause</button><span class="small-divider">/</span><button id="another" class="quiet-button">New sheet</button><button id="fullscreen" class="icon-button" aria-label="Toggle fullscreen" title="Fullscreen"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M9 4H4v5M15 4h5v5M4 15v5h5M20 15v5h-5"/></svg></button></div>
-    </div>
-    <div class="gesture-hint ui" id="gesture-hint">Touch the paper to release pigment</div>
+        <div class="tool-dock" id="volume-tools" role="group" aria-label="3D ink tools" hidden>
+            <button type="button" class="tool" id="volume-form" title="Try another flowing form"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 11c-4-5 3-10 8-5s8 1 3-2M5 16c-5-4 1-10 6-5s8 0 5-3"/></svg><span id="volume-form-name">Gyre</span></button>
+            <span class="divider" aria-hidden="true"></span>
+            <button type="button" class="volume-colors" id="volume-colors" aria-label="Change ink colors, Tidal"><span></span><span></span><span></span></button>
+            <span class="divider" aria-hidden="true"></span>
+            <button type="button" class="tool orbit-tool" id="volume-orbit" aria-pressed="true" aria-label="Pause camera orbit" title="Pause camera orbit"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="12" rx="9" ry="4.5" transform="rotate(-30 12 12)"/><circle cx="12" cy="12" r="2.3"/><path d="m17 4 3.5.7-.9 3.5"/></svg></button>
+        </div>
+        </div>
+        <div class="playback"><button id="pause" class="quiet-button" aria-pressed="false">Pause</button><span class="small-divider">/</span><button id="another" class="quiet-button">New sheet</button><button id="capture-portrait" class="quiet-button" hidden>Capture portrait</button>
+            <button id="camera-toggle" class="quiet-button" hidden>Start camera</button>
+            <button id="save" class="quiet-button" aria-label="Save a print" title="Save PNG (S)"><span class="save-label">Save a print</span><span aria-hidden="true">↗</span></button>
+            <button id="studio-toggle" class="icon-button" aria-label="Open ink studio" aria-expanded="false" aria-controls="studio" title="Ink studio"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M5 3v18M12 3v18M19 3v18"/><path d="M2 8h6M9 16h6M16 7h6" stroke-width="3"/></svg></button><button id="fullscreen" class="icon-button" aria-label="Toggle fullscreen" title="Fullscreen"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M9 4H4v5M15 4h5v5M4 15v5h5M20 15v5h-5"/></svg></button></div>
+        <div class="gesture-hint" id="gesture-hint">Touch the paper to drop ink into the currents</div>
+        <div class="legend"><span class="live-dot"></span><span id="flow-state">INK IN MOTION</span><span class="edition">Nº <span id="edition">021</span></span></div>
+    </footer>
     <div class="status ui" id="status" role="status" aria-live="polite"></div>
     <div id="cursor" data-tool="ink" aria-hidden="true"></div>
     <dialog id="print-dialog" aria-labelledby="print-title">
-        <div class="print-header"><div><h2 id="print-title">A moment on paper</h2><p>1600 × 1000 · PNG</p></div><button id="close-print" class="icon-button" aria-label="Close print preview">×</button></div>
+        <div class="print-header"><div><h2 id="print-title">A moment in ink</h2><p id="print-size">1600 × 1000 · PNG</p></div><button id="close-print" class="icon-button" aria-label="Close print preview">×</button></div>
         <img id="print-preview" alt="The current Vellum artwork, ready to save without the interface.">
         <div class="print-footer"><span>You can also save the image with your browser.</span><a id="print-download" download="vellum.png">Download PNG ↗</a></div>
     </dialog>
-    <script src="flow.js"></script>
-    <script src="pigments.js"></script>
-    <script src="fluid.js"></script>
-    <script src="filaments.js"></script>
-    <script src="app.js"></script>
+    <script src="flow.js?v=20261101-pigment6"></script>
+    <script src="pigments.js?v=20261101-pigment6"></script>
+    <script src="fluid.js?v=20261101-pigment6"></script>
+    <script src="filaments.js?v=20261107-volume2"></script>
+    <script src="droplets.js?v=20261101-pigment6"></script>
+    <script src="portrait-vision.js?v=20261101-pigment6"></script>
+    <script src="camera.js?v=20261101-pigment6"></script>
+    <script src="app.js?v=20261107-volume2"></script>
+    <script src="modes.js?v=20261107-volume2"></script>
 </body>
 </html>

@@ -857,38 +857,94 @@
       "slug": "vellum",
       "project": "ink",
       "repository": "https://github.com/doctorillumination/ink",
-      "revision": "857eb3bb01d64607f6d7bf9db618c32f07001140",
+      "revision": "02938c98a4db65ee045d125b3a78b40eb16591fe",
       "source_subdirectory": ".",
-      "source_version": "liquid-filaments",
+      "source_version": "liquid-filaments-2d-3d",
       "edition": "liquid-filaments",
       "source_files": [
         {
           "path": "app.js",
-          "sha256": "7c9bb6f7eae458e261ee8fdd93a5101a0a00278d27335d7bfa2d45bee81310c4"
+          "sha256": "bbaa9dabba685bf5677ef6dbb5be6340779d8f92cfac028c162d9d8862d46c71"
+        },
+        {
+          "path": "camera.js",
+          "sha256": "f6f995fe7ff21292fce8516da98261662bfa4cee5e1735529d0decab4241609f"
+        },
+        {
+          "path": "droplets.js",
+          "sha256": "4421f106fc1557dd69d6f781955f7c4efdbaaf0e256ed5421d43843d364a8531"
         },
         {
           "path": "filaments.js",
-          "sha256": "77e5589a44bf7b4124980038920f9b7cc77cf1166ce6ff130ae40015baf75b7b"
+          "sha256": "ade214c5116f1dfbc61e2d5c5e967662b43335a5c64a23165c583463662e53b7"
         },
         {
           "path": "flow.js",
-          "sha256": "7a5189e95d903e4ff6659d53ef0b2a03cff9d6e21eed10107f45b7d783f4e6ae"
+          "sha256": "a8ebd1870aa250738aa3cbbdea1f7bd42b14aaa012d6354e8985ed2b88f10993"
         },
         {
           "path": "fluid.js",
-          "sha256": "f75269e8b1dde130090f309fdde76905bf00bea0a832a91edab49d5b573dd898"
+          "sha256": "ebbfa1266128dec17e721c18e7ee42a50c369d2287b43c1793a5dfc87cc0f2d1"
         },
         {
           "path": "index.html",
-          "sha256": "a111b63902b57be584eb40e6178e12e56415008c5bdf8ad9119e31c9279c3717"
+          "sha256": "9547e4e214f925b4cc8f73e1f30c16a0d561cdba10da0158c19f2e4771131119"
+        },
+        {
+          "path": "modes.js",
+          "sha256": "89ba3ad8ffffbc2ab34590ed1a4226b8590dd49b1d109092b74698b45bda6c95"
         },
         {
           "path": "pigments.js",
-          "sha256": "dfc33febe2f49ebb61378ea4cabd8283be887edb9c9bbfe066f60831fda62d91"
+          "sha256": "30bf3f47cbc086f5cd965f0afb8e11f3864d0f05792ff59594a3d3dbd006fb1c"
+        },
+        {
+          "path": "portrait-vision.js",
+          "sha256": "5b22ec1152d210884052053d624db3f0d354a0f931f552534cf8e32392aa7af6"
+        },
+        {
+          "path": "portrait-worker.js",
+          "sha256": "32afad1a9edfacc11297aadd3e37ed2865b4cc80aee1e4f6bcb8abdf6c6620cf"
         },
         {
           "path": "style.css",
-          "sha256": "7a12c858653311e64408af73badc0440b8c345fba62d4c59f7d31b4b210edf9c"
+          "sha256": "605ff7197ec15730dc0e829c141115c9ceafa9e546c21e2c88ac3bfada1766a7"
+        },
+        {
+          "path": "vendor/mediapipe-1.2.0/LICENSE",
+          "sha256": "8707eef0533987efc5b155d64761eeb6e20793f50b9bd1a68dad1cf4719d0ed8"
+        },
+        {
+          "path": "vendor/mediapipe-1.2.0/README.md",
+          "sha256": "358371294b7e0b5e827243fab71f8968cd0d4624dc59400f58040c037b1d2d2b"
+        },
+        {
+          "path": "vendor/mediapipe-1.2.0/face_landmarker.task",
+          "sha256": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff"
+        },
+        {
+          "path": "vendor/mediapipe-1.2.0/selfie_segmenter.tflite",
+          "sha256": "490e9ea734313e0de10fa0cd9e3c6133e36ea4db2b7a49bde9ef019f72796b8e"
+        },
+        {
+          "path": "vendor/mediapipe-1.2.0/vision_bundle.mjs",
+          "sha256": "870da5cfc43bfcf2a8b0f14e8152dae8c7e701722e1191b0e592b94b81b4127a"
+        },
+        {
+          "path": "vendor/mediapipe-1.2.0/wasm/vision_wasm_internal.js",
+          "sha256": "85c1a342be70427987f900969a5f26e17557351111364e6585e97fb03e93e108"
+        },
+        {
+          "path": "vendor/mediapipe-1.2.0/wasm/vision_wasm_internal.wasm",
+          "sha256": "bcc13df22d3d69ec8cbe8e280989356d844ae00f4523eb82072d2484f44134dc"
+        },
+        {
+          "path": "vendor/mediapipe-1.2.0/wasm/vision_wasm_nosimd_internal.js",
+          "sha256": "e9b2b799e0f1078f5538b300a57835b823742c37e2646308a03f0f25b39fdcdc"
+        },
+        {
+          "path": "vendor/mediapipe-1.2.0/wasm/vision_wasm_nosimd_internal.wasm",
+          "sha256": "ed5e5e5812490bd90d6a440290845ff9e4c516f696847a28a0c0e0573470d469"
         },
         {
           "path": "vendor/p5-LICENSE.txt",
@@ -897,36 +953,112 @@
         {
           "path": "vendor/p5.min.js",
           "sha256": "bb7f8f14b9ce2e2344ff5cd6c06f2e105eb99541ecbfec77139e2886d9c0b9ba"
+        },
+        {
+          "path": "volume/growth.js",
+          "sha256": "76e444864aeda85f3904247cdf07f71027270fc1214470ba5027ae7ff7f2aaf7"
+        },
+        {
+          "path": "volume/index.html",
+          "sha256": "c5b1bca5b5e913e2fd7a92f7f9b499f727c3066175ee37fa9ff6ba6298e864c0"
+        },
+        {
+          "path": "volume/shaders.js",
+          "sha256": "cfa95919e745dba568a4dfe79de43acdd47f390efd7f52e86c1d696804449d9a"
+        },
+        {
+          "path": "volume/view.js",
+          "sha256": "fac3334bd9f1c02483dd2234d206785c903d42b58c6cc0c0583c571339648ccb"
+        },
+        {
+          "path": "volume/volume.js",
+          "sha256": "5e26c1912e0a64207c6e7765bfa30980acbf72f211b09ccc28b2685bf5c62729"
         }
       ],
       "packaged_files": [
         {
           "path": "app.js",
-          "sha256": "7c9bb6f7eae458e261ee8fdd93a5101a0a00278d27335d7bfa2d45bee81310c4"
+          "sha256": "bbaa9dabba685bf5677ef6dbb5be6340779d8f92cfac028c162d9d8862d46c71"
+        },
+        {
+          "path": "camera.js",
+          "sha256": "f6f995fe7ff21292fce8516da98261662bfa4cee5e1735529d0decab4241609f"
+        },
+        {
+          "path": "droplets.js",
+          "sha256": "4421f106fc1557dd69d6f781955f7c4efdbaaf0e256ed5421d43843d364a8531"
         },
         {
           "path": "filaments.js",
-          "sha256": "77e5589a44bf7b4124980038920f9b7cc77cf1166ce6ff130ae40015baf75b7b"
+          "sha256": "ade214c5116f1dfbc61e2d5c5e967662b43335a5c64a23165c583463662e53b7"
         },
         {
           "path": "flow.js",
-          "sha256": "7a5189e95d903e4ff6659d53ef0b2a03cff9d6e21eed10107f45b7d783f4e6ae"
+          "sha256": "a8ebd1870aa250738aa3cbbdea1f7bd42b14aaa012d6354e8985ed2b88f10993"
         },
         {
           "path": "fluid.js",
-          "sha256": "f75269e8b1dde130090f309fdde76905bf00bea0a832a91edab49d5b573dd898"
+          "sha256": "ebbfa1266128dec17e721c18e7ee42a50c369d2287b43c1793a5dfc87cc0f2d1"
         },
         {
           "path": "index.html",
-          "sha256": "a111b63902b57be584eb40e6178e12e56415008c5bdf8ad9119e31c9279c3717"
+          "sha256": "9547e4e214f925b4cc8f73e1f30c16a0d561cdba10da0158c19f2e4771131119"
+        },
+        {
+          "path": "modes.js",
+          "sha256": "89ba3ad8ffffbc2ab34590ed1a4226b8590dd49b1d109092b74698b45bda6c95"
         },
         {
           "path": "pigments.js",
-          "sha256": "dfc33febe2f49ebb61378ea4cabd8283be887edb9c9bbfe066f60831fda62d91"
+          "sha256": "30bf3f47cbc086f5cd965f0afb8e11f3864d0f05792ff59594a3d3dbd006fb1c"
+        },
+        {
+          "path": "portrait-vision.js",
+          "sha256": "5b22ec1152d210884052053d624db3f0d354a0f931f552534cf8e32392aa7af6"
+        },
+        {
+          "path": "portrait-worker.js",
+          "sha256": "32afad1a9edfacc11297aadd3e37ed2865b4cc80aee1e4f6bcb8abdf6c6620cf"
         },
         {
           "path": "style.css",
-          "sha256": "7a12c858653311e64408af73badc0440b8c345fba62d4c59f7d31b4b210edf9c"
+          "sha256": "605ff7197ec15730dc0e829c141115c9ceafa9e546c21e2c88ac3bfada1766a7"
+        },
+        {
+          "path": "vendor/mediapipe-1.2.0/LICENSE",
+          "sha256": "8707eef0533987efc5b155d64761eeb6e20793f50b9bd1a68dad1cf4719d0ed8"
+        },
+        {
+          "path": "vendor/mediapipe-1.2.0/README.md",
+          "sha256": "358371294b7e0b5e827243fab71f8968cd0d4624dc59400f58040c037b1d2d2b"
+        },
+        {
+          "path": "vendor/mediapipe-1.2.0/face_landmarker.task",
+          "sha256": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff"
+        },
+        {
+          "path": "vendor/mediapipe-1.2.0/selfie_segmenter.tflite",
+          "sha256": "490e9ea734313e0de10fa0cd9e3c6133e36ea4db2b7a49bde9ef019f72796b8e"
+        },
+        {
+          "path": "vendor/mediapipe-1.2.0/vision_bundle.mjs",
+          "sha256": "870da5cfc43bfcf2a8b0f14e8152dae8c7e701722e1191b0e592b94b81b4127a"
+        },
+        {
+          "path": "vendor/mediapipe-1.2.0/wasm/vision_wasm_internal.js",
+          "sha256": "85c1a342be70427987f900969a5f26e17557351111364e6585e97fb03e93e108"
+        },
+        {
+          "path": "vendor/mediapipe-1.2.0/wasm/vision_wasm_internal.wasm",
+          "sha256": "bcc13df22d3d69ec8cbe8e280989356d844ae00f4523eb82072d2484f44134dc"
+        },
+        {
+          "path": "vendor/mediapipe-1.2.0/wasm/vision_wasm_nosimd_internal.js",
+          "sha256": "e9b2b799e0f1078f5538b300a57835b823742c37e2646308a03f0f25b39fdcdc"
+        },
+        {
+          "path": "vendor/mediapipe-1.2.0/wasm/vision_wasm_nosimd_internal.wasm",
+          "sha256": "ed5e5e5812490bd90d6a440290845ff9e4c516f696847a28a0c0e0573470d469"
         },
         {
           "path": "vendor/p5-LICENSE.txt",
@@ -935,9 +1067,30 @@
         {
           "path": "vendor/p5.min.js",
           "sha256": "bb7f8f14b9ce2e2344ff5cd6c06f2e105eb99541ecbfec77139e2886d9c0b9ba"
+        },
+        {
+          "path": "volume/growth.js",
+          "sha256": "76e444864aeda85f3904247cdf07f71027270fc1214470ba5027ae7ff7f2aaf7"
+        },
+        {
+          "path": "volume/index.html",
+          "sha256": "c5b1bca5b5e913e2fd7a92f7f9b499f727c3066175ee37fa9ff6ba6298e864c0"
+        },
+        {
+          "path": "volume/shaders.js",
+          "sha256": "cfa95919e745dba568a4dfe79de43acdd47f390efd7f52e86c1d696804449d9a"
+        },
+        {
+          "path": "volume/view.js",
+          "sha256": "fac3334bd9f1c02483dd2234d206785c903d42b58c6cc0c0583c571339648ccb"
+        },
+        {
+          "path": "volume/volume.js",
+          "sha256": "5e26c1912e0a64207c6e7765bfa30980acbf72f211b09ccc28b2685bf5c62729"
         }
       ],
-      "adaptations": "Exact portable Vellum runtime files. No renderer adaptations."
+      "adaptations": "Exact selected Vellum runtime files, including 2D, 3D, and opt-in portrait support. No renderer adaptations. Unused module-loader variants, source maps, and local-server gzip copies are excluded.",
+      "release_id": "a16a96e09fe67eee1be8ee70d4ddc74b56df7e6b6d798a78fc691f284937c284"
     },
     {
       "slug": "primitives",

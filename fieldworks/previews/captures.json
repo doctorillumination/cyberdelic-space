@@ -45,15 +45,15 @@
       "length": 708051
     },
     {
-      "slug": "vellum",
-      "capture": "actual browser canvas, 30 fps, no audio",
-      "raw_sha256": "d701ae79c9979c8e1769829de31e8b3a980dbc6539072f1e7b3b683950fd8bbe",
-      "raw_duration": 7.922208,
+      "kind": "actual browser canvas, silent",
+      "raw_sha256": "d9468695610c08d17087d490f12d0747559d34c9cb6458145e4ea4e6702657c0",
+      "raw_duration": 8.034806,
       "loop_method": "one-second end-to-start crossfade",
-      "source_snapshot_sha256": "b9f62ddc09bd23605e4939b73c07cb7978a88d3166b57c1de58efb9325d989b5",
+      "source_snapshot_sha256": "170a5b0040e54a5ab759fa418591c3a8ec99b06f99f2f6e35bebb77a4d61a4d3",
+      "slug": "vellum",
       "path": "vellum.mp4",
-      "sha256": "8ba42ec38b8b18dc03a183e633d18bc3b67a95bd642e3b2b97938817b6e21b88",
-      "length": 1752330
+      "sha256": "d8fa3c14fb57bd6d9dfb728e5fd4a41866b44b2d44c9c8ca0aefce37a4073614",
+      "length": 1755176
     },
     {
       "slug": "primitives",
@@ -126,6 +126,18 @@
       "sha256": "33863cb7a7d435fb7425f3e79ce10baa0e329a35d264ea7231b377b3d45c5d36",
       "length": 464448,
       "release_id": "0d850b5ac6b722d97acacba63280b6b17af922205d24d767e57ac07f1e704c8d"
+    },
+    {
+      "slug": "vellum",
+      "capture": "actual browser canvas, 30 fps, no audio",
+      "raw_sha256": "d701ae79c9979c8e1769829de31e8b3a980dbc6539072f1e7b3b683950fd8bbe",
+      "raw_duration": 7.922208,
+      "loop_method": "one-second end-to-start crossfade",
+      "source_snapshot_sha256": "b9f62ddc09bd23605e4939b73c07cb7978a88d3166b57c1de58efb9325d989b5",
+      "path": "archive/vellum-b9f62ddc09bd23605e4939b73c07cb7978a88d3166b57c1de58efb9325d989b5.mp4",
+      "sha256": "8ba42ec38b8b18dc03a183e633d18bc3b67a95bd642e3b2b97938817b6e21b88",
+      "length": 1752330,
+      "release_id": "b9f62ddc09bd23605e4939b73c07cb7978a88d3166b57c1de58efb9325d989b5"
     }
   ]
 }
