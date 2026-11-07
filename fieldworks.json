@@ -1,15 +1,15 @@
 {
   "schema": "cyberdelic.space/fieldworks-v1",
-  "version": "1.5",
-  "date": "2026-10-31",
-  "published_at": "2026-10-31T16:13:44.711644Z",
+  "version": "1.6",
+  "date": "2026-11-07",
+  "published_at": "2026-11-07T17:18:07.023592Z",
   "overview": {
     "title": "Fieldworks",
     "href": "fieldworks/",
     "source": "overview.md",
     "source_path": "fieldworks/readings/overview.md",
-    "source_sha256": "097174fa96f6ec13ba5910ee031c5848720da1467d844c0a017687f1039bc230",
-    "source_length": 393
+    "source_sha256": "ab5b95ce1ba1b56dc7b19425974e1e6ecfe7a7c8559169cb73c243e20f1e5552",
+    "source_length": 416
   },
   "archived_readings": [
     {
@@ -56,6 +56,15 @@
       "source_sha256": "ee7b363be8ed11761e87ed9f8da0096849591ed7595c8c36ae4fb71c3ccdb930",
       "source_length": 361,
       "slug": "overview-six-works"
+    },
+    {
+      "title": "Fieldworks, seven-work edition",
+      "href": "fieldworks/readings/overview-seven-works.md",
+      "source": "overview-seven-works.md",
+      "source_path": "fieldworks/readings/overview-seven-works.md",
+      "source_sha256": "097174fa96f6ec13ba5910ee031c5848720da1467d844c0a017687f1039bc230",
+      "source_length": 393,
+      "slug": "overview-seven-works"
     }
   ],
   "items": [
@@ -340,6 +349,47 @@
         "path": "fieldworks/previews/undra.mp4",
         "sha256": "50b072404f4faf644a6300257621bb27a7cec002787667cf77f37dfdbc18af0e",
         "length": 427222,
+        "kind": "recorded-artwork-loop"
+      }
+    },
+    {
+      "slug": "soft-signal",
+      "title": "Soft Signal",
+      "edition": "silk-image",
+      "project": "soft-signal",
+      "repository": null,
+      "status": "living",
+      "caption": "A picture with weight.",
+      "description": "An early computer dream becomes a sheet of silk. Pull the image into folds, then let it fall back into stillness.",
+      "alt": "A chrome sphere, lavender ribbon, and blue checkerboard folding together as a silk image lifts away from the screen.",
+      "gesture": "Pull anywhere. Let the image follow. Release, and let it settle.",
+      "source": "soft-signal.md",
+      "themes": [
+        "gesture",
+        "matter",
+        "memory",
+        "perception",
+        "time",
+        "play"
+      ],
+      "related_note": "fn-05",
+      "related_title": "The Physics We Choose",
+      "release_id": "fb431ef9692d032f2258bec243741edd3498812717133f66ed26a78c874d4e8a",
+      "runtime_published_at": "2026-11-07T17:18:07.023592Z",
+      "source_path": "fieldworks/readings/soft-signal.md",
+      "source_sha256": "31ad60b822f64575c26b351206d4643892ccb3169a9104268c4660cfd88a4247",
+      "source_length": 762,
+      "href": "fieldworks/soft-signal/",
+      "poster": {
+        "path": "fieldworks/images/soft-signal.jpg",
+        "sha256": "0b71aa4d73c466ecec737898f4fca5aaa50f675e00effca0c6c9556b8c42aee8",
+        "length": 131788,
+        "kind": "actual-browser-capture"
+      },
+      "preview": {
+        "path": "fieldworks/previews/soft-signal.mp4",
+        "sha256": "73dce8e13c245e485c36aa7876311f180d63f25185effae3f6587e310a33fc26",
+        "length": 567702,
         "kind": "recorded-artwork-loop"
       }
     }

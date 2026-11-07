@@ -76,6 +76,17 @@
       "path": "everything-is-thinking.mp4",
       "sha256": "6741faf6845d1a7423e5cfc2a6414d718e565f396fbd2f7ae31ff3e7e741bf4d",
       "length": 2520516
+    },
+    {
+      "slug": "soft-signal",
+      "capture": "actual browser canvas, up to 30 fps, no audio",
+      "raw_sha256": "64a30e03c0e92f4a90972ce48c2cd76c6c0e02f502f49696cde38e9804ac3ccd",
+      "raw_duration": 9.771861,
+      "loop_method": "one-second end-to-start crossfade",
+      "source_snapshot_sha256": "82486129df261f5f5b62e4f818c414c47985ff09dc802cfe248d2394ba75826a",
+      "path": "soft-signal.mp4",
+      "sha256": "73dce8e13c245e485c36aa7876311f180d63f25185effae3f6587e310a33fc26",
+      "length": 567702
     }
   ],
   "archived_items": [

@@ -1,8 +1,8 @@
 {
   "schema": "https://cyberdelic.space/schemas/living-catalog-v1.json",
   "version": "0.17",
-  "updated_at": "2026-10-31T16:13:44.711644Z",
-  "count": 42,
+  "updated_at": "2026-11-07T17:18:07.023592Z",
+  "count": 43,
   "curation": {
     "office": "OFFICE-LIBRARIAN",
     "office_version": "0.1",
@@ -1945,6 +1945,48 @@
       "review_state": "model-proposed",
       "introduced_by": "human-authorized-fieldworks-publication",
       "last_tended_at": "2026-10-31T16:13:44.711644Z",
+      "uncertainty": "Thematic placements remain interpretive. This living artwork is not an inscription."
+    },
+    {
+      "id": "catalog:fieldworks:soft-signal",
+      "record_kind": "artifact",
+      "title": "Soft Signal",
+      "href": "fieldworks/soft-signal/",
+      "summary": "An early computer dream becomes a sheet of silk. Pull the image into folds, then let it fall back into stillness.",
+      "subjects": [
+        "gesture",
+        "matter",
+        "memory",
+        "perception",
+        "time",
+        "play",
+        "generative art",
+        "interactive artwork",
+        "Fieldworks"
+      ],
+      "search_terms": [
+        "Soft Signal",
+        "silk",
+        "cloth",
+        "ray tracing",
+        "1990s",
+        "A picture with weight.",
+        "Pull anywhere. Let the image follow. Release, and let it settle."
+      ],
+      "questions": [
+        "What changes when an image can be held?"
+      ],
+      "related": [],
+      "evidence": [
+        {
+          "source": "fieldworks/readings/soft-signal.md",
+          "locator": "# Soft Signal"
+        }
+      ],
+      "epistemic_status": "strong",
+      "review_state": "model-proposed",
+      "introduced_by": "human-authorized-fieldworks-publication",
+      "last_tended_at": "2026-11-07T17:18:07.023592Z",
       "uncertainty": "Thematic placements remain interpretive. This living artwork is not an inscription."
     }
   ]

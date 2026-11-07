@@ -1,0 +1,12 @@
+/* A quiet threshold around the full-screen image. */
+.fieldwork-player[data-fieldwork="soft-signal"] { grid-template-rows:minmax(0,1fr); }
+.fieldwork-player[data-fieldwork="soft-signal"] > .fieldwork-bar { position:absolute;left:12px;right:122px;bottom:12px;min-height:44px;padding:0;justify-content:space-between;background:transparent;pointer-events:none;z-index:4;color:#fff;mix-blend-mode:difference;opacity:.2;transition:opacity .5s; }
+.fieldwork-player[data-fieldwork="soft-signal"]:not(.is-artwork-only) > .fieldwork-bar { display:flex; }
+.fieldwork-player[data-fieldwork="soft-signal"] > .fieldwork-bar h1 { display:none; }
+.fieldwork-player[data-fieldwork="soft-signal"] > .fieldwork-bar :is(a,button) { pointer-events:auto; }
+.fieldwork-player[data-fieldwork="soft-signal"] > .fieldwork-bar:is(:hover,:focus-within) { opacity:1; }
+.fieldwork-player[data-fieldwork="soft-signal"] .fieldwork-view-controls { opacity:.2;background:transparent;border-color:transparent;backdrop-filter:none;-webkit-backdrop-filter:none;transition:opacity .5s; }
+.fieldwork-player[data-fieldwork="soft-signal"] .fieldwork-view-controls:is(:hover,:focus-within) { opacity:1; }
+@media(prefers-reduced-motion:reduce) {
+ .fieldwork-player[data-fieldwork="soft-signal"] :is(.fieldwork-bar,.fieldwork-view-controls) { transition:none; }
+}
