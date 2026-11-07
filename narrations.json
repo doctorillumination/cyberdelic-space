@@ -18681,19 +18681,19 @@
         "fieldworks/"
       ],
       "source_path": "fieldworks/readings/overview.md",
-      "source_sha256": "097174fa96f6ec13ba5910ee031c5848720da1467d844c0a017687f1039bc230",
-      "document_sha256": "097174fa96f6ec13ba5910ee031c5848720da1467d844c0a017687f1039bc230",
-      "text_sha256": "6f0ebfff72a60583130c0f2a5f14b7fae25cdb0a15e22f9ac453a95e7b0fc1b3",
-      "reading_path": "audio/readings/6f0ebfff72a60583130c0f2a5f14b7fae25cdb0a15e22f9ac453a95e7b0fc1b3.md",
-      "reading_sha256": "097174fa96f6ec13ba5910ee031c5848720da1467d844c0a017687f1039bc230",
-      "reading_length": 393,
-      "audio_path": "audio/lewis/6f0ebfff72a60583130c0f2a5f14b7fae25cdb0a15e22f9ac453a95e7b0fc1b3.mp3",
+      "source_sha256": "ab5b95ce1ba1b56dc7b19425974e1e6ecfe7a7c8559169cb73c243e20f1e5552",
+      "document_sha256": "ab5b95ce1ba1b56dc7b19425974e1e6ecfe7a7c8559169cb73c243e20f1e5552",
+      "text_sha256": "9f09d51a6d95137827ee8e69326a12e2870d2d34fef5e84c9624dfe6c92daf17",
+      "reading_path": "audio/readings/9f09d51a6d95137827ee8e69326a12e2870d2d34fef5e84c9624dfe6c92daf17.md",
+      "reading_sha256": "ab5b95ce1ba1b56dc7b19425974e1e6ecfe7a7c8559169cb73c243e20f1e5552",
+      "reading_length": 416,
+      "audio_path": "audio/lewis/9f09d51a6d95137827ee8e69326a12e2870d2d34fef5e84c9624dfe6c92daf17.mp3",
       "voice": "bm_lewis",
       "voice_name": "Lewis",
       "speed": 1.0,
-      "audio_sha256": "7b4cd1b024c3867af9b0b9d5a90add3c240ea7a1713c8c7d7646ee60930d4842",
-      "audio_length": 372428,
-      "duration_seconds": 30.94,
+      "audio_sha256": "a1efd5176f473005ce1deae2e542dc54ba3190d3c1bb3d71884d31fc7d2176a3",
+      "audio_length": 385100,
+      "duration_seconds": 32.015,
       "chunks": [
         {
           "text": "Fieldworks",
@@ -18706,13 +18706,13 @@
           "duration": 5.15
         },
         {
-          "text": "A surface that answers. A fold in seeing. An unfinished sky. Impossible matter. A river remembering a drawing. A small vocabulary, an expanding field. A field of competing futures. Seven encounters with the living physics of Cyberdelic OS.",
+          "text": "A surface that answers. A fold in seeing. An unfinished sky. Impossible matter. A river remembering a drawing. A small vocabulary, an expanding field. A field of competing futures. A picture with weight. Eight encounters with the living physics of Cyberdelic OS.",
           "start": 7.16,
-          "duration": 18.4
+          "duration": 19.475
         },
         {
           "text": "These are living, revisable artworks. They are not Bitcoin inscriptions.",
-          "start": 25.74,
+          "start": 26.815,
           "duration": 5.2
         }
       ],
@@ -18720,7 +18720,7 @@
         "all_text_retained": true,
         "mp3_decodes": true,
         "finite_samples": true,
-        "peak": 0.5182052254676819,
+        "peak": 0.5411500930786133,
         "clipped_samples": 0
       }
     },
@@ -19149,6 +19149,68 @@
       }
     },
     {
+      "id": "fieldworks-soft-signal",
+      "title": "Soft Signal",
+      "form": "fieldwork",
+      "release_id": null,
+      "pages": [
+        "fieldworks/soft-signal/"
+      ],
+      "source_path": "fieldworks/readings/soft-signal.md",
+      "source_sha256": "31ad60b822f64575c26b351206d4643892ccb3169a9104268c4660cfd88a4247",
+      "document_sha256": "31ad60b822f64575c26b351206d4643892ccb3169a9104268c4660cfd88a4247",
+      "text_sha256": "3a23035aa7aa13ebf7ff70cfaf29492ae16bc0e386167dda939a707be00fbbe8",
+      "reading_path": "audio/readings/3a23035aa7aa13ebf7ff70cfaf29492ae16bc0e386167dda939a707be00fbbe8.md",
+      "reading_sha256": "31ad60b822f64575c26b351206d4643892ccb3169a9104268c4660cfd88a4247",
+      "reading_length": 762,
+      "audio_path": "audio/lewis/3a23035aa7aa13ebf7ff70cfaf29492ae16bc0e386167dda939a707be00fbbe8.mp3",
+      "voice": "bm_lewis",
+      "voice_name": "Lewis",
+      "speed": 1.0,
+      "audio_sha256": "2ca26467a1bf5c3e0df921a546d31e00f438a285da0594f0b7bd8bcab0838124",
+      "audio_length": 684908,
+      "duration_seconds": 57.0,
+      "chunks": [
+        {
+          "text": "Soft Signal",
+          "start": 0.0,
+          "duration": 1.775
+        },
+        {
+          "text": "A picture with weight.",
+          "start": 1.955,
+          "duration": 2.15
+        },
+        {
+          "text": "An early computer dream fills the screen: a chrome sphere, a checkerboard, a lavender ribbon, a distant moon. Take hold anywhere and pull. The image gathers into silk, carrying its small world through every fold. Release it, and watch the surface find its way back to stillness.",
+          "start": 4.285,
+          "duration": 18.9
+        },
+        {
+          "text": "Soft Signal begins with a newly generated image recalling the ray-traced landscapes of the early 1990s. It is an imagined memory of that visual language. The cloth responds to your gesture in the browser. Each lift, hesitation, and fall happens as you touch it.",
+          "start": 23.365,
+          "duration": 18.675
+        },
+        {
+          "text": "A familiar screen becomes something briefly held. You can disturb the picture without losing it. Its return takes time.",
+          "start": 42.22,
+          "duration": 8.525
+        },
+        {
+          "text": "By Brad Necyk, 2026. This living artwork is not inscribed.",
+          "start": 50.925,
+          "duration": 6.075
+        }
+      ],
+      "checks": {
+        "all_text_retained": true,
+        "mp3_decodes": true,
+        "finite_samples": true,
+        "peak": 0.5571140646934509,
+        "clipped_samples": 0
+      }
+    },
+    {
       "id": "fieldworks-overview-v1",
       "title": "Fieldworks, first edition",
       "form": "fieldwork",
@@ -19417,6 +19479,58 @@
         "peak": 0.5440541505813599,
         "clipped_samples": 0
       }
+    },
+    {
+      "id": "fieldworks-overview-seven-works",
+      "title": "Fieldworks, seven-work edition",
+      "form": "fieldwork",
+      "release_id": null,
+      "pages": [
+        "fieldworks/readings/overview-seven-works.md"
+      ],
+      "source_path": "fieldworks/readings/overview-seven-works.md",
+      "source_sha256": "097174fa96f6ec13ba5910ee031c5848720da1467d844c0a017687f1039bc230",
+      "document_sha256": "097174fa96f6ec13ba5910ee031c5848720da1467d844c0a017687f1039bc230",
+      "text_sha256": "6f0ebfff72a60583130c0f2a5f14b7fae25cdb0a15e22f9ac453a95e7b0fc1b3",
+      "reading_path": "audio/readings/6f0ebfff72a60583130c0f2a5f14b7fae25cdb0a15e22f9ac453a95e7b0fc1b3.md",
+      "reading_sha256": "097174fa96f6ec13ba5910ee031c5848720da1467d844c0a017687f1039bc230",
+      "reading_length": 393,
+      "audio_path": "audio/lewis/6f0ebfff72a60583130c0f2a5f14b7fae25cdb0a15e22f9ac453a95e7b0fc1b3.mp3",
+      "voice": "bm_lewis",
+      "voice_name": "Lewis",
+      "speed": 1.0,
+      "audio_sha256": "7b4cd1b024c3867af9b0b9d5a90add3c240ea7a1713c8c7d7646ee60930d4842",
+      "audio_length": 372428,
+      "duration_seconds": 30.94,
+      "chunks": [
+        {
+          "text": "Fieldworks",
+          "start": 0.0,
+          "duration": 1.65
+        },
+        {
+          "text": "Generative artworks and interactive environments by Brad Necyk.",
+          "start": 1.83,
+          "duration": 5.15
+        },
+        {
+          "text": "A surface that answers. A fold in seeing. An unfinished sky. Impossible matter. A river remembering a drawing. A small vocabulary, an expanding field. A field of competing futures. Seven encounters with the living physics of Cyberdelic OS.",
+          "start": 7.16,
+          "duration": 18.4
+        },
+        {
+          "text": "These are living, revisable artworks. They are not Bitcoin inscriptions.",
+          "start": 25.74,
+          "duration": 5.2
+        }
+      ],
+      "checks": {
+        "all_text_retained": true,
+        "mp3_decodes": true,
+        "finite_samples": true,
+        "peak": 0.5182052254676819,
+        "clipped_samples": 0
+      }
     }
   ],
   "playlists": [
@@ -19564,6 +19678,11 @@
       "path": "audio-bundles/lewis-22.zip",
       "length": 12276302,
       "sha256": "23d9f8dbd3b34352bc1b61d110051f4128cc5552bfb74a346fc34fd5cd262208"
+    },
+    {
+      "path": "audio-bundles/lewis-23.zip",
+      "sha256": "e076b6aca59320f6032320ea049016cef1008556abf05b660d86d6680271c2d0",
+      "length": 1070502
     }
   ]
 }

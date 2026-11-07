@@ -1472,6 +1472,29 @@
       ],
       "register": "field-meditation",
       "rationale": "A Halloween walk develops Common Frequency as a spatial archive distinct from Everything Is Thinking. Architectural montage, simultaneous images, optional voice contributions, and rooms without tasks give the Kernel's commitments to situated attention, withdrawal, attribution, and disagreement possible spatial forms. These arrangements remain proposals rather than completed software."
+    },
+    {
+      "id": "fieldwork-soft-signal",
+      "release_id": "FW-SOFT-SIGNAL",
+      "label": "FIELDWORK · LIVING",
+      "title": "Soft Signal",
+      "href": "fieldworks/soft-signal/",
+      "author": "Brad Necyk",
+      "date": "2026-11-07",
+      "publication_state": "living",
+      "form": "generative-art",
+      "world": "cyberdelic-os",
+      "register": "play",
+      "themes": [
+        "gesture",
+        "matter",
+        "memory",
+        "perception",
+        "time",
+        "play"
+      ],
+      "excerpt": "An early computer dream becomes a sheet of silk. Pull the image into folds, then let it fall back into stillness.",
+      "rationale": "An interactive Fieldwork, with interpretive thematic placements distinct from inscription evidence."
     }
   ]
 }

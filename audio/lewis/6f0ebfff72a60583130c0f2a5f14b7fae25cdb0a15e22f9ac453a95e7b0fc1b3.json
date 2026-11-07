@@ -1,12 +1,12 @@
 {
-  "id": "fieldworks-overview",
-  "title": "Fieldworks",
+  "id": "fieldworks-overview-seven-works",
+  "title": "Fieldworks, seven-work edition",
   "form": "fieldwork",
   "release_id": null,
   "pages": [
-    "fieldworks/"
+    "fieldworks/readings/overview-seven-works.md"
   ],
-  "source_path": "fieldworks/readings/overview.md",
+  "source_path": "fieldworks/readings/overview-seven-works.md",
   "source_sha256": "097174fa96f6ec13ba5910ee031c5848720da1467d844c0a017687f1039bc230",
   "document_sha256": "097174fa96f6ec13ba5910ee031c5848720da1467d844c0a017687f1039bc230",
   "text_sha256": "6f0ebfff72a60583130c0f2a5f14b7fae25cdb0a15e22f9ac453a95e7b0fc1b3",

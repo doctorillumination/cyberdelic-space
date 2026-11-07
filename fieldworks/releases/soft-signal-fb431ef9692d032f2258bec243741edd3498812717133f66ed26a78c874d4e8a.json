@@ -1,0 +1,137 @@
+{
+  "schema": "cyberdelic.space/fieldwork-release-v1",
+  "slug": "soft-signal",
+  "edition": "silk-image",
+  "published_at": "2026-11-07T17:18:07.023592Z",
+  "source_record": {
+    "slug": "soft-signal",
+    "project": "soft-signal",
+    "repository": null,
+    "revision": "e02ad76cd7cc25271c7eb0ee346e016bb6af70b4",
+    "edition": "silk-image",
+    "source_version": "1.0.0",
+    "source_subdirectory": ".",
+    "source_files": [
+      {
+        "path": "src/cloth-driver.js",
+        "sha256": "b7b923fa28d0d0d003f38dff13f653e80870c8ac88130de2a0e7676948cd7812"
+      },
+      {
+        "path": "src/cloth.js",
+        "sha256": "ccef0dc5effc88def66fbd2f02364ef8f2a9b9afd873fbe767dea441feb0fd30"
+      },
+      {
+        "path": "src/contact.js",
+        "sha256": "16a959eb74528c6c942c57e9eee85643c2615f075051603a9eb46b0ba1291820"
+      },
+      {
+        "path": "src/feature-set.js",
+        "sha256": "900a56957f638c17030ce0a4b8c81bf7393e45bf384ecbf300a0b1b244e054cf"
+      },
+      {
+        "path": "src/main.js",
+        "sha256": "a85991c1472e8777e9accd70033b1f46d95cb38dc2c135574d425de566c03fb2"
+      },
+      {
+        "path": "src/page.html",
+        "sha256": "d5af4de010f982a276dae6bcb746964b88d1a9b0569937e4096badcca90dc091"
+      },
+      {
+        "path": "src/physics-worker.js",
+        "sha256": "e8bb793f7b3cb77d79e05d02747bd96c5568d37f579fda6a22b7574b8da953e9"
+      },
+      {
+        "path": "src/vendor/THREE-LICENSE.txt",
+        "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+      },
+      {
+        "path": "src/vendor/three.core.js",
+        "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+      },
+      {
+        "path": "src/vendor/three.module.js",
+        "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+      },
+      {
+        "path": "assets/generation-prompt.txt",
+        "sha256": "d38e6a46e3dc00b4fde180629435e320b64758ed769a28445b4ce95f1f25e9ee"
+      },
+      {
+        "path": "assets/provenance.json",
+        "sha256": "72f11b66d694232af3f2df1946b4490827398cc9915304f2e69ec62969824fb2"
+      },
+      {
+        "path": "assets/raytraced-dream-1993.jpg",
+        "sha256": "5e35220544cdfea56a3e954874356198073e92c34d4a8587e2aab24caf562dbf"
+      },
+      {
+        "path": "assets/raytraced-dream-1993.png",
+        "sha256": "0d8aa994e938b74b7496f8dcf57a957b9532e0ccdd986a84f3e8d716617b9394"
+      },
+      {
+        "path": "tools/build.mjs",
+        "sha256": "6a97d2cc4c4953a7309c0287da8ffb81ab8ac690f3eb3c707d1d469199a1c9a7"
+      },
+      {
+        "path": "package.json",
+        "sha256": "0e62a2ec727a5d058e0e68b065dd9bff3f6130e2da4c29a7a148a723508a0065"
+      },
+      {
+        "path": "package-lock.json",
+        "sha256": "76b158bdbc74811bbffe704cf6a7d6a5cfa30bde0449b7ff3db819b4f67711d8"
+      },
+      {
+        "path": "dist/index.html",
+        "sha256": "c7935717ae4a904922649b5982406c1c1e329f671a66502d678730657baec483"
+      }
+    ],
+    "packaged_files": [
+      {
+        "path": "index.html",
+        "sha256": "c7935717ae4a904922649b5982406c1c1e329f671a66502d678730657baec483"
+      },
+      {
+        "path": "THREE-LICENSE.txt",
+        "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+      }
+    ],
+    "adaptations": "Exact standalone publication edition. The selected 0.2.1 custom cloth solver is unchanged. A fading invitation and information dialog complete the presentation. Three.js licence included."
+  },
+  "files": [
+    {
+      "path": "runtime/index.html",
+      "sha256": "c7935717ae4a904922649b5982406c1c1e329f671a66502d678730657baec483",
+      "length": 1698835
+    },
+    {
+      "path": "runtime/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "length": 1081
+    },
+    {
+      "path": "poster.jpg",
+      "sha256": "0b71aa4d73c466ecec737898f4fca5aaa50f675e00effca0c6c9556b8c42aee8",
+      "length": 131788
+    },
+    {
+      "path": "preview.mp4",
+      "sha256": "73dce8e13c245e485c36aa7876311f180d63f25185effae3f6587e310a33fc26",
+      "length": 567702
+    }
+  ],
+  "release_id": "fb431ef9692d032f2258bec243741edd3498812717133f66ed26a78c874d4e8a",
+  "capture": {
+    "kind": "actual browser canvas, silent",
+    "raw_sha256": "64a30e03c0e92f4a90972ce48c2cd76c6c0e02f502f49696cde38e9804ac3ccd",
+    "source_snapshot_sha256": "82486129df261f5f5b62e4f818c414c47985ff09dc802cfe248d2394ba75826a",
+    "loop_method": "one-second end-to-start crossfade",
+    "camera_recorded": false,
+    "encoded_video": {
+      "codec": "h264",
+      "width": 960,
+      "height": 720,
+      "streams": 1,
+      "duration": 10.0
+    }
+  }
+}

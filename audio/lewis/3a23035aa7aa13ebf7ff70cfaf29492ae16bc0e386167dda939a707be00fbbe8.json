@@ -1,0 +1,68 @@
+{
+  "id": "fieldworks-soft-signal",
+  "title": "Soft Signal",
+  "form": "fieldwork",
+  "release_id": null,
+  "pages": [
+    "fieldworks/soft-signal/"
+  ],
+  "source_path": "fieldworks/readings/soft-signal.md",
+  "source_sha256": "31ad60b822f64575c26b351206d4643892ccb3169a9104268c4660cfd88a4247",
+  "document_sha256": "31ad60b822f64575c26b351206d4643892ccb3169a9104268c4660cfd88a4247",
+  "text_sha256": "3a23035aa7aa13ebf7ff70cfaf29492ae16bc0e386167dda939a707be00fbbe8",
+  "reading_path": "audio/readings/3a23035aa7aa13ebf7ff70cfaf29492ae16bc0e386167dda939a707be00fbbe8.md",
+  "reading_sha256": "31ad60b822f64575c26b351206d4643892ccb3169a9104268c4660cfd88a4247",
+  "reading_length": 762,
+  "audio_path": "audio/lewis/3a23035aa7aa13ebf7ff70cfaf29492ae16bc0e386167dda939a707be00fbbe8.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "2ca26467a1bf5c3e0df921a546d31e00f438a285da0594f0b7bd8bcab0838124",
+  "audio_length": 684908,
+  "duration_seconds": 57.0,
+  "chunks": [
+    {
+      "text": "Soft Signal",
+      "start": 0.0,
+      "duration": 1.775
+    },
+    {
+      "text": "A picture with weight.",
+      "start": 1.955,
+      "duration": 2.15
+    },
+    {
+      "text": "An early computer dream fills the screen: a chrome sphere, a checkerboard, a lavender ribbon, a distant moon. Take hold anywhere and pull. The image gathers into silk, carrying its small world through every fold. Release it, and watch the surface find its way back to stillness.",
+      "start": 4.285,
+      "duration": 18.9
+    },
+    {
+      "text": "Soft Signal begins with a newly generated image recalling the ray-traced landscapes of the early 1990s. It is an imagined memory of that visual language. The cloth responds to your gesture in the browser. Each lift, hesitation, and fall happens as you touch it.",
+      "start": 23.365,
+      "duration": 18.675
+    },
+    {
+      "text": "A familiar screen becomes something briefly held. You can disturb the picture without losing it. Its return takes time.",
+      "start": 42.22,
+      "duration": 8.525
+    },
+    {
+      "text": "By Brad Necyk, 2026. This living artwork is not inscribed.",
+      "start": 50.925,
+      "duration": 6.075
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.5571140646934509,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}
