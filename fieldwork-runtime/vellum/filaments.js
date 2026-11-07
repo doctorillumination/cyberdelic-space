@@ -61,14 +61,19 @@
       this.updateUniforms=locations(this.updateProgram,['velocity','water','time']);
       this.renderUniforms=locations(this.program,['time','concentration','reference','inks[0]','palette']);
       gl.useProgram(this.updateProgram);gl.uniform1i(this.updateUniforms.velocity,1);
-      gl.useProgram(this.program);gl.uniform1i(this.renderUniforms.palette,0);gl.uniform3fv(this.renderUniforms['inks[0]'],new Float32Array([.003,.24,.70,.91,.40,.008,.016,.28,.15]));
+      gl.useProgram(this.program);gl.uniform1i(this.renderUniforms.palette,0);
       this.material=gl.createBuffer();this.rest=gl.createBuffer();this.positions=[gl.createBuffer(),gl.createBuffer()];this.feedback=gl.createTransformFeedback();this.vaos={update:new Map(),render:new Map()};
       this.palette=gl.createTexture();gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_2D,this.palette);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);
+      gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,1,1,0,gl.RGBA,gl.UNSIGNED_BYTE,new Uint8Array([0,0,0,255]));
       this.build(model);
     }
     static geometry(model){
       const rand=InkFlow.randomSource(model.seed+8001);
-      const plan=model.paths.map(path=>({path,fibres:path.ring?(path.length>500?192:96):path.major?160:path.wild?16:80,steps:Math.max(20,Math.ceil(path.length/1.25))}));
+      const plan=model.paths.map(path=>({path,fibres:path.fibres??(path.ring?(path.length>500?192:96):path.major?160:path.wild?16:80),steps:Math.max(20,Math.ceil(path.length/1.25))}));
+      const budget=1350000,demand=plan.reduce((sum,p)=>sum+p.fibres*p.steps,0);
+      if(demand>budget)for(const p of plan)p.fibres=Math.max(4,Math.floor(p.fibres*budget/demand));
+      const bounded=plan.reduce((sum,p)=>sum+p.fibres*p.steps,0);
+      if(bounded>budget)for(const p of plan)p.steps=Math.max(2,Math.floor(p.steps*budget/bounded));
       const count=plan.reduce((sum,p)=>sum+p.fibres*p.steps,0),rest=new Float32Array(count*4),material=new Float32Array(count*4);
       let index=0;
       for(const {path,fibres,steps} of plan){
@@ -81,13 +86,15 @@
             for(let end=0;end<2;end++){
               const q=samples[k+end],t=q.t;
               let width=path.width*(.16+.84*Math.pow(.5+.5*Math.sin(t*17+path.phase),2));
-              if(!path.closed)width*=Math.pow(Math.max(.0001,Math.sin(Math.PI*t)),.35);
+              width*=(q.spread??1)*(1-(q.definition??0)*.18);
+              if(!path.closed&&!path.joined)width*=Math.pow(Math.max(.0001,Math.sin(Math.PI*t)),.35);
               const fold=(InkFlow.noise(q.x*.05,q.y*.05+lane*2,model.seed+17)-.5)*path.width*.3;
               const off=lane*width+fold+Math.sin(t*97+phase)*.4;
               rest[index*4+end*2]=q.x+q.nx*off;rest[index*4+end*2+1]=q.y+q.ny*off;
             }
             const t=(k+.5)/steps,pool=path.ring&&path.length<500;
-            const density=pool?5:1+1.6*Math.exp(-Math.pow((t-(.18+.62*(path.phase/6.2831853)))/.055,2));
+            let density=pool?5:1+1.6*Math.exp(-Math.pow((t-(.18+.62*(path.phase/6.2831853)))/.055,2));
+            if(path.profile)density=Math.max(.035,Math.min(3.8,density*(samples[k].density+samples[k+1].density)*.5));
             material.set([t,phase,colour,density],index*4);index++;
           }
         }
@@ -96,7 +103,7 @@
     }
     build(model){
       const gl=this.gl,{count,rest,material}=InkFilaments.geometry(model);
-      this.count=count;
+      this.count=count;this.lastTick=-1;
       gl.bindBuffer(gl.ARRAY_BUFFER,this.material);gl.bufferData(gl.ARRAY_BUFFER,material,gl.STATIC_DRAW);
       gl.bindBuffer(gl.ARRAY_BUFFER,this.rest);gl.bufferData(gl.ARRAY_BUFFER,rest,gl.STATIC_DRAW);
       for(const p of this.positions){gl.bindBuffer(gl.ARRAY_BUFFER,p);gl.bufferData(gl.ARRAY_BUFFER,rest,gl.DYNAMIC_COPY);}
@@ -110,6 +117,8 @@
     }
     step(water,time){
       const gl=this.gl,p=this.updateProgram,u=this.updateUniforms;gl.useProgram(p);gl.bindVertexArray(this.vaos.update.get(this.positions[0]));
+      // The velocity texture can still be attached after the fluid warm-up.
+      gl.bindFramebuffer(gl.FRAMEBUFFER,null);
       gl.activeTexture(gl.TEXTURE1);gl.bindTexture(gl.TEXTURE_2D,this.fluid.velocity[0].texture);gl.uniform1f(u.water,water);gl.uniform1f(u.time,time);
       gl.bindTransformFeedback(gl.TRANSFORM_FEEDBACK,this.feedback);gl.bindBufferBase(gl.TRANSFORM_FEEDBACK_BUFFER,0,this.positions[1]);
       gl.enable(gl.RASTERIZER_DISCARD);gl.beginTransformFeedback(gl.POINTS);gl.drawArrays(gl.POINTS,0,this.count);gl.endTransformFeedback();gl.disable(gl.RASTERIZER_DISCARD);
@@ -125,7 +134,12 @@
       gl.uniform1f(u.time,tick/30);
       if(this.lastConcentration!==params.pigment){gl.uniform1f(u.concentration,params.pigment);this.lastConcentration=params.pigment;}
       gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_2D,this.palette);
-      if(this.lastPalette!==paletteIndex){gl.uniform1f(u.reference,paletteIndex===0?1:0);const data=new Uint8Array(256*4);for(let i=0;i<256;i++)data.set([...InkPigments.sample(paletteIndex,i/256),255],i*4);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,256,1,0,gl.RGBA,gl.UNSIGNED_BYTE,data);this.lastPalette=paletteIndex;}
+      if(this.lastPalette!==paletteIndex){
+        const triad=InkPigments.isTriad(paletteIndex);gl.uniform1f(u.reference,triad?1:0);
+        if(triad)gl.uniform3fv(u['inks[0]'],InkPigments.filamentInks(paletteIndex));
+        else {const data=new Uint8Array(256*4);for(let i=0;i<256;i++)data.set([...InkPigments.sample(paletteIndex,i/256),255],i*4);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,256,1,0,gl.RGBA,gl.UNSIGNED_BYTE,data);}
+        this.lastPalette=paletteIndex;
+      }
       gl.drawArraysInstanced(gl.LINES,0,2,this.count);gl.bindVertexArray(null);
     }
     destroy(){const gl=this.gl;for(const b of [this.material,this.rest,...this.positions])gl.deleteBuffer(b);for(const map of Object.values(this.vaos))for(const vao of map.values())gl.deleteVertexArray(vao);gl.deleteTransformFeedback(this.feedback);gl.deleteTexture(this.palette);gl.deleteProgram(this.program);gl.deleteProgram(this.updateProgram);}

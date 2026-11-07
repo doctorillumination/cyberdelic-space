@@ -81,3 +81,9 @@ main.fieldworks-main { max-width: none; padding: 0; }
 @media (prefers-reduced-motion: reduce) {
   .fieldworks-image img, .fieldworks-image video, .fieldworks-enter span { transition: none; }
 }
+
+/* Vellum's viewing controls join its bottom dock. */
+.fieldwork-player[data-fieldwork="vellum"]{grid-template-rows:1fr}
+.fieldwork-player[data-fieldwork="vellum"]>.fieldwork-bar{position:absolute;left:12px;right:112px;bottom:10px;min-height:40px;padding:0;display:flex;justify-content:space-between;background:transparent;pointer-events:none;z-index:4}
+.fieldwork-player[data-fieldwork="vellum"]>.fieldwork-bar h1{display:none}
+.fieldwork-player[data-fieldwork="vellum"]>.fieldwork-bar :is(a,button){pointer-events:auto}

@@ -48,3 +48,7 @@ html[data-fieldwork-artwork-only][data-fieldwork-slot="everything-is-thinking"] 
  html[data-fieldwork-slot="everything-is-thinking"] .dock { bottom:76px; }
  html[data-fieldwork-slot="everything-is-thinking"] .sidebar { bottom:182px; }
 }
+
+/* Vellum keeps its dimension and material controls above the host's bottom row. */
+html[data-fieldwork-slot="vellum"] .bottom-bar { bottom:64px!important; }
+html[data-fieldwork-artwork-only][data-fieldwork-slot="vellum"] :is(.ui,.sidebar,#cursor) { display:none!important; }

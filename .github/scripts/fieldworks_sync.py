@@ -41,15 +41,15 @@ def validate(bundle):
     expected = {'manifest.json'}
     for f in data['files']:
         p = safe(f['path'])
-        vendor = p.parts[:3] == ('runtime', 'vendor', 'mediapipe')
-        vendor_type = vendor and (p.suffix in {'.mjs', '.wasm', '.task', '.json', '.md'} or p.name == 'LICENSE')
+        vendor = p.parts[:2] == ('runtime', 'vendor') and len(p.parts)>3 and p.parts[2] in {'mediapipe', 'mediapipe-1.2.0'}
+        vendor_type = vendor and (p.suffix in {'.mjs', '.wasm', '.task', '.tflite', '.json', '.md'} or p.name == 'LICENSE')
         if str(p) not in ('poster.jpg', 'preview.mp4') and (p.parts[0] != 'runtime' or not (p.suffix in SUFFIXES or vendor_type)):
             raise ValueError('Unexpected release asset')
         target = bundle / str(p)
         if target.is_symlink() or not target.resolve().is_relative_to(bundle.resolve()):
             raise ValueError('Linked release asset')
         content = target.read_bytes()
-        limit = 12*1024*1024 if vendor and p.suffix in {'.wasm', '.task'} else 3*1024*1024
+        limit = (16 if p.parts[2]=='mediapipe-1.2.0' else 12)*1024*1024 if vendor and p.suffix in {'.wasm', '.task'} else 3*1024*1024
         if len(content) != f['length'] or sha(content) != f['sha256'] or len(content) > limit:
             raise ValueError('Release asset integrity failed: ' + str(p))
         if p.suffix in {'.js', '.mjs'}:
@@ -106,7 +106,8 @@ def install(site, bundle):
     allowed = {f'fieldwork-runtime/{slug}/{p}' for p in old_files | new_files}
     allowed |= {'fieldworks.json', 'fieldworks/sources.json', 'fieldworks/previews/captures.json',
                 f'fieldworks/images/{slug}.jpg', f'fieldworks/previews/{slug}.mp4',
-                f'fieldworks/releases/{data["release_id"]}.json', 'cyberdelic-space.zip'}
+                f'fieldworks/releases/{data["release_id"]}.json', 'cyberdelic-space.zip',
+                'artwork-bundles.json', 'artwork-bundles/vellum-hand-tracking.zip', 'mirror/index.html'}
     protected = {p: sha(p.read_bytes()) for p in site.rglob('*') if p.is_file()
                  and not {'.git', '__pycache__'}.intersection(p.relative_to(site).parts)
                  and p.relative_to(site).as_posix() not in allowed}

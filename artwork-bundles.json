@@ -46,6 +46,29 @@
           "sha256": "924274fcd5ac8985f6570a8573e7971b7bd2d580ba1b8f3beb0ba8f95db6347c"
         }
       ]
+    },
+    {
+      "artwork": "vellum",
+      "path": "artwork-bundles/vellum-hand-tracking.zip",
+      "length": 11278685,
+      "sha256": "3914dd195abf011d160b914c1af41617fa8adf502b0d9f6afcecd99073844aa3",
+      "files": [
+        {
+          "path": "fieldwork-runtime/vellum/vendor/mediapipe-1.2.0/face_landmarker.task",
+          "length": 3758596,
+          "sha256": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff"
+        },
+        {
+          "path": "fieldwork-runtime/vellum/vendor/mediapipe-1.2.0/wasm/vision_wasm_internal.wasm",
+          "length": 14466654,
+          "sha256": "bcc13df22d3d69ec8cbe8e280989356d844ae00f4523eb82072d2484f44134dc"
+        },
+        {
+          "path": "fieldwork-runtime/vellum/vendor/mediapipe-1.2.0/wasm/vision_wasm_nosimd_internal.wasm",
+          "length": 12915401,
+          "sha256": "ed5e5e5812490bd90d6a440290845ff9e4c516f696847a28a0c0e0573470d469"
+        }
+      ]
     }
   ]
 }
