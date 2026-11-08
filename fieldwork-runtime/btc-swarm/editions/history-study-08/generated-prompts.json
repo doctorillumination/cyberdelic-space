@@ -1,0 +1,14 @@
+{
+  "mode": "built-in image_gen",
+  "created": "2026-11-08",
+  "prompts": [
+    {
+      "key": "crisis",
+      "prompt": "Use case: stylized-concept. Asset type: a single wide 3:2 editorial image for a sophisticated local web artwork about Bitcoin history. Primary request: an evocative financial crisis of 2008 archival montage, clearly an original editorial illustration rather than a documentary photograph. A monumental dark stone bank facade dissolves into torn cream balance sheets and an empty office moving box, tiny streams of distressed red ticker numerals, scattered mortgage paperwork in the foreground. No identifiable people. Restrained photographic collage with real paper texture, silver gelatin black and white, deep pitch black shadows, subtle tungsten amber, and one precisely controlled red accent. Contemporary museum publication quality, exacting composition, serious and haunting, tangible details, no floating crypto coins, no logos, no sci-fi elements. Typography only small indistinct paper fragments; do not fabricate legible newspaper headlines or historical documents. Strong central subject, dark margins, landscape 3:2, high resolution."
+    },
+    {
+      "key": "pizza",
+      "prompt": "Use case: stylized-concept. Asset type: a single wide 3:2 editorial still life for a sophisticated local web artwork about Bitcoin Pizza Day. Primary request: an original photographic editorial illustration of two large freshly baked pizzas in plain open corrugated cardboard delivery boxes, viewed diagonally from almost overhead on a dark kitchen table. Modest ordinary 2010 home atmosphere suggested only by an old beige keyboard at the edge. One pizza with pepperoni and vegetables, the other cheese. Warm imperfect domestic light, rich tomato red and golden crust against deep pitch black, subtle 35mm film grain, restrained and tactile, wonderfully appetizing, realistic food with precise physical details. Two pizzas must be visibly distinct and fully countable. This is an illustration, not a reconstruction claiming to depict the historical purchase. No people, no brand names, no Bitcoin coins, no text, no labels, no charts, no futuristic elements. Landscape 3:2 with a strong graphic composition and dark breathing room."
+    }
+  ]
+}

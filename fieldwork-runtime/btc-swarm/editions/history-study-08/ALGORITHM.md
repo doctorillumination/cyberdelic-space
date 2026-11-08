@@ -1,0 +1,13 @@
+# A Shared Record
+
+An archive is made from traces that keep their dates and uncertainty. This study puts Bitcoin's documents, people, numbers, images, and disputes into the hands of a swarm. The material has a chronological spine, while its assembly remains generative. A financial crisis, a short paper, a block of bytes, an ordinary meal, and a failed exchange become different kinds of visual evidence inside one continuous website.
+
+The seed governs typography, proportions, selected layouts, worker preferences, and social interruptions. It does not invent historical facts or price points. Every chapter carries its text, media identifiers, and source links. Workers copy passages within that chapter, while automatic image transfers preserve the subject of the destination. The distinction between archival photography, new illustration, and data drawing remains attached to the material as it moves.
+
+Before content arrives, an agent clicks and draws its place. Tinted reservations, handles, byte highlights, travelling selections, and incomplete labels make preparation visible. The genesis image gives that process an exact object: serialized bytes are reconstructed and verified, then shown as hexadecimal and ASCII. The headline is both a phrase in history and a specific range of data. Mathematical expressions and historical price traces are drawn from their sources rather than simulated by decorative marks.
+
+A dedicated crew works around the document. It moves windows by their title bars, opens folders, selects files, carries images to previews, and takes text through temporary desktop reservations into the website. Familiar macOS forms give these gestures a legible setting. People can handle the same objects or choose a chapter and inspect its sources. Recently handled windows and active inputs take priority, while the page's workers continue behind them.
+
+Fixed simulation steps, seeded choices, and a shared tempo keep construction and desktop activity in one time. Bounded retention releases old sections, files, and effects as the camera advances. When the archive returns to its beginning, another arrangement emerges from the same evidence. The work can keep changing its composition without treating disputed identity, market interpretation, or a familiar cycle as a settled fact.
+
+The opening uses a separate seeded random stream. One cursor calls a gathering, and the arriving agents find their way toward it. Their leader must reach each launch target before the desktop, Terminal, Finder, TextEdit, and document appear. The final positions pass into the existing worker population. The page then continues with its original tempo and local simulation, on a solid background without a grain overlay.
