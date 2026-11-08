@@ -1,8 +1,8 @@
 {
   "schema": "https://cyberdelic.space/schemas/living-catalog-v1.json",
   "version": "0.17",
-  "updated_at": "2026-11-07T17:18:07.023592Z",
-  "count": 43,
+  "updated_at": "2026-11-08T02:03:37.397495Z",
+  "count": 44,
   "curation": {
     "office": "OFFICE-LIBRARIAN",
     "office_version": "0.1",
@@ -1988,6 +1988,48 @@
       "introduced_by": "human-authorized-fieldworks-publication",
       "last_tended_at": "2026-11-07T17:18:07.023592Z",
       "uncertainty": "Thematic placements remain interpretive. This living artwork is not an inscription."
+    },
+    {
+      "id": "catalog:fieldworks:of-three-musicians",
+      "record_kind": "artifact",
+      "title": "Of Three Musicians",
+      "href": "fieldworks/of-three-musicians/",
+      "summary": "After Picasso, a company of masked musicians plays a generative machine waltz. An eccentric camera slips between their hands and instruments.",
+      "subjects": [
+        "music",
+        "play",
+        "time",
+        "memory",
+        "perception",
+        "simulation",
+        "generative art",
+        "Fieldworks"
+      ],
+      "search_terms": [
+        "Of Three Musicians",
+        "Picasso",
+        "Pierrot",
+        "Harlequin",
+        "computer singing",
+        "CRT",
+        "waltz",
+        "Daisy Bell"
+      ],
+      "questions": [
+        "What changes when a musical event also moves a body?"
+      ],
+      "related": [],
+      "evidence": [
+        {
+          "source": "fieldworks/readings/of-three-musicians.md",
+          "locator": "# Of Three Musicians"
+        }
+      ],
+      "epistemic_status": "strong",
+      "review_state": "model-proposed",
+      "introduced_by": "human-authorized-fieldworks-publication",
+      "last_tended_at": "2026-11-08T02:03:37.397495Z",
+      "uncertainty": "Themes are interpretive. This living artwork is not an inscription."
     }
   ]
 }

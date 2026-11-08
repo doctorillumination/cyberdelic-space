@@ -18681,19 +18681,19 @@
         "fieldworks/"
       ],
       "source_path": "fieldworks/readings/overview.md",
-      "source_sha256": "ab5b95ce1ba1b56dc7b19425974e1e6ecfe7a7c8559169cb73c243e20f1e5552",
-      "document_sha256": "ab5b95ce1ba1b56dc7b19425974e1e6ecfe7a7c8559169cb73c243e20f1e5552",
-      "text_sha256": "9f09d51a6d95137827ee8e69326a12e2870d2d34fef5e84c9624dfe6c92daf17",
-      "reading_path": "audio/readings/9f09d51a6d95137827ee8e69326a12e2870d2d34fef5e84c9624dfe6c92daf17.md",
-      "reading_sha256": "ab5b95ce1ba1b56dc7b19425974e1e6ecfe7a7c8559169cb73c243e20f1e5552",
-      "reading_length": 416,
-      "audio_path": "audio/lewis/9f09d51a6d95137827ee8e69326a12e2870d2d34fef5e84c9624dfe6c92daf17.mp3",
+      "source_sha256": "0034388a1a2b14a4a773aa14fd10df1264f159716d52800e744ddf90662098a7",
+      "document_sha256": "0034388a1a2b14a4a773aa14fd10df1264f159716d52800e744ddf90662098a7",
+      "text_sha256": "f78f96ded8f35f9f1cfba7cef4396754c5f25748612c3d3999d288d1e860d1f8",
+      "reading_path": "audio/readings/f78f96ded8f35f9f1cfba7cef4396754c5f25748612c3d3999d288d1e860d1f8.md",
+      "reading_sha256": "0034388a1a2b14a4a773aa14fd10df1264f159716d52800e744ddf90662098a7",
+      "reading_length": 388,
+      "audio_path": "audio/lewis/f78f96ded8f35f9f1cfba7cef4396754c5f25748612c3d3999d288d1e860d1f8.mp3",
       "voice": "bm_lewis",
       "voice_name": "Lewis",
       "speed": 1.0,
-      "audio_sha256": "a1efd5176f473005ce1deae2e542dc54ba3190d3c1bb3d71884d31fc7d2176a3",
-      "audio_length": 385100,
-      "duration_seconds": 32.015,
+      "audio_sha256": "1daee25ba5fc675d0dd11ec9c6e32e34dd8e040e5cd16a09fe1b85bdfda7785b",
+      "audio_length": 364940,
+      "duration_seconds": 30.315,
       "chunks": [
         {
           "text": "Fieldworks",
@@ -18706,21 +18706,21 @@
           "duration": 5.15
         },
         {
-          "text": "A surface that answers. A fold in seeing. An unfinished sky. Impossible matter. A river remembering a drawing. A small vocabulary, an expanding field. A field of competing futures. A picture with weight. Eight encounters with the living physics of Cyberdelic OS.",
+          "text": "A surface that answers. A fold in seeing. An unfinished sky. Impossible matter. A river remembering a drawing. A small vocabulary, an expanding field. A field of competing futures. A picture with weight. A room that keeps trying to sing.",
           "start": 7.16,
-          "duration": 19.475
+          "duration": 17.5
         },
         {
-          "text": "These are living, revisable artworks. They are not Bitcoin inscriptions.",
-          "start": 26.815,
-          "duration": 5.2
+          "text": "Nine living artworks. Enter, explore, and see what a gesture changes.",
+          "start": 24.84,
+          "duration": 5.475
         }
       ],
       "checks": {
         "all_text_retained": true,
         "mp3_decodes": true,
         "finite_samples": true,
-        "peak": 0.5411500930786133,
+        "peak": 0.5480540990829468,
         "clipped_samples": 0
       }
     },
@@ -19211,6 +19211,68 @@
       }
     },
     {
+      "id": "fieldworks-of-three-musicians",
+      "title": "Of Three Musicians",
+      "form": "fieldwork",
+      "release_id": null,
+      "pages": [
+        "fieldworks/of-three-musicians/"
+      ],
+      "source_path": "fieldworks/readings/of-three-musicians.md",
+      "source_sha256": "a02c6a81bb7694cef70671dfae29a4adfffc715153efa065c464926454e3ea51",
+      "document_sha256": "a02c6a81bb7694cef70671dfae29a4adfffc715153efa065c464926454e3ea51",
+      "text_sha256": "3c01dab177c061bfa45f83a270e12280af197b3e48a63c8e68115a9613841eea",
+      "reading_path": "audio/readings/3c01dab177c061bfa45f83a270e12280af197b3e48a63c8e68115a9613841eea.md",
+      "reading_sha256": "a02c6a81bb7694cef70671dfae29a4adfffc715153efa065c464926454e3ea51",
+      "reading_length": 915,
+      "audio_path": "audio/lewis/3c01dab177c061bfa45f83a270e12280af197b3e48a63c8e68115a9613841eea.mp3",
+      "voice": "bm_lewis",
+      "voice_name": "Lewis",
+      "speed": 1.0,
+      "audio_sha256": "b6fab22ed45e69e5804238067fd925c4dfbda7803baffd7200135c9a35ca79ef",
+      "audio_length": 792332,
+      "duration_seconds": 65.95,
+      "chunks": [
+        {
+          "text": "Of Three Musicians",
+          "start": 0.0,
+          "duration": 2.175
+        },
+        {
+          "text": "A room that keeps trying to sing.",
+          "start": 2.355,
+          "duration": 2.7
+        },
+        {
+          "text": "After Picasso, a Pierrot, a Harlequin, and a bearded musician gather in a little company of paper masks, angular instruments, and impossible profiles. Other players accompany them. A dog wanders below their chairs. The camera slips between bodies, hesitates, and leans too close to a playing hand.",
+          "start": 5.235,
+          "duration": 20.625
+        },
+        {
+          "text": "The room is made in code and seen through a coarse field of red, green, and blue light. Its waltz is generated as it plays: a wavering machine voice, plucked chords, bass notes, dry clicks, and small, detuned bells. The same musical events move the fingers, strings, sticks, and keys.",
+          "start": 26.04,
+          "duration": 19.025
+        },
+        {
+          "text": "Of Three Musicians brings the company of Picasso's painting into the uncertain time of an early computer trying to sing. The players keep their awkward commitments to the score. The dog belongs to another rhythm.",
+          "start": 45.245,
+          "duration": 14.45
+        },
+        {
+          "text": "By Brad Necyk, 2026. This living artwork is not inscribed.",
+          "start": 59.875,
+          "duration": 6.075
+        }
+      ],
+      "checks": {
+        "all_text_retained": true,
+        "mp3_decodes": true,
+        "finite_samples": true,
+        "peak": 0.5640038251876831,
+        "clipped_samples": 0
+      }
+    },
+    {
       "id": "fieldworks-overview-v1",
       "title": "Fieldworks, first edition",
       "form": "fieldwork",
@@ -19531,6 +19593,58 @@
         "peak": 0.5182052254676819,
         "clipped_samples": 0
       }
+    },
+    {
+      "id": "fieldworks-overview-eight-works",
+      "title": "Fieldworks, eight-work edition",
+      "form": "fieldwork",
+      "release_id": null,
+      "pages": [
+        "fieldworks/readings/overview-eight-works.md"
+      ],
+      "source_path": "fieldworks/readings/overview-eight-works.md",
+      "source_sha256": "ab5b95ce1ba1b56dc7b19425974e1e6ecfe7a7c8559169cb73c243e20f1e5552",
+      "document_sha256": "ab5b95ce1ba1b56dc7b19425974e1e6ecfe7a7c8559169cb73c243e20f1e5552",
+      "text_sha256": "9f09d51a6d95137827ee8e69326a12e2870d2d34fef5e84c9624dfe6c92daf17",
+      "reading_path": "audio/readings/9f09d51a6d95137827ee8e69326a12e2870d2d34fef5e84c9624dfe6c92daf17.md",
+      "reading_sha256": "ab5b95ce1ba1b56dc7b19425974e1e6ecfe7a7c8559169cb73c243e20f1e5552",
+      "reading_length": 416,
+      "audio_path": "audio/lewis/9f09d51a6d95137827ee8e69326a12e2870d2d34fef5e84c9624dfe6c92daf17.mp3",
+      "voice": "bm_lewis",
+      "voice_name": "Lewis",
+      "speed": 1.0,
+      "audio_sha256": "a1efd5176f473005ce1deae2e542dc54ba3190d3c1bb3d71884d31fc7d2176a3",
+      "audio_length": 385100,
+      "duration_seconds": 32.015,
+      "chunks": [
+        {
+          "text": "Fieldworks",
+          "start": 0.0,
+          "duration": 1.65
+        },
+        {
+          "text": "Generative artworks and interactive environments by Brad Necyk.",
+          "start": 1.83,
+          "duration": 5.15
+        },
+        {
+          "text": "A surface that answers. A fold in seeing. An unfinished sky. Impossible matter. A river remembering a drawing. A small vocabulary, an expanding field. A field of competing futures. A picture with weight. Eight encounters with the living physics of Cyberdelic OS.",
+          "start": 7.16,
+          "duration": 19.475
+        },
+        {
+          "text": "These are living, revisable artworks. They are not Bitcoin inscriptions.",
+          "start": 26.815,
+          "duration": 5.2
+        }
+      ],
+      "checks": {
+        "all_text_retained": true,
+        "mp3_decodes": true,
+        "finite_samples": true,
+        "peak": 0.5411500930786133,
+        "clipped_samples": 0
+      }
     }
   ],
   "playlists": [
@@ -19683,6 +19797,11 @@
       "path": "audio-bundles/lewis-23.zip",
       "sha256": "e076b6aca59320f6032320ea049016cef1008556abf05b660d86d6680271c2d0",
       "length": 1070502
+    },
+    {
+      "path": "audio-bundles/lewis-24.zip",
+      "sha256": "da527a2def29fd938dffba4046755699ff5d5f796e140f1e6cd64c0e1cfb9241",
+      "length": 1157766
     }
   ]
 }

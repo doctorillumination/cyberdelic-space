@@ -87,6 +87,28 @@
       "path": "soft-signal.mp4",
       "sha256": "73dce8e13c245e485c36aa7876311f180d63f25185effae3f6587e310a33fc26",
       "length": 567702
+    },
+    {
+      "kind": "actual browser canvas, fixed source-time frames, silent",
+      "raw_sha256": "33ae3d282db4bc7f007fb5fd5c187a68e210669b7ffa3f62b4ed3fbbdd1d8288",
+      "source_snapshot_sha256": "497cda1d468ac070b3ac1f03dc2195035b47a4f2dce03dbeec5db5dbfa022b7c",
+      "source_runtime_sha256": "73ee00dd51491504d135d20fcba0031b0fde2c6adc19dd93fe7ce209f0d84f88",
+      "capture_driver_sha256": "ae5e502890fd9d9b670a88457dfd401befb111bcb4cc299ada63a93951f09e31",
+      "source_frames": 240,
+      "source_fps": 24,
+      "loop_method": "one-second end-to-start crossfade",
+      "camera_recorded": false,
+      "encoded_video": {
+        "codec": "h264",
+        "width": 960,
+        "height": 720,
+        "streams": 1,
+        "duration": 9.0
+      },
+      "slug": "of-three-musicians",
+      "path": "of-three-musicians.mp4",
+      "sha256": "0e0fee014f55ff87710107c2395729ed111f01de1ecd1232d9a6aeb5995bab3c",
+      "length": 209365
     }
   ],
   "archived_items": [
