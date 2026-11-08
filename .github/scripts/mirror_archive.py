@@ -35,24 +35,41 @@ def tracking_assets(site: Path) -> list[Path]:
                   if p.is_file() and p.suffix in {".wasm", ".task"})
 
 
-def prepare_artwork_parts(site: Path) -> None:
-    """Keep optional local tracking models in complete, portable download parts."""
-    assets = tracking_assets(site)
-    if not assets:
-        return
+def artwork_groups(site: Path) -> dict[str, list[Path]]:
+    """Include declared complete artwork parts alongside local tracking models."""
     groups = {}
-    for path in assets:
-        require(path.stat().st_size < MAX_ASSET_BYTES, "Static asset exceeds hosting limit")
+    for path in tracking_assets(site):
         groups.setdefault(path.relative_to(site).parts[1], []).append(path)
+    catalog = site / "fieldworks.json"
+    if catalog.exists():
+        for item in json.loads(catalog.read_text())["items"]:
+            if not item.get("offline_part"):
+                continue
+            slug = item["slug"]
+            require(re.fullmatch(r"[a-z0-9-]+", slug) is not None, "Invalid artwork slug")
+            paths = sorted(p for p in (site / "fieldwork-runtime" / slug).rglob("*") if p.is_file())
+            paths += [safe_path(site, item[key]["path"]) for key in ("poster", "preview")]
+            require(bool(paths), "Empty artwork part")
+            groups[slug] = paths
+    return groups
+
+
+def prepare_artwork_parts(site: Path) -> None:
+    """Keep larger artwork resources in complete, portable download parts."""
+    groups = artwork_groups(site)
+    if not groups:
+        return
     folder = site / "artwork-bundles"
     folder.mkdir(exist_ok=True)
     parts = []
     for slug, paths in sorted(groups.items()):
-        target = folder / (slug + "-hand-tracking.zip")
+        complete = any(path.suffix == ".html" for path in paths)
+        target = folder / (slug + (".zip" if complete else "-hand-tracking.zip"))
         files = []
         with zipfile.ZipFile(target, "w", zipfile.ZIP_DEFLATED) as archive:
             for path in paths:
                 data = path.read_bytes()
+                require(len(data) < MAX_ASSET_BYTES, "Static asset exceeds hosting limit")
                 name = path.relative_to(site).as_posix()
                 info = zipfile.ZipInfo(name, date_time=(1980, 1, 1, 0, 0, 0))
                 info.compress_type = zipfile.ZIP_DEFLATED
@@ -68,11 +85,11 @@ def prepare_artwork_parts(site: Path) -> None:
     mirror = site / "mirror/index.html"
     if mirror.exists():
         links = " ".join('<a href="../' + escape(p["path"]) + '" download>' +
-                         escape(p["artwork"].title()) + ' hand tracking</a>' for p in parts)
-        section = ('<section id="artwork-mirror"><h2>Copy the artwork tracking models</h2>'
+                         escape(p["artwork"].title()) + (' hand tracking' if '-hand-tracking.zip' in p["path"] else ' artwork') + '</a>' for p in parts)
+        section = ('<section id="artwork-mirror"><h2>Copy the artwork parts</h2>'
                    '<p>For a complete offline copy, also download and extract these parts '
-                   'into the core archive folder. They contain the local hand-tracking '
-                   'models. The artworks open without enabling a camera.</p><p>' + links + '</p></section>')
+                   'into the core archive folder. They contain local hand-tracking '
+                   'models and larger self-contained artworks. The artworks open without enabling a camera.</p><p>' + links + '</p></section>')
         html = mirror.read_text()
         if 'id="artwork-mirror"' in html:
             html = re.sub(r'<section id="artwork-mirror">.*?</section>', section, html, flags=re.S)
@@ -83,7 +100,7 @@ def prepare_artwork_parts(site: Path) -> None:
 
 def validate_artwork_parts(site: Path) -> set[str]:
     catalog = site / "artwork-bundles.json"
-    assets = {p.relative_to(site).as_posix() for p in tracking_assets(site)}
+    assets = {p.relative_to(site).as_posix() for paths in artwork_groups(site).values() for p in paths}
     if not catalog.exists():
         return set()
     data = json.loads(catalog.read_text())

@@ -1,0 +1,288 @@
+{
+  "schema": "cyberdelic.space/fieldwork-release-v1",
+  "slug": "btc-swarm",
+  "edition": "history-study-07",
+  "published_at": "2026-11-08T19:27:13.034468Z",
+  "source_record": {
+    "slug": "btc-swarm",
+    "project": "btc-swarm",
+    "repository": "https://github.com/doctorillumination/btc-swarm",
+    "revision": "c2864d2bf0505b419f873b22c9ffd82c86a998cb",
+    "edition": "history-study-07",
+    "source_version": "study-07",
+    "source_subdirectory": ".",
+    "source_files": [
+      {
+        "path": "src/runtime.js",
+        "sha256": "012a948191c13b8ea01d35156ad64b68bdb2d3f21c4171b60b0f768f13219768"
+      },
+      {
+        "path": "src/shell.html",
+        "sha256": "15a7792d77025e23594d4c58335646e3056aa1926ea68b9c966ee88dd9cb512b"
+      },
+      {
+        "path": "assets/README.md",
+        "sha256": "cfe77900279190aa5beeef90b5ed03c403ff0fd44215401e902aa6af6879b59e"
+      },
+      {
+        "path": "assets/history/README.md",
+        "sha256": "bb895d3e834319cc4f4dc59275b71645419f22aed62ad1f1b8503a4083bbc193"
+      },
+      {
+        "path": "assets/history/adam-back.jpg",
+        "sha256": "3094a62874d1886905ae14edc5a10a92b74bc0221538d07c58660d8ca1f09365"
+      },
+      {
+        "path": "assets/history/biden.jpg",
+        "sha256": "0fe50eafde03eb1d04582c408f869b07d7d548f267f9adc157adcb4df760df8a"
+      },
+      {
+        "path": "assets/history/bitcoin-logo.svg",
+        "sha256": "b014fc93884b416f1ba5d95968a671700707d874b9353327b7c857d427893c6c"
+      },
+      {
+        "path": "assets/history/block-wars.svg",
+        "sha256": "35c592ea68db0b1b2cbae2c5223d8a93ed7f9cf1623d26b58da051c56dee7686"
+      },
+      {
+        "path": "assets/history/crisis-editorial-v1.png",
+        "sha256": "05b0ae4f08eda274931dd1c95b6070e16f71584295338e32cd686472f9981633"
+      },
+      {
+        "path": "assets/history/early-markets.svg",
+        "sha256": "7c28ca66a302c7aabff2c7934e06e2ec745d45c2af955d47b1ad1784eff2bac8"
+      },
+      {
+        "path": "assets/history/etf-approval.svg",
+        "sha256": "0f1a655e04394ad776fe9096011f22157e1e7e09ba5f6875f8c422f6e91b7994"
+      },
+      {
+        "path": "assets/history/first-transfer.svg",
+        "sha256": "bcd5a6c6a0bafc893af96b6e06ed2a854814dd1f5455cb1f1841f307f9886b22"
+      },
+      {
+        "path": "assets/history/generated-prompts.json",
+        "sha256": "47cfff6eb0ed501e3451df6a65a51a55931afd2f30d4789c1dfde6ade53eb8e0"
+      },
+      {
+        "path": "assets/history/genesis-block.bin",
+        "sha256": "5299fac924b5a2fc19a88876a0042c19ac4d11fe69c3f66e47516e26185f9e99"
+      },
+      {
+        "path": "assets/history/genesis.svg",
+        "sha256": "a746dc63c6b9862ecfa5d0ecad3fe7b887c46066959ca95859c0162d57911499"
+      },
+      {
+        "path": "assets/history/gensler.jpg",
+        "sha256": "23a0dc0a546a34e7443963320787c6712140ee26891088bc6b9e045e363e076f"
+      },
+      {
+        "path": "assets/history/hal-finney.jpg",
+        "sha256": "6ee0d421e9f97a1866e7c1188811809bc40a04627ff2398779ebfaec3080938e"
+      },
+      {
+        "path": "assets/history/halvings.svg",
+        "sha256": "f68c7956b04efc21f146c1986cd64c69dfab23c1c08d6d1b51f4972ab0a5fd79"
+      },
+      {
+        "path": "assets/history/lehman-2008.jpg",
+        "sha256": "3d12cc515ceb88f8ca4b1f663728f451e879d53027743ed8b046bf4674234ce1"
+      },
+      {
+        "path": "assets/history/len-sassaman.jpg",
+        "sha256": "dff82d6651be3de92786fed40ac80752d9ac9325d06143073e233b173f3eff1a"
+      },
+      {
+        "path": "assets/history/logo-evolution.svg",
+        "sha256": "ab01a258c47764c60a17c8e6db3bf4bd8ac047810a5ea7f31150193f724e87a1"
+      },
+      {
+        "path": "assets/history/manifest.json",
+        "sha256": "6311faab8d92d66108e4b5adde0c6383bc36db57c0f7bbf49828e0fd2ce6dccb"
+      },
+      {
+        "path": "assets/history/market-cycles.svg",
+        "sha256": "97ecb967d4d0d6a784088ee3745679f8f62e9bbcc066f1b517b2b16e9661e1ef"
+      },
+      {
+        "path": "assets/history/mtgox.svg",
+        "sha256": "e981929d139dccc99be96c1ff5de1bd5d01e798034bb3bd314c471ea2f30f53a"
+      },
+      {
+        "path": "assets/history/network.svg",
+        "sha256": "2b8ec10ba6d6aa37c51d29b947182a2a6df138e73f7ca0b0a51b82c472b65741"
+      },
+      {
+        "path": "assets/history/october-shock.svg",
+        "sha256": "a6be746aee8a64cc64aff791b71c0ca27c491a431fb150511601a8ddc5b241e1"
+      },
+      {
+        "path": "assets/history/pizza-editorial-v1.png",
+        "sha256": "003c0a25b9028749a79e41c3707a626f6420a886276398253b7dfe851750ee76"
+      },
+      {
+        "path": "assets/history/pizza-post.svg",
+        "sha256": "6ca0ddf7b05c850168de9f3ad442260cca7450760de81c3b45b061c0207609ed"
+      },
+      {
+        "path": "assets/history/rainbow.svg",
+        "sha256": "77695c373fac0736ba461e517a376ddf4fba1ee0b5d1d58d4ae4809472c6296c"
+      },
+      {
+        "path": "assets/history/reserve-order.svg",
+        "sha256": "d90fe2cc1aa4296b6aa1213fe17058a51857133189bfdcb063c6588c1b1e048f"
+      },
+      {
+        "path": "assets/history/satoshi-email.svg",
+        "sha256": "48e64d83e4376f017bd5f28f26a6fd628f01b9223d2c3902752b3e63391ee074"
+      },
+      {
+        "path": "assets/history/satoshi-unknown.svg",
+        "sha256": "9d879a39e421fbbf87d34f17c84058369a9e9fbd322e5b4f6dd24527c393c027"
+      },
+      {
+        "path": "assets/history/saylor.png",
+        "sha256": "ae66756f0dc2bc773615c5fd708235b4b493eab00ccb9b43a87abe0ae3342c2d"
+      },
+      {
+        "path": "assets/history/treasury.svg",
+        "sha256": "88a22458cb20adedf263fc10661f3944b39b4657b824cc506fd0ccbabe979f21"
+      },
+      {
+        "path": "assets/history/trump.jpg",
+        "sha256": "483f021e43b1478c0b574c84dca56c202200791bd48e40aafaa020bbc4da77bc"
+      },
+      {
+        "path": "assets/history/whitepaper-math.svg",
+        "sha256": "e1e83f5143cb948b7a40ade1d43c64eb2d972b66a2080a289276fdb0b262f82d"
+      },
+      {
+        "path": "assets/history/whitepaper.svg",
+        "sha256": "83a2a4c175317fe3e71b07920605933b79ade85b5339b7ed9eb87ea66132f783"
+      },
+      {
+        "path": "assets/macos-icon-atlas-v1.png",
+        "sha256": "4f97042d190895d35842a80edff28dd4b10a50c849c074bab74df82e514b720e"
+      },
+      {
+        "path": "content/chapters.json",
+        "sha256": "2f8b7e69943cd17c8d993f086a213c3d4b9b5709b01c3d0222ce00c3eb9785db"
+      },
+      {
+        "path": "content/genesis.json",
+        "sha256": "86750b650f86c0619bba1cfaf2184c82c510038773ad7ca6bde5b3ce79e768df"
+      },
+      {
+        "path": "content/prices.json",
+        "sha256": "c065c6781f1cd6a399af210a7b41d9bca26522e474705cca6ded6f4575c20cc7"
+      },
+      {
+        "path": "build.py",
+        "sha256": "7c5403d8c9aa057d9266c43431863059c011121d2aaeb836765ac2532e3bb8ce"
+      },
+      {
+        "path": "index.html",
+        "sha256": "0356b01be7580d6b2854f5d02329e598f2b7de729bac620745df8634aa5c68bf"
+      },
+      {
+        "path": "SOURCES.md",
+        "sha256": "74ef191021d61666fd7fb99cd93f12f98b736fd585224238c4e7f0f56fa2e7aa"
+      },
+      {
+        "path": "ALGORITHM.md",
+        "sha256": "f3368a6db6925b2960c814448d5bfc849e2d028015c7002baca771553f5a4d3c"
+      }
+    ],
+    "packaged_files": [
+      {
+        "path": "index.html",
+        "sha256": "0356b01be7580d6b2854f5d02329e598f2b7de729bac620745df8634aa5c68bf"
+      },
+      {
+        "path": "SOURCES.md",
+        "sha256": "74ef191021d61666fd7fb99cd93f12f98b736fd585224238c4e7f0f56fa2e7aa"
+      },
+      {
+        "path": "ALGORITHM.md",
+        "sha256": "f3368a6db6925b2960c814448d5bfc849e2d028015c7002baca771553f5a4d3c"
+      },
+      {
+        "path": "media-provenance.json",
+        "sha256": "6311faab8d92d66108e4b5adde0c6383bc36db57c0f7bbf49828e0fd2ce6dccb"
+      },
+      {
+        "path": "generated-prompts.json",
+        "sha256": "47cfff6eb0ed501e3451df6a65a51a55931afd2f30d4789c1dfde6ade53eb8e0"
+      }
+    ],
+    "adaptations": "Exact standalone Study 07, including all embedded media. Offline source and image credits accompany the runtime. The host viewing styles only position presentation controls."
+  },
+  "files": [
+    {
+      "path": "runtime/index.html",
+      "sha256": "0356b01be7580d6b2854f5d02329e598f2b7de729bac620745df8634aa5c68bf",
+      "length": 13330145
+    },
+    {
+      "path": "runtime/SOURCES.md",
+      "sha256": "74ef191021d61666fd7fb99cd93f12f98b736fd585224238c4e7f0f56fa2e7aa",
+      "length": 13645
+    },
+    {
+      "path": "runtime/ALGORITHM.md",
+      "sha256": "f3368a6db6925b2960c814448d5bfc849e2d028015c7002baca771553f5a4d3c",
+      "length": 2314
+    },
+    {
+      "path": "runtime/media-provenance.json",
+      "sha256": "6311faab8d92d66108e4b5adde0c6383bc36db57c0f7bbf49828e0fd2ce6dccb",
+      "length": 13796
+    },
+    {
+      "path": "runtime/generated-prompts.json",
+      "sha256": "47cfff6eb0ed501e3451df6a65a51a55931afd2f30d4789c1dfde6ade53eb8e0",
+      "length": 2267
+    },
+    {
+      "path": "poster.jpg",
+      "sha256": "292f3748b5b62d9213dfc9cbd07b0e99f516368be07689b9b1dd222b230a9662",
+      "length": 124276
+    },
+    {
+      "path": "preview.mp4",
+      "sha256": "576757afd8641cb5587817a718f07715f07c553c87a5683cf9f8f6ec33da9e10",
+      "length": 2163317
+    }
+  ],
+  "release_id": "8e5464744e9cbd3875200e7b209b95efdd13bd0f0d550b50839d308af714bdd1",
+  "capture": {
+    "kind": "actual browser compositor, DOM and canvases, fixed 60 fps, silent",
+    "raw_sha256": "97a13115eab8d8811ad434ccb6ccc2217ccae3748e51e5313051289d594dccc8",
+    "source_snapshot_sha256": "0a84b738a90ab4f24f7b31f8b826042637021b26b82cff0e75f1b1b40fc5c2db",
+    "loop_method": "hard cut after eight seconds of consecutive fixed-clock frames",
+    "camera_recorded": false,
+    "method": {
+      "source_sha256": "0356b01be7580d6b2854f5d02329e598f2b7de729bac620745df8634aa5c68bf",
+      "harness_sha256": "6d706a9fb94c9c58fe92d91b246328d4972c0022cb14342c0d772250b8277553",
+      "method": "Full browser compositor screenshots at consecutive 1/60-second source animation-clock steps. No interpolated frames. Native default tempo 0.8. Capture controls outside the image.",
+      "seed": 1,
+      "chapter": "genesis",
+      "viewport": [
+        1280,
+        960
+      ],
+      "first_source_frame": 1441,
+      "last_source_frame": 1920,
+      "frames": 480,
+      "fps": 60,
+      "interaction": "Double-clicked genesis-006.svg in Finder before the first captured frame."
+    },
+    "encoded_video": {
+      "codec": "h264",
+      "width": 960,
+      "height": 720,
+      "streams": 1,
+      "duration": 8.0
+    }
+  }
+}

@@ -1518,6 +1518,29 @@
       ],
       "excerpt": "After Picasso, a company of masked musicians plays a generative machine waltz. An eccentric camera slips between their hands and instruments.",
       "rationale": "Human-authorized Fieldworks publication. Thematic placements remain interpretive, separate from inscription evidence."
+    },
+    {
+      "id": "fieldwork-btc-swarm",
+      "release_id": "FW-BTC-SWARM",
+      "label": "FIELDWORK · LIVING",
+      "title": "BTC / SWARM",
+      "href": "fieldworks/btc-swarm/",
+      "author": "Brad Necyk",
+      "date": "2026-11-08",
+      "publication_state": "living",
+      "form": "generative-art",
+      "world": "cyberdelic-os",
+      "register": "play",
+      "themes": [
+        "agency",
+        "memory",
+        "history",
+        "interfaces",
+        "coordination",
+        "play"
+      ],
+      "excerpt": "Hundreds of cursors build a Bitcoin history inside a restless desktop. Documents, images, and fragments of collective memory pass from hand to hand.",
+      "rationale": "An interactive Fieldwork, with interpretive thematic placements distinct from inscription evidence."
     }
   ]
 }

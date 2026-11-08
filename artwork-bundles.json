@@ -2,6 +2,49 @@
   "schema": "cyberdelic.space/artwork-bundles-v1",
   "parts": [
     {
+      "artwork": "btc-swarm",
+      "path": "artwork-bundles/btc-swarm.zip",
+      "length": 12120703,
+      "sha256": "02671495e5e94015590ad9ecc2ec74d50233d93e343337b8e7ac2d161fce659e",
+      "files": [
+        {
+          "path": "fieldwork-runtime/btc-swarm/ALGORITHM.md",
+          "length": 2314,
+          "sha256": "f3368a6db6925b2960c814448d5bfc849e2d028015c7002baca771553f5a4d3c"
+        },
+        {
+          "path": "fieldwork-runtime/btc-swarm/SOURCES.md",
+          "length": 13645,
+          "sha256": "74ef191021d61666fd7fb99cd93f12f98b736fd585224238c4e7f0f56fa2e7aa"
+        },
+        {
+          "path": "fieldwork-runtime/btc-swarm/generated-prompts.json",
+          "length": 2267,
+          "sha256": "47cfff6eb0ed501e3451df6a65a51a55931afd2f30d4789c1dfde6ade53eb8e0"
+        },
+        {
+          "path": "fieldwork-runtime/btc-swarm/index.html",
+          "length": 13330145,
+          "sha256": "0356b01be7580d6b2854f5d02329e598f2b7de729bac620745df8634aa5c68bf"
+        },
+        {
+          "path": "fieldwork-runtime/btc-swarm/media-provenance.json",
+          "length": 13796,
+          "sha256": "6311faab8d92d66108e4b5adde0c6383bc36db57c0f7bbf49828e0fd2ce6dccb"
+        },
+        {
+          "path": "fieldworks/images/btc-swarm.jpg",
+          "length": 124276,
+          "sha256": "292f3748b5b62d9213dfc9cbd07b0e99f516368be07689b9b1dd222b230a9662"
+        },
+        {
+          "path": "fieldworks/previews/btc-swarm.mp4",
+          "length": 2163317,
+          "sha256": "576757afd8641cb5587817a718f07715f07c553c87a5683cf9f8f6ec33da9e10"
+        }
+      ]
+    },
+    {
       "artwork": "lumen",
       "path": "artwork-bundles/lumen-hand-tracking.zip",
       "length": 11675285,

@@ -1,8 +1,8 @@
 {
   "schema": "https://cyberdelic.space/schemas/living-catalog-v1.json",
   "version": "0.17",
-  "updated_at": "2026-11-08T02:03:37.397495Z",
-  "count": 44,
+  "updated_at": "2026-11-08T19:27:13.034468Z",
+  "count": 45,
   "curation": {
     "office": "OFFICE-LIBRARIAN",
     "office_version": "0.1",
@@ -2030,6 +2030,49 @@
       "introduced_by": "human-authorized-fieldworks-publication",
       "last_tended_at": "2026-11-08T02:03:37.397495Z",
       "uncertainty": "Themes are interpretive. This living artwork is not an inscription."
+    },
+    {
+      "id": "catalog:fieldworks:btc-swarm",
+      "record_kind": "artifact",
+      "title": "BTC / SWARM",
+      "href": "fieldworks/btc-swarm/",
+      "summary": "Hundreds of cursors build a Bitcoin history inside a restless desktop. Documents, images, and fragments of collective memory pass from hand to hand.",
+      "subjects": [
+        "agency",
+        "memory",
+        "history",
+        "interfaces",
+        "coordination",
+        "play",
+        "generative art",
+        "interactive artwork",
+        "Fieldworks"
+      ],
+      "search_terms": [
+        "BTC / SWARM",
+        "Bitcoin",
+        "agents",
+        "desktop",
+        "Satoshi",
+        "genesis block",
+        "A history in formation.",
+        "Drag to reserve a space. Open a folder. Gather the swarm. Choose a chapter from History."
+      ],
+      "questions": [
+        "How does collective activity turn an archive into an interface?"
+      ],
+      "related": [],
+      "evidence": [
+        {
+          "source": "fieldworks/readings/btc-swarm.md",
+          "locator": "# BTC / SWARM"
+        }
+      ],
+      "epistemic_status": "strong",
+      "review_state": "model-proposed",
+      "introduced_by": "human-authorized-fieldworks-publication",
+      "last_tended_at": "2026-11-08T19:27:13.034468Z",
+      "uncertainty": "Thematic placements remain interpretive. This living artwork is not an inscription."
     }
   ]
 }

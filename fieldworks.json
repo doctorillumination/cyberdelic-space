@@ -1,15 +1,15 @@
 {
   "schema": "cyberdelic.space/fieldworks-v1",
-  "version": "1.7",
-  "date": "2026-11-07",
-  "published_at": "2026-11-08T02:03:37.397495Z",
+  "version": "1.8",
+  "date": "2026-11-08",
+  "published_at": "2026-11-08T19:27:13.034468Z",
   "overview": {
     "title": "Fieldworks",
     "href": "fieldworks/",
     "source": "overview.md",
     "source_path": "fieldworks/readings/overview.md",
-    "source_sha256": "0034388a1a2b14a4a773aa14fd10df1264f159716d52800e744ddf90662098a7",
-    "source_length": 388
+    "source_sha256": "454c659b078e8c7617515b52fb6a655b821165c42c70f1ca88b40f13390281cd",
+    "source_length": 411
   },
   "archived_readings": [
     {
@@ -74,6 +74,15 @@
       "source_sha256": "ab5b95ce1ba1b56dc7b19425974e1e6ecfe7a7c8559169cb73c243e20f1e5552",
       "source_length": 416,
       "slug": "overview-eight-works"
+    },
+    {
+      "title": "Fieldworks, nine-work edition",
+      "href": "fieldworks/readings/overview-nine-works.md",
+      "source": "overview-nine-works.md",
+      "source_path": "fieldworks/readings/overview-nine-works.md",
+      "source_sha256": "0034388a1a2b14a4a773aa14fd10df1264f159716d52800e744ddf90662098a7",
+      "source_length": 388,
+      "slug": "overview-nine-works"
     }
   ],
   "items": [
@@ -440,6 +449,48 @@
         "path": "fieldworks/previews/of-three-musicians.mp4",
         "sha256": "0e0fee014f55ff87710107c2395729ed111f01de1ecd1232d9a6aeb5995bab3c",
         "length": 209365,
+        "kind": "recorded-artwork-loop"
+      }
+    },
+    {
+      "slug": "btc-swarm",
+      "title": "BTC / SWARM",
+      "edition": "history-study-07",
+      "project": "btc-swarm",
+      "repository": "https://github.com/doctorillumination/btc-swarm",
+      "status": "living",
+      "caption": "A history in formation.",
+      "description": "Hundreds of cursors build a Bitcoin history inside a restless desktop. Documents, images, and fragments of collective memory pass from hand to hand.",
+      "alt": "A black desktop filled with coloured agent cursors, Finder folders, a terminal, and a Bitcoin history being selected, dragged, and assembled.",
+      "gesture": "Drag to reserve a space. Open a folder. Gather the swarm. Choose a chapter from History.",
+      "source": "btc-swarm.md",
+      "themes": [
+        "agency",
+        "memory",
+        "history",
+        "interfaces",
+        "coordination",
+        "play"
+      ],
+      "related_note": "fn-03",
+      "related_title": "A Village of Agents",
+      "offline_part": true,
+      "release_id": "8e5464744e9cbd3875200e7b209b95efdd13bd0f0d550b50839d308af714bdd1",
+      "runtime_published_at": "2026-11-08T19:27:13.034468Z",
+      "source_path": "fieldworks/readings/btc-swarm.md",
+      "source_sha256": "262050e93efdc41118b4fef9454656405c0fbf527aa709dd617fc5f1978b6048",
+      "source_length": 1035,
+      "href": "fieldworks/btc-swarm/",
+      "poster": {
+        "path": "fieldworks/images/btc-swarm.jpg",
+        "sha256": "292f3748b5b62d9213dfc9cbd07b0e99f516368be07689b9b1dd222b230a9662",
+        "length": 124276,
+        "kind": "actual-browser-capture"
+      },
+      "preview": {
+        "path": "fieldworks/previews/btc-swarm.mp4",
+        "sha256": "576757afd8641cb5587817a718f07715f07c553c87a5683cf9f8f6ec33da9e10",
+        "length": 2163317,
         "kind": "recorded-artwork-loop"
       }
     }
