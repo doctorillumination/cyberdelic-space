@@ -113,13 +113,13 @@
     {
       "slug": "btc-swarm",
       "capture": "actual browser compositor, consecutive fixed-clock 60 fps, no audio",
-      "raw_sha256": "d15db836e477a6193a073d71546e803c29e4d59f199a6c87d584a9f0a58343d0",
-      "raw_duration": 8.0,
-      "loop_method": "hard cut after eight seconds of consecutive fixed-clock frames",
-      "source_snapshot_sha256": "9216232a03ac5a8145f12987d79ad016e50491488d831b820ee1d6a367ddc74b",
+      "raw_sha256": "0a48786219fd50950307a4b875e0146c59272108ec51c52bdd65356db024095d",
+      "raw_duration": 4.0,
+      "loop_method": "hard cut after four seconds of consecutive fixed-clock frames",
+      "source_snapshot_sha256": "60de686559b24991aeccecd869e78177fc18b7938767e360ddcbc364309aaae4",
       "path": "btc-swarm.mp4",
-      "sha256": "128367c91a85b66ca49555fb199061f1269989452c5fe03aa2cb96d6cad92e29",
-      "length": 1894396
+      "sha256": "ed039deefeef473ee9a557dfb764d7f3aa5a37f9be98c5fea388a024e65af363",
+      "length": 970300
     }
   ],
   "archived_items": [

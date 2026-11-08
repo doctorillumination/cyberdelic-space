@@ -47,7 +47,12 @@ def artwork_groups(site: Path) -> dict[str, list[Path]]:
                 continue
             slug = item["slug"]
             require(re.fullmatch(r"[a-z0-9-]+", slug) is not None, "Invalid artwork slug")
-            paths = sorted(p for p in (site / "fieldwork-runtime" / slug).rglob("*") if p.is_file())
+            runtime = site / "fieldwork-runtime" / slug
+            paths = sorted(p for p in runtime.rglob("*") if p.is_file()
+                           and p.relative_to(runtime).parts[0] != "editions")
+            for edition in sorted((runtime / "editions").glob("*")):
+                if edition.is_dir():
+                    groups[slug + "-" + edition.name] = sorted(p for p in edition.rglob("*") if p.is_file())
             paths += [safe_path(site, item[key]["path"]) for key in ("poster", "preview")]
             require(bool(paths), "Empty artwork part")
             groups[slug] = paths

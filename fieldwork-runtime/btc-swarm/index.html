@@ -31,8 +31,7 @@ body{background:var(--site-bg,#19151f);color:var(--site-ink,#ece4ee)}#surface{ba
 /* The opening reveals the desktop in response to cursor launches. */
 #boot-canvas{position:fixed;inset:0;width:100%;height:100%;z-index:90;pointer-events:none}#boot-canvas[hidden],#skip-boot[hidden]{display:none}#skip-boot{position:fixed;right:25px;bottom:25px;z-index:95;font:9px var(--mono);color:#777781;padding:10px;background:#0008;border-radius:4px}#skip-boot:hover{color:#ddd}
 html[data-boot] :is(.workspace-menubar,#dock,.desktop-icon,.page-field,#page-titlebar,#web-viewport,.reserved-area,#swarm,#desktop-swarm,.desk-window,.instruction,.depth){visibility:hidden;pointer-events:none}
-html[data-boot="desktop"] :is(.workspace-menubar,#dock,.desktop-icon:not(#desktop-trash)),html[data-boot="apps"] :is(.workspace-menubar,#dock,.desktop-icon:not(#desktop-trash),.desk-window),html[data-boot="page"] :is(.workspace-menubar,#dock,.desktop-icon:not(#desktop-trash),.desk-window,.page-field,#page-titlebar,#web-viewport,.reserved-area){visibility:visible;animation:boot-reveal .35s both}
-@keyframes boot-reveal{from{opacity:0}to{opacity:1}}
+html[data-boot="burst"] :is(.workspace-menubar,#dock,.desktop-icon:not(#desktop-trash),.desk-window,.page-field,#page-titlebar,#web-viewport,.reserved-area){visibility:visible}
 @media(prefers-reduced-motion:reduce){html[data-boot] *{animation:none!important}}
 </style>
 </head>
@@ -46,7 +45,7 @@ html[data-boot="desktop"] :is(.workspace-menubar,#dock,.desktop-icon:not(#deskto
 <div id="dock" class="desktop-ui" role="group" aria-label="Workspace dock"><button class="dock-app" data-app="files" data-label="Finder" aria-label="Open Finder"></button><button class="dock-app" data-app="draft" data-label="Draft" aria-label="Show document"></button><button class="dock-app" data-app="terminal" data-label="Terminal" aria-label="Open Terminal"></button><button class="dock-app" data-app="editor" data-label="TextEdit" aria-label="Open TextEdit"></button><button class="dock-app" data-app="settings" data-label="System Settings" aria-label="Open System Settings"></button><button class="dock-app" data-app="documents" data-label="Documents" aria-label="Open Documents folder"></button><button class="dock-app" data-app="trash" data-label="Trash" aria-label="Open Trash"></button><span class="dock-divider"></span></div>
 </main>
 <div class="edge top"></div><div class="edge bottom"></div>
-<header class="masthead"><div class="identity"><span class="mark" aria-hidden="true"></span>In formation</div><div class="edition"><span class="study-label">HISTORY STUDY 008 &nbsp; / &nbsp; </span><i></i>PERPETUAL DRAFT</div></header>
+<header class="masthead"><div class="identity"><span class="mark" aria-hidden="true"></span>In formation</div><div class="edition"><span class="study-label">HISTORY STUDY 009 &nbsp; / &nbsp; </span><i></i>PERPETUAL DRAFT</div></header>
 <div class="live-badge" id="live-badge">BITCOIN / AN OPEN HISTORY</div>
 <div class="depth" id="depth">↓ 000000</div><div class="instruction" id="instruction">Drag to reserve a space. Double-click a folder.</div>
 <div class="transport-wrap"><div class="transport" role="group" aria-label="Swarm controls">
@@ -92,7 +91,7 @@ const ease=k=>{k=clamp(k);return k*k*(3-2*k);};
 const rand=(a=0,b=1)=>a+(b-a)*rng();
 const pick=a=>a[Math.floor(rng()*a.length)];
 function randomGenerator(s){return()=>{s|=0;s=s+0x6D2B79F5|0;let n=Math.imul(s^s>>>15,1|s);n=n+Math.imul(n^n>>>7,61|n)^n;return((n^n>>>14)>>>0)/4294967296;};}
-/* A seeded gathering opens the same virtual apps used by the working desktop. */
+/* A brief seeded gathering breaks directly into the working desktop. */
 const bootCanvas=$('boot-canvas'),bootCtx=bootCanvas.getContext('2d');
 let boot=null;
 function bootPhase(phase){
@@ -100,71 +99,75 @@ function bootPhase(phase){
 }
 function beginBoot(){
  if(!running){document.documentElement.removeAttribute('data-boot');bootCanvas.hidden=true;$('skip-boot').hidden=true;$('metrics').dataset.boot='skipped';return;}
- const random=randomGenerator(seed^0xB007);const between=(a,b)=>a+(b-a)*random();
- const particles=agents.map((a,i)=>{const side=i%4;return{id:i,x:i?side<2?between(-60,W+60):side===2?-40:W+40:W/2,y:i?side<2?side===0?-40:H+40:between(0,H):H*.47,vx:0,vy:0,size:i?a.size:13,color:i?a.color:'#e9e9ef',delay:i?between(1.45,3.5):0,offsetX:between(-32,32),offsetY:between(-24,24),group:i%7};});
- const anchors={};for(const app of ['terminal','files','editor','draft']){const r=document.querySelector('[data-app="'+app+'"]').getBoundingClientRect();anchors[app]={x:r.x+r.width/2,y:r.y+r.height/2};}
- boot={clock:0,particles,anchors,task:0,lastLaunch:0,pageAt:0,rings:[],tasks:[{at:4.4,app:'desktop'},{at:5.35,app:'terminal'},{at:6.1,app:'files'},{at:6.9,app:'editor'},{at:7.7,app:'draft'}]};
+ const random=randomGenerator(seed^0xB007),between=(a,b)=>a+(b-a)*random();
+ const particles=agents.map((a,i)=>{
+  const angle=between(0,Math.PI*2),radius=between(.58,.9)*Math.hypot(W,H),spread=Math.sqrt(random());
+  return{id:i,x:i?W/2+Math.cos(angle)*radius:W/2,y:i?H*.47+Math.sin(angle)*radius:H*.47,vx:0,vy:0,
+   size:i?a.size:13,color:i?a.color:'#e9e9ef',delay:i?between(.43,1.08):0,
+   offsetX:i?Math.cos(angle)*spread*27:0,offsetY:i?Math.sin(angle)*spread*19:0,
+   speed:between(2300,3800)*Math.max(1,Math.hypot(W,H)/1600),phase:between(0,Math.PI*2),burstX:Math.cos(between(0,Math.PI*2))*between(1200,3300),burstY:between(-2400,2400)};
+ });
+ boot={clock:0,particles,burstAt:0,rings:[]};
  bootCanvas.width=Math.round(W*DPR);bootCanvas.height=Math.round(H*DPR);bootCanvas.hidden=false;
  for(const win of Object.values(desk.windows))setWindow(win.name,false);
  desk.pageVisible=false;desk.dirty=true;surface.inert=true;document.querySelector('.workspace-menubar').inert=true;
  bootPhase('waiting');dirty=true;paintBoot();
 }
+function revealBootDesktop(){
+ desk.pageVisible=true;for(const name of ['terminal','files','editor'])setWindow(name,true);
+ desk.folderOpens++;desk.dirty=true;dirty=true;
+ $('metrics').dataset.bootApps='terminal,files,editor';
+}
 function finishBoot(){
  if(!boot)return;
- if(!Object.values(desk.windows).some(w=>w.open))setWindow('terminal',true);
+ if(!boot.burstAt)revealBootDesktop();
  for(const a of agents){const b=boot.particles[a.id];if(!b)continue;a.x=b.x;a.y=b.y+camera;a.vx=b.vx;a.vy=b.vy;a.hx=a.px=a.x;a.hy=a.py=a.y;}
  desk.pageVisible=true;desk.dirty=true;surface.inert=false;document.querySelector('.workspace-menubar').inert=false;
  document.documentElement.removeAttribute('data-boot');bootCanvas.hidden=true;$('skip-boot').hidden=true;
  $('metrics').dataset.boot='complete';$('metrics').dataset.bootElapsed=boot.clock.toFixed(3);
  boot=null;last=0;accumulator=0;dirty=true;
 }
-function bootTarget(a){
- const b=boot,s=b.clock,centre={x:W/2,y:H*.47};
- if(s<4.05){const pulse=Math.sin(s*8+a.id*.63);return{x:centre.x+(a.id?a.offsetX*(s>3.2?.55:1)+pulse*5:Math.sin(s*2.2)*3),y:centre.y+(a.id?a.offsetY+Math.cos(s*7+a.id)*4:0)};}
- const task=b.tasks[b.task];
- if(!a.id)return task?task.app==='desktop'?{x:W*.5,y:H-65}:b.anchors[task.app]:{x:left+layoutW*.35,y:H*.42};
- if(s<4.75){const k=(a.id%40)/39;return a.group<3?{x:mix(W*.25,W*.75,k),y:H-70+a.offsetY*.25}:{x:a.group%2?left-15:left+layoutW+15,y:mix(65,H-128,k)};}
- const names=['terminal','files','editor'],name=names[a.group%3],win=desk.windows[name];
- if(win.open){const working=s>8.3&&a.group>3;return working?{x:left+layoutW*(.12+(a.id%19)/24),y:130+(a.id%13)*(Math.max(140,H-290)/13)}:{x:win.x+25+(a.id%11)*(win.w-50)/11,y:win.y+(a.group<3?16:65+(a.id%7)*17)};}
- const p=b.anchors[name];return{x:p.x+a.offsetX*.32,y:p.y+a.offsetY*.32};
-}
-function launchBootTask(task){
- const b=boot,leader=b.particles[0];b.rings.push({x:leader.x,y:leader.y,born:b.clock,color:'#d6d6e3'});
- desk.desktopClicks++;b.lastLaunch=b.clock;b.task++;
- if(task.app==='desktop')bootPhase('desktop');
- else if(task.app==='draft'){desk.pageVisible=true;desk.dirty=true;b.pageAt=b.clock;bootPhase('page');}
- else{setWindow(task.app,true);if(task.app==='files')desk.folderOpens++;bootPhase('apps');}
- $('metrics').dataset.bootApps=Object.values(desk.windows).filter(w=>w.open).map(w=>w.name).join(',');dirty=true;
+function burstBoot(){
+ const b=boot;b.burstAt=b.clock;$('metrics').dataset.bootBurstAt=b.clock.toFixed(3);bootPhase('burst');revealBootDesktop();
+ for(const a of b.particles){a.vx=a.burstX;a.vy=a.burstY;}
+ b.rings.push({x:W/2,y:H*.47,born:b.clock,color:'#c5c9dd'});
 }
 function advanceBoot(elapsed){
  if(!boot||!running||document.hidden)return;
- // Use a separate clock and random stream so the opening does not consume page choices.
+ // The opening has its own random stream and does not change the page's tempo.
  boot.clock+=elapsed;const b=boot,s=b.clock;
- if(s>.65&&s<1.45)bootPhase('agent');else if(s>=1.45&&s<4.4)bootPhase('gather');
- for(const a of b.particles){
-  if(s<a.delay)continue;const target=bootTarget(a),dx=target.x-a.x,dy=target.y-a.y,dist=Math.hypot(dx,dy)||1;
-  const speed=Math.min(a.id?1750:1600,dist*(s<4?8:12)),turn=1-Math.exp(-elapsed*13);
-  a.vx=mix(a.vx,dx/dist*speed,turn);a.vy=mix(a.vy,dy/dist*speed,turn);a.x+=a.vx*elapsed;a.y+=a.vy*elapsed;
-  if(a.id&&s>2.3&&Math.sin(s*13+a.id*7)>.997)b.rings.push({x:a.x,y:a.y,born:s,color:a.color});
+ if(!b.burstAt){
+  bootPhase(s<.24?'waiting':s<.54?'agent':'gather');let gathered=0;
+  for(const a of b.particles){
+   if(s<a.delay)continue;
+   const squeeze=s>1.7?.5:1,targetX=W/2+a.offsetX*squeeze+Math.sin(s*13+a.phase)*4,
+    targetY=H*.47+a.offsetY*squeeze+Math.cos(s*11+a.phase)*3,dx=targetX-a.x,dy=targetY-a.y,dist=Math.hypot(dx,dy)||1;
+   const speed=Math.min(a.speed,dist*14),turn=1-Math.exp(-elapsed*20);
+   a.vx=mix(a.vx,dx/dist*speed,turn);a.vy=mix(a.vy,dy/dist*speed,turn);a.x+=a.vx*elapsed;a.y+=a.vy*elapsed;
+   if(dist<65)gathered++;
+  }
+  $('metrics').dataset.bootGathered=String(gathered);
+  if(s>=2.05&&(gathered>b.particles.length*.9||s>=2.55))burstBoot();
+ }else{
+  for(const a of b.particles){a.x+=a.vx*elapsed;a.y+=a.vy*elapsed;}
+  accumulator+=elapsed*params.tempo;let steps=0;while(accumulator>=1/60&&steps++<10){update(1/60);accumulator-=1/60;}
+  if(s-b.burstAt>.24)finishBoot();
  }
- const task=b.tasks[b.task],leader=b.particles[0];
- if(task&&s>=task.at){const p=task.app==='desktop'?{x:W*.5,y:H-65}:b.anchors[task.app];if(Math.hypot(leader.x-p.x,leader.y-p.y)<16)launchBootTask(task);}
- if(b.pageAt){accumulator+=elapsed*params.tempo;let steps=0;while(accumulator>=1/60&&steps++<10){update(1/60);accumulator-=1/60;}}
- b.rings=b.rings.filter(r=>s-r.born<.38).slice(-120);$('metrics').dataset.bootElapsed=s.toFixed(3);dirty=true;
- if(s>9.65&&b.task===b.tasks.length)finishBoot();
+ if(boot){b.rings=b.rings.filter(r=>s-r.born<.28);$('metrics').dataset.bootElapsed=s.toFixed(3);dirty=true;}
 }
 function paintBoot(){
  if(!boot)return;const c=bootCtx,b=boot,s=b.clock;c.setTransform(DPR,0,0,DPR,0,0);c.clearRect(0,0,W,H);
- // The curtain clears only after the cursors have drawn the desktop's lower edge.
- if(s<5.05){c.globalAlpha=1-ease((s-4.5)/.55);c.fillStyle='#000';c.fillRect(0,0,W,H);c.globalAlpha=1;}
- if(s>4.05&&s<5.35){const k=ease((s-4.05)/.8);c.strokeStyle='#a1a3af';c.globalAlpha=.35*(1-ease((s-4.9)/.45));c.lineWidth=.65;c.strokeRect(W*.25,H-88,W*.5*k,62);c.globalAlpha=1;}
- for(const r of b.rings){const age=(s-r.born)/.38;c.globalAlpha=(1-age)*.65;c.strokeStyle=r.color;c.lineWidth=.7;c.beginPath();c.arc(r.x,r.y,3+age*16,0,Math.PI*2);c.stroke();}c.globalAlpha=1;
+ const curtain=b.burstAt?1-ease((s-b.burstAt)/.09):1;
+ if(curtain>0){c.globalAlpha=curtain;c.fillStyle='#000';c.fillRect(0,0,W,H);c.globalAlpha=1;}
+ for(const r of b.rings){const age=(s-r.born)/.28;c.globalAlpha=(1-age)*.6;c.strokeStyle=r.color;c.lineWidth=.7;c.beginPath();c.arc(r.x,r.y,3+age*24,0,Math.PI*2);c.stroke();}c.globalAlpha=1;
  for(const a of b.particles){
-  if(s<a.delay)continue;const alpha=ease((s-a.delay)/.22);arrow(c,a.x,a.y,a.size,a.color,alpha*.95);
-  if(a.id===0&&s>.65){const task=b.tasks[b.task],action=s<1.45?'wake':s<4.05?'gather':task?'open '+(task.app==='files'?'Finder':task.app==='draft'?'document':task.app):'assemble';label(c,'agent.001 / '+action,a.x+14,a.y+20,'#bfc6df');}
-  else if(a.id%43===0&&s<4.05&&s>a.delay+.2)label(c,'agent.'+String(a.id+1).padStart(3,'0')+' / join',a.x+12,a.y+15,a.color);
+  if(s<a.delay)continue;const alpha=ease((s-a.delay)/.1);
+  if(b.burstAt){arrow(c,a.x-a.vx*.02,a.y-a.vy*.02,a.size,a.color,alpha*.22);}
+  arrow(c,a.x,a.y,a.size,a.color,alpha*.95);
+  if(!a.id&&s>.24&&!b.burstAt)label(c,'agent.001 / '+(s<.54?'wake':'gather'),a.x+14,a.y+20,'#bfc6df');
+  else if(a.id&&a.id%43===0&&s>a.delay+.12&&!b.burstAt)label(c,'agent.'+String(a.id+1).padStart(3,'0')+' / join',a.x+12,a.y+15,a.color);
  }
- if(s>.8&&s<1.2){c.strokeStyle='#d9dae5';c.globalAlpha=1-(s-.8)/.4;c.beginPath();c.arc(W/2,H*.47,4+(s-.8)*40,0,Math.PI*2);c.stroke();c.globalAlpha=1;}
+ if(s>.3&&s<.54){c.strokeStyle='#d9dae5';c.globalAlpha=1-(s-.3)/.24;c.beginPath();c.arc(W/2,H*.47,4+(s-.3)*55,0,Math.PI*2);c.stroke();c.globalAlpha=1;}
 }
 
 const headlines=chapters.map(c=>c.title),paragraphs=chapters.flatMap(c=>c.paras),quotes=chapters.filter(c=>c.quote).map(c=>c.quote),notes=chapters.map(c=>c.date),snippets=['verify the bytes','keep the source','block_000000','hash → verify → append','whitepaper.pdf','the record continues'];
