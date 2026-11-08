@@ -1,0 +1,414 @@
+{
+  "genesis": {
+    "id": "genesis",
+    "path": "assets/history/genesis.svg",
+    "caption": "The genesis block: exact bytes, decoded ASCII, and the embedded Times headline.",
+    "sources": [
+      "genesis"
+    ],
+    "credit": "Original data drawing",
+    "kind": "Data drawing",
+    "locked": true,
+    "fit": "contain",
+    "extension": "svg",
+    "sha256": "a746dc63c6b9862ecfa5d0ecad3fe7b887c46066959ca95859c0162d57911499"
+  },
+  "whitepaper-math": {
+    "id": "whitepaper-math",
+    "path": "assets/history/whitepaper-math.svg",
+    "caption": "Section 11: the paper’s Poisson model for an attacker catching up, with p > q.",
+    "sources": [
+      "whitepaper"
+    ],
+    "credit": "Original data drawing",
+    "kind": "Data drawing",
+    "locked": true,
+    "fit": "contain",
+    "extension": "svg",
+    "sha256": "e1e83f5143cb948b7a40ade1d43c64eb2d972b66a2080a289276fdb0b262f82d"
+  },
+  "whitepaper": {
+    "id": "whitepaper",
+    "path": "assets/history/whitepaper.svg",
+    "caption": "A document study of the nine-page whitepaper. The original is linked in Sources.",
+    "sources": [
+      "whitepaper",
+      "announcement"
+    ],
+    "credit": "Original data drawing",
+    "kind": "Data drawing",
+    "locked": true,
+    "fit": "contain",
+    "extension": "svg",
+    "sha256": "83a2a4c175317fe3e71b07920605933b79ade85b5339b7ed9eb87ea66132f783"
+  },
+  "network": {
+    "id": "network",
+    "path": "assets/history/network.svg",
+    "caption": "A network diagram of independent participants checking a shared transaction history.",
+    "sources": [
+      "whitepaper"
+    ],
+    "credit": "Original data drawing",
+    "kind": "Data drawing",
+    "locked": true,
+    "fit": "contain",
+    "extension": "svg",
+    "sha256": "2b8ec10ba6d6aa37c51d29b947182a2a6df138e73f7ca0b0a51b82c472b65741"
+  },
+  "first-transfer": {
+    "id": "first-transfer",
+    "path": "assets/history/first-transfer.svg",
+    "caption": "Satoshi sends ten bitcoin to Hal Finney as a test.",
+    "sources": [
+      "finney"
+    ],
+    "credit": "Original data drawing",
+    "kind": "Data drawing",
+    "locked": true,
+    "fit": "contain",
+    "extension": "svg",
+    "sha256": "bcd5a6c6a0bafc893af96b6e06ed2a854814dd1f5455cb1f1841f307f9886b22"
+  },
+  "early-markets": {
+    "id": "early-markets",
+    "path": "assets/history/early-markets.svg",
+    "caption": "A schematic order book accompanies the original Bitcoin Market announcement.",
+    "sources": [
+      "market"
+    ],
+    "credit": "Original data drawing",
+    "kind": "Data drawing",
+    "locked": true,
+    "fit": "contain",
+    "extension": "svg",
+    "sha256": "7c28ca66a302c7aabff2c7934e06e2ec745d45c2af955d47b1ad1784eff2bac8"
+  },
+  "pizza-post": {
+    "id": "pizza-post",
+    "path": "assets/history/pizza-post.svg",
+    "caption": "A short excerpt from Laszlo’s forum offer, recomposed as a document study.",
+    "sources": [
+      "pizza"
+    ],
+    "credit": "Original data drawing",
+    "kind": "Data drawing",
+    "locked": true,
+    "fit": "contain",
+    "extension": "svg",
+    "sha256": "6ca0ddf7b05c850168de9f3ad442260cca7450760de81c3b45b061c0207609ed"
+  },
+  "logo-evolution": {
+    "id": "logo-evolution",
+    "path": "assets/history/logo-evolution.svg",
+    "caption": "Early gold designs are redrawn studies; the orange mark uses the public-domain vector.",
+    "sources": [
+      "logo"
+    ],
+    "credit": "Original data drawing",
+    "kind": "Data drawing",
+    "locked": true,
+    "fit": "contain",
+    "extension": "svg",
+    "sha256": "ab01a258c47764c60a17c8e6db3bf4bd8ac047810a5ea7f31150193f724e87a1"
+  },
+  "satoshi-email": {
+    "id": "satoshi-email",
+    "path": "assets/history/satoshi-email.svg",
+    "caption": "Satoshi’s April 2011 line comes from an email to Mike Hearn.",
+    "sources": [
+      "departure"
+    ],
+    "credit": "Original data drawing",
+    "kind": "Data drawing",
+    "locked": true,
+    "fit": "contain",
+    "extension": "svg",
+    "sha256": "48e64d83e4376f017bd5f28f26a6fd628f01b9223d2c3902752b3e63391ee074"
+  },
+  "satoshi-unknown": {
+    "id": "satoshi-unknown",
+    "path": "assets/history/satoshi-unknown.svg",
+    "caption": "Satoshi’s identity remains unconfirmed. This is a typographic study.",
+    "sources": [
+      "departure",
+      "finney"
+    ],
+    "credit": "Original data drawing",
+    "kind": "Data drawing",
+    "locked": true,
+    "fit": "contain",
+    "extension": "svg",
+    "sha256": "9d879a39e421fbbf87d34f17c84058369a9e9fbd322e5b4f6dd24527c393c027"
+  },
+  "mtgox": {
+    "id": "mtgox",
+    "path": "assets/history/mtgox.svg",
+    "caption": "Mt. Gox’s March 2014 account of missing and rediscovered bitcoin.",
+    "sources": [
+      "gox"
+    ],
+    "credit": "Original data drawing",
+    "kind": "Data drawing",
+    "locked": true,
+    "fit": "contain",
+    "extension": "svg",
+    "sha256": "e981929d139dccc99be96c1ff5de1bd5d01e798034bb3bd314c471ea2f30f53a"
+  },
+  "block-wars": {
+    "id": "block-wars",
+    "path": "assets/history/block-wars.svg",
+    "caption": "The scaling dispute: SegWit, user activation, and the Bitcoin Cash split.",
+    "sources": [
+      "segwit",
+      "genesis",
+      "cash"
+    ],
+    "credit": "Original data drawing",
+    "kind": "Data drawing",
+    "locked": true,
+    "fit": "contain",
+    "extension": "svg",
+    "sha256": "35c592ea68db0b1b2cbae2c5223d8a93ed7f9cf1623d26b58da051c56dee7686"
+  },
+  "market-cycles": {
+    "id": "market-cycles",
+    "path": "assets/history/market-cycles.svg",
+    "caption": "Historical Bitcoin dollar prices on a logarithmic scale, through 10 October 2025.",
+    "sources": [
+      "prices"
+    ],
+    "credit": "Data: Coin Metrics, CC BY-NC 4.0 · original plot",
+    "kind": "Data drawing",
+    "locked": true,
+    "fit": "contain",
+    "license": "CC BY-NC 4.0",
+    "extension": "svg",
+    "sha256": "97ecb967d4d0d6a784088ee3745679f8f62e9bbcc066f1b517b2b16e9661e1ef"
+  },
+  "rainbow": {
+    "id": "rainbow",
+    "path": "assets/history/rainbow.svg",
+    "caption": "An original retrospective rainbow fit. The bands do not predict prices.",
+    "sources": [
+      "prices",
+      "rainbow"
+    ],
+    "credit": "Data: Coin Metrics, CC BY-NC 4.0 · original plot",
+    "kind": "Data drawing",
+    "locked": true,
+    "fit": "contain",
+    "license": "CC BY-NC 4.0",
+    "extension": "svg",
+    "sha256": "77695c373fac0736ba461e517a376ddf4fba1ee0b5d1d58d4ae4809472c6296c"
+  },
+  "treasury": {
+    "id": "treasury",
+    "path": "assets/history/treasury.svg",
+    "caption": "The quantities in MicroStrategy’s 11 August 2020 announcement.",
+    "sources": [
+      "mstr"
+    ],
+    "credit": "Original data drawing",
+    "kind": "Data drawing",
+    "locked": true,
+    "fit": "contain",
+    "extension": "svg",
+    "sha256": "88a22458cb20adedf263fc10661f3944b39b4657b824cc506fd0ccbabe979f21"
+  },
+  "halvings": {
+    "id": "halvings",
+    "path": "assets/history/halvings.svg",
+    "caption": "The subsidy steps from 50 to 3.125 BTC across the first four halvings.",
+    "sources": [
+      "genesis"
+    ],
+    "credit": "Original data drawing",
+    "kind": "Data drawing",
+    "locked": true,
+    "fit": "contain",
+    "extension": "svg",
+    "sha256": "f68c7956b04efc21f146c1986cd64c69dfab23c1c08d6d1b51f4972ab0a5fd79"
+  },
+  "etf-approval": {
+    "id": "etf-approval",
+    "path": "assets/history/etf-approval.svg",
+    "caption": "The SEC approves spot Bitcoin product listings in January 2024.",
+    "sources": [
+      "etf"
+    ],
+    "credit": "Original data drawing",
+    "kind": "Data drawing",
+    "locked": true,
+    "fit": "contain",
+    "extension": "svg",
+    "sha256": "0f1a655e04394ad776fe9096011f22157e1e7e09ba5f6875f8c422f6e91b7994"
+  },
+  "reserve-order": {
+    "id": "reserve-order",
+    "path": "assets/history/reserve-order.svg",
+    "caption": "The 2025 order directs an initially forfeiture-funded Strategic Bitcoin Reserve.",
+    "sources": [
+      "reserve"
+    ],
+    "credit": "Original data drawing",
+    "kind": "Data drawing",
+    "locked": true,
+    "fit": "contain",
+    "extension": "svg",
+    "sha256": "d90fe2cc1aa4296b6aa1213fe17058a51857133189bfdcb063c6588c1b1e048f"
+  },
+  "october-shock": {
+    "id": "october-shock",
+    "path": "assets/history/october-shock.svg",
+    "caption": "October 2025: reported crypto liquidations, alongside daily Bitcoin reference prices.",
+    "sources": [
+      "crash",
+      "liquidity",
+      "prices"
+    ],
+    "credit": "Data: Coin Metrics, CC BY-NC 4.0 · Axios / SIFMA",
+    "kind": "Data drawing",
+    "locked": true,
+    "fit": "contain",
+    "license": "CC BY-NC 4.0",
+    "extension": "svg",
+    "sha256": "a6be746aee8a64cc64aff791b71c0ca27c491a431fb150511601a8ddc5b241e1"
+  },
+  "hal-finney": {
+    "id": "hal-finney",
+    "path": "assets/history/hal-finney.jpg",
+    "caption": "Hal Finney doing mathematics, 1972.",
+    "credit": "Daily News-Post staff, 1972 · public domain in the US",
+    "license": "Public domain in the US",
+    "sourceURL": "https://commons.wikimedia.org/wiki/File:Hal_Finney_doing_math.jpg",
+    "sources": [],
+    "kind": "Archival photo",
+    "fit": "contain",
+    "locked": true,
+    "extension": "jpg",
+    "sha256": "6ee0d421e9f97a1866e7c1188811809bc40a04627ff2398779ebfaec3080938e"
+  },
+  "adam-back": {
+    "id": "adam-back",
+    "path": "assets/history/adam-back.jpg",
+    "caption": "Adam Back, photographed in 2014.",
+    "credit": "Joi Ito, 2014 · CC BY 2.0",
+    "license": "CC BY 2.0",
+    "sourceURL": "https://commons.wikimedia.org/wiki/File:Adam_Back_2014.jpg",
+    "sources": [],
+    "kind": "Archival photo",
+    "fit": "contain",
+    "locked": true,
+    "extension": "jpg",
+    "sha256": "3094a62874d1886905ae14edc5a10a92b74bc0221538d07c58660d8ca1f09365"
+  },
+  "len-sassaman": {
+    "id": "len-sassaman",
+    "path": "assets/history/len-sassaman.jpg",
+    "caption": "Len Sassaman at Open Science Summit, 2010.",
+    "credit": "ben lipkowitz, 2010 · CC BY-SA 2.0",
+    "license": "CC BY-SA 2.0",
+    "sourceURL": "https://commons.wikimedia.org/wiki/File:Len_Sassaman_-_Open_Science_Summit_2010.jpg",
+    "sources": [],
+    "kind": "Archival photo",
+    "fit": "contain",
+    "locked": true,
+    "extension": "jpg",
+    "sha256": "dff82d6651be3de92786fed40ac80752d9ac9325d06143073e233b173f3eff1a"
+  },
+  "lehman-2008": {
+    "id": "lehman-2008",
+    "path": "assets/history/lehman-2008.jpg",
+    "caption": "Lehman Brothers headquarters on bankruptcy day, 15 September 2008.",
+    "credit": "Robert Scoble, 2008 · CC BY 2.0",
+    "license": "CC BY 2.0",
+    "sourceURL": "https://commons.wikimedia.org/wiki/File:Lehman_Brothers-NYC-20080915.jpg",
+    "sources": [],
+    "kind": "Archival photo",
+    "fit": "contain",
+    "locked": true,
+    "extension": "jpg",
+    "sha256": "3d12cc515ceb88f8ca4b1f663728f451e879d53027743ed8b046bf4674234ce1"
+  },
+  "saylor": {
+    "id": "saylor",
+    "path": "assets/history/saylor.png",
+    "caption": "Michael Saylor in a 2022 interview.",
+    "credit": "ReasonTV, 2022 · CC BY 3.0",
+    "license": "CC BY 3.0",
+    "sourceURL": "https://commons.wikimedia.org/wiki/File:Michael_Saylor_2022.png",
+    "sources": [],
+    "kind": "Archival photo",
+    "fit": "contain",
+    "locked": true,
+    "extension": "png",
+    "sha256": "ae66756f0dc2bc773615c5fd708235b4b493eab00ccb9b43a87abe0ae3342c2d"
+  },
+  "gensler": {
+    "id": "gensler",
+    "path": "assets/history/gensler.jpg",
+    "caption": "Gary Gensler, official SEC portrait.",
+    "credit": "US Securities and Exchange Commission · public domain",
+    "license": "US government work",
+    "sourceURL": "https://commons.wikimedia.org/wiki/File:Gary_Gensler,_SEC_Chair.jpg",
+    "sources": [],
+    "kind": "Archival photo",
+    "fit": "contain",
+    "locked": true,
+    "extension": "jpg",
+    "sha256": "23a0dc0a546a34e7443963320787c6712140ee26891088bc6b9e045e363e076f"
+  },
+  "biden": {
+    "id": "biden",
+    "path": "assets/history/biden.jpg",
+    "caption": "Joe Biden, official portrait by Adam Schultz, 2021.",
+    "credit": "Adam Schultz / White House, 2021 · public domain",
+    "license": "US government work",
+    "sourceURL": "https://commons.wikimedia.org/wiki/File:Joe_Biden_presidential_portrait.jpg",
+    "sources": [],
+    "kind": "Archival photo",
+    "fit": "contain",
+    "locked": true,
+    "extension": "jpg",
+    "sha256": "0fe50eafde03eb1d04582c408f869b07d7d548f267f9adc157adcb4df760df8a"
+  },
+  "trump": {
+    "id": "trump",
+    "path": "assets/history/trump.jpg",
+    "caption": "Donald Trump, official portrait by Shealah Craighead, 2017.",
+    "credit": "Shealah Craighead / White House, 2017 · public domain",
+    "license": "US government work",
+    "sourceURL": "https://commons.wikimedia.org/wiki/File:Donald_Trump_official_portrait_(cropped).jpg",
+    "sources": [],
+    "kind": "Archival photo",
+    "fit": "contain",
+    "locked": true,
+    "extension": "jpg",
+    "sha256": "483f021e43b1478c0b574c84dca56c202200791bd48e40aafaa020bbc4da77bc"
+  },
+  "crisis-editorial": {
+    "id": "crisis-editorial",
+    "path": "assets/history/crisis-editorial-v1.png",
+    "caption": "The financial crisis, an original generated editorial montage.",
+    "credit": "Original generated illustration · 2026",
+    "sources": [],
+    "kind": "Illustration",
+    "fit": "cover",
+    "locked": false,
+    "extension": "png",
+    "sha256": "05b0ae4f08eda274931dd1c95b6070e16f71584295338e32cd686472f9981633"
+  },
+  "pizza-editorial": {
+    "id": "pizza-editorial",
+    "path": "assets/history/pizza-editorial-v1.png",
+    "caption": "Two pizzas, an original generated editorial still life.",
+    "credit": "Original generated illustration · 2026",
+    "sources": [],
+    "kind": "Illustration",
+    "fit": "cover",
+    "locked": false,
+    "extension": "png",
+    "sha256": "003c0a25b9028749a79e41c3707a626f6420a886276398253b7dfe851750ee76"
+  }
+}
