@@ -33,6 +33,6 @@ only be checked against the chain. That asymmetry is why copying it freely is
 safe, and why a press that means what it says about permanence should want you
 to.
 
-## Offline hand tracking
+## Complete offline artworks
 
-The core archive includes the artwork code, text, and verified asset catalog. For a complete offline edition, also extract the hand-tracking parts linked on the Mirror page into the same folder. `artwork-bundles.json` binds each model and WASM file to its exact bytes. Audio remains in the separate Lewis recording parts. Hosted artworks load their tracking assets normally from the same origin.
+The core archive includes the publication texts, reader, and verified asset catalogs. For a complete offline edition, also download and extract every artwork part linked on the Mirror page into the same folder. These include local hand-tracking models and the larger self-contained BTC / SWARM artwork, cover, and preview. `artwork-bundles.json` binds every member to its exact bytes. Audio remains in the separate Lewis recording parts. Hosted artworks load their assets normally from the same origin.
