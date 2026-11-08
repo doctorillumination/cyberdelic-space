@@ -4684,18 +4684,22 @@
       "slug": "btc-swarm",
       "project": "btc-swarm",
       "repository": "https://github.com/doctorillumination/btc-swarm",
-      "revision": "c2864d2bf0505b419f873b22c9ffd82c86a998cb",
-      "edition": "history-study-07",
-      "source_version": "study-07",
+      "revision": "44c03db65b773627fffd46c6a1bfb544b438a56a",
+      "edition": "history-study-08",
+      "source_version": "study-08",
       "source_subdirectory": ".",
       "source_files": [
         {
+          "path": "src/boot.js",
+          "sha256": "8fdefa35b517e055d86d45a4f0f0033373f6407176cc327e469bb864134362af"
+        },
+        {
           "path": "src/runtime.js",
-          "sha256": "012a948191c13b8ea01d35156ad64b68bdb2d3f21c4171b60b0f768f13219768"
+          "sha256": "48db49972f81dd55d03a59ccd2cd3357840b7a743e12e9fda930ba1a61556823"
         },
         {
           "path": "src/shell.html",
-          "sha256": "15a7792d77025e23594d4c58335646e3056aa1926ea68b9c966ee88dd9cb512b"
+          "sha256": "8a1ded7c4ef0c34849883c10a224b5c64e84f7ce9776845de21cf9f7615541ff"
         },
         {
           "path": "assets/README.md",
@@ -4855,11 +4859,11 @@
         },
         {
           "path": "build.py",
-          "sha256": "7c5403d8c9aa057d9266c43431863059c011121d2aaeb836765ac2532e3bb8ce"
+          "sha256": "466896944b239b510987e6437856338017cd3a17361ece5b8a01bd277a8984c2"
         },
         {
           "path": "index.html",
-          "sha256": "0356b01be7580d6b2854f5d02329e598f2b7de729bac620745df8634aa5c68bf"
+          "sha256": "088817990efc8a423dca9055b2b92b48a93fe93b6a4f89209de2d0f82faebdb7"
         },
         {
           "path": "SOURCES.md",
@@ -4867,32 +4871,64 @@
         },
         {
           "path": "ALGORITHM.md",
-          "sha256": "f3368a6db6925b2960c814448d5bfc849e2d028015c7002baca771553f5a4d3c"
+          "sha256": "a3418e70e0b776b8aa0e8faf71cbef30baf6bda66f3eb11d4e7ad689ae626aea"
         }
       ],
       "packaged_files": [
         {
-          "path": "index.html",
-          "sha256": "0356b01be7580d6b2854f5d02329e598f2b7de729bac620745df8634aa5c68bf"
+          "path": "ALGORITHM.md",
+          "sha256": "a3418e70e0b776b8aa0e8faf71cbef30baf6bda66f3eb11d4e7ad689ae626aea"
         },
         {
           "path": "SOURCES.md",
           "sha256": "74ef191021d61666fd7fb99cd93f12f98b736fd585224238c4e7f0f56fa2e7aa"
         },
         {
-          "path": "ALGORITHM.md",
+          "path": "editions/history-study-07/ALGORITHM.md",
           "sha256": "f3368a6db6925b2960c814448d5bfc849e2d028015c7002baca771553f5a4d3c"
         },
         {
-          "path": "media-provenance.json",
+          "path": "editions/history-study-07/SOURCES.md",
+          "sha256": "74ef191021d61666fd7fb99cd93f12f98b736fd585224238c4e7f0f56fa2e7aa"
+        },
+        {
+          "path": "editions/history-study-07/generated-prompts.json",
+          "sha256": "47cfff6eb0ed501e3451df6a65a51a55931afd2f30d4789c1dfde6ade53eb8e0"
+        },
+        {
+          "path": "editions/history-study-07/index.html",
+          "sha256": "0356b01be7580d6b2854f5d02329e598f2b7de729bac620745df8634aa5c68bf"
+        },
+        {
+          "path": "editions/history-study-07/media-provenance.json",
           "sha256": "6311faab8d92d66108e4b5adde0c6383bc36db57c0f7bbf49828e0fd2ce6dccb"
+        },
+        {
+          "path": "editions/history-study-07/poster.jpg",
+          "sha256": "292f3748b5b62d9213dfc9cbd07b0e99f516368be07689b9b1dd222b230a9662"
+        },
+        {
+          "path": "editions/history-study-07/preview.mp4",
+          "sha256": "576757afd8641cb5587817a718f07715f07c553c87a5683cf9f8f6ec33da9e10"
+        },
+        {
+          "path": "editions/history-study-07/release.json",
+          "sha256": "a10f3c5b0922d93c4e744017ce3a80966705b20fe7766908068d57287f1cb874"
         },
         {
           "path": "generated-prompts.json",
           "sha256": "47cfff6eb0ed501e3451df6a65a51a55931afd2f30d4789c1dfde6ade53eb8e0"
+        },
+        {
+          "path": "index.html",
+          "sha256": "088817990efc8a423dca9055b2b92b48a93fe93b6a4f89209de2d0f82faebdb7"
+        },
+        {
+          "path": "media-provenance.json",
+          "sha256": "6311faab8d92d66108e4b5adde0c6383bc36db57c0f7bbf49828e0fd2ce6dccb"
         }
       ],
-      "adaptations": "Exact standalone Study 07, including all embedded media. Offline source and image credits accompany the runtime. The host viewing styles only position presentation controls."
+      "adaptations": "Exact standalone Study 08. A seeded cursor gathering launches the desktop and its apps. The page grain is removed. Study 07, its cover, preview, and source record remain in the edition archive. Host view controls remain separate."
     }
   ]
 }
