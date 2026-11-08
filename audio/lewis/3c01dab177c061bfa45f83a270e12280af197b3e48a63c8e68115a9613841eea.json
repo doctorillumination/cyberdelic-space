@@ -1,0 +1,68 @@
+{
+  "id": "fieldworks-of-three-musicians",
+  "title": "Of Three Musicians",
+  "form": "fieldwork",
+  "release_id": null,
+  "pages": [
+    "fieldworks/of-three-musicians/"
+  ],
+  "source_path": "fieldworks/readings/of-three-musicians.md",
+  "source_sha256": "a02c6a81bb7694cef70671dfae29a4adfffc715153efa065c464926454e3ea51",
+  "document_sha256": "a02c6a81bb7694cef70671dfae29a4adfffc715153efa065c464926454e3ea51",
+  "text_sha256": "3c01dab177c061bfa45f83a270e12280af197b3e48a63c8e68115a9613841eea",
+  "reading_path": "audio/readings/3c01dab177c061bfa45f83a270e12280af197b3e48a63c8e68115a9613841eea.md",
+  "reading_sha256": "a02c6a81bb7694cef70671dfae29a4adfffc715153efa065c464926454e3ea51",
+  "reading_length": 915,
+  "audio_path": "audio/lewis/3c01dab177c061bfa45f83a270e12280af197b3e48a63c8e68115a9613841eea.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "b6fab22ed45e69e5804238067fd925c4dfbda7803baffd7200135c9a35ca79ef",
+  "audio_length": 792332,
+  "duration_seconds": 65.95,
+  "chunks": [
+    {
+      "text": "Of Three Musicians",
+      "start": 0.0,
+      "duration": 2.175
+    },
+    {
+      "text": "A room that keeps trying to sing.",
+      "start": 2.355,
+      "duration": 2.7
+    },
+    {
+      "text": "After Picasso, a Pierrot, a Harlequin, and a bearded musician gather in a little company of paper masks, angular instruments, and impossible profiles. Other players accompany them. A dog wanders below their chairs. The camera slips between bodies, hesitates, and leans too close to a playing hand.",
+      "start": 5.235,
+      "duration": 20.625
+    },
+    {
+      "text": "The room is made in code and seen through a coarse field of red, green, and blue light. Its waltz is generated as it plays: a wavering machine voice, plucked chords, bass notes, dry clicks, and small, detuned bells. The same musical events move the fingers, strings, sticks, and keys.",
+      "start": 26.04,
+      "duration": 19.025
+    },
+    {
+      "text": "Of Three Musicians brings the company of Picasso's painting into the uncertain time of an early computer trying to sing. The players keep their awkward commitments to the score. The dog belongs to another rhythm.",
+      "start": 45.245,
+      "duration": 14.45
+    },
+    {
+      "text": "By Brad Necyk, 2026. This living artwork is not inscribed.",
+      "start": 59.875,
+      "duration": 6.075
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.5640038251876831,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

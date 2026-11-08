@@ -4613,6 +4613,72 @@
         }
       ],
       "adaptations": "Exact standalone publication edition. The selected 0.2.1 custom cloth solver is unchanged. A fading invitation and information dialog complete the presentation. Three.js licence included."
+    },
+    {
+      "slug": "of-three-musicians",
+      "project": "of-three-musicians",
+      "repository": null,
+      "revision": "bd6d67bc0edd3420e46ddefee52b5257dd7b385b",
+      "edition": "singing-room",
+      "source_version": "1.0.0",
+      "source_subdirectory": ".",
+      "source_files": [
+        {
+          "path": "build.py",
+          "sha256": "09862fe0e704ea5ca46d624bba670dda60d888a788a3c12beef131c34f0fbd36"
+        },
+        {
+          "path": "index.html",
+          "sha256": "73ee00dd51491504d135d20fcba0031b0fde2c6adc19dd93fe7ce209f0d84f88"
+        },
+        {
+          "path": "src/artwork.js",
+          "sha256": "6fb2911f443f59b814dc7b02b739894728a72c89b6008b912c1c756a374321a9"
+        },
+        {
+          "path": "src/band.js",
+          "sha256": "477f26e94f34bbeeeec7614a47ea6e7a5e1f781a8a2af86ac295e657d9e95960"
+        },
+        {
+          "path": "src/camera.js",
+          "sha256": "a34930f3a2f5561f723b0fb072550e45bcafc2b9ddd5c48a2a2311ad2503aa4f"
+        },
+        {
+          "path": "src/music.js",
+          "sha256": "5b604488fbbbb9ecf76be208e5b0e421ef522edc1431884614e6be816f5debfb"
+        },
+        {
+          "path": "src/renderer.js",
+          "sha256": "010b4d40e8ba46af076451df73cb6cc3762566fbc48fb39bf785efde3d6d8ad9"
+        },
+        {
+          "path": "src/score.js",
+          "sha256": "6c143a33d2f4d02d54da504513385d3a0cc05ca3fda31af170b69842c3560d64"
+        },
+        {
+          "path": "src/shell.html",
+          "sha256": "80a81ac9e76af904a48c8e0d565771c51ec4f1b82f1fe072152f13cc6946f982"
+        },
+        {
+          "path": "vendor/p5-LICENSE.txt",
+          "sha256": "eb2f25f8f165d5f20682c1ce7e99ce69144ecfd80fbed8c17dfd327ecd8b6cb6"
+        },
+        {
+          "path": "vendor/p5.min.js",
+          "sha256": "bb7f8f14b9ce2e2344ff5cd6c06f2e105eb99541ecbfec77139e2886d9c0b9ba"
+        }
+      ],
+      "packaged_files": [
+        {
+          "path": "index.html",
+          "sha256": "73ee00dd51491504d135d20fcba0031b0fde2c6adc19dd93fe7ce209f0d84f88"
+        },
+        {
+          "path": "p5-LICENSE.txt",
+          "sha256": "eb2f25f8f165d5f20682c1ce7e99ce69144ecfd80fbed8c17dfd327ecd8b6cb6"
+        }
+      ],
+      "adaptations": "Exact self-contained titled artwork with default-on sound and browser-required entry fallback. Host viewing styles remain separate. Bundled p5.js licence retained."
     }
   ]
 }

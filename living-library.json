@@ -1495,6 +1495,29 @@
       ],
       "excerpt": "An early computer dream becomes a sheet of silk. Pull the image into folds, then let it fall back into stillness.",
       "rationale": "An interactive Fieldwork, with interpretive thematic placements distinct from inscription evidence."
+    },
+    {
+      "id": "fieldwork-of-three-musicians",
+      "release_id": "FW-OF-THREE-MUSICIANS",
+      "label": "FIELDWORK · LIVING",
+      "title": "Of Three Musicians",
+      "href": "fieldworks/of-three-musicians/",
+      "author": "Brad Necyk",
+      "date": "2026-11-07",
+      "publication_state": "living",
+      "form": "generative-art",
+      "world": "cyberdelic-os",
+      "register": "play",
+      "themes": [
+        "music",
+        "play",
+        "time",
+        "memory",
+        "perception",
+        "simulation"
+      ],
+      "excerpt": "After Picasso, a company of masked musicians plays a generative machine waltz. An eccentric camera slips between their hands and instruments.",
+      "rationale": "Human-authorized Fieldworks publication. Thematic placements remain interpretive, separate from inscription evidence."
     }
   ]
 }

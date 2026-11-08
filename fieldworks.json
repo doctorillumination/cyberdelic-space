@@ -1,15 +1,15 @@
 {
   "schema": "cyberdelic.space/fieldworks-v1",
-  "version": "1.6",
+  "version": "1.7",
   "date": "2026-11-07",
-  "published_at": "2026-11-07T17:18:07.023592Z",
+  "published_at": "2026-11-08T02:03:37.397495Z",
   "overview": {
     "title": "Fieldworks",
     "href": "fieldworks/",
     "source": "overview.md",
     "source_path": "fieldworks/readings/overview.md",
-    "source_sha256": "ab5b95ce1ba1b56dc7b19425974e1e6ecfe7a7c8559169cb73c243e20f1e5552",
-    "source_length": 416
+    "source_sha256": "0034388a1a2b14a4a773aa14fd10df1264f159716d52800e744ddf90662098a7",
+    "source_length": 388
   },
   "archived_readings": [
     {
@@ -65,6 +65,15 @@
       "source_sha256": "097174fa96f6ec13ba5910ee031c5848720da1467d844c0a017687f1039bc230",
       "source_length": 393,
       "slug": "overview-seven-works"
+    },
+    {
+      "title": "Fieldworks, eight-work edition",
+      "href": "fieldworks/readings/overview-eight-works.md",
+      "source": "overview-eight-works.md",
+      "source_path": "fieldworks/readings/overview-eight-works.md",
+      "source_sha256": "ab5b95ce1ba1b56dc7b19425974e1e6ecfe7a7c8559169cb73c243e20f1e5552",
+      "source_length": 416,
+      "slug": "overview-eight-works"
     }
   ],
   "items": [
@@ -390,6 +399,47 @@
         "path": "fieldworks/previews/soft-signal.mp4",
         "sha256": "73dce8e13c245e485c36aa7876311f180d63f25185effae3f6587e310a33fc26",
         "length": 567702,
+        "kind": "recorded-artwork-loop"
+      }
+    },
+    {
+      "slug": "of-three-musicians",
+      "title": "Of Three Musicians",
+      "edition": "singing-room",
+      "project": "of-three-musicians",
+      "repository": null,
+      "status": "living",
+      "caption": "A room that keeps trying to sing.",
+      "description": "After Picasso, a company of masked musicians plays a generative machine waltz. An eccentric camera slips between their hands and instruments.",
+      "alt": "Angular Pierrot, Harlequin, and bearded musicians, with accompanying players and a dog, glowing through a coarse red, green, and blue CRT screen.",
+      "gesture": "Listen as the room plays. Follow the camera, or choose a player. Adjust the sound and the screen.",
+      "source": "of-three-musicians.md",
+      "themes": [
+        "music",
+        "play",
+        "time",
+        "memory",
+        "perception",
+        "simulation"
+      ],
+      "related_note": "fn-45",
+      "related_title": "The File Is a Score",
+      "release_id": "6c409c7c5925f766e88843dcd828d22e2af16725c215b1c91cc1d32107828dd5",
+      "runtime_published_at": "2026-11-08T02:03:37.397495Z",
+      "source_path": "fieldworks/readings/of-three-musicians.md",
+      "source_sha256": "a02c6a81bb7694cef70671dfae29a4adfffc715153efa065c464926454e3ea51",
+      "source_length": 915,
+      "href": "fieldworks/of-three-musicians/",
+      "poster": {
+        "path": "fieldworks/images/of-three-musicians.jpg",
+        "sha256": "ad4b69b95c92cd2472f6e9fad9978551499ade1cb00a1f213434bfbed831c3e8",
+        "length": 79735,
+        "kind": "actual-browser-capture"
+      },
+      "preview": {
+        "path": "fieldworks/previews/of-three-musicians.mp4",
+        "sha256": "0e0fee014f55ff87710107c2395729ed111f01de1ecd1232d9a6aeb5995bab3c",
+        "length": 209365,
         "kind": "recorded-artwork-loop"
       }
     }

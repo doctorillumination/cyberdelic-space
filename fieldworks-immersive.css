@@ -55,3 +55,9 @@ html[data-fieldwork-artwork-only][data-fieldwork-slot="vellum"] :is(.ui,.sidebar
 
 /* Soft Signal keeps the gallery controls outside its image. */
 html[data-fieldwork-slot="soft-signal"] #about { display:none !important; }
+
+/* Of Three Musicians retains its black CRT and leaves room for host view controls. */
+html[data-fieldwork-slot="of-three-musicians"] .bottomline { right:140px; }
+html[data-fieldwork-slot="of-three-musicians"] button[onclick="fullscreen()"] { display:none!important; }
+html[data-fieldwork-artwork-only][data-fieldwork-slot="of-three-musicians"] :is(.hud,#settings) { display:none!important; }
+@media(max-width:600px){html[data-fieldwork-slot="of-three-musicians"] .bottomline { right:18px; bottom:76px; }}
