@@ -109,6 +109,17 @@
       "path": "of-three-musicians.mp4",
       "sha256": "0e0fee014f55ff87710107c2395729ed111f01de1ecd1232d9a6aeb5995bab3c",
       "length": 209365
+    },
+    {
+      "slug": "btc-swarm",
+      "capture": "actual browser compositor, consecutive fixed-clock 60 fps, no audio",
+      "raw_sha256": "97a13115eab8d8811ad434ccb6ccc2217ccae3748e51e5313051289d594dccc8",
+      "raw_duration": 8.0,
+      "loop_method": "hard cut after eight seconds of consecutive fixed-clock frames",
+      "source_snapshot_sha256": "0a84b738a90ab4f24f7b31f8b826042637021b26b82cff0e75f1b1b40fc5c2db",
+      "path": "btc-swarm.mp4",
+      "sha256": "576757afd8641cb5587817a718f07715f07c553c87a5683cf9f8f6ec33da9e10",
+      "length": 2163317
     }
   ],
   "archived_items": [

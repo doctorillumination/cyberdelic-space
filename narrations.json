@@ -18681,19 +18681,19 @@
         "fieldworks/"
       ],
       "source_path": "fieldworks/readings/overview.md",
-      "source_sha256": "0034388a1a2b14a4a773aa14fd10df1264f159716d52800e744ddf90662098a7",
-      "document_sha256": "0034388a1a2b14a4a773aa14fd10df1264f159716d52800e744ddf90662098a7",
-      "text_sha256": "f78f96ded8f35f9f1cfba7cef4396754c5f25748612c3d3999d288d1e860d1f8",
-      "reading_path": "audio/readings/f78f96ded8f35f9f1cfba7cef4396754c5f25748612c3d3999d288d1e860d1f8.md",
-      "reading_sha256": "0034388a1a2b14a4a773aa14fd10df1264f159716d52800e744ddf90662098a7",
-      "reading_length": 388,
-      "audio_path": "audio/lewis/f78f96ded8f35f9f1cfba7cef4396754c5f25748612c3d3999d288d1e860d1f8.mp3",
+      "source_sha256": "454c659b078e8c7617515b52fb6a655b821165c42c70f1ca88b40f13390281cd",
+      "document_sha256": "454c659b078e8c7617515b52fb6a655b821165c42c70f1ca88b40f13390281cd",
+      "text_sha256": "2e584fa16869162e9e4d66b2e087211e5cf9224f885a67d94b53a542efb34fda",
+      "reading_path": "audio/readings/2e584fa16869162e9e4d66b2e087211e5cf9224f885a67d94b53a542efb34fda.md",
+      "reading_sha256": "454c659b078e8c7617515b52fb6a655b821165c42c70f1ca88b40f13390281cd",
+      "reading_length": 411,
+      "audio_path": "audio/lewis/2e584fa16869162e9e4d66b2e087211e5cf9224f885a67d94b53a542efb34fda.mp3",
       "voice": "bm_lewis",
       "voice_name": "Lewis",
       "speed": 1.0,
-      "audio_sha256": "1daee25ba5fc675d0dd11ec9c6e32e34dd8e040e5cd16a09fe1b85bdfda7785b",
-      "audio_length": 364940,
-      "duration_seconds": 30.315,
+      "audio_sha256": "df2c2b40ffb75b6bd571949f3ff98b6513b5b42c99363522b7f4e921cb4ecc14",
+      "audio_length": 384524,
+      "duration_seconds": 31.965,
       "chunks": [
         {
           "text": "Fieldworks",
@@ -18706,21 +18706,21 @@
           "duration": 5.15
         },
         {
-          "text": "A surface that answers. A fold in seeing. An unfinished sky. Impossible matter. A river remembering a drawing. A small vocabulary, an expanding field. A field of competing futures. A picture with weight. A room that keeps trying to sing.",
+          "text": "A surface that answers. A fold in seeing. An unfinished sky. Impossible matter. A river remembering a drawing. A small vocabulary, an expanding field. A field of competing futures. A picture with weight. A room that keeps trying to sing. A history in formation.",
           "start": 7.16,
-          "duration": 17.5
+          "duration": 19.05
         },
         {
-          "text": "Nine living artworks. Enter, explore, and see what a gesture changes.",
-          "start": 24.84,
-          "duration": 5.475
+          "text": "Ten living artworks. Enter, explore, and see what a gesture changes.",
+          "start": 26.39,
+          "duration": 5.575
         }
       ],
       "checks": {
         "all_text_retained": true,
         "mp3_decodes": true,
         "finite_samples": true,
-        "peak": 0.5480540990829468,
+        "peak": 0.5187338590621948,
         "clipped_samples": 0
       }
     },
@@ -19273,6 +19273,68 @@
       }
     },
     {
+      "id": "fieldworks-btc-swarm",
+      "title": "BTC / SWARM",
+      "form": "fieldwork",
+      "release_id": null,
+      "pages": [
+        "fieldworks/btc-swarm/"
+      ],
+      "source_path": "fieldworks/readings/btc-swarm.md",
+      "source_sha256": "262050e93efdc41118b4fef9454656405c0fbf527aa709dd617fc5f1978b6048",
+      "document_sha256": "262050e93efdc41118b4fef9454656405c0fbf527aa709dd617fc5f1978b6048",
+      "text_sha256": "ad650481814513b797fcb5022068fc1f23d6c4e8a029b8a09f8184612258f15d",
+      "reading_path": "audio/readings/ad650481814513b797fcb5022068fc1f23d6c4e8a029b8a09f8184612258f15d.md",
+      "reading_sha256": "262050e93efdc41118b4fef9454656405c0fbf527aa709dd617fc5f1978b6048",
+      "reading_length": 1035,
+      "audio_path": "audio/lewis/ad650481814513b797fcb5022068fc1f23d6c4e8a029b8a09f8184612258f15d.mp3",
+      "voice": "bm_lewis",
+      "voice_name": "Lewis",
+      "speed": 1.0,
+      "audio_sha256": "157394ba813d606050549c3d578d16d05b772b0b80fd02ed6c36176c4d287b62",
+      "audio_length": 907820,
+      "duration_seconds": 75.575,
+      "chunks": [
+        {
+          "text": "BTC / SWARM",
+          "start": 0.0,
+          "duration": 2.325
+        },
+        {
+          "text": "A history in formation.",
+          "start": 2.505,
+          "duration": 2.6
+        },
+        {
+          "text": "Hundreds of cursors inhabit a black desktop. They open folders, move windows, copy passages, carry images, and reserve spaces for things that have not arrived. Behind their work, a website keeps assembling and scrolling. No single cursor holds the whole design.",
+          "start": 5.285,
+          "duration": 18.475
+        },
+        {
+          "text": "The material is Bitcoin history: financial collapse, the white paper, a newspaper headline inside the genesis block, early exchanges, lost coins, arguments, institutions, and recurring dreams of a different kind of money. Archival photographs meet diagrams, verified bytes, and clearly labelled imagined scenes. Sources travel with the fragments. Uncertainty remains visible.",
+          "start": 23.94,
+          "duration": 25.225
+        },
+        {
+          "text": "Open a folder. Drag a piece of the page. Gather the swarm and watch it break apart. The desktop is a fiction, but its coordination happens here, through local algorithms. Every seed produces another arrangement. The archive keeps becoming an interface, and the interface keeps becoming a draft.",
+          "start": 49.345,
+          "duration": 19.975
+        },
+        {
+          "text": "By Brad Necyk, 2026. This living artwork is not inscribed.",
+          "start": 69.5,
+          "duration": 6.075
+        }
+      ],
+      "checks": {
+        "all_text_retained": true,
+        "mp3_decodes": true,
+        "finite_samples": true,
+        "peak": 0.5640362501144409,
+        "clipped_samples": 0
+      }
+    },
+    {
       "id": "fieldworks-overview-v1",
       "title": "Fieldworks, first edition",
       "form": "fieldwork",
@@ -19645,6 +19707,58 @@
         "peak": 0.5411500930786133,
         "clipped_samples": 0
       }
+    },
+    {
+      "id": "fieldworks-overview-nine-works",
+      "title": "Fieldworks, nine-work edition",
+      "form": "fieldwork",
+      "release_id": null,
+      "pages": [
+        "fieldworks/readings/overview-nine-works.md"
+      ],
+      "source_path": "fieldworks/readings/overview-nine-works.md",
+      "source_sha256": "0034388a1a2b14a4a773aa14fd10df1264f159716d52800e744ddf90662098a7",
+      "document_sha256": "0034388a1a2b14a4a773aa14fd10df1264f159716d52800e744ddf90662098a7",
+      "text_sha256": "f78f96ded8f35f9f1cfba7cef4396754c5f25748612c3d3999d288d1e860d1f8",
+      "reading_path": "audio/readings/f78f96ded8f35f9f1cfba7cef4396754c5f25748612c3d3999d288d1e860d1f8.md",
+      "reading_sha256": "0034388a1a2b14a4a773aa14fd10df1264f159716d52800e744ddf90662098a7",
+      "reading_length": 388,
+      "audio_path": "audio/lewis/f78f96ded8f35f9f1cfba7cef4396754c5f25748612c3d3999d288d1e860d1f8.mp3",
+      "voice": "bm_lewis",
+      "voice_name": "Lewis",
+      "speed": 1.0,
+      "audio_sha256": "1daee25ba5fc675d0dd11ec9c6e32e34dd8e040e5cd16a09fe1b85bdfda7785b",
+      "audio_length": 364940,
+      "duration_seconds": 30.315,
+      "chunks": [
+        {
+          "text": "Fieldworks",
+          "start": 0.0,
+          "duration": 1.65
+        },
+        {
+          "text": "Generative artworks and interactive environments by Brad Necyk.",
+          "start": 1.83,
+          "duration": 5.15
+        },
+        {
+          "text": "A surface that answers. A fold in seeing. An unfinished sky. Impossible matter. A river remembering a drawing. A small vocabulary, an expanding field. A field of competing futures. A picture with weight. A room that keeps trying to sing.",
+          "start": 7.16,
+          "duration": 17.5
+        },
+        {
+          "text": "Nine living artworks. Enter, explore, and see what a gesture changes.",
+          "start": 24.84,
+          "duration": 5.475
+        }
+      ],
+      "checks": {
+        "all_text_retained": true,
+        "mp3_decodes": true,
+        "finite_samples": true,
+        "peak": 0.5480540990829468,
+        "clipped_samples": 0
+      }
     }
   ],
   "playlists": [
@@ -19802,6 +19916,11 @@
       "path": "audio-bundles/lewis-24.zip",
       "sha256": "da527a2def29fd938dffba4046755699ff5d5f796e140f1e6cd64c0e1cfb9241",
       "length": 1157766
+    },
+    {
+      "path": "audio-bundles/lewis-25.zip",
+      "sha256": "427dac01df48c2ed7b181d8651fc7806b32f79032ffca1de3c93063627e206f4",
+      "length": 1292838
     }
   ]
 }

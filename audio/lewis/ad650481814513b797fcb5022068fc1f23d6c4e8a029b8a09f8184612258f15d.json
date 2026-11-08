@@ -1,0 +1,68 @@
+{
+  "id": "fieldworks-btc-swarm",
+  "title": "BTC / SWARM",
+  "form": "fieldwork",
+  "release_id": null,
+  "pages": [
+    "fieldworks/btc-swarm/"
+  ],
+  "source_path": "fieldworks/readings/btc-swarm.md",
+  "source_sha256": "262050e93efdc41118b4fef9454656405c0fbf527aa709dd617fc5f1978b6048",
+  "document_sha256": "262050e93efdc41118b4fef9454656405c0fbf527aa709dd617fc5f1978b6048",
+  "text_sha256": "ad650481814513b797fcb5022068fc1f23d6c4e8a029b8a09f8184612258f15d",
+  "reading_path": "audio/readings/ad650481814513b797fcb5022068fc1f23d6c4e8a029b8a09f8184612258f15d.md",
+  "reading_sha256": "262050e93efdc41118b4fef9454656405c0fbf527aa709dd617fc5f1978b6048",
+  "reading_length": 1035,
+  "audio_path": "audio/lewis/ad650481814513b797fcb5022068fc1f23d6c4e8a029b8a09f8184612258f15d.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "157394ba813d606050549c3d578d16d05b772b0b80fd02ed6c36176c4d287b62",
+  "audio_length": 907820,
+  "duration_seconds": 75.575,
+  "chunks": [
+    {
+      "text": "BTC / SWARM",
+      "start": 0.0,
+      "duration": 2.325
+    },
+    {
+      "text": "A history in formation.",
+      "start": 2.505,
+      "duration": 2.6
+    },
+    {
+      "text": "Hundreds of cursors inhabit a black desktop. They open folders, move windows, copy passages, carry images, and reserve spaces for things that have not arrived. Behind their work, a website keeps assembling and scrolling. No single cursor holds the whole design.",
+      "start": 5.285,
+      "duration": 18.475
+    },
+    {
+      "text": "The material is Bitcoin history: financial collapse, the white paper, a newspaper headline inside the genesis block, early exchanges, lost coins, arguments, institutions, and recurring dreams of a different kind of money. Archival photographs meet diagrams, verified bytes, and clearly labelled imagined scenes. Sources travel with the fragments. Uncertainty remains visible.",
+      "start": 23.94,
+      "duration": 25.225
+    },
+    {
+      "text": "Open a folder. Drag a piece of the page. Gather the swarm and watch it break apart. The desktop is a fiction, but its coordination happens here, through local algorithms. Every seed produces another arrangement. The archive keeps becoming an interface, and the interface keeps becoming a draft.",
+      "start": 49.345,
+      "duration": 19.975
+    },
+    {
+      "text": "By Brad Necyk, 2026. This living artwork is not inscribed.",
+      "start": 69.5,
+      "duration": 6.075
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.5640362501144409,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

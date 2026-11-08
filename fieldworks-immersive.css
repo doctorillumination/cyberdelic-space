@@ -61,3 +61,7 @@ html[data-fieldwork-slot="of-three-musicians"] .bottomline { right:140px; }
 html[data-fieldwork-slot="of-three-musicians"] button[onclick="fullscreen()"] { display:none!important; }
 html[data-fieldwork-artwork-only][data-fieldwork-slot="of-three-musicians"] :is(.hud,#settings) { display:none!important; }
 @media(max-width:600px){html[data-fieldwork-slot="of-three-musicians"] .bottomline { right:18px; bottom:76px; }}
+
+/* Keep the fictional desktop visible when host controls are hidden. */
+html[data-fieldwork-artwork-only][data-fieldwork-slot="btc-swarm"] :is(.transport-wrap,.transport,.instruction,.depth,.toast) { display:none!important; }
+@media(max-width:700px){html[data-fieldwork-slot="btc-swarm"] #dock { bottom:76px; }}
