@@ -1,8 +1,8 @@
 {
   "schema": "https://cyberdelic.space/schemas/living-catalog-v1.json",
   "version": "0.17",
-  "updated_at": "2026-11-09T02:53:55.127322Z",
-  "count": 47,
+  "updated_at": "2026-11-09T16:20:53.770811Z",
+  "count": 48,
   "curation": {
     "office": "OFFICE-LIBRARIAN",
     "office_version": "0.1",
@@ -2153,6 +2153,47 @@
       "review_state": "model-proposed",
       "introduced_by": "human-authorized-fieldworks-publication",
       "last_tended_at": "2026-11-09T02:53:55.127322Z",
+      "uncertainty": "Themes are interpretive. This living artwork is not an inscription."
+    },
+    {
+      "id": "catalog:fieldworks:at-a-safe-distance",
+      "record_kind": "artifact",
+      "title": "At a Safe Distance",
+      "href": "fieldworks/at-a-safe-distance/",
+      "summary": "A mask and a garden behind textured glass. Drag to explore an enclosed space where protection, beauty, and distance remain unresolved.",
+      "subjects": [
+        "protection",
+        "memory",
+        "attention",
+        "absence",
+        "beauty",
+        "opacity",
+        "generative art",
+        "glass",
+        "Fieldworks"
+      ],
+      "search_terms": [
+        "At a Safe Distance",
+        "Under Glass",
+        "mask",
+        "foliage",
+        "textured glass",
+        "parallax"
+      ],
+      "questions": [
+        "How can protection preserve something while withholding access?"
+      ],
+      "related": [],
+      "evidence": [
+        {
+          "source": "fieldworks/readings/at-a-safe-distance.md",
+          "locator": "# At a Safe Distance"
+        }
+      ],
+      "epistemic_status": "strong",
+      "review_state": "model-proposed",
+      "introduced_by": "human-authorized-fieldworks-publication",
+      "last_tended_at": "2026-11-09T16:20:53.770811Z",
       "uncertainty": "Themes are interpretive. This living artwork is not an inscription."
     }
   ]

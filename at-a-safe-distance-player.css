@@ -1,0 +1,6 @@
+/* At a Safe Distance opens as an uninterrupted glass enclosure. About is a separate opt-in view. */
+.fieldwork-player[data-fieldwork="at-a-safe-distance"]{grid-template-rows:1fr;background:#020403}
+.fieldwork-player[data-fieldwork="at-a-safe-distance"]>.fieldwork-bar,
+.fieldwork-player[data-fieldwork="at-a-safe-distance"]>.fieldwork-view-controls,
+.fieldwork-player[data-fieldwork="at-a-safe-distance"]>.fieldwork-announcement,
+.fieldwork-player[data-fieldwork="at-a-safe-distance"] .fieldwork-status{display:none!important}

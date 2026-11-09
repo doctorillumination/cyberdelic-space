@@ -1,0 +1,5 @@
+.parallax-test .masthead,.parallax-test .edition,.parallax-test #gesture-hint{text-shadow:0 1px 3px #0009,0 1px 15px #0008}
+.parallax-test .eyebrow{color:#bac4b4}.parallax-test .edition{color:#b3c0a9}
+.parallax-test .toolbar a{color:#bfc8b7;font-size:10px;padding:8px 9px;text-decoration:none;min-height:31px;display:flex;align-items:center}
+.parallax-test .toolbar a:hover{color:#fff}.parallax-test .toolbar a:focus-visible{outline:1px solid #c5d5b1;outline-offset:3px}
+@media(max-width:700px){.parallax-test .toolbar a{min-height:36px;padding:10px 13px}}

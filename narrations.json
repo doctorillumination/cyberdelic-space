@@ -18681,19 +18681,19 @@
         "fieldworks/"
       ],
       "source_path": "fieldworks/readings/overview.md",
-      "source_sha256": "680c08f0dc6fb88171cd5098aa955e26bc3976f9d9df9de43fa2411cccc06bc2",
-      "document_sha256": "680c08f0dc6fb88171cd5098aa955e26bc3976f9d9df9de43fa2411cccc06bc2",
-      "text_sha256": "58d6b002f0d9e29f8ab8c7c8910cd9eb3e82f4a26eb3cc7bf5471a592eab4fbe",
-      "reading_path": "audio/readings/58d6b002f0d9e29f8ab8c7c8910cd9eb3e82f4a26eb3cc7bf5471a592eab4fbe.md",
-      "reading_sha256": "680c08f0dc6fb88171cd5098aa955e26bc3976f9d9df9de43fa2411cccc06bc2",
-      "reading_length": 473,
-      "audio_path": "audio/lewis/58d6b002f0d9e29f8ab8c7c8910cd9eb3e82f4a26eb3cc7bf5471a592eab4fbe.mp3",
+      "source_sha256": "92a0626aa3322e12975da17e6c97cd3e2a840fa97925986044e8e872e63790bb",
+      "document_sha256": "92a0626aa3322e12975da17e6c97cd3e2a840fa97925986044e8e872e63790bb",
+      "text_sha256": "0444387a21e9a24cf872670db98a333d3f791dc567834725680b1440f4d6f9d3",
+      "reading_path": "audio/readings/0444387a21e9a24cf872670db98a333d3f791dc567834725680b1440f4d6f9d3.md",
+      "reading_sha256": "92a0626aa3322e12975da17e6c97cd3e2a840fa97925986044e8e872e63790bb",
+      "reading_length": 505,
+      "audio_path": "audio/lewis/0444387a21e9a24cf872670db98a333d3f791dc567834725680b1440f4d6f9d3.mp3",
       "voice": "bm_lewis",
       "voice_name": "Lewis",
       "speed": 1.0,
-      "audio_sha256": "1eb3b4dac58ab5a10650cdcb0113cf87f0d7686b785f52a5e18a7eddf1978786",
-      "audio_length": 425708,
-      "duration_seconds": 35.39,
+      "audio_sha256": "db599e4f70980bb5531c8b79f8729e1d6744aaea9a0ac027645959316947e99b",
+      "audio_length": 450188,
+      "duration_seconds": 37.44,
       "chunks": [
         {
           "text": "Fieldworks",
@@ -18706,21 +18706,21 @@
           "duration": 5.15
         },
         {
-          "text": "A surface that answers. A fold in seeing. An unfinished sky. Impossible matter. A river remembering a drawing. A small vocabulary, an expanding field. A field of competing futures. A picture with weight. A room that keeps trying to sing. A history in formation. A manual, held differently. A drawing that keeps swimming.",
+          "text": "A surface that answers. A fold in seeing. An unfinished sky. Impossible matter. A river remembering a drawing. A small vocabulary, an expanding field. A field of competing futures. A picture with weight. A room that keeps trying to sing. A history in formation. A manual, held differently. A drawing that keeps swimming. A face held beyond the glass.",
           "start": 7.16,
-          "duration": 22.475
+          "duration": 24.3
         },
         {
-          "text": "Twelve living artworks. Enter, explore, and see what a gesture changes.",
-          "start": 29.815,
-          "duration": 5.575
+          "text": "Thirteen living artworks. Enter, explore, and see what a gesture changes.",
+          "start": 31.64,
+          "duration": 5.8
         }
       ],
       "checks": {
         "all_text_retained": true,
         "mp3_decodes": true,
         "finite_samples": true,
-        "peak": 0.6107050776481628,
+        "peak": 0.6206876039505005,
         "clipped_samples": 0
       }
     },
@@ -19464,6 +19464,63 @@
       }
     },
     {
+      "id": "fieldworks-at-a-safe-distance",
+      "title": "At a Safe Distance",
+      "form": "fieldwork",
+      "release_id": null,
+      "pages": [
+        "fieldworks/at-a-safe-distance/"
+      ],
+      "source_path": "fieldworks/readings/at-a-safe-distance.md",
+      "source_sha256": "22feb6093a37ba41dc74de5b577811aa58275ee573a81a847bbbfe721dfdebb9",
+      "document_sha256": "22feb6093a37ba41dc74de5b577811aa58275ee573a81a847bbbfe721dfdebb9",
+      "text_sha256": "bf46ddbd34307cb6c264564f73934a41e499fb2381c58c6f07e5e52e4228cce9",
+      "reading_path": "audio/readings/bf46ddbd34307cb6c264564f73934a41e499fb2381c58c6f07e5e52e4228cce9.md",
+      "reading_sha256": "22feb6093a37ba41dc74de5b577811aa58275ee573a81a847bbbfe721dfdebb9",
+      "reading_length": 1027,
+      "audio_path": "audio/lewis/bf46ddbd34307cb6c264564f73934a41e499fb2381c58c6f07e5e52e4228cce9.mp3",
+      "voice": "bm_lewis",
+      "voice_name": "Lewis",
+      "speed": 1.0,
+      "audio_sha256": "2f4e8058785c545536def1ef25d69d01e618af98f9eb746d80518060cda7f640",
+      "audio_length": 883052,
+      "duration_seconds": 73.495,
+      "chunks": [
+        {
+          "text": "At a Safe Distance",
+          "start": 0.0,
+          "duration": 2.225
+        },
+        {
+          "text": "Reconstructed from a mask encountered at an exhibition, this interactive work places an apparatus of survival among foliage and flowers, just beyond textured glass. The mask evokes plague doctors, pandemic protection, and military anonymity. Its promise of safety also closes off the face, withholding eye contact and expression.",
+          "start": 2.405,
+          "duration": 22.525
+        },
+        {
+          "text": "Pandemic memory and nuclear anxiety meet concerns about the energy infrastructure behind computation. Around the mask, a garden offers beauty within an uncertain environment. Blur, glare, and shifting depth make the glass a physical boundary: movement reveals another angle without granting complete access.",
+          "start": 25.11,
+          "duration": 21.375
+        },
+        {
+          "text": "The work draws on Doris Salcedo's Atrabiliarios, with its objects held behind translucent membranes, and Christian Boltanski's use of photographs, belongings, and archival forms to approach memory and absence. The enclosure becomes a place where something is preserved while remaining difficult to reach.",
+          "start": 46.665,
+          "duration": 20.575
+        },
+        {
+          "text": "By Brad Necyk, 2026. This living artwork is not inscribed.",
+          "start": 67.42,
+          "duration": 6.075
+        }
+      ],
+      "checks": {
+        "all_text_retained": true,
+        "mp3_decodes": true,
+        "finite_samples": true,
+        "peak": 0.5602088570594788,
+        "clipped_samples": 0
+      }
+    },
+    {
       "id": "fieldworks-overview-v1",
       "title": "Fieldworks, first edition",
       "form": "fieldwork",
@@ -19992,6 +20049,58 @@
         "peak": 0.593643844127655,
         "clipped_samples": 0
       }
+    },
+    {
+      "id": "fieldworks-overview-twelve-works",
+      "title": "Fieldworks, twelve-work edition",
+      "form": "fieldwork",
+      "release_id": null,
+      "pages": [
+        "fieldworks/readings/overview-twelve-works.md"
+      ],
+      "source_path": "fieldworks/readings/overview-twelve-works.md",
+      "source_sha256": "680c08f0dc6fb88171cd5098aa955e26bc3976f9d9df9de43fa2411cccc06bc2",
+      "document_sha256": "680c08f0dc6fb88171cd5098aa955e26bc3976f9d9df9de43fa2411cccc06bc2",
+      "text_sha256": "58d6b002f0d9e29f8ab8c7c8910cd9eb3e82f4a26eb3cc7bf5471a592eab4fbe",
+      "reading_path": "audio/readings/58d6b002f0d9e29f8ab8c7c8910cd9eb3e82f4a26eb3cc7bf5471a592eab4fbe.md",
+      "reading_sha256": "680c08f0dc6fb88171cd5098aa955e26bc3976f9d9df9de43fa2411cccc06bc2",
+      "reading_length": 473,
+      "audio_path": "audio/lewis/58d6b002f0d9e29f8ab8c7c8910cd9eb3e82f4a26eb3cc7bf5471a592eab4fbe.mp3",
+      "voice": "bm_lewis",
+      "voice_name": "Lewis",
+      "speed": 1.0,
+      "audio_sha256": "1eb3b4dac58ab5a10650cdcb0113cf87f0d7686b785f52a5e18a7eddf1978786",
+      "audio_length": 425708,
+      "duration_seconds": 35.39,
+      "chunks": [
+        {
+          "text": "Fieldworks",
+          "start": 0.0,
+          "duration": 1.65
+        },
+        {
+          "text": "Generative artworks and interactive environments by Brad Necyk.",
+          "start": 1.83,
+          "duration": 5.15
+        },
+        {
+          "text": "A surface that answers. A fold in seeing. An unfinished sky. Impossible matter. A river remembering a drawing. A small vocabulary, an expanding field. A field of competing futures. A picture with weight. A room that keeps trying to sing. A history in formation. A manual, held differently. A drawing that keeps swimming.",
+          "start": 7.16,
+          "duration": 22.475
+        },
+        {
+          "text": "Twelve living artworks. Enter, explore, and see what a gesture changes.",
+          "start": 29.815,
+          "duration": 5.575
+        }
+      ],
+      "checks": {
+        "all_text_retained": true,
+        "mp3_decodes": true,
+        "finite_samples": true,
+        "peak": 0.6107050776481628,
+        "clipped_samples": 0
+      }
     }
   ],
   "playlists": [
@@ -20164,6 +20273,11 @@
       "path": "audio-bundles/lewis-27.zip",
       "sha256": "13ac6144ed63e598330303d196ce6aa2a23a58f04e834fb41f517fa6ce514401",
       "length": 1150278
+    },
+    {
+      "path": "audio-bundles/lewis-28.zip",
+      "sha256": "b439c9743755d4b617f8787fb784ff0af722eb091093c145ca3fe6a4a1725711",
+      "length": 1333734
     }
   ]
 }

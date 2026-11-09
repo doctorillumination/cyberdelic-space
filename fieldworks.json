@@ -1,15 +1,15 @@
 {
   "schema": "cyberdelic.space/fieldworks-v1",
-  "version": "1.10.0",
-  "date": "2026-11-08",
-  "published_at": "2026-11-09T02:53:55.127322Z",
+  "version": "1.11.0",
+  "date": "2026-11-09",
+  "published_at": "2026-11-09T16:20:53.770811Z",
   "overview": {
     "title": "Fieldworks",
     "href": "fieldworks/",
     "source": "overview.md",
     "source_path": "fieldworks/readings/overview.md",
-    "source_sha256": "680c08f0dc6fb88171cd5098aa955e26bc3976f9d9df9de43fa2411cccc06bc2",
-    "source_length": 473
+    "source_sha256": "92a0626aa3322e12975da17e6c97cd3e2a840fa97925986044e8e872e63790bb",
+    "source_length": 505
   },
   "archived_readings": [
     {
@@ -101,6 +101,15 @@
       "source_sha256": "b855a43e7f668e6b919f9e0b146d74f8383d0a4a9480984da55c9f41a552c437",
       "source_length": 442,
       "slug": "overview-eleven-works"
+    },
+    {
+      "title": "Fieldworks, twelve-work edition",
+      "href": "fieldworks/readings/overview-twelve-works.md",
+      "source": "overview-twelve-works.md",
+      "source_path": "fieldworks/readings/overview-twelve-works.md",
+      "source_sha256": "680c08f0dc6fb88171cd5098aa955e26bc3976f9d9df9de43fa2411cccc06bc2",
+      "source_length": 473,
+      "slug": "overview-twelve-works"
     }
   ],
   "items": [
@@ -594,6 +603,49 @@
         "path": "fieldworks/previews/paper-water.mp4",
         "sha256": "c38cfa92e2fc0af6bc9810f30c0e8320546cc971cca531e9df14d77ad0bb08b5",
         "length": 121397,
+        "kind": "recorded-artwork-loop"
+      }
+    },
+    {
+      "slug": "at-a-safe-distance",
+      "title": "At a Safe Distance",
+      "former_title": "Under Glass",
+      "edition": "left-lit-presence-45-view",
+      "project": "at-a-safe-distance",
+      "repository": "https://github.com/doctorillumination/plaguemask",
+      "status": "living",
+      "caption": "A face held beyond the glass.",
+      "description": "A mask and a garden behind textured glass. Drag to explore an enclosed space where protection, beauty, and distance remain unresolved.",
+      "alt": "A rust-colored respirator mask behind textured, gridded glass, with a pale glow at left and foliage and flowers deep at right.",
+      "gesture": "Drag to change the viewing angle. Arrow keys also turn the view. Home returns to the front.",
+      "source": "at-a-safe-distance.md",
+      "themes": [
+        "protection",
+        "memory",
+        "attention",
+        "absence",
+        "beauty",
+        "opacity"
+      ],
+      "related_note": "fn-05",
+      "related_title": "The Physics We Choose",
+      "offline_part": true,
+      "release_id": "3c041300fe8ccd3b928abe772cc0b5cb2d1a1218be4e401e4212e3f71ab76385",
+      "runtime_published_at": "2026-11-09T16:20:53.770811Z",
+      "source_path": "fieldworks/readings/at-a-safe-distance.md",
+      "source_sha256": "22feb6093a37ba41dc74de5b577811aa58275ee573a81a847bbbfe721dfdebb9",
+      "source_length": 1027,
+      "href": "fieldworks/at-a-safe-distance/",
+      "poster": {
+        "path": "fieldworks/images/at-a-safe-distance.jpg",
+        "sha256": "0116bc25674a4058bd2b004ecb9e56f6df63e35ca87949c4966336c4b21d15c0",
+        "length": 48571,
+        "kind": "actual-browser-capture"
+      },
+      "preview": {
+        "path": "fieldworks/previews/at-a-safe-distance.mp4",
+        "sha256": "30ac3d93882673593420724741bb3af1b5fbbb5f55008832a7d077c228ba7bd9",
+        "length": 809548,
         "kind": "recorded-artwork-loop"
       }
     }

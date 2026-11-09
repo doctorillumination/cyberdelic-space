@@ -2,6 +2,306 @@
   "schema": "cyberdelic.space/artwork-bundles-v1",
   "parts": [
     {
+      "artwork": "at-a-safe-distance",
+      "path": "artwork-bundles/at-a-safe-distance-01.zip",
+      "length": 23764280,
+      "sha256": "51a0aa963c2b1ce10975534de59dcb6b4c65a2da4252e33939f880038112b91c",
+      "files": [
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/FLOWER-CREDITS.txt",
+          "length": 1961,
+          "sha256": "1d89f76f299833bd1f67b3b46cf1d3fc16446c124b1af45a71bee2f26c982a53"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/FOLIAGE-CREDITS.txt",
+          "length": 1575,
+          "sha256": "7d6df0c40f6b95cda847a2313e143e8df1c10248e792b3ce94046c6137e3c0f8"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/THIRD-PARTY-LICENSES.txt",
+          "length": 16831,
+          "sha256": "d8a2136076cb79d7448ea162cf43c07ae12f70361dc585ffcc4389c06528f51b"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/manifest.json",
+          "length": 94017,
+          "sha256": "6bc44c65cdc26eac420d53f3d68da82daddefce010eb17812eb0fa236ab02986"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-00-00.webp",
+          "length": 747420,
+          "sha256": "23eca947e14992ada890c45664c7bb856a071caec9aa0f67098fff25d6094c04"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-00-01.webp",
+          "length": 747878,
+          "sha256": "8e102edbd883dfaefb223d8011d61d42fb4bdb978ea29b0b2aabf13492c52eed"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-00-02.webp",
+          "length": 738856,
+          "sha256": "d5a8c2429748d2a255f0e6faca129951bcf05dbd1ec0b410b27d46995c7192a9"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-00-03.webp",
+          "length": 720752,
+          "sha256": "482828334757ea352fa919c2c44c7cc2aeed7d53f9209dfdd6f4feacf02733fd"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-00-04.webp",
+          "length": 713082,
+          "sha256": "5b57a60b704d1007b880d1ff349f86ee6205097704c219d061f67790cbc027f5"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-00-05.webp",
+          "length": 710502,
+          "sha256": "809204d96a6990845787349001de101c782552d3069f4984b937e52a07e1ee0c"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-00-06.webp",
+          "length": 714554,
+          "sha256": "b15064b9f0a0f768c8b80265ef2806243004c8dd5cb2b359e93777c5f5f2d514"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-00-07.webp",
+          "length": 709402,
+          "sha256": "4e6c59f9287abd55f70f670130c36c88760e133ecb7204c7e3b517b42d7bd567"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-00-08.webp",
+          "length": 694060,
+          "sha256": "2ccc1134e21a5292c9a539caf56ea83cc6c282f865b71380376146deec67043c"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-01-00.webp",
+          "length": 744558,
+          "sha256": "9f8428de8ba4cbafc5a0ac7d22b582daec8f30234dc1a266cfa2bdaf142b41a9"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-01-01.webp",
+          "length": 746442,
+          "sha256": "dd0a0eae7861b6aa7eb91b0869125dcedd371bb04b9f588be9d374b636d21464"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-01-02.webp",
+          "length": 737678,
+          "sha256": "952432391071f678f77b3d105cd43a3b217ad71499dae745905a8879a6b66bca"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-01-03.webp",
+          "length": 724010,
+          "sha256": "c5712ea85c8c70367f525fe4a74cb7c1b74a90624fe38b63f2ef9ccadf888673"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-01-04.webp",
+          "length": 700110,
+          "sha256": "9fbea216299817d1a40667a5bffeb38d1490db673e8dadda497f265091d7d52a"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-01-05.webp",
+          "length": 705416,
+          "sha256": "4ff62b02fb55dedf40fe311a60a11969a504acb71adfd1e2ad88a949f3f6bd0c"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-01-06.webp",
+          "length": 706564,
+          "sha256": "24bb50ca5f1265745f65fd608b87323057449078a5d1ae4f5301381b654b487c"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-01-07.webp",
+          "length": 711966,
+          "sha256": "3acd0972536b9afd6f6069c18ad31d80db1036015e6b720b1765a36388fa91b2"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-01-08.webp",
+          "length": 692082,
+          "sha256": "ce72c7212eb276ab13e56a5827302b744e0d04706a73d491edf10df17edd819a"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-02-00.webp",
+          "length": 736178,
+          "sha256": "d8222dcd4404cc43b8ad0ba274a2490f248a1c46a035c0cf680d7a5b2919bbcd"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-02-01.webp",
+          "length": 729874,
+          "sha256": "618605f7cc206669337583d140be3eb2b388af49039752325e53860b25d9d97e"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-02-02.webp",
+          "length": 756648,
+          "sha256": "57293960fc5e19486b2bd7d159485d558d9d4dcd811a2ea26d8cf49297a8b2f7"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-02-03.webp",
+          "length": 751082,
+          "sha256": "51ba84167e2ee8922bd7cc7b1f780b47e71d71bf63288f2ceff0e4071c581815"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-02-04.webp",
+          "length": 697648,
+          "sha256": "2c670720a56d42cbb65b4dd4ceae9f50d702225b75e341f818cee6bc64af579b"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-02-05.webp",
+          "length": 700974,
+          "sha256": "28fe61e68b4c4926016c0366342ed09abf0c4b2df5966cd2d46655c725676dfa"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-02-06.webp",
+          "length": 714024,
+          "sha256": "6ac28ba95879885a1e6bd4ad48cd63684b5ac3f7b896bfd83f6fabe34f999506"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-02-07.webp",
+          "length": 705326,
+          "sha256": "631e39bee348184b21a739af55be1873f96cfb50ffb604866f61c0ba616b2839"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-02-08.webp",
+          "length": 706714,
+          "sha256": "9e5888c3a6ca52511ef42a86f75157ce1e95609511d3e10a45660cb9468c942d"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-03-00.webp",
+          "length": 729994,
+          "sha256": "99adafc0ee7106108cfba058fe1ee1325f777ef90be37f84a0fc38f0c5113ca9"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-03-01.webp",
+          "length": 759280,
+          "sha256": "22eabfbf4af49f641d3bf54ab3977f9e420c43b4e029f9c2e3c66130e1ff4534"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-03-02.webp",
+          "length": 718050,
+          "sha256": "41b738d230cb84c2061f1750326d5c6133f0b7bb51bc34f4981c5f804113a7e4"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-03-03.webp",
+          "length": 707826,
+          "sha256": "b016ff7da51d5b45b73db5d8a04f8a3df719d90b3cdaf164f99e83e849f4f7f1"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-03-04.webp",
+          "length": 700696,
+          "sha256": "275f6a50960dd887075e97691fd2aa92a1f228e970c649d8fce120ffa3a13a89"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-03-05.webp",
+          "length": 700586,
+          "sha256": "8954907245bceeea471a92c7171bcd5d5e31351b11bd2ea9af67b50dcce42f47"
+        }
+      ],
+      "part": 1,
+      "total_parts": 2
+    },
+    {
+      "artwork": "at-a-safe-distance",
+      "path": "artwork-bundles/at-a-safe-distance-02.zip",
+      "length": 9461646,
+      "sha256": "969d0bf7c5d63a5ebd57d30b2a2c567006e413cc9ee4feb407b10f575ebbe9f1",
+      "files": [
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-03-06.webp",
+          "length": 747028,
+          "sha256": "0303e6f079f2965261c3fe698117896c2c3b61c0518441cfc6daa789b6779437"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-03-07.webp",
+          "length": 743154,
+          "sha256": "b748d1aa49e524dbb5604a76074461862fa19480cbf70008a5acd815425b1177"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-03-08.webp",
+          "length": 701894,
+          "sha256": "16ca6f96f981e9583bf7a2d78635735a640fb0697f69a13fff6b88cb1d69db07"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-04-00.webp",
+          "length": 727592,
+          "sha256": "b3bb423a5d272de119fd9472b628d374dd59699e24e170d671afc3a199a75557"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-04-01.webp",
+          "length": 728592,
+          "sha256": "4e7171f9f312eb58e58a71479775d18cf2752eee1b1df8069fc085fe544e8dbb"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-04-02.webp",
+          "length": 751154,
+          "sha256": "8ede29a13f8054ce05c722b98df48764972a57ce8747bb2631b21a93b1f63a2d"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-04-03.webp",
+          "length": 706788,
+          "sha256": "1d1e0e586326b965bcdf2a424b244214db1d75f04f5cf42eff9f4d827dd51135"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-04-04.webp",
+          "length": 696146,
+          "sha256": "b579be1c56ab847417be21b4c63d7ee508976bf1d1ff4ecaf13218ef3e972e8c"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-04-05.webp",
+          "length": 696200,
+          "sha256": "e585308751e6efc4d8e469d2672caf45e3cfd6523207b2fc8706683dd4ebf483"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-04-06.webp",
+          "length": 745044,
+          "sha256": "33443ab1c6e959340c03701a6a0747d28558bb2b8e18255a24f03bdb223c1b79"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-04-07.webp",
+          "length": 741460,
+          "sha256": "dd8992ee28c68cbb00a08604253757c1890a5fc0ea48b527365a0e8304425ff2"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/assets/presence-field-test/view-04-08.webp",
+          "length": 690604,
+          "sha256": "fc5955614fde6dcb3ff04f816cbe523ef5be672410f1ae1e25810d749b074717"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/index.html",
+          "length": 2709,
+          "sha256": "8ce5ae4b4b55244749ce6f9aa0f468a8f2c43be88c5e1dc5237541d43293637f"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/parallax-test.css",
+          "length": 557,
+          "sha256": "952decc7c4130a464b4d5aa4e8c44f7ba5c19e12785ccfdd46bd984d81c3b658"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/parallax-test.js",
+          "length": 13182,
+          "sha256": "ca4b2f6290dabda3426ad5aff72436868be15f0ee5440df87f43762eda6531c6"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/publication.css",
+          "length": 159,
+          "sha256": "068769c0b3081d44286fd826f237156c447f98894b08d9f058adb650eee1f37c"
+        },
+        {
+          "path": "fieldwork-runtime/at-a-safe-distance/style.css",
+          "length": 6433,
+          "sha256": "253ab5eae19f0a3afb999b4de25911bfa17bc26ad6742f04a6557571aa8f4538"
+        },
+        {
+          "path": "fieldworks/images/at-a-safe-distance.jpg",
+          "length": 48571,
+          "sha256": "0116bc25674a4058bd2b004ecb9e56f6df63e35ca87949c4966336c4b21d15c0"
+        },
+        {
+          "path": "fieldworks/previews/at-a-safe-distance.mp4",
+          "length": 809548,
+          "sha256": "30ac3d93882673593420724741bb3af1b5fbbb5f55008832a7d077c228ba7bd9"
+        }
+      ],
+      "part": 2,
+      "total_parts": 2
+    },
+    {
       "artwork": "btc-swarm",
       "path": "artwork-bundles/btc-swarm.zip",
       "length": 10966598,

@@ -1587,6 +1587,29 @@
       ],
       "excerpt": "Fish drift, gather, and feed in an ink pond on textured paper. Small bites send faint ripples across a still overhead view.",
       "rationale": "Human-authorized Fieldworks publication. Thematic placements remain interpretive, separate from inscription evidence."
+    },
+    {
+      "id": "fieldwork-at-a-safe-distance",
+      "release_id": "FW-AT-A-SAFE-DISTANCE",
+      "label": "FIELDWORK · LIVING",
+      "title": "At a Safe Distance",
+      "href": "fieldworks/at-a-safe-distance/",
+      "author": "Brad Necyk",
+      "date": "2026-11-09",
+      "publication_state": "living",
+      "form": "generative-art",
+      "world": "cyberdelic-os",
+      "register": "play",
+      "themes": [
+        "protection",
+        "memory",
+        "attention",
+        "absence",
+        "beauty",
+        "opacity"
+      ],
+      "excerpt": "A mask and a garden behind textured glass. Drag to explore an enclosed space where protection, beauty, and distance remain unresolved.",
+      "rationale": "Human-authorized Fieldworks publication. Thematic placements remain interpretive, separate from inscription evidence."
     }
   ]
 }
