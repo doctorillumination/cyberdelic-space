@@ -4684,9 +4684,9 @@
       "slug": "btc-swarm",
       "project": "btc-swarm",
       "repository": "https://github.com/doctorillumination/btc-swarm",
-      "revision": "1477b587751388636935b2bae33f9b5f7d91ef14",
-      "edition": "history-study-11",
-      "source_version": "study-11",
+      "revision": "9018882af14816c8c482cbbf67e3ae0689c41363",
+      "edition": "history-study-12",
+      "source_version": "study-12",
       "source_subdirectory": ".",
       "source_files": [
         {
@@ -4707,7 +4707,7 @@
         },
         {
           "path": "src/shell.html",
-          "sha256": "bec4e8af1766435748945478bae1c4142d5c8a36a3cd8c0ea8b93a712258866a"
+          "sha256": "f341f0de046a085f4a4aaf41bc722697c43ff959351b001020822014b5aa91fd"
         },
         {
           "path": "assets/README.md",
@@ -4715,7 +4715,7 @@
         },
         {
           "path": "assets/history/README.md",
-          "sha256": "bb895d3e834319cc4f4dc59275b71645419f22aed62ad1f1b8503a4083bbc193"
+          "sha256": "e3ac7b51677fda7755d12920776a8070a827d0e44f3587cbf67beb9bef8b2151"
         },
         {
           "path": "assets/history/adam-back.jpg",
@@ -4766,6 +4766,14 @@
           "sha256": "23a0dc0a546a34e7443963320787c6712140ee26891088bc6b9e045e363e076f"
         },
         {
+          "path": "assets/history/hal-finney-portrait-provenance.json",
+          "sha256": "9a4add637403c9ba5189d3dbd8936e19d17b264b372f82d9bf32c13b2ae80a8e"
+        },
+        {
+          "path": "assets/history/hal-finney-portrait.jpg",
+          "sha256": "1d48afccebd42a090596e1c0596522f7c58293c283a0e41daff23dcf398b22bb"
+        },
+        {
           "path": "assets/history/hal-finney.jpg",
           "sha256": "6ee0d421e9f97a1866e7c1188811809bc40a04627ff2398779ebfaec3080938e"
         },
@@ -4787,7 +4795,7 @@
         },
         {
           "path": "assets/history/manifest.json",
-          "sha256": "6311faab8d92d66108e4b5adde0c6383bc36db57c0f7bbf49828e0fd2ce6dccb"
+          "sha256": "8ade00b7118397d9a389278e5b301e582bbd6b74f38695380272254277583ea0"
         },
         {
           "path": "assets/history/market-cycles.svg",
@@ -4855,7 +4863,7 @@
         },
         {
           "path": "content/chapters.json",
-          "sha256": "920e0a409f3a856cb420deb4cd055d09a78459491b06d5911ad8742fdc3bc1d4"
+          "sha256": "0223f6338af8eec4474e7694e3db22f1a58a61079c707fdfa2d9ff381b2674bf"
         },
         {
           "path": "content/genesis.json",
@@ -4867,15 +4875,15 @@
         },
         {
           "path": "build.py",
-          "sha256": "cfbf0f2d00c574d065adcdd2e5e2980c01f1ca80676a8bb388cf13f5d637734e"
+          "sha256": "e14f433a3dade9327e21298479b1ed1a6806921e10315a9a1cc8ed2f68dd645c"
         },
         {
           "path": "index.html",
-          "sha256": "f177498c6330d90a1995064cac0e81a1dd61e1098fe9ba2c70546b9f011392b8"
+          "sha256": "e270fd52d4ce61a5d7f9044954170603936e65310065889470de9280afb3ad0a"
         },
         {
           "path": "SOURCES.md",
-          "sha256": "74ef191021d61666fd7fb99cd93f12f98b736fd585224238c4e7f0f56fa2e7aa"
+          "sha256": "71f5e954795643ff5c01e441ba63d772c55f0f9712449216581ef18b73998217"
         },
         {
           "path": "ALGORITHM.md",
@@ -4889,7 +4897,7 @@
         },
         {
           "path": "SOURCES.md",
-          "sha256": "74ef191021d61666fd7fb99cd93f12f98b736fd585224238c4e7f0f56fa2e7aa"
+          "sha256": "71f5e954795643ff5c01e441ba63d772c55f0f9712449216581ef18b73998217"
         },
         {
           "path": "editions/history-study-07/ALGORITHM.md",
@@ -5020,19 +5028,51 @@
           "sha256": "c261ff485d96bbe051ec012ca2e5394527a8c064ef3704eee2a9bf1a80ec54df"
         },
         {
+          "path": "editions/history-study-11/ALGORITHM.md",
+          "sha256": "b7e94ca744136a88dc964e88e6932e2e0477257efb19cdcf55a866a3815eb1d2"
+        },
+        {
+          "path": "editions/history-study-11/SOURCES.md",
+          "sha256": "74ef191021d61666fd7fb99cd93f12f98b736fd585224238c4e7f0f56fa2e7aa"
+        },
+        {
+          "path": "editions/history-study-11/generated-prompts.json",
+          "sha256": "47cfff6eb0ed501e3451df6a65a51a55931afd2f30d4789c1dfde6ade53eb8e0"
+        },
+        {
+          "path": "editions/history-study-11/index.html",
+          "sha256": "f177498c6330d90a1995064cac0e81a1dd61e1098fe9ba2c70546b9f011392b8"
+        },
+        {
+          "path": "editions/history-study-11/media-provenance.json",
+          "sha256": "6311faab8d92d66108e4b5adde0c6383bc36db57c0f7bbf49828e0fd2ce6dccb"
+        },
+        {
+          "path": "editions/history-study-11/poster.jpg",
+          "sha256": "cc2b0805e2b8365a787c5127c01bdb19653c5fd83f372eb5bb32608341524fcd"
+        },
+        {
+          "path": "editions/history-study-11/preview.mp4",
+          "sha256": "64426d8bcfb7281e6d8abfd6ec168703535858262d3f7221a848a2eac6b3aaeb"
+        },
+        {
+          "path": "editions/history-study-11/release.json",
+          "sha256": "dd1a4b308c0f89f05ebc4db331332b915dd2bb97b41cc63987da577e82e847a7"
+        },
+        {
           "path": "generated-prompts.json",
           "sha256": "47cfff6eb0ed501e3451df6a65a51a55931afd2f30d4789c1dfde6ade53eb8e0"
         },
         {
           "path": "index.html",
-          "sha256": "f177498c6330d90a1995064cac0e81a1dd61e1098fe9ba2c70546b9f011392b8"
+          "sha256": "e270fd52d4ce61a5d7f9044954170603936e65310065889470de9280afb3ad0a"
         },
         {
           "path": "media-provenance.json",
-          "sha256": "6311faab8d92d66108e4b5adde0c6383bc36db57c0f7bbf49828e0fd2ce6dccb"
+          "sha256": "8ade00b7118397d9a389278e5b301e582bbd6b74f38695380272254277583ea0"
         }
       ],
-      "adaptations": "Exact standalone Study 11. Hal Finney joins Adam Back and Len Sassaman in the identity chapter portrait lineup, using the existing credited archival photo. Both the swarm and reader use the same updated chapter packet. The uncertainty text and all other chapters remain unchanged. Earlier editions and their media remain in the edition archives."
+      "adaptations": "Exact standalone Study 12. The identity chapter uses the exact supplied Hal Finney portrait, with separate caption and attribution. The earlier Hal Finney chapter retains the 1972 photograph. The swarm and reader share the updated media list. All chapter prose and other images remain unchanged. Earlier editions and their media remain in the edition archives."
     },
     {
       "slug": "transplant",

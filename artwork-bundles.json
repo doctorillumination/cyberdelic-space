@@ -4,8 +4,8 @@
     {
       "artwork": "btc-swarm",
       "path": "artwork-bundles/btc-swarm.zip",
-      "length": 10936052,
-      "sha256": "f10b880b540afe13bab7517fe60c4ce5694248b511aca3426d3a5575a14ac466",
+      "length": 10966598,
+      "sha256": "8d3887413492ce6834889c9ba28d3c4e20fac3bf75697dd6795ca7bc6b58ff70",
       "files": [
         {
           "path": "fieldwork-runtime/btc-swarm/ALGORITHM.md",
@@ -14,8 +14,8 @@
         },
         {
           "path": "fieldwork-runtime/btc-swarm/SOURCES.md",
-          "length": 13645,
-          "sha256": "74ef191021d61666fd7fb99cd93f12f98b736fd585224238c4e7f0f56fa2e7aa"
+          "length": 14409,
+          "sha256": "71f5e954795643ff5c01e441ba63d772c55f0f9712449216581ef18b73998217"
         },
         {
           "path": "fieldwork-runtime/btc-swarm/generated-prompts.json",
@@ -24,23 +24,23 @@
         },
         {
           "path": "fieldwork-runtime/btc-swarm/index.html",
-          "length": 13352200,
-          "sha256": "f177498c6330d90a1995064cac0e81a1dd61e1098fe9ba2c70546b9f011392b8"
+          "length": 13398639,
+          "sha256": "e270fd52d4ce61a5d7f9044954170603936e65310065889470de9280afb3ad0a"
         },
         {
           "path": "fieldwork-runtime/btc-swarm/media-provenance.json",
-          "length": 13796,
-          "sha256": "6311faab8d92d66108e4b5adde0c6383bc36db57c0f7bbf49828e0fd2ce6dccb"
+          "length": 14341,
+          "sha256": "8ade00b7118397d9a389278e5b301e582bbd6b74f38695380272254277583ea0"
         },
         {
           "path": "fieldworks/images/btc-swarm.jpg",
-          "length": 126087,
-          "sha256": "cc2b0805e2b8365a787c5127c01bdb19653c5fd83f372eb5bb32608341524fcd"
+          "length": 126166,
+          "sha256": "9ee0e048d07925f468e09cfefa6ee14820a7c37656e0520ccacec86ce835dd1d"
         },
         {
           "path": "fieldworks/previews/btc-swarm.mp4",
-          "length": 974195,
-          "sha256": "64426d8bcfb7281e6d8abfd6ec168703535858262d3f7221a848a2eac6b3aaeb"
+          "length": 975019,
+          "sha256": "edc395268b13c7f288cfcc580771073ff1daa243f4ffbc06c46956c71a6f74d8"
         }
       ]
     },
@@ -233,6 +233,54 @@
           "path": "fieldwork-runtime/btc-swarm/editions/history-study-10/release.json",
           "length": 19804,
           "sha256": "c261ff485d96bbe051ec012ca2e5394527a8c064ef3704eee2a9bf1a80ec54df"
+        }
+      ]
+    },
+    {
+      "artwork": "btc-swarm-history-study-11",
+      "path": "artwork-bundles/btc-swarm-history-study-11.zip",
+      "length": 10941941,
+      "sha256": "fbdb88b83c72884c3f79ed8af070638d3810301f33325e42eb9e800c2d7014cd",
+      "files": [
+        {
+          "path": "fieldwork-runtime/btc-swarm/editions/history-study-11/ALGORITHM.md",
+          "length": 3199,
+          "sha256": "b7e94ca744136a88dc964e88e6932e2e0477257efb19cdcf55a866a3815eb1d2"
+        },
+        {
+          "path": "fieldwork-runtime/btc-swarm/editions/history-study-11/SOURCES.md",
+          "length": 13645,
+          "sha256": "74ef191021d61666fd7fb99cd93f12f98b736fd585224238c4e7f0f56fa2e7aa"
+        },
+        {
+          "path": "fieldwork-runtime/btc-swarm/editions/history-study-11/generated-prompts.json",
+          "length": 2267,
+          "sha256": "47cfff6eb0ed501e3451df6a65a51a55931afd2f30d4789c1dfde6ade53eb8e0"
+        },
+        {
+          "path": "fieldwork-runtime/btc-swarm/editions/history-study-11/index.html",
+          "length": 13352200,
+          "sha256": "f177498c6330d90a1995064cac0e81a1dd61e1098fe9ba2c70546b9f011392b8"
+        },
+        {
+          "path": "fieldwork-runtime/btc-swarm/editions/history-study-11/media-provenance.json",
+          "length": 13796,
+          "sha256": "6311faab8d92d66108e4b5adde0c6383bc36db57c0f7bbf49828e0fd2ce6dccb"
+        },
+        {
+          "path": "fieldwork-runtime/btc-swarm/editions/history-study-11/poster.jpg",
+          "length": 126087,
+          "sha256": "cc2b0805e2b8365a787c5127c01bdb19653c5fd83f372eb5bb32608341524fcd"
+        },
+        {
+          "path": "fieldwork-runtime/btc-swarm/editions/history-study-11/preview.mp4",
+          "length": 974195,
+          "sha256": "64426d8bcfb7281e6d8abfd6ec168703535858262d3f7221a848a2eac6b3aaeb"
+        },
+        {
+          "path": "fieldwork-runtime/btc-swarm/editions/history-study-11/release.json",
+          "length": 22590,
+          "sha256": "dd1a4b308c0f89f05ebc4db331332b915dd2bb97b41cc63987da577e82e847a7"
         }
       ]
     },
