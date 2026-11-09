@@ -28,7 +28,7 @@
     if (clean && about.open) about.close();
     if (childDocument) {
       childDocument.documentElement.toggleAttribute("data-fieldwork-artwork-only", clean);
-      if (clean) childDocument.querySelectorAll("dialog[open]").forEach(function (dialog) { dialog.close(); });
+      if (clean) childDocument.querySelectorAll("dialog[open]").forEach(function (dialog) { if (!dialog.hasAttribute("data-fieldwork-reading")) dialog.close(); });
     }
   }
   function updateFullscreen(active) {

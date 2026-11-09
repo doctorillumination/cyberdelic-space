@@ -4684,9 +4684,9 @@
       "slug": "btc-swarm",
       "project": "btc-swarm",
       "repository": "https://github.com/doctorillumination/btc-swarm",
-      "revision": "616476d09c90556ff2d26f4f1d1109792ed6b592",
-      "edition": "history-study-09",
-      "source_version": "study-09",
+      "revision": "c727136c57e1fd8c7d55e90f8e6043681b1203ef",
+      "edition": "history-study-10",
+      "source_version": "study-10",
       "source_subdirectory": ".",
       "source_files": [
         {
@@ -4694,12 +4694,20 @@
           "sha256": "e003edbda848378d024b84f48852539e6eb631047b5d1a9c6097f4876e2b8f49"
         },
         {
+          "path": "src/reader.css",
+          "sha256": "6704aae1d28d079dd8491eae5a90ffbd14807290462dd1f5ddb83705c5026c62"
+        },
+        {
+          "path": "src/reader.js",
+          "sha256": "05f6242bb0e688e481b27091e83e6626a1d598357c6591b1ba80b89d758d4f9c"
+        },
+        {
           "path": "src/runtime.js",
-          "sha256": "48db49972f81dd55d03a59ccd2cd3357840b7a743e12e9fda930ba1a61556823"
+          "sha256": "92c9344a2de0db2249c3f39c7ed97797470223f446c9948751ea778ad78c6156"
         },
         {
           "path": "src/shell.html",
-          "sha256": "2057a24e9e87577526e44e44b11df2db2aa93faa526d7fd05f315b752e36ac9f"
+          "sha256": "889fe8a72193156b638a649196efa548d784d298c582fe0e975ea308ef767a86"
         },
         {
           "path": "assets/README.md",
@@ -4859,11 +4867,11 @@
         },
         {
           "path": "build.py",
-          "sha256": "466896944b239b510987e6437856338017cd3a17361ece5b8a01bd277a8984c2"
+          "sha256": "cfbf0f2d00c574d065adcdd2e5e2980c01f1ca80676a8bb388cf13f5d637734e"
         },
         {
           "path": "index.html",
-          "sha256": "1f2a14786e14b99b906b229d8ee5c31005f926894bf9159a90ae983eec62e3e3"
+          "sha256": "5f3a8a5c61b636f837e224a4902576181edf7795855728673347fb223879288d"
         },
         {
           "path": "SOURCES.md",
@@ -4871,13 +4879,13 @@
         },
         {
           "path": "ALGORITHM.md",
-          "sha256": "10d3a62b28e742203b733f466d140542cf761109f756b8f7f839dc8c372afcf7"
+          "sha256": "b7e94ca744136a88dc964e88e6932e2e0477257efb19cdcf55a866a3815eb1d2"
         }
       ],
       "packaged_files": [
         {
           "path": "ALGORITHM.md",
-          "sha256": "10d3a62b28e742203b733f466d140542cf761109f756b8f7f839dc8c372afcf7"
+          "sha256": "b7e94ca744136a88dc964e88e6932e2e0477257efb19cdcf55a866a3815eb1d2"
         },
         {
           "path": "SOURCES.md",
@@ -4948,19 +4956,51 @@
           "sha256": "7327b1260308223ddb6aabd3425dd1044f27079e0bc5a90ba271a133d9d6ff46"
         },
         {
+          "path": "editions/history-study-09/ALGORITHM.md",
+          "sha256": "10d3a62b28e742203b733f466d140542cf761109f756b8f7f839dc8c372afcf7"
+        },
+        {
+          "path": "editions/history-study-09/SOURCES.md",
+          "sha256": "74ef191021d61666fd7fb99cd93f12f98b736fd585224238c4e7f0f56fa2e7aa"
+        },
+        {
+          "path": "editions/history-study-09/generated-prompts.json",
+          "sha256": "47cfff6eb0ed501e3451df6a65a51a55931afd2f30d4789c1dfde6ade53eb8e0"
+        },
+        {
+          "path": "editions/history-study-09/index.html",
+          "sha256": "1f2a14786e14b99b906b229d8ee5c31005f926894bf9159a90ae983eec62e3e3"
+        },
+        {
+          "path": "editions/history-study-09/media-provenance.json",
+          "sha256": "6311faab8d92d66108e4b5adde0c6383bc36db57c0f7bbf49828e0fd2ce6dccb"
+        },
+        {
+          "path": "editions/history-study-09/poster.jpg",
+          "sha256": "7fe29ce5958df4898ae1a59ac905d084631bb8c8931befe387453c05169ddd9a"
+        },
+        {
+          "path": "editions/history-study-09/preview.mp4",
+          "sha256": "ed039deefeef473ee9a557dfb764d7f3aa5a37f9be98c5fea388a024e65af363"
+        },
+        {
+          "path": "editions/history-study-09/release.json",
+          "sha256": "45bf276dd1cdaf2dfc95943258039a22fdf415e4427437e53242c22346f1a673"
+        },
+        {
           "path": "generated-prompts.json",
           "sha256": "47cfff6eb0ed501e3451df6a65a51a55931afd2f30d4789c1dfde6ade53eb8e0"
         },
         {
           "path": "index.html",
-          "sha256": "1f2a14786e14b99b906b229d8ee5c31005f926894bf9159a90ae983eec62e3e3"
+          "sha256": "5f3a8a5c61b636f837e224a4902576181edf7795855728673347fb223879288d"
         },
         {
           "path": "media-provenance.json",
           "sha256": "6311faab8d92d66108e4b5adde0c6383bc36db57c0f7bbf49828e0fd2ce6dccb"
         }
       ],
-      "adaptations": "Exact standalone Study 09. One cursor gathers a bundle that bursts directly into the active desktop. Ordered launch formations are removed. Earlier editions and their media remain in the edition archives. Host view controls remain separate."
+      "adaptations": "Exact standalone Study 10. The archive reader presents the same canonical chapters, media, credits, and sources while the desktop simulation continues. The original opening and infinite assembly remain. Earlier editions and their media remain in the edition archives. Host view controls preserve explicitly marked reading dialogs."
     },
     {
       "slug": "transplant",
