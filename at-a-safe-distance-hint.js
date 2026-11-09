@@ -1,0 +1,40 @@
+/* A quiet invitation, retired by the viewer's first deliberate drag. */
+(function () {
+  const frame = document.querySelector('[data-fieldwork="at-a-safe-distance"] iframe');
+  function attach(canvas, host) {
+    if (!canvas || host.querySelector('[data-instruction]')) return;
+    const hint = host.querySelector('#gesture-hint') || document.createElement('p');
+    hint.classList.add('fieldwork-drag-hint');
+    hint.dataset.instruction = 'drag';
+    hint.setAttribute('aria-hidden', 'true');
+    hint.textContent = matchMedia('(pointer: coarse)').matches ? 'Touch and drag to look around' : 'Click and drag to look around';
+    if (!hint.parentNode) host.appendChild(hint);
+    let start = null;
+    const ready = () => { hint.dataset.ready = String(canvas.dataset.ready === 'true'); };
+    const observer = new MutationObserver(ready);
+    observer.observe(canvas, {attributes: true, attributeFilter: ['data-ready']});
+    ready();
+    function down(event) {
+      if (event.button === 0 && canvas.dataset.ready === 'true') start = {id: event.pointerId, x: event.clientX, y: event.clientY};
+    }
+    function move(event) {
+      if (!start || event.pointerId !== start.id || Math.hypot(event.clientX - start.x, event.clientY - start.y) < 5) return;
+      hint.dataset.dismissed = 'true';
+      observer.disconnect();
+      canvas.removeEventListener('pointerdown', down);
+      canvas.removeEventListener('pointermove', move);
+      canvas.removeEventListener('pointerup', release);
+      canvas.removeEventListener('pointercancel', release);
+    }
+    function release() { start = null; }
+    canvas.addEventListener('pointerdown', down);
+    canvas.addEventListener('pointermove', move);
+    canvas.addEventListener('pointerup', release);
+    canvas.addEventListener('pointercancel', release);
+  }
+  if (frame) {
+    const connect = () => attach(frame.contentDocument?.querySelector('#scene'), document.querySelector('.fieldwork-player'));
+    frame.addEventListener('load', connect);
+    connect();
+  } else attach(document.querySelector('#scene'), document.querySelector('#artwork'));
+})();
