@@ -120,6 +120,17 @@
       "path": "btc-swarm.mp4",
       "sha256": "ed039deefeef473ee9a557dfb764d7f3aa5a37f9be98c5fea388a024e65af363",
       "length": 970300
+    },
+    {
+      "slug": "transplant",
+      "capture": "actual browser compositor, DOM and WebGL, fixed 60 fps, silent",
+      "raw_sha256": "a374959309fe41f3fe86cd99d78ac84cc5bcc99081c220ad38f21dd8360f7de1",
+      "raw_duration": 8.0,
+      "loop_method": "Four fully sampled page turns separated by verified identical resting spreads. First and final spreads match.",
+      "source_snapshot_sha256": "85165e8eea3662d3cad194296163a645a2a1e2cb0d7322654e4c60a6ded8b7e7",
+      "path": "transplant.mp4",
+      "sha256": "7d1ed51dfdabd28b73715087743d1e2358623b237812cfe7d3f5e3231d9e3f75",
+      "length": 566590
     }
   ],
   "archived_items": [

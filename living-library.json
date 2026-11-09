@@ -1541,6 +1541,29 @@
       ],
       "excerpt": "Hundreds of cursors build a Bitcoin history inside a restless desktop. Documents, images, and fragments of collective memory pass from hand to hand.",
       "rationale": "An interactive Fieldwork, with interpretive thematic placements distinct from inscription evidence."
+    },
+    {
+      "id": "fieldwork-transplant",
+      "release_id": "FW-TRANSPLANT",
+      "label": "FIELDWORK · LIVING",
+      "title": "Transplant",
+      "href": "fieldworks/transplant/",
+      "author": "Brad Necyk",
+      "date": "2026-11-08",
+      "publication_state": "living",
+      "form": "generative-art",
+      "world": "cyberdelic-os",
+      "register": "play",
+      "themes": [
+        "poetry",
+        "embodiment",
+        "care",
+        "memory",
+        "gesture",
+        "time"
+      ],
+      "excerpt": "A liver transplant manual becomes a book of weathered poetry. Turn through thirty-three pages of bleeding ink, worn paper, and implicated lives.",
+      "rationale": "An interactive poetic book in Fieldworks. Thematic placements are interpretive and remain distinct from inscription evidence."
     }
   ]
 }
