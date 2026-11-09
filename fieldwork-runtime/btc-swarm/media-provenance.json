@@ -289,6 +289,20 @@
     "extension": "jpg",
     "sha256": "6ee0d421e9f97a1866e7c1188811809bc40a04627ff2398779ebfaec3080938e"
   },
+  "hal-finney-portrait": {
+    "id": "hal-finney-portrait",
+    "path": "assets/history/hal-finney-portrait.jpg",
+    "caption": "Hal Finney, 2007.",
+    "credit": "Photographer uncredited · supplied portrait",
+    "license": "Copyrighted photograph",
+    "sourceURL": "https://en.wikipedia.org/wiki/File:Hal_Finney_(computer_scientist).jpg",
+    "sources": [],
+    "kind": "Archival photo",
+    "fit": "contain",
+    "locked": true,
+    "extension": "jpg",
+    "sha256": "1d48afccebd42a090596e1c0596522f7c58293c283a0e41daff23dcf398b22bb"
+  },
   "adam-back": {
     "id": "adam-back",
     "path": "assets/history/adam-back.jpg",

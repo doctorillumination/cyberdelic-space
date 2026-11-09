@@ -304,3 +304,13 @@ The financial-crisis montage and Pizza Day still life were created with the buil
 ## Rights records
 
 Third-party photographs and data keep their individual licenses. Coin Metrics data and derived plots are CC BY-NC 4.0. Len Sassaman’s photograph is CC BY-SA 2.0. These records do not assign a blanket license to the complete artwork. The earlier generated desktop icons retain their separate [provenance](assets/README.md).
+
+### hal-finney-portrait
+
+Hal Finney, 2007. The date follows the supplied JPEG’s EXIF metadata. This portrait is used specifically in the Satoshi identity chapter; the 1972 photograph remains in the earlier Hal Finney chapter.
+
+Archival photo. Photographer uncredited. Supplied by the artist as `Hal_Finney_(computer_scientist).jpg`, retained byte for byte.
+
+The corresponding [Wikipedia file record](https://en.wikipedia.org/wiki/File:Hal_Finney_(computer_scientist).jpg) identifies the photographer as unknown and the photograph as copyrighted, with non-free use on Wikipedia. No open license is stated there. This credit does not label the portrait public domain.
+
+Local file: [assets/history/hal-finney-portrait.jpg](assets/history/hal-finney-portrait.jpg).

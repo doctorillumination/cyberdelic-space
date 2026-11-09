@@ -1,0 +1,674 @@
+{
+  "schema": "cyberdelic.space/fieldwork-release-v1",
+  "slug": "btc-swarm",
+  "edition": "history-study-12",
+  "published_at": "2026-11-09T01:19:41.743430Z",
+  "source_record": {
+    "slug": "btc-swarm",
+    "project": "btc-swarm",
+    "repository": "https://github.com/doctorillumination/btc-swarm",
+    "revision": "9018882af14816c8c482cbbf67e3ae0689c41363",
+    "edition": "history-study-12",
+    "source_version": "study-12",
+    "source_subdirectory": ".",
+    "source_files": [
+      {
+        "path": "src/boot.js",
+        "sha256": "e003edbda848378d024b84f48852539e6eb631047b5d1a9c6097f4876e2b8f49"
+      },
+      {
+        "path": "src/reader.css",
+        "sha256": "6704aae1d28d079dd8491eae5a90ffbd14807290462dd1f5ddb83705c5026c62"
+      },
+      {
+        "path": "src/reader.js",
+        "sha256": "05f6242bb0e688e481b27091e83e6626a1d598357c6591b1ba80b89d758d4f9c"
+      },
+      {
+        "path": "src/runtime.js",
+        "sha256": "92c9344a2de0db2249c3f39c7ed97797470223f446c9948751ea778ad78c6156"
+      },
+      {
+        "path": "src/shell.html",
+        "sha256": "f341f0de046a085f4a4aaf41bc722697c43ff959351b001020822014b5aa91fd"
+      },
+      {
+        "path": "assets/README.md",
+        "sha256": "cfe77900279190aa5beeef90b5ed03c403ff0fd44215401e902aa6af6879b59e"
+      },
+      {
+        "path": "assets/history/README.md",
+        "sha256": "e3ac7b51677fda7755d12920776a8070a827d0e44f3587cbf67beb9bef8b2151"
+      },
+      {
+        "path": "assets/history/adam-back.jpg",
+        "sha256": "3094a62874d1886905ae14edc5a10a92b74bc0221538d07c58660d8ca1f09365"
+      },
+      {
+        "path": "assets/history/biden.jpg",
+        "sha256": "0fe50eafde03eb1d04582c408f869b07d7d548f267f9adc157adcb4df760df8a"
+      },
+      {
+        "path": "assets/history/bitcoin-logo.svg",
+        "sha256": "b014fc93884b416f1ba5d95968a671700707d874b9353327b7c857d427893c6c"
+      },
+      {
+        "path": "assets/history/block-wars.svg",
+        "sha256": "35c592ea68db0b1b2cbae2c5223d8a93ed7f9cf1623d26b58da051c56dee7686"
+      },
+      {
+        "path": "assets/history/crisis-editorial-v1.png",
+        "sha256": "05b0ae4f08eda274931dd1c95b6070e16f71584295338e32cd686472f9981633"
+      },
+      {
+        "path": "assets/history/early-markets.svg",
+        "sha256": "7c28ca66a302c7aabff2c7934e06e2ec745d45c2af955d47b1ad1784eff2bac8"
+      },
+      {
+        "path": "assets/history/etf-approval.svg",
+        "sha256": "0f1a655e04394ad776fe9096011f22157e1e7e09ba5f6875f8c422f6e91b7994"
+      },
+      {
+        "path": "assets/history/first-transfer.svg",
+        "sha256": "bcd5a6c6a0bafc893af96b6e06ed2a854814dd1f5455cb1f1841f307f9886b22"
+      },
+      {
+        "path": "assets/history/generated-prompts.json",
+        "sha256": "47cfff6eb0ed501e3451df6a65a51a55931afd2f30d4789c1dfde6ade53eb8e0"
+      },
+      {
+        "path": "assets/history/genesis-block.bin",
+        "sha256": "5299fac924b5a2fc19a88876a0042c19ac4d11fe69c3f66e47516e26185f9e99"
+      },
+      {
+        "path": "assets/history/genesis.svg",
+        "sha256": "a746dc63c6b9862ecfa5d0ecad3fe7b887c46066959ca95859c0162d57911499"
+      },
+      {
+        "path": "assets/history/gensler.jpg",
+        "sha256": "23a0dc0a546a34e7443963320787c6712140ee26891088bc6b9e045e363e076f"
+      },
+      {
+        "path": "assets/history/hal-finney-portrait-provenance.json",
+        "sha256": "9a4add637403c9ba5189d3dbd8936e19d17b264b372f82d9bf32c13b2ae80a8e"
+      },
+      {
+        "path": "assets/history/hal-finney-portrait.jpg",
+        "sha256": "1d48afccebd42a090596e1c0596522f7c58293c283a0e41daff23dcf398b22bb"
+      },
+      {
+        "path": "assets/history/hal-finney.jpg",
+        "sha256": "6ee0d421e9f97a1866e7c1188811809bc40a04627ff2398779ebfaec3080938e"
+      },
+      {
+        "path": "assets/history/halvings.svg",
+        "sha256": "f68c7956b04efc21f146c1986cd64c69dfab23c1c08d6d1b51f4972ab0a5fd79"
+      },
+      {
+        "path": "assets/history/lehman-2008.jpg",
+        "sha256": "3d12cc515ceb88f8ca4b1f663728f451e879d53027743ed8b046bf4674234ce1"
+      },
+      {
+        "path": "assets/history/len-sassaman.jpg",
+        "sha256": "dff82d6651be3de92786fed40ac80752d9ac9325d06143073e233b173f3eff1a"
+      },
+      {
+        "path": "assets/history/logo-evolution.svg",
+        "sha256": "ab01a258c47764c60a17c8e6db3bf4bd8ac047810a5ea7f31150193f724e87a1"
+      },
+      {
+        "path": "assets/history/manifest.json",
+        "sha256": "8ade00b7118397d9a389278e5b301e582bbd6b74f38695380272254277583ea0"
+      },
+      {
+        "path": "assets/history/market-cycles.svg",
+        "sha256": "97ecb967d4d0d6a784088ee3745679f8f62e9bbcc066f1b517b2b16e9661e1ef"
+      },
+      {
+        "path": "assets/history/mtgox.svg",
+        "sha256": "e981929d139dccc99be96c1ff5de1bd5d01e798034bb3bd314c471ea2f30f53a"
+      },
+      {
+        "path": "assets/history/network.svg",
+        "sha256": "2b8ec10ba6d6aa37c51d29b947182a2a6df138e73f7ca0b0a51b82c472b65741"
+      },
+      {
+        "path": "assets/history/october-shock.svg",
+        "sha256": "a6be746aee8a64cc64aff791b71c0ca27c491a431fb150511601a8ddc5b241e1"
+      },
+      {
+        "path": "assets/history/pizza-editorial-v1.png",
+        "sha256": "003c0a25b9028749a79e41c3707a626f6420a886276398253b7dfe851750ee76"
+      },
+      {
+        "path": "assets/history/pizza-post.svg",
+        "sha256": "6ca0ddf7b05c850168de9f3ad442260cca7450760de81c3b45b061c0207609ed"
+      },
+      {
+        "path": "assets/history/rainbow.svg",
+        "sha256": "77695c373fac0736ba461e517a376ddf4fba1ee0b5d1d58d4ae4809472c6296c"
+      },
+      {
+        "path": "assets/history/reserve-order.svg",
+        "sha256": "d90fe2cc1aa4296b6aa1213fe17058a51857133189bfdcb063c6588c1b1e048f"
+      },
+      {
+        "path": "assets/history/satoshi-email.svg",
+        "sha256": "48e64d83e4376f017bd5f28f26a6fd628f01b9223d2c3902752b3e63391ee074"
+      },
+      {
+        "path": "assets/history/satoshi-unknown.svg",
+        "sha256": "9d879a39e421fbbf87d34f17c84058369a9e9fbd322e5b4f6dd24527c393c027"
+      },
+      {
+        "path": "assets/history/saylor.png",
+        "sha256": "ae66756f0dc2bc773615c5fd708235b4b493eab00ccb9b43a87abe0ae3342c2d"
+      },
+      {
+        "path": "assets/history/treasury.svg",
+        "sha256": "88a22458cb20adedf263fc10661f3944b39b4657b824cc506fd0ccbabe979f21"
+      },
+      {
+        "path": "assets/history/trump.jpg",
+        "sha256": "483f021e43b1478c0b574c84dca56c202200791bd48e40aafaa020bbc4da77bc"
+      },
+      {
+        "path": "assets/history/whitepaper-math.svg",
+        "sha256": "e1e83f5143cb948b7a40ade1d43c64eb2d972b66a2080a289276fdb0b262f82d"
+      },
+      {
+        "path": "assets/history/whitepaper.svg",
+        "sha256": "83a2a4c175317fe3e71b07920605933b79ade85b5339b7ed9eb87ea66132f783"
+      },
+      {
+        "path": "assets/macos-icon-atlas-v1.png",
+        "sha256": "4f97042d190895d35842a80edff28dd4b10a50c849c074bab74df82e514b720e"
+      },
+      {
+        "path": "content/chapters.json",
+        "sha256": "0223f6338af8eec4474e7694e3db22f1a58a61079c707fdfa2d9ff381b2674bf"
+      },
+      {
+        "path": "content/genesis.json",
+        "sha256": "86750b650f86c0619bba1cfaf2184c82c510038773ad7ca6bde5b3ce79e768df"
+      },
+      {
+        "path": "content/prices.json",
+        "sha256": "c065c6781f1cd6a399af210a7b41d9bca26522e474705cca6ded6f4575c20cc7"
+      },
+      {
+        "path": "build.py",
+        "sha256": "e14f433a3dade9327e21298479b1ed1a6806921e10315a9a1cc8ed2f68dd645c"
+      },
+      {
+        "path": "index.html",
+        "sha256": "e270fd52d4ce61a5d7f9044954170603936e65310065889470de9280afb3ad0a"
+      },
+      {
+        "path": "SOURCES.md",
+        "sha256": "71f5e954795643ff5c01e441ba63d772c55f0f9712449216581ef18b73998217"
+      },
+      {
+        "path": "ALGORITHM.md",
+        "sha256": "b7e94ca744136a88dc964e88e6932e2e0477257efb19cdcf55a866a3815eb1d2"
+      }
+    ],
+    "packaged_files": [
+      {
+        "path": "ALGORITHM.md",
+        "sha256": "b7e94ca744136a88dc964e88e6932e2e0477257efb19cdcf55a866a3815eb1d2"
+      },
+      {
+        "path": "SOURCES.md",
+        "sha256": "71f5e954795643ff5c01e441ba63d772c55f0f9712449216581ef18b73998217"
+      },
+      {
+        "path": "editions/history-study-07/ALGORITHM.md",
+        "sha256": "f3368a6db6925b2960c814448d5bfc849e2d028015c7002baca771553f5a4d3c"
+      },
+      {
+        "path": "editions/history-study-07/SOURCES.md",
+        "sha256": "74ef191021d61666fd7fb99cd93f12f98b736fd585224238c4e7f0f56fa2e7aa"
+      },
+      {
+        "path": "editions/history-study-07/generated-prompts.json",
+        "sha256": "47cfff6eb0ed501e3451df6a65a51a55931afd2f30d4789c1dfde6ade53eb8e0"
+      },
+      {
+        "path": "editions/history-study-07/index.html",
+        "sha256": "0356b01be7580d6b2854f5d02329e598f2b7de729bac620745df8634aa5c68bf"
+      },
+      {
+        "path": "editions/history-study-07/media-provenance.json",
+        "sha256": "6311faab8d92d66108e4b5adde0c6383bc36db57c0f7bbf49828e0fd2ce6dccb"
+      },
+      {
+        "path": "editions/history-study-07/poster.jpg",
+        "sha256": "292f3748b5b62d9213dfc9cbd07b0e99f516368be07689b9b1dd222b230a9662"
+      },
+      {
+        "path": "editions/history-study-07/preview.mp4",
+        "sha256": "576757afd8641cb5587817a718f07715f07c553c87a5683cf9f8f6ec33da9e10"
+      },
+      {
+        "path": "editions/history-study-07/release.json",
+        "sha256": "a10f3c5b0922d93c4e744017ce3a80966705b20fe7766908068d57287f1cb874"
+      },
+      {
+        "path": "editions/history-study-08/ALGORITHM.md",
+        "sha256": "a3418e70e0b776b8aa0e8faf71cbef30baf6bda66f3eb11d4e7ad689ae626aea"
+      },
+      {
+        "path": "editions/history-study-08/SOURCES.md",
+        "sha256": "74ef191021d61666fd7fb99cd93f12f98b736fd585224238c4e7f0f56fa2e7aa"
+      },
+      {
+        "path": "editions/history-study-08/generated-prompts.json",
+        "sha256": "47cfff6eb0ed501e3451df6a65a51a55931afd2f30d4789c1dfde6ade53eb8e0"
+      },
+      {
+        "path": "editions/history-study-08/index.html",
+        "sha256": "088817990efc8a423dca9055b2b92b48a93fe93b6a4f89209de2d0f82faebdb7"
+      },
+      {
+        "path": "editions/history-study-08/media-provenance.json",
+        "sha256": "6311faab8d92d66108e4b5adde0c6383bc36db57c0f7bbf49828e0fd2ce6dccb"
+      },
+      {
+        "path": "editions/history-study-08/poster.jpg",
+        "sha256": "327609dd6e656dbc252e296c34dc47b52fd93c09b44e0375271e96dab2631cd9"
+      },
+      {
+        "path": "editions/history-study-08/preview.mp4",
+        "sha256": "128367c91a85b66ca49555fb199061f1269989452c5fe03aa2cb96d6cad92e29"
+      },
+      {
+        "path": "editions/history-study-08/release.json",
+        "sha256": "7327b1260308223ddb6aabd3425dd1044f27079e0bc5a90ba271a133d9d6ff46"
+      },
+      {
+        "path": "editions/history-study-09/ALGORITHM.md",
+        "sha256": "10d3a62b28e742203b733f466d140542cf761109f756b8f7f839dc8c372afcf7"
+      },
+      {
+        "path": "editions/history-study-09/SOURCES.md",
+        "sha256": "74ef191021d61666fd7fb99cd93f12f98b736fd585224238c4e7f0f56fa2e7aa"
+      },
+      {
+        "path": "editions/history-study-09/generated-prompts.json",
+        "sha256": "47cfff6eb0ed501e3451df6a65a51a55931afd2f30d4789c1dfde6ade53eb8e0"
+      },
+      {
+        "path": "editions/history-study-09/index.html",
+        "sha256": "1f2a14786e14b99b906b229d8ee5c31005f926894bf9159a90ae983eec62e3e3"
+      },
+      {
+        "path": "editions/history-study-09/media-provenance.json",
+        "sha256": "6311faab8d92d66108e4b5adde0c6383bc36db57c0f7bbf49828e0fd2ce6dccb"
+      },
+      {
+        "path": "editions/history-study-09/poster.jpg",
+        "sha256": "7fe29ce5958df4898ae1a59ac905d084631bb8c8931befe387453c05169ddd9a"
+      },
+      {
+        "path": "editions/history-study-09/preview.mp4",
+        "sha256": "ed039deefeef473ee9a557dfb764d7f3aa5a37f9be98c5fea388a024e65af363"
+      },
+      {
+        "path": "editions/history-study-09/release.json",
+        "sha256": "45bf276dd1cdaf2dfc95943258039a22fdf415e4427437e53242c22346f1a673"
+      },
+      {
+        "path": "editions/history-study-10/ALGORITHM.md",
+        "sha256": "b7e94ca744136a88dc964e88e6932e2e0477257efb19cdcf55a866a3815eb1d2"
+      },
+      {
+        "path": "editions/history-study-10/SOURCES.md",
+        "sha256": "74ef191021d61666fd7fb99cd93f12f98b736fd585224238c4e7f0f56fa2e7aa"
+      },
+      {
+        "path": "editions/history-study-10/generated-prompts.json",
+        "sha256": "47cfff6eb0ed501e3451df6a65a51a55931afd2f30d4789c1dfde6ade53eb8e0"
+      },
+      {
+        "path": "editions/history-study-10/index.html",
+        "sha256": "5f3a8a5c61b636f837e224a4902576181edf7795855728673347fb223879288d"
+      },
+      {
+        "path": "editions/history-study-10/media-provenance.json",
+        "sha256": "6311faab8d92d66108e4b5adde0c6383bc36db57c0f7bbf49828e0fd2ce6dccb"
+      },
+      {
+        "path": "editions/history-study-10/poster.jpg",
+        "sha256": "528e70b073e9c09ce35a9ae5a157eaedc00ade6d56130bf17e10738fa6096eaf"
+      },
+      {
+        "path": "editions/history-study-10/preview.mp4",
+        "sha256": "a6fd145747be06d052399ad94a62b263da37c0e475bab609d97e64a8a43c8906"
+      },
+      {
+        "path": "editions/history-study-10/release.json",
+        "sha256": "c261ff485d96bbe051ec012ca2e5394527a8c064ef3704eee2a9bf1a80ec54df"
+      },
+      {
+        "path": "editions/history-study-11/ALGORITHM.md",
+        "sha256": "b7e94ca744136a88dc964e88e6932e2e0477257efb19cdcf55a866a3815eb1d2"
+      },
+      {
+        "path": "editions/history-study-11/SOURCES.md",
+        "sha256": "74ef191021d61666fd7fb99cd93f12f98b736fd585224238c4e7f0f56fa2e7aa"
+      },
+      {
+        "path": "editions/history-study-11/generated-prompts.json",
+        "sha256": "47cfff6eb0ed501e3451df6a65a51a55931afd2f30d4789c1dfde6ade53eb8e0"
+      },
+      {
+        "path": "editions/history-study-11/index.html",
+        "sha256": "f177498c6330d90a1995064cac0e81a1dd61e1098fe9ba2c70546b9f011392b8"
+      },
+      {
+        "path": "editions/history-study-11/media-provenance.json",
+        "sha256": "6311faab8d92d66108e4b5adde0c6383bc36db57c0f7bbf49828e0fd2ce6dccb"
+      },
+      {
+        "path": "editions/history-study-11/poster.jpg",
+        "sha256": "cc2b0805e2b8365a787c5127c01bdb19653c5fd83f372eb5bb32608341524fcd"
+      },
+      {
+        "path": "editions/history-study-11/preview.mp4",
+        "sha256": "64426d8bcfb7281e6d8abfd6ec168703535858262d3f7221a848a2eac6b3aaeb"
+      },
+      {
+        "path": "editions/history-study-11/release.json",
+        "sha256": "dd1a4b308c0f89f05ebc4db331332b915dd2bb97b41cc63987da577e82e847a7"
+      },
+      {
+        "path": "generated-prompts.json",
+        "sha256": "47cfff6eb0ed501e3451df6a65a51a55931afd2f30d4789c1dfde6ade53eb8e0"
+      },
+      {
+        "path": "index.html",
+        "sha256": "e270fd52d4ce61a5d7f9044954170603936e65310065889470de9280afb3ad0a"
+      },
+      {
+        "path": "media-provenance.json",
+        "sha256": "8ade00b7118397d9a389278e5b301e582bbd6b74f38695380272254277583ea0"
+      }
+    ],
+    "adaptations": "Exact standalone Study 12. The identity chapter uses the exact supplied Hal Finney portrait, with separate caption and attribution. The earlier Hal Finney chapter retains the 1972 photograph. The swarm and reader share the updated media list. All chapter prose and other images remain unchanged. Earlier editions and their media remain in the edition archives."
+  },
+  "previous_release": {
+    "release_id": "d2c64f30f4599feeebe2d0c7a593231dda4de4cdeeaa812101207b135046ef73",
+    "path": "fieldwork-runtime/btc-swarm/editions/history-study-11/release.json",
+    "runtime_path": "fieldwork-runtime/btc-swarm/editions/history-study-11/index.html",
+    "runtime_sha256": "f177498c6330d90a1995064cac0e81a1dd61e1098fe9ba2c70546b9f011392b8"
+  },
+  "files": [
+    {
+      "path": "runtime/ALGORITHM.md",
+      "sha256": "b7e94ca744136a88dc964e88e6932e2e0477257efb19cdcf55a866a3815eb1d2",
+      "length": 3199
+    },
+    {
+      "path": "runtime/SOURCES.md",
+      "sha256": "71f5e954795643ff5c01e441ba63d772c55f0f9712449216581ef18b73998217",
+      "length": 14409
+    },
+    {
+      "path": "runtime/editions/history-study-07/ALGORITHM.md",
+      "sha256": "f3368a6db6925b2960c814448d5bfc849e2d028015c7002baca771553f5a4d3c",
+      "length": 2314
+    },
+    {
+      "path": "runtime/editions/history-study-07/SOURCES.md",
+      "sha256": "74ef191021d61666fd7fb99cd93f12f98b736fd585224238c4e7f0f56fa2e7aa",
+      "length": 13645
+    },
+    {
+      "path": "runtime/editions/history-study-07/generated-prompts.json",
+      "sha256": "47cfff6eb0ed501e3451df6a65a51a55931afd2f30d4789c1dfde6ade53eb8e0",
+      "length": 2267
+    },
+    {
+      "path": "runtime/editions/history-study-07/index.html",
+      "sha256": "0356b01be7580d6b2854f5d02329e598f2b7de729bac620745df8634aa5c68bf",
+      "length": 13330145
+    },
+    {
+      "path": "runtime/editions/history-study-07/media-provenance.json",
+      "sha256": "6311faab8d92d66108e4b5adde0c6383bc36db57c0f7bbf49828e0fd2ce6dccb",
+      "length": 13796
+    },
+    {
+      "path": "runtime/editions/history-study-07/poster.jpg",
+      "sha256": "292f3748b5b62d9213dfc9cbd07b0e99f516368be07689b9b1dd222b230a9662",
+      "length": 124276
+    },
+    {
+      "path": "runtime/editions/history-study-07/preview.mp4",
+      "sha256": "576757afd8641cb5587817a718f07715f07c553c87a5683cf9f8f6ec33da9e10",
+      "length": 2163317
+    },
+    {
+      "path": "runtime/editions/history-study-07/release.json",
+      "sha256": "a10f3c5b0922d93c4e744017ce3a80966705b20fe7766908068d57287f1cb874",
+      "length": 10525
+    },
+    {
+      "path": "runtime/editions/history-study-08/ALGORITHM.md",
+      "sha256": "a3418e70e0b776b8aa0e8faf71cbef30baf6bda66f3eb11d4e7ad689ae626aea",
+      "length": 2736
+    },
+    {
+      "path": "runtime/editions/history-study-08/SOURCES.md",
+      "sha256": "74ef191021d61666fd7fb99cd93f12f98b736fd585224238c4e7f0f56fa2e7aa",
+      "length": 13645
+    },
+    {
+      "path": "runtime/editions/history-study-08/generated-prompts.json",
+      "sha256": "47cfff6eb0ed501e3451df6a65a51a55931afd2f30d4789c1dfde6ade53eb8e0",
+      "length": 2267
+    },
+    {
+      "path": "runtime/editions/history-study-08/index.html",
+      "sha256": "088817990efc8a423dca9055b2b92b48a93fe93b6a4f89209de2d0f82faebdb7",
+      "length": 13337402
+    },
+    {
+      "path": "runtime/editions/history-study-08/media-provenance.json",
+      "sha256": "6311faab8d92d66108e4b5adde0c6383bc36db57c0f7bbf49828e0fd2ce6dccb",
+      "length": 13796
+    },
+    {
+      "path": "runtime/editions/history-study-08/poster.jpg",
+      "sha256": "327609dd6e656dbc252e296c34dc47b52fd93c09b44e0375271e96dab2631cd9",
+      "length": 115233
+    },
+    {
+      "path": "runtime/editions/history-study-08/preview.mp4",
+      "sha256": "128367c91a85b66ca49555fb199061f1269989452c5fe03aa2cb96d6cad92e29",
+      "length": 1894396
+    },
+    {
+      "path": "runtime/editions/history-study-08/release.json",
+      "sha256": "7327b1260308223ddb6aabd3425dd1044f27079e0bc5a90ba271a133d9d6ff46",
+      "length": 13860
+    },
+    {
+      "path": "runtime/editions/history-study-09/ALGORITHM.md",
+      "sha256": "10d3a62b28e742203b733f466d140542cf761109f756b8f7f839dc8c372afcf7",
+      "length": 2775
+    },
+    {
+      "path": "runtime/editions/history-study-09/SOURCES.md",
+      "sha256": "74ef191021d61666fd7fb99cd93f12f98b736fd585224238c4e7f0f56fa2e7aa",
+      "length": 13645
+    },
+    {
+      "path": "runtime/editions/history-study-09/generated-prompts.json",
+      "sha256": "47cfff6eb0ed501e3451df6a65a51a55931afd2f30d4789c1dfde6ade53eb8e0",
+      "length": 2267
+    },
+    {
+      "path": "runtime/editions/history-study-09/index.html",
+      "sha256": "1f2a14786e14b99b906b229d8ee5c31005f926894bf9159a90ae983eec62e3e3",
+      "length": 13335765
+    },
+    {
+      "path": "runtime/editions/history-study-09/media-provenance.json",
+      "sha256": "6311faab8d92d66108e4b5adde0c6383bc36db57c0f7bbf49828e0fd2ce6dccb",
+      "length": 13796
+    },
+    {
+      "path": "runtime/editions/history-study-09/poster.jpg",
+      "sha256": "7fe29ce5958df4898ae1a59ac905d084631bb8c8931befe387453c05169ddd9a",
+      "length": 125692
+    },
+    {
+      "path": "runtime/editions/history-study-09/preview.mp4",
+      "sha256": "ed039deefeef473ee9a557dfb764d7f3aa5a37f9be98c5fea388a024e65af363",
+      "length": 970300
+    },
+    {
+      "path": "runtime/editions/history-study-09/release.json",
+      "sha256": "45bf276dd1cdaf2dfc95943258039a22fdf415e4427437e53242c22346f1a673",
+      "length": 16624
+    },
+    {
+      "path": "runtime/editions/history-study-10/ALGORITHM.md",
+      "sha256": "b7e94ca744136a88dc964e88e6932e2e0477257efb19cdcf55a866a3815eb1d2",
+      "length": 3199
+    },
+    {
+      "path": "runtime/editions/history-study-10/SOURCES.md",
+      "sha256": "74ef191021d61666fd7fb99cd93f12f98b736fd585224238c4e7f0f56fa2e7aa",
+      "length": 13645
+    },
+    {
+      "path": "runtime/editions/history-study-10/generated-prompts.json",
+      "sha256": "47cfff6eb0ed501e3451df6a65a51a55931afd2f30d4789c1dfde6ade53eb8e0",
+      "length": 2267
+    },
+    {
+      "path": "runtime/editions/history-study-10/index.html",
+      "sha256": "5f3a8a5c61b636f837e224a4902576181edf7795855728673347fb223879288d",
+      "length": 13352187
+    },
+    {
+      "path": "runtime/editions/history-study-10/media-provenance.json",
+      "sha256": "6311faab8d92d66108e4b5adde0c6383bc36db57c0f7bbf49828e0fd2ce6dccb",
+      "length": 13796
+    },
+    {
+      "path": "runtime/editions/history-study-10/poster.jpg",
+      "sha256": "528e70b073e9c09ce35a9ae5a157eaedc00ade6d56130bf17e10738fa6096eaf",
+      "length": 126081
+    },
+    {
+      "path": "runtime/editions/history-study-10/preview.mp4",
+      "sha256": "a6fd145747be06d052399ad94a62b263da37c0e475bab609d97e64a8a43c8906",
+      "length": 972288
+    },
+    {
+      "path": "runtime/editions/history-study-10/release.json",
+      "sha256": "c261ff485d96bbe051ec012ca2e5394527a8c064ef3704eee2a9bf1a80ec54df",
+      "length": 19804
+    },
+    {
+      "path": "runtime/editions/history-study-11/ALGORITHM.md",
+      "sha256": "b7e94ca744136a88dc964e88e6932e2e0477257efb19cdcf55a866a3815eb1d2",
+      "length": 3199
+    },
+    {
+      "path": "runtime/editions/history-study-11/SOURCES.md",
+      "sha256": "74ef191021d61666fd7fb99cd93f12f98b736fd585224238c4e7f0f56fa2e7aa",
+      "length": 13645
+    },
+    {
+      "path": "runtime/editions/history-study-11/generated-prompts.json",
+      "sha256": "47cfff6eb0ed501e3451df6a65a51a55931afd2f30d4789c1dfde6ade53eb8e0",
+      "length": 2267
+    },
+    {
+      "path": "runtime/editions/history-study-11/index.html",
+      "sha256": "f177498c6330d90a1995064cac0e81a1dd61e1098fe9ba2c70546b9f011392b8",
+      "length": 13352200
+    },
+    {
+      "path": "runtime/editions/history-study-11/media-provenance.json",
+      "sha256": "6311faab8d92d66108e4b5adde0c6383bc36db57c0f7bbf49828e0fd2ce6dccb",
+      "length": 13796
+    },
+    {
+      "path": "runtime/editions/history-study-11/poster.jpg",
+      "sha256": "cc2b0805e2b8365a787c5127c01bdb19653c5fd83f372eb5bb32608341524fcd",
+      "length": 126087
+    },
+    {
+      "path": "runtime/editions/history-study-11/preview.mp4",
+      "sha256": "64426d8bcfb7281e6d8abfd6ec168703535858262d3f7221a848a2eac6b3aaeb",
+      "length": 974195
+    },
+    {
+      "path": "runtime/editions/history-study-11/release.json",
+      "sha256": "dd1a4b308c0f89f05ebc4db331332b915dd2bb97b41cc63987da577e82e847a7",
+      "length": 22590
+    },
+    {
+      "path": "runtime/generated-prompts.json",
+      "sha256": "47cfff6eb0ed501e3451df6a65a51a55931afd2f30d4789c1dfde6ade53eb8e0",
+      "length": 2267
+    },
+    {
+      "path": "runtime/index.html",
+      "sha256": "e270fd52d4ce61a5d7f9044954170603936e65310065889470de9280afb3ad0a",
+      "length": 13398639
+    },
+    {
+      "path": "runtime/media-provenance.json",
+      "sha256": "8ade00b7118397d9a389278e5b301e582bbd6b74f38695380272254277583ea0",
+      "length": 14341
+    },
+    {
+      "path": "poster.jpg",
+      "sha256": "9ee0e048d07925f468e09cfefa6ee14820a7c37656e0520ccacec86ce835dd1d",
+      "length": 126166
+    },
+    {
+      "path": "preview.mp4",
+      "sha256": "edc395268b13c7f288cfcc580771073ff1daa243f4ffbc06c46956c71a6f74d8",
+      "length": 975019
+    }
+  ],
+  "release_id": "4c4011181951c7eaf9dbf500248c5cfe025b8e4c779079c04f6bf0e718411d6c",
+  "capture": {
+    "kind": "actual browser compositor, DOM and canvases, fixed 60 fps, silent",
+    "method": {
+      "source_sha256": "e270fd52d4ce61a5d7f9044954170603936e65310065889470de9280afb3ad0a",
+      "harness_sha256": "e251d57e2fabd2a77361f2f80ecf7e8d07272b2090536cef9a9d6977169bf088",
+      "method": "Full browser compositor screenshots at consecutive 1/60-second source animation-clock steps. No interpolated frames. Native default tempo 0.8. Capture controls outside the image.",
+      "seed": 1,
+      "chapter": "genesis",
+      "viewport": [
+        1280,
+        960
+      ],
+      "first_source_frame": 1681,
+      "last_source_frame": 1920,
+      "frames": 240,
+      "fps": 60,
+      "interaction": "Double-clicked genesis-006.svg in Finder before frame 1681. No other interaction during captured frames."
+    },
+    "raw_sha256": "a53fb5073484c440a894e4d37d3bc945571fe72d90a6f4c8e4fca1eaab613814",
+    "source_snapshot_sha256": "636d23fbf80c21ab242124fac36bb255ab1292304c48ed4495bcfc7667d4788f",
+    "loop_method": "hard cut after four seconds of consecutive fixed-clock frames",
+    "camera_recorded": false,
+    "encoded_video": {
+      "codec": "h264",
+      "width": 960,
+      "height": 720,
+      "streams": 1,
+      "duration": 4.0
+    }
+  }
+}
