@@ -18681,19 +18681,19 @@
         "fieldworks/"
       ],
       "source_path": "fieldworks/readings/overview.md",
-      "source_sha256": "b855a43e7f668e6b919f9e0b146d74f8383d0a4a9480984da55c9f41a552c437",
-      "document_sha256": "b855a43e7f668e6b919f9e0b146d74f8383d0a4a9480984da55c9f41a552c437",
-      "text_sha256": "40a2629ce2a63af97b2096c3ec2e53b8b2cd3b32a956efa949ac5de234a7baee",
-      "reading_path": "audio/readings/40a2629ce2a63af97b2096c3ec2e53b8b2cd3b32a956efa949ac5de234a7baee.md",
-      "reading_sha256": "b855a43e7f668e6b919f9e0b146d74f8383d0a4a9480984da55c9f41a552c437",
-      "reading_length": 442,
-      "audio_path": "audio/lewis/40a2629ce2a63af97b2096c3ec2e53b8b2cd3b32a956efa949ac5de234a7baee.mp3",
+      "source_sha256": "680c08f0dc6fb88171cd5098aa955e26bc3976f9d9df9de43fa2411cccc06bc2",
+      "document_sha256": "680c08f0dc6fb88171cd5098aa955e26bc3976f9d9df9de43fa2411cccc06bc2",
+      "text_sha256": "58d6b002f0d9e29f8ab8c7c8910cd9eb3e82f4a26eb3cc7bf5471a592eab4fbe",
+      "reading_path": "audio/readings/58d6b002f0d9e29f8ab8c7c8910cd9eb3e82f4a26eb3cc7bf5471a592eab4fbe.md",
+      "reading_sha256": "680c08f0dc6fb88171cd5098aa955e26bc3976f9d9df9de43fa2411cccc06bc2",
+      "reading_length": 473,
+      "audio_path": "audio/lewis/58d6b002f0d9e29f8ab8c7c8910cd9eb3e82f4a26eb3cc7bf5471a592eab4fbe.mp3",
       "voice": "bm_lewis",
       "voice_name": "Lewis",
       "speed": 1.0,
-      "audio_sha256": "1f71f5a3c7a783004301b86e3ba05a0dc5e6d28d02e24e651da861ab0ba31752",
-      "audio_length": 407564,
-      "duration_seconds": 33.865,
+      "audio_sha256": "1eb3b4dac58ab5a10650cdcb0113cf87f0d7686b785f52a5e18a7eddf1978786",
+      "audio_length": 425708,
+      "duration_seconds": 35.39,
       "chunks": [
         {
           "text": "Fieldworks",
@@ -18706,21 +18706,21 @@
           "duration": 5.15
         },
         {
-          "text": "A surface that answers. A fold in seeing. An unfinished sky. Impossible matter. A river remembering a drawing. A small vocabulary, an expanding field. A field of competing futures. A picture with weight. A room that keeps trying to sing. A history in formation. A manual, held differently.",
+          "text": "A surface that answers. A fold in seeing. An unfinished sky. Impossible matter. A river remembering a drawing. A small vocabulary, an expanding field. A field of competing futures. A picture with weight. A room that keeps trying to sing. A history in formation. A manual, held differently. A drawing that keeps swimming.",
           "start": 7.16,
-          "duration": 20.8
+          "duration": 22.475
         },
         {
-          "text": "Eleven living artworks. Enter, explore, and see what a gesture changes.",
-          "start": 28.14,
-          "duration": 5.725
+          "text": "Twelve living artworks. Enter, explore, and see what a gesture changes.",
+          "start": 29.815,
+          "duration": 5.575
         }
       ],
       "checks": {
         "all_text_retained": true,
         "mp3_decodes": true,
         "finite_samples": true,
-        "peak": 0.593643844127655,
+        "peak": 0.6107050776481628,
         "clipped_samples": 0
       }
     },
@@ -19402,6 +19402,68 @@
       }
     },
     {
+      "id": "fieldworks-paper-water",
+      "title": "Paper Water",
+      "form": "fieldwork",
+      "release_id": null,
+      "pages": [
+        "fieldworks/paper-water/"
+      ],
+      "source_path": "fieldworks/readings/paper-water.md",
+      "source_sha256": "de3a7927023092dd3e79e98afe0d0b260739c37621fef50c98580ae0a66d6464",
+      "document_sha256": "de3a7927023092dd3e79e98afe0d0b260739c37621fef50c98580ae0a66d6464",
+      "text_sha256": "1f7fcce9bfec7a317f88b7e16cba51c2186d40a3c100b1b4aba460a054a047c4",
+      "reading_path": "audio/readings/1f7fcce9bfec7a317f88b7e16cba51c2186d40a3c100b1b4aba460a054a047c4.md",
+      "reading_sha256": "de3a7927023092dd3e79e98afe0d0b260739c37621fef50c98580ae0a66d6464",
+      "reading_length": 824,
+      "audio_path": "audio/lewis/1f7fcce9bfec7a317f88b7e16cba51c2186d40a3c100b1b4aba460a054a047c4.mp3",
+      "voice": "bm_lewis",
+      "voice_name": "Lewis",
+      "speed": 1.0,
+      "audio_sha256": "fc346f55e6d310ed917f34865c24ab578aeef56e85e3fbab4ee3433949fb6e6c",
+      "audio_length": 724076,
+      "duration_seconds": 60.25,
+      "chunks": [
+        {
+          "text": "Paper Water",
+          "start": 0.0,
+          "duration": 1.85
+        },
+        {
+          "text": "An ink pond, alive to a small gesture.",
+          "start": 2.03,
+          "duration": 3.5
+        },
+        {
+          "text": "Fish drift across a field of textured paper. Their bodies hold different amounts of ink: fine contours, soft grey washes, dark patches. Leaves float at the edges. Shapes below the surface fade into the page.",
+          "start": 5.71,
+          "duration": 14.475
+        },
+        {
+          "text": "The fish move through their own rhythms of swimming, coasting, and small bursts of speed. They sometimes gather and sometimes wander apart. Click or tap to drop a few blots of food. Nearby fish approach, rise, and take small bites. A mouth opens, a ripple spreads, and the pond begins to settle again.",
+          "start": 20.365,
+          "duration": 20.0
+        },
+        {
+          "text": "Paper Water holds a drawing in motion. Its depth comes through changes in definition, pigment, and the slight distortion of the water. The viewpoint stays still while the life within it continues.",
+          "start": 40.545,
+          "duration": 13.45
+        },
+        {
+          "text": "By Brad Necyk, 2026. This living artwork is not inscribed.",
+          "start": 54.175,
+          "duration": 6.075
+        }
+      ],
+      "checks": {
+        "all_text_retained": true,
+        "mp3_decodes": true,
+        "finite_samples": true,
+        "peak": 0.6321302056312561,
+        "clipped_samples": 0
+      }
+    },
+    {
       "id": "fieldworks-overview-v1",
       "title": "Fieldworks, first edition",
       "form": "fieldwork",
@@ -19878,6 +19940,58 @@
         "peak": 0.5187338590621948,
         "clipped_samples": 0
       }
+    },
+    {
+      "id": "fieldworks-overview-eleven-works",
+      "title": "Fieldworks, eleven-work edition",
+      "form": "fieldwork",
+      "release_id": null,
+      "pages": [
+        "fieldworks/readings/overview-eleven-works.md"
+      ],
+      "source_path": "fieldworks/readings/overview-eleven-works.md",
+      "source_sha256": "b855a43e7f668e6b919f9e0b146d74f8383d0a4a9480984da55c9f41a552c437",
+      "document_sha256": "b855a43e7f668e6b919f9e0b146d74f8383d0a4a9480984da55c9f41a552c437",
+      "text_sha256": "40a2629ce2a63af97b2096c3ec2e53b8b2cd3b32a956efa949ac5de234a7baee",
+      "reading_path": "audio/readings/40a2629ce2a63af97b2096c3ec2e53b8b2cd3b32a956efa949ac5de234a7baee.md",
+      "reading_sha256": "b855a43e7f668e6b919f9e0b146d74f8383d0a4a9480984da55c9f41a552c437",
+      "reading_length": 442,
+      "audio_path": "audio/lewis/40a2629ce2a63af97b2096c3ec2e53b8b2cd3b32a956efa949ac5de234a7baee.mp3",
+      "voice": "bm_lewis",
+      "voice_name": "Lewis",
+      "speed": 1.0,
+      "audio_sha256": "1f71f5a3c7a783004301b86e3ba05a0dc5e6d28d02e24e651da861ab0ba31752",
+      "audio_length": 407564,
+      "duration_seconds": 33.865,
+      "chunks": [
+        {
+          "text": "Fieldworks",
+          "start": 0.0,
+          "duration": 1.65
+        },
+        {
+          "text": "Generative artworks and interactive environments by Brad Necyk.",
+          "start": 1.83,
+          "duration": 5.15
+        },
+        {
+          "text": "A surface that answers. A fold in seeing. An unfinished sky. Impossible matter. A river remembering a drawing. A small vocabulary, an expanding field. A field of competing futures. A picture with weight. A room that keeps trying to sing. A history in formation. A manual, held differently.",
+          "start": 7.16,
+          "duration": 20.8
+        },
+        {
+          "text": "Eleven living artworks. Enter, explore, and see what a gesture changes.",
+          "start": 28.14,
+          "duration": 5.725
+        }
+      ],
+      "checks": {
+        "all_text_retained": true,
+        "mp3_decodes": true,
+        "finite_samples": true,
+        "peak": 0.593643844127655,
+        "clipped_samples": 0
+      }
     }
   ],
   "playlists": [
@@ -20045,6 +20159,11 @@
       "path": "audio-bundles/lewis-26.zip",
       "sha256": "867e7e9f15c128949587fd96b292444f49db48a4dd6bf0cd5e9ebd22d68a7066",
       "length": 1363110
+    },
+    {
+      "path": "audio-bundles/lewis-27.zip",
+      "sha256": "13ac6144ed63e598330303d196ce6aa2a23a58f04e834fb41f517fa6ce514401",
+      "length": 1150278
     }
   ]
 }

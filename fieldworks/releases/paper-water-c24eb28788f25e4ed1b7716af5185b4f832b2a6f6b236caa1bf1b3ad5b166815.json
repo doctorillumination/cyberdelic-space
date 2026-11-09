@@ -1,0 +1,221 @@
+{
+  "schema": "cyberdelic.space/fieldwork-release-v1",
+  "slug": "paper-water",
+  "edition": "living-ink-pond",
+  "published_at": "2026-11-09T02:53:55.127322Z",
+  "source_record": {
+    "slug": "paper-water",
+    "project": "paper-water",
+    "repository": "https://github.com/doctorillumination/chinese-ink",
+    "revision": "5d64233fb7d398e7d74a74d8b0b5a24e90a02f59",
+    "edition": "living-ink-pond",
+    "source_version": "0.17.0",
+    "source_subdirectory": ".",
+    "source_files": [
+      {
+        "path": "tools/build.mjs",
+        "sha256": "023204e8c5c77fed468eb0fcc367bb056a09a801b3dfae28fa2806ba48007c00"
+      },
+      {
+        "path": "package.json",
+        "sha256": "6ce805677d76c11940f81fde3a98cf97a8a59365746bd503841cf87233505451"
+      },
+      {
+        "path": "index.html",
+        "sha256": "98a2f70018ca3375428a20b7b27f8a9a9200c3587c92cec7ca74d78f14bd4806"
+      },
+      {
+        "path": "src/app.mjs",
+        "sha256": "80ca9a9aba04009b9885ca45f501b5ef9e69ee4ac1732f7af25e2dce1f2a8ae5"
+      },
+      {
+        "path": "src/bite-feedback.mjs",
+        "sha256": "14ef747f6ec4e7ac11c356068df9552d8259282209c9723c811f585f27b697ba"
+      },
+      {
+        "path": "src/fish.mjs",
+        "sha256": "ba06f224f5204a9b0c0982ca1481b99670be1ad7496ef98ded29dad060f8f926"
+      },
+      {
+        "path": "src/ink-garden.mjs",
+        "sha256": "a1fead7821d56427de8b1c41d49cc6139fda7c10b59a3b2b77773b4a2abba8bf"
+      },
+      {
+        "path": "src/ink-material.mjs",
+        "sha256": "90b29cd93ae45bfdea3bbbe0fac9192b870c087fd4cb2e108692bc66dfd8f20b"
+      },
+      {
+        "path": "src/ink-renderer.mjs",
+        "sha256": "3308b2ec38b1af2f6ca6984798987ec4d6714c615cf76e827b87b16853dd250a"
+      },
+      {
+        "path": "src/pond-life.mjs",
+        "sha256": "7f05d7469f4463e8a4b244a4e122e4593795610852e2a8e40313b18b73ec1e97"
+      },
+      {
+        "path": "src/rhythm.mjs",
+        "sha256": "4e53d19e271c7f52a3650ac2f0da68c0b7482653c746c540d98370a8da518684"
+      },
+      {
+        "path": "src/school.mjs",
+        "sha256": "fc68840c348f6d87c03b0a23e0590a9bbe6e6d44d57602196010db4a93a87d4d"
+      },
+      {
+        "path": "src/shell.html",
+        "sha256": "d671f3c8930c85afe83184be18f3955cdb72d756599fafc5f2a91e92fc3f651d"
+      },
+      {
+        "path": "src/simulation-math.mjs",
+        "sha256": "a3a5b661924b23ebcef132d3f7c6ab780aeaee8799b3989e4a3e332e1fab5bc7"
+      },
+      {
+        "path": "src/simulation.mjs",
+        "sha256": "83049146821467150bb2ffd9b60d54136cc4103db4172f7dc55ba4cea330e32d"
+      },
+      {
+        "path": "src/style.css",
+        "sha256": "f940b6c09ae935aa4c425535a9a2a97c792cde4f7355ea02b309a40b11b495f5"
+      },
+      {
+        "path": "src/water.mjs",
+        "sha256": "94d46957156a57a0f6b5e2d8661e3993e13751844b5ba6bad012b6bf47cb7598"
+      },
+      {
+        "path": "vendor/THREE-LICENSE.txt",
+        "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+      },
+      {
+        "path": "vendor/three.core.js",
+        "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+      },
+      {
+        "path": "vendor/three.module.js",
+        "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+      }
+    ],
+    "packaged_files": [
+      {
+        "path": "index.html",
+        "sha256": "98a2f70018ca3375428a20b7b27f8a9a9200c3587c92cec7ca74d78f14bd4806"
+      },
+      {
+        "path": "THREE-LICENSE.txt",
+        "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+      }
+    ],
+    "adaptations": "Exact self-contained Paper Water runtime. Host presentation keeps the artwork full size with no visible text or controls. The optional introduction is reached from the gallery or with I. Three.js licence retained."
+  },
+  "files": [
+    {
+      "path": "runtime/index.html",
+      "sha256": "98a2f70018ca3375428a20b7b27f8a9a9200c3587c92cec7ca74d78f14bd4806",
+      "length": 578133
+    },
+    {
+      "path": "runtime/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "length": 1081
+    },
+    {
+      "path": "poster.jpg",
+      "sha256": "dd015cf0cb9609022608479f78ed47c810f1596e3c945aafb1c42d76fd8f9a00",
+      "length": 17245
+    },
+    {
+      "path": "preview.mp4",
+      "sha256": "c38cfa92e2fc0af6bc9810f30c0e8320546cc971cca531e9df14d77ad0bb08b5",
+      "length": 121397
+    }
+  ],
+  "capture": {
+    "kind": "actual browser canvas, real-time recording, silent",
+    "source_runtime_sha256": "98a2f70018ca3375428a20b7b27f8a9a9200c3587c92cec7ca74d78f14bd4806",
+    "requested_fps": 24,
+    "mime_type": "video/webm;codecs=vp9",
+    "settings": {
+      "aspectRatio": 1.3333333333333333,
+      "frameRate": 24,
+      "height": 1080,
+      "resizeMode": "none",
+      "width": 1440
+    },
+    "elapsed_ms": 10069.800000190735,
+    "start": {
+      "version": "0.17",
+      "simulationTime": "13.1667",
+      "count": "12",
+      "fps": "25.3",
+      "simulationMs": "4.22",
+      "modelMs": "16.29",
+      "renderMs": "10.24",
+      "rendering": "ink",
+      "geometryDetail": "pond",
+      "inkPrecision": "half-float",
+      "foodPieces": "0",
+      "foodEaten": "0",
+      "feedingFish": "0",
+      "feedingRoles": "",
+      "headingAlignment": "0.2747",
+      "swimmingStates": "cruise,quiet,cruise,cruise,cruise,cruise,coast,cruise,cruise,coast,cruise,coast",
+      "lastBite": "",
+      "automaticRipples": "12",
+      "rippleCount": "0",
+      "biteRipples": "0",
+      "bitingFish": "",
+      "biteFeedback": "0:0.000,1:0.000,2:0.000,3:0.000,4:0.000,5:0.000,6:0.000,7:0.000,8:0.000,9:0.000,10:0.000,11:0.000",
+      "surfaceLeaves": "47",
+      "submergedObjects": "24",
+      "cameraTracking": "false",
+      "cameraPosition": "0.000000,45.000000,0.000000",
+      "cameraRotation": "-0.707107,0.000000,0.000000,0.707107",
+      "cameraFrame": "-11.333333,11.333333,8.500000,-8.500000",
+      "viewport": "960,720"
+    },
+    "end": {
+      "version": "0.17",
+      "simulationTime": "22.0417",
+      "count": "12",
+      "fps": "30.1",
+      "simulationMs": "4.08",
+      "modelMs": "15.38",
+      "renderMs": "9.29",
+      "rendering": "ink",
+      "geometryDetail": "pond",
+      "inkPrecision": "half-float",
+      "foodPieces": "0",
+      "foodEaten": "0",
+      "feedingFish": "0",
+      "feedingRoles": "",
+      "headingAlignment": "0.5256",
+      "swimmingStates": "cruise,cruise,cruise,cruise,coast,coast,coast,cruise,cruise,cruise,cruise,coast",
+      "lastBite": "",
+      "automaticRipples": "20",
+      "rippleCount": "0",
+      "biteRipples": "0",
+      "bitingFish": "",
+      "biteFeedback": "0:0.000,1:0.000,2:0.000,3:0.000,4:0.000,5:0.000,6:0.000,7:0.000,8:0.000,9:0.000,10:0.000,11:0.000",
+      "surfaceLeaves": "47",
+      "submergedObjects": "24",
+      "cameraTracking": "false",
+      "cameraPosition": "0.000000,45.000000,0.000000",
+      "cameraRotation": "-0.707107,0.000000,0.000000,0.707107",
+      "cameraFrame": "-11.333333,11.333333,8.500000,-8.500000",
+      "viewport": "960,720"
+    },
+    "camera_recorded": false,
+    "metadata_note": "Transient canvas stream identifier omitted.",
+    "raw_sha256": "72a602ea5f7d7b12298f0159a79ad2578c48662526bfda8c30af4daaa97eafd5",
+    "source_snapshot_sha256": "4fb66200553c30f70d11c1bdf6f06af50e46b043b70f7e3ae1d50113f0cda245",
+    "capture_driver_sha256": "cbd8eba7f786280e515ae42fa1408e0949b3f6485d4b55a77c824fbb12734cdd",
+    "loop_method": "one-second end-to-start crossfade",
+    "encoded_video": {
+      "codec": "h264",
+      "width": 960,
+      "height": 720,
+      "fps": 24,
+      "streams": 1,
+      "duration": 7.5
+    }
+  },
+  "release_id": "c24eb28788f25e4ed1b7716af5185b4f832b2a6f6b236caa1bf1b3ad5b166815"
+}

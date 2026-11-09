@@ -1,8 +1,8 @@
 {
   "schema": "https://cyberdelic.space/schemas/living-catalog-v1.json",
   "version": "0.17",
-  "updated_at": "2026-11-09T00:16:39.332717Z",
-  "count": 46,
+  "updated_at": "2026-11-09T02:53:55.127322Z",
+  "count": 47,
   "curation": {
     "office": "OFFICE-LIBRARIAN",
     "office_version": "0.1",
@@ -2113,6 +2113,47 @@
       "introduced_by": "human-authorized-fieldworks-publication",
       "last_tended_at": "2026-11-09T00:16:39.332717Z",
       "uncertainty": "Thematic placements remain interpretive. This living artwork is not an inscription."
+    },
+    {
+      "id": "catalog:fieldworks:paper-water",
+      "record_kind": "artifact",
+      "title": "Paper Water",
+      "href": "fieldworks/paper-water/",
+      "summary": "Fish drift, gather, and feed in an ink pond on textured paper. Small bites send faint ripples across a still overhead view.",
+      "subjects": [
+        "water",
+        "attention",
+        "play",
+        "gesture",
+        "time",
+        "emergence",
+        "generative art",
+        "ink",
+        "Fieldworks"
+      ],
+      "search_terms": [
+        "Paper Water",
+        "ink pond",
+        "fish",
+        "koi",
+        "ripples",
+        "paper"
+      ],
+      "questions": [
+        "How does a small act of attention change a living drawing?"
+      ],
+      "related": [],
+      "evidence": [
+        {
+          "source": "fieldworks/readings/paper-water.md",
+          "locator": "# Paper Water"
+        }
+      ],
+      "epistemic_status": "strong",
+      "review_state": "model-proposed",
+      "introduced_by": "human-authorized-fieldworks-publication",
+      "last_tended_at": "2026-11-09T02:53:55.127322Z",
+      "uncertainty": "Themes are interpretive. This living artwork is not an inscription."
     }
   ]
 }

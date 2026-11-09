@@ -1,0 +1,68 @@
+{
+  "id": "fieldworks-paper-water",
+  "title": "Paper Water",
+  "form": "fieldwork",
+  "release_id": null,
+  "pages": [
+    "fieldworks/paper-water/"
+  ],
+  "source_path": "fieldworks/readings/paper-water.md",
+  "source_sha256": "de3a7927023092dd3e79e98afe0d0b260739c37621fef50c98580ae0a66d6464",
+  "document_sha256": "de3a7927023092dd3e79e98afe0d0b260739c37621fef50c98580ae0a66d6464",
+  "text_sha256": "1f7fcce9bfec7a317f88b7e16cba51c2186d40a3c100b1b4aba460a054a047c4",
+  "reading_path": "audio/readings/1f7fcce9bfec7a317f88b7e16cba51c2186d40a3c100b1b4aba460a054a047c4.md",
+  "reading_sha256": "de3a7927023092dd3e79e98afe0d0b260739c37621fef50c98580ae0a66d6464",
+  "reading_length": 824,
+  "audio_path": "audio/lewis/1f7fcce9bfec7a317f88b7e16cba51c2186d40a3c100b1b4aba460a054a047c4.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "fc346f55e6d310ed917f34865c24ab578aeef56e85e3fbab4ee3433949fb6e6c",
+  "audio_length": 724076,
+  "duration_seconds": 60.25,
+  "chunks": [
+    {
+      "text": "Paper Water",
+      "start": 0.0,
+      "duration": 1.85
+    },
+    {
+      "text": "An ink pond, alive to a small gesture.",
+      "start": 2.03,
+      "duration": 3.5
+    },
+    {
+      "text": "Fish drift across a field of textured paper. Their bodies hold different amounts of ink: fine contours, soft grey washes, dark patches. Leaves float at the edges. Shapes below the surface fade into the page.",
+      "start": 5.71,
+      "duration": 14.475
+    },
+    {
+      "text": "The fish move through their own rhythms of swimming, coasting, and small bursts of speed. They sometimes gather and sometimes wander apart. Click or tap to drop a few blots of food. Nearby fish approach, rise, and take small bites. A mouth opens, a ripple spreads, and the pond begins to settle again.",
+      "start": 20.365,
+      "duration": 20.0
+    },
+    {
+      "text": "Paper Water holds a drawing in motion. Its depth comes through changes in definition, pigment, and the slight distortion of the water. The viewpoint stays still while the life within it continues.",
+      "start": 40.545,
+      "duration": 13.45
+    },
+    {
+      "text": "By Brad Necyk, 2026. This living artwork is not inscribed.",
+      "start": 54.175,
+      "duration": 6.075
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.6321302056312561,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

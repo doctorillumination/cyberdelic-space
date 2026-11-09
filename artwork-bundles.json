@@ -308,6 +308,34 @@
       ]
     },
     {
+      "artwork": "paper-water",
+      "path": "artwork-bundles/paper-water.zip",
+      "length": 290855,
+      "sha256": "fa70ce0f6aef568e13b457257fa761172ddcf129a4ece1a297212d0201e5b4f7",
+      "files": [
+        {
+          "path": "fieldwork-runtime/paper-water/THREE-LICENSE.txt",
+          "length": 1081,
+          "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+        },
+        {
+          "path": "fieldwork-runtime/paper-water/index.html",
+          "length": 578133,
+          "sha256": "98a2f70018ca3375428a20b7b27f8a9a9200c3587c92cec7ca74d78f14bd4806"
+        },
+        {
+          "path": "fieldworks/images/paper-water.jpg",
+          "length": 17245,
+          "sha256": "dd015cf0cb9609022608479f78ed47c810f1596e3c945aafb1c42d76fd8f9a00"
+        },
+        {
+          "path": "fieldworks/previews/paper-water.mp4",
+          "length": 121397,
+          "sha256": "c38cfa92e2fc0af6bc9810f30c0e8320546cc971cca531e9df14d77ad0bb08b5"
+        }
+      ]
+    },
+    {
       "artwork": "primitives",
       "path": "artwork-bundles/primitives-hand-tracking.zip",
       "length": 12454857,

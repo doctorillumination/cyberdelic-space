@@ -1,0 +1,58 @@
+{
+  "id": "fieldworks-overview",
+  "title": "Fieldworks",
+  "form": "fieldwork",
+  "release_id": null,
+  "pages": [
+    "fieldworks/"
+  ],
+  "source_path": "fieldworks/readings/overview.md",
+  "source_sha256": "680c08f0dc6fb88171cd5098aa955e26bc3976f9d9df9de43fa2411cccc06bc2",
+  "document_sha256": "680c08f0dc6fb88171cd5098aa955e26bc3976f9d9df9de43fa2411cccc06bc2",
+  "text_sha256": "58d6b002f0d9e29f8ab8c7c8910cd9eb3e82f4a26eb3cc7bf5471a592eab4fbe",
+  "reading_path": "audio/readings/58d6b002f0d9e29f8ab8c7c8910cd9eb3e82f4a26eb3cc7bf5471a592eab4fbe.md",
+  "reading_sha256": "680c08f0dc6fb88171cd5098aa955e26bc3976f9d9df9de43fa2411cccc06bc2",
+  "reading_length": 473,
+  "audio_path": "audio/lewis/58d6b002f0d9e29f8ab8c7c8910cd9eb3e82f4a26eb3cc7bf5471a592eab4fbe.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "1eb3b4dac58ab5a10650cdcb0113cf87f0d7686b785f52a5e18a7eddf1978786",
+  "audio_length": 425708,
+  "duration_seconds": 35.39,
+  "chunks": [
+    {
+      "text": "Fieldworks",
+      "start": 0.0,
+      "duration": 1.65
+    },
+    {
+      "text": "Generative artworks and interactive environments by Brad Necyk.",
+      "start": 1.83,
+      "duration": 5.15
+    },
+    {
+      "text": "A surface that answers. A fold in seeing. An unfinished sky. Impossible matter. A river remembering a drawing. A small vocabulary, an expanding field. A field of competing futures. A picture with weight. A room that keeps trying to sing. A history in formation. A manual, held differently. A drawing that keeps swimming.",
+      "start": 7.16,
+      "duration": 22.475
+    },
+    {
+      "text": "Twelve living artworks. Enter, explore, and see what a gesture changes.",
+      "start": 29.815,
+      "duration": 5.575
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.6107050776481628,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}
