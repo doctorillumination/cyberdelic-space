@@ -4,13 +4,13 @@
     {
       "artwork": "btc-swarm",
       "path": "artwork-bundles/btc-swarm.zip",
-      "length": 10927415,
-      "sha256": "a3a813ced32dbd0f8af4f2ba0f280c5996321f9b644beb3c69a8ce802ef2000a",
+      "length": 10934144,
+      "sha256": "9dbea60ca33493afb71f2d55f5aa1c1e0bdb3000a130df51746b2a1cc5bf017d",
       "files": [
         {
           "path": "fieldwork-runtime/btc-swarm/ALGORITHM.md",
-          "length": 2775,
-          "sha256": "10d3a62b28e742203b733f466d140542cf761109f756b8f7f839dc8c372afcf7"
+          "length": 3199,
+          "sha256": "b7e94ca744136a88dc964e88e6932e2e0477257efb19cdcf55a866a3815eb1d2"
         },
         {
           "path": "fieldwork-runtime/btc-swarm/SOURCES.md",
@@ -24,8 +24,8 @@
         },
         {
           "path": "fieldwork-runtime/btc-swarm/index.html",
-          "length": 13335765,
-          "sha256": "1f2a14786e14b99b906b229d8ee5c31005f926894bf9159a90ae983eec62e3e3"
+          "length": 13352187,
+          "sha256": "5f3a8a5c61b636f837e224a4902576181edf7795855728673347fb223879288d"
         },
         {
           "path": "fieldwork-runtime/btc-swarm/media-provenance.json",
@@ -34,13 +34,13 @@
         },
         {
           "path": "fieldworks/images/btc-swarm.jpg",
-          "length": 125692,
-          "sha256": "7fe29ce5958df4898ae1a59ac905d084631bb8c8931befe387453c05169ddd9a"
+          "length": 126081,
+          "sha256": "528e70b073e9c09ce35a9ae5a157eaedc00ade6d56130bf17e10738fa6096eaf"
         },
         {
           "path": "fieldworks/previews/btc-swarm.mp4",
-          "length": 970300,
-          "sha256": "ed039deefeef473ee9a557dfb764d7f3aa5a37f9be98c5fea388a024e65af363"
+          "length": 972288,
+          "sha256": "a6fd145747be06d052399ad94a62b263da37c0e475bab609d97e64a8a43c8906"
         }
       ]
     },
@@ -137,6 +137,54 @@
           "path": "fieldwork-runtime/btc-swarm/editions/history-study-08/release.json",
           "length": 13860,
           "sha256": "7327b1260308223ddb6aabd3425dd1044f27079e0bc5a90ba271a133d9d6ff46"
+        }
+      ]
+    },
+    {
+      "artwork": "btc-swarm-history-study-09",
+      "path": "artwork-bundles/btc-swarm-history-study-09.zip",
+      "length": 10932496,
+      "sha256": "789ac8a4c0e5b0aba0e3861775756a80273c1933b0b46a200bfa8b918f2e5650",
+      "files": [
+        {
+          "path": "fieldwork-runtime/btc-swarm/editions/history-study-09/ALGORITHM.md",
+          "length": 2775,
+          "sha256": "10d3a62b28e742203b733f466d140542cf761109f756b8f7f839dc8c372afcf7"
+        },
+        {
+          "path": "fieldwork-runtime/btc-swarm/editions/history-study-09/SOURCES.md",
+          "length": 13645,
+          "sha256": "74ef191021d61666fd7fb99cd93f12f98b736fd585224238c4e7f0f56fa2e7aa"
+        },
+        {
+          "path": "fieldwork-runtime/btc-swarm/editions/history-study-09/generated-prompts.json",
+          "length": 2267,
+          "sha256": "47cfff6eb0ed501e3451df6a65a51a55931afd2f30d4789c1dfde6ade53eb8e0"
+        },
+        {
+          "path": "fieldwork-runtime/btc-swarm/editions/history-study-09/index.html",
+          "length": 13335765,
+          "sha256": "1f2a14786e14b99b906b229d8ee5c31005f926894bf9159a90ae983eec62e3e3"
+        },
+        {
+          "path": "fieldwork-runtime/btc-swarm/editions/history-study-09/media-provenance.json",
+          "length": 13796,
+          "sha256": "6311faab8d92d66108e4b5adde0c6383bc36db57c0f7bbf49828e0fd2ce6dccb"
+        },
+        {
+          "path": "fieldwork-runtime/btc-swarm/editions/history-study-09/poster.jpg",
+          "length": 125692,
+          "sha256": "7fe29ce5958df4898ae1a59ac905d084631bb8c8931befe387453c05169ddd9a"
+        },
+        {
+          "path": "fieldwork-runtime/btc-swarm/editions/history-study-09/preview.mp4",
+          "length": 970300,
+          "sha256": "ed039deefeef473ee9a557dfb764d7f3aa5a37f9be98c5fea388a024e65af363"
+        },
+        {
+          "path": "fieldwork-runtime/btc-swarm/editions/history-study-09/release.json",
+          "length": 16624,
+          "sha256": "45bf276dd1cdaf2dfc95943258039a22fdf415e4427437e53242c22346f1a673"
         }
       ]
     },

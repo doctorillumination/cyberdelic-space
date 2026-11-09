@@ -113,13 +113,13 @@
     {
       "slug": "btc-swarm",
       "capture": "actual browser compositor, consecutive fixed-clock 60 fps, no audio",
-      "raw_sha256": "0a48786219fd50950307a4b875e0146c59272108ec51c52bdd65356db024095d",
+      "raw_sha256": "46cc99a98f0080b97c84e299c11e58608374bf7293ecf3ca504792a4087eb894",
       "raw_duration": 4.0,
       "loop_method": "hard cut after four seconds of consecutive fixed-clock frames",
-      "source_snapshot_sha256": "60de686559b24991aeccecd869e78177fc18b7938767e360ddcbc364309aaae4",
+      "source_snapshot_sha256": "a7067d461b1655ae3fd9fca20a237c365f7c5224e58acdfdc5e838bc6a355306",
       "path": "btc-swarm.mp4",
-      "sha256": "ed039deefeef473ee9a557dfb764d7f3aa5a37f9be98c5fea388a024e65af363",
-      "length": 970300
+      "sha256": "a6fd145747be06d052399ad94a62b263da37c0e475bab609d97e64a8a43c8906",
+      "length": 972288
     },
     {
       "slug": "transplant",
