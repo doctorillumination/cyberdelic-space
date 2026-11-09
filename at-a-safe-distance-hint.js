@@ -1,4 +1,4 @@
-/* A quiet invitation, retired by the viewer's first deliberate drag. */
+/* A centered opening, retired by the viewer's first deliberate drag. */
 (function () {
   const frame = document.querySelector('[data-fieldwork="at-a-safe-distance"] iframe');
   function attach(canvas, host) {
@@ -7,10 +7,25 @@
     hint.classList.add('fieldwork-drag-hint');
     hint.dataset.instruction = 'drag';
     hint.setAttribute('aria-hidden', 'true');
-    hint.textContent = matchMedia('(pointer: coarse)').matches ? 'Touch and drag to look around' : 'Click and drag to look around';
+    const action = document.createElement('span');
+    action.className = 'instruction-action';
+    action.textContent = matchMedia('(pointer: coarse)').matches ? 'Touch and drag' : 'Click and drag';
+    const detail = document.createElement('span');
+    detail.className = 'instruction-detail';
+    detail.textContent = 'to look around';
+    hint.replaceChildren(action, detail);
     if (!hint.parentNode) host.appendChild(hint);
     let start = null;
-    const ready = () => { hint.dataset.ready = String(canvas.dataset.ready === 'true'); };
+    let revealQueued = false;
+    const ready = () => {
+      if (revealQueued || canvas.dataset.ready !== 'true') return;
+      revealQueued = true;
+      observer.disconnect();
+      // Two painted frames guarantee an entrance even when the views are cached.
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        if (hint.dataset.dismissed !== 'true') hint.dataset.ready = 'true';
+      }));
+    };
     const observer = new MutationObserver(ready);
     observer.observe(canvas, {attributes: true, attributeFilter: ['data-ready']});
     ready();
