@@ -1,16 +1,34 @@
-/* The instruction floats over the glass without intercepting a gesture. */
+/* The opening comes into focus at the center of the glass. */
 body #gesture-hint[data-instruction],.fieldwork-drag-hint {
-  position:fixed; z-index:3; left:50%; bottom:max(44px,calc(env(safe-area-inset-bottom) + 26px));
-  margin:0; padding:0; transform:translateX(-50%); white-space:nowrap; pointer-events:none;
-  font-family:ui-sans-serif,system-ui,sans-serif; font-size:11px; font-weight:300;
-  line-height:1.4; letter-spacing:.09em; color:#e9eee1;
-  text-shadow:0 1px 9px #0008; opacity:0;
-  transition:opacity 1.5s cubic-bezier(.22,.61,.36,1);
-  animation:instruction-float 5s ease-in-out infinite;
+  position:fixed; z-index:3; left:50%; top:50%; bottom:auto;
+  width:min(calc(100vw - 48px),960px); margin:0; padding:0;
+  transform:translate(-50%,calc(-50% + 12px));
+  text-align:center; white-space:normal; pointer-events:none;
+  font-family:"Iowan Old Style",Baskerville,"Palatino Linotype",Georgia,serif;
+  font-size:clamp(38px,4.8vw,84px); font-weight:400;
+  line-height:1.15; letter-spacing:.005em; color:#f2f1e8;
+  text-shadow:0 2px 28px #0006; opacity:0; filter:blur(3px);
+  transition:opacity 2.2s cubic-bezier(.2,.65,.3,1),transform 2.6s cubic-bezier(.2,.65,.3,1),filter 2s ease;
+  transition-delay:.25s;
 }
-body #gesture-hint[data-instruction][data-ready="true"],.fieldwork-drag-hint[data-ready="true"] {opacity:.68}
-body #gesture-hint[data-instruction][data-dismissed="true"],.fieldwork-drag-hint[data-dismissed="true"] {opacity:0}
-@keyframes instruction-float {0%,100% {transform:translate(-50%,0)} 50% {transform:translate(-50%,-3px)}}
+.instruction-action {display:block}
+.instruction-detail {
+  display:block; margin-top:20px; opacity:.72;
+  font-family:ui-sans-serif,system-ui,sans-serif;
+  font-size:clamp(11px,1vw,14px); font-weight:400;
+  line-height:1.5; letter-spacing:.22em; text-transform:uppercase;
+}
+body #gesture-hint[data-instruction][data-ready="true"],.fieldwork-drag-hint[data-ready="true"] {
+  opacity:.94; transform:translate(-50%,-50%); filter:blur(0);
+}
+body #gesture-hint[data-instruction][data-dismissed="true"],.fieldwork-drag-hint[data-dismissed="true"] {
+  opacity:0; transform:translate(-50%,calc(-50% - 7px)); filter:blur(4px);
+  transition-duration:1.2s; transition-delay:0s;
+}
 @media (prefers-reduced-motion:reduce) {
-  body #gesture-hint[data-instruction],.fieldwork-drag-hint {animation:none}
+  body #gesture-hint[data-instruction],.fieldwork-drag-hint,
+  body #gesture-hint[data-instruction][data-dismissed="true"],.fieldwork-drag-hint[data-dismissed="true"] {
+    transform:translate(-50%,-50%); filter:none;
+    transition:opacity .35s ease; transition-delay:0s;
+  }
 }
