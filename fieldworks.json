@@ -1,8 +1,8 @@
 {
   "schema": "cyberdelic.space/fieldworks-v1",
-  "version": "1.9.1",
+  "version": "1.9.2",
   "date": "2026-11-08",
-  "published_at": "2026-11-09T00:39:02.712187Z",
+  "published_at": "2026-11-09T01:00:19.410857Z",
   "overview": {
     "title": "Fieldworks",
     "href": "fieldworks/",
@@ -464,7 +464,7 @@
     {
       "slug": "btc-swarm",
       "title": "BTC / SWARM",
-      "edition": "history-study-10",
+      "edition": "history-study-11",
       "project": "btc-swarm",
       "repository": "https://github.com/doctorillumination/btc-swarm",
       "status": "living",
@@ -484,22 +484,22 @@
       "related_note": "fn-03",
       "related_title": "A Village of Agents",
       "offline_part": true,
-      "release_id": "53f45cc3a7ad72094d7fcb4d470a28f3d0e2ded3b17219901f99ec5fe1a8f87f",
-      "runtime_published_at": "2026-11-09T00:39:02.712187Z",
+      "release_id": "d2c64f30f4599feeebe2d0c7a593231dda4de4cdeeaa812101207b135046ef73",
+      "runtime_published_at": "2026-11-09T01:00:19.410857Z",
       "source_path": "fieldworks/readings/btc-swarm.md",
       "source_sha256": "262050e93efdc41118b4fef9454656405c0fbf527aa709dd617fc5f1978b6048",
       "source_length": 1035,
       "href": "fieldworks/btc-swarm/",
       "poster": {
         "path": "fieldworks/images/btc-swarm.jpg",
-        "sha256": "528e70b073e9c09ce35a9ae5a157eaedc00ade6d56130bf17e10738fa6096eaf",
-        "length": 126081,
+        "sha256": "cc2b0805e2b8365a787c5127c01bdb19653c5fd83f372eb5bb32608341524fcd",
+        "length": 126087,
         "kind": "actual-browser-capture"
       },
       "preview": {
         "path": "fieldworks/previews/btc-swarm.mp4",
-        "sha256": "a6fd145747be06d052399ad94a62b263da37c0e475bab609d97e64a8a43c8906",
-        "length": 972288,
+        "sha256": "64426d8bcfb7281e6d8abfd6ec168703535858262d3f7221a848a2eac6b3aaeb",
+        "length": 974195,
         "kind": "recorded-artwork-loop"
       }
     },
