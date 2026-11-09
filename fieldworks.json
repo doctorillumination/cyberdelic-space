@@ -1,15 +1,15 @@
 {
   "schema": "cyberdelic.space/fieldworks-v1",
-  "version": "1.8.2",
+  "version": "1.9",
   "date": "2026-11-08",
-  "published_at": "2026-11-08T23:49:19.821472Z",
+  "published_at": "2026-11-09T00:16:39.332717Z",
   "overview": {
     "title": "Fieldworks",
     "href": "fieldworks/",
     "source": "overview.md",
     "source_path": "fieldworks/readings/overview.md",
-    "source_sha256": "454c659b078e8c7617515b52fb6a655b821165c42c70f1ca88b40f13390281cd",
-    "source_length": 411
+    "source_sha256": "b855a43e7f668e6b919f9e0b146d74f8383d0a4a9480984da55c9f41a552c437",
+    "source_length": 442
   },
   "archived_readings": [
     {
@@ -83,6 +83,15 @@
       "source_sha256": "0034388a1a2b14a4a773aa14fd10df1264f159716d52800e744ddf90662098a7",
       "source_length": 388,
       "slug": "overview-nine-works"
+    },
+    {
+      "title": "Fieldworks, ten-work edition",
+      "href": "fieldworks/readings/overview-ten-works.md",
+      "source": "overview-ten-works.md",
+      "source_path": "fieldworks/readings/overview-ten-works.md",
+      "source_sha256": "454c659b078e8c7617515b52fb6a655b821165c42c70f1ca88b40f13390281cd",
+      "source_length": 411,
+      "slug": "overview-ten-works"
     }
   ],
   "items": [
@@ -491,6 +500,48 @@
         "path": "fieldworks/previews/btc-swarm.mp4",
         "sha256": "ed039deefeef473ee9a557dfb764d7f3aa5a37f9be98c5fea388a024e65af363",
         "length": 970300,
+        "kind": "recorded-artwork-loop"
+      }
+    },
+    {
+      "slug": "transplant",
+      "title": "Transplant",
+      "edition": "complete-manuscript-33",
+      "project": "transplant",
+      "repository": "https://github.com/doctorillumination/poetic-transplant",
+      "status": "living",
+      "caption": "A manual, held differently.",
+      "description": "A liver transplant manual becomes a book of weathered poetry. Turn through thirty-three pages of bleeding ink, worn paper, and implicated lives.",
+      "alt": "An open book with stained paper, red, blue, and green poetic text, rubbed ink, and a curved page turning across its spine.",
+      "gesture": "Pull the right page leftward to turn. Pull the left page back. Use Closer to read the fine impressions.",
+      "source": "transplant.md",
+      "themes": [
+        "poetry",
+        "embodiment",
+        "care",
+        "memory",
+        "gesture",
+        "time"
+      ],
+      "related_note": "fn-45",
+      "related_title": "The File Is a Score",
+      "offline_part": true,
+      "release_id": "4126c7b9a5ffb2b34b7944d0aa45fb3d3871d27b24f4846c1682fc90c5fcda3d",
+      "runtime_published_at": "2026-11-09T00:16:39.332717Z",
+      "source_path": "fieldworks/readings/transplant.md",
+      "source_sha256": "5b5e3eb15bbd13771ef5171923a947e0b2d6883aaa1c56eed469ca218dfb1c6f",
+      "source_length": 1074,
+      "href": "fieldworks/transplant/",
+      "poster": {
+        "path": "fieldworks/images/transplant.jpg",
+        "sha256": "9dcb9a76f152b96522c5f870fac676b08f0057c2f896e7ee9818dfb903583bb6",
+        "length": 58848,
+        "kind": "actual-browser-capture"
+      },
+      "preview": {
+        "path": "fieldworks/previews/transplant.mp4",
+        "sha256": "7d1ed51dfdabd28b73715087743d1e2358623b237812cfe7d3f5e3231d9e3f75",
+        "length": 566590,
         "kind": "recorded-artwork-loop"
       }
     }

@@ -65,3 +65,11 @@ html[data-fieldwork-artwork-only][data-fieldwork-slot="of-three-musicians"] :is(
 /* Keep the fictional desktop visible when host controls are hidden. */
 html[data-fieldwork-artwork-only][data-fieldwork-slot="btc-swarm"] :is(.transport-wrap,.transport,.instruction,.depth,.toast) { display:none!important; }
 @media(max-width:700px){html[data-fieldwork-slot="btc-swarm"] #dock { bottom:76px; }}
+
+/* Gallery presentation around the unchanged poetic book. */
+html[data-fieldwork-slot="transplant"] .identity { visibility:hidden; }
+html[data-fieldwork-slot="transplant"] .masthead { padding-top:18px; padding-bottom:12px; }
+html[data-fieldwork-slot="transplant"] .colophon { padding-bottom:12px; }
+html[data-fieldwork-slot="transplant"][data-fieldwork-artwork-only] :is(.masthead,.reader-nav,.colophon) { visibility:hidden; }
+html[data-fieldwork-slot="transplant"][data-fieldwork-artwork-only] .paper-well { position:absolute; inset:0; display:flex; align-items:center; }
+html[data-fieldwork-slot="transplant"][data-fieldwork-artwork-only] .folio { flex-shrink:0; width:min(100%,1600px,calc(154.545svh - 110px)); }

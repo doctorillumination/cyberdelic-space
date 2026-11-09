@@ -1,12 +1,12 @@
 {
-  "id": "fieldworks-overview",
-  "title": "Fieldworks",
+  "id": "fieldworks-overview-ten-works",
+  "title": "Fieldworks, ten-work edition",
   "form": "fieldwork",
   "release_id": null,
   "pages": [
-    "fieldworks/"
+    "fieldworks/readings/overview-ten-works.md"
   ],
-  "source_path": "fieldworks/readings/overview.md",
+  "source_path": "fieldworks/readings/overview-ten-works.md",
   "source_sha256": "454c659b078e8c7617515b52fb6a655b821165c42c70f1ca88b40f13390281cd",
   "document_sha256": "454c659b078e8c7617515b52fb6a655b821165c42c70f1ca88b40f13390281cd",
   "text_sha256": "2e584fa16869162e9e4d66b2e087211e5cf9224f885a67d94b53a542efb34fda",

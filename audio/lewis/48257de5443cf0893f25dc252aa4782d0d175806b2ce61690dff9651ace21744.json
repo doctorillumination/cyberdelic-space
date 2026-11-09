@@ -1,0 +1,73 @@
+{
+  "id": "fieldworks-transplant",
+  "title": "Transplant",
+  "form": "fieldwork",
+  "release_id": null,
+  "pages": [
+    "fieldworks/transplant/"
+  ],
+  "source_path": "fieldworks/readings/transplant.md",
+  "source_sha256": "5b5e3eb15bbd13771ef5171923a947e0b2d6883aaa1c56eed469ca218dfb1c6f",
+  "document_sha256": "5b5e3eb15bbd13771ef5171923a947e0b2d6883aaa1c56eed469ca218dfb1c6f",
+  "text_sha256": "48257de5443cf0893f25dc252aa4782d0d175806b2ce61690dff9651ace21744",
+  "reading_path": "audio/readings/48257de5443cf0893f25dc252aa4782d0d175806b2ce61690dff9651ace21744.md",
+  "reading_sha256": "5b5e3eb15bbd13771ef5171923a947e0b2d6883aaa1c56eed469ca218dfb1c6f",
+  "reading_length": 1074,
+  "audio_path": "audio/lewis/48257de5443cf0893f25dc252aa4782d0d175806b2ce61690dff9651ace21744.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "41ea5619853d9f28c9fa5553c52a0cbade33fe5b4e8526309e13f086548c2ff8",
+  "audio_length": 955052,
+  "duration_seconds": 79.505,
+  "chunks": [
+    {
+      "text": "Transplant",
+      "start": 0.0,
+      "duration": 1.725
+    },
+    {
+      "text": "A manual, held differently.",
+      "start": 1.905,
+      "duration": 2.65
+    },
+    {
+      "text": "Transplant began during Brad Necyk's postdoctoral fellowship at York University. Page by page, he poetically rendered the manual given to patients before a liver transplant. Its headings and instructions become a structure to think and feel within.",
+      "start": 4.735,
+      "duration": 17.45
+    },
+    {
+      "text": "Science explicates; poetry implicates. Columns become parallel voices. Indents open distances between bodies. A sentence can break apart, interrupt another, or disappear beneath a cancellation.",
+      "start": 22.365,
+      "duration": 14.325
+    },
+    {
+      "text": "The web edition holds thirty-three pages. Ribbon red, blue, and green meet dark marker and the pale fibres of worn paper. Ink pools, bleeds, and drips. Some impressions remain defined; others seem rubbed away. Clear passages share a page with partial erasures, and no two leaves weather in the same way.",
+      "start": 36.87,
+      "duration": 20.825
+    },
+    {
+      "text": "Turn a leaf across the spine. Its stained reverse stays beside the next poem, with a faint trace of the writing showing through. Read slowly. Turn back. Let the spaces hold part of the account.",
+      "start": 57.875,
+      "duration": 13.35
+    },
+    {
+      "text": "Poetic manual by Brad Necyk. Web edition, 2026. This living artwork is not inscribed.",
+      "start": 71.405,
+      "duration": 8.1
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.6411321759223938,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

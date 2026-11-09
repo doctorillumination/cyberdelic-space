@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import hashlib
 from html import escape
+from io import BytesIO
 import json
 from pathlib import Path, PurePosixPath
 import re
@@ -67,11 +68,10 @@ def prepare_artwork_parts(site: Path) -> None:
     folder = site / "artwork-bundles"
     folder.mkdir(exist_ok=True)
     parts = []
-    for slug, paths in sorted(groups.items()):
-        complete = any(path.suffix == ".html" for path in paths)
-        target = folder / (slug + (".zip" if complete else "-hand-tracking.zip"))
+    def encode(paths: list[Path]) -> tuple[bytes, list[dict]]:
+        buffer = BytesIO()
         files = []
-        with zipfile.ZipFile(target, "w", zipfile.ZIP_DEFLATED) as archive:
+        with zipfile.ZipFile(buffer, "w", zipfile.ZIP_DEFLATED) as archive:
             for path in paths:
                 data = path.read_bytes()
                 require(len(data) < MAX_ASSET_BYTES, "Static asset exceeds hosting limit")
@@ -81,16 +81,40 @@ def prepare_artwork_parts(site: Path) -> None:
                 info.external_attr = 0o644 << 16
                 archive.writestr(info, data)
                 files.append({"path": name, "length": len(data), "sha256": hashlib.sha256(data).hexdigest()})
-        data = target.read_bytes()
-        require(len(data) < MAX_ASSET_BYTES, "Artwork part exceeds hosting limit")
-        parts.append({"artwork": slug, "path": target.relative_to(site).as_posix(),
-                      "length": len(data), "sha256": hashlib.sha256(data).hexdigest(), "files": files})
+        return buffer.getvalue(), files
+
+    for slug, paths in sorted(groups.items()):
+        complete = any(path.suffix == ".html" for path in paths)
+        data, files = encode(paths)
+        batches = [(data, files)]
+        if len(data) >= MAX_ASSET_BYTES:
+            batches, batch, length = [], [], 0
+            for path in paths:
+                size = path.stat().st_size
+                if batch and length + size > MAX_ASSET_BYTES - 2 * 1024 * 1024:
+                    batches.append(encode(batch))
+                    batch, length = [], 0
+                batch.append(path)
+                length += size
+            if batch:
+                batches.append(encode(batch))
+        for number, (data, files) in enumerate(batches, 1):
+            suffix = (".zip" if complete else "-hand-tracking.zip") if len(batches) == 1 else f"-{number:02d}.zip"
+            target = folder / (slug + suffix)
+            require(len(data) < MAX_ASSET_BYTES, "Artwork part exceeds hosting limit")
+            if not target.exists() or target.read_bytes() != data:
+                target.write_bytes(data)
+            part = {"artwork": slug, "path": target.relative_to(site).as_posix(),
+                    "length": len(data), "sha256": hashlib.sha256(data).hexdigest(), "files": files}
+            if len(batches) > 1:
+                part.update(part=number, total_parts=len(batches))
+            parts.append(part)
     (site / "artwork-bundles.json").write_text(json.dumps({
         "schema": "cyberdelic.space/artwork-bundles-v1", "parts": parts}, indent=2) + "\n")
     mirror = site / "mirror/index.html"
     if mirror.exists():
         links = " ".join('<a href="../' + escape(p["path"]) + '" download>' +
-                         escape(p["artwork"].title()) + (' hand tracking' if '-hand-tracking.zip' in p["path"] else ' artwork') + '</a>' for p in parts)
+                         escape(p["artwork"].title()) + (f', part {p["part"]} of {p["total_parts"]}' if 'part' in p else (' hand tracking' if '-hand-tracking.zip' in p["path"] else ' artwork')) + '</a>' for p in parts)
         section = ('<section id="artwork-mirror"><h2>Copy the artwork parts</h2>'
                    '<p>For a complete offline copy, also download and extract these parts '
                    'into the core archive folder. They contain local hand-tracking '

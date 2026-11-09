@@ -1,0 +1,58 @@
+{
+  "id": "fieldworks-overview",
+  "title": "Fieldworks",
+  "form": "fieldwork",
+  "release_id": null,
+  "pages": [
+    "fieldworks/"
+  ],
+  "source_path": "fieldworks/readings/overview.md",
+  "source_sha256": "b855a43e7f668e6b919f9e0b146d74f8383d0a4a9480984da55c9f41a552c437",
+  "document_sha256": "b855a43e7f668e6b919f9e0b146d74f8383d0a4a9480984da55c9f41a552c437",
+  "text_sha256": "40a2629ce2a63af97b2096c3ec2e53b8b2cd3b32a956efa949ac5de234a7baee",
+  "reading_path": "audio/readings/40a2629ce2a63af97b2096c3ec2e53b8b2cd3b32a956efa949ac5de234a7baee.md",
+  "reading_sha256": "b855a43e7f668e6b919f9e0b146d74f8383d0a4a9480984da55c9f41a552c437",
+  "reading_length": 442,
+  "audio_path": "audio/lewis/40a2629ce2a63af97b2096c3ec2e53b8b2cd3b32a956efa949ac5de234a7baee.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "1f71f5a3c7a783004301b86e3ba05a0dc5e6d28d02e24e651da861ab0ba31752",
+  "audio_length": 407564,
+  "duration_seconds": 33.865,
+  "chunks": [
+    {
+      "text": "Fieldworks",
+      "start": 0.0,
+      "duration": 1.65
+    },
+    {
+      "text": "Generative artworks and interactive environments by Brad Necyk.",
+      "start": 1.83,
+      "duration": 5.15
+    },
+    {
+      "text": "A surface that answers. A fold in seeing. An unfinished sky. Impossible matter. A river remembering a drawing. A small vocabulary, an expanding field. A field of competing futures. A picture with weight. A room that keeps trying to sing. A history in formation. A manual, held differently.",
+      "start": 7.16,
+      "duration": 20.8
+    },
+    {
+      "text": "Eleven living artworks. Enter, explore, and see what a gesture changes.",
+      "start": 28.14,
+      "duration": 5.725
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.593643844127655,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

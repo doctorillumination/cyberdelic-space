@@ -18681,19 +18681,19 @@
         "fieldworks/"
       ],
       "source_path": "fieldworks/readings/overview.md",
-      "source_sha256": "454c659b078e8c7617515b52fb6a655b821165c42c70f1ca88b40f13390281cd",
-      "document_sha256": "454c659b078e8c7617515b52fb6a655b821165c42c70f1ca88b40f13390281cd",
-      "text_sha256": "2e584fa16869162e9e4d66b2e087211e5cf9224f885a67d94b53a542efb34fda",
-      "reading_path": "audio/readings/2e584fa16869162e9e4d66b2e087211e5cf9224f885a67d94b53a542efb34fda.md",
-      "reading_sha256": "454c659b078e8c7617515b52fb6a655b821165c42c70f1ca88b40f13390281cd",
-      "reading_length": 411,
-      "audio_path": "audio/lewis/2e584fa16869162e9e4d66b2e087211e5cf9224f885a67d94b53a542efb34fda.mp3",
+      "source_sha256": "b855a43e7f668e6b919f9e0b146d74f8383d0a4a9480984da55c9f41a552c437",
+      "document_sha256": "b855a43e7f668e6b919f9e0b146d74f8383d0a4a9480984da55c9f41a552c437",
+      "text_sha256": "40a2629ce2a63af97b2096c3ec2e53b8b2cd3b32a956efa949ac5de234a7baee",
+      "reading_path": "audio/readings/40a2629ce2a63af97b2096c3ec2e53b8b2cd3b32a956efa949ac5de234a7baee.md",
+      "reading_sha256": "b855a43e7f668e6b919f9e0b146d74f8383d0a4a9480984da55c9f41a552c437",
+      "reading_length": 442,
+      "audio_path": "audio/lewis/40a2629ce2a63af97b2096c3ec2e53b8b2cd3b32a956efa949ac5de234a7baee.mp3",
       "voice": "bm_lewis",
       "voice_name": "Lewis",
       "speed": 1.0,
-      "audio_sha256": "df2c2b40ffb75b6bd571949f3ff98b6513b5b42c99363522b7f4e921cb4ecc14",
-      "audio_length": 384524,
-      "duration_seconds": 31.965,
+      "audio_sha256": "1f71f5a3c7a783004301b86e3ba05a0dc5e6d28d02e24e651da861ab0ba31752",
+      "audio_length": 407564,
+      "duration_seconds": 33.865,
       "chunks": [
         {
           "text": "Fieldworks",
@@ -18706,21 +18706,21 @@
           "duration": 5.15
         },
         {
-          "text": "A surface that answers. A fold in seeing. An unfinished sky. Impossible matter. A river remembering a drawing. A small vocabulary, an expanding field. A field of competing futures. A picture with weight. A room that keeps trying to sing. A history in formation.",
+          "text": "A surface that answers. A fold in seeing. An unfinished sky. Impossible matter. A river remembering a drawing. A small vocabulary, an expanding field. A field of competing futures. A picture with weight. A room that keeps trying to sing. A history in formation. A manual, held differently.",
           "start": 7.16,
-          "duration": 19.05
+          "duration": 20.8
         },
         {
-          "text": "Ten living artworks. Enter, explore, and see what a gesture changes.",
-          "start": 26.39,
-          "duration": 5.575
+          "text": "Eleven living artworks. Enter, explore, and see what a gesture changes.",
+          "start": 28.14,
+          "duration": 5.725
         }
       ],
       "checks": {
         "all_text_retained": true,
         "mp3_decodes": true,
         "finite_samples": true,
-        "peak": 0.5187338590621948,
+        "peak": 0.593643844127655,
         "clipped_samples": 0
       }
     },
@@ -19335,6 +19335,73 @@
       }
     },
     {
+      "id": "fieldworks-transplant",
+      "title": "Transplant",
+      "form": "fieldwork",
+      "release_id": null,
+      "pages": [
+        "fieldworks/transplant/"
+      ],
+      "source_path": "fieldworks/readings/transplant.md",
+      "source_sha256": "5b5e3eb15bbd13771ef5171923a947e0b2d6883aaa1c56eed469ca218dfb1c6f",
+      "document_sha256": "5b5e3eb15bbd13771ef5171923a947e0b2d6883aaa1c56eed469ca218dfb1c6f",
+      "text_sha256": "48257de5443cf0893f25dc252aa4782d0d175806b2ce61690dff9651ace21744",
+      "reading_path": "audio/readings/48257de5443cf0893f25dc252aa4782d0d175806b2ce61690dff9651ace21744.md",
+      "reading_sha256": "5b5e3eb15bbd13771ef5171923a947e0b2d6883aaa1c56eed469ca218dfb1c6f",
+      "reading_length": 1074,
+      "audio_path": "audio/lewis/48257de5443cf0893f25dc252aa4782d0d175806b2ce61690dff9651ace21744.mp3",
+      "voice": "bm_lewis",
+      "voice_name": "Lewis",
+      "speed": 1.0,
+      "audio_sha256": "41ea5619853d9f28c9fa5553c52a0cbade33fe5b4e8526309e13f086548c2ff8",
+      "audio_length": 955052,
+      "duration_seconds": 79.505,
+      "chunks": [
+        {
+          "text": "Transplant",
+          "start": 0.0,
+          "duration": 1.725
+        },
+        {
+          "text": "A manual, held differently.",
+          "start": 1.905,
+          "duration": 2.65
+        },
+        {
+          "text": "Transplant began during Brad Necyk's postdoctoral fellowship at York University. Page by page, he poetically rendered the manual given to patients before a liver transplant. Its headings and instructions become a structure to think and feel within.",
+          "start": 4.735,
+          "duration": 17.45
+        },
+        {
+          "text": "Science explicates; poetry implicates. Columns become parallel voices. Indents open distances between bodies. A sentence can break apart, interrupt another, or disappear beneath a cancellation.",
+          "start": 22.365,
+          "duration": 14.325
+        },
+        {
+          "text": "The web edition holds thirty-three pages. Ribbon red, blue, and green meet dark marker and the pale fibres of worn paper. Ink pools, bleeds, and drips. Some impressions remain defined; others seem rubbed away. Clear passages share a page with partial erasures, and no two leaves weather in the same way.",
+          "start": 36.87,
+          "duration": 20.825
+        },
+        {
+          "text": "Turn a leaf across the spine. Its stained reverse stays beside the next poem, with a faint trace of the writing showing through. Read slowly. Turn back. Let the spaces hold part of the account.",
+          "start": 57.875,
+          "duration": 13.35
+        },
+        {
+          "text": "Poetic manual by Brad Necyk. Web edition, 2026. This living artwork is not inscribed.",
+          "start": 71.405,
+          "duration": 8.1
+        }
+      ],
+      "checks": {
+        "all_text_retained": true,
+        "mp3_decodes": true,
+        "finite_samples": true,
+        "peak": 0.6411321759223938,
+        "clipped_samples": 0
+      }
+    },
+    {
       "id": "fieldworks-overview-v1",
       "title": "Fieldworks, first edition",
       "form": "fieldwork",
@@ -19759,6 +19826,58 @@
         "peak": 0.5480540990829468,
         "clipped_samples": 0
       }
+    },
+    {
+      "id": "fieldworks-overview-ten-works",
+      "title": "Fieldworks, ten-work edition",
+      "form": "fieldwork",
+      "release_id": null,
+      "pages": [
+        "fieldworks/readings/overview-ten-works.md"
+      ],
+      "source_path": "fieldworks/readings/overview-ten-works.md",
+      "source_sha256": "454c659b078e8c7617515b52fb6a655b821165c42c70f1ca88b40f13390281cd",
+      "document_sha256": "454c659b078e8c7617515b52fb6a655b821165c42c70f1ca88b40f13390281cd",
+      "text_sha256": "2e584fa16869162e9e4d66b2e087211e5cf9224f885a67d94b53a542efb34fda",
+      "reading_path": "audio/readings/2e584fa16869162e9e4d66b2e087211e5cf9224f885a67d94b53a542efb34fda.md",
+      "reading_sha256": "454c659b078e8c7617515b52fb6a655b821165c42c70f1ca88b40f13390281cd",
+      "reading_length": 411,
+      "audio_path": "audio/lewis/2e584fa16869162e9e4d66b2e087211e5cf9224f885a67d94b53a542efb34fda.mp3",
+      "voice": "bm_lewis",
+      "voice_name": "Lewis",
+      "speed": 1.0,
+      "audio_sha256": "df2c2b40ffb75b6bd571949f3ff98b6513b5b42c99363522b7f4e921cb4ecc14",
+      "audio_length": 384524,
+      "duration_seconds": 31.965,
+      "chunks": [
+        {
+          "text": "Fieldworks",
+          "start": 0.0,
+          "duration": 1.65
+        },
+        {
+          "text": "Generative artworks and interactive environments by Brad Necyk.",
+          "start": 1.83,
+          "duration": 5.15
+        },
+        {
+          "text": "A surface that answers. A fold in seeing. An unfinished sky. Impossible matter. A river remembering a drawing. A small vocabulary, an expanding field. A field of competing futures. A picture with weight. A room that keeps trying to sing. A history in formation.",
+          "start": 7.16,
+          "duration": 19.05
+        },
+        {
+          "text": "Ten living artworks. Enter, explore, and see what a gesture changes.",
+          "start": 26.39,
+          "duration": 5.575
+        }
+      ],
+      "checks": {
+        "all_text_retained": true,
+        "mp3_decodes": true,
+        "finite_samples": true,
+        "peak": 0.5187338590621948,
+        "clipped_samples": 0
+      }
     }
   ],
   "playlists": [
@@ -19921,6 +20040,11 @@
       "path": "audio-bundles/lewis-25.zip",
       "sha256": "427dac01df48c2ed7b181d8651fc7806b32f79032ffca1de3c93063627e206f4",
       "length": 1292838
+    },
+    {
+      "path": "audio-bundles/lewis-26.zip",
+      "sha256": "867e7e9f15c128949587fd96b292444f49db48a4dd6bf0cd5e9ebd22d68a7066",
+      "length": 1363110
     }
   ]
 }
