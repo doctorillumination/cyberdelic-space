@@ -4684,9 +4684,9 @@
       "slug": "btc-swarm",
       "project": "btc-swarm",
       "repository": "https://github.com/doctorillumination/btc-swarm",
-      "revision": "c727136c57e1fd8c7d55e90f8e6043681b1203ef",
-      "edition": "history-study-10",
-      "source_version": "study-10",
+      "revision": "1477b587751388636935b2bae33f9b5f7d91ef14",
+      "edition": "history-study-11",
+      "source_version": "study-11",
       "source_subdirectory": ".",
       "source_files": [
         {
@@ -4707,7 +4707,7 @@
         },
         {
           "path": "src/shell.html",
-          "sha256": "889fe8a72193156b638a649196efa548d784d298c582fe0e975ea308ef767a86"
+          "sha256": "bec4e8af1766435748945478bae1c4142d5c8a36a3cd8c0ea8b93a712258866a"
         },
         {
           "path": "assets/README.md",
@@ -4855,7 +4855,7 @@
         },
         {
           "path": "content/chapters.json",
-          "sha256": "2f8b7e69943cd17c8d993f086a213c3d4b9b5709b01c3d0222ce00c3eb9785db"
+          "sha256": "920e0a409f3a856cb420deb4cd055d09a78459491b06d5911ad8742fdc3bc1d4"
         },
         {
           "path": "content/genesis.json",
@@ -4871,7 +4871,7 @@
         },
         {
           "path": "index.html",
-          "sha256": "5f3a8a5c61b636f837e224a4902576181edf7795855728673347fb223879288d"
+          "sha256": "f177498c6330d90a1995064cac0e81a1dd61e1098fe9ba2c70546b9f011392b8"
         },
         {
           "path": "SOURCES.md",
@@ -4988,19 +4988,51 @@
           "sha256": "45bf276dd1cdaf2dfc95943258039a22fdf415e4427437e53242c22346f1a673"
         },
         {
+          "path": "editions/history-study-10/ALGORITHM.md",
+          "sha256": "b7e94ca744136a88dc964e88e6932e2e0477257efb19cdcf55a866a3815eb1d2"
+        },
+        {
+          "path": "editions/history-study-10/SOURCES.md",
+          "sha256": "74ef191021d61666fd7fb99cd93f12f98b736fd585224238c4e7f0f56fa2e7aa"
+        },
+        {
+          "path": "editions/history-study-10/generated-prompts.json",
+          "sha256": "47cfff6eb0ed501e3451df6a65a51a55931afd2f30d4789c1dfde6ade53eb8e0"
+        },
+        {
+          "path": "editions/history-study-10/index.html",
+          "sha256": "5f3a8a5c61b636f837e224a4902576181edf7795855728673347fb223879288d"
+        },
+        {
+          "path": "editions/history-study-10/media-provenance.json",
+          "sha256": "6311faab8d92d66108e4b5adde0c6383bc36db57c0f7bbf49828e0fd2ce6dccb"
+        },
+        {
+          "path": "editions/history-study-10/poster.jpg",
+          "sha256": "528e70b073e9c09ce35a9ae5a157eaedc00ade6d56130bf17e10738fa6096eaf"
+        },
+        {
+          "path": "editions/history-study-10/preview.mp4",
+          "sha256": "a6fd145747be06d052399ad94a62b263da37c0e475bab609d97e64a8a43c8906"
+        },
+        {
+          "path": "editions/history-study-10/release.json",
+          "sha256": "c261ff485d96bbe051ec012ca2e5394527a8c064ef3704eee2a9bf1a80ec54df"
+        },
+        {
           "path": "generated-prompts.json",
           "sha256": "47cfff6eb0ed501e3451df6a65a51a55931afd2f30d4789c1dfde6ade53eb8e0"
         },
         {
           "path": "index.html",
-          "sha256": "5f3a8a5c61b636f837e224a4902576181edf7795855728673347fb223879288d"
+          "sha256": "f177498c6330d90a1995064cac0e81a1dd61e1098fe9ba2c70546b9f011392b8"
         },
         {
           "path": "media-provenance.json",
           "sha256": "6311faab8d92d66108e4b5adde0c6383bc36db57c0f7bbf49828e0fd2ce6dccb"
         }
       ],
-      "adaptations": "Exact standalone Study 10. The archive reader presents the same canonical chapters, media, credits, and sources while the desktop simulation continues. The original opening and infinite assembly remain. Earlier editions and their media remain in the edition archives. Host view controls preserve explicitly marked reading dialogs."
+      "adaptations": "Exact standalone Study 11. Hal Finney joins Adam Back and Len Sassaman in the identity chapter portrait lineup, using the existing credited archival photo. Both the swarm and reader use the same updated chapter packet. The uncertainty text and all other chapters remain unchanged. Earlier editions and their media remain in the edition archives."
     },
     {
       "slug": "transplant",

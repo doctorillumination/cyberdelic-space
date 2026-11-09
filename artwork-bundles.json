@@ -4,8 +4,8 @@
     {
       "artwork": "btc-swarm",
       "path": "artwork-bundles/btc-swarm.zip",
-      "length": 10934144,
-      "sha256": "9dbea60ca33493afb71f2d55f5aa1c1e0bdb3000a130df51746b2a1cc5bf017d",
+      "length": 10936052,
+      "sha256": "f10b880b540afe13bab7517fe60c4ce5694248b511aca3426d3a5575a14ac466",
       "files": [
         {
           "path": "fieldwork-runtime/btc-swarm/ALGORITHM.md",
@@ -24,8 +24,8 @@
         },
         {
           "path": "fieldwork-runtime/btc-swarm/index.html",
-          "length": 13352187,
-          "sha256": "5f3a8a5c61b636f837e224a4902576181edf7795855728673347fb223879288d"
+          "length": 13352200,
+          "sha256": "f177498c6330d90a1995064cac0e81a1dd61e1098fe9ba2c70546b9f011392b8"
         },
         {
           "path": "fieldwork-runtime/btc-swarm/media-provenance.json",
@@ -34,13 +34,13 @@
         },
         {
           "path": "fieldworks/images/btc-swarm.jpg",
-          "length": 126081,
-          "sha256": "528e70b073e9c09ce35a9ae5a157eaedc00ade6d56130bf17e10738fa6096eaf"
+          "length": 126087,
+          "sha256": "cc2b0805e2b8365a787c5127c01bdb19653c5fd83f372eb5bb32608341524fcd"
         },
         {
           "path": "fieldworks/previews/btc-swarm.mp4",
-          "length": 972288,
-          "sha256": "a6fd145747be06d052399ad94a62b263da37c0e475bab609d97e64a8a43c8906"
+          "length": 974195,
+          "sha256": "64426d8bcfb7281e6d8abfd6ec168703535858262d3f7221a848a2eac6b3aaeb"
         }
       ]
     },
@@ -185,6 +185,54 @@
           "path": "fieldwork-runtime/btc-swarm/editions/history-study-09/release.json",
           "length": 16624,
           "sha256": "45bf276dd1cdaf2dfc95943258039a22fdf415e4427437e53242c22346f1a673"
+        }
+      ]
+    },
+    {
+      "artwork": "btc-swarm-history-study-10",
+      "path": "artwork-bundles/btc-swarm-history-study-10.zip",
+      "length": 10939736,
+      "sha256": "93de91508919222c81acf665cc1032abb8cd77fc7ed8bd6b3899507e5d918cae",
+      "files": [
+        {
+          "path": "fieldwork-runtime/btc-swarm/editions/history-study-10/ALGORITHM.md",
+          "length": 3199,
+          "sha256": "b7e94ca744136a88dc964e88e6932e2e0477257efb19cdcf55a866a3815eb1d2"
+        },
+        {
+          "path": "fieldwork-runtime/btc-swarm/editions/history-study-10/SOURCES.md",
+          "length": 13645,
+          "sha256": "74ef191021d61666fd7fb99cd93f12f98b736fd585224238c4e7f0f56fa2e7aa"
+        },
+        {
+          "path": "fieldwork-runtime/btc-swarm/editions/history-study-10/generated-prompts.json",
+          "length": 2267,
+          "sha256": "47cfff6eb0ed501e3451df6a65a51a55931afd2f30d4789c1dfde6ade53eb8e0"
+        },
+        {
+          "path": "fieldwork-runtime/btc-swarm/editions/history-study-10/index.html",
+          "length": 13352187,
+          "sha256": "5f3a8a5c61b636f837e224a4902576181edf7795855728673347fb223879288d"
+        },
+        {
+          "path": "fieldwork-runtime/btc-swarm/editions/history-study-10/media-provenance.json",
+          "length": 13796,
+          "sha256": "6311faab8d92d66108e4b5adde0c6383bc36db57c0f7bbf49828e0fd2ce6dccb"
+        },
+        {
+          "path": "fieldwork-runtime/btc-swarm/editions/history-study-10/poster.jpg",
+          "length": 126081,
+          "sha256": "528e70b073e9c09ce35a9ae5a157eaedc00ade6d56130bf17e10738fa6096eaf"
+        },
+        {
+          "path": "fieldwork-runtime/btc-swarm/editions/history-study-10/preview.mp4",
+          "length": 972288,
+          "sha256": "a6fd145747be06d052399ad94a62b263da37c0e475bab609d97e64a8a43c8906"
+        },
+        {
+          "path": "fieldwork-runtime/btc-swarm/editions/history-study-10/release.json",
+          "length": 19804,
+          "sha256": "c261ff485d96bbe051ec012ca2e5394527a8c064ef3704eee2a9bf1a80ec54df"
         }
       ]
     },
