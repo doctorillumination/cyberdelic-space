@@ -1,0 +1,46 @@
+FLOWER ACCENTS / POLY HAVEN CC0
+Prepared November 8, 2026 for Under Glass.
+
+Flower Gazania
+Source: https://polyhaven.com/a/flower_gazania
+James Ray Cock: modeling
+Jenelle van Heerden: photography
+License: CC0 1.0
+https://creativecommons.org/publicdomain/zero/1.0/
+
+Flower Empodium
+Source: https://polyhaven.com/a/flower_empodium
+Rico Cilliers: modeling
+Jenelle van Heerden: photography
+License: CC0 1.0
+https://creativecommons.org/publicdomain/zero/1.0/
+
+The original native Blender files and 4K image maps were downloaded from
+Poly Haven's official public file API. Every download was verified against
+the MD5 digest supplied by that API. Original downloads and API metadata
+are cached locally in reference/flower-sources/. The API metadata and fetch
+helper are versioned; the raw download folders are omitted from the checkout.
+
+Flower Library.blend contains a small selection of LOD0 variants. Original
+materials, UVs and source normals are preserved, with all nine image maps
+packed. Source scene units are metres (scale_length 1.0). Original object
+transforms are baked into mesh data, and each variant's local origin is
+normalized to its base centre. The object positions in the library are
+only a display layout; choose new positions and rotations when composing.
+
+Prepared bloom-bearing objects:
+flower_gazania_f_LOD0
+flower_gazania_g_LOD0
+flower_gazania_h_LOD0
+flower_empodium_a_LOD0
+flower_empodium_b_LOD0
+flower_empodium_c_LOD0
+
+Gazania a/b/c and Empodium e in the original libraries are non-flowering
+foliage variants. The prepared library deliberately uses flowering variants.
+Gazania is a daisy-like orange flower, rather than a sunflower. Empodium
+provides smaller yellow accents. Use only a few flower heads among foliage.
+
+sources.json records native source hashes, prepared dimensions in metres,
+UV and normal data, packed maps, and provenance. flower-preview.png is a
+Cycles studio preview of Gazania f and Empodium a, with no glass present.

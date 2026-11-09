@@ -1,0 +1,63 @@
+{
+  "id": "fieldworks-at-a-safe-distance",
+  "title": "At a Safe Distance",
+  "form": "fieldwork",
+  "release_id": null,
+  "pages": [
+    "fieldworks/at-a-safe-distance/"
+  ],
+  "source_path": "fieldworks/readings/at-a-safe-distance.md",
+  "source_sha256": "22feb6093a37ba41dc74de5b577811aa58275ee573a81a847bbbfe721dfdebb9",
+  "document_sha256": "22feb6093a37ba41dc74de5b577811aa58275ee573a81a847bbbfe721dfdebb9",
+  "text_sha256": "bf46ddbd34307cb6c264564f73934a41e499fb2381c58c6f07e5e52e4228cce9",
+  "reading_path": "audio/readings/bf46ddbd34307cb6c264564f73934a41e499fb2381c58c6f07e5e52e4228cce9.md",
+  "reading_sha256": "22feb6093a37ba41dc74de5b577811aa58275ee573a81a847bbbfe721dfdebb9",
+  "reading_length": 1027,
+  "audio_path": "audio/lewis/bf46ddbd34307cb6c264564f73934a41e499fb2381c58c6f07e5e52e4228cce9.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "2f4e8058785c545536def1ef25d69d01e618af98f9eb746d80518060cda7f640",
+  "audio_length": 883052,
+  "duration_seconds": 73.495,
+  "chunks": [
+    {
+      "text": "At a Safe Distance",
+      "start": 0.0,
+      "duration": 2.225
+    },
+    {
+      "text": "Reconstructed from a mask encountered at an exhibition, this interactive work places an apparatus of survival among foliage and flowers, just beyond textured glass. The mask evokes plague doctors, pandemic protection, and military anonymity. Its promise of safety also closes off the face, withholding eye contact and expression.",
+      "start": 2.405,
+      "duration": 22.525
+    },
+    {
+      "text": "Pandemic memory and nuclear anxiety meet concerns about the energy infrastructure behind computation. Around the mask, a garden offers beauty within an uncertain environment. Blur, glare, and shifting depth make the glass a physical boundary: movement reveals another angle without granting complete access.",
+      "start": 25.11,
+      "duration": 21.375
+    },
+    {
+      "text": "The work draws on Doris Salcedo's Atrabiliarios, with its objects held behind translucent membranes, and Christian Boltanski's use of photographs, belongings, and archival forms to approach memory and absence. The enclosure becomes a place where something is preserved while remaining difficult to reach.",
+      "start": 46.665,
+      "duration": 20.575
+    },
+    {
+      "text": "By Brad Necyk, 2026. This living artwork is not inscribed.",
+      "start": 67.42,
+      "duration": 6.075
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.5602088570594788,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

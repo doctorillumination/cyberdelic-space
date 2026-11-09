@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#050706">
+  <meta name="description" content="The larger centered mask and fine layered foliage behind left-lit textured glass, rendered across a wider field of angles for smooth dragging.">
+  <title>At a Safe Distance</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='12' y='6' width='40' height='52' rx='4' fill='%23090e0b' stroke='%23a7b39a'/%3E%3Cpath d='M24 6v52M40 6v52M12 22h40M12 42h40' stroke='%2353624b' fill='none'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./parallax-test.css">
+  <link rel="stylesheet" href="./publication.css">
+</head>
+<body class="parallax-test">
+  <main id="artwork" data-assets="./assets/presence-field-test/manifest.json" data-renderer="Cycles presence parallax test / WebGL 2" aria-label="At a Safe Distance, a wider parallax test of the approved composition">
+    <canvas id="scene" tabindex="0" aria-label="The larger centered mask, flowers and small foliage at several depths behind left-lit textured glass. Drag to explore the depth. Arrow keys also change the view." aria-describedby="keyboard-help"></canvas>
+    <header class="masthead">
+      <p class="eyebrow">Parallax study / 02</p>
+      <h1>At a Safe Distance</h1>
+    </header>
+    <button id="fullscreen" class="fullscreen quiet-button" aria-label="Enter full screen" title="Full screen"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m8 0h4v-4"/></svg></button>
+    <div id="loading" role="status" aria-live="polite"><span class="loading-mark" aria-hidden="true"></span><p id="loading-text">Opening the view</p><div class="load-line"><i id="load-progress"></i></div></div>
+    <div id="error" hidden role="alert"><p>This scene could not open.</p><p id="error-detail">Please try reloading.</p><button id="retry" class="quiet-button">Try again</button></div>
+    <p id="gesture-hint">Drag to look through</p>
+    <p class="edition">Left light · Wider view</p>
+    <nav class="toolbar" aria-label="Scene controls">
+
+      <button id="reset" title="Reset view">Reset</button>
+    </nav>
+    <p id="keyboard-help" class="sr-only">Drag to change the viewing angle. Use the arrow keys to turn, and Home to reset. Scroll to zoom. The view is intentionally limited to the front of the glass.</p>
+    <p id="announce" class="sr-only" aria-live="polite"></p>
+  </main>
+  <script type="module" src="./parallax-test.js"></script>
+</body>
+</html>

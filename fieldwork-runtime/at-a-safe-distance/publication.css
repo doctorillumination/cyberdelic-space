@@ -1,0 +1,2 @@
+/* Gallery presentation leaves the glass uninterrupted. Home resets the view. */
+.masthead,.edition,.toolbar,#fullscreen,#gesture-hint{display:none!important}

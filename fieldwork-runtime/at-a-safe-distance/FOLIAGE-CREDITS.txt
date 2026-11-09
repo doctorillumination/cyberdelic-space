@@ -1,0 +1,42 @@
+UNDER GLASS / BOTANICAL ASSETS
+
+The foliage and flower sources below are from Poly Haven and released under CC0.
+They are included locally with their photo-based PBR textures.
+Prepared and packed in Blender for this artwork. Geometry and texture
+source metadata is preserved in reference/foliage-sources/; raw download caches
+remain in the original local workspace.
+
+Calathea Orbifolia 01, 4K textures
+Rico Cilliers (modeling), Rob Tuytel (scanning)
+https://polyhaven.com/a/calathea_orbifolia_01
+
+Anthurium Botany 01, 2K textures
+Rico Cilliers (modeling), Rob Tuytel (scanning)
+https://polyhaven.com/a/anthurium_botany_01
+
+Shrub 04, 2K textures
+Rico Cilliers
+https://polyhaven.com/a/shrub_04
+
+Fern 02, 2K textures
+Rico Cilliers (modeling), Rob Tuytel (scanning)
+https://polyhaven.com/a/fern_02
+
+License: https://creativecommons.org/publicdomain/zero/1.0/
+Provenance and output hashes: assets/foliage/sources.json
+Native packed library: reference/foliage-sources/Foliage Library.blend
+
+FLOWER ACCENTS, 4K TEXTURES
+
+Flower Gazania, orange daisy-like blooms
+James Ray Cock (modeling), Jenelle van Heerden (photography)
+https://polyhaven.com/a/flower_gazania
+
+Flower Empodium, yellow bloom accents
+Rico Cilliers (modeling), Jenelle van Heerden (photography)
+https://polyhaven.com/a/flower_empodium
+
+License: https://creativecommons.org/publicdomain/zero/1.0/
+Provenance, packed-image validation and source hashes: assets/flowers/
+Native packed library: assets/flowers/Flower Library.blend
+Raw flower downloads can be reconstructed with reference/flower-sources/fetch-flowers.py.
