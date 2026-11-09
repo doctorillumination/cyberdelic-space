@@ -1,15 +1,15 @@
 {
   "schema": "cyberdelic.space/fieldworks-v1",
-  "version": "1.9.3",
+  "version": "1.10.0",
   "date": "2026-11-08",
-  "published_at": "2026-11-09T01:19:41.743430Z",
+  "published_at": "2026-11-09T02:53:55.127322Z",
   "overview": {
     "title": "Fieldworks",
     "href": "fieldworks/",
     "source": "overview.md",
     "source_path": "fieldworks/readings/overview.md",
-    "source_sha256": "b855a43e7f668e6b919f9e0b146d74f8383d0a4a9480984da55c9f41a552c437",
-    "source_length": 442
+    "source_sha256": "680c08f0dc6fb88171cd5098aa955e26bc3976f9d9df9de43fa2411cccc06bc2",
+    "source_length": 473
   },
   "archived_readings": [
     {
@@ -92,6 +92,15 @@
       "source_sha256": "454c659b078e8c7617515b52fb6a655b821165c42c70f1ca88b40f13390281cd",
       "source_length": 411,
       "slug": "overview-ten-works"
+    },
+    {
+      "title": "Fieldworks, eleven-work edition",
+      "href": "fieldworks/readings/overview-eleven-works.md",
+      "source": "overview-eleven-works.md",
+      "source_path": "fieldworks/readings/overview-eleven-works.md",
+      "source_sha256": "b855a43e7f668e6b919f9e0b146d74f8383d0a4a9480984da55c9f41a552c437",
+      "source_length": 442,
+      "slug": "overview-eleven-works"
     }
   ],
   "items": [
@@ -542,6 +551,49 @@
         "path": "fieldworks/previews/transplant.mp4",
         "sha256": "7d1ed51dfdabd28b73715087743d1e2358623b237812cfe7d3f5e3231d9e3f75",
         "length": 566590,
+        "kind": "recorded-artwork-loop"
+      }
+    },
+    {
+      "slug": "paper-water",
+      "title": "Paper Water",
+      "former_title": "Koi motion study",
+      "edition": "living-ink-pond",
+      "project": "paper-water",
+      "repository": "https://github.com/doctorillumination/chinese-ink",
+      "status": "living",
+      "caption": "An ink pond, alive to a small gesture.",
+      "description": "Fish drift, gather, and feed in an ink pond on textured paper. Small bites send faint ripples across a still overhead view.",
+      "alt": "Pale, mottled, and dark ink fish swimming among painted leaves on softly textured paper, viewed from above.",
+      "gesture": "Click or tap to feed. Drag to stir the water.",
+      "source": "paper-water.md",
+      "themes": [
+        "water",
+        "attention",
+        "play",
+        "gesture",
+        "time",
+        "emergence"
+      ],
+      "related_note": "fn-05",
+      "related_title": "The Physics We Choose",
+      "offline_part": true,
+      "release_id": "c24eb28788f25e4ed1b7716af5185b4f832b2a6f6b236caa1bf1b3ad5b166815",
+      "runtime_published_at": "2026-11-09T02:53:55.127322Z",
+      "source_path": "fieldworks/readings/paper-water.md",
+      "source_sha256": "de3a7927023092dd3e79e98afe0d0b260739c37621fef50c98580ae0a66d6464",
+      "source_length": 824,
+      "href": "fieldworks/paper-water/",
+      "poster": {
+        "path": "fieldworks/images/paper-water.jpg",
+        "sha256": "dd015cf0cb9609022608479f78ed47c810f1596e3c945aafb1c42d76fd8f9a00",
+        "length": 17245,
+        "kind": "actual-browser-capture"
+      },
+      "preview": {
+        "path": "fieldworks/previews/paper-water.mp4",
+        "sha256": "c38cfa92e2fc0af6bc9810f30c0e8320546cc971cca531e9df14d77ad0bb08b5",
+        "length": 121397,
         "kind": "recorded-artwork-loop"
       }
     }

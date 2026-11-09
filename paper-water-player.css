@@ -1,0 +1,6 @@
+/* Paper Water opens as an uninterrupted drawing. About is a separate opt-in view. */
+.fieldwork-player[data-fieldwork="paper-water"]{grid-template-rows:1fr;background:#f7f5ee}
+.fieldwork-player[data-fieldwork="paper-water"]>.fieldwork-bar,
+.fieldwork-player[data-fieldwork="paper-water"]>.fieldwork-view-controls,
+.fieldwork-player[data-fieldwork="paper-water"]>.fieldwork-announcement,
+.fieldwork-player[data-fieldwork="paper-water"] .fieldwork-status{display:none!important}
