@@ -1,0 +1,129 @@
+{
+  "schema": "cyberdelic.space/fieldwork-release-v1",
+  "slug": "small-weather",
+  "edition": "brighter-water",
+  "published_at": "2026-11-11T17:36:54.018050Z",
+  "release_id": "1d0b9fb92c6646e8fe96b49a72cea12c474e83e43c6c883e951f44055a3f1ea2",
+  "source_record": {
+    "slug": "small-weather",
+    "project": "small-weather",
+    "revision": "b9099cdf322cbd2d88aba7934a0cd093fac801d60dc90c0e060c2e559f8e95f5",
+    "revision_type": "sha256-of-approved-runtime",
+    "edition": "brighter-water",
+    "source_version": "0.22.0",
+    "source_files": [
+      {
+        "path": "index.html",
+        "sha256": "b9099cdf322cbd2d88aba7934a0cd093fac801d60dc90c0e060c2e559f8e95f5"
+      },
+      {
+        "path": "build.py",
+        "sha256": "77f173755a7c709deb30d6256cb5e08055f26390feff38eb4e084ba3832ffff6"
+      },
+      {
+        "path": "package.json",
+        "sha256": "ec7dcb37bf90be2ba30f0febc73247bcbd7119cbc1f70a5b2e828995d6a6c401"
+      },
+      {
+        "path": "package-lock.json",
+        "sha256": "f78c155a6e21c7ec78b6d052323e550da80ed231025f96f7aaabda074c301c87"
+      },
+      {
+        "path": "src/viewer.html",
+        "sha256": "3ddc816307c5012e891898c4e8889411c469c72c468d86ea8889994415957c21"
+      },
+      {
+        "path": "src/gallery.css",
+        "sha256": "3d361a6b096e270ef5e27bd3c246eb0879c26dee0775d4543eb5073e043cb667"
+      },
+      {
+        "path": "src/field.js",
+        "sha256": "f72fbba87a0f5fce3df65717f2af99749735eda0825ccf03b3f28ca7f9b4fe43"
+      },
+      {
+        "path": "src/sound.js",
+        "sha256": "c69605d581c12ae2bf409a099e0c4207b96474e1a4903b31cea8fab9620ad058"
+      },
+      {
+        "path": "src/app.js",
+        "sha256": "3897ea945997d31e427978dc166ac990e16e036fe27d26b7d1f12804cb2fe6e0"
+      },
+      {
+        "path": "src/three-garden.js",
+        "sha256": "ce30af399fd80d20bc6a078a263a31ba277ebd6f654622ab924ebfc912623609"
+      },
+      {
+        "path": "src/three-water.js",
+        "sha256": "533c39d0738978b2ca2fcd0984be0c10cce91d6905ac9c4ad5a5626f61fb1c12"
+      },
+      {
+        "path": "src/three-ascii.js",
+        "sha256": "3d5cccf3596bbfcc57b0f268ea143b702ddcc21f985ece93b33bea92c00ce9c4"
+      },
+      {
+        "path": "src/three-scenery.js",
+        "sha256": "75b63d77f7bf4c3c1622d03e0a0eb8852f6d844f456f570471cc4d7da263b49c"
+      },
+      {
+        "path": "vendor/three-garden.bundle.js",
+        "sha256": "630abc9606d5f0c77dc774ece34d6c186bb47181f943a269def7b69715c7e719"
+      },
+      {
+        "path": "vendor/LICENSE-three.txt",
+        "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+      }
+    ],
+    "packaged_files": [
+      {
+        "path": "index.html",
+        "sha256": "b9099cdf322cbd2d88aba7934a0cd093fac801d60dc90c0e060c2e559f8e95f5"
+      },
+      {
+        "path": "THREE-LICENSE.txt",
+        "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+      }
+    ],
+    "adaptations": "Exact v0.22.0 runtime with the Three.js MIT licence. The viewing shell provides gallery controls and narration."
+  },
+  "files": [
+    {
+      "path": "runtime/index.html",
+      "sha256": "b9099cdf322cbd2d88aba7934a0cd093fac801d60dc90c0e060c2e559f8e95f5",
+      "length": 835630
+    },
+    {
+      "path": "runtime/THREE-LICENSE.txt",
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "length": 1081
+    },
+    {
+      "path": "poster.jpg",
+      "sha256": "2564bf2ab56f13072c46f51a2add1912864bdc090b14f791a309c710576f5bd4",
+      "length": 373883
+    },
+    {
+      "path": "preview.mp4",
+      "sha256": "366798056eb1b3f6655fe38e877b37d00293f90b2c172ea68e39a77e84b36b66",
+      "length": 2508340
+    }
+  ],
+  "capture": {
+    "kind": "actual browser canvas, silent",
+    "raw_sha256": "df88985da8f7f29ad45a6b53f1fd5c51de47037723bab6d0e564fca2dc4d2172",
+    "source_runtime_sha256": "b9099cdf322cbd2d88aba7934a0cd093fac801d60dc90c0e060c2e559f8e95f5",
+    "poster_time": 4,
+    "preview_start_time": 2,
+    "requested_capture_fps": 60,
+    "source_version": "0.22.0",
+    "source_snapshot_sha256": "787b26840e0a80168e2d9fdf5f1952cdede9c07bde81cd5af9132ea566118031",
+    "loop_method": "Three-quarter second end to start crossfade",
+    "encoded_video": {
+      "codec": "h264",
+      "width": 960,
+      "height": 720,
+      "fps": 60,
+      "streams": 1,
+      "duration": 7.25
+    }
+  }
+}

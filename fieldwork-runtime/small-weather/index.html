@@ -4497,7 +4497,7 @@ void main() {
                    mix(hash(cell+vec2(0.,1.)),hash(cell+1.),f.x),f.y);
       }
 
-      vec3 reflectedLight(vec2 uv,vec2 position,float spread) {
+      vec4 reflectedLight(vec2 uv,vec2 position,float spread) {
         vec2 breeze=vec2(
           sin(position.y*2.4+uTime*.72)+.35*sin(position.x*4.2-uTime*.51),
           sin(position.x*2.1-uTime*.57)+.28*cos(position.y*3.1+uTime*.43)
@@ -4505,8 +4505,8 @@ void main() {
         uv+=breeze*vec2(.0055,.0045)*uBreeze;
 
         // A wider reflection footprint blends sky into the leaf edges.
-        vec3 leafDetail=texture2DLodEXT(tDiffuse,uv,2.15+spread*.8).rgb;
-        vec3 scatteredLight=texture2DLodEXT(tDiffuse,uv,3.8+spread*.65).rgb;
+        vec4 leafDetail=texture2DLodEXT(tDiffuse,uv,2.15+spread*.8);
+        vec4 scatteredLight=texture2DLodEXT(tDiffuse,uv,3.8+spread*.65);
         return mix(leafDetail,scatteredLight,.34+spread*.22);
       }
 
@@ -4544,13 +4544,17 @@ void main() {
         vec3 ray=reflect(-view,reflectionNormal);
         vec3 hit=vWorld+ray*(2.4/max(.15,ray.y));
         vec4 reflected=textureMatrix*vec4(hit.x,-hit.z,hit.y,1.);
-        vec3 environment=reflectedLight(reflected.xy/reflected.w,p,activity*(.52+.48*variation));
+        vec4 environment=reflectedLight(reflected.xy/reflected.w,p,activity*(.52+.48*variation));
 
         float viewCosine=max(.05,dot(normal,view));
         float reflectionCosine=max(.05,dot(reflectionNormal,view));
         float fresnel=.02037+.97963*pow(1.-reflectionCosine,5.);
         vec3 waterFill=vec3(.018,.037,.045);
-        vec3 color=waterFill*(1.-fresnel)+environment*fresnel*uReflection;
+        vec3 reflection=environment.rgb*fresnel*uReflection;
+        float openSky=1.-smoothstep(.06,.29,environment.a);
+        float reflectedLuminance=dot(reflection,vec3(.2126,.7152,.0722));
+        float skyLift=.43*openSky*(1.-smoothstep(.35,1.45,reflectedLuminance));
+        vec3 color=waterFill*(1.-fresnel)+reflection*(1.+skyLift);
 
         vec2 microCell=floor(p*180.);
         vec2 micro=vec2(hash(microCell),hash(microCell+31.))-.5;
@@ -4602,7 +4606,8 @@ transformed.x+=sin(uWeatherTime*.38+leafPhase)*position.y*position.y*${t.toFixed
       float cloud=smoothstep(.44,.71,fbm(q+vec2(3.4,8.1))+cloudLight);
       vec3 sky=mix(vec3(2.3,5.1,9.6),vec3(16.2,20.2,25.2),cloud);
       sky*=.8+.2*max(0.,d.y);
-      gl_FragColor=vec4(sky,1);
+      // Reflection alpha records how much of the sky is covered by foliage.
+      gl_FragColor=vec4(sky,0.);
     }`}),t=new dt(new si(35,32,16),e);return t.name="Procedural cloud opening",t.frustumCulled=!1,s.add(t),t}function MS(s,e,t,n){let i=Ai(s,e,t),r=i.clone().sub(s.position).normalize();return r.y=-r.y,i.addScaledVector(r,n/Math.max(.05,r.y))}function SS(s,e,t,n){let i=Pg(t^601271),r=[],a=[[.133,.2,.062,.097],[.228,.39,.048,.077],[.083,.54,.052,.111],[.193,.76,.059,.087],[.117,.94,.043,.067]],o=e.position.clone();o.y=-o.y;function l(p,_,m,g,v){let M=i()*Math.PI*2;for(let y=0;y<v;y++){let A=i()*Math.PI*2,w=Math.sqrt(i()),x=p+Math.cos(A)*w*m,b=_+Math.sin(A)*w*g,P=1;for(let[O,F,I,B]of a){let k=Math.hypot((x-O)/I,(b-F)/B);P*=.06+.94*hi.smoothstep(k,.3,1.22)}if(i()>P)continue;let E=MS(e,x,b,2.14+i()*.61),D=E.distanceTo(o)*(.004+i()*.008);r.push({position:E,size:D,phase:M+(i()-.5)*1.6})}}for(let p=0;p<205;p++){let _=-.08+i()*1.16,m=.284+.033*Math.sin(_*8.7+.4)+.022*Math.sin(_*17.1+1.8),g=-.054+Math.pow(i(),1.12)*(m+.054);l(g,_,.018+i()*.044,.026+i()*.064,32+Math.floor(i()*19))}for(let p=0;p<16;p++)l(.87+i()*.24,.84+i()*.25,.025+i()*.03,.025+i()*.045,28);let c=Ig(),h=Float32Array.from(r,p=>p.phase);c.setAttribute("leafPhase",new $t(h,1));let d=Lg(16777215,n,.26);d.emissive.setRGB(.32,.82,.89),d.transparent=!0,d.opacity=.81,d.depthWrite=!1;let u=new Ln(c,d,r.length),f=new it;return r.forEach(({position:p,size:_},m)=>{f.position.copy(p),f.rotation.set((i()-.5)*2,i()*6.28,(i()-.5)*2),f.scale.set(_,_*(1+i()*.9),_),f.updateMatrix(),u.setMatrixAt(m,f.matrix),u.setColorAt(m,new ae().setHSL(.25+i()*.07,.23+i()*.2,.045+i()*.07))}),u.layers.set(ff),u.name="Wind-moved reflected canopy",s.add(u),{leaves:r.length}}var lu=class{constructor(e,t,n){this.scene=e,this.camera=t,this.clock={time:{value:0},breeze:{value:1}},this.group=new Rn,e.add(this.group),this.canopy=new Rn,e.add(this.canopy),this.configure(n)}configure(e){let t=[e.seed,this.camera.aspect,e.tilt,e.surface].join("/");if(t===this.signature)return;this.signature=t;for(let F of[...this.canopy.children])this.canopy.remove(F),F.geometry?.dispose(),F.material?.dispose();let n=SS(this.canopy,this.camera,e.seed,this.clock);for(let F of[...this.group.children])this.group.remove(F),F.geometry?.dispose(),F.material?.dispose();if(e.surface==="water"){this.stats={blades:0,groundLeaves:0,...n};return}let i=this.camera,r=Pg(e.seed^798124),a=[],o=[],l=[];for(let F=0;F<=80;F++){let I=F/80,B=oa(I);for(let k=0;k<2;k++){let V=Ai(i,k?1.3:B,1-I);V.y=.01+(k?.035:0)+(r()-.5)*.003,a.push(V.x,V.y,V.z);let ne=new ae().setHSL(.23,.34,.1+r()*.04);o.push(ne.r,ne.g,ne.b)}if(F<80){let k=F*2;l.push(k,k+2,k+1,k+1,k+2,k+3)}}let c=new Xe;c.setAttribute("position",new Me(a,3)),c.setAttribute("color",new Me(o,3)),c.setIndex(l),c.computeVertexNormals();let h=new dt(c,new Un({vertexColors:!0,roughness:1,side:an}));h.name="Curved grassy bank",h.receiveShadow=!0,this.group.add(h);let d=1250,u=new Nn(1,1,1,8);u.translate(0,.5,0);let f=new Float32Array(d*3),p=new Float32Array(d);u.setAttribute("bladeDims",new $t(f,3)),u.setAttribute("leafPhase",new $t(p,1));let _=new Un({color:16777215,roughness:.75,side:an});_.onBeforeCompile=F=>{F.uniforms.uWeatherTime=this.clock.time,F.uniforms.uBreeze=this.clock.breeze,F.vertexShader=`attribute vec3 bladeDims;attribute float leafPhase;uniform float uWeatherTime,uBreeze;
 `+F.vertexShader,F.vertexShader=F.vertexShader.replace("#include <begin_vertex>","vec3 transformed=position;float t=position.y;transformed.x=position.x*bladeDims.x+bladeDims.z*t*t+sin(uWeatherTime*.9+leafPhase)*.014*uBreeze*t*t;transformed.y=t*bladeDims.y*(1.-.13*t);transformed.z=sin(leafPhase)*t*t*.015+sin(uWeatherTime*.47+leafPhase)*.007*uBreeze*t*t;")};let m=new Ln(u,_,d),g=new it;for(let F=0;F<d;F++){let I=r(),B=.5+.32*Math.sin(I*32+.9)+.18*Math.sin(I*63-1.4),k=F>=d*.72,V=.002+Math.pow(r(),1.4)*(k?.17:.034+.054*B),ne=Ai(i,oa(I)+V,1-I),X=.62+.38*hi.smoothstep(V,.001,.041),Q=(.038+Math.pow(r(),1.4)*.18)*X*(.76+.32*B)*(k?.61:1);f.set([.0025+r()*.004,Q,-.012-r()*.062],F*3),p[F]=r()*6.28,g.position.copy(ne),g.position.y=.012,g.rotation.set(0,(r()-.5)*1.1,0),g.scale.set(1,1,1),g.updateMatrix(),m.setMatrixAt(F,g.matrix),m.setColorAt(F,new ae().setHSL(.2+r()*.05,.36+r()*.22,.19+r()*.22))}m.name="Rooted bending grass blades",m.castShadow=!0,m.receiveShadow=!0,m.frustumCulled=!1,this.group.add(m);let v=[],M=[];for(let F=0;F<=40;F++){let I=.43+F/40*.85;for(let B of[1.13,1-ou(I)]){let k=Ai(i,I,B);v.push(k.x,.009,k.z)}if(F<40){let B=F*2;M.push(B,B+1,B+2,B+1,B+3,B+2)}}let y=new Xe;y.setAttribute("position",new Me(v,3)),y.setIndex(M),y.computeVertexNormals();let A=new dt(y,new Un({color:2503204,roughness:1,side:an}));A.name="Upper ground-cover bank",A.receiveShadow=!0,this.group.add(A);let w=[],x=950,b=Ig(),P=new Float32Array(x);for(let F=0;F<x;F++)P[F]=r()*6.28;b.setAttribute("leafPhase",new $t(P,1));let E=new Ln(b,Lg(16777215,this.clock,.07),x);for(let F=0;F<x;F++){let I=.45+r()*.61,B=.97-r()*.08,k=Ai(i,I,B);k.y=.018+r()*.07;let V=Ai(i,I,1-ou(I)*.5);V.y=.012,w.push({root:V,tip:k.clone()}),g.position.copy(k),g.rotation.set(-Math.PI*.5+(r()-.5)*1.4,r()*6.28,r()*6.28);let ne=.025+r()*.07;g.scale.set(ne,ne*(.8+r()*.5),ne),g.updateMatrix(),E.setMatrixAt(F,g.matrix),E.setColorAt(F,new ae().setHSL(.28+r()*.05,.24+r()*.15,.12+r()*.14))}E.name="Low ground cover at upper edge",E.castShadow=!0,E.receiveShadow=!0,E.frustumCulled=!1,this.group.add(E);let D=new Ln(new Hi(.001,.001,1,3),new Un({color:3558443,roughness:1}),w.length),O=new R(0,1,0);w.forEach((F,I)=>{g.position.copy(F.root).add(F.tip).multiplyScalar(.5),g.quaternion.setFromUnitVectors(O,F.tip.clone().sub(F.root).normalize()),g.scale.set(1,F.root.distanceTo(F.tip),1),g.updateMatrix(),D.setMatrixAt(I,g.matrix)}),D.name="Creeping ground-cover stems",this.group.add(D),this.stats={blades:d,groundLeaves:x,bankTop:oa(0),bankBottom:oa(1),...n}}update(e,t){this.clock.time.value=e,this.clock.breeze.value=t.grass}};var bS=`
   uniform sampler2D bloom,highlights;
@@ -5084,7 +5089,7 @@ three/build/three.module.js:
   let paused = matchMedia('(prefers-reduced-motion: reduce)').matches;
   let accumulator = 0, lastTime = 0, noticeTimer, hideTimer, contextLost = false;
   let frameCount = 0, lastPointer = { x: -1, y: -1 };
-  const diagnostics = { version: '0.21.0', errors: [], renderedFrames: 0 };
+  const diagnostics = { version: '0.22.0', errors: [], renderedFrames: 0 };
 
   const querySeed = Number(new URL(window.location.href).searchParams.get('seed'));
   if (Number.isInteger(querySeed) && querySeed > 0 && querySeed <= 999999999) params.seed = querySeed;

@@ -661,8 +661,8 @@
     {
       "artwork": "small-weather",
       "path": "artwork-bundles/small-weather.zip",
-      "length": 3084889,
-      "sha256": "07da615eeabbeaee97338f9913d272ef715d7ecb5b6cd93157f8f106a8e9bd98",
+      "length": 3101469,
+      "sha256": "878e8cdafd61cbda2ee20c0c832b48e9d6783a13456b98fcd4b3847f04af5167",
       "files": [
         {
           "path": "fieldwork-runtime/small-weather/THREE-LICENSE.txt",
@@ -671,18 +671,18 @@
         },
         {
           "path": "fieldwork-runtime/small-weather/index.html",
-          "length": 835293,
-          "sha256": "e9dff8768f62946701db90d5e843e5c7f55c11d4ed09f6f4b7d1c385a327aa06"
+          "length": 835630,
+          "sha256": "b9099cdf322cbd2d88aba7934a0cd093fac801d60dc90c0e060c2e559f8e95f5"
         },
         {
           "path": "fieldworks/images/small-weather.jpg",
-          "length": 366708,
-          "sha256": "07696520196551b2b39b10048bf5acd4055ecc0ef95ed2f10fa5ceff94c70d9d"
+          "length": 373883,
+          "sha256": "2564bf2ab56f13072c46f51a2add1912864bdc090b14f791a309c710576f5bd4"
         },
         {
           "path": "fieldworks/previews/small-weather.mp4",
-          "length": 2499005,
-          "sha256": "44fc5049fac42f91b6c42dfe707b0d0a4f3db31ae1c72c5eafbfa6ea0ecccf64"
+          "length": 2508340,
+          "sha256": "366798056eb1b3f6655fe38e877b37d00293f90b2c172ea68e39a77e84b36b66"
         }
       ]
     },
