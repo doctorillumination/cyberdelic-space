@@ -27,7 +27,8 @@
         return;
       }
       if (!video.src) video.src = video.dataset.previewSrc;
-      video.play().catch(function () {
+      video.play().catch(function (error) {
+        if (error.name === "AbortError") return;
         video.classList.remove("is-playing");
         paused = true;
         updateButton();
