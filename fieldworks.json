@@ -587,7 +587,7 @@
       "related_note": "fn-05",
       "related_title": "The Physics We Choose",
       "offline_part": true,
-      "release_id": "c24eb28788f25e4ed1b7716af5185b4f832b2a6f6b236caa1bf1b3ad5b166815",
+      "release_id": "d217ff04e8ed575fbe94863211e51c4ecbef50ff1c92664becdf2278ff86312b",
       "runtime_published_at": "2026-11-09T02:53:55.127322Z",
       "source_path": "fieldworks/readings/paper-water.md",
       "source_sha256": "de3a7927023092dd3e79e98afe0d0b260739c37621fef50c98580ae0a66d6464",
@@ -601,10 +601,11 @@
       },
       "preview": {
         "path": "fieldworks/previews/paper-water.mp4",
-        "sha256": "c38cfa92e2fc0af6bc9810f30c0e8320546cc971cca531e9df14d77ad0bb08b5",
-        "length": 121397,
+        "sha256": "0f4d7a3c08135d5dd7b44da3189c4de788b9fc6608df47e0afa35158176bdfb3",
+        "length": 404989,
         "kind": "recorded-artwork-loop"
-      }
+      },
+      "preview_updated_at": "2026-11-11T04:40:32.282469Z"
     },
     {
       "slug": "at-a-safe-distance",

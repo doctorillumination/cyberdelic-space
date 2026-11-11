@@ -1,0 +1,158 @@
+{
+  "schema": "cyberdelic.space/fieldwork-release-v1",
+  "slug": "paper-water",
+  "edition": "living-ink-pond",
+  "published_at": "2026-11-11T04:40:32.282469Z",
+  "source_record": {
+    "slug": "paper-water",
+    "project": "paper-water",
+    "repository": "https://github.com/doctorillumination/chinese-ink",
+    "revision": "5d64233fb7d398e7d74a74d8b0b5a24e90a02f59",
+    "edition": "living-ink-pond",
+    "source_version": "0.17.0",
+    "source_subdirectory": ".",
+    "source_files": [
+      {
+        "path": "tools/build.mjs",
+        "sha256": "023204e8c5c77fed468eb0fcc367bb056a09a801b3dfae28fa2806ba48007c00"
+      },
+      {
+        "path": "package.json",
+        "sha256": "6ce805677d76c11940f81fde3a98cf97a8a59365746bd503841cf87233505451"
+      },
+      {
+        "path": "index.html",
+        "sha256": "98a2f70018ca3375428a20b7b27f8a9a9200c3587c92cec7ca74d78f14bd4806"
+      },
+      {
+        "path": "src/app.mjs",
+        "sha256": "80ca9a9aba04009b9885ca45f501b5ef9e69ee4ac1732f7af25e2dce1f2a8ae5"
+      },
+      {
+        "path": "src/bite-feedback.mjs",
+        "sha256": "14ef747f6ec4e7ac11c356068df9552d8259282209c9723c811f585f27b697ba"
+      },
+      {
+        "path": "src/fish.mjs",
+        "sha256": "ba06f224f5204a9b0c0982ca1481b99670be1ad7496ef98ded29dad060f8f926"
+      },
+      {
+        "path": "src/ink-garden.mjs",
+        "sha256": "a1fead7821d56427de8b1c41d49cc6139fda7c10b59a3b2b77773b4a2abba8bf"
+      },
+      {
+        "path": "src/ink-material.mjs",
+        "sha256": "90b29cd93ae45bfdea3bbbe0fac9192b870c087fd4cb2e108692bc66dfd8f20b"
+      },
+      {
+        "path": "src/ink-renderer.mjs",
+        "sha256": "3308b2ec38b1af2f6ca6984798987ec4d6714c615cf76e827b87b16853dd250a"
+      },
+      {
+        "path": "src/pond-life.mjs",
+        "sha256": "7f05d7469f4463e8a4b244a4e122e4593795610852e2a8e40313b18b73ec1e97"
+      },
+      {
+        "path": "src/rhythm.mjs",
+        "sha256": "4e53d19e271c7f52a3650ac2f0da68c0b7482653c746c540d98370a8da518684"
+      },
+      {
+        "path": "src/school.mjs",
+        "sha256": "fc68840c348f6d87c03b0a23e0590a9bbe6e6d44d57602196010db4a93a87d4d"
+      },
+      {
+        "path": "src/shell.html",
+        "sha256": "d671f3c8930c85afe83184be18f3955cdb72d756599fafc5f2a91e92fc3f651d"
+      },
+      {
+        "path": "src/simulation-math.mjs",
+        "sha256": "a3a5b661924b23ebcef132d3f7c6ab780aeaee8799b3989e4a3e332e1fab5bc7"
+      },
+      {
+        "path": "src/simulation.mjs",
+        "sha256": "83049146821467150bb2ffd9b60d54136cc4103db4172f7dc55ba4cea330e32d"
+      },
+      {
+        "path": "src/style.css",
+        "sha256": "f940b6c09ae935aa4c425535a9a2a97c792cde4f7355ea02b309a40b11b495f5"
+      },
+      {
+        "path": "src/water.mjs",
+        "sha256": "94d46957156a57a0f6b5e2d8661e3993e13751844b5ba6bad012b6bf47cb7598"
+      },
+      {
+        "path": "vendor/THREE-LICENSE.txt",
+        "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+      },
+      {
+        "path": "vendor/three.core.js",
+        "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+      },
+      {
+        "path": "vendor/three.module.js",
+        "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+      }
+    ],
+    "packaged_files": [
+      {
+        "path": "index.html",
+        "sha256": "98a2f70018ca3375428a20b7b27f8a9a9200c3587c92cec7ca74d78f14bd4806"
+      },
+      {
+        "path": "THREE-LICENSE.txt",
+        "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+      }
+    ],
+    "adaptations": "Exact self-contained Paper Water runtime. Host presentation keeps the artwork full size with no visible text or controls. The optional introduction is reached from the gallery or with I. Three.js licence retained."
+  },
+  "files": [
+    {
+      "path": "runtime/index.html",
+      "sha256": "98a2f70018ca3375428a20b7b27f8a9a9200c3587c92cec7ca74d78f14bd4806",
+      "length": 578133
+    },
+    {
+      "path": "runtime/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "length": 1081
+    },
+    {
+      "path": "poster.jpg",
+      "sha256": "dd015cf0cb9609022608479f78ed47c810f1596e3c945aafb1c42d76fd8f9a00",
+      "length": 17245
+    },
+    {
+      "path": "preview.mp4",
+      "sha256": "0f4d7a3c08135d5dd7b44da3189c4de788b9fc6608df47e0afa35158176bdfb3",
+      "length": 404989
+    }
+  ],
+  "capture": {
+    "canvas_width": 960,
+    "canvas_height": 720,
+    "kind": "actual browser canvas rendered at fixed time intervals",
+    "source_runtime_sha256": "98a2f70018ca3375428a20b7b27f8a9a9200c3587c92cec7ca74d78f14bd4806",
+    "capture_driver_sha256": "0d3d030567a238d587767ed50c50fc525494ff48b45556ad007426664a153608",
+    "capture_fps": 60,
+    "captured_frames": 510,
+    "warmup_frames": 120,
+    "distinct_png_frames": 510,
+    "frame_sequence_sha256": "b70464f862837a782de2a070be028b51c47908ae4cf2b7c367886e3f4ea2f08d",
+    "last_sampled_simulation_time": 10.15,
+    "loop_method": "one-second end-to-start crossfade",
+    "camera_recorded": false,
+    "encoded_video": {
+      "codec": "h264",
+      "width": 960,
+      "height": 720,
+      "fps": 60,
+      "streams": 1,
+      "duration": 7.5,
+      "frames": 450,
+      "distinct_decoded_frames": 450
+    }
+  },
+  "release_id": "d217ff04e8ed575fbe94863211e51c4ecbef50ff1c92664becdf2278ff86312b",
+  "supersedes": "c24eb28788f25e4ed1b7716af5185b4f832b2a6f6b236caa1bf1b3ad5b166815",
+  "change": "preview-only"
+}

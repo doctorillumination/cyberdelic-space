@@ -610,8 +610,8 @@
     {
       "artwork": "paper-water",
       "path": "artwork-bundles/paper-water.zip",
-      "length": 290855,
-      "sha256": "fa70ce0f6aef568e13b457257fa761172ddcf129a4ece1a297212d0201e5b4f7",
+      "length": 571204,
+      "sha256": "e316db50ccea52d93f7249d931ae7a305dd600e0eb87e4e77f20e84c46a2581a",
       "files": [
         {
           "path": "fieldwork-runtime/paper-water/THREE-LICENSE.txt",
@@ -630,8 +630,8 @@
         },
         {
           "path": "fieldworks/previews/paper-water.mp4",
-          "length": 121397,
-          "sha256": "c38cfa92e2fc0af6bc9810f30c0e8320546cc971cca531e9df14d77ad0bb08b5"
+          "length": 404989,
+          "sha256": "0f4d7a3c08135d5dd7b44da3189c4de788b9fc6608df47e0afa35158176bdfb3"
         }
       ]
     },
