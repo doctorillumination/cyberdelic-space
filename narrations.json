@@ -18673,14 +18673,14 @@
       }
     },
     {
-      "id": "fieldworks-overview",
-      "title": "Fieldworks",
+      "id": "fieldworks-overview-thirteen-works",
+      "title": "Fieldworks, thirteen-work edition",
       "form": "fieldwork",
       "release_id": null,
       "pages": [
-        "fieldworks/"
+        "fieldworks/readings/overview-thirteen-works.md"
       ],
-      "source_path": "fieldworks/readings/overview.md",
+      "source_path": "fieldworks/readings/overview-thirteen-works.md",
       "source_sha256": "92a0626aa3322e12975da17e6c97cd3e2a840fa97925986044e8e872e63790bb",
       "document_sha256": "92a0626aa3322e12975da17e6c97cd3e2a840fa97925986044e8e872e63790bb",
       "text_sha256": "0444387a21e9a24cf872670db98a333d3f791dc567834725680b1440f4d6f9d3",
@@ -20101,6 +20101,110 @@
         "peak": 0.6107050776481628,
         "clipped_samples": 0
       }
+    },
+    {
+      "id": "fieldworks-overview",
+      "title": "Fieldworks",
+      "form": "fieldwork",
+      "release_id": null,
+      "pages": [
+        "fieldworks/"
+      ],
+      "source_path": "fieldworks/readings/overview.md",
+      "source_sha256": "ebb979fd24e130039f04f7382f7aba7880ff303767cc86b536976d1ba4b542f3",
+      "document_sha256": "ebb979fd24e130039f04f7382f7aba7880ff303767cc86b536976d1ba4b542f3",
+      "text_sha256": "70d03f3af907de395291349feffd31ffa94bb239271357aff0ad7368db2b86e6",
+      "reading_path": "audio/readings/70d03f3af907de395291349feffd31ffa94bb239271357aff0ad7368db2b86e6.md",
+      "reading_sha256": "ebb979fd24e130039f04f7382f7aba7880ff303767cc86b536976d1ba4b542f3",
+      "reading_length": 505,
+      "audio_path": "audio/lewis/70d03f3af907de395291349feffd31ffa94bb239271357aff0ad7368db2b86e6.mp3",
+      "voice": "bm_lewis",
+      "voice_name": "Lewis",
+      "speed": 1.0,
+      "audio_sha256": "5f87422ea1dda256231d4a99728765817e212ba090984130daa0ce9ddbd30546",
+      "audio_length": 450764,
+      "duration_seconds": 37.465,
+      "chunks": [
+        {
+          "text": "Fieldworks",
+          "start": 0.0,
+          "duration": 1.65
+        },
+        {
+          "text": "Generative artworks and interactive environments by Brad Necyk.",
+          "start": 1.83,
+          "duration": 5.15
+        },
+        {
+          "text": "A surface that answers. A fold in seeing. An unfinished sky. Impossible matter. A river remembering a drawing. A small vocabulary, an expanding field. A field of competing futures. A picture with weight. A room that keeps trying to sing. A history in formation. A manual, held differently. A drawing that keeps swimming. A face held beyond the glass.",
+          "start": 7.16,
+          "duration": 24.3
+        },
+        {
+          "text": "Fourteen living artworks. Enter, explore, and see what a gesture changes.",
+          "start": 31.64,
+          "duration": 5.825
+        }
+      ],
+      "checks": {
+        "all_text_retained": true,
+        "mp3_decodes": true,
+        "finite_samples": true,
+        "peak": 0.6206876039505005,
+        "clipped_samples": 0
+      }
+    },
+    {
+      "id": "fieldworks-small-weather",
+      "title": "Small weather",
+      "form": "fieldwork",
+      "release_id": null,
+      "pages": [
+        "fieldworks/small-weather/"
+      ],
+      "source_path": "fieldworks/readings/small-weather.md",
+      "source_sha256": "4407524095fdadac6813fd46197b7ed11ffd62725a385f0b2ec853fcaa4deda2",
+      "document_sha256": "4407524095fdadac6813fd46197b7ed11ffd62725a385f0b2ec853fcaa4deda2",
+      "text_sha256": "61350b5e46c218e54a91de43ab2ba240145a61515a2dad763cc8e4beaf57593b",
+      "reading_path": "audio/readings/61350b5e46c218e54a91de43ab2ba240145a61515a2dad763cc8e4beaf57593b.md",
+      "reading_sha256": "4407524095fdadac6813fd46197b7ed11ffd62725a385f0b2ec853fcaa4deda2",
+      "reading_length": 409,
+      "audio_path": "audio/lewis/61350b5e46c218e54a91de43ab2ba240145a61515a2dad763cc8e4beaf57593b.mp3",
+      "voice": "bm_lewis",
+      "voice_name": "Lewis",
+      "speed": 1.0,
+      "audio_sha256": "3098b71700ea17021b1095e9903afc072fe7ad6907f68f2543d6944249e6a492",
+      "audio_length": 375020,
+      "duration_seconds": 31.165,
+      "chunks": [
+        {
+          "text": "Small weather",
+          "start": 0.0,
+          "duration": 1.7
+        },
+        {
+          "text": "A garden pool holds the blue of the sky and the shade of leaves. Rain passes through the reflection in a field of keyboard characters. As the ripples spread, small flashes of colour catch along their crests.",
+          "start": 1.88,
+          "duration": 13.8
+        },
+        {
+          "text": "Click or tap to send a ripple across the pool. Turn on Sound for the soft patter of rain, or let the water move in silence.",
+          "start": 15.86,
+          "duration": 8.95
+        },
+        {
+          "text": "By Brad Necyk, 2026. A living artwork from Cyberdelic OS.",
+          "start": 24.99,
+          "duration": 6.175
+        }
+      ],
+      "checks": {
+        "all_text_retained": true,
+        "mp3_decodes": true,
+        "finite_samples": true,
+        "peak": 0.5538463592529297,
+        "clipped_samples": 0
+      }
     }
   ],
   "playlists": [
@@ -20278,6 +20382,11 @@
       "path": "audio-bundles/lewis-28.zip",
       "sha256": "b439c9743755d4b617f8787fb784ff0af722eb091093c145ca3fe6a4a1725711",
       "length": 1333734
+    },
+    {
+      "path": "audio-bundles/lewis-29.zip",
+      "sha256": "c80604939183ed905098532a0d5c54af0ae4320fba2997b790b081664cf75444",
+      "length": 804746
     }
   ]
 }

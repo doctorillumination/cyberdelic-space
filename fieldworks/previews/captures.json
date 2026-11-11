@@ -5905,6 +5905,30 @@
       "path": "at-a-safe-distance.mp4",
       "sha256": "30ac3d93882673593420724741bb3af1b5fbbb5f55008832a7d077c228ba7bd9",
       "length": 809548
+    },
+    {
+      "kind": "actual browser canvas, silent",
+      "raw_sha256": "dfdbd058c8fd8b0cb49ee2669e215fe390c0cd5b9f90571b502866125c5656d9",
+      "source_runtime_sha256": "e9dff8768f62946701db90d5e843e5c7f55c11d4ed09f6f4b7d1c385a327aa06",
+      "poster_time": 4,
+      "preview_start_time": 2,
+      "requested_capture_fps": 60,
+      "source_version": "0.21.0",
+      "source_snapshot_sha256": "c965a975c9091c66a00f627bdf7ad193a0ac28b477352027aeb6a0fb56ed6869",
+      "loop_method": "Three-quarter second end to start crossfade",
+      "encoded_video": {
+        "codec": "h264",
+        "width": 960,
+        "height": 720,
+        "fps": 60,
+        "streams": 1,
+        "duration": 7.25
+      },
+      "path": "small-weather.mp4",
+      "sha256": "44fc5049fac42f91b6c42dfe707b0d0a4f3db31ae1c72c5eafbfa6ea0ecccf64",
+      "length": 2499005,
+      "slug": "small-weather",
+      "release_id": "73931b56147b0edb18d0d6c924c602e7746db9915873f95f8cf90722ba19619c"
     }
   ],
   "archived_items": [

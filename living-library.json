@@ -1610,6 +1610,28 @@
       ],
       "excerpt": "A mask and a garden behind textured glass. Drag to explore an enclosed space where protection, beauty, and distance remain unresolved.",
       "rationale": "Human-authorized Fieldworks publication. Thematic placements remain interpretive, separate from inscription evidence."
+    },
+    {
+      "id": "fieldwork-small-weather",
+      "release_id": "FW-SMALL-WEATHER",
+      "label": "FIELDWORK · LIVING",
+      "title": "Small weather",
+      "href": "fieldworks/small-weather/",
+      "author": "Brad Necyk",
+      "date": "2026-11-11",
+      "publication_state": "living",
+      "form": "generative-art",
+      "world": "cyberdelic-os",
+      "register": "play",
+      "themes": [
+        "water",
+        "weather",
+        "attention",
+        "light",
+        "gesture"
+      ],
+      "excerpt": "Rain ripples through reflected sky and leaves in a garden pool made from keyboard characters.",
+      "rationale": "Published in Fieldworks at the artist’s request."
     }
   ]
 }

@@ -659,6 +659,34 @@
       ]
     },
     {
+      "artwork": "small-weather",
+      "path": "artwork-bundles/small-weather.zip",
+      "length": 3084889,
+      "sha256": "07da615eeabbeaee97338f9913d272ef715d7ecb5b6cd93157f8f106a8e9bd98",
+      "files": [
+        {
+          "path": "fieldwork-runtime/small-weather/THREE-LICENSE.txt",
+          "length": 1081,
+          "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+        },
+        {
+          "path": "fieldwork-runtime/small-weather/index.html",
+          "length": 835293,
+          "sha256": "e9dff8768f62946701db90d5e843e5c7f55c11d4ed09f6f4b7d1c385a327aa06"
+        },
+        {
+          "path": "fieldworks/images/small-weather.jpg",
+          "length": 366708,
+          "sha256": "07696520196551b2b39b10048bf5acd4055ecc0ef95ed2f10fa5ceff94c70d9d"
+        },
+        {
+          "path": "fieldworks/previews/small-weather.mp4",
+          "length": 2499005,
+          "sha256": "44fc5049fac42f91b6c42dfe707b0d0a4f3db31ae1c72c5eafbfa6ea0ecccf64"
+        }
+      ]
+    },
+    {
       "artwork": "transplant",
       "path": "artwork-bundles/transplant-01.zip",
       "length": 21813200,
