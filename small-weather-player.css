@@ -1,0 +1,11 @@
+/* Leave room for the host view buttons below the artwork's controls. */
+.fieldwork-player[data-fieldwork="small-weather"] > .fieldwork-view-controls {
+  left: max(12px, env(safe-area-inset-left));
+  right: auto;
+}
+html[data-fieldwork-slot="small-weather"] :is(.chrome footer, #studio) {
+  bottom: max(68px, calc(env(safe-area-inset-bottom) + 58px));
+}
+html[data-fieldwork-slot="small-weather"][data-fieldwork-artwork-only] :is(.chrome, #studio, #notice) {
+  display: none !important;
+}

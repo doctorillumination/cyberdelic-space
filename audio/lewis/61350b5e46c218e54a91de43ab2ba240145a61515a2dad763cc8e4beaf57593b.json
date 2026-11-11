@@ -1,0 +1,58 @@
+{
+  "id": "fieldworks-small-weather",
+  "title": "Small weather",
+  "form": "fieldwork",
+  "release_id": null,
+  "pages": [
+    "fieldworks/small-weather/"
+  ],
+  "source_path": "fieldworks/readings/small-weather.md",
+  "source_sha256": "4407524095fdadac6813fd46197b7ed11ffd62725a385f0b2ec853fcaa4deda2",
+  "document_sha256": "4407524095fdadac6813fd46197b7ed11ffd62725a385f0b2ec853fcaa4deda2",
+  "text_sha256": "61350b5e46c218e54a91de43ab2ba240145a61515a2dad763cc8e4beaf57593b",
+  "reading_path": "audio/readings/61350b5e46c218e54a91de43ab2ba240145a61515a2dad763cc8e4beaf57593b.md",
+  "reading_sha256": "4407524095fdadac6813fd46197b7ed11ffd62725a385f0b2ec853fcaa4deda2",
+  "reading_length": 409,
+  "audio_path": "audio/lewis/61350b5e46c218e54a91de43ab2ba240145a61515a2dad763cc8e4beaf57593b.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "3098b71700ea17021b1095e9903afc072fe7ad6907f68f2543d6944249e6a492",
+  "audio_length": 375020,
+  "duration_seconds": 31.165,
+  "chunks": [
+    {
+      "text": "Small weather",
+      "start": 0.0,
+      "duration": 1.7
+    },
+    {
+      "text": "A garden pool holds the blue of the sky and the shade of leaves. Rain passes through the reflection in a field of keyboard characters. As the ripples spread, small flashes of colour catch along their crests.",
+      "start": 1.88,
+      "duration": 13.8
+    },
+    {
+      "text": "Click or tap to send a ripple across the pool. Turn on Sound for the soft patter of rain, or let the water move in silence.",
+      "start": 15.86,
+      "duration": 8.95
+    },
+    {
+      "text": "By Brad Necyk, 2026. A living artwork from Cyberdelic OS.",
+      "start": 24.99,
+      "duration": 6.175
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.5538463592529297,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}
