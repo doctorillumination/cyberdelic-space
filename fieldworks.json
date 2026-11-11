@@ -292,7 +292,7 @@
       "slug": "small-weather",
       "title": "Small weather",
       "project": "small-weather",
-      "edition": "surface-patter",
+      "edition": "brighter-water",
       "status": "living",
       "caption": "A garden pool holding the sky.",
       "description": "Rain ripples through reflected sky and leaves in a garden pool made from keyboard characters.",
@@ -309,22 +309,22 @@
       "related_note": "fn-05",
       "related_title": "The Physics We Choose",
       "offline_part": true,
-      "release_id": "73931b56147b0edb18d0d6c924c602e7746db9915873f95f8cf90722ba19619c",
-      "runtime_published_at": "2026-11-11T17:04:01.709460Z",
+      "release_id": "1d0b9fb92c6646e8fe96b49a72cea12c474e83e43c6c883e951f44055a3f1ea2",
+      "runtime_published_at": "2026-11-11T17:36:54.018050Z",
       "href": "fieldworks/small-weather/",
       "source_path": "fieldworks/readings/small-weather.md",
       "source_sha256": "4407524095fdadac6813fd46197b7ed11ffd62725a385f0b2ec853fcaa4deda2",
       "source_length": 409,
       "poster": {
         "path": "fieldworks/images/small-weather.jpg",
-        "sha256": "07696520196551b2b39b10048bf5acd4055ecc0ef95ed2f10fa5ceff94c70d9d",
-        "length": 366708,
+        "sha256": "2564bf2ab56f13072c46f51a2add1912864bdc090b14f791a309c710576f5bd4",
+        "length": 373883,
         "kind": "actual-browser-capture"
       },
       "preview": {
         "path": "fieldworks/previews/small-weather.mp4",
-        "sha256": "44fc5049fac42f91b6c42dfe707b0d0a4f3db31ae1c72c5eafbfa6ea0ecccf64",
-        "length": 2499005,
+        "sha256": "366798056eb1b3f6655fe38e877b37d00293f90b2c172ea68e39a77e84b36b66",
+        "length": 2508340,
         "kind": "recorded-artwork-loop"
       }
     },

@@ -6687,14 +6687,14 @@
     {
       "slug": "small-weather",
       "project": "small-weather",
-      "revision": "e9dff8768f62946701db90d5e843e5c7f55c11d4ed09f6f4b7d1c385a327aa06",
+      "revision": "b9099cdf322cbd2d88aba7934a0cd093fac801d60dc90c0e060c2e559f8e95f5",
       "revision_type": "sha256-of-approved-runtime",
-      "edition": "surface-patter",
-      "source_version": "0.21.0",
+      "edition": "brighter-water",
+      "source_version": "0.22.0",
       "source_files": [
         {
           "path": "index.html",
-          "sha256": "e9dff8768f62946701db90d5e843e5c7f55c11d4ed09f6f4b7d1c385a327aa06"
+          "sha256": "b9099cdf322cbd2d88aba7934a0cd093fac801d60dc90c0e060c2e559f8e95f5"
         },
         {
           "path": "build.py",
@@ -6702,11 +6702,11 @@
         },
         {
           "path": "package.json",
-          "sha256": "76762595bfb563214c4e21b7be2248729d3925b21e4df5a33150de5ad99a4ca5"
+          "sha256": "ec7dcb37bf90be2ba30f0febc73247bcbd7119cbc1f70a5b2e828995d6a6c401"
         },
         {
           "path": "package-lock.json",
-          "sha256": "54a98ee2d51a1c578655f1a4d1e321fc0563ad9c65c6532aa58995d630b0f31a"
+          "sha256": "f78c155a6e21c7ec78b6d052323e550da80ed231025f96f7aaabda074c301c87"
         },
         {
           "path": "src/viewer.html",
@@ -6726,7 +6726,7 @@
         },
         {
           "path": "src/app.js",
-          "sha256": "829bfd8c79a0c26d9f09780994370ed8d441b065a48966d5d779e74742fcff85"
+          "sha256": "3897ea945997d31e427978dc166ac990e16e036fe27d26b7d1f12804cb2fe6e0"
         },
         {
           "path": "src/three-garden.js",
@@ -6734,7 +6734,7 @@
         },
         {
           "path": "src/three-water.js",
-          "sha256": "a979d9579a2b2dcf0cbc6f0c3a7abc42abb426fbf94444b209dfd8b6bc58fa37"
+          "sha256": "533c39d0738978b2ca2fcd0984be0c10cce91d6905ac9c4ad5a5626f61fb1c12"
         },
         {
           "path": "src/three-ascii.js",
@@ -6742,11 +6742,11 @@
         },
         {
           "path": "src/three-scenery.js",
-          "sha256": "1613ada709c9791569083071589b19af71500ab2acf902ccb1e42db5bb71826d"
+          "sha256": "75b63d77f7bf4c3c1622d03e0a0eb8852f6d844f456f570471cc4d7da263b49c"
         },
         {
           "path": "vendor/three-garden.bundle.js",
-          "sha256": "09e4c554685dc26fd2173130eedb250ddd5c36d5ad51d3b56f4ae6dca9981db8"
+          "sha256": "630abc9606d5f0c77dc774ece34d6c186bb47181f943a269def7b69715c7e719"
         },
         {
           "path": "vendor/LICENSE-three.txt",
@@ -6756,15 +6756,15 @@
       "packaged_files": [
         {
           "path": "index.html",
-          "sha256": "e9dff8768f62946701db90d5e843e5c7f55c11d4ed09f6f4b7d1c385a327aa06"
+          "sha256": "b9099cdf322cbd2d88aba7934a0cd093fac801d60dc90c0e060c2e559f8e95f5"
         },
         {
           "path": "THREE-LICENSE.txt",
           "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
         }
       ],
-      "adaptations": "Exact v0.21.0 runtime with the Three.js MIT licence. Gallery controls and narration are in the separate viewing shell.",
-      "release_id": "73931b56147b0edb18d0d6c924c602e7746db9915873f95f8cf90722ba19619c"
+      "adaptations": "Exact v0.22.0 runtime with the Three.js MIT licence. The viewing shell provides gallery controls and narration.",
+      "release_id": "1d0b9fb92c6646e8fe96b49a72cea12c474e83e43c6c883e951f44055a3f1ea2"
     }
   ]
 }
