@@ -1,8 +1,8 @@
 {
   "schema": "cyberdelic.space/fieldworks-v1",
-  "version": "1.13.0",
+  "version": "1.13.1",
   "date": "2026-11-12",
-  "published_at": "2026-11-12T18:20:26Z",
+  "published_at": "2026-11-12T20:12:07Z",
   "overview": {
     "title": "Fieldworks",
     "href": "fieldworks/",
@@ -128,6 +128,15 @@
       "source_path": "fieldworks/readings/overview-fourteen-works.md",
       "source_sha256": "ebb979fd24e130039f04f7382f7aba7880ff303767cc86b536976d1ba4b542f3",
       "source_length": 505
+    },
+    {
+      "slug": "workshop-original-title",
+      "title": "Workshop, original title",
+      "href": "fieldworks/readings/workshop-original-title.md",
+      "source": "workshop-original-title.md",
+      "source_path": "fieldworks/readings/workshop-original-title.md",
+      "source_sha256": "e82ef903194c97647d8ee44903a79f55da3b9b541e6519c31c33d620c57b2ba9",
+      "source_length": 1030
     }
   ],
   "items": [
@@ -299,7 +308,7 @@
     },
     {
       "slug": "workshop",
-      "title": "Workshop",
+      "title": "After Picture",
       "project": "picture-for-women",
       "edition": "cycles-workshop",
       "status": "living",
@@ -317,24 +326,28 @@
         "gesture"
       ],
       "offline_part": true,
-      "release_id": "692c2375c6e5e87d39861447ebcdde0ac4615fe3db8c0ce4465fccb8ae9dee73",
-      "runtime_published_at": "2026-11-12T18:20:26Z",
+      "release_id": "116b012a2a77d21bae12a5827a141fee8fdca442d9540b388ae6caf39ef15e32",
+      "runtime_published_at": "2026-11-12T20:12:07Z",
       "href": "fieldworks/workshop/",
       "source_path": "fieldworks/readings/workshop.md",
-      "source_sha256": "e82ef903194c97647d8ee44903a79f55da3b9b541e6519c31c33d620c57b2ba9",
-      "source_length": 1030,
+      "source_sha256": "fbf97ea1878c14f6247d0266822c9d7a2d7b650c18622e7deefc2fd849c0add6",
+      "source_length": 1045,
       "poster": {
         "path": "fieldworks/images/workshop.jpg",
-        "length": 84363,
-        "sha256": "4a435c8a279dce637733bfa5aa91a7cdc63f55a0ea75c99236205cca67495f67",
+        "length": 84087,
+        "sha256": "50345541cd21e3afdc08872129981281b86f62f71b92265b0c60b6d0b498ca0b",
         "kind": "actual-browser-capture"
       },
       "preview": {
         "path": "fieldworks/previews/workshop.mp4",
-        "length": 1560748,
-        "sha256": "f3fd4ab8585b66b42f27ed697f2c32de6f56a938147ed510ee3464cdb6553e26",
+        "length": 1561059,
+        "sha256": "8a25d658f7c5a33e93c50f06e42ccf188323d0a022f0df3af8ba3247b29f3308",
         "kind": "recorded-artwork-loop"
-      }
+      },
+      "offline_releases": [
+        "692c2375c6e5e87d39861447ebcdde0ac4615fe3db8c0ce4465fccb8ae9dee73",
+        "116b012a2a77d21bae12a5827a141fee8fdca442d9540b388ae6caf39ef15e32"
+      ]
     },
     {
       "slug": "small-weather",

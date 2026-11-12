@@ -2177,8 +2177,8 @@
     {
       "artwork": "workshop",
       "path": "artwork-bundles/workshop-06.zip",
-      "length": 6918853,
-      "sha256": "f877cfbe0bf7094000d266d066e2b53005e2565047a03db74533c48d1d990b32",
+      "length": 6948192,
+      "sha256": "191ab795826733a2a76d0da55a7be9cc35fc7f134bc21b99de0ea2a1e2a046f4",
       "files": [
         {
           "path": "fieldwork-runtime/workshop/assets/relight/light-030.webp",
@@ -2212,8 +2212,8 @@
         },
         {
           "path": "fieldwork-runtime/workshop/index.html",
-          "length": 3047,
-          "sha256": "2d05e580399ce98d7109b18f2d90b3151885fd6e0a4681356fa029d1bdde08af"
+          "length": 3077,
+          "sha256": "7b2bfa9a941907c81b628cb129959c663391d3d2f11fe8eeae74b2041a2efb31"
         },
         {
           "path": "fieldwork-runtime/workshop/motion.js",
@@ -2252,13 +2252,23 @@
         },
         {
           "path": "fieldworks/images/workshop.jpg",
-          "length": 84363,
-          "sha256": "4a435c8a279dce637733bfa5aa91a7cdc63f55a0ea75c99236205cca67495f67"
+          "length": 84087,
+          "sha256": "50345541cd21e3afdc08872129981281b86f62f71b92265b0c60b6d0b498ca0b"
         },
         {
           "path": "fieldworks/previews/workshop.mp4",
-          "length": 1560748,
-          "sha256": "f3fd4ab8585b66b42f27ed697f2c32de6f56a938147ed510ee3464cdb6553e26"
+          "length": 1561059,
+          "sha256": "8a25d658f7c5a33e93c50f06e42ccf188323d0a022f0df3af8ba3247b29f3308"
+        },
+        {
+          "path": "fieldworks/releases/692c2375c6e5e87d39861447ebcdde0ac4615fe3db8c0ce4465fccb8ae9dee73.json",
+          "length": 90263,
+          "sha256": "3a4c5ed70d70b016c4814bf532ad7df83883a2e45774382a5299164115cabcd4"
+        },
+        {
+          "path": "fieldworks/releases/116b012a2a77d21bae12a5827a141fee8fdca442d9540b388ae6caf39ef15e32.json",
+          "length": 90330,
+          "sha256": "bf7052fad1f92d16a899989225f029ebef25f492314e15af9f2480d226ac15f7"
         }
       ],
       "part": 6,

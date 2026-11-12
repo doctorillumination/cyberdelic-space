@@ -5,19 +5,19 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#131615">
   <meta name="description" content="A photograph with a little room to explore. Lean gently into the workshop and listen to its quiet spatial sound.">
-  <title>Workshop · Lean and Listen</title>
+  <title>After Picture · Lean and Listen</title>
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <main class="work">
-    <div id="stage" class="stage" tabindex="0" role="img" aria-label="Workshop: an interactive three-dimensional photograph. Drag to lean, or use the arrow keys. Press Escape to return to the original framing." aria-describedby="instruction">
+    <div id="stage" class="stage" tabindex="0" role="img" aria-label="After Picture: an interactive three-dimensional photograph. Drag to lean, or use the arrow keys. Press Escape to return to the original framing." aria-describedby="instruction">
       <img class="poster" src="./assets/baked/color-017.webp" alt="Two gray figures in a worn photographic workshop, with a field camera between them." draggable="false">
       <canvas id="view" aria-hidden="true"></canvas>
       <span class="loading" id="loading" role="status">Preparing the room…</span>
     </div>
     <footer>
-      <h1>Workshop</h1>
+      <h1>After Picture</h1>
       <p id="instruction">Click and drag gently to lean</p>
       <button id="sound" type="button" aria-pressed="false" aria-label="Enable quiet spatial sound"><span class="sound-mark" aria-hidden="true"></span><span id="sound-label">Sound off</span></button>
       <button id="about-button" type="button" aria-haspopup="dialog" aria-controls="about">About</button>
@@ -26,13 +26,13 @@
   </main>
   <dialog id="about" aria-labelledby="about-title">
     <header>
-      <h2 id="about-title">About Workshop</h2>
+      <h2 id="about-title">About After Picture</h2>
       <form method="dialog"><button type="submit" autofocus>Close</button></form>
     </header>
-    <p><em>Workshop</em> returns to Jeff Wall’s <em>Picture for Women</em> (1979), a staged photograph presented as a large illuminated transparency. In Wall’s picture, the mirror arranges the two figures, the camera, and the person looking. Rebuilding the room means making choices wherever the photograph leaves something unseen.</p>
+    <p><em>After Picture</em> returns to Jeff Wall’s <em>Picture for Women</em> (1979), a staged photograph presented as a large illuminated transparency. In Wall’s picture, the mirror arranges the two figures, the camera, and the person looking. Rebuilding the room means making choices wherever the photograph leaves something unseen.</p>
     <p>Here, the composition remains still while ceasing to be fixed. A shoulder rises. A finger moves. Light alters the weight of the room. The figures remain visibly constructed, even as a breath passes through them. After a while you might wonder whether a hand moved, or whether you simply looked more closely.</p>
     <p>A little lean gives you more of the room. It also brings back a question already present in the mirror. Where are you standing in this arrangement of looking?</p>
-    <p>Breath repeats. Light returns. You can stay with a small change, then leave. <em>Workshop</em> is a picture with a present tense. What you see is what happened while you were here.</p>
+    <p>Breath repeats. Light returns. You can stay with a small change, then leave. <em>After Picture</em> is a picture with a present tense. What you see is what happened while you were here.</p>
     <p class="about-source"><a href="https://www.centrepompidou.fr/en/ressources/oeuvre/c5eBM7k" target="_blank" rel="noopener noreferrer">Picture for Women at the Centre Pompidou</a></p>
   </dialog>
   <script type="module" src="./app.js"></script>
