@@ -57,8 +57,8 @@
     },
     {
       "kind": "actual browser canvas, silent",
-      "source_runtime_sha256": "2d05e580399ce98d7109b18f2d90b3151885fd6e0a4681356fa029d1bdde08af",
-      "source_snapshot_sha256": "2f3c7b8b55774352cf2e222c2e1f6695a843158bea9c4e4e1a3d5b112f4c7d1d",
+      "source_runtime_sha256": "7b2bfa9a941907c81b628cb129959c663391d3d2f11fe8eeae74b2041a2efb31",
+      "source_snapshot_sha256": "2cea97bfb138a6728ce4beb21dbfd278386fc2f9bade94cb18993f0a43e33578",
       "poster_time": 0,
       "preview_start_time": 0,
       "requested_capture_fps": 60,
@@ -74,9 +74,10 @@
       "distinct_decoded_frames": 480,
       "slug": "workshop",
       "path": "workshop.mp4",
-      "sha256": "f3fd4ab8585b66b42f27ed697f2c32de6f56a938147ed510ee3464cdb6553e26",
-      "length": 1560748,
-      "release_id": "692c2375c6e5e87d39861447ebcdde0ac4615fe3db8c0ce4465fccb8ae9dee73"
+      "sha256": "8a25d658f7c5a33e93c50f06e42ccf188323d0a022f0df3af8ba3247b29f3308",
+      "length": 1561059,
+      "release_id": "116b012a2a77d21bae12a5827a141fee8fdca442d9540b388ae6caf39ef15e32",
+      "framing": "The 1032 by 720 canvas is centre-cropped to 960 by 720."
     },
     {
       "slug": "primitives",

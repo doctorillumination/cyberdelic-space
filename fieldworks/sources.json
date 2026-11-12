@@ -1096,7 +1096,7 @@
       "slug": "workshop",
       "project": "picture-for-women",
       "repository": "https://github.com/doctorillumination/picture-for-women",
-      "revision": "e916bb8625df7f60c4687391c4eceaee1f10f6fe",
+      "revision": "6d893d8993b2cff19825e7cdd2b4342044227c84",
       "edition": "cycles-workshop",
       "source_path": "docs/",
       "source_files": [
@@ -1822,7 +1822,7 @@
         },
         {
           "path": "index.html",
-          "sha256": "2d05e580399ce98d7109b18f2d90b3151885fd6e0a4681356fa029d1bdde08af"
+          "sha256": "7b2bfa9a941907c81b628cb129959c663391d3d2f11fe8eeae74b2041a2efb31"
         },
         {
           "path": "motion.js",
@@ -2576,7 +2576,7 @@
         },
         {
           "path": "index.html",
-          "sha256": "2d05e580399ce98d7109b18f2d90b3151885fd6e0a4681356fa029d1bdde08af"
+          "sha256": "7b2bfa9a941907c81b628cb129959c663391d3d2f11fe8eeae74b2041a2efb31"
         },
         {
           "path": "motion.js",
@@ -2607,8 +2607,8 @@
           "sha256": "104f56145899722094556490d787aae0617cc2fc3382f31df02d724ea1aee341"
         }
       ],
-      "adaptations": "Exact approved Cycles and alignment runtime. The gallery shell presents the About text and Lewis reading.",
-      "release_id": "692c2375c6e5e87d39861447ebcdde0ac4615fe3db8c0ce4465fccb8ae9dee73"
+      "adaptations": "Exact approved After Picture runtime. The gallery shell presents the About text and Lewis reading.",
+      "release_id": "116b012a2a77d21bae12a5827a141fee8fdca442d9540b388ae6caf39ef15e32"
     },
     {
       "slug": "primitives",

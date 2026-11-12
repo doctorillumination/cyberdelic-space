@@ -1,7 +1,7 @@
 {
   "schema": "https://cyberdelic.space/schemas/living-catalog-v1.json",
   "version": "0.17",
-  "updated_at": "2026-11-12T18:20:26Z",
+  "updated_at": "2026-11-12T20:12:07Z",
   "count": 50,
   "curation": {
     "office": "OFFICE-LIBRARIAN",
@@ -2237,7 +2237,7 @@
     {
       "id": "catalog:fieldworks:workshop",
       "record_kind": "artifact",
-      "title": "Workshop",
+      "title": "After Picture",
       "href": "fieldworks/workshop/",
       "summary": "After Jeff Wall’s Picture for Women, two figures hold a pose while the light ebbs and returns. Lean a little into the room.",
       "subjects": [
@@ -2251,6 +2251,7 @@
         "Fieldworks"
       ],
       "search_terms": [
+        "After Picture",
         "Workshop",
         "Picture for Women",
         "Jeff Wall",
@@ -2264,13 +2265,13 @@
       "evidence": [
         {
           "source": "fieldworks/readings/workshop.md",
-          "locator": "# Workshop"
+          "locator": "# After Picture"
         }
       ],
       "epistemic_status": "strong",
       "review_state": "model-proposed",
       "introduced_by": "human-authorized-fieldworks-publication",
-      "last_tended_at": "2026-11-12T18:20:26Z",
+      "last_tended_at": "2026-11-12T20:12:07Z",
       "uncertainty": "The themes are interpretive."
     }
   ]

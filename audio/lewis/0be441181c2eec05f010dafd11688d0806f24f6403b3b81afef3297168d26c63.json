@@ -1,0 +1,68 @@
+{
+  "id": "fieldworks-workshop",
+  "title": "After Picture",
+  "form": "fieldwork",
+  "release_id": null,
+  "pages": [
+    "fieldworks/workshop/"
+  ],
+  "source_path": "fieldworks/readings/workshop.md",
+  "source_sha256": "fbf97ea1878c14f6247d0266822c9d7a2d7b650c18622e7deefc2fd849c0add6",
+  "document_sha256": "fbf97ea1878c14f6247d0266822c9d7a2d7b650c18622e7deefc2fd849c0add6",
+  "text_sha256": "0be441181c2eec05f010dafd11688d0806f24f6403b3b81afef3297168d26c63",
+  "reading_path": "audio/readings/0be441181c2eec05f010dafd11688d0806f24f6403b3b81afef3297168d26c63.md",
+  "reading_sha256": "fbf97ea1878c14f6247d0266822c9d7a2d7b650c18622e7deefc2fd849c0add6",
+  "reading_length": 1045,
+  "audio_path": "audio/lewis/0be441181c2eec05f010dafd11688d0806f24f6403b3b81afef3297168d26c63.mp3",
+  "voice": "bm_lewis",
+  "voice_name": "Lewis",
+  "speed": 1.0,
+  "audio_sha256": "5f6aaad8199c3d9102cae51d491bdd1c2eae445d1b09e0ecd236837af62b1454",
+  "audio_length": 864620,
+  "duration_seconds": 71.975,
+  "chunks": [
+    {
+      "text": "After Picture",
+      "start": 0.0,
+      "duration": 2.025
+    },
+    {
+      "text": "After Picture returns to Jeff Wall’s Picture for Women (1979), a staged photograph presented as a large illuminated transparency. In Wall’s picture, the mirror arranges the two figures, the camera, and the person looking. Rebuilding the room means making choices wherever the photograph leaves something unseen.",
+      "start": 2.205,
+      "duration": 21.675
+    },
+    {
+      "text": "Here, the composition remains still while ceasing to be fixed. A shoulder rises. A finger moves. Light alters the weight of the room. The figures remain visibly constructed, even as a breath passes through them. After a while you might wonder whether a hand moved, or whether you simply looked more closely.",
+      "start": 24.06,
+      "duration": 19.85
+    },
+    {
+      "text": "A little lean gives you more of the room. It also brings back a question already present in the mirror. Where are you standing in this arrangement of looking?",
+      "start": 44.09,
+      "duration": 9.65
+    },
+    {
+      "text": "Breath repeats. Light returns. You can stay with a small change, then leave. After Picture is a picture with a present tense. What you see is what happened while you were here.",
+      "start": 53.92,
+      "duration": 11.7
+    },
+    {
+      "text": "By Brad Necyk, 2026. A living artwork from Cyberdelic OS.",
+      "start": 65.8,
+      "duration": 6.175
+    }
+  ],
+  "checks": {
+    "all_text_retained": true,
+    "mp3_decodes": true,
+    "finite_samples": true,
+    "peak": 0.5517511367797852,
+    "clipped_samples": 0
+  },
+  "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voice_sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e",
+  "sample_rate": 24000,
+  "offline_generation": true,
+  "custom_voice": false
+}

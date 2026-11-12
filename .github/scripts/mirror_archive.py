@@ -55,6 +55,9 @@ def artwork_groups(site: Path) -> dict[str, list[Path]]:
                 if edition.is_dir():
                     groups[slug + "-" + edition.name] = sorted(p for p in edition.rglob("*") if p.is_file())
             paths += [safe_path(site, item[key]["path"]) for key in ("poster", "preview")]
+            for release_id in item.get("offline_releases", []):
+                require(re.fullmatch(r"[a-f0-9]{64}", release_id) is not None, "Invalid artwork release ID")
+                paths.append(safe_path(site, f"fieldworks/releases/{release_id}.json"))
             require(bool(paths), "Empty artwork part")
             groups[slug] = paths
     return groups
@@ -113,8 +116,11 @@ def prepare_artwork_parts(site: Path) -> None:
         "schema": "cyberdelic.space/artwork-bundles-v1", "parts": parts}, indent=2) + "\n")
     mirror = site / "mirror/index.html"
     if mirror.exists():
+        catalog = site / "fieldworks.json"
+        items = json.loads(catalog.read_text())["items"] if catalog.exists() else []
+        titles = {item["slug"]: item["title"] for item in items if item.get("offline_releases")}
         links = " ".join('<a href="../' + escape(p["path"]) + '" download>' +
-                         escape(p["artwork"].title()) + (f', part {p["part"]} of {p["total_parts"]}' if 'part' in p else (' hand tracking' if '-hand-tracking.zip' in p["path"] else ' artwork')) + '</a>' for p in parts)
+                         escape(titles.get(p["artwork"], p["artwork"].title())) + (f', part {p["part"]} of {p["total_parts"]}' if 'part' in p else (' hand tracking' if '-hand-tracking.zip' in p["path"] else ' artwork')) + '</a>' for p in parts)
         section = ('<section id="artwork-mirror"><h2>Copy the artwork parts</h2>'
                    '<p>For a complete offline copy, also download and extract these parts '
                    'into the core archive folder. They contain local hand-tracking '
