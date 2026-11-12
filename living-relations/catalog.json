@@ -1,8 +1,8 @@
 {
   "schema": "https://cyberdelic.space/schemas/living-catalog-v1.json",
   "version": "0.17",
-  "updated_at": "2026-11-11T17:04:01.709460Z",
-  "count": 49,
+  "updated_at": "2026-11-12T18:20:26Z",
+  "count": 50,
   "curation": {
     "office": "OFFICE-LIBRARIAN",
     "office_version": "0.1",
@@ -2232,6 +2232,45 @@
       "review_state": "model-proposed",
       "introduced_by": "human-authorized-fieldworks-publication",
       "last_tended_at": "2026-11-11T17:04:01.709460Z",
+      "uncertainty": "The themes are interpretive."
+    },
+    {
+      "id": "catalog:fieldworks:workshop",
+      "record_kind": "artifact",
+      "title": "Workshop",
+      "href": "fieldworks/workshop/",
+      "summary": "After Jeff Wall’s Picture for Women, two figures hold a pose while the light ebbs and returns. Lean a little into the room.",
+      "subjects": [
+        "photography",
+        "stillness",
+        "reflection",
+        "attention",
+        "light",
+        "gesture",
+        "generative art",
+        "Fieldworks"
+      ],
+      "search_terms": [
+        "Workshop",
+        "Picture for Women",
+        "Jeff Wall",
+        "mirror",
+        "photography"
+      ],
+      "questions": [
+        "What does a small shift in viewpoint change?"
+      ],
+      "related": [],
+      "evidence": [
+        {
+          "source": "fieldworks/readings/workshop.md",
+          "locator": "# Workshop"
+        }
+      ],
+      "epistemic_status": "strong",
+      "review_state": "model-proposed",
+      "introduced_by": "human-authorized-fieldworks-publication",
+      "last_tended_at": "2026-11-12T18:20:26Z",
       "uncertainty": "The themes are interpretive."
     }
   ]

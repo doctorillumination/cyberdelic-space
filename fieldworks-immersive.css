@@ -73,3 +73,8 @@ html[data-fieldwork-slot="transplant"] .colophon { padding-bottom:12px; }
 html[data-fieldwork-slot="transplant"][data-fieldwork-artwork-only] :is(.masthead,.reader-nav,.colophon) { visibility:hidden; }
 html[data-fieldwork-slot="transplant"][data-fieldwork-artwork-only] .paper-well { position:absolute; inset:0; display:flex; align-items:center; }
 html[data-fieldwork-slot="transplant"][data-fieldwork-artwork-only] .folio { flex-shrink:0; width:min(100%,1600px,calc(154.545svh - 110px)); }
+
+/* Workshop uses the gallery About button and keeps the sound and lean controls inside the artwork. */
+html[data-fieldwork-slot="workshop"] :is(#about-button,.work footer h1) { display: none; }
+html[data-fieldwork-slot="workshop"] .work footer { justify-content: center; }
+html[data-fieldwork-slot="workshop"][data-fieldwork-artwork-only] .work footer { display: none; }
