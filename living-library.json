@@ -1632,6 +1632,29 @@
       ],
       "excerpt": "Rain ripples through reflected sky and leaves in a garden pool made from keyboard characters.",
       "rationale": "Published in Fieldworks at the artist’s request."
+    },
+    {
+      "id": "fieldwork-workshop",
+      "release_id": "FW-WORKSHOP",
+      "label": "FIELDWORK · LIVING",
+      "title": "Workshop",
+      "href": "fieldworks/workshop/",
+      "author": "Brad Necyk",
+      "date": "2026-11-12",
+      "publication_state": "living",
+      "form": "generative-art",
+      "world": "cyberdelic-os",
+      "register": "play",
+      "themes": [
+        "photography",
+        "stillness",
+        "reflection",
+        "attention",
+        "light",
+        "gesture"
+      ],
+      "excerpt": "After Jeff Wall’s Picture for Women, two figures hold a pose while the light ebbs and returns. Lean a little into the room.",
+      "rationale": "Published in Fieldworks at the artist’s request."
     }
   ]
 }

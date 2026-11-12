@@ -564,21 +564,7 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: no-referrer
 
-/artwork-bundles/*
-  Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self' https://mempool.space https://blockstream.info https://ordinals.com; frame-src 'self'; base-uri 'none'; form-action 'none'
-  X-Frame-Options: DENY
-  Referrer-Policy: no-referrer
-  X-Content-Type-Options: nosniff
-  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
-
-/artwork-bundles
-  Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self' https://mempool.space https://blockstream.info https://ordinals.com; frame-src 'self'; base-uri 'none'; form-action 'none'
-  X-Frame-Options: DENY
-  Referrer-Policy: no-referrer
-  X-Content-Type-Options: nosniff
-  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
-
-/artwork-bundles.json
+/artwork-bundles*
   Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self' https://mempool.space https://blockstream.info https://ordinals.com; frame-src 'self'; base-uri 'none'; form-action 'none'
   X-Frame-Options: DENY
   Referrer-Policy: no-referrer
@@ -696,3 +682,17 @@
   Referrer-Policy: no-referrer
   X-Content-Type-Options: nosniff
   Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=(), autoplay=(self)
+
+/fieldworks/workshop/*
+  Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self'; frame-src 'self'; base-uri 'none'; form-action 'none'
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  X-Frame-Options: DENY
+
+/fieldwork-runtime/workshop/*
+  Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self'; frame-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'self'
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  X-Frame-Options: SAMEORIGIN

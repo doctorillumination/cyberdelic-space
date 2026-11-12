@@ -1,0 +1,2494 @@
+{
+  "schema": "cyberdelic.space/fieldwork-release-v1",
+  "slug": "workshop",
+  "edition": "cycles-workshop",
+  "published_at": "2026-11-12T18:20:26Z",
+  "release_id": "692c2375c6e5e87d39861447ebcdde0ac4615fe3db8c0ce4465fccb8ae9dee73",
+  "source_record": {
+    "slug": "workshop",
+    "project": "picture-for-women",
+    "repository": "https://github.com/doctorillumination/picture-for-women",
+    "revision": "e916bb8625df7f60c4687391c4eceaee1f10f6fe",
+    "edition": "cycles-workshop",
+    "source_path": "docs/",
+    "source_files": [
+      {
+        "path": ".nojekyll",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "app.js",
+        "sha256": "6c2a09fd52fa370441ab682b15a2215272ee71ec72ccbd5e2577a5ca0f704240"
+      },
+      {
+        "path": "assets/alignment/flow-000.webp",
+        "sha256": "47d896672adc476ba0898423734635579210aa3938629b0c53788d6adb44c5b2"
+      },
+      {
+        "path": "assets/alignment/flow-001.webp",
+        "sha256": "685f1b39e446f03fd882f435431169b0e2c2b1e63a1571ded5e30ef7fade1565"
+      },
+      {
+        "path": "assets/alignment/flow-002.webp",
+        "sha256": "6527abede426a74c7c9f05e6861de313d1c6d3997ea5b93610520c0961a493e2"
+      },
+      {
+        "path": "assets/alignment/flow-003.webp",
+        "sha256": "ebe1a6e9fa772f347b005ed2ce80281b7fa42d6ca215c8883c2b841ae60aeefd"
+      },
+      {
+        "path": "assets/alignment/flow-004.webp",
+        "sha256": "c7aab554535aa35a6039e7fa9cf1b5ad46fdecd25e2c3fb4670e64579160dc32"
+      },
+      {
+        "path": "assets/alignment/flow-005.webp",
+        "sha256": "f8df69a49bfdd1683e2c5444a8f1fa922907bc3da549abe23786013bee8f7d61"
+      },
+      {
+        "path": "assets/alignment/flow-006.webp",
+        "sha256": "c6ecd02d066fda84eff8a8257294402f8d96c2a231c1db29f0c42b8ebf77998b"
+      },
+      {
+        "path": "assets/alignment/flow-007.webp",
+        "sha256": "a8ae8b0509ec736228d0ec34ce6a8f46055a65166f7bfe322fd36a4aaf7a4612"
+      },
+      {
+        "path": "assets/alignment/flow-008.webp",
+        "sha256": "1b582d87582e15ef4f89e94e3f294ce25f6c530b744d5b36be11a75ee18da676"
+      },
+      {
+        "path": "assets/alignment/flow-009.webp",
+        "sha256": "f478469916da4e828dab97b806d6de50657f3dd864986125b22dbecb726083e5"
+      },
+      {
+        "path": "assets/alignment/flow-010.webp",
+        "sha256": "6578e7656922c44e9465483d3ccf13939848bdcca518168213c6105cfc01c115"
+      },
+      {
+        "path": "assets/alignment/flow-011.webp",
+        "sha256": "a3a3c103fbbda367e69db784fec871121d02b2819015868cab8a8a6cd31093de"
+      },
+      {
+        "path": "assets/alignment/flow-012.webp",
+        "sha256": "2040124556bf031b4d2c4920230086aadfdd1aeaee0be64ee85f23142644dc63"
+      },
+      {
+        "path": "assets/alignment/flow-013.webp",
+        "sha256": "ebe2e531a2d230593ead6864484a69f30e361a10322d87b7131a2a41f45ab555"
+      },
+      {
+        "path": "assets/alignment/flow-014.webp",
+        "sha256": "fe906e6f6a32b7e686a5276e7e522fea1676f192b41664865414e42b67788426"
+      },
+      {
+        "path": "assets/alignment/flow-015.webp",
+        "sha256": "d86df4ec58a80c7445c5248584caf14c02f5f49b25113fe603283bad5f9884d7"
+      },
+      {
+        "path": "assets/alignment/flow-016.webp",
+        "sha256": "87b76c80f7da72027bf4d097a2b12f79dd3156deae1f9a740972038f96f034a1"
+      },
+      {
+        "path": "assets/alignment/flow-017.webp",
+        "sha256": "591ef748c794074548336ad7c659792ba6b0ac21aa0d97fecd2b4ef661201596"
+      },
+      {
+        "path": "assets/alignment/flow-018.webp",
+        "sha256": "91ebcd2bac07443cc144913e6407c675bc530441270737cde5580bb199c7dbc8"
+      },
+      {
+        "path": "assets/alignment/flow-019.webp",
+        "sha256": "effd53664d5bc3e651b61fe76f44d97f3f14bafd26950413ed848943a6bfa2e7"
+      },
+      {
+        "path": "assets/alignment/flow-020.webp",
+        "sha256": "e3c225890ce1f1a775643d9079af6545bfee54533e34f532dd4a5d2c2c8198d4"
+      },
+      {
+        "path": "assets/alignment/flow-021.webp",
+        "sha256": "5f3f863e58923bf3010813f7886476d756691c167cd12d719532317c6847d01e"
+      },
+      {
+        "path": "assets/alignment/flow-022.webp",
+        "sha256": "da749ca2ffb82e40d3fdf2f89206466ced6c95e9e7c26330b47a8d4e4a379e0c"
+      },
+      {
+        "path": "assets/alignment/flow-023.webp",
+        "sha256": "1d953129a8581ecac2a5412fb83beff7b64991e8c22d172abbd783307035624b"
+      },
+      {
+        "path": "assets/alignment/flow-024.webp",
+        "sha256": "bcfcac45cbcfd351302fbc5caa4e3f5252c8d039e37e752cf127821b887c6714"
+      },
+      {
+        "path": "assets/alignment/flow-025.webp",
+        "sha256": "005bc4848e5ed5923bf67d1a533c7ad4bfbda5102aef1faf540fe53b065ce6b5"
+      },
+      {
+        "path": "assets/alignment/flow-026.webp",
+        "sha256": "65708aa02eaac73f71d0dd2bfe672352a7e77abe061e667d6031a6291cb2612f"
+      },
+      {
+        "path": "assets/alignment/flow-027.webp",
+        "sha256": "6df45a1cee24c444d5a481d0d01d41518e21b04d0cb7c10c369c2f04bfdaedfc"
+      },
+      {
+        "path": "assets/alignment/flow-028.webp",
+        "sha256": "670b10692e8d2532de05b270e2c9ec879bd6ba4d8bd408a7620208590d30affb"
+      },
+      {
+        "path": "assets/alignment/flow-029.webp",
+        "sha256": "39f56ef6b2845d980283296fc1c05c882d6563eb675689cb446e973dbc566534"
+      },
+      {
+        "path": "assets/alignment/flow-030.webp",
+        "sha256": "54d5835f950826ccb05223c2b368f4556307aa7864c3e233a60045bc0cfb2750"
+      },
+      {
+        "path": "assets/alignment/flow-031.webp",
+        "sha256": "a6f88d66f680d88c3ddd7f6bc8c5cca1a6b02f2afb0b8312c9a0e11e591ddda8"
+      },
+      {
+        "path": "assets/alignment/flow-032.webp",
+        "sha256": "c414b61ce8206b05d60e277e182b792c3dc07663baeb247b3ddcc93b3e82557f"
+      },
+      {
+        "path": "assets/alignment/flow-033.webp",
+        "sha256": "0b8915c141cca882bf5c09e36ac983684f9aa8cbb72c916e8f2df1611b837cd3"
+      },
+      {
+        "path": "assets/alignment/flow-034.webp",
+        "sha256": "0e11641148309373b186ee5557f462d77aeafd102d32eec6b09fd209144fff4a"
+      },
+      {
+        "path": "assets/baked/color-000.webp",
+        "sha256": "b3c62b9e3d09bd7644f355f9c215c815b694b895b1a900f356c0a85acae93871"
+      },
+      {
+        "path": "assets/baked/color-001.webp",
+        "sha256": "bd10acce099462f0215ece89db1ba3ec58274c47d557e7bd61728941e2c98c41"
+      },
+      {
+        "path": "assets/baked/color-002.webp",
+        "sha256": "39918522b6e9014320eb26aae2355f5eb9a88a89103a77df26d5a0d89a24cbc9"
+      },
+      {
+        "path": "assets/baked/color-003.webp",
+        "sha256": "640f7e2ecd5dc44c3b5fa8e287efda7efaac7d86bf8bfd5864b0eb7f68865533"
+      },
+      {
+        "path": "assets/baked/color-004.webp",
+        "sha256": "3192a358b603cfad61aa81e42a214ef977448c77ba89201f1338f3d9ae2710de"
+      },
+      {
+        "path": "assets/baked/color-005.webp",
+        "sha256": "b374b8b23459da06e80eb47ee28cc7d8d5d118e12247fbbeac227794d0ed4c09"
+      },
+      {
+        "path": "assets/baked/color-006.webp",
+        "sha256": "6c3524f42aae81221312323c24cc47087b5ec973a9c34c4a090b0e72bb7dfc38"
+      },
+      {
+        "path": "assets/baked/color-007.webp",
+        "sha256": "b1b182417696eb9a0ac043751b3811cf4ea2092b55369263f3d575f9f19ffc17"
+      },
+      {
+        "path": "assets/baked/color-008.webp",
+        "sha256": "23ff39c8ddf0444b0cc7194c581f8222bdfceb4519925b0994f5d145a6ab91a3"
+      },
+      {
+        "path": "assets/baked/color-009.webp",
+        "sha256": "4c5edfb7bd60ff6bc30df75cd2bdc0b249935077dc6b5623273f58a7c516dc01"
+      },
+      {
+        "path": "assets/baked/color-010.webp",
+        "sha256": "1bac79ffa83744d880d51978dd5f3da861d2aed481b38f4b850e0bd9d348f414"
+      },
+      {
+        "path": "assets/baked/color-011.webp",
+        "sha256": "8b884e6d4dc62a48c81cdeaac0fdc7771586f93c72963cd8872f37c764795a86"
+      },
+      {
+        "path": "assets/baked/color-012.webp",
+        "sha256": "a1364d1a0d60c03982d2638559fb2d27d2bd3e1dfb6dd52252ae0cc137fa57fa"
+      },
+      {
+        "path": "assets/baked/color-013.webp",
+        "sha256": "e85d2b4bb1dbaafe423a37c67cd2cd31259677423b327f60c39510d50ca44391"
+      },
+      {
+        "path": "assets/baked/color-014.webp",
+        "sha256": "ee5a0335615cbcb5ba03457372b223429bf2396e56b2d02ada5f2fae5739ae52"
+      },
+      {
+        "path": "assets/baked/color-015.webp",
+        "sha256": "e1cca1503eb8ac1261fb282b2c0d87cdc7c874799efb7aa5e7c448f2c6f0ef21"
+      },
+      {
+        "path": "assets/baked/color-016.webp",
+        "sha256": "1f34c5198e28624e476950c33cf27cb42088b24897595ad845da677885ecdacc"
+      },
+      {
+        "path": "assets/baked/color-017.webp",
+        "sha256": "a862a8ef9935bb0d4e1073a2b9395cff6541f5700a2ce8f32a8485598ce53a9e"
+      },
+      {
+        "path": "assets/baked/color-018.webp",
+        "sha256": "5c6d7075b5c1cb5c428adbe17b40fa6508dc35dc8906c715f389fd7f0350f3e3"
+      },
+      {
+        "path": "assets/baked/color-019.webp",
+        "sha256": "35db6838c0bec5f31ffc66c24e03b8b0e7b4a532991e6ad2f9630a83bbecf42d"
+      },
+      {
+        "path": "assets/baked/color-020.webp",
+        "sha256": "8058e31a28c0cb2ba44a79a347f15f9f0dc655fbaacc51c82c0e69a4ac642c53"
+      },
+      {
+        "path": "assets/baked/color-021.webp",
+        "sha256": "15d8c615c9e49ca66fd02d75a6fe57c88537f4c252f86cb1a47956dc07afef44"
+      },
+      {
+        "path": "assets/baked/color-022.webp",
+        "sha256": "d1e7635ea50500745af2a89f67cfd787bc7313b29c47041613c9300d456d7cc0"
+      },
+      {
+        "path": "assets/baked/color-023.webp",
+        "sha256": "84f6bd008ec901a48a44628ff8ffccd1e79d881ed0209e30cc14f8bccb600b0e"
+      },
+      {
+        "path": "assets/baked/color-024.webp",
+        "sha256": "3377ba795d0b4cb1c154e44e1e2d4fd22ef68f4b63f00d6a127a92dcc5c0ff11"
+      },
+      {
+        "path": "assets/baked/color-025.webp",
+        "sha256": "90b2c06c68eb54a038c6c7a2eb8280ac2fc8ea77b801abf2376be041e64da41e"
+      },
+      {
+        "path": "assets/baked/color-026.webp",
+        "sha256": "296f0c0f28e3a4318b0bb2b07404ade63e91d683c10381c293e7e2e5904d1951"
+      },
+      {
+        "path": "assets/baked/color-027.webp",
+        "sha256": "fadbe8a3adabe22592ff7f3ffeef2c052127f1ba416e7fd68f178f0db725180e"
+      },
+      {
+        "path": "assets/baked/color-028.webp",
+        "sha256": "c94ba0e90f84f721e3e85763f2a8c74528e1d29c0a04bb2753f2066f8fb9d1a8"
+      },
+      {
+        "path": "assets/baked/color-029.webp",
+        "sha256": "472443cf6bd5d79021b3b9cf16724803c1fc15a0c900f4ece57933e446f3edaf"
+      },
+      {
+        "path": "assets/baked/color-030.webp",
+        "sha256": "4551678c660f58a5ff42054f3e88d34bd164ba4053c0f9cf972647a5154cb1e5"
+      },
+      {
+        "path": "assets/baked/color-031.webp",
+        "sha256": "c22e99a99da76ac2191faa81f58e07924fecc741a012d7a2f216b8a4bb533b50"
+      },
+      {
+        "path": "assets/baked/color-032.webp",
+        "sha256": "4f9f62f4c6f4786a5c26bce8ccbeaf576f01e9aa111fb9aaca46f11443529fce"
+      },
+      {
+        "path": "assets/baked/color-033.webp",
+        "sha256": "21aaef96340f4fa76701c9fcc43168ae113e6977732a18f61dd5f6149da028e5"
+      },
+      {
+        "path": "assets/baked/color-034.webp",
+        "sha256": "1208fd060fa2b9ee0b416f7f6820407660df610bcf5839beb4e3ad5392e0b85d"
+      },
+      {
+        "path": "assets/baked/depth-000.png",
+        "sha256": "51bc0b53d0d769dfb985399d3517de67a0ff9e54f3c58053aac15ec9a412b3ff"
+      },
+      {
+        "path": "assets/baked/depth-001.png",
+        "sha256": "320a84ec68096469d2675a8d1d421c53df8339b32c927eeaa48ab3e99fd88fdd"
+      },
+      {
+        "path": "assets/baked/depth-002.png",
+        "sha256": "2290f95c359ad2e145a39be0d3a76bd503331a0b65bc762018434e41c94faac4"
+      },
+      {
+        "path": "assets/baked/depth-003.png",
+        "sha256": "e0fd2524ba2c1fc7f2a701abf547b8bb60336230983e9371a25fa3ba44b0b905"
+      },
+      {
+        "path": "assets/baked/depth-004.png",
+        "sha256": "96520cb1fc3d1b7747598ada33c8f50025dc3ed5dc356cf3ff04d794730903c4"
+      },
+      {
+        "path": "assets/baked/depth-005.png",
+        "sha256": "6a51736ff4285129f6ebfcac280b167f4209f963f310d1656bce7f102192de5b"
+      },
+      {
+        "path": "assets/baked/depth-006.png",
+        "sha256": "8405836a1acbd8cc64e9afaa8cdee5831fd2a2d27b40a7acb1ce6765883e8c1b"
+      },
+      {
+        "path": "assets/baked/depth-007.png",
+        "sha256": "83bcade930815d6ce30e392343a0af4477e07be337397d95b94fa9f290f9fc60"
+      },
+      {
+        "path": "assets/baked/depth-008.png",
+        "sha256": "9dd9cdc0b09560106acadcb6818ae90ef3df2723068427f0fe19411f4b9bb548"
+      },
+      {
+        "path": "assets/baked/depth-009.png",
+        "sha256": "ed8d6b9a0c25842553c73dddd3645c5d78a644bfcc8b22dc773e6373a7337057"
+      },
+      {
+        "path": "assets/baked/depth-010.png",
+        "sha256": "70f2d2ac3a890946eff658e261c275e221faccf6cfd9a22b5f0cde475a1e26d1"
+      },
+      {
+        "path": "assets/baked/depth-011.png",
+        "sha256": "e5ad4cdaa2bb84a374d4ae400bf507d5e23fd84f74404a4d6a8579375512b90f"
+      },
+      {
+        "path": "assets/baked/depth-012.png",
+        "sha256": "bedefdc99c111fbac87dd09fd462f58df4eed8ddbe3766a7f1e256a1918e8cdc"
+      },
+      {
+        "path": "assets/baked/depth-013.png",
+        "sha256": "b9463a00c2a3f6dc126e4fa18ef17ba9fb34e5162f0c4c87c5008f21979589f2"
+      },
+      {
+        "path": "assets/baked/depth-014.png",
+        "sha256": "315226b94a6533c8a1ed082b8c0eec5e75014424ab936867a1f03c899d8f741a"
+      },
+      {
+        "path": "assets/baked/depth-015.png",
+        "sha256": "702a2fde7a0455bbe8e5a5935249dce456dec7ff460290550e80d00a3406d64b"
+      },
+      {
+        "path": "assets/baked/depth-016.png",
+        "sha256": "c3110da32d722aeeedc999570ec002945ece96a4d05dec1b97715ed2fc8c5daf"
+      },
+      {
+        "path": "assets/baked/depth-017.png",
+        "sha256": "7c0079c3bc3ee317a68b4b08154ad4d2ba905a71cd2edc507f2c155b950ec7bc"
+      },
+      {
+        "path": "assets/baked/depth-018.png",
+        "sha256": "2d7d0e508fe12d7171670a4f03a57f20212eb331d2f34cc49422c0f006ede98a"
+      },
+      {
+        "path": "assets/baked/depth-019.png",
+        "sha256": "8b3bd8cf3e7f41dfb66fc5635d6375c48298216e9edbdeafcc068b25c03ff1fb"
+      },
+      {
+        "path": "assets/baked/depth-020.png",
+        "sha256": "3646db4fe364c0fd23722a715e7dc7946b567415f20baa1fb83a64b61697c629"
+      },
+      {
+        "path": "assets/baked/depth-021.png",
+        "sha256": "9ad7dd38aa6a683691701824ee2a60913b3da26fc25d361dccdfb77c1ecf5186"
+      },
+      {
+        "path": "assets/baked/depth-022.png",
+        "sha256": "856e923da02f79cac8b8818257e7b793dcc369fd2cc80b217388c48b24b10715"
+      },
+      {
+        "path": "assets/baked/depth-023.png",
+        "sha256": "3ba041ca48045adbdde80b45500f809167a8257e4c519a29814b1e75d9441b95"
+      },
+      {
+        "path": "assets/baked/depth-024.png",
+        "sha256": "3cc6aff8967a04cd5362e95e463e7450c74c044aa09ffcbcc7575c51e5901c24"
+      },
+      {
+        "path": "assets/baked/depth-025.png",
+        "sha256": "1a2ef0391f2d731866381f00c572a40cc5fee6ddd8275f1ce0c94bde7a694638"
+      },
+      {
+        "path": "assets/baked/depth-026.png",
+        "sha256": "fbed452eea609cf78f849c58b19340dda24ff8026466218b328d2abacddb5884"
+      },
+      {
+        "path": "assets/baked/depth-027.png",
+        "sha256": "667db28b0d7f877c964642ebfc66dee88cd277a8a316e43f6c41e0f703bde79d"
+      },
+      {
+        "path": "assets/baked/depth-028.png",
+        "sha256": "f046184729bef214c07d390f33d8ee86a2d39004826af7b89fae5cb8cff6b806"
+      },
+      {
+        "path": "assets/baked/depth-029.png",
+        "sha256": "79164d51f47f669bf13ec2aa4c1ca2abe25e277b4278bddcb3a8e91b1ab1f1a4"
+      },
+      {
+        "path": "assets/baked/depth-030.png",
+        "sha256": "7b8fd040cc9495a45ccd56d88854848324cde1a0ae5c9d7512ac630335b30b4d"
+      },
+      {
+        "path": "assets/baked/depth-031.png",
+        "sha256": "ced6d74f14b75085edabec796a0581188d5d8bde76901fc416cc106bfb5b1547"
+      },
+      {
+        "path": "assets/baked/depth-032.png",
+        "sha256": "310a639a42257479b10886ba397bcb0bb31321b7545d1594e4bc25df8807e4cf"
+      },
+      {
+        "path": "assets/baked/depth-033.png",
+        "sha256": "b73fca746b7c88fa4ad5ff262dbe737db5935e0ebd8dd5349ad49cb9d85eb46a"
+      },
+      {
+        "path": "assets/baked/depth-034.png",
+        "sha256": "9de743bba0566082ad47dc6a33eb6a53a469cfd910ecd32fd44a27c4410d653d"
+      },
+      {
+        "path": "assets/baked/manifest.json",
+        "sha256": "0941cfb78e08ab721e2d4cc72428ef1fe5b6727a80d4efc6b3422d2bc21eb1bc"
+      },
+      {
+        "path": "assets/relight/depth-000.png",
+        "sha256": "94cc87b271f6f188d7e3b5d2619a3786d2030c73281d11b50ee6603f39f696c7"
+      },
+      {
+        "path": "assets/relight/depth-001.png",
+        "sha256": "0302be540279d548e3b290e9c83172b6ee3372f874fc6afb7c10c927d7e3b0b8"
+      },
+      {
+        "path": "assets/relight/depth-002.png",
+        "sha256": "1cc16c152e03daf26583068a7439aaa6d2abe8d33163b16b3479cfb526e069e7"
+      },
+      {
+        "path": "assets/relight/depth-003.png",
+        "sha256": "2e57777e8bce6298a960027c6d10d1e01822e0bccb1234cbf2721327d2e24b2c"
+      },
+      {
+        "path": "assets/relight/depth-004.png",
+        "sha256": "da23059fb7aded87de4f47ff77077b2390ea4fb0e61f849ecb3241a2e4b8e88e"
+      },
+      {
+        "path": "assets/relight/depth-005.png",
+        "sha256": "6e140c228deb6feb36e3f15ecbb9b5a0fb85db14c0a004a3366d9ab780fbcaa6"
+      },
+      {
+        "path": "assets/relight/depth-006.png",
+        "sha256": "6cabb5c62db4e18325166727900f353caa872be24eb51d96007e39fd14c1a1af"
+      },
+      {
+        "path": "assets/relight/depth-007.png",
+        "sha256": "26726d3d69cdfa69cd920472d05666db79291ee550d2153038db0d2e251e1b97"
+      },
+      {
+        "path": "assets/relight/depth-008.png",
+        "sha256": "666105c22bf504ec15ed8a5e88f15f49303f0df6862af31543a59047ea21b55d"
+      },
+      {
+        "path": "assets/relight/depth-009.png",
+        "sha256": "ffaed88d5516188637f0d571d3b9d0b360b05a755f94e839e65859815356f8b3"
+      },
+      {
+        "path": "assets/relight/depth-010.png",
+        "sha256": "451241e64edaff4f5a8f28e0e5fa21bdd1ef4c248cf96bfb031612b9668e1421"
+      },
+      {
+        "path": "assets/relight/depth-011.png",
+        "sha256": "7a48af7d6bc81728589c245e72519842a5d0d82044bc04085a475c42859a07ca"
+      },
+      {
+        "path": "assets/relight/depth-012.png",
+        "sha256": "1b7be227eab5397a32eea560cc2d20788113b06a062e792aaa515a8ede3a70ca"
+      },
+      {
+        "path": "assets/relight/depth-013.png",
+        "sha256": "1887ae54d3a8a860807fbd00d9105264dde14c726b438deb6dc2a6981bd444e7"
+      },
+      {
+        "path": "assets/relight/depth-014.png",
+        "sha256": "cbc4d0a9d129eeed9afb5bfb17d3bb52e6c4b24d54794d9611f3326614184dc9"
+      },
+      {
+        "path": "assets/relight/depth-015.png",
+        "sha256": "169d5bc324b3c5e25cc64393a1885c7f9407b3a9489fc51c165205a9e2ed00e8"
+      },
+      {
+        "path": "assets/relight/depth-016.png",
+        "sha256": "25f60fb542a6d2ab6063993999c75fba6dba1a2687888b85345a5f327f074dd6"
+      },
+      {
+        "path": "assets/relight/depth-017.png",
+        "sha256": "3eadddeb820c30d9c387558fa0f131a3c1e0b3a90b601b4ea58f7a623a5cc5a5"
+      },
+      {
+        "path": "assets/relight/depth-018.png",
+        "sha256": "0f7428228ac0ce2cf21f55dbd80000c6e031a28dc541e0494067bf7a4cb364f4"
+      },
+      {
+        "path": "assets/relight/depth-019.png",
+        "sha256": "c871e09fd3b5860b743e230b99b6528835d974183df584087235bd6fadd76fdf"
+      },
+      {
+        "path": "assets/relight/depth-020.png",
+        "sha256": "ef223cbd9e7715913eae03855a90e8bc3fdfe917c5526e2267561d313a15480b"
+      },
+      {
+        "path": "assets/relight/depth-021.png",
+        "sha256": "b6de6a173fc840472a0a751264599a52ff72546e8857b403d25cedb02fbfc12e"
+      },
+      {
+        "path": "assets/relight/depth-022.png",
+        "sha256": "f17f5d5e62ed6a4a2f132d66f987de1833a89caed34770e6cebf7eed307233ab"
+      },
+      {
+        "path": "assets/relight/depth-023.png",
+        "sha256": "c28f6219982d470fb68ac5dc97e77e8f4224cbf26fa8cf1199b5620459a5f925"
+      },
+      {
+        "path": "assets/relight/depth-024.png",
+        "sha256": "045cf09307af1a26109728dafd7c4b89172a2d546020a401692b888845f64472"
+      },
+      {
+        "path": "assets/relight/depth-025.png",
+        "sha256": "eb029ecceab92c69c409c43801f81dcc92bc8ea7bd7062618bb124f34d6824d6"
+      },
+      {
+        "path": "assets/relight/depth-026.png",
+        "sha256": "3cebad1d10320a4eb732af0ac1d90595e2c6f80741d63bffff73351e3d1c9237"
+      },
+      {
+        "path": "assets/relight/depth-027.png",
+        "sha256": "1b945740972fdf3748d28d8ed27f48c92111dac042e009dd2e0268c2fc0bcf44"
+      },
+      {
+        "path": "assets/relight/depth-028.png",
+        "sha256": "2de3cccd90a7313ac5125ca0d31ddad505bb23a7c33aa319ea1cb1081d7e7b5d"
+      },
+      {
+        "path": "assets/relight/depth-029.png",
+        "sha256": "b1531af62c1272e76c537f0d8c6ed14f6b9e83bb950e13216e2e7a64e8ce051f"
+      },
+      {
+        "path": "assets/relight/depth-030.png",
+        "sha256": "4d04c462331c63695c7a15e29d83bfe12ef4ea73cfbc484860723f9a7314032e"
+      },
+      {
+        "path": "assets/relight/depth-031.png",
+        "sha256": "c9ee8cba507f3c54d7ebad389a68156e1369df0476ed364eaaba1a9d415c4a79"
+      },
+      {
+        "path": "assets/relight/depth-032.png",
+        "sha256": "444897d47887afee8e61868e2b30a8276b0a4471e26c9ea48335e857b7e42b9f"
+      },
+      {
+        "path": "assets/relight/depth-033.png",
+        "sha256": "39ff62523e97d69a302db2bca32fe7d0fd1d11a7740f057e993500db61e7e5e1"
+      },
+      {
+        "path": "assets/relight/depth-034.png",
+        "sha256": "7627a2c11f4d75b76021d6d07603db9ebbdc2dadd3f1aefd66e89f42ecfac982"
+      },
+      {
+        "path": "assets/relight/display.png",
+        "sha256": "ea8cc6859daad0bd966c905e2267445d97f4a935479a1259507e19daba1aa638"
+      },
+      {
+        "path": "assets/relight/light-000.webp",
+        "sha256": "2a11bfe83736b63e06c55ef41174a702639fc710b694f7c06080913eabbeaa5b"
+      },
+      {
+        "path": "assets/relight/light-001.webp",
+        "sha256": "fc831d177806e1a755dc8e3083b1688ebf205475b613240eb15ea2ee8e385338"
+      },
+      {
+        "path": "assets/relight/light-002.webp",
+        "sha256": "fb99b567963a965e48d1cec1b752e87e5c79ba59567bf367b7bdd3f75bbeef9a"
+      },
+      {
+        "path": "assets/relight/light-003.webp",
+        "sha256": "850f59645a28dd0880575fa0c998c46e2e5a2ceabc59b3b455e2db56d33336b3"
+      },
+      {
+        "path": "assets/relight/light-004.webp",
+        "sha256": "6c2bd66927d0661d361297f7643d3c80300fe846352fcefb7bfcd411fe285bfd"
+      },
+      {
+        "path": "assets/relight/light-005.webp",
+        "sha256": "84fd0a58354dacd6f2f1aaff3b10c9d396bcbd127b5c8c1feaf77a9909521b7a"
+      },
+      {
+        "path": "assets/relight/light-006.webp",
+        "sha256": "867e6b7714bb63c63d322618dee803305e776309b07bdac7521eae1ef8ae0017"
+      },
+      {
+        "path": "assets/relight/light-007.webp",
+        "sha256": "0dbb19fb0705436819dc83aa592c745e51fbebc39da8e83b34aa3810760a1d05"
+      },
+      {
+        "path": "assets/relight/light-008.webp",
+        "sha256": "ad154cf63200f7603c49f468ea60769cd8f96971d90daa5c4ac6df6ac25a9335"
+      },
+      {
+        "path": "assets/relight/light-009.webp",
+        "sha256": "b5cde1efe4a4733d806b303543d55078d69a36712e5ab8b0fdbfa14f1e341dcc"
+      },
+      {
+        "path": "assets/relight/light-010.webp",
+        "sha256": "227839769e84ca9f021b3741358fcaa5cc192326e07d7b09ba90bbe9178429ef"
+      },
+      {
+        "path": "assets/relight/light-011.webp",
+        "sha256": "016de09228c4d037f6cb61d6266c77bddde0c5445fe87528e453e6a7947b7c5b"
+      },
+      {
+        "path": "assets/relight/light-012.webp",
+        "sha256": "edeb9ffd0c7fc9990e7b383ba12590c89fef56696c4dd3310cfbbc963e99ae8f"
+      },
+      {
+        "path": "assets/relight/light-013.webp",
+        "sha256": "4fe57837e7a0983114af44e76b7528fa7465e47e3832ceca6f7c86188ffac6e1"
+      },
+      {
+        "path": "assets/relight/light-014.webp",
+        "sha256": "883b422af4ca64acc8033566c7d8f60fcb0435a3e43b29f8f189a26104d5cf0c"
+      },
+      {
+        "path": "assets/relight/light-015.webp",
+        "sha256": "2c8ca6a574793ab6780a4d0fe4bec353225293edf2a2659feb237cc158d34d43"
+      },
+      {
+        "path": "assets/relight/light-016.webp",
+        "sha256": "9cd03dc63e7770461bf8731bccaef8c96793089163ea885867e5bb4dfef497af"
+      },
+      {
+        "path": "assets/relight/light-017.webp",
+        "sha256": "68edc76634abbe415abc4c71e843e074b1d85466a09e16e3e65681ed27429b76"
+      },
+      {
+        "path": "assets/relight/light-018.webp",
+        "sha256": "3f11c4b97849cbfa9401eff99ad3020cd710c27fc5f797a8dede7f40b5e74403"
+      },
+      {
+        "path": "assets/relight/light-019.webp",
+        "sha256": "b5150ebb18df505131306bd289a9c25cafe30e3c3ecb318be9ba96f166a65031"
+      },
+      {
+        "path": "assets/relight/light-020.webp",
+        "sha256": "0d6a8f7e15574fe7b45ae652fc98e535d195b4d5fe7fc612f39faf6fb3c242a4"
+      },
+      {
+        "path": "assets/relight/light-021.webp",
+        "sha256": "7a6e30a2b8dac9e9bd95d1e47fb83d96fe6cfbb91ed91ac0a1e33d26e2031355"
+      },
+      {
+        "path": "assets/relight/light-022.webp",
+        "sha256": "63d3c0d5ae28dc96bf25ac09fcae5a7fcf5473e397898398dd20c5135dc67145"
+      },
+      {
+        "path": "assets/relight/light-023.webp",
+        "sha256": "b0b3ac2734d4ba9a9fbeab7635829c712d11cc2f7a9dc08e49a9d979a30a8cc8"
+      },
+      {
+        "path": "assets/relight/light-024.webp",
+        "sha256": "9ddbc0ba07cb1ae27328119d22890dd20c85efd5757567946dd8a850cf0fc09e"
+      },
+      {
+        "path": "assets/relight/light-025.webp",
+        "sha256": "69c124bf91d41ca4409bd680e75cf51c391285668855ae1580c61e0bf3f3616a"
+      },
+      {
+        "path": "assets/relight/light-026.webp",
+        "sha256": "148afc4fdcbdaa08a59bd5382fceffedc31fab892c5f0e75f21836ef9f0b58d8"
+      },
+      {
+        "path": "assets/relight/light-027.webp",
+        "sha256": "35b965cdf76305dacf288a62cf6914235a8fbc1aeb34295c0059ea56fee3f9c7"
+      },
+      {
+        "path": "assets/relight/light-028.webp",
+        "sha256": "c9ec4c1cc1c8c353ddd1c6094bf58ed9f15dcba40c97052db0a03a2d1017eb9a"
+      },
+      {
+        "path": "assets/relight/light-029.webp",
+        "sha256": "0fa8865ec2d48aa0b153896f3f9fc8ce6da39a91002b1e89f92666a8f3c2aa50"
+      },
+      {
+        "path": "assets/relight/light-030.webp",
+        "sha256": "2dfa5e3a4811ee5b990e09cb8be4de86571b4cb42f424cb820d0fc5be0f161da"
+      },
+      {
+        "path": "assets/relight/light-031.webp",
+        "sha256": "af6d3a7f6a0abec0c0f001991839534ec4c14d878c98d4e6656fc684bc81d668"
+      },
+      {
+        "path": "assets/relight/light-032.webp",
+        "sha256": "63cffc845bd12c427c8b88978d8595232a24d056c7052b1cdb332b7e302d98c7"
+      },
+      {
+        "path": "assets/relight/light-033.webp",
+        "sha256": "a76a9a899d0138a8d50d9832ffa43282bc05bf445ec083a4e7e38f8e5593fefa"
+      },
+      {
+        "path": "assets/relight/light-034.webp",
+        "sha256": "ac323dfef94656161790fbd20a4edb1f30a774ad9065ac688adf23a69facc372"
+      },
+      {
+        "path": "baked-viewer.js",
+        "sha256": "1a0d7fe09fde195975b272e81402288689a0455360966b1aefe06edd61da4b27"
+      },
+      {
+        "path": "index.html",
+        "sha256": "2d05e580399ce98d7109b18f2d90b3151885fd6e0a4681356fa029d1bdde08af"
+      },
+      {
+        "path": "motion.js",
+        "sha256": "ffc1ea339dfeefad84bfa76f9e48f55a3c2c22501c29652c39aaba2d5f2b065b"
+      },
+      {
+        "path": "room-study.js",
+        "sha256": "8d224e15c63c32cab771455f9db1de6731380a23ec236c0a9791ae6314044485"
+      },
+      {
+        "path": "sound.js",
+        "sha256": "1e2d8109c3acfba45a75564552063bb04e1bb8ac008302005d6d2cbe4463905c"
+      },
+      {
+        "path": "style.css",
+        "sha256": "9d2362cdc75287af62199ec70035838e075b1eda60c77dd27ad19a3e4f48cacc"
+      },
+      {
+        "path": "vendor/THREE-LICENSE.txt",
+        "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+      },
+      {
+        "path": "vendor/three.core.js",
+        "sha256": "613e370f76638fdef83926642bf256dc9615684922de1ce1f63a8583e5d78578"
+      },
+      {
+        "path": "vendor/three.module.js",
+        "sha256": "104f56145899722094556490d787aae0617cc2fc3382f31df02d724ea1aee341"
+      }
+    ],
+    "packaged_files": [
+      {
+        "path": ".nojekyll",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "app.js",
+        "sha256": "6c2a09fd52fa370441ab682b15a2215272ee71ec72ccbd5e2577a5ca0f704240"
+      },
+      {
+        "path": "assets/alignment/flow-000.webp",
+        "sha256": "47d896672adc476ba0898423734635579210aa3938629b0c53788d6adb44c5b2"
+      },
+      {
+        "path": "assets/alignment/flow-001.webp",
+        "sha256": "685f1b39e446f03fd882f435431169b0e2c2b1e63a1571ded5e30ef7fade1565"
+      },
+      {
+        "path": "assets/alignment/flow-002.webp",
+        "sha256": "6527abede426a74c7c9f05e6861de313d1c6d3997ea5b93610520c0961a493e2"
+      },
+      {
+        "path": "assets/alignment/flow-003.webp",
+        "sha256": "ebe1a6e9fa772f347b005ed2ce80281b7fa42d6ca215c8883c2b841ae60aeefd"
+      },
+      {
+        "path": "assets/alignment/flow-004.webp",
+        "sha256": "c7aab554535aa35a6039e7fa9cf1b5ad46fdecd25e2c3fb4670e64579160dc32"
+      },
+      {
+        "path": "assets/alignment/flow-005.webp",
+        "sha256": "f8df69a49bfdd1683e2c5444a8f1fa922907bc3da549abe23786013bee8f7d61"
+      },
+      {
+        "path": "assets/alignment/flow-006.webp",
+        "sha256": "c6ecd02d066fda84eff8a8257294402f8d96c2a231c1db29f0c42b8ebf77998b"
+      },
+      {
+        "path": "assets/alignment/flow-007.webp",
+        "sha256": "a8ae8b0509ec736228d0ec34ce6a8f46055a65166f7bfe322fd36a4aaf7a4612"
+      },
+      {
+        "path": "assets/alignment/flow-008.webp",
+        "sha256": "1b582d87582e15ef4f89e94e3f294ce25f6c530b744d5b36be11a75ee18da676"
+      },
+      {
+        "path": "assets/alignment/flow-009.webp",
+        "sha256": "f478469916da4e828dab97b806d6de50657f3dd864986125b22dbecb726083e5"
+      },
+      {
+        "path": "assets/alignment/flow-010.webp",
+        "sha256": "6578e7656922c44e9465483d3ccf13939848bdcca518168213c6105cfc01c115"
+      },
+      {
+        "path": "assets/alignment/flow-011.webp",
+        "sha256": "a3a3c103fbbda367e69db784fec871121d02b2819015868cab8a8a6cd31093de"
+      },
+      {
+        "path": "assets/alignment/flow-012.webp",
+        "sha256": "2040124556bf031b4d2c4920230086aadfdd1aeaee0be64ee85f23142644dc63"
+      },
+      {
+        "path": "assets/alignment/flow-013.webp",
+        "sha256": "ebe2e531a2d230593ead6864484a69f30e361a10322d87b7131a2a41f45ab555"
+      },
+      {
+        "path": "assets/alignment/flow-014.webp",
+        "sha256": "fe906e6f6a32b7e686a5276e7e522fea1676f192b41664865414e42b67788426"
+      },
+      {
+        "path": "assets/alignment/flow-015.webp",
+        "sha256": "d86df4ec58a80c7445c5248584caf14c02f5f49b25113fe603283bad5f9884d7"
+      },
+      {
+        "path": "assets/alignment/flow-016.webp",
+        "sha256": "87b76c80f7da72027bf4d097a2b12f79dd3156deae1f9a740972038f96f034a1"
+      },
+      {
+        "path": "assets/alignment/flow-017.webp",
+        "sha256": "591ef748c794074548336ad7c659792ba6b0ac21aa0d97fecd2b4ef661201596"
+      },
+      {
+        "path": "assets/alignment/flow-018.webp",
+        "sha256": "91ebcd2bac07443cc144913e6407c675bc530441270737cde5580bb199c7dbc8"
+      },
+      {
+        "path": "assets/alignment/flow-019.webp",
+        "sha256": "effd53664d5bc3e651b61fe76f44d97f3f14bafd26950413ed848943a6bfa2e7"
+      },
+      {
+        "path": "assets/alignment/flow-020.webp",
+        "sha256": "e3c225890ce1f1a775643d9079af6545bfee54533e34f532dd4a5d2c2c8198d4"
+      },
+      {
+        "path": "assets/alignment/flow-021.webp",
+        "sha256": "5f3f863e58923bf3010813f7886476d756691c167cd12d719532317c6847d01e"
+      },
+      {
+        "path": "assets/alignment/flow-022.webp",
+        "sha256": "da749ca2ffb82e40d3fdf2f89206466ced6c95e9e7c26330b47a8d4e4a379e0c"
+      },
+      {
+        "path": "assets/alignment/flow-023.webp",
+        "sha256": "1d953129a8581ecac2a5412fb83beff7b64991e8c22d172abbd783307035624b"
+      },
+      {
+        "path": "assets/alignment/flow-024.webp",
+        "sha256": "bcfcac45cbcfd351302fbc5caa4e3f5252c8d039e37e752cf127821b887c6714"
+      },
+      {
+        "path": "assets/alignment/flow-025.webp",
+        "sha256": "005bc4848e5ed5923bf67d1a533c7ad4bfbda5102aef1faf540fe53b065ce6b5"
+      },
+      {
+        "path": "assets/alignment/flow-026.webp",
+        "sha256": "65708aa02eaac73f71d0dd2bfe672352a7e77abe061e667d6031a6291cb2612f"
+      },
+      {
+        "path": "assets/alignment/flow-027.webp",
+        "sha256": "6df45a1cee24c444d5a481d0d01d41518e21b04d0cb7c10c369c2f04bfdaedfc"
+      },
+      {
+        "path": "assets/alignment/flow-028.webp",
+        "sha256": "670b10692e8d2532de05b270e2c9ec879bd6ba4d8bd408a7620208590d30affb"
+      },
+      {
+        "path": "assets/alignment/flow-029.webp",
+        "sha256": "39f56ef6b2845d980283296fc1c05c882d6563eb675689cb446e973dbc566534"
+      },
+      {
+        "path": "assets/alignment/flow-030.webp",
+        "sha256": "54d5835f950826ccb05223c2b368f4556307aa7864c3e233a60045bc0cfb2750"
+      },
+      {
+        "path": "assets/alignment/flow-031.webp",
+        "sha256": "a6f88d66f680d88c3ddd7f6bc8c5cca1a6b02f2afb0b8312c9a0e11e591ddda8"
+      },
+      {
+        "path": "assets/alignment/flow-032.webp",
+        "sha256": "c414b61ce8206b05d60e277e182b792c3dc07663baeb247b3ddcc93b3e82557f"
+      },
+      {
+        "path": "assets/alignment/flow-033.webp",
+        "sha256": "0b8915c141cca882bf5c09e36ac983684f9aa8cbb72c916e8f2df1611b837cd3"
+      },
+      {
+        "path": "assets/alignment/flow-034.webp",
+        "sha256": "0e11641148309373b186ee5557f462d77aeafd102d32eec6b09fd209144fff4a"
+      },
+      {
+        "path": "assets/baked/color-000.webp",
+        "sha256": "b3c62b9e3d09bd7644f355f9c215c815b694b895b1a900f356c0a85acae93871"
+      },
+      {
+        "path": "assets/baked/color-001.webp",
+        "sha256": "bd10acce099462f0215ece89db1ba3ec58274c47d557e7bd61728941e2c98c41"
+      },
+      {
+        "path": "assets/baked/color-002.webp",
+        "sha256": "39918522b6e9014320eb26aae2355f5eb9a88a89103a77df26d5a0d89a24cbc9"
+      },
+      {
+        "path": "assets/baked/color-003.webp",
+        "sha256": "640f7e2ecd5dc44c3b5fa8e287efda7efaac7d86bf8bfd5864b0eb7f68865533"
+      },
+      {
+        "path": "assets/baked/color-004.webp",
+        "sha256": "3192a358b603cfad61aa81e42a214ef977448c77ba89201f1338f3d9ae2710de"
+      },
+      {
+        "path": "assets/baked/color-005.webp",
+        "sha256": "b374b8b23459da06e80eb47ee28cc7d8d5d118e12247fbbeac227794d0ed4c09"
+      },
+      {
+        "path": "assets/baked/color-006.webp",
+        "sha256": "6c3524f42aae81221312323c24cc47087b5ec973a9c34c4a090b0e72bb7dfc38"
+      },
+      {
+        "path": "assets/baked/color-007.webp",
+        "sha256": "b1b182417696eb9a0ac043751b3811cf4ea2092b55369263f3d575f9f19ffc17"
+      },
+      {
+        "path": "assets/baked/color-008.webp",
+        "sha256": "23ff39c8ddf0444b0cc7194c581f8222bdfceb4519925b0994f5d145a6ab91a3"
+      },
+      {
+        "path": "assets/baked/color-009.webp",
+        "sha256": "4c5edfb7bd60ff6bc30df75cd2bdc0b249935077dc6b5623273f58a7c516dc01"
+      },
+      {
+        "path": "assets/baked/color-010.webp",
+        "sha256": "1bac79ffa83744d880d51978dd5f3da861d2aed481b38f4b850e0bd9d348f414"
+      },
+      {
+        "path": "assets/baked/color-011.webp",
+        "sha256": "8b884e6d4dc62a48c81cdeaac0fdc7771586f93c72963cd8872f37c764795a86"
+      },
+      {
+        "path": "assets/baked/color-012.webp",
+        "sha256": "a1364d1a0d60c03982d2638559fb2d27d2bd3e1dfb6dd52252ae0cc137fa57fa"
+      },
+      {
+        "path": "assets/baked/color-013.webp",
+        "sha256": "e85d2b4bb1dbaafe423a37c67cd2cd31259677423b327f60c39510d50ca44391"
+      },
+      {
+        "path": "assets/baked/color-014.webp",
+        "sha256": "ee5a0335615cbcb5ba03457372b223429bf2396e56b2d02ada5f2fae5739ae52"
+      },
+      {
+        "path": "assets/baked/color-015.webp",
+        "sha256": "e1cca1503eb8ac1261fb282b2c0d87cdc7c874799efb7aa5e7c448f2c6f0ef21"
+      },
+      {
+        "path": "assets/baked/color-016.webp",
+        "sha256": "1f34c5198e28624e476950c33cf27cb42088b24897595ad845da677885ecdacc"
+      },
+      {
+        "path": "assets/baked/color-017.webp",
+        "sha256": "a862a8ef9935bb0d4e1073a2b9395cff6541f5700a2ce8f32a8485598ce53a9e"
+      },
+      {
+        "path": "assets/baked/color-018.webp",
+        "sha256": "5c6d7075b5c1cb5c428adbe17b40fa6508dc35dc8906c715f389fd7f0350f3e3"
+      },
+      {
+        "path": "assets/baked/color-019.webp",
+        "sha256": "35db6838c0bec5f31ffc66c24e03b8b0e7b4a532991e6ad2f9630a83bbecf42d"
+      },
+      {
+        "path": "assets/baked/color-020.webp",
+        "sha256": "8058e31a28c0cb2ba44a79a347f15f9f0dc655fbaacc51c82c0e69a4ac642c53"
+      },
+      {
+        "path": "assets/baked/color-021.webp",
+        "sha256": "15d8c615c9e49ca66fd02d75a6fe57c88537f4c252f86cb1a47956dc07afef44"
+      },
+      {
+        "path": "assets/baked/color-022.webp",
+        "sha256": "d1e7635ea50500745af2a89f67cfd787bc7313b29c47041613c9300d456d7cc0"
+      },
+      {
+        "path": "assets/baked/color-023.webp",
+        "sha256": "84f6bd008ec901a48a44628ff8ffccd1e79d881ed0209e30cc14f8bccb600b0e"
+      },
+      {
+        "path": "assets/baked/color-024.webp",
+        "sha256": "3377ba795d0b4cb1c154e44e1e2d4fd22ef68f4b63f00d6a127a92dcc5c0ff11"
+      },
+      {
+        "path": "assets/baked/color-025.webp",
+        "sha256": "90b2c06c68eb54a038c6c7a2eb8280ac2fc8ea77b801abf2376be041e64da41e"
+      },
+      {
+        "path": "assets/baked/color-026.webp",
+        "sha256": "296f0c0f28e3a4318b0bb2b07404ade63e91d683c10381c293e7e2e5904d1951"
+      },
+      {
+        "path": "assets/baked/color-027.webp",
+        "sha256": "fadbe8a3adabe22592ff7f3ffeef2c052127f1ba416e7fd68f178f0db725180e"
+      },
+      {
+        "path": "assets/baked/color-028.webp",
+        "sha256": "c94ba0e90f84f721e3e85763f2a8c74528e1d29c0a04bb2753f2066f8fb9d1a8"
+      },
+      {
+        "path": "assets/baked/color-029.webp",
+        "sha256": "472443cf6bd5d79021b3b9cf16724803c1fc15a0c900f4ece57933e446f3edaf"
+      },
+      {
+        "path": "assets/baked/color-030.webp",
+        "sha256": "4551678c660f58a5ff42054f3e88d34bd164ba4053c0f9cf972647a5154cb1e5"
+      },
+      {
+        "path": "assets/baked/color-031.webp",
+        "sha256": "c22e99a99da76ac2191faa81f58e07924fecc741a012d7a2f216b8a4bb533b50"
+      },
+      {
+        "path": "assets/baked/color-032.webp",
+        "sha256": "4f9f62f4c6f4786a5c26bce8ccbeaf576f01e9aa111fb9aaca46f11443529fce"
+      },
+      {
+        "path": "assets/baked/color-033.webp",
+        "sha256": "21aaef96340f4fa76701c9fcc43168ae113e6977732a18f61dd5f6149da028e5"
+      },
+      {
+        "path": "assets/baked/color-034.webp",
+        "sha256": "1208fd060fa2b9ee0b416f7f6820407660df610bcf5839beb4e3ad5392e0b85d"
+      },
+      {
+        "path": "assets/baked/depth-000.png",
+        "sha256": "51bc0b53d0d769dfb985399d3517de67a0ff9e54f3c58053aac15ec9a412b3ff"
+      },
+      {
+        "path": "assets/baked/depth-001.png",
+        "sha256": "320a84ec68096469d2675a8d1d421c53df8339b32c927eeaa48ab3e99fd88fdd"
+      },
+      {
+        "path": "assets/baked/depth-002.png",
+        "sha256": "2290f95c359ad2e145a39be0d3a76bd503331a0b65bc762018434e41c94faac4"
+      },
+      {
+        "path": "assets/baked/depth-003.png",
+        "sha256": "e0fd2524ba2c1fc7f2a701abf547b8bb60336230983e9371a25fa3ba44b0b905"
+      },
+      {
+        "path": "assets/baked/depth-004.png",
+        "sha256": "96520cb1fc3d1b7747598ada33c8f50025dc3ed5dc356cf3ff04d794730903c4"
+      },
+      {
+        "path": "assets/baked/depth-005.png",
+        "sha256": "6a51736ff4285129f6ebfcac280b167f4209f963f310d1656bce7f102192de5b"
+      },
+      {
+        "path": "assets/baked/depth-006.png",
+        "sha256": "8405836a1acbd8cc64e9afaa8cdee5831fd2a2d27b40a7acb1ce6765883e8c1b"
+      },
+      {
+        "path": "assets/baked/depth-007.png",
+        "sha256": "83bcade930815d6ce30e392343a0af4477e07be337397d95b94fa9f290f9fc60"
+      },
+      {
+        "path": "assets/baked/depth-008.png",
+        "sha256": "9dd9cdc0b09560106acadcb6818ae90ef3df2723068427f0fe19411f4b9bb548"
+      },
+      {
+        "path": "assets/baked/depth-009.png",
+        "sha256": "ed8d6b9a0c25842553c73dddd3645c5d78a644bfcc8b22dc773e6373a7337057"
+      },
+      {
+        "path": "assets/baked/depth-010.png",
+        "sha256": "70f2d2ac3a890946eff658e261c275e221faccf6cfd9a22b5f0cde475a1e26d1"
+      },
+      {
+        "path": "assets/baked/depth-011.png",
+        "sha256": "e5ad4cdaa2bb84a374d4ae400bf507d5e23fd84f74404a4d6a8579375512b90f"
+      },
+      {
+        "path": "assets/baked/depth-012.png",
+        "sha256": "bedefdc99c111fbac87dd09fd462f58df4eed8ddbe3766a7f1e256a1918e8cdc"
+      },
+      {
+        "path": "assets/baked/depth-013.png",
+        "sha256": "b9463a00c2a3f6dc126e4fa18ef17ba9fb34e5162f0c4c87c5008f21979589f2"
+      },
+      {
+        "path": "assets/baked/depth-014.png",
+        "sha256": "315226b94a6533c8a1ed082b8c0eec5e75014424ab936867a1f03c899d8f741a"
+      },
+      {
+        "path": "assets/baked/depth-015.png",
+        "sha256": "702a2fde7a0455bbe8e5a5935249dce456dec7ff460290550e80d00a3406d64b"
+      },
+      {
+        "path": "assets/baked/depth-016.png",
+        "sha256": "c3110da32d722aeeedc999570ec002945ece96a4d05dec1b97715ed2fc8c5daf"
+      },
+      {
+        "path": "assets/baked/depth-017.png",
+        "sha256": "7c0079c3bc3ee317a68b4b08154ad4d2ba905a71cd2edc507f2c155b950ec7bc"
+      },
+      {
+        "path": "assets/baked/depth-018.png",
+        "sha256": "2d7d0e508fe12d7171670a4f03a57f20212eb331d2f34cc49422c0f006ede98a"
+      },
+      {
+        "path": "assets/baked/depth-019.png",
+        "sha256": "8b3bd8cf3e7f41dfb66fc5635d6375c48298216e9edbdeafcc068b25c03ff1fb"
+      },
+      {
+        "path": "assets/baked/depth-020.png",
+        "sha256": "3646db4fe364c0fd23722a715e7dc7946b567415f20baa1fb83a64b61697c629"
+      },
+      {
+        "path": "assets/baked/depth-021.png",
+        "sha256": "9ad7dd38aa6a683691701824ee2a60913b3da26fc25d361dccdfb77c1ecf5186"
+      },
+      {
+        "path": "assets/baked/depth-022.png",
+        "sha256": "856e923da02f79cac8b8818257e7b793dcc369fd2cc80b217388c48b24b10715"
+      },
+      {
+        "path": "assets/baked/depth-023.png",
+        "sha256": "3ba041ca48045adbdde80b45500f809167a8257e4c519a29814b1e75d9441b95"
+      },
+      {
+        "path": "assets/baked/depth-024.png",
+        "sha256": "3cc6aff8967a04cd5362e95e463e7450c74c044aa09ffcbcc7575c51e5901c24"
+      },
+      {
+        "path": "assets/baked/depth-025.png",
+        "sha256": "1a2ef0391f2d731866381f00c572a40cc5fee6ddd8275f1ce0c94bde7a694638"
+      },
+      {
+        "path": "assets/baked/depth-026.png",
+        "sha256": "fbed452eea609cf78f849c58b19340dda24ff8026466218b328d2abacddb5884"
+      },
+      {
+        "path": "assets/baked/depth-027.png",
+        "sha256": "667db28b0d7f877c964642ebfc66dee88cd277a8a316e43f6c41e0f703bde79d"
+      },
+      {
+        "path": "assets/baked/depth-028.png",
+        "sha256": "f046184729bef214c07d390f33d8ee86a2d39004826af7b89fae5cb8cff6b806"
+      },
+      {
+        "path": "assets/baked/depth-029.png",
+        "sha256": "79164d51f47f669bf13ec2aa4c1ca2abe25e277b4278bddcb3a8e91b1ab1f1a4"
+      },
+      {
+        "path": "assets/baked/depth-030.png",
+        "sha256": "7b8fd040cc9495a45ccd56d88854848324cde1a0ae5c9d7512ac630335b30b4d"
+      },
+      {
+        "path": "assets/baked/depth-031.png",
+        "sha256": "ced6d74f14b75085edabec796a0581188d5d8bde76901fc416cc106bfb5b1547"
+      },
+      {
+        "path": "assets/baked/depth-032.png",
+        "sha256": "310a639a42257479b10886ba397bcb0bb31321b7545d1594e4bc25df8807e4cf"
+      },
+      {
+        "path": "assets/baked/depth-033.png",
+        "sha256": "b73fca746b7c88fa4ad5ff262dbe737db5935e0ebd8dd5349ad49cb9d85eb46a"
+      },
+      {
+        "path": "assets/baked/depth-034.png",
+        "sha256": "9de743bba0566082ad47dc6a33eb6a53a469cfd910ecd32fd44a27c4410d653d"
+      },
+      {
+        "path": "assets/baked/manifest.json",
+        "sha256": "0941cfb78e08ab721e2d4cc72428ef1fe5b6727a80d4efc6b3422d2bc21eb1bc"
+      },
+      {
+        "path": "assets/relight/depth-000.png",
+        "sha256": "94cc87b271f6f188d7e3b5d2619a3786d2030c73281d11b50ee6603f39f696c7"
+      },
+      {
+        "path": "assets/relight/depth-001.png",
+        "sha256": "0302be540279d548e3b290e9c83172b6ee3372f874fc6afb7c10c927d7e3b0b8"
+      },
+      {
+        "path": "assets/relight/depth-002.png",
+        "sha256": "1cc16c152e03daf26583068a7439aaa6d2abe8d33163b16b3479cfb526e069e7"
+      },
+      {
+        "path": "assets/relight/depth-003.png",
+        "sha256": "2e57777e8bce6298a960027c6d10d1e01822e0bccb1234cbf2721327d2e24b2c"
+      },
+      {
+        "path": "assets/relight/depth-004.png",
+        "sha256": "da23059fb7aded87de4f47ff77077b2390ea4fb0e61f849ecb3241a2e4b8e88e"
+      },
+      {
+        "path": "assets/relight/depth-005.png",
+        "sha256": "6e140c228deb6feb36e3f15ecbb9b5a0fb85db14c0a004a3366d9ab780fbcaa6"
+      },
+      {
+        "path": "assets/relight/depth-006.png",
+        "sha256": "6cabb5c62db4e18325166727900f353caa872be24eb51d96007e39fd14c1a1af"
+      },
+      {
+        "path": "assets/relight/depth-007.png",
+        "sha256": "26726d3d69cdfa69cd920472d05666db79291ee550d2153038db0d2e251e1b97"
+      },
+      {
+        "path": "assets/relight/depth-008.png",
+        "sha256": "666105c22bf504ec15ed8a5e88f15f49303f0df6862af31543a59047ea21b55d"
+      },
+      {
+        "path": "assets/relight/depth-009.png",
+        "sha256": "ffaed88d5516188637f0d571d3b9d0b360b05a755f94e839e65859815356f8b3"
+      },
+      {
+        "path": "assets/relight/depth-010.png",
+        "sha256": "451241e64edaff4f5a8f28e0e5fa21bdd1ef4c248cf96bfb031612b9668e1421"
+      },
+      {
+        "path": "assets/relight/depth-011.png",
+        "sha256": "7a48af7d6bc81728589c245e72519842a5d0d82044bc04085a475c42859a07ca"
+      },
+      {
+        "path": "assets/relight/depth-012.png",
+        "sha256": "1b7be227eab5397a32eea560cc2d20788113b06a062e792aaa515a8ede3a70ca"
+      },
+      {
+        "path": "assets/relight/depth-013.png",
+        "sha256": "1887ae54d3a8a860807fbd00d9105264dde14c726b438deb6dc2a6981bd444e7"
+      },
+      {
+        "path": "assets/relight/depth-014.png",
+        "sha256": "cbc4d0a9d129eeed9afb5bfb17d3bb52e6c4b24d54794d9611f3326614184dc9"
+      },
+      {
+        "path": "assets/relight/depth-015.png",
+        "sha256": "169d5bc324b3c5e25cc64393a1885c7f9407b3a9489fc51c165205a9e2ed00e8"
+      },
+      {
+        "path": "assets/relight/depth-016.png",
+        "sha256": "25f60fb542a6d2ab6063993999c75fba6dba1a2687888b85345a5f327f074dd6"
+      },
+      {
+        "path": "assets/relight/depth-017.png",
+        "sha256": "3eadddeb820c30d9c387558fa0f131a3c1e0b3a90b601b4ea58f7a623a5cc5a5"
+      },
+      {
+        "path": "assets/relight/depth-018.png",
+        "sha256": "0f7428228ac0ce2cf21f55dbd80000c6e031a28dc541e0494067bf7a4cb364f4"
+      },
+      {
+        "path": "assets/relight/depth-019.png",
+        "sha256": "c871e09fd3b5860b743e230b99b6528835d974183df584087235bd6fadd76fdf"
+      },
+      {
+        "path": "assets/relight/depth-020.png",
+        "sha256": "ef223cbd9e7715913eae03855a90e8bc3fdfe917c5526e2267561d313a15480b"
+      },
+      {
+        "path": "assets/relight/depth-021.png",
+        "sha256": "b6de6a173fc840472a0a751264599a52ff72546e8857b403d25cedb02fbfc12e"
+      },
+      {
+        "path": "assets/relight/depth-022.png",
+        "sha256": "f17f5d5e62ed6a4a2f132d66f987de1833a89caed34770e6cebf7eed307233ab"
+      },
+      {
+        "path": "assets/relight/depth-023.png",
+        "sha256": "c28f6219982d470fb68ac5dc97e77e8f4224cbf26fa8cf1199b5620459a5f925"
+      },
+      {
+        "path": "assets/relight/depth-024.png",
+        "sha256": "045cf09307af1a26109728dafd7c4b89172a2d546020a401692b888845f64472"
+      },
+      {
+        "path": "assets/relight/depth-025.png",
+        "sha256": "eb029ecceab92c69c409c43801f81dcc92bc8ea7bd7062618bb124f34d6824d6"
+      },
+      {
+        "path": "assets/relight/depth-026.png",
+        "sha256": "3cebad1d10320a4eb732af0ac1d90595e2c6f80741d63bffff73351e3d1c9237"
+      },
+      {
+        "path": "assets/relight/depth-027.png",
+        "sha256": "1b945740972fdf3748d28d8ed27f48c92111dac042e009dd2e0268c2fc0bcf44"
+      },
+      {
+        "path": "assets/relight/depth-028.png",
+        "sha256": "2de3cccd90a7313ac5125ca0d31ddad505bb23a7c33aa319ea1cb1081d7e7b5d"
+      },
+      {
+        "path": "assets/relight/depth-029.png",
+        "sha256": "b1531af62c1272e76c537f0d8c6ed14f6b9e83bb950e13216e2e7a64e8ce051f"
+      },
+      {
+        "path": "assets/relight/depth-030.png",
+        "sha256": "4d04c462331c63695c7a15e29d83bfe12ef4ea73cfbc484860723f9a7314032e"
+      },
+      {
+        "path": "assets/relight/depth-031.png",
+        "sha256": "c9ee8cba507f3c54d7ebad389a68156e1369df0476ed364eaaba1a9d415c4a79"
+      },
+      {
+        "path": "assets/relight/depth-032.png",
+        "sha256": "444897d47887afee8e61868e2b30a8276b0a4471e26c9ea48335e857b7e42b9f"
+      },
+      {
+        "path": "assets/relight/depth-033.png",
+        "sha256": "39ff62523e97d69a302db2bca32fe7d0fd1d11a7740f057e993500db61e7e5e1"
+      },
+      {
+        "path": "assets/relight/depth-034.png",
+        "sha256": "7627a2c11f4d75b76021d6d07603db9ebbdc2dadd3f1aefd66e89f42ecfac982"
+      },
+      {
+        "path": "assets/relight/display.png",
+        "sha256": "ea8cc6859daad0bd966c905e2267445d97f4a935479a1259507e19daba1aa638"
+      },
+      {
+        "path": "assets/relight/light-000.webp",
+        "sha256": "2a11bfe83736b63e06c55ef41174a702639fc710b694f7c06080913eabbeaa5b"
+      },
+      {
+        "path": "assets/relight/light-001.webp",
+        "sha256": "fc831d177806e1a755dc8e3083b1688ebf205475b613240eb15ea2ee8e385338"
+      },
+      {
+        "path": "assets/relight/light-002.webp",
+        "sha256": "fb99b567963a965e48d1cec1b752e87e5c79ba59567bf367b7bdd3f75bbeef9a"
+      },
+      {
+        "path": "assets/relight/light-003.webp",
+        "sha256": "850f59645a28dd0880575fa0c998c46e2e5a2ceabc59b3b455e2db56d33336b3"
+      },
+      {
+        "path": "assets/relight/light-004.webp",
+        "sha256": "6c2bd66927d0661d361297f7643d3c80300fe846352fcefb7bfcd411fe285bfd"
+      },
+      {
+        "path": "assets/relight/light-005.webp",
+        "sha256": "84fd0a58354dacd6f2f1aaff3b10c9d396bcbd127b5c8c1feaf77a9909521b7a"
+      },
+      {
+        "path": "assets/relight/light-006.webp",
+        "sha256": "867e6b7714bb63c63d322618dee803305e776309b07bdac7521eae1ef8ae0017"
+      },
+      {
+        "path": "assets/relight/light-007.webp",
+        "sha256": "0dbb19fb0705436819dc83aa592c745e51fbebc39da8e83b34aa3810760a1d05"
+      },
+      {
+        "path": "assets/relight/light-008.webp",
+        "sha256": "ad154cf63200f7603c49f468ea60769cd8f96971d90daa5c4ac6df6ac25a9335"
+      },
+      {
+        "path": "assets/relight/light-009.webp",
+        "sha256": "b5cde1efe4a4733d806b303543d55078d69a36712e5ab8b0fdbfa14f1e341dcc"
+      },
+      {
+        "path": "assets/relight/light-010.webp",
+        "sha256": "227839769e84ca9f021b3741358fcaa5cc192326e07d7b09ba90bbe9178429ef"
+      },
+      {
+        "path": "assets/relight/light-011.webp",
+        "sha256": "016de09228c4d037f6cb61d6266c77bddde0c5445fe87528e453e6a7947b7c5b"
+      },
+      {
+        "path": "assets/relight/light-012.webp",
+        "sha256": "edeb9ffd0c7fc9990e7b383ba12590c89fef56696c4dd3310cfbbc963e99ae8f"
+      },
+      {
+        "path": "assets/relight/light-013.webp",
+        "sha256": "4fe57837e7a0983114af44e76b7528fa7465e47e3832ceca6f7c86188ffac6e1"
+      },
+      {
+        "path": "assets/relight/light-014.webp",
+        "sha256": "883b422af4ca64acc8033566c7d8f60fcb0435a3e43b29f8f189a26104d5cf0c"
+      },
+      {
+        "path": "assets/relight/light-015.webp",
+        "sha256": "2c8ca6a574793ab6780a4d0fe4bec353225293edf2a2659feb237cc158d34d43"
+      },
+      {
+        "path": "assets/relight/light-016.webp",
+        "sha256": "9cd03dc63e7770461bf8731bccaef8c96793089163ea885867e5bb4dfef497af"
+      },
+      {
+        "path": "assets/relight/light-017.webp",
+        "sha256": "68edc76634abbe415abc4c71e843e074b1d85466a09e16e3e65681ed27429b76"
+      },
+      {
+        "path": "assets/relight/light-018.webp",
+        "sha256": "3f11c4b97849cbfa9401eff99ad3020cd710c27fc5f797a8dede7f40b5e74403"
+      },
+      {
+        "path": "assets/relight/light-019.webp",
+        "sha256": "b5150ebb18df505131306bd289a9c25cafe30e3c3ecb318be9ba96f166a65031"
+      },
+      {
+        "path": "assets/relight/light-020.webp",
+        "sha256": "0d6a8f7e15574fe7b45ae652fc98e535d195b4d5fe7fc612f39faf6fb3c242a4"
+      },
+      {
+        "path": "assets/relight/light-021.webp",
+        "sha256": "7a6e30a2b8dac9e9bd95d1e47fb83d96fe6cfbb91ed91ac0a1e33d26e2031355"
+      },
+      {
+        "path": "assets/relight/light-022.webp",
+        "sha256": "63d3c0d5ae28dc96bf25ac09fcae5a7fcf5473e397898398dd20c5135dc67145"
+      },
+      {
+        "path": "assets/relight/light-023.webp",
+        "sha256": "b0b3ac2734d4ba9a9fbeab7635829c712d11cc2f7a9dc08e49a9d979a30a8cc8"
+      },
+      {
+        "path": "assets/relight/light-024.webp",
+        "sha256": "9ddbc0ba07cb1ae27328119d22890dd20c85efd5757567946dd8a850cf0fc09e"
+      },
+      {
+        "path": "assets/relight/light-025.webp",
+        "sha256": "69c124bf91d41ca4409bd680e75cf51c391285668855ae1580c61e0bf3f3616a"
+      },
+      {
+        "path": "assets/relight/light-026.webp",
+        "sha256": "148afc4fdcbdaa08a59bd5382fceffedc31fab892c5f0e75f21836ef9f0b58d8"
+      },
+      {
+        "path": "assets/relight/light-027.webp",
+        "sha256": "35b965cdf76305dacf288a62cf6914235a8fbc1aeb34295c0059ea56fee3f9c7"
+      },
+      {
+        "path": "assets/relight/light-028.webp",
+        "sha256": "c9ec4c1cc1c8c353ddd1c6094bf58ed9f15dcba40c97052db0a03a2d1017eb9a"
+      },
+      {
+        "path": "assets/relight/light-029.webp",
+        "sha256": "0fa8865ec2d48aa0b153896f3f9fc8ce6da39a91002b1e89f92666a8f3c2aa50"
+      },
+      {
+        "path": "assets/relight/light-030.webp",
+        "sha256": "2dfa5e3a4811ee5b990e09cb8be4de86571b4cb42f424cb820d0fc5be0f161da"
+      },
+      {
+        "path": "assets/relight/light-031.webp",
+        "sha256": "af6d3a7f6a0abec0c0f001991839534ec4c14d878c98d4e6656fc684bc81d668"
+      },
+      {
+        "path": "assets/relight/light-032.webp",
+        "sha256": "63cffc845bd12c427c8b88978d8595232a24d056c7052b1cdb332b7e302d98c7"
+      },
+      {
+        "path": "assets/relight/light-033.webp",
+        "sha256": "a76a9a899d0138a8d50d9832ffa43282bc05bf445ec083a4e7e38f8e5593fefa"
+      },
+      {
+        "path": "assets/relight/light-034.webp",
+        "sha256": "ac323dfef94656161790fbd20a4edb1f30a774ad9065ac688adf23a69facc372"
+      },
+      {
+        "path": "baked-viewer.js",
+        "sha256": "1a0d7fe09fde195975b272e81402288689a0455360966b1aefe06edd61da4b27"
+      },
+      {
+        "path": "index.html",
+        "sha256": "2d05e580399ce98d7109b18f2d90b3151885fd6e0a4681356fa029d1bdde08af"
+      },
+      {
+        "path": "motion.js",
+        "sha256": "ffc1ea339dfeefad84bfa76f9e48f55a3c2c22501c29652c39aaba2d5f2b065b"
+      },
+      {
+        "path": "room-study.js",
+        "sha256": "8d224e15c63c32cab771455f9db1de6731380a23ec236c0a9791ae6314044485"
+      },
+      {
+        "path": "sound.js",
+        "sha256": "1e2d8109c3acfba45a75564552063bb04e1bb8ac008302005d6d2cbe4463905c"
+      },
+      {
+        "path": "style.css",
+        "sha256": "9d2362cdc75287af62199ec70035838e075b1eda60c77dd27ad19a3e4f48cacc"
+      },
+      {
+        "path": "vendor/THREE-LICENSE.txt",
+        "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+      },
+      {
+        "path": "vendor/three.core.js",
+        "sha256": "613e370f76638fdef83926642bf256dc9615684922de1ce1f63a8583e5d78578"
+      },
+      {
+        "path": "vendor/three.module.js",
+        "sha256": "104f56145899722094556490d787aae0617cc2fc3382f31df02d724ea1aee341"
+      }
+    ],
+    "adaptations": "Exact approved Cycles and alignment runtime. The gallery shell presents the About text and Lewis reading."
+  },
+  "capture": {
+    "kind": "actual browser canvas, silent",
+    "source_runtime_sha256": "2d05e580399ce98d7109b18f2d90b3151885fd6e0a4681356fa029d1bdde08af",
+    "source_snapshot_sha256": "2f3c7b8b55774352cf2e222c2e1f6695a843158bea9c4e4e1a3d5b112f4c7d1d",
+    "poster_time": 0,
+    "preview_start_time": 0,
+    "requested_capture_fps": 60,
+    "loop_method": "Fixed-step camera lean and light envelope with matching endpoints",
+    "encoded_video": {
+      "codec": "h264",
+      "width": 960,
+      "height": 720,
+      "fps": 60,
+      "streams": 1,
+      "duration": 8
+    },
+    "distinct_decoded_frames": 480
+  },
+  "files": [
+    {
+      "path": "runtime/.nojekyll",
+      "length": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runtime/app.js",
+      "length": 5186,
+      "sha256": "6c2a09fd52fa370441ab682b15a2215272ee71ec72ccbd5e2577a5ca0f704240"
+    },
+    {
+      "path": "runtime/assets/alignment/flow-000.webp",
+      "length": 193778,
+      "sha256": "47d896672adc476ba0898423734635579210aa3938629b0c53788d6adb44c5b2"
+    },
+    {
+      "path": "runtime/assets/alignment/flow-001.webp",
+      "length": 288838,
+      "sha256": "685f1b39e446f03fd882f435431169b0e2c2b1e63a1571ded5e30ef7fade1565"
+    },
+    {
+      "path": "runtime/assets/alignment/flow-002.webp",
+      "length": 287466,
+      "sha256": "6527abede426a74c7c9f05e6861de313d1c6d3997ea5b93610520c0961a493e2"
+    },
+    {
+      "path": "runtime/assets/alignment/flow-003.webp",
+      "length": 287392,
+      "sha256": "ebe1a6e9fa772f347b005ed2ce80281b7fa42d6ca215c8883c2b841ae60aeefd"
+    },
+    {
+      "path": "runtime/assets/alignment/flow-004.webp",
+      "length": 289740,
+      "sha256": "c7aab554535aa35a6039e7fa9cf1b5ad46fdecd25e2c3fb4670e64579160dc32"
+    },
+    {
+      "path": "runtime/assets/alignment/flow-005.webp",
+      "length": 292152,
+      "sha256": "f8df69a49bfdd1683e2c5444a8f1fa922907bc3da549abe23786013bee8f7d61"
+    },
+    {
+      "path": "runtime/assets/alignment/flow-006.webp",
+      "length": 195990,
+      "sha256": "c6ecd02d066fda84eff8a8257294402f8d96c2a231c1db29f0c42b8ebf77998b"
+    },
+    {
+      "path": "runtime/assets/alignment/flow-007.webp",
+      "length": 288438,
+      "sha256": "a8ae8b0509ec736228d0ec34ce6a8f46055a65166f7bfe322fd36a4aaf7a4612"
+    },
+    {
+      "path": "runtime/assets/alignment/flow-008.webp",
+      "length": 380396,
+      "sha256": "1b582d87582e15ef4f89e94e3f294ce25f6c530b744d5b36be11a75ee18da676"
+    },
+    {
+      "path": "runtime/assets/alignment/flow-009.webp",
+      "length": 379546,
+      "sha256": "f478469916da4e828dab97b806d6de50657f3dd864986125b22dbecb726083e5"
+    },
+    {
+      "path": "runtime/assets/alignment/flow-010.webp",
+      "length": 379316,
+      "sha256": "6578e7656922c44e9465483d3ccf13939848bdcca518168213c6105cfc01c115"
+    },
+    {
+      "path": "runtime/assets/alignment/flow-011.webp",
+      "length": 383004,
+      "sha256": "a3a3c103fbbda367e69db784fec871121d02b2819015868cab8a8a6cd31093de"
+    },
+    {
+      "path": "runtime/assets/alignment/flow-012.webp",
+      "length": 383436,
+      "sha256": "2040124556bf031b4d2c4920230086aadfdd1aeaee0be64ee85f23142644dc63"
+    },
+    {
+      "path": "runtime/assets/alignment/flow-013.webp",
+      "length": 288684,
+      "sha256": "ebe2e531a2d230593ead6864484a69f30e361a10322d87b7131a2a41f45ab555"
+    },
+    {
+      "path": "runtime/assets/alignment/flow-014.webp",
+      "length": 287700,
+      "sha256": "fe906e6f6a32b7e686a5276e7e522fea1676f192b41664865414e42b67788426"
+    },
+    {
+      "path": "runtime/assets/alignment/flow-015.webp",
+      "length": 381864,
+      "sha256": "d86df4ec58a80c7445c5248584caf14c02f5f49b25113fe603283bad5f9884d7"
+    },
+    {
+      "path": "runtime/assets/alignment/flow-016.webp",
+      "length": 381486,
+      "sha256": "87b76c80f7da72027bf4d097a2b12f79dd3156deae1f9a740972038f96f034a1"
+    },
+    {
+      "path": "runtime/assets/alignment/flow-017.webp",
+      "length": 383534,
+      "sha256": "591ef748c794074548336ad7c659792ba6b0ac21aa0d97fecd2b4ef661201596"
+    },
+    {
+      "path": "runtime/assets/alignment/flow-018.webp",
+      "length": 381450,
+      "sha256": "91ebcd2bac07443cc144913e6407c675bc530441270737cde5580bb199c7dbc8"
+    },
+    {
+      "path": "runtime/assets/alignment/flow-019.webp",
+      "length": 383452,
+      "sha256": "effd53664d5bc3e651b61fe76f44d97f3f14bafd26950413ed848943a6bfa2e7"
+    },
+    {
+      "path": "runtime/assets/alignment/flow-020.webp",
+      "length": 287788,
+      "sha256": "e3c225890ce1f1a775643d9079af6545bfee54533e34f532dd4a5d2c2c8198d4"
+    },
+    {
+      "path": "runtime/assets/alignment/flow-021.webp",
+      "length": 286940,
+      "sha256": "5f3f863e58923bf3010813f7886476d756691c167cd12d719532317c6847d01e"
+    },
+    {
+      "path": "runtime/assets/alignment/flow-022.webp",
+      "length": 384980,
+      "sha256": "da749ca2ffb82e40d3fdf2f89206466ced6c95e9e7c26330b47a8d4e4a379e0c"
+    },
+    {
+      "path": "runtime/assets/alignment/flow-023.webp",
+      "length": 382880,
+      "sha256": "1d953129a8581ecac2a5412fb83beff7b64991e8c22d172abbd783307035624b"
+    },
+    {
+      "path": "runtime/assets/alignment/flow-024.webp",
+      "length": 382766,
+      "sha256": "bcfcac45cbcfd351302fbc5caa4e3f5252c8d039e37e752cf127821b887c6714"
+    },
+    {
+      "path": "runtime/assets/alignment/flow-025.webp",
+      "length": 379006,
+      "sha256": "005bc4848e5ed5923bf67d1a533c7ad4bfbda5102aef1faf540fe53b065ce6b5"
+    },
+    {
+      "path": "runtime/assets/alignment/flow-026.webp",
+      "length": 383962,
+      "sha256": "65708aa02eaac73f71d0dd2bfe672352a7e77abe061e667d6031a6291cb2612f"
+    },
+    {
+      "path": "runtime/assets/alignment/flow-027.webp",
+      "length": 287122,
+      "sha256": "6df45a1cee24c444d5a481d0d01d41518e21b04d0cb7c10c369c2f04bfdaedfc"
+    },
+    {
+      "path": "runtime/assets/alignment/flow-028.webp",
+      "length": 192548,
+      "sha256": "670b10692e8d2532de05b270e2c9ec879bd6ba4d8bd408a7620208590d30affb"
+    },
+    {
+      "path": "runtime/assets/alignment/flow-029.webp",
+      "length": 285838,
+      "sha256": "39f56ef6b2845d980283296fc1c05c882d6563eb675689cb446e973dbc566534"
+    },
+    {
+      "path": "runtime/assets/alignment/flow-030.webp",
+      "length": 286836,
+      "sha256": "54d5835f950826ccb05223c2b368f4556307aa7864c3e233a60045bc0cfb2750"
+    },
+    {
+      "path": "runtime/assets/alignment/flow-031.webp",
+      "length": 284796,
+      "sha256": "a6f88d66f680d88c3ddd7f6bc8c5cca1a6b02f2afb0b8312c9a0e11e591ddda8"
+    },
+    {
+      "path": "runtime/assets/alignment/flow-032.webp",
+      "length": 287222,
+      "sha256": "c414b61ce8206b05d60e277e182b792c3dc07663baeb247b3ddcc93b3e82557f"
+    },
+    {
+      "path": "runtime/assets/alignment/flow-033.webp",
+      "length": 286856,
+      "sha256": "0b8915c141cca882bf5c09e36ac983684f9aa8cbb72c916e8f2df1611b837cd3"
+    },
+    {
+      "path": "runtime/assets/alignment/flow-034.webp",
+      "length": 191406,
+      "sha256": "0e11641148309373b186ee5557f462d77aeafd102d32eec6b09fd209144fff4a"
+    },
+    {
+      "path": "runtime/assets/baked/color-000.webp",
+      "length": 282788,
+      "sha256": "b3c62b9e3d09bd7644f355f9c215c815b694b895b1a900f356c0a85acae93871"
+    },
+    {
+      "path": "runtime/assets/baked/color-001.webp",
+      "length": 282974,
+      "sha256": "bd10acce099462f0215ece89db1ba3ec58274c47d557e7bd61728941e2c98c41"
+    },
+    {
+      "path": "runtime/assets/baked/color-002.webp",
+      "length": 283902,
+      "sha256": "39918522b6e9014320eb26aae2355f5eb9a88a89103a77df26d5a0d89a24cbc9"
+    },
+    {
+      "path": "runtime/assets/baked/color-003.webp",
+      "length": 283962,
+      "sha256": "640f7e2ecd5dc44c3b5fa8e287efda7efaac7d86bf8bfd5864b0eb7f68865533"
+    },
+    {
+      "path": "runtime/assets/baked/color-004.webp",
+      "length": 285332,
+      "sha256": "3192a358b603cfad61aa81e42a214ef977448c77ba89201f1338f3d9ae2710de"
+    },
+    {
+      "path": "runtime/assets/baked/color-005.webp",
+      "length": 285308,
+      "sha256": "b374b8b23459da06e80eb47ee28cc7d8d5d118e12247fbbeac227794d0ed4c09"
+    },
+    {
+      "path": "runtime/assets/baked/color-006.webp",
+      "length": 287664,
+      "sha256": "6c3524f42aae81221312323c24cc47087b5ec973a9c34c4a090b0e72bb7dfc38"
+    },
+    {
+      "path": "runtime/assets/baked/color-007.webp",
+      "length": 284716,
+      "sha256": "b1b182417696eb9a0ac043751b3811cf4ea2092b55369263f3d575f9f19ffc17"
+    },
+    {
+      "path": "runtime/assets/baked/color-008.webp",
+      "length": 285516,
+      "sha256": "23ff39c8ddf0444b0cc7194c581f8222bdfceb4519925b0994f5d145a6ab91a3"
+    },
+    {
+      "path": "runtime/assets/baked/color-009.webp",
+      "length": 285288,
+      "sha256": "4c5edfb7bd60ff6bc30df75cd2bdc0b249935077dc6b5623273f58a7c516dc01"
+    },
+    {
+      "path": "runtime/assets/baked/color-010.webp",
+      "length": 286632,
+      "sha256": "1bac79ffa83744d880d51978dd5f3da861d2aed481b38f4b850e0bd9d348f414"
+    },
+    {
+      "path": "runtime/assets/baked/color-011.webp",
+      "length": 286554,
+      "sha256": "8b884e6d4dc62a48c81cdeaac0fdc7771586f93c72963cd8872f37c764795a86"
+    },
+    {
+      "path": "runtime/assets/baked/color-012.webp",
+      "length": 287244,
+      "sha256": "a1364d1a0d60c03982d2638559fb2d27d2bd3e1dfb6dd52252ae0cc137fa57fa"
+    },
+    {
+      "path": "runtime/assets/baked/color-013.webp",
+      "length": 288668,
+      "sha256": "e85d2b4bb1dbaafe423a37c67cd2cd31259677423b327f60c39510d50ca44391"
+    },
+    {
+      "path": "runtime/assets/baked/color-014.webp",
+      "length": 287510,
+      "sha256": "ee5a0335615cbcb5ba03457372b223429bf2396e56b2d02ada5f2fae5739ae52"
+    },
+    {
+      "path": "runtime/assets/baked/color-015.webp",
+      "length": 286414,
+      "sha256": "e1cca1503eb8ac1261fb282b2c0d87cdc7c874799efb7aa5e7c448f2c6f0ef21"
+    },
+    {
+      "path": "runtime/assets/baked/color-016.webp",
+      "length": 287562,
+      "sha256": "1f34c5198e28624e476950c33cf27cb42088b24897595ad845da677885ecdacc"
+    },
+    {
+      "path": "runtime/assets/baked/color-017.webp",
+      "length": 288530,
+      "sha256": "a862a8ef9935bb0d4e1073a2b9395cff6541f5700a2ce8f32a8485598ce53a9e"
+    },
+    {
+      "path": "runtime/assets/baked/color-018.webp",
+      "length": 288882,
+      "sha256": "5c6d7075b5c1cb5c428adbe17b40fa6508dc35dc8906c715f389fd7f0350f3e3"
+    },
+    {
+      "path": "runtime/assets/baked/color-019.webp",
+      "length": 289144,
+      "sha256": "35db6838c0bec5f31ffc66c24e03b8b0e7b4a532991e6ad2f9630a83bbecf42d"
+    },
+    {
+      "path": "runtime/assets/baked/color-020.webp",
+      "length": 290732,
+      "sha256": "8058e31a28c0cb2ba44a79a347f15f9f0dc655fbaacc51c82c0e69a4ac642c53"
+    },
+    {
+      "path": "runtime/assets/baked/color-021.webp",
+      "length": 289412,
+      "sha256": "15d8c615c9e49ca66fd02d75a6fe57c88537f4c252f86cb1a47956dc07afef44"
+    },
+    {
+      "path": "runtime/assets/baked/color-022.webp",
+      "length": 289872,
+      "sha256": "d1e7635ea50500745af2a89f67cfd787bc7313b29c47041613c9300d456d7cc0"
+    },
+    {
+      "path": "runtime/assets/baked/color-023.webp",
+      "length": 289518,
+      "sha256": "84f6bd008ec901a48a44628ff8ffccd1e79d881ed0209e30cc14f8bccb600b0e"
+    },
+    {
+      "path": "runtime/assets/baked/color-024.webp",
+      "length": 285978,
+      "sha256": "3377ba795d0b4cb1c154e44e1e2d4fd22ef68f4b63f00d6a127a92dcc5c0ff11"
+    },
+    {
+      "path": "runtime/assets/baked/color-025.webp",
+      "length": 286438,
+      "sha256": "90b2c06c68eb54a038c6c7a2eb8280ac2fc8ea77b801abf2376be041e64da41e"
+    },
+    {
+      "path": "runtime/assets/baked/color-026.webp",
+      "length": 291458,
+      "sha256": "296f0c0f28e3a4318b0bb2b07404ade63e91d683c10381c293e7e2e5904d1951"
+    },
+    {
+      "path": "runtime/assets/baked/color-027.webp",
+      "length": 292818,
+      "sha256": "fadbe8a3adabe22592ff7f3ffeef2c052127f1ba416e7fd68f178f0db725180e"
+    },
+    {
+      "path": "runtime/assets/baked/color-028.webp",
+      "length": 290310,
+      "sha256": "c94ba0e90f84f721e3e85763f2a8c74528e1d29c0a04bb2753f2066f8fb9d1a8"
+    },
+    {
+      "path": "runtime/assets/baked/color-029.webp",
+      "length": 289928,
+      "sha256": "472443cf6bd5d79021b3b9cf16724803c1fc15a0c900f4ece57933e446f3edaf"
+    },
+    {
+      "path": "runtime/assets/baked/color-030.webp",
+      "length": 291090,
+      "sha256": "4551678c660f58a5ff42054f3e88d34bd164ba4053c0f9cf972647a5154cb1e5"
+    },
+    {
+      "path": "runtime/assets/baked/color-031.webp",
+      "length": 292704,
+      "sha256": "c22e99a99da76ac2191faa81f58e07924fecc741a012d7a2f216b8a4bb533b50"
+    },
+    {
+      "path": "runtime/assets/baked/color-032.webp",
+      "length": 293746,
+      "sha256": "4f9f62f4c6f4786a5c26bce8ccbeaf576f01e9aa111fb9aaca46f11443529fce"
+    },
+    {
+      "path": "runtime/assets/baked/color-033.webp",
+      "length": 292394,
+      "sha256": "21aaef96340f4fa76701c9fcc43168ae113e6977732a18f61dd5f6149da028e5"
+    },
+    {
+      "path": "runtime/assets/baked/color-034.webp",
+      "length": 294906,
+      "sha256": "1208fd060fa2b9ee0b416f7f6820407660df610bcf5839beb4e3ad5392e0b85d"
+    },
+    {
+      "path": "runtime/assets/baked/depth-000.png",
+      "length": 585178,
+      "sha256": "51bc0b53d0d769dfb985399d3517de67a0ff9e54f3c58053aac15ec9a412b3ff"
+    },
+    {
+      "path": "runtime/assets/baked/depth-001.png",
+      "length": 577716,
+      "sha256": "320a84ec68096469d2675a8d1d421c53df8339b32c927eeaa48ab3e99fd88fdd"
+    },
+    {
+      "path": "runtime/assets/baked/depth-002.png",
+      "length": 571856,
+      "sha256": "2290f95c359ad2e145a39be0d3a76bd503331a0b65bc762018434e41c94faac4"
+    },
+    {
+      "path": "runtime/assets/baked/depth-003.png",
+      "length": 566275,
+      "sha256": "e0fd2524ba2c1fc7f2a701abf547b8bb60336230983e9371a25fa3ba44b0b905"
+    },
+    {
+      "path": "runtime/assets/baked/depth-004.png",
+      "length": 574481,
+      "sha256": "96520cb1fc3d1b7747598ada33c8f50025dc3ed5dc356cf3ff04d794730903c4"
+    },
+    {
+      "path": "runtime/assets/baked/depth-005.png",
+      "length": 579879,
+      "sha256": "6a51736ff4285129f6ebfcac280b167f4209f963f310d1656bce7f102192de5b"
+    },
+    {
+      "path": "runtime/assets/baked/depth-006.png",
+      "length": 586676,
+      "sha256": "8405836a1acbd8cc64e9afaa8cdee5831fd2a2d27b40a7acb1ce6765883e8c1b"
+    },
+    {
+      "path": "runtime/assets/baked/depth-007.png",
+      "length": 589966,
+      "sha256": "83bcade930815d6ce30e392343a0af4477e07be337397d95b94fa9f290f9fc60"
+    },
+    {
+      "path": "runtime/assets/baked/depth-008.png",
+      "length": 582831,
+      "sha256": "9dd9cdc0b09560106acadcb6818ae90ef3df2723068427f0fe19411f4b9bb548"
+    },
+    {
+      "path": "runtime/assets/baked/depth-009.png",
+      "length": 578112,
+      "sha256": "ed8d6b9a0c25842553c73dddd3645c5d78a644bfcc8b22dc773e6373a7337057"
+    },
+    {
+      "path": "runtime/assets/baked/depth-010.png",
+      "length": 573466,
+      "sha256": "70f2d2ac3a890946eff658e261c275e221faccf6cfd9a22b5f0cde475a1e26d1"
+    },
+    {
+      "path": "runtime/assets/baked/depth-011.png",
+      "length": 581245,
+      "sha256": "e5ad4cdaa2bb84a374d4ae400bf507d5e23fd84f74404a4d6a8579375512b90f"
+    },
+    {
+      "path": "runtime/assets/baked/depth-012.png",
+      "length": 585840,
+      "sha256": "bedefdc99c111fbac87dd09fd462f58df4eed8ddbe3766a7f1e256a1918e8cdc"
+    },
+    {
+      "path": "runtime/assets/baked/depth-013.png",
+      "length": 591211,
+      "sha256": "b9463a00c2a3f6dc126e4fa18ef17ba9fb34e5162f0c4c87c5008f21979589f2"
+    },
+    {
+      "path": "runtime/assets/baked/depth-014.png",
+      "length": 595297,
+      "sha256": "315226b94a6533c8a1ed082b8c0eec5e75014424ab936867a1f03c899d8f741a"
+    },
+    {
+      "path": "runtime/assets/baked/depth-015.png",
+      "length": 588748,
+      "sha256": "702a2fde7a0455bbe8e5a5935249dce456dec7ff460290550e80d00a3406d64b"
+    },
+    {
+      "path": "runtime/assets/baked/depth-016.png",
+      "length": 584261,
+      "sha256": "c3110da32d722aeeedc999570ec002945ece96a4d05dec1b97715ed2fc8c5daf"
+    },
+    {
+      "path": "runtime/assets/baked/depth-017.png",
+      "length": 580779,
+      "sha256": "7c0079c3bc3ee317a68b4b08154ad4d2ba905a71cd2edc507f2c155b950ec7bc"
+    },
+    {
+      "path": "runtime/assets/baked/depth-018.png",
+      "length": 587158,
+      "sha256": "2d7d0e508fe12d7171670a4f03a57f20212eb331d2f34cc49422c0f006ede98a"
+    },
+    {
+      "path": "runtime/assets/baked/depth-019.png",
+      "length": 590478,
+      "sha256": "8b3bd8cf3e7f41dfb66fc5635d6375c48298216e9edbdeafcc068b25c03ff1fb"
+    },
+    {
+      "path": "runtime/assets/baked/depth-020.png",
+      "length": 596832,
+      "sha256": "3646db4fe364c0fd23722a715e7dc7946b567415f20baa1fb83a64b61697c629"
+    },
+    {
+      "path": "runtime/assets/baked/depth-021.png",
+      "length": 598211,
+      "sha256": "9ad7dd38aa6a683691701824ee2a60913b3da26fc25d361dccdfb77c1ecf5186"
+    },
+    {
+      "path": "runtime/assets/baked/depth-022.png",
+      "length": 592946,
+      "sha256": "856e923da02f79cac8b8818257e7b793dcc369fd2cc80b217388c48b24b10715"
+    },
+    {
+      "path": "runtime/assets/baked/depth-023.png",
+      "length": 589547,
+      "sha256": "3ba041ca48045adbdde80b45500f809167a8257e4c519a29814b1e75d9441b95"
+    },
+    {
+      "path": "runtime/assets/baked/depth-024.png",
+      "length": 585497,
+      "sha256": "3cc6aff8967a04cd5362e95e463e7450c74c044aa09ffcbcc7575c51e5901c24"
+    },
+    {
+      "path": "runtime/assets/baked/depth-025.png",
+      "length": 591534,
+      "sha256": "1a2ef0391f2d731866381f00c572a40cc5fee6ddd8275f1ce0c94bde7a694638"
+    },
+    {
+      "path": "runtime/assets/baked/depth-026.png",
+      "length": 595048,
+      "sha256": "fbed452eea609cf78f849c58b19340dda24ff8026466218b328d2abacddb5884"
+    },
+    {
+      "path": "runtime/assets/baked/depth-027.png",
+      "length": 600315,
+      "sha256": "667db28b0d7f877c964642ebfc66dee88cd277a8a316e43f6c41e0f703bde79d"
+    },
+    {
+      "path": "runtime/assets/baked/depth-028.png",
+      "length": 602138,
+      "sha256": "f046184729bef214c07d390f33d8ee86a2d39004826af7b89fae5cb8cff6b806"
+    },
+    {
+      "path": "runtime/assets/baked/depth-029.png",
+      "length": 596213,
+      "sha256": "79164d51f47f669bf13ec2aa4c1ca2abe25e277b4278bddcb3a8e91b1ab1f1a4"
+    },
+    {
+      "path": "runtime/assets/baked/depth-030.png",
+      "length": 592263,
+      "sha256": "7b8fd040cc9495a45ccd56d88854848324cde1a0ae5c9d7512ac630335b30b4d"
+    },
+    {
+      "path": "runtime/assets/baked/depth-031.png",
+      "length": 589480,
+      "sha256": "ced6d74f14b75085edabec796a0581188d5d8bde76901fc416cc106bfb5b1547"
+    },
+    {
+      "path": "runtime/assets/baked/depth-032.png",
+      "length": 594790,
+      "sha256": "310a639a42257479b10886ba397bcb0bb31321b7545d1594e4bc25df8807e4cf"
+    },
+    {
+      "path": "runtime/assets/baked/depth-033.png",
+      "length": 598596,
+      "sha256": "b73fca746b7c88fa4ad5ff262dbe737db5935e0ebd8dd5349ad49cb9d85eb46a"
+    },
+    {
+      "path": "runtime/assets/baked/depth-034.png",
+      "length": 603711,
+      "sha256": "9de743bba0566082ad47dc6a33eb6a53a469cfd910ecd32fd44a27c4410d653d"
+    },
+    {
+      "path": "runtime/assets/baked/manifest.json",
+      "length": 26939,
+      "sha256": "0941cfb78e08ab721e2d4cc72428ef1fe5b6727a80d4efc6b3422d2bc21eb1bc"
+    },
+    {
+      "path": "runtime/assets/relight/depth-000.png",
+      "length": 1347736,
+      "sha256": "94cc87b271f6f188d7e3b5d2619a3786d2030c73281d11b50ee6603f39f696c7"
+    },
+    {
+      "path": "runtime/assets/relight/depth-001.png",
+      "length": 1334273,
+      "sha256": "0302be540279d548e3b290e9c83172b6ee3372f874fc6afb7c10c927d7e3b0b8"
+    },
+    {
+      "path": "runtime/assets/relight/depth-002.png",
+      "length": 1318293,
+      "sha256": "1cc16c152e03daf26583068a7439aaa6d2abe8d33163b16b3479cfb526e069e7"
+    },
+    {
+      "path": "runtime/assets/relight/depth-003.png",
+      "length": 1302848,
+      "sha256": "2e57777e8bce6298a960027c6d10d1e01822e0bccb1234cbf2721327d2e24b2c"
+    },
+    {
+      "path": "runtime/assets/relight/depth-004.png",
+      "length": 1320037,
+      "sha256": "da23059fb7aded87de4f47ff77077b2390ea4fb0e61f849ecb3241a2e4b8e88e"
+    },
+    {
+      "path": "runtime/assets/relight/depth-005.png",
+      "length": 1332035,
+      "sha256": "6e140c228deb6feb36e3f15ecbb9b5a0fb85db14c0a004a3366d9ab780fbcaa6"
+    },
+    {
+      "path": "runtime/assets/relight/depth-006.png",
+      "length": 1344696,
+      "sha256": "6cabb5c62db4e18325166727900f353caa872be24eb51d96007e39fd14c1a1af"
+    },
+    {
+      "path": "runtime/assets/relight/depth-007.png",
+      "length": 1362153,
+      "sha256": "26726d3d69cdfa69cd920472d05666db79291ee550d2153038db0d2e251e1b97"
+    },
+    {
+      "path": "runtime/assets/relight/depth-008.png",
+      "length": 1347764,
+      "sha256": "666105c22bf504ec15ed8a5e88f15f49303f0df6862af31543a59047ea21b55d"
+    },
+    {
+      "path": "runtime/assets/relight/depth-009.png",
+      "length": 1334699,
+      "sha256": "ffaed88d5516188637f0d571d3b9d0b360b05a755f94e839e65859815356f8b3"
+    },
+    {
+      "path": "runtime/assets/relight/depth-010.png",
+      "length": 1325290,
+      "sha256": "451241e64edaff4f5a8f28e0e5fa21bdd1ef4c248cf96bfb031612b9668e1421"
+    },
+    {
+      "path": "runtime/assets/relight/depth-011.png",
+      "length": 1335677,
+      "sha256": "7a48af7d6bc81728589c245e72519842a5d0d82044bc04085a475c42859a07ca"
+    },
+    {
+      "path": "runtime/assets/relight/depth-012.png",
+      "length": 1346925,
+      "sha256": "1b7be227eab5397a32eea560cc2d20788113b06a062e792aaa515a8ede3a70ca"
+    },
+    {
+      "path": "runtime/assets/relight/depth-013.png",
+      "length": 1358071,
+      "sha256": "1887ae54d3a8a860807fbd00d9105264dde14c726b438deb6dc2a6981bd444e7"
+    },
+    {
+      "path": "runtime/assets/relight/depth-014.png",
+      "length": 1370102,
+      "sha256": "cbc4d0a9d129eeed9afb5bfb17d3bb52e6c4b24d54794d9611f3326614184dc9"
+    },
+    {
+      "path": "runtime/assets/relight/depth-015.png",
+      "length": 1358240,
+      "sha256": "169d5bc324b3c5e25cc64393a1885c7f9407b3a9489fc51c165205a9e2ed00e8"
+    },
+    {
+      "path": "runtime/assets/relight/depth-016.png",
+      "length": 1344762,
+      "sha256": "25f60fb542a6d2ab6063993999c75fba6dba1a2687888b85345a5f327f074dd6"
+    },
+    {
+      "path": "runtime/assets/relight/depth-017.png",
+      "length": 1333420,
+      "sha256": "3eadddeb820c30d9c387558fa0f131a3c1e0b3a90b601b4ea58f7a623a5cc5a5"
+    },
+    {
+      "path": "runtime/assets/relight/depth-018.png",
+      "length": 1348793,
+      "sha256": "0f7428228ac0ce2cf21f55dbd80000c6e031a28dc541e0494067bf7a4cb364f4"
+    },
+    {
+      "path": "runtime/assets/relight/depth-019.png",
+      "length": 1357378,
+      "sha256": "c871e09fd3b5860b743e230b99b6528835d974183df584087235bd6fadd76fdf"
+    },
+    {
+      "path": "runtime/assets/relight/depth-020.png",
+      "length": 1366350,
+      "sha256": "ef223cbd9e7715913eae03855a90e8bc3fdfe917c5526e2267561d313a15480b"
+    },
+    {
+      "path": "runtime/assets/relight/depth-021.png",
+      "length": 1378062,
+      "sha256": "b6de6a173fc840472a0a751264599a52ff72546e8857b403d25cedb02fbfc12e"
+    },
+    {
+      "path": "runtime/assets/relight/depth-022.png",
+      "length": 1367382,
+      "sha256": "f17f5d5e62ed6a4a2f132d66f987de1833a89caed34770e6cebf7eed307233ab"
+    },
+    {
+      "path": "runtime/assets/relight/depth-023.png",
+      "length": 1356526,
+      "sha256": "c28f6219982d470fb68ac5dc97e77e8f4224cbf26fa8cf1199b5620459a5f925"
+    },
+    {
+      "path": "runtime/assets/relight/depth-024.png",
+      "length": 1343758,
+      "sha256": "045cf09307af1a26109728dafd7c4b89172a2d546020a401692b888845f64472"
+    },
+    {
+      "path": "runtime/assets/relight/depth-025.png",
+      "length": 1357100,
+      "sha256": "eb029ecceab92c69c409c43801f81dcc92bc8ea7bd7062618bb124f34d6824d6"
+    },
+    {
+      "path": "runtime/assets/relight/depth-026.png",
+      "length": 1365648,
+      "sha256": "3cebad1d10320a4eb732af0ac1d90595e2c6f80741d63bffff73351e3d1c9237"
+    },
+    {
+      "path": "runtime/assets/relight/depth-027.png",
+      "length": 1375799,
+      "sha256": "1b945740972fdf3748d28d8ed27f48c92111dac042e009dd2e0268c2fc0bcf44"
+    },
+    {
+      "path": "runtime/assets/relight/depth-028.png",
+      "length": 1388568,
+      "sha256": "2de3cccd90a7313ac5125ca0d31ddad505bb23a7c33aa319ea1cb1081d7e7b5d"
+    },
+    {
+      "path": "runtime/assets/relight/depth-029.png",
+      "length": 1377914,
+      "sha256": "b1531af62c1272e76c537f0d8c6ed14f6b9e83bb950e13216e2e7a64e8ce051f"
+    },
+    {
+      "path": "runtime/assets/relight/depth-030.png",
+      "length": 1366573,
+      "sha256": "4d04c462331c63695c7a15e29d83bfe12ef4ea73cfbc484860723f9a7314032e"
+    },
+    {
+      "path": "runtime/assets/relight/depth-031.png",
+      "length": 1357185,
+      "sha256": "c9ee8cba507f3c54d7ebad389a68156e1369df0476ed364eaaba1a9d415c4a79"
+    },
+    {
+      "path": "runtime/assets/relight/depth-032.png",
+      "length": 1367587,
+      "sha256": "444897d47887afee8e61868e2b30a8276b0a4471e26c9ea48335e857b7e42b9f"
+    },
+    {
+      "path": "runtime/assets/relight/depth-033.png",
+      "length": 1375953,
+      "sha256": "39ff62523e97d69a302db2bca32fe7d0fd1d11a7740f057e993500db61e7e5e1"
+    },
+    {
+      "path": "runtime/assets/relight/depth-034.png",
+      "length": 1384799,
+      "sha256": "7627a2c11f4d75b76021d6d07603db9ebbdc2dadd3f1aefd66e89f42ecfac982"
+    },
+    {
+      "path": "runtime/assets/relight/display.png",
+      "length": 59673,
+      "sha256": "ea8cc6859daad0bd966c905e2267445d97f4a935479a1259507e19daba1aa638"
+    },
+    {
+      "path": "runtime/assets/relight/light-000.webp",
+      "length": 951406,
+      "sha256": "2a11bfe83736b63e06c55ef41174a702639fc710b694f7c06080913eabbeaa5b"
+    },
+    {
+      "path": "runtime/assets/relight/light-001.webp",
+      "length": 947332,
+      "sha256": "fc831d177806e1a755dc8e3083b1688ebf205475b613240eb15ea2ee8e385338"
+    },
+    {
+      "path": "runtime/assets/relight/light-002.webp",
+      "length": 946540,
+      "sha256": "fb99b567963a965e48d1cec1b752e87e5c79ba59567bf367b7bdd3f75bbeef9a"
+    },
+    {
+      "path": "runtime/assets/relight/light-003.webp",
+      "length": 945882,
+      "sha256": "850f59645a28dd0880575fa0c998c46e2e5a2ceabc59b3b455e2db56d33336b3"
+    },
+    {
+      "path": "runtime/assets/relight/light-004.webp",
+      "length": 943206,
+      "sha256": "6c2bd66927d0661d361297f7643d3c80300fe846352fcefb7bfcd411fe285bfd"
+    },
+    {
+      "path": "runtime/assets/relight/light-005.webp",
+      "length": 942220,
+      "sha256": "84fd0a58354dacd6f2f1aaff3b10c9d396bcbd127b5c8c1feaf77a9909521b7a"
+    },
+    {
+      "path": "runtime/assets/relight/light-006.webp",
+      "length": 941966,
+      "sha256": "867e6b7714bb63c63d322618dee803305e776309b07bdac7521eae1ef8ae0017"
+    },
+    {
+      "path": "runtime/assets/relight/light-007.webp",
+      "length": 955528,
+      "sha256": "0dbb19fb0705436819dc83aa592c745e51fbebc39da8e83b34aa3810760a1d05"
+    },
+    {
+      "path": "runtime/assets/relight/light-008.webp",
+      "length": 953556,
+      "sha256": "ad154cf63200f7603c49f468ea60769cd8f96971d90daa5c4ac6df6ac25a9335"
+    },
+    {
+      "path": "runtime/assets/relight/light-009.webp",
+      "length": 954100,
+      "sha256": "b5cde1efe4a4733d806b303543d55078d69a36712e5ab8b0fdbfa14f1e341dcc"
+    },
+    {
+      "path": "runtime/assets/relight/light-010.webp",
+      "length": 952724,
+      "sha256": "227839769e84ca9f021b3741358fcaa5cc192326e07d7b09ba90bbe9178429ef"
+    },
+    {
+      "path": "runtime/assets/relight/light-011.webp",
+      "length": 952166,
+      "sha256": "016de09228c4d037f6cb61d6266c77bddde0c5445fe87528e453e6a7947b7c5b"
+    },
+    {
+      "path": "runtime/assets/relight/light-012.webp",
+      "length": 949654,
+      "sha256": "edeb9ffd0c7fc9990e7b383ba12590c89fef56696c4dd3310cfbbc963e99ae8f"
+    },
+    {
+      "path": "runtime/assets/relight/light-013.webp",
+      "length": 948468,
+      "sha256": "4fe57837e7a0983114af44e76b7528fa7465e47e3832ceca6f7c86188ffac6e1"
+    },
+    {
+      "path": "runtime/assets/relight/light-014.webp",
+      "length": 961044,
+      "sha256": "883b422af4ca64acc8033566c7d8f60fcb0435a3e43b29f8f189a26104d5cf0c"
+    },
+    {
+      "path": "runtime/assets/relight/light-015.webp",
+      "length": 957870,
+      "sha256": "2c8ca6a574793ab6780a4d0fe4bec353225293edf2a2659feb237cc158d34d43"
+    },
+    {
+      "path": "runtime/assets/relight/light-016.webp",
+      "length": 956976,
+      "sha256": "9cd03dc63e7770461bf8731bccaef8c96793089163ea885867e5bb4dfef497af"
+    },
+    {
+      "path": "runtime/assets/relight/light-017.webp",
+      "length": 956268,
+      "sha256": "68edc76634abbe415abc4c71e843e074b1d85466a09e16e3e65681ed27429b76"
+    },
+    {
+      "path": "runtime/assets/relight/light-018.webp",
+      "length": 957274,
+      "sha256": "3f11c4b97849cbfa9401eff99ad3020cd710c27fc5f797a8dede7f40b5e74403"
+    },
+    {
+      "path": "runtime/assets/relight/light-019.webp",
+      "length": 958888,
+      "sha256": "b5150ebb18df505131306bd289a9c25cafe30e3c3ecb318be9ba96f166a65031"
+    },
+    {
+      "path": "runtime/assets/relight/light-020.webp",
+      "length": 954834,
+      "sha256": "0d6a8f7e15574fe7b45ae652fc98e535d195b4d5fe7fc612f39faf6fb3c242a4"
+    },
+    {
+      "path": "runtime/assets/relight/light-021.webp",
+      "length": 967308,
+      "sha256": "7a6e30a2b8dac9e9bd95d1e47fb83d96fe6cfbb91ed91ac0a1e33d26e2031355"
+    },
+    {
+      "path": "runtime/assets/relight/light-022.webp",
+      "length": 967288,
+      "sha256": "63d3c0d5ae28dc96bf25ac09fcae5a7fcf5473e397898398dd20c5135dc67145"
+    },
+    {
+      "path": "runtime/assets/relight/light-023.webp",
+      "length": 964852,
+      "sha256": "b0b3ac2734d4ba9a9fbeab7635829c712d11cc2f7a9dc08e49a9d979a30a8cc8"
+    },
+    {
+      "path": "runtime/assets/relight/light-024.webp",
+      "length": 963898,
+      "sha256": "9ddbc0ba07cb1ae27328119d22890dd20c85efd5757567946dd8a850cf0fc09e"
+    },
+    {
+      "path": "runtime/assets/relight/light-025.webp",
+      "length": 964556,
+      "sha256": "69c124bf91d41ca4409bd680e75cf51c391285668855ae1580c61e0bf3f3616a"
+    },
+    {
+      "path": "runtime/assets/relight/light-026.webp",
+      "length": 964942,
+      "sha256": "148afc4fdcbdaa08a59bd5382fceffedc31fab892c5f0e75f21836ef9f0b58d8"
+    },
+    {
+      "path": "runtime/assets/relight/light-027.webp",
+      "length": 961256,
+      "sha256": "35b965cdf76305dacf288a62cf6914235a8fbc1aeb34295c0059ea56fee3f9c7"
+    },
+    {
+      "path": "runtime/assets/relight/light-028.webp",
+      "length": 974628,
+      "sha256": "c9ec4c1cc1c8c353ddd1c6094bf58ed9f15dcba40c97052db0a03a2d1017eb9a"
+    },
+    {
+      "path": "runtime/assets/relight/light-029.webp",
+      "length": 973670,
+      "sha256": "0fa8865ec2d48aa0b153896f3f9fc8ce6da39a91002b1e89f92666a8f3c2aa50"
+    },
+    {
+      "path": "runtime/assets/relight/light-030.webp",
+      "length": 970106,
+      "sha256": "2dfa5e3a4811ee5b990e09cb8be4de86571b4cb42f424cb820d0fc5be0f161da"
+    },
+    {
+      "path": "runtime/assets/relight/light-031.webp",
+      "length": 968142,
+      "sha256": "af6d3a7f6a0abec0c0f001991839534ec4c14d878c98d4e6656fc684bc81d668"
+    },
+    {
+      "path": "runtime/assets/relight/light-032.webp",
+      "length": 967910,
+      "sha256": "63cffc845bd12c427c8b88978d8595232a24d056c7052b1cdb332b7e302d98c7"
+    },
+    {
+      "path": "runtime/assets/relight/light-033.webp",
+      "length": 967440,
+      "sha256": "a76a9a899d0138a8d50d9832ffa43282bc05bf445ec083a4e7e38f8e5593fefa"
+    },
+    {
+      "path": "runtime/assets/relight/light-034.webp",
+      "length": 966996,
+      "sha256": "ac323dfef94656161790fbd20a4edb1f30a774ad9065ac688adf23a69facc372"
+    },
+    {
+      "path": "runtime/baked-viewer.js",
+      "length": 20147,
+      "sha256": "1a0d7fe09fde195975b272e81402288689a0455360966b1aefe06edd61da4b27"
+    },
+    {
+      "path": "runtime/index.html",
+      "length": 3047,
+      "sha256": "2d05e580399ce98d7109b18f2d90b3151885fd6e0a4681356fa029d1bdde08af"
+    },
+    {
+      "path": "runtime/motion.js",
+      "length": 2575,
+      "sha256": "ffc1ea339dfeefad84bfa76f9e48f55a3c2c22501c29652c39aaba2d5f2b065b"
+    },
+    {
+      "path": "runtime/room-study.js",
+      "length": 4907,
+      "sha256": "8d224e15c63c32cab771455f9db1de6731380a23ec236c0a9791ae6314044485"
+    },
+    {
+      "path": "runtime/sound.js",
+      "length": 7251,
+      "sha256": "1e2d8109c3acfba45a75564552063bb04e1bb8ac008302005d6d2cbe4463905c"
+    },
+    {
+      "path": "runtime/style.css",
+      "length": 2915,
+      "sha256": "9d2362cdc75287af62199ec70035838e075b1eda60c77dd27ad19a3e4f48cacc"
+    },
+    {
+      "path": "runtime/vendor/THREE-LICENSE.txt",
+      "length": 1081,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+    },
+    {
+      "path": "runtime/vendor/three.core.js",
+      "length": 1474799,
+      "sha256": "613e370f76638fdef83926642bf256dc9615684922de1ce1f63a8583e5d78578"
+    },
+    {
+      "path": "runtime/vendor/three.module.js",
+      "length": 658900,
+      "sha256": "104f56145899722094556490d787aae0617cc2fc3382f31df02d724ea1aee341"
+    },
+    {
+      "path": "poster.jpg",
+      "length": 84363,
+      "sha256": "4a435c8a279dce637733bfa5aa91a7cdc63f55a0ea75c99236205cca67495f67"
+    },
+    {
+      "path": "preview.mp4",
+      "length": 1560748,
+      "sha256": "f3fd4ab8585b66b42f27ed697f2c32de6f56a938147ed510ee3464cdb6553e26"
+    }
+  ]
+}

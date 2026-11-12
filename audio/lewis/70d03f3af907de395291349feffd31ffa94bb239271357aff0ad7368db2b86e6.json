@@ -1,12 +1,12 @@
 {
-  "id": "fieldworks-overview",
-  "title": "Fieldworks",
+  "id": "fieldworks-overview-fourteen-works",
+  "title": "Fieldworks, fourteen-work edition",
   "form": "fieldwork",
   "release_id": null,
   "pages": [
-    "fieldworks/"
+    "fieldworks/readings/overview-fourteen-works.md"
   ],
-  "source_path": "fieldworks/readings/overview.md",
+  "source_path": "fieldworks/readings/overview-fourteen-works.md",
   "source_sha256": "ebb979fd24e130039f04f7382f7aba7880ff303767cc86b536976d1ba4b542f3",
   "document_sha256": "ebb979fd24e130039f04f7382f7aba7880ff303767cc86b536976d1ba4b542f3",
   "text_sha256": "70d03f3af907de395291349feffd31ffa94bb239271357aff0ad7368db2b86e6",

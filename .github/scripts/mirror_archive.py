@@ -244,7 +244,7 @@ def build_core_mirror(site: Path) -> None:
             info = zipfile.ZipInfo(relative.as_posix(), date_time=(1980, 1, 1, 0, 0, 0))
             info.compress_type = zipfile.ZIP_DEFLATED
             info.external_attr = 0o644 << 16
-            archive.writestr(info, path.read_bytes())
+            archive.writestr(info, path.read_bytes(), compresslevel=9)
     require((site / ARCHIVE).stat().st_size < MAX_ASSET_BYTES,
             "Core mirror exceeds hosting limit")
 

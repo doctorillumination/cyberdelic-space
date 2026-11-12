@@ -56,6 +56,29 @@
       "length": 1755176
     },
     {
+      "kind": "actual browser canvas, silent",
+      "source_runtime_sha256": "2d05e580399ce98d7109b18f2d90b3151885fd6e0a4681356fa029d1bdde08af",
+      "source_snapshot_sha256": "2f3c7b8b55774352cf2e222c2e1f6695a843158bea9c4e4e1a3d5b112f4c7d1d",
+      "poster_time": 0,
+      "preview_start_time": 0,
+      "requested_capture_fps": 60,
+      "loop_method": "Fixed-step camera lean and light envelope with matching endpoints",
+      "encoded_video": {
+        "codec": "h264",
+        "width": 960,
+        "height": 720,
+        "fps": 60,
+        "streams": 1,
+        "duration": 8
+      },
+      "distinct_decoded_frames": 480,
+      "slug": "workshop",
+      "path": "workshop.mp4",
+      "sha256": "f3fd4ab8585b66b42f27ed697f2c32de6f56a938147ed510ee3464cdb6553e26",
+      "length": 1560748,
+      "release_id": "692c2375c6e5e87d39861447ebcdde0ac4615fe3db8c0ce4465fccb8ae9dee73"
+    },
+    {
       "slug": "primitives",
       "capture": "actual browser canvas, 30 fps, no audio",
       "raw_sha256": "f164acf923dc07b1c4f1823a449ce00040875f95f5b96b12a59f6de8fc0ab54c",

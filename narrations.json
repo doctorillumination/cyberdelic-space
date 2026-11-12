@@ -18725,6 +18725,58 @@
       }
     },
     {
+      "id": "fieldworks-overview",
+      "title": "Fieldworks",
+      "form": "fieldwork",
+      "release_id": null,
+      "pages": [
+        "fieldworks/"
+      ],
+      "source_path": "fieldworks/readings/overview.md",
+      "source_sha256": "5aceb3a6ae33e825aaeaafedb21e46e23017d887507d90763515b1b665a15884",
+      "document_sha256": "5aceb3a6ae33e825aaeaafedb21e46e23017d887507d90763515b1b665a15884",
+      "text_sha256": "d981aab5168b64e6fcca884446673020a0d4f472a07b8998ff70a255fdd8d78d",
+      "reading_path": "audio/readings/d981aab5168b64e6fcca884446673020a0d4f472a07b8998ff70a255fdd8d78d.md",
+      "reading_sha256": "5aceb3a6ae33e825aaeaafedb21e46e23017d887507d90763515b1b665a15884",
+      "reading_length": 536,
+      "audio_path": "audio/lewis/d981aab5168b64e6fcca884446673020a0d4f472a07b8998ff70a255fdd8d78d.mp3",
+      "voice": "bm_lewis",
+      "voice_name": "Lewis",
+      "speed": 1.0,
+      "audio_sha256": "8747ff2865f1b2c286d3f1be0e5efb4b2663bff9bb4e17318740b84a0f5e3c60",
+      "audio_length": 469772,
+      "duration_seconds": 39.065,
+      "chunks": [
+        {
+          "text": "Fieldworks",
+          "start": 0.0,
+          "duration": 1.65
+        },
+        {
+          "text": "Generative artworks and interactive environments by Brad Necyk.",
+          "start": 1.83,
+          "duration": 5.15
+        },
+        {
+          "text": "A surface that answers. A fold in seeing. An unfinished sky. Impossible matter. A river remembering a drawing. A small vocabulary, an expanding field. A field of competing futures. A picture with weight. A room that keeps trying to sing. A history in formation. A manual, held differently. A drawing that keeps swimming. A face held beyond the glass. A picture with a present tense.",
+          "start": 7.16,
+          "duration": 25.9
+        },
+        {
+          "text": "Fifteen living artworks. Enter, explore, and see what a gesture changes.",
+          "start": 33.24,
+          "duration": 5.825
+        }
+      ],
+      "checks": {
+        "all_text_retained": true,
+        "mp3_decodes": true,
+        "finite_samples": true,
+        "peak": 0.5824812054634094,
+        "clipped_samples": 0
+      }
+    },
+    {
       "id": "fieldworks-lumen",
       "title": "Lumen",
       "form": "fieldwork",
@@ -18969,6 +19021,68 @@
         "mp3_decodes": true,
         "finite_samples": true,
         "peak": 0.6225528717041016,
+        "clipped_samples": 0
+      }
+    },
+    {
+      "id": "fieldworks-workshop",
+      "title": "Workshop",
+      "form": "fieldwork",
+      "release_id": null,
+      "pages": [
+        "fieldworks/workshop/"
+      ],
+      "source_path": "fieldworks/readings/workshop.md",
+      "source_sha256": "e82ef903194c97647d8ee44903a79f55da3b9b541e6519c31c33d620c57b2ba9",
+      "document_sha256": "e82ef903194c97647d8ee44903a79f55da3b9b541e6519c31c33d620c57b2ba9",
+      "text_sha256": "6ccab2e226025e65f82d00a3aeccf997aaaecb9c32e841285b41fef809d309d8",
+      "reading_path": "audio/readings/6ccab2e226025e65f82d00a3aeccf997aaaecb9c32e841285b41fef809d309d8.md",
+      "reading_sha256": "e82ef903194c97647d8ee44903a79f55da3b9b541e6519c31c33d620c57b2ba9",
+      "reading_length": 1030,
+      "audio_path": "audio/lewis/6ccab2e226025e65f82d00a3aeccf997aaaecb9c32e841285b41fef809d309d8.mp3",
+      "voice": "bm_lewis",
+      "voice_name": "Lewis",
+      "speed": 1.0,
+      "audio_sha256": "01c5c1283599ead12b38a4910635ce96e7126acea9295c7a67a35fc7874d1465",
+      "audio_length": 854252,
+      "duration_seconds": 71.1,
+      "chunks": [
+        {
+          "text": "Workshop",
+          "start": 0.0,
+          "duration": 1.525
+        },
+        {
+          "text": "Workshop returns to Jeff Wall’s Picture for Women (1979), a staged photograph presented as a large illuminated transparency. In Wall’s picture, the mirror arranges the two figures, the camera, and the person looking. Rebuilding the room means making choices wherever the photograph leaves something unseen.",
+          "start": 1.705,
+          "duration": 21.575
+        },
+        {
+          "text": "Here, the composition remains still while ceasing to be fixed. A shoulder rises. A finger moves. Light alters the weight of the room. The figures remain visibly constructed, even as a breath passes through them. After a while you might wonder whether a hand moved, or whether you simply looked more closely.",
+          "start": 23.46,
+          "duration": 19.85
+        },
+        {
+          "text": "A little lean gives you more of the room. It also brings back a question already present in the mirror. Where are you standing in this arrangement of looking?",
+          "start": 43.49,
+          "duration": 9.65
+        },
+        {
+          "text": "Breath repeats. Light returns. You can stay with a small change, then leave. Workshop is a picture with a present tense. What you see is what happened while you were here.",
+          "start": 53.32,
+          "duration": 11.425
+        },
+        {
+          "text": "By Brad Necyk, 2026. A living artwork from Cyberdelic OS.",
+          "start": 64.925,
+          "duration": 6.175
+        }
+      ],
+      "checks": {
+        "all_text_retained": true,
+        "mp3_decodes": true,
+        "finite_samples": true,
+        "peak": 0.5764261484146118,
         "clipped_samples": 0
       }
     },
@@ -20103,14 +20217,14 @@
       }
     },
     {
-      "id": "fieldworks-overview",
-      "title": "Fieldworks",
+      "id": "fieldworks-overview-fourteen-works",
+      "title": "Fieldworks, fourteen-work edition",
       "form": "fieldwork",
       "release_id": null,
       "pages": [
-        "fieldworks/"
+        "fieldworks/readings/overview-fourteen-works.md"
       ],
-      "source_path": "fieldworks/readings/overview.md",
+      "source_path": "fieldworks/readings/overview-fourteen-works.md",
       "source_sha256": "ebb979fd24e130039f04f7382f7aba7880ff303767cc86b536976d1ba4b542f3",
       "document_sha256": "ebb979fd24e130039f04f7382f7aba7880ff303767cc86b536976d1ba4b542f3",
       "text_sha256": "70d03f3af907de395291349feffd31ffa94bb239271357aff0ad7368db2b86e6",
@@ -20387,6 +20501,11 @@
       "path": "audio-bundles/lewis-29.zip",
       "sha256": "c80604939183ed905098532a0d5c54af0ae4320fba2997b790b081664cf75444",
       "length": 804746
+    },
+    {
+      "path": "audio-bundles/lewis-30.zip",
+      "length": 1291624,
+      "sha256": "69d07bc0c87d493408bcb8ca9ce62b2a076f7fbc02cc1873b76f6868a5786a93"
     }
   ]
 }
