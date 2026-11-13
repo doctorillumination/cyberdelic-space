@@ -689,8 +689,8 @@
     {
       "artwork": "transplant",
       "path": "artwork-bundles/transplant-01.zip",
-      "length": 21813200,
-      "sha256": "9689cc5729c2d664874a9c199f3290eb935e072020f4338082816fb9c71659b4",
+      "length": 21852033,
+      "sha256": "9085e4f4f64419324e7d7748c1aa1f8701ecd197c2c37d7f009f03dd67979408",
       "files": [
         {
           "path": "fieldwork-runtime/transplant/assets/SpecialElite-LICENSE.txt",
@@ -864,78 +864,78 @@
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/01-back.jpg",
-          "length": 79215,
-          "sha256": "192ad633b35711d556c6f3967b069d88368fe9b9ed32cd9db6ddfdefb4ba41ca"
+          "length": 79256,
+          "sha256": "ab6a0eb99badd9dab0a46030d966d0f59641212a897603e0fcf7db405b9f0c7c"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/01.jpg",
-          "length": 963494,
-          "sha256": "d41fde97f47badc366553988bb4d89c1b787229fbff0935f86c1b6cc02bfaadd"
+          "length": 972393,
+          "sha256": "937376c457291ea2e31053e9d4e99265a6712545b0514cf8c475ed2e347f95d4"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/02-back.jpg",
-          "length": 82640,
-          "sha256": "0c309bc123a2d6669bc4f4f6267241deb77b7b41215c2ea0b5111435c2de3bf9"
+          "length": 82132,
+          "sha256": "2e97e8d6a570d8c62a76a94c3f6849eef1aae3545fad959869e89cb6d41cb67a"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/02.jpg",
-          "length": 1029048,
-          "sha256": "85a83326743fdbebaa0dac8a4d5129d9473dac35f57028ddcddf9b53e9d683a8"
+          "length": 1031388,
+          "sha256": "590ad60dc405ca7503e0bab3e6c4fd8710eea38a0625b0535b5a1a59681a95d8"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/03-back.jpg",
-          "length": 80675,
-          "sha256": "86ff400f75c310f55dda022469332ddfc458626f9783fcfa53dfa79107c47ac9"
+          "length": 80341,
+          "sha256": "fd14a67bd9b8495265a25cbc6a4ea427b98891999697f2714a494e1ad47208dc"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/03.jpg",
-          "length": 997163,
-          "sha256": "9788748f10650949d671516c5fdb6737296ff2ec307ba9d68b450ddf2feacc19"
+          "length": 1002562,
+          "sha256": "b7cded40bf6939112a0526d431f7b161582d05cc701825710640ed4f86be0256"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/04-back.jpg",
-          "length": 79095,
-          "sha256": "5a8b0e8d08c36a5f3054cbb3010db94046bd17ab2542c955d095ea7398fdf7f8"
+          "length": 78506,
+          "sha256": "416772393d351e11942213f0f108adec1033f6eaa1692357462735f176ecdd81"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/04.jpg",
-          "length": 1106930,
-          "sha256": "4b54910acb5031ac117c05e186da9d951db18b11e926809070545e794252cd34"
+          "length": 1108648,
+          "sha256": "ecf1dd88fa3b2b32e22942430033290c3de92b3e55903e93ddeb4826805afc67"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/05-back.jpg",
-          "length": 79185,
-          "sha256": "d95cb6e49697f74cd0b6c7c7b17e7fe47f72a37711d0ddd2e6895bd3f9673c56"
+          "length": 78566,
+          "sha256": "156036232cfbb51d198df97dd855b8805fda4ba97b3cd77e7e68dfa139db95b9"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/05.jpg",
-          "length": 1056568,
-          "sha256": "d141ff6189ad9be0db6a8afad6825172153b4d28c02f8b51aea1fbb3b92e0b1a"
+          "length": 1066211,
+          "sha256": "f70cdc51c4574d05f96fb2d0edc80ba4eca8f72b26f060d2087b4b69e81a4ec1"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/06-back.jpg",
-          "length": 83113,
-          "sha256": "b1e3492e55bad39a00f80af14514d2f435cbe2311823a7616837b2d44895cfd2"
+          "length": 82719,
+          "sha256": "45786c0dc3f28a56f76327fcad5206b38603e91d3eaf2bcaf205831adb712db5"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/06.jpg",
-          "length": 1037851,
-          "sha256": "8b8b978559b931ed32de72b383421e7ec918916c5b9ea355c768e7681c0f19c7"
+          "length": 1043790,
+          "sha256": "640e071d69524d990f751c69824b6ebaa48ab5f3985a9e2c69a6f3136ce498f5"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/07-back.jpg",
-          "length": 84689,
-          "sha256": "0a271664d5ed603146c3abf5e3d5439d20a0cbbdbc0eeb3775169d83febfc023"
+          "length": 84782,
+          "sha256": "29d6fd434014a4cb6229727199734a4bf26947bf399c68421a3d376a3291e44b"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/07.jpg",
-          "length": 1034275,
-          "sha256": "679366d8802568f2915a4f90b301dbaf7bde62becb78ce288a11638f9e180294"
+          "length": 1040910,
+          "sha256": "61333252dbf37747145aa511c4a4809528a63a0173e837a57505aa894f767c32"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/08-back.jpg",
-          "length": 83458,
-          "sha256": "47fa37138752cc963f790d99861672d65fc770bb0f42a720e56974e9f04e3575"
+          "length": 83296,
+          "sha256": "c5feddbfd1a26081f88ba8a585b269c43bcbc228df1cb8d80806a5eef1e6cf5e"
         }
       ],
       "part": 1,
@@ -944,218 +944,218 @@
     {
       "artwork": "transplant",
       "path": "artwork-bundles/transplant-02.zip",
-      "length": 23636165,
-      "sha256": "decaecef38366a34df9c0dcbbbc6aa2c257cc91c1be36aa87d708e0ff161950d",
+      "length": 23793473,
+      "sha256": "b7fbc0af60cfe01699df1bcf9a5d62bd84273b57957301fa243475d5f4f423ff",
       "files": [
         {
           "path": "fieldwork-runtime/transplant/assets/prints/08.jpg",
-          "length": 1128544,
-          "sha256": "a40c4085d8e5bb29acebf462f286a299d4def5241d90f83de33f2f80b20cd7bd"
+          "length": 1140759,
+          "sha256": "dad6380854e5fc1741d7df888b2b8f039e4f9a7e98493d0f9b01a5faf71c2c9c"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/09-back.jpg",
-          "length": 78759,
-          "sha256": "0dd806575f2ffd214d989c2592f22eecedf52636dcfe25f2114d9a13fd08add4"
+          "length": 78443,
+          "sha256": "9997b9b02b8b2b22ed333bc242b6686fcd965d3de463ed2f245bda190510657d"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/09.jpg",
-          "length": 971491,
-          "sha256": "5a6bbea1703e9f7e01a615b2921d347ae0ba3c6e13f0a1e881dfe4a5479f3055"
+          "length": 972492,
+          "sha256": "e28a0d969a040a9ff7bd4d286fcd8f5e5e3ac71b17a15743702ab59fe85f4c5b"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/10-back.jpg",
-          "length": 81965,
-          "sha256": "52d377fa93c8f6f166d02cf78cf7dc2a9a348735cfb33cf422e72cdbd3346458"
+          "length": 81755,
+          "sha256": "ba66ed497679bc4d9aa569139cd01a9fa7fe642b95561a32fa54f4d0f7001fe8"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/10.jpg",
-          "length": 1075546,
-          "sha256": "b78e76bdeb2de707ea7a49d174083d7f7355484be3cd6a3755e5823e4be5568e"
+          "length": 1079438,
+          "sha256": "8a3996bae0b0fc32c342839a694ed4a6be466ed3733dead0e0a674dd1d7d24e7"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/11-back.jpg",
-          "length": 83718,
-          "sha256": "ab1530c74c82b407337a6177b9ba9a077b40ed1fc65c91fb8bbdf4dd2f55efd2"
+          "length": 83892,
+          "sha256": "346adb428d0902ed2d84c1d4ce626c584fdf0e744a6f8c1fb48b49785de8b000"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/11.jpg",
-          "length": 994708,
-          "sha256": "d8abdd513e04ce484a068e8810f4992e0062ac5f655c7bf6b5819b9a99d498ac"
+          "length": 1005080,
+          "sha256": "dad87d3c287d8f116b9a7d5e473bdfbaeeb2f9dc95d9e646944955bdd3bed2a4"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/12-back.jpg",
-          "length": 81577,
-          "sha256": "7fe6f1d0e801f3efd6a152c37786d9fc8ef4f20f51dee03e006d120f15ad5d22"
+          "length": 81909,
+          "sha256": "cb9fd01d007693b4e1a7b010fed74454304df52e91870a269a8c8b807c822507"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/12.jpg",
-          "length": 1078369,
-          "sha256": "2a6725fe668e0fb1783799d7c172908cff6f83901cfa41874127fc10bde49066"
+          "length": 1089014,
+          "sha256": "129ff498ca5cc81f791c384d3158a2aa3bd21aa33452248adc46b56fc0cd6914"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/13-back.jpg",
-          "length": 82956,
-          "sha256": "12b4e2ca9ced76015dab34dc9bfc434e4a6498e27c782f3df0d0b4c8bee41521"
+          "length": 81873,
+          "sha256": "c0ad3f3531c9a59a2b7e597a124be518384fa2e822869f330f4ebf8a43a5ebe4"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/13.jpg",
-          "length": 1072397,
-          "sha256": "d498ad3c96d92d6c0e0f68beca62dec5f2d24fa9c8d1c7e4b8d0a5187104c38b"
+          "length": 1086559,
+          "sha256": "10f0790535818863dca1f4098099d146e0fd2f602101d8d9a1ef2e0421e5eb0f"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/14-back.jpg",
-          "length": 79106,
-          "sha256": "f41e92d2b59528b8f3af762ae473a710f2df024e9a23c4dd7906aa06e78c43ad"
+          "length": 78846,
+          "sha256": "6ebe5e4344193d44f69941b973824f717cd116a851a6857c3cf4d610024bb69e"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/14.jpg",
-          "length": 1065659,
-          "sha256": "052528df6c81031ef0eafe3432dee29659536f0b4836f3d8029fd42c2088dbdf"
+          "length": 1068751,
+          "sha256": "e5a3dd07364c0181bd8994bf6d28593a67160e6e0110270feaef3532934965fd"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/15-back.jpg",
-          "length": 79538,
-          "sha256": "559740b3c487a46e6c0ddc2838d3204fa6df6372c3317f10efdfabad93798b22"
+          "length": 79324,
+          "sha256": "f6a17293c4f423b61734e5c9c95090b34d10bb6a520ac8577ef6bb79a47dca72"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/15.jpg",
-          "length": 1046080,
-          "sha256": "7b81976f7290e8cb166a8275563174f6416fb0ad0f9df913ea44b607a25466e7"
+          "length": 1050884,
+          "sha256": "e19d2febb22dee28843e13420a02698f6037c664dfc799277033c96772cbdff8"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/16-back.jpg",
-          "length": 81838,
-          "sha256": "3ea0bc4381f7f718b6a5dd2dbf9a0e8424e87cdea59d04690423fcdc1db4c4cc"
+          "length": 82095,
+          "sha256": "bab098ce98532d73e6a21064b720600e7a1753691ac008700c6be3341896ea0d"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/16.jpg",
-          "length": 1098609,
-          "sha256": "816e7d7bd5b377e1026d396d94882a7a2c073a966516ea775d2d25344c4fc5ed"
+          "length": 1109323,
+          "sha256": "5965cdad90fe1212344c3283e81db632fa44ac0647a729b49cbe77e33f5ab30d"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/17-back.jpg",
-          "length": 79139,
-          "sha256": "0c7ea7868f6e5f1279732821cd66340990724e348d99750e5fe33ebbe5722bd4"
+          "length": 79355,
+          "sha256": "8e0deb91228926e21e2538aecdde141f7b28936f97493a19deb507ff4aeb6f78"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/17.jpg",
-          "length": 1083200,
-          "sha256": "4f77c1ece5982b075cdd80eab125b3a34d18ea9e138a50ed4ca0eb50c6bd1891"
+          "length": 1088790,
+          "sha256": "a11d65455f70119b37f0ed2557bdc02476208350ad3001282c037202fd9c1521"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/18-back.jpg",
-          "length": 79334,
-          "sha256": "42ebc211a0f70ebef806cbc8d7423dda09f9379358c4370af933bdecf3ba844f"
+          "length": 78972,
+          "sha256": "8cf2520dc9af8853ba27a9da1c2efbac92a319a991f94362d0a31d5ac7798ef0"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/18.jpg",
-          "length": 1084286,
-          "sha256": "e6cac820c8a022c21945228b2198412d252308f1686ca8d5906d61693f3514db"
+          "length": 1083895,
+          "sha256": "c0fa0b402078d7a1954f6b8c66e62a241bcb5478c908dce67c9e19b467a82e71"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/19-back.jpg",
-          "length": 81644,
-          "sha256": "8a1f7eae96a3b7ef9cf35fcd1ec6ae6ed511ece61d6209dd18a6a355abee0bb5"
+          "length": 81189,
+          "sha256": "6b7645ea31a76b731c8352f3fd10200109d19e4cbd9f7226c7a30ce6a9937861"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/19.jpg",
-          "length": 1038546,
-          "sha256": "21e5173098f538a0b4cfbb5ae34be7f749abc7cc396c35cf5752e80064c2ae31"
+          "length": 1046172,
+          "sha256": "c99af9948fcae1e37f74ad6e7807f29bc87e6720763857241c0f5a3f33815860"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/20-back.jpg",
-          "length": 78154,
-          "sha256": "26cb3bfc760fe3da626f52db6ba420cc42bdbc60cb91c2c6f443af49cda1ee7e"
+          "length": 78625,
+          "sha256": "561a8a19c0bdc55b7a8f2fcd13a0a10cbb46f3e77d05eef500abbf076300c9e5"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/20.jpg",
-          "length": 1046857,
-          "sha256": "e7fa55512f5f64863ecd3b4028a315773f73db210ae59b853ade750ecfe5d11d"
+          "length": 1058140,
+          "sha256": "2c342e037179693c7473f05b20d85f2bdb82687d66c05130853734edc386f928"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/21-back.jpg",
-          "length": 80170,
-          "sha256": "77d51848280861e0e2aaf1e6ce6d956bb4f35fbbc5a1f558e7a1ad68ef2b1765"
+          "length": 80465,
+          "sha256": "4405c874b7055801cc7d4e2ff82be056e5ad4088565f53d4ef2c088e0f8c2e4e"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/21.jpg",
-          "length": 1024411,
-          "sha256": "86ed320759d42de1d3568fdc48fa995efae62e038820d837ffbc2f46e4442103"
+          "length": 1033568,
+          "sha256": "f4286f03011218ae4246c78b070fd2a324a4cfa6113cc86e193b2e2442b2fc06"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/22-back.jpg",
-          "length": 80401,
-          "sha256": "7fac7d03692669a6b9f9ce93f553c1133f31f85fcdaa6ae50be05bbbb425b619"
+          "length": 80271,
+          "sha256": "0763c200cadae1e872e97ae1c8f1f069d0df9114604f40388999d1a215077d8b"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/22.jpg",
-          "length": 1050777,
-          "sha256": "2338a80c390bbec78d4965c7823896bd51d092936cb0e1573ee8a1c610c53891"
+          "length": 1060062,
+          "sha256": "3522d83e4a96eccda3b1a49b606f04e9ee713fd75c745ba52a3967b6583be3f2"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/23-back.jpg",
-          "length": 81919,
-          "sha256": "2894114b8562a32fdbc2af9dd852f071cc41f34415a12178cc851cdd423df8bd"
+          "length": 81781,
+          "sha256": "994d0da90bae850bf8c97a5afd025982676d424be4f99c9e1decb0437c65b220"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/23.jpg",
-          "length": 1064215,
-          "sha256": "938d8aa806496225cc41ae027f72c1c45335f0a23b6b2450c87320087ccb6646"
+          "length": 1071674,
+          "sha256": "fff394bd2143f337df5fb39c1324a5045630db43c06749ece59b0eead8e9daa2"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/24-back.jpg",
-          "length": 77354,
-          "sha256": "4afc6992a6797f83f343cce7db7c9ce57b25e2f70bdfa2cf07c5265d033b6d9e"
+          "length": 77176,
+          "sha256": "5359170eab61a22a266701104e4d8d44cdb602d27e04927c5e84a0a0b37ffec3"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/24.jpg",
-          "length": 1000013,
-          "sha256": "b30d12e2ae51a7a644c06a742fb42e50b744342f8fc0a30f9af66a0c96772dcd"
+          "length": 1000944,
+          "sha256": "a53857ea2676b01ddf1b39c5e444ac9211c7f38c9180b17beef2e90dce63a74d"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/25-back.jpg",
-          "length": 77880,
-          "sha256": "aaabba9bc8af6690adb9817d4fcabfaa39774a3b0fd3e81eba67d6a38221842a"
+          "length": 78102,
+          "sha256": "d239f09e7bae5b9bb6002a249df194d1186c2d4a3f14c3a6caf7c81ed5bcf93d"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/25.jpg",
-          "length": 981563,
-          "sha256": "8e29e1fa9eabc69743c770380eba28a32434a521d7db4a34e61f38a51128749e"
+          "length": 992458,
+          "sha256": "daf4addb5e1f113f7dde4d527560fb4d62c17a310a5d9e4d456551146e01edc0"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/26-back.jpg",
-          "length": 80227,
-          "sha256": "ecf855aa594bcd157b15bf3a006ce697b5523d52bdc94e7d59c04de9ef30de98"
+          "length": 80526,
+          "sha256": "f8416a5c894ec28b5a45ba244e9f1c4b7354a2aba996aceabaf7291380105ec1"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/26.jpg",
-          "length": 971133,
-          "sha256": "43e3a91b0672e3df96bc891289183830a68fa2c4a3b8b3512ffe2d9e3f2aacb2"
+          "length": 979151,
+          "sha256": "155cb83efe3eec3ae00491c788c67df4d38b3992bb9a2293229a7f43f81afe02"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/27-back.jpg",
-          "length": 82342,
-          "sha256": "db0371f9f02ef817640f3047ceb4cdcc7863ff6a9fb5552ca456dec7ecfc4234"
+          "length": 82867,
+          "sha256": "b9af69aeb65b9b384df81b322b913732658b3567e9f24df3eda79f397ac67df7"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/27.jpg",
-          "length": 1072716,
-          "sha256": "493c05497c85f3b538a2aa82312d5933fa8d235133efdd5a9d78dc6e02ef2dea"
+          "length": 1086696,
+          "sha256": "159dc532c46f6cc2d7318e631dbff2f76af7c96576b29a286a4c052e63fe4501"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/28-back.jpg",
-          "length": 77828,
-          "sha256": "99ffa497cf8fc1bd469c5b52a0049ec43d37bca3e6ec9d599df17d1502503d3f"
+          "length": 77572,
+          "sha256": "28ed865805b9305bd60e0221be7d36b5539cd6269792e48909c84abf20713fca"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/28.jpg",
-          "length": 1024118,
-          "sha256": "bfa5dbffad4aff193a73a892557bf6be9a5791a666affe5c773dc9f4725339f4"
+          "length": 1025839,
+          "sha256": "1b7f7bfb1f23e35bb06f75f2571996527229db17ea0e41effdd29a719859ddb1"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/29-back.jpg",
-          "length": 81643,
-          "sha256": "748e707fd724b3c72b3d587ad0ecfe5cf8ca5438f47665d877c754c01e80cfa7"
+          "length": 81909,
+          "sha256": "bd9ceb649261f5834c310a3630beb15a1e7c6c338d18a72b0fe1478955057fe3"
         }
       ],
       "part": 2,
@@ -1164,68 +1164,73 @@
     {
       "artwork": "transplant",
       "path": "artwork-bundles/transplant-03.zip",
-      "length": 5981677,
-      "sha256": "cd9c07ebbee8f8ef13a93fb43ecd1d93cf62628444b7d30fcbd0497aef16e50d",
+      "length": 5754381,
+      "sha256": "8a88599c96264d0a0d71c04e681d607dc62363036370a32417ac1f9e2b6f9de2",
       "files": [
         {
           "path": "fieldwork-runtime/transplant/assets/prints/29.jpg",
-          "length": 1036581,
-          "sha256": "a9acd3499f687da35200b2585d10f02bd5834e394e0cea044abb4b05c381454e"
+          "length": 1044446,
+          "sha256": "813bce3c81ec293388fd8d0f357e92a3a7caefce5a2135a51365bc08f2de00aa"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/30-back.jpg",
           "length": 80165,
-          "sha256": "8649ebb0bdd1555fbeab8da2292c9c0fafdb5e4d4c4b2f63cba3c5cde182a11a"
+          "sha256": "6d900af8e551bd5d54a148825cf9e1e0c813e959165faddb9eb94fb1aedf3ab0"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/30.jpg",
-          "length": 1012112,
-          "sha256": "eea46cb1b314895d862266e7aada9cbb1153cf1c9c14423b1fc42c78d401f746"
+          "length": 1014609,
+          "sha256": "67b7d0331a902480435d6e2b63e911052e03f3e3c2457e38dd616344699392e0"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/31-back.jpg",
-          "length": 78283,
-          "sha256": "50ec5a834db093191a291cd25ed4769e913c4d1a76e1b9ed9cf14803dd1701c3"
+          "length": 78132,
+          "sha256": "58b7c8e0f9a975e2a5c52320d1dd441091b53e9cf63d5c6f43906c6085535fb6"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/31.jpg",
-          "length": 1025701,
-          "sha256": "20795985950ab24b171b02dda9cfd8f3a53584ab3b84bb6c73b064fef3f11cff"
+          "length": 1029494,
+          "sha256": "fba62bdf4f34fc045e47e4a117d0142ff2b11ba6ecdb6f18286054c76685f125"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/32-back.jpg",
-          "length": 80180,
-          "sha256": "dd6aefcc60cd7b520c350109f9ff23e86c3e74f3785a1e7855e6e8baa5861789"
+          "length": 80460,
+          "sha256": "e3afabfac5e7f265c3edbfcf942ac1ab6918cfeb0420d6ce00eee6700be75605"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/32.jpg",
-          "length": 1033262,
-          "sha256": "e26fb5f7d088b4f8151620767ab3b62c174bf1ad4204379986d56e9e4032d2f6"
+          "length": 1040960,
+          "sha256": "63a9d92ed45e93de0e8d8ed0865ab92222c96600aec8ab38b087678b1b04a3a9"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/33-back.jpg",
-          "length": 77352,
-          "sha256": "b89d4185f2624f43bb9af347bf5d9e9f21d701fe2fee1b96d4ddd3eb34686dc4"
+          "length": 76833,
+          "sha256": "d4f04ddfda8c5405910119877420d21761643b9b61aeae02fe4518941bb7417e"
         },
         {
           "path": "fieldwork-runtime/transplant/assets/prints/33.jpg",
-          "length": 819598,
-          "sha256": "7c2520319313e2884b594980e8ad853774c029e88383ae463d2fb0a18ce450c9"
+          "length": 825770,
+          "sha256": "9bf649492bc320edbeab1e88439778d274cfd3065849bee1090e136723746cb2"
         },
         {
           "path": "fieldwork-runtime/transplant/index.html",
-          "length": 270536,
-          "sha256": "b472e1aa77e368bc1b78f44bfb9d405d97a5f6b39b94c9cadd330109c3ef50ce"
+          "length": 270544,
+          "sha256": "9d64a69b878fdb0325e55a6ffe65edf2494e1829376bad5a4fcc439bec38569f"
         },
         {
           "path": "fieldworks/images/transplant.jpg",
-          "length": 58848,
-          "sha256": "9dcb9a76f152b96522c5f870fac676b08f0057c2f896e7ee9818dfb903583bb6"
+          "length": 49809,
+          "sha256": "0a74676ceed8fc6c9515d3c88caff20f33a8a717bbca9eb34ae7c5a71423a3f4"
         },
         {
           "path": "fieldworks/previews/transplant.mp4",
-          "length": 566590,
-          "sha256": "7d1ed51dfdabd28b73715087743d1e2358623b237812cfe7d3f5e3231d9e3f75"
+          "length": 308787,
+          "sha256": "d5523c057c3579ba33e92c5945ea63c875137a4513d6e0d8b6c53342900a39f5"
+        },
+        {
+          "path": "fieldworks/releases/7dd986181e72df027c23e20935c8d2097911f036914aae100211f6930dffe286.json",
+          "length": 65281,
+          "sha256": "a0c299b3d7f2ced06ce74842c77b711a80ea2b3e2f89915ed19b3faa94fc7e98"
         }
       ],
       "part": 3,
