@@ -148,13 +148,13 @@
     {
       "slug": "transplant",
       "capture": "actual browser compositor, DOM and WebGL, fixed 60 fps, silent",
-      "raw_sha256": "a374959309fe41f3fe86cd99d78ac84cc5bcc99081c220ad38f21dd8360f7de1",
-      "raw_duration": 8.0,
-      "loop_method": "Four fully sampled page turns separated by verified identical resting spreads. First and final spreads match.",
-      "source_snapshot_sha256": "85165e8eea3662d3cad194296163a645a2a1e2cb0d7322654e4c60a6ded8b7e7",
+      "raw_sha256": "0b9d278561c71456f07198fe1bf39356f9cce0c53671b89c04814647ef105a8b",
+      "raw_duration": 6.0,
+      "loop_method": "Two fully sampled page turns with verified identical resting frames. The loop ends on the opening spread.",
+      "source_snapshot_sha256": "50eeb2fa3e78a8875a54b197c364d527bc287c610a7fb357d1b58d10689723c7",
       "path": "transplant.mp4",
-      "sha256": "7d1ed51dfdabd28b73715087743d1e2358623b237812cfe7d3f5e3231d9e3f75",
-      "length": 566590
+      "sha256": "d5523c057c3579ba33e92c5945ea63c875137a4513d6e0d8b6c53342900a39f5",
+      "length": 308787
     },
     {
       "canvas_width": 960,

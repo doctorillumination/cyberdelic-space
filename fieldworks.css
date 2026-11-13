@@ -87,3 +87,18 @@ main.fieldworks-main { max-width: none; padding: 0; }
 .fieldwork-player[data-fieldwork="vellum"]>.fieldwork-bar{position:absolute;left:12px;right:112px;bottom:10px;min-height:40px;padding:0;display:flex;justify-content:space-between;background:transparent;pointer-events:none;z-index:4}
 .fieldwork-player[data-fieldwork="vellum"]>.fieldwork-bar h1{display:none}
 .fieldwork-player[data-fieldwork="vellum"]>.fieldwork-bar :is(a,button){pointer-events:auto}
+
+@media (max-width: 760px) {
+  .fieldwork-player[data-fieldwork="transplant"] {
+    grid-template-rows: auto minmax(0, 1fr) auto;
+    background: #d8d7cd;
+  }
+  .fieldwork-player[data-fieldwork="transplant"].is-artwork-only {
+    grid-template-rows: minmax(0, 1fr) auto;
+  }
+  .fieldwork-player[data-fieldwork="transplant"] > .fieldwork-view-controls {
+    position: static;
+    justify-self: end;
+    margin: 4px max(12px, env(safe-area-inset-right)) max(8px, env(safe-area-inset-bottom)) 12px;
+  }
+}

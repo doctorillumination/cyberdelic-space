@@ -640,7 +640,7 @@
       "status": "living",
       "caption": "A manual, held differently.",
       "description": "A liver transplant manual becomes a book of weathered poetry. Turn through thirty-three pages of bleeding ink, worn paper, and implicated lives.",
-      "alt": "An open book with stained paper, red, blue, and green poetic text, rubbed ink, and a curved page turning across its spine.",
+      "alt": "An open book with rubbed red, blue, and green type, ink marks on weathered paper, and faint print showing through the facing reverse.",
       "gesture": "Pull the right page leftward to turn. Pull the left page back. Use Closer to read the fine impressions.",
       "source": "transplant.md",
       "themes": [
@@ -654,24 +654,27 @@
       "related_note": "fn-45",
       "related_title": "The File Is a Score",
       "offline_part": true,
-      "release_id": "4126c7b9a5ffb2b34b7944d0aa45fb3d3871d27b24f4846c1682fc90c5fcda3d",
-      "runtime_published_at": "2026-11-09T00:16:39.332717Z",
+      "release_id": "7dd986181e72df027c23e20935c8d2097911f036914aae100211f6930dffe286",
+      "runtime_published_at": "2026-11-13T15:08:59.023748Z",
       "source_path": "fieldworks/readings/transplant.md",
       "source_sha256": "5b5e3eb15bbd13771ef5171923a947e0b2d6883aaa1c56eed469ca218dfb1c6f",
       "source_length": 1074,
       "href": "fieldworks/transplant/",
       "poster": {
         "path": "fieldworks/images/transplant.jpg",
-        "sha256": "9dcb9a76f152b96522c5f870fac676b08f0057c2f896e7ee9818dfb903583bb6",
-        "length": 58848,
+        "sha256": "0a74676ceed8fc6c9515d3c88caff20f33a8a717bbca9eb34ae7c5a71423a3f4",
+        "length": 49809,
         "kind": "actual-browser-capture"
       },
       "preview": {
         "path": "fieldworks/previews/transplant.mp4",
-        "sha256": "7d1ed51dfdabd28b73715087743d1e2358623b237812cfe7d3f5e3231d9e3f75",
-        "length": 566590,
+        "sha256": "d5523c057c3579ba33e92c5945ea63c875137a4513d6e0d8b6c53342900a39f5",
+        "length": 308787,
         "kind": "recorded-artwork-loop"
-      }
+      },
+      "offline_releases": [
+        "7dd986181e72df027c23e20935c8d2097911f036914aae100211f6930dffe286"
+      ]
     },
     {
       "slug": "paper-water",
